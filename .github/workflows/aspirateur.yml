@@ -27,6 +27,9 @@ on:
           - sandbox
           - production
 
+permissions:
+  contents: write   # sans ça, le token automatique ne peut pas faire "git push"
+
 jobs:
   aspirer:
     runs-on: ubuntu-latest
