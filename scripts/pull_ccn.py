@@ -121,13 +121,19 @@ def extract_kali_id_from_search(search_result):
     return None, None
 
 
-def fetch_one_idcc(base_url, token, idcc):
+def fetch_one_idcc(base_url, token, idcc, debug_dir=None):
     """
     Récupère le conteneur KALI complet pour un IDCC donné, via le
     parcours officiel en 2 étapes : /search (résoudre l'id KALICONT)
     puis /consult/kaliContIdcc ou /consult/kaliCont avec cet id.
     """
     search_result = search_kali_by_idcc(base_url, token, idcc)
+
+    if debug_dir:
+        os.makedirs(debug_dir, exist_ok=True)
+        with open(os.path.join(debug_dir, f"{idcc}_search_raw.json"), "w", encoding="utf-8") as f:
+            json.dump(search_result, f, ensure_ascii=False, indent=2)
+
     if "_error" in search_result:
         return {"_error": search_result["_error"], "_detail": search_result.get("_detail", ""), "_step": "search"}
 
@@ -145,6 +151,7 @@ def fetch_one_idcc(base_url, token, idcc):
     if "_error" in result:
         result["_step"] = "consult"
         result["_resolved_kali_id"] = kali_id
+        result["_detail"] = (result.get("_detail","") + f" | id_utilisé={kali_id}")[:400]
     return result
 
 
@@ -200,11 +207,12 @@ def main():
     print(f"Token OK. {len(idcc_list)} IDCC à traiter.")
 
     os.makedirs(args.out, exist_ok=True)
+    debug_dir = os.path.join(args.out, "_debug_search")
     summary = []
 
     for i, idcc in enumerate(idcc_list, 1):
         print(f"[{i}/{len(idcc_list)}] IDCC {idcc}...", end=" ")
-        result = fetch_one_idcc(base_url, token, idcc)
+        result = fetch_one_idcc(base_url, token, idcc, debug_dir=debug_dir)
 
         if "_error" in result:
             print(f"ERREUR {result['_error']} (étape: {result.get('_step','?')})")
@@ -212,6 +220,7 @@ def main():
                 "idcc": idcc, "status": "error",
                 "http_status": result.get("_error"),
                 "step": result.get("_step"),
+                "resolved_kali_id": result.get("_resolved_kali_id"),
                 "detail": result.get("_detail", "")[:300],
             })
             continue
