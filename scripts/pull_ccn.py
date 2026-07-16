@@ -74,9 +74,78 @@ def call_api(base_url, token, path, body):
         return {"_error": e.code, "_detail": body_txt}
 
 
+def search_kali_by_idcc(base_url, token, idcc):
+    """
+    Étape 1 (documentée officiellement) : cherche le conteneur KALI
+    correspondant à un IDCC via /search, fond=KALI, typeChamp=IDCC.
+    Renvoie la réponse brute de recherche.
+    """
+    body = {
+        "fond": "KALI",
+        "recherche": {
+            "champs": [{
+                "typeChamp": "IDCC",
+                "operateur": "ET",
+                "criteres": [{
+                    "valeur": str(idcc),
+                    "typeRecherche": "TOUS_LES_MOTS_DANS_UN_CHAMP",
+                    "operateur": "ET",
+                }],
+            }],
+            "sort": "PERTINENCE",
+            "fromAdvancedRecherche": False,
+            "pageNumber": 1,
+            "pageSize": 5,
+            "typePagination": "DEFAUT",
+            "operateur": "ET",
+        },
+    }
+    return call_api(base_url, token, "/search", body)
+
+
+def extract_kali_id_from_search(search_result):
+    """
+    Le format exact des résultats de /search n'est pas garanti stable —
+    on essaie plusieurs chemins raisonnables et on renvoie aussi le
+    résultat brut pour debug si rien ne matche.
+    """
+    results = search_result.get("results") or search_result.get("resultats") or []
+    for r in results:
+        # Chemin le plus courant observé pour ce type d'API Légifrance
+        titles = r.get("titles") or r.get("titres") or []
+        for t in titles:
+            if t.get("id"):
+                return t["id"], r
+        if r.get("id"):
+            return r["id"], r
+    return None, None
+
+
 def fetch_one_idcc(base_url, token, idcc):
-    """Récupère le conteneur KALI complet pour un IDCC donné."""
-    return call_api(base_url, token, "/consult/kaliContIdcc", {"id": str(idcc)})
+    """
+    Récupère le conteneur KALI complet pour un IDCC donné, via le
+    parcours officiel en 2 étapes : /search (résoudre l'id KALICONT)
+    puis /consult/kaliContIdcc ou /consult/kaliCont avec cet id.
+    """
+    search_result = search_kali_by_idcc(base_url, token, idcc)
+    if "_error" in search_result:
+        return {"_error": search_result["_error"], "_detail": search_result.get("_detail", ""), "_step": "search"}
+
+    kali_id, raw_match = extract_kali_id_from_search(search_result)
+    if not kali_id:
+        return {
+            "_error": "not_found_in_search",
+            "_detail": json.dumps(search_result)[:500],
+            "_step": "extract_id",
+        }
+
+    # kaliContIdcc accepte soit l'IDCC brut, soit l'id KALICONT résolu.
+    # On utilise l'id résolu (documentation officielle), plus fiable.
+    result = call_api(base_url, token, "/consult/kaliContIdcc", {"id": kali_id})
+    if "_error" in result:
+        result["_step"] = "consult"
+        result["_resolved_kali_id"] = kali_id
+    return result
 
 
 def extract_salary_sections(kali_response):
@@ -137,15 +206,15 @@ def main():
         print(f"[{i}/{len(idcc_list)}] IDCC {idcc}...", end=" ")
         result = fetch_one_idcc(base_url, token, idcc)
 
-                if "_error" in result:
-            print(f"ERREUR {result['_error']}")
+        if "_error" in result:
+            print(f"ERREUR {result['_error']} (étape: {result.get('_step','?')})")
             summary.append({
                 "idcc": idcc, "status": "error",
                 "http_status": result.get("_error"),
+                "step": result.get("_step"),
                 "detail": result.get("_detail", "")[:300],
             })
             continue
-
 
         out_path = os.path.join(args.out, f"{idcc}.json")
         with open(out_path, "w", encoding="utf-8") as f:
