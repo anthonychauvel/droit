@@ -1,0 +1,67 @@
+name: Aspirateur Légifrance (CCN + Code du travail)
+
+# Se lance à la main depuis l'onglet "Actions" de GitHub (bouton "Run workflow"),
+# accessible depuis Safari ou l'app GitHub sur iPhone. Pas besoin d'ordinateur.
+on:
+  workflow_dispatch:
+    inputs:
+      cible:
+        description: "Que récupérer ?"
+        required: true
+        default: "ccn"
+        type: choice
+        options:
+          - ccn
+          - code-travail
+          - les-deux
+      idcc_liste:
+        description: "IDCC séparés par des virgules (vide = utilise idcc_list.txt)"
+        required: false
+        default: ""
+      environnement:
+        description: "sandbox ou production"
+        required: true
+        default: "sandbox"
+        type: choice
+        options:
+          - sandbox
+          - production
+
+jobs:
+  aspirer:
+    runs-on: ubuntu-latest
+    env:
+      PISTE_CLIENT_ID: ${{ secrets.PISTE_CLIENT_ID }}
+      PISTE_CLIENT_SECRET: ${{ secrets.PISTE_CLIENT_SECRET }}
+      PISTE_ENV: ${{ github.event.inputs.environnement }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Récupérer les CCN (KALI)
+        if: ${{ github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' }}
+        run: |
+          if [ -n "${{ github.event.inputs.idcc_liste }}" ]; then
+            python3 scripts/pull_ccn.py --idcc "${{ github.event.inputs.idcc_liste }}" --out output/ccn
+          else
+            python3 scripts/pull_ccn.py --idcc-file idcc_list.txt --out output/ccn
+          fi
+
+      - name: Récupérer le Code du travail
+        if: ${{ github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'les-deux' }}
+        run: |
+          python3 scripts/pull_code_travail.py --articles-file articles_list.txt --out output/code-travail
+
+      - name: Commit et push des résultats
+        run: |
+          git config user.name "Aspirateur Légifrance (bot)"
+          git config user.email "action@github.com"
+          git add output/
+          git diff --staged --quiet || git commit -m "Mise à jour données Légifrance ($(date -u +%Y-%m-%d))"
+          git push
