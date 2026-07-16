@@ -137,10 +137,15 @@ def main():
         print(f"[{i}/{len(idcc_list)}] IDCC {idcc}...", end=" ")
         result = fetch_one_idcc(base_url, token, idcc)
 
-        if "_error" in result:
+                if "_error" in result:
             print(f"ERREUR {result['_error']}")
-            summary.append({"idcc": idcc, "status": "error", "detail": result.get("_detail", "")[:200]})
+            summary.append({
+                "idcc": idcc, "status": "error",
+                "http_status": result.get("_error"),
+                "detail": result.get("_detail", "")[:300],
+            })
             continue
+
 
         out_path = os.path.join(args.out, f"{idcc}.json")
         with open(out_path, "w", encoding="utf-8") as f:
