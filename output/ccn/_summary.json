@@ -1,26 +1,1711 @@
 [
   {
     "idcc": "16",
-    "status": "error",
-    "http_status": 500,
-    "step": "consult",
-    "resolved_kali_id": "KALITEXT000032696176",
-    "detail": "{\"timestamp\":1784246248933,\"error\":500,\"status\":\"Internal Server Error\",\"message\":\"Une exception non gérée est survenue, veuillez contacter l'administrateur\",\"errorCode\":null,\"exceptionDetails\":null} | id_utilisé=KALITEXT000032696176"
+    "status": "ok",
+    "titre": "Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950",
+    "salary_sections_found": 239,
+    "salary_sections": [
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950//",
+        "titre": "Négociation annuelle sur les salaires et examen de la situation économique et de l'emploi dans la branche",
+        "id": "KALISCTA000005723132"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 23 novembre 1994 relatif au temps de service, aux repos récupérateurs et la rémunération des personnels de conduite marchandise « grands routiers » ou « longue distance » \n\n",
+        "id": "KALITEXT000005678956"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 1 du 6 juillet 1995 relatif aux conditions spécifiques d'application de l'accord du 23 novembre 1994 sur le temps de service, les repos récupérateurs et la rémunération des personnels de conduite « grands routiers » ou « longue distance »",
+        "id": "KALITEXT000005678962"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Protocole d'accord du 7 novembre 1997 relatif aux rémunérations minimales conventionnelles 1997 et à l'ouverture de négociations visant à la révision programmée des dispositions de la convention collective ",
+        "id": "KALITEXT000005678984"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord national professionnel du 12 novembre 1998 relatif à la garantie minimale de rémunération de l'amplitude mensuelle des personnels roulants \"grands routiers ou longue distance\"",
+        "id": "KALITEXT000005679022"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 7 juin 2006 relatif aux rémunérations conventionnelles et à la mise en oeuvre du \" bonus exceptionnel \"",
+        "id": "KALITEXT000005679105"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 86 du 11 juin 2012 relatif aux classifications",
+        "id": "KALITEXT000026422585"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 11 du 6 janvier 2014 relatif aux rémunérations conventionnelles",
+        "id": "KALITEXT000029131653"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 12 du 29 avril 2015 à l'accord du 1er février 2003 sur les rémunérations conventionnelles dans les entreprises de transport de déménagement",
+        "id": "KALITEXT000031114704"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 4 mai 2018 relatif à la modernisation des classifications des emplois dans les entreprises de transport de déménagement",
+        "id": "KALITEXT000037506225"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 1 du 11 février 2020 à l'accord du 25 septembre 2015 relatif à l'obligation conventionnelle de souscrire un socle minimal de « protection santé » (transport de déménagement)",
+        "id": "KALITEXT000042271455"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 1 du 11 février 2020 à l'accord du 6 octobre 2015 relatif à l'obligation conventionnelle de souscrire à un socle minimal de « protection santé » (transport sanitaire)",
+        "id": "KALITEXT000042271538"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 2 du 11 février 2020 relatif à la création d'une obligation conventionnelle de souscrire un socle minimal de « protection santé » (transport de marchandises)",
+        "id": "KALITEXT000042271513"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 5 du 24 septembre 2021 à l'accord du 18 avril 2002 relatif à l'aménagement, l'organisation et la réduction du temps de travail et à la rémunération des personnels",
+        "id": "KALITEXT000045139593"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 3 du 3 février 2022 à l'accord du 1er octobre 2012 relatif à la création d'une obligation conventionnelle de souscrire un socle minimal de « protection santé »",
+        "id": "KALITEXT000045953162"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 28 mars 2022 relatif à la modernisation des classifications conventionnelles des ouvriers dans les entreprises de transport sanitaire",
+        "id": "KALITEXT000046043271"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord de méthode du 4 novembre 2025 relatif aux classifications des emplois dans les entreprises de transport sanitaire",
+        "id": "KALITEXT000053504023"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950",
+        "titre": "Textes Salaires",
+        "id": null
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires ouvriers Avenant n° 69 du 25 février 1987",
+        "id": "KALITEXT000005679115"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires Employés Avenant n° 60 du 25 février 1987",
+        "id": "KALITEXT000005679117"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires Techniciens et agents de maîtrise Avenant n° 61 du 25 février 1987",
+        "id": "KALITEXT000005679119"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires Ingénieurs et cadres Avenant n° 53 du 25 février 1987",
+        "id": "KALITEXT000005679121"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires ouvriers Avenant n° 70 du 8 juillet 1987",
+        "id": "KALITEXT000005679123"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires Employés Avenant n° 61 du 8 juillet 1987",
+        "id": "KALITEXT000005679125"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires techniciens et agents de maîtrise Avenant n° 62 du 8 juillet 1987",
+        "id": "KALITEXT000005679127"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires Ingénieurs et cadres Avenant n° 54 du 8 juillet 1987",
+        "id": "KALITEXT000005679129"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I ouvriers SALAIRES Avenant n° 71 du 16 octobre 1989",
+        "id": "KALITEXT000005679131"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe II Employés SALAIRES Avenant n° 62 du 16 octobre 1989",
+        "id": "KALITEXT000005679133"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe III Techniciens et agents de maîtrise SALAIRES Avenant n° 63 du 16 octobre 1989",
+        "id": "KALITEXT000005679135"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe IV Ingénieurs et cadres SALAIRES Avenant n° 55 du 16 octobre 1989",
+        "id": "KALITEXT000005679137"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I ouvriers salaires Avenant 72 du 5 décembre 1990",
+        "id": "KALITEXT000005679139"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe II Employés SALAIRES Avenant n° 63 du 5 décembre 1990",
+        "id": "KALITEXT000005679141"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe III Techniciens et agents de maîtrise SALAIRES Avenant n° 64 du 5 décembre 1990",
+        "id": "KALITEXT000005679143"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires Ingénieurs et cadres Avenant n° 56 du 5 décembre 1990",
+        "id": "KALITEXT000005679145"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I ouvriers SALAIRES Avenant n° 73 du 4 juillet 1991",
+        "id": "KALITEXT000005679147"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe II Employés SALAIRES Avenant n° 64 du 4 juillet 1991",
+        "id": "KALITEXT000005679149"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe III Techniciens et agents de maîtrise SALAIRES Avenant n° 65 du 4 juillet 1991",
+        "id": "KALITEXT000005679151"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe IV Ingénieurs et cadres SALAIRES Avenant n° 57 du 4 juillet 1991",
+        "id": "KALITEXT000005679153"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe II Employés Salaires Avenant n° 66 du 15 mai 1992",
+        "id": "KALITEXT000005679155"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe IV Ingénieurs et cadres Salaires Avenant n° 59 du 15 mai 1992",
+        "id": "KALITEXT000005679157"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I ouvriers Salaires Avenant n° 75 du 15 mai 1992",
+        "id": "KALITEXT000005679160"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe III Techniciens et agents de maîtrise SALAIRES Avenant n° 67 du 15 mai 1992",
+        "id": "KALITEXT000005679162"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I ouvriers SALAIRES Avenant n° 77 du 13 décembre 1993",
+        "id": "KALITEXT000005679164"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe II SALAIRES Employés Avenant n° 67 du 13 décembre 1993",
+        "id": "KALITEXT000005679166"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe III SALAIRES Techniciens et agents de maîtrise Avenant n°  68 du 13 décembre 1993",
+        "id": "KALITEXT000005679168"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe IV Ingénieurs et cadres SALAIRES Avenant n° 60 du 13 décembre 1993",
+        "id": "KALITEXT000005679170"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I ouvriers SALAIRES Avenant n° 79 du 1 juillet 1994",
+        "id": "KALITEXT000005679172"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe II SALAIRES Employés Avenant n° 69 du 1 juillet 1994",
+        "id": "KALITEXT000005679174"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe III SALAIRES Techniciens et agents de maîtrise Avenant n° 70 du 1 juillet 1994",
+        "id": "KALITEXT000005679176"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe IV SALAIRES Ingénieurs et cadres Avenant n° 62 du 1 juillet 1994",
+        "id": "KALITEXT000005679178"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe IV SALAIRES Ingénieurs et cadres Avenant n° 63 du 22 mai 1995",
+        "id": "KALITEXT000005679180"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe II SALAIRES Employés Avenant n° 70 du 22 mai 1995",
+        "id": "KALITEXT000005679182"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe III SALAIRES Techniciens et agents de maîtrise Avenant n° 71 du 22 mai 1995",
+        "id": "KALITEXT000005679184"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I SALAIRES OUVRIERS Avenant n° 80 du 22 mai 1995",
+        "id": "KALITEXT000005679186"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I SALAIRES (Roubaix Tourcoing) Accord du 18 octobre 1995",
+        "id": "KALITEXT000005679188"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I SALAIRES (Roubaix Tourcoing) Accord du 4 avril 1996",
+        "id": "KALITEXT000005679190"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe IV SALAIRES Ingénieurs et cadres Avenant n° 64 du 4 juillet 1996",
+        "id": "KALITEXT000005679192"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe II SALAIRES Employés Avenant n° 71 du 4 juillet 1996",
+        "id": "KALITEXT000005679194"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe III SALAIRES Techniciens et agents de maîtrise Avenant n° 72 du 4 juillet 1996",
+        "id": "KALITEXT000005679196"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Personnel de conduite \"grands routiers\" ou \"longue distance\" Avenant n° 2 du 6 octobre 1995",
+        "id": "KALITEXT000005679198"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Personnel de conduite \"grands routiers\" ou \"longue distance\" Accord du 4 juillet 1996",
+        "id": "KALITEXT000005679200"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I SALAIRES OUVRIERS Avenant n° 35 du 4 juillet 1996",
+        "id": "KALITEXT000005679202"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I SALAIRES OUVRIERS Avenant n° 81 du 4 juillet 1996",
+        "id": "KALITEXT000005679204"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I SALAIRES OUVRIERS Avenant n° 38 du 18 juillet 1997",
+        "id": "KALITEXT000005679206"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I SALAIRES OUVRIERS Avenant n° 83 du 7 novembre 1997",
+        "id": "KALITEXT000005679208"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe II SALAIRES Employés Avenant n° 73 du 7 novembre 1997",
+        "id": "KALITEXT000005679210"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe III SALAIRES Techniciens et agents de maîtrise Avenant n° 73 du 7 novembre 1997",
+        "id": "KALITEXT000005679212"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe IV SALAIRES Ingénieurs et cadres Avenant n° 65 du 7 novembre 1997",
+        "id": "KALITEXT000005679214"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Personnel de conduite \"grands routiers\" ou \"longue distance\" Avenant n° 4 du 7 novembre 1997",
+        "id": "KALITEXT000005679216"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I SALAIRES OUVRIERS frais de déplacement Avenant n° 40 du 7 juillet 1999",
+        "id": "KALITEXT000005679220"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Personnel de conduite \"grands routiers\" ou \"longue distance\" Avenant n° 5 du 1 octobre 1999",
+        "id": "KALITEXT000005679222"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Personnel de conduite \"grands routiers\" ou \"longue distance\" Avenant n° 6 du 1 octobre 1999",
+        "id": "KALITEXT000005679224"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I SALAIRES OUVRIERS Avenant n° 84 du 1 octobre 1999",
+        "id": "KALITEXT000005679226"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I SALAIRES OUVRIERS Avenant n° 85 du 1 octobre 1999",
+        "id": "KALITEXT000005679228"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe II SALAIRES Employés Avenant n° 74 du 30 décembre 1999",
+        "id": "KALITEXT000005679230"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I SALAIRES OUVRIERS Avenant n° 86 du 30 décembre 1999",
+        "id": "KALITEXT000005679232"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Transport sanitaire Accord-cadre du 4 mai 2000",
+        "id": "KALITEXT000005679234"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe IV SALAIRES Ingénieurs et cadres Avenant n° 66 du 26 juin 2000",
+        "id": "KALITEXT000005679236"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Personnel de conduite \"grands routiers\" ou \"longue distance\" Avenant n° 7 du 26 juin 2000",
+        "id": "KALITEXT000005679238"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe II SALAIRES Employés Avenant n° 75 du 26 juin 2000",
+        "id": "KALITEXT000005679240"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I SALAIRES OUVRIERS Avenant n° 87 du 26 juin 2000",
+        "id": "KALITEXT000005679242"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe III SALAIRES Techniciens et agents de maîtrise Avenant n° 74 du 26 juin 2000",
+        "id": "KALITEXT000005679244"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Personnels des entreprises de transport de déménagement Procès-verbal du 23 août 2000",
+        "id": "KALITEXT000005679246"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Personnels des entreprises de transport de déménagement Accord-cadre du 23 août 2000",
+        "id": "KALITEXT000005679248"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Annexe I Salaires ouvriers frais de déplacement Avenant n° 41 du 8 février 2001",
+        "id": "KALITEXT000005679250"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 9 du 14 novembre 2001 relatif aux salaires grands routiers ou longue distance ",
+        "id": "KALITEXT000005679252"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Frais de déplacement des ouvriers Avenant n° 42 du 14 novembre 2001",
+        "id": "KALITEXT000005679254"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Ingénieurs et cadres Avenant n° 67 du 14 novembre 2001",
+        "id": "KALITEXT000005679256"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Techniciens et agents de maitrise Avenant n° 75 du 14 novembre 2001",
+        "id": "KALITEXT000005679258"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Employés Avenant n° 77 du 14 novembre 2001",
+        "id": "KALITEXT000005679260"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Ouvriers Avenant n° 89 du 14 novembre 2001",
+        "id": "KALITEXT000005679262"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 9 du 6 décembre 2001 relatif aux salaires prime de monitorat et salaires minimaux ",
+        "id": "KALITEXT000005679264"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 18 avril 2002 relatif aux salaires ",
+        "id": "KALITEXT000005679266"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": " Accord du 23 avril 2002 relatif aux salaires personnel roulants : grands routiers ou longue distance",
+        "id": "KALITEXT000005679268"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 43 du 15 mai 2002 relatif aux salaires personnel roulants : grands routiers ou longue distance ",
+        "id": "KALITEXT000005679270"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Transport routier de voyageurs : Ingénieurs et cadres Avenant n° 68 du 24 juillet 2002",
+        "id": "KALITEXT000005679272"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Transport routier de voyageurs : techniciens et agents de maitrise Avenant n° 76 du 24 juillet 2002",
+        "id": "KALITEXT000005679275"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 78 du 24 juillet 2002 relatif aux salaires transport routier de voyageurs : employés ",
+        "id": "KALITEXT000005679277"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Transport routier de voyageurs : ouvriers Avenant n° 90 du 24 juillet 2002",
+        "id": "KALITEXT000005679279"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant du 20 septembre 2002 relatif aux salaires transport routier de voyageurs : ouvriers ",
+        "id": "KALITEXT000005679281"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 25 novembre 2002 relatif aux salaires ouvriers ",
+        "id": "KALITEXT000005679283"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "SALAIRES Frais de déplacement des ouvriers Avenant n° 44 du 19 décembre 2002",
+        "id": "KALITEXT000005679285"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant du 1er février 2003 relatif aux rémunérations conventionnelles",
+        "id": "KALITEXT000005679287"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires (annexe I). Avenant n° 45 du 8 janvier 2004",
+        "id": "KALITEXT000005679289"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires. Avenant n° 79 du 16 février 2004",
+        "id": "KALITEXT000005679291"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires. Avenant n° 91 du 16 février 2004",
+        "id": "KALITEXT000005679293"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires. Avenant n° 46 du 16 février 2004",
+        "id": "KALITEXT000005679295"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires. Avenant n° 69 du 16 février 2004",
+        "id": "KALITEXT000005679297"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": " Avenant du 16 février 2004 relatif aux salaires (personnels ouvriers ambulanciers)",
+        "id": "KALITEXT000005679299"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires. Avenant n° 77 du 16 février 2004",
+        "id": "KALITEXT000005679301"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires Activités de prestations logistiques Avenant du 30 juin 2004",
+        "id": "KALITEXT000005679303"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires (transport de déménagement) Avenant du 21 juillet 2004",
+        "id": "KALITEXT000005679305"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires. Avenant n° 93 du 24 septembre 2004",
+        "id": "KALITEXT000005679307"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires (indemnités de dimanche et jours fériés des personnels ambulanciers des entreprises de transport sanitaire) Accord du 2 décembre 2004",
+        "id": "KALITEXT000005679309"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires Avenant n° 47 du 30 décembre 2004",
+        "id": "KALITEXT000005679311"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 1 du 1 juin 2005 relatif aux salaires ",
+        "id": "KALITEXT000005679313"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 2 du 12 juillet 2005 relatif aux salaires et aux rémunérations conventionnelles dans les entreprises de transport de déménagement ",
+        "id": "KALITEXT000005679315"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires Transport routier de voyageurs - Ouvriers. Avenant n° 95 du 21 décembre 2005",
+        "id": "KALITEXT000005679317"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires (annexe IV) Avenant n° 71 du 21 décembre 2005",
+        "id": "KALITEXT000005679319"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires Employés Avenant n° 81 du 21 décembre 2005",
+        "id": "KALITEXT000005679321"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires Transport routier de marchandises et des activités auxiliaires du transport Ouvriers Avenant n° 48 du 27 octobre 2005",
+        "id": "KALITEXT000005679325"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires Transport routier de voyageurs : techniciens et agents de maîtrise Avenant n° 79 du 21 décembre 2005",
+        "id": "KALITEXT000005679327"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": " Avenant n° 72 du 19 septembre 2006 relatif aux salaires personnels ingénieurs et cadres (annexe IV)",
+        "id": "KALITEXT000005679331"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 82 du 19 septembre 2006 relatif aux salaires personnels employés (annexe II) ",
+        "id": "KALITEXT000005679333"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 80 du 19 septembre 2006 relatif aux salaires personnels techniciens et agents de maîtrise (annexe III) ",
+        "id": "KALITEXT000005679335"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 96 du 19 septembre 2006 relatif aux salaires personnels ouvriers (annexe I) ",
+        "id": "KALITEXT000005679337"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires (annexe I) Avenant n° 49 du 13 juillet 2006",
+        "id": "KALITEXT000005679339"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Salaires (Annexe I, II, III, IV) Accord du 7 décembre 2006",
+        "id": "KALITEXT000005679341"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 7 décembre 2006 relatif aux salaires (Annexe I, II, III, IV) ",
+        "id": "KALITEXT000005679343"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant à l'accord du 1er février 2003 sur les rémunérations conventionnelles dans les entreprises de transport de déménagement Avenant n° 3 du 16 janvier 2007",
+        "id": "KALITEXT000005679113"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant du 5 mars 2007 relatif aux salaires (RAG et GAR)",
+        "id": "KALITEXT000005679345"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 50 du 16 février 2007 relatif aux salaires (annexe I) ",
+        "id": "KALITEXT000005679347"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 97 du 13 juillet 2007 relatif aux rémunérations au 1er juillet 2007 (annexe I)",
+        "id": "KALITEXT000018216814"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 83 du 13 juillet 2007 relatif aux rémunérations au 1er juillet 2007 (annexe II)",
+        "id": "KALITEXT000018216822"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 81 du 13 juillet 2007 relatif aux rémunérations au 1er juillet 2007 (annexe III)",
+        "id": "KALITEXT000018216833"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 73 du 13 juillet 2007 relatif aux rémunérations au 1er juillet 2007 (annexe IV)",
+        "id": "KALITEXT000018216844"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 4 du 24 juillet 2007 relatif aux rémunérations 2007 (transport de déménagement)",
+        "id": "KALITEXT000018216854"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 1 du 21 décembre 2007 à l'accord du 16 février 2004 relatif aux rémunérations conventionnelles des personnels ambulanciers",
+        "id": "KALITEXT000018773024"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant du 18 février 2008 relatif à la revalorisation des rémunérations conventionnelles",
+        "id": "KALITEXT000019022464"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 74 du 19 mai 2008 relatif aux rémunérations aux 1er mai et 1er octobre 2008 (annexe IV)",
+        "id": "KALITEXT000019349231"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 82 du 19 mai 2008 relatif aux rémunérations et indemnités aux 1er mai et 1er octobre 2008 (annexe III)",
+        "id": "KALITEXT000019349241"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 84 du 19 mai 2008 relatif aux rémunérations et indemnités aux 1er mai et 1er octobre 2008 (annexe II)",
+        "id": "KALITEXT000019349252"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 98 du 19 mai 2008 relatif aux rémunérations au 1er mai 2008 (annexe I)",
+        "id": "KALITEXT000019349264"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 5 du 8 juillet 2008 relatif aux rémunérations conventionnelles dans les entreprises de déménagement",
+        "id": "KALITEXT000019460319"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 2 du 27 octobre 2008 relatif aux salaires (ambulanciers)",
+        "id": "KALITEXT000020159482"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 2 du 30 janvier 2009 relatif aux salaires au 1er janvier 2009 dans les entreprises de prestations logistiques",
+        "id": "KALITEXT000020608650"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 75 du 6 avril 2009 relatif aux salaires aux 1er avril et 1er juillet 2009 (annexe IV)",
+        "id": "KALITEXT000020969685"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 83 du 6 avril 2009 relatif aux salaires aux 1er avril et 1er juillet 2009 (annexe III)",
+        "id": "KALITEXT000020969696"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 85 du 6 avril 2009 relatif aux salaires aux 1er avril et 1er juillet 2009 (annexe II)",
+        "id": "KALITEXT000020969708"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 99 du 6 avril 2009 relatif aux salaires aux 1er avril et 1er juillet 2009 (annexe I)",
+        "id": "KALITEXT000020969720"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 3 du 2 juin 2009 à l'accord du 16 février 2004 relatif aux rémunérations des personnels ambulanciers",
+        "id": "KALITEXT000021118492"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 14 décembre 2009 relatif à la revalorisation des rémunérations",
+        "id": "KALITEXT000022018224"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 6 du 12 novembre 2009 relatif aux rémunérations",
+        "id": "KALITEXT000022107324"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 7 du 2 février 2011 relatif aux taux horaires et aux rémunérations annuelles garanties",
+        "id": "KALITEXT000024271742"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 76 du 23 février 2011 relatif aux rémunérations minimales garanties",
+        "id": "KALITEXT000024286799"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 84 du 23 février 2011 relatif aux salaires mensuels garantis",
+        "id": "KALITEXT000024286787"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 86 du 23 février 2011 relatif aux salaires mensuels garantis",
+        "id": "KALITEXT000024286775"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 100 du 23 février 2011 relatif aux salaires mensuels garantis",
+        "id": "KALITEXT000024286764"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 23 mars 2011 relatif à la revalorisation des rémunérations au 1er avril 2011",
+        "id": "KALITEXT000024402225"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 77 du 16 avril 2012 relatif aux rémunérations minimales annuelles au 1er avril 2012",
+        "id": "KALITEXT000026272073"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 85 du 16 avril 2012 relatif aux salaires mensuels garantis au 1er avril 2012",
+        "id": "KALITEXT000026272084"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 87 du 16 avril 2012 relatif aux taux horaires et aux salaires mensuels garantis au 1er avril 2012",
+        "id": "KALITEXT000026272096"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 101 du 16 avril 2012 relatif aux salaires au 1er avril 2012",
+        "id": "KALITEXT000026272104"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 8 du 26 mars 2012 à l'accord du 1er février 2003 relatif aux rémunérations conventionnelles",
+        "id": "KALITEXT000026205513"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 9 du 21 novembre 2012 à l'accord du 1er février 2003 relatif aux rémunérations conventionnelles",
+        "id": "KALITEXT000027041397"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 19 décembre 2012 relatif aux rémunérations annuelles garanties au 1er janvier 2013",
+        "id": "KALITEXT000027195029"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 78 du 19 février 2013 relatif aux rémunérations minimales annuelles au 1er janvier 2013",
+        "id": "KALITEXT000027627801"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 86 du 19 février 2013 relatif aux salaires mensuels garantis au 1er janvier 2013",
+        "id": "KALITEXT000027627823"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 88 du 19 février 2013 relatif aux salaires mensuels garantis au 1er janvier 2013",
+        "id": "KALITEXT000027627789"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 102 du 19 février 2013 relatif aux rémunérations conventionnelles au 1er janvier 2013",
+        "id": "KALITEXT000027627812"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 10 du 21 mars 2013 relatif aux rémunérations conventionnelles au 1er mai 2013",
+        "id": "KALITEXT000027667201"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 3 novembre 2015 relatif aux rémunérations conventionnelles",
+        "id": "KALITEXT000032048660"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 13 du 12 février 2016 relatif aux rémunérations conventionnelles dans les entreprises de transport de déménagement",
+        "id": "KALITEXT000032719135"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 4 du 16 juin 2016 relatif aux rémunérations du transport sanitaire",
+        "id": "KALITEXT000033295267"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 14 du 13 décembre 2016 relatif aux rémunérations conventionnelles dans les entreprises de déménagement",
+        "id": "KALITEXT000034764144"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 7 avril 2017 relatif aux rémunérations conventionnelles",
+        "id": "KALITEXT000035533064"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 108 du 18 avril 2017 relatif à l'annexe I « Salaires ouvriers »",
+        "id": "KALITEXT000035590688"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 15 du 15 mai 2017 relatif aux rémunérations conventionnelles dans les entreprises de déménagement",
+        "id": "KALITEXT000035658095"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 10 du 30 juin 2017 relatif à la rémunération des personnels des entreprises exerçant des activités de prestations logistiques",
+        "id": "KALITEXT000035993932"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 83 du 15 décembre 2017 relatif aux rémunérations conventionnelles (annexe IV)",
+        "id": "KALITEXT000037079726"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 91 du 15 décembre 2017 relatif aux rémunérations conventionnelles (annexe III)",
+        "id": "KALITEXT000037079742"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 93 du 15 décembre 2017 relatif aux rémunérations conventionnelles (annexe II)",
+        "id": "KALITEXT000037079759"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 109 du 15 décembre 2017 relatif aux rémunérations conventionnelles (annexe I)",
+        "id": "KALITEXT000037079776"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 6 mars 2018 portant revalorisation des rémunérations conventionnelles",
+        "id": "KALITEXT000037412142"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 16 du 4 mai 2018 relatif aux rémunérations conventionnelles dans les entreprises de transport de déménagement",
+        "id": "KALITEXT000037506244"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 11 du 30 juillet 2018 relatif aux rémunérations des personnels des entreprises exerçant des activités de prestations logistiques",
+        "id": "KALITEXT000038283589"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 111 du 19 décembre 2018 relatif aux rémunérations conventionnelles (annexe I)",
+        "id": "KALITEXT000038616893"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 94 du 19 décembre 2018 relatif aux rémunérations conventionnelles (annexe II)",
+        "id": "KALITEXT000038616878"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 92 du 19 décembre 2018 relatif aux rémunérations conventionnelles (annexe III)",
+        "id": "KALITEXT000038616863"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 84 du 19 décembre 2018 relatif aux rémunérations conventionnelles (annexe IV)",
+        "id": "KALITEXT000038616849"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 15 mai 2019 relatif aux rémunérations conventionnelles au 1er juin 2019",
+        "id": "KALITEXT000039195040"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 17 du 15 mai 2019 à l'accord du 1er février 2003 relatif aux rémunérations conventionnelles dans les entreprises de transport de déménagement",
+        "id": "KALITEXT000039333210"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 113 du 3 mars 2020 relatif aux rémunérations conventionnelles au 1er mars 2020 (annexe I)",
+        "id": "KALITEXT000042258665"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 95 du 3 mars 2020 relatif aux salaires mensuels garantis au 1er mars 2020 (annexe II)",
+        "id": "KALITEXT000042258681"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 93 du 3 mars 2020 relatif aux salaires mensuels garantis au 1er mars 2020 (annexe III)",
+        "id": "KALITEXT000042258697"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 85 du 3 mars 2020 relatif aux rémunérations annuelles minimales au 1er mars 2020 (annexe IV)",
+        "id": "KALITEXT000042258713"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 23 octobre 2020 relatif à la revalorisation des rémunérations conventionnelles",
+        "id": "KALITEXT000043251237"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 5 février 2021 relatif aux rémunérations conventionnelles des personnels ambulanciers et à l'engagement d'ouverture de négociations à venir (transport sanitaire)",
+        "id": "KALITEXT000043830183"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 18 du 12 février 2021 à l'accord du 1er février 2003 relatif aux rémunérations conventionnelles dans les entreprises de transport de déménagement",
+        "id": "KALITEXT000043919212"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 114 du 19 mars 2021 relatif aux rémunérations conventionnelles (annexe I)",
+        "id": "KALITEXT000044029842"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 96 du 19 mars 2021 relatif aux salaires mensuels garantis (annexe II)",
+        "id": "KALITEXT000044029864"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 94 du 19 mars 2021 relatif aux salaires mensuels garantis (annexe III)",
+        "id": "KALITEXT000044029889"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 86 du 19 mars 2021 relatif aux rémunérations annuelles minimales (annexe IV)",
+        "id": "KALITEXT000044029914"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 19 du 1er février 2022 à l'accord du 1er février 2003 relatif aux rémunérations conventionnelles dans les entreprises de transport de déménagement",
+        "id": "KALITEXT000045953146"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 3 février 2022 relatif à la revalorisation des rémunérations conventionnelles pour l'année 2022 ",
+        "id": "KALITEXT000045953122"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 6 du 28 mars 2022 à l'accord du 16 février 2004 relatif aux rémunérations conventionnelles des personnels ambulanciers des entreprises de transport sanitaire",
+        "id": "KALITEXT000046043304"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 115 du 23 mars 2022 relatif aux rémunérations conventionnelles des personnels ouvriers (annexe I de la convention collective)",
+        "id": "KALITEXT000046265328"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 97 du 23 mars 2022 relatif aux salaires des employés (annexe II de la convention collective)",
+        "id": "KALITEXT000046265346"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 95 du 23 mars 2022 relatif aux salaires des techniciens et agents de maîtrise (annexe III de la convention collective)",
+        "id": "KALITEXT000046265363"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 87 du 23 mars 2022 relatif aux rémunérations annuelles minimales des ingénieurs et cadres (annexe IV de la convention collective)",
+        "id": "KALITEXT000046265380"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 20 du 19 octobre 2022 à l'accord du 1er février 2003 relatif aux rémunérations conventionnelles dans les entreprises de transport de déménagement ",
+        "id": "KALITEXT000047006660"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 25 octobre 2022 relatif à la revalorisation des rémunérations conventionnelles garanties",
+        "id": "KALITEXT000047086551"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 96 du 10 novembre 2022 relatif aux rémunérations conventionnelles des techniciens et agents de maîtrise (annexe III de la convention collective)",
+        "id": "KALITEXT000047086601"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 98 du 10 novembre 2022 relatif aux salaires des employés (annexe II de la convention collective)",
+        "id": "KALITEXT000047086585"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 116 du 10 novembre 2022 relatif aux rémunérations conventionnelles des personnels ouvriers (annexe I de la convention collective)",
+        "id": "KALITEXT000047086569"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 88 du 10 novembre 2022 relatif aux barèmes des rémunérations conventionnelles des ingénieurs et cadres (annexe IV de la convention collective)",
+        "id": "KALITEXT000047463578"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 89 du 27 janvier 2023 à l'avenant n° 88 du 10 novembre 2022 relatif aux barèmes des rémunérations conventionnelles des ingénieurs et cadres (annexe IV de la convention collective)",
+        "id": "KALITEXT000047463593"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 7 du 19 juin 2023 à l'accord du 16 février 2004 relatif aux rémunérations conventionnelles des personnels ambulanciers des entreprises de transport sanitaire",
+        "id": "KALITEXT000048051720"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 90 du 28 juin 2023 relatif aux rémunérations conventionnelles des ingénieurs et cadres (annexe IV de la convention collective)",
+        "id": "KALITEXT000048213766"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 97 du 28 juin 2023 relatif aux rémunérations conventionnelles des techniciens et agents de maîtrise (annexe III de la convention collective)",
+        "id": "KALITEXT000048213753"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 99 du 28 juin 2023 relatif aux rémunérations conventionnelles des employés (annexe II de la convention collective)",
+        "id": "KALITEXT000048213740"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 117 du 28 juin 2023 relatif aux rémunérations conventionnelles des personnels ouvriers (annexe I de la convention collective)",
+        "id": "KALITEXT000048213727"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 21 du 19 septembre 2023 relatif aux rémunérations conventionnelles dans les entreprises de transport de déménagement",
+        "id": "KALITEXT000048638229"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Accord du 11 octobre 2023 relatif à la revalorisation des rémunérations",
+        "id": "KALITEXT000049067154"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 118 du 16 octobre 2023 relatif aux rémunérations conventionnelles des ouvriers (annexe 1 de la convention collective)",
+        "id": "KALITEXT000048974039"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 100 du 16 octobre 2023 relatif aux rémunérations conventionnelles des employés (annexe 2 de la convention collective)",
+        "id": "KALITEXT000048974052"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 98 du 16 octobre 2023 relatif aux rémunérations conventionnelles des techniciens et agents de maîtrise (annexe 3 de la convention collective)",
+        "id": "KALITEXT000048974065"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 91 du 16 octobre 2023 relatif aux rémunérations conventionnelles des ingénieurs et cadres (annexe 4 de la convention collective)",
+        "id": "KALITEXT000048974078"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 22 du 16 janvier 2024 relatif aux rémunérations conventionnelles dans les entreprises de transport de déménagement",
+        "id": "KALITEXT000049308852"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 119 du 23 janvier 2025 relatif aux rémunérations conventionnelles des ouvriers (annexe 1 de la convention collective)",
+        "id": "KALITEXT000051537463"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 101 du 23 janvier 2025 relatif aux rémunérations conventionnelles des employés (annexe 2 de la convention collective)",
+        "id": "KALITEXT000051537452"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 99 du 23 janvier 2025 relatif aux rémunérations conventionnelles des techniciens et agents de maîtrise (annexe 3 de la convention collective)",
+        "id": "KALITEXT000051537441"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 92 du 23 janvier 2025 relatif aux rémunérations conventionnelles des ingénieurs et cadres (annexe 4 de la convention collective)",
+        "id": "KALITEXT000051537431"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 23 du 27 février 2025 relatif aux rémunérations conventionnelles dans les entreprises de transport de déménagement",
+        "id": "KALITEXT000051834473"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 16 du 9 avril 2025 relatif à la revalorisation des minima conventionnels",
+        "id": "KALITEXT000051927426"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 8 du 6 mai 2025 à l'accord du 16 février 2004 relatif aux rémunérations conventionnelles des personnels ambulanciers des entreprises de transport sanitaire",
+        "id": "KALITEXT000052051824"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 120 du 27 novembre 2025 relatif aux rémunérations conventionnelles des ouvriers (annexe 1 de la convention collective)",
+        "id": "KALITEXT000053914012"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 102 du 27 novembre 2025 relatif aux rémunérations conventionnelles des employés (annexe 2 de la convention collective)",
+        "id": "KALITEXT000053914023"
+      },
+      {
+        "path": "/Convention collective nationale des transports routiers et activités auxiliaires du transport du 21 décembre 1950/",
+        "titre": "Avenant n° 24 du 21 janvier 2026 relatif aux rémunérations conventionnelles dans les entreprises de transport de déménagement",
+        "id": "KALITEXT000054253951"
+      }
+    ]
   },
   {
     "idcc": "29",
-    "status": "error",
-    "http_status": 500,
-    "step": "consult",
-    "resolved_kali_id": "KALITEXT000005652650",
-    "detail": "{\"timestamp\":1784246250483,\"error\":500,\"status\":\"Internal Server Error\",\"message\":\"Une exception non gérée est survenue, veuillez contacter l'administrateur\",\"errorCode\":null,\"exceptionDetails\":null} | id_utilisé=KALITEXT000005652650"
+    "status": "ok",
+    "titre": "Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.",
+    "salary_sections_found": 57,
+    "salary_sections": [
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Maintien du salaire",
+        "id": "KALISCTA000005763834"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Partie IV : Rémunération ",
+        "id": "KALISCTA000022347545"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Rémunération du temps de permanence",
+        "id": "KALISCTA000005758194"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Rémunération du travail effectué",
+        "id": "KALISCTA000005758195"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Rémunération du temps de permanence à domicile",
+        "id": "KALISCTA000005758198"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Rémunération du travail effectué",
+        "id": "KALISCTA000005758199"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.//",
+        "titre": "Titre VIII : Détermination de la rémunération",
+        "id": "KALISCTA000005737881"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Rémunération des jeunes de moins de dix-huit ans.",
+        "id": "KALISCTA000005763797"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.///",
+        "titre": "08.02. Salaire minimum conventionnel",
+        "id": "KALISCTA000022158849"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.///",
+        "titre": "08.05. Modalités de paiement et bulletins de salaire",
+        "id": "KALISCTA000005758204"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.//////",
+        "titre": "Rémunération",
+        "id": "KALISCTA000005758206"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.//////",
+        "titre": "Rémunération",
+        "id": "KALISCTA000005758208"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.//////",
+        "titre": "Rémunération",
+        "id": "KALISCTA000005758210"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.//////",
+        "titre": "Plafonnement mensuel des indemnités et des rémunérations forfaitaires pour gardes, astreintes et appels exceptionnels",
+        "id": "KALISCTA000005758212"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Classification et rémunérations.",
+        "id": "KALISCTA000021216698"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Rémunération",
+        "id": "KALISCTA000005763960"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Rémunération",
+        "id": "KALISCTA000005763960"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Rémunération",
+        "id": "KALISCTA000005758408"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Rémunération",
+        "id": "KALISCTA000005763884"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du temps de permanence",
+        "id": "KALISCTA000021211860"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du travail effectué",
+        "id": "KALISCTA000021212590"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du temps de permanence",
+        "id": "KALISCTA000021211860"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du travail effectué",
+        "id": "KALISCTA000021212590"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du temps d'astreinte à domicile",
+        "id": "KALISCTA000021212679"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du travail effectué",
+        "id": "KALISCTA000021212681"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du temps d'astreinte à domicile",
+        "id": "KALISCTA000021212679"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du travail effectué",
+        "id": "KALISCTA000021212681"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du temps d'astreinte à domicile",
+        "id": "KALISCTA000021212679"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du travail effectué",
+        "id": "KALISCTA000021212681"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du temps de permanence",
+        "id": "KALISCTA000021211860"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du travail effectué",
+        "id": "KALISCTA000021212590"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du temps de permanence",
+        "id": "KALISCTA000021211860"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du travail effectué",
+        "id": "KALISCTA000021212590"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du temps d'astreinte à domicile",
+        "id": "KALISCTA000021212679"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du travail effectué",
+        "id": "KALISCTA000021212681"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du temps d'astreinte à domicile",
+        "id": "KALISCTA000021212679"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du travail effectué",
+        "id": "KALISCTA000021212681"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du temps d'astreinte à domicile",
+        "id": "KALISCTA000021212679"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./////",
+        "titre": "Rémunération du travail effectué",
+        "id": "KALISCTA000021212681"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Salaire du personnel féminin",
+        "id": "KALISCTA000005758276"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Salaire du personnel mineur de moins de dix-huit ans",
+        "id": "KALISCTA000005758277"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.////",
+        "titre": "Rémunération.",
+        "id": "KALISCTA000005758309"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.///",
+        "titre": "09.04. Rémunération des congés",
+        "id": "KALISCTA000005758303"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Annexe I : Classification des emplois et grille de salaires",
+        "id": "KALITEXT000005652664"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Annexe II : Classification des emplois des cadres et assimilés cadres",
+        "id": "KALITEXT000005652666"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Avenant n° 2003-05 du 25 novembre 2003 relatif à la classification (modifications de filières)",
+        "id": "KALITEXT000005652711"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Avenant n° 2003-06 du 25 novembre 2003 relatif aux classifications",
+        "id": "KALITEXT000005652713"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Avenant n° 2009-03 du 3 avril 2009 relatif aux salaires minima",
+        "id": "KALITEXT000021882373"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Avenant n° 2010-05 du 29 juin 2010 relatif aux salaires et aux primes",
+        "id": "KALITEXT000029432795"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Adhésion par lettre du 3 juillet 2015 du SNALESS à l'avenant n°  2015-02 du 27 janvier 2015 relatif au salaire minimum conventionnel au 1er janvier 2015",
+        "id": "KALITEXT000031415725"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Avenant n° 2017-02 du 15 mars 2017 relatif à la valeur du point et aux classifications",
+        "id": "KALITEXT000035744534"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951.",
+        "titre": "Textes Salaires",
+        "id": null
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Avenant n° 2001-03 du 20 février 2001 relatif aux salaires",
+        "id": "KALITEXT000005652752"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Avenant n° 2002-01 du 25 mars 2002 relatif aux salaires aux 1er janvier 2002 et 1er mars 2002 ",
+        "id": "KALITEXT000005652754"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Avenant n° 2005-01 du 12 mai 2005 relatif aux salaires",
+        "id": "KALITEXT000005652756"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Avenant n° 2005-08 du 13 septembre 2005 relatif aux salaires",
+        "id": "KALITEXT000005652760"
+      },
+      {
+        "path": "/Convention collective nationale des établissements privés d'hospitalisation, de soins, de cure et de garde à but non lucratif du 31 octobre 1951./",
+        "titre": "Avenant n° 2015-02 du 27 janvier 2015 relatif au salaire minimum conventionnel au 1er janvier 2015",
+        "id": "KALITEXT000031114032"
+      }
+    ]
   },
   {
     "idcc": "44",
-    "status": "error",
-    "http_status": 500,
-    "step": "consult",
-    "resolved_kali_id": "KALITEXT000005677795",
-    "detail": "{\"timestamp\":1784246252045,\"error\":500,\"status\":\"Internal Server Error\",\"message\":\"Une exception non gérée est survenue, veuillez contacter l'administrateur\",\"errorCode\":null,\"exceptionDetails\":null} | id_utilisé=KALITEXT000005677795"
+    "status": "ok",
+    "titre": "Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956",
+    "salary_sections_found": 41,
+    "salary_sections": [
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956//",
+        "titre": "Salaires",
+        "id": "KALISCTA000005751431"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "OUVRIERS ET COLLABORATEURS, ANNEXE I DE L'AVENANT \"COLLABORATEURS\", Classification employés Avenant n° 1 du 11 février 1971",
+        "id": "KALITEXT000005677788"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 10 août 1978 portant révision des classifications",
+        "id": "KALITEXT000005677809"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 10 août 1978 portant révision des classifications - document 1",
+        "id": "KALITEXT000005677811"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 10 août 1978 portant révision des classifications - document 2",
+        "id": "KALITEXT000005677813"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 10 août 1978 portant révision des classifications - document 3",
+        "id": "KALITEXT000005677815"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": " Accord du 10 août 1978 portant révision des classifications - document 4",
+        "id": "KALITEXT000005677817"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 10 août 1978 portant révision des classifications - note 1 ",
+        "id": "KALITEXT000005677819"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 10 août 1978 portant révision des classifications - note 2",
+        "id": "KALITEXT000005677821"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Avis de la CPNI relatif à l'accord du 19 avril 2006 sur les salaires minima Avis de la CPNI du 1 février 2007",
+        "id": "KALITEXT000005677865"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 17 juin 2010 relatif à la prise en compte du baccalauréat professionnel dans les classifications",
+        "id": "KALITEXT000023269865"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 1er juillet 2015 relatif à la reconnaissance des certificats de qualification professionnelle dans les classifications",
+        "id": "KALITEXT000031260584"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 16 juin 2021 relatif à la reconnaissance du certificat de qualification professionnelle « technico-commercial » dans les classifications résultant de la convention",
+        "id": "KALITEXT000044339784"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 4 juillet 2024 relatif à la structuration des salaires minima",
+        "id": "KALITEXT000050228597"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord de méthode du 12 février 2025 relatif à la mise en œuvre de groupes de travail paritaires « Classification »",
+        "id": "KALITEXT000051834485"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956",
+        "titre": "Textes Salaires",
+        "id": null
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "SALAIRES Accord du 15 mai 1991",
+        "id": "KALITEXT000005677867"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "SALAIRES Accord du 28 novembre 1991",
+        "id": "KALITEXT000005677869"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "SALAIRES Accord du 4 décembre 1992",
+        "id": "KALITEXT000005677871"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "SALAIRES Accord du 15 décembre 1995",
+        "id": "KALITEXT000005677873"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "SALAIRES Accord du 5 février 1999",
+        "id": "KALITEXT000005677875"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "SALAIRES Accord du 5 février 1999",
+        "id": "KALITEXT000005677877"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "SALAIRES Accord du 9 février 2000",
+        "id": "KALITEXT000005677879"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 19 avril 2006 relatif aux salaires",
+        "id": "KALITEXT000005677881"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Salaires Avenant du 19 avril 2006",
+        "id": "KALITEXT000005677883"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 1 février 2007 relatif aux salaires",
+        "id": "KALITEXT000005677885"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Avenant du 24 janvier 2008 relatif aux salaires minima (1)",
+        "id": "KALITEXT000018879246"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 7 janvier 2009 relatif aux salaires minima pour l'année 2009",
+        "id": "KALITEXT000020549642"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 26 janvier 2011 relatif aux salaires minima et à la valeur du point pour l'année 2011",
+        "id": "KALITEXT000023995685"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Avenant du 30 novembre 2011 à l'accord du 26 janvier 2011 relatif aux salaires et à la valeur du point",
+        "id": "KALITEXT000025351073"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 3 janvier 2012 relatif aux salaires minima au 1er janvier 2012",
+        "id": "KALITEXT000025591218"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 14 décembre 2012 relatif aux salaires minima pour l'année 2013",
+        "id": "KALITEXT000027147240"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 18 décembre 2013 relatif aux salaires minima pour l'année 2014",
+        "id": "KALITEXT000028755444"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 15 décembre 2015 relatif aux salaires minima pour l'année 2016",
+        "id": "KALITEXT000032173521"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 20 décembre 2016 relatif aux salaires minima au 1er janvier 2017 et au 1er avril 2017",
+        "id": "KALITEXT000034625267"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 12 février 2020 relatif aux salaires minima au 1er mars 2020",
+        "id": "KALITEXT000042598024"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 16 décembre 2020 relatif aux salaires minima au 1er janvier 2021",
+        "id": "KALITEXT000043562326"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 15 décembre 2021 relatif aux salaires minima au 1er janvier 2022",
+        "id": "KALITEXT000045429757"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 21 septembre 2022 relatif aux salaires minima au 1er octobre 2022",
+        "id": "KALITEXT000046737330"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 9 décembre 2024 relatif aux salaires minima au 1er janvier 2025",
+        "id": "KALITEXT000051294779"
+      },
+      {
+        "path": "/Convention collective nationale des industries chimiques et connexes du 30 décembre 1952. Étendue par arrêté du 13 novembre 1956 JONC 12 décembre 1956/",
+        "titre": "Accord du 3 décembre 2025 relatif aux salaires minima au 1er janvier 2026",
+        "id": "KALITEXT000053721357"
+      }
+    ]
   }
 ]
