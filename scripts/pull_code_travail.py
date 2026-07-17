@@ -1,28 +1,27 @@
 #!/usr/bin/env python3
 """
-Aspirateur Code du travail — récupère des articles précis du Code du travail
-(fonds LEGI) depuis l'API PISTE/Légifrance.
+Aspirateur d'articles de code (fonds LEGI) depuis l'API PISTE/Légifrance --
+généralisé pour n'importe quel code (Code du travail, Code de la sécurité
+sociale, etc.), pas seulement le Code du travail.
 
-Le Code du travail entier fait des dizaines de milliers d'articles — inutile
-de tout aspirer. Ce script prend une LISTE D'ARTICLES PRÉCIS (ex: L3121-1,
-R3121-2...) et récupère leur contenu à jour, un par un.
+Chaque code entier fait des dizaines de milliers d'articles — inutile de
+tout aspirer. Ce script prend une LISTE D'ARTICLES PRÉCIS et récupère leur
+contenu à jour, un par un, pour LE CODE INDIQUÉ.
 
 Usage:
-    python3 pull_code_travail.py --articles-file articles_list.txt --out output/code-travail
-    python3 pull_code_travail.py --articles L3121-1,L3141-3 --out output/code-travail
+    python3 pull_code_articles.py --articles-file articles_list.txt \
+        --code-id LEGITEXT000006072050 --out output/code-travail
+    python3 pull_code_articles.py --articles L136-1,L242-1 \
+        --code-id LEGITEXT000006073189 --out output/code-secu
 
-Le fichier articles_list.txt : un article par ligne, ex.
-    L3121-1
-    L3141-3
-    R3243-1
+Identifiants de codes connus (stables, inutile de les rechercher) :
+    Code du travail            : LEGITEXT000006072050
+    Code de la sécurité sociale: LEGITEXT000006073189
 
 Variables d'environnement requises (GitHub Secrets):
     PISTE_CLIENT_ID
     PISTE_CLIENT_SECRET
     PISTE_ENV = "sandbox" ou "production"
-
-Note: l'identifiant chronique (textId) du Code du travail lui-même est
-LEGITEXT000006072050 — stable et bien connu, inutile de le rechercher.
 """
 import os
 import sys
@@ -35,6 +34,7 @@ import urllib.error
 import urllib.parse
 
 CODE_TRAVAIL_TEXT_ID = "LEGITEXT000006072050"
+CODE_SECU_TEXT_ID = "LEGITEXT000006073189"
 
 
 def get_urls():
@@ -87,14 +87,15 @@ def call_api(base_url, token, path, body):
         return {"_error": "exception", "_detail": f"{type(e).__name__}: {e}"}
 
 
-def fetch_article_by_num(base_url, token, article_num):
+def fetch_article_by_num(base_url, token, article_num, code_id=CODE_TRAVAIL_TEXT_ID):
     """
     Récupération directe, sans recherche intermédiaire : l'endpoint
     getArticleWithIdAndNum accepte directement le numéro d'article
-    (ex: "L3111-2") avec l'id du Code du travail lui-même.
+    (ex: "L3111-2") avec l'id du CODE concerné (Code du travail par
+    défaut, mais fonctionne pour n'importe quel code -- CSS, etc.).
     """
     result = call_api(base_url, token, "/consult/getArticleWithIdAndNum", {
-        "id": CODE_TRAVAIL_TEXT_ID,
+        "id": code_id,
         "num": article_num,
     })
     return result
@@ -106,6 +107,8 @@ def main():
     ap.add_argument("--articles-file", help="Fichier texte, un article par ligne")
     ap.add_argument("--out", default="output/code-travail")
     ap.add_argument("--delay", type=float, default=1.2)
+    ap.add_argument("--code-id", default=CODE_TRAVAIL_TEXT_ID,
+                     help="Identifiant LEGITEXT du code (défaut: Code du travail)")
     args = ap.parse_args()
 
     client_id = os.environ.get("PISTE_CLIENT_ID")
@@ -126,14 +129,14 @@ def main():
 
     token_url, base_url = get_urls()
     token = get_token(token_url, client_id, client_secret)
-    print(f"Token OK. {len(articles)} article(s) à traiter.")
+    print(f"Token OK. Code: {args.code_id}. {len(articles)} article(s) à traiter.")
 
     os.makedirs(args.out, exist_ok=True)
     summary = []
 
     for i, art in enumerate(articles, 1):
         print(f"[{i}/{len(articles)}] Article {art}...", end=" ")
-        result = fetch_article_by_num(base_url, token, art)
+        result = fetch_article_by_num(base_url, token, art, code_id=args.code_id)
         safe_name = art.replace("/", "-")
         out_path = os.path.join(args.out, f"{safe_name}.json")
         with open(out_path, "w", encoding="utf-8") as f:
