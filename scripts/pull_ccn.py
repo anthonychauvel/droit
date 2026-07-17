@@ -123,35 +123,25 @@ def extract_kali_id_from_search(search_result):
 
 def fetch_one_idcc(base_url, token, idcc, debug_dir=None):
     """
-    Récupère le conteneur KALI complet pour un IDCC donné, via le
-    parcours officiel en 2 étapes : /search (résoudre l'id KALICONT)
-    puis /consult/kaliContIdcc ou /consult/kaliCont avec cet id.
+    Récupère le conteneur KALI complet pour un IDCC donné.
+
+    Note historique: on avait ajouté un détour par /search pour résoudre
+    un id KALICONT, en pensant que kaliContIdcc l'exigeait. En pratique,
+    /search (fond KALI, champ IDCC) renvoie des ids KALITEXT (textes
+    individuels : avenants, accords), pas des KALICONT (conteneur de la
+    convention) -- passer un KALITEXT à kaliContIdcc échoue (erreur 500).
+    kaliContIdcc accepte directement le numéro IDCC brut (confirmé par sa
+    propre documentation: "Identifiant de la convention collective OU
+    son numéro IDCC"). Le blocage qu'on avait au début était la
+    souscription API manquante, pas le format -- donc appel direct.
     """
-    search_result = search_kali_by_idcc(base_url, token, idcc)
-
-    if debug_dir:
+    result = call_api(base_url, token, "/consult/kaliContIdcc", {"id": str(idcc)})
+    if debug_dir and "_error" in result:
         os.makedirs(debug_dir, exist_ok=True)
-        with open(os.path.join(debug_dir, f"{idcc}_search_raw.json"), "w", encoding="utf-8") as f:
-            json.dump(search_result, f, ensure_ascii=False, indent=2)
-
-    if "_error" in search_result:
-        return {"_error": search_result["_error"], "_detail": search_result.get("_detail", ""), "_step": "search"}
-
-    kali_id, raw_match = extract_kali_id_from_search(search_result)
-    if not kali_id:
-        return {
-            "_error": "not_found_in_search",
-            "_detail": json.dumps(search_result)[:500],
-            "_step": "extract_id",
-        }
-
-    # kaliContIdcc accepte soit l'IDCC brut, soit l'id KALICONT résolu.
-    # On utilise l'id résolu (documentation officielle), plus fiable.
-    result = call_api(base_url, token, "/consult/kaliContIdcc", {"id": kali_id})
+        with open(os.path.join(debug_dir, f"{idcc}_consult_raw.json"), "w", encoding="utf-8") as f:
+            json.dump(result, f, ensure_ascii=False, indent=2)
     if "_error" in result:
         result["_step"] = "consult"
-        result["_resolved_kali_id"] = kali_id
-        result["_detail"] = (result.get("_detail","") + f" | id_utilisé={kali_id}")[:400]
     return result
 
 
@@ -220,7 +210,6 @@ def main():
                 "idcc": idcc, "status": "error",
                 "http_status": result.get("_error"),
                 "step": result.get("_step"),
-                "resolved_kali_id": result.get("_resolved_kali_id"),
                 "detail": result.get("_detail", "")[:300],
             })
             continue
