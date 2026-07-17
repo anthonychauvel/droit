@@ -125,7 +125,7 @@ def extract_kali_id_from_search(search_result):
     return None, None
 
 
-def fetch_one_idcc(base_url, token, idcc, debug_dir=None):
+def fetch_one_idcc(base_url, token, idcc, debug_dir=None, max_retries=2, retry_delay=2.0):
     """
     Récupère le conteneur KALI complet pour un IDCC donné.
 
@@ -138,14 +138,32 @@ def fetch_one_idcc(base_url, token, idcc, debug_dir=None):
     propre documentation: "Identifiant de la convention collective OU
     son numéro IDCC"). Le blocage qu'on avait au début était la
     souscription API manquante, pas le format -- donc appel direct.
+
+    Nouvelle tentative automatique sur les erreurs 500 spécifiquement :
+    le message serveur ("exception non gérée") suggère un plantage
+    ponctuel plutôt qu'un rejet définitif -- confirmé identique en
+    sandbox ET en production, donc potentiellement transitoire plutôt
+    que lié à l'IDCC lui-même. Pas de retry sur les autres codes
+    d'erreur (403, 429...) qui sont déterministes, pas la peine.
     """
-    result = call_api(base_url, token, "/consult/kaliContIdcc", {"id": str(idcc)})
+    attempt = 0
+    result = None
+    while attempt <= max_retries:
+        result = call_api(base_url, token, "/consult/kaliContIdcc", {"id": str(idcc)})
+        if "_error" not in result:
+            return result
+        if result.get("_error") != 500 or attempt == max_retries:
+            break
+        attempt += 1
+        time.sleep(retry_delay)
+
     if debug_dir and "_error" in result:
         os.makedirs(debug_dir, exist_ok=True)
         with open(os.path.join(debug_dir, f"{idcc}_consult_raw.json"), "w", encoding="utf-8") as f:
             json.dump(result, f, ensure_ascii=False, indent=2)
     if "_error" in result:
         result["_step"] = "consult"
+        result["_retries"] = attempt
     return result
 
 
@@ -215,6 +233,7 @@ def main():
                 "http_status": result.get("_error"),
                 "step": result.get("_step"),
                 "detail": result.get("_detail", "")[:300],
+                "retries": result.get("_retries", 0),
             })
             continue
 
