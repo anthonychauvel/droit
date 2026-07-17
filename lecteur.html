@@ -125,10 +125,26 @@
   .result-row{
     display:flex; align-items:baseline; gap:14px;
     padding:14px 4px;
+    cursor:pointer;
+  }
+  .result-row-wrap{
     border-bottom:1px solid var(--line);
     cursor:pointer;
   }
-  .result-row:hover{ background:var(--paper-raised); }
+  .result-row-wrap:hover{ background:var(--paper-raised); }
+  .matched-sections{
+    display:flex; flex-wrap:wrap; gap:6px;
+    padding:0 4px 12px 88px;
+  }
+  .match-chip{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;
+    padding:3px 8px;
+    border-radius:20px;
+    background:var(--ccn-soft);
+    color:var(--ccn);
+  }
+  [data-panel="code"] .match-chip{ background:var(--code-soft); color:var(--code); }
   .result-num{
     font-family:'IBM Plex Mono', monospace;
     font-weight:600;
@@ -229,7 +245,7 @@
 <main>
   <div class="tab-panel" data-panel="ccn">
     <div class="search-row">
-      <input type="search" id="search-ccn" placeholder="IDCC ou nom de convention…" oninput="renderList('ccn')">
+      <input type="search" id="search-ccn" placeholder="IDCC, nom, ou mot-clé (ex: préavis, astreinte)…" oninput="renderList('ccn')">
       <button class="ghost" onclick="exportAll('ccn')">Exporter tout (.xlsx)</button>
     </div>
     <div id="list-ccn"></div>
@@ -250,6 +266,7 @@
 
 <script>
 let INDEX = { ccn: [], code: [] };
+let SEARCH_IDX = { ccn: [], code: [] };
 let CACHE = { ccn: {}, code: {} };
 
 async function loadIndexes(){
@@ -266,6 +283,11 @@ async function loadIndexes(){
       num: d.article, title: `Article ${d.article}`
     }));
   }catch(e){ console.warn('Index Code du travail indisponible', e); }
+
+  try{
+    const searchIdx = await fetchJSON('output/search-index.json');
+    SEARCH_IDX = searchIdx;
+  }catch(e){ console.warn('Index de recherche mots-clés indisponible (pas encore construit ?)', e); }
 
   document.getElementById('stats').innerHTML =
     `<span><b>${INDEX.ccn.length}</b> conventions collectives</span>` +
@@ -293,24 +315,55 @@ function renderList(kind){
   detailEl.classList.remove('show');
   listEl.style.display = 'block';
 
-  let items = INDEX[kind];
-  if(q){
-    items = items.filter(it => it.num.toLowerCase().includes(q) || it.title.toLowerCase().includes(q));
-  }
-  items = items.slice(0, 150); // évite de rendre des milliers de lignes d'un coup
-
-  if(items.length === 0){
-    listEl.innerHTML = `<div class="empty">Aucun résultat${q ? ` pour "${q}"` : ''}.</div>`;
+  if(!q){
+    const items = INDEX[kind].slice(0, 150);
+    listEl.innerHTML = items.length
+      ? items.map(it => resultRowHtml(kind, it.num, it.title, it.salaryHits)).join('')
+      : `<div class="empty">Aucun résultat.</div>`;
     return;
   }
 
-  listEl.innerHTML = items.map(it => `
-    <div class="result-row" onclick="openDetail('${kind}','${it.num}')">
-      <span class="result-num">${it.num}</span>
-      <span class="result-title">${escapeHtml(it.title)}</span>
-      ${it.salaryHits ? `<span class="result-flag">${it.salaryHits} section(s) salaire</span>` : ''}
+  // 1) correspondance directe sur le numéro ou le titre (rapide, index léger)
+  const directHits = new Map();
+  INDEX[kind].forEach(it => {
+    if(it.num.toLowerCase().includes(q) || it.title.toLowerCase().includes(q)){
+      directHits.set(it.num, { title: it.title, salaryHits: it.salaryHits, matchedSections: [] });
+    }
+  });
+
+  // 2) correspondance par mot-clé dans les titres de section (index de recherche)
+  const idxList = SEARCH_IDX[kind] || [];
+  idxList.forEach(entry => {
+    const sectionMatches = (entry.hits || []).filter(h => h.title.toLowerCase().includes(q));
+    if(sectionMatches.length){
+      const existing = directHits.get(entry.num);
+      const title = existing ? existing.title : entry.title;
+      const salaryHits = existing ? existing.salaryHits : 0;
+      directHits.set(entry.num, { title, salaryHits, matchedSections: sectionMatches.slice(0, 3) });
+    }
+  });
+
+  const items = Array.from(directHits.entries()).slice(0, 150);
+  listEl.innerHTML = items.length
+    ? items.map(([num, info]) => resultRowHtml(kind, num, info.title, info.salaryHits, info.matchedSections)).join('')
+    : `<div class="empty">Aucun résultat pour "${escapeHtml(q)}".</div>`;
+}
+
+function resultRowHtml(kind, num, title, salaryHits, matchedSections){
+  const sectionsHtml = (matchedSections && matchedSections.length)
+    ? `<div class="matched-sections">` + matchedSections.map(s =>
+        `<span class="match-chip">${escapeHtml(s.title)}</span>`).join('') + `</div>`
+    : '';
+  return `
+    <div class="result-row-wrap" onclick="openDetail('${kind}','${num}')">
+      <div class="result-row">
+        <span class="result-num">${num}</span>
+        <span class="result-title">${escapeHtml(title)}</span>
+        ${salaryHits ? `<span class="result-flag">${salaryHits} section(s) salaire</span>` : ''}
+      </div>
+      ${sectionsHtml}
     </div>
-  `).join('');
+  `;
 }
 
 async function openDetail(kind, num){
