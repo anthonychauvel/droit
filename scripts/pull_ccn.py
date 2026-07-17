@@ -125,7 +125,7 @@ def extract_kali_id_from_search(search_result):
     return None, None
 
 
-def fetch_one_idcc(base_url, token, idcc, debug_dir=None, max_retries=2, retry_delay=2.0):
+def fetch_one_idcc(base_url, token, idcc, debug_dir=None):
     """
     Récupère le conteneur KALI complet pour un IDCC donné.
 
@@ -139,31 +139,20 @@ def fetch_one_idcc(base_url, token, idcc, debug_dir=None, max_retries=2, retry_d
     son numéro IDCC"). Le blocage qu'on avait au début était la
     souscription API manquante, pas le format -- donc appel direct.
 
-    Nouvelle tentative automatique sur les erreurs 500 spécifiquement :
-    le message serveur ("exception non gérée") suggère un plantage
-    ponctuel plutôt qu'un rejet définitif -- confirmé identique en
-    sandbox ET en production, donc potentiellement transitoire plutôt
-    que lié à l'IDCC lui-même. Pas de retry sur les autres codes
-    d'erreur (403, 429...) qui sont déterministes, pas la peine.
+    Note sur le retry (retiré) : testé avec 2 tentatives supplémentaires
+    sur les 500 -- confirmé 0 succès n'en avait besoin (échecs
+    déterministes, pas transitoires). En mode --only-missing, la quasi-
+    totalité du lot restant est justement ces échecs connus : retenter
+    systématiquement doublait/triplait la durée du run pour zéro gain.
+    Retiré purement et simplement.
     """
-    attempt = 0
-    result = None
-    while attempt <= max_retries:
-        result = call_api(base_url, token, "/consult/kaliContIdcc", {"id": str(idcc)})
-        if "_error" not in result:
-            return result
-        if result.get("_error") != 500 or attempt == max_retries:
-            break
-        attempt += 1
-        time.sleep(retry_delay)
-
+    result = call_api(base_url, token, "/consult/kaliContIdcc", {"id": str(idcc)})
     if debug_dir and "_error" in result:
         os.makedirs(debug_dir, exist_ok=True)
         with open(os.path.join(debug_dir, f"{idcc}_consult_raw.json"), "w", encoding="utf-8") as f:
             json.dump(result, f, ensure_ascii=False, indent=2)
     if "_error" in result:
         result["_step"] = "consult"
-        result["_retries"] = attempt
     return result
 
 
@@ -273,6 +262,16 @@ def main():
             "salary_sections": salary_sections,
         })
         time.sleep(args.delay)
+
+    # Filet de sécurité: dédoublonne par IDCC avant d'écrire, "ok" prioritaire
+    # sur "error" pour le même IDCC (évite les doublons si une entrée existe
+    # déjà deux fois pour une raison ou une autre).
+    by_idcc = {}
+    for entry in summary:
+        idcc = entry["idcc"]
+        if idcc not in by_idcc or entry["status"] == "ok":
+            by_idcc[idcc] = entry
+    summary = list(by_idcc.values())
 
     with open(summary_path, "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
