@@ -65,7 +65,7 @@ jobs:
           python-version: "3.12"
 
       - name: Récupérer les CCN (KALI)
-        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout' }}
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |
           FLAG=""
           if [ "${{ github.event.inputs.seulement_manquants || 'oui' }}" = "oui" ]; then
@@ -78,32 +78,32 @@ jobs:
           fi
 
       - name: Compléter les avenants salaire (texte intégral)
-        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout' }}
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |
           python3 scripts/fetch_salary_details.py --ccn-dir output/ccn
 
       - name: Compléter les clauses heures sup/majoration/contingent
-        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout' }}
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |
           python3 scripts/fetch_overtime_details.py --ccn-dir output/ccn
 
       - name: Compléter les sections classification/coefficients
-        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout' }}
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |
           python3 scripts/fetch_classification_details.py --ccn-dir output/ccn
 
       - name: Récupérer le Code du travail
-        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout' }}
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |
           python3 scripts/pull_code_travail.py --articles-file articles_list.txt --code-id LEGITEXT000006072050 --out output/code-travail
 
       - name: Récupérer le Code de la sécurité sociale
-        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'code-secu' || github.event.inputs.cible == 'tout' }}
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'code-secu' || github.event.inputs.cible == 'tout') }}
         run: |
           python3 scripts/pull_code_travail.py --articles-file articles_list_css.txt --code-id LEGITEXT000006073189 --out output/code-secu
 
       - name: Récupérer la jurisprudence
-        if: ${{ github.event.inputs.cible == 'jurisprudence' || github.event.inputs.cible == 'tout' }}
+        if: ${{ always() && (github.event.inputs.cible == 'jurisprudence' || github.event.inputs.cible == 'tout') }}
         run: |
           python3 scripts/pull_jurisprudence.py --arrets-file arrets_list.txt --out output/jurisprudence
 
