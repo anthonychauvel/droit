@@ -133,20 +133,22 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ccn-dir", default="output/ccn")
     ap.add_argument("--code-dir", default="output/code-travail")
+    ap.add_argument("--code-secu-dir", default="output/code-secu")
     ap.add_argument("--out", default="output/search-index.json")
     args = ap.parse_args()
 
     ccn_index = build_ccn_index(args.ccn_dir)
     code_index = build_code_index(args.code_dir)
+    code_secu_index = build_code_index(args.code_secu_dir) if os.path.exists(args.code_secu_dir) else []
 
-    full_index = {"ccn": ccn_index, "code": code_index}
+    full_index = {"ccn": ccn_index, "code": code_index, "code_secu": code_secu_index}
 
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(full_index, f, ensure_ascii=False, separators=(",", ":"))
 
     size_kb = os.path.getsize(args.out) / 1024
-    print(f"Index construit: {len(ccn_index)} CCN, {len(code_index)} articles.")
+    print(f"Index construit: {len(ccn_index)} CCN, {len(code_index)} articles travail, {len(code_secu_index)} articles sécu.")
     print(f"Taille: {size_kb:.0f} Ko -> {args.out}")
 
 
