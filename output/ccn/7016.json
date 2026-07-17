@@ -3184,13 +3184,86 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705421",
+              "cid": "KALISCTA000005705421",
+              "intOrdre": 42949,
+              "etat": "DENONCE",
+              "title": "Salaires",
+              "dateModif": null,
+              "dateDebut": "2003-07-01",
+              "dateFin": "2009-02-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005804545",
+                  "cid": "KALIARTI000005804545",
+                  "intOrdre": 42949,
+                  "etat": "DENONCE",
+                  "num": null,
+                  "path": "/KALISCTA000005705421/KALIARTI000005804545",
+                  "pathTitle": [
+                    "Salaires"
+                  ],
+                  "content": "<p>Article 1er</p><p>Les dispositions du a) de l'article 14 de la convention collective nationale susvisée sont abrogées et remplacées par les dispositions suivantes :</p><p>Article 14</p><p>Rémunération a) Les salaires, exprimés en euros, sont fixés comme suit :</p><p><table><tbody><tr><td>NIVEAU </td><td>SALAIRE HORAIRE </td></tr><tr><td></td><td>(en euros) </td></tr><tr><td>I </td><td></td></tr><tr><td>(ex-120) </td><td>7,19 </td></tr><tr><td>II </td><td></td></tr><tr><td>(ex-130, ex-140)</td><td>7,50 </td></tr><tr><td>III </td><td></td></tr><tr><td>(ex-150, ex-160)</td><td>7,71 </td></tr><tr><td>IV </td><td></td></tr><tr><td>(ex-170, ex-180)</td><td>8,18 </td></tr><tr><td>V </td><td></td></tr><tr><td>(ex-200, ex-230,</td><td>11,02 </td></tr><tr><td>ex-260) </td><td></td></tr></tbody></table></p><p>Article 2</p><p>Les parties signataires demandent l'extension du présent avenant qui deviendra applicable le premier jour du mois suivant la parution de l'arrêté d'extension au Journal officiel.</p><p>Fait à Cachan, le 1er juillet 2003.</p><p><font color=\"#808080\" size=\"1\"><em>Arrêté du 21 octobre 2003 art. 1 : les dipositions de l'avenant n° 34 du 1er juillet 2003 à la convention collective nationale de travail du 30 janvier 1986 concernant les jardiniers et jardiniers-gardiens de propriétés privées sont rendues obligatoires pour tous les employeurs et tous les salariés compris dans le champ d'application professionnel et territorial de ladite convention, sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée.</em></font></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 34 2003-07-01 BO conventions collectives 2003-34 étendu par arrêté du 21 octobre 2003 JORF 7 novembre 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1057017600000,
+                  "dateFin": 1235088000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         }
       ],
       "articles": [],
