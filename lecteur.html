@@ -18,6 +18,8 @@
     --ccn-soft: rgba(31,95,91,0.10);
     --code: #7a2635;
     --code-soft: rgba(122,38,53,0.09);
+    --secu: #7d6a2e;
+    --secu-soft: rgba(125,106,46,0.10);
     --muted: #8b8577;
   }
   *{box-sizing:border-box;}
@@ -82,6 +84,7 @@
   }
   .tab.active[data-tab="ccn"]{ color:var(--ccn); border-color:var(--ccn); }
   .tab.active[data-tab="code"]{ color:var(--code); border-color:var(--code); }
+  .tab.active[data-tab="secu"]{ color:var(--secu); border-color:var(--secu); }
 
   main{ max-width:900px; margin:0 auto; padding:24px; }
 
@@ -98,6 +101,7 @@
   }
   input[type=search]:focus{ outline:2px solid var(--ccn); outline-offset:-1px; }
   .tab-panel[data-panel="code"] input:focus{ outline-color: var(--code); }
+  .tab-panel[data-panel="secu"] input:focus{ outline-color: var(--secu); }
 
   button{
     font-family:'IBM Plex Mono', monospace;
@@ -165,6 +169,7 @@
     color:var(--ccn);
   }
   [data-panel="code"] .match-chip{ background:var(--code-soft); color:var(--code); }
+  [data-panel="secu"] .match-chip{ background:var(--secu-soft); color:var(--secu); }
   .result-num{
     font-family:'IBM Plex Mono', monospace;
     font-weight:600;
@@ -173,6 +178,7 @@
     color:var(--ccn);
   }
   [data-panel="code"] .result-num{ color:var(--code); }
+  [data-panel="secu"] .result-num{ color:var(--secu); }
   .result-title{ font-size:15px; line-height:1.4; }
   .result-flag{
     margin-left:auto;
@@ -204,6 +210,7 @@
     font-weight:600;
   }
   [data-panel="code"] .detail-num{ color:var(--code); }
+  [data-panel="secu"] .detail-num{ color:var(--secu); }
   .detail-title{
     font-family:'Fraunces', serif;
     font-weight:600;
@@ -260,6 +267,7 @@
 <div class="tabs">
   <div class="tab active" data-tab="ccn" onclick="switchTab('ccn')">Conventions collectives</div>
   <div class="tab" data-tab="code" onclick="switchTab('code')">Code du travail</div>
+  <div class="tab" data-tab="secu" onclick="switchTab('secu')">Sécurité sociale</div>
 </div>
 
 <main>
@@ -281,14 +289,23 @@
     <div id="list-code"></div>
     <div class="detail" id="detail-code"></div>
   </div>
+
+  <div class="tab-panel" data-panel="secu" style="display:none">
+    <div class="search-row">
+      <input type="search" id="search-secu" placeholder="Numéro d'article, ex: L136-1…" oninput="renderList('secu')">
+      <button class="ghost" onclick="exportAll('secu')">Exporter tout (.xlsx)</button>
+    </div>
+    <div id="list-secu"></div>
+    <div class="detail" id="detail-secu"></div>
+  </div>
 </main>
 
 <footer>anthonychauvel/droit — données PISTE/Légifrance, lecture seule</footer>
 
 <script>
-let INDEX = { ccn: [], code: [] };
-let SEARCH_IDX = { ccn: [], code: [] };
-let CACHE = { ccn: {}, code: {} };
+let INDEX = { ccn: [], code: [], secu: [] };
+let SEARCH_IDX = { ccn: [], code: [], secu: [] };
+let CACHE = { ccn: {}, code: {}, secu: {} };
 
 async function loadIndexes(){
   try{
@@ -306,6 +323,13 @@ async function loadIndexes(){
   }catch(e){ console.warn('Index Code du travail indisponible', e); }
 
   try{
+    const secuSummary = await fetchJSON('output/code-secu/_summary.json');
+    INDEX.secu = secuSummary.filter(d => d.status === 'ok').map(d => ({
+      num: d.article, title: `Article ${d.article}`
+    }));
+  }catch(e){ console.warn('Index Sécurité sociale indisponible', e); }
+
+  try{
     const searchIdx = await fetchJSON('output/search-index.json');
     SEARCH_IDX = searchIdx;
     renderCategoryChips();
@@ -313,7 +337,8 @@ async function loadIndexes(){
 
   document.getElementById('stats').innerHTML =
     `<span><b>${INDEX.ccn.length}</b> conventions collectives</span>` +
-    `<span><b>${INDEX.code.length}</b> articles du Code du travail</span>`;
+    `<span><b>${INDEX.code.length}</b> articles du Code du travail</span>` +
+    `<span><b>${INDEX.secu.length}</b> articles Sécurité sociale</span>`;
 
   renderList('ccn');
   renderList('code');
@@ -323,6 +348,12 @@ async function fetchJSON(path){
   const resp = await fetch(path);
   if(!resp.ok) throw new Error(`${path}: ${resp.status}`);
   return resp.json();
+}
+
+function itemPath(kind, num){
+  if(kind === 'ccn') return `output/ccn/${num}.json`;
+  if(kind === 'secu') return `output/code-secu/${num.replace(/\//g,'-')}.json`;
+  return `output/code-travail/${num.replace(/\//g,'-')}.json`;
 }
 
 function switchTab(tab){
@@ -451,7 +482,7 @@ async function openDetail(kind, num){
 
   let data = CACHE[kind][num];
   if(!data){
-    const path = kind === 'ccn' ? `output/ccn/${num}.json` : `output/code-travail/${num.replace(/\//g,'-')}.json`;
+    const path = itemPath(kind, num);
     try{
       data = await fetchJSON(path);
       CACHE[kind][num] = data;
@@ -563,7 +594,7 @@ async function exportAll(kind){
     btn.textContent = `Export… ${i+1}/${items.length}`;
     let data = CACHE[kind][it.num];
     if(!data){
-      const path = kind === 'ccn' ? `output/ccn/${it.num}.json` : `output/code-travail/${it.num.replace(/\//g,'-')}.json`;
+      const path = itemPath(kind, it.num);
       try{ data = await fetchJSON(path); CACHE[kind][it.num] = data; }
       catch(e){ continue; }
     }
