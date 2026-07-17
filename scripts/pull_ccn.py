@@ -176,7 +176,7 @@ def main():
     ap.add_argument("--idcc", help="Liste d'IDCC séparés par des virgules")
     ap.add_argument("--idcc-file", help="Fichier texte, un IDCC par ligne")
     ap.add_argument("--out", default="output/ccn", help="Dossier de sortie")
-    ap.add_argument("--delay", type=float, default=0.5, help="Délai entre appels (s)")
+    ap.add_argument("--delay", type=float, default=1.2, help="Délai entre appels (s)")
     args = ap.parse_args()
 
     client_id = os.environ.get("PISTE_CLIENT_ID")
