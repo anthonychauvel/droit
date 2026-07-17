@@ -81,52 +81,23 @@ def call_api(base_url, token, path, body):
             return json.loads(resp.read())
     except urllib.error.HTTPError as e:
         return {"_error": e.code, "_detail": e.read().decode(errors="replace")}
+    except Exception as e:
+        # Filet de sécurité: timeout, coupure réseau, JSON mal formé, etc.
+        # Ne doit JAMAIS faire planter le script sur 467 appels — on logue et on continue.
+        return {"_error": "exception", "_detail": f"{type(e).__name__}: {e}"}
 
 
-def search_article_id(base_url, token, article_num):
+def fetch_article_by_num(base_url, token, article_num):
     """
-    Cherche l'identifiant LEGIARTI d'un article via /search, en filtrant
-    sur le Code du travail. Nécessaire car l'API veut un ID interne,
-    pas juste "L3121-1".
+    Récupération directe, sans recherche intermédiaire : l'endpoint
+    getArticleWithIdAndNum accepte directement le numéro d'article
+    (ex: "L3111-2") avec l'id du Code du travail lui-même.
     """
-    body = {
-        "recherche": {
-            "champs": [{
-                "typeChamp": "NUM_ARTICLE",
-                "criteres": [{"typeRecherche": "EXACTE", "valeur": article_num, "operateur": "ET"}],
-                "operateur": "ET",
-            }],
-            "filtres": [{"facette": "NOM_CODE", "valeurs": ["Code du travail"]}],
-            "pageSize": 5,
-            "pageNumber": 1,
-        },
-        "fond": "CODE_ETAT",
-    }
-    result = call_api(base_url, token, "/search", body)
-    return result
-
-
-def fetch_article_by_num(base_url, token, article_num, date=None):
-    date = date or datetime.date.today().isoformat()
-    search_result = search_article_id(base_url, token, article_num)
-    if "_error" in search_result:
-        return search_result
-
-    results = search_result.get("results", [])
-    if not results:
-        return {"_error": "not_found", "_detail": f"Aucun résultat pour {article_num}"}
-
-    # Le premier résultat pertinent devrait contenir l'ID de texte
-    first = results[0]
-    text_id = first.get("titles", [{}])[0].get("id") or first.get("id")
-    if not text_id:
-        return {"_error": "no_id", "_raw": first}
-
-    article = call_api(base_url, token, "/consult/legiPart", {
-        "textId": text_id if text_id.startswith("LEGITEXT") else CODE_TRAVAIL_TEXT_ID,
-        "date": date,
+    result = call_api(base_url, token, "/consult/getArticleWithIdAndNum", {
+        "id": CODE_TRAVAIL_TEXT_ID,
+        "num": article_num,
     })
-    return article
+    return result
 
 
 def main():
