@@ -20,6 +20,8 @@
     --code-soft: rgba(122,38,53,0.09);
     --secu: #7d6a2e;
     --secu-soft: rgba(125,106,46,0.10);
+    --juris: #3d5a80;
+    --juris-soft: rgba(61,90,128,0.10);
     --muted: #8b8577;
   }
   *{box-sizing:border-box;}
@@ -85,6 +87,7 @@
   .tab.active[data-tab="ccn"]{ color:var(--ccn); border-color:var(--ccn); }
   .tab.active[data-tab="code"]{ color:var(--code); border-color:var(--code); }
   .tab.active[data-tab="secu"]{ color:var(--secu); border-color:var(--secu); }
+  .tab.active[data-tab="juris"]{ color:var(--juris); border-color:var(--juris); }
 
   main{ max-width:900px; margin:0 auto; padding:24px; }
 
@@ -102,6 +105,7 @@
   input[type=search]:focus{ outline:2px solid var(--ccn); outline-offset:-1px; }
   .tab-panel[data-panel="code"] input:focus{ outline-color: var(--code); }
   .tab-panel[data-panel="secu"] input:focus{ outline-color: var(--secu); }
+  .tab-panel[data-panel="juris"] input:focus{ outline-color: var(--juris); }
 
   button{
     font-family:'IBM Plex Mono', monospace;
@@ -170,6 +174,7 @@
   }
   [data-panel="code"] .match-chip{ background:var(--code-soft); color:var(--code); }
   [data-panel="secu"] .match-chip{ background:var(--secu-soft); color:var(--secu); }
+  [data-panel="juris"] .match-chip{ background:var(--juris-soft); color:var(--juris); }
   .result-num{
     font-family:'IBM Plex Mono', monospace;
     font-weight:600;
@@ -179,6 +184,7 @@
   }
   [data-panel="code"] .result-num{ color:var(--code); }
   [data-panel="secu"] .result-num{ color:var(--secu); }
+  [data-panel="juris"] .result-num{ color:var(--juris); }
   .result-title{ font-size:15px; line-height:1.4; }
   .result-flag{
     margin-left:auto;
@@ -211,6 +217,7 @@
   }
   [data-panel="code"] .detail-num{ color:var(--code); }
   [data-panel="secu"] .detail-num{ color:var(--secu); }
+  [data-panel="juris"] .detail-num{ color:var(--juris); }
   .detail-title{
     font-family:'Fraunces', serif;
     font-weight:600;
@@ -268,6 +275,7 @@
   <div class="tab active" data-tab="ccn" onclick="switchTab('ccn')">Conventions collectives</div>
   <div class="tab" data-tab="code" onclick="switchTab('code')">Code du travail</div>
   <div class="tab" data-tab="secu" onclick="switchTab('secu')">Sécurité sociale</div>
+  <div class="tab" data-tab="juris" onclick="switchTab('juris')">Jurisprudence</div>
 </div>
 
 <main>
@@ -298,14 +306,23 @@
     <div id="list-secu"></div>
     <div class="detail" id="detail-secu"></div>
   </div>
+
+  <div class="tab-panel" data-panel="juris" style="display:none">
+    <div class="search-row">
+      <input type="search" id="search-juris" placeholder="Numéro de pourvoi, ex: 21-25.029…" oninput="renderList('juris')">
+      <button class="ghost" onclick="exportAll('juris')">Exporter tout (.xlsx)</button>
+    </div>
+    <div id="list-juris"></div>
+    <div class="detail" id="detail-juris"></div>
+  </div>
 </main>
 
 <footer>anthonychauvel/droit — données PISTE/Légifrance, lecture seule</footer>
 
 <script>
-let INDEX = { ccn: [], code: [], secu: [] };
-let SEARCH_IDX = { ccn: [], code: [], secu: [] };
-let CACHE = { ccn: {}, code: {}, secu: {} };
+let INDEX = { ccn: [], code: [], secu: [], juris: [] };
+let SEARCH_IDX = { ccn: [], code: [], secu: [], juris: [] };
+let CACHE = { ccn: {}, code: {}, secu: {}, juris: {} };
 
 async function loadIndexes(){
   try{
@@ -330,6 +347,13 @@ async function loadIndexes(){
   }catch(e){ console.warn('Index Sécurité sociale indisponible', e); }
 
   try{
+    const jurisSummary = await fetchJSON('output/jurisprudence/_summary.json');
+    INDEX.juris = jurisSummary.filter(d => d.status === 'ok').map(d => ({
+      num: d.numero, title: d.titre || `Pourvoi n°${d.numero}`
+    }));
+  }catch(e){ console.warn('Index Jurisprudence indisponible', e); }
+
+  try{
     const searchIdx = await fetchJSON('output/search-index.json');
     SEARCH_IDX = searchIdx;
     renderCategoryChips();
@@ -338,7 +362,8 @@ async function loadIndexes(){
   document.getElementById('stats').innerHTML =
     `<span><b>${INDEX.ccn.length}</b> conventions collectives</span>` +
     `<span><b>${INDEX.code.length}</b> articles du Code du travail</span>` +
-    `<span><b>${INDEX.secu.length}</b> articles Sécurité sociale</span>`;
+    `<span><b>${INDEX.secu.length}</b> articles Sécurité sociale</span>` +
+    `<span><b>${INDEX.juris.length}</b> décisions de justice</span>`;
 
   renderList('ccn');
   renderList('code');
@@ -353,6 +378,7 @@ async function fetchJSON(path){
 function itemPath(kind, num){
   if(kind === 'ccn') return `output/ccn/${num}.json`;
   if(kind === 'secu') return `output/code-secu/${num.replace(/\//g,'-')}.json`;
+  if(kind === 'juris') return `output/jurisprudence/${num.replace(/\//g,'-')}.json`;
   return `output/code-travail/${num.replace(/\//g,'-')}.json`;
 }
 
