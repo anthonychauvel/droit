@@ -10072,12 +10072,76 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000018659244",
+              "cid": "KALIARTI000018659244",
+              "intOrdre": 524287,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000018659244",
+              "pathTitle": [],
+              "content": "<p><br/>Une actualisation du contingent annuel d'heures supplémentaires de l'accord de branche portant sur la réduction du temps de travail de <a href=\"/affichIDCC.do?cidTexte=KALITEXT000005687306&categorieLien=cid\">la convention collective nationale des prothésistes dentaires et laboratoires de prothèses dentaires</a> interviendra à la date de parution au Journal officiel de l'arrêté ministériel d'extension. <br/>Le contingent annuel d'heures supplémentaires est fixé à 220 heures par an et par salarié. En cas de modulation, il est de 130 heures.</p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1",
+              "type": "AUTONOME",
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000018169609",
+                  "textTitle": "Arrêté du 19 février 2008, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "",
+                  "articleId": "JORFTEXT000018169609",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2008-02-27",
+                  "dateSignaTexte": "2008-02-19",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "KALITEXT000005687306",
+                  "textTitle": "Convention collective nationale du 18 décembre 1978",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "KALITEXT000005687306",
+                  "natureText": "Convention collective nationale ",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 290476800000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1194566400000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,
@@ -10332,12 +10396,62 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000029149101",
+              "cid": "KALIARTI000029149101",
+              "intOrdre": 524287,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000029149101",
+              "pathTitle": [],
+              "content": "<p align=\"left\"><br/>Les employés ayant obtenu leur CAP de prothèse dentaire antérieurement à 2009 accèdent au titre de technicien qualifié en prothèse dentaire échelon TQ1.<br/>Le présent accord prendra effet au 1er mars 2014 et fera l'objet d'une demande d'extension à l'initiative de la partie la plus diligente.</p>",
+              "nota": null,
+              "comporteLiens": false,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1",
+              "type": "AUTONOME",
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000030587182",
+                  "textTitle": "ARRÊTÉ du 27 avril 2015 - art. 11, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "11",
+                  "articleId": "JORFARTI000030587235",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2015-05-13",
+                  "dateSignaTexte": "2015-04-27",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
+              "lstLienCitation": [],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1393632000000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,
