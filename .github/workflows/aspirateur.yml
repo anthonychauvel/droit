@@ -3,6 +3,12 @@ name: Aspirateur Légifrance (CCN + Code du travail)
 # Se lance à la main depuis l'onglet "Actions" de GitHub (bouton "Run workflow"),
 # accessible depuis Safari ou l'app GitHub sur iPhone. Pas besoin d'ordinateur.
 on:
+  # Veille automatique : re-vérifie tout chaque lundi à 6h du matin (heure serveur GitHub, UTC).
+  # Comme les résultats sont commités dans le repo, tout changement réel (nouvel avenant,
+  # texte modifié) apparaît comme un nouveau commit avec un diff -- historique des
+  # changements gratuit, sans rien construire de plus.
+  schedule:
+    - cron: "0 6 * * 1"
   workflow_dispatch:
     inputs:
       cible:
@@ -36,7 +42,7 @@ jobs:
     env:
       PISTE_CLIENT_ID: ${{ secrets.PISTE_CLIENT_ID }}
       PISTE_CLIENT_SECRET: ${{ secrets.PISTE_CLIENT_SECRET }}
-      PISTE_ENV: ${{ github.event.inputs.environnement }}
+      PISTE_ENV: ${{ github.event.inputs.environnement || 'production' }}
 
     steps:
       - name: Checkout repo
@@ -48,7 +54,7 @@ jobs:
           python-version: "3.12"
 
       - name: Récupérer les CCN (KALI)
-        if: ${{ github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' }}
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' }}
         run: |
           if [ -n "${{ github.event.inputs.idcc_liste }}" ]; then
             python3 scripts/pull_ccn.py --idcc "${{ github.event.inputs.idcc_liste }}" --out output/ccn
@@ -57,11 +63,17 @@ jobs:
           fi
 
       - name: Récupérer le Code du travail
-        if: ${{ github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'les-deux' }}
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'les-deux' }}
         run: |
           python3 scripts/pull_code_travail.py --articles-file articles_list.txt --out output/code-travail
 
+      - name: Construire l'index de recherche par mots-clés
+        if: always()
+        run: |
+          python3 scripts/build_search_index.py --out output/search-index.json
+
       - name: Commit et push des résultats
+        if: always()
         run: |
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
