@@ -21,6 +21,8 @@ on:
           - code-travail
           - code-secu
           - jurisprudence
+          - lister-tous-articles-travail
+          - lister-tous-articles-secu
           - les-deux
           - tout
       idcc_liste:
@@ -107,6 +109,16 @@ jobs:
         run: |
           python3 scripts/pull_jurisprudence.py --arrets-file arrets_list.txt --out output/jurisprudence
 
+      - name: Lister tous les articles du Code du travail (préparation seulement)
+        if: ${{ always() && github.event.inputs.cible == 'lister-tous-articles-travail' }}
+        run: |
+          python3 scripts/list_all_code_articles.py --code-id LEGITEXT000006072050 --out all_articles_code_travail.txt
+
+      - name: Lister tous les articles du Code de la sécurité sociale (préparation seulement)
+        if: ${{ always() && github.event.inputs.cible == 'lister-tous-articles-secu' }}
+        run: |
+          python3 scripts/list_all_code_articles.py --code-id LEGITEXT000006073189 --out all_articles_code_secu.txt
+
       - name: Construire l'index de recherche par mots-clés
         if: always()
         run: |
@@ -117,6 +129,6 @@ jobs:
         run: |
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
-          git add output/
+          git add output/ all_articles_code_travail.txt all_articles_code_secu.txt 2>/dev/null || git add output/
           git diff --staged --quiet || git commit -m "Mise à jour données Légifrance ($(date -u +%Y-%m-%d))"
           git push
