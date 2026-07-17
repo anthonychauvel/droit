@@ -61,8 +61,16 @@ def get_token(token_url, client_id, client_secret):
         token_url, data=data, method="POST",
         headers={"Content-Type": "application/x-www-form-urlencoded"},
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read())["access_token"]
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return json.loads(resp.read())["access_token"]
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode(errors="replace")
+        print(f"ERREUR obtention du jeton ({e.code}): {detail[:500]}", file=sys.stderr)
+        print("Note: si une étape précédente du même run a réussi avec les mêmes "
+              "identifiants, ce n'est probablement pas un souci de CGU/souscription "
+              "mais peut-être une limite de débit sur la ré-émission de jetons.", file=sys.stderr)
+        sys.exit(1)
 
 
 def call_api(base_url, token, path, body):

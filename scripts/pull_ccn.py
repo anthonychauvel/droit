@@ -50,9 +50,14 @@ def get_token(token_url, client_id, client_secret):
         token_url, data=data, method="POST",
         headers={"Content-Type": "application/x-www-form-urlencoded"},
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        payload = json.loads(resp.read())
-    return payload["access_token"]
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            payload = json.loads(resp.read())
+        return payload["access_token"]
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode(errors="replace")
+        print(f"ERREUR obtention du jeton ({e.code}): {detail[:500]}", file=sys.stderr)
+        sys.exit(1)
 
 
 def call_api(base_url, token, path, body):
