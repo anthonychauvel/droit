@@ -216,8 +216,10 @@ def main():
         print("ERREUR: fournir --idcc ou --idcc-file", file=sys.stderr)
         sys.exit(1)
 
-    # Reprend le résumé existant : garde les "ok" tels quels, ne retraite que
-    # ce qui manque ou a échoué précédemment.
+    # Reprend le résumé existant : garde TOUS les "ok" déjà acquis, peu importe
+    # si l'IDCC est encore dans idcc_list.txt aujourd'hui -- une donnée déjà
+    # récupérée avec succès ne doit jamais disparaître silencieusement juste
+    # parce que la liste a changé entre-temps.
     existing_summary = {}
     summary_path = os.path.join(args.out, "_summary.json")
     if args.only_missing and os.path.exists(summary_path):
@@ -225,12 +227,13 @@ def main():
             for entry in json.load(f):
                 existing_summary[entry["idcc"]] = entry
 
+    preserved_ok = [e for e in existing_summary.values() if e.get("status") == "ok"]
+    preserved_ok_ids = {e["idcc"] for e in preserved_ok}
+
     to_process = idcc_list
-    already_ok = []
     if args.only_missing:
-        to_process = [i for i in idcc_list if existing_summary.get(i, {}).get("status") != "ok"]
-        already_ok = [i for i in idcc_list if existing_summary.get(i, {}).get("status") == "ok"]
-        print(f"Mode --only-missing: {len(already_ok)} déjà OK (ignorés), {len(to_process)} à traiter.")
+        to_process = [i for i in idcc_list if i not in preserved_ok_ids]
+        print(f"Mode --only-missing: {len(preserved_ok)} déjà OK protégés (peu importe la liste actuelle), {len(to_process)} à traiter.")
 
     token_url, base_url = get_urls()
     print(f"Environnement: {'production' if 'sandbox' not in base_url else 'SANDBOX (données possiblement périmées)'}")
@@ -239,7 +242,7 @@ def main():
 
     os.makedirs(args.out, exist_ok=True)
     debug_dir = os.path.join(args.out, "_debug_search")
-    summary = [existing_summary[i] for i in already_ok]  # on repart avec les "ok" déjà acquis
+    summary = list(preserved_ok)  # on repart avec TOUS les "ok" déjà acquis, protégés
 
     for i, idcc in enumerate(to_process, 1):
         print(f"[{i}/{len(to_process)}] IDCC {idcc}...", end=" ")
