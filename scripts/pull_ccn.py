@@ -195,6 +195,9 @@ def main():
     ap.add_argument("--idcc-file", help="Fichier texte, un IDCC par ligne")
     ap.add_argument("--out", default="output/ccn", help="Dossier de sortie")
     ap.add_argument("--delay", type=float, default=1.2, help="Délai entre appels (s)")
+    ap.add_argument("--only-missing", action="store_true",
+                     help="Ne retraite que les IDCC absents ou en erreur dans le résumé existant "
+                          "(ignore les 'ok' déjà présents) -- beaucoup plus rapide sur les runs suivants.")
     args = ap.parse_args()
 
     client_id = os.environ.get("PISTE_CLIENT_ID")
@@ -213,17 +216,33 @@ def main():
         print("ERREUR: fournir --idcc ou --idcc-file", file=sys.stderr)
         sys.exit(1)
 
+    # Reprend le résumé existant : garde les "ok" tels quels, ne retraite que
+    # ce qui manque ou a échoué précédemment.
+    existing_summary = {}
+    summary_path = os.path.join(args.out, "_summary.json")
+    if args.only_missing and os.path.exists(summary_path):
+        with open(summary_path, encoding="utf-8") as f:
+            for entry in json.load(f):
+                existing_summary[entry["idcc"]] = entry
+
+    to_process = idcc_list
+    already_ok = []
+    if args.only_missing:
+        to_process = [i for i in idcc_list if existing_summary.get(i, {}).get("status") != "ok"]
+        already_ok = [i for i in idcc_list if existing_summary.get(i, {}).get("status") == "ok"]
+        print(f"Mode --only-missing: {len(already_ok)} déjà OK (ignorés), {len(to_process)} à traiter.")
+
     token_url, base_url = get_urls()
     print(f"Environnement: {'production' if 'sandbox' not in base_url else 'SANDBOX (données possiblement périmées)'}")
     token = get_token(token_url, client_id, client_secret)
-    print(f"Token OK. {len(idcc_list)} IDCC à traiter.")
+    print(f"Token OK. {len(to_process)} IDCC à traiter.")
 
     os.makedirs(args.out, exist_ok=True)
     debug_dir = os.path.join(args.out, "_debug_search")
-    summary = []
+    summary = [existing_summary[i] for i in already_ok]  # on repart avec les "ok" déjà acquis
 
-    for i, idcc in enumerate(idcc_list, 1):
-        print(f"[{i}/{len(idcc_list)}] IDCC {idcc}...", end=" ")
+    for i, idcc in enumerate(to_process, 1):
+        print(f"[{i}/{len(to_process)}] IDCC {idcc}...", end=" ")
         result = fetch_one_idcc(base_url, token, idcc, debug_dir=debug_dir)
 
         if "_error" in result:
@@ -252,12 +271,12 @@ def main():
         })
         time.sleep(args.delay)
 
-    with open(os.path.join(args.out, "_summary.json"), "w", encoding="utf-8") as f:
+    with open(summary_path, "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
 
     n_ok = sum(1 for s in summary if s["status"] == "ok")
     n_err = sum(1 for s in summary if s["status"] == "error")
-    print(f"\nTerminé: {n_ok} OK, {n_err} erreurs. Résumé dans {args.out}/_summary.json")
+    print(f"\nTerminé: {n_ok} OK, {n_err} erreurs. Résumé dans {summary_path}")
 
 
 if __name__ == "__main__":
