@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fonds Droit — CCN &amp; Code du travail</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  :root{
+    --ink:#14181f;
+    --ink-soft:#3a4150;
+    --paper:#eeece2;
+    --paper-raised:#f7f5ee;
+    --line: rgba(20,24,31,0.13);
+    --ccn: #1f5f5b;
+    --ccn-soft: rgba(31,95,91,0.10);
+    --code: #7a2635;
+    --code-soft: rgba(122,38,53,0.09);
+    --muted: #8b8577;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Source Serif 4', Georgia, serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{ background: var(--ccn); color:#fff; }
+
+  header{
+    padding:32px 24px 20px;
+    border-bottom:1px solid var(--line);
+    background:var(--paper-raised);
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:8px;
+  }
+  h1{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:clamp(28px, 5vw, 40px);
+    margin:0 0 6px;
+    letter-spacing:-0.01em;
+  }
+  .stats{
+    display:flex; gap:18px; flex-wrap:wrap;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--ink-soft);
+    margin-top:14px;
+  }
+  .stats b{ color:var(--ink); font-weight:600; }
+
+  .tabs{
+    display:flex;
+    max-width:900px;
+    margin:0 auto;
+    border-bottom:1px solid var(--line);
+    background:var(--paper-raised);
+    position:sticky; top:0; z-index:10;
+  }
+  .tab{
+    flex:1;
+    padding:16px 20px;
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    cursor:pointer;
+    border-bottom:3px solid transparent;
+    color:var(--muted);
+    transition: color .15s;
+  }
+  .tab.active[data-tab="ccn"]{ color:var(--ccn); border-color:var(--ccn); }
+  .tab.active[data-tab="code"]{ color:var(--code); border-color:var(--code); }
+
+  main{ max-width:900px; margin:0 auto; padding:24px; }
+
+  .search-row{ display:flex; gap:10px; margin-bottom:18px; }
+  input[type=search]{
+    flex:1;
+    font-family:'Source Serif 4', serif;
+    font-size:16px;
+    padding:13px 16px;
+    border:1px solid var(--line);
+    border-radius:2px;
+    background:var(--paper-raised);
+    color:var(--ink);
+  }
+  input[type=search]:focus{ outline:2px solid var(--ccn); outline-offset:-1px; }
+  .tab-panel[data-panel="code"] input:focus{ outline-color: var(--code); }
+
+  button{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    padding:12px 18px;
+    border:1px solid var(--ink);
+    background:var(--ink);
+    color:var(--paper);
+    border-radius:2px;
+    cursor:pointer;
+  }
+  button.ghost{ background:transparent; color:var(--ink); }
+  button:active{ transform: scale(0.98); }
+
+  .empty{
+    padding:60px 20px;
+    text-align:center;
+    color:var(--muted);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+  }
+
+  .result-row{
+    display:flex; align-items:baseline; gap:14px;
+    padding:14px 4px;
+    border-bottom:1px solid var(--line);
+    cursor:pointer;
+  }
+  .result-row:hover{ background:var(--paper-raised); }
+  .result-num{
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+    font-size:15px;
+    min-width:74px;
+    color:var(--ccn);
+  }
+  [data-panel="code"] .result-num{ color:var(--code); }
+  .result-title{ font-size:15px; line-height:1.4; }
+  .result-flag{
+    margin-left:auto;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;
+    color:var(--muted);
+    white-space:nowrap;
+  }
+
+  .detail{ display:none; }
+  .detail.show{ display:block; }
+  .back-btn{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    cursor:pointer;
+    margin-bottom:16px;
+    display:inline-block;
+  }
+  .detail-header{
+    border-bottom:2px solid var(--ink);
+    padding-bottom:16px;
+    margin-bottom:20px;
+  }
+  .detail-num{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--ccn);
+    font-weight:600;
+  }
+  [data-panel="code"] .detail-num{ color:var(--code); }
+  .detail-title{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:22px;
+    margin:6px 0 0;
+    line-height:1.25;
+  }
+  .detail-actions{ display:flex; gap:10px; margin:16px 0 24px; }
+
+  .repartition{
+    display:flex; flex-wrap:wrap; gap:8px;
+    margin-bottom:20px;
+  }
+  .rep-chip{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10.5px;
+    padding:5px 10px;
+    border-radius:20px;
+    background:var(--ccn-soft);
+    color:var(--ccn);
+  }
+
+  .section-block{ margin-bottom:22px; }
+  .section-title{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    color:var(--muted);
+    margin-bottom:8px;
+    padding-bottom:6px;
+    border-bottom:1px solid var(--line);
+  }
+  .section-text{ font-size:15.5px; line-height:1.65; }
+  .section-text p{ margin:0 0 10px; }
+
+  .loading{ padding:40px; text-align:center; color:var(--muted); font-family:'IBM Plex Mono', monospace; font-size:13px; }
+
+  footer{
+    max-width:900px; margin:40px auto; padding:20px 24px;
+    font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--muted);
+    border-top:1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">République française · Fonds documentaire personnel</div>
+  <h1>Droit — CCN &amp; Code du travail</h1>
+  <div class="stats" id="stats">Chargement de l'index…</div>
+</header>
+
+<div class="tabs">
+  <div class="tab active" data-tab="ccn" onclick="switchTab('ccn')">Conventions collectives</div>
+  <div class="tab" data-tab="code" onclick="switchTab('code')">Code du travail</div>
+</div>
+
+<main>
+  <div class="tab-panel" data-panel="ccn">
+    <div class="search-row">
+      <input type="search" id="search-ccn" placeholder="IDCC ou nom de convention…" oninput="renderList('ccn')">
+      <button class="ghost" onclick="exportAll('ccn')">Exporter tout (.xlsx)</button>
+    </div>
+    <div id="list-ccn"></div>
+    <div class="detail" id="detail-ccn"></div>
+  </div>
+
+  <div class="tab-panel" data-panel="code" style="display:none">
+    <div class="search-row">
+      <input type="search" id="search-code" placeholder="Numéro d'article, ex: L3121-1…" oninput="renderList('code')">
+      <button class="ghost" onclick="exportAll('code')">Exporter tout (.xlsx)</button>
+    </div>
+    <div id="list-code"></div>
+    <div class="detail" id="detail-code"></div>
+  </div>
+</main>
+
+<footer>anthonychauvel/droit — données PISTE/Légifrance, lecture seule</footer>
+
+<script>
+let INDEX = { ccn: [], code: [] };
+let CACHE = { ccn: {}, code: {} };
+
+async function loadIndexes(){
+  try{
+    const ccnSummary = await fetchJSON('output/ccn/_summary.json');
+    INDEX.ccn = ccnSummary.filter(d => d.status === 'ok').map(d => ({
+      num: d.idcc, title: d.titre || `IDCC ${d.idcc}`, salaryHits: d.salary_sections_found || 0
+    }));
+  }catch(e){ console.warn('Index CCN indisponible', e); }
+
+  try{
+    const codeSummary = await fetchJSON('output/code-travail/_summary.json');
+    INDEX.code = codeSummary.filter(d => d.status === 'ok').map(d => ({
+      num: d.article, title: `Article ${d.article}`
+    }));
+  }catch(e){ console.warn('Index Code du travail indisponible', e); }
+
+  document.getElementById('stats').innerHTML =
+    `<span><b>${INDEX.ccn.length}</b> conventions collectives</span>` +
+    `<span><b>${INDEX.code.length}</b> articles du Code du travail</span>`;
+
+  renderList('ccn');
+  renderList('code');
+}
+
+async function fetchJSON(path){
+  const resp = await fetch(path);
+  if(!resp.ok) throw new Error(`${path}: ${resp.status}`);
+  return resp.json();
+}
+
+function switchTab(tab){
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  document.querySelectorAll('.tab-panel').forEach(p => p.style.display = p.dataset.panel === tab ? 'block' : 'none');
+}
+
+function renderList(kind){
+  const q = (document.getElementById(`search-${kind}`).value || '').toLowerCase().trim();
+  const listEl = document.getElementById(`list-${kind}`);
+  const detailEl = document.getElementById(`detail-${kind}`);
+  detailEl.classList.remove('show');
+  listEl.style.display = 'block';
+
+  let items = INDEX[kind];
+  if(q){
+    items = items.filter(it => it.num.toLowerCase().includes(q) || it.title.toLowerCase().includes(q));
+  }
+  items = items.slice(0, 150); // évite de rendre des milliers de lignes d'un coup
+
+  if(items.length === 0){
+    listEl.innerHTML = `<div class="empty">Aucun résultat${q ? ` pour "${q}"` : ''}.</div>`;
+    return;
+  }
+
+  listEl.innerHTML = items.map(it => `
+    <div class="result-row" onclick="openDetail('${kind}','${it.num}')">
+      <span class="result-num">${it.num}</span>
+      <span class="result-title">${escapeHtml(it.title)}</span>
+      ${it.salaryHits ? `<span class="result-flag">${it.salaryHits} section(s) salaire</span>` : ''}
+    </div>
+  `).join('');
+}
+
+async function openDetail(kind, num){
+  const listEl = document.getElementById(`list-${kind}`);
+  const detailEl = document.getElementById(`detail-${kind}`);
+  listEl.style.display = 'none';
+  detailEl.classList.add('show');
+  detailEl.innerHTML = '<div class="loading">Chargement…</div>';
+
+  let data = CACHE[kind][num];
+  if(!data){
+    const path = kind === 'ccn' ? `output/ccn/${num}.json` : `output/code-travail/${num.replace(/\//g,'-')}.json`;
+    try{
+      data = await fetchJSON(path);
+      CACHE[kind][num] = data;
+    }catch(e){
+      detailEl.innerHTML = `<div class="back-btn" onclick="renderList('${kind}')">&larr; Retour</div><div class="empty">Impossible de charger ${num}.</div>`;
+      return;
+    }
+  }
+
+  detailEl.innerHTML = renderDetail(kind, num, data);
+}
+
+function renderDetail(kind, num, data){
+  const title = data.titre || data.title || `${kind === 'ccn' ? 'IDCC' : 'Article'} ${num}`;
+  let repChips = '';
+  if(data._repartition_modules){
+    repChips = '<div class="repartition">' + Object.entries(data._repartition_modules)
+      .map(([cat, paths]) => `<span class="rep-chip">${escapeHtml(cat)} · ${paths.length}</span>`)
+      .join('') + '</div>';
+  }
+
+  let body = '';
+  if(kind === 'ccn' && Array.isArray(data.sections)){
+    body = renderSections(data.sections, 0);
+  } else if(data.texte || data.content || data.texteHtml){
+    body = `<div class="section-text">${cleanHtml(data.texte || data.content || data.texteHtml)}</div>`;
+  } else {
+    body = `<div class="section-text" style="color:var(--muted)">Contenu structuré non détecté — voir export JSON brut.</div>`;
+  }
+
+  return `
+    <div class="back-btn" onclick="renderList('${kind}')">&larr; Retour à la liste</div>
+    <div class="detail-header">
+      <div class="detail-num">${escapeHtml(num)}</div>
+      <div class="detail-title">${escapeHtml(title)}</div>
+    </div>
+    <div class="detail-actions">
+      <button onclick='exportOne("${kind}","${num}")'>Exporter cette fiche (.xlsx)</button>
+    </div>
+    ${repChips}
+    ${body}
+  `;
+}
+
+function renderSections(sections, depth){
+  return sections.map(s => {
+    const t = s.title || s.titre;
+    let inner = '';
+    if(Array.isArray(s.sections) && s.sections.length){
+      inner += renderSections(s.sections, depth + 1);
+    }
+    if(Array.isArray(s.articles)){
+      inner += s.articles.map(a => `<div class="section-text">${cleanHtml(a.content || a.texte || '')}</div>`).join('');
+    }
+    if(!t && !inner) return '';
+    return `<div class="section-block">${t ? `<div class="section-title">${escapeHtml(t)}</div>` : ''}${inner}</div>`;
+  }).join('');
+}
+
+function cleanHtml(raw){
+  if(!raw) return '';
+  // Le contenu Légifrance contient du HTML déjà -- on le laisse passer tel quel
+  // (source interne de confiance, pas de saisie utilisateur), juste un nettoyage léger.
+  return raw.replace(/<script/gi, '&lt;script');
+}
+
+function escapeHtml(s){
+  const d = document.createElement('div');
+  d.textContent = s || '';
+  return d.innerHTML;
+}
+
+function flattenForExport(data){
+  const rows = [];
+  function walk(node){
+    if(!node || typeof node !== 'object') return;
+    const t = node.title || node.titre;
+    if(t) rows.push({ section: t, texte: (node.content || node.texte || '').replace(/<[^>]+>/g,' ').trim() });
+    (node.sections || []).forEach(walk);
+    (node.articles || []).forEach(walk);
+  }
+  walk(data);
+  if(rows.length === 0 && (data.texte || data.content)){
+    rows.push({ section: data.titre || data.title || '', texte: (data.texte || data.content || '').replace(/<[^>]+>/g,' ').trim() });
+  }
+  return rows;
+}
+
+async function exportOne(kind, num){
+  const data = CACHE[kind][num];
+  if(!data) return;
+  const rows = flattenForExport(data);
+  const ws = XLSX.utils.json_to_sheet(rows);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, num.slice(0,31));
+  XLSX.writeFile(wb, `${kind}-${num}.xlsx`);
+}
+
+async function exportAll(kind){
+  const items = INDEX[kind];
+  if(items.length === 0) return;
+  const btn = event.target;
+  const originalText = btn.textContent;
+  const wb = XLSX.utils.book_new();
+  const summaryRows = [];
+
+  for(let i = 0; i < items.length; i++){
+    const it = items[i];
+    btn.textContent = `Export… ${i+1}/${items.length}`;
+    let data = CACHE[kind][it.num];
+    if(!data){
+      const path = kind === 'ccn' ? `output/ccn/${it.num}.json` : `output/code-travail/${it.num.replace(/\//g,'-')}.json`;
+      try{ data = await fetchJSON(path); CACHE[kind][it.num] = data; }
+      catch(e){ continue; }
+    }
+    summaryRows.push({ numero: it.num, titre: it.title });
+  }
+
+  const ws = XLSX.utils.json_to_sheet(summaryRows);
+  XLSX.utils.book_append_sheet(wb, ws, 'Index');
+  XLSX.writeFile(wb, `${kind}-export-complet.xlsx`);
+  btn.textContent = originalText;
+}
+
+loadIndexes();
+</script>
+</body>
+</html>
