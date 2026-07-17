@@ -19,7 +19,9 @@ on:
         options:
           - ccn
           - code-travail
+          - code-secu
           - les-deux
+          - tout
       idcc_liste:
         description: "IDCC séparés par des virgules (vide = utilise idcc_list.txt)"
         required: false
@@ -62,7 +64,7 @@ jobs:
           python-version: "3.12"
 
       - name: Récupérer les CCN (KALI)
-        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' }}
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout' }}
         run: |
           FLAG=""
           if [ "${{ github.event.inputs.seulement_manquants || 'oui' }}" = "oui" ]; then
@@ -75,9 +77,14 @@ jobs:
           fi
 
       - name: Récupérer le Code du travail
-        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'les-deux' }}
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout' }}
         run: |
-          python3 scripts/pull_code_travail.py --articles-file articles_list.txt --out output/code-travail
+          python3 scripts/pull_code_travail.py --articles-file articles_list.txt --code-id LEGITEXT000006072050 --out output/code-travail
+
+      - name: Récupérer le Code de la sécurité sociale
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'code-secu' || github.event.inputs.cible == 'tout' }}
+        run: |
+          python3 scripts/pull_code_travail.py --articles-file articles_list_css.txt --code-id LEGITEXT000006073189 --out output/code-secu
 
       - name: Construire l'index de recherche par mots-clés
         if: always()
