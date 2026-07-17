@@ -114,7 +114,27 @@
   button.ghost{ background:transparent; color:var(--ink); }
   button:active{ transform: scale(0.98); }
 
-  .empty{
+  .cat-row{
+    display:flex; gap:8px; flex-wrap:wrap;
+    margin-bottom:18px;
+  }
+  .cat-chip{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    padding:7px 13px;
+    border-radius:20px;
+    border:1px solid var(--line);
+    background:transparent;
+    color:var(--ink-soft);
+    cursor:pointer;
+    white-space:nowrap;
+  }
+  .cat-chip.active{
+    background:var(--ccn);
+    border-color:var(--ccn);
+    color:#fff;
+  }
+  .cat-chip .count{ opacity:.65; margin-left:4px; }
     padding:60px 20px;
     text-align:center;
     color:var(--muted);
@@ -248,6 +268,7 @@
       <input type="search" id="search-ccn" placeholder="IDCC, nom, ou mot-clé (ex: préavis, astreinte)…" oninput="renderList('ccn')">
       <button class="ghost" onclick="exportAll('ccn')">Exporter tout (.xlsx)</button>
     </div>
+    <div class="cat-row" id="cat-row"></div>
     <div id="list-ccn"></div>
     <div class="detail" id="detail-ccn"></div>
   </div>
@@ -287,6 +308,7 @@ async function loadIndexes(){
   try{
     const searchIdx = await fetchJSON('output/search-index.json');
     SEARCH_IDX = searchIdx;
+    renderCategoryChips();
   }catch(e){ console.warn('Index de recherche mots-clés indisponible (pas encore construit ?)', e); }
 
   document.getElementById('stats').innerHTML =
@@ -308,12 +330,66 @@ function switchTab(tab){
   document.querySelectorAll('.tab-panel').forEach(p => p.style.display = p.dataset.panel === tab ? 'block' : 'none');
 }
 
+let activeCategory = null;
+
+const CAT_LABELS = {
+  minima_salariaux: "Minima salariaux",
+  contingent_hs: "Contingent HS",
+  majoration_hs: "Majoration HS",
+  duree_travail: "Durée du travail",
+  astreintes: "Astreintes",
+  temps_partiel: "Temps partiel",
+  modulation_annualisation: "Modulation / annualisation",
+  repos: "Repos",
+  conges: "Congés",
+  rupture_preavis: "Rupture / préavis",
+};
+
+function renderCategoryChips(){
+  const counts = {};
+  (SEARCH_IDX.ccn || []).forEach(entry => {
+    (entry.hits || []).forEach(h => { counts[h.cat] = (counts[h.cat] || 0) + 1; });
+  });
+
+  const catRow = document.getElementById('cat-row');
+  const allChip = `<button class="cat-chip ${activeCategory === null ? 'active' : ''}" onclick="setCategory(null)">Tout</button>`;
+  const chips = Object.keys(CAT_LABELS)
+    .filter(cat => counts[cat])
+    .map(cat => `<button class="cat-chip ${activeCategory === cat ? 'active' : ''}" onclick="setCategory('${cat}')">${CAT_LABELS[cat]}<span class="count">${counts[cat]}</span></button>`)
+    .join('');
+  catRow.innerHTML = allChip + chips;
+}
+
+function setCategory(cat){
+  activeCategory = cat;
+  document.getElementById('search-ccn').value = '';
+  renderCategoryChips();
+  renderList('ccn');
+}
+
 function renderList(kind){
   const q = (document.getElementById(`search-${kind}`).value || '').toLowerCase().trim();
+  if(kind === 'ccn' && q && activeCategory){
+    activeCategory = null;
+    renderCategoryChips();
+  }
   const listEl = document.getElementById(`list-${kind}`);
   const detailEl = document.getElementById(`detail-${kind}`);
   detailEl.classList.remove('show');
   listEl.style.display = 'block';
+
+  // Filtrage par catégorie (onglets) -- prioritaire sur la recherche libre si actif
+  if(kind === 'ccn' && activeCategory){
+    const idxList = SEARCH_IDX.ccn || [];
+    const items = idxList
+      .map(entry => ({ num: entry.num, title: entry.title, hits: (entry.hits || []).filter(h => h.cat === activeCategory) }))
+      .filter(e => e.hits.length > 0)
+      .slice(0, 150);
+    listEl.innerHTML = items.length
+      ? items.map(e => resultRowHtml('ccn', e.num, e.title, 0, e.hits.slice(0, 3))).join('')
+      : `<div class="empty">Aucune convention trouvée pour cette catégorie.</div>`;
+    return;
+  }
 
   if(!q){
     const items = INDEX[kind].slice(0, 150);
