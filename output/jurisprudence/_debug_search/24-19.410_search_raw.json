@@ -1,0 +1,162 @@
+{
+  "executionTime": 25,
+  "results": [
+    {
+      "titles": [
+        {
+          "id": "JURITEXT000053345485",
+          "cid": "JURITEXT000053345485",
+          "title": "Cour de cassation, civile, Chambre sociale, 7 janvier 2026, 24-19.410, Publié au bulletin",
+          "legalStatus": null,
+          "startDate": null,
+          "endDate": null,
+          "nature": null
+        }
+      ],
+      "text": null,
+      "type": "data_juri",
+      "nature": "arret",
+      "origin": "JURI",
+      "etat": null,
+      "solution": "Cassation partielle",
+      "moreArticlesCount": 0,
+      "date": null,
+      "sections": [],
+      "num": null,
+      "jorfText": null,
+      "numParution": null,
+      "datePublication": null,
+      "dossiersLegislatifs": [],
+      "nor": null,
+      "motsCles": [],
+      "appellations": [],
+      "idAttachment": null,
+      "sizeAttachment": null,
+      "moreArticle": false,
+      "additionalResult": {},
+      "raisonSociale": null,
+      "idcc": null,
+      "descriptionFusionHtml": null,
+      "dateSignature": null,
+      "dateDiffusion": null,
+      "reference": null,
+      "themes": [],
+      "conforme": false,
+      "resumePrincipal": [
+        "Cassation civil - TRAVAIL REGLEMENTATION, DUREE DU TRAVAIL - Heures supplémentaires -  Calcul -  Seuil de déclenchement -  Détermination -  Cas -  Salarié soumis à un décompte sur deux semaines de la durée du travail -  Salarié partiellement en situation de congé payé pendant les deux semaines -  Portée<br/>"
+      ],
+      "autreResume": [
+        "Cassation civil - UNION EUROPEENNE -  Travail -  Aménagement du temps de travail -  Directive 2003/88/CE du Parlement européen et du Conseil du 4 novembre 2003 -  Charte des droits fondamentaux de l'Union européenne -  Article 31 -  Application -  Seuil des heures travaillées donnant droit à majoration pour heures supplémentaires -  exclusion des heures correspondant à la période de congés annuel (non) -  Détermination -  Portée<br/>"
+      ]
+    }
+  ],
+  "facets": [
+    {
+      "facetElem": "APPEL_SIEGE_APPEL",
+      "field": "siegeAppel",
+      "values": {},
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "PDC_CHECKBOX_RESTREINDRE_ARRET",
+      "field": "restreindreArretPlanClassement",
+      "values": {},
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "PREMIER_DEGRE_TYPE_JURIDICTION",
+      "field": "natureJuridiction",
+      "values": {},
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "CASSATION_NATURE_DECISION",
+      "field": "nature",
+      "values": {
+        "arret": 1
+      },
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "CASSATION_TYPE_PUBLICATION_BULLETIN",
+      "field": "typePublicationBulletin",
+      "values": {
+        "T": 1
+      },
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "CASSATION_FORMATION",
+      "field": "formation",
+      "values": {
+        "CHAMBRE_SOCIALE": 1
+      },
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "CASSATION_DECISION_ATTAQUEE",
+      "field": "decisionAttaquee.formation.search",
+      "values": {
+        "COMMISSION_INDEMNISATION_VICTIMES_INFRACTIONS": 0,
+        "CONSEIL_PRUDHOMME": 0,
+        "COUR_APPEL": 1,
+        "COUR_ASSISES": 0,
+        "COUR_CASSATION": 0,
+        "COUR_JUSTICE_REPUBLIQUE": 0,
+        "COUR_NATIONAL_INCAPACITE_TARIFICATION": 0,
+        "TRIBUNAL_AFFAIRES_SECURITE_SOCIALE": 0,
+        "TRIBUNAL_COMMERCE": 0,
+        "TRIBUNAL_CONTENTIEUX_INCAPACITE": 0,
+        "TRIBUNAL_CORRECTIONNEL": 0,
+        "TRIBUNAL_FORCES_ARMEES": 0,
+        "TRIBUNAL_GRANDE_INSTANCE": 0,
+        "TRIBUNAL_INSTANCE": 0,
+        "TRIBUNAL_MARITIME_COMMERCIAL": 0,
+        "TRIBUNAL_PARITAIRE_BAUX_RURAUX": 0,
+        "TRIBUNAL_POLICE": 0,
+        "TRIBUNAL_PREMIERE_INSTANCE": 0,
+        "TRIBUNAL_SUPERIEURS_APPEL": 0
+      },
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "FOND",
+      "field": "origine",
+      "values": {
+        "ACCO": 387844,
+        "CETAT": 569929,
+        "CIRC": 10647,
+        "CNIL": 26763,
+        "CODE": 76,
+        "CONSTIT": 7379,
+        "JORF": 1126070,
+        "JUFI": 3502,
+        "JURI": 605794,
+        "KALI": 21915,
+        "LEGI": 117319
+      },
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "JURIDICTION_JUDICIAIRE",
+      "field": "juridictionJudiciaire",
+      "values": {
+        "Cour de cassation": 1
+      },
+      "childs": {},
+      "totalElement": 0
+    }
+  ],
+  "totalResultNumber": 1,
+  "totalArticleResultNumber": 0,
+  "typePagination": "DEFAUT",
+  "descriptionFusionHtml": null
+}
