@@ -72,6 +72,10 @@ def call_api(base_url, token, path, body):
     except urllib.error.HTTPError as e:
         body_txt = e.read().decode(errors="replace")
         return {"_error": e.code, "_detail": body_txt}
+    except Exception as e:
+        # Filet de sécurité: timeout, coupure réseau, etc. -- ne jamais planter
+        # le script sur un lot de centaines d'appels, juste logger et continuer.
+        return {"_error": "exception", "_detail": f"{type(e).__name__}: {e}"}
 
 
 def search_kali_by_idcc(base_url, token, idcc):
