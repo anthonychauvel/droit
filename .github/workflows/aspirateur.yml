@@ -20,6 +20,7 @@ on:
           - ccn
           - code-travail
           - code-secu
+          - jurisprudence
           - les-deux
           - tout
       idcc_liste:
@@ -81,6 +82,11 @@ jobs:
         run: |
           python3 scripts/fetch_salary_details.py --ccn-dir output/ccn
 
+      - name: Compléter les clauses heures sup/majoration/contingent
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout' }}
+        run: |
+          python3 scripts/fetch_overtime_details.py --ccn-dir output/ccn
+
       - name: Récupérer le Code du travail
         if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout' }}
         run: |
@@ -90,6 +96,11 @@ jobs:
         if: ${{ github.event_name == 'schedule' || github.event.inputs.cible == 'code-secu' || github.event.inputs.cible == 'tout' }}
         run: |
           python3 scripts/pull_code_travail.py --articles-file articles_list_css.txt --code-id LEGITEXT000006073189 --out output/code-secu
+
+      - name: Récupérer la jurisprudence
+        if: ${{ github.event.inputs.cible == 'jurisprudence' || github.event.inputs.cible == 'tout' }}
+        run: |
+          python3 scripts/pull_jurisprudence.py --arrets-file arrets_list.txt --out output/jurisprudence
 
       - name: Construire l'index de recherche par mots-clés
         if: always()
