@@ -105,7 +105,7 @@ def main():
     ap.add_argument("--articles", help="Articles séparés par des virgules, ex: L3121-1,L3141-3")
     ap.add_argument("--articles-file", help="Fichier texte, un article par ligne")
     ap.add_argument("--out", default="output/code-travail")
-    ap.add_argument("--delay", type=float, default=0.5)
+    ap.add_argument("--delay", type=float, default=1.2)
     args = ap.parse_args()
 
     client_id = os.environ.get("PISTE_CLIENT_ID")
