@@ -29,11 +29,18 @@ def strip_html(raw):
 
 
 KEYWORDS = {
-    "heures_travail": ["durée du travail", "heures supplémentaires", "heures complémentaires",
-                        "repos", "astreinte", "contingent", "temps de travail", "horaire de travail",
-                        "temps partiel", "modulation", "annualisation"],
-    "salaire": ["salaire", "rémunération", "minima", "minimum", "classification",
-                "grille", "traitement", "appointement", "rémunérations", "salaires"],
+    "minima_salariaux": ["salaire", "rémunération", "minima", "minimum", "classification",
+                          "grille", "traitement", "appointement", "rémunérations", "salaires"],
+    "contingent_hs": ["contingent", "contingent annuel", "contingent d'heures"],
+    "majoration_hs": ["majoration", "bonification", "taux de majoration", "heures majorées",
+                       "majorées à"],
+    "duree_travail": ["durée du travail", "temps de travail", "horaire de travail",
+                       "durée légale", "durée maximale", "heures supplémentaires"],
+    "astreintes": ["astreinte", "astreintes"],
+    "temps_partiel": ["temps partiel", "heures complémentaires"],
+    "modulation_annualisation": ["modulation", "annualisation", "aménagement du temps de travail",
+                                  "répartition de la durée"],
+    "repos": ["repos compensateur", "repos quotidien", "repos hebdomadaire", "repos récupérateur"],
     "conges": ["congé", "congés", "absence"],
     "rupture_preavis": ["préavis", "licenciement", "rupture", "démission", "indemnité de rupture"],
 }
