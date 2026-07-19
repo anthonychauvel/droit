@@ -89,6 +89,11 @@ jobs:
         run: |
           python3 scripts/fetch_overtime_details.py --ccn-dir output/ccn
 
+      - name: Compléter les clauses forfait jours/cadres autonomes/cadres dirigeants
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
+        run: |
+          python3 scripts/fetch_forfaitjours_details.py --ccn-dir output/ccn
+
       - name: Compléter les sections classification/coefficients
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |
