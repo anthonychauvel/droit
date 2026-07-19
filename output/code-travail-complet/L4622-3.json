@@ -1,0 +1,359 @@
+{
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000033024900",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Le rôle du médecin du travail est exclusivement préventif. Il consiste à éviter toute altération de la santé des travailleurs du fait de leur travail, notamment en surveillant leurs conditions d'hygiène au travail, les risques de contagion et leur état de santé, ainsi que tout risque manifeste d'atteinte à la sécurité des tiers évoluant dans l'environnement immédiat de travail.",
+    "texteHtml": "<p>Le rôle du médecin du travail est exclusivement préventif. Il consiste à éviter toute altération de la santé des travailleurs du fait de leur travail, notamment en surveillant leurs conditions d'hygiène au travail, les risques de contagion et leur état de santé, ainsi que tout risque manifeste d'atteinte à la sécurité des tiers évoluant dans l'environnement immédiat de travail.</p><p></p><p></p>",
+    "num": "L4622-3",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "3.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1483228800000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 128847,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Partie législative  ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000006112874",
+          "id": "LEGISCTA000006112874",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Quatrième partie : Santé et sécurité au travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006132338",
+          "id": "LEGISCTA000006132338",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Livre VI : Institutions et organismes de prévention",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006145412",
+          "id": "LEGISCTA000006145412",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2022-03-31",
+          "titre": "Titre II : Services de santé au travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006160792",
+          "id": "LEGISCTA000006160792",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2022-03-31",
+          "fin": "2999-01-01",
+          "titre": "Titre II : Services de prévention et de santé au travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006160792",
+          "id": "LEGISCTA000043893837",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre II : Missions et organisation",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006178104",
+          "id": "LEGISCTA000006178104",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Section 1 : Principes.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006189752",
+          "id": "LEGISCTA000006189752",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 50,
+      "titreTxt": [
+        {
+          "debut": "1973-01-03",
+          "fin": "2999-01-01",
+          "titre": "Code du travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000006072050",
+          "id": "LEGITEXT000006072050",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000006903353",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000006189752",
+    "sectionParentId": "LEGISCTA000006189752",
+    "sectionParentTitre": "Section 1 : Principes.",
+    "fullSectionsTitre": "Partie législative   &gt; Quatrième partie : Santé et sécurité au travail &gt; Livre VI : Institutions et organismes de prévention &gt; Titre II : Services de santé au travail &gt; Chapitre II : Missions et organisation &gt; Section 1 : Principes.",
+    "refInjection": "IG-20260114",
+    "idTechInjection": "LEGIARTI000033024900",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000006072050",
+        "titre": "Code du travail",
+        "titreLong": "Code du travail",
+        "etat": "VIGUEUR",
+        "dateDebut": 94867200000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000006072050",
+        "datePubli": 32472144000000,
+        "datePubliComputed": null,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "",
+    "notaHtml": "<p></p><p></p><p></p><p><br clear=\"none\" /></p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000000465978",
+        "textTitle": "Ordonnance n°2007-329 du 12 mars 2007",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "JORFTEXT000000465978",
+        "natureText": "ORDONNANCE",
+        "datePubliTexte": "2007-03-13",
+        "dateSignaTexte": "2007-03-12",
+        "dateDebutCible": "2999-01-01"
+      },
+      {
+        "textCid": "JORFTEXT000032983213",
+        "textTitle": "LOI n°2016-1088 du 8 août 2016 - art. 102 (V)",
+        "linkType": "MODIFIE",
+        "linkOrientation": "cible",
+        "articleNum": "102",
+        "articleId": "LEGIARTI000033000948",
+        "natureText": "LOI",
+        "datePubliTexte": "2016-08-09",
+        "dateSignaTexte": "2016-08-08",
+        "dateDebutCible": "2016-08-10"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000023334129",
+        "textTitle": "Décret n°2010-1733\n du 30 décembre 2010 - art. 1",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "1",
+        "articleId": "LEGIARTI000023379229",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2010-1733",
+        "datePubli": 1293753600000,
+        "dateDebut": 1293840000000
+      },
+      {
+        "textCid": "JORFTEXT000035468649",
+        "textTitle": "Décret n°2017-1311 du 29 août 2017 - art. 4, v. init.",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "4",
+        "articleId": "JORFARTI000035468741",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2017-1311",
+        "datePubli": 1504137600000,
+        "dateDebut": 32472144000000
+      },
+      {
+        "textCid": "LEGITEXT000006072665",
+        "textTitle": "Code de la santé publique - art. R1432-156 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R1432-156",
+        "articleId": "LEGIARTI000041934659",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1590796800000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L4624-3 (M)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "L4624-3",
+        "articleId": "LEGIARTI000024391675",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1311552000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L4624-9 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "L4624-9",
+        "articleId": "LEGIARTI000035653203",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1514764800000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R4623-1 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R4623-1",
+        "articleId": "LEGIARTI000045676623",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1651104000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R4623-15 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R4623-15",
+        "articleId": "LEGIARTI000018528366",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R4623-16 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R4623-16",
+        "articleId": "LEGIARTI000045676936",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1651104000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R4623-18 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R4623-18",
+        "articleId": "LEGIARTI000020398146",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1237161600000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L241-2 (AbD)",
+        "linkType": "CONCORDE",
+        "linkOrientation": "cible",
+        "articleNum": "L241-2",
+        "articleId": "LEGIARTI000006647649",
+        "natureText": "CODE"
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail L241-2 alinéa 1 fin",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGITEXT000006072050",
+        "natureText": "CODE"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000006903353",
+        "etat": "MODIFIE",
+        "version": "1.0",
+        "dateDebut": 1209600000000,
+        "dateFin": 1439942400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000031086861",
+        "etat": "MODIFIE",
+        "version": "2.0",
+        "dateDebut": 1439942400000,
+        "dateFin": 1483228800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000033024900",
+        "etat": "VIGUEUR",
+        "version": "3.0",
+        "dateDebut": 1483228800000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "L4622-3",
+      "4622-3"
+    ],
+    "versionPrecedente": "LEGIARTI000031086861",
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": true,
+    "comporteLiensSP": false
+  }
+}
