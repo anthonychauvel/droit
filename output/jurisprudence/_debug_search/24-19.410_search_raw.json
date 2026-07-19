@@ -1,5 +1,5 @@
 {
-  "executionTime": 25,
+  "executionTime": 26,
   "results": [
     {
       "titles": [
@@ -52,8 +52,8 @@
   ],
   "facets": [
     {
-      "facetElem": "APPEL_SIEGE_APPEL",
-      "field": "siegeAppel",
+      "facetElem": "PREMIER_DEGRE_TYPE_JURIDICTION",
+      "field": "natureJuridiction",
       "values": {},
       "childs": {},
       "totalElement": 0
@@ -66,8 +66,17 @@
       "totalElement": 0
     },
     {
-      "facetElem": "PREMIER_DEGRE_TYPE_JURIDICTION",
-      "field": "natureJuridiction",
+      "facetElem": "JURIDICTION_JUDICIAIRE",
+      "field": "juridictionJudiciaire",
+      "values": {
+        "Cour de cassation": 1
+      },
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "APPEL_SIEGE_APPEL",
+      "field": "siegeAppel",
       "values": {},
       "childs": {},
       "totalElement": 0
@@ -77,24 +86,6 @@
       "field": "nature",
       "values": {
         "arret": 1
-      },
-      "childs": {},
-      "totalElement": 0
-    },
-    {
-      "facetElem": "CASSATION_TYPE_PUBLICATION_BULLETIN",
-      "field": "typePublicationBulletin",
-      "values": {
-        "T": 1
-      },
-      "childs": {},
-      "totalElement": 0
-    },
-    {
-      "facetElem": "CASSATION_FORMATION",
-      "field": "formation",
-      "values": {
-        "CHAMBRE_SOCIALE": 1
       },
       "childs": {},
       "totalElement": 0
@@ -131,25 +122,34 @@
       "field": "origine",
       "values": {
         "ACCO": 387844,
-        "CETAT": 569929,
-        "CIRC": 10647,
+        "CETAT": 570075,
+        "CIRC": 10648,
         "CNIL": 26763,
         "CODE": 76,
         "CONSTIT": 7379,
-        "JORF": 1126070,
+        "JORF": 1126192,
         "JUFI": 3502,
         "JURI": 605794,
-        "KALI": 21915,
-        "LEGI": 117319
+        "KALI": 21932,
+        "LEGI": 117348
       },
       "childs": {},
       "totalElement": 0
     },
     {
-      "facetElem": "JURIDICTION_JUDICIAIRE",
-      "field": "juridictionJudiciaire",
+      "facetElem": "CASSATION_FORMATION",
+      "field": "formation",
       "values": {
-        "Cour de cassation": 1
+        "CHAMBRE_SOCIALE": 1
+      },
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "CASSATION_TYPE_PUBLICATION_BULLETIN",
+      "field": "typePublicationBulletin",
+      "values": {
+        "T": 1
       },
       "childs": {},
       "totalElement": 0

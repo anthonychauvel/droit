@@ -1,5 +1,5 @@
 {
-  "executionTime": 26,
+  "executionTime": 25,
   "results": [
     {
       "titles": [
@@ -52,56 +52,17 @@
       "field": "origine",
       "values": {
         "ACCO": 387844,
-        "CETAT": 569929,
-        "CIRC": 10647,
+        "CETAT": 570075,
+        "CIRC": 10648,
         "CNIL": 26763,
         "CODE": 76,
         "CONSTIT": 7379,
-        "JORF": 1126071,
+        "JORF": 1126191,
         "JUFI": 3502,
         "JURI": 605794,
-        "KALI": 21915,
-        "LEGI": 117319
+        "KALI": 21932,
+        "LEGI": 117348
       },
-      "childs": {},
-      "totalElement": 0
-    },
-    {
-      "facetElem": "PDC_CHECKBOX_RESTREINDRE_ARRET",
-      "field": "restreindreArretPlanClassement",
-      "values": {},
-      "childs": {},
-      "totalElement": 0
-    },
-    {
-      "facetElem": "JURIDICTION_JUDICIAIRE",
-      "field": "juridictionJudiciaire",
-      "values": {
-        "Cour de cassation": 1
-      },
-      "childs": {},
-      "totalElement": 0
-    },
-    {
-      "facetElem": "APPEL_SIEGE_APPEL",
-      "field": "siegeAppel",
-      "values": {},
-      "childs": {},
-      "totalElement": 0
-    },
-    {
-      "facetElem": "CASSATION_TYPE_PUBLICATION_BULLETIN",
-      "field": "typePublicationBulletin",
-      "values": {
-        "F": 1
-      },
-      "childs": {},
-      "totalElement": 0
-    },
-    {
-      "facetElem": "PREMIER_DEGRE_TYPE_JURIDICTION",
-      "field": "natureJuridiction",
-      "values": {},
       "childs": {},
       "totalElement": 0
     },
@@ -115,11 +76,9 @@
       "totalElement": 0
     },
     {
-      "facetElem": "CASSATION_NATURE_DECISION",
-      "field": "nature",
-      "values": {
-        "arret": 1
-      },
+      "facetElem": "APPEL_SIEGE_APPEL",
+      "field": "siegeAppel",
+      "values": {},
       "childs": {},
       "totalElement": 0
     },
@@ -146,6 +105,47 @@
         "TRIBUNAL_POLICE": 0,
         "TRIBUNAL_PREMIERE_INSTANCE": 0,
         "TRIBUNAL_SUPERIEURS_APPEL": 0
+      },
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "PREMIER_DEGRE_TYPE_JURIDICTION",
+      "field": "natureJuridiction",
+      "values": {},
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "JURIDICTION_JUDICIAIRE",
+      "field": "juridictionJudiciaire",
+      "values": {
+        "Cour de cassation": 1
+      },
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "PDC_CHECKBOX_RESTREINDRE_ARRET",
+      "field": "restreindreArretPlanClassement",
+      "values": {},
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "CASSATION_TYPE_PUBLICATION_BULLETIN",
+      "field": "typePublicationBulletin",
+      "values": {
+        "F": 1
+      },
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "CASSATION_NATURE_DECISION",
+      "field": "nature",
+      "values": {
+        "arret": 1
       },
       "childs": {},
       "totalElement": 0

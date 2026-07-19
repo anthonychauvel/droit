@@ -1,5 +1,5 @@
 {
-  "executionTime": 26,
+  "executionTime": 30,
   "results": [
     {
       "titles": [
@@ -52,20 +52,19 @@
   ],
   "facets": [
     {
-      "facetElem": "FOND",
-      "field": "origine",
+      "facetElem": "JURIDICTION_JUDICIAIRE",
+      "field": "juridictionJudiciaire",
       "values": {
-        "ACCO": 387844,
-        "CETAT": 569929,
-        "CIRC": 10647,
-        "CNIL": 26763,
-        "CODE": 76,
-        "CONSTIT": 7379,
-        "JORF": 1126071,
-        "JUFI": 3502,
-        "JURI": 605794,
-        "KALI": 21915,
-        "LEGI": 117319
+        "Cour de cassation": 1
+      },
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "CASSATION_NATURE_DECISION",
+      "field": "nature",
+      "values": {
+        "arret": 1
       },
       "childs": {},
       "totalElement": 0
@@ -78,18 +77,21 @@
       "totalElement": 0
     },
     {
-      "facetElem": "JURIDICTION_JUDICIAIRE",
-      "field": "juridictionJudiciaire",
+      "facetElem": "FOND",
+      "field": "origine",
       "values": {
-        "Cour de cassation": 1
+        "ACCO": 387844,
+        "CETAT": 570075,
+        "CIRC": 10648,
+        "CNIL": 26763,
+        "CODE": 76,
+        "CONSTIT": 7379,
+        "JORF": 1126192,
+        "JUFI": 3502,
+        "JURI": 605794,
+        "KALI": 21932,
+        "LEGI": 117348
       },
-      "childs": {},
-      "totalElement": 0
-    },
-    {
-      "facetElem": "APPEL_SIEGE_APPEL",
-      "field": "siegeAppel",
-      "values": {},
       "childs": {},
       "totalElement": 0
     },
@@ -110,19 +112,17 @@
       "totalElement": 0
     },
     {
-      "facetElem": "CASSATION_FORMATION",
-      "field": "formation",
-      "values": {
-        "CHAMBRE_SOCIALE": 1
-      },
+      "facetElem": "APPEL_SIEGE_APPEL",
+      "field": "siegeAppel",
+      "values": {},
       "childs": {},
       "totalElement": 0
     },
     {
-      "facetElem": "CASSATION_NATURE_DECISION",
-      "field": "nature",
+      "facetElem": "CASSATION_FORMATION",
+      "field": "formation",
       "values": {
-        "arret": 1
+        "CHAMBRE_SOCIALE": 1
       },
       "childs": {},
       "totalElement": 0
