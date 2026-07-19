@@ -23,6 +23,7 @@ on:
           - jurisprudence
           - lister-tous-articles-travail
           - lister-tous-articles-secu
+          - lister-tous-ccn
           - code-travail-complet
           - code-secu-complet
           - les-deux
@@ -131,6 +132,11 @@ jobs:
         run: |
           python3 scripts/list_all_code_articles.py --code-id LEGITEXT000006073189 --out all_articles_code_secu.txt
 
+      - name: "Lister tous les IDCC disponibles (exploratoire -- voir debug_list_ccn/ après coup)"
+        if: ${{ always() && github.event.inputs.cible == 'lister-tous-ccn' }}
+        run: |
+          python3 scripts/list_all_ccn.py --out idcc_list_complet.txt --debug-dir debug_list_ccn
+
       - name: "ATTENTION ECHELLE : Récupérer le contenu de TOUS les articles du Code du travail (~10-12k, plusieurs heures, par lots avec reprise automatique)"
         if: ${{ always() && github.event.inputs.cible == 'code-travail-complet' }}
         run: |
@@ -143,9 +149,6 @@ jobs:
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
 
-          # Ne garde que les articles pas encore récupérés (reprise automatique si le run précédent
-          # a été coupé par le timeout GitHub de 6h -- pull_code_travail.py n'a pas de --only-missing
-          # intégré, donc on le fait ici en amont)
           python3 -c "
           import os
           with open('all_articles_code_travail.txt', encoding='utf-8') as f:
@@ -156,8 +159,6 @@ jobs:
               f.write(chr(10).join(restants))
           "
 
-          # Lots de 700 (~14 min/lot à 1.2s/appel) -- largement sous la limite de 6h par lot,
-          # avec un commit après CHAQUE lot pour ne jamais perdre de progression
           split -l 700 /tmp/restants.txt /tmp/lot_
           for lot in /tmp/lot_*; do
             n=$(wc -l < "$lot")
@@ -166,7 +167,8 @@ jobs:
             python3 scripts/pull_code_travail.py --articles-file "$lot" --code-id LEGITEXT000006072050 --out output/code-travail-complet
             git add output/code-travail-complet/
             git diff --staged --quiet || git commit -m "Code du travail complet : lot $(basename $lot) ($(date -u +%Y-%m-%d %H:%M))"
-            git push
+            git pull --rebase --autostash origin main || true
+            git push || (sleep 5 && git pull --rebase --autostash origin main && git push)
           done
           echo "Terminé (ou temps écoulé -- relance simplement la même option pour reprendre là où ça s'est arrêté)."
 
@@ -200,7 +202,8 @@ jobs:
             python3 scripts/pull_code_travail.py --articles-file "$lot" --code-id LEGITEXT000006073189 --out output/code-secu-complet
             git add output/code-secu-complet/
             git diff --staged --quiet || git commit -m "Code sécu complet : lot $(basename $lot) ($(date -u +%Y-%m-%d %H:%M))"
-            git push
+            git pull --rebase --autostash origin main || true
+            git push || (sleep 5 && git pull --rebase --autostash origin main && git push)
           done
           echo "Terminé (ou temps écoulé -- relance simplement la même option pour reprendre là où ça s'est arrêté)."
 
@@ -209,11 +212,17 @@ jobs:
         run: |
           python3 scripts/build_search_index.py --out output/search-index.json
 
+      - name: Générer le rapport d'audit des changements de ce run
+        if: always()
+        run: |
+          python3 scripts/generate_audit_report.py --out audits
+
       - name: Commit et push des résultats
         if: always()
         run: |
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
-          git add output/ all_articles_code_travail.txt all_articles_code_secu.txt 2>/dev/null || git add output/
+          git add output/ audits/ all_articles_code_travail.txt all_articles_code_secu.txt idcc_list_complet.txt debug_list_ccn/ 2>/dev/null || git add output/ audits/
           git diff --staged --quiet || git commit -m "Mise à jour données Légifrance ($(date -u +%Y-%m-%d))"
-          git push
+          git pull --rebase --autostash origin main || true
+          git push || (sleep 5 && git pull --rebase --autostash origin main && git push)
