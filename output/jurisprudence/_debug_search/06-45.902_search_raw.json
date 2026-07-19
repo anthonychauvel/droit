@@ -1,5 +1,5 @@
 {
-  "executionTime": 26,
+  "executionTime": 93,
   "results": [
     {
       "titles": [
@@ -52,15 +52,6 @@
   ],
   "facets": [
     {
-      "facetElem": "CASSATION_FORMATION",
-      "field": "formation",
-      "values": {
-        "CHAMBRE_SOCIALE": 1
-      },
-      "childs": {},
-      "totalElement": 0
-    },
-    {
       "facetElem": "CASSATION_TYPE_PUBLICATION_BULLETIN",
       "field": "typePublicationBulletin",
       "values": {
@@ -70,44 +61,18 @@
       "totalElement": 0
     },
     {
-      "facetElem": "PREMIER_DEGRE_TYPE_JURIDICTION",
-      "field": "natureJuridiction",
-      "values": {},
-      "childs": {},
-      "totalElement": 0
-    },
-    {
-      "facetElem": "PDC_CHECKBOX_RESTREINDRE_ARRET",
-      "field": "restreindreArretPlanClassement",
-      "values": {},
-      "childs": {},
-      "totalElement": 0
-    },
-    {
-      "facetElem": "CASSATION_NATURE_DECISION",
-      "field": "nature",
+      "facetElem": "JURIDICTION_JUDICIAIRE",
+      "field": "juridictionJudiciaire",
       "values": {
-        "arret": 1
+        "Cour de cassation": 1
       },
       "childs": {},
       "totalElement": 0
     },
     {
-      "facetElem": "FOND",
-      "field": "origine",
-      "values": {
-        "ACCO": 387844,
-        "CETAT": 569929,
-        "CIRC": 10647,
-        "CNIL": 26763,
-        "CODE": 76,
-        "CONSTIT": 7379,
-        "JORF": 1126070,
-        "JUFI": 3502,
-        "JURI": 605794,
-        "KALI": 21915,
-        "LEGI": 117319
-      },
+      "facetElem": "APPEL_SIEGE_APPEL",
+      "field": "siegeAppel",
+      "values": {},
       "childs": {},
       "totalElement": 0
     },
@@ -139,17 +104,52 @@
       "totalElement": 0
     },
     {
-      "facetElem": "APPEL_SIEGE_APPEL",
-      "field": "siegeAppel",
+      "facetElem": "CASSATION_NATURE_DECISION",
+      "field": "nature",
+      "values": {
+        "arret": 1
+      },
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "PDC_CHECKBOX_RESTREINDRE_ARRET",
+      "field": "restreindreArretPlanClassement",
       "values": {},
       "childs": {},
       "totalElement": 0
     },
     {
-      "facetElem": "JURIDICTION_JUDICIAIRE",
-      "field": "juridictionJudiciaire",
+      "facetElem": "PREMIER_DEGRE_TYPE_JURIDICTION",
+      "field": "natureJuridiction",
+      "values": {},
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "CASSATION_FORMATION",
+      "field": "formation",
       "values": {
-        "Cour de cassation": 1
+        "CHAMBRE_SOCIALE": 1
+      },
+      "childs": {},
+      "totalElement": 0
+    },
+    {
+      "facetElem": "FOND",
+      "field": "origine",
+      "values": {
+        "ACCO": 387844,
+        "CETAT": 570075,
+        "CIRC": 10648,
+        "CNIL": 26763,
+        "CODE": 76,
+        "CONSTIT": 7379,
+        "JORF": 1126191,
+        "JUFI": 3502,
+        "JURI": 605794,
+        "KALI": 21932,
+        "LEGI": 117348
       },
       "childs": {},
       "totalElement": 0
