@@ -119,6 +119,10 @@ def main():
     numbers = extract_article_numbers(result)
     print(f"Articles trouvés: {len(numbers)}")
 
+    out_dir = os.path.dirname(args.out)
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
+
     with open(args.out, "w", encoding="utf-8") as f:
         f.write("\n".join(sorted(numbers)))
 
