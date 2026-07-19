@@ -177,6 +177,7 @@ def main():
             lines.append("")
 
         # Code du travail / sécu / jurisprudence -- juste la liste, moins de detail utile a resumer
+        categorized = set()
         for folder, label in [("code-travail", "Code du travail"), ("code-secu", "Code de la sécurité sociale"),
                                ("jurisprudence", "Jurisprudence")]:
             others = [p for p in changed["modifies"] + changed["ajoutes"] if f"/{folder}/" in p and p.endswith(".json")]
@@ -188,6 +189,20 @@ def main():
                 if len(others) > 30:
                     lines.append(f"- ... et {len(others)-30} de plus")
                 lines.append("")
+                categorized.update(others)
+
+        # Fourre-tout : tout ce qui a changé mais ne rentre dans aucune catégorie ci-dessus
+        # (ex: all_articles_code_travail.txt, idcc_list_complet.txt -- fichiers racine
+        # produits par les options "lister-tous-..."). Sans ça, ces fichiers étaient comptés
+        # dans le total mais jamais nommés, ce qui a rendu un vrai bug difficile à diagnostiquer.
+        categorized.update(ccn_changes)
+        non_categorises = [p for p in changed["modifies"] + changed["ajoutes"] if p not in categorized]
+        if non_categorises:
+            lines.append(f"## Autres fichiers ({len(non_categorises)})")
+            for p in sorted(non_categorises):
+                tag = "nouveau" if p in changed["ajoutes"] else "modifié"
+                lines.append(f"- {p} ({tag})")
+            lines.append("")
 
         if changed["supprimes"]:
             lines.append(f"## Fichiers supprimés ({len(changed['supprimes'])})")
