@@ -205,7 +205,32 @@ def main():
     with open(out_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
+    # resume court pour l'index (1ere ligne utile apres le titre, ou "aucun changement")
+    if total == 0:
+        resume = "Aucun changement"
+    else:
+        resume = f"{total} fichier(s) touché(s)"
+        if changed["ajoutes"]:
+            resume += f", {len(changed['ajoutes'])} nouveau(x)"
+
+    index_path = os.path.join(args.out, "index.json")
+    try:
+        with open(index_path, encoding="utf-8") as f:
+            index = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        index = []
+    index.insert(0, {
+        "fichier": os.path.basename(out_path),
+        "date": date_str,
+        "heure": now.strftime("%H:%M UTC"),
+        "resume": resume,
+        "total_changements": total,
+    })
+    with open(index_path, "w", encoding="utf-8") as f:
+        json.dump(index, f, ensure_ascii=False, indent=1)
+
     print(f"Rapport d'audit écrit dans {out_path} ({total} changement(s))")
+    print(f"Index mis à jour dans {index_path} ({len(index)} rapport(s) au total)")
 
 
 if __name__ == "__main__":
