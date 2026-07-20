@@ -1,0 +1,336 @@
+{
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000045677166",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Dans les    services de prévention et de santé au travail interentreprises, une liste d'entreprises et d'établissements indiquant les effectifs de travailleurs correspondants et les risques professionnels auxquels ils sont exposés est attribuée à chaque médecin.",
+    "texteHtml": "<p>Dans les    services de prévention et de santé au travail interentreprises, une liste d'entreprises et d'établissements indiquant les effectifs de travailleurs correspondants et les risques professionnels auxquels ils sont exposés est attribuée à chaque médecin.</p>",
+    "num": "R4623-10",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "3.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1651104000000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 1932735279,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Partie réglementaire  ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000018464861",
+          "id": "LEGISCTA000018464861",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Quatrième partie : Santé et sécurité au travail ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018488235",
+          "id": "LEGISCTA000018532924",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Livre VI : Institutions et organismes de prévention ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492535",
+          "id": "LEGISCTA000018528828",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "TITRE II : SERVICES DE SANTÉ AU TRAVAIL",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492751",
+          "id": "LEGISCTA000018528617",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2022-04-27",
+          "titre": "Titre II : Services de santé au travail ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492751",
+          "id": "LEGISCTA000025280099",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2022-04-27",
+          "fin": "2999-01-01",
+          "titre": "Titre II : Services de prévention et de santé au travail ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492751",
+          "id": "LEGISCTA000046340635",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "Chapitre III : Personnels concourant aux services  de santé au travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492953",
+          "id": "LEGISCTA000018528412",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre III : Personnels concourant aux services  de santé au travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492953",
+          "id": "LEGISCTA000025279930",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "Section 1 : Médecin du travail.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492955",
+          "id": "LEGISCTA000018528410",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2999-01-01",
+          "titre": "Section 1 : Médecin du travail.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492955",
+          "id": "LEGISCTA000025279928",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "Sous-section 2 : Recrutement, nomination, affectation  et conditions d'exercice.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492961",
+          "id": "LEGISCTA000018528404",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 2 : Recrutement, nomination, affectation  et conditions d'exercice.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492961",
+          "id": "LEGISCTA000025279922",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "Paragraphe 2 : Nomination.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492971",
+          "id": "LEGISCTA000018528394",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2999-01-01",
+          "titre": "Paragraphe 2 : Nomination.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492971",
+          "id": "LEGISCTA000025279903",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 2,
+      "longeurChemin": 56,
+      "titreTxt": [
+        {
+          "debut": "1973-01-03",
+          "fin": "2999-01-01",
+          "titre": "Code du travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000006072050",
+          "id": "LEGITEXT000006072050",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000018492985",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000018492971",
+    "sectionParentId": "LEGISCTA000025279903",
+    "sectionParentTitre": "Paragraphe 2 : Nomination.",
+    "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre VI : Institutions et organismes de prévention  &gt; Titre II : Services de prévention et de santé au travail  &gt; Chapitre III : Personnels concourant aux services  de santé au travail &gt; Section 1 : Médecin du travail. &gt; Sous-section 2 : Recrutement, nomination, affectation  et conditions d'exercice. &gt; Paragraphe 2 : Nomination.",
+    "refInjection": "IG-20260114",
+    "idTechInjection": "LEGIARTI000045677166",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000006072050",
+        "titre": "Code du travail",
+        "titreLong": "Code du travail",
+        "etat": "VIGUEUR",
+        "dateDebut": 94867200000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000006072050",
+        "datePubli": 32472144000000,
+        "datePubliComputed": null,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "",
+    "notaHtml": "",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000045668051",
+        "textTitle": "Décret n°2022-679 du 26 avril 2022 - art. 2",
+        "linkType": "MODIFIE",
+        "linkOrientation": "cible",
+        "articleNum": "2",
+        "articleId": "LEGIARTI000045670715",
+        "natureText": "DECRET",
+        "datePubliTexte": "2022-04-27",
+        "dateSignaTexte": "2022-04-26",
+        "dateDebutCible": "2022-04-28"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. D4622-13 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D4622-13",
+        "articleId": "LEGIARTI000018528572",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. D4622-24 (VT)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D4622-24",
+        "articleId": "LEGIARTI000022356348",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1266192000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. D4622-5 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D4622-5",
+        "articleId": "LEGIARTI000025280071",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1341100800000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R4623-49 (Ab)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R4623-49",
+        "articleId": "LEGIARTI000018528284",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R241-32 al 6 (Ab)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "R241-32",
+        "articleId": "LEGIARTI000018510157",
+        "natureText": "CODE"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000018528380",
+        "etat": "MODIFIE",
+        "version": "1.0",
+        "dateDebut": 1209600000000,
+        "dateFin": 1341100800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000025279877",
+        "etat": "MODIFIE",
+        "version": "2.0",
+        "dateDebut": 1341100800000,
+        "dateFin": 1651104000000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000045677166",
+        "etat": "VIGUEUR",
+        "version": "3.0",
+        "dateDebut": 1651104000000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R4623-10",
+      "4623-10"
+    ],
+    "versionPrecedente": "LEGIARTI000025279877",
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": true,
+    "comporteLiensSP": false
+  }
+}
