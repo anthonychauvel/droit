@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Répertoire juridique — Code du travail &amp; CCN</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+  :root{
+    --marine: #191c35;
+    --violet: #6d5ce8;
+    --violet-2: #5847d6;
+    --violet-soft: #efecfc;
+    --papier: #f6f5fb;
+    --carte: #ffffff;
+    --ligne: #e6e4f2;
+    --texte: #1f2138;
+    --texte-doux: #6b6f8a;
+    --succes: #2f9e63;
+    --or: #e3a13d;
+    --bleu: #4a90d9;
+    --rose: #d9678c;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0; background:var(--papier); color:var(--texte);
+    font-family:'Source Sans 3', -apple-system, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    display:flex; min-height:100vh;
+  }
+  h1,h2,h3, .marque-nom, .nav-item, .carte-titre, .badge-titre{ font-family:'Manrope', sans-serif; }
+
+  aside{
+    width:230px; flex-shrink:0; background:var(--marine); color:#fff;
+    padding:28px 18px; display:flex; flex-direction:column;
+    position:sticky; top:0; height:100vh; overflow-y:auto;
+  }
+  .marque{ padding:6px 8px 22px; }
+  .marque svg{ width:30px; height:30px; margin-bottom:12px; }
+  .marque-nom{ font-weight:800; font-size:15px; line-height:1.25; letter-spacing:.01em; }
+  .marque-sous{ font-size:12.5px; color:#b8bcdc; margin-top:8px; line-height:1.4; }
+  .marque-badge{ display:flex; align-items:center; gap:6px; margin-top:14px; font-size:11.5px; color:#9a9ec8; }
+  .marque-badge i{ width:6px; height:6px; border-radius:50%; background:var(--succes); display:inline-block; }
+
+  nav{ display:flex; flex-direction:column; gap:3px; margin-top:8px; }
+  .nav-item{
+    display:flex; align-items:center; gap:11px; padding:11px 12px;
+    border-radius:8px; color:#c7cae8; font-size:14.5px; font-weight:600;
+    cursor:pointer; border:none; background:none; text-align:left; width:100%;
+    font-family:inherit; transition: background .12s;
+  }
+  .nav-item:hover{ background:rgba(255,255,255,.06); color:#fff; }
+  .nav-item.actif{ background:var(--violet); color:#fff; }
+  .nav-item svg{ width:18px; height:18px; flex-shrink:0; stroke-width:2; }
+
+  .sidebar-pied{
+    margin-top:auto; padding:16px 14px; background:rgba(255,255,255,.05);
+    border-radius:10px; font-size:12px; color:#b8bcdc; line-height:1.5;
+  }
+  .sidebar-pied b{ color:#fff; display:block; margin-bottom:3px; font-size:12.5px; }
+
+  main{ flex:1; padding:44px 40px 80px; max-width:920px; }
+
+  .entete{ text-align:center; margin-bottom:30px; }
+  .entete h1{ font-size:clamp(28px,4vw,36px); font-weight:800; margin:0 0 8px; color:var(--marine); }
+  .entete p{ color:var(--texte-doux); font-size:15.5px; margin:0; }
+
+  .boite-recherche{
+    background:var(--carte); border:1.5px solid var(--violet); border-radius:14px;
+    padding:8px; display:flex; align-items:center; gap:10px;
+    box-shadow:0 8px 28px -12px rgba(109,92,232,.35);
+    max-width:640px; margin:0 auto;
+  }
+  .boite-recherche svg{ width:19px; height:19px; stroke:var(--texte-doux); margin-left:10px; flex-shrink:0; }
+  #q{
+    flex:1; border:none; outline:none; background:none; font-size:15.5px;
+    padding:12px 4px; font-family:inherit; color:var(--texte);
+  }
+  #q::placeholder{ color:#a5a8c2; }
+  .btn-go{
+    width:42px; height:42px; border-radius:10px; background:var(--violet); border:none;
+    display:flex; align-items:center; justify-content:center; cursor:pointer;
+    flex-shrink:0; transition:background .12s;
+  }
+  .btn-go:hover{ background:var(--violet-2); }
+  .btn-go svg{ width:18px; height:18px; stroke:#fff; }
+
+  .eyebrow-recherche{
+    text-align:center; font-size:12.5px; color:var(--texte-doux); margin:14px 0 6px;
+  }
+
+  .badges-ligne{
+    text-align:center; font-size:12px; color:var(--texte-doux);
+    margin:22px 0 18px; text-transform:uppercase; letter-spacing:.04em; font-weight:600;
+  }
+  .badges-features{ display:flex; justify-content:center; gap:36px; flex-wrap:wrap; margin-bottom:36px; }
+  .badge-feature{ display:flex; align-items:center; gap:10px; max-width:190px; }
+  .badge-feature .ic{
+    width:38px; height:38px; border-radius:10px; background:var(--violet-soft);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .badge-feature .ic svg{ width:18px; height:18px; stroke:var(--violet); }
+  .badge-titre{ font-size:13px; font-weight:700; color:var(--texte); line-height:1.3; }
+
+  .section-titre{ font-size:16px; font-weight:800; margin:0 0 16px; color:var(--marine); }
+
+  .grille-exemples{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:8px; }
+  @media (max-width:640px){ .grille-exemples{ grid-template-columns:1fr; } }
+  .carte-exemple{
+    background:var(--carte); border:1px solid var(--ligne); border-radius:12px;
+    padding:16px; display:flex; align-items:center; gap:13px; cursor:pointer;
+    transition: border-color .12s, transform .12s;
+  }
+  .carte-exemple:hover{ border-color:var(--violet); transform:translateY(-1px); }
+  .carte-exemple .ic{
+    width:42px; height:42px; border-radius:10px; display:flex; align-items:center;
+    justify-content:center; flex-shrink:0;
+  }
+  .carte-exemple .ic svg{ width:19px; height:19px; }
+  .carte-titre{ font-size:14.5px; font-weight:700; margin:0 0 2px; }
+  .carte-sous{ font-size:12.5px; color:var(--texte-doux); }
+  .carte-exemple .chevron{ margin-left:auto; width:16px; height:16px; stroke:#b5b8d1; flex-shrink:0; }
+
+  #resultats{ display:none; }
+  #resultats.actif{ display:block; }
+  #zone-accueil.masque{ display:none; }
+
+  .retour-accueil{
+    display:inline-flex; align-items:center; gap:6px; color:var(--violet);
+    font-size:13.5px; font-weight:600; cursor:pointer; margin-bottom:18px; border:none;
+    background:none; font-family:inherit; padding:0;
+  }
+  .retour-accueil svg{ width:15px; height:15px; }
+
+  .groupe-titre{
+    font-family:'Manrope', sans-serif; font-size:12.5px; font-weight:800;
+    text-transform:uppercase; letter-spacing:.07em; color:var(--texte-doux);
+    margin:24px 0 12px;
+  }
+  .groupe-titre:first-of-type{ margin-top:0; }
+
+  .carte-ccn, .carte-article{
+    background:var(--carte); border:1px solid var(--ligne); border-radius:10px;
+    padding:16px 18px; margin-bottom:10px;
+  }
+  .carte-ccn{ border-left:3px solid var(--violet); }
+  .carte-article{ border-left:3px solid var(--bleu); }
+  .carte-haut{ display:flex; justify-content:space-between; align-items:baseline; gap:12px; }
+  .carte-nom{ font-weight:700; font-size:15px; color:var(--texte); line-height:1.4; }
+  .carte-num{
+    font-family:'Manrope', sans-serif; font-size:11.5px; color:#fff; background:var(--violet);
+    padding:3px 9px; border-radius:20px; white-space:nowrap; font-weight:700;
+  }
+  .carte-article .carte-num{ background:var(--bleu); }
+  .carte-extrait{
+    font-size:13.5px; color:var(--texte-doux); margin-top:9px; line-height:1.55;
+    padding-top:9px; border-top:1px solid var(--ligne);
+  }
+  .carte-extrait mark{ background:#fde8b8; color:var(--texte); padding:0 1px; border-radius:2px; }
+
+  .banniere-terme{
+    background:var(--violet-soft); border-radius:10px; padding:16px 18px;
+    margin-bottom:18px; font-size:14px; line-height:1.5; color:var(--marine);
+  }
+  .banniere-terme b{ color:var(--violet-2); }
+
+  .etat-vide{ text-align:center; padding:50px 20px; color:var(--texte-doux); font-size:14.5px; }
+
+  footer.pied-page{ text-align:center; padding:26px 20px 4px; font-size:12.5px; color:var(--texte-doux); }
+  footer.pied-page a{ color:var(--violet); text-decoration:none; font-weight:600; }
+
+  @media (max-width:820px){
+    body{ flex-direction:column; }
+    aside{ width:100%; height:auto; position:relative; flex-direction:row; align-items:center; flex-wrap:wrap; padding:14px 16px; }
+    .marque{ padding:0; flex:1; display:flex; align-items:center; gap:10px; }
+    .marque svg{ margin:0; }
+    .marque-sous, .marque-badge{ display:none; }
+    nav{ flex-direction:row; margin-top:0; flex-wrap:wrap; }
+    .sidebar-pied{ display:none; }
+    main{ padding:28px 18px 60px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    .carte-exemple, .btn-go{ transition:none; }
+  }
+</style>
+</head>
+<body>
+
+<aside>
+  <div class="marque">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M12 3v18M5 8l-3 6a3 3 0 006 0l-3-6zM19 8l-3 6a3 3 0 006 0l-3-6zM5 8h14M8 21h8"/></svg>
+    <div class="marque-nom">RÉPERTOIRE<br>JURIDIQUE</div>
+    <div class="marque-sous">Code du travail &amp; CCN</div>
+    <div class="marque-badge"><i></i> Droit accessible à tous</div>
+  </div>
+
+  <nav>
+    <button class="nav-item actif" data-vue="recherche" onclick="changerVue('recherche')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Recherche
+    </button>
+    <button class="nav-item" data-vue="code" onclick="changerVue('code')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 4.5A2.5 2.5 0 016.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15z"/></svg>
+      Code du travail
+    </button>
+    <button class="nav-item" data-vue="ccn" onclick="changerVue('ccn')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="7" r="3.5"/><circle cx="17" cy="8" r="3"/><path d="M2 21v-1a6 6 0 016-6h1a6 6 0 016 6v1M16 12.5a5 5 0 015 5V19"/></svg>
+      Conventions collectives (CCN)
+    </button>
+    <button class="nav-item" data-vue="juris" onclick="changerVue('juris')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M5 8l-3 6a3 3 0 006 0l-3-6zM19 8l-3 6a3 3 0 006 0l-3-6zM5 8h14M8 21h8"/></svg>
+      Jurisprudence
+    </button>
+    <button class="nav-item" data-vue="secu" onclick="changerVue('secu')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
+      Sécurité sociale
+    </button>
+  </nav>
+
+  <div class="sidebar-pied">
+    <b>Toujours à jour</b>
+    Mise à jour hebdomadaire des textes officiels
+  </div>
+</aside>
+
+<main>
+  <div id="zone-accueil">
+    <div class="entete">
+      <h1>Répertoire juridique</h1>
+      <p>Code du travail, Conventions collectives et jurisprudence</p>
+    </div>
+
+    <div class="eyebrow-recherche">✨ Posez votre question en langage naturel</div>
+
+    <div class="boite-recherche">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="q" placeholder="Ex. : coiffeuse, heures supp, congés payés, mon patron…" autocomplete="off">
+      <button class="btn-go" onclick="rendreResultats(document.getElementById('q').value)" aria-label="Rechercher">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+    </div>
+
+    <div class="badges-ligne">Recherche intelligente activée</div>
+    <div class="badges-features">
+      <div class="badge-feature">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 20l4-1 10-10-3-3L5 16l-1 4z"/></svg></div>
+        <div><div class="badge-titre">Tolérance fautes d'orthographe</div></div>
+      </div>
+      <div class="badge-feature">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M17 2l4 4-4 4M3 11V9a4 4 0 014-4h14M7 22l-4-4 4-4M21 13v2a4 4 0 01-4 4H3"/></svg></div>
+        <div><div class="badge-titre">Recherche par synonymes</div></div>
+      </div>
+      <div class="badge-feature">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 2a5 5 0 015 5c0 1.5-.7 2.5-1.5 3.3M12 2a5 5 0 00-5 5c0 1.5.7 2.5 1.5 3.3M12 2v20M7 10.3C5.3 11 4 12.7 4 15a4 4 0 004 4M17 10.3c1.7.7 3 2.4 3 4.7a4 4 0 01-4 4"/></svg></div>
+        <div><div class="badge-titre">Compréhension du langage naturel</div></div>
+      </div>
+    </div>
+
+    <div class="section-titre">Exemples de recherches</div>
+    <div class="grille-exemples" id="grille-exemples"></div>
+  </div>
+
+  <div id="resultats">
+    <button class="retour-accueil" onclick="retourAccueil()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Retour
+    </button>
+    <div id="contenu-resultats"></div>
+  </div>
+
+  <footer class="pied-page">
+    🛡️ Sources officielles <a href="https://www.legifrance.gouv.fr" target="_blank" rel="noopener">Légifrance.gouv.fr</a>
+  </footer>
+</main>
+
+<script src="synonymes-recherche.js"></script>
+<script>
+'use strict';
+
+const URL_SEARCH_INDEX = 'https://raw.githubusercontent.com/anthonychauvel/droit/main/output/search-index.json';
+const URL_CCN_LISTE = 'https://raw.githubusercontent.com/anthonychauvel/droit/main/output/ccn-liste.json';
+
+let SEARCH_INDEX = null;
+let CCN_LISTE = null;
+let CHARGEMENT_TERMINE = false;
+
+const EXEMPLES = [
+  { titre: 'Licenciement pour faute', sous: 'Procédure, indemnités…', requete: 'licenciement pour faute', couleur: '#6d5ce8', icone: 'briefcase' },
+  { titre: 'Congés payés', sous: 'Acquisition, prise, indemnité…', requete: 'conges payes', couleur: '#2f9e63', icone: 'calendar' },
+  { titre: 'Temps de travail', sous: 'Durée légale, heures supplémentaires…', requete: 'heures supplementaires', couleur: '#4a90d9', icone: 'clock' },
+  { titre: 'Salaire', sous: 'Prime, 13e mois, minimum légal…', requete: '13e mois', couleur: '#e3a13d', icone: 'euro' },
+  { titre: 'Rupture du contrat', sous: 'Démission, licenciement, rupture conventionnelle…', requete: 'rupture conventionnelle', couleur: '#6d5ce8', icone: 'doc' },
+  { titre: 'Conventions collectives', sous: "Toutes les CCN par secteur d'activité…", requete: 'coiffeuse', couleur: '#d9678c', icone: 'people' },
+];
+
+const ICONES = {
+  briefcase: '<path d="M3 7h18v13H3zM8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/>',
+  calendar: '<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 16 14"/>',
+  euro: '<path d="M18 6a7 7 0 100 12M4 10h9M4 14h7"/>',
+  doc: '<path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/>',
+  people: '<circle cx="9" cy="7" r="3.5"/><circle cx="17" cy="8" r="3"/><path d="M2 21v-1a6 6 0 016-6h1a6 6 0 016 6v1M16 12.5a5 5 0 015 5V19"/>',
+};
+
+function escapeHtml(s){
+  const d = document.createElement('div');
+  d.textContent = s == null ? '' : String(s);
+  return d.innerHTML;
+}
+
+function rendreExemples(){
+  const grille = document.getElementById('grille-exemples');
+  grille.innerHTML = EXEMPLES.map(function(e){
+    return '<div class="carte-exemple" onclick="rendreResultats(' + JSON.stringify(e.requete).replace(/"/g,'&quot;') + ')">' +
+      '<div class="ic" style="background:' + e.couleur + '22"><svg viewBox="0 0 24 24" fill="none" stroke="' + e.couleur + '" stroke-width="2" stroke-linecap="round">' + ICONES[e.icone] + '</svg></div>' +
+      '<div><div class="carte-titre">' + escapeHtml(e.titre) + '</div><div class="carte-sous">' + escapeHtml(e.sous) + '</div></div>' +
+      '<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>' +
+      '</div>';
+  }).join('');
+}
+rendreExemples();
+
+async function chargerDonnees(){
+  try{
+    const [idx, ccn] = await Promise.all([
+      fetch(URL_SEARCH_INDEX).then(r => r.json()),
+      fetch(URL_CCN_LISTE).then(r => r.json()),
+    ]);
+    SEARCH_INDEX = idx;
+    CCN_LISTE = ccn;
+    CHARGEMENT_TERMINE = true;
+  }catch(e){
+    console.error('Erreur de chargement', e);
+  }
+}
+chargerDonnees();
+
+function surligner(texte, mots){
+  let out = texte;
+  mots.forEach(function(m){
+    if(m.length < 3) return;
+    const re = new RegExp('(' + m.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+    out = out.replace(re, '<mark>$1</mark>');
+  });
+  return out;
+}
+
+function chercherArticles(q, codeIndex, limite){
+  if(!codeIndex) return [];
+  const mots = window.M_RechercheSynonymes.normaliser(q).split(' ').filter(m => m.length > 1);
+  if(mots.length === 0) return [];
+  const trouves = [];
+  codeIndex.forEach(function(entry){
+    (entry.hits || []).forEach(function(h){
+      const titreNorm = window.M_RechercheSynonymes.normaliser(h.title);
+      const nbMatch = mots.filter(m => titreNorm.indexOf(m) !== -1).length;
+      if(nbMatch > 0){
+        trouves.push({ num: entry.num, titre: entry.title, sectionTitre: h.title, score: nbMatch });
+      }
+    });
+  });
+  return trouves.sort((a,b) => b.score - a.score).slice(0, limite || 6);
+}
+
+function retourAccueil(){
+  categorieActive = null;
+  document.getElementById('resultats').classList.remove('actif');
+  document.getElementById('zone-accueil').classList.remove('masque');
+  document.getElementById('q').value = '';
+}
+
+function rendreResultats(q, categorie){
+  if(!q || !q.trim()){ return; }
+  document.getElementById('q').value = q;
+  document.getElementById('zone-accueil').classList.add('masque');
+  document.getElementById('resultats').classList.add('actif');
+  const el = document.getElementById('contenu-resultats');
+
+  if(!CHARGEMENT_TERMINE){
+    el.innerHTML = '<div class="etat-vide">Chargement des données…</div>';
+    setTimeout(function(){ if(CHARGEMENT_TERMINE) rendreResultats(q, categorie); }, 400);
+    return;
+  }
+
+  const chercherCcn = !categorie || categorie === 'ccn';
+  const chercherCode = !categorie || categorie === 'code';
+  const chercherSecu = !categorie || categorie === 'secu';
+
+  const ccnResultats = chercherCcn
+    ? window.M_RechercheSynonymes.rechercheIntelligente(q, CCN_LISTE || [], 5)
+    : [];
+  const estTermeGeneral = ccnResultats.length === 1 && ccnResultats[0].via === 'terme-general';
+
+  let html = '';
+
+  if(estTermeGeneral && chercherCcn){
+    html += '<div class="banniere-terme">Vous cherchez une règle générale : <b>' +
+      escapeHtml(ccnResultats[0].termeGeneral) + '</b>. Ce n\'est pas propre à une convention collective — ' +
+      'voici les articles qui en parlent :</div>';
+  } else if(ccnResultats.length > 0){
+    html += '<div class="groupe-titre">Convention(s) collective(s) probable(s)</div>';
+    ccnResultats.forEach(function(r){
+      html += '<div class="carte-ccn"><div class="carte-haut">' +
+        '<span class="carte-nom">' + escapeHtml(r.nom) + '</span>' +
+        '<span class="carte-num">IDCC ' + r.idcc + '</span></div></div>';
+    });
+  }
+
+  const termeArticles = estTermeGeneral ? ccnResultats[0].termeGeneral : q;
+  const articlesTravail = chercherCode ? chercherArticles(termeArticles, (SEARCH_INDEX && SEARCH_INDEX.code) || []) : [];
+  const articlesSecu = chercherSecu ? chercherArticles(termeArticles, (SEARCH_INDEX && SEARCH_INDEX.code_secu) || []) : [];
+  const tousArticles = articlesTravail.concat(articlesSecu).slice(0, 8);
+
+  if(tousArticles.length > 0){
+    html += '<div class="groupe-titre">' + (categorie === 'secu' ? 'Code de la sécurité sociale' : categorie === 'code' ? 'Code du travail' : 'Ce que dit la loi') + '</div>';
+    const motsRequete = window.M_RechercheSynonymes.normaliser(termeArticles).split(' ');
+    tousArticles.forEach(function(a){
+      html += '<div class="carte-article"><div class="carte-haut">' +
+        '<span class="carte-nom">Article ' + escapeHtml(a.num) + '</span></div>' +
+        '<div class="carte-extrait">' + surligner(escapeHtml(a.sectionTitre), motsRequete) + '</div>' +
+        '</div>';
+    });
+  }
+
+  if(!html){
+    html = '<div class="etat-vide">Rien trouvé pour « ' + escapeHtml(q) +
+      ' ». Essayez un autre mot, ou décrivez votre métier plutôt qu\'un terme technique.</div>';
+  }
+
+  el.innerHTML = html;
+}
+
+let debounceTimer;
+let categorieActive = null;
+document.getElementById('q').addEventListener('input', function(e){
+  clearTimeout(debounceTimer);
+  const val = e.target.value;
+  if(!val.trim()){ retourAccueil(); return; }
+  debounceTimer = setTimeout(function(){ rendreResultats(val, categorieActive); }, 260);
+});
+document.getElementById('q').addEventListener('keydown', function(e){
+  if(e.key === 'Enter'){ clearTimeout(debounceTimer); rendreResultats(e.target.value, categorieActive); }
+});
+
+function changerVue(vue){
+  document.querySelectorAll('.nav-item').forEach(function(b){ b.classList.toggle('actif', b.dataset.vue === vue); });
+  if(vue === 'recherche'){ categorieActive = null; retourAccueil(); return; }
+
+  if(vue === 'juris'){
+    categorieActive = null;
+    document.getElementById('zone-accueil').classList.add('masque');
+    document.getElementById('resultats').classList.add('actif');
+    document.getElementById('q').value = '';
+    document.getElementById('contenu-resultats').innerHTML =
+      '<div class="etat-vide">La jurisprudence n\'est pas encore indexée dans la recherche par mots-clés — ' +
+      'disponible bientôt.</div>';
+    return;
+  }
+
+  categorieActive = vue; // 'code', 'ccn' ou 'secu' -- filtre les recherches suivantes tant qu'on reste sur cette vue
+  const requetesParDefaut = { code: 'temps de travail', ccn: 'coiffeuse', secu: 'arret maladie' };
+  rendreResultats(requetesParDefaut[vue] || '', vue);
+}
+</script>
+</body>
+</html>
