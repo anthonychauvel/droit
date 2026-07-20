@@ -1,0 +1,325 @@
+{
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000033740738",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "L'avis médical d'aptitude ou d'inaptitude émis par le médecin du travail est transmis au salarié ainsi qu'à l'employeur par tout moyen leur conférant une date certaine. L'employeur le conserve pour être en mesure de le présenter à tout moment, sur leur demande, à l'inspecteur du travail et au médecin inspecteur du travail. Une copie de l'avis est versée au dossier médical en santé au travail du travailleur.",
+    "texteHtml": "<p align=\"left\">L'avis médical d'aptitude ou d'inaptitude émis par le médecin du travail est transmis au salarié ainsi qu'à l'employeur par tout moyen leur conférant une date certaine. L'employeur le conserve pour être en mesure de le présenter à tout moment, sur leur demande, à l'inspecteur du travail et au médecin inspecteur du travail. Une copie de l'avis est versée au dossier médical en santé au travail du travailleur. </p>",
+    "num": "R4624-55",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "1.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1483228800000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 536870911,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Partie réglementaire  ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000018464861",
+          "id": "LEGISCTA000018464861",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Quatrième partie : Santé et sécurité au travail ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018488235",
+          "id": "LEGISCTA000018532924",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Livre VI : Institutions et organismes de prévention ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492535",
+          "id": "LEGISCTA000018528828",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "TITRE II : SERVICES DE SANTÉ AU TRAVAIL",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492751",
+          "id": "LEGISCTA000018528617",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2022-04-27",
+          "titre": "Titre II : Services de santé au travail ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492751",
+          "id": "LEGISCTA000025280099",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2022-04-27",
+          "fin": "2999-01-01",
+          "titre": "Titre II : Services de prévention et de santé au travail ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492751",
+          "id": "LEGISCTA000046340635",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "Chapitre IV : Actions du médecin du travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493118",
+          "id": "LEGISCTA000018528264",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre IV : Actions et moyens des membres de l'équipe pluridisciplinaire de santé au travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493118",
+          "id": "LEGISCTA000025279758",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "Section 3 : Documents et rapports.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493202",
+          "id": "LEGISCTA000018528180",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2999-01-01",
+          "titre": "Section 3 : Documents et rapports.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493202",
+          "id": "LEGISCTA000025279593",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "Sous-section 4 : Dossier médical et fiches médicales d'aptitude.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493236",
+          "id": "LEGISCTA000018528144",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2017-01-01",
+          "titre": "Sous-section 3 : Dossier médical en santé au travail et fiches médicales d'aptitude.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493236",
+          "id": "LEGISCTA000025279556",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2017-01-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 3 : Avis médicaux d'aptitude et d'inaptitude",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493236",
+          "id": "LEGISCTA000033769141",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 3,
+      "longeurChemin": 53,
+      "titreTxt": [
+        {
+          "debut": "1973-01-03",
+          "fin": "2999-01-01",
+          "titre": "Code du travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000006072050",
+          "id": "LEGITEXT000006072050",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000033740729",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000018493236",
+    "sectionParentId": "LEGISCTA000033769141",
+    "sectionParentTitre": "Sous-section 3 : Avis médicaux d'aptitude et d'inaptitude",
+    "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre VI : Institutions et organismes de prévention  &gt; Titre II : Services de santé au travail  &gt; Chapitre IV : Actions et moyens des membres de l'équipe pluridisciplinaire de santé au travail &gt; Section 3 : Documents et rapports. &gt; Sous-section 3 : Avis médicaux d'aptitude et d'inaptitude",
+    "refInjection": "MD-20260511_202957_241_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000033740738",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000006072050",
+        "titre": "Code du travail",
+        "titreLong": "Code du travail",
+        "etat": "VIGUEUR",
+        "dateDebut": 94867200000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000006072050",
+        "datePubli": 32472144000000,
+        "datePubliComputed": null,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "",
+    "notaHtml": "",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000033723789",
+        "textTitle": "Décret n°2016-1908 du 27 décembre 2016 - art. 1",
+        "linkType": "CREE",
+        "linkOrientation": "cible",
+        "articleNum": "1",
+        "articleId": "LEGIARTI000033738345",
+        "natureText": "DECRET",
+        "datePubliTexte": "2016-12-29",
+        "dateSignaTexte": "2016-12-27",
+        "dateDebutCible": "2017-01-01"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000035840515",
+        "textTitle": "Arrêté du 16 octobre 2017 - art. 2 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "2",
+        "articleId": "LEGIARTI000050326429",
+        "natureText": "ARRETE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1508544000000,
+        "dateDebut": 1508630400000
+      },
+      {
+        "textCid": "JORFTEXT000035840515",
+        "textTitle": "Arrêté du 16 octobre 2017 - art. 3 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "3",
+        "articleId": "LEGIARTI000050326432",
+        "natureText": "ARRETE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1508544000000,
+        "dateDebut": 1508630400000
+      },
+      {
+        "textCid": "JORFTEXT000050325039",
+        "textTitle": "Arrêté du 26 septembre 2024 (Ab)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGITEXT000050326876",
+        "natureText": "ARRETE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1728518400000,
+        "dateDebut": 1728604800000
+      },
+      {
+        "textCid": "JORFTEXT000050627212",
+        "textTitle": "Arrêté du 5 novembre 2024 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGITEXT000050628045",
+        "natureText": "ARRETE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1732147200000,
+        "dateDebut": 1732233600000
+      },
+      {
+        "textCid": "JORFTEXT000051329148",
+        "textTitle": "Arrêté du 3 mars 2025 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGITEXT000051331719",
+        "natureText": "ARRETE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1741996800000,
+        "dateDebut": 1751328000000
+      },
+      {
+        "textCid": "JORFTEXT000054050163",
+        "textTitle": "Arrêté du 6 mai 2026 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGITEXT000054058385",
+        "natureText": "ARRETE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1778371200000,
+        "dateDebut": 1778457600000
+      }
+    ],
+    "lienConcordes": [],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000033740738",
+        "etat": "VIGUEUR",
+        "version": "1.0",
+        "dateDebut": 1483228800000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R4624-55",
+      "4624-55"
+    ],
+    "versionPrecedente": null,
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": false,
+    "comporteLiensSP": false
+  }
+}
