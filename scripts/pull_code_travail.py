@@ -140,7 +140,21 @@ def main():
     print(f"Token OK. Code: {args.code_id}. {len(articles)} article(s) à traiter.")
 
     os.makedirs(args.out, exist_ok=True)
-    summary = []
+
+    # IMPORTANT : fusionner avec le _summary.json existant plutôt que l'écraser.
+    # Sans ça, un run qui ne traite qu'une tranche (rotation hebdomadaire, lot du
+    # batch "complet") effaçait le souvenir de tout ce que les runs précédents
+    # avaient déjà récupéré -- même si les fichiers .json individuels restaient
+    # bien sur le disque, plus rien ne savait qu'ils existaient.
+    summary_path = os.path.join(args.out, "_summary.json")
+    existant = {}
+    if os.path.exists(summary_path):
+        try:
+            with open(summary_path, encoding="utf-8") as f:
+                for e in json.load(f):
+                    existant[e["article"]] = e
+        except Exception:
+            existant = {}
 
     for i, art in enumerate(articles, 1):
         print(f"[{i}/{len(articles)}] Article {art}...", end=" ")
@@ -152,14 +166,16 @@ def main():
 
         ok = "_error" not in result
         print("OK" if ok else f"ERREUR: {result.get('_error')}")
-        summary.append({"article": art, "status": "ok" if ok else "error"})
+        existant[art] = {"article": art, "status": "ok" if ok else "error"}
         time.sleep(args.delay)
 
-    with open(os.path.join(args.out, "_summary.json"), "w", encoding="utf-8") as f:
+    summary = list(existant.values())
+    with open(summary_path, "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
 
     n_ok = sum(1 for s in summary if s["status"] == "ok")
-    print(f"\nTerminé: {n_ok}/{len(articles)} OK.")
+    print(f"\nTerminé : {sum(1 for a in articles if existant.get(a,{}).get('status')=='ok')}/{len(articles)} "
+          f"OK sur ce run. Total cumulé dans {summary_path} : {n_ok}/{len(summary)}.")
 
 
 if __name__ == "__main__":
