@@ -6778,12 +6778,89 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000050130374",
+              "cid": "KALIARTI000050130374",
+              "intOrdre": 524287,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000050130374",
+              "pathTitle": [],
+              "content": "<p align=\"center\">Résolution</p><p align=\"left\">Les parties signataires des accords portant sur les salaires et primes des ouvriers et salaires des ETAM du BTP de Guadeloupe et ses dépendances, Saint-Martin et Saint-Barthélemy du 24 mai 2024 précisent que compte tenu de la structure des entreprises de la branche, il n'est pas nécessaire de prévoir de stipulation spécifique pour les entreprises de moins de 50 salariés, conformément à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000035608942&dateTexte=&categorieLien=cid\">article L. 2261-23-1 du code du travail</a>.</p><p align=\"left\">En conséquence de quoi, lesdites parties réitèrent leur demande d'extension de l'<a href=\"/affichIDCC.do?cidTexte=KALITEXT000050130405&categorieLien=cid\">accord paritaire régional du 24 mai 2024</a> relatif aux salaires et primes des ouvriers et salaires des ETAM du BTP de Guadeloupe.</p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1",
+              "type": "AUTONOME",
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000050089397",
+                  "textTitle": "Arrêté du 6 août 2024 - art. 3, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "3",
+                  "articleId": "JORFARTI000050089406",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2024-08-13",
+                  "dateSignaTexte": "2024-08-06",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "KALITEXT000050130405",
+                  "textTitle": "Salaires au 1er mai 2024",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "KALITEXT000050130405",
+                  "natureText": "Accord",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 1724284800000,
+                  "dateDebut": 1714521600000
+                },
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L2261-23-1",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L2261-23-1",
+                  "articleId": "LEGIARTI000035608942",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 1506211200000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1720051200000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         }
       ],
       "articles": [],
