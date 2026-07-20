@@ -74,7 +74,8 @@ def walk_ccn_sections(node, path_titles=None, is_root=True):
     return results
 
 
-def build_ccn_index(ccn_dir):
+def build_ccn_index(ccn_dir, classification=None):
+    classification = classification or {}
     summary_path = os.path.join(ccn_dir, "_summary.json")
     if not os.path.exists(summary_path):
         return []
@@ -96,11 +97,13 @@ def build_ccn_index(ccn_dir):
             "num": idcc,
             "title": data.get("titre") or data.get("title") or "",
             "hits": hits,
+            "source": classification.get(str(idcc), "inconnu"),
         })
     return index
 
 
-def build_code_index(code_dir):
+def build_code_index(code_dir, classification=None):
+    classification = classification or {}
     summary_path = os.path.join(code_dir, "_summary.json")
     if not os.path.exists(summary_path):
         return []
@@ -125,6 +128,7 @@ def build_code_index(code_dir):
             "num": art,
             "title": f"Article {art}",
             "snippet": text[:100],
+            "source": classification.get(art, "inconnu"),
         })
     return index
 
@@ -134,12 +138,23 @@ def main():
     ap.add_argument("--ccn-dir", default="output/ccn")
     ap.add_argument("--code-dir", default="output/code-travail")
     ap.add_argument("--code-secu-dir", default="output/code-secu")
+    ap.add_argument("--classification", default="output/classification-source.json",
+                     help="Manifeste conservé/complet écrit par classify_source.py (optionnel)")
     ap.add_argument("--out", default="output/search-index.json")
     args = ap.parse_args()
 
-    ccn_index = build_ccn_index(args.ccn_dir)
-    code_index = build_code_index(args.code_dir)
-    code_secu_index = build_code_index(args.code_secu_dir) if os.path.exists(args.code_secu_dir) else []
+    classification = {"ccn": {}, "code_travail": {}, "code_secu": {}}
+    if os.path.exists(args.classification):
+        try:
+            with open(args.classification, encoding="utf-8") as f:
+                classification = json.load(f)
+        except Exception:
+            pass
+
+    ccn_index = build_ccn_index(args.ccn_dir, classification.get("ccn"))
+    code_index = build_code_index(args.code_dir, classification.get("code_travail"))
+    code_secu_index = (build_code_index(args.code_secu_dir, classification.get("code_secu"))
+                        if os.path.exists(args.code_secu_dir) else [])
 
     full_index = {"ccn": ccn_index, "code": code_index, "code_secu": code_secu_index}
 
