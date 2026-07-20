@@ -219,6 +219,17 @@
     color:var(--muted);
     white-space:nowrap;
   }
+  .source-badge{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:9px;
+    text-transform:uppercase;
+    letter-spacing:.03em;
+    padding:2px 6px;
+    border-radius:2px;
+    white-space:nowrap;
+  }
+  .source-badge-conserve{ background:var(--line); color:var(--muted); }
+  .source-badge-complet{ background:var(--maj-soft); color:var(--maj); }
 
   .detail{ display:none; }
   .detail.show{ display:block; }
@@ -360,24 +371,32 @@ let SEARCH_IDX = { ccn: [], code: [], secu: [], juris: [] };
 let CACHE = { ccn: {}, code: {}, secu: {}, juris: {} };
 
 async function loadIndexes(){
+  let classification = { ccn: {}, code_travail: {}, code_secu: {} };
+  try{
+    classification = await fetchJSON('output/classification-source.json');
+  }catch(e){ console.warn('Classification conservé/complet indisponible (pas encore générée ?)', e); }
+
   try{
     const ccnSummary = await fetchJSON('output/ccn/_summary.json');
     INDEX.ccn = ccnSummary.filter(d => d.status === 'ok').map(d => ({
-      num: d.idcc, title: d.titre || `IDCC ${d.idcc}`, salaryHits: d.salary_sections_found || 0
+      num: d.idcc, title: d.titre || `IDCC ${d.idcc}`, salaryHits: d.salary_sections_found || 0,
+      source: (classification.ccn || {})[String(d.idcc)] || 'inconnu'
     }));
   }catch(e){ console.warn('Index CCN indisponible', e); }
 
   try{
     const codeSummary = await fetchJSON('output/code-travail/_summary.json');
     INDEX.code = codeSummary.filter(d => d.status === 'ok').map(d => ({
-      num: d.article, title: `Article ${d.article}`
+      num: d.article, title: `Article ${d.article}`,
+      source: (classification.code_travail || {})[d.article] || 'inconnu'
     }));
   }catch(e){ console.warn('Index Code du travail indisponible', e); }
 
   try{
     const secuSummary = await fetchJSON('output/code-secu/_summary.json');
     INDEX.secu = secuSummary.filter(d => d.status === 'ok').map(d => ({
-      num: d.article, title: `Article ${d.article}`
+      num: d.article, title: `Article ${d.article}`,
+      source: (classification.code_secu || {})[d.article] || 'inconnu'
     }));
   }catch(e){ console.warn('Index Sécurité sociale indisponible', e); }
 
@@ -476,11 +495,11 @@ function renderList(kind){
   if(kind === 'ccn' && activeCategory){
     const idxList = SEARCH_IDX.ccn || [];
     const items = idxList
-      .map(entry => ({ num: entry.num, title: entry.title, hits: (entry.hits || []).filter(h => h.cat === activeCategory) }))
+      .map(entry => ({ num: entry.num, title: entry.title, hits: (entry.hits || []).filter(h => h.cat === activeCategory), source: entry.source }))
       .filter(e => e.hits.length > 0)
       .slice(0, 150);
     listEl.innerHTML = items.length
-      ? items.map(e => resultRowHtml('ccn', e.num, e.title, 0, e.hits.slice(0, 3))).join('')
+      ? items.map(e => resultRowHtml('ccn', e.num, e.title, 0, e.hits.slice(0, 3), e.source)).join('')
       : `<div class="empty">Aucune convention trouvée pour cette catégorie.</div>`;
     return;
   }
@@ -488,7 +507,7 @@ function renderList(kind){
   if(!q){
     const items = INDEX[kind].slice(0, 150);
     listEl.innerHTML = items.length
-      ? items.map(it => resultRowHtml(kind, it.num, it.title, it.salaryHits)).join('')
+      ? items.map(it => resultRowHtml(kind, it.num, it.title, it.salaryHits, null, it.source)).join('')
       : `<div class="empty">Aucun résultat.</div>`;
     return;
   }
@@ -497,7 +516,7 @@ function renderList(kind){
   const directHits = new Map();
   INDEX[kind].forEach(it => {
     if(it.num.toLowerCase().includes(q) || it.title.toLowerCase().includes(q)){
-      directHits.set(it.num, { title: it.title, salaryHits: it.salaryHits, matchedSections: [] });
+      directHits.set(it.num, { title: it.title, salaryHits: it.salaryHits, matchedSections: [], source: it.source });
     }
   });
 
@@ -509,26 +528,31 @@ function renderList(kind){
       const existing = directHits.get(entry.num);
       const title = existing ? existing.title : entry.title;
       const salaryHits = existing ? existing.salaryHits : 0;
-      directHits.set(entry.num, { title, salaryHits, matchedSections: sectionMatches.slice(0, 3) });
+      const source = existing ? existing.source : entry.source;
+      directHits.set(entry.num, { title, salaryHits, matchedSections: sectionMatches.slice(0, 3), source });
     }
   });
 
   const items = Array.from(directHits.entries()).slice(0, 150);
   listEl.innerHTML = items.length
-    ? items.map(([num, info]) => resultRowHtml(kind, num, info.title, info.salaryHits, info.matchedSections)).join('')
+    ? items.map(([num, info]) => resultRowHtml(kind, num, info.title, info.salaryHits, info.matchedSections, info.source)).join('')
     : `<div class="empty">Aucun résultat pour "${escapeHtml(q)}".</div>`;
 }
 
-function resultRowHtml(kind, num, title, salaryHits, matchedSections){
+function resultRowHtml(kind, num, title, salaryHits, matchedSections, source){
   const sectionsHtml = (matchedSections && matchedSections.length)
     ? `<div class="matched-sections">` + matchedSections.map(s =>
         `<span class="match-chip">${escapeHtml(s.title)}</span>`).join('') + `</div>`
     : '';
+  const badgeHtml = source === 'complet_uniquement'
+    ? `<span class="source-badge source-badge-complet" title="Récupéré uniquement via la veille sur l'univers complet, pas dans la liste conservée d'origine">complet</span>`
+    : (source === 'conserve' ? `<span class="source-badge source-badge-conserve">conservé</span>` : '');
   return `
     <div class="result-row-wrap" onclick="openDetail('${kind}','${num}')">
       <div class="result-row">
         <span class="result-num">${num}</span>
         <span class="result-title">${escapeHtml(title)}</span>
+        ${badgeHtml}
         ${salaryHits ? `<span class="result-flag">${salaryHits} section(s) salaire</span>` : ''}
       </div>
       ${sectionsHtml}
