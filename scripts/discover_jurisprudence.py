@@ -93,7 +93,6 @@ def chercher_theme(base_url, token, theme, max_resultats=10):
                 "operateur": "ET",
                 "criteres": [{"valeur": theme, "typeRecherche": "TOUS_LES_MOTS_DANS_UN_CHAMP", "operateur": "ET"}],
             }],
-            "filtres": [{"facette": "JURIDICTION", "valeurs": ["Cour de cassation"]}],
             "sort": "DATE_DESC",
             "pageNumber": 1,
             "pageSize": max_resultats,
