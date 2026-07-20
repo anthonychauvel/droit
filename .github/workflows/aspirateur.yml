@@ -21,6 +21,7 @@ on:
           - code-travail
           - code-secu
           - jurisprudence
+          - decouvrir-jurisprudence
           - lister-tous-articles-travail
           - lister-tous-articles-secu
           - lister-tous-ccn
@@ -69,17 +70,36 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: "Veille : détecter les nouveaux IDCC/articles (léger, schedule seulement)"
+        if: ${{ always() && github.event_name == 'schedule' }}
+        run: |
+          python3 scripts/list_all_ccn.py --out idcc_list_complet.txt --debug-dir debug_list_ccn || echo "list_all_ccn a échoué, pas bloquant pour la suite du run"
+          python3 scripts/list_all_code_articles.py --code-id LEGITEXT000006072050 --out all_articles_code_travail.txt || echo "list_all_code_articles (travail) a échoué, pas bloquant"
+          python3 scripts/list_all_code_articles.py --code-id LEGITEXT000006073189 --out all_articles_code_secu.txt || echo "list_all_code_articles (sécu) a échoué, pas bloquant"
+          python3 scripts/detect_nouveaux.py --suivi idcc_list.txt --univers idcc_list_complet.txt --label "IDCC" || true
+          python3 scripts/detect_nouveaux.py --suivi articles_list.txt --univers all_articles_code_travail.txt --label "article-travail" || true
+          python3 scripts/detect_nouveaux.py --suivi articles_list_css.txt --univers all_articles_code_secu.txt --label "article-secu" || true
+
       - name: Récupérer les CCN (KALI)
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |
-          FLAG=""
-          if [ "${{ github.event.inputs.seulement_manquants || 'oui' }}" = "oui" ]; then
-            FLAG="--only-missing"
-          fi
-          if [ -n "${{ github.event.inputs.idcc_liste }}" ]; then
-            python3 scripts/pull_ccn.py --idcc "${{ github.event.inputs.idcc_liste }}" --out output/ccn $FLAG
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            SOURCE="idcc_list_complet.txt"
+            [ -s "$SOURCE" ] || SOURCE="idcc_list.txt"
+            echo "Source utilisée pour la rotation : $SOURCE"
+            python3 scripts/rotation_helper.py --in "$SOURCE" --periode 5 --out /tmp/tranche_idcc.txt
+            python3 scripts/pull_ccn.py --idcc-file /tmp/tranche_idcc.txt --out output/ccn
+            python3 scripts/pull_ccn.py --idcc-file idcc_list.txt --out output/ccn --only-missing
           else
-            python3 scripts/pull_ccn.py --idcc-file idcc_list.txt --out output/ccn $FLAG
+            FLAG=""
+            if [ "${{ github.event.inputs.seulement_manquants || 'oui' }}" = "oui" ]; then
+              FLAG="--only-missing"
+            fi
+            if [ -n "${{ github.event.inputs.idcc_liste }}" ]; then
+              python3 scripts/pull_ccn.py --idcc "${{ github.event.inputs.idcc_liste }}" --out output/ccn $FLAG
+            else
+              python3 scripts/pull_ccn.py --idcc-file idcc_list.txt --out output/ccn $FLAG
+            fi
           fi
 
       - name: Compléter les avenants salaire (texte intégral)
@@ -110,17 +130,39 @@ jobs:
       - name: Récupérer le Code du travail
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |
-          python3 scripts/pull_code_travail.py --articles-file articles_list.txt --code-id LEGITEXT000006072050 --out output/code-travail
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            SOURCE="all_articles_code_travail.txt"
+            [ -s "$SOURCE" ] || SOURCE="articles_list.txt"
+            echo "Source utilisée pour la rotation : $SOURCE ($(wc -l < "$SOURCE") articles)"
+            python3 scripts/rotation_helper.py --in "$SOURCE" --periode 5 --out /tmp/tranche_travail.txt
+            echo "Tranche de cette semaine : $(wc -l < /tmp/tranche_travail.txt) articles"
+            python3 scripts/pull_code_travail.py --articles-file /tmp/tranche_travail.txt --code-id LEGITEXT000006072050 --out output/code-travail
+          else
+            python3 scripts/pull_code_travail.py --articles-file articles_list.txt --code-id LEGITEXT000006072050 --out output/code-travail
+          fi
 
       - name: Récupérer le Code de la sécurité sociale
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'code-secu' || github.event.inputs.cible == 'tout') }}
         run: |
-          python3 scripts/pull_code_travail.py --articles-file articles_list_css.txt --code-id LEGITEXT000006073189 --out output/code-secu
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            SOURCE="all_articles_code_secu.txt"
+            [ -s "$SOURCE" ] || SOURCE="articles_list_css.txt"
+            echo "Source utilisée pour la rotation : $SOURCE ($(wc -l < "$SOURCE") articles)"
+            python3 scripts/rotation_helper.py --in "$SOURCE" --periode 5 --out /tmp/tranche_secu.txt
+            python3 scripts/pull_code_travail.py --articles-file /tmp/tranche_secu.txt --code-id LEGITEXT000006073189 --out output/code-secu
+          else
+            python3 scripts/pull_code_travail.py --articles-file articles_list_css.txt --code-id LEGITEXT000006073189 --out output/code-secu
+          fi
 
       - name: Récupérer la jurisprudence
         if: ${{ always() && (github.event.inputs.cible == 'jurisprudence' || github.event.inputs.cible == 'tout') }}
         run: |
           python3 scripts/pull_jurisprudence.py --arrets-file arrets_list.txt --out output/jurisprudence
+
+      - name: "Découvrir de la jurisprudence par thème (à relire avant d'ajouter à arrets_list.txt)"
+        if: ${{ always() && github.event.inputs.cible == 'decouvrir-jurisprudence' }}
+        run: |
+          python3 scripts/discover_jurisprudence.py --out jurisprudence_decouverte.txt
 
       - name: Lister tous les articles du Code du travail (préparation seulement)
         if: ${{ always() && github.event.inputs.cible == 'lister-tous-articles-travail' }}
@@ -207,10 +249,20 @@ jobs:
           done
           echo "Terminé (ou temps écoulé -- relance simplement la même option pour reprendre là où ça s'est arrêté)."
 
+      - name: "Classer conservé vs complet-uniquement"
+        if: always()
+        run: |
+          python3 scripts/classify_source.py --out output/classification-source.json
+
       - name: Construire l'index de recherche par mots-clés
         if: always()
         run: |
           python3 scripts/build_search_index.py --out output/search-index.json
+
+      - name: "Exporter la liste CCN pour recherche.html (titres officiels, repo droit uniquement)"
+        if: always()
+        run: |
+          python3 scripts/export_ccn_liste.py --ccn-dir output/ccn --out output/ccn-liste.json
 
       - name: Générer le rapport d'audit des changements de ce run
         if: always()
@@ -223,7 +275,7 @@ jobs:
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
           git add output/ audits/ 2>/dev/null || true
-          for f in all_articles_code_travail.txt all_articles_code_secu.txt idcc_list_complet.txt; do
+          for f in all_articles_code_travail.txt all_articles_code_secu.txt idcc_list_complet.txt jurisprudence_decouverte.txt; do
             [ -f "$f" ] && git add "$f"
           done
           [ -d debug_list_ccn ] && git add debug_list_ccn/
