@@ -1,0 +1,396 @@
+{
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000053279274",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "La mère, le père et, le cas échéant, le conjoint de la mère ou la personne liée à elle par un pacte civil de solidarité ou son concubin ainsi que les parents adoptifs ou accueillants auxquels s'applique le présent titre bénéficient, sur leur demande, d'indemnités journalières supplémentaires de naissance lorsqu'ils cessent d'exercer leur activité ou ne la reprennent pas à l'expiration des durées minimales mentionnées à l'article L. 623-1. Ces indemnités sont versées pour la durée mentionnée à l'article L. 331-8-1, à condition de ne pas reprendre cette activité pendant la durée d'indemnisation. Les montants des prestations sont revalorisés dans les mêmes conditions que celles fixées pour le plafond prévu à l'article L. 241-3. Un décret détermine les conditions d'application du présent article, notamment le montant de l'indemnité journalière forfaitaire et la période pendant laquelle la cessation d'activité peut avoir lieu.",
+    "texteHtml": "<p>La mère, le père et, le cas échéant, le conjoint de la mère ou la personne liée à elle par un pacte civil de solidarité ou son concubin ainsi que les parents adoptifs ou accueillants auxquels s'applique le présent titre bénéficient, sur leur demande, d'indemnités journalières supplémentaires de naissance lorsqu'ils cessent d'exercer leur activité ou ne la reprennent pas à l'expiration des durées minimales mentionnées à l'article L. 623-1. Ces indemnités sont versées pour la durée mentionnée à l'article L. 331-8-1, à condition de ne pas reprendre cette activité pendant la durée d'indemnisation.</p><p> Les montants des prestations sont revalorisés dans les mêmes conditions que celles fixées pour le plafond prévu à l'article L. 241-3.</p><p> Un décret détermine les conditions d'application du présent article, notamment le montant de l'indemnité journalière forfaitaire et la période pendant laquelle la cessation d'activité peut avoir lieu.</p>",
+    "num": "L623-2",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "4.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1767139200000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 536870910,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "1985-12-21",
+          "fin": "2999-01-01",
+          "titre": "Partie législative",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000006106050",
+          "id": "LEGISCTA000006106050",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "1985-12-21",
+          "fin": "2018-01-01",
+          "titre": "Livre 6 : Régimes des travailleurs non salariés",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006126901",
+          "id": "LEGISCTA000006126901",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2018-01-01",
+          "fin": "2999-01-01",
+          "titre": "Livre VI : Dispositions applicables aux travailleurs indépendants",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006126901",
+          "id": "LEGISCTA000036391028",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "1985-12-21",
+          "fin": "2018-01-01",
+          "titre": "Titre 2 : Généralités relatives aux organisations autonomes d'assurance vieillesse",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006141670",
+          "id": "LEGISCTA000006141670",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2018-01-01",
+          "fin": "2999-01-01",
+          "titre": "Titre II : Assurance maladie, maternité",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006141670",
+          "id": "LEGISCTA000036391244",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "1985-12-21",
+          "fin": "2018-01-01",
+          "titre": "Chapitre 3 : Dispositions communes à l'ensemble des régimes d'assurance vieillesse.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006156206",
+          "id": "LEGISCTA000006156206",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2018-01-01",
+          "fin": "2018-06-14",
+          "titre": "Chapitre 3 : Assurance maternité",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006156206",
+          "id": "LEGISCTA000036391277",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2018-06-14",
+          "fin": "2025-12-31",
+          "titre": "Chapitre 3 :  Prestations maternité, paternité, d'accueil de l'enfant et d'adoption",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006156206",
+          "id": "LEGISCTA000037063698",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2025-12-31",
+          "fin": "2999-01-01",
+          "titre": "Chapitre 3 :  Prestations maternité, paternité, d'accueil de l'enfant et d'adoption et indemnités journalières supplémentaires de naissance",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006156206",
+          "id": "LEGISCTA000053279271",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 4,
+      "longeurChemin": 44,
+      "titreTxt": [
+        {
+          "debut": "1958-10-16",
+          "fin": "2999-01-01",
+          "titre": "Code de la sécurité sociale",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000006073189",
+          "id": "LEGITEXT000006073189",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000006743672",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000006156206",
+    "sectionParentId": "LEGISCTA000053279271",
+    "sectionParentTitre": "Chapitre 3 :  Prestations maternité, paternité, d'accueil de l'enfant et d'adoption et indemnités journalières supplémentaires de naissance",
+    "fullSectionsTitre": "Partie législative &gt; Livre VI : Dispositions applicables aux travailleurs indépendants &gt; Titre II : Assurance maladie, maternité &gt; Chapitre 3 :  Prestations maternité, paternité, d'accueil de l'enfant et d'adoption et indemnités journalières supplémentaires de naissance",
+    "refInjection": "MD-20260602_195425_162_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000053279274",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000006073189",
+        "titre": "Code de la sécurité sociale.",
+        "titreLong": "Code de la sécurité sociale",
+        "etat": "VIGUEUR",
+        "dateDebut": -353808000000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000006073189",
+        "datePubli": 32472144000000,
+        "datePubliComputed": null,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément à la formule exécutoire de la loi n° 2025-1403 du 30 décembre 2025, ces dispositions, dans leur rédaction résultant de la loi précitée, entrent en vigueur immédiatement. Conformément au X de l'article 99 de la loi n° 2025-1403 du 30 décembre 2025, ces dispositions, dans leur rédaction résultant de l'article précité, sont applicables pour les enfants nés ou adoptés à compter du 1 er janvier 2026 ainsi que pour les enfants nés avant cette date dont la naissance était censée intervenir à compter de cette date.",
+    "notaHtml": "<p>Conformément à la formule exécutoire de la loi n° 2025-1403 du 30 décembre 2025, ces dispositions, dans leur rédaction résultant de la loi précitée, entrent en vigueur immédiatement.</p><p>Conformément au X de l'article 99 de la loi n° 2025-1403 du 30 décembre 2025, ces dispositions, dans leur rédaction résultant de l'article précité, sont applicables pour les enfants nés ou adoptés à compter du 1<sup>er</sup> janvier 2026 ainsi que pour les enfants nés avant cette date dont la naissance était censée intervenir à compter de cette date.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000000866621",
+        "textTitle": "Décret n° 85-1353 du 17 décembre 1985",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "JORFTEXT000000866621",
+        "natureText": "DECRET",
+        "datePubliTexte": "1985-12-21",
+        "dateSignaTexte": "1985-12-17",
+        "dateDebutCible": "2999-01-01"
+      },
+      {
+        "textCid": "JORFTEXT000053226384",
+        "textTitle": "LOI n°2025-1403 du 30 décembre 2025 - art. 99 (V)",
+        "linkType": "MODIFIE",
+        "linkOrientation": "cible",
+        "articleNum": "99",
+        "articleId": "LEGIARTI000053265444",
+        "natureText": "LOI",
+        "datePubliTexte": "2025-12-31",
+        "dateSignaTexte": "2025-12-30",
+        "dateDebutCible": "2025-12-31"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000054154232",
+        "textTitle": "Décret n°2026-426 du 30 mai 2026 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGITEXT000054160052",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2026-426",
+        "datePubli": 1780185600000,
+        "dateDebut": 1782864000000
+      },
+      {
+        "textCid": "JORFTEXT000054154394",
+        "textTitle": "Décret n°2026-427 du 30 mai 2026 - art. 3",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "3",
+        "articleId": "JORFARTI000054154446",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2026-427",
+        "datePubli": 1780185600000,
+        "dateDebut": 32472144000000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. D622-2 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D622-2",
+        "articleId": "LEGIARTI000054167804",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1782864000000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. D623-1 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D623-1",
+        "articleId": "LEGIARTI000021508893",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1262304000000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. D623-4-1 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D623-4-1",
+        "articleId": "LEGIARTI000054161264",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1782864000000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. D623-4-2 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D623-4-2",
+        "articleId": "LEGIARTI000054161266",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1782864000000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. D634-2 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D634-2",
+        "articleId": "LEGIARTI000054167854",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1782864000000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. L623-4 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "L623-4",
+        "articleId": "LEGIARTI000037063665",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1528934400000
+      },
+      {
+        "textCid": "LEGITEXT000006070302",
+        "textTitle": "Code des pensions civiles et militaires de retr... - art. R37 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R37",
+        "articleId": "LEGIARTI000054175249",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1780272000000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale L660 ELEMENTS LEGISLATIFS",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGITEXT000006073189",
+        "natureText": "CODE"
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. L613-19-1 (T)",
+        "linkType": "CONCORDE",
+        "linkOrientation": "cible",
+        "articleNum": "L613-19-1",
+        "articleId": "LEGIARTI000027432154",
+        "natureText": "CODE"
+      }
+    ],
+    "lienAutres": [
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. D623-1 (V)",
+        "linkType": "TXT_SOURCE",
+        "linkOrientation": "cible",
+        "articleNum": "D623-1",
+        "articleId": "LEGIARTI000006737811",
+        "natureText": "CODE"
+      }
+    ],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000006743672",
+        "etat": "MODIFIE",
+        "version": "1.0",
+        "dateDebut": 503971200000,
+        "dateFin": 1483228800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000033713979",
+        "etat": "MODIFIE",
+        "version": "2.0",
+        "dateDebut": 1483228800000,
+        "dateFin": 1514764800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000036391294",
+        "etat": "ABROGE",
+        "version": "3.0",
+        "dateDebut": 1514764800000,
+        "dateFin": 1528934400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000053279274",
+        "etat": "VIGUEUR",
+        "version": "4.0",
+        "dateDebut": 1767139200000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "L623-2",
+      "623-2"
+    ],
+    "versionPrecedente": "LEGIARTI000036391294",
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": true,
+    "comporteLiensSP": false
+  }
+}
