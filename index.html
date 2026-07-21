@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fonds Droit — recherche &amp; lecture (CCN · Code du travail · Sécu · Jurisprudence)</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  :root{
+    --marine:#1b1e3b;
+    --ink:#20233f;
+    --ink-soft:#5c6180;
+    --lavender:#f4f3fb;
+    --card:#ffffff;
+    --line:#e7e5f2;
+    --line-soft:#f0eef8;
+    --violet:#6d5ce8;
+    --violet-strong:#5341cf;
+    --violet-soft:#efecfc;
+    --ok:#16875a;
+    --ok-soft:#e4f4ec;
+    --abroge:#c0435c;
+    --abroge-soft:#fbe7ec;
+    --warn:#9a6a1b;
+    --warn-soft:#f6eeda;
+    --neutral:#8a8fae;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0; background:var(--lavender); color:var(--ink);
+    font-family:'Source Sans 3',-apple-system,system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased; display:flex; min-height:100vh;
+  }
+  h1,h2,h3,.brand-name,.nav-item,.card-title,.chip,.res-num,.sub-chip{ font-family:'Manrope',sans-serif; }
+  .mono,.res-num,.count-num,.detail-num,.sub-chip .n{ font-family:'IBM Plex Mono',monospace; font-variant-numeric:tabular-nums; }
+  a{ color:var(--violet-strong); }
+
+  /* ---------- Sidebar ---------- */
+  aside{
+    width:248px; flex-shrink:0; background:var(--marine); color:#fff;
+    padding:26px 16px 18px; display:flex; flex-direction:column;
+    position:sticky; top:0; height:100vh; overflow-y:auto;
+  }
+  .brand{ padding:2px 8px 20px; }
+  .brand-badge{ display:inline-flex; align-items:center; gap:8px; }
+  .brand-scales{ width:26px; height:26px; }
+  .brand-name{ font-weight:800; font-size:15px; letter-spacing:.02em; line-height:1.1; }
+  .brand-sub{ font-size:12px; color:#a7abd4; margin-top:10px; line-height:1.45; }
+
+  nav{ display:flex; flex-direction:column; gap:2px; }
+  .nav-item{
+    display:flex; align-items:center; gap:11px; padding:10px 12px; border-radius:9px;
+    color:#c6c9ea; font-size:14px; font-weight:600; cursor:pointer; border:none;
+    background:none; text-align:left; width:100%; font-family:inherit; transition:background .12s,color .12s;
+  }
+  .nav-item:hover{ background:rgba(255,255,255,.06); color:#fff; }
+  .nav-item.on{ background:var(--violet); color:#fff; }
+  .nav-item .ic{ width:18px; height:18px; flex-shrink:0; }
+  .nav-item .nc{ margin-left:auto; font-family:'IBM Plex Mono',monospace; font-size:11px; opacity:.7; }
+  .nav-item.on .nc{ opacity:.9; }
+
+  .side-foot{
+    margin-top:auto; padding:14px 12px; background:rgba(255,255,255,.05);
+    border-radius:10px; font-size:11.5px; color:#a7abd4; line-height:1.5;
+  }
+  .side-foot b{ color:#fff; display:block; margin-bottom:3px; }
+  .legend{ display:flex; gap:12px; margin-top:10px; flex-wrap:wrap; }
+  .legend span{ display:inline-flex; align-items:center; gap:5px; font-size:11px; color:#c6c9ea; }
+  .dot{ width:8px; height:8px; border-radius:50%; display:inline-block; }
+  .dot.ok{ background:#34d18b; } .dot.ab{ background:#ef6f8a; } .dot.un{ background:#9aa0c8; }
+
+  /* ---------- Main ---------- */
+  main{ flex:1; min-width:0; padding:34px 34px 90px; max-width:1000px; }
+  .head{ margin-bottom:20px; }
+  .head h1{ font-size:clamp(24px,3.2vw,32px); font-weight:800; color:var(--marine); margin:0 0 6px; letter-spacing:-.01em; }
+  .head p{ color:var(--ink-soft); font-size:15px; margin:0; }
+
+  /* Search box */
+  .searchbox{
+    background:var(--card); border:1.5px solid var(--violet); border-radius:14px;
+    padding:7px 7px 7px 14px; display:flex; align-items:center; gap:10px;
+    box-shadow:0 10px 30px -14px rgba(109,92,232,.4); margin-top:18px;
+  }
+  .searchbox .si{ width:19px; height:19px; stroke:var(--ink-soft); flex-shrink:0; }
+  #q{ flex:1; min-width:0; border:none; outline:none; background:none; font-size:16px; padding:11px 2px; font-family:inherit; color:var(--ink); }
+  #q::placeholder{ color:#a7abc6; }
+  .go{ border:none; background:var(--violet); color:#fff; width:42px; height:42px; border-radius:10px; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:background .12s; }
+  .go:hover{ background:var(--violet-strong); }
+  .go svg{ width:18px; height:18px; stroke:#fff; }
+  .hint{ font-size:12.5px; color:var(--ink-soft); margin:10px 2px 0; }
+  .hint b{ color:var(--violet-strong); }
+
+  /* Token chips (combined keywords) */
+  .tokens{ display:flex; flex-wrap:wrap; gap:7px; margin:14px 0 4px; }
+  .token{
+    display:inline-flex; align-items:center; gap:7px; background:var(--violet-soft);
+    color:var(--violet-strong); border-radius:20px; padding:5px 8px 5px 12px;
+    font-size:13px; font-weight:600; font-family:'Manrope',sans-serif;
+  }
+  .token button{ border:none; background:rgba(83,65,207,.16); color:var(--violet-strong); width:18px; height:18px; border-radius:50%; cursor:pointer; font-size:12px; line-height:1; display:flex; align-items:center; justify-content:center; }
+  .token button:hover{ background:rgba(83,65,207,.32); }
+
+  /* Subcategory chips */
+  .subbar{ display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 6px; }
+  .sub-chip{
+    border:1px solid var(--line); background:var(--card); color:var(--ink-soft);
+    border-radius:20px; padding:7px 13px; font-size:12.5px; font-weight:600; cursor:pointer;
+    white-space:nowrap; transition:border-color .12s,color .12s,background .12s;
+  }
+  .sub-chip:hover{ border-color:var(--violet); color:var(--violet-strong); }
+  .sub-chip.on{ background:var(--violet); border-color:var(--violet); color:#fff; }
+  .sub-chip .n{ opacity:.6; margin-left:5px; font-size:11px; }
+  .sub-chip.on .n{ opacity:.85; }
+
+  /* Filter within a source */
+  .filter{ display:flex; align-items:center; gap:9px; background:var(--card); border:1px solid var(--line); border-radius:11px; padding:2px 4px 2px 12px; margin:14px 0 2px; }
+  .filter svg{ width:16px; height:16px; stroke:var(--ink-soft); flex-shrink:0; }
+  .filter input{ flex:1; border:none; outline:none; background:none; font-size:15px; padding:10px 2px; font-family:inherit; color:var(--ink); }
+  .filter .clr{ border:none; background:none; color:var(--ink-soft); cursor:pointer; font-size:13px; padding:8px 10px; }
+
+  /* Group titles */
+  .group-title{ font-family:'Manrope',sans-serif; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft); margin:26px 0 10px; }
+  .group-title:first-child{ margin-top:2px; }
+
+  /* Result rows */
+  .rows{ display:flex; flex-direction:column; }
+  .row{
+    display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:14px;
+    padding:13px 12px; border-radius:10px; cursor:pointer; border:1px solid transparent;
+    transition:background .1s,border-color .1s;
+  }
+  .row:hover{ background:var(--card); border-color:var(--line); }
+  .row + .row{ border-top:1px solid var(--line-soft); }
+  .row:hover + .row{ border-top-color:transparent; }
+  .res-num{ font-size:13px; font-weight:600; color:var(--violet-strong); min-width:78px; }
+  .row.ccn .res-num{ color:var(--violet-strong); }
+  .res-main{ min-width:0; }
+  .res-title{ font-size:14.5px; font-weight:600; color:var(--ink); line-height:1.35; }
+  .res-sub{ font-size:12.5px; color:var(--ink-soft); margin-top:3px; line-height:1.45; }
+  .res-sub mark{ background:#fbe6b0; color:var(--ink); padding:0 1px; border-radius:2px; }
+  .tags{ display:flex; flex-wrap:wrap; gap:5px; margin-top:6px; }
+  .tag{ font-family:'IBM Plex Mono',monospace; font-size:10px; padding:2px 7px; border-radius:12px; background:var(--violet-soft); color:var(--violet-strong); }
+
+  /* Validity chip */
+  .val{ display:inline-flex; align-items:center; gap:6px; font-family:'Manrope',sans-serif; font-size:11.5px; font-weight:700; padding:4px 10px; border-radius:20px; white-space:nowrap; }
+  .val .d{ width:7px; height:7px; border-radius:50%; }
+  .val.ok{ background:var(--ok-soft); color:var(--ok); } .val.ok .d{ background:var(--ok); }
+  .val.ab{ background:var(--abroge-soft); color:var(--abroge); } .val.ab .d{ background:var(--abroge); }
+  .val.mo{ background:var(--warn-soft); color:var(--warn); } .val.mo .d{ background:var(--warn); }
+  .val.un{ background:var(--line-soft); color:var(--neutral); } .val.un .d{ background:var(--neutral); }
+  .src{ font-family:'IBM Plex Mono',monospace; font-size:9px; text-transform:uppercase; letter-spacing:.03em; padding:2px 6px; border-radius:3px; background:var(--line-soft); color:var(--neutral); margin-left:6px; }
+  .src.complet{ background:var(--warn-soft); color:var(--warn); }
+
+  .more{ margin:16px auto 0; display:block; background:var(--card); border:1px solid var(--line); color:var(--violet-strong); font-family:'Manrope',sans-serif; font-weight:700; font-size:13px; padding:11px 20px; border-radius:10px; cursor:pointer; }
+  .more:hover{ border-color:var(--violet); background:var(--violet-soft); }
+
+  .empty{ text-align:center; padding:46px 20px; color:var(--ink-soft); font-size:14.5px; }
+  .empty .big{ font-size:15.5px; color:var(--ink); font-weight:600; margin-bottom:6px; }
+  .loading{ text-align:center; padding:40px; color:var(--ink-soft); font-family:'IBM Plex Mono',monospace; font-size:13px; }
+
+  /* Examples grid (landing) */
+  .ex-title{ font-family:'Manrope',sans-serif; font-size:15px; font-weight:800; color:var(--marine); margin:30px 0 12px; }
+
+  /* Dashboard (landing) */
+  .stat-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:11px; margin:22px 0 4px; }
+  .stat{ background:var(--card); border:1px solid var(--line); border-radius:13px; padding:15px 16px; cursor:pointer; transition:border-color .12s,transform .12s,box-shadow .12s; }
+  .stat:hover{ border-color:var(--violet); transform:translateY(-2px); box-shadow:0 14px 30px -18px rgba(109,92,232,.5); }
+  .stat .num{ font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600; color:var(--marine); line-height:1; letter-spacing:-.01em; }
+  .stat .lab{ font-size:12.5px; color:var(--ink-soft); margin-top:7px; font-weight:600; }
+  .stat .arrow{ float:right; color:var(--violet); opacity:0; transition:opacity .12s; font-weight:800; }
+  .stat:hover .arrow{ opacity:1; }
+  .latest{ background:linear-gradient(180deg,var(--violet-soft),#fff 90%); border:1px solid var(--line); border-radius:13px; padding:16px 18px; margin-top:14px; }
+  .latest h3{ font-family:'Manrope',sans-serif; font-size:13px; font-weight:800; color:var(--marine); margin:0 0 10px; display:flex; align-items:center; gap:8px; }
+  .latest h3 .pulse{ width:8px; height:8px; border-radius:50%; background:var(--ok); box-shadow:0 0 0 0 rgba(22,135,90,.5); animation:pulse 2s infinite; }
+  @keyframes pulse{ 0%{box-shadow:0 0 0 0 rgba(22,135,90,.45);} 70%{box-shadow:0 0 0 7px rgba(22,135,90,0);} 100%{box-shadow:0 0 0 0 rgba(22,135,90,0);} }
+  .latest-row{ display:flex; justify-content:space-between; align-items:center; gap:10px; padding:8px 0; border-top:1px solid var(--line-soft); cursor:pointer; }
+  .latest-row:first-of-type{ border-top:none; }
+  .latest-row:hover .lr-t{ color:var(--violet-strong); }
+  .lr-d{ font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft); flex-shrink:0; }
+  .lr-t{ font-size:13px; color:var(--ink); min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .lr-b{ font-family:'Manrope',sans-serif; font-size:11px; font-weight:700; padding:3px 9px; border-radius:20px; background:var(--violet-soft); color:var(--violet-strong); flex-shrink:0; }
+  .lr-b.zero{ background:var(--line-soft); color:var(--neutral); }
+  .kbd{ font-family:'IBM Plex Mono',monospace; font-size:11px; background:var(--lavender); border:1px solid var(--line); border-bottom-width:2px; border-radius:5px; padding:1px 6px; color:var(--ink-soft); }
+  @media (max-width:860px){ .stat-grid{ grid-template-columns:1fr 1fr; } }
+  .ex-grid{ display:grid; grid-template-columns:1fr 1fr; gap:11px; }
+  .ex{ background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 15px; cursor:pointer; transition:border-color .12s,transform .12s; }
+  .ex:hover{ border-color:var(--violet); transform:translateY(-1px); }
+  .ex .k{ font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--violet-strong); margin-bottom:5px; }
+  .ex .t{ font-size:14px; font-weight:600; color:var(--ink); }
+  .ex .s{ font-size:12.5px; color:var(--ink-soft); margin-top:2px; }
+
+  /* Audit rows */
+  .audit{ display:flex; justify-content:space-between; align-items:center; gap:12px; background:var(--card); border:1px solid var(--line); border-radius:11px; padding:14px 16px; margin-bottom:9px; cursor:pointer; transition:border-color .12s; }
+  .audit:hover{ border-color:var(--violet); }
+  .audit .ad{ font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--ink); }
+  .audit .ar{ font-size:13px; color:var(--ink-soft); margin-top:3px; }
+  .audit .badge{ font-family:'Manrope',sans-serif; font-size:11.5px; font-weight:700; padding:4px 11px; border-radius:20px; background:var(--violet-soft); color:var(--violet-strong); white-space:nowrap; }
+  .audit .badge.zero{ background:var(--line-soft); color:var(--neutral); }
+
+  /* Detail slide-over */
+  .scrim{ position:fixed; inset:0; background:rgba(20,22,45,.5); opacity:0; visibility:hidden; transition:opacity .2s; z-index:40; }
+  .scrim.open{ opacity:1; visibility:visible; }
+  .panel{
+    position:fixed; top:0; right:0; height:100vh; width:min(680px,94vw); background:var(--card);
+    box-shadow:-24px 0 60px -30px rgba(20,22,45,.5); transform:translateX(100%); transition:transform .24s cubic-bezier(.4,0,.2,1);
+    z-index:41; display:flex; flex-direction:column;
+  }
+  .panel.open{ transform:translateX(0); }
+  .panel-top{ display:flex; align-items:flex-start; gap:12px; padding:22px 24px 16px; border-bottom:1px solid var(--line); }
+  .panel-top .meta{ min-width:0; flex:1; }
+  .detail-num{ font-size:12.5px; color:var(--violet-strong); font-weight:600; }
+  .detail-title{ font-family:'Manrope',sans-serif; font-weight:800; font-size:19px; color:var(--marine); margin:5px 0 8px; line-height:1.25; }
+  .panel-close{ border:none; background:var(--lavender); color:var(--ink-soft); width:34px; height:34px; border-radius:9px; cursor:pointer; font-size:17px; line-height:1; flex-shrink:0; }
+  .panel-close:hover{ background:var(--violet-soft); color:var(--violet-strong); }
+  .panel-body{ overflow-y:auto; padding:20px 24px 40px; }
+  .panel-actions{ display:flex; gap:9px; flex-wrap:wrap; margin-bottom:18px; }
+  .panel-actions a,.panel-actions button{ font-family:'Manrope',sans-serif; font-weight:700; font-size:12.5px; text-decoration:none; padding:9px 14px; border-radius:9px; cursor:pointer; border:1px solid var(--line); background:var(--card); color:var(--ink); }
+  .panel-actions .primary{ background:var(--violet); border-color:var(--violet); color:#fff; }
+  .sec-title{ font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--neutral); margin:20px 0 8px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  .sec-text{ font-size:15px; line-height:1.65; color:var(--ink); }
+  .sec-text p{ margin:0 0 11px; }
+
+  @media (max-width:860px){
+    body{ flex-direction:column; }
+    aside{ width:100%; height:auto; position:relative; flex-direction:row; align-items:center; flex-wrap:wrap; padding:12px 14px; gap:6px; }
+    .brand{ padding:0; margin-right:6px; } .brand-sub{ display:none; }
+    nav{ flex-direction:row; flex-wrap:wrap; gap:4px; }
+    .nav-item{ width:auto; padding:8px 11px; font-size:13px; } .nav-item .nc{ display:none; }
+    .side-foot{ display:none; }
+    main{ padding:22px 16px 70px; }
+    .ex-grid{ grid-template-columns:1fr; }
+    .row{ grid-template-columns:1fr auto; } .res-num{ grid-column:1; min-width:0; }
+  }
+  @media (prefers-reduced-motion:reduce){ *{ transition:none!important; } html{ scroll-behavior:auto; } }
+  :focus-visible{ outline:2px solid var(--violet); outline-offset:2px; border-radius:4px; }
+</style>
+</head>
+<body>
+
+<aside>
+  <div class="brand">
+    <div class="brand-badge">
+      <svg class="brand-scales" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 8l-3 6a3 3 0 006 0l-3-6zM19 8l-3 6a3 3 0 006 0l-3-6zM5 8h14M8 21h8"/></svg>
+      <div class="brand-name">FONDS<br>DROIT</div>
+    </div>
+    <div class="brand-sub">Recherche &amp; lecture des textes officiels — conventions, codes, jurisprudence.</div>
+  </div>
+
+  <nav id="nav">
+    <button class="nav-item on" data-view="search"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Recherche</button>
+    <button class="nav-item" data-view="ccn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="7" r="3.2"/><circle cx="17" cy="8" r="2.8"/><path d="M2 21v-1a6 6 0 016-6h1a6 6 0 016 6v1M16 12.5a5 5 0 015 5V19"/></svg>Conventions<span class="nc" id="nc-ccn">…</span></button>
+    <button class="nav-item" data-view="code"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 4.5A2.5 2.5 0 016.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15z"/></svg>Code du travail<span class="nc" id="nc-code">…</span></button>
+    <button class="nav-item" data-view="secu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>Sécurité sociale<span class="nc" id="nc-secu">…</span></button>
+    <button class="nav-item" data-view="juris"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M5 8l-3 6a3 3 0 006 0l-3-6zM19 8l-3 6a3 3 0 006 0l-3-6zM5 8h14M8 21h8"/></svg>Jurisprudence<span class="nc" id="nc-juris">…</span></button>
+    <button class="nav-item" data-view="maj"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 11-3-6.7L21 8M21 3v5h-5"/></svg>Mises à jour<span class="nc" id="nc-maj"></span></button>
+  </nav>
+
+  <div class="side-foot">
+    <b id="corpus-b">Corpus</b>
+    <span id="corpus-line">Chargement de l'index…</span>
+    <div class="legend">
+      <span><i class="dot ok"></i>Validé</span>
+      <span><i class="dot ab"></i>Abrogé</span>
+      <span><i class="dot un"></i>À vérifier</span>
+    </div>
+  </div>
+</aside>
+
+<main id="main">
+  <!-- SEARCH VIEW -->
+  <section id="view-search">
+    <div class="head">
+      <h1>Trouver la bonne règle, vite</h1>
+      <p>Combinez des mots-clés — une convention et un thème, un métier et une question. Ex. <b>commerce de gros</b> + <b>heures supplémentaires</b>.</p>
+    </div>
+    <div class="searchbox">
+      <svg class="si" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="q" type="search" autocomplete="off" placeholder="Ex. : coiffeuse congés · L3121 durée · commerce gros heures sup · préavis…">
+      <button class="go" id="go" aria-label="Rechercher"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+    </div>
+    <div class="hint">Tapez plusieurs mots : chacun devient un <b>filtre</b> cumulatif, et les résultats s'affichent au fur et à mesure. Astuce : appuyez sur <span class="kbd">/</span> n'importe où pour revenir ici.</div>
+    <div class="tokens" id="tokens"></div>
+    <div id="search-results"></div>
+
+    <div id="search-landing">
+      <div class="stat-grid" id="stat-grid"></div>
+      <div class="latest" id="latest-maj" hidden></div>
+      <div class="ex-title">Exemples de recherches combinées</div>
+      <div class="ex-grid" id="ex-grid"></div>
+    </div>
+  </section>
+
+  <!-- BROWSE VIEW (ccn / code / secu / juris) -->
+  <section id="view-browse" hidden>
+    <div class="head">
+      <h1 id="browse-h1">Conventions collectives</h1>
+      <p id="browse-p">La liste intégrale, classée. Cliquez une ligne pour lire le texte.</p>
+    </div>
+    <div class="subbar" id="subbar"></div>
+    <div class="filter">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="filter-input" type="search" autocomplete="off" placeholder="Filtrer dans cette liste (numéro, mot du titre)…">
+      <button class="clr" id="filter-clr" hidden>Effacer</button>
+    </div>
+    <div id="browse-results"></div>
+  </section>
+
+  <!-- MISES A JOUR VIEW -->
+  <section id="view-maj" hidden>
+    <div class="head">
+      <h1>Mises à jour</h1>
+      <p>Un rapport par run de vérification (deux par semaine). Chaque run s'ajoute — aucun n'écrase le précédent. Le plus récent d'abord.</p>
+    </div>
+    <div id="maj-results"></div>
+  </section>
+</main>
+
+<div class="scrim" id="scrim"></div>
+<div class="panel" id="panel" role="dialog" aria-modal="true" aria-label="Détail du texte">
+  <div class="panel-top">
+    <div class="meta">
+      <div class="detail-num mono" id="d-num"></div>
+      <div class="detail-title" id="d-title"></div>
+      <div id="d-val"></div>
+    </div>
+    <button class="panel-close" id="d-close" aria-label="Fermer">✕</button>
+  </div>
+  <div class="panel-body" id="d-body"></div>
+</div>
+
+<script>
+'use strict';
+
+/* ============================================================================
+   Fonds Droit — module unique (recherche + lecture)
+   Lit les données produites par l'aspirateur :
+     - output/manifest.json       (liste INTÉGRALE + état validé/abrogé)
+     - output/search-index.json   (recherche plein-texte / mots-clés)
+     - output/ccn-liste.json      (noms de CCN, pour la recherche par métier)
+     - output/classification-source.json (conservé / complet, optionnel)
+     - audits/index.json          (mises à jour)
+   Essaie d'abord les chemins RELATIFS (page hébergée dans le dépôt), puis
+   bascule sur raw.githubusercontent.com si besoin (ouverture hors dépôt).
+   ==========================================================================*/
+
+var RAW_BASE = 'https://raw.githubusercontent.com/anthonychauvel/droit/main/';
+var useRaw = false; // basculé à true si un chemin relatif échoue
+
+function urlFor(rel){ return (useRaw ? RAW_BASE : '') + rel; }
+
+async function fetchJSON(rel){
+  // tente relatif puis raw
+  try{
+    var r = await fetch(rel, {cache:'no-cache'});
+    if(r.ok) return await r.json();
+    throw new Error('HTTP '+r.status);
+  }catch(e){
+    var r2 = await fetch(RAW_BASE + rel, {cache:'no-cache'});
+    if(!r2.ok) throw new Error('HTTP '+r2.status+' '+rel);
+    useRaw = true;
+    return await r2.json();
+  }
+}
+async function fetchText(rel){
+  try{
+    var r = await fetch(rel, {cache:'no-cache'});
+    if(r.ok) return await r.text();
+    throw new Error('HTTP '+r.status);
+  }catch(e){
+    var r2 = await fetch(RAW_BASE + rel, {cache:'no-cache'});
+    if(!r2.ok) throw new Error('HTTP '+r2.status);
+    useRaw = true;
+    return await r2.text();
+  }
+}
+
+/* ---- état global ---- */
+var INDEX  = { ccn:[], code:[], secu:[], juris:[] };   // {num,title,etat,source}
+var SEARCH = { ccn:[], code:[], code_secu:[], juris:[] };
+var CCN_LISTE = [];
+var AUDITS = [];
+var DETAIL_CACHE = {};
+var ETAT_LABEL = { V:'Validé', A:'Abrogé', M:'Modifié', P:'Périmé', '?':'À vérifier' };
+
+/* Décompresse une entrée d'article de code du search-index en code d'état court */
+function shortEtat(raw){
+  if(!raw) return '?';
+  var u = String(raw).toUpperCase();
+  if(u.indexOf('VIGUEUR')===0) return 'V';
+  if(u.indexOf('ABROGE')===0 || u==='ANNULE') return 'A';
+  if(u.indexOf('MODIFIE')===0) return 'M';
+  if(u.indexOf('PERIME')===0 || u==='DISJOINT') return 'P';
+  return '?';
+}
+
+async function loadAll(){
+  // 1) Manifeste (source principale des listes + états)
+  var manifestOk = false;
+  try{
+    var m = await fetchJSON('output/manifest.json');
+    INDEX.ccn   = (m.ccn  ||[]).map(function(a){ return {num:String(a[0]), title:a[1]||('IDCC '+a[0]), etat:a[2]||'V', source:a[3]||'inconnu'}; });
+    INDEX.code  = (m.code ||[]).map(function(a){ return {num:a[0], title:'Article '+a[0], etat:a[1]||'?'}; });
+    INDEX.secu  = (m.secu ||[]).map(function(a){ return {num:a[0], title:'Article '+a[0], etat:a[1]||'?'}; });
+    INDEX.juris = (m.juris||[]).map(function(a){ return {num:a[0], title:a[1]||('Décision '+a[0]), etat:null}; });
+    manifestOk = true;
+  }catch(e){ console.warn('manifest.json indisponible, repli sur _summary', e); }
+
+  // 2) Recherche plein-texte
+  try{ SEARCH = await fetchJSON('output/search-index.json'); }
+  catch(e){ console.warn('search-index.json indisponible', e); SEARCH = {ccn:[],code:[],code_secu:[],juris:[]}; }
+
+  // 3) Noms de CCN (recherche par métier)
+  try{ CCN_LISTE = await fetchJSON('output/ccn-liste.json'); }
+  catch(e){ CCN_LISTE = []; }
+
+  // 4) Repli : si pas de manifeste, reconstruire les listes à partir des _summary
+  if(!manifestOk){
+    await loadFromSummaries();
+  }
+
+  // 5) Enrichir les états des articles depuis le search-index si le manifeste
+  //    ne les avait pas (ou en repli) — le search-index porte "etat" par article.
+  var etatByNum = {};
+  (SEARCH.code||[]).forEach(function(a){ if(a.etat) etatByNum['c:'+a.num]=shortEtat(a.etat); });
+  (SEARCH.code_secu||[]).forEach(function(a){ if(a.etat) etatByNum['s:'+a.num]=shortEtat(a.etat); });
+  INDEX.code.forEach(function(it){ if((it.etat==='?'||!it.etat) && etatByNum['c:'+it.num]) it.etat=etatByNum['c:'+it.num]; });
+  INDEX.secu.forEach(function(it){ if((it.etat==='?'||!it.etat) && etatByNum['s:'+it.num]) it.etat=etatByNum['s:'+it.num]; });
+
+  updateCounts();
+}
+
+async function loadFromSummaries(){
+  var cls = {ccn:{},code_travail:{},code_secu:{}};
+  try{ cls = await fetchJSON('output/classification-source.json'); }catch(e){}
+  async function sumtry(rel){ try{ return await fetchJSON(rel); }catch(e){ return []; } }
+  var ccn = await sumtry('output/ccn/_summary.json');
+  INDEX.ccn = (ccn||[]).filter(function(d){return d.status==='ok';}).map(function(d){
+    return {num:String(d.idcc), title:d.titre||('IDCC '+d.idcc), etat:'V', source:(cls.ccn||{})[String(d.idcc)]||'inconnu'};
+  });
+  var code = await sumtry('output/code-travail/_summary.json');
+  INDEX.code = (code||[]).filter(function(d){return d.status==='ok';}).map(function(d){
+    return {num:d.article, title:'Article '+d.article, etat:d.etat?shortEtat(d.etat):'?'};
+  });
+  var secu = await sumtry('output/code-secu/_summary.json');
+  INDEX.secu = (secu||[]).filter(function(d){return d.status==='ok';}).map(function(d){
+    return {num:d.article, title:'Article '+d.article, etat:d.etat?shortEtat(d.etat):'?'};
+  });
+  var juris = await sumtry('output/jurisprudence/_summary.json');
+  INDEX.juris = (juris||[]).filter(function(d){return d.status==='ok';}).map(function(d){
+    return {num:d.numero, title:d.titre||('Pourvoi n°'+d.numero), etat:null};
+  });
+}
+
+function fmt(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'\u202f'); }
+function updateCounts(){
+  document.getElementById('nc-ccn').textContent   = fmt(INDEX.ccn.length);
+  document.getElementById('nc-code').textContent  = fmt(INDEX.code.length);
+  document.getElementById('nc-secu').textContent  = fmt(INDEX.secu.length);
+  document.getElementById('nc-juris').textContent = fmt(INDEX.juris.length);
+  var tot = INDEX.ccn.length+INDEX.code.length+INDEX.secu.length+INDEX.juris.length;
+  document.getElementById('corpus-b').textContent = fmt(tot)+' textes indexés';
+  document.getElementById('corpus-line').textContent =
+    fmt(INDEX.ccn.length)+' conventions · '+fmt(INDEX.code.length)+' art. travail · '+
+    fmt(INDEX.secu.length)+' art. sécu · '+fmt(INDEX.juris.length)+' décisions';
+}
+/* ============================================================================
+   Normalisation + dictionnaires (métier -> IDCC, synonymes) pour la recherche
+   combinée. Repris du fonds curé du projet.
+   ==========================================================================*/
+function normaliser(s){
+  return (s||'').toString().toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9]+/g,' ').replace(/\s+/g,' ').trim();
+}
+
+var PRO_RAW = {
+ 'serveur':[1979],'serveuse':[1979],'cuisinier':[1979],'cuisiniere':[1979],'chef de cuisine':[1979],'commis de cuisine':[1979],'plongeur':[1979],'chef de rang':[1979],'maitre d hotel':[1979],'receptionniste hotel':[1979],'femme de chambre':[1979],'gouvernante hotel':[1979],'barman':[1979],'sommelier':[1979],'veilleur de nuit':[1979],'employe hotel':[1979],'employe restaurant':[1979],'traiteur':[1979],
+ 'restauration rapide':[1501],'fast food':[1501],'employe mcdo':[1501],'equipier':[1501],'equipier polyvalent':[1501],'livreur restauration rapide':[1501],'restauration collective':[1266],'cantine scolaire':[1266],'cuisine centrale':[1266],
+ 'coiffeur':[2596],'coiffeuse':[2596],'apprenti coiffeur':[2596],'salon de coiffure':[2596],'estheticienne':[3032],'esthetique':[3032],'institut de beaute':[3032],'onglerie':[3032],'prothesiste ongulaire':[3032],
+ 'vendeur':[1517,2216,1505],'vendeuse':[1517,2216,1505],'caissier':[2216,1505],'caissiere':[2216,1505],'hotesse de caisse':[2216],'supermarche':[2216],'hypermarche':[2216],'grande surface':[2216],'grand magasin':[2156],'commerce de detail':[1517],'boutique':[1517],'vendeur textile':[1483],'vendeur habillement':[1483],'vendeur pret a porter':[1483],'vendeur chaussures':[468],'vendeur bricolage':[1606],'employe libre service':[2216,1505],'commerce alimentaire':[1505,573,3237],'commerce de gros':[573],'grossiste':[573],'e commerce':[2198],'vente a distance':[2198],'jardinerie':[1760],'opticien':[1431],'vendeur optique':[1431],'bijoutier':[3251],'joaillier':[3251],'horloger':[1487],'fleuriste':[1978],'libraire':[3013],'vendeur sport':[1557],'magasin de sport':[1557],
+ 'macon':[1596,1597],'ouvrier batiment':[1596,1597],'coffreur':[1596,1597],'couvreur':[1596,1597],'plombier batiment':[1596,1597],'electricien batiment':[1596,1597],'peintre batiment':[1596,1597],'carreleur':[1596,1597],'menuisier batiment':[1596,1597],'chef de chantier':[2609],'conducteur de travaux':[2609,3212],'ingenieur travaux publics':[3212],'architecte':[2332],'geometre':[2543],'ouvrier travaux publics':[1702],'etam batiment':[2609],
+ 'metallurgie':[3248],'usinage':[3248],'chaudronnier':[3248],'soudeur':[3248],'technicien industriel':[3248],'plasturgie':[292],'chimie':[44],'industrie pharmaceutique':[176],'textile':[18],'imprimerie':[184],'imprimeur':[184],'papeterie industrie':[3238],'verre industrie':[669],'ceramique':[1558],'meunerie':[1930],
+ 'garage automobile':[1090],'mecanicien automobile':[1090],'mecanicien auto':[1090],'carrossier':[1090],'controle technique':[1090],'vendeur automobile':[1090],
+ 'chauffeur routier':[16],'conducteur routier':[16],'chauffeur poids lourd':[16],'chauffeur livreur':[16],'transporteur':[16],'transport marchandises':[16],'chauffeur bus':[1424],'conducteur bus':[1424],'transport urbain':[1424],'taxi':[2219],'chauffeur taxi':[2219],'chauffeur vtc':[2219],'hotesse de l air':[275],'steward':[275],'agent aeroportuaire':[275],'marin':[2972,3223],'docker':[3017],'batelier':[5021],
+ 'infirmier':[2264,29],'infirmiere':[2264,29],'aide soignante':[2264,29],'aide soignant':[2264,29],'clinique privee':[2264],'assistante dentaire':[1619],'secretaire medicale':[1619,1147],'cabinet medical':[1147],'cabinet dentaire':[1619],'laboratoire analyses medicales':[959],'ehpad':[29,2264],'maison de retraite':[29,2264],'auxiliaire de vie':[2941,3239],'aide a domicile':[2941],'assistante maternelle':[3239],'nounou':[3239],'particulier employeur':[3239],'employe de maison':[3239],'educateur specialise':[413,29],'moniteur educateur':[413,29],'centre social':[1261],'veterinaire':[1875],'assistante veterinaire':[1875],'pharmacien officine':[1996],'preparateur en pharmacie':[1996],'prothesiste dentaire':[993],
+ 'secretaire':[1486,1517],'assistante administrative':[1486],'developpeur informatique':[1486],'ingenieur informatique':[1486],'consultant informatique':[1486],'ssii':[1486],'esn':[1486],'bureau d etudes':[1486],'comptable':[787],'expert comptable':[787],'cabinet comptable':[787],'assurance':[1672],'courtier assurance':[2247],'conseiller banque':[2120],'banque':[2120,3210],'avocat':[3253],'cabinet d avocats':[3253],'assistante juridique':[3253],'clerc de notaire':[2205],'etude notariale':[2205],'huissier':[3250],'commissaire de justice':[3250],'agent immobilier':[1527],'syndic':[1527],'agence immobiliere':[1527],'journaliste':[1480],'pigiste':[1480],'edition livre':[2121],
+ 'boulanger':[843],'boulangere':[843],'patissier':[1267],'chocolatier':[1286],'boucher':[3254],'bouchere':[3254],'poissonnier':[3254,1589],'charcutier':[953],'industrie laitiere':[112],'brasseur':[1513],
+ 'agriculteur salarie':[7024],'ouvrier agricole':[7024],'viticulture':[7005],'vendanges':[7005],'maraichage':[7024],'horticulture':[7024],'paysagiste':[7018],'jardinier paysagiste':[7018],'elevage':[7024],'pecheur':[5619],
+ 'agent de securite':[1351],'gardiennage':[1351],'vigile':[1351],'agent de nettoyage':[3043],'agent d entretien':[3043],'proprete':[3043],'nettoyage industriel':[3043],'gardien immeuble':[1043],'concierge':[1043],
+ 'animateur centre de loisirs':[1518],'coach sportif':[2511],'educateur sportif':[2511],'salle de sport':[2511],'comedien':[1285,3097],'technicien spectacle':[3090,3252],'intermittent du spectacle':[3090],'pressing':[2002],'blanchisserie':[2002],'pompes funebres':[759],'agent funeraire':[759],'photographe':[3168],'telecommunications':[2148],'centre d appel':[1486,3127],'services a la personne':[3127],'agence interim':[1413,2378],'interimaire':[2378],'organisme de formation':[1516],'formateur':[1516]
+};
+var SYN_RAW = {
+ 'heure sup':['heures supplementaires'],'heures supp':['heures supplementaires'],'heure supp':['heures supplementaires'],'hs':['heures supplementaires'],'heure comp':['heures complementaires'],'heures comp':['heures complementaires'],'temps partiel':['heures complementaires'],'forfait jour':['forfait jours'],'au forfait':['forfait jours'],'recup':['repos compensateur'],
+ 'fiche de paie':['bulletin de salaire'],'fiche de paye':['bulletin de salaire'],'salaire minimum':['minimum conventionnel','smic'],'treizieme mois':['13e mois','prime annuelle'],'13eme mois':['13e mois'],'prime anciennete':['prime d anciennete'],'net a payer':['salaire net'],
+ 'patron':['employeur'],'boss':['employeur'],'boite':['entreprise'],'boulot':['travail'],'taf':['travail'],
+ 'rupture conventionnelle':['rupture conventionnelle homologuee'],'preavis':['delai de preavis'],'cdd':['contrat a duree determinee'],'cdi':['contrat a duree indeterminee'],'fin de contrat':['rupture du contrat'],'indemnite de licenciement':['indemnite legale de licenciement'],'chomage':['allocation chomage'],
+ 'conges payes':['conges payes'],'cp':['conges payes'],'arret maladie':['arret de travail'],'conge maternite':['conge maternite'],'conge paternite':['conge paternite'],'jour ferie':['jours feries'],'ferie':['jour ferie'],'rtt':['reduction du temps de travail'],
+ 'cadre autonome':['forfait jours'],'deconnexion':['droit a la deconnexion'],'teletravail':['travail a distance'],'at':['accident du travail'],'mutuelle':['complementaire sante'],'convention collective':['ccn','idcc'],'harcelement':['harcelement moral','harcelement sexuel']
+};
+var PRO = {}, SYN = {};
+Object.keys(PRO_RAW).forEach(function(k){ PRO[normaliser(k)] = PRO_RAW[k]; });
+Object.keys(SYN_RAW).forEach(function(k){ SYN[normaliser(k)] = SYN_RAW[k].map(normaliser); });
+
+/* Mots-outils français ignorés (bruit) — on garde les abréviations métier
+   utiles (hs, cp, at, rtt…) qui ne sont pas dans cette liste. */
+var STOP = {};
+('de du des la le les un une et en au aux ou que qui dans sur sous pour par avec sans '+
+ 'ce cet cette ces mon ton son ses mes tes nos vos leur leurs se ne pas est sont '+
+ 'il elle on nous vous ils elles mais donc car ni or a d l c j n s t y ma ta comme'
+).split(' ').forEach(function(w){ STOP[w]=1; });
+
+/* Découpe la requête en "mots-clés" affichés (chips). On garde les mots >=2
+   qui ne sont pas des mots-outils. */
+function tokenize(q){
+  return normaliser(q).split(' ').filter(function(w){ return w.length>=2 && !STOP[w]; });
+}
+/* Élargit un ensemble de tokens avec les synonymes (pour matcher le texte). */
+function expandTerms(tokens){
+  var set = {};
+  tokens.forEach(function(t){ set[t]=1; });
+  // synonymes mono-mot
+  tokens.forEach(function(t){ (SYN[t]||[]).forEach(function(s){ s.split(' ').forEach(function(w){ if(w.length>=2) set[w]=1; }); }); });
+  // synonymes multi-mots (bigrammes de la requête)
+  for(var i=0;i<tokens.length-1;i++){
+    var bi = tokens[i]+' '+tokens[i+1];
+    (SYN[bi]||[]).forEach(function(s){ s.split(' ').forEach(function(w){ if(w.length>=2) set[w]=1; }); });
+  }
+  return Object.keys(set);
+}
+/* Résout des IDCC candidats à partir d'un métier présent dans la requête. */
+function idccFromQuery(tokens){
+  var qn = tokens.join(' ');
+  var found = {};
+  Object.keys(PRO).forEach(function(cle){
+    if(qn.indexOf(cle)!==-1){ PRO[cle].forEach(function(id){ found[String(id)] = true; }); }
+  });
+  return found;
+}
+/* ============================================================================
+   Helpers d'affichage
+   ==========================================================================*/
+function escapeHtml(s){ var d=document.createElement('div'); d.textContent=(s==null?'':String(s)); return d.innerHTML; }
+function escAttr(s){ return escapeHtml(s).replace(/"/g,'&quot;'); }
+
+function valChipHtml(etat){
+  if(etat==null) return '';
+  var cls='un', lab=ETAT_LABEL[etat]||'À vérifier';
+  if(etat==='V'){cls='ok';} else if(etat==='A'){cls='ab';} else if(etat==='M'||etat==='P'){cls='mo';}
+  return '<span class="val '+cls+'"><i class="d"></i>'+lab+'</span>';
+}
+function srcBadge(source){
+  if(source==='complet_uniquement') return '<span class="src complet" title="Récupéré via la veille sur l\'univers complet">complet</span>';
+  if(source==='conserve') return '<span class="src">conservé</span>';
+  return '';
+}
+function highlight(text, terms){
+  var out = escapeHtml(text);
+  terms.forEach(function(m){
+    if(m.length<3) return;
+    try{
+      var re = new RegExp('('+m.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
+      out = out.replace(re, '<mark>$1</mark>');
+    }catch(e){}
+  });
+  return out;
+}
+
+/* Une ligne de résultat/liste. kind: ccn|code|secu|juris */
+function rowHtml(kind, num, title, etat, opts){
+  opts = opts || {};
+  var sub = '';
+  if(opts.snippet) sub += '<div class="res-sub">'+opts.snippet+'</div>';
+  if(opts.tags && opts.tags.length){
+    sub += '<div class="tags">'+opts.tags.map(function(t){return '<span class="tag">'+escapeHtml(t)+'</span>';}).join('')+'</div>';
+  }
+  var right = valChipHtml(etat);
+  var numDisp = (kind==='ccn') ? ('IDCC '+num) : (kind==='juris' ? num : num);
+  return '<div class="row '+kind+'" tabindex="0" role="button" data-kind="'+kind+'" data-num="'+escAttr(num)+'">'+
+           '<span class="res-num mono">'+escapeHtml(numDisp)+'</span>'+
+           '<span class="res-main"><span class="res-title">'+escapeHtml(title)+srcBadge(opts.source)+'</span>'+sub+'</span>'+
+           '<span class="res-right">'+right+'</span>'+
+         '</div>';
+}
+
+/* Délégation de clic : ouvrir le détail depuis n'importe quelle .row */
+document.addEventListener('click', function(e){
+  var row = e.target.closest('.row');
+  if(row){ openDetail(row.dataset.kind, row.dataset.num); }
+});
+document.addEventListener('keydown', function(e){
+  if((e.key==='Enter'||e.key===' ') && document.activeElement && document.activeElement.classList.contains('row')){
+    e.preventDefault(); openDetail(document.activeElement.dataset.kind, document.activeElement.dataset.num);
+  }
+  if(e.key==='Escape') closeDetail();
+  if(e.key==='/' && document.activeElement && document.activeElement.tagName!=='INPUT' && document.activeElement.tagName!=='TEXTAREA'){
+    e.preventDefault(); setView('search'); document.getElementById('q').focus();
+  }
+});
+
+/* ============================================================================
+   Navigation entre vues
+   ==========================================================================*/
+var VIEW = 'search';
+var VIEW_TITLES = {
+  ccn:  ['Conventions collectives','La liste intégrale des conventions suivies, classée. Cliquez une ligne pour lire le texte.'],
+  code: ['Code du travail','Tous les articles récupérés. Filtrez par partie (loi/règlement) ou par livre — chaque ligne indique validé ou abrogé.'],
+  secu: ['Code de la sécurité sociale','Tous les articles récupérés. Filtrez par partie ou par livre — validé ou abrogé indiqué directement.'],
+  juris:['Jurisprudence','Les décisions de justice suivies. Cliquez pour lire.']
+};
+function setView(v){
+  VIEW = v;
+  document.querySelectorAll('.nav-item').forEach(function(b){ b.classList.toggle('on', b.dataset.view===v); });
+  document.getElementById('view-search').hidden = (v!=='search');
+  document.getElementById('view-browse').hidden = !(v==='ccn'||v==='code'||v==='secu'||v==='juris');
+  document.getElementById('view-maj').hidden = (v!=='maj');
+  window.scrollTo({top:0});
+  if(v==='search'){ document.getElementById('q').focus(); }
+  else if(v==='maj'){ renderAudits(); }
+  else { startBrowse(v); }
+}
+document.getElementById('nav').addEventListener('click', function(e){
+  var b = e.target.closest('.nav-item'); if(b) setView(b.dataset.view);
+});
+/* ============================================================================
+   RECHERCHE combinée (multi-mots-clés, ET cumulatif, tolérante)
+   ==========================================================================*/
+var CCN_SEARCH_MAP = null, CCN_SECTOR_MAP = null;
+function buildCcnMaps(){
+  if(CCN_SEARCH_MAP) return;
+  CCN_SEARCH_MAP = {};
+  (SEARCH.ccn||[]).forEach(function(c){ CCN_SEARCH_MAP[String(c.num)] = c; });
+  CCN_SECTOR_MAP = {};
+  (CCN_LISTE||[]).forEach(function(c){
+    var id = String(c.i!=null?c.i:(c.idcc!=null?c.idcc:''));
+    if(id) CCN_SECTOR_MAP[id] = normaliser((c.n||'')+' '+(c.s||''));
+  });
+}
+function tokenVariants(t){ var v=[t]; (SYN[t]||[]).forEach(function(s){ s.split(' ').forEach(function(w){ if(w.length>=2) v.push(w); }); }); return v; }
+function hayHas(hay, variants){ for(var i=0;i<variants.length;i++){ if(hay.indexOf(variants[i])!==-1) return true; } return false; }
+
+function resolveMetier(tokens){
+  var qn = tokens.join(' '), idSet={}, explained={};
+  Object.keys(PRO).forEach(function(cle){
+    if(qn.indexOf(cle)!==-1){
+      var kt = cle.split(' ');
+      PRO[cle].forEach(function(id){ id=String(id); idSet[id]=true; explained[id]=explained[id]||{}; kt.forEach(function(w){ explained[id][w]=1; }); });
+    }
+  });
+  return {idSet:idSet, explained:explained};
+}
+
+function searchCCN(tokens){
+  buildCcnMaps();
+  var met = resolveMetier(tokens);
+  var variantsByTok = {}; tokens.forEach(function(t){ variantsByTok[t]=tokenVariants(t); });
+  var res = [];
+  INDEX.ccn.forEach(function(it){
+    var se = CCN_SEARCH_MAP[it.num];
+    var hits = (se && se.hits) ? se.hits : [];
+    var hay = it._h || (it._h = normaliser(it.title) + ' ' + (CCN_SECTOR_MAP && CCN_SECTOR_MAP[it.num] ? CCN_SECTOR_MAP[it.num] : '') + ' ' +
+              hits.map(function(h){ return normaliser(h.title); }).join(' '));
+    var covered = 0, why = {};
+    tokens.forEach(function(t){
+      var ok = hayHas(hay, variantsByTok[t]) || (met.explained[it.num] && met.explained[it.num][t]);
+      if(ok){ covered++; }
+    });
+    if(met.idSet[it.num]) covered = Math.max(covered, 1);
+    if(covered===0) return;
+    // sections qui expliquent le résultat (pour l'affichage)
+    var whyTags = [];
+    hits.forEach(function(h){
+      var hn = normaliser(h.title);
+      for(var t in variantsByTok){ if(hayHas(hn, variantsByTok[t])){ whyTags.push(h.title); break; } }
+    });
+    whyTags = whyTags.filter(function(v,i,a){ return a.indexOf(v)===i; }).slice(0,3);
+    var score = covered*100 + (met.idSet[it.num]?40:0) + (normaliser(it.title).indexOf(tokens[0])===0?8:0) + whyTags.length;
+    res.push({num:it.num, title:it.title, etat:it.etat, source:it.source, tags:whyTags, cover:covered, score:score});
+  });
+  res.sort(function(a,b){ return b.score-a.score; });
+  return res;
+}
+
+function searchArticles(list, tokens, kindLabel){
+  var variantsByTok = {}; tokens.forEach(function(t){ variantsByTok[t]=tokenVariants(t); });
+  var out=[];
+  (list||[]).forEach(function(a){
+    var hay = a._h || (a._h = normaliser((a.num||'')+' '+(a.snippet||'')+' '+(a.title||'')));
+    var covered=0;
+    tokens.forEach(function(t){ if(hayHas(hay, variantsByTok[t])) covered++; });
+    if(covered===0) return;
+    var numMatch = tokens.some(function(t){ return normaliser(a.num).indexOf(t)===0; });
+    var score = covered*100 + (numMatch?20:0);
+    out.push({num:a.num, title:a.title||('Article '+a.num), snippet:a.snippet||'', etat:a.etat?shortEtat(a.etat):'?', cover:covered, score:score});
+  });
+  out.sort(function(a,b){ return b.score-a.score; });
+  return out;
+}
+
+function renderTokens(tokens){
+  var el = document.getElementById('tokens');
+  if(!tokens.length){ el.innerHTML=''; return; }
+  el.innerHTML = tokens.map(function(t){
+    return '<span class="token">'+escapeHtml(t)+'<button data-w="'+escAttr(t)+'" aria-label="Retirer '+escAttr(t)+'">✕</button></span>';
+  }).join('');
+}
+document.getElementById('tokens').addEventListener('click', function(e){
+  var b = e.target.closest('button[data-w]'); if(!b) return;
+  var w = b.dataset.w;
+  var cur = tokenize(document.getElementById('q').value).filter(function(t){ return t!==w; });
+  document.getElementById('q').value = cur.join(' ');
+  runSearch();
+});
+
+function runSearch(){
+  var raw = document.getElementById('q').value;
+  var tokens = tokenize(raw);
+  var box = document.getElementById('search-results');
+  var landing = document.getElementById('search-landing');
+  renderTokens(tokens);
+  if(!tokens.length){ box.innerHTML=''; landing.hidden=false; return; }
+  landing.hidden = true;
+
+  if(!INDEX.ccn.length && !INDEX.code.length){
+    box.innerHTML = '<div class="loading">Chargement des données…</div>';
+    return;
+  }
+
+  var terms = expandTerms(tokens);
+  var ccn = searchCCN(tokens).slice(0,40);
+  var code = searchArticles(SEARCH.code, tokens, 'code').slice(0,30);
+  var secu = searchArticles(SEARCH.code_secu, tokens, 'secu').slice(0,20);
+  var juris = searchArticles(SEARCH.juris, tokens, 'juris').slice(0,15);
+
+  var html = '';
+  var multi = tokens.length>=2;
+  if(multi){
+    var maxCover = Math.max(
+      ccn[0]?ccn[0].cover:0, code[0]?code[0].cover:0, secu[0]?secu[0].cover:0, juris[0]?juris[0].cover:0);
+    if(maxCover>=2){
+      html += '<div class="group-title">Correspondances combinées (les '+tokens.length+' mots)</div>';
+    }
+  }
+
+  if(ccn.length){
+    html += '<div class="group-title">Conventions collectives · '+ccn.length+'</div><div class="rows">';
+    html += ccn.map(function(r){ return rowHtml('ccn', r.num, r.title, r.etat, {tags:r.tags, source:r.source}); }).join('');
+    html += '</div>';
+  }
+  if(code.length){
+    html += '<div class="group-title">Code du travail · '+code.length+'</div><div class="rows">';
+    html += code.map(function(r){ return rowHtml('code', r.num, r.title, r.etat, {snippet:highlight(r.snippet.slice(0,180), terms)}); }).join('');
+    html += '</div>';
+  }
+  if(secu.length){
+    html += '<div class="group-title">Code de la sécurité sociale · '+secu.length+'</div><div class="rows">';
+    html += secu.map(function(r){ return rowHtml('secu', r.num, r.title, r.etat, {snippet:highlight(r.snippet.slice(0,180), terms)}); }).join('');
+    html += '</div>';
+  }
+  if(juris.length){
+    html += '<div class="group-title">Jurisprudence · '+juris.length+'</div><div class="rows">';
+    html += juris.map(function(r){ return rowHtml('juris', r.num, r.title, null, {snippet:highlight(r.snippet.slice(0,180), terms)}); }).join('');
+    html += '</div>';
+  }
+  if(!html){
+    html = '<div class="empty"><div class="big">Rien trouvé pour ces mots.</div>Essayez un métier plutôt qu\'un terme technique, retirez un mot-clé, ou vérifiez l\'orthographe.</div>';
+  }
+  box.innerHTML = html;
+}
+
+/* Recherche déclenchée à Entrée, au bouton, ET au fil de la frappe (fluide). */
+document.getElementById('q').addEventListener('keydown', function(e){ if(e.key==='Enter'){ clearTimeout(window.__st); runSearch(); } });
+document.getElementById('go').addEventListener('click', runSearch);
+document.getElementById('q').addEventListener('input', function(){
+  clearTimeout(window.__st); window.__st = setTimeout(runSearch, 160);
+});
+/* ============================================================================
+   NAVIGATION par source + sous-catégories + liste INTÉGRALE (paginée)
+   ==========================================================================*/
+var PAGE = 150;
+var BROWSE = { source:'ccn', sub:'all', filter:'', shown:PAGE };
+
+var CAT_LABELS = {
+  minima_salariaux:'Minima salariaux', contingent_hs:'Contingent HS', majoration_hs:'Majoration HS',
+  duree_travail:'Durée du travail', astreintes:'Astreintes', temps_partiel:'Temps partiel',
+  modulation_annualisation:'Modulation', repos:'Repos', conges:'Congés', rupture_preavis:'Rupture / préavis'
+};
+var LIVRE_TRAVAIL = {
+  '1':'Relations individuelles','2':'Relations collectives','3':'Durée, salaire, épargne',
+  '4':'Santé & sécurité','5':'Emploi & insertion','6':'Formation professionnelle',
+  '7':'Dispositions particulières','8':'Contrôle & contentieux'
+};
+var LIVRE_SECU = {
+  '1':'Généralités & organisation','2':'Régime général','3':'Dispositions communes',
+  '4':'Accidents du travail','5':'Prestations familiales','6':'Travailleurs non salariés',
+  '7':'Vieillesse & régimes divers','8':'Aides & allocations','9':'Financement'
+};
+
+var CCN_CAT_SET = null; // cat -> {idcc:true}
+function buildCcnCatSet(){
+  if(CCN_CAT_SET) return;
+  CCN_CAT_SET = {};
+  (SEARCH.ccn||[]).forEach(function(c){
+    (c.hits||[]).forEach(function(h){
+      (CCN_CAT_SET[h.cat] = CCN_CAT_SET[h.cat] || {})[String(c.num)] = true;
+    });
+  });
+}
+
+function letterOf(num){ var m = String(num).match(/^([A-Za-z]+)/); return m ? m[1].toUpperCase() : ''; }
+function livreOf(num){ var m = String(num).match(/^[A-Za-z]*\s*0*([0-9])/); return m ? m[1] : ''; }
+
+function subChips(source){
+  var chips = [];
+  function chip(key,label,count){ return {key:key,label:label,count:count}; }
+  if(source==='ccn'){
+    buildCcnCatSet();
+    chips.push(chip('all','Toutes (A → Z)', INDEX.ccn.length));
+    Object.keys(CAT_LABELS).forEach(function(cat){
+      var n = CCN_CAT_SET[cat] ? Object.keys(CCN_CAT_SET[cat]).length : 0;
+      if(n) chips.push(chip('cat:'+cat, CAT_LABELS[cat], n));
+    });
+  } else if(source==='code' || source==='secu'){
+    var list = INDEX[source];
+    var byPart={}, byLivre={};
+    list.forEach(function(it){
+      var L=letterOf(it.num); if(L) byPart[L]=(byPart[L]||0)+1;
+      var lv=livreOf(it.num); if(lv) byLivre[lv]=(byLivre[lv]||0)+1;
+    });
+    chips.push(chip('all','Tous', list.length));
+    var partLabels = {L:'Partie L · loi', R:'Partie R · règlement', D:'Partie D · décret', A:'Partie A · arrêté'};
+    ['L','R','D','A'].forEach(function(P){ if(byPart[P]) chips.push(chip('part:'+P, partLabels[P], byPart[P])); });
+    var LV = (source==='code')?LIVRE_TRAVAIL:LIVRE_SECU;
+    Object.keys(LV).forEach(function(d){ if(byLivre[d]) chips.push(chip('livre:'+d, 'Livre '+d+' · '+LV[d], byLivre[d])); });
+  } else {
+    chips.push(chip('all','Toutes les décisions', INDEX.juris.length));
+  }
+  return chips;
+}
+
+function matchSub(source, it){
+  var s = BROWSE.sub || 'all';
+  if(s==='all') return true;
+  if(s.indexOf('cat:')===0){ var cat=s.slice(4); return CCN_CAT_SET[cat] && CCN_CAT_SET[cat][it.num]; }
+  if(s.indexOf('part:')===0){ return letterOf(it.num)===s.slice(5); }
+  if(s.indexOf('livre:')===0){ return livreOf(it.num)===s.slice(6); }
+  return true;
+}
+
+function computeList(){
+  var source = BROWSE.source;
+  var base = INDEX[source] || [];
+  var f = normaliser(BROWSE.filter);
+  var list = base.filter(function(it){
+    if(!matchSub(source, it)) return false;
+    if(f){ var hay = normaliser(it.num+' '+it.title); if(hay.indexOf(f)===-1) return false; }
+    return true;
+  });
+  if(source==='ccn') list.sort(function(a,b){ return a.title.localeCompare(b.title,'fr'); });
+  else if(source==='juris') list.sort(function(a,b){ return String(a.num).localeCompare(String(b.num),'fr',{numeric:true}); });
+  else list.sort(function(a,b){ return String(a.num).localeCompare(String(b.num),'fr',{numeric:true}); });
+  return list;
+}
+
+function renderSubbar(){
+  var chips = subChips(BROWSE.source);
+  document.getElementById('subbar').innerHTML = chips.map(function(c){
+    return '<button class="sub-chip'+(BROWSE.sub===c.key?' on':'')+'" data-sub="'+escAttr(c.key)+'">'+
+      escapeHtml(c.label)+'<span class="n">'+fmt(c.count)+'</span></button>';
+  }).join('');
+}
+
+function renderBrowse(){
+  var list = computeList();
+  var box = document.getElementById('browse-results');
+  if(!list.length){
+    box.innerHTML = '<div class="empty"><div class="big">Aucune entrée ici.</div>'+
+      (BROWSE.filter?'Aucun résultat pour ce filtre.':'Cette sous-catégorie est vide pour l\'instant — elle se remplira au fil des runs de vérification.')+'</div>';
+    return;
+  }
+  var shown = Math.min(BROWSE.shown, list.length);
+  var slice = list.slice(0, shown);
+  var kind = BROWSE.source;
+  var html = '<div class="group-title">'+fmt(list.length)+' entrée'+(list.length>1?'s':'')+'</div><div class="rows">';
+  html += slice.map(function(it){ return rowHtml(kind, it.num, it.title, it.etat, {source:it.source}); }).join('');
+  html += '</div>';
+  if(shown < list.length){
+    html += '<button class="more" id="more-btn">Afficher plus ('+fmt(list.length-shown)+' restantes)</button>';
+  }
+  box.innerHTML = html;
+  var mb = document.getElementById('more-btn');
+  if(mb) mb.addEventListener('click', function(){ BROWSE.shown += PAGE*3; renderBrowse(); });
+}
+
+function startBrowse(source){
+  BROWSE.source = source; BROWSE.sub='all'; BROWSE.filter=''; BROWSE.shown=PAGE;
+  document.getElementById('browse-h1').textContent = VIEW_TITLES[source][0];
+  document.getElementById('browse-p').textContent = VIEW_TITLES[source][1];
+  var fi = document.getElementById('filter-input'); fi.value=''; document.getElementById('filter-clr').hidden=true;
+  document.getElementById('subbar').hidden = (source==='juris');
+  renderSubbar();
+  renderBrowse();
+}
+
+document.getElementById('subbar').addEventListener('click', function(e){
+  var b = e.target.closest('.sub-chip'); if(!b) return;
+  BROWSE.sub = b.dataset.sub; BROWSE.shown = PAGE;
+  renderSubbar(); renderBrowse();
+});
+var filterTimer=null;
+document.getElementById('filter-input').addEventListener('input', function(e){
+  BROWSE.filter = e.target.value; BROWSE.shown = PAGE;
+  document.getElementById('filter-clr').hidden = !e.target.value;
+  clearTimeout(filterTimer); filterTimer = setTimeout(renderBrowse, 90);
+});
+document.getElementById('filter-clr').addEventListener('click', function(){
+  document.getElementById('filter-input').value=''; BROWSE.filter=''; BROWSE.shown=PAGE;
+  document.getElementById('filter-clr').hidden=true; renderBrowse();
+});
+/* ============================================================================
+   PANNEAU de lecture (détail) + mises à jour
+   ==========================================================================*/
+function pathFor(kind, num){
+  var safe = String(num).replace(/\//g,'-');
+  if(kind==='ccn')  return 'output/ccn/'+safe+'.json';
+  if(kind==='secu') return 'output/code-secu/'+safe+'.json';
+  if(kind==='juris')return 'output/jurisprudence/'+safe+'.json';
+  return 'output/code-travail/'+safe+'.json';
+}
+function cleanHtml(raw){ return raw ? String(raw).replace(/<script/gi,'&lt;script') : ''; }
+function renderSections(sections){
+  if(!Array.isArray(sections)) return '';
+  return sections.map(function(s){
+    var t = s.title || s.titre, inner='';
+    if(Array.isArray(s.sections) && s.sections.length) inner += renderSections(s.sections);
+    if(Array.isArray(s.articles)) inner += s.articles.map(function(a){ return '<div class="sec-text">'+cleanHtml(a.content||a.texte||'')+'</div>'; }).join('');
+    if(!t && !inner) return '';
+    return (t?'<div class="sec-title">'+escapeHtml(t)+'</div>':'')+inner;
+  }).join('');
+}
+function openPanel(){ document.getElementById('scrim').classList.add('open'); document.getElementById('panel').classList.add('open'); }
+function closeDetail(){ document.getElementById('scrim').classList.remove('open'); document.getElementById('panel').classList.remove('open'); }
+document.getElementById('scrim').addEventListener('click', closeDetail);
+document.getElementById('d-close').addEventListener('click', closeDetail);
+
+async function openDetail(kind, num){
+  openPanel();
+  document.getElementById('d-num').textContent = (kind==='ccn'?'IDCC ':'')+num;
+  document.getElementById('d-title').textContent = 'Chargement…';
+  document.getElementById('d-val').innerHTML = '';
+  document.getElementById('d-body').innerHTML = '<div class="loading">Chargement du texte…</div>';
+
+  var key = kind+':'+num, data = DETAIL_CACHE[key];
+  if(!data){
+    try{ data = await fetchJSON(pathFor(kind,num)); DETAIL_CACHE[key]=data; }
+    catch(e){ document.getElementById('d-title').textContent='Texte indisponible'; document.getElementById('d-body').innerHTML='<div class="empty">Impossible de charger ce texte pour le moment. Il n\'a peut-être pas encore été récupéré par un run de vérification.</div>'; return; }
+  }
+  var payload = data;
+  if(kind==='code'||kind==='secu') payload = data.article || data;
+  if(kind==='juris') payload = data.text || data;
+
+  var defLabel = kind==='ccn'?'Convention '+num : (kind==='juris'?'Décision '+num : 'Article '+num);
+  var title = payload.titre || payload.title || payload.titreLong || defLabel;
+  document.getElementById('d-title').textContent = title;
+
+  // Validité
+  var etat = payload.etat ? shortEtat(payload.etat) : (kind==='ccn'?'V':null);
+  document.getElementById('d-val').innerHTML = valChipHtml(etat);
+
+  // Corps
+  var abroge = payload.etat && /ABROGE/i.test(payload.etat);
+  var body='';
+  if(kind==='ccn' && Array.isArray(payload.sections)) body = renderSections(payload.sections);
+  else if(payload.texteHtml||payload.texte||payload.content) body = '<div class="sec-text">'+cleanHtml(payload.texteHtml||payload.texte||payload.content)+'</div>';
+  else if(abroge) body = '<div class="sec-text" style="color:var(--ink-soft)">Article abrogé, plus en vigueur — il est normal qu\'il n\'y ait pas (ou peu) de texte à afficher.</div>';
+  else body = '<div class="sec-text" style="color:var(--ink-soft)">Contenu structuré non détecté pour cette entrée.</div>';
+
+  // Lien Légifrance si un identifiant est présent
+  var legi='';
+  var artId = payload.id || payload.cid || (data.article && data.article.id);
+  if((kind==='code'||kind==='secu') && artId && /^LEGIARTI/.test(String(artId))){
+    legi = '<a class="primary" target="_blank" rel="noopener" href="https://www.legifrance.gouv.fr/codes/article_lc/'+encodeURIComponent(artId)+'">Voir sur Légifrance ↗</a>';
+  }
+  var actions = '<div class="panel-actions">'+legi+
+    '<button id="d-export">Exporter (.xlsx)</button></div>';
+  document.getElementById('d-body').innerHTML = actions + body;
+
+  var ex = document.getElementById('d-export');
+  if(ex) ex.addEventListener('click', function(){ exportOne(kind, num, payload); });
+}
+
+function flattenForExport(payload){
+  var rows=[];
+  function walk(node){
+    if(!node||typeof node!=='object') return;
+    var t=node.title||node.titre;
+    if(t) rows.push({section:t, texte:(node.content||node.texte||'').replace(/<[^>]+>/g,' ').trim()});
+    (node.sections||[]).forEach(walk); (node.articles||[]).forEach(walk);
+  }
+  walk(payload);
+  if(!rows.length && (payload.texte||payload.content||payload.texteHtml))
+    rows.push({section:payload.titre||payload.title||'', texte:(payload.texte||payload.content||payload.texteHtml||'').replace(/<[^>]+>/g,' ').trim()});
+  return rows.length?rows:[{section:'', texte:''}];
+}
+function exportOne(kind, num, payload){
+  if(typeof XLSX==='undefined') return;
+  var ws = XLSX.utils.json_to_sheet(flattenForExport(payload));
+  var wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, String(num).slice(0,28).replace(/[\\\/\?\*\[\]:]/g,'-'));
+  XLSX.writeFile(wb, kind+'-'+String(num).replace(/\//g,'-')+'.xlsx');
+}
+
+/* ---- Mises à jour ---- */
+async function renderAudits(){
+  var box = document.getElementById('maj-results');
+  if(!AUDITS.length){
+    try{ AUDITS = await fetchJSON('audits/index.json'); }catch(e){ AUDITS=[]; }
+  }
+  if(!AUDITS.length){
+    box.innerHTML = '<div class="empty"><div class="big">Aucun rapport pour l\'instant.</div>Le premier apparaîtra après un run de vérification.</div>';
+    return;
+  }
+  box.innerHTML = AUDITS.map(function(r,i){
+    var zero = (r.total_changements===0);
+    return '<div class="audit" data-audit="'+i+'"><div><div class="ad">'+escapeHtml(r.date||'')+(r.heure?' — '+escapeHtml(r.heure):'')+'</div>'+
+      '<div class="ar">'+escapeHtml(r.resume||'')+'</div></div>'+
+      '<div class="badge'+(zero?' zero':'')+'">'+(zero?'RAS':(r.total_changements+' chgt'))+'</div></div>';
+  }).join('');
+}
+async function openAudit(entry){
+  if(!entry) return;
+  openPanel();
+  document.getElementById('d-num').textContent = entry.date||'';
+  document.getElementById('d-title').textContent = 'Mise à jour';
+  document.getElementById('d-val').innerHTML = '';
+  document.getElementById('d-body').innerHTML = '<div class="loading">Chargement du rapport…</div>';
+  try{
+    var md = await fetchText('audits/'+entry.fichier);
+    document.getElementById('d-body').innerHTML = '<div class="sec-text">'+markdownToHtml(md)+'</div>';
+  }catch(err){ document.getElementById('d-body').innerHTML = '<div class="empty">Impossible de charger ce rapport.</div>'; }
+}
+document.getElementById('maj-results').addEventListener('click', function(e){
+  var a = e.target.closest('[data-audit]'); if(!a) return;
+  openAudit(AUDITS[+a.dataset.audit]);
+});
+function markdownToHtml(md){
+  var esc=function(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');};
+  var inline=function(s){return s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/`(.+?)`/g,'<code>$1</code>');};
+  var lines=md.split('\n'), out='', inList=false;
+  for(var i=0;i<lines.length;i++){
+    var line=esc(lines[i]);
+    if(/^# /.test(line)){ if(inList){out+='</ul>';inList=false;} out+='<h2 style="font-size:18px;color:var(--marine);margin:6px 0 10px">'+line.slice(2)+'</h2>'; continue; }
+    if(/^## /.test(line)){ if(inList){out+='</ul>';inList=false;} out+='<h3 style="font-size:15px;color:var(--violet-strong);margin:16px 0 6px">'+line.slice(3)+'</h3>'; continue; }
+    if(/^- /.test(line)){ if(!inList){out+='<ul style="padding-left:20px">';inList=true;} out+='<li style="margin-bottom:5px">'+inline(line.slice(2))+'</li>'; continue; }
+    if(inList){out+='</ul>';inList=false;}
+    if(line.trim()==='') continue;
+    out+='<p>'+inline(line)+'</p>';
+  }
+  if(inList) out+='</ul>';
+  return out;
+}
+
+/* ---- Tableau de bord d'accueil (stats live + dernières vérifications) ---- */
+async function renderDashboard(){
+  var cards = [
+    {v:'ccn',  n:INDEX.ccn.length,  l:'Conventions collectives'},
+    {v:'code', n:INDEX.code.length, l:'Articles · Code du travail'},
+    {v:'secu', n:INDEX.secu.length, l:'Articles · Sécurité sociale'},
+    {v:'juris',n:INDEX.juris.length,l:'Décisions de justice'}
+  ];
+  document.getElementById('stat-grid').innerHTML = cards.map(function(c){
+    return '<div class="stat" data-view="'+c.v+'"><span class="arrow">→</span>'+
+      '<div class="num">'+fmt(c.n)+'</div><div class="lab">'+c.l+'</div></div>';
+  }).join('');
+  var box = document.getElementById('latest-maj');
+  if(!AUDITS.length){ try{ AUDITS = await fetchJSON('audits/index.json'); }catch(e){ AUDITS=[]; } }
+  if(AUDITS.length){
+    box.innerHTML = '<h3><span class="pulse"></span>Dernières vérifications automatiques</h3>'+
+      AUDITS.slice(0,3).map(function(r,i){
+        var zero = (r.total_changements===0);
+        return '<div class="latest-row" data-audit="'+i+'"><span class="lr-d">'+escapeHtml(r.date||'')+'</span>'+
+          '<span class="lr-t">'+escapeHtml(r.resume||'Vérification effectuée')+'</span>'+
+          '<span class="lr-b'+(zero?' zero':'')+'">'+(zero?'RAS':(r.total_changements+' chgt'))+'</span></div>';
+      }).join('');
+    box.hidden = false;
+  } else { box.hidden = true; }
+}
+document.getElementById('stat-grid').addEventListener('click', function(e){
+  var c = e.target.closest('.stat'); if(c) setView(c.dataset.view);
+});
+document.getElementById('latest-maj').addEventListener('click', function(e){
+  var a = e.target.closest('[data-audit]'); if(a) openAudit(AUDITS[+a.dataset.audit]);
+});
+var EXAMPLES = [
+  {q:'commerce de gros heures supplementaires', t:'Commerce de gros + heures sup', s:'Une convention et un thème'},
+  {q:'coiffeuse conges', t:'Coiffeuse + congés', s:'Un métier et une question'},
+  {q:'L3121 duree du travail', t:'L3121 + durée du travail', s:'Un article et son sujet'},
+  {q:'preavis licenciement', t:'Préavis + licenciement', s:'Deux notions croisées'},
+  {q:'forfait jours cadre', t:'Forfait jours + cadre', s:'Temps de travail des cadres'},
+  {q:'restauration astreinte', t:'Restauration + astreinte', s:'Secteur et sujet précis'}
+];
+function renderExamples(){
+  document.getElementById('ex-grid').innerHTML = EXAMPLES.map(function(e){
+    return '<div class="ex" data-q="'+escAttr(e.q)+'"><div class="k">'+escapeHtml(e.q)+'</div>'+
+      '<div class="t">'+escapeHtml(e.t)+'</div><div class="s">'+escapeHtml(e.s)+'</div></div>';
+  }).join('');
+}
+document.getElementById('ex-grid').addEventListener('click', function(e){
+  var c = e.target.closest('.ex'); if(!c) return;
+  document.getElementById('q').value = c.dataset.q; setView('search'); runSearch();
+});
+
+/* ============================================================================
+   Initialisation
+   ==========================================================================*/
+renderExamples();
+document.getElementById('corpus-line').textContent = 'Chargement de l\'index…';
+loadAll().then(function(){
+  renderDashboard();
+  if(!INDEX.ccn.length && !INDEX.code.length){
+    document.getElementById('corpus-line').textContent = 'Index introuvable — lancez un run de vérification.';
+  }
+}).catch(function(e){
+  console.error(e);
+  document.getElementById('corpus-line').textContent = 'Erreur de chargement des données.';
+});
+</script>
+</body>
+</html>
