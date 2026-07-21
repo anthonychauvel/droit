@@ -129,6 +129,29 @@
   .carte-sous{ font-size:12.5px; color:var(--texte-doux); }
   .carte-exemple .chevron{ margin-left:auto; width:16px; height:16px; stroke:#b5b8d1; flex-shrink:0; }
 
+  .accordeon-item{
+    background:var(--carte); border:1px solid var(--ligne); border-radius:10px;
+    margin-bottom:8px; overflow:hidden;
+  }
+  .accordeon-tete{
+    display:flex; align-items:center; gap:10px; padding:14px 16px; cursor:pointer;
+    font-weight:700; font-size:14.5px; color:var(--texte); user-select:none;
+  }
+  .accordeon-tete .chevron-acc{
+    margin-left:auto; width:16px; height:16px; stroke:var(--texte-doux);
+    transition: transform .18s; flex-shrink:0;
+  }
+  .accordeon-item.ouvert .chevron-acc{ transform:rotate(90deg); }
+  .accordeon-corps{ display:none; padding:0 16px 14px; }
+  .accordeon-item.ouvert .accordeon-corps{ display:block; }
+  .accordeon-liste{ display:flex; flex-wrap:wrap; gap:7px; }
+  .accordeon-mot{
+    background:var(--papier); border:1px solid var(--ligne); border-radius:20px;
+    padding:7px 13px; font-size:13px; cursor:pointer; color:var(--texte); font-family:inherit;
+    transition: border-color .12s, background .12s;
+  }
+  .accordeon-mot:hover{ border-color:var(--violet); background:var(--violet-soft); }
+
   #resultats{ display:none; }
   #resultats.actif{ display:block; }
   #zone-accueil.masque{ display:none; }
@@ -270,6 +293,10 @@
 
     <div class="section-titre">Exemples de recherches</div>
     <div class="grille-exemples" id="grille-exemples"></div>
+
+    <div class="section-titre" style="margin-top:34px;">Le sommaire, par thème</div>
+    <p style="font-size:13.5px; color:var(--texte-doux); margin:-8px 0 16px;">Perdu·e ? Déplie une catégorie et choisis directement.</p>
+    <div id="sommaire"></div>
   </div>
 
   <div id="resultats">
@@ -323,7 +350,7 @@ function escapeHtml(s){
 function rendreExemples(){
   const grille = document.getElementById('grille-exemples');
   grille.innerHTML = EXEMPLES.map(function(e){
-    return '<div class="carte-exemple" onclick="rendreResultats(' + JSON.stringify(e.requete).replace(/"/g,'&quot;') + ')">' +
+    return '<div class="carte-exemple" onclick="lancerExemple(' + JSON.stringify(e.requete).replace(/"/g,'&quot;') + ')">' +
       '<div class="ic" style="background:' + e.couleur + '22"><svg viewBox="0 0 24 24" fill="none" stroke="' + e.couleur + '" stroke-width="2" stroke-linecap="round">' + ICONES[e.icone] + '</svg></div>' +
       '<div><div class="carte-titre">' + escapeHtml(e.titre) + '</div><div class="carte-sous">' + escapeHtml(e.sous) + '</div></div>' +
       '<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>' +
@@ -331,6 +358,53 @@ function rendreExemples(){
   }).join('');
 }
 rendreExemples();
+
+const SOMMAIRE = [
+  {
+    titre: 'Les fondamentaux',
+    mots: ['heures supplementaires', 'RTT', 'conges payes', 'salaire minimum', '13e mois', 'jours feries', 'prime anciennete'],
+  },
+  {
+    titre: 'Temps de travail',
+    mots: ['temps partiel', 'forfait jours', 'astreinte', 'teletravail', 'temps de travail', 'travail de nuit', 'modulation annualisation', 'droit a la deconnexion'],
+  },
+  {
+    titre: 'Rupture & départ',
+    mots: ['licenciement', 'rupture conventionnelle', 'demission', 'preavis', 'periode d essai', 'indemnite de licenciement', 'chomage'],
+  },
+  {
+    titre: 'Santé & famille',
+    mots: ['arret maladie', 'conge maternite', 'conge paternite', 'accident du travail', 'conge parental', 'harcelement'],
+  },
+  {
+    titre: 'Par convention collective',
+    mots: ['coiffeuse', 'macon', 'serveur restaurant', 'chauffeur routier', 'infirmiere en clinique', 'boulanger',
+           'vendeuse en boutique', 'garage automobile', 'agent de securite', 'pharmacien', 'notaire', 'auxiliaire de vie',
+           'esthéticienne', 'gardien immeuble', 'avocat'],
+  },
+];
+
+function rendreSommaire(){
+  const el = document.getElementById('sommaire');
+  el.innerHTML = SOMMAIRE.map(function(cat, i){
+    return '<div class="accordeon-item" id="acc-' + i + '">' +
+      '<div class="accordeon-tete" onclick="toggleAccordeon(' + i + ')">' +
+        escapeHtml(cat.titre) +
+        '<svg class="chevron-acc" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>' +
+      '</div>' +
+      '<div class="accordeon-corps"><div class="accordeon-liste">' +
+        cat.mots.map(function(m){
+          return '<button class="accordeon-mot" onclick="event.stopPropagation();lancerExemple(' + JSON.stringify(m).replace(/"/g,'&quot;') + ')">' + escapeHtml(m) + '</button>';
+        }).join('') +
+      '</div></div>' +
+    '</div>';
+  }).join('');
+}
+rendreSommaire();
+
+function toggleAccordeon(i){
+  document.getElementById('acc-' + i).classList.toggle('ouvert');
+}
 
 async function chargerDonnees(){
   try{
@@ -376,6 +450,11 @@ function chercherArticles(q, codeIndex, limite){
   return trouves.sort((a,b) => b.score - a.score).slice(0, limite || 6);
 }
 
+function lancerExemple(requete){
+  document.getElementById('q').value = requete;
+  rendreResultats(requete);
+}
+
 function retourAccueil(){
   categorieActive = null;
   document.getElementById('resultats').classList.remove('actif');
@@ -385,7 +464,6 @@ function retourAccueil(){
 
 function rendreResultats(q, categorie){
   if(!q || !q.trim()){ return; }
-  document.getElementById('q').value = q;
   document.getElementById('zone-accueil').classList.add('masque');
   document.getElementById('resultats').classList.add('actif');
   const el = document.getElementById('contenu-resultats');
@@ -479,6 +557,7 @@ function changerVue(vue){
 
   categorieActive = vue; // 'code', 'ccn', 'secu' ou 'juris' -- filtre les recherches suivantes tant qu'on reste sur cette vue
   const requetesParDefaut = { code: 'temps de travail', ccn: 'coiffeuse', secu: 'arret maladie', juris: 'licenciement' };
+  document.getElementById('q').value = requetesParDefaut[vue] || '';
   rendreResultats(requetesParDefaut[vue] || '', vue);
 }
 </script>
