@@ -1,0 +1,481 @@
+{
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000041966510",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "L'assuré titulaire d'une pension d'invalidité dans le régime institués par l'article L. 632-1 est exonéré du paiement de toute cotisation d'assurance vieillesse complémentaire.",
+    "texteHtml": "<p>L'assuré titulaire d'une pension d'invalidité dans le régime institués par l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006073189&idArticle=LEGIARTI000036378069&dateTexte=&categorieLien=cid\" title=\"Code de la sécurité sociale. - art. L632-1 (V)\">L. 632-1</a> est exonéré du paiement de toute cotisation d'assurance vieillesse complémentaire.</p>",
+    "num": "D635-2",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "10.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1590364800000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 306930631,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "1985-12-21",
+          "fin": "2999-01-01",
+          "titre": "Partie réglementaire - Décrets simples",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000006106031",
+          "id": "LEGISCTA000006106031",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "1985-12-21",
+          "fin": "2018-01-01",
+          "titre": "Livre 6 : Régimes des travailleurs non-salariés",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006126860",
+          "id": "LEGISCTA000006126860",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2018-01-01",
+          "fin": "2999-01-01",
+          "titre": "Livre VI : Dispositions applicables aux travailleurs indépendants",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006126860",
+          "id": "LEGISCTA000036475172",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "1985-12-21",
+          "fin": "2017-05-06",
+          "titre": "Titre 3 : Assurance vieillesse et invalidité-décès des professions artisanales, industrielles et commerciales",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006141569",
+          "id": "LEGISCTA000006141569",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2017-05-06",
+          "fin": "2018-01-01",
+          "titre": "Titre 3 : Assurance vieillesse et invalidité-décès des personnes affiliées au régime social des indépendants",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006141569",
+          "id": "LEGISCTA000034624727",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2018-01-01",
+          "fin": "2999-01-01",
+          "titre": "Titre III : Assurance invalidité et assurance vieillesse",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006141569",
+          "id": "LEGISCTA000036475373",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "1985-12-21",
+          "fin": "2013-01-01",
+          "titre": "Chapitre 5 : Régimes complémentaires d'assurance vieillesse - Régimes d'assurance invalidité-décès",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006155900",
+          "id": "LEGISCTA000006155900",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2013-01-01",
+          "fin": "2020-05-25",
+          "titre": "Chapitre 5 : Régime complémentaire d'assurance vieillesse. ― Régimes d'assurance invalidité-décès",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006155900",
+          "id": "LEGISCTA000025263542",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2020-05-25",
+          "fin": "2999-01-01",
+          "titre": "Chapitre 5 : Assurance vieillesse complémentaire",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006155900",
+          "id": "LEGISCTA000041967069",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2004-08-24",
+          "fin": "2013-01-01",
+          "titre": "Section 1 : Régimes complémentaires d'assurance vieillesse",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006172261",
+          "id": "LEGISCTA000006172261",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2013-01-01",
+          "fin": "2999-01-01",
+          "titre": "Section 1 : Régime complémentaire d'assurance vieillesse",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006172261",
+          "id": "LEGISCTA000025263540",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "1985-12-21",
+          "fin": "2004-08-24",
+          "titre": "Section 1 : Généralités.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006172261",
+          "id": "LEGISCTA000028216008",
+          "etat": "MODIFIE"
+        }
+      ],
+      "nombreVersionParent": 3,
+      "longeurChemin": 47,
+      "titreTxt": [
+        {
+          "debut": "1958-10-16",
+          "fin": "2999-01-01",
+          "titre": "Code de la sécurité sociale",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000006073189",
+          "id": "LEGITEXT000006073189",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000006738015",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000006172261",
+    "sectionParentId": "LEGISCTA000028216008",
+    "sectionParentTitre": "Section 1 : Généralités.",
+    "fullSectionsTitre": "Partie réglementaire - Décrets simples &gt; Livre VI : Dispositions applicables aux travailleurs indépendants &gt; Titre III : Assurance invalidité et assurance vieillesse &gt; Chapitre 5 : Assurance vieillesse complémentaire &gt; Section 1 : Régime complémentaire d'assurance vieillesse",
+    "refInjection": "IG-20260114",
+    "idTechInjection": "LEGIARTI000041966510",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000006073189",
+        "titre": "Code de la sécurité sociale.",
+        "titreLong": "Code de la sécurité sociale",
+        "etat": "VIGUEUR",
+        "dateDebut": -353808000000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000006073189",
+        "datePubli": 32472144000000,
+        "datePubliComputed": null,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "",
+    "notaHtml": "",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000041904619",
+        "textTitle": "Décret n°2020-621 du 22 mai 2020 - art. 1",
+        "linkType": "MODIFIE",
+        "linkOrientation": "cible",
+        "articleNum": "1",
+        "articleId": "LEGIARTI000041911701",
+        "natureText": "DECRET",
+        "datePubliTexte": "2020-05-24",
+        "dateSignaTexte": "2020-05-22",
+        "dateDebutCible": "2020-05-25"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000020676124",
+        "textTitle": "Arrêté du 23 avril 2009 - art., v. init.",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "JORFARTI000020676129",
+        "natureText": "ARRETE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1243555200000,
+        "dateDebut": 32472144000000
+      },
+      {
+        "textCid": "JORFTEXT000025395319",
+        "textTitle": "Arrêté du 9 février 2012 - art. (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGIARTI000049782878",
+        "natureText": "ARRETE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1329955200000,
+        "dateDebut": 1735689600000
+      },
+      {
+        "textCid": "JORFTEXT000025626696",
+        "textTitle": "Décret n°2012-443\n du 3 avril 2012 - art. 4 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "4",
+        "articleId": "LEGIARTI000046567204",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2012-443",
+        "datePubli": 1333497600000,
+        "dateDebut": 1668729600000
+      },
+      {
+        "textCid": "JORFTEXT000049776019",
+        "textTitle": "Arrêté du 19 juin 2024 - art.",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGIARTI000049777245",
+        "natureText": "ARRETE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1719273600000,
+        "dateDebut": 1719360000000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. D131-8 (VT)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D131-8",
+        "articleId": "LEGIARTI000006735216",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1199145600000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. D634-3 (M)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D634-3",
+        "articleId": "LEGIARTI000006737976",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 503971200000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. D635-10 (M)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D635-10",
+        "articleId": "LEGIARTI000006738026",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 503971200000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. D635-11 (M)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D635-11",
+        "articleId": "LEGIARTI000006738029",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 503971200000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. D635-3 (M)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D635-3",
+        "articleId": "LEGIARTI000006738332",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 509846400000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. D635-5 (M)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D635-5",
+        "articleId": "LEGIARTI000006738020",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 503971200000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. L632-1 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L632-1",
+        "articleId": "LEGIARTI000036378069",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1514764800000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000000498711",
+        "textTitle": "Décret n°78-351 du 14 mars 1978 - art. 1 (Ab)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "1",
+        "articleId": "LEGIARTI000006766100",
+        "natureText": "DECRET"
+      },
+      {
+        "textCid": "JORFTEXT000000498711",
+        "textTitle": "Décret n°78-351 du 14 mars 1978 - art. 1 (Ab)",
+        "linkType": "CONCORDE",
+        "linkOrientation": "cible",
+        "articleNum": "1",
+        "articleId": "LEGIARTI000006766100",
+        "natureText": "DECRET"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000006738015",
+        "etat": "MODIFIE",
+        "version": "1.0",
+        "dateDebut": 503971200000,
+        "dateFin": 1093305600000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000006738016",
+        "etat": "MODIFIE",
+        "version": "2.0",
+        "dateDebut": 1093305600000,
+        "dateFin": 1199145600000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000006738017",
+        "etat": "MODIFIE",
+        "version": "3.0",
+        "dateDebut": 1199145600000,
+        "dateFin": 1230508800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000020032159",
+        "etat": "MODIFIE",
+        "version": "4.0",
+        "dateDebut": 1230508800000,
+        "dateFin": 1333584000000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000025629861",
+        "etat": "MODIFIE",
+        "version": "5.0",
+        "dateDebut": 1333584000000,
+        "dateFin": 1356998400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000025263548",
+        "etat": "MODIFIE",
+        "version": "6.0",
+        "dateDebut": 1356998400000,
+        "dateFin": 1420070400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000030034575",
+        "etat": "MODIFIE",
+        "version": "7.0",
+        "dateDebut": 1420070400000,
+        "dateFin": 1451606400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000031799392",
+        "etat": "MODIFIE",
+        "version": "8.0",
+        "dateDebut": 1451606400000,
+        "dateFin": 1494460800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000034721550",
+        "etat": "MODIFIE",
+        "version": "9.0",
+        "dateDebut": 1494460800000,
+        "dateFin": 1590364800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000041966510",
+        "etat": "VIGUEUR",
+        "version": "10.0",
+        "dateDebut": 1590364800000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "D635-2",
+      "635-2"
+    ],
+    "versionPrecedente": "LEGIARTI000034721550",
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": true,
+    "comporteLiensSP": false
+  }
+}
