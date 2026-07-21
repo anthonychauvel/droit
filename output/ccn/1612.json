@@ -8284,13 +8284,86 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696752",
+              "cid": "KALISCTA000005696752",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Salaires au 1er janvier 2002",
+              "dateModif": null,
+              "dateDebut": "2001-12-21",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005782825",
+                  "cid": "KALIARTI000005782825",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005696752/KALIARTI000005782825",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 2002"
+                  ],
+                  "content": "Grille des planchers de traitement fixe mensuel<p></p> Valeurs au 1er janvier 2002<p></p><p></p><TABLE><TR><TD>CLASSIFICATION</TD><TD>          SALAIRE MINIMUM (en euros)            </TD></TR><TR><TD>     Pilotes d'essais expérimentaux</TD><TD>Pilotes d'essai, pilotes de</TD></TR><TR><TD></TD><TD></TD><TD>réception. Pilotes         </TD></TR><TR><TD></TD><TD></TD><TD>d'essai avions légers      </TD></TR><TR><TD>  1er échelon </TD><TD>   3 813,36         </TD><TD>          3 052,65         </TD></TR><TR><TD>  2e échelon  </TD><TD>   4 195,35         </TD><TD>          3 359,85         </TD></TR><TR><TD>  3e échelon  </TD><TD>   4 767,51         </TD><TD>          3 816,61         </TD></TR><TR><TD>  4e échelon  </TD><TD>   5 339,68         </TD><TD>          4 275,00         </TD></TR><TR><TD>  5e échelon  </TD><TD>   5 721,67         </TD><TD>          4 580,58         </TD></TR><TR><TD>     Ingénieurs navigants d'essai  </TD><TD>Expérimentateurs navigants </TD></TR><TR><TD></TD><TD></TD><TD>d'essai                    </TD></TR><TR><TD>  1er échelon </TD><TD>   3 566,29         </TD><TD>          2 382,94         </TD></TR><TR><TD>  2e échelon  </TD><TD>   4 102,70         </TD><TD>          2 740,55         </TD></TR><TR><TD>  3e échelon  </TD><TD>   4 637,48         </TD><TD>          3 099,78         </TD></TR><TR><TD>  4e échelon  </TD><TD>   5 172,26         </TD><TD>          3 457,38         </TD></TR><TR><TD>  5e échelon  </TD><TD>   5 529,92         </TD><TD>          3 694,70         </TD></TR><TR><TD>     Mécaniciens navigants d'essai </TD><TD>Mécaniciens navigants de   </TD></TR><TR><TD></TD><TD></TD><TD>réception                  </TD></TR><TR><TD>  1er échelon </TD><TD>   2 415,45         </TD><TD>          2 057,85         </TD></TR><TR><TD>  2e échelon  </TD><TD>   2 777,93         </TD><TD>          2 366,69         </TD></TR><TR><TD>  3e échelon  </TD><TD>   3 138,87         </TD><TD>          2 675,53         </TD></TR><TR><TD>  4e échelon  </TD><TD>   3 501,27         </TD><TD>          2 982,74         </TD></TR><TR><TD>  5e échelon  </TD><TD>   3 740,21         </TD><TD>          3 190,80         </TD></TR></TABLE><p></p><p></p>   Le 1er échelon commence avec la 1re année de fonctions.<p></p>   Le 2e échelon commence avec la 3e année de fonctions.<p></p>   Le 3e échelon commence avec la 5e année de fonctions.<p></p>   Le 4e échelon commence avec la 10e année de fonctions.<p></p>   Le 5e échelon commence avec :<p></p>   - la 15e année de fonctions pour les spécialités \" pilotes \" ;<p></p>   - la 17e année de fonctions pour les autres spécialités.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 3 2001-12-21 BO conventions collectives 2002-12-13",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1008892800000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         }
       ],
       "articles": [],
