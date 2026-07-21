@@ -203,15 +203,24 @@ jobs:
             python3 scripts/pull_code_travail.py --articles-file articles_list_css.txt --code-id LEGITEXT000006073189 --out output/code-secu
           fi
 
-      - name: Récupérer la jurisprudence
-        if: ${{ always() && (github.event.inputs.cible == 'jurisprudence' || github.event.inputs.cible == 'tout') }}
+      - name: "Récupérer la jurisprudence (Judilibre — chambre sociale)"
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'jurisprudence' || github.event.inputs.cible == 'tout') }}
         run: |
-          python3 scripts/pull_jurisprudence.py --arrets-file arrets_list.txt --out output/jurisprudence
+          # Judilibre (Cour de cassation) via PISTE, MÊMES identifiants que Légifrance
+          # (l'API "Judilibre" doit être ajoutée à la même application PISTE + CGU
+          # validées une fois). Découverte thématique en droit du travail, on ne
+          # récupère que les décisions NOUVELLES -> le corpus s'enrichit à chaque run.
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --per-theme 20 --max-decisions 150 --only-missing || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
+          else
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --per-theme 40 --max-decisions 500 || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
+          fi
 
-      - name: "Découvrir de la jurisprudence par thème (à relire avant d'ajouter à arrets_list.txt)"
+      - name: "Découvrir largement de la jurisprudence (Judilibre, toutes chambres)"
         if: ${{ always() && github.event.inputs.cible == 'decouvrir-jurisprudence' }}
         run: |
-          python3 scripts/discover_jurisprudence.py --out jurisprudence_decouverte.txt
+          # Remplit directement output/jurisprudence (toutes chambres, plafond élevé).
+          python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber "" --jurisdiction "" --per-theme 50 --max-decisions 800
 
       - name: Lister tous les articles du Code du travail (préparation seulement)
         if: ${{ always() && github.event.inputs.cible == 'lister-tous-articles-travail' }}
