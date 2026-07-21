@@ -192,6 +192,9 @@ def main():
     ap.add_argument("--only-missing", action="store_true",
                      help="Ne retraite que les IDCC absents ou en erreur dans le résumé existant "
                           "(ignore les 'ok' déjà présents) -- beaucoup plus rapide sur les runs suivants.")
+    ap.add_argument("--max", type=int, default=0,
+                     help="Plafond d'IDCC traités ce run (0 = pas de plafond). Pour la passe "
+                          "prioritaire des nouveautés : au plus N manquants par run.")
     args = ap.parse_args()
 
     client_id = os.environ.get("PISTE_CLIENT_ID")
@@ -216,10 +219,17 @@ def main():
     # parce que la liste a changé entre-temps.
     existing_summary = {}
     summary_path = os.path.join(args.out, "_summary.json")
-    if args.only_missing and os.path.exists(summary_path):
-        with open(summary_path, encoding="utf-8") as f:
-            for entry in json.load(f):
-                existing_summary[entry["idcc"]] = entry
+    # On relit TOUJOURS le résumé existant (même hors --only-missing) pour ne
+    # jamais raboter le corpus déjà acquis : un run tournant ne traite qu'une
+    # tranche, mais le résumé doit rester complet.
+    if os.path.exists(summary_path):
+        try:
+            with open(summary_path, encoding="utf-8") as f:
+                for entry in json.load(f):
+                    if entry.get("idcc"):
+                        existing_summary[entry["idcc"]] = entry
+        except Exception:
+            existing_summary = {}
 
     preserved_ok = [e for e in existing_summary.values() if e.get("status") == "ok"]
     preserved_ok_ids = {e["idcc"] for e in preserved_ok}
@@ -228,6 +238,11 @@ def main():
     if args.only_missing:
         to_process = [i for i in idcc_list if i not in preserved_ok_ids]
         print(f"Mode --only-missing: {len(preserved_ok)} déjà OK protégés (peu importe la liste actuelle), {len(to_process)} à traiter.")
+
+    if args.max and args.max > 0 and len(to_process) > args.max:
+        print(f"Plafond --max {args.max} : {len(to_process)} candidats, on en traite "
+              f"{args.max} ce run (le reste au run suivant).")
+        to_process = to_process[:args.max]
 
     token_url, base_url = get_urls()
     print(f"Environnement: {'production' if 'sandbox' not in base_url else 'SANDBOX (données possiblement périmées)'}")

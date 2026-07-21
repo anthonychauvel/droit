@@ -109,6 +109,16 @@ def fetch_article_by_num(base_url, token, article_num, code_id=CODE_TRAVAIL_TEXT
     return result
 
 
+def extract_etat(result):
+    """État de l'article (VIGUEUR / ABROGE / ...) quel que soit l'emplacement."""
+    if not isinstance(result, dict):
+        return None
+    art = result.get("article")
+    if isinstance(art, dict) and art.get("etat"):
+        return art.get("etat")
+    return result.get("etat")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--articles", help="Articles séparés par des virgules, ex: L3121-1,L3141-3")
@@ -117,6 +127,12 @@ def main():
     ap.add_argument("--delay", type=float, default=1.2)
     ap.add_argument("--code-id", default=CODE_TRAVAIL_TEXT_ID,
                      help="Identifiant LEGITEXT du code (défaut: Code du travail)")
+    ap.add_argument("--only-missing", action="store_true",
+                     help="Ne (re)traiter que les articles pas encore présents sur le disque")
+    ap.add_argument("--max", type=int, default=0,
+                     help="Plafond d'articles traités ce run (0 = pas de plafond). "
+                          "Utile pour la passe prioritaire des nouveautés : on remplit "
+                          "au plus N manquants par run, le reste au run suivant.")
     args = ap.parse_args()
 
     client_id = os.environ.get("PISTE_CLIENT_ID")
@@ -140,26 +156,74 @@ def main():
     print(f"Token OK. Code: {args.code_id}. {len(articles)} article(s) à traiter.")
 
     os.makedirs(args.out, exist_ok=True)
-    summary = []
 
-    for i, art in enumerate(articles, 1):
-        print(f"[{i}/{len(articles)}] Article {art}...", end=" ")
+    def safe_path(a):
+        return os.path.join(args.out, f"{a.replace('/', '-')}.json")
+
+    # On repart du résumé existant pour NE PAS écraser ce que les runs
+    # précédents ont déjà acquis (un run tournant ne traite qu'une tranche).
+    summary_path = os.path.join(args.out, "_summary.json")
+    existing = {}
+    if os.path.exists(summary_path):
+        try:
+            with open(summary_path, encoding="utf-8") as f:
+                for e in json.load(f):
+                    if e.get("article"):
+                        existing[e["article"]] = e
+        except Exception:
+            existing = {}
+
+    # --only-missing : on saute les articles dont le fichier existe déjà (bon fichier).
+    to_process = articles
+    if args.only_missing:
+        to_process = [a for a in articles
+                      if not (os.path.exists(safe_path(a))
+                              and "_error" not in (_load(safe_path(a)) or {"_error": 1}))]
+        print(f"Mode --only-missing : {len(articles) - len(to_process)} déjà présents, "
+              f"{len(to_process)} à récupérer.")
+
+    if args.max and args.max > 0 and len(to_process) > args.max:
+        print(f"Plafond --max {args.max} : {len(to_process)} candidats, on en traite "
+              f"{args.max} ce run (le reste au run suivant).")
+        to_process = to_process[:args.max]
+
+    for i, art in enumerate(to_process, 1):
+        print(f"[{i}/{len(to_process)}] Article {art}...", end=" ")
         result = fetch_article_by_num(base_url, token, art, code_id=args.code_id)
-        safe_name = art.replace("/", "-")
-        out_path = os.path.join(args.out, f"{safe_name}.json")
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(result, f, ensure_ascii=False, indent=2)
-
+        out_path = safe_path(art)
         ok = "_error" not in result
-        print("OK" if ok else f"ERREUR: {result.get('_error')}")
-        summary.append({"article": art, "status": "ok" if ok else "error"})
+
+        if ok:
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(result, f, ensure_ascii=False, indent=2)
+            existing[art] = {"article": art, "status": "ok", "etat": extract_etat(result)}
+            print("OK")
+        else:
+            # Échec réseau/API : on NE TOUCHE PAS au fichier déjà présent (il
+            # reste bon). On ne dégrade le résumé que si on n'avait rien avant.
+            if os.path.exists(out_path):
+                print(f"ERREUR ({result.get('_error')}) — fichier existant conservé")
+            else:
+                with open(out_path, "w", encoding="utf-8") as f:
+                    json.dump(result, f, ensure_ascii=False, indent=2)
+                existing.setdefault(art, {"article": art, "status": "error", "etat": None})
+                print(f"ERREUR: {result.get('_error')}")
         time.sleep(args.delay)
 
-    with open(os.path.join(args.out, "_summary.json"), "w", encoding="utf-8") as f:
+    summary = list(existing.values())
+    with open(summary_path, "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
 
-    n_ok = sum(1 for s in summary if s["status"] == "ok")
-    print(f"\nTerminé: {n_ok}/{len(articles)} OK.")
+    n_ok = sum(1 for s in summary if s.get("status") == "ok")
+    print(f"\nTerminé: {n_ok}/{len(summary)} articles OK au total (corpus cumulé).")
+
+
+def _load(path):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return None
 
 
 if __name__ == "__main__":

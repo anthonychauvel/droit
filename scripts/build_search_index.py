@@ -76,21 +76,21 @@ def walk_ccn_sections(node, path_titles=None, is_root=True):
 
 def build_ccn_index(ccn_dir, classification=None):
     classification = classification or {}
-    summary_path = os.path.join(ccn_dir, "_summary.json")
-    if not os.path.exists(summary_path):
+    if not os.path.isdir(ccn_dir):
         return []
-    summary = json.load(open(summary_path, encoding="utf-8"))
     index = []
-    for entry in summary:
-        if entry.get("status") != "ok":
+    # On parcourt TOUS les fichiers présents sur le disque (glob), pas seulement
+    # ceux listés dans le résumé du dernier run : ainsi l'index reflète toujours
+    # l'intégralité du corpus déjà récupéré, jamais une seule tranche.
+    for filepath in sorted(glob.glob(os.path.join(ccn_dir, "*.json"))):
+        if os.path.basename(filepath) == "_summary.json":
             continue
-        idcc = entry["idcc"]
-        filepath = os.path.join(ccn_dir, f"{idcc}.json")
-        if not os.path.exists(filepath):
-            continue
+        idcc = os.path.splitext(os.path.basename(filepath))[0]
         try:
             data = json.load(open(filepath, encoding="utf-8"))
         except Exception:
+            continue
+        if not isinstance(data, dict) or "_error" in data:
             continue
         hits = walk_ccn_sections(data)
         index.append({
@@ -102,53 +102,60 @@ def build_ccn_index(ccn_dir, classification=None):
     return index
 
 
+def _article_payload_and_etat(data):
+    """Le contenu d'un article de code est sous data['article'] (ou à la racine
+    sur d'anciens retours). Renvoie (payload, etat_brut)."""
+    if isinstance(data, dict) and isinstance(data.get("article"), dict):
+        art = data["article"]
+        return art, art.get("etat")
+    return data, (data.get("etat") if isinstance(data, dict) else None)
+
+
 def build_code_index(code_dir, classification=None):
     classification = classification or {}
-    summary_path = os.path.join(code_dir, "_summary.json")
-    if not os.path.exists(summary_path):
+    if not os.path.isdir(code_dir):
         return []
-    summary = json.load(open(summary_path, encoding="utf-8"))
     index = []
-    for entry in summary:
-        if entry.get("status") != "ok":
+    for filepath in sorted(glob.glob(os.path.join(code_dir, "*.json"))):
+        if os.path.basename(filepath) == "_summary.json":
             continue
-        art = entry["article"]
-        safe_name = art.replace("/", "-")
-        filepath = os.path.join(code_dir, f"{safe_name}.json")
-        if not os.path.exists(filepath):
-            continue
+        art = os.path.splitext(os.path.basename(filepath))[0]
         try:
             data = json.load(open(filepath, encoding="utf-8"))
         except Exception:
             continue
+        if not isinstance(data, dict) or "_error" in data:
+            continue
+        payload, etat = _article_payload_and_etat(data)
         text = strip_html(
-            data.get("texte") or data.get("content") or data.get("texteHtml") or ""
+            (payload.get("texte") if isinstance(payload, dict) else None)
+            or (payload.get("content") if isinstance(payload, dict) else None)
+            or (payload.get("texteHtml") if isinstance(payload, dict) else None)
+            or data.get("texte") or data.get("content") or data.get("texteHtml") or ""
         )
         index.append({
             "num": art,
             "title": f"Article {art}",
             "snippet": text[:280],
+            "etat": etat,
             "source": classification.get(art, "inconnu"),
         })
     return index
 
 
 def build_juris_index(juris_dir):
-    summary_path = os.path.join(juris_dir, "_summary.json")
-    if not os.path.exists(summary_path):
+    if not os.path.isdir(juris_dir):
         return []
-    summary = json.load(open(summary_path, encoding="utf-8"))
     index = []
-    for entry in summary:
-        if entry.get("status") != "ok":
+    for filepath in sorted(glob.glob(os.path.join(juris_dir, "*.json"))):
+        if os.path.basename(filepath) == "_summary.json":
             continue
-        numero = entry["numero"]
-        filepath = os.path.join(juris_dir, f"{numero}.json")
-        if not os.path.exists(filepath):
-            continue
+        numero = os.path.splitext(os.path.basename(filepath))[0]
         try:
             data = json.load(open(filepath, encoding="utf-8"))
         except Exception:
+            continue
+        if not isinstance(data, dict) or "_error" in data:
             continue
         # Structure confirmée le 19/07/2026 (bug de rendu lecteur.html) : le
         # contenu réel est sous data["text"], pas à la racine comme pour un
