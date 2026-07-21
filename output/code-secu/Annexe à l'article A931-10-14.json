@@ -1,0 +1,151 @@
+{
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000020014337",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Pour le calcul du b du 1° de l'article A. 931-10-14 , le tableau suivant pourra être utilisé pour le calcul des taux de rendement par échéance : EXERCICE N N + 1 k = N + i pour i = 2, 3, 4 et 5 k = N + i pour i ¹ 5 Obligations (A) A (N) A (N + 1) A (k) A (k) Obligations amorties et arrivées à terme dans l'année (B) A (N + 1)-A (N) B (k) = A (k)-A (k-1) B (k) = A (k)-A (k-1) Coupons de l'année (C) = TME * (A) A (N + 1) * TME C (k) = A (k) * TME C (k) = A (k) * TME Coupons et réinvestissements d'obligations capitalisés (D) B (N + 1) * (1 + 75 % * TME) D (k) = (B (k) + C (k-1) + D (k-1) * (1 + 75 % * TME) D (k) = (B (k) + C (k-1) + D (k-1) * (1 + 60 % * TME) Autres actifs (E) E (N) E (N) * (1 + 75 % * TME) E (k) = E (k-1) * (1 + 75 % * TME) E (k) = E (k-1) * (1 + 60 % * TME) Total actif (F) = (A) + (C) + (D) + (E) F (N) F (N + 1) F (k) F (k) Rendement (G) F (N + 1) / F (N)-1 F (k) / F (k-1)-1 F (k) / F (k-1)-1",
+    "texteHtml": "<p>Pour le calcul du b du 1° de <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006073189&idArticle=LEGIARTI000006735027&dateTexte=&categorieLien=cid\">l'article A. 931-10-14</a>, le tableau suivant pourra être utilisé pour le calcul des taux de rendement par échéance : <br/><br/></p><center><table border=\"1\"><tbody><tr><th><br/></th><th><br/></th><th><br/>EXERCICE N <br/></th><th><br/>N + 1 <br/></th><th><br/>k = N + i <br/><br/>pour i = 2, 3, 4 et 5 <br/></th><th><br/>k = N + i pour i ¹ 5 <br/></th></tr><tr><td align=\"center\"><br/>Obligations <br/></td><td align=\"center\"><br/>(A) <br/></td><td align=\"center\"><br/>A (N) <br/></td><td align=\"center\"><br/>A (N + 1) <br/></td><td align=\"center\"><br/>A (k) <br/></td><td align=\"center\"><br/>A (k) <br/></td></tr><tr><td align=\"center\"><br/>Obligations amorties et arrivées à terme dans l'année <br/></td><td align=\"center\"><br/>(B) <br/></td><td align=\"center\"><br/><br/></td><td align=\"center\"><br/>A (N + 1)-A (N) <br/></td><td align=\"center\"><br/>B (k) = A (k)-A (k-1) <br/></td><td align=\"center\"><br/>B (k) = A (k)-A (k-1) <br/></td></tr><tr><td align=\"center\"><br/>Coupons de l'année <br/></td><td align=\"center\"><br/>(C) = TME * (A) <br/></td><td align=\"center\"><br/><br/></td><td align=\"center\"><br/>A (N + 1) * TME <br/></td><td align=\"center\"><br/>C (k) = A (k) * TME <br/></td><td align=\"center\"><br/>C (k) = A (k) * TME <br/></td></tr><tr><td align=\"center\"><br/>Coupons et réinvestissements d'obligations capitalisés <br/></td><td align=\"center\"><br/>(D) <br/></td><td align=\"center\"><br/><br/></td><td align=\"center\"><br/>B (N + 1) * (1 + 75 % * TME) <br/></td><td align=\"center\"><br/>D (k) = (B (k) + C (k-1) + <br/><br/>D (k-1) * (1 + 75 % * TME) <br/></td><td align=\"center\"><br/>D (k) = (B (k) + C (k-1) + <br/><br/>D (k-1) * (1 + 60 % * TME) <br/></td></tr><tr><td align=\"center\"><br/>Autres actifs <br/></td><td align=\"center\"><br/>(E) <br/></td><td align=\"center\"><br/>E (N) <br/></td><td align=\"center\"><br/>E (N) * (1 + 75 % * TME) <br/></td><td align=\"center\"><br/>E (k) = E (k-1) * <br/><br/>(1 + 75 % * TME) <br/></td><td align=\"center\"><br/>E (k) = E (k-1) * <br/><br/>(1 + 60 % * TME) <br/></td></tr><tr><td align=\"center\"><br/>Total actif <br/></td><td align=\"center\"><br/>(F) = (A) + (C) <br/><br/>+ (D) + (E) <br/></td><td align=\"center\"><br/>F (N) <br/></td><td align=\"center\"><br/>F (N + 1) <br/></td><td align=\"center\"><br/>F (k) <br/></td><td align=\"center\"><br/>F (k) <br/></td></tr><tr><td align=\"center\"><br/>Rendement <br/></td><td align=\"center\"><br/>(G) <br/></td><td align=\"center\"><br/><br/></td><td align=\"center\"><br/>F (N + 1) / F (N)-1 <br/></td><td align=\"center\"><br/>F (k) / F (k-1)-1 <br/></td><td align=\"center\"><br/>F (k) / F (k-1)-1</td></tr></tbody></table></center><p><br/><br/><br/></p>",
+    "num": "Annexe à l'article A931-10-14",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "1.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1230768000000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 104755298,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "1985-12-21",
+          "fin": "2999-01-01",
+          "titre": "Annexes",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000006106026",
+          "id": "LEGISCTA000006106026",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 35,
+      "titreTxt": [
+        {
+          "debut": "1958-10-16",
+          "fin": "2999-01-01",
+          "titre": "Code de la sécurité sociale",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000006073189",
+          "id": "LEGITEXT000006073189",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000020014299",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000006106026",
+    "sectionParentId": "LEGISCTA000006106026",
+    "sectionParentTitre": "Annexes",
+    "fullSectionsTitre": "Annexes",
+    "refInjection": "IG-20260114",
+    "idTechInjection": "LEGIARTI000020014337",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000006073189",
+        "titre": "Code de la sécurité sociale.",
+        "titreLong": "Code de la sécurité sociale",
+        "etat": "VIGUEUR",
+        "dateDebut": -353808000000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000006073189",
+        "datePubli": 32472144000000,
+        "datePubliComputed": null,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "",
+    "notaHtml": "",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000019997263",
+        "textTitle": "Arrêté du 22 décembre 2008 - art. 5",
+        "linkType": "CREE",
+        "linkOrientation": "cible",
+        "articleNum": "5",
+        "articleId": "LEGIARTI000020014116",
+        "natureText": "ARRETE",
+        "datePubliTexte": "2008-12-28",
+        "dateSignaTexte": "2008-12-22",
+        "dateDebutCible": "2009-01-01"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. A931-10-14",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "A931-10-14",
+        "articleId": "LEGIARTI000006735027",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 858643200000
+      }
+    ],
+    "lienConcordes": [],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000020014337",
+        "etat": "VIGUEUR",
+        "version": "1.0",
+        "dateDebut": 1230768000000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "Annexe à l'article A931-10-14"
+    ],
+    "versionPrecedente": null,
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": false,
+    "comporteLiensSP": false
+  }
+}
