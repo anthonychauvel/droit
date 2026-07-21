@@ -127,7 +127,7 @@ def build_code_index(code_dir, classification=None):
         index.append({
             "num": art,
             "title": f"Article {art}",
-            "snippet": text[:100],
+            "snippet": text[:280],
             "source": classification.get(art, "inconnu"),
         })
     return index
