@@ -601,10 +601,13 @@ function renderDetail(kind, num, data){
   }
 
   let body = '';
+  const estAbroge = payload.etat && /ABROGE/i.test(payload.etat);
   if(kind === 'ccn' && Array.isArray(payload.sections)){
     body = renderSections(payload.sections, 0);
   } else if(payload.texteHtml || payload.texte || payload.content){
     body = `<div class="section-text">${cleanHtml(payload.texteHtml || payload.texte || payload.content)}</div>`;
+  } else if(estAbroge){
+    body = `<div class="section-text" style="color:var(--muted)">Article abrogé, plus en vigueur — c'est normal qu'il n'y ait pas (ou peu) de texte à afficher.</div>`;
   } else {
     body = `<div class="section-text" style="color:var(--muted)">Contenu structuré non détecté — voir export JSON brut.</div>`;
   }
@@ -724,7 +727,9 @@ async function loadAudits(){
 
 function renderAuditList(){
   const el = document.getElementById('list-maj');
-  document.getElementById('detail-maj').innerHTML = '';
+  const detailEl = document.getElementById('detail-maj');
+  detailEl.innerHTML = '';
+  detailEl.classList.remove('show');
   if(AUDIT_INDEX.length === 0){
     el.innerHTML = `<div class="empty">Aucun rapport pour l'instant — apparaîtra après le premier run avec generate_audit_report.py.</div>`;
     return;
@@ -743,12 +748,13 @@ function renderAuditList(){
 async function openAuditDetail(i){
   const entry = AUDIT_INDEX[i];
   const detailEl = document.getElementById('detail-maj');
+  detailEl.classList.add('show');
   detailEl.innerHTML = `<div class="empty">Chargement…</div>`;
   try{
     const resp = await fetch(`audits/${entry.fichier}`);
     if(!resp.ok) throw new Error(resp.status);
     const md = await resp.text();
-    detailEl.innerHTML = `<div class="back-btn" onclick="document.getElementById('detail-maj').innerHTML=''">&larr; Fermer</div><div class="audit-detail-body">${markdownToHtml(md)}</div>`;
+    detailEl.innerHTML = `<div class="back-btn" onclick="document.getElementById('detail-maj').classList.remove('show')">&larr; Fermer</div><div class="audit-detail-body">${markdownToHtml(md)}</div>`;
   }catch(e){
     detailEl.innerHTML = `<div class="empty">Impossible de charger ${entry.fichier}.</div>`;
   }
