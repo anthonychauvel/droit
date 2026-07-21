@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fonds Droit — recherche &amp; lecture (CCN · Code du travail · Sécu · Jurisprudence)</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
@@ -987,32 +986,64 @@ async function openDetail(kind, num){
     legi = '<a class="primary" target="_blank" rel="noopener" href="https://www.legifrance.gouv.fr/codes/article_lc/'+encodeURIComponent(artId)+'">Voir sur Légifrance ↗</a>';
   }
   var actions = '<div class="panel-actions">'+legi+
-    '<button id="d-export">Exporter (.xlsx)</button></div>';
+    '<button id="d-export">Télécharger le texte (.txt)</button></div>';
   document.getElementById('d-body').innerHTML = actions + body;
 
   var ex = document.getElementById('d-export');
   if(ex) ex.addEventListener('click', function(){ exportOne(kind, num, payload); });
 }
 
-function flattenForExport(payload){
-  var rows=[];
-  function walk(node){
-    if(!node||typeof node!=='object') return;
-    var t=node.title||node.titre;
-    if(t) rows.push({section:t, texte:(node.content||node.texte||'').replace(/<[^>]+>/g,' ').trim()});
-    (node.sections||[]).forEach(walk); (node.articles||[]).forEach(walk);
+function htmlToText(html){
+  if(!html) return '';
+  var s = String(html)
+    .replace(/<\s*br\s*\/?>/gi, '\n')
+    .replace(/<li[^>]*>/gi, '- ')
+    .replace(/<\/(p|div|li|h[1-6]|tr|section)>/gi, '\n')
+    .replace(/<[^>]+>/g, '');
+  var d = document.createElement('div'); d.innerHTML = s; s = d.textContent || '';
+  return s.replace(/\r/g, '').replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
+}
+function collectText(payload){
+  var out = [];
+  function walk(node, depth){
+    if(!node || typeof node !== 'object') return;
+    var t = node.title || node.titre;
+    if(t && depth > 0) out.push('\n== ' + t + ' ==');
+    var body = node.content || node.texte || node.texteHtml;
+    if(body) out.push(htmlToText(body));
+    (node.sections || []).forEach(function(s){ walk(s, depth + 1); });
+    (node.articles || []).forEach(function(a){ walk(a, depth + 1); });
   }
-  walk(payload);
-  if(!rows.length && (payload.texte||payload.content||payload.texteHtml))
-    rows.push({section:payload.titre||payload.title||'', texte:(payload.texte||payload.content||payload.texteHtml||'').replace(/<[^>]+>/g,' ').trim()});
-  return rows.length?rows:[{section:'', texte:''}];
+  walk(payload, 0);
+  if(!out.length && (payload.texte || payload.content || payload.texteHtml))
+    out.push(htmlToText(payload.texte || payload.content || payload.texteHtml));
+  return out.join('\n').replace(/\n{3,}/g, '\n\n').trim();
+}
+function downloadText(filename, content){
+  var blob = new Blob([content], {type: 'text/plain;charset=utf-8'});
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
 }
 function exportOne(kind, num, payload){
-  if(typeof XLSX==='undefined') return;
-  var ws = XLSX.utils.json_to_sheet(flattenForExport(payload));
-  var wb = XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(wb, ws, String(num).slice(0,28).replace(/[\\\/\?\*\[\]:]/g,'-'));
-  XLSX.writeFile(wb, kind+'-'+String(num).replace(/\//g,'-')+'.xlsx');
+  var title = payload.titre || payload.title ||
+    (kind === 'ccn' ? ('Convention ' + num) : (kind === 'juris' ? ('Décision ' + num) : ('Article ' + num)));
+  var lines = [title, ''];
+  var meta = [];
+  meta.push((kind === 'ccn' ? 'IDCC : ' : 'Numéro : ') + num);
+  if(payload.etat) meta.push('État : ' + (ETAT_LABEL[shortEtat(payload.etat)] || payload.etat));
+  if(payload.date) meta.push('Date : ' + payload.date);
+  if(payload.juridiction) meta.push('Juridiction : ' + payload.juridiction);
+  if(payload.chambre) meta.push('Chambre : ' + payload.chambre);
+  if(payload.solution) meta.push('Solution : ' + payload.solution);
+  if(payload.ecli) meta.push('ECLI : ' + payload.ecli);
+  if(payload.id) meta.push('Identifiant : ' + payload.id);
+  if(meta.length){ lines.push(meta.join('\n'), ''); }
+  lines.push('----------------------------------------', '');
+  lines.push(collectText(payload) || '(pas de texte disponible)');
+  downloadText(kind + '-' + String(num).replace(/\//g, '-') + '.txt', lines.join('\n'));
 }
 
 /* ---- Mises à jour ---- */
