@@ -1,0 +1,345 @@
+{
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000045677026",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Le    service de prévention et de santé au travail d'entreprise ou d'établissement est administré par l'employeur sous la surveillance du comité social et économique. Le comité est consulté sur les questions relatives à l'organisation et au fonctionnement du    service de prévention et de santé au travail.",
+    "texteHtml": "Le    service de prévention et de santé au travail d'entreprise ou d'établissement est administré par l'employeur sous la surveillance du comité social et économique. <br/><br/>Le comité est consulté sur les questions relatives à l'organisation et au fonctionnement du    service de prévention et de santé au travail.",
+    "num": "D4622-6",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "4.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1651104000000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 429496728,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Partie réglementaire  ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000018464861",
+          "id": "LEGISCTA000018464861",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Quatrième partie : Santé et sécurité au travail ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018488235",
+          "id": "LEGISCTA000018532924",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Livre VI : Institutions et organismes de prévention ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492535",
+          "id": "LEGISCTA000018528828",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "TITRE II : SERVICES DE SANTÉ AU TRAVAIL",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492751",
+          "id": "LEGISCTA000018528617",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2022-04-27",
+          "titre": "Titre II : Services de santé au travail ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492751",
+          "id": "LEGISCTA000025280099",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2022-04-27",
+          "fin": "2999-01-01",
+          "titre": "Titre II : Services de prévention et de santé au travail ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492751",
+          "id": "LEGISCTA000046340635",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "Chapitre II : Missions et organisation",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492757",
+          "id": "LEGISCTA000018528611",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre II : Missions et organisation",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492757",
+          "id": "LEGISCTA000025280092",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "Section 2 : Services de santé au travail d'entreprise ou commun  aux entreprises. constituant une unité économique et sociale",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492769",
+          "id": "LEGISCTA000018528598",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2022-04-27",
+          "titre": "Section 2 : Services autonomes de santé au travail.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492769",
+          "id": "LEGISCTA000025280088",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2022-04-27",
+          "fin": "2999-01-01",
+          "titre": "Section 2 : Services autonomes de prévention et de santé au travail.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492769",
+          "id": "LEGISCTA000046340807",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "Sous-section 1 : Mise en place et administration.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492771",
+          "id": "LEGISCTA000018528596",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2022-04-27",
+          "titre": "Sous-section 1 : Services de santé au travail de groupe, d'entreprise ou d'établissement.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492771",
+          "id": "LEGISCTA000025280075",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2022-04-27",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 1 : Services de prévention et de santé au travail de groupe, d'entreprise ou d'établissement.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492771",
+          "id": "LEGISCTA000046340722",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 3,
+      "longeurChemin": 53,
+      "titreTxt": [
+        {
+          "debut": "1973-01-03",
+          "fin": "2999-01-01",
+          "titre": "Code du travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000006072050",
+          "id": "LEGITEXT000006072050",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000018492777",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000018492771",
+    "sectionParentId": "LEGISCTA000046340722",
+    "sectionParentTitre": "Sous-section 1 : Services de prévention et de santé au travail de groupe, d'entreprise ou d'établissement.",
+    "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre VI : Institutions et organismes de prévention  &gt; Titre II : Services de prévention et de santé au travail  &gt; Chapitre II : Missions et organisation &gt; Section 2 : Services autonomes de prévention et de santé au travail. &gt; Sous-section 1 : Services de prévention et de santé au travail de groupe, d'entreprise ou d'établissement.",
+    "refInjection": "IG-20260122",
+    "idTechInjection": "LEGIARTI000045677026",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000006072050",
+        "titre": "Code du travail",
+        "titreLong": "Code du travail",
+        "etat": "VIGUEUR",
+        "dateDebut": 94867200000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000006072050",
+        "datePubli": 32472144000000,
+        "datePubliComputed": null,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "",
+    "notaHtml": "",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000045668051",
+        "textTitle": "Décret n°2022-679 du 26 avril 2022 - art. 2",
+        "linkType": "MODIFIE",
+        "linkOrientation": "cible",
+        "articleNum": "2",
+        "articleId": "LEGIARTI000045670715",
+        "natureText": "DECRET",
+        "datePubliTexte": "2022-04-27",
+        "dateSignaTexte": "2022-04-26",
+        "dateDebutCible": "2022-04-28"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. D4622-11 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D4622-11",
+        "articleId": "LEGIARTI000045677013",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1651104000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. D4622-13 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D4622-13",
+        "articleId": "LEGIARTI000045677005",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1651104000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. D4622-14 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D4622-14",
+        "articleId": "LEGIARTI000018528570",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. D4622-8 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D4622-8",
+        "articleId": "LEGIARTI000045677022",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1651104000000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R241-3 al 1 et 2 (Ab)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "R241-3",
+        "articleId": "LEGIARTI000018510301",
+        "natureText": "CODE"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000018528590",
+        "etat": "MODIFIE",
+        "version": "1.0",
+        "dateDebut": 1209600000000,
+        "dateFin": 1341100800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000025280067",
+        "etat": "MODIFIE",
+        "version": "2.0",
+        "dateDebut": 1341100800000,
+        "dateFin": 1514764800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000036483088",
+        "etat": "MODIFIE",
+        "version": "3.0",
+        "dateDebut": 1514764800000,
+        "dateFin": 1651104000000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000045677026",
+        "etat": "VIGUEUR",
+        "version": "4.0",
+        "dateDebut": 1651104000000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "D4622-6",
+      "4622-6"
+    ],
+    "versionPrecedente": "LEGIARTI000036483088",
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": true,
+    "comporteLiensSP": false
+  }
+}
