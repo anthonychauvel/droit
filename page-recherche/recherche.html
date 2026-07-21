@@ -399,6 +399,9 @@ function rendreResultats(q, categorie){
   const chercherCcn = !categorie || categorie === 'ccn';
   const chercherCode = !categorie || categorie === 'code';
   const chercherSecu = !categorie || categorie === 'secu';
+  const chercherJuris = categorie === 'juris'; // pas dans la recherche générale par défaut :
+                                                 // le texte des décisions est long et bruyant,
+                                                 // mieux vaut le réserver à un vrai choix de catégorie
 
   const ccnResultats = chercherCcn
     ? window.M_RechercheSynonymes.rechercheIntelligente(q, CCN_LISTE || [], 5)
@@ -436,6 +439,20 @@ function rendreResultats(q, categorie){
     });
   }
 
+  if(chercherJuris){
+    const decisions = chercherArticles(q, (SEARCH_INDEX && SEARCH_INDEX.juris) || [], 8);
+    if(decisions.length > 0){
+      html += '<div class="groupe-titre">Jurisprudence</div>';
+      const motsRequete = window.M_RechercheSynonymes.normaliser(q).split(' ');
+      decisions.forEach(function(d){
+        html += '<div class="carte-article"><div class="carte-haut">' +
+          '<span class="carte-nom">' + escapeHtml(d.titre) + '</span></div>' +
+          '<div class="carte-extrait">' + surligner(escapeHtml(d.extrait), motsRequete) + '</div>' +
+          '</div>';
+      });
+    }
+  }
+
   if(!html){
     html = '<div class="etat-vide">Rien trouvé pour « ' + escapeHtml(q) +
       ' ». Essayez un autre mot, ou décrivez votre métier plutôt qu\'un terme technique.</div>';
@@ -460,19 +477,8 @@ function changerVue(vue){
   document.querySelectorAll('.nav-item').forEach(function(b){ b.classList.toggle('actif', b.dataset.vue === vue); });
   if(vue === 'recherche'){ categorieActive = null; retourAccueil(); return; }
 
-  if(vue === 'juris'){
-    categorieActive = null;
-    document.getElementById('zone-accueil').classList.add('masque');
-    document.getElementById('resultats').classList.add('actif');
-    document.getElementById('q').value = '';
-    document.getElementById('contenu-resultats').innerHTML =
-      '<div class="etat-vide">La jurisprudence n\'est pas encore indexée dans la recherche par mots-clés — ' +
-      'disponible bientôt.</div>';
-    return;
-  }
-
-  categorieActive = vue; // 'code', 'ccn' ou 'secu' -- filtre les recherches suivantes tant qu'on reste sur cette vue
-  const requetesParDefaut = { code: 'temps de travail', ccn: 'coiffeuse', secu: 'arret maladie' };
+  categorieActive = vue; // 'code', 'ccn', 'secu' ou 'juris' -- filtre les recherches suivantes tant qu'on reste sur cette vue
+  const requetesParDefaut = { code: 'temps de travail', ccn: 'coiffeuse', secu: 'arret maladie', juris: 'licenciement' };
   rendreResultats(requetesParDefaut[vue] || '', vue);
 }
 </script>
