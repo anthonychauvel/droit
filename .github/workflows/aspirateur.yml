@@ -3,12 +3,12 @@ name: Aspirateur Légifrance (CCN + Code du travail)
 # Se lance à la main depuis l'onglet "Actions" de GitHub (bouton "Run workflow"),
 # accessible depuis Safari ou l'app GitHub sur iPhone. Pas besoin d'ordinateur.
 on:
-  # Veille automatique : re-vérifie tout chaque lundi à 6h du matin (heure serveur GitHub, UTC).
-  # Comme les résultats sont commités dans le repo, tout changement réel (nouvel avenant,
-  # texte modifié) apparaît comme un nouveau commit avec un diff -- historique des
-  # changements gratuit, sans rien construire de plus.
+  # Veille : DEUX runs par semaine (lundi et jeudi, 6h UTC). Combiné à la
+  # rotation sur 10 tranches, tout le corpus est repassé une fois toutes les
+  # 5 semaines (2 tranches/semaine). Chaque run se commit -> historique gratuit.
   schedule:
-    - cron: "0 6 * * 1"
+    - cron: "0 6 * * 1"   # lundi (créneau 0)
+    - cron: "0 6 * * 4"   # jeudi (créneau 1)
   workflow_dispatch:
     inputs:
       cible:
@@ -70,28 +70,73 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: "Veille : détecter les nouveaux IDCC/articles (léger, schedule seulement)"
+      - name: "Veille : recenser TOUS les numéros (IDCC + articles) — lundi, pour injecter les nouveaux"
         if: ${{ always() && github.event_name == 'schedule' }}
         run: |
-          python3 scripts/list_all_ccn.py --out idcc_list_complet.txt --debug-dir debug_list_ccn || echo "list_all_ccn a échoué, pas bloquant pour la suite du run"
-          python3 scripts/list_all_code_articles.py --code-id LEGITEXT000006072050 --out all_articles_code_travail.txt || echo "list_all_code_articles (travail) a échoué, pas bloquant"
-          python3 scripts/list_all_code_articles.py --code-id LEGITEXT000006073189 --out all_articles_code_secu.txt || echo "list_all_code_articles (sécu) a échoué, pas bloquant"
+          if [ "$(date -u +%u)" = "1" ]; then
+            echo "== Lundi : recensement complet de l'univers (IDCC + articles) =="
+            python3 scripts/list_all_ccn.py --out idcc_list_complet.txt --debug-dir debug_list_ccn || echo "list_all_ccn a échoué, pas bloquant pour la suite du run"
+            python3 scripts/list_all_code_articles.py --code-id LEGITEXT000006072050 --out all_articles_code_travail.txt || echo "list_all_code_articles (travail) a échoué, pas bloquant"
+            python3 scripts/list_all_code_articles.py --code-id LEGITEXT000006073189 --out all_articles_code_secu.txt || echo "list_all_code_articles (sécu) a échoué, pas bloquant"
+          else
+            echo "== Jeudi : pas de recensement complet (on remplit les nouveautés du lundi) =="
+          fi
+          # Signale ce qui est nouveau (rapport visible dans l'onglet Mises à jour).
           python3 scripts/detect_nouveaux.py --suivi idcc_list.txt --univers idcc_list_complet.txt --label "IDCC" || true
           python3 scripts/detect_nouveaux.py --suivi articles_list.txt --univers all_articles_code_travail.txt --label "article-travail" || true
           python3 scripts/detect_nouveaux.py --suivi articles_list_css.txt --univers all_articles_code_secu.txt --label "article-secu" || true
+
+      - name: "PRIORITÉ nouveautés : remplir les numéros manquants de l'univers + PUSH LIVE"
+        if: ${{ always() && github.event_name == 'schedule' }}
+        run: |
+          git config user.name "Aspirateur Légifrance (bot)"
+          git config user.email "action@github.com"
+          # Un « nouveau numéro » = présent dans l'univers complet (recensé le lundi)
+          # mais sans fichier récupéré. On le remplit TOUT DE SUITE (plafonné), donc
+          # un IDCC/article découvert lundi est rempli et consultable dès le run
+          # suivant (jeudi) — sans attendre son tour dans la rotation sur 5 semaines.
+          # Le plafond protège le run du timeout GitHub ; le reliquat passe au run
+          # d'après, en boucle, jusqu'à ce que tout soit rempli.
+          MAXCCN=300; MAXART=800
+          if [ -s idcc_list_complet.txt ]; then
+            echo "== Remplissage prioritaire CCN manquantes (max $MAXCCN) =="
+            python3 scripts/pull_ccn.py --idcc-file idcc_list_complet.txt --out output/ccn --only-missing --max $MAXCCN || true
+          fi
+          if [ -s all_articles_code_travail.txt ]; then
+            echo "== Remplissage prioritaire articles Code du travail manquants (max $MAXART) =="
+            python3 scripts/pull_code_travail.py --articles-file all_articles_code_travail.txt --code-id LEGITEXT000006072050 --out output/code-travail --only-missing --max $MAXART || true
+          fi
+          if [ -s all_articles_code_secu.txt ]; then
+            echo "== Remplissage prioritaire articles Code sécu manquants (max $MAXART) =="
+            python3 scripts/pull_code_travail.py --articles-file all_articles_code_secu.txt --code-id LEGITEXT000006073189 --out output/code-secu --only-missing --max $MAXART || true
+          fi
+          # Regénère index + manifeste pour que les nouveautés soient cherchables et
+          # consultables immédiatement, puis PUSH LIVE (les changements partent tout
+          # de suite, sans attendre la fin des étapes lentes qui suivent).
+          python3 scripts/build_search_index.py --out output/search-index.json || true
+          python3 scripts/build_manifest.py --out output/manifest.json || true
+          git add output/ audits/ idcc_list_complet.txt all_articles_code_travail.txt all_articles_code_secu.txt 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "Aucun nouveau numéro à remplir ce run."
+          else
+            git commit -m "Live: nouveaux numéros injectés + remplis ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git pull --rebase --autostash origin main || true
+            git push || (sleep 5 && git pull --rebase --autostash origin main && git push)
+            echo "PUSH LIVE effectué : les nouveautés sont en ligne."
+          fi
 
       - name: Récupérer les CCN (KALI)
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then
             # Veille tournante sur l'univers COMPLET (idcc_list_complet.txt, ~485+ IDCC,
-            # généré par l'étape précédente) sur 5 semaines -- pas juste les 316 déjà
+            # généré par l'étape précédente) sur 5 semaines (2 tranches/semaine) -- pas juste les 316 déjà
             # suivis. Repli sur idcc_list.txt si le fichier complet n'existe pas encore
             # (premier run, ou échec de list_all_ccn.py cette semaine-là).
             SOURCE="idcc_list_complet.txt"
             [ -s "$SOURCE" ] || SOURCE="idcc_list.txt"
             echo "Source utilisée pour la rotation : $SOURCE"
-            python3 scripts/rotation_helper.py --in "$SOURCE" --periode 5 --out /tmp/tranche_idcc.txt
+            python3 scripts/rotation_helper.py --in "$SOURCE" --periode 10 --out /tmp/tranche_idcc.txt
             python3 scripts/pull_ccn.py --idcc-file /tmp/tranche_idcc.txt --out output/ccn
             python3 scripts/pull_ccn.py --idcc-file idcc_list.txt --out output/ccn --only-missing
           else
@@ -138,7 +183,7 @@ jobs:
             SOURCE="all_articles_code_travail.txt"
             [ -s "$SOURCE" ] || SOURCE="articles_list.txt"
             echo "Source utilisée pour la rotation : $SOURCE ($(wc -l < "$SOURCE") articles)"
-            python3 scripts/rotation_helper.py --in "$SOURCE" --periode 5 --out /tmp/tranche_travail.txt
+            python3 scripts/rotation_helper.py --in "$SOURCE" --periode 10 --out /tmp/tranche_travail.txt
             echo "Tranche de cette semaine : $(wc -l < /tmp/tranche_travail.txt) articles"
             python3 scripts/pull_code_travail.py --articles-file /tmp/tranche_travail.txt --code-id LEGITEXT000006072050 --out output/code-travail
           else
@@ -152,7 +197,7 @@ jobs:
             SOURCE="all_articles_code_secu.txt"
             [ -s "$SOURCE" ] || SOURCE="articles_list_css.txt"
             echo "Source utilisée pour la rotation : $SOURCE ($(wc -l < "$SOURCE") articles)"
-            python3 scripts/rotation_helper.py --in "$SOURCE" --periode 5 --out /tmp/tranche_secu.txt
+            python3 scripts/rotation_helper.py --in "$SOURCE" --periode 10 --out /tmp/tranche_secu.txt
             python3 scripts/pull_code_travail.py --articles-file /tmp/tranche_secu.txt --code-id LEGITEXT000006073189 --out output/code-secu
           else
             python3 scripts/pull_code_travail.py --articles-file articles_list_css.txt --code-id LEGITEXT000006073189 --out output/code-secu
@@ -195,9 +240,6 @@ jobs:
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
 
-          # Ne garde que les articles pas encore récupérés (reprise automatique si le run précédent
-          # a été coupé par le timeout GitHub de 6h -- pull_code_travail.py n'a pas de --only-missing
-          # intégré, donc on le fait ici en amont)
           python3 -c "
           import os
           with open('all_articles_code_travail.txt', encoding='utf-8') as f:
@@ -208,8 +250,6 @@ jobs:
               f.write(chr(10).join(restants))
           "
 
-          # Lots de 700 (~14 min/lot à 1.2s/appel) -- largement sous la limite de 6h par lot,
-          # avec un commit après CHAQUE lot pour ne jamais perdre de progression
           split -l 700 /tmp/restants.txt /tmp/lot_
           for lot in /tmp/lot_*; do
             n=$(wc -l < "$lot")
@@ -267,6 +307,11 @@ jobs:
         if: always()
         run: |
           python3 scripts/build_search_index.py --out output/search-index.json
+
+      - name: "Construire le manifeste complet (liste intégrale + états validé/abrogé)"
+        if: always()
+        run: |
+          python3 scripts/build_manifest.py --out output/manifest.json
 
       - name: "Exporter la liste CCN pour recherche.html (titres officiels, repo droit uniquement)"
         if: always()
