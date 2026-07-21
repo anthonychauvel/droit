@@ -152,6 +152,31 @@
   }
   .accordeon-mot:hover{ border-color:var(--violet); background:var(--violet-soft); }
 
+  .carte-ccn, .carte-article{ cursor:pointer; transition: border-color .12s; }
+  .carte-ccn:hover, .carte-article:hover{ border-color:var(--violet); }
+
+  .voile-modal{
+    display:none; position:fixed; inset:0; background:rgba(25,28,53,.55);
+    z-index:50; padding:20px; overflow-y:auto;
+  }
+  .voile-modal.actif{ display:block; }
+  .modal-detail{
+    background:var(--carte); border-radius:14px; max-width:680px; margin:20px auto;
+    padding:26px 22px 30px; position:relative; min-height:120px;
+  }
+  .modal-fermer{
+    position:absolute; top:14px; right:14px; width:32px; height:32px; border-radius:8px;
+    border:none; background:var(--papier); color:var(--texte-doux); font-size:16px;
+    cursor:pointer; line-height:1;
+  }
+  .modal-fermer:hover{ background:var(--violet-soft); color:var(--violet); }
+  .modal-titre{ font-family:'Manrope', sans-serif; font-weight:800; font-size:18px; color:var(--marine); margin:0 0 4px; padding-right:36px; }
+  .modal-num{ font-size:12.5px; color:var(--texte-doux); font-family:'Manrope', sans-serif; margin-bottom:18px; }
+  .modal-corps{ font-size:14.5px; line-height:1.65; color:var(--texte); }
+  .modal-corps p{ margin:0 0 12px; }
+  .modal-section-titre{ font-weight:700; font-size:14px; color:var(--violet-2); margin:18px 0 6px; }
+  .modal-corps a{ color:var(--violet); }
+
   #resultats{ display:none; }
   #resultats.actif{ display:block; }
   #zone-accueil.masque{ display:none; }
@@ -311,6 +336,13 @@
     🛡️ Sources officielles <a href="https://www.legifrance.gouv.fr" target="_blank" rel="noopener">Légifrance.gouv.fr</a>
   </footer>
 </main>
+
+<div id="voile-modal" class="voile-modal" onclick="if(event.target===this) fermerDetail()">
+  <div class="modal-detail">
+    <button class="modal-fermer" onclick="fermerDetail()" aria-label="Fermer">✕</button>
+    <div id="modal-contenu"><div class="etat-vide">Chargement…</div></div>
+  </div>
+</div>
 
 <script src="synonymes-recherche.js"></script>
 <script>
@@ -495,22 +527,24 @@ function rendreResultats(q, categorie){
   } else if(ccnResultats.length > 0){
     html += '<div class="groupe-titre">Convention(s) collective(s) probable(s)</div>';
     ccnResultats.forEach(function(r){
-      html += '<div class="carte-ccn"><div class="carte-haut">' +
+      html += '<div class="carte-ccn" onclick="ouvrirDetail(&quot;ccn&quot;,&quot;' + r.idcc + '&quot;)"><div class="carte-haut">' +
         '<span class="carte-nom">' + escapeHtml(r.nom) + '</span>' +
         '<span class="carte-num">IDCC ' + r.idcc + '</span></div></div>';
     });
   }
 
   const termeArticles = estTermeGeneral ? ccnResultats[0].termeGeneral : q;
-  const articlesTravail = chercherCode ? chercherArticles(termeArticles, (SEARCH_INDEX && SEARCH_INDEX.code) || []) : [];
-  const articlesSecu = chercherSecu ? chercherArticles(termeArticles, (SEARCH_INDEX && SEARCH_INDEX.code_secu) || []) : [];
+  const articlesTravail = (chercherCode ? chercherArticles(termeArticles, (SEARCH_INDEX && SEARCH_INDEX.code) || []) : [])
+    .map(function(a){ a.source_kind = 'code'; return a; });
+  const articlesSecu = (chercherSecu ? chercherArticles(termeArticles, (SEARCH_INDEX && SEARCH_INDEX.code_secu) || []) : [])
+    .map(function(a){ a.source_kind = 'secu'; return a; });
   const tousArticles = articlesTravail.concat(articlesSecu).slice(0, 8);
 
   if(tousArticles.length > 0){
     html += '<div class="groupe-titre">' + (categorie === 'secu' ? 'Code de la sécurité sociale' : categorie === 'code' ? 'Code du travail' : 'Ce que dit la loi') + '</div>';
     const motsRequete = window.M_RechercheSynonymes.normaliser(termeArticles).split(' ');
     tousArticles.forEach(function(a){
-      html += '<div class="carte-article"><div class="carte-haut">' +
+      html += '<div class="carte-article" onclick="ouvrirDetail(&quot;' + a.source_kind + '&quot;,&quot;' + escapeHtml(a.num) + '&quot;)"><div class="carte-haut">' +
         '<span class="carte-nom">Article ' + escapeHtml(a.num) + '</span></div>' +
         '<div class="carte-extrait">' + surligner(escapeHtml(a.extrait), motsRequete) + '</div>' +
         '</div>';
@@ -523,7 +557,7 @@ function rendreResultats(q, categorie){
       html += '<div class="groupe-titre">Jurisprudence</div>';
       const motsRequete = window.M_RechercheSynonymes.normaliser(q).split(' ');
       decisions.forEach(function(d){
-        html += '<div class="carte-article"><div class="carte-haut">' +
+        html += '<div class="carte-article" onclick="ouvrirDetail(&quot;juris&quot;,&quot;' + escapeHtml(d.num) + '&quot;)"><div class="carte-haut">' +
           '<span class="carte-nom">' + escapeHtml(d.titre) + '</span></div>' +
           '<div class="carte-extrait">' + surligner(escapeHtml(d.extrait), motsRequete) + '</div>' +
           '</div>';
@@ -546,6 +580,78 @@ let categorieActive = null;
 document.getElementById('q').addEventListener('keydown', function(e){
   if(e.key === 'Enter'){ rendreResultats(e.target.value, categorieActive); }
 });
+
+// ── Détail (CCN / article / décision) ─────────────────────────────
+const BASE_RAW = 'https://raw.githubusercontent.com/anthonychauvel/droit/main/';
+
+function urlDetail(kind, num){
+  const safe = String(num).replace(/\//g, '-');
+  if(kind === 'ccn') return BASE_RAW + 'output/ccn/' + safe + '.json';
+  if(kind === 'secu') return BASE_RAW + 'output/code-secu/' + safe + '.json';
+  if(kind === 'juris') return BASE_RAW + 'output/jurisprudence/' + safe + '.json';
+  return BASE_RAW + 'output/code-travail/' + safe + '.json';
+}
+
+function renderSectionsLegeres(sections){
+  if(!Array.isArray(sections)) return '';
+  return sections.map(function(s){
+    const t = s.title || s.titre;
+    let inner = '';
+    if(Array.isArray(s.sections) && s.sections.length){ inner += renderSectionsLegeres(s.sections); }
+    if(Array.isArray(s.articles)){
+      inner += s.articles.map(function(a){ return '<p>' + cleanHtml(a.content || a.texte || '') + '</p>'; }).join('');
+    }
+    if(!t && !inner) return '';
+    return (t ? '<div class="modal-section-titre">' + escapeHtml(t) + '</div>' : '') + inner;
+  }).join('');
+}
+
+function cleanHtml(raw){
+  if(!raw) return '';
+  return raw.replace(/<script/gi, '&lt;script');
+}
+
+async function ouvrirDetail(kind, num){
+  const voile = document.getElementById('voile-modal');
+  const contenu = document.getElementById('modal-contenu');
+  voile.classList.add('actif');
+  contenu.innerHTML = '<div class="etat-vide">Chargement…</div>';
+
+  try{
+    const resp = await fetch(urlDetail(kind, num));
+    if(!resp.ok) throw new Error('HTTP ' + resp.status);
+    const data = await resp.json();
+
+    let payload = data;
+    if(kind === 'code' || kind === 'secu'){ payload = data.article || data; }
+    if(kind === 'juris'){ payload = data.text || data; }
+
+    const defaultLabel = kind === 'ccn' ? 'IDCC' : kind === 'juris' ? 'Décision' : 'Article';
+    const titre = payload.titre || payload.title || (defaultLabel + ' ' + num);
+    const estAbroge = payload.etat && /ABROGE/i.test(payload.etat);
+
+    let corps = '';
+    if(kind === 'ccn' && Array.isArray(payload.sections)){
+      corps = renderSectionsLegeres(payload.sections);
+    } else if(payload.texteHtml || payload.texte || payload.content){
+      corps = '<p>' + cleanHtml(payload.texteHtml || payload.texte || payload.content) + '</p>';
+    } else if(estAbroge){
+      corps = '<p style="color:var(--texte-doux)">Article abrogé, plus en vigueur — c\'est normal qu\'il n\'y ait pas (ou peu) de texte ici.</p>';
+    } else {
+      corps = '<p style="color:var(--texte-doux)">Contenu non trouvé pour cette entrée.</p>';
+    }
+
+    contenu.innerHTML = '<div class="modal-titre">' + escapeHtml(titre) + '</div>' +
+      '<div class="modal-num">' + (kind === 'ccn' ? 'IDCC ' : '') + escapeHtml(num) + '</div>' +
+      '<div class="modal-corps">' + corps + '</div>';
+  }catch(e){
+    contenu.innerHTML = '<div class="etat-vide">Impossible de charger ce contenu pour le moment.</div>';
+  }
+}
+
+function fermerDetail(){
+  document.getElementById('voile-modal').classList.remove('actif');
+}
 
 function changerVue(vue){
   document.querySelectorAll('.nav-item').forEach(function(b){ b.classList.toggle('actif', b.dataset.vue === vue); });
