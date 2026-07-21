@@ -344,39 +344,22 @@
      - output/ccn-liste.json      (noms de CCN, pour la recherche par métier)
      - output/classification-source.json (conservé / complet, optionnel)
      - audits/index.json          (mises à jour)
-   Essaie d'abord les chemins RELATIFS (page hébergée dans le dépôt), puis
-   bascule sur raw.githubusercontent.com si besoin (ouverture hors dépôt).
+   IMPORTANT : tout est chargé en chemins RELATIFS, sur le MÊME domaine que
+   cette page. Aucune adresse d'origine (dépôt, hébergeur) n'apparaît ici :
+   quand la page est servie derrière Cloudflare, toutes les données transitent
+   par Cloudflare (bande passante + cache au bord) et l'origine reste masquée
+   côté serveur.
    ==========================================================================*/
 
-var RAW_BASE = 'https://raw.githubusercontent.com/anthonychauvel/droit/main/';
-var useRaw = false; // basculé à true si un chemin relatif échoue
-
-function urlFor(rel){ return (useRaw ? RAW_BASE : '') + rel; }
-
 async function fetchJSON(rel){
-  // tente relatif puis raw
-  try{
-    var r = await fetch(rel, {cache:'no-cache'});
-    if(r.ok) return await r.json();
-    throw new Error('HTTP '+r.status);
-  }catch(e){
-    var r2 = await fetch(RAW_BASE + rel, {cache:'no-cache'});
-    if(!r2.ok) throw new Error('HTTP '+r2.status+' '+rel);
-    useRaw = true;
-    return await r2.json();
-  }
+  var r = await fetch(rel);
+  if(!r.ok) throw new Error('HTTP ' + r.status + ' ' + rel);
+  return await r.json();
 }
 async function fetchText(rel){
-  try{
-    var r = await fetch(rel, {cache:'no-cache'});
-    if(r.ok) return await r.text();
-    throw new Error('HTTP '+r.status);
-  }catch(e){
-    var r2 = await fetch(RAW_BASE + rel, {cache:'no-cache'});
-    if(!r2.ok) throw new Error('HTTP '+r2.status);
-    useRaw = true;
-    return await r2.text();
-  }
+  var r = await fetch(rel);
+  if(!r.ok) throw new Error('HTTP ' + r.status + ' ' + rel);
+  return await r.text();
 }
 
 /* ---- état global ---- */
