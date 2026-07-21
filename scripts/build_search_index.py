@@ -133,11 +133,43 @@ def build_code_index(code_dir, classification=None):
     return index
 
 
+def build_juris_index(juris_dir):
+    summary_path = os.path.join(juris_dir, "_summary.json")
+    if not os.path.exists(summary_path):
+        return []
+    summary = json.load(open(summary_path, encoding="utf-8"))
+    index = []
+    for entry in summary:
+        if entry.get("status") != "ok":
+            continue
+        numero = entry["numero"]
+        filepath = os.path.join(juris_dir, f"{numero}.json")
+        if not os.path.exists(filepath):
+            continue
+        try:
+            data = json.load(open(filepath, encoding="utf-8"))
+        except Exception:
+            continue
+        # Structure confirmée le 19/07/2026 (bug de rendu lecteur.html) : le
+        # contenu réel est sous data["text"], pas à la racine comme pour un
+        # article de code -- data.titre échouerait silencieusement ici.
+        payload = data.get("text", data)
+        titre = payload.get("titre") or payload.get("title") or f"Décision {numero}"
+        text = strip_html(payload.get("texte") or payload.get("texteHtml") or payload.get("content") or "")
+        index.append({
+            "num": numero,
+            "title": titre,
+            "snippet": text[:280],
+        })
+    return index
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ccn-dir", default="output/ccn")
     ap.add_argument("--code-dir", default="output/code-travail")
     ap.add_argument("--code-secu-dir", default="output/code-secu")
+    ap.add_argument("--juris-dir", default="output/jurisprudence")
     ap.add_argument("--classification", default="output/classification-source.json",
                      help="Manifeste conservé/complet écrit par classify_source.py (optionnel)")
     ap.add_argument("--out", default="output/search-index.json")
@@ -155,15 +187,17 @@ def main():
     code_index = build_code_index(args.code_dir, classification.get("code_travail"))
     code_secu_index = (build_code_index(args.code_secu_dir, classification.get("code_secu"))
                         if os.path.exists(args.code_secu_dir) else [])
+    juris_index = build_juris_index(args.juris_dir) if os.path.exists(args.juris_dir) else []
 
-    full_index = {"ccn": ccn_index, "code": code_index, "code_secu": code_secu_index}
+    full_index = {"ccn": ccn_index, "code": code_index, "code_secu": code_secu_index, "juris": juris_index}
 
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(full_index, f, ensure_ascii=False, separators=(",", ":"))
 
     size_kb = os.path.getsize(args.out) / 1024
-    print(f"Index construit: {len(ccn_index)} CCN, {len(code_index)} articles travail, {len(code_secu_index)} articles sécu.")
+    print(f"Index construit: {len(ccn_index)} CCN, {len(code_index)} articles travail, "
+          f"{len(code_secu_index)} articles sécu, {len(juris_index)} décisions.")
     print(f"Taille: {size_kb:.0f} Ko -> {args.out}")
 
 
