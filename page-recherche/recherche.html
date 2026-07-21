@@ -270,7 +270,7 @@
     <div class="boite-recherche">
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       <input type="search" id="q" placeholder="Ex. : coiffeuse, heures supp, congés payés, mon patron…" autocomplete="off">
-      <button class="btn-go" onclick="rendreResultats(document.getElementById('q').value)" aria-label="Rechercher">
+      <button class="btn-go" onclick="rendreResultats(document.getElementById('q').value, categorieActive)" aria-label="Rechercher">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </button>
     </div>
@@ -539,16 +539,12 @@ function rendreResultats(q, categorie){
   el.innerHTML = html;
 }
 
-let debounceTimer;
 let categorieActive = null;
-document.getElementById('q').addEventListener('input', function(e){
-  clearTimeout(debounceTimer);
-  const val = e.target.value;
-  if(!val.trim()){ retourAccueil(); return; }
-  debounceTimer = setTimeout(function(){ rendreResultats(val, categorieActive); }, 260);
-});
+// Recherche déclenchée UNIQUEMENT par Entrée ou le bouton -- plus aucune
+// recherche automatique pendant la frappe, pour ne jamais perturber la
+// saisie (c'était la cause du problème précédent, debounce ou pas).
 document.getElementById('q').addEventListener('keydown', function(e){
-  if(e.key === 'Enter'){ clearTimeout(debounceTimer); rendreResultats(e.target.value, categorieActive); }
+  if(e.key === 'Enter'){ rendreResultats(e.target.value, categorieActive); }
 });
 
 function changerVue(vue){
