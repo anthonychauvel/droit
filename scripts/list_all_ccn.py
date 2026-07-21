@@ -86,6 +86,10 @@ def search_page(base_url, token, page_number, page_size=100):
                     "operateur": "ET",
                 }],
             }],
+            "filtres": [{
+                "facette": "NATURE_TEXTE",
+                "valeurs": ["CONVENTION_COLLECTIVE"],
+            }],
             "sort": "PERTINENCE",
             "fromAdvancedRecherche": False,
             "pageNumber": page_number,

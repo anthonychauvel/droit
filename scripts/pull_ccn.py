@@ -210,13 +210,13 @@ def main():
         print("ERREUR: fournir --idcc ou --idcc-file", file=sys.stderr)
         sys.exit(1)
 
-    # Charge le résumé existant pour fusion -- TOUJOURS, pas seulement en mode
-    # --only-missing. Un run qui ne traite qu'une tranche (rotation
-    # hebdomadaire) ne doit jamais effacer le souvenir des IDCC déjà récupérés
-    # par les runs précédents, même si ce run précis ne les redemande pas.
+    # Reprend le résumé existant : garde TOUS les "ok" déjà acquis, peu importe
+    # si l'IDCC est encore dans idcc_list.txt aujourd'hui -- une donnée déjà
+    # récupérée avec succès ne doit jamais disparaître silencieusement juste
+    # parce que la liste a changé entre-temps.
     existing_summary = {}
     summary_path = os.path.join(args.out, "_summary.json")
-    if os.path.exists(summary_path):
+    if args.only_missing and os.path.exists(summary_path):
         with open(summary_path, encoding="utf-8") as f:
             for entry in json.load(f):
                 existing_summary[entry["idcc"]] = entry
@@ -224,8 +224,6 @@ def main():
     preserved_ok = [e for e in existing_summary.values() if e.get("status") == "ok"]
     preserved_ok_ids = {e["idcc"] for e in preserved_ok}
 
-    # --only-missing contrôle uniquement si on SAUTE le retraitement des IDCC
-    # déjà "ok" -- indépendant de la fusion ci-dessus, qui s'applique toujours.
     to_process = idcc_list
     if args.only_missing:
         to_process = [i for i in idcc_list if i not in preserved_ok_ids]
