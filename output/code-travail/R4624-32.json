@@ -1,0 +1,337 @@
+{
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000045371021",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "L'examen de reprise a pour objet : 1° De vérifier si le poste de travail que doit reprendre le travailleur ou le poste de reclassement auquel il doit être affecté est compatible avec son état de santé ; 2° D'examiner les propositions d'aménagement ou d'adaptation du poste repris par le travailleur ou de reclassement faites par l'employeur à la suite des préconisations émises le cas échéant par le médecin du travail lors de la visite de préreprise ; 3° De préconiser l'aménagement, l'adaptation du poste ou le reclassement du travailleur ; 4° D'émettre, le cas échéant, un avis d'inaptitude.",
+    "texteHtml": "<p>L'examen de reprise a pour objet : <br/><br/> 1° De vérifier si le poste de travail que doit reprendre le travailleur ou le poste de reclassement auquel il doit être affecté est compatible avec son état de santé ; <br/><br/> 2° D'examiner les propositions d'aménagement ou d'adaptation du poste repris par le travailleur ou de reclassement faites par l'employeur à la suite des préconisations émises le cas échéant par le médecin du travail lors de la visite de préreprise ; <br/><br/> 3° De préconiser l'aménagement, l'adaptation du poste ou le reclassement du travailleur ; <br/><br/> 4° D'émettre, le cas échéant, un avis d'inaptitude. </p><p></p><p></p>",
+    "num": "R4624-32",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "3.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1647561600000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 1073741822,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Partie réglementaire  ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000018464861",
+          "id": "LEGISCTA000018464861",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Quatrième partie : Santé et sécurité au travail ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018488235",
+          "id": "LEGISCTA000018532924",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2999-01-01",
+          "titre": "Livre VI : Institutions et organismes de prévention ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492535",
+          "id": "LEGISCTA000018528828",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "TITRE II : SERVICES DE SANTÉ AU TRAVAIL",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492751",
+          "id": "LEGISCTA000018528617",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2022-04-27",
+          "titre": "Titre II : Services de santé au travail ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492751",
+          "id": "LEGISCTA000025280099",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2022-04-27",
+          "fin": "2999-01-01",
+          "titre": "Titre II : Services de prévention et de santé au travail ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018492751",
+          "id": "LEGISCTA000046340635",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "Chapitre IV : Actions du médecin du travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493118",
+          "id": "LEGISCTA000018528264",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre IV : Actions et moyens des membres de l'équipe pluridisciplinaire de santé au travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493118",
+          "id": "LEGISCTA000025279758",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "Section 2 : Examens médicaux.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493140",
+          "id": "LEGISCTA000018528242",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2017-01-01",
+          "titre": "Section 2 : Suivi individuel de l'état de santé du salarié.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493140",
+          "id": "LEGISCTA000025279674",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2017-01-01",
+          "fin": "2999-01-01",
+          "titre": "Section 2 : Suivi individuel de l'état de santé du travailleur",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493140",
+          "id": "LEGISCTA000033769028",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2008-05-01",
+          "fin": "2012-07-01",
+          "titre": "Sous-section 3 : Surveillance médicale renforcée.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493164",
+          "id": "LEGISCTA000018528218",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2012-07-01",
+          "fin": "2017-01-01",
+          "titre": "Sous-section 3 : Surveillance médicale renforcée.",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493164",
+          "id": "LEGISCTA000025279638",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2017-01-01",
+          "fin": "2022-03-31",
+          "titre": "Sous-section 3 : Visites de préreprise et de reprise du travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493164",
+          "id": "LEGISCTA000033769121",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2022-03-31",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 3 : Prévention de la désinsertion professionnelle",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000018493164",
+          "id": "LEGISCTA000045371010",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2022-03-31",
+          "fin": "2999-01-01",
+          "titre": "Paragraphe 2 :  Visite de reprise",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000045369250",
+          "id": "LEGISCTA000045369279",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 56,
+      "titreTxt": [
+        {
+          "debut": "1973-01-03",
+          "fin": "2999-01-01",
+          "titre": "Code du travail",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000006072050",
+          "id": "LEGITEXT000006072050",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000018493200",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000045369250",
+    "sectionParentId": "LEGISCTA000045369279",
+    "sectionParentTitre": "Paragraphe 2 :  Visite de reprise",
+    "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre VI : Institutions et organismes de prévention  &gt; Titre II : Services de santé au travail  &gt; Chapitre IV : Actions et moyens des membres de l'équipe pluridisciplinaire de santé au travail &gt; Section 2 : Suivi individuel de l'état de santé du travailleur &gt; Sous-section 3 : Visites de préreprise et de reprise du travail",
+    "refInjection": "IG-20260113",
+    "idTechInjection": "LEGIARTI000045371021",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000006072050",
+        "titre": "Code du travail",
+        "titreLong": "Code du travail",
+        "etat": "VIGUEUR",
+        "dateDebut": 94867200000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000006072050",
+        "datePubli": 32472144000000,
+        "datePubliComputed": null,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "",
+    "notaHtml": "",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000045365883",
+        "textTitle": "Décret n°2022-372 du 16 mars 2022 - art. 5",
+        "linkType": "DEPLACE",
+        "linkOrientation": "cible",
+        "articleNum": "5",
+        "articleId": "LEGIARTI000045366656",
+        "natureText": "DECRET",
+        "datePubliTexte": "2022-03-17",
+        "dateSignaTexte": "2022-03-16",
+        "dateDebutCible": "2022-03-31"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000043039848",
+        "textTitle": "Décret n°2021-56 du 22 janvier 2021 - art. 5 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "5",
+        "articleId": "LEGIARTI000044127928",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2021-56",
+        "datePubli": 1611446400000,
+        "dateDebut": 1632960000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R1262-9 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R1262-9",
+        "articleId": "LEGIARTI000022265994",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1273276800000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R241-51-1 al 2 (Ab)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "R241-51-1",
+        "articleId": "LEGIARTI000018510046",
+        "natureText": "CODE"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000018528182",
+        "etat": "MODIFIE",
+        "version": "1.0",
+        "dateDebut": 1209600000000,
+        "dateFin": 1341100800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000025279596",
+        "etat": "MODIFIE",
+        "version": "2.0",
+        "dateDebut": 1341100800000,
+        "dateFin": 1483228800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000045371021",
+        "etat": "VIGUEUR",
+        "version": "3.0",
+        "dateDebut": 1647561600000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000033769113",
+        "etat": "MODIFIE",
+        "version": "3.0",
+        "dateDebut": 1483228800000,
+        "dateFin": 1647561600000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R4624-32",
+      "4624-32"
+    ],
+    "versionPrecedente": "LEGIARTI000033769113",
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": true,
+    "comporteLiensSP": false
+  }
+}
