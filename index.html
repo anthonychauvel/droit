@@ -260,6 +260,70 @@
     .res-right{ margin-top:2px; }
   }
   @media (prefers-reduced-motion:reduce){ *{ transition:none!important; animation:none!important; } html{ scroll-behavior:auto; } }
+
+  /* Prédictions (autocomplétion) */
+  .search-wrap{ position:relative; }
+  .suggest{ position:absolute; left:0; right:0; top:calc(100% + 6px); z-index:40;
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    box-shadow:0 18px 40px -18px rgba(15,45,82,.4); overflow:hidden; }
+  .suggest-item{ display:flex; align-items:center; gap:10px; padding:11px 14px; cursor:pointer;
+    border-bottom:1px solid var(--line-soft); font-size:14px; }
+  .suggest-item:last-child{ border-bottom:none; }
+  .suggest-item:hover,.suggest-item.act{ background:var(--violet-soft); }
+  .suggest-item .si-ico{ width:26px; height:26px; flex-shrink:0; border-radius:7px; display:flex; align-items:center; justify-content:center;
+    font-size:13px; font-weight:800; color:var(--marine); background:var(--gold-metal); box-shadow:inset 0 1px 0 rgba(255,255,255,.5); }
+  .suggest-item .si-main{ flex:1; min-width:0; }
+  .suggest-item .si-t{ color:var(--ink); font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .suggest-item .si-t b{ color:var(--violet-strong); }
+  .suggest-item .si-s{ font-size:11.5px; color:var(--ink-soft); }
+  .suggest-item .si-go{ color:var(--ink-soft); font-size:16px; flex-shrink:0; }
+
+  /* Sections cliquables dans les résultats CCN */
+  .sec-chips{ display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; align-items:center; }
+  .sec-lead{ font-size:10.5px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; color:var(--ink-soft); margin-right:2px; }
+  .sec-chip{ font-family:'Manrope',sans-serif; font-size:11.5px; font-weight:700; line-height:1.2;
+    color:var(--violet-strong); background:var(--violet-soft); border:1px solid #ecdcae;
+    padding:5px 10px; border-radius:20px; cursor:pointer; max-width:100%;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .sec-chip:hover{ border-color:var(--gold-strong); background:#f3e4be; }
+
+  /* Surbrillance de la section ciblée à l'ouverture */
+  .sec-flash{ animation:secFlash 2.6s ease-out; border-radius:8px; }
+  @keyframes secFlash{ 0%,15%{ background:var(--violet-soft); box-shadow:0 0 0 6px var(--violet-soft); } 100%{ background:transparent; box-shadow:0 0 0 0 transparent; } }
+
+  /* "Vouliez-vous dire" */
+  .dym{ margin:2px 0 12px; font-size:13.5px; color:var(--ink-soft); }
+  .dym-q{ font-family:'Manrope',sans-serif; font-size:13.5px; font-weight:800; color:var(--violet-strong);
+    background:var(--violet-soft); border:1px solid #ecdcae; border-radius:8px; padding:2px 9px; cursor:pointer; }
+  .dym-q:hover{ border-color:var(--gold-strong); background:#f3e4be; }
+
+  /* Finder « Je ne connais pas ma convention » */
+  .finder{ background:linear-gradient(180deg,#ffffff,#f7faff); border:1px solid var(--line); border-radius:16px;
+    padding:16px 16px 14px; margin-bottom:22px; box-shadow:0 14px 34px -20px rgba(15,45,82,.35); }
+  .finder-title{ font-family:'Manrope',sans-serif; font-weight:800; font-size:16.5px; color:var(--violet-strong); }
+  .finder-sub{ font-size:13.5px; color:var(--ink-soft); margin:5px 0 12px; line-height:1.5; }
+  .finder-sub b{ color:var(--ink); }
+  #finder-q{ width:100%; box-sizing:border-box; border:1px solid var(--line); border-radius:11px; padding:11px 13px;
+    font-family:inherit; font-size:14.5px; background:var(--card); color:var(--ink); }
+  #finder-q:focus{ outline:none; border-color:var(--gold-strong); box-shadow:0 0 0 3px var(--violet-soft); }
+  .finder-chips{ display:flex; flex-wrap:wrap; gap:7px; margin-top:11px; }
+  .finder-chip{ font-family:'Manrope',sans-serif; font-size:12.5px; font-weight:700; color:var(--violet-strong);
+    background:var(--card); border:1px solid var(--line); border-radius:20px; padding:6px 12px; cursor:pointer; }
+  .finder-chip:hover,.finder-chip.on{ border-color:var(--gold-strong); background:var(--violet-soft); }
+  .finder-res{ display:grid; gap:8px; margin-top:12px; }
+  .finder-res:empty{ margin:0; }
+  .finder-card{ display:flex; align-items:center; justify-content:space-between; gap:10px; padding:11px 13px;
+    border:1px solid var(--line); border-radius:11px; background:var(--card); cursor:pointer; }
+  .finder-card.dim{ cursor:default; }
+  .finder-card:hover:not(.dim){ border-color:var(--gold-strong); background:var(--violet-soft); }
+  .finder-card .fc-name{ font-weight:600; color:var(--ink); font-size:14px; line-height:1.35; }
+  .finder-card .fc-idcc{ font-size:11.5px; color:var(--ink-soft); margin-top:1px; }
+  .finder-card .fc-go{ font-size:12px; font-weight:800; color:var(--violet-strong); white-space:nowrap; }
+  .finder-card.dim .fc-go{ color:var(--ink-soft); font-weight:600; }
+  .finder-empty{ font-size:13px; color:var(--ink-soft); padding:4px 2px; }
+  .finder-official{ display:inline-block; margin-top:13px; font-size:13px; font-weight:700; color:var(--violet-strong);
+    text-decoration:none; border-bottom:1px dashed var(--gold-strong); }
+  .finder-official:hover{ color:var(--marine); }
   :focus-visible{ outline:2px solid var(--violet); outline-offset:2px; border-radius:4px; }
 </style>
 </head>
@@ -302,16 +366,27 @@
       <h1>Trouver la bonne règle, vite</h1>
       <p>Combinez des mots-clés — une convention et un thème, un métier et une question. Ex. <b>commerce de gros</b> + <b>heures supplémentaires</b>.</p>
     </div>
-    <div class="searchbox">
-      <svg class="si" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input id="q" type="search" autocomplete="off" placeholder="Ex. : coiffeuse congés · L3121 durée · commerce gros heures sup · préavis…">
-      <button class="go" id="go" aria-label="Rechercher"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+    <div class="search-wrap">
+      <div class="searchbox">
+        <svg class="si" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="q" type="search" autocomplete="off" placeholder="Ex. : coiffeuse congés · L3121 durée · commerce gros heures sup · préavis…">
+        <button class="go" id="go" aria-label="Rechercher"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+      </div>
+      <div id="suggest" class="suggest" hidden></div>
     </div>
     <div class="hint">Tapez plusieurs mots : chacun devient un <b>filtre</b> cumulatif, et les résultats s'affichent au fur et à mesure. Astuce : appuyez sur <span class="kbd">/</span> n'importe où pour revenir ici.</div>
     <div class="tokens" id="tokens"></div>
     <div id="search-results"></div>
 
     <div id="search-landing">
+      <div class="finder" id="finder">
+        <div class="finder-title">Je ne connais pas ma convention</div>
+        <div class="finder-sub">Le plus sûr : votre <b>IDCC</b> (numéro à 4 chiffres) est écrit sur votre <b>bulletin de paie</b> — tapez-le directement dans la recherche. Sinon, trouvez-la par métier ou par secteur :</div>
+        <input id="finder-q" type="search" autocomplete="off" placeholder="Votre métier ou l'activité de l'entreprise (ex. coiffeuse, gros œuvre, restaurant…)">
+        <div class="finder-chips" id="finder-chips"></div>
+        <div class="finder-res" id="finder-res"></div>
+        <a class="finder-official" href="https://code.travail.gouv.fr/outils/convention-collective" target="_blank" rel="noopener">Chercher par nom d'entreprise ou SIRET — outil officiel ↗</a>
+      </div>
       <div class="stat-grid" id="stat-grid"></div>
       <div class="latest" id="latest-maj" hidden></div>
       <div class="ex-title">Exemples de recherches combinées</div>
@@ -391,6 +466,7 @@ var INDEX  = { ccn:[], code:[], secu:[], juris:[] };   // {num,title,etat,source
 var SEARCH = { ccn:[], code:[], code_secu:[], juris:[] };
 var CCN_LISTE = [];
 var AUDITS = [];
+var TRENDS = null;   // mode évolutif : mots/expressions fréquents (optionnel)
 var DETAIL_CACHE = {};
 var ETAT_LABEL = { V:'Validé', A:'Abrogé', M:'Modifié', P:'Périmé', '?':'À vérifier' };
 
@@ -424,6 +500,10 @@ async function loadAll(){
   // 3) Noms de CCN (recherche par métier)
   try{ CCN_LISTE = await fetchJSON('output/ccn-liste.json'); }
   catch(e){ CCN_LISTE = []; }
+
+  // 3b) Tendances (mode évolutif) — mots/expressions fréquents, optionnel
+  try{ TRENDS = await fetchJSON('output/search-trends.json'); }
+  catch(e){ TRENDS = null; }
 
   // 4) Repli : si pas de manifeste, reconstruire les listes à partir des _summary
   if(!manifestOk){
@@ -513,6 +593,48 @@ var PRO = {}, SYN = {};
 Object.keys(PRO_RAW).forEach(function(k){ PRO[normaliser(k)] = PRO_RAW[k]; });
 Object.keys(SYN_RAW).forEach(function(k){ SYN[normaliser(k)] = SYN_RAW[k].map(normaliser); });
 
+/* Surnoms / sigles de conventions -> IDCC (vérifiés). Matchés en MOT ENTIER
+   côté moteur pour éviter les faux positifs (ex. « bad » ≠ « badge »). */
+var CCN_ALIAS_RAW = {
+ 'syntec':[1486],'syntec cinov':[1486],'betic':[1486],
+ 'hcr':[1979],
+ 'btp':[1596,1597,2609,2420],'batiment':[1596,1597,2609,2420],
+ 'batiment etam':[2609],'batiment cadre':[2420],
+ 'travaux publics':[1702,2614,3212],'tp':[1702,2614,3212],
+ 'metallurgie':[3248],
+ 'ccn 66':[413],'convention 66':[413],'conv 66':[413],'cc 66':[413],'ccn66':[413],
+ 'ccn 51':[29],'convention 51':[29],'conv 51':[29],'cc 51':[29],'ccn51':[29],'fehap':[29],
+ 'animation':[1518],'eclat':[1518],
+ 'sport':[2511],
+ 'proprete':[3043],'nettoyage':[3043],
+ 'securite privee':[1351],'prevention securite':[1351],'prevention et securite':[1351],
+ 'restauration rapide':[1501],
+ 'grande distribution':[2216],'gms':[2216],
+ 'bad':[2941],
+ 'notariat':[2205],
+ 'hospitalisation privee':[2264],'fhp':[2264],
+ 'services de l automobile':[1090],
+ 'commerce de detail non alimentaire':[1517],
+ 'particuliers employeurs':[3239],'cesu':[3239],
+ 'portage salarial':[3219],'prestataires de services':[2098],'banque':[2120],
+ 'immobilier':[1527],'optique':[1431],'lunetterie':[1431],'pharmacie d officine':[1996],
+ 'hlm':[2150],'bricolage':[1606],'grands magasins':[2156],'mutualite':[2128],
+ 'telecommunications':[2148],'edition':[2121]
+};
+var ALIAS = {};
+Object.keys(CCN_ALIAS_RAW).forEach(function(k){ ALIAS[normaliser(k)] = CCN_ALIAS_RAW[k]; });
+
+/* N° de brochure JO -> IDCC (vérifiés). Ne s'applique JAMAIS si le nombre est
+   déjà un vrai IDCC présent dans les données (un vrai IDCC gagne toujours). */
+var BROCHURE_RAW = {
+ '3018':[1486],'3292':[1979],'3044':[573],'3116':[413],'3085':[16],'3245':[1501],
+ '3246':[1518],'3034':[1090],'3173':[3043],'3305':[2216],'3193':[1596],'3370':[3127],
+ '3383':[3219],'3161':[2120],'3117':[843],'3381':[2941],'3258':[1597]
+};
+function stripZeros(s){ s=String(s).replace(/^0+/,''); return s===''?'0':s; }
+var BROCHURE = {};
+Object.keys(BROCHURE_RAW).forEach(function(b){ BROCHURE[stripZeros(b)] = BROCHURE_RAW[b]; });
+
 /* Mots-outils français ignorés (bruit) — on garde les abréviations métier
    utiles (hs, cp, at, rtt…) qui ne sont pas dans cette liste. */
 var STOP = {};
@@ -576,13 +698,30 @@ function highlight(text, terms){
   });
   return out;
 }
+/* Extrait de texte centré sur le 1er terme trouvé, surligné */
+function excerpt(text, terms, len){
+  if(!text) return ''; len = len||150;
+  var norm = normaliser(text), pos=-1;
+  for(var i=0;i<terms.length;i++){ if(terms[i].length<3) continue; var p=norm.indexOf(terms[i]); if(p!==-1 && (pos===-1||p<pos)) pos=p; }
+  var start=0;
+  if(pos>60 && norm.length===text.length) start = pos-50; // fenêtre (accents ~1:1)
+  var slice = text.slice(start, start+len);
+  if(start>0) slice='…'+slice;
+  if(start+len < text.length) slice=slice+'…';
+  return highlight(slice, terms);
+}
 
 /* Une ligne de résultat/liste. kind: ccn|code|secu|juris */
 function rowHtml(kind, num, title, etat, opts){
   opts = opts || {};
   var sub = '';
   if(opts.snippet) sub += '<div class="res-sub">'+opts.snippet+'</div>';
-  if(opts.tags && opts.tags.length){
+  if(opts.sections && opts.sections.length){
+    sub += '<div class="sec-chips">'+(opts.launchpad?'<span class="sec-lead">Sections clés</span>':'')+opts.sections.map(function(s){
+      var t=s.title||s.titre||''; if(!t) return '';
+      return '<button class="sec-chip" type="button" data-num="'+escAttr(num)+'" data-target="'+escAttr(t)+'">§ '+escapeHtml(t)+'</button>';
+    }).join('')+'</div>';
+  } else if(opts.tags && opts.tags.length){
     sub += '<div class="tags">'+opts.tags.map(function(t){return '<span class="tag">'+escapeHtml(t)+'</span>';}).join('')+'</div>';
   }
   var right = valChipHtml(etat);
@@ -596,8 +735,17 @@ function rowHtml(kind, num, title, etat, opts){
 
 /* Délégation de clic : ouvrir le détail depuis n'importe quelle .row */
 document.addEventListener('click', function(e){
+  var chip = e.target.closest('.sec-chip');
+  if(chip){ e.stopPropagation(); e.preventDefault(); openDetail('ccn', chip.dataset.num, chip.dataset.target); }
+}, true);
+document.addEventListener('click', function(e){
+  if(e.target.closest('.sec-chip')) return;
   var row = e.target.closest('.row');
   if(row){ openDetail(row.dataset.kind, row.dataset.num); }
+});
+document.addEventListener('click', function(e){
+  var d = e.target.closest('.dym-q');
+  if(d){ var q=document.getElementById('q'); q.value=d.dataset.q; hideSuggest(); clearTimeout(window.__st); runSearch(); q.focus(); }
 });
 document.addEventListener('keydown', function(e){
   if((e.key==='Enter'||e.key===' ') && document.activeElement && document.activeElement.classList.contains('row')){
@@ -659,6 +807,182 @@ function resolveMetier(tokens){
     }
   });
   return {idSet:idSet, explained:explained};
+}
+
+/* ============================================================================
+   MOTEUR v2 — tolérance aux fautes (fuzzy), termes juridiques, mot->catégorie,
+   scoring IDENTITÉ (quelle convention) + SUJET (quel thème), sections cliquables.
+   ==========================================================================*/
+function levBounded(a,b,max){
+  var la=a.length, lb=b.length; if(Math.abs(la-lb)>max) return max+1;
+  var prev=new Array(lb+1), cur=new Array(lb+1), i,j;
+  for(j=0;j<=lb;j++) prev[j]=j;
+  for(i=1;i<=la;i++){ cur[0]=i; var best=cur[0];
+    for(j=1;j<=lb;j++){ var c=a.charCodeAt(i-1)===b.charCodeAt(j-1)?0:1;
+      cur[j]=Math.min(prev[j]+1,cur[j-1]+1,prev[j-1]+c); if(cur[j]<best)best=cur[j]; }
+    if(best>max) return max+1; var t=prev; prev=cur; cur=t; }
+  return prev[lb];
+}
+/* Synonymes/termes juridiques EN PLUS de SYN_RAW (fusionnés dans le moteur) */
+var SYN_EXTRA = {
+ 'contingent':['heures supplementaires','contingent annuel'],'majoration':['taux majore','heures supplementaires'],'majo':['majoration'],'bonification':['majoration'],
+ 'grille':['minima','salaire','coefficient'],'coef':['coefficient'],'minima':['minimum conventionnel','salaire'],'remuneration':['salaire'],'appointements':['salaire'],'bareme':['grille','salaire'],
+ 'astreinte':['permanence'],'annualisation':['modulation'],'amenagement':['modulation','forfait'],'jrtt':['rtt','repos'],'anciennete':['prime d anciennete'],
+ 'essai':['periode d essai'],'maladie':['arret de travail'],'nuit':['travail de nuit'],'dimanche':['travail du dimanche'],'prime':['indemnite'],'indemnite':['prime'],
+ 'rupture conv':['rupture conventionnelle'],'stc':['solde de tout compte'],'precarite':['prime de precarite'],'prudhommes':['conseil de prud hommes'],'prud hommes':['conseil de prud hommes'],'abandon':['abandon de poste'],'requalification':['cdd cdi'],'maternite':['conge maternite'],'paternite':['conge paternite']
+};
+/* Mot/bigramme de la requête -> catégories de section DÉJÀ produites par le pipeline */
+var CAT_KEYWORDS_RAW = {
+  contingent_hs:['contingent','contingent annuel','quota','heures supplementaires','heure sup','220 heures'],
+  majoration_hs:['majoration','majore','taux majore','bonification','majorations','majo','travail de nuit','travail du dimanche','heures de nuit'],
+  primes:['prime','primes','prime d anciennete','anciennete','prime de precarite','precarite','13e mois','treizieme mois','prime annuelle','prime de vacances','gratification'],
+  minima_salariaux:['salaire','salaires','minima','minimum','grille','grilles','coefficient','remuneration','appointements','bareme','smic conventionnel','minimum conventionnel'],
+  temps_partiel:['temps partiel','partiel','heures complementaires'],
+  astreintes:['astreinte','astreintes','permanence'],
+  teletravail:['teletravail','travail a distance','distanciel'],
+  modulation_annualisation:['modulation','annualisation','amenagement','forfait','forfait jours','forfait heures','forfait annuel'],
+  repos:['repos','repos compensateur','contrepartie en repos','contrepartie obligatoire en repos','jrtt','rtt','reduction du temps de travail'],
+  contrat_essai:['periode d essai','essai','requalification','clause de non concurrence','clause de mobilite','cdd','cdi'],
+  rupture_preavis:['preavis','rupture','licenciement','demission','depart','indemnite de licenciement','rupture conventionnelle','solde de tout compte','abandon de poste'],
+  conges:['conge','conges','conges payes','conges exceptionnels','conge maternite','conge paternite','conge parental','jours feries','jour ferie'],
+  duree_travail:['duree du travail','temps de travail','35 heures','horaire','amplitude','duree']
+};
+var ENG = null;
+function getENG(){
+  if(ENG) return ENG; buildCcnMaps();
+  var E={};
+  E.ccnHits={}; (SEARCH.ccn||[]).forEach(function(c){ E.ccnHits[String(c.num)]=c.hits||[]; });
+  E.idccSet={}; (INDEX.ccn||[]).forEach(function(it){ E.idccSet[stripZeros(String(it.num))]=1; });
+  E.ccnCats={}; (SEARCH.ccn||[]).forEach(function(c){ var s={}; (c.hits||[]).forEach(function(h){ (h.cats||(h.cat?[h.cat]:[])).forEach(function(ct){ s[ct]=1; }); }); E.ccnCats[String(c.num)]=s; });
+  // SYN fusionné (SYN_RAW + SYN_EXTRA)
+  E.SYN={}; function addSyn(map){ Object.keys(map).forEach(function(k){ var kn=normaliser(k); E.SYN[kn]=(E.SYN[kn]||[]).concat(map[k].map(normaliser)); }); }
+  addSyn(SYN_RAW); addSyn(SYN_EXTRA);
+  // mot -> catégories
+  E.catByKw={}; Object.keys(CAT_KEYWORDS_RAW).forEach(function(cat){ CAT_KEYWORDS_RAW[cat].forEach(function(kw){ kw=normaliser(kw); (E.catByKw[kw]=E.catByKw[kw]||[]).push(cat); }); });
+  // métiers : phrases (PRO déjà normalisé) + index par mot
+  E.metierWord={};
+  function _feedMW(ph,ids){ ph.split(' ').forEach(function(w){ if(w.length>=4 && !STOP[w]){ var s=E.metierWord[w]=E.metierWord[w]||{}; ids.forEach(function(id){ s[String(id)]=true; }); } }); }
+  Object.keys(PRO).forEach(function(ph){ _feedMW(ph, PRO[ph]); });
+  Object.keys(ALIAS).forEach(function(a){ _feedMW(a, ALIAS[a]); });
+  // VOCAB fuzzy (titres CCN, secteurs, titres de sections, métiers, catégories, synonymes)
+  var v={}; function aw(str){ normaliser(str).split(' ').forEach(function(w){ if(w.length>=4) v[w]=1; }); }
+  (INDEX.ccn||[]).forEach(function(it){ aw(it.title); });
+  if(CCN_SECTOR_MAP) Object.keys(CCN_SECTOR_MAP).forEach(function(id){ aw(CCN_SECTOR_MAP[id]); });
+  (SEARCH.ccn||[]).forEach(function(c){ (c.hits||[]).forEach(function(h){ aw(h.title); aw(h.kw); }); });
+  Object.keys(PRO).forEach(aw); Object.keys(ALIAS).forEach(aw); Object.keys(E.catByKw).forEach(aw);
+  Object.keys(E.SYN).forEach(function(k){ aw(k); E.SYN[k].forEach(aw); });
+  if(TRENDS){ (TRENDS.terms||[]).forEach(function(p){ aw(p[0]); }); (TRENDS.phrases||[]).forEach(function(p){ aw(p[0]); }); }
+  E.vocabSet=v;
+  E.vocabByLen={}; Object.keys(v).forEach(function(w){ (E.vocabByLen[w.length]=E.vocabByLen[w.length]||[]).push(w); });
+  E._fz={};
+  // IDF : rareté des termes (document = 1 CCN agrégée, ou 1 article/décision)
+  E.df=Object.create(null); E.N=0;
+  function _addDoc(text){ E.N++; var seen=Object.create(null);
+    normaliser(text).split(' ').forEach(function(w){ if(w.length>=2 && !seen[w]){ seen[w]=1; E.df[w]=(E.df[w]||0)+1; } }); }
+  (INDEX.ccn||[]).forEach(function(it){ var id=it.num, h=E.ccnHits[id]||[];
+    _addDoc(it.title+' '+((CCN_SECTOR_MAP&&CCN_SECTOR_MAP[id])?CCN_SECTOR_MAP[id]:'')+' '+h.map(function(x){return x.title+' '+(x.kw||'');}).join(' ')); });
+  [SEARCH.code, SEARCH.code_secu, SEARCH.juris].forEach(function(l){ (l||[]).forEach(function(a){ _addDoc((a.num||'')+' '+(a.title||'')+' '+(a.snippet||'')); }); });
+  ENG=E; return E;
+}
+function idf(term){ var E=getENG(); return Math.log(1 + E.N/(1+(E.df[term]||0))); }
+function fuzzyExpand(tok){
+  var E=getENG(); if(tok.length<4) return []; if(E._fz[tok]) return E._fz[tok];
+  var max=tok.length<=6?1:2, out=[];
+  for(var L=tok.length-max; L<=tok.length+max; L++){ var b=E.vocabByLen[L]; if(!b) continue;
+    for(var i=0;i<b.length;i++){ var w=b[i]; if(w===tok) continue; if(max<2 && w[0]!==tok[0]) continue; if(levBounded(tok,w,max)<=max) out.push(w); } }
+  out=out.slice(0,6); E._fz[tok]=out; return out;
+}
+function variantsOf(tok){
+  var E=getENG(), set={}; set[tok]=1;
+  fuzzyExpand(tok).forEach(function(w){ set[w]=1; });
+  (E.SYN[tok]||[]).forEach(function(s){ s.split(' ').forEach(function(w){ if(w.length>=2) set[w]=1; }); });
+  return Object.keys(set);
+}
+function catsForToken(vars){ var E=getENG(), cats={}; vars.forEach(function(v){ (E.catByKw[v]||[]).forEach(function(c){ cats[c]=1; }); }); return Object.keys(cats); }
+
+/* Recherche CCN v2 : identité (titre/secteur/métier) + sujet (catégorie/section) */
+function searchCCNv2(tokens, rawNorm){
+  var E=getENG();
+  var metPhrase={}; Object.keys(PRO).forEach(function(ph){ if(rawNorm.indexOf(ph)!==-1){ PRO[ph].forEach(function(id){ metPhrase[String(id)]=true; }); } });
+  var padR=' '+rawNorm+' ';
+  Object.keys(ALIAS).forEach(function(a){ if(padR.indexOf(' '+a+' ')!==-1){ ALIAS[a].forEach(function(id){ metPhrase[String(id)]=true; }); } });
+  tokens.forEach(function(t){ if(/^\d{3,4}$/.test(t)){ var z=stripZeros(t); if(!E.idccSet[z] && BROCHURE[z]){ BROCHURE[z].forEach(function(id){ metPhrase[String(id)]=true; }); } } });
+  var V={},C={},MW={};
+  tokens.forEach(function(t){ var v=variantsOf(t); V[t]=v; C[t]=catsForToken(v);
+    var m={}; v.forEach(function(w){ if(E.metierWord[w]) Object.keys(E.metierWord[w]).forEach(function(id){ m[id]=1; }); }); MW[t]=m; });
+  var res=[];
+  (INDEX.ccn||[]).forEach(function(it){
+    var id=it.num, hits=E.ccnHits[id]||[], cats=E.ccnCats[id]||{};
+    var titleHay = it._ht || (it._ht = normaliser(it.title)+' '+((CCN_SECTOR_MAP&&CCN_SECTOR_MAP[id])?CCN_SECTOR_MAP[id]:''));
+    var identity=0, topic=0, topicIdf=0, secMap={}, exactIdcc=false;
+    tokens.forEach(function(t){
+      var v=V[t], hitId=false;
+      if(/^\d{2,}$/.test(t) && stripZeros(t)===stripZeros(String(id))){ hitId=true; exactIdcc=true; }
+      if(hayHas(titleHay,v)) hitId=true;
+      if(metPhrase[id]) hitId=true;
+      if(MW[t][id]) hitId=true;
+      if(hitId) identity++;
+      var hitTop=false;
+      C[t].forEach(function(cat){ if(cats[cat]) hitTop=true; });
+      hits.forEach(function(h){ if(hayHas(normaliser(h.title),v) || hayHas(normaliser(h.kw||''),v)){ hitTop=true; secMap[h.title]=h; } });
+      if(hitTop){ topic++; topicIdf += idf(t); C[t].forEach(function(cat){ hits.forEach(function(h){ if((h.cats&&h.cats.indexOf(cat)!==-1)||h.cat===cat) secMap[h.title]=h; }); }); }
+    });
+    if(metPhrase[id]) identity=Math.max(identity,1);
+    var total=identity+topic; if(total===0) return;
+    var secs=Object.keys(secMap).map(function(k){ return secMap[k]; }).slice(0,5);
+    var launchpad=false;
+    if(identity>0 && topic===0 && !secs.length && hits.length){
+      var ord=['contingent_hs','majoration_hs','minima_salariaux','duree_travail','temps_partiel','modulation_annualisation','astreintes','repos','conges','rupture_preavis'];
+      var byCat={}; hits.forEach(function(h){ var c=h.cat||(h.cats&&h.cats[0]); if(c && !byCat[c]) byCat[c]=h; });
+      secs=ord.map(function(c){ return byCat[c]; }).filter(Boolean).slice(0,4);
+      if(!secs.length) secs=hits.slice(0,4);
+      launchpad=true;
+    }
+    var pfx = normaliser(it.title).indexOf(tokens[0])===0?15:0;
+    var phraseBonus = (tokens.length>=2 && titleHay.indexOf(tokens.join(' '))!==-1)?60:0;
+    var score = identity*1000 + topic*300 + Math.round(topicIdf*6) + (exactIdcc?5000:0) + (metPhrase[id]?200:0) + pfx + phraseBonus + secs.length*5;
+    res.push({num:id, title:it.title, etat:it.etat, source:it.source, identity:identity, topic:topic, cover:total, sections:secs, launchpad:launchpad, exact:exactIdcc, score:score});
+  });
+  res.sort(function(a,b){ return b.score-a.score; });
+  return res;
+}
+/* Recherche articles v2 (variantes fuzzy + numéro exact/préfixe + phrase) */
+function searchArticlesV2(list, tokens){
+  var V={}; tokens.forEach(function(t){ V[t]=variantsOf(t); });
+  var phrase=tokens.join(' ');
+  var out=[];
+  (list||[]).forEach(function(a){
+    var hay = a._h || (a._h = normaliser((a.num||'')+' '+(a.snippet||'')+' '+(a.title||'')));
+    var cnum = a._cn || (a._cn = normaliser(a.num||'').replace(/ /g,''));
+    var covered=0, idfB=0, pad=' '+hay+' ';
+    tokens.forEach(function(t){ var matched=null, vv=V[t];
+      for(var i=0;i<vv.length;i++){ if(hay.indexOf(vv[i])!==-1){ matched=vv[i]; break; } }
+      if(matched){ covered++; idfB += idf(matched)*8 + (pad.indexOf(' '+matched+' ')!==-1?15:0); } });
+    var numExact=false, numPref=false;
+    tokens.forEach(function(t){ var ct=t.replace(/ /g,''); if(!ct) return;
+      if(cnum===ct) numExact=true;
+      else if(ct.length>=3 && cnum.indexOf(ct)===0) numPref=true;
+      else if(/^[0-9]+$/.test(ct) && ct.length>=3 && cnum.indexOf(ct)!==-1) numPref=true; });
+    if(covered===0 && !numExact && !numPref) return;
+    var phraseBonus=(tokens.length>=2 && hay.indexOf(phrase)!==-1)?120:0;
+    var score = covered*100 + (numExact?4000:0) + (numPref?300:0) + phraseBonus + Math.round(idfB);
+    out.push({num:a.num, title:a.title||('Article '+a.num), snippet:a.snippet||'', etat:a.etat?shortEtat(a.etat):'?', cover:covered||1, score:score});
+  });
+  out.sort(function(a,b){ return b.score-a.score; });
+  return out;
+}
+
+/* "Vouliez-vous dire" : corrige les tokens absents du vocabulaire */
+function bestFuzzy(tok){
+  var E=getENG(); if(tok.length<4 || E.vocabSet[tok]) return null;
+  var cands=fuzzyExpand(tok); if(!cands.length) return null;
+  var max=tok.length<=6?1:2, best=null, bd=99;
+  cands.forEach(function(w){ var d=levBounded(tok,w,max); if(d<bd || (d===bd && best && w.length<best.length)){ bd=d; best=w; } });
+  return best;
+}
+function didYouMean(tokens){
+  var changed=false, out=tokens.map(function(t){ var b=bestFuzzy(t); if(b && b!==t){ changed=true; return b; } return t; });
+  return changed ? out.join(' ') : null;
 }
 
 function searchCCN(tokens){
@@ -737,11 +1061,14 @@ function runSearch(){
     return;
   }
 
+  var rawNorm = normaliser(raw);
+  var dym = didYouMean(tokens);
   var terms = expandTerms(tokens);
-  var ccn = searchCCN(tokens).slice(0,40);
-  var code = searchArticles(SEARCH.code, tokens, 'code').slice(0,30);
-  var secu = searchArticles(SEARCH.code_secu, tokens, 'secu').slice(0,20);
-  var juris = searchArticles(SEARCH.juris, tokens, 'juris').slice(0,15);
+  tokens.forEach(function(t){ fuzzyExpand(t).forEach(function(w){ if(terms.indexOf(w)===-1) terms.push(w); }); });
+  var ccn = searchCCNv2(tokens, rawNorm).slice(0,40);
+  var code = searchArticlesV2(SEARCH.code, tokens).slice(0,30);
+  var secu = searchArticlesV2(SEARCH.code_secu, tokens).slice(0,20);
+  var juris = searchArticlesV2(SEARCH.juris, tokens).slice(0,15);
 
   var html = '';
   var multi = tokens.length>=2;
@@ -755,7 +1082,10 @@ function runSearch(){
 
   if(ccn.length){
     html += '<div class="group-title">Conventions collectives · '+ccn.length+'</div><div class="rows">';
-    html += ccn.map(function(r){ return rowHtml('ccn', r.num, r.title, r.etat, {tags:r.tags, source:r.source}); }).join('');
+    html += ccn.map(function(r){
+      var snip = (r.sections[0] && r.sections[0].kw) ? excerpt(r.sections[0].kw, terms, 150) : '';
+      return rowHtml('ccn', r.num, r.title, r.etat, {snippet:snip, sections:r.sections, launchpad:r.launchpad, source:r.source});
+    }).join('');
     html += '</div>';
   }
   if(code.length){
@@ -776,6 +1106,7 @@ function runSearch(){
   if(!html){
     html = '<div class="empty"><div class="big">Rien trouvé pour ces mots.</div>Essayez un métier plutôt qu\'un terme technique, retirez un mot-clé, ou vérifiez l\'orthographe.</div>';
   }
+  if(dym){ html = '<div class="dym">Vouliez-vous dire <button type="button" class="dym-q" data-q="'+escAttr(dym)+'">'+escapeHtml(dym)+'</button> ?</div>' + html; }
   box.innerHTML = html;
 }
 
@@ -784,7 +1115,220 @@ document.getElementById('q').addEventListener('keydown', function(e){ if(e.key==
 document.getElementById('go').addEventListener('click', runSearch);
 document.getElementById('q').addEventListener('input', function(){
   clearTimeout(window.__st); window.__st = setTimeout(runSearch, 160);
+  renderSuggest();
 });
+
+/* ============================================================================
+   PRÉDICTION (autocomplétion) — conventions (nom/IDCC), métiers, thèmes
+   ==========================================================================*/
+var SUGGEST=null;
+function getSuggest(){
+  if(SUGGEST) return SUGGEST; buildCcnMaps();
+  var list=[], seen={};
+  // Conventions par nom (CCN_LISTE si dispo, sinon titres du manifeste)
+  if(CCN_LISTE && CCN_LISTE.length){
+    CCN_LISTE.forEach(function(c){ var id=String(c.i!=null?c.i:(c.idcc!=null?c.idcc:'')); var nm=c.n||''; if(!id||!nm) return;
+      list.push({t:nm, k:normaliser(nm), sub:'Convention · IDCC '+id, type:'ccn', num:id}); });
+  } else {
+    (INDEX.ccn||[]).forEach(function(it){ list.push({t:it.title, k:normaliser(it.title), sub:'Convention · IDCC '+it.num, type:'ccn', num:it.num}); });
+  }
+  // Surnoms de conventions (Syntec, HCR, CCN 66, BTP…) — prédits directement
+  Object.keys(CCN_ALIAS_RAW).forEach(function(a){ var k=normaliser(a); if(seen['a'+k])return; seen['a'+k]=1;
+    list.push({t:a, k:k, sub:'Convention (nom courant)', type:'ccn'}); });
+  // Métiers (clés PRO_RAW)
+  Object.keys(PRO_RAW).forEach(function(m){ var k=normaliser(m); if(seen['m'+k])return; seen['m'+k]=1;
+    list.push({t:m, k:k, sub:'Métier', type:'metier'}); });
+  // Thèmes (catégories + quelques synonymes utiles)
+  var themes={'Contingent d\'heures supplémentaires':'contingent','Majoration des heures supplémentaires':'majoration',
+    'Minima salariaux / grille':'salaire minima','Durée du travail':'duree du travail','Astreintes':'astreinte',
+    'Temps partiel / heures complémentaires':'temps partiel','Modulation / annualisation':'modulation',
+    'Repos compensateur':'repos compensateur','Congés payés':'conges payes','Préavis / rupture':'preavis',
+    'Forfait jours':'forfait jours','13e mois / prime annuelle':'13e mois','Droit à la déconnexion':'deconnexion',
+    'Rupture conventionnelle':'rupture conventionnelle','Période d\'essai':'periode essai','Prime d\'ancienneté':'prime anciennete',
+    'Prime de précarité (CDD)':'prime precarite','Solde de tout compte':'solde tout compte','Télétravail':'teletravail',
+    'Arrêt maladie':'arret maladie','Harcèlement moral / sexuel':'harcelement','Prud\'hommes / recours':'prud hommes',
+    'Requalification CDD → CDI':'requalification','Congé maternité / paternité':'conge maternite','Travail de nuit':'travail de nuit'};
+  Object.keys(themes).forEach(function(lbl){ list.push({t:lbl, k:normaliser(themes[lbl]), sub:'Thème', type:'theme', fill:themes[lbl]}); });
+  // Mode évolutif : mots/expressions les plus fréquents du corpus (+ demande réelle)
+  if(TRENDS){
+    var addedT={};
+    (TRENDS.phrases||[]).slice(0,60).forEach(function(p){ var k=normaliser(p[0]); if(k.length<4||addedT[k]||seen['t'+k])return; addedT[k]=1; list.push({t:p[0], k:k, sub:'Fréquent', type:'trend'}); });
+    (TRENDS.terms||[]).slice(0,140).forEach(function(p){ var k=normaliser(p[0]); if(k.length<4||addedT[k]||seen['t'+k])return; addedT[k]=1; list.push({t:p[0], k:k, sub:'Fréquent', type:'trend'}); });
+  }
+  SUGGEST=list; return list;
+}
+var ART=null;
+function getArt(){
+  if(ART) return ART; ART=[];
+  function add(list, kind){ (list||[]).forEach(function(a){ var num=a.num||''; if(!num) return; ART.push({num:num, kind:kind, cnum:normaliser(num).replace(/ /g,'')}); }); }
+  add(SEARCH.code,'code'); add(SEARCH.code_secu,'secu');
+  return ART;
+}
+function boldPrefix(label, pfx){
+  if(!pfx) return escapeHtml(label);
+  var ln=normaliser(label);
+  if(ln.length!==label.length) return escapeHtml(label); // évite un décalage rare (ligatures)
+  var i=ln.indexOf(pfx);
+  if(i<0) return escapeHtml(label);
+  return escapeHtml(label.slice(0,i))+'<b>'+escapeHtml(label.slice(i,i+pfx.length))+'</b>'+escapeHtml(label.slice(i+pfx.length));
+}
+function computeSuggest(value){
+  var qn=normaliser(value); if(qn.length<2) return [];
+  var m=value.match(/^(.*\s)?(\S*)$/), head=m[1]||'', last=normaliser(m[2]||'');
+  var items=getSuggest(), out=[], used={};
+  function push(it, mode, score, pfx){
+    var applied = (mode==='all') ? ((it.fill||it.t)+' ') : (head+(it.fill||it.t)+' ');
+    var key=it.type+'|'+it.k+'|'+applied; if(used[key])return; used[key]=1;
+    out.push({t:it.t, sub:it.sub, type:it.type, applied:applied, score:score, pfx:pfx});
+  }
+  items.forEach(function(it){
+    if(it.k.indexOf(qn)===0) push(it,'all',4,qn);                     // le tout, en préfixe (ex. "commerce de gr")
+    else if(qn.length>=3 && it.k.indexOf(qn)!==-1) push(it,'all',2,qn); // le tout, contenu
+    if(last.length>=2 && it.k.indexOf(last)===0 && last!==qn) push(it,'last',3,last); // dernier mot (ex. "coiffeuse con")
+  });
+  // Prédiction de numéros d'articles (ex. "L3121" -> vrais articles)
+  var lc=last.replace(/ /g,'');
+  if(lc.length>=3 && /^[lrd]?[0-9]/.test(lc)){
+    var arts=getArt(), n=0;
+    for(var ai=0; ai<arts.length && n<5; ai++){ if(arts[ai].cnum.indexOf(lc)===0){ n++;
+      out.push({t:arts[ai].num, sub:(arts[ai].kind==='secu'?'Article · Sécurité sociale':'Article · Code du travail'),
+                type:'article', applied:head+arts[ai].num+' ', score:6, pfx:last}); } }
+  }
+  out.sort(function(a,b){ return (b.score-a.score) || (a.t.length-b.t.length); });
+  return out.slice(0,8);
+}
+var SUG_ACTIVE=-1, SUG_ITEMS=[];
+function renderSuggest(){
+  var box=document.getElementById('suggest'), val=document.getElementById('q').value;
+  SUG_ITEMS=computeSuggest(val); SUG_ACTIVE=-1;
+  if(!SUG_ITEMS.length){ box.hidden=true; box.innerHTML=''; return; }
+  var icoMap={ccn:'C',metier:'M',theme:'§',article:'A',trend:'↑'};
+  box.innerHTML = SUG_ITEMS.map(function(s,i){
+    return '<div class="suggest-item" data-i="'+i+'">'+
+      '<span class="si-ico">'+icoMap[s.type]+'</span>'+
+      '<span class="si-main"><span class="si-t">'+boldPrefix(s.t,s.pfx)+'</span><span class="si-s">'+escapeHtml(s.sub)+'</span></span>'+
+      '<span class="si-go">↵</span></div>';
+  }).join('');
+  box.hidden=false;
+}
+function applySuggest(i){
+  var s=SUG_ITEMS[i]; if(!s) return;
+  var q=document.getElementById('q'); q.value=s.applied; hideSuggest();
+  clearTimeout(window.__st); runSearch(); q.focus();
+}
+function hideSuggest(){ var b=document.getElementById('suggest'); b.hidden=true; b.innerHTML=''; SUG_ITEMS=[]; SUG_ACTIVE=-1; }
+(function(){
+  var box=document.getElementById('suggest');
+  box.addEventListener('mousedown', function(e){ e.preventDefault(); }); // garde le focus
+  box.addEventListener('click', function(e){ var it=e.target.closest('.suggest-item'); if(it) applySuggest(parseInt(it.dataset.i,10)); });
+  var q=document.getElementById('q');
+  q.addEventListener('keydown', function(e){
+    if(document.getElementById('suggest').hidden) return;
+    if(e.key==='ArrowDown'||e.key==='ArrowUp'){
+      e.preventDefault(); if(!SUG_ITEMS.length) return;
+      SUG_ACTIVE = (e.key==='ArrowDown') ? (SUG_ACTIVE+1)%SUG_ITEMS.length : (SUG_ACTIVE<=0?SUG_ITEMS.length-1:SUG_ACTIVE-1);
+      Array.prototype.forEach.call(box.querySelectorAll('.suggest-item'), function(el,idx){ el.classList.toggle('act', idx===SUG_ACTIVE); });
+    } else if(e.key==='Enter'){
+      if(SUG_ACTIVE>=0){ e.preventDefault(); e.stopPropagation(); applySuggest(SUG_ACTIVE); }
+      else hideSuggest();
+    } else if(e.key==='Escape'){ hideSuggest(); }
+  });
+  q.addEventListener('blur', function(){ setTimeout(hideSuggest, 120); });
+  q.addEventListener('focus', function(){ if(q.value) renderSuggest(); });
+  document.getElementById('go').addEventListener('click', hideSuggest);
+})();
+
+/* ============================================================================
+   FINDER « Je ne connais pas ma convention » — guidage hors-ligne
+   (secteur + métier/activité -> conventions candidates, à partir des dicos)
+   ==========================================================================*/
+var SECTEURS = [
+ {l:'Bâtiment / BTP', v:[1596,1597,2609,2420]},
+ {l:'Travaux publics', v:[1702,2614,3212]},
+ {l:'Commerce', v:[573,1517,2216,1505]},
+ {l:'Hôtellerie-restauration', v:[1979,1501]},
+ {l:'Santé & médico-social', v:[413,29,2264,3127]},
+ {l:'Aide à domicile', v:[2941]},
+ {l:'Métallurgie & industrie', v:[3248]},
+ {l:'Propreté & sécurité', v:[3043,1351]},
+ {l:'Transport & logistique', v:[16]},
+ {l:'Coiffure & esthétique', v:[2596,3032]},
+ {l:'Services & conseil (numérique)', v:[1486,2098,3219]},
+ {l:'Automobile', v:[1090]},
+ {l:'Immobilier', v:[1527]},
+ {l:'Banque & assurance', v:[2120,1672]},
+ {l:'Pharmacie / officine', v:[1996]},
+ {l:'Particuliers employeurs', v:[3239]}
+];
+var IDCC_NAMES = {
+ '1596':'Bâtiment — ouvriers (≤ 10 salariés)','1597':'Bâtiment — ouvriers (> 10 salariés)','2609':'Bâtiment — ETAM','2420':'Bâtiment & TP — ingénieurs et cadres',
+ '1702':'Travaux publics — ouvriers','2614':'Travaux publics — ETAM','3212':'Travaux publics — cadres',
+ '573':'Commerce de gros','1517':'Commerce de détail non alimentaire','2216':'Commerce de détail et de gros à prédominance alimentaire','1505':'Commerce de détail alimentaire (< 11 salariés)',
+ '1979':'Hôtels, cafés, restaurants (HCR)','1501':'Restauration rapide',
+ '413':'Établissements pour personnes inadaptées et handicapées (CCN 66)','29':'Hospitalisation privée à but non lucratif (FEHAP / CCN 51)','2264':'Hospitalisation privée (FHP)','3127':'Entreprises de services à la personne',
+ '2941':'Aide, accompagnement, soins à domicile (BAD)',
+ '3248':'Métallurgie (convention nationale)',
+ '3043':'Propreté et services associés','1351':'Prévention et sécurité (sécurité privée)',
+ '16':'Transports routiers et activités auxiliaires',
+ '2596':'Coiffure','3032':'Esthétique — cosmétique',
+ '1486':'Bureaux d’études techniques (Syntec)','2098':'Prestataires de services du secteur tertiaire','3219':'Portage salarial',
+ '1090':'Services de l’automobile','1527':'Immobilier','2120':'Banque','1672':'Sociétés d’assurances',
+ '1996':'Pharmacie d’officine','843':'Boulangerie-pâtisserie artisanale','3239':'Particuliers employeurs',
+ '2150':'Personnel des sociétés HLM','1431':'Optique-lunetterie de détail','1606':'Bricolage','2156':'Grands magasins et magasins populaires',
+ '2128':'Mutualité','2148':'Télécommunications','2121':'Édition','2205':'Notariat','2511':'Sport','1518':'Animation (ÉCLAT)'
+};
+function idccName(num){
+  num=String(num);
+  var it=(INDEX.ccn||[]).filter(function(x){return String(x.num)===num;})[0];
+  if(it && it.title) return it.title;
+  var c=(CCN_LISTE||[]).filter(function(x){return String(x.i!=null?x.i:x.idcc)===num;})[0];
+  if(c && c.n) return c.n;
+  return IDCC_NAMES[num] || ('Convention n° '+num);
+}
+function idccInData(num){ num=String(num); return (INDEX.ccn||[]).some(function(x){return String(x.num)===num;}); }
+function finderCard(num){
+  num=String(num); var inD=idccInData(num);
+  return '<div class="finder-card'+(inD?'':' dim')+'"'+(inD?(' data-num="'+escAttr(num)+'"'):'')+'>'+
+    '<div><div class="fc-name">'+escapeHtml(idccName(num))+'</div>'+
+    '<div class="fc-idcc">IDCC '+escapeHtml(num)+(inD?'':' · pas encore chargée dans l’app')+'</div></div>'+
+    '<div class="fc-go">'+(inD?'Ouvrir →':'Identifiée')+'</div></div>';
+}
+function renderFinderCards(nums){
+  var box=document.getElementById('finder-res');
+  var seen={}, uniq=[]; nums.forEach(function(n){ n=String(n); if(!seen[n]){ seen[n]=1; uniq.push(n); } });
+  if(!uniq.length){ box.innerHTML='<div class="finder-empty">Aucune convention trouvée. Essayez un autre mot, un secteur ci-dessus, ou l’outil officiel.</div>'; return; }
+  box.innerHTML = uniq.slice(0,8).map(finderCard).join('');
+}
+function finderResolve(v){
+  var rawNorm=normaliser(v), out=[];
+  Object.keys(PRO).forEach(function(ph){ if(rawNorm.indexOf(ph)!==-1) PRO[ph].forEach(function(id){ out.push(String(id)); }); });
+  var padR=' '+rawNorm+' ';
+  Object.keys(ALIAS).forEach(function(a){ if(padR.indexOf(' '+a+' ')!==-1) ALIAS[a].forEach(function(id){ out.push(String(id)); }); });
+  var toks=tokenize(v);
+  if(toks.length){ searchCCNv2(toks, rawNorm).filter(function(r){return r.identity>0;}).slice(0,6).forEach(function(r){ out.push(String(r.num)); }); }
+  return out;
+}
+(function(){
+  var chips=document.getElementById('finder-chips'); if(!chips) return;
+  chips.innerHTML = SECTEURS.map(function(s,i){ return '<button type="button" class="finder-chip" data-i="'+i+'">'+escapeHtml(s.l)+'</button>'; }).join('');
+  chips.addEventListener('click', function(e){ var b=e.target.closest('.finder-chip'); if(!b) return;
+    Array.prototype.forEach.call(chips.querySelectorAll('.finder-chip'), function(el){ el.classList.remove('on'); });
+    b.classList.add('on');
+    var s=SECTEURS[parseInt(b.dataset.i,10)]; document.getElementById('finder-q').value='';
+    renderFinderCards(s.v.map(String));
+  });
+  var fq=document.getElementById('finder-q');
+  fq.addEventListener('input', function(){ clearTimeout(window.__ft);
+    var v=fq.value; window.__ft=setTimeout(function(){
+      if(!normaliser(v)){ document.getElementById('finder-res').innerHTML=''; return; }
+      Array.prototype.forEach.call(chips.querySelectorAll('.finder-chip'), function(el){ el.classList.remove('on'); });
+      renderFinderCards(finderResolve(v));
+    }, 180);
+  });
+  document.getElementById('finder-res').addEventListener('click', function(e){
+    var card=e.target.closest('.finder-card[data-num]'); if(card){ openDetail('ccn', card.dataset.num); }
+  });
+})();
 /* ============================================================================
    NAVIGATION par source + sous-catégories + liste INTÉGRALE (paginée)
    ==========================================================================*/
@@ -792,9 +1336,10 @@ var PAGE = 150;
 var BROWSE = { source:'ccn', sub:'all', filter:'', shown:PAGE };
 
 var CAT_LABELS = {
-  minima_salariaux:'Minima salariaux', contingent_hs:'Contingent HS', majoration_hs:'Majoration HS',
+  minima_salariaux:'Minima salariaux', primes:'Primes', contingent_hs:'Contingent HS', majoration_hs:'Majoration HS',
   duree_travail:'Durée du travail', astreintes:'Astreintes', temps_partiel:'Temps partiel',
-  modulation_annualisation:'Modulation', repos:'Repos', conges:'Congés', rupture_preavis:'Rupture / préavis'
+  modulation_annualisation:'Modulation', teletravail:'Télétravail', repos:'Repos', conges:'Congés',
+  contrat_essai:'Contrat / essai', rupture_preavis:'Rupture / préavis'
 };
 var LIVRE_TRAVAIL = {
   '1':'Relations individuelles','2':'Relations collectives','3':'Durée, salaire, épargne',
@@ -946,15 +1491,23 @@ function renderSections(sections){
     if(Array.isArray(s.sections) && s.sections.length) inner += renderSections(s.sections);
     if(Array.isArray(s.articles)) inner += s.articles.map(function(a){ return '<div class="sec-text">'+cleanHtml(a.content||a.texte||'')+'</div>'; }).join('');
     if(!t && !inner) return '';
-    return (t?'<div class="sec-title">'+escapeHtml(t)+'</div>':'')+inner;
+    return (t?'<div class="sec-title" data-t="'+escAttr(normaliser(t))+'">'+escapeHtml(t)+'</div>':'')+inner;
   }).join('');
+}
+function scrollToSection(target){
+  var tn = normaliser(target); if(!tn) return;
+  var nodes = document.getElementById('d-body').querySelectorAll('.sec-title'), found=null, i;
+  for(i=0;i<nodes.length;i++){ var dt=nodes[i].getAttribute('data-t')||''; if(dt===tn){ found=nodes[i]; break; } }
+  if(!found) for(i=0;i<nodes.length;i++){ var d2=nodes[i].getAttribute('data-t')||''; if(d2.indexOf(tn)!==-1 || tn.indexOf(d2)!==-1){ found=nodes[i]; break; } }
+  if(found){ try{ found.scrollIntoView({block:'center',behavior:'smooth'}); }catch(e){ found.scrollIntoView(); }
+    found.classList.add('sec-flash'); setTimeout(function(){ found.classList.remove('sec-flash'); }, 2600); }
 }
 function openPanel(){ document.getElementById('scrim').classList.add('open'); document.getElementById('panel').classList.add('open'); }
 function closeDetail(){ document.getElementById('scrim').classList.remove('open'); document.getElementById('panel').classList.remove('open'); }
 document.getElementById('scrim').addEventListener('click', closeDetail);
 document.getElementById('d-close').addEventListener('click', closeDetail);
 
-async function openDetail(kind, num){
+async function openDetail(kind, num, target){
   openPanel();
   document.getElementById('d-num').textContent = (kind==='ccn'?'IDCC ':'')+num;
   document.getElementById('d-title').textContent = 'Chargement…';
@@ -998,6 +1551,8 @@ async function openDetail(kind, num){
 
   var ex = document.getElementById('d-export');
   if(ex) ex.addEventListener('click', function(){ exportOne(kind, num, payload); });
+
+  if(target && kind==='ccn') setTimeout(function(){ scrollToSection(target); }, 60);
 }
 
 function htmlToText(html){
