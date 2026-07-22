@@ -150,13 +150,15 @@ def compose_titre(meta):
                            meta.get("chamber") or "")
     date = meta.get("decision_date") or meta.get("date") or ""
     num = numero_of(meta)
+    nums = meta.get("numbers") or meta.get("pourvois")
+    plusieurs = isinstance(nums, list) and len(nums) > 1
     parts = [p for p in [jur, ch] if p]
     tete = " ".join(parts).strip()
     bout = []
     if date:
         bout.append(date)
     if num:
-        bout.append(f"n° {num}")
+        bout.append(f"n° {num}" + (" e.a." if plusieurs else ""))
     titre = tete
     if bout:
         titre = (tete + ", " if tete else "") + ", ".join(bout)
