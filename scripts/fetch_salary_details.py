@@ -129,6 +129,12 @@ def main():
             continue
 
         stub_node, _ = best
+        # Deja recupere lors d'un run precedent : on NE re-telecharge PAS et on NE
+        # reecrit PAS le fichier. C'est ce re-telechargement systematique (a chaque run,
+        # pour chaque CCN) qui faisait bouger des centaines de fichiers pour rien.
+        if stub_node.get("_texte_complet_recupere"):
+            n_skipped += 1
+            continue
         text_id = stub_node.get('id') or stub_node.get('cid')
         print(f"[{i}/{len(ok_ids)}] IDCC {idcc}: récupération de '{stub_node.get('title','')[:50]}'...", end=" ")
 

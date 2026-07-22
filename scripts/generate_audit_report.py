@@ -57,6 +57,28 @@ def get_old_content(path):
     return content
 
 
+def _walk_counts(d):
+    """(#sections, #articles, #textes_intégraux_récupérés) en profondeur."""
+    ns = na = nc = 0
+    def walk(node):
+        nonlocal ns, na, nc
+        if not isinstance(node, dict):
+            return
+        if node.get("_texte_complet_recupere"):
+            nc += 1
+        na += len([a for a in (node.get("articles") or []) if isinstance(a, dict)])
+        for s in (node.get("sections") or []):
+            ns += 1
+            walk(s)
+    walk(d)
+    return ns, na, nc
+
+
+def _top_titles(d):
+    return set((s.get("title") or s.get("titre") or "").strip()
+               for s in (d.get("sections") or []) if isinstance(s, dict))
+
+
 def describe_ccn_change(path):
     """Résumé lisible d'un changement sur un fichier output/ccn/<idcc>.json."""
     try:
@@ -101,7 +123,24 @@ def describe_ccn_change(path):
             notes.append(f"+{new_n - old_n} clause(s) {label} nouvellement récupérée(s)")
 
     if not notes:
-        notes.append("contenu modifié (détail non catégorisé automatiquement, cf. git diff pour le détail complet)")
+        os_, oa_, oc_ = _walk_counts(old_data)
+        ns_, na_, nc_ = _walk_counts(new_data)
+        if nc_ > oc_:
+            notes.append(f"+{nc_ - oc_} clause(s) au texte intégral récupéré")
+        if ns_ != os_:
+            notes.append(f"{'+' if ns_ > os_ else ''}{ns_ - os_} section(s)")
+        if na_ != oa_:
+            notes.append(f"{'+' if na_ > oa_ else ''}{na_ - oa_} article(s)")
+        added = _top_titles(new_data) - _top_titles(old_data)
+        removed = _top_titles(old_data) - _top_titles(new_data)
+        if added:
+            notes.append("nouvelle(s) section(s) : " + ", ".join(sorted(t for t in added if t)[:3])[:120])
+        if removed:
+            notes.append("section(s) retirée(s) : " + ", ".join(sorted(t for t in removed if t)[:3])[:120])
+        if not notes:
+            # Même structure (mêmes sections/articles) mais octets différents : le plus
+            # souvent une simple réécriture (ordre des champs), pas un vrai changement de droit.
+            notes.append("réécriture sans changement de structure (probable ré-enregistrement, pas une modif Légifrance)")
 
     return f"IDCC {idcc} : " + " ; ".join(notes)
 

@@ -147,6 +147,8 @@ def main():
         print(f"[{i}/{len(ok_ids)}] IDCC {idcc}: {len(stubs)} stub(s) temps-partiel trouvé(s)")
         updated_any = False
         for stub_node in stubs:
+            if stub_node.get("_texte_complet_recupere"):
+                continue  # deja recupere : on ne re-telecharge ni ne reecrit (evite le churn)
             text_id = stub_node.get('id') or stub_node.get('cid')
             titre_court = (stub_node.get('title') or stub_node.get('titre') or '')[:60]
             print(f"    -> '{titre_court}'...", end=" ")
