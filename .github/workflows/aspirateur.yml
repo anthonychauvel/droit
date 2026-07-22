@@ -3,6 +3,10 @@ name: Aspirateur Légifrance (CCN + Code du travail)
 # Se lance à la main depuis l'onglet "Actions" de GitHub (bouton "Run workflow"),
 # accessible depuis Safari ou l'app GitHub sur iPhone. Pas besoin d'ordinateur.
 on:
+  # Veille automatique : re-vérifie tout chaque lundi à 6h du matin (heure serveur GitHub, UTC).
+  # Comme les résultats sont commités dans le repo, tout changement réel (nouvel avenant,
+  # texte modifié) apparaît comme un nouveau commit avec un diff -- historique des
+  # changements gratuit, sans rien construire de plus.
   # Veille : DEUX runs par semaine (lundi et jeudi, 6h UTC). Combiné à la
   # rotation sur 10 tranches, tout le corpus est repassé une fois toutes les
   # 5 semaines (2 tranches/semaine). Chaque run se commit -> historique gratuit.
@@ -114,6 +118,7 @@ jobs:
           # consultables immédiatement, puis PUSH LIVE (les changements partent tout
           # de suite, sans attendre la fin des étapes lentes qui suivent).
           python3 scripts/build_search_index.py --out output/search-index.json || true
+          python3 scripts/build_trends.py --out output/search-trends.json || true
           python3 scripts/build_manifest.py --out output/manifest.json || true
           git add output/ audits/ idcc_list_complet.txt all_articles_code_travail.txt all_articles_code_secu.txt 2>/dev/null || true
           if git diff --staged --quiet; then
@@ -249,6 +254,9 @@ jobs:
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
 
+          # Ne garde que les articles pas encore récupérés (reprise automatique si le run précédent
+          # a été coupé par le timeout GitHub de 6h -- pull_code_travail.py n'a pas de --only-missing
+          # intégré, donc on le fait ici en amont)
           python3 -c "
           import os
           with open('all_articles_code_travail.txt', encoding='utf-8') as f:
@@ -259,6 +267,8 @@ jobs:
               f.write(chr(10).join(restants))
           "
 
+          # Lots de 700 (~14 min/lot à 1.2s/appel) -- largement sous la limite de 6h par lot,
+          # avec un commit après CHAQUE lot pour ne jamais perdre de progression
           split -l 700 /tmp/restants.txt /tmp/lot_
           for lot in /tmp/lot_*; do
             n=$(wc -l < "$lot")
@@ -316,6 +326,7 @@ jobs:
         if: always()
         run: |
           python3 scripts/build_search_index.py --out output/search-index.json
+          python3 scripts/build_trends.py --out output/search-trends.json || true
 
       - name: "Construire le manifeste complet (liste intégrale + états validé/abrogé)"
         if: always()
