@@ -3532,12 +3532,101 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000045976877",
+              "cid": "KALIARTI000045976877",
+              "intOrdre": 524287,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000045976877",
+              "pathTitle": [],
+              "content": "<p align=\"left\">L'accord relatif aux barèmes de salaires minima garantis applicables aux employés et cadres des éditeurs de la presse magazine du 26 octobre 2021 est ainsi modifié :</p><p align=\"left\">À la suite de l'article 3 est inséré un nouvel article 4 ainsi rédigé :</p><p align=\"center\">« Article 4   Stipulations spécifiques pour les entreprises de moins de 50 salariés</p><p align=\"left\">En application de l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000035608942&dateTexte=&categorieLien=cid\">article L. 2261-23-1 du code du travail</a>, les signataires conviennent que le contenu du présent accord ne justifie pas de prévoir les stipulations spécifiques aux entreprises de moins de 50 salariés visés par l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000033012309&dateTexte=&categorieLien=cid\">article L. 2232-10-1 du code du travail</a>, dans la mesure où l'accord a vocation à s'appliquer à toutes les entreprises de la branche, quelle que soit leur taille. »</p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1",
+              "type": "AUTONOME",
+              "lstLienModification": [
+                {
+                  "textCid": "KALITEXT000045110300",
+                  "textTitle": "Salaires au 1er novembre 2021 - art. 5 (VNE)",
+                  "linkType": "CREE",
+                  "linkOrientation": "source",
+                  "articleNum": "5",
+                  "articleId": "KALIARTI000046048431",
+                  "natureText": "Accord",
+                  "datePubliTexte": "2022-02-02",
+                  "dateSignaTexte": "2021-10-26",
+                  "dateDebutCible": "2022-04-05"
+                },
+                {
+                  "textCid": "JORFTEXT000046096312",
+                  "textTitle": "Arrêté du 25 juillet 2022 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000046096315",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2022-07-27",
+                  "dateSignaTexte": "2022-07-25",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L2232-10-1",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L2232-10-1",
+                  "articleId": "LEGIARTI000033012309",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 1470787200000
+                },
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L2261-23-1",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L2261-23-1",
+                  "articleId": "LEGIARTI000035608942",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 1506211200000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1649116800000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,
