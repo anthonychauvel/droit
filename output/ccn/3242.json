@@ -10336,13 +10336,149 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
-          "articles": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000046366872",
+              "cid": "KALISCTA000046366872",
+              "intOrdre": 1048574,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Annexe",
+              "dateModif": null,
+              "dateDebut": "2022-07-01",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000046366873",
+                  "cid": "KALIARTI000046366873",
+                  "intOrdre": 524287,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000046366872/KALIARTI000046366873",
+                  "pathTitle": [
+                    "Annexe"
+                  ],
+                  "content": "<p align=\"center\">Annexe<br/>\nBarème des salaires des cadres</p><p>Augmentation applicable au 1er juillet 2022.</p><p>Valeur du point : + 1,80 % soit 13,332 €.</p><p align=\"right\">(En euros.)</p><center><table border=\"1\"><tbody><tr><th>Fonctions</th><th>Coefficient</th><th>Salaire brut</th></tr><tr><td>Niveau I.   Cadre opérationnel</td><td></td><td></td></tr><tr><td>Cadre opérationnel IA</td><td align=\"center\">158</td><td align=\"center\">2 106,46</td></tr><tr><td>Cadre opérationnel IB</td><td align=\"center\">170</td><td align=\"center\">2 266,44</td></tr><tr><td>Niveau II.   Cadre de direction</td><td align=\"center\">190</td><td align=\"center\">2 533,08</td></tr><tr><td>Niveau III.   Cadre dirigeant</td><td align=\"center\">210</td><td align=\"center\">2 799,72</td></tr></tbody></table></center><p align=\"center\"><em>Barème des salaires des employés</em><a href=\"#RENVOI_KALIARTI000046366873_1\"> (1)</a></p><p>Augmentation applicable au 1er juillet 2022.</p><p>Valeur du point au 1er juillet 2022 : + 1,80 % soit 4,064 €.</p><center><table border=\"1\"><tbody><tr><th rowspan=\"2\">Fonctions</th><th rowspan=\"2\">Coefficients</th><th colspan=\"2\">Salaire brut mensuel (base 35 heures hebdo)</th></tr><tr><th>Grille</th><th>Minima</th></tr><tr><td>Employé de presse</td><td rowspan=\"2\" align=\"center\">400 [1]</td><td rowspan=\"2\" align=\"center\">1 645,58 €</td><td rowspan=\"2\" align=\"center\">1 727,90 €</td></tr><tr><td>Employé d'entretien, de manutention</td></tr><tr><td>Employé d'entretien, de manutention confirmé</td><td rowspan=\"3\" align=\"center\">407 [1]</td><td rowspan=\"3\" align=\"center\">1 654,05 €</td><td rowspan=\"3\" align=\"center\">1 727,90 €</td></tr><tr><td>Employé de fabrication</td></tr><tr><td>Coursier – chauffeur</td></tr><tr><td>Coursier – chauffeur confirmé</td><td rowspan=\"6\" align=\"center\">414 [1]</td><td rowspan=\"6\" align=\"center\">1 682,50 €</td><td rowspan=\"6\" align=\"center\">1 727,90 €</td></tr><tr><td>Secrétaire d'accueil</td></tr><tr><td>Employé de presse 1er échelon</td></tr><tr><td>Aide comptable 1er échelon</td></tr><tr><td>Assistant en publicité</td></tr><tr><td>Animateur des ventes 1er échelon</td></tr><tr><td>Employé de fabrication 1er échelon</td><td rowspan=\"2\" align=\"center\">421 [1]</td><td rowspan=\"2\" align=\"center\">1 710,94 €</td><td rowspan=\"2\" align=\"center\">1 727,90 €</td></tr><tr><td>Correcteur</td></tr><tr><td>Employé de presse 2e échelon</td><td rowspan=\"4\" align=\"center\">428</td><td colspan=\"2\" rowspan=\"4\" align=\"center\">1 739,39 €</td></tr><tr><td>Aide comptable 2e échelon</td></tr><tr><td>Attaché commercial 1er échelon</td></tr><tr><td>Animateur des ventes 2e échelon</td></tr><tr><td>Employé de fabrication 2e échelon</td><td rowspan=\"2\" align=\"center\">435</td><td colspan=\"2\" rowspan=\"2\" align=\"center\">1 767,84 €</td></tr><tr><td>Correcteur confirmé</td></tr><tr><td>Employé de presse 3e échelon</td><td rowspan=\"2\" align=\"center\">447</td><td colspan=\"2\" rowspan=\"2\" align=\"center\">1 816,61 €</td></tr><tr><td>Comptable 1er échelon</td></tr><tr><td>Employé de fabrication 3e échelon</td><td rowspan=\"3\" align=\"center\">462</td><td colspan=\"2\" rowspan=\"3\" align=\"center\">1 877,57 €</td></tr><tr><td>Attaché commercial 2e échelon</td></tr><tr><td>Animateur des ventes 3e échelon</td></tr><tr><td>Employé de presse 4e échelon</td><td rowspan=\"2\" align=\"center\">480</td><td colspan=\"2\" rowspan=\"2\" align=\"center\">1 950,72 €</td></tr><tr><td>Secrétaire de direction</td></tr><tr><td>Employé de fabrication 4e échelon</td><td align=\"center\">500</td><td colspan=\"2\" align=\"center\">2 032,00 €</td></tr><tr><td>Comptable 2e échelon</td><td rowspan=\"2\" align=\"center\">520</td><td colspan=\"2\" rowspan=\"2\" align=\"center\">2 113,28 €</td></tr><tr><td>Assistant commercial</td></tr><tr><td colspan=\"4\">[1] Attention : le salaire minimum professionnel garanti (SMPG), directement issu de l'accord sur la RTT du 30/6/99 (art. 9), passe à 1 727,90 €. Le salaire réel des coefficients 400 à 421 ne peut donc, à ce jour, être inférieur à 1 727,90 €.</td></tr></tbody></table></center><p>Prime d'ancienneté :<br/>\n– 5 % pour 5 années de présence dans l'entreprise ;<br/>\n– 10 % pour 10 années de présence dans l'entreprise.</p><p><font color=\"808080\"><em><a name=\"RENVOI_KALIARTI000046366873_1\"></a>(1) Le barème des salaires des employés est étendu sous réserve de l'application des dispositions règlementaires portant fixation du salaire minimum interprofessionnel de croissance. <br/>\n(Arrêté du 22 septembre 2025 - art. 2)</em></font></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1",
+                  "type": "AUTONOME",
+                  "lstLienModification": [
+                    {
+                      "textCid": "JORFTEXT000052353580",
+                      "textTitle": "Arrêté du 22 septembre 2025 - art. 2, v. init.",
+                      "linkType": "ETEND",
+                      "linkOrientation": "cible",
+                      "articleNum": "2",
+                      "articleId": "JORFARTI000052353656",
+                      "natureText": "ARRETE",
+                      "datePubliTexte": "2025-10-04",
+                      "dateSignaTexte": "2025-09-22",
+                      "dateDebutCible": "2999-01-01"
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1656633600000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000046366870",
+              "cid": "KALIARTI000046366870",
+              "intOrdre": 524287,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000046366870",
+              "pathTitle": [],
+              "content": "<p align=\"left\">Après examen de la situation économique, les barèmes des salaires des cadres et des employés de la presse périodique régionale sont augmentés de :</p><p align=\"center\">1,8 % au 1er juillet 2022</p><p align=\"center\"><br/>\nDispositions en faveur de entreprises de moins de 50 salariés</p><p align=\"left\">Les parties constatant que les fonctions des cadres et des employés en presse hebdomadaire régionale sont identiques et s'exercent dans les mêmes conditions quelle que soit la taille de l'entreprise, elles décident qu'il n'est pas nécessaire de prévoir de disposition spécifique en faveur des entreprises de moins de cinquante salariés.<br/><p> <br/>\nLe présent accord fera l'objet d'une demande d'extension conformément à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006901802&dateTexte=&categorieLien=cid\">article L. 2261-24 du code du travail</a>.</p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1",
+              "type": "AUTONOME",
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000052353580",
+                  "textTitle": "Arrêté du 22 septembre 2025 - art. 2, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "2",
+                  "articleId": "JORFARTI000052353656",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2025-10-04",
+                  "dateSignaTexte": "2025-09-22",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L2261-24",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L2261-24",
+                  "articleId": "LEGIARTI000006901802",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 1209600000000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1656633600000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,

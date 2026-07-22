@@ -21803,13 +21803,86 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005711759",
+              "cid": "KALISCTA000005711759",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Accord salarial du 22 octobre 2002 (corrigé le 12 mars 2003) (convention collective nationale des organismes de tourisme du 5 février 1996) Valeur du point au 1er novembre 2003",
+              "dateModif": null,
+              "dateDebut": "2003-03-12",
+              "dateFin": "2006-01-24",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005821911",
+                  "cid": "KALIARTI000005821911",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005711759/KALIARTI000005821911",
+                  "pathTitle": [
+                    "Accord salarial du 22 octobre 2002 (corrigé le 12 mars 2003) (convention collective nationale des organismes de tourisme du 5 février 1996) Valeur du point au 1er novembre 2003"
+                  ],
+                  "content": "<p>Article 1er</p><p>La valeur du point est revalorisée au 1<sup>er</sup> novembre 2003 à 1,01 €.</p><p>Article 2</p><p>Le présent accord entre en vigueur le 1<sup>er </sup>novembre 2003 et fait l'objet d'une demande d'extension.</p><p>Accord sur l'augmentation de la valeur du point</p><p>dans les organismes de tourisme</p><p>Les partenaires sociaux retirent de l'extension l'accord concernant l'augmentation de la valeur du point au 1er novembre 2003 signé le 22 octobre 2002 et le remplacent par un accord signé le 12 mars 2003.</p><p>Fait à Paris, le 12 mars 2003.</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2003-03-12 BO conventions collectives 2003-14 étendu par arrêté du 17 juin 2003 JORF 27 juin 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1047427200000,
+                  "dateFin": 1138060800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,
