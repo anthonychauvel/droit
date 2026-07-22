@@ -6665,12 +6665,76 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000048436966",
+              "cid": "KALIARTI000048436966",
+              "intOrdre": 524287,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000048436966",
+              "pathTitle": [],
+              "content": "<p></p><p align=\"center\">Résolution</p><p align=\"left\">Réunies le 22 juin 2023 à 117, impasse Émile-Dessout, zone industrielle Jarry, 97122 Baie-Mahault, les parties signataires des accords portant sur les salaires et primes des ouvriers et salaires des ETAM du BTP de Guadeloupe et ses dépendances, Saint-Martin et Saint-Barthélemy du 22 mai 2023 précisent que compte tenu de la structure des entreprises de la branche, il n'est pas nécessaire de prévoir de stipulation spécifique pour les entreprises de moins de 50 salariés, conformément à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000035608942&dateTexte=&categorieLien=cid\">article L. 2261-23-1 du code du travail</a>.</p><p align=\"left\">En conséquence de quoi, lesdits parties réitèrent leur demande d'extension, formalisée le 7 juin 2023, de l'accord paritaire régional du 22 mai 2023 relatif aux salaires et primes des ouvriers et salaires des ETAM du BTP de Guadeloupe.</p><p></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1",
+              "type": "AUTONOME",
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000048514810",
+                  "textTitle": "Arrêté du 15 novembre 2023 - art. 3, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "3",
+                  "articleId": "JORFARTI000048514825",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2023-12-06",
+                  "dateSignaTexte": "2023-11-15",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L2261-23-1",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L2261-23-1",
+                  "articleId": "LEGIARTI000035608942",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 1506211200000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1696032000000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,
