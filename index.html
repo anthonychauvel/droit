@@ -287,6 +287,13 @@
     white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .sec-chip:hover{ border-color:var(--gold-strong); background:#f3e4be; }
 
+  /* Références cliquables dans un rapport de mise à jour (IDCC 1090, L3121-1…),
+     pour ouvrir le texte directement comme depuis un résultat de recherche. */
+  .maj-ref{ font-family:'JetBrains Mono',ui-monospace,monospace; font-size:.95em; font-weight:700;
+    color:var(--violet-strong); background:var(--violet-soft); border:1px solid #ecdcae;
+    padding:1px 6px; border-radius:6px; cursor:pointer; white-space:nowrap; }
+  .maj-ref:hover{ border-color:var(--gold-strong); background:#f3e4be; }
+
   /* Surbrillance de la section ciblée à l'ouverture */
   .sec-flash{ animation:secFlash 2.6s ease-out; border-radius:8px; }
   @keyframes secFlash{ 0%,15%{ background:var(--violet-soft); box-shadow:0 0 0 6px var(--violet-soft); } 100%{ background:transparent; box-shadow:0 0 0 0 transparent; } }
@@ -1680,19 +1687,62 @@ document.getElementById('maj-results').addEventListener('click', function(e){
 function markdownToHtml(md){
   var esc=function(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');};
   var inline=function(s){return s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/`(.+?)`/g,'<code>$1</code>');};
-  var lines=md.split('\n'), out='', inList=false;
+
+  // Transforme les références d'un rapport en éléments cliquables qui ouvrent le
+  // texte, exactement comme un résultat de recherche (délégation sur .maj-ref).
+  // `kind` dépend de la rubrique en cours : les articles n'ont pas le même
+  // chemin selon qu'ils viennent du Code du travail ou du Code de la sécu.
+  var refify=function(s, kind){
+    // "IDCC 1090" -> fiche de la convention (valable dans toutes les rubriques)
+    s = s.replace(/\bIDCC\s+(\d{1,5})\b/g, function(m, num){
+      return '<span class="maj-ref" data-kind="ccn" data-num="'+num+'">IDCC '+num+'</span>';
+    });
+    // Articles / décisions : uniquement dans les rubriques concernées, et
+    // seulement en tête de puce ("- L3121-1 (modifié)") pour ne pas attraper
+    // une référence citée au fil du texte.
+    if(kind==='code'||kind==='secu'){
+      s = s.replace(/^([LRDlrd]\.?\s?\d[\w.\-]*)/, function(m, art){
+        return '<span class="maj-ref" data-kind="'+kind+'" data-num="'+art.trim()+'">'+art+'</span>';
+      });
+    } else if(kind==='juris'){
+      s = s.replace(/^(\d[\w.\-]{4,})/, function(m, num){
+        return '<span class="maj-ref" data-kind="juris" data-num="'+num.trim()+'">'+num+'</span>';
+      });
+    }
+    return s;
+  };
+
+  var lines=md.split('\n'), out='', inList=false, kind=null;
   for(var i=0;i<lines.length;i++){
     var line=esc(lines[i]);
     if(/^# /.test(line)){ if(inList){out+='</ul>';inList=false;} out+='<h2 style="font-size:18px;color:var(--marine);margin:6px 0 10px">'+line.slice(2)+'</h2>'; continue; }
-    if(/^## /.test(line)){ if(inList){out+='</ul>';inList=false;} out+='<h3 style="font-size:15px;color:var(--violet-strong);margin:16px 0 6px">'+line.slice(3)+'</h3>'; continue; }
-    if(/^- /.test(line)){ if(!inList){out+='<ul style="padding-left:20px">';inList=true;} out+='<li style="margin-bottom:5px">'+inline(line.slice(2))+'</li>'; continue; }
+    if(/^## /.test(line)){
+      if(inList){out+='</ul>';inList=false;}
+      // Mémorise la rubrique en cours pour savoir à quel corpus rattacher les
+      // références listées en dessous.
+      var h=line.slice(3);
+      kind = /Code du travail/i.test(h) ? 'code'
+           : /sécurité sociale/i.test(h) ? 'secu'
+           : /Jurisprudence/i.test(h) ? 'juris'
+           : null;
+      out+='<h3 style="font-size:15px;color:var(--violet-strong);margin:16px 0 6px">'+h+'</h3>'; continue;
+    }
+    if(/^- /.test(line)){ if(!inList){out+='<ul style="padding-left:20px">';inList=true;} out+='<li style="margin-bottom:5px">'+refify(inline(line.slice(2)), kind)+'</li>'; continue; }
     if(inList){out+='</ul>';inList=false;}
     if(line.trim()==='') continue;
-    out+='<p>'+inline(line)+'</p>';
+    out+='<p>'+refify(inline(line), null)+'</p>';
   }
   if(inList) out+='</ul>';
   return out;
 }
+
+/* Clic sur une référence d'un rapport de mise à jour : ouvre le texte, comme
+   depuis un résultat de recherche. Le panneau affiche alors la fiche à la place
+   du rapport (bouton Retour du navigateur / croix pour refermer). */
+document.addEventListener('click', function(e){
+  var ref = e.target.closest('.maj-ref');
+  if(ref){ e.stopPropagation(); e.preventDefault(); openDetail(ref.dataset.kind, ref.dataset.num); }
+}, true);
 
 /* ---- Tableau de bord d'accueil (stats live + dernières vérifications) ---- */
 async function renderDashboard(){
@@ -1754,6 +1804,11 @@ loadAll().then(function(){
   if(!INDEX.ccn.length && !INDEX.code.length){
     document.getElementById('corpus-line').textContent = 'Index introuvable — lancez un run de vérification.';
   }
+  // Deep-link : ?idcc=1090 (+ &section=... optionnel) ouvre directement la fiche CCN
+  // Utilisé par le lien "Voir le texte officiel" du module grillepaye.
+  var qs = new URLSearchParams(location.search);
+  var deepIdcc = qs.get('idcc');
+  if(deepIdcc) openDetail('ccn', deepIdcc, qs.get('section'));
 }).catch(function(e){
   console.error(e);
   document.getElementById('corpus-line').textContent = 'Erreur de chargement des données.';
