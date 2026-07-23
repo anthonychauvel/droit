@@ -1,4 +1,439 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000038786731",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Le travailleur indépendant relevant des dispositions prévues au premier alinéa du I de l'article L. 613-7 et, le cas échéant, de celles de l'article 151-0 du code général des impôts  communique selon la périodicité mentionnée au I de l'article R. 613-7 aux organismes chargés du recouvrement des cotisations et contributions sociales le formulaire dont le modèle est fixé par arrêté conjoint des ministres chargés de la sécurité sociale, du commerce et de l'artisanat et des professions libérales. Le formulaire mentionne le montant du chiffre d'affaires ou le montant des recettes, qui sont pris en compte pour la détermination des régimes d'imposition définis respectivement aux articles 50-0  et  102 ter du code général des impôts et qui ont été réalisés au cours du mois ou du trimestre civil précédent, le montant de ses cotisations et contributions sociales correspondantes et, le cas échéant, le montant de l'impôt sur le revenu dû au titre de cette période. Il est transmis, daté et signé, accompagné, le cas échéant du règlement des sommes dues, au plus tard : a) Pour les travailleurs indépendants procédant au versement mensuel, le dernier jour du mois qui suit l'échéance mensuelle précédente ; b) Pour les travailleurs indépendants ayant opté pour le versement trimestriel, les 30 avril, 31 juillet, 31 octobre et 31 janvier. En l'absence de chiffre d'affaires ou de recettes, le travailleur indépendant souscrit la déclaration dans les mêmes conditions en y portant la mention \" néant \" en lieu et place du montant du chiffre d'affaires ou de recettes.",
+    "texteHtml": "<p>Le travailleur indépendant relevant des dispositions prévues au premier alinéa du I de l'article L. 613-7 et, le cas échéant, de celles de l'article 151-0 du code général des impôts  communique selon la périodicité mentionnée au I de l'article R. 613-7 aux organismes chargés du recouvrement des cotisations et contributions sociales le formulaire dont le modèle est fixé par arrêté conjoint des ministres chargés de la sécurité sociale, du commerce et de l'artisanat et des professions libérales. </p><p>Le formulaire mentionne le montant du chiffre d'affaires ou le montant des recettes, qui sont pris en compte pour la détermination des régimes d'imposition définis respectivement aux articles 50-0  et  102 ter du code général des impôts et qui ont été réalisés au cours du mois ou du trimestre civil précédent, le montant de ses cotisations et contributions sociales correspondantes et, le cas échéant, le montant de l'impôt sur le revenu dû au titre de cette période. </p><p>Il est transmis, daté et signé, accompagné, le cas échéant du règlement des sommes dues, au plus tard : </p><p>a) Pour les travailleurs indépendants procédant au versement mensuel, le dernier jour du mois qui suit l'échéance mensuelle précédente ; </p><p>b) Pour les travailleurs indépendants ayant opté pour le versement trimestriel, les 30 avril, 31 juillet, 31 octobre et 31 janvier. </p><p>En l'absence de chiffre d'affaires ou de recettes, le travailleur indépendant souscrit la déclaration dans les mêmes conditions en y portant la mention \" néant \" en lieu et place du montant du chiffre d'affaires ou de recettes.</p>",
+    "num": "R613-8",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "4.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1562544000000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 7808,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "1961-01-12",
+          "fin": "2999-01-01",
+          "titre": "Partie réglementaire - Décrets en Conseil d'Etat",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000006106085",
+          "id": "LEGISCTA000006106085",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "1985-12-21",
+          "fin": "2018-01-01",
+          "titre": "Livre 6 : Régimes des travailleurs non salariés",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006126967",
+          "id": "LEGISCTA000006126967",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2018-01-01",
+          "fin": "2999-01-01",
+          "titre": "Livre VI : Dispositions applicables aux travailleurs indépendants",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006126967",
+          "id": "LEGISCTA000036704226",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2006-01-28",
+          "fin": "2018-01-01",
+          "titre": "Titre 1 : Régime social des indépendants",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006141938",
+          "id": "LEGISCTA000006141938",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2018-01-01",
+          "fin": "2999-01-01",
+          "titre": "Titre I : Dispositions générales",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006141938",
+          "id": "LEGISCTA000036704224",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2006-01-28",
+          "fin": "2018-01-01",
+          "titre": "Chapitre 3 : Champ d'application et prestations d'assurance maladie",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006156716",
+          "id": "LEGISCTA000006156716",
+          "etat": "ABROGE"
+        },
+        {
+          "debut": "2019-07-08",
+          "fin": "2999-01-01",
+          "titre": "Chapitre 3 : Dispositions, relatives au financement, communes à l'ensemble des travailleurs indépendants",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006156716",
+          "id": "LEGISCTA000038786607",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2006-03-30",
+          "fin": "2018-01-01",
+          "titre": "Section 3 : Prestations de base",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006173706",
+          "id": "LEGISCTA000006173706",
+          "etat": "ABROGE"
+        },
+        {
+          "debut": "2019-07-08",
+          "fin": "2999-01-01",
+          "titre": "Section 3 : Règlement simplifié des cotisations et contributions des travailleurs indépendants-Régime micro-social",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006173706",
+          "id": "LEGISCTA000038786601",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 2,
+      "longeurChemin": 47,
+      "titreTxt": [
+        {
+          "debut": "1958-10-16",
+          "fin": "2999-01-01",
+          "titre": "Code de la sécurité sociale",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000006073189",
+          "id": "LEGITEXT000006073189",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000006751282",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000006173706",
+    "sectionParentId": "LEGISCTA000038786601",
+    "sectionParentTitre": "Section 3 : Règlement simplifié des cotisations et contributions des travailleurs indépendants-Régime micro-social",
+    "fullSectionsTitre": "Partie réglementaire - Décrets en Conseil d'Etat &gt; Livre VI : Dispositions applicables aux travailleurs indépendants &gt; Titre I : Dispositions générales &gt; Chapitre 3 : Dispositions, relatives au financement, communes à l'ensemble des travailleurs indépendants &gt; Section 3 : Règlement simplifié des cotisations et contributions des travailleurs indépendants-Régime micro-social",
+    "refInjection": "IG-20260114",
+    "idTechInjection": "LEGIARTI000038786731",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000006073189",
+        "titre": "Code de la sécurité sociale.",
+        "titreLong": "Code de la sécurité sociale",
+        "etat": "VIGUEUR",
+        "dateDebut": -353808000000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000006073189",
+        "datePubli": 32472144000000,
+        "datePubliComputed": null,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "",
+    "notaHtml": "",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000000866621",
+        "textTitle": "Décret n° 85-1353 du 17 décembre 1985",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "JORFTEXT000000866621",
+        "natureText": "DECRET",
+        "datePubliTexte": "1985-12-21",
+        "dateSignaTexte": "1985-12-17",
+        "dateDebutCible": "2999-01-01"
+      },
+      {
+        "textCid": "JORFTEXT000038731196",
+        "textTitle": "Décret n°2019-718 du 5 juillet 2019 - art. 2",
+        "linkType": "MODIFIE",
+        "linkOrientation": "cible",
+        "articleNum": "2",
+        "articleId": "LEGIARTI000038733643",
+        "natureText": "DECRET",
+        "datePubliTexte": "2019-07-07",
+        "dateSignaTexte": "2019-07-05",
+        "dateDebutCible": "2019-07-08"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006069577",
+        "textTitle": "Code général des impôts, CGI. - art. 102 ter",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "102 ter",
+        "articleId": "LEGIARTI000006302641",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 678585600000
+      },
+      {
+        "textCid": "LEGITEXT000006069577",
+        "textTitle": "Code général des impôts, CGI. - art. 151-0",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "151-0",
+        "articleId": "LEGIARTI000019286255",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1230768000000
+      },
+      {
+        "textCid": "LEGITEXT000006069577",
+        "textTitle": "Code général des impôts, CGI. - art. 50-0",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "50-0",
+        "articleId": "LEGIARTI000006302438",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 694137600000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. L613-7",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L613-7",
+        "articleId": "LEGIARTI000006743625",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1134086400000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R133-9-4-1 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R133-9-4-1",
+        "articleId": "LEGIARTI000048863824",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1704067200000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R611-2 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R611-2",
+        "articleId": "LEGIARTI000039278160",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1572048000000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R613-10 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R613-10",
+        "articleId": "LEGIARTI000038786719",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1562544000000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R613-12 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R613-12",
+        "articleId": "LEGIARTI000038786710",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1562544000000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R613-13 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R613-13",
+        "articleId": "LEGIARTI000038786701",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1562544000000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R613-7",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "R613-7",
+        "articleId": "LEGIARTI000006751278",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 503971200000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R613-9 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R613-9",
+        "articleId": "LEGIARTI000038786725",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1562544000000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000000317210",
+        "textTitle": "Décret n°85-1129 du 23 octobre 1985 - art. 8 (Ab)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "8",
+        "articleId": "LEGIARTI000006768890",
+        "natureText": "DECRET"
+      },
+      {
+        "textCid": "JORFTEXT000000317210",
+        "textTitle": "Décret n°85-1129 du 23 octobre 1985 - art. 8 (Ab)",
+        "linkType": "CONCORDE",
+        "linkOrientation": "cible",
+        "articleNum": "8",
+        "articleId": "LEGIARTI000006768890",
+        "natureText": "DECRET"
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R133-30-2 (T)",
+        "linkType": "CONCORDE",
+        "linkOrientation": "cible",
+        "articleNum": "R133-30-2",
+        "articleId": "LEGIARTI000034727750",
+        "natureText": "CODE"
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R615-8 (T)",
+        "linkType": "CONCORDE",
+        "linkOrientation": "cible",
+        "articleNum": "R615-8",
+        "articleId": "LEGIARTI000006751327",
+        "natureText": "CODE"
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R615-8 (T)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "R615-8",
+        "articleId": "LEGIARTI000006751327",
+        "natureText": "CODE"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000006751282",
+        "etat": "ABROGE",
+        "version": "1.0",
+        "dateDebut": 503971200000,
+        "dateFin": 1138406400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000006751283",
+        "etat": "MODIFIE",
+        "version": "2.0",
+        "dateDebut": 1138406400000,
+        "dateFin": 1143676800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000006751284",
+        "etat": "ABROGE",
+        "version": "3.0",
+        "dateDebut": 1143676800000,
+        "dateFin": 1437264000000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000038786731",
+        "etat": "VIGUEUR",
+        "version": "4.0",
+        "dateDebut": 1562544000000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R613-8",
+      "613-8"
+    ],
+    "versionPrecedente": "LEGIARTI000006751284",
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": true,
+    "comporteLiensSP": false
+  }
 }

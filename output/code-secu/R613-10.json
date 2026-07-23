@@ -1,4 +1,435 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000038786719",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Lorsqu'une ou plusieurs déclarations afférentes à une année civile n'ont pas été souscrites à la dernière date d'exigibilité mentionnée à l'article R. 613-8, les cotisations et contributions sont calculées forfaitairement par les organismes mentionnés aux articles L. 213-1 et L. 752-4, par déclaration trimestrielle ou mensuelle non souscrite, respectivement sur le quart ou le douzième des plafonds mentionnés au b du 1° et au b du 2° du I de l'article 293 B du code général des impôts. Ces montants sont majorés respectivement de 15 % ou de 5 % par déclaration manquante au titre de cette année civile. La taxation ainsi déterminée est notifiée à l'intéressé dans le délai d'un mois suivant la date limite de déclaration. Lorsque le travailleur indépendant effectue sa déclaration postérieurement à cette notification, le montant des cotisations et contributions dues est régularisé en conséquence. Dans ce cas, la pénalité prévue à l'article R. 613-9 est portée à 3 % du montant des cotisations et contributions dues. Cette pénalité peut faire l'objet d'une remise partielle dans les conditions prévues à l'article R. 243-20. Elle peut également faire l'objet de sursis à poursuites accordés dans les conditions prévues à l'article R. 243-21.",
+    "texteHtml": "<p>Lorsqu'une ou plusieurs déclarations afférentes à une année civile n'ont pas été souscrites à la dernière date d'exigibilité mentionnée à l'article R. 613-8, les cotisations et contributions sont calculées forfaitairement par les organismes mentionnés aux articles L. 213-1 et L. 752-4, par déclaration trimestrielle ou mensuelle non souscrite, respectivement sur le quart ou le douzième des plafonds mentionnés au b du 1° et au b du 2° du I de l'article 293 B du code général des impôts. </p><p>Ces montants sont majorés respectivement de 15 % ou de 5 % par déclaration manquante au titre de cette année civile. </p><p>La taxation ainsi déterminée est notifiée à l'intéressé dans le délai d'un mois suivant la date limite de déclaration. </p><p>Lorsque le travailleur indépendant effectue sa déclaration postérieurement à cette notification, le montant des cotisations et contributions dues est régularisé en conséquence. </p><p>Dans ce cas, la pénalité prévue à l'article R. 613-9 est portée à 3 % du montant des cotisations et contributions dues. Cette pénalité peut faire l'objet d'une remise partielle dans les conditions prévues à l'article R. 243-20. Elle peut également faire l'objet de sursis à poursuites accordés dans les conditions prévues à l'article R. 243-21.</p>",
+    "num": "R613-10",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "5.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1562544000000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 15616,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "1961-01-12",
+          "fin": "2999-01-01",
+          "titre": "Partie réglementaire - Décrets en Conseil d'Etat",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000006106085",
+          "id": "LEGISCTA000006106085",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "1985-12-21",
+          "fin": "2018-01-01",
+          "titre": "Livre 6 : Régimes des travailleurs non salariés",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006126967",
+          "id": "LEGISCTA000006126967",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2018-01-01",
+          "fin": "2999-01-01",
+          "titre": "Livre VI : Dispositions applicables aux travailleurs indépendants",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006126967",
+          "id": "LEGISCTA000036704226",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2006-01-28",
+          "fin": "2018-01-01",
+          "titre": "Titre 1 : Régime social des indépendants",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006141938",
+          "id": "LEGISCTA000006141938",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2018-01-01",
+          "fin": "2999-01-01",
+          "titre": "Titre I : Dispositions générales",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006141938",
+          "id": "LEGISCTA000036704224",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2006-01-28",
+          "fin": "2018-01-01",
+          "titre": "Chapitre 3 : Champ d'application et prestations d'assurance maladie",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006156716",
+          "id": "LEGISCTA000006156716",
+          "etat": "ABROGE"
+        },
+        {
+          "debut": "2019-07-08",
+          "fin": "2999-01-01",
+          "titre": "Chapitre 3 : Dispositions, relatives au financement, communes à l'ensemble des travailleurs indépendants",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006156716",
+          "id": "LEGISCTA000038786607",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2006-03-30",
+          "fin": "2018-01-01",
+          "titre": "Section 3 : Prestations de base",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006173706",
+          "id": "LEGISCTA000006173706",
+          "etat": "ABROGE"
+        },
+        {
+          "debut": "2019-07-08",
+          "fin": "2999-01-01",
+          "titre": "Section 3 : Règlement simplifié des cotisations et contributions des travailleurs indépendants-Régime micro-social",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006173706",
+          "id": "LEGISCTA000038786601",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 2,
+      "longeurChemin": 47,
+      "titreTxt": [
+        {
+          "debut": "1958-10-16",
+          "fin": "2999-01-01",
+          "titre": "Code de la sécurité sociale",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000006073189",
+          "id": "LEGITEXT000006073189",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000006751288",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000006173706",
+    "sectionParentId": "LEGISCTA000038786601",
+    "sectionParentTitre": "Section 3 : Règlement simplifié des cotisations et contributions des travailleurs indépendants-Régime micro-social",
+    "fullSectionsTitre": "Partie réglementaire - Décrets en Conseil d'Etat &gt; Livre VI : Dispositions applicables aux travailleurs indépendants &gt; Titre I : Dispositions générales &gt; Chapitre 3 : Dispositions, relatives au financement, communes à l'ensemble des travailleurs indépendants &gt; Section 3 : Règlement simplifié des cotisations et contributions des travailleurs indépendants-Régime micro-social",
+    "refInjection": "IG-20260114",
+    "idTechInjection": "LEGIARTI000038786719",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000006073189",
+        "titre": "Code de la sécurité sociale.",
+        "titreLong": "Code de la sécurité sociale",
+        "etat": "VIGUEUR",
+        "dateDebut": -353808000000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000006073189",
+        "datePubli": 32472144000000,
+        "datePubliComputed": null,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "",
+    "notaHtml": "",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000000866621",
+        "textTitle": "Décret n° 85-1353 du 17 décembre 1985",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "JORFTEXT000000866621",
+        "natureText": "DECRET",
+        "datePubliTexte": "1985-12-21",
+        "dateSignaTexte": "1985-12-17",
+        "dateDebutCible": "2999-01-01"
+      },
+      {
+        "textCid": "JORFTEXT000038731196",
+        "textTitle": "Décret n°2019-718 du 5 juillet 2019 - art. 2",
+        "linkType": "MODIFIE",
+        "linkOrientation": "cible",
+        "articleNum": "2",
+        "articleId": "LEGIARTI000038733643",
+        "natureText": "DECRET",
+        "datePubliTexte": "2019-07-07",
+        "dateSignaTexte": "2019-07-05",
+        "dateDebutCible": "2019-07-08"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000053175077",
+        "textTitle": "Décret n°2025-1338 du 26 décembre 2025 - art. 1",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "1",
+        "articleId": "JORFARTI000053175082",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2025-1338",
+        "datePubli": 1766793600000,
+        "dateDebut": 32472144000000
+      },
+      {
+        "textCid": "JORFTEXT000053229629",
+        "textTitle": "Décret n°2025-1429 du 30 décembre 2025 - art. 2 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "2",
+        "articleId": "LEGIARTI000053274310",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2025-1429",
+        "datePubli": 1767139200000,
+        "dateDebut": 1767225600000
+      },
+      {
+        "textCid": "LEGITEXT000006069577",
+        "textTitle": "Code général des impôts, CGI. - art. 293 B",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "293 B",
+        "articleId": "LEGIARTI000006304473",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 677721600000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R133-9 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R133-9",
+        "articleId": "LEGIARTI000038790623",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1562544000000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R243-19 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R243-19",
+        "articleId": "LEGIARTI000047480864",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1682208000000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R613-11 (Ab)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R613-11",
+        "articleId": "LEGIARTI000030055022",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1420070400000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R613-17 (M)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R613-17",
+        "articleId": "LEGIARTI000006751975",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1143676800000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R613-20 (Ab)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R613-20",
+        "articleId": "LEGIARTI000006751979",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1143676800000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R613-8",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "R613-8",
+        "articleId": "LEGIARTI000006751282",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 503971200000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R613-9 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "R613-9",
+        "articleId": "LEGIARTI000038786725",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1562544000000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000000317210",
+        "textTitle": "Décret n°85-1129 du 23 octobre 1985 - art. 10 (Ab)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "10",
+        "articleId": "LEGIARTI000006768892",
+        "natureText": "DECRET"
+      },
+      {
+        "textCid": "JORFTEXT000000317210",
+        "textTitle": "Décret n°85-1129 du 23 octobre 1985 - art. 10 (Ab)",
+        "linkType": "CONCORDE",
+        "linkOrientation": "cible",
+        "articleNum": "10",
+        "articleId": "LEGIARTI000006768892",
+        "natureText": "DECRET"
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R133-30-2-2 (T)",
+        "linkType": "CONCORDE",
+        "linkOrientation": "cible",
+        "articleNum": "R133-30-2-2",
+        "articleId": "LEGIARTI000036703788",
+        "natureText": "CODE"
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R615-10 (T)",
+        "linkType": "CONCORDE",
+        "linkOrientation": "cible",
+        "articleNum": "R615-10",
+        "articleId": "LEGIARTI000006751329",
+        "natureText": "CODE"
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R615-10 (T)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "R615-10",
+        "articleId": "LEGIARTI000006751329",
+        "natureText": "CODE"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000006751288",
+        "etat": "ABROGE",
+        "version": "1.0",
+        "dateDebut": 503971200000,
+        "dateFin": 1138406400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000006751289",
+        "etat": "MODIFIE",
+        "version": "2.0",
+        "dateDebut": 1138406400000,
+        "dateFin": 1143676800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000006751290",
+        "etat": "MODIFIE",
+        "version": "3.0",
+        "dateDebut": 1143676800000,
+        "dateFin": 1420070400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000030055014",
+        "etat": "ABROGE",
+        "version": "4.0",
+        "dateDebut": 1420070400000,
+        "dateFin": 1514764800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000038786719",
+        "etat": "VIGUEUR",
+        "version": "5.0",
+        "dateDebut": 1562544000000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R613-10",
+      "613-10"
+    ],
+    "versionPrecedente": "LEGIARTI000030055014",
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": true,
+    "comporteLiensSP": false
+  }
 }

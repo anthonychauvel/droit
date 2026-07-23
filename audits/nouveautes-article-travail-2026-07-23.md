@@ -1,0 +1,122 @@
+# Nouveautés détectées — article-travail — 2026-07-23
+
+## 20415 nouveau(x) article-travail pas encore suivi(s)
+
+Pas ajoutés automatiquement à articles_list.txt -- à valider avant d'incorporer :
+- Annexe
+- Annexe 1 à l'article R513-7
+- Annexe 2 à l'article R513-7
+- Annexe I
+- Annexe I à l'article R4312-1
+- Annexe II
+- Annexe II à l'article R4312-6
+- Annexe III
+- Annexe à l'article R1422-4
+- Annexe à l'article R233-151
+- Annexe à l'article R233-84
+- Annexe à l'article R438-1
+- Annexe à l'article R513-7
+- D1132-1
+- D1142-10
+- D1142-11
+- D1142-12
+- D1142-13
+- D1142-14
+- D1142-15
+- D1142-16
+- D1142-17
+- D1142-19
+- D1142-2
+- D1142-2-1
+- D1142-3
+- D1142-4
+- D1142-5
+- D1142-6
+- D1142-6-1
+- D1142-6-2
+- D1142-7
+- D1142-8
+- D1142-9
+- D1143-10
+- D1143-11
+- D1143-12
+- D1143-13
+- D1143-14
+- D1143-15
+- D1143-16
+- D1143-17
+- D1143-18
+- D1143-2
+- D1143-3
+- D1143-4
+- D1143-5
+- D1143-6
+- D1143-7
+- D1143-8
+- D1143-9
+- D1145-1
+- D1145-10
+- D1145-11
+- D1145-12
+- D1145-13
+- D1145-14
+- D1145-15
+- D1145-16
+- D1145-17
+- D1145-18
+- D1145-19
+- D1145-2
+- D1145-3
+- D1145-4
+- D1145-4-1
+- D1145-5
+- D1145-6
+- D1145-7
+- D1145-8
+- D1145-9
+- D1151-1
+- D116-1
+- D117
+- D117-1
+- D117-2
+- D117-3
+- D117-4
+- D117-5
+- D118
+- D118-1
+- D118-2
+- D118-3
+- D118-4
+- D118-5
+- D118-6
+- D118-7
+- D118-8
+- D118-9
+- D121-1
+- D121-2
+- D121-3
+- D121-4
+- D121-5
+- D122-1
+- D122-10
+- D122-11
+- D122-12
+- D122-13
+- D122-14
+- ... et 20315 de plus (voir all_articles_code_travail.txt pour la liste complète)
+
+## 12 article-travail suivi(s) mais absent(s) du dernier univers connu
+(peut vouloir dire : retiré de Légifrance, ou simplement pas retrouvé par la recherche large -- à vérifier avant de retirer quoi que ce soit)
+
+- L1214-8-2
+- L1237-33
+- L2123-2
+- L3141-47
+- L3142-24-1
+- L3246-1
+- L3300-1
+- L3334-8-1
+- R1242-1
+- R3131-1
+- R3171-16
+- R4153-1
