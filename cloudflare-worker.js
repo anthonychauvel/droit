@@ -47,6 +47,30 @@ export default {
     let path = decodeURIComponent(url.pathname);
     if (path === "/" || path === "") path = "/index.html";
 
+    // robots.txt servi directement par le worker (pas depuis le dépôt) : ainsi
+    // il ne peut ni manquer ni être oublié lors d'un déploiement.
+    //
+    // Note importante : on autorise volontairement le crawl de la racine. Un
+    // "Disallow: /" empêcherait les moteurs de LIRE l'en-tête X-Robots-Tag
+    // ci-dessous, et l'URL pourrait alors rester affichée en résultat, sans
+    // contenu. Pour sortir vraiment de l'index il faut être crawlable ET
+    // renvoyer noindex. En revanche on bloque les répertoires de données, qui
+    // sont volumineux et n'ont aucune raison d'être parcourus.
+    if (path === "/robots.txt") {
+      return new Response(
+        "# MonLegiTexte est réservé aux utilisateurs de l'application SimulHeures.\n" +
+        "# Le contenu ne doit pas apparaître dans les moteurs de recherche.\n" +
+        "User-agent: *\n" +
+        "Allow: /\n" +
+        "Disallow: /output/\n" +
+        "Disallow: /audits/\n",
+        { status: 200, headers: {
+            "Content-Type": "text/plain; charset=utf-8",
+            "Cache-Control": "public, max-age=3600",
+            "X-Robots-Tag": "noindex, nofollow",
+        } });
+    }
+
     // Petite sécurité : pas de remontée de dossier
     if (path.includes("..")) return new Response("Requête invalide", { status: 400 });
 
@@ -81,6 +105,10 @@ export default {
     const ttl = isIndex ? TTL_INDEX : TTL_FILE;
     headers.set("Cache-Control", `public, max-age=${ttl}`);
     headers.set("X-Content-Type-Options", "nosniff");
+    // Interdit l'indexation de TOUT ce que sert le worker, y compris les .json
+    // (une balise <meta> ne couvrirait que le HTML). C'est le signal qui sort
+    // réellement les pages de l'index Google.
+    headers.set("X-Robots-Tag", "noindex, nofollow");
     // (même origine pour l'appli, mais on autorise large au cas où)
     headers.set("Access-Control-Allow-Origin", "*");
 
