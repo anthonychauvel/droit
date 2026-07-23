@@ -2927,7 +2927,8 @@
           "renvoiNum": null,
           "notaHtml": null,
           "notaSectionsAafficher": null,
-          "_texte_complet_recupere": true
+          "_texte_complet_recupere": true,
+          "_type_complement": "classification"
         }
       ],
       "articles": [],
@@ -3242,13 +3243,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705419",
+              "cid": "KALISCTA000005705419",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er octobre 2001.",
+              "dateModif": null,
+              "dateDebut": "2001-07-10",
+              "dateFin": "2003-02-13",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005804543",
+                  "cid": "KALIARTI000005804543",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705419/KALIARTI000005804543",
+                  "pathTitle": [
+                    "Salaires au 1er octobre 2001."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les dispositions du a de l'article 14 de la convention collective nationale susvisée sont abrogées et remplacées par les dispositions suivantes :<p></p> Article 14<p></p> Rémunération<p></p><p></p>   a) Les salaires exprimés en euros, sont fixés comme suit à compter du 1er octobre 2001 :<p></p><TABLE><TR><TD>COEFFICIENT</TD><TD>SALAIRE HORAIRE</TD><TD>SALAIRE MENSUALISÉ</TD></TR><TR><TD></TD><TD>   (en euros)  </TD><TD>  (base 169 heures)  </TD></TR><TR><TD></TD><TD></TD><TD>     (en euros)      </TD></TR><TR><TD>    120    </TD><TD>     6,67      </TD><TD>      1 127,23       </TD></TR><TR><TD>    130    </TD><TD>     6,70      </TD><TD>      1 132,30       </TD></TR><TR><TD>    140    </TD><TD>     6,74      </TD><TD>      1 139,06       </TD></TR><TR><TD>    150    </TD><TD>     6,76      </TD><TD>      1 142,44       </TD></TR><TR><TD>    160    </TD><TD>     7         </TD><TD>      1 183          </TD></TR><TR><TD>    170    </TD><TD>     7,24      </TD><TD>      1 223,56       </TD></TR><TR><TD>    180    </TD><TD>     7,64      </TD><TD>      1 291,16       </TD></TR><TR><TD>    200    </TD><TD>     8,25      </TD><TD>      1 394,25       </TD></TR><TR><TD>    230    </TD><TD>     9,40      </TD><TD>      1 588,60       </TD></TR><TR><TD>    260    </TD><TD>    10,55      </TD><TD>      1 782,95       </TD></TR></TABLE><p></p><p></p>   1 euro = 6,55957 francs.<p></p><p></p>   Les salaires, exprimés en francs, sont fixés comme suit du 1er octobre au 31 décembre 2001 :<p></p><p></p><TABLE><TR><TD>COEFFICIENT</TD><TD>SALAIRE HORAIRE</TD><TD>SALAIRE MENSUALISÉ</TD></TR><TR><TD></TD><TD>   (en francs) </TD><TD>   (base 169 heures) </TD></TR><TR><TD></TD><TD></TD><TD>     (en francs)     </TD></TR><TR><TD>    120    </TD><TD>    43,72      </TD><TD>       7 388,68      </TD></TR><TR><TD>    130    </TD><TD>    43,94      </TD><TD>       7 425,86      </TD></TR><TR><TD>    140    </TD><TD>    44,18      </TD><TD>       7 466,42      </TD></TR><TR><TD>    150    </TD><TD>    44,34      </TD><TD>       7 493,46      </TD></TR><TR><TD>    160    </TD><TD>    45,90      </TD><TD>       7 757,10      </TD></TR><TR><TD>    170    </TD><TD>    47,47      </TD><TD>       8 022,43      </TD></TR><TR><TD>    180    </TD><TD>    50,09      </TD><TD>       8 465,21      </TD></TR><TR><TD>    200    </TD><TD>    54,11      </TD><TD>       9 144,59      </TD></TR><TR><TD>    230    </TD><TD>    61,61      </TD><TD>      10 412,09      </TD></TR><TR><TD>    260    </TD><TD>    69,20      </TD><TD>      11 694,80      </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 31 2001-07-10 BO conventions collectives 2001-32/35 étendu par arrêté du 10 octobre 2001 JORF 19 octobre 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 994723200000,
+                  "dateFin": 1045094400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -3262,13 +3337,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705420",
+              "cid": "KALISCTA000005705420",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires",
+              "dateModif": null,
+              "dateDebut": "2003-02-13",
+              "dateFin": "2003-07-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005804544",
+                  "cid": "KALIARTI000005804544",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705420/KALIARTI000005804544",
+                  "pathTitle": [
+                    "Salaires"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les dispositions du a de l'article 14 de la convention collective nationale susvisée sont abrogées et remplacées par les dispositions suivantes :<p></p> Article 14<p></p><p></p>   Rémunération    a) Les salaires, exprimés en euros (1 Euros = 6,55957 F), sont fixés comme suit :<p></p><TABLE><TR><TD>     NIVEAU     </TD><TD>  SALAIRE HORAIRE   </TD></TR><TR><TD></TD><TD>     (en euros)     </TD></TR><TR><TD>       I        </TD><TD></TD></TR><TR><TD>    (ex-120)    </TD><TD>        6,83        </TD></TR><TR><TD>      II        </TD><TD></TD></TR><TR><TD>(ex-130, ex-140)</TD><TD>        7,16        </TD></TR><TR><TD>      III       </TD><TD></TD></TR><TR><TD>(ex-150, ex-160)</TD><TD>        7,49        </TD></TR><TR><TD>      IV        </TD><TD></TD></TR><TR><TD>(ex-170, ex-180)</TD><TD>        7,82        </TD></TR><TR><TD>      V         </TD><TD></TD></TR><TR><TD>(ex-200, ex-230,</TD><TD>       10,70        </TD></TR><TR><TD> ex-260)        </TD><TD></TD></TR></TABLE><p></p> Article 2<p></p>   Les parties signataires demandent l'extension du présent avenant qui deviendra applicable le premier jour du mois suivant la parution de l'arrêté d'extension au Journal officiel.<p></p>   Fait à Cachan, le 13 février 2003.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 32 2003-02-13 BO conventions collectives 2003-23 étendu par arrêté du 21 août 2003 JORF 2 septembre 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1045094400000,
+                  "dateFin": 1057017600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -3361,7 +3510,8 @@
           "renvoiNum": null,
           "notaHtml": null,
           "notaSectionsAafficher": null,
-          "_texte_complet_recupere": true
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         }
       ],
       "articles": [],
