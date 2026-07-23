@@ -187,7 +187,7 @@
   .ex-title{ font-family:'Manrope',sans-serif; font-size:15px; font-weight:800; color:var(--marine); margin:30px 0 12px; }
 
   /* Dashboard (landing) */
-  .stat-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:11px; margin:22px 0 4px; }
+  .stat-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:11px; margin:22px 0 18px; }
   .stat{ background:var(--card); border:1px solid var(--line); border-radius:13px; padding:15px 16px; cursor:pointer; transition:border-color .12s,transform .12s,box-shadow .12s; }
   .stat:hover{ border-color:var(--violet); transform:translateY(-2px); box-shadow:0 14px 30px -18px rgba(15,45,82,.32); }
   .stat .num{ font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600; color:var(--marine); line-height:1; letter-spacing:-.01em; }
@@ -379,6 +379,7 @@
     <div id="search-results"></div>
 
     <div id="search-landing">
+      <div class="stat-grid" id="stat-grid"></div>
       <div class="finder" id="finder">
         <div class="finder-title">Je ne connais pas ma convention</div>
         <div class="finder-sub">Le plus sûr : votre <b>IDCC</b> (numéro à 4 chiffres) est écrit sur votre <b>bulletin de paie</b> — tapez-le directement dans la recherche. Sinon, trouvez-la par métier ou par secteur :</div>
@@ -387,7 +388,6 @@
         <div class="finder-res" id="finder-res"></div>
         <a class="finder-official" href="https://code.travail.gouv.fr/outils/convention-collective" target="_blank" rel="noopener">Chercher par nom d'entreprise ou SIRET — outil officiel ↗</a>
       </div>
-      <div class="stat-grid" id="stat-grid"></div>
       <div class="latest" id="latest-maj" hidden></div>
       <div class="ex-title">Exemples de recherches combinées</div>
       <div class="ex-grid" id="ex-grid"></div>
@@ -907,14 +907,32 @@ function searchCCNv2(tokens, rawNorm){
   var padR=' '+rawNorm+' ';
   Object.keys(ALIAS).forEach(function(a){ if(padR.indexOf(' '+a+' ')!==-1){ ALIAS[a].forEach(function(id){ metPhrase[String(id)]=true; }); } });
   tokens.forEach(function(t){ if(/^\d{3,4}$/.test(t)){ var z=stripZeros(t); if(!E.idccSet[z] && BROCHURE[z]){ BROCHURE[z].forEach(function(id){ metPhrase[String(id)]=true; }); } } });
-  var V={},C={},MW={};
-  tokens.forEach(function(t){ var v=variantsOf(t); V[t]=v; C[t]=catsForToken(v);
+  var V={},MW={};
+  tokens.forEach(function(t){ var v=variantsOf(t); V[t]=v;
     var m={}; v.forEach(function(w){ if(E.metierWord[w]) Object.keys(E.metierWord[w]).forEach(function(id){ m[id]=1; }); }); MW[t]=m; });
+
+  /* SIGNAUX DE THÈME : catégories + termes, depuis les mots ET les expressions
+     (bigrammes/trigrammes) pour capter « heures supplémentaires », « forfait jours »…
+     On n'utilise PAS les mots bruts comme termes : sinon un qualificatif de convention
+     (« non alimentaire ») rattacherait des sections hors-sujet. */
+  var qCats={}, qTerms={};
+  function noteCats(k){ (E.catByKw[k]||[]).forEach(function(c){ qCats[c]=1; }); }
+  function noteSyn(k){ (E.SYN[k]||[]).forEach(function(s){ qTerms[s]=1; noteCats(s); }); }
+  tokens.forEach(function(t){ V[t].forEach(function(v){ noteCats(v); noteSyn(v); }); });
+  for(var bi=0; bi<tokens.length; bi++){ for(var nn=2; nn<=3; nn++){ if(bi+nn<=tokens.length){
+    var ph=tokens.slice(bi,bi+nn).join(' ');
+    if(E.catByKw[ph]){ noteCats(ph); qTerms[ph]=1; }
+    if(E.SYN[ph]){ noteSyn(ph); qTerms[ph]=1; }
+  } } }
+  Object.keys(qCats).forEach(function(c){ (CAT_KEYWORDS_RAW[c]||[]).forEach(function(kw){ qTerms[normaliser(kw)]=1; }); });
+  var qCatsArr=Object.keys(qCats);
+  var qTermsArr=Object.keys(qTerms).filter(function(x){ return x.length>=4; });
+  var hasTopic = qCatsArr.length>0 || qTermsArr.length>0;
   var res=[];
   (INDEX.ccn||[]).forEach(function(it){
     var id=it.num, hits=E.ccnHits[id]||[], cats=E.ccnCats[id]||{};
     var titleHay = it._ht || (it._ht = normaliser(it.title)+' '+((CCN_SECTOR_MAP&&CCN_SECTOR_MAP[id])?CCN_SECTOR_MAP[id]:''));
-    var identity=0, topic=0, topicIdf=0, secMap={}, exactIdcc=false;
+    var identity=0, exactIdcc=false;
     tokens.forEach(function(t){
       var v=V[t], hitId=false;
       if(/^\d{2,}$/.test(t) && stripZeros(t)===stripZeros(String(id))){ hitId=true; exactIdcc=true; }
@@ -922,11 +940,29 @@ function searchCCNv2(tokens, rawNorm){
       if(metPhrase[id]) hitId=true;
       if(MW[t][id]) hitId=true;
       if(hitId) identity++;
-      var hitTop=false;
-      C[t].forEach(function(cat){ if(cats[cat]) hitTop=true; });
-      hits.forEach(function(h){ if(hayHas(normaliser(h.title),v) || hayHas(normaliser(h.kw||''),v)){ hitTop=true; secMap[h.title]=h; } });
-      if(hitTop){ topic++; topicIdf += idf(t); C[t].forEach(function(cat){ hits.forEach(function(h){ if((h.cats&&h.cats.indexOf(cat)!==-1)||h.cat===cat) secMap[h.title]=h; }); }); }
     });
+
+    // SUJET : chaque section est NOTÉE selon sa pertinence au thème demandé
+    // (catégorie visée > titre parlant du thème > texte parlant du thème).
+    var scored=[], topic=0, topicIdf=0;
+    if(hasTopic){
+      hits.forEach(function(h){
+        var ht=normaliser(h.title||''), hk=normaliser(h.kw||''), sc=0;
+        var hcats=h.cats||(h.cat?[h.cat]:[]);
+        qCatsArr.forEach(function(c){ if(hcats.indexOf(c)!==-1) sc+=100; });
+        qTermsArr.forEach(function(term){
+          if(ht.indexOf(term)!==-1) sc+=60;
+          else if(hk.indexOf(term)!==-1) sc+=25;
+        });
+        if(sc>0) scored.push({h:h, sc:sc});
+      });
+      if(scored.length){
+        scored.sort(function(a,b){ return b.sc-a.sc; });
+        topic = qCatsArr.length ? qCatsArr.length : 1;
+        tokens.forEach(function(t){ if(V[t].some(function(v){ return qTerms[v]; })) topicIdf += idf(t); });
+      }
+    }
+    var secMap={}; scored.slice(0,5).forEach(function(s){ secMap[s.h.title]=s.h; });
     if(metPhrase[id]) identity=Math.max(identity,1);
     var total=identity+topic; if(total===0) return;
     var secs=Object.keys(secMap).map(function(k){ return secMap[k]; }).slice(0,5);
