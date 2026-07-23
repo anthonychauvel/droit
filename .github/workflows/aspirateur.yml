@@ -79,14 +79,32 @@ jobs:
         run: |
           if [ "$(date -u +%u)" = "1" ]; then
             echo "== Lundi : recensement complet de l'univers (IDCC + articles) =="
-            python3 scripts/list_all_ccn.py --out idcc_list_complet.txt --debug-dir debug_list_ccn || echo "list_all_ccn a échoué, pas bloquant pour la suite du run"
+            # Univers IDCC : construit depuis le référentiel officiel DARES, et non
+            # plus par scraping de Légifrance. L'appel de list_all_ccn.py renvoie un
+            # HTTP 500 côté Légifrance, ce qui laissait idcc_list_complet.txt vide —
+            # or le garde « if [ -s ... ] » plus bas coupe alors toute récupération.
+            # DARES est une source officielle, stable, qui indique en plus quelles
+            # conventions sont actives et lesquelles ont fusionné.
+            python3 scripts/dares_to_univers.py \
+              --xlsx ccn/Dares_Suivi_Historique_convention_collective_Juin2026.xlsx \
+              --out idcc_list_complet.txt --fusions idcc_fusions.csv \
+              || echo "dares_to_univers a échoué, on garde l'univers précédent"
+            # Conservé en secours : si Légifrance refonctionne un jour, cet appel
+            # complète l'univers DARES au lieu de le remplacer.
+            python3 scripts/list_all_ccn.py --out /tmp/idcc_legifrance.txt --debug-dir debug_list_ccn || echo "list_all_ccn a échoué (HTTP 500 connu), sans conséquence : l'univers vient de DARES"
             python3 scripts/list_all_code_articles.py --code-id LEGITEXT000006072050 --out all_articles_code_travail.txt || echo "list_all_code_articles (travail) a échoué, pas bloquant"
             python3 scripts/list_all_code_articles.py --code-id LEGITEXT000006073189 --out all_articles_code_secu.txt || echo "list_all_code_articles (sécu) a échoué, pas bloquant"
           else
             echo "== Jeudi : pas de recensement complet (on remplit les nouveautés du lundi) =="
           fi
           # Signale ce qui est nouveau (rapport visible dans l'onglet Mises à jour).
-          python3 scripts/detect_nouveaux.py --suivi idcc_list.txt --univers idcc_list_complet.txt --label "IDCC" || true
+          # --auto-incorporer : une nouvelle convention rejoint idcc_list.txt tout de
+          # suite, donc la passe « --only-missing » de ce même run la récupère. C'est
+          # sûr parce que l'univers vient de DARES (source officielle) et que le
+          # script refuse de travailler sur un univers vide ou tronqué.
+          # --fusions : évite de signaler comme « disparues » les ~1100 conventions
+          # qui ont en réalité fusionné ; le rapport indique la convention repreneuse.
+          python3 scripts/detect_nouveaux.py --suivi idcc_list.txt --univers idcc_list_complet.txt --label "IDCC" --fusions idcc_fusions.csv --auto-incorporer || true
           python3 scripts/detect_nouveaux.py --suivi articles_list.txt --univers all_articles_code_travail.txt --label "article-travail" || true
           python3 scripts/detect_nouveaux.py --suivi articles_list_css.txt --univers all_articles_code_secu.txt --label "article-secu" || true
 
@@ -120,7 +138,7 @@ jobs:
           python3 scripts/build_search_index.py --out output/search-index.json || true
           python3 scripts/build_trends.py --out output/search-trends.json || true
           python3 scripts/build_manifest.py --out output/manifest.json || true
-          git add output/ audits/ idcc_list_complet.txt all_articles_code_travail.txt all_articles_code_secu.txt 2>/dev/null || true
+          git add output/ audits/ idcc_list.txt idcc_list_complet.txt idcc_fusions.csv all_articles_code_travail.txt all_articles_code_secu.txt 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "Aucun nouveau numéro à remplir ce run."
           else
@@ -159,12 +177,12 @@ jobs:
       - name: Compléter les avenants salaire (texte intégral)
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |
-          python3 scripts/fetch_salary_details.py --ccn-dir output/ccn
+          python3 scripts/fetch_salary_details.py --ccn-dir output/ccn --max-stubs-par-ccn 3 --budget-appels 1200
 
       - name: Compléter les clauses heures sup/majoration/contingent
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |
-          python3 scripts/fetch_overtime_details.py --ccn-dir output/ccn
+          python3 scripts/fetch_overtime_details.py --ccn-dir output/ccn --max-stubs-par-ccn 3 --budget-appels 1200
 
       - name: Compléter les clauses forfait jours/cadres autonomes/cadres dirigeants
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
@@ -179,7 +197,7 @@ jobs:
       - name: Compléter les sections classification/coefficients
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |
-          python3 scripts/fetch_classification_details.py --ccn-dir output/ccn
+          python3 scripts/fetch_classification_details.py --ccn-dir output/ccn --max-stubs-par-ccn 3 --budget-appels 1200
 
       - name: Récupérer le Code du travail
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
