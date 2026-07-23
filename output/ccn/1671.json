@@ -9707,13 +9707,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005698691",
+              "cid": "KALISCTA000005698691",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Modifications de la grille de salaires au 1er mars 1996, 1er juillet 1996 et 1er octobre 1996",
+              "dateModif": null,
+              "dateDebut": "1995-10-06",
+              "dateFin": "1998-06-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005788238",
+                  "cid": "KALIARTI000005788238",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005698691/KALIARTI000005788238",
+                  "pathTitle": [
+                    "Modifications de la grille de salaires au 1er mars 1996, 1er juillet 1996 et 1er octobre 1996"
+                  ],
+                  "content": "<p></p>   A compter du 1er mars 1996, les coefficients minima inférieurs à 300 seront revalorisés de 5 points.<p></p><p></p>   L'ensemble des coefficients est revalorisé de 2 points à compter du 1er juillet 1996 et de 1 point au 1er octobre 1996.<p></p><p></p><p></p> NOUVELLE GRILLE AU 1ER MARS 1996.<p></p><p></p><p></p><TABLE><TR><TD>      Catégorie 1     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    240   </TD></TR><TR><TD>     2     </TD><TD>    247   </TD></TR><TR><TD>     3     </TD><TD>    254   </TD></TR><TR><TD>     4     </TD><TD>    261   </TD></TR><TR><TD>     5     </TD><TD>    268   </TD></TR><TR><TD>     6     </TD><TD>    274   </TD></TR><TR><TD>     7     </TD><TD>    279   </TD></TR><TR><TD>     8     </TD><TD>    282   </TD></TR><TR><TD>     9     </TD><TD>    284   </TD></TR><TR><TD>    10     </TD><TD>    286   </TD></TR><TR><TD>    11     </TD><TD>    290   </TD></TR><TR><TD>    12     </TD><TD>    295   </TD></TR><TR><TD>    13     </TD><TD>    300   </TD></TR></TABLE><p></p>   NOUVELLE GRILLE AU 1ER MARS 1996.<p></p><TABLE><TR><TD>      Catégorie 2     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    250   </TD></TR><TR><TD>     2     </TD><TD>    257   </TD></TR><TR><TD>     3     </TD><TD>    264   </TD></TR><TR><TD>     4     </TD><TD>    271   </TD></TR><TR><TD>     5     </TD><TD>    277   </TD></TR><TR><TD>     6     </TD><TD>    283   </TD></TR><TR><TD>     7     </TD><TD>    289   </TD></TR><TR><TD>     8     </TD><TD>    294   </TD></TR><TR><TD>     9     </TD><TD>    296   </TD></TR><TR><TD>    10     </TD><TD>    298   </TD></TR><TR><TD>    11     </TD><TD>    303   </TD></TR><TR><TD>    12     </TD><TD>    303   </TD></TR><TR><TD>    13     </TD><TD>    308   </TD></TR></TABLE><p></p>   NOUVELLE GRILLE AU 1ER MARS 1996.<p></p><TABLE><TR><TD>      Catégorie 3     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    280   </TD></TR><TR><TD>     2     </TD><TD>    288   </TD></TR><TR><TD>     3     </TD><TD>    296   </TD></TR><TR><TD>     4     </TD><TD>    304   </TD></TR><TR><TD>     5     </TD><TD>    306   </TD></TR><TR><TD>     6     </TD><TD>    313   </TD></TR><TR><TD>     7     </TD><TD>    320   </TD></TR><TR><TD>     8     </TD><TD>    324   </TD></TR><TR><TD>     9     </TD><TD>    327   </TD></TR><TR><TD>    10     </TD><TD>    329   </TD></TR><TR><TD>    11     </TD><TD>    334   </TD></TR><TR><TD>    12     </TD><TD>    339   </TD></TR><TR><TD>    13     </TD><TD>    344   </TD></TR></TABLE><p></p>   NOUVELLE GRILLE AU 1ER MARS 1996.<p></p><TABLE><TR><TD>      Catégorie 4     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    305   </TD></TR><TR><TD>     2     </TD><TD>    314   </TD></TR><TR><TD>     3     </TD><TD>    323   </TD></TR><TR><TD>     4     </TD><TD>    332   </TD></TR><TR><TD>     5     </TD><TD>    340   </TD></TR><TR><TD>     6     </TD><TD>    347   </TD></TR><TR><TD>     7     </TD><TD>    354   </TD></TR><TR><TD>     8     </TD><TD>    358   </TD></TR><TR><TD>     9     </TD><TD>    362   </TD></TR><TR><TD>    10     </TD><TD>    365   </TD></TR><TR><TD>    11     </TD><TD>    370   </TD></TR><TR><TD>    12     </TD><TD>    375   </TD></TR><TR><TD>    13     </TD><TD>    380   </TD></TR></TABLE><p></p>   NOUVELLE GRILLE AU 1ER MARS 1996.<p></p><TABLE><TR><TD>      Catégorie 5     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    355   </TD></TR><TR><TD>     2     </TD><TD>    365   </TD></TR><TR><TD>     3     </TD><TD>    375   </TD></TR><TR><TD>     4     </TD><TD>    385   </TD></TR><TR><TD>     5     </TD><TD>    394   </TD></TR><TR><TD>     6     </TD><TD>    403   </TD></TR><TR><TD>     7     </TD><TD>    411   </TD></TR><TR><TD>     8     </TD><TD>    418   </TD></TR><TR><TD>     9     </TD><TD>    422   </TD></TR><TR><TD>    10     </TD><TD>    425   </TD></TR><TR><TD>    11     </TD><TD>    430   </TD></TR><TR><TD>    12     </TD><TD>    435   </TD></TR><TR><TD>    13     </TD><TD>    440   </TD></TR></TABLE><p></p><p></p><p></p>  NOUVELLE GRILLE AU 1ER MARS 1996.<p></p><TABLE><TR><TD>      Catégorie 6     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    405   </TD></TR><TR><TD>     2     </TD><TD>    417   </TD></TR><TR><TD>     3     </TD><TD>    429   </TD></TR><TR><TD>     4     </TD><TD>    442   </TD></TR><TR><TD>     5     </TD><TD>    452   </TD></TR><TR><TD>     6     </TD><TD>    463   </TD></TR><TR><TD>     7     </TD><TD>    474   </TD></TR><TR><TD>     8     </TD><TD>    478   </TD></TR><TR><TD>     9     </TD><TD>    482   </TD></TR><TR><TD>    10     </TD><TD>    485   </TD></TR><TR><TD>    11     </TD><TD>    490   </TD></TR><TR><TD>    12     </TD><TD>    495   </TD></TR><TR><TD>    13     </TD><TD>    500   </TD></TR></TABLE><p></p><p></p> NOUVELLE GRILLE AU 1ER JUILLET 1996.<p></p><p></p><p></p><TABLE><TR><TD>      Catégorie 1     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    242   </TD></TR><TR><TD>     2     </TD><TD>    249   </TD></TR><TR><TD>     3     </TD><TD>    256   </TD></TR><TR><TD>     4     </TD><TD>    263   </TD></TR><TR><TD>     5     </TD><TD>    270   </TD></TR><TR><TD>     6     </TD><TD>    276   </TD></TR><TR><TD>     7     </TD><TD>    281   </TD></TR><TR><TD>     8     </TD><TD>    284   </TD></TR><TR><TD>     9     </TD><TD>    286   </TD></TR><TR><TD>    10     </TD><TD>    288   </TD></TR><TR><TD>    11     </TD><TD>    292   </TD></TR><TR><TD>    12     </TD><TD>    297   </TD></TR><TR><TD>    13     </TD><TD>    302   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER JUILLET 1996.<p></p><TABLE><TR><TD>      Catégorie 2     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    252   </TD></TR><TR><TD>     2     </TD><TD>    259   </TD></TR><TR><TD>     3     </TD><TD>    266   </TD></TR><TR><TD>     4     </TD><TD>    273   </TD></TR><TR><TD>     5     </TD><TD>    279   </TD></TR><TR><TD>     6     </TD><TD>    285   </TD></TR><TR><TD>     7     </TD><TD>    291   </TD></TR><TR><TD>     8     </TD><TD>    296   </TD></TR><TR><TD>     9     </TD><TD>    298   </TD></TR><TR><TD>    10     </TD><TD>    300   </TD></TR><TR><TD>    11     </TD><TD>    305   </TD></TR><TR><TD>    12     </TD><TD>    305   </TD></TR><TR><TD>    13     </TD><TD>    310   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER JUILLET 1996.<p></p><TABLE><TR><TD>      Catégorie 3     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    282   </TD></TR><TR><TD>     2     </TD><TD>    290   </TD></TR><TR><TD>     3     </TD><TD>    298   </TD></TR><TR><TD>     4     </TD><TD>    306   </TD></TR><TR><TD>     5     </TD><TD>    308   </TD></TR><TR><TD>     6     </TD><TD>    315   </TD></TR><TR><TD>     7     </TD><TD>    322   </TD></TR><TR><TD>     8     </TD><TD>    326   </TD></TR><TR><TD>     9     </TD><TD>    329   </TD></TR><TR><TD>    10     </TD><TD>    331   </TD></TR><TR><TD>    11     </TD><TD>    336   </TD></TR><TR><TD>    12     </TD><TD>    341   </TD></TR><TR><TD>    13     </TD><TD>    346   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER JUILLET 1996.<p></p><TABLE><TR><TD>      Catégorie 4     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    307   </TD></TR><TR><TD>     2     </TD><TD>    316   </TD></TR><TR><TD>     3     </TD><TD>    325   </TD></TR><TR><TD>     4     </TD><TD>    334   </TD></TR><TR><TD>     5     </TD><TD>    342   </TD></TR><TR><TD>     6     </TD><TD>    349   </TD></TR><TR><TD>     7     </TD><TD>    356   </TD></TR><TR><TD>     8     </TD><TD>    360   </TD></TR><TR><TD>     9     </TD><TD>    364   </TD></TR><TR><TD>    10     </TD><TD>    367   </TD></TR><TR><TD>    11     </TD><TD>    372   </TD></TR><TR><TD>    12     </TD><TD>    377   </TD></TR><TR><TD>    13     </TD><TD>    382   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER JUILLET 1996.<p></p><TABLE><TR><TD>      Catégorie 5     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    357   </TD></TR><TR><TD>     2     </TD><TD>    367   </TD></TR><TR><TD>     3     </TD><TD>    377   </TD></TR><TR><TD>     4     </TD><TD>    387   </TD></TR><TR><TD>     5     </TD><TD>    396   </TD></TR><TR><TD>     6     </TD><TD>    405   </TD></TR><TR><TD>     7     </TD><TD>    413   </TD></TR><TR><TD>     8     </TD><TD>    420   </TD></TR><TR><TD>     9     </TD><TD>    424   </TD></TR><TR><TD>    10     </TD><TD>    427   </TD></TR><TR><TD>    11     </TD><TD>    432   </TD></TR><TR><TD>    12     </TD><TD>    437   </TD></TR><TR><TD>    13     </TD><TD>    442   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER JUILLET 1996.<p></p><TABLE><TR><TD>      Catégorie 6     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    407   </TD></TR><TR><TD>     2     </TD><TD>    419   </TD></TR><TR><TD>     3     </TD><TD>    431   </TD></TR><TR><TD>     4     </TD><TD>    444   </TD></TR><TR><TD>     5     </TD><TD>    454   </TD></TR><TR><TD>     6     </TD><TD>    465   </TD></TR><TR><TD>     7     </TD><TD>    476   </TD></TR><TR><TD>     8     </TD><TD>    480   </TD></TR><TR><TD>     9     </TD><TD>    484   </TD></TR><TR><TD>    10     </TD><TD>    487   </TD></TR><TR><TD>    11     </TD><TD>    492   </TD></TR><TR><TD>    12     </TD><TD>    497   </TD></TR><TR><TD>    13     </TD><TD>    502   </TD></TR></TABLE><p></p>NOUVELLE GRILLE AU 1ER OCTOBRE 1996.<p></p><p></p><p></p><TABLE><TR><TD>      Catégorie 1     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    243   </TD></TR><TR><TD>     2     </TD><TD>    250   </TD></TR><TR><TD>     3     </TD><TD>    257   </TD></TR><TR><TD>     4     </TD><TD>    264   </TD></TR><TR><TD>     5     </TD><TD>    271   </TD></TR><TR><TD>     6     </TD><TD>    277   </TD></TR><TR><TD>     7     </TD><TD>    282   </TD></TR><TR><TD>     8     </TD><TD>    285   </TD></TR><TR><TD>     9     </TD><TD>    287   </TD></TR><TR><TD>    10     </TD><TD>    289   </TD></TR><TR><TD>    11     </TD><TD>    293   </TD></TR><TR><TD>    12     </TD><TD>    298   </TD></TR><TR><TD>    13     </TD><TD>    303   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER OCTOBRE 1996.<p></p><TABLE><TR><TD>      Catégorie 2     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    253   </TD></TR><TR><TD>     2     </TD><TD>    260   </TD></TR><TR><TD>     3     </TD><TD>    267   </TD></TR><TR><TD>     4     </TD><TD>    274   </TD></TR><TR><TD>     5     </TD><TD>    280   </TD></TR><TR><TD>     6     </TD><TD>    286   </TD></TR><TR><TD>     7     </TD><TD>    292   </TD></TR><TR><TD>     8     </TD><TD>    297   </TD></TR><TR><TD>     9     </TD><TD>    299   </TD></TR><TR><TD>    10     </TD><TD>    301   </TD></TR><TR><TD>    11     </TD><TD>    306   </TD></TR><TR><TD>    12     </TD><TD>    306   </TD></TR><TR><TD>    13     </TD><TD>    311   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER OCTOBRE 1996.<p></p><TABLE><TR><TD>      Catégorie 3     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    283   </TD></TR><TR><TD>     2     </TD><TD>    291   </TD></TR><TR><TD>     3     </TD><TD>    299   </TD></TR><TR><TD>     4     </TD><TD>    307   </TD></TR><TR><TD>     5     </TD><TD>    309   </TD></TR><TR><TD>     6     </TD><TD>    316   </TD></TR><TR><TD>     7     </TD><TD>    323   </TD></TR><TR><TD>     8     </TD><TD>    327   </TD></TR><TR><TD>     9     </TD><TD>    330   </TD></TR><TR><TD>    10     </TD><TD>    332   </TD></TR><TR><TD>    11     </TD><TD>    337   </TD></TR><TR><TD>    12     </TD><TD>    342   </TD></TR><TR><TD>    13     </TD><TD>    347   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER OCTOBRE 1996.<p></p><TABLE><TR><TD>      Catégorie 4     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    308   </TD></TR><TR><TD>     2     </TD><TD>    317   </TD></TR><TR><TD>     3     </TD><TD>    326   </TD></TR><TR><TD>     4     </TD><TD>    335   </TD></TR><TR><TD>     5     </TD><TD>    343   </TD></TR><TR><TD>     6     </TD><TD>    350   </TD></TR><TR><TD>     7     </TD><TD>    357   </TD></TR><TR><TD>     8     </TD><TD>    361   </TD></TR><TR><TD>     9     </TD><TD>    365   </TD></TR><TR><TD>    10     </TD><TD>    368   </TD></TR><TR><TD>    11     </TD><TD>    373   </TD></TR><TR><TD>    12     </TD><TD>    378   </TD></TR><TR><TD>    13     </TD><TD>    383   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER OCTOBRE 1996.<p></p><TABLE><TR><TD>      Catégorie 5     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    358   </TD></TR><TR><TD>     2     </TD><TD>    368   </TD></TR><TR><TD>     3     </TD><TD>    378   </TD></TR><TR><TD>     4     </TD><TD>    388   </TD></TR><TR><TD>     5     </TD><TD>    397   </TD></TR><TR><TD>     6     </TD><TD>    406   </TD></TR><TR><TD>     7     </TD><TD>    414   </TD></TR><TR><TD>     8     </TD><TD>    421   </TD></TR><TR><TD>     9     </TD><TD>    425   </TD></TR><TR><TD>    10     </TD><TD>    428   </TD></TR><TR><TD>    11     </TD><TD>    433   </TD></TR><TR><TD>    12     </TD><TD>    438   </TD></TR><TR><TD>    13     </TD><TD>    443   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER OCTOBRE 1996.<p></p><TABLE><TR><TD>      Catégorie 6     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    408   </TD></TR><TR><TD>     2     </TD><TD>    420   </TD></TR><TR><TD>     3     </TD><TD>    432   </TD></TR><TR><TD>     4     </TD><TD>    445   </TD></TR><TR><TD>     5     </TD><TD>    455   </TD></TR><TR><TD>     6     </TD><TD>    466   </TD></TR><TR><TD>     7     </TD><TD>    477   </TD></TR><TR><TD>     8     </TD><TD>    481   </TD></TR><TR><TD>     9     </TD><TD>    485   </TD></TR><TR><TD>    10     </TD><TD>    488   </TD></TR><TR><TD>    11     </TD><TD>    493   </TD></TR><TR><TD>    12     </TD><TD>    498   </TD></TR><TR><TD>    13     </TD><TD>    503   </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 8 1995-10-06, BO conventions collectives 95-46, étendu par arrêté du 26 février 1996 JORF 7 mars 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (Annexe 4)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 812937600000,
+                  "dateFin": 898473600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -9727,13 +9801,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005698692",
+              "cid": "KALISCTA000005698692",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur annuelle du point au 1er avril 1998, 1er novembre 1998, 1er avril 1999  et 1er décembre 1999",
+              "dateModif": null,
+              "dateDebut": "1998-06-22",
+              "dateFin": "2001-06-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005788239",
+                  "cid": "KALIARTI000005788239",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005698692/KALIARTI000005788239",
+                  "pathTitle": [
+                    "Valeur annuelle du point au 1er avril 1998, 1er novembre 1998, 1er avril 1999  et 1er décembre 1999"
+                  ],
+                  "content": "<p></p>   Valeur annuelle du point :<p></p><p></p>   Conformément à l'article IX-1 de la convention collective et en application de l'accord intervenu dans la fonction publique pour les années 1998 et 1999 :<p></p><p></p>   - la valeur annuelle du point a augmenté de 0,8 % le 1er avril 1998 (elle est donc passée à 328,28 F) ;<p></p><p></p>   - elle augmentera de 0,5 % au 1er novembre 1998 ;<p></p><p></p>   - elle augmentera de 0,5 % au 1er avril 1999 ;<p></p><p></p>   - elle augmentera de 0,8 % au 1er décembre 1999.<p></p><p></p>   Grille des salaires :<p></p><p></p>   Le coefficient minimum de la catégorie 1, échelon 1, est revalorisé de un point et passe à 244 points.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 14 1998-06-22 BO conventions collectives 98-29 étendu par arrêté du 12 octobre 1998 JORF 21 octobre 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (Annexe 4)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 898473600000,
+                  "dateFin": 992908800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -9747,13 +9895,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005698693",
+              "cid": "KALISCTA000005698693",
+              "intOrdre": 42949,
+              "etat": "PERIME",
+              "title": "Modifications de la grille de salaires au 1er avril 1999, et 1er octobre 1999",
+              "dateModif": null,
+              "dateDebut": "1998-06-22",
+              "dateFin": "2010-12-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005788240",
+                  "cid": "KALIARTI000005788240",
+                  "intOrdre": 42949,
+                  "etat": "PERIME",
+                  "num": null,
+                  "path": "/KALISCTA000005698693/KALIARTI000005788240",
+                  "pathTitle": [
+                    "Modifications de la grille de salaires au 1er avril 1999, et 1er octobre 1999"
+                  ],
+                  "content": "NOUVELLE GRILLE AU 1ER AVRIL 1999.<p></p><p></p><p></p><TABLE><TR><TD>      Catégorie 1     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    245   </TD></TR><TR><TD>     2     </TD><TD>    251   </TD></TR><TR><TD>     3     </TD><TD>    258   </TD></TR><TR><TD>     4     </TD><TD>    265   </TD></TR><TR><TD>     5     </TD><TD>    272   </TD></TR><TR><TD>     6     </TD><TD>    278   </TD></TR><TR><TD>     7     </TD><TD>    283   </TD></TR><TR><TD>     8     </TD><TD>    286   </TD></TR><TR><TD>     9     </TD><TD>    288   </TD></TR><TR><TD>    10     </TD><TD>    290   </TD></TR><TR><TD>    11     </TD><TD>    294   </TD></TR><TR><TD>    12     </TD><TD>    299   </TD></TR><TR><TD>    13     </TD><TD>    304   </TD></TR></TABLE><p></p>   NOUVELLE GRILLE AU 1ER AVRIL 1999.<p></p><TABLE><TR><TD>      Catégorie 2     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    256   </TD></TR><TR><TD>     2     </TD><TD>    263   </TD></TR><TR><TD>     3     </TD><TD>    270   </TD></TR><TR><TD>     4     </TD><TD>    278   </TD></TR><TR><TD>     5     </TD><TD>    283   </TD></TR><TR><TD>     6     </TD><TD>    289   </TD></TR><TR><TD>     7     </TD><TD>    295   </TD></TR><TR><TD>     8     </TD><TD>    300   </TD></TR><TR><TD>     9     </TD><TD>    302   </TD></TR><TR><TD>    10     </TD><TD>    304   </TD></TR><TR><TD>    11     </TD><TD>    309   </TD></TR><TR><TD>    12     </TD><TD>    310   </TD></TR><TR><TD>    13     </TD><TD>    315   </TD></TR></TABLE><p></p>   NOUVELLE GRILLE AU 1ER AVRIL 1999.<p></p><TABLE><TR><TD>      Catégorie 3     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    284   </TD></TR><TR><TD>     2     </TD><TD>    292   </TD></TR><TR><TD>     3     </TD><TD>    300   </TD></TR><TR><TD>     4     </TD><TD>    308   </TD></TR><TR><TD>     5     </TD><TD>    311   </TD></TR><TR><TD>     6     </TD><TD>    317   </TD></TR><TR><TD>     7     </TD><TD>    324   </TD></TR><TR><TD>     8     </TD><TD>    328   </TD></TR><TR><TD>     9     </TD><TD>    331   </TD></TR><TR><TD>    10     </TD><TD>    333   </TD></TR><TR><TD>    11     </TD><TD>    338   </TD></TR><TR><TD>    12     </TD><TD>    343   </TD></TR><TR><TD>    13     </TD><TD>    349   </TD></TR></TABLE><p></p>   NOUVELLE GRILLE AU 1ER AVRIL 1999.<p></p><TABLE><TR><TD>      Catégorie 4     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    309   </TD></TR><TR><TD>     2     </TD><TD>    318   </TD></TR><TR><TD>     3     </TD><TD>    327   </TD></TR><TR><TD>     4     </TD><TD>    336   </TD></TR><TR><TD>     5     </TD><TD>    344   </TD></TR><TR><TD>     6     </TD><TD>    351   </TD></TR><TR><TD>     7     </TD><TD>    358   </TD></TR><TR><TD>     8     </TD><TD>    362   </TD></TR><TR><TD>     9     </TD><TD>    366   </TD></TR><TR><TD>    10     </TD><TD>    369   </TD></TR><TR><TD>    11     </TD><TD>    374   </TD></TR><TR><TD>    12     </TD><TD>    379   </TD></TR><TR><TD>    13     </TD><TD>    384   </TD></TR></TABLE><p></p>   NOUVELLE GRILLE AU 1ER AVRIL 1999.<p></p><TABLE><TR><TD>      Catégorie 5     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    359   </TD></TR><TR><TD>     2     </TD><TD>    369   </TD></TR><TR><TD>     3     </TD><TD>    379   </TD></TR><TR><TD>     4     </TD><TD>    389   </TD></TR><TR><TD>     5     </TD><TD>    398   </TD></TR><TR><TD>     6     </TD><TD>    407   </TD></TR><TR><TD>     7     </TD><TD>    415   </TD></TR><TR><TD>     8     </TD><TD>    422   </TD></TR><TR><TD>     9     </TD><TD>    426   </TD></TR><TR><TD>    10     </TD><TD>    429   </TD></TR><TR><TD>    11     </TD><TD>    434   </TD></TR><TR><TD>    12     </TD><TD>    439   </TD></TR><TR><TD>    13     </TD><TD>    444   </TD></TR></TABLE><p></p><p></p><p></p>  NOUVELLE GRILLE AU 1ER AVRIL 1999.<p></p><TABLE><TR><TD>      Catégorie 6     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    409   </TD></TR><TR><TD>     2     </TD><TD>    421   </TD></TR><TR><TD>     3     </TD><TD>    433   </TD></TR><TR><TD>     4     </TD><TD>    446   </TD></TR><TR><TD>     5     </TD><TD>    456   </TD></TR><TR><TD>     6     </TD><TD>    467   </TD></TR><TR><TD>     7     </TD><TD>    478   </TD></TR><TR><TD>     8     </TD><TD>    482   </TD></TR><TR><TD>     9     </TD><TD>    487   </TD></TR><TR><TD>    10     </TD><TD>    491   </TD></TR><TR><TD>    11     </TD><TD>    496   </TD></TR><TR><TD>    12     </TD><TD>    502   </TD></TR><TR><TD>    13     </TD><TD>    507   </TD></TR></TABLE><p></p><p></p> NOUVELLE GRILLE AU 1ER DECEMBRE 1999.<p></p><p></p><p></p><TABLE><TR><TD>      Catégorie 1     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    246   </TD></TR><TR><TD>     2     </TD><TD>    252   </TD></TR><TR><TD>     3     </TD><TD>    259   </TD></TR><TR><TD>     4     </TD><TD>    266   </TD></TR><TR><TD>     5     </TD><TD>    273   </TD></TR><TR><TD>     6     </TD><TD>    279   </TD></TR><TR><TD>     7     </TD><TD>    284   </TD></TR><TR><TD>     8     </TD><TD>    287   </TD></TR><TR><TD>     9     </TD><TD>    289   </TD></TR><TR><TD>    10     </TD><TD>    291   </TD></TR><TR><TD>    11     </TD><TD>    295   </TD></TR><TR><TD>    12     </TD><TD>    300   </TD></TR><TR><TD>    13     </TD><TD>    305   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER DECEMBRE 1999.<p></p><TABLE><TR><TD>      Catégorie 2     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    260   </TD></TR><TR><TD>     2     </TD><TD>    267   </TD></TR><TR><TD>     3     </TD><TD>    274   </TD></TR><TR><TD>     4     </TD><TD>    282   </TD></TR><TR><TD>     5     </TD><TD>    287   </TD></TR><TR><TD>     6     </TD><TD>    293   </TD></TR><TR><TD>     7     </TD><TD>    299   </TD></TR><TR><TD>     8     </TD><TD>    303   </TD></TR><TR><TD>     9     </TD><TD>    306   </TD></TR><TR><TD>    10     </TD><TD>    308   </TD></TR><TR><TD>    11     </TD><TD>    312   </TD></TR><TR><TD>    12     </TD><TD>    314   </TD></TR><TR><TD>    13     </TD><TD>    319   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER DECEMBRE 1999.<p></p><TABLE><TR><TD>      Catégorie 3     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    286   </TD></TR><TR><TD>     2     </TD><TD>    294   </TD></TR><TR><TD>     3     </TD><TD>    302   </TD></TR><TR><TD>     4     </TD><TD>    309   </TD></TR><TR><TD>     5     </TD><TD>    314   </TD></TR><TR><TD>     6     </TD><TD>    319   </TD></TR><TR><TD>     7     </TD><TD>    325   </TD></TR><TR><TD>     8     </TD><TD>    329   </TD></TR><TR><TD>     9     </TD><TD>    332   </TD></TR><TR><TD>    10     </TD><TD>    334   </TD></TR><TR><TD>    11     </TD><TD>    339   </TD></TR><TR><TD>    12     </TD><TD>    344   </TD></TR><TR><TD>    13     </TD><TD>    350   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER DECEMBRE 1999.<p></p><TABLE><TR><TD>      Catégorie 4     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    310   </TD></TR><TR><TD>     2     </TD><TD>    319   </TD></TR><TR><TD>     3     </TD><TD>    328   </TD></TR><TR><TD>     4     </TD><TD>    337   </TD></TR><TR><TD>     5     </TD><TD>    345   </TD></TR><TR><TD>     6     </TD><TD>    352   </TD></TR><TR><TD>     7     </TD><TD>    359   </TD></TR><TR><TD>     8     </TD><TD>    363   </TD></TR><TR><TD>     9     </TD><TD>    367   </TD></TR><TR><TD>    10     </TD><TD>    370   </TD></TR><TR><TD>    11     </TD><TD>    375   </TD></TR><TR><TD>    12     </TD><TD>    380   </TD></TR><TR><TD>    13     </TD><TD>    385   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER DECEMBRE 1999.<p></p><TABLE><TR><TD>      Catégorie 5     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    360   </TD></TR><TR><TD>     2     </TD><TD>    370   </TD></TR><TR><TD>     3     </TD><TD>    380   </TD></TR><TR><TD>     4     </TD><TD>    390   </TD></TR><TR><TD>     5     </TD><TD>    399   </TD></TR><TR><TD>     6     </TD><TD>    408   </TD></TR><TR><TD>     7     </TD><TD>    416   </TD></TR><TR><TD>     8     </TD><TD>    423   </TD></TR><TR><TD>     9     </TD><TD>    427   </TD></TR><TR><TD>    10     </TD><TD>    430   </TD></TR><TR><TD>    11     </TD><TD>    435   </TD></TR><TR><TD>    12     </TD><TD>    440   </TD></TR><TR><TD>    13     </TD><TD>    445   </TD></TR></TABLE><p></p><p></p>  NOUVELLE GRILLE AU 1ER DECEMBRE 1999.<p></p><TABLE><TR><TD>      Catégorie 6     </TD></TR><TR><TD> Catégorie </TD><TD>  échelon </TD></TR><TR><TD>     1     </TD><TD>    410   </TD></TR><TR><TD>     2     </TD><TD>    422   </TD></TR><TR><TD>     3     </TD><TD>    434   </TD></TR><TR><TD>     4     </TD><TD>    447   </TD></TR><TR><TD>     5     </TD><TD>    457   </TD></TR><TR><TD>     6     </TD><TD>    468   </TD></TR><TR><TD>     7     </TD><TD>    479   </TD></TR><TR><TD>     8     </TD><TD>    483   </TD></TR><TR><TD>     9     </TD><TD>    490   </TD></TR><TR><TD>    10     </TD><TD>    496   </TD></TR><TR><TD>    11     </TD><TD>    504   </TD></TR><TR><TD>    12     </TD><TD>    510   </TD></TR><TR><TD>    13     </TD><TD>    516   </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 15 1998-06-22 BO conventions collectives 98-29 étendu par arrêté du 12 octobre 1998 JORF 21 octobre 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (Annexe 4)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 898473600000,
+                  "dateFin": 1291593600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

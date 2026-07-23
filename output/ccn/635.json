@@ -5910,7 +5910,8 @@
           "renvoiNum": null,
           "notaHtml": null,
           "notaSectionsAafficher": null,
-          "_texte_complet_recupere": true
+          "_texte_complet_recupere": true,
+          "_type_complement": "classification"
         },
         {
           "executionTime": 0,
@@ -6346,12 +6347,89 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000036026259",
+              "cid": "KALIARTI000036026259",
+              "intOrdre": 524287,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000036026259",
+              "pathTitle": [],
+              "content": "<p align=\"left\">Par conséquent, par la présente, l'accord remplace la partie :</p><p align=\"center\">Salaires</p><p align=\"right\">(En euros.)</p><p align=\"left\"></p><center><table border=\"1\"><tbody><tr><th>Coefficient</th><th>Brut</th></tr><tr><td align=\"center\">120</td><td align=\"center\">1 490,00</td></tr><tr><td align=\"center\">130</td><td align=\"center\">1 503,00</td></tr><tr><td align=\"center\">150</td><td align=\"center\">1 535,00</td></tr><tr><td align=\"center\">160</td><td align=\"center\">1 580,00</td></tr><tr><td align=\"center\">180</td><td align=\"center\">1 610,00</td></tr><tr><td align=\"center\">220</td><td align=\"center\">1 718,00</td></tr><tr><td align=\"center\">240</td><td align=\"center\">1 730,00</td></tr><tr><td align=\"center\">260</td><td align=\"center\">1 790,00</td></tr><tr><td align=\"center\">280</td><td align=\"center\">1 865,00</td></tr><tr><td align=\"center\">325</td><td align=\"center\">2 180,00</td></tr><tr><td align=\"center\">375</td><td align=\"center\">2 520,00</td></tr><tr><td align=\"center\">450</td><td align=\"center\">3 110,00</td></tr><tr><td align=\"center\">600</td><td align=\"center\">3 320,00</td></tr><tr><td align=\"center\">800</td><td align=\"center\">3 750,00</td></tr></tbody></table></center><p></p><p align=\"left\"><em>Ces dispositions sont étendues sans préjudice de l'application des articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006900954&dateTexte=&categorieLien=cid\">L. 1225-66</a>, L. 1225-67.</em><a shape=\"rect\" href=\"#RENVOI_KALIARTI000036026259_1\"> (1)</a><br/>\nLe présent accord obéit aux mêmes dispositions en matière de durée, de dénonciation et de révision que la convention collective.<br/>\nLe présent accord sera déposé par la partie la plus diligente auprès des services centraux du ministre chargé du travail.<br/>\nLe présent accord prendra effet 1 mois après sa publication au Journal officiel et à compter de la date de son extension pour toutes les entreprises de la branche.<br/>\nEn même temps que le dépôt, les parties signataires s'engagent à effectuer les démarches nécessaires pour en obtenir l'extension.</p><p><font color=\"808080\"><em><a shape=\"rect\" name=\"RENVOI_KALIARTI000036026259_1\"></a>(1) Les termes « ces dispositions sont étendues sans préjudice de l'application des articles L. 1225-66, L.1225-67 » sont exclus de l'extension comme étant contraire à l'objectif à valeur constitutionnelle de clarté et d'intelligibilité de la norme. <br/>\n(Arrêté du 26 décembre 2017 - art. 1)</em></font></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1",
+              "type": "AUTONOME",
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000036338280",
+                  "textTitle": "Arrêté du 26 décembre 2017 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000036338284",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2017-12-30",
+                  "dateSignaTexte": "2017-12-26",
+                  "dateDebutCible": "2999-01-01"
+                },
+                {
+                  "textCid": "KALITEXT000043104270",
+                  "textTitle": "Fusion entre la CCN du commerce de gros et la C... - art. 3 (VE)",
+                  "linkType": "ABROGATION",
+                  "linkOrientation": "source",
+                  "articleNum": "3",
+                  "articleId": "KALIARTI000043104280",
+                  "natureText": "Accord",
+                  "datePubliTexte": "2021-02-08",
+                  "dateSignaTexte": "2020-09-22",
+                  "dateDebutCible": "2020-11-10"
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L1225-66",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L1225-66",
+                  "articleId": "LEGIARTI000006900954",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 1209600000000
+                }
+              ],
+              "conditionDiffere": "Le présent accord prendra effet 1 mois après sa publication au Journal officiel et à compter de la date de son extension pour toutes les entreprises de la branche.",
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1510617600000,
+              "dateFin": 1609459200000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6366,12 +6444,102 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000037940022",
+              "cid": "KALIARTI000037940022",
+              "intOrdre": 524287,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000037940022",
+              "pathTitle": [],
+              "content": "<p align=\"left\">Le présent accord fixe les salaires professionnels catégoriels minima dans la branche professionnelle du négoce en fournitures dentaires. </p><p align=\"left\">Il s'applique à l'ensemble des entreprises définies par l'<a href=\"/affichIDCCArticle.do?cidTexte=KALITEXT000030579247&idArticle=KALIARTI000030579274&categorieLien=cid\">article 1er de l'accord du 18 novembre 2014 </a>convention collective nationale du négoce en fournitures dentaires. </p><p align=\"center\">Salaires </p><p align=\"right\">(En euros.) </p><center><table border=\"1\"><tbody><tr><th>Coefficient </th><th>Brut </th></tr><tr><td align=\"center\">120 </td><td align=\"center\">1 511 </td></tr><tr><td align=\"center\">130 </td><td align=\"center\">1 523 </td></tr><tr><td align=\"center\">150 </td><td align=\"center\">1 555 </td></tr><tr><td align=\"center\">160 </td><td align=\"center\">1 600 </td></tr><tr><td align=\"center\">180 </td><td align=\"center\">1 630 </td></tr><tr><td align=\"center\">200 </td><td align=\"center\">1 665 </td></tr><tr><td align=\"center\">220 </td><td align=\"center\">1 739 </td></tr><tr><td align=\"center\">240 </td><td align=\"center\">1 752 </td></tr><tr><td align=\"center\">260 </td><td align=\"center\">1 812 </td></tr><tr><td align=\"center\">280 </td><td align=\"center\">1 888 </td></tr><tr><td align=\"center\">325 </td><td align=\"center\">2 206 </td></tr><tr><td align=\"center\">375 </td><td align=\"center\">2 548 </td></tr><tr><td align=\"center\">450 </td><td align=\"center\">3 144 </td></tr><tr><td align=\"center\">600 </td><td align=\"center\">3 356 </td></tr><tr><td align=\"center\">800 </td><td align=\"center\">3 791 </td></tr></tbody></table></center><p align=\"left\">Ces dispositions sont étendues sans préjudice de l'application des <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006900954&dateTexte=&categorieLien=cid\">articles L. 1225-66</a>, L. 1225-67. </p><p align=\"center\">Objectifs d'égalité professionnelle </p><p align=\"left\">Les négociations annuelles de la branche sur les salaires minima conventionnels sont, par principe, égalitaires et non discriminantes. </p><p align=\"left\">Les entreprises doivent s'assurer, notamment de la négociation annuelle obligatoire sur les salaires, que les éléments de rémunération des femmes et des hommes sont établis selon les mêmes critères. </p><p align=\"left\">Le présent accord obéit aux mêmes dispositions en matière de durée, de dénonciation et de révision que la convention collective. </p><p align=\"left\">Le présent accord sera déposé par la partie la plus diligente auprès des services centraux du ministre chargé du travail. </p><p align=\"left\">Le présent accord prendra effet 1 mois après sa publication au Journal officiel et à compter de la date de son extension pour toutes les entreprises de la branche. </p><p align=\"left\">En même temps que le dépôt, les parties signataires s'engagent à effectuer les démarches nécessaires pour en obtenir l'extension.</p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1",
+              "type": "AUTONOME",
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000038125292",
+                  "textTitle": "Arrêté du 8 février 2019 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000038125296",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2019-02-14",
+                  "dateSignaTexte": "2019-02-08",
+                  "dateDebutCible": "2999-01-01"
+                },
+                {
+                  "textCid": "KALITEXT000043104270",
+                  "textTitle": "Fusion entre la CCN du commerce de gros et la C... - art. 3 (VE)",
+                  "linkType": "ABROGATION",
+                  "linkOrientation": "source",
+                  "articleNum": "3",
+                  "articleId": "KALIARTI000043104280",
+                  "natureText": "Accord",
+                  "datePubliTexte": "2021-02-08",
+                  "dateSignaTexte": "2020-09-22",
+                  "dateDebutCible": "2020-11-10"
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "KALITEXT000030579247",
+                  "textTitle": "Convention collective nationale du négoce en fournitures dentaires ( Accord du 18 novembre 2014) - art. 1er",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "1er",
+                  "articleId": "KALIARTI000030579274",
+                  "natureText": "Convention collective nationale ",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 1451606400000
+                },
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L1225-66",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L1225-66",
+                  "articleId": "LEGIARTI000006900954",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 1209600000000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1541462400000,
+              "dateFin": 1609459200000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6707,7 +6875,8 @@
           "renvoiNum": null,
           "notaHtml": null,
           "notaSectionsAafficher": null,
-          "_texte_complet_recupere": true
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         }
       ],
       "articles": [],

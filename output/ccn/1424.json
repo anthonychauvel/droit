@@ -7829,13 +7829,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005712942",
+              "cid": "KALISCTA000005712942",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point et valeur des coefficients pour l'année 1997",
+              "dateModif": null,
+              "dateDebut": "1997-07-10",
+              "dateFin": "2000-06-30",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005824756",
+                  "cid": "KALIARTI000005824756",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005712942/KALIARTI000005824756",
+                  "pathTitle": [
+                    "Valeur du point et valeur des coefficients pour l'année 1997"
+                  ],
+                  "content": "<p></p>   Article 1er<p></p><p></p>   Fixation de la valeur du point conventionnel pour l'année 1997<p></p><p></p>   La valeur du point conventionnel pour l'année 1997 est fixée ainsi qu'il suit :<p></p><p></p>   - au 1er avril 1997 : 38,25 francs, soit une augmentation de 1 % par rapport à la valeur du point au 1er novembre 1996 ;<p></p><p></p>   - au 1er septembre 1997 : 38,63 francs, soit une augmentation de 1 % par rapport à la valeur du point au 1er avril 1997.<p></p><p></p>   Article 2<p></p><p></p>   Fixation de la valeur des coefficients forfaitisés de la grille de classifications pour l'année 1997.<p></p><p></p>   Les montants des salaires minima mensuels conventionnels des coefficients 145 à 190 inclus sont fixés forfaitairement au 1er juillet 1997 ainsi qu'il suit :<p></p> coefficient 145 : 6 760 F, soit une augmentation de 4 % pour 97<p></p> coefficient 155 : 6 916 F, soit une augmentation de 4 % pour 97<p></p> coefficient 170 : 7 035 F, soit une augmentation de 3 % pour 97<p></p> coefficient 175 : 7 111 F, soit une augmentation de 3 % pour 97<p></p> coefficient 185 : 7 202 F, soit une augmentation de 2,4 % pour 97<p></p> coefficient 190 : 7 395 F, soit une augmentation de 2,4 % pour 97<p></p><p></p>   Article 3<p></p><p></p>   Clause de revoyure<p></p><p></p>   Les partenaires sociaux conviennent de se revoir à l'occasion de la commission paritaire nationale qui se tiendra durant le mois de janvier 1998, au cours de laquelle ils procéderont à un examen des conséquences des articles 1er et 2 du présent avenant, tant au regard de l'évolution économique et sociale de la branche que du contexte national, sans préjuger des décisions prises lors de la conférence nationale sur l'emploi, les salaires et la durée du travail, et de l'évolution des prix.<p></p><p></p>   Article 4<p></p><p></p>   Date d'effet de l'accord<p></p><p></p>   Les dispositions contenues dans les articles 1er, 2 et 3 sont applicables aux dates prévues.<p></p><p></p>   Article 5<p></p><p></p>   Publicité et dép<CB>t<p></p><p></p>   Le présent accord fera l'objet d'un dép<CB>t à la direction départementale du travail et de l'emploi et au secrétariat-greffe du conseil de prud'hommes de Paris ainsi que d'une demande d'extension dans les conditions fixées respectivement par les articles L. 132-10 et L. 133-8 et suivants du code du travail.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 4 1997-07-10 BO conventions collectives 97-31 étendu par arrêté du 31 octobre 1997 JORF 11 novembre 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 868492800000,
+                  "dateFin": 962323200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7849,13 +7923,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005712943",
+              "cid": "KALISCTA000005712943",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point et valeur des coefficients pour l'année 2000",
+              "dateModif": null,
+              "dateDebut": "2000-06-30",
+              "dateFin": "2001-04-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005824757",
+                  "cid": "KALIARTI000005824757",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005712943/KALIARTI000005824757",
+                  "pathTitle": [
+                    "Valeur du point et valeur des coefficients pour l'année 2000"
+                  ],
+                  "content": "<p></p>   Les partenaires sociaux réunis le 30 juin 2000 en commission paritaire nationale des transports urbains de voyageurs :<p></p><p></p>   Considérant l'accord portant modification de l'alinéa 2 de l'article 1er de l'annexe VI de la convention collective nationale des réseaux de transports publics urbains de voyageurs conclu à la même date que le présent accord ;<p></p><p></p>   Considérant que l'accord du 7 juillet 1994 sur l'évolution du salaire national minimum pour l'année 1994 fixant la valeur du point conventionnel de branche et mettant en place, provisoirement et à titre dérogatoire, des salaires minima mensuels forfaitisés pour les emplois correspondant aux coefficients 145 à 175 inclus de la grille de classification, et ses avenants successifs modifiant la valeur du point et portant extension des salaires minima mensuels forfaitisés jusqu'au coefficient 190, sont arrivés à échéance le 31 décembre 1997 ;<p></p><p></p>   Considérant que les salaires minima mensuels forfaitisés fixés par cet accord et ses avenants successifs avaient été pris à titre dérogatoire et provisoire, dans l'attente de l'issue des négociations sur l'actualisation de la convention collective nationale, lesquelles sont toujours en cours, s'agissant des dispositions de la convention collective relatives aux grilles de classification et de rémunération ;<p></p><p></p>   Considérant dans ces conditions qu'un nouvel accord fixant le salaire national minimum mensuel à compter du coefficient 200 et renouvelant les salaires minima mensuels forfaitisés pour les 6 premiers coefficients de la grille de classification est nécessaire ;<p></p><p></p>   Mais considérant que, dans l'attente de l'issue des négociations relative à la rénovation des grilles de classification et de rémunération des emplois, seul un accord provisoire et dérogatoire peut être envisagé,<p></p><p></p>      Décident :<p></p> Article 1er<p></p> Valeur du point conventionnel de branche pour l'année 2000<p></p><p></p>   La valeur du point conventionnel de branche, définie lors de l'accord salarial du 10 juillet 1997 à un montant de 38,63 F, est fixée comme suit :<p></p><p></p>   - au 1er janvier 2000, à un montant de 39,40 F, soit une augmentation de 2 % par rapport à la valeur du point au 1er septembre 1997 ;<p></p><p></p>   - au 1er juillet 2000, à un montant de 40 F, soit une augmentation de 1,5 % par rapport à la valeur du point au 1er janvier 2000 et de 3,55 % par rapport à la valeur du point au 1er septembre 1997.<p></p> Article 2<p></p> Fixation de la valeur des coefficients forfaitisés<p></p> de la grille de classification pour l'année 2000<p></p><p></p>   Par dérogation aux dispositions de l'annexe VI modifiée, et uniquement pour la durée d'application du présent accord, les montants des salaires minima mensuels conventionnels des coefficients 145 à 190 inclus sont fixés forfaitairement à compter du 1er janvier 2000 aux montants suivants :<p></p><p></p>   - coefficient 145 : 7 166 F, soit une augmentation de 6 % par rapport à la valeur au 1er juillet 1997 ;<p></p><p></p>   - coefficient 155 : 7 331 F, soit une augmentation de 6 % par rapport à la valeur au 1er juillet 1997 ;<p></p><p></p>   - coefficient 170 : 7 387 F, soit une augmentation de 5 % par rapport à la valeur au 1er juillet 1997 ;<p></p><p></p>   - coefficient 175 : 7 467 F, soit une augmentation de 5 % par rapport à la valeur au 1er juillet 1997 ;<p></p><p></p>   - coefficient 185 : 7 490 F, soit une augmentation de 4 % par rapport à la valeur au 1er juillet 1997 ;<p></p><p></p>   - coefficient 190 : 7 691 F, soit une augmentation de 4 % par rapport à la valeur au 1er juillet 1997.<p></p>Article 3<p></p> Négociation salariale annuelle de branche<p></p><p></p>   Dans l'attente de l'issue des négociations relatives à la rénovation des grilles de classification et de rémunération des emplois, la valeur du point conventionnel de branche et des salaires minima conventionnels forfaitisés sera examinée chaque année dans le cadre de la négociation salariale légale et pendant toute la durée de validité du présent accord.<p></p> Article 4<p></p> Entrée en vigueur de l'accord<p></p><p></p>   Le présent accord est applicable à compter de sa signature et aux dates prévues aux articles 1er et 2 ci-dessus.<p></p> Article 5<p></p> Durée de l'accord<p></p><p></p>   Le présent accord est conclu jusqu'au 31 décembre 2002. Néanmoins, si un accord sur la rénovation des grilles de classification et de rémunération des emplois intervenait au cours de cette période, le présent accord tomberait de plein droit.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2000-06-30 BO conventions collectives 2000-33 étendu par arrêté du 10 novembre 2000 JORF 24 novembre 200",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 962323200000,
+                  "dateFin": 988243200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7869,13 +8017,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005712944",
+              "cid": "KALISCTA000005712944",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point et valeur des coefficients pour l'année 2002",
+              "dateModif": null,
+              "dateDebut": "2002-02-13",
+              "dateFin": "2004-06-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005824759",
+                  "cid": "KALIARTI000005824759",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005712944/KALIARTI000005824759",
+                  "pathTitle": [
+                    "Valeur du point et valeur des coefficients pour l'année 2002"
+                  ],
+                  "content": "<p></p>   Les partenaires sociaux réunis le 23 janvier 2002 en commission paritaire des transports urbains de voyageurs,<p></p><p></p>   Considérant l'accord du 7 juillet 1994 sur l'évolution du salaire national minimum pour l'année 1994, fixant la valeur du point conventionnel de branche et mettant en place, provisoirement et à titre dérogatoire, afin de porter le salaire minimum de la branche à un niveau supérieur au SMIC, des salaires minima mensuels forfaitisés pour les emplois correspondant aux coefficients 145 à 175 inclus de la grille de classification, et ses avenants successifs modifiant la valeur du point et portant extension des salaires minima mensuels forfaitisés jusqu'au coefficient 19 ;<p></p><p></p>   Considérant l'accord de branche du 30 juin 2000 sur l'évolution du salaire national minimum et des salaires minima mensuels forfaitisés dont l'article 3 prévoit que \"dans l'attente de l'issue des négociations relatives à la rénovation des grilles de classification et de rémunérations des emplois, la valeur du point conventionnel de branche et des salaires minima conventionnels forfaitisés sera examinée chaque année dans le cadre de la négociation salariale légale et pendant toute la durée de validité du présent accord\" ;<p></p><p></p>   Considérant que l'article 5 de l'accord de branche du 30 juin 2000 prévoit que celui-ci \"est conclu jusqu'au 31 décembre 2002 ; que, néanmoins, si un accord sur la rénovation des grilles de classification et de rémunération des emplois intervenait au cours de cette période, le présent accord tomberait de plein droit\" ;<p></p><p></p>   Considérant qu'aucun accord sur la rénovation des grilles de classification et de rémunération n'a été à ce jour conclu ;<p></p><p></p>   Considérant que la commission paritaire n'a pu se réunir en vue de négocier l'évolution du salaire national minimum et des salaires minima mensuels forfaitisés pour 2001 et qu'en conséquence la négociation salariale annuelle de branche au titre de 2002 et le présent accord qui en est résulté tiennent compte de l'absence de revalorisation des salaires conventionnels en 2001,<p></p><p></p>      Décident :<p></p> Article 1er<p></p> Valeur du point conventionnel de branche<p></p><p></p>   La valeur du point conventionnel de branche est fixée, au 1er janvier 2002, à un montant de 6,4 euros.<p></p> Article 2<p></p> Fixation de la valeur des coefficients forfaitisés de la grille de classification<p></p><p></p>   Par dérogation aux dispositions de l'annexe VI modifiée, et uniquement pour la durée d'application du présent accord, les montants des salaires minima mensuels conventionnels des coefficients 145 à 190 inclus sont fixés forfaitairement à compter du 1er janvier 2002 aux montants suivants :<p></p><p></p>   - coefficient 145 : 1 158,00 euros ;<p></p><p></p>   - coefficient 155 : 1 173,55 euros ;<p></p><p></p>   - coefficient 170 : 1 182,39 euros ;<p></p><p></p>   - coefficient 175 : 1 195,20 euros ;<p></p><p></p>   - coefficient 185 : 1 199,01 euros ;<p></p><p></p>   - coefficient 190 : 1 231,18 euros ;<p></p> Article 3<p></p> Entrée en vigueur de l'accord<p></p><p></p>   Le présent accord est applicable à compter de sa signature et aux dates prévues aux articles 1er et 2 ci-dessus.<p></p> Article 4<p></p> Durée de l'accord<p></p><p></p>   L'article 2 du présent accord est conclu jusqu'au 31 décembre 2002. Néanmoins, comme il est convenu d'engager une négociation sur la rénovation des grilles de classification et de rémunération des emplois, si un accord intervenait au cours de cette période, le présent accord tomberait de plein droit.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 1 2002-02-13 BO Conventions Collectives 2002-10 étendu par arrêté du 3 octobre 2002 JORF 22 octobre 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1013558400000,
+                  "dateFin": 1087862400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

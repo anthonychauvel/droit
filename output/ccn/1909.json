@@ -21663,13 +21663,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005711751",
+              "cid": "KALISCTA000005711751",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point au 1er février 1997",
+              "dateModif": null,
+              "dateDebut": "1997-01-24",
+              "dateFin": "1997-10-27",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005821900",
+                  "cid": "KALIARTI000005821900",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005711751/KALIARTI000005821900",
+                  "pathTitle": [
+                    "Valeur du point au 1er février 1997"
+                  ],
+                  "content": "<p>L'augmentation du point au 1<sup>er</sup> février 1997 est de 0,4 %.</p><p>La valeur du point passe à 47,70 F, à compter du 1er février 1997.</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1997-01-24 BO conventions collectives 97-7, étendu par arrêté du 25 juin 1997 JORF 5 juillet 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 854064000000,
+                  "dateFin": 877910400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -21683,13 +21757,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005711753",
+              "cid": "KALISCTA000005711753",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point au 1er juillet 1997 et au 1er novembre 1997",
+              "dateModif": null,
+              "dateDebut": "1997-10-27",
+              "dateFin": "1998-09-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005821901",
+                  "cid": "KALIARTI000005821901",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005711753/KALIARTI000005821901",
+                  "pathTitle": [
+                    "Valeur du point au 1er juillet 1997 et au 1er novembre 1997"
+                  ],
+                  "content": "<p>Pour permettre la mise en conformité des salaires par référence au SMIC :</p><p>- les coefficients planchers 137 sont portés à 140 (postes 101, 102 et 301 bis) ;</p><p>- les coefficients planchers 142 sont portés à 145 (postes 201, 202 et 103),</p><p>avec effet rétroactif au 1<sup>er</sup> juillet 1997.</p><p>L'augmentation du point au 1er novembre 1997 est de 1 %.</p><p>La valeur du point passe à 48,18 F, à compter du 1er novembre 1997.</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1997-10-27 BO conventions collectives 97-46, étendu par arrêté du 7 janvier 1998 JORF 16 janvier 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 877910400000,
+                  "dateFin": 906336000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -21703,13 +21851,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005711754",
+              "cid": "KALISCTA000005711754",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point au 1er octobre 1998.",
+              "dateModif": null,
+              "dateDebut": "1998-09-21",
+              "dateFin": "2000-06-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005821902",
+                  "cid": "KALIARTI000005821902",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005711754/KALIARTI000005821902",
+                  "pathTitle": [
+                    "Valeur du point au 1er octobre 1998."
+                  ],
+                  "content": "<p></p>   Pour permettre la mise en conformité des salaires par référence au SMIC :<p></p><p></p>   - les coefficients planchers 140 sont portés à 142 (postes 101, 102 et 301 bis) ;<p></p> à  compter du 1er octobre 1998.<p></p><p></p>   L'augmentation du point est de 1,5 %.<p></p><p></p>   La valeur du point passe à 48,90 F, à compter du 1er octobre 1998.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1998-09-21 BO conventions collectives 98-41 étendu par arrêté du 23 décembre 1998 JORF 7 janvier 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 906336000000,
+                  "dateFin": 959817600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

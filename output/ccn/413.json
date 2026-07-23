@@ -21061,13 +21061,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729118",
+              "cid": "KALISCTA000005729118",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Valeur du point au 1er août 1994, 1er mars 1995 et 1er novembre 1995",
+              "dateModif": null,
+              "dateDebut": "1994-06-21",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863788",
+                  "cid": "KALIARTI000005863788",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005729118/KALIARTI000005863788",
+                  "pathTitle": [
+                    "Valeur du point au 1er août 1994, 1er mars 1995 et 1er novembre 1995"
+                  ],
+                  "content": "<p align=\"center\">Article 1er</p><p>La valeur du point CCNT est fixée comme suit :</p><p>- au 1er août 1994 à 21,24 F ;</p><p>- au 1er mars 1995 à 21,48 F ;</p><p>- au 1er novembre 1995 à 21,79 F.</p><p align=\"center\">Article 2</p><p>L'article 2 de l'annexe I de la CCNT du 15 mars 1966 instituant un salaire minimum garanti est modifié comme suit :</p><p>« Les salariés occupant à temps complet un emploi relevant de la CCNT perçoivent un salaire mensuel brut minimum fixé sur la base de l'indice de base 338.</p><p>A ce salaire minimum s'ajoutent, le cas échéant :</p><p>- le surclassement internat pour :</p><p>- les emplois au coefficient 329 (annexe n° 5) (7 points) ;</p><p>- les candidats-élèves aux coefficients 304, 314 et 324 (annexe n° 8) (10 points) ;</p><p>- l'indemnité de risques et sujétions spéciales (7 points) de l'annexe n° 5, article 3, alinéa a ;</p><p>- l'indemnité de sujétion spéciale ;</p><p>- la majoration familiale de salaire.</p><p>Les salariés à temps incomplet perçoivent un salaire mensuel brut minimum calculé sur les bases ci-dessus au prorata de leur temps de travail.</p><p>Les salariés dont le salaire est réduit pour quelque cause que ce soit perçoivent un salaire brut minimum réduit dans les mêmes proportions que le salaire de base. »</p><p align=\"center\">Article 3</p><p>Une prime unique est versée au 30 novembre 1994 aux salariés dont les indices de base sont compris entre 304 et 390, selon le barème ci-dessous, pour un temps complet.</p><br/><p> <table border=\"1\"><tbody><tr><td>INDICE</td><td><p>MONTANT </p><p>(en francs) </p></td></tr><tr><td>304 à 338 </td><td>223,08 </td></tr><tr><td>339 </td><td>223,74 </td></tr><tr><td>346 </td><td>228,36 </td></tr><tr><td>347 </td><td>229,02 </td></tr><tr><td>349 </td><td>230,34 </td></tr><tr><td>350 </td><td>231,00 </td></tr><tr><td>352 </td><td>232,32 </td></tr><tr><td>354 </td><td>233,64 </td></tr><tr><td>356 </td><td>234,96 </td></tr><tr><td>357 </td><td>235,62 </td></tr><tr><td>358 </td><td>236,28 </td></tr><tr><td>359 </td><td>236,94 </td></tr><tr><td>362 </td><td>238,92 </td></tr><tr><td>363 </td><td>239,58 </td></tr><tr><td>364 </td><td>240,24 </td></tr><tr><td>365 </td><td>240,90 </td></tr><tr><td>367 </td><td>242,22 </td></tr><tr><td>368 </td><td>242,88 </td></tr><tr><td>369 </td><td>243,54 </td></tr><tr><td>370</td><td>244,20 </td></tr><tr><td>371</td><td>244,86</td></tr><tr><td>372</td><td>245,52</td></tr><tr><td>374</td><td>246,84</td></tr><tr><td>375</td><td>247,50</td></tr><tr><td>378</td><td>249,48</td></tr><tr><td>379</td><td>250,14</td></tr><tr><td>380</td><td>250,80</td></tr><tr><td>381</td><td>251,46</td></tr><tr><td>382</td><td>252,12</td></tr><tr><td>383</td><td>252,78</td></tr><tr><td>384</td><td>253,44</td></tr><tr><td>385</td><td>254,10</td></tr><tr><td>386</td><td>254,76</td></tr><tr><td>387</td><td>255,42</td></tr><tr><td>390</td><td>257,40</td></tr></tbody></table>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 249 1994-06-21 BO conventions collectives 95-16, agréé par arrêté du 2 août 1994 JORF 17 août 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 772156800000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -21081,13 +21155,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729119",
+              "cid": "KALISCTA000005729119",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Indemnités compensatrices d'assurance au 1er janvier 1995",
+              "dateModif": null,
+              "dateDebut": "1994-10-24",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863789",
+                  "cid": "KALIARTI000005863789",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005729119/KALIARTI000005863789",
+                  "pathTitle": [
+                    "Indemnités compensatrices d'assurance au 1er janvier 1995"
+                  ],
+                  "content": "<p></p>   Le taux de l'indemnité compensatrice d'assurances, prévue à l'article 8 de l'annexe I à la convention collective du 15 mars 1966, est fixé comme suit à compter du 1er janvier 1995 :<p></p><p></p>   - voiture jusqu'à 5 CV : 1.760 F par an ou 440 F par trimestre ;<p></p><p></p>   - voiture de 6 CV et plus : 2.700 F par an ou 675 F par trimestre.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 253 1994-10-25 BO conventions collectives 95-16, agréé par arrêté du 16 février 1995 JORF 25 février 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 782956800000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -21101,13 +21249,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729120",
+              "cid": "KALISCTA000005729120",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Valeur du point au 1er octobre 1996",
+              "dateModif": null,
+              "dateDebut": "1996-06-28",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863791",
+                  "cid": "KALIARTI000005863791",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005729120/KALIARTI000005863791",
+                  "pathTitle": [
+                    "Valeur du point au 1er octobre 1996"
+                  ],
+                  "content": "<p></p>   La valeur du point est fixée à 22 F au 1er octobre 1996.<p></p><p></p><font color=\"808080\"><em>   NOTA. L'avenant n° 259 du 28 juin 1996 a été publié à tort, ce texte n'ayant pas été agréé.<p></p></em></font>",
+                  "nota": "   NOTA. L'avenant n° 259 du 28 juin 1996 a été publié à tort, ce texte n'ayant pas été agréé.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 259 1996-06-28 BO conventions collectives 96-29",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 835920000000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
