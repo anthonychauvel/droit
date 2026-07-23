@@ -27744,13 +27744,86 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005708912",
+              "cid": "KALISCTA000005708912",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Valeur du point à compter du 1er juillet 2005",
+              "dateModif": null,
+              "dateDebut": "2005-07-12",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005814156",
+                  "cid": "KALIARTI000005814156",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005708912/KALIARTI000005814156",
+                  "pathTitle": [
+                    "Valeur du point à compter du 1er juillet 2005"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les valeurs du point binôme sont modifiés comme suit :<p></p><p></p>   A compter du 1er juillet 2005 :<p></p><p></p>   - la première valeur du point binôme, 160 premiers points, est portée de 7,61  à 7,80  ;<p></p><p></p>   - la seconde valeur du point binôme, au-delà des 160 premiers points, est portée de 3,42  à 3,45 .<p></p><p></p>   La première et la seconde valeur du point binôme figurant à l'article 1er de l'annexe I sont modifiées en conséquence.<p></p> Article 2<p></p><p></p>   Les prochaines négociations sur la nouvelle grille des salaires se feront sur la base d'une grille de salaires non gelés.<p></p> Article 3<p></p><p></p>   Les parties signataires demandent l'extension du présent avenant.<p></p><p></p>   Fait à Paris, le 12 juillet 2005.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 60 2005-07-12 BO conventions collectives 2005-46 étendu par arrêté du 20 janvier 2006 JORF 1er février 2006 élargi aux sociétés d'intérêt collectif agricole vinicoles par arrêté du 25 avril 2006 JORF 19 mai 2006",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1121126400000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,

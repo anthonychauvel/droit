@@ -21723,13 +21723,86 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005711755",
+              "cid": "KALISCTA000005711755",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point au 1er mars 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-06-01",
+              "dateFin": "2001-02-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005821903",
+                  "cid": "KALIARTI000005821903",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005711755/KALIARTI000005821903",
+                  "pathTitle": [
+                    "Valeur du point au 1er mars 2000."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur du point passe à 49,20 F, à compter du 1er mars 2000.<p></p> Article 2<p></p><p></p>   Les partenaires sociaux s'engagent à négocier une nouvelle augmentation de la valeur du point applicable au 1er octobre 2000.<p></p> Article 3<p></p><p></p>   Le présent accord fait l'objet d'une demande d'extension et s'applique le premier jour du mois suivant la date d'extension.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2000-02-23 en vigueur le 1er jour du mois suivant l'extension BO conventions collectives 2000-10 étendu par arrêté du 10 mai 2000 JORF 19 mai 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 959817600000,
+                  "dateFin": 980985600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,
