@@ -7028,12 +7028,76 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005825010",
+              "cid": "KALIARTI000005825010",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000005825010",
+              "pathTitle": [],
+              "content": "Article 1er <p></p><p></p>A compter du 1er juillet 2006, les rémunérations minimales définies à l'annexe II de la CCNDD et de l'avenant n° 7 du 15 mars 2006 sont fixées de la façon suivante : <p></p><p></p>(En euros) <p></p><TABLE><TR><TD>NIVEAU </TD><TD>SALAIRE </TD></TR><TR><TD>1.1 </TD><TD>1 254,28 </TD></TR><TR><TD>1.2 </TD><TD>1 331,28 </TD></TR><TR><TD>1.3 </TD><TD>1 372 </TD></TR><TR><TD>2.1 </TD><TD>1 400 </TD></TR><TR><TD>2.2 </TD><TD>1 460 </TD></TR><TR><TD>2.3 </TD><TD>1 505 </TD></TR><TR><TD>3.1 </TD><TD>1 670 </TD></TR><TR><TD>3.2 </TD><TD>1 880 </TD></TR><TR><TD>3.3 </TD><TD>2 220 </TD></TR><TR><TD>4 </TD><TD>2 905 </TD></TR></TABLE><p></p>Article 2 <p></p>Le présent avenant est déposé par l'organisation professionnelle des employeurs de la distribution directe, conformément à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">article L. 132-10 du code du travail</a> et fait l'objet d'une demande d'extension. <p></p>Fait à Paris, le 5 juillet 2006.",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 10 2006-07-05 BO conventions collectives 2006-30 étendu par arrêté du 26 avril 2007 JORF 5 mai 2007",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L132-10 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L132-10",
+                  "articleId": "LEGIARTI000006647014",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 122860800000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1152057600000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,

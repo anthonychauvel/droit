@@ -8386,13 +8386,113 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005723339",
+              "cid": "KALISCTA000005723339",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima par niveau",
+              "dateModif": null,
+              "dateDebut": "1999-12-30",
+              "dateFin": "2003-12-02",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005849782",
+                  "cid": "KALIARTI000005849782",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005723339/KALIARTI000005849782",
+                  "pathTitle": [
+                    "Salaires minima par niveau"
+                  ],
+                  "content": "Article 38.1<p></p> Salaires minima garantis<p></p><p></p>   Les rémunérations horaires brutes applicables sont déterminées dans le respect des salaires minima suivants (1) :<p></p> -----------------------------------------------------------------<p></p><TABLE><TR><TD>CATÉGORIE      </TD><TD>        NIVEAU        </TD><TD>     TAUX HORAIRE    </TD></TR><TR><TD></TD><TD>       Niveau I       </TD><TD></TD></TR><TR><TD></TD><TD>  Echelon 1           </TD><TD>         40,22       </TD></TR><TR><TD></TD><TD>  Echelon 2           </TD><TD>         40,46       </TD></TR><TR><TD></TD><TD>  Echelon 3           </TD><TD>         40,67       </TD></TR><TR><TD></TD><TD>       Niveau II      </TD><TD></TD></TR><TR><TD></TD><TD>  Echelon 1           </TD><TD>         41,27       </TD></TR><TR><TD></TD><TD>  Echelon 2           </TD><TD>         42,00       </TD></TR><TR><TD></TD><TD>  Echelon 3           </TD><TD>         43,08       </TD></TR></TABLE><p></p> -----------------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD>       Niveau III     </TD><TD></TD></TR><TR><TD>   Agents de      </TD><TD>  Echelon 1           </TD><TD>         45,73       </TD></TR><TR><TD>   Maîtrise      </TD><TD>  Echelon 2           </TD><TD>         47,81       </TD></TR><TR><TD></TD><TD>  Echelon 3           </TD><TD>         49,02       </TD></TR></TABLE><p></p> -----------------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD>       Niveau IV      </TD><TD></TD></TR><TR><TD>   Cadres         </TD><TD>  Echelon 1           </TD><TD>         56,86       </TD></TR><TR><TD></TD><TD>  Echelon 2           </TD><TD>         62,54       </TD></TR></TABLE><p></p> -----------------------------------------------------------------<p></p>   Pour établir si le salarié perçoit au moins le salaire minimum garanti de sa catégorie, les avantages en nature, tels que définis et évalués ci-après, ne seront pris en compte que pour le quantum défini à l'article D. 141-8 du code du travail.<p></p>   Les avantages en nature :<p></p>   L'attribution et l'évaluation des avantages en nature sont déterminées conformément à la réglementation en vigueur.<p></p>   Pour le calcul des cotisations, les avantages nourriture sont évalués conformément aux dispositions de l'arrêté du 9 janvier 1975.<p></p>   Tout salarié prenant son repas sur place, à l'occasion du travail, dans un établissement préparant des denrées alimentaires, ne pourra se voir réclamer par l'employeur une contribution supérieure à l'évaluation de l'avantage en nature fixée par la réglementation en vigueur. Article 38.2 Révision des salaires minima garantis<p></p>   Les présents salaires minima garantis sont renégociés annuellement.<font color=\"808080\"><em>   (1) (Alinéa étendu sous réserve des dispositions réglementaires  portant fixation du salaire minimum de croissance (arrêté du 20 décembre 1999, art. 1er)<p></p></em></font>",
+                  "nota": "   (1) (Alinéa étendu sous réserve des dispositions réglementaires  portant fixation du salaire minimum de croissance (arrêté du 20 décembre 1999, art. 1er)<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Convention collective nationale 1998-08-28 en vigueur 1 jour franc après publication de l'extension étendue par arrêté du 20 décembre 1999 JORF 29 décembre 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Arrêté 1999-12-20 art. 1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    },
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail D141-8",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 946512000000,
+                  "dateFin": 1070323200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,
