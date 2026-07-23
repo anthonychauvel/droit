@@ -21699,13 +21699,98 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005711083",
+              "cid": "KALISCTA000005711083",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Salaires minimaux de base à compter du 1er mars 2007",
+              "dateModif": null,
+              "dateDebut": "2007-02-28",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005819979",
+                  "cid": "KALIARTI000005819979",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005711083/KALIARTI000005819979",
+                  "pathTitle": [
+                    "Salaires minimaux de base à compter du 1er mars 2007"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Conformément aux dispositions du code du travail, tout(e) salarié(e) à travail égal ou de valeur égale reçoit la même rémunération.<p></p> Article 2<p></p><p></p>   Les salaires sont ainsi fixés, à compter du 1er mars 2007 :<p></p><p></p>   I. - Salaires minimaux de base<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD> COEFFICIENT </TD><TD> SALAIRE HORAIRE </TD><TD> SALAIRES MENSUELS </TD></TR><TR><TD>     100     </TD><TD>       8,27      </TD><TD>      1 254,31     </TD></TR><TR><TD>     130     </TD><TD>       8,36      </TD><TD>      1 267,96     </TD></TR><TR><TD>     140     </TD><TD>       8,44      </TD><TD>      1 280,09     </TD></TR><TR><TD>     150     </TD><TD>       8,52      </TD><TD>      1 292,23     </TD></TR><TR><TD>     160     </TD><TD>       8,66      </TD><TD>      1 313,46     </TD></TR><TR><TD>     170     </TD><TD>       8,81      </TD><TD>      1 336,21     </TD></TR><TR><TD>     180     </TD><TD>       9,00      </TD><TD>      1 365,03     </TD></TR><TR><TD>     225     </TD><TD>       9,65      </TD><TD>      1 463,62     </TD></TR><TR><TD>     250     </TD><TD>      10,44      </TD><TD>      1 583,43     </TD></TR><TR><TD>     300     </TD><TD>      11,19      </TD><TD>      1 697,19     </TD></TR><TR><TD>     400     </TD><TD>      12,69      </TD><TD>      1 924,69     </TD></TR></TABLE><p></p> Article 3<p></p>   Les parties signataires demandent l'extension du présent accord salarial qui prend effet au 1er mars 2007.<p></p>   Fait à Cachan, le 28 février 2007.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2007-02-28 BO conventions collectives 2007-15",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    },
+                    {
+                      "textCid": "JORFTEXT000000648588",
+                      "textTitle": "Arrêté du 22 août 2007, v. init.",
+                      "linkType": "ETEND",
+                      "linkOrientation": "cible",
+                      "articleNum": "",
+                      "articleId": "JORFTEXT000000648588",
+                      "natureText": "ARRETE",
+                      "datePubliTexte": "2007-09-02",
+                      "dateSignaTexte": "2007-08-22",
+                      "dateDebutCible": "2999-01-01"
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1172620800000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,

@@ -21522,13 +21522,86 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690592",
+              "cid": "KALISCTA000005690592",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Rémunérations minimales annuelles garanties pour 2002.",
+              "dateModif": null,
+              "dateDebut": "2001-10-24",
+              "dateFin": "2002-11-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767717",
+                  "cid": "KALIARTI000005767717",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690592/KALIARTI000005767717",
+                  "pathTitle": [
+                    "Rémunérations minimales annuelles garanties pour 2002."
+                  ],
+                  "content": "<p></p>   Les montants des rémunérations minimales annuelles garanties pour l'année 2002 et en vigueur à compter du 1er janvier de cette dernière sont les suivantes :<p></p><TABLE><TR><TD>CLASSES</TD><TD>    MONTANTS           </TD><TD>MONTANT 2001</TD><TD>AUGMENTATION</TD></TR><TR><TD></TD><TD>(en euros) </TD><TD>(en francs)</TD><TD>(en francs) </TD><TD></TD></TR><TR><TD> E 1   </TD><TD> 14 997,86 </TD><TD>  98 379,51</TD><TD>  96 640    </TD><TD></TD></TR><TR><TD> E 2   </TD><TD> 15 443,26 </TD><TD> 101 301,14</TD><TD>  99 510    </TD><TD>   1,80     </TD></TR><TR><TD> E 3   </TD><TD> 16 060,94 </TD><TD> 105 352,86</TD><TD> 103 490    </TD><TD></TD></TR><TR><TD> E 4   </TD><TD> 16 779,48 </TD><TD> 110 066,17</TD><TD> 108 120    </TD><TD></TD></TR><TR><TD> T 1   </TD><TD> 18 524,63 </TD><TD> 121 513,61</TD><TD> 119 600    </TD><TD>   1,60     </TD></TR><TR><TD> T 2   </TD><TD> 21 340,50 </TD><TD> 139 984,50</TD><TD> 137 780    </TD><TD></TD></TR><TR><TD> C 1   </TD><TD> 23 391,41 </TD><TD> 153 437,59</TD><TD> 151 170    </TD><TD>   1,50     </TD></TR><TR><TD> C 2   </TD><TD> 31 682,15 </TD><TD> 207 821,28</TD><TD> 204 750    </TD><TD></TD></TR><TR><TD> C 3   </TD><TD> 38 493,37 </TD><TD> 252 499,96</TD><TD> 250 000    </TD><TD>   1        </TD></TR><TR><TD> C 4   </TD><TD> 55 892,38 </TD><TD> 366 629,98</TD><TD> 363 000    </TD><TD></TD></TR><TR><TD> D     </TD><TD> 23 391,41 </TD><TD> 153 437,59</TD><TD> 151 170    </TD><TD>   1,50     </TD></TR></TABLE><p></p><p></p>   Il est rappelé qu'en application de l'article 7-3 de la convention collective mutualité, l'indemnité différentielle de transposition évolue selon la classe de rattachement de chaque salarié en fonction des pourcentages d'augmentation ci-dessus énoncés.<p></p> Article 2<p></p><p></p>   La valeur du point pour l'année 2000 est fixé à 7 euros (45,92 francs), soit une augmentation de 1,89 %.<p></p> Article 3<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2001-10-24 BO conventions collectives 2001-49 étendu par arrêté du 9 avril 2002 JORF 20 avril 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1003881600000,
+                  "dateFin": 1037318400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,

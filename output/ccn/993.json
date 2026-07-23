@@ -11980,13 +11980,149 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
-          "articles": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000045829506",
+              "cid": "KALISCTA000045829506",
+              "intOrdre": 1048574,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Annexe",
+              "dateModif": null,
+              "dateDebut": "2022-07-01",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000045829507",
+                  "cid": "KALIARTI000045829507",
+                  "intOrdre": 524287,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000045829506/KALIARTI000045829507",
+                  "pathTitle": [
+                    "Annexe"
+                  ],
+                  "content": "<p align=\"center\">Annexe<br/>\nSalaires 2022</p><p></p><center><table border=\"1\"><tbody><tr><th>Catégories professionnelles</th><th>Salaire brut en €</th></tr><tr><td align=\"center\">Personnels de service</td><td align=\"center\">1 634 €</td></tr><tr><td align=\"center\">Secrétaire administratif</td><td rowspan=\"2\" align=\"center\">1 649 €</td></tr><tr><td align=\"center\">Aide comptable</td></tr><tr><td align=\"center\">Comptable</td><td align=\"center\">1 779 €</td></tr></tbody></table></center><center><table border=\"1\"><tbody><tr><th>Catégories professionnelles</th><th>Échelons</th><th>Salaire brut en €</th></tr><tr><td align=\"center\">Employé en prothèse dentaire</td><td></td><td align=\"center\">1 644 €</td></tr><tr><td align=\"center\">Auxiliaire en prothèse dentaire</td><td></td><td align=\"center\">1 652 €</td></tr><tr><td align=\"center\">Technicien qualifié en prothèse dentaire</td><td align=\"center\">TQ1</td><td align=\"center\">1 770 €</td></tr><tr><td></td><td align=\"center\">TQ2</td><td align=\"center\">1 929 €</td></tr><tr><td></td><td align=\"center\">TQ3</td><td align=\"center\">2 035 €</td></tr><tr><td align=\"center\">Prothésiste dentaire hautement qualifié</td><td align=\"center\">PHQ1</td><td align=\"center\">2 109 €</td></tr><tr><td></td><td align=\"center\">PHQ2</td><td align=\"center\">2 297 €</td></tr><tr><td align=\"center\">Responsable de secteur</td><td></td><td align=\"center\">2 472 €</td></tr><tr><td align=\"center\">Chef de laboratoire</td><td></td><td align=\"center\">2 962 €</td></tr></tbody></table></center><center><table border=\"1\"><tbody><tr><th>Primes</th><th></th></tr><tr><td align=\"center\">Prime mensuelle « Technicien en laboratoire de prothèse dentaire spécialisé en ODF »</td><td align=\"center\">82 €</td></tr><tr><td align=\"center\">Prime mensuelle « Opérateur en CFAO niveau I »</td><td align=\"center\">82 €</td></tr><tr><td align=\"center\">Prime mensuelle titre « Prothésiste dentaire spécialisé en techniques numériques »</td><td align=\"center\">102 €</td></tr><tr><td align=\"center\">Prime mensuelle CPES</td><td align=\"center\">154 €</td></tr></tbody></table></center><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1",
+                  "type": "AUTONOME",
+                  "lstLienModification": [
+                    {
+                      "textCid": "JORFTEXT000045864210",
+                      "textTitle": "Arrêté du 23 mai 2022 - art. 1, v. init.",
+                      "linkType": "ETEND",
+                      "linkOrientation": "cible",
+                      "articleNum": "1",
+                      "articleId": "JORFARTI000045864213",
+                      "natureText": "ARRETE",
+                      "datePubliTexte": "2022-06-05",
+                      "dateSignaTexte": "2022-05-23",
+                      "dateDebutCible": "2999-01-01"
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1656633600000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000045829504",
+              "cid": "KALIARTI000045829504",
+              "intOrdre": 524287,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000045829504",
+              "pathTitle": [],
+              "content": "<p align=\"left\">Une revalorisation de la grille des salaires conformément à l'annexe jointe.</p><p align=\"left\">Les parties signataires conviennent que le présent accord s'applique à l'ensemble des laboratoires de prothèse dentaire le 1er jour du mois suivant la publication de l'arrêté d'extension au Journal officiel.</p><p align=\"left\">L'extension du présent accord sera faite à l'initiative de la partie la plus diligente.</p><p align=\"left\">Les parties signataires du présent accord considèrent qu'il n'y a pas de spécificités d'application dudit accord aux entreprises en fonction de leur taille.</p><p align=\"left\">Pour cette raison, aucune stipulation particulière n'a été prise pour les entreprises de moins de cinquante salariés, conformément à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000035608942&dateTexte=&categorieLien=cid\">article L. 2261-23-1 du code du travail</a>.</p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1",
+              "type": "AUTONOME",
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000045864210",
+                  "textTitle": "Arrêté du 23 mai 2022 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000045864213",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2022-06-05",
+                  "dateSignaTexte": "2022-05-23",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L2261-23-1",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L2261-23-1",
+                  "articleId": "LEGIARTI000035608942",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 1506211200000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1656633600000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,
