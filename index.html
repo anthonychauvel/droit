@@ -1808,11 +1808,19 @@ loadAll().then(function(){
   if(!INDEX.ccn.length && !INDEX.code.length){
     document.getElementById('corpus-line').textContent = 'Index introuvable — lancez un run de vérification.';
   }
-  // Deep-link : ?idcc=1090 (+ &section=... optionnel) ouvre directement la fiche CCN
-  // Utilisé par le lien "Voir le texte officiel" du module grillepaye.
+  // Deep-link, utilisé par les liens de l'application SimulHeures :
+  //   ?idcc=1090                  -> fiche d'une convention collective
+  //   ?art=L3121-1                -> article du code du travail (défaut)
+  //   ?art=L411-1&code=secu       -> article du code de la sécurité sociale
+  // (&section=... reste possible pour viser une clause précise d'une CCN)
   var qs = new URLSearchParams(location.search);
   var deepIdcc = qs.get('idcc');
-  if(deepIdcc) openDetail('ccn', deepIdcc, qs.get('section'));
+  var deepArt  = qs.get('art');
+  if(deepIdcc){
+    openDetail('ccn', deepIdcc, qs.get('section'));
+  } else if(deepArt){
+    openDetail(qs.get('code')==='secu' ? 'secu' : 'code', deepArt);
+  }
 }).catch(function(e){
   console.error(e);
   document.getElementById('corpus-line').textContent = 'Erreur de chargement des données.';
