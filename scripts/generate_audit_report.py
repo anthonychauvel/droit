@@ -79,70 +79,124 @@ def _top_titles(d):
                for s in (d.get("sections") or []) if isinstance(s, dict))
 
 
+def _filled_ids(d):
+    """ids des noeuds dont le texte intégral a déjà été récupéré par nos scripts
+    de complément (fetch_*_details.py)."""
+    ids = set()
+    def walk(node):
+        if not isinstance(node, dict):
+            return
+        if node.get("_texte_complet_recupere"):
+            nid = node.get("id") or node.get("cid")
+            if nid:
+                ids.add(nid)
+        for s in (node.get("sections") or []):
+            walk(s)
+    walk(d)
+    return ids
+
+
+def _nodes_by_id(d):
+    """map id -> noeud, pour comparer le contenu d'un MÊME noeud entre deux versions."""
+    out = {}
+    def walk(node):
+        if not isinstance(node, dict):
+            return
+        nid = node.get("id") or node.get("cid")
+        if nid:
+            out[nid] = node
+        for s in (node.get("sections") or []):
+            walk(s)
+    walk(d)
+    return out
+
+
+def _node_fingerprint(node):
+    """Signature du contenu propre d'un noeud (titre + texte de ses articles),
+    insensible à l'ordre des champs JSON."""
+    arts = []
+    for a in (node.get("articles") or []):
+        if isinstance(a, dict):
+            arts.append((a.get("id") or a.get("cid") or "", a.get("content") or a.get("texte") or ""))
+    return ((node.get("title") or node.get("titre") or "").strip(), tuple(sorted(arts)))
+
+
 def describe_ccn_change(path):
-    """Résumé lisible d'un changement sur un fichier output/ccn/<idcc>.json."""
+    """Résumé lisible d'un changement sur un fichier output/ccn/<idcc>.json.
+
+    Renvoie (categorie, texte) où categorie vaut :
+      - "nouveau"     : IDCC récupéré pour la première fois
+      - "reel"        : changement qui vient de Légifrance (titre, contenu d'une
+                        clause déjà récupérée, section apparue/disparue) -> À LIRE
+      - "rattrapage"  : nos propres scripts fetch_*_details.py ont simplement rempli
+                        une clause qui était encore un stub vide. Le droit n'a pas
+                        bougé, c'est notre fonds qui se complète. -> bruit
+
+    Cette distinction existe parce que les scripts de complément ne remplissent
+    qu'UN stub par CCN et par run (une fois rempli, le noeud n'est plus candidat,
+    donc le run suivant prend le stub d'après). Sans ce tri, une CCN apparaissait
+    "modifiée" à chaque run pendant des semaines et noyait les vrais changements.
+    """
     try:
         with open(path, encoding="utf-8") as f:
             new_data = json.load(f)
     except Exception:
-        return f"{path} : illisible après le run (à vérifier manuellement)"
+        return "reel", f"{path} : illisible après le run (à vérifier manuellement)"
 
     old_raw = get_old_content(path)
     idcc = path.split("/")[-1].replace(".json", "")
 
     if old_raw is None:
         titre = new_data.get("titre", "?")
-        return f"IDCC {idcc} : NOUVEAU (récupéré pour la première fois) — \"{titre[:80]}\""
+        return "nouveau", f"IDCC {idcc} : NOUVEAU (récupéré pour la première fois) — \"{titre[:80]}\""
 
     try:
         old_data = json.loads(old_raw)
     except Exception:
         old_data = {}
 
-    notes = []
+    # --- 1) Ce qui relève de NOTRE rattrapage : stubs nouvellement remplis ---
+    old_filled = _filled_ids(old_data)
+    new_filled = _filled_ids(new_data)
+    nouvellement_remplis = new_filled - old_filled
+
+    # --- 2) Ce qui relève d'un VRAI changement côté Légifrance ---
+    reels = []
     if old_data.get("titre") != new_data.get("titre"):
-        notes.append(f"titre changé (\"{old_data.get('titre','?')[:50]}\" → \"{new_data.get('titre','?')[:50]}\")")
+        reels.append(f"titre changé (\"{old_data.get('titre','?')[:50]}\" → \"{new_data.get('titre','?')[:50]}\")")
 
-    def count_complements(d, kind):
-        n = 0
-        def walk(node):
-            nonlocal n
-            if not isinstance(node, dict):
-                return
-            if node.get("_type_complement") == kind:
-                n += 1
-            for s in (node.get("sections") or []):
-                walk(s)
-        walk(d)
-        return n
+    # Contenu modifié sur une clause DÉJÀ récupérée auparavant : là, le texte a
+    # vraiment bougé chez Légifrance (ce n'est pas un premier remplissage).
+    old_nodes, new_nodes = _nodes_by_id(old_data), _nodes_by_id(new_data)
+    modifies = [nid for nid in (old_filled & new_filled)
+                if nid in old_nodes and nid in new_nodes
+                and _node_fingerprint(old_nodes[nid]) != _node_fingerprint(new_nodes[nid])]
+    if modifies:
+        exemples = []
+        for nid in modifies[:2]:
+            t = (new_nodes[nid].get("title") or new_nodes[nid].get("titre") or nid)
+            exemples.append(t[:60])
+        reels.append(f"⚠️ {len(modifies)} clause(s) déjà récupérée(s) dont le TEXTE a changé : "
+                     + ", ".join(exemples))
 
-    for kind, label in [("forfait_jours", "forfait jours"), ("temps_partiel", "temps partiel")]:
-        old_n = count_complements(old_data, kind)
-        new_n = count_complements(new_data, kind)
-        if new_n > old_n:
-            notes.append(f"+{new_n - old_n} clause(s) {label} nouvellement récupérée(s)")
+    added = _top_titles(new_data) - _top_titles(old_data)
+    removed = _top_titles(old_data) - _top_titles(new_data)
+    if added:
+        reels.append("nouvelle(s) section(s) : " + ", ".join(sorted(t for t in added if t)[:3])[:120])
+    if removed:
+        reels.append("section(s) retirée(s) : " + ", ".join(sorted(t for t in removed if t)[:3])[:120])
 
-    if not notes:
+    if reels:
+        return "reel", f"IDCC {idcc} : " + " ; ".join(reels)
+
+    if nouvellement_remplis:
         os_, oa_, oc_ = _walk_counts(old_data)
         ns_, na_, nc_ = _walk_counts(new_data)
-        if nc_ > oc_:
-            notes.append(f"+{nc_ - oc_} clause(s) au texte intégral récupéré")
-        if ns_ != os_:
-            notes.append(f"{'+' if ns_ > os_ else ''}{ns_ - os_} section(s)")
-        if na_ != oa_:
-            notes.append(f"{'+' if na_ > oa_ else ''}{na_ - oa_} article(s)")
-        added = _top_titles(new_data) - _top_titles(old_data)
-        removed = _top_titles(old_data) - _top_titles(new_data)
-        if added:
-            notes.append("nouvelle(s) section(s) : " + ", ".join(sorted(t for t in added if t)[:3])[:120])
-        if removed:
-            notes.append("section(s) retirée(s) : " + ", ".join(sorted(t for t in removed if t)[:3])[:120])
-        if not notes:
-            # Même structure (mêmes sections/articles) mais octets différents : le plus
-            # souvent une simple réécriture (ordre des champs), pas un vrai changement de droit.
-            notes.append("réécriture sans changement de structure (probable ré-enregistrement, pas une modif Légifrance)")
+        return "rattrapage", (f"IDCC {idcc} : +{len(nouvellement_remplis)} clause(s) remplie(s) "
+                              f"(+{na_ - oa_} article(s), +{ns_ - os_} section(s))")
 
-    return f"IDCC {idcc} : " + " ; ".join(notes)
+    return "rattrapage", (f"IDCC {idcc} : réécriture sans changement de structure "
+                          f"(ré-enregistrement, pas une modif Légifrance)")
 
 
 def describe_summary_change(path):
@@ -183,13 +237,14 @@ def main():
     now = datetime.now(timezone.utc)
     date_str = now.strftime("%Y-%m-%d")
 
-    lines = [
-        f"# Audit des changements — run du {date_str} ({now.strftime('%H:%M UTC')})",
-        "",
-        f"**{total} fichier(s) touché(s)** par ce run "
-        f"({len(changed['ajoutes'])} ajoutés, {len(changed['modifies'])} modifiés, {len(changed['supprimes'])} supprimés).",
-        "",
-    ]
+    # Compteurs par nature, remplis plus bas — servent au résumé de l'onglet
+    # "Mises à jour" pour ne plus annoncer un gros chiffre alarmant alors que
+    # l'essentiel n'est que du remplissage de notre propre fonds.
+    par_cat = {"nouveau": [], "reel": [], "rattrapage": []}
+
+    # L'en-tête est construit À LA FIN (voir plus bas) : il ne peut annoncer un
+    # chiffre honnête qu'une fois les fichiers triés par nature.
+    lines = []
 
     if total == 0:
         lines.append("Aucun changement détecté par rapport au run précédent — tout est déjà à jour.")
@@ -206,14 +261,37 @@ def main():
             lines.extend(f"- {s}" for s in summary_changes)
             lines.append("")
 
-        # CCN individuelles
+        # CCN individuelles, triées : les vrais changements d'abord, le rattrapage
+        # de notre propre fonds replié en fin de rapport (c'est du bruit récurrent).
         ccn_changes = [p for p in changed["modifies"] + changed["ajoutes"]
                        if "/ccn/" in p and p.endswith(".json") and "_summary" not in p and "_debug_search" not in p]
         if ccn_changes:
-            lines.append(f"## Conventions collectives modifiées ou ajoutées ({len(ccn_changes)})")
             for p in sorted(ccn_changes):
-                lines.append(f"- {describe_ccn_change(p)}")
-            lines.append("")
+                cat, texte = describe_ccn_change(p)
+                par_cat[cat].append(texte)
+
+            if par_cat["reel"]:
+                lines.append(f"## ⚠️ Changements réels du droit ({len(par_cat['reel'])}) — à lire")
+                lines.append("")
+                lines.extend(f"- {t}" for t in par_cat["reel"])
+                lines.append("")
+            if par_cat["nouveau"]:
+                lines.append(f"## Nouvelles CCN récupérées ({len(par_cat['nouveau'])})")
+                lines.append("")
+                lines.extend(f"- {t}" for t in par_cat["nouveau"])
+                lines.append("")
+            if par_cat["rattrapage"]:
+                lines.append(f"## Rattrapage du fonds ({len(par_cat['rattrapage'])}) — pas un changement du droit")
+                lines.append("")
+                lines.append("Nos scripts de complément remplissent une clause encore vide par CCN et par run. "
+                              "Ces lignes vont se raréfier au fil des runs, jusqu'à disparaître quand tout sera rempli. "
+                              "Rien à vérifier ici.")
+                lines.append("")
+                for t in par_cat["rattrapage"][:40]:
+                    lines.append(f"- {t}")
+                if len(par_cat["rattrapage"]) > 40:
+                    lines.append(f"- ... et {len(par_cat['rattrapage']) - 40} autre(s), même nature")
+                lines.append("")
 
         # Code du travail / sécu / jurisprudence -- juste la liste, moins de detail utile a resumer
         categorized = set()
@@ -249,6 +327,38 @@ def main():
                 lines.append(f"- {p}")
             lines.append("")
 
+    # En-tête, construit maintenant que le tri est fait : on annonce d'abord ce
+    # qui demande une lecture, et le nombre brut de fichiers touchés ensuite,
+    # explicitement rattaché au rattrapage quand c'est le cas.
+    n_reel, n_nouveau, n_ratt = len(par_cat["reel"]), len(par_cat["nouveau"]), len(par_cat["rattrapage"])
+    if total == 0:
+        entete = "Aucun changement détecté par rapport au run précédent."
+    elif n_reel or n_nouveau:
+        bits = []
+        if n_reel:
+            bits.append(f"**⚠️ {n_reel} changement(s) réel(s) du droit**")
+        if n_nouveau:
+            bits.append(f"**{n_nouveau} nouvelle(s) CCN**")
+        entete = " et ".join(bits) + "."
+        if n_ratt:
+            entete += f" Le reste ({n_ratt}) n'est que du rattrapage de notre fonds."
+    elif n_ratt:
+        entete = (f"**Aucun changement du droit.** Les {n_ratt} CCN listées plus bas sont du "
+                  f"rattrapage : nos scripts remplissent des clauses encore vides. Rien à vérifier.")
+    else:
+        entete = f"{total} fichier(s) touché(s), aucun sur une convention collective."
+
+    lines = [
+        f"# Audit des changements — run du {date_str} ({now.strftime('%H:%M UTC')})",
+        "",
+        entete,
+        "",
+        f"<sub>Détail technique : {total} fichier(s) touché(s) — "
+        f"{len(changed['ajoutes'])} ajoutés, {len(changed['modifies'])} modifiés, "
+        f"{len(changed['supprimes'])} supprimés.</sub>",
+        "",
+    ] + lines
+
     import os
     os.makedirs(args.out, exist_ok=True)
     out_path = os.path.join(args.out, f"{date_str}.md")
@@ -259,13 +369,25 @@ def main():
     with open(out_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
-    # resume court pour l'index (1ere ligne utile apres le titre, ou "aucun changement")
+    # resume court pour l'index. On met en avant ce qui demande une lecture
+    # (vrais changements, nouvelles CCN) et on relègue le rattrapage, sinon
+    # l'onglet "Mises à jour" annonce des centaines de modifications qui n'en
+    # sont pas et le vrai signal devient invisible.
     if total == 0:
         resume = "Aucun changement"
     else:
-        resume = f"{total} fichier(s) touché(s)"
-        if changed["ajoutes"]:
-            resume += f", {len(changed['ajoutes'])} nouveau(x)"
+        parts = []
+        if par_cat["reel"]:
+            parts.append(f"⚠️ {len(par_cat['reel'])} changement(s) réel(s)")
+        if par_cat["nouveau"]:
+            parts.append(f"{len(par_cat['nouveau'])} nouvelle(s) CCN")
+        if par_cat["rattrapage"]:
+            parts.append(f"{len(par_cat['rattrapage'])} rattrapage(s)")
+        if not parts:
+            parts.append(f"{total} fichier(s) touché(s)")
+        elif not par_cat["reel"]:
+            parts.insert(0, "aucun changement du droit")
+        resume = ", ".join(parts)
 
     index_path = os.path.join(args.out, "index.json")
     try:
@@ -278,12 +400,19 @@ def main():
         "date": date_str,
         "heure": now.strftime("%H:%M UTC"),
         "resume": resume,
-        "total_changements": total,
+        # Le badge de l'onglet "Mises à jour" affiche cette valeur ("N chgt", ou
+        # "RAS" si 0). Elle ne compte donc QUE ce qui demande une lecture : un run
+        # de pur rattrapage affiche RAS, pas "285 chgt". Le total brut reste
+        # disponible juste en dessous et en clair dans le rapport.
+        "total_changements": n_reel + n_nouveau,
+        "fichiers_touches": total,
+        "rattrapages": n_ratt,
     })
     with open(index_path, "w", encoding="utf-8") as f:
         json.dump(index, f, ensure_ascii=False, indent=1)
 
-    print(f"Rapport d'audit écrit dans {out_path} ({total} changement(s))")
+    print(f"Rapport d'audit écrit dans {out_path} "
+          f"({n_reel} réel(s), {n_nouveau} nouvelle(s), {n_ratt} rattrapage(s), {total} fichier(s) touché(s))")
     print(f"Index mis à jour dans {index_path} ({len(index)} rapport(s) au total)")
 
 
