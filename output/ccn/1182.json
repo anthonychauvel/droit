@@ -17802,13 +17802,86 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693100",
+              "cid": "KALISCTA000005693100",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point d'indice au 1er mai 2003.",
+              "dateModif": null,
+              "dateDebut": "2003-04-24",
+              "dateFin": "2003-09-23",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005774023",
+                  "cid": "KALIARTI000005774023",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005693100/KALIARTI000005774023",
+                  "pathTitle": [
+                    "Valeur du point d'indice au 1er mai 2003."
+                  ],
+                  "content": "<p></p>   réunies en commission paritaire le 24 avril 2003 à Paris, il a été décidé ce qui suit en ce qui concerne la valeur du point d'indice :<p></p><p></p>   Au 1er mai 2003 le montant de la valeur du point, soit 7,823 Euros, sera augmenté de 1,5 % et deviendra 7,940 Euros.<p></p><p></p>   Cette augmentation se décompose en 0,7 % qui solde l'évolution de la valeur du point au 31 décembre 2002 et 0,8 % au titre de l'année 2003.<p></p><p></p>   La prochaine réunion de la commission nationale paritaire aura lieu le 3 juin 2003.<p></p> Article unique<p></p><p></p>   En conséquence, la valeur du point d'indice à la date du 1er mai 2003 est fixée à 7,940 Euros.<p></p><p></p>   Fait à Paris, le 24 avril 2003.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 46 2003-04-24 BO conventions collectives 2003-32",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1051142400000,
+                  "dateFin": 1064275200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,
