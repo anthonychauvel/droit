@@ -10636,13 +10636,100 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728413",
+              "cid": "KALISCTA000005728413",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Préambule",
+              "dateModif": null,
+              "dateDebut": "2004-03-23",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861852",
+                  "cid": "KALIARTI000005861852",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005728413/KALIARTI000005861852",
+                  "pathTitle": [
+                    "Préambule"
+                  ],
+                  "content": "<p></p>La durée légale du travail applicable à toutes les entreprises quel que soit leur effectif est fixée à 35 heures depuis le 1er janvier 2002. <p></p><p></p>Les parties signataires ayant examiné les effets de l'application de la durée du travail dans la profession, les grilles de rémunérations dans les industries des panneaux à base de bois sont désormais définies sur une base de 151,67 heures. <p></p>Article 1er <p></p>Champ d'application <p></p><p></p>Les organisations patronales et syndicales représentatives, au niveau national, signataires du présent accord, précisent que ce dernier s'applique à toutes les entreprises relevant des activités sous le code 20.2 Z, conformément à l'article 1er \" Champ d'application \" de la convention collective du 29 juin 1999. <p></p>Article 2 <p></p><p></p>Rémunération annuelle garantie 2004. <p></p><p></p>Base 151,67 heures <p></p><p></p>(En euros). <p></p><TABLE><TR><TD>COEFFICIENT </TD><TD>REMUNERATION ANNUELLE GARANTIE </TD></TR><TR><TD>Ouvriers de fabrication </TD></TR><TR><TD>125 </TD><TD>13 337 </TD></TR><TR><TD>135 </TD><TD>13 591 </TD></TR><TR><TD>145 </TD><TD>13 813 </TD></TR><TR><TD>155 </TD><TD>14 369 </TD></TR><TR><TD>165 </TD><TD>14 607 </TD></TR><TR><TD>175 </TD><TD>14 734 </TD></TR><TR><TD>190 </TD><TD>15 020 </TD></TR><TR><TD>Ouvriers d'entretien </TD></TR><TR><TD>145 </TD><TD>13 813 </TD></TR><TR><TD>165 </TD><TD>14 607 </TD></TR><TR><TD>175 </TD><TD>14 734 </TD></TR><TR><TD>195 </TD><TD>15 401 </TD></TR><TR><TD>205 </TD><TD>16 211 </TD></TR><TR><TD>225 </TD><TD>17 703 </TD></TR><TR><TD>Employés et techniciens </TD></TR><TR><TD>125 </TD><TD>13 337 </TD></TR><TR><TD>145 </TD><TD>13 813 </TD></TR><TR><TD>155 </TD><TD>14 369 </TD></TR><TR><TD>175 </TD><TD>14 734 </TD></TR><TR><TD>185 </TD><TD>14 830 </TD></TR><TR><TD>205 </TD><TD>16 211 </TD></TR><TR><TD>240 </TD><TD>18 783 </TD></TR><TR><TD>280 </TD><TD>21 689 </TD></TR><TR><TD>325 </TD><TD>25 245 </TD></TR><TR><TD>Agents de maîtrise </TD></TR><TR><TD>190 </TD><TD>15 020 </TD></TR><TR><TD>220 </TD><TD>17 307 </TD></TR><TR><TD>250 </TD><TD>19 545 </TD></TR><TR><TD>290 </TD><TD>22 594 </TD></TR><TR><TD>335 </TD><TD>25 912 </TD></TR><TR><TD>Cadres </TD></TR><TR><TD>300 </TD><TD>23 340 </TD></TR><TR><TD>370 </TD><TD>28 500 </TD></TR><TR><TD>450 </TD><TD>34 486 </TD></TR><TR><TD>540 </TD><TD>40 964 </TD></TR><TR><TD>650 </TD><TD>48 982 </TD></TR><TR><TD>800 </TD><TD>59 461 </TD></TR></TABLE><p></p>Article 3 <p></p><p></p>Salaires minima mensuels. <p></p><p></p>Base 151,67 heures. <p></p><p></p>Les salaires minima mensuels sont applicables à compter du 1er jour du mois suivant la signature de l'accord. <p></p><p></p>(en euros). <p></p><TABLE><TR><TD>COEFFICIENT </TD><TD>REMUNERATION MENSUEL </TD></TR><TR><TD>Ouvriers de fabrication </TD></TR><TR><TD>125 </TD><TD>1 056,09 </TD></TR><TR><TD>135 </TD><TD>1 056,39 </TD></TR><TR><TD>145 </TD><TD>1 058,08 </TD></TR><TR><TD>155 </TD><TD>1 060,22 </TD></TR><TR><TD>165 </TD><TD>1 064,05 </TD></TR><TR><TD>175 </TD><TD>1 073,25 </TD></TR><TR><TD>190 </TD><TD>1 093,93 </TD></TR><TR><TD>Ouvriers d'entretien </TD></TR><TR><TD>145 </TD><TD>1 058,08 </TD></TR><TR><TD>165 </TD><TD>1 064,05 </TD></TR><TR><TD>175 </TD><TD>1 073,25 </TD></TR><TR><TD>195 </TD><TD>1 121,51 </TD></TR><TR><TD>205 </TD><TD>1 180,49 </TD></TR><TR><TD>225 </TD><TD>1 289,27 </TD></TR><TR><TD>Employés et techniciens </TD></TR><TR><TD>125 </TD><TD>1 056,09 </TD></TR><TR><TD>145 </TD><TD>1 058,08 </TD></TR><TR><TD>155 </TD><TD>1 060,22 </TD></TR><TR><TD>175 </TD><TD>1 073,25 </TD></TR><TR><TD>185 </TD><TD>1 079,37 </TD></TR><TR><TD>205 </TD><TD>1 180,49 </TD></TR><TR><TD>240 </TD><TD>1 368,18 </TD></TR><TR><TD>280 </TD><TD>1 579,61 </TD></TR><TR><TD>325 </TD><TD>1 838,54 </TD></TR><TR><TD>Agents de maîtrise </TD></TR><TR><TD>190 </TD><TD>1 093,93 </TD></TR><TR><TD>220 </TD><TD>1 260,16 </TD></TR><TR><TD>250 </TD><TD>1 423,49 </TD></TR><TR><TD>290 </TD><TD>1 645,49 </TD></TR><TR><TD>335 </TD><TD>1 886,80 </TD></TR><TR><TD>Cadres </TD></TR><TR><TD>300 </TD><TD>1 700,65 </TD></TR><TR><TD>370 </TD><TD>2 075,71 </TD></TR><TR><TD>450 </TD><TD>2 511,90 </TD></TR><TR><TD>540 </TD><TD>2 983,33 </TD></TR><TR><TD>650 </TD><TD>3 567,22 </TD></TR><TR><TD>800 </TD><TD>4 330,52 </TD></TR></TABLE><p></p>Article 4 <p></p><p></p>Barème de la prime d'ancienneté 2004, base 151,67 heures (applicable à compter du 1er jour du mois suivant la signature d'accord). <p></p><p></p>(En euros). <p></p><p></p>Ouvriers de fabrication. <p></p><TABLE><TR><TD>COEFF. </TD><TD>ANCIENNETE </TD></TR><TR><TD></TD><TD>3 ans </TD><TD>6 ans </TD><TD>9 ans </TD></TR><TR><TD></TD><TD>Mensuelle </TD><TD>Annuelle </TD><TD>Mensuelle </TD><TD>Annuelle </TD><TD>Mensuelle </TD><TD>Annuelle </TD></TR><TR><TD>125 </TD><TD>27,75 </TD><TD>332,95 </TD><TD>54,12 </TD><TD>649,43 </TD><TD>80,34 </TD><TD>964,09 </TD></TR><TR><TD>135 </TD><TD>28,36 </TD><TD>340,27 </TD><TD>55,19 </TD><TD>662,24 </TD><TD>82,02 </TD><TD>984,21 </TD></TR><TR><TD>145 </TD><TD>28,97 </TD><TD>347,58 </TD><TD>56,25 </TD><TD>675,04 </TD><TD>83,69 </TD><TD>1 004,33 </TD></TR><TR><TD>155 </TD><TD>29,42 </TD><TD>353,07 </TD><TD>57,32 </TD><TD>687,85 </TD><TD>85,07 </TD><TD>1 020,80 </TD></TR><TR><TD>165 </TD><TD>28,88 </TD><TD>358,56 </TD><TD>58,39 </TD><TD>700,66 </TD><TD>86,74 </TD><TD>1 040,92 </TD></TR><TR><TD>175 </TD><TD>31,71 </TD><TD>380,51 </TD><TD>61,89 </TD><TD>742,73 </TD><TD>91,93 </TD><TD>1 103,12 </TD></TR><TR><TD>190 </TD><TD>34,00 </TD><TD>407,95 </TD><TD>66,47 </TD><TD>797,61 </TD><TD>99,09 </TD><TD>1 189,10 </TD></TR><TR><TD>COEFF. </TD><TD>ANCIENNETE </TD></TR><TR><TD></TD><TD>12 ans </TD><TD>15 ans </TD></TR><TR><TD></TD><TD>Mensuelle </TD><TD>Annuelle </TD><TD>Mensuelle </TD><TD>Annuelle </TD></TR><TR><TD>125 </TD><TD>106,56 </TD><TD>1 278,74 </TD><TD>132,94 </TD><TD>1 595,23 </TD></TR><TR><TD>135 </TD><TD>108,70 </TD><TD>1 304,35 </TD><TD>135,53 </TD><TD>1 626,33 </TD></TR><TR><TD>145 </TD><TD>111,29 </TD><TD>1 335,45 </TD><TD>138,27 </TD><TD>1 659,26 </TD></TR><TR><TD>155 </TD><TD>113,12 </TD><TD>1 357,41 </TD><TD>141,02 </TD><TD>1 692,18 </TD></TR><TR><TD>165 </TD><TD>114,95 </TD><TD>1 379,36 </TD><TD>143,61 </TD><TD>1 723,28 </TD></TR><TR><TD>175 </TD><TD>122,26 </TD><TD>1 467,17 </TD><TD>152,14 </TD><TD>1 825,73 </TD></TR><TR><TD>190 </TD><TD>131,41 </TD><TD>1 576,93 </TD><TD>163,88 </TD><TD>1 966,59 </TD></TR></TABLE><p></p><p></p>Ouvriers d'entretien <p></p><TABLE><TR><TD>COEFF. </TD><TD>ANCIENNETE </TD></TR><TR><TD></TD><TD>3 ans </TD><TD>6 ans </TD><TD>9 ans </TD></TR><TR><TD></TD><TD>Mensuelle </TD><TD>Annuelle </TD><TD>Mensuelle </TD><TD>Annuelle </TD><TD>Mensuelle </TD><TD>Annuelle </TD></TR><TR><TD>145 </TD><TD>28,97 </TD><TD>347,58 </TD><TD>56,25 </TD><TD>675,04 </TD><TD>83,69 </TD><TD>1 004,33 </TD></TR><TR><TD>165 </TD><TD>29,88 </TD><TD>358,56 </TD><TD>58,39 </TD><TD>700,66 </TD><TD>86,74 </TD><TD>1 040,92 </TD></TR><TR><TD>175 </TD><TD>31,71 </TD><TD>380,51 </TD><TD>61,89 </TD><TD>742,73 </TD><TD>91,93 </TD><TD>1 103,12 </TD></TR><TR><TD>195 </TD><TD>34,76 </TD><TD>417,10 </TD><TD>67,99 </TD><TD>815,91 </TD><TD>101,38 </TD><TD>1 216,54 </TD></TR><TR><TD>205 </TD><TD>36,44 </TD><TD>437,22 </TD><TD>71,19 </TD><TD>854,32 </TD><TD>106,10 </TD><TD>1 273,25 </TD></TR><TR><TD>225 </TD><TD>39,48 </TD><TD>473,81 </TD><TD>77,44 </TD><TD>929,33 </TD><TD>115,40 </TD><TD>1 384,85 </TD></TR><TR><TD>COEFF. </TD><TD>ANCIENNETE </TD></TR><TR><TD></TD><TD>12 ans </TD><TD>15 ans </TD></TR><TR><TD></TD><TD>Mensuelle </TD><TD>Annuelle </TD><TD>Mensuelle </TD><TD>Annuelle </TD></TR><TR><TD>145 </TD><TD>111,29 </TD><TD>1 335,45 </TD><TD>138,27 </TD><TD>1 659,26 </TD></TR><TR><TD>165 </TD><TD>114,95 </TD><TD>1 379,36 </TD><TD>143,81 </TD><TD>1 723,28 </TD></TR><TR><TD>175 </TD><TD>122,26 </TD><TD>1 467,17 </TD><TD>152,14 </TD><TD>1 825,73 </TD></TR><TR><TD>195 </TD><TD>134,46 </TD><TD>1 613,52 </TD><TD>167,85 </TD><TD>2 014,16 </TD></TR><TR><TD>205 </TD><TD>141,17 </TD><TD>1 694,01 </TD><TD>175,77 </TD><TD>2 109,28 </TD></TR><TR><TD>225 </TD><TD>153,36 </TD><TD>1 840,36 </TD><TD>191,32 </TD><TD>2 295,88 </TD></TR></TABLE><p></p><p></p>Employés et techniciens <p></p><TABLE><TR><TD>COEFF. </TD><TD>ANCIENNETE </TD></TR><TR><TD></TD><TD>3 ans </TD><TD>6 ans </TD><TD>9 ans </TD></TR><TR><TD></TD><TD>Mensuelle </TD><TD>Annuelle </TD><TD>Mensuelle </TD><TD>Annuelle </TD><TD>Mensuelle </TD><TD>Annuelle </TD></TR><TR><TD>125 </TD><TD>27,75 </TD><TD>332,95 </TD><TD>54,12 </TD><TD>649,43 </TD><TD>80,34 </TD><TD>964,09 </TD></TR><TR><TD>145 </TD><TD>28,97 </TD><TD>347,58 </TD><TD>56,25 </TD><TD>675,04 </TD><TD>83,69 </TD><TD>1 004,33 </TD></TR><TR><TD>155 </TD><TD>29,42 </TD><TD>353,07 </TD><TD>57,32 </TD><TD>687,85 </TD><TD>85,07 </TD><TD>1 020,80 </TD></TR><TR><TD>175 </TD><TD>31,71 </TD><TD>380,51 </TD><TD>61,89 </TD><TD>742,73 </TD><TD>91,93 </TD><TD>1 103,12 </TD></TR><TR><TD>185 </TD><TD>33,08 </TD><TD>396,98 </TD><TD>64,94 </TD><TD>779,32 </TD><TD>96,20 </TD><TD>1 154,34 </TD></TR><TR><TD>205 </TD><TD>36,44 </TD><TD>437,22 </TD><TD>71,19 </TD><TD>854,32 </TD><TD>106,10 </TD><TD>1 273,25 </TD></TR><TR><TD>240 </TD><TD>41,77 </TD><TD>501,25 </TD><TD>82,17 </TD><TD>986,04 </TD><TD>122,42 </TD><TD>1 469,00 </TD></TR><TR><TD>280 </TD><TD>48,02 </TD><TD>576,26 </TD><TD>94,67 </TD><TD>1,136,05 </TD><TD>141,32 </TD><TD>1 695,84 </TD></TR><TR><TD>325 </TD><TD>55,19 </TD><TD>662,24 </TD><TD>108,70 </TD><TD>1,304,35 </TD><TD>162,51 </TD><TD>1 950,13 </TD></TR><TR><TD>COEFF. </TD><TD>ANCIENNETE </TD></TR><TR><TD></TD><TD>12 ans </TD><TD>15 ans </TD></TR><TR><TD></TD><TD>Mensuelle </TD><TD>Annuelle </TD><TD>Mensuelle </TD><TD>Annuelle </TD></TR><TR><TD>125 </TD><TD>106,56 </TD><TD>1 278,74 </TD><TD>132,94 </TD><TD>1 595,23 </TD></TR><TR><TD>145 </TD><TD>111,29 </TD><TD>1 335,45 </TD><TD>138,27 </TD><TD>1 659,26 </TD></TR><TR><TD>155 </TD><TD>113,12 </TD><TD>1 357,41 </TD><TD>141,02 </TD><TD>1 692,18 </TD></TR><TR><TD>175 </TD><TD>122,26 </TD><TD>1 467,17 </TD><TD>152,14 </TD><TD>1 825,73 </TD></TR><TR><TD>185 </TD><TD>127,75 </TD><TD>1 533,03 </TD><TD>160,07 </TD><TD>1 920,86 </TD></TR><TR><TD>205 </TD><TD>141,17 </TD><TD>1 694,01 </TD><TD>175,77 </TD><TD>2 109,28 </TD></TR><TR><TD>240 </TD><TD>162,51 </TD><TD>1 950,13 </TD><TD>203,06 </TD><TD>2 436,75 </TD></TR><TR><TD>280 </TD><TD>187,51 </TD><TD>2 220,15 </TD><TD>234,47 </TD><TD>2 813,60 </TD></TR><TR><TD>325 </TD><TD>216,17 </TD><TD>2 594,07 </TD><TD>269,68 </TD><TD>3 236,19 </TD></TR></TABLE><p></p><p></p>Agents de maîtrise <p></p><TABLE><TR><TD>COEFF. </TD><TD>ANCIENNETE </TD></TR><TR><TD></TD><TD>3 ans </TD><TD>6 ans </TD><TD>9 ans </TD></TR><TR><TD></TD><TD>Mensuelle </TD><TD>Annuelle </TD><TD>Mensuelle </TD><TD>Annuelle </TD><TD>Mensuelle </TD><TD>Annuelle </TD></TR><TR><TD>190 </TD><TD>34,00 </TD><TD>407,95 </TD><TD>66,47 </TD><TD>797,61 </TD><TD>99,09 </TD><TD>1 189,10 </TD></TR><TR><TD>220 </TD><TD>38,72 </TD><TD>464,66 </TD><TD>75,92 </TD><TD>911,04 </TD><TD>113,12 </TD><TD>1 357,41 </TD></TR><TR><TD>250 </TD><TD>43,45 </TD><TD>521,38 </TD><TD>85,22 </TD><TD>1 022,63 </TD><TD>127,29 </TD><TD>1 527,54 </TD></TR><TR><TD>290 </TD><TD>49,70 </TD><TD>596,38 </TD><TD>97,87 </TD><TD>1 174,47 </TD><TD>145,89 </TD><TD>1 750,72 </TD></TR><TR><TD>335 </TD><TD>56,71 </TD><TD>680,53 </TD><TD>112,05 </TD><TD>1 344,60 </TD><TD>167,08 </TD><TD>2 005,21 </TD></TR><TR><TD>COEFF. </TD><TD>ANCIENNETÉ </TD></TR><TR><TD></TD><TD>12 ans </TD><TD>15 ans </TD></TR><TR><TD></TD><TD>Mensuelle </TD><TD>Annuelle </TD><TD>Mensuelle </TD><TD>Annuelle </TD></TR><TR><TD>190 </TD><TD>131,41 </TD><TD>1 576,93 </TD><TD>163,88 </TD><TD>1 966,59 </TD></TR><TR><TD>220 </TD><TD>150,31 </TD><TD>1 803,78 </TD><TD>187,36 </TD><TD>2 248,32 </TD></TR><TR><TD>250 </TD><TD>169,22 </TD><TD>2 030,62 </TD><TD>210,99 </TD><TD>2 531,87 </TD></TR><TR><TD>290 </TD><TD>194,22 </TD><TD>2 330,64 </TD><TD>242,24 </TD><TD>2 906,90 </TD></TR><TR><TD>335 </TD><TD>222 27 </TD><TD>2 667,25 </TD><TD>277,46 </TD><TD>3 329,49</TD></TR></TABLE><p></p>-----------------------------------------------------------------Article 5 <p></p>Dépôt <p></p><p></p>Les parties signataires conviennent que le présent accord sera déposé auprès des services compétents du ministère du travail et au greffe du conseil des Prud'hommes de Paris. <p></p>Article 6 <p></p>Extension <p></p><p></p>Conformément à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647018&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L133-1 (Ab)\">article L. 133-1 et suivants du code du travail</a>, les parties signataires demanderont l'extension du présent accord et confient les démarches aux fédérations d'employeurs signataires. <p></p><p></p>Fait à Paris, le 23 mars 2004. <p></p><font color=\"808080\"><em>Arrêté du 18 août 2004 : <p></p>L'article 3 est étendu sous réserve de l'application, d'une part, des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance et, d'autre part, des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie mensuelle de rémunération.<p></p></em></font>",
+                  "nota": "   Arrêté du 18 août 2004 :<p></p>    L'article 3 est étendu sous réserve de l'application, d'une part, des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance et, d'autre part, des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie mensuelle de rémunération.<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2004-03-23 BO conventions collectives 2004-23 étendu par arrêté du 18 août 2004 JORF 28 août 2004",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L133-1 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L133-1",
+                      "articleId": "LEGIARTI000006647018",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 94867200000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1080000000000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,
