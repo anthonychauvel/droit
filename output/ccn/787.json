@@ -26624,12 +26624,76 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000039179628",
+              "cid": "KALIARTI000039179628",
+              "intOrdre": 524287,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000039179628",
+              "pathTitle": [],
+              "content": "<p align=\"left\">Conformément à l'<a href=\"/affichIDCCArticle.do?cidTexte=KALITEXT000005674852&idArticle=KALIARTI000005839415&categorieLien=cid\">article 5.1.1</a>, et notamment le 5.1.1.3, les parties, dans le cadre de l'examen annuel des salaires, conviennent de différentes mesures contribuant à l'augmentation des salaires minima :</p><p align=\"left\">La valeur de base demeure appliquée aux 164 premiers points et la valeur hiérarchique s'appliquera au-delà.</p><p align=\"left\">La valeur de base et la valeur hiérarchique sont fixées comme suit :<br/>\n– valeur de base : 109,64 € brut ;<br/>\n– valeur hiérarchique : 67,53 € brut.</p><p align=\"left\">Pour les salariés inscrits à l'ordre des experts-comptables et/ou à la compagnie des commissaires aux comptes relevant de l'indice 40 de la grille générale des emplois figurant en annexe B de la convention collective, la rémunération annuelle minimale s'élève à 42 037,83 € brut.</p><p align=\"left\">Compte tenu de son objet, le présent accord ne comporte pas de disposition particulière pour les cabinets de moins de 50 salariés.</p><p align=\"left\">La commission paritaire permanente de négociation, d'interprétation et de conciliation poursuivra en 2019 l'examen de l'accord de branche du 4 janvier 2013 relatif à l'égalité professionnelle.</p><p align=\"left\">Sous réserve de l'exercice par les syndicats de salariés du droit d'opposition, le présent accord s'appliquera à compter du 1er jour du mois civil suivant la parution au Journal officiel de son arrêté ministériel d'extension.</p><p align=\"left\">Le présent accord fera l'objet d'un dépôt sur la base nationale des conventions et accords collectifs, consultable sur www.legifrance.gouv.fr (rubrique « Accords collectifs »).</p><p align=\"left\">Les syndicats signataires mandatent le secrétariat de la commission paritaire permanente de négociation, d'interprétation et de conciliation pour demander l'extension du présent accord.</p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1",
+              "type": "AUTONOME",
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000039686193",
+                  "textTitle": "Arrêté du 23 décembre 2019 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000039686197",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2019-12-29",
+                  "dateSignaTexte": "2019-12-23",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "KALITEXT000005674852",
+                  "textTitle": "Convention collective nationale du 9 décembre 1974 - art. 5.1",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "5.1",
+                  "articleId": "KALIARTI000005839415",
+                  "natureText": "Convention collective nationale ",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 719971200000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1577836800000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,

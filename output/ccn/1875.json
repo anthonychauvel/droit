@@ -14137,13 +14137,86 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005710464",
+              "cid": "KALISCTA000005710464",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Classification des emplois et définition des tâches",
+              "dateModif": null,
+              "dateDebut": "2005-03-01",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005818586",
+                  "cid": "KALIARTI000005818586",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005710464/KALIARTI000005818586",
+                  "pathTitle": [
+                    "Classification des emplois et définition des tâches"
+                  ],
+                  "content": "<p>Echelon 1</p><p>Personnel de nettoyage et d'entretien des locaux :</p><p>coefficient 100.</p><p>Personnel assurant le nettoyage et l'entretien de l'ensemble des locaux, du mobilier et des textiles professionnels du cabinet, de la clinique ou du centre hospitalier vétérinaires.</p><p>Ce personnel travaille à temps plein ou à temps partiel, il peut intervenir en dehors des heures d'ouverture.</p><p>Aucune qualification particulière n'est nécessaire.</p><p>Echelon 2</p><p>Personnel d'accueil et de secrétariat : coefficient 105.</p><p>Personnel non titulaire du titre auxiliaire vétérinaire assurant principalement les activités suivantes :</p><p>- accueil et réception ;</p><p>- secrétariat ;</p><p>- aide à la gestion et à la comptabilité ;</p><p>- vente de produits vétérinaires sans prescription ;</p><p>- hygiène et maintenance des locaux.</p><p>Ce personnel assurera l'hygiène et la maintenance des locaux, du matériel et des textiles professionnels, du fait de l'activité professionnelle, notamment l'entretien permanent de la propreté et l'entretien sanitaire : excréments, urines, sang, poils...</p><p>Echelon 3</p><p>Auxiliaire vétérinaire : coefficient 107.</p><p>Ce personnel doit assurer, en plus des tâches définies à l'échelon 2 :</p><p>- hygiène, sécurité et aide à la contention ;</p><p>- assistance technique du praticien ;</p><p>- aide à la consultation, aux soins, aux examens, à la radiologie et à la chirurgie ;</p><p>- préparation du matériel médical et chirurgical.</p><p>Le personnel classé échelon 2 de la convention collective passe à cet échelon 3, à compter de la date d'extension de l'avenant.</p><p>Echelon 4</p><p>Auxiliaire vétérinaire qualifié : coefficient 110.</p><p>Personnel titulaire du titre d'auxiliaire vétérinaire qualifié (AV) effectuant les mêmes tâches que l'échelon 3.</p><p>La qualification sera enregistrée au niveau 5 des titres et diplômes (équivalent aux niveaux BEP ou CAP).</p><p>L'accès à cette qualification se fait soit par formation, soit par validation des acquis de l'expérience (VAE) à l'issue d'une expérience professionnelle salarié, supérieure à 3 ans acquise en cabinet, clinique ou centre hospitalier vétérinaires.</p><p>Les auxiliaires vétérinaires classés à l'échelon 3 de la convention collective passent à cet échelon 4, à compter de l'extension de l'avenant, sans pour autant être titulaires du titre d'auxiliaire vétérinaire qualifié, qu'ils pourront obtenir par la VAE.</p><p>Echelon 5</p><p>Auxiliaire spécialisé vétérinaire : coefficient 117.</p><p>Ce personnel titulaire du titre d'auxiliaire spécialisé vétérinaire (ASV) doit assurer, en plus des tâches définies à l'échelon 3 :</p><p>- assistance à la comptabilité ;</p><p>- conseil et vente argumentés des produits vétérinaires sans prescription ;</p><p>- assistance aux soins et examens complémentaires ;</p><p>- assistance chirurgicale pré-, per- et post-opératoire.</p><p>La qualification d'ASV sera enregistrée au niveau 4 des titres et diplôme (équivalent bac).</p><p>L'accès à cette qualification se fait soit par formation, soit par validation des acquis de l'expérience professionnelle, à l'issue d'une expérience professionnelle salariée supérieure à 3 ans à l'échelon 4.</p><p>Les organisations signataires de la présente convention se réuniront au moins une fois par an, en début d'année, pour négocier les salaires.</p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 19 2005-03-01 BO conventions collectives 2005-15 étendu par arrêté du 5 octobre 2005 JORF 19 octobre 2005",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1109635200000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,
@@ -19087,12 +19160,62 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005818610",
+              "cid": "KALIARTI000005818610",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005818610",
+              "pathTitle": [],
+              "content": "<p></p>   Réunis en commission nationale paritaire le 1er mars 2005, il a été décidé, dans le cadre de la réunion de négociation annuelle des salaires, de fixer la valeur minimale du point à 13,07  sur la base de 169 heures en application de l'accord de branche du 4 décembre 2001. Les heures supplémentaires effectuées de la 36e à la 39e heure sont majorées de 25 %, en rémunération ou en repos, ces heures ne s'imputent pas sur le contingent d'heures supplémentaires fixé à 130 heures. L'application de cet avenant sera à compter de la publication de l'arrêté d'extension au Journal officiel.<p></p><p></p>   Fait à Paris, le 1er mars 2005.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 11 juillet 2005 :<p></p>    La première phrase de l'avenant est étendue sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance.<p></p>    La seconde phrase de l'avenant est étendue sous réserve de l'application des dispositions du sixième alinéa de l'article L. 212-5 du code du travail.<p></p></em></font>",
+              "nota": null,
+              "comporteLiens": false,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 18 2005-03-01 BO conventions collectives 2005-15 étendu par arrêté du 11 juillet 2005 JORF 22 juillet 2005",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1109635200000,
+              "dateFin": 1150329600000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,
