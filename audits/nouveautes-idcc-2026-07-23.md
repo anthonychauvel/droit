@@ -1,0 +1,55 @@
+# Nouveautés détectées — IDCC — 2026-07-23
+
+## 316 IDCC suivi(s) mais absent(s) du dernier univers connu
+(peut vouloir dire : retiré de Légifrance, ou simplement pas retrouvé par la recherche large -- à vérifier avant de retirer quoi que ce soit)
+
+- 1031
+- 1043
+- 1049
+- 1050
+- 1057
+- 1060
+- 1069
+- 1072
+- 1077
+- 1090
+- 112
+- 1140
+- 1147
+- 1170
+- 1182
+- 1203
+- 1225
+- 1232
+- 1247
+- 1256
+- 1257
+- 1261
+- 1266
+- 1267
+- 1285
+- 1286
+- 1307
+- 1311
+- 1316
+- 1341
+- 1351
+- 1388
+- 1396
+- 1404
+- 1405
+- 1408
+- 1411
+- 1412
+- 1413
+- 1424
+- 1431
+- 1468
+- 1480
+- 1483
+- 1486
+- 1487
+- 1499
+- 1501
+- 1505
+- 1512
