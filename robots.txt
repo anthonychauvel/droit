@@ -1,0 +1,19 @@
+# MonLegiTexte est réservé aux utilisateurs de l'application SimulHeures.
+# Le contenu ne doit pas apparaître dans les moteurs de recherche.
+#
+# Le crawl de la racine est autorisé VOLONTAIREMENT : c'est la seule façon
+# pour un moteur de lire le "noindex" (en-tête X-Robots-Tag du worker et
+# balise <meta robots> des pages) et donc de retirer la page de son index.
+# Un "Disallow: /" empêcherait de voir ce noindex, et l'URL pourrait rester
+# affichée en résultat de recherche, sans contenu.
+#
+# Les répertoires de données sont bloqués : volumineux et sans intérêt pour
+# un moteur.
+#
+# Ce fichier est une sécurité : en service, c'est le worker Cloudflare qui
+# sert robots.txt directement (voir cloudflare-worker.js).
+
+User-agent: *
+Allow: /
+Disallow: /output/
+Disallow: /audits/
