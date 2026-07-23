@@ -21763,13 +21763,86 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005711757",
+              "cid": "KALISCTA000005711757",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point au 1er octobre 2001",
+              "dateModif": null,
+              "dateDebut": "2001-08-01",
+              "dateFin": "2002-10-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005821909",
+                  "cid": "KALIARTI000005821909",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005711757/KALIARTI000005821909",
+                  "pathTitle": [
+                    "Valeur du point au 1er octobre 2001"
+                  ],
+                  "content": "<p>Article 1<sup>er</sup></p><p>Augmentation de la valeur du point</p><p>Les partenaires sociaux ont décidé de porter la valeur du point à 49,90 F soit 7,61 € applicable à dater du premier jour suivant l'arrêté d'extension de l'accord.</p><p>Article 2</p><p>Principe de négociation de la valeur du point</p><p>Afin de rompre avec le principe de rétroactivité quant à la réévaluation de la valeur du point, il est convenu de retenir le principe d'un accord salarial intervenant au plus tard le 1<sup>er </sup>octobre de chaque année prévoyant une hausse annuelle de la valeur du point applicable par moitié au 1<sup>er</sup> janvier et au 1<sup>er</sup> juillet de l'année suivante.</p><p>Article 3</p><p>Négociation au titre de l'année 2000</p><p>En application de l'article 2 du présent accord, les partenaires sociaux se réuniront au plus tard le 1<sup>er </sup>octobre 2001 pour négocier l'évolution de la valeur du point au titre de l'année 2002. En janvier 2002, la hausse de la valeur du point ne pourra être inférieure à 1 % soit 50,40 F (7,68 € ) (1), le solde applicable au 1<sup>er </sup>juillet 2002. Article 4</p><p>Demande d'extension</p><p>Les parties signataires demandent l'extension du présent accord auprès du ministère de l'emploi et de la solidarité.</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2001-02-22 en vigueur le premier jour du mois suivant l'arrêté d'extension de l'accord BO conventions collectives 2001-13 étendu par arrêté du 2 juillet 2001 JORF 13 juillet 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 996624000000,
+                  "dateFin": 1035244800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true
         },
         {
           "executionTime": 0,
