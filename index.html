@@ -1744,8 +1744,18 @@ function markdownToHtml(md){
    depuis un résultat de recherche. Le panneau affiche alors la fiche à la place
    du rapport (bouton Retour du navigateur / croix pour refermer). */
 document.addEventListener('click', function(e){
-  var ref = e.target.closest('.maj-ref');
-  if(ref){ e.stopPropagation(); e.preventDefault(); openDetail(ref.dataset.kind, ref.dataset.num); }
+  /* Écouteur en phase de CAPTURE, donc exécuté avant tous les autres, sur
+     chaque clic de la page. S'il levait une exception, il pourrait empêcher
+     les gestionnaires suivants de s'exécuter — filtres, onglets, sous-chips.
+     D'où la double précaution : on vérifie que la cible sait répondre à
+     closest(), et on isole l'ouverture dans un try. */
+  var t = e.target;
+  if(!t || typeof t.closest !== 'function') return;
+  var ref = t.closest('.maj-ref');
+  if(!ref) return;
+  e.stopPropagation(); e.preventDefault();
+  try { openDetail(ref.dataset.kind, ref.dataset.num); }
+  catch(err){ console.error('Ouverture de la référence impossible', err); }
 }, true);
 
 /* ---- Tableau de bord d'accueil (stats live + dernières vérifications) ---- */
