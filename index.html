@@ -505,6 +505,9 @@ async function loadAll(){
   }catch(e){ console.warn('manifest.json indisponible, repli sur _summary', e); }
 
   // 2) Recherche plein-texte
+  // Le cache du filtre par catégorie dépend de SEARCH : on le vide à chaque
+  // rechargement, sinon un onglet garderait le contenu de la session précédente.
+  CONTENU_CACHE = {};
   try{ SEARCH = await fetchJSON('output/search-index.json'); }
   catch(e){ console.warn('search-index.json indisponible', e); SEARCH = {ccn:[],code:[],code_secu:[],juris:[]}; }
 
@@ -1450,13 +1453,51 @@ function matchSub(source, it){
   return true;
 }
 
+/* Texte cherchable d'une catégorie, construit à la demande puis mémorisé.
+
+   Le filtre d'onglet ne comparait que le numéro et le titre. Or dans les
+   onglets Code du travail et Sécu, le titre vaut littéralement
+   « Article L3121-27 » : il n'y a aucun libellé de sujet, donc chercher un mot
+   n'y trouvait jamais rien. On y adjoint le texte du search-index.
+
+   Le cloisonnement est volontaire : chaque onglet ne cherche QUE dans son
+   propre corpus. Filtrer les CCN ne doit jamais faire remonter un article du
+   code — c'est ce qui distingue ce filtre de la recherche globale.
+
+   Correspondance à ne pas oublier : l'onglet s'appelle « secu », la clé de
+   l'index « code_secu ». */
+var CONTENU_CACHE = {};
+function contenuDe(source){
+  if(CONTENU_CACHE[source]) return CONTENU_CACHE[source];
+  var cle = (source === 'secu') ? 'code_secu' : source;
+  var map = {};
+  (SEARCH[cle] || []).forEach(function(e){
+    var parts = [e.title || '', e.snippet || ''];
+    (e.hits || []).forEach(function(h){
+      if(h.title) parts.push(h.title);
+      if(h.kw) parts.push(h.kw);
+    });
+    map[String(e.num)] = normaliser(parts.join(' '));
+  });
+  CONTENU_CACHE[source] = map;
+  return map;
+}
+
 function computeList(){
   var source = BROWSE.source;
   var base = INDEX[source] || [];
   var f = normaliser(BROWSE.filter);
+  var contenu = f ? contenuDe(source) : null;
   var list = base.filter(function(it){
     if(!matchSub(source, it)) return false;
-    if(f){ var hay = normaliser(it.num+' '+it.title); if(hay.indexOf(f)===-1) return false; }
+    if(f){
+      var hay = normaliser(it.num+' '+it.title);
+      if(hay.indexOf(f) !== -1) return true;
+      /* Repli sur le contenu : c'est ce qui permet de trouver « congés » dans
+         un article dont le titre ne contient qu'un numéro. */
+      var c = contenu[String(it.num)];
+      if(!c || c.indexOf(f) === -1) return false;
+    }
     return true;
   });
   if(source==='ccn') list.sort(function(a,b){ return a.title.localeCompare(b.title,'fr'); });
