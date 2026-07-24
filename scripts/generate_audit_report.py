@@ -353,9 +353,13 @@ def main():
         "",
         entete,
         "",
-        f"<sub>Détail technique : {total} fichier(s) touché(s) — "
-        f"{len(changed['ajoutes'])} ajoutés, {len(changed['modifies'])} modifiés, "
-        f"{len(changed['supprimes'])} supprimés.</sub>",
+        # Pas de balise HTML ici : le lecteur de l'application échappe le HTML
+        # par sécurité, donc un <sub> s'afficherait tel quel à l'écran. On garde
+        # une ligne de texte simple, préfixée pour la distinguer du message
+        # principal.
+        f"Détail technique — {total} fichier(s) touché(s) : "
+        f"{len(changed['ajoutes'])} ajouté(s), {len(changed['modifies'])} modifié(s), "
+        f"{len(changed['supprimes'])} supprimé(s).",
         "",
     ] + lines
 
