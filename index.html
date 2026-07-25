@@ -1854,23 +1854,33 @@ document.getElementById('ex-grid').addEventListener('click', function(e){
    ==========================================================================*/
 renderExamples();
 document.getElementById('corpus-line').textContent = 'Chargement de l\'index…';
+
+// Deep-link, utilisé par les liens de l'application SimulHeures :
+//   ?idcc=1090                  -> fiche d'une convention collective
+//   ?art=L3121-1                -> article du code du travail (défaut)
+//   ?art=L411-1&code=secu       -> article du code de la sécurité sociale
+// (&section=... reste possible pour viser une clause précise d'une CCN)
+//
+// LANCÉ AVANT loadAll(), et non dans son .then(). openDetail() fait son PROPRE
+// fetchJSON(pathFor(...)) : il ne dépend d'aucun des quatre fichiers chargés
+// par loadAll() (manifest, search-index, ccn-liste, search-trends), qui ne
+// peuplent que les listes de navigation — invisibles derrière le panneau qui
+// s'ouvre. Les enchaîner faisait attendre QUATRE appels réseau en série avant
+// même de commencer à demander l'article : c'est ce qui donnait le délai de
+// 3-4 s avant l'affichage d'une fiche cliquée depuis l'application.
+var qs = new URLSearchParams(location.search);
+var deepIdcc = qs.get('idcc');
+var deepArt  = qs.get('art');
+if(deepIdcc){
+  openDetail('ccn', deepIdcc, qs.get('section'));
+} else if(deepArt){
+  openDetail(qs.get('code')==='secu' ? 'secu' : 'code', deepArt);
+}
+
 loadAll().then(function(){
   renderDashboard();
   if(!INDEX.ccn.length && !INDEX.code.length){
     document.getElementById('corpus-line').textContent = 'Index introuvable — lancez un run de vérification.';
-  }
-  // Deep-link, utilisé par les liens de l'application SimulHeures :
-  //   ?idcc=1090                  -> fiche d'une convention collective
-  //   ?art=L3121-1                -> article du code du travail (défaut)
-  //   ?art=L411-1&code=secu       -> article du code de la sécurité sociale
-  // (&section=... reste possible pour viser une clause précise d'une CCN)
-  var qs = new URLSearchParams(location.search);
-  var deepIdcc = qs.get('idcc');
-  var deepArt  = qs.get('art');
-  if(deepIdcc){
-    openDetail('ccn', deepIdcc, qs.get('section'));
-  } else if(deepArt){
-    openDetail(qs.get('code')==='secu' ? 'secu' : 'code', deepArt);
   }
 }).catch(function(e){
   console.error(e);
