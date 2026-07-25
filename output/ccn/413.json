@@ -21001,13 +21001,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729115",
+              "cid": "KALISCTA000005729115",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Indemnités compensatrices d'assurance au 1er janvier 1993.",
+              "dateModif": null,
+              "dateDebut": "1993-01-01",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863784",
+                  "cid": "KALIARTI000005863784",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005729115/KALIARTI000005863784",
+                  "pathTitle": [
+                    "Indemnités compensatrices d'assurance au 1er janvier 1993."
+                  ],
+                  "content": "<p></p>   Le taux de l'indemnité compensatrice d'assurances, prévue à l'article 8 de l'annexe I à la convention collective du 15 mars 1966, est fixé comme suit à compter du 1er janvier 1993 :<p></p><p></p>   - voiture jusqu'à 5 CV : 1.670 F par an ou 417,50 F par trimestre ;<p></p><p></p>   - voiture de 6 CV et plus : 2.562 F par an ou 640,50 F par trimestre.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 242 1993-03-10 en vigueur à compter du 1er janvier 1993 agréé par arrêté du 14 mai 1993 JORF 22 juin 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 725846400000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -21021,13 +21095,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729116",
+              "cid": "KALISCTA000005729116",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaire minimum conventionnel garanti au 1er février 1993.",
+              "dateModif": null,
+              "dateDebut": "1993-06-22",
+              "dateFin": "1994-06-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863786",
+                  "cid": "KALIARTI000005863786",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005729116/KALIARTI000005863786",
+                  "pathTitle": [
+                    "Salaire minimum conventionnel garanti au 1er février 1993."
+                  ],
+                  "content": "<p></p>   L'article 2 de l'annexe I de la convention collective nationale de travail du 15 mars 1966 instituant un \"Salaire minimum conventionnel garanti\" est modifié comme suit :<p></p><p></p>   \"Les salariés occupant à temps complet un emploi relevant de la convention collective nationale de travail perçoivent un salaire mensuel brut minimum de 7.019,86 F au 1er février 1993 ;<p></p><p></p>   A ce salaire minimum s'ajoute, le cas échéant :<p></p><p></p>   - le surclassement \"internat\" pour :<p></p><p></p>   - les emplois au coefficient 326 (annexe V) (7 points),    - les candidats-élèves aux coefficients 304, 314 et 324 (10 points) ;<p></p><p></p>   - l'indemnité de \"risques et sujétions spéciales\" (7 points) de l'annexe V, article 3, alinéa a ;<p></p><p></p>   - la majoration familiale de salaire.<p></p><p></p>   Les salariés à temps incomplet perçoivent un salaire mensuel brut minimum calculé sur les bases ci-dessus au prorata de leur temps de travail.<p></p><p></p>   Les salariés dont le salaire est réduit pour quelque cause que ce soit perçoivent un salaire brut minimum réduit dans les mêmes proportions que le salaire de base.    La majoration d'indice de trois points à compter du 1er février 1992, prévue par l'article 2 de l'avenant n° 230, est comprise dans les montants du salaire minimum ci-dessus indiqués.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 243 1993-03-10 en vigueur à la publication de l'arrêté agréé par arrêté du 14 mai 1993 JORF 22 juin 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 740707200000,
+                  "dateFin": 772156800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -21041,13 +21189,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729117",
+              "cid": "KALISCTA000005729117",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Indemnités kilométriques au 1er avril 1993.",
+              "dateModif": null,
+              "dateDebut": "1993-04-01",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863787",
+                  "cid": "KALIARTI000005863787",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005729117/KALIARTI000005863787",
+                  "pathTitle": [
+                    "Indemnités kilométriques au 1er avril 1993."
+                  ],
+                  "content": "<p></p>   A compter du 1er avril 1993, les dispositions de l'article 8 de l'annexe I (indemnités kilométriques) sont modifiées comme suit :<p></p><p></p>   - 5 CV et moins : 2,08 F ;<p></p><p></p>   - 6 CV et plus : 2,48 F ;<p></p><p></p>   - bicycle à moteur : 0,65 F<p></p><p></p>   Les salariés bénéficiaires de l'indemnité d'assurance perçoivent par kilomètre parcouru une indemnité kilométrique fixée ainsi qu'il suit :<p></p> 3.000 kilomètres :<p></p><p></p>   - 5 CV et moins : 1,87 F ;<p></p><p></p>   - 6 CV et plus : 2,23 F ;<p></p> au delà de 3.000 kilomètres :<p></p><p></p>   - 5 CV et moins : 2,08 F ;<p></p><p></p>   - 6 CV et plus : 2,48 F .<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 244 1993-03-10 en vigueur à compter du 1er avril 1993 agréé par arrêté du 14 mai 1993 JORF 22 juin 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 733622400000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

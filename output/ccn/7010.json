@@ -21539,13 +21539,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005711075",
+              "cid": "KALISCTA000005711075",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires, valeur du point, nourriture et logement au 1er juillet 1991.",
+              "dateModif": null,
+              "dateDebut": "1991-06-25",
+              "dateFin": "1991-12-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005819971",
+                  "cid": "KALIARTI000005819971",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005711075/KALIARTI000005819971",
+                  "pathTitle": [
+                    "Salaires, valeur du point, nourriture et logement au 1er juillet 1991."
+                  ],
+                  "content": "<p></p>   Les valeurs du point prévues à l'article 19 de la convention collective sont fixées, à compter du 1er juillet 1991, à 0,3267 pour les 100 premiers points de coefficient et à 0,057 pour les points au-dessus du coefficient 100.<p></p><p></p>   Il en résulte les salaires suivants (base 169 h) :<p></p> (1)Coefficient<p></p> (2)Salaire horaire<p></p> (3)Salaire mensuel<p></p><TABLE><TR><TD> (1) </TD><TD>  (2)   </TD><TD>    (3)    </TD></TR><TR><TD> 100 </TD><TD> 32,67 F</TD><TD> 5.521,23 F</TD></TR><TR><TD> 130 </TD><TD> 34,38 F</TD><TD> 5.810,22 F</TD></TR><TR><TD> 150 </TD><TD> 35,52 F</TD><TD> 6.002,88 F</TD></TR><TR><TD> 160 </TD><TD> 36,09 F</TD><TD> 6.099,21 F</TD></TR><TR><TD> 175 </TD><TD> 36,94 F</TD><TD> 6.242,86 F</TD></TR><TR><TD> 190 </TD><TD> 37,80 F</TD><TD> 6.388,20 F</TD></TR><TR><TD> 225 </TD><TD> 39,17 F</TD><TD> 6.619,73 F</TD></TR><TR><TD> 300 </TD><TD> 44,07 F</TD><TD> 7.447,83 F</TD></TR><TR><TD> 400 </TD><TD> 49,77 F</TD><TD> 8.411,13 F</TD></TR></TABLE><p></p>  Article 2<p></p>   La valeur de la nourriture visée à l'article 27 (base coeffficient 130) est fixée comme suit, à compter du 1er juillet 1991 : Un repas (1 h) : 34,38 F Un petit déjeuner (1/2 h) : 17,19 F Journée (2 h 1/2) : 85,95 F  Article 3<p></p>   La valeur mensuelle du logement de fonctions visée à l'article 27 (base coefficient 130) est fixée, à compter du 1er juillet 1991, comme suit : A. - Logement individuel Chambre meublée sans eau courante, éclairée, chauffée (5 h) : 171,90 F<p></p>   Majoration pour eau courante à l'intérieur (3 h) : 103,14 F<p></p>   Majoration pour chauffage central (2 h) : 68,76 F  B. - Logement familial Logement nu, par pièce de 9 m2 (3 h) : 103,14 F<p></p>   Majoration pour eau courante, w.-c. à l'intérieur, salle d'eau, chaque majoration (3 h) : 103,14 F<p></p>   Majoration pour dépendance couverte de 12 m2 ou plus, jardin de 250 m2 ou plus, chaque majoration (2 h) : 68,76 F",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 11 1991-06-25 étendu par arrêté du 3 septembre 1991 JORF 18 septembre 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 677808000000,
+                  "dateFin": 692928000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -21559,13 +21633,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005711076",
+              "cid": "KALISCTA000005711076",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires, valeur du point, nourriture et logement au 1er février 1992.",
+              "dateModif": null,
+              "dateDebut": "1991-12-17",
+              "dateFin": "1992-06-16",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005819972",
+                  "cid": "KALIARTI000005819972",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005711076/KALIARTI000005819972",
+                  "pathTitle": [
+                    "Salaires, valeur du point, nourriture et logement au 1er février 1992."
+                  ],
+                  "content": "<p></p>   Les valeurs du point prévues à l'article 19 de la convention collective sont fixées, à compter du 1er février 1992, à 0,3303 pour les 100 premiers points de coefficient et à 0,060 pour les points au-dessus du coefficient 100.<p></p><p></p>   Il en résulte les salaires suivants (base 169 h) :<p></p> (1)Coefficient<p></p> (2)Salaire horaire<p></p> (3)Salaire mensuel<p></p><TABLE><TR><TD> (1) </TD><TD>  (2)   </TD><TD>    (3)    </TD></TR><TR><TD> 100 </TD><TD> 33,03 F</TD><TD> 5.582,07 F</TD></TR><TR><TD> 130 </TD><TD> 34,83 F</TD><TD> 5.886,27 F</TD></TR><TR><TD> 150 </TD><TD> 36,03 F</TD><TD> 6.089,07 F</TD></TR><TR><TD> 160 </TD><TD> 36,63 F</TD><TD> 6.190,47 F</TD></TR><TR><TD> 175 </TD><TD> 37,53 F</TD><TD> 6.342,57 F</TD></TR><TR><TD> 190 </TD><TD> 38,43 F</TD><TD> 6.494,67 F</TD></TR><TR><TD> 225 </TD><TD> 40,53 F</TD><TD> 6.849,57 F</TD></TR><TR><TD> 300 </TD><TD> 45,03 F</TD><TD> 7.610,07 F</TD></TR><TR><TD> 400 </TD><TD> 51,03 F</TD><TD> 8.624,07 F</TD></TR></TABLE><p></p>  Article 2<p></p>   La valeur de la nourriture visée à l'article 27 (base coeffficient 130) est fixée comme suit, à compter du 1er février 1992 : Un repas (1 h) : 34,83 F Un petit déjeuner (1/2 h) : 17,42 F Journée (2 h 1/2) : 87,07 F  Article 3<p></p>   La valeur mensuelle du logement de fonctions visée à l'article 27 (base coefficient 130) est fixée, à compter du 1er mars 1991, comme suit : A. - Logement individuel Chambre meublée sans eau courante, éclairée, chauffée (5 h) : 174,15 F<p></p>   Majoration pour eau courante à l'intérieur (3 h) : 104,49 F<p></p>   Majoration pour chauffage central (2 h) : 69,66 F  B. - Logement familial Logement nu, par pièce de 9 m2 (3 h) : 104,49 F<p></p>   Majoration pour eau courante, w.-c. à l'intérieur, salle d'eau, chaque majoration (3 h) : 104,49 F<p></p>   Majoration pour dépendance couverte de 12 m2 ou plus, jardin de 250 m2 ou plus, chaque majoration (2 h) : 69,66 F",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 13 1991-12-17",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 692928000000,
+                  "dateFin": 708652800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -21579,13 +21727,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005711078",
+              "cid": "KALISCTA000005711078",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires, nourriture et logement au 1er juillet 1992.",
+              "dateModif": null,
+              "dateDebut": "1992-06-16",
+              "dateFin": "1993-02-02",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005819973",
+                  "cid": "KALIARTI000005819973",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005711078/KALIARTI000005819973",
+                  "pathTitle": [
+                    "Salaires, nourriture et logement au 1er juillet 1992."
+                  ],
+                  "content": "<p></p>   Les valeurs du point prévues à l'article 19 de la convention collective sont fixées, à compter du 1er juillet 1992, à 0,3331 pour les 100 premiers points de coefficient et à 0,062 pour les points au-dessus du coefficient 100.<p></p><p></p>   Il en résulte les salaires suivants (base 169 h) :<p></p> (1)Coefficient<p></p> (2)Salaire horaire<p></p> (3)Salaire mensuel<p></p><TABLE><TR><TD> (1) </TD><TD>  (2)   </TD><TD>    (3)    </TD></TR><TR><TD> 100 </TD><TD> 33,31 F</TD><TD> 5.629,39 F</TD></TR><TR><TD> 130 </TD><TD> 35,17 F</TD><TD> 5.943,73 F</TD></TR><TR><TD> 150 </TD><TD> 36,41 F</TD><TD> 6.153,29 F</TD></TR><TR><TD> 160 </TD><TD> 37,03 F</TD><TD> 6.258,07 F</TD></TR><TR><TD> 175 </TD><TD> 37,96 F</TD><TD> 6.415,24 F</TD></TR><TR><TD> 190 </TD><TD> 38,89 F</TD><TD> 6.572,41 F</TD></TR><TR><TD> 225 </TD><TD> 41,06 F</TD><TD> 6.939,14 F</TD></TR><TR><TD> 300 </TD><TD> 45,71 F</TD><TD> 7.724,99 F</TD></TR><TR><TD> 400 </TD><TD> 51,91 F</TD><TD> 8.772,79 F</TD></TR></TABLE><p></p>  Article 2<p></p>   La valeur de la nourriture visée à l'article 27 (base coeffficient 130) est fixée comme suit, à compter du 1er juillet 1992 : Un repas (1 h) : 35,17 F Un petit déjeuner (1/2 h) : 17,58 F Journée (2 h 1/2) : 87,92 F  Article 3<p></p>   La valeur mensuelle du logement de fonctions visée à l'article 27 (base coefficient 130) est fixée, à compter du 1er juillet 1992, comme suit : A. - Logement individuel Chambre meublée sans eau courante, éclairée, chauffée (5 h) : 175,51 F<p></p>   Majoration pour eau courante à l'intérieur (3 h) : 105,51 F<p></p>   Majoration pour chauffage central (2 h) : 70,34 F  B. - Logement familial Logement nu, par pièce de 9 m2 (3 h) : 105,51 F<p></p>   Majoration pour eau courante, w.-c. à l'intérieur, salle d'eau, chaque majoration (3 h) : 105,51 F<p></p>   Majoration pour dépendance couverte de 12 m2 ou plus, jardin de 250 m2 ou plus, chaque majoration (2 h) : 70,34 F<font color=\"808080\"><em>NOTA : Les dispositions de cet avenant sont étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance (arrêté du 14 août 1992, art. 2).<p></p></em></font>",
+                  "nota": "NOTA : Les dispositions de cet avenant sont étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance (arrêté du 14 août 1992, art. 2).<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 14 1992-06-16 BO Conventions collectives 92-27 étendu par arrêté du 14 août 1992 JORF 27 août 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 708652800000,
+                  "dateFin": 728611200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
