@@ -10,9 +10,16 @@ on:
   # Veille : DEUX runs par semaine (lundi et jeudi, 6h UTC). Combiné à la
   # rotation sur 10 tranches, tout le corpus est repassé une fois toutes les
   # 5 semaines (2 tranches/semaine). Chaque run se commit -> historique gratuit.
+  #
+  # Minute décalée à :07, pas :00 -- GitHub le documente lui-même : la charge
+  # est la plus forte pile à l'heure ronde, et un run programmé peut être
+  # abandonné en silence si la charge est trop élevée, sans email ni trace.
+  # Repéré le 27/07/2026 : le run du lundi n'était simplement jamais parti,
+  # aucune erreur nulle part. Ne règle pas le risque à 100% (best-effort côté
+  # GitHub, aucune garantie), mais l'évite dans l'écrasante majorité des cas.
   schedule:
-    - cron: "0 6 * * 1"   # lundi (créneau 0)
-    - cron: "0 6 * * 4"   # jeudi (créneau 1)
+    - cron: "7 6 * * 1"   # lundi (créneau 0)
+    - cron: "7 6 * * 4"   # jeudi (créneau 1)
   workflow_dispatch:
     inputs:
       cible:
