@@ -64,6 +64,20 @@ on:
 permissions:
   contents: write   # sans ça, le token automatique ne peut pas faire "git push"
 
+# Empêche deux runs de tourner en même temps sur ce dépôt -- sans ça, deux
+# déclenchements rapprochés (manuel + manuel, ou manuel + programmé) peuvent
+# se marcher dessus au moment du commit/push final : le second pousse après
+# que le premier a déjà mis à jour la branche, son rebase automatique peut
+# entrer en conflit (les deux génèrent le même debug_list_ccn/ et
+# idcc_list_complet.txt), et toute la chaîne échoue avec le code 128 de git.
+# Repéré le 27/07/2026 -- deux runs lancés à la même minute, échec identique
+# sur les deux. cancel-in-progress à false : le second run ATTEND que le
+# premier finisse, il n'est jamais annulé -- on ne veut jamais perdre un run
+# de données, juste éviter qu'ils se télescopent.
+concurrency:
+  group: aspirateur-legifrance
+  cancel-in-progress: false
+
 jobs:
   aspirer:
     runs-on: ubuntu-latest
@@ -379,5 +393,44 @@ jobs:
           done
           [ -d debug_list_ccn ] && git add debug_list_ccn/
           git diff --staged --quiet || git commit -m "Mise à jour données Légifrance ($(date -u +%Y-%m-%d))"
-          git pull --rebase --autostash origin main || true
-          git push || (sleep 5 && git pull --rebase --autostash origin main && git push)
+
+          # Repéré le 27/07/2026 : un run solo (aucun autre push en même temps)
+          # a quand même fini avec un rebase en conflit et un "git push" resté
+          # bloqué derrière -- root cause pas identifiée avec certitude, mais
+          # la vraie faille est que l'ancienne logique ("pull --rebase, si ça
+          # échoue on retente pareil") ne nettoyait JAMAIS un rebase resté à
+          # moitié fait : le dépôt restait planté, sans message clair.
+          #
+          # Ici : jusqu'à 3 tentatives. À chaque tentative, si un rebase est
+          # resté englué (le dossier .git/rebase-merge existe encore), on
+          # l'annule proprement avant de rien retenter. En dernier recours,
+          # on bascule sur un vrai merge (pas un rebase) avec -X ours : tout
+          # ce qu'on commite ici est généré par le bot (listes, JSON, debug),
+          # jamais du contenu à préserver au mot près -- en cas de conflit
+          # réel, garder notre version du jour est sans risque, le prochain
+          # run régénère de toute façon la même chose.
+          reussi=0
+          for tentative in 1 2 3; do
+            [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ] && git rebase --abort 2>/dev/null || true
+
+            if [ "$tentative" -lt 3 ]; then
+              git pull --rebase --autostash origin main
+            else
+              echo "Dernière tentative : merge (-X ours) plutôt que rebase, sur du contenu généré par le bot uniquement."
+              git rebase --abort 2>/dev/null || true
+              git pull --no-rebase --autostash -X ours origin main
+            fi
+
+            if git push; then
+              reussi=1
+              break
+            fi
+            echo "Tentative $tentative échouée, nouvel essai dans 5s…"
+            sleep 5
+          done
+
+          if [ "$reussi" -ne 1 ]; then
+            [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ] && git rebase --abort 2>/dev/null || true
+            echo "::error::Échec du push après 3 tentatives (rebase puis merge -X ours). Rien n'a été perdu localement, mais rien n'est parti sur main -- relancer le run."
+            exit 1
+          fi
