@@ -502,31 +502,47 @@ function shortEtat(raw){
 }
 
 async function loadAll(){
-  // 1) Manifeste (source principale des listes + états)
+  // Les quatre chargements ci-dessous sont indépendants les uns des autres --
+  // les lancer en parallèle (Promise.all) plutôt qu'en séquence (await un
+  // par un) ramène le temps d'attente total au plus lent des quatre, pas à
+  // leur somme. C'est ce qui causait le décalage visible : le menu s'affiche
+  // tout de suite (HTML statique), mais le tableau des décomptes attendait
+  // la fin des quatre requêtes l'une après l'autre avant de se mettre à jour.
+  // Chaque chargement garde son propre repli individuel (try/catch), exactement
+  // comme avant -- seul l'ORDRE d'exécution change, pas le comportement en cas
+  // d'échec de l'un d'entre eux.
   var manifestOk = false;
-  try{
-    var m = await fetchJSON('output/manifest.json');
-    INDEX.ccn   = (m.ccn  ||[]).map(function(a){ return {num:String(a[0]), title:a[1]||('IDCC '+a[0]), etat:a[2]||'V', source:a[3]||'inconnu'}; });
-    INDEX.code  = (m.code ||[]).map(function(a){ return {num:a[0], title:'Article '+a[0], etat:a[1]||'?'}; });
-    INDEX.secu  = (m.secu ||[]).map(function(a){ return {num:a[0], title:'Article '+a[0], etat:a[1]||'?'}; });
-    INDEX.juris = (m.juris||[]).map(function(a){ return {num:a[0], title:a[1]||('Décision '+a[0]), etat:null}; });
-    manifestOk = true;
-  }catch(e){ console.warn('manifest.json indisponible, repli sur _summary', e); }
 
-  // 2) Recherche plein-texte
+  var pManifest = (async function(){
+    try{
+      var m = await fetchJSON('output/manifest.json');
+      INDEX.ccn   = (m.ccn  ||[]).map(function(a){ return {num:String(a[0]), title:a[1]||('IDCC '+a[0]), etat:a[2]||'V', source:a[3]||'inconnu'}; });
+      INDEX.code  = (m.code ||[]).map(function(a){ return {num:a[0], title:'Article '+a[0], etat:a[1]||'?'}; });
+      INDEX.secu  = (m.secu ||[]).map(function(a){ return {num:a[0], title:'Article '+a[0], etat:a[1]||'?'}; });
+      INDEX.juris = (m.juris||[]).map(function(a){ return {num:a[0], title:a[1]||('Décision '+a[0]), etat:null}; });
+      manifestOk = true;
+    }catch(e){ console.warn('manifest.json indisponible, repli sur _summary', e); }
+  })();
+
   // Le cache du filtre par catégorie dépend de SEARCH : on le vide à chaque
   // rechargement, sinon un onglet garderait le contenu de la session précédente.
   CONTENU_CACHE = {};
-  try{ SEARCH = await fetchJSON('output/search-index.json'); }
-  catch(e){ console.warn('search-index.json indisponible', e); SEARCH = {ccn:[],code:[],code_secu:[],juris:[]}; }
+  var pSearch = (async function(){
+    try{ SEARCH = await fetchJSON('output/search-index.json'); }
+    catch(e){ console.warn('search-index.json indisponible', e); SEARCH = {ccn:[],code:[],code_secu:[],juris:[]}; }
+  })();
 
-  // 3) Noms de CCN (recherche par métier)
-  try{ CCN_LISTE = await fetchJSON('output/ccn-liste.json'); }
-  catch(e){ CCN_LISTE = []; }
+  var pCcnListe = (async function(){
+    try{ CCN_LISTE = await fetchJSON('output/ccn-liste.json'); }
+    catch(e){ CCN_LISTE = []; }
+  })();
 
-  // 3b) Tendances (mode évolutif) — mots/expressions fréquents, optionnel
-  try{ TRENDS = await fetchJSON('output/search-trends.json'); }
-  catch(e){ TRENDS = null; }
+  var pTrends = (async function(){
+    try{ TRENDS = await fetchJSON('output/search-trends.json'); }
+    catch(e){ TRENDS = null; }
+  })();
+
+  await Promise.all([pManifest, pSearch, pCcnListe, pTrends]);
 
   // 4) Repli : si pas de manifeste, reconstruire les listes à partir des _summary
   if(!manifestOk){
@@ -1747,10 +1763,29 @@ function markdownToHtml(md){
   // `kind` dépend de la rubrique en cours : les articles n'ont pas le même
   // chemin selon qu'ils viennent du Code du travail ou du Code de la sécu.
   var refify=function(s, kind){
+    // Capture l'IDCC de la ligne AVANT de le transformer en span cliquable --
+    // nécessaire pour rattacher le futur clic sur le titre de la clause au bon
+    // IDCC, plus loin dans la même ligne.
+    var idccDeLaLigne = null;
+    var mIdcc = s.match(/\bIDCC\s+(\d{1,5})\b/);
+    if(mIdcc) idccDeLaLigne = mIdcc[1];
+
     // "IDCC 1090" -> fiche de la convention (valable dans toutes les rubriques)
     s = s.replace(/\bIDCC\s+(\d{1,5})\b/g, function(m, num){
       return '<span class="maj-ref" data-kind="ccn" data-num="'+num+'">IDCC '+num+'</span>';
     });
+
+    // "dont le TEXTE a changé : {titre de la clause}" -> le titre devient
+    // cliquable, avec pour cible la clause elle-même (via scrollToSection),
+    // pas seulement la fiche entière de la convention.
+    if(idccDeLaLigne){
+      s = s.replace(/(dont le TEXTE a chang[ée]\s*:\s*)(.+)$/, function(m, avant, titreClause){
+        var t = titreClause.trim();
+        return avant+'<span class="maj-ref" data-kind="ccn" data-num="'+idccDeLaLigne+
+               '" data-section="'+t.replace(/"/g,'&quot;')+'">'+t+'</span>';
+      });
+    }
+
     // Articles / décisions : uniquement dans les rubriques concernées, et
     // seulement en tête de puce ("- L3121-1 (modifié)") pour ne pas attraper
     // une référence citée au fil du texte.
@@ -1804,7 +1839,7 @@ document.addEventListener('click', function(e){
   var ref = t.closest('.maj-ref');
   if(!ref) return;
   e.stopPropagation(); e.preventDefault();
-  try { openDetail(ref.dataset.kind, ref.dataset.num); }
+  try { openDetail(ref.dataset.kind, ref.dataset.num, ref.dataset.section); }
   catch(err){ console.error('Ouverture de la référence impossible', err); }
 }, true);
 
