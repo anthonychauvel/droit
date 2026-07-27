@@ -9856,9 +9856,29 @@
           "id": "KALITEXT000054262458",
           "cid": "KALITEXT000054262458",
           "intOrdre": 2146435070,
-          "etat": "VIGUEUR_NON_ETEN",
+          "etat": "VIGUEUR_ETEN",
           "title": "Accord du 16 février 2026 relatif aux mesures d'urgence pour soutenir l'emploi et la formation professionnelle",
           "dateModif": "2026-06-16",
+          "dateDebut": null,
+          "dateFin": null,
+          "sectionConsultee": false,
+          "sections": [],
+          "articles": [],
+          "commentaire": null,
+          "renvoi": null,
+          "renvoiNum": null,
+          "notaHtml": null,
+          "notaSectionsAafficher": null
+        },
+        {
+          "executionTime": 0,
+          "dereferenced": false,
+          "id": "KALITEXT000054454652",
+          "cid": "KALITEXT000054454652",
+          "intOrdre": 2146959358,
+          "etat": "VIGUEUR_ETEN",
+          "title": "Accord du 25 février 2026 relatif au partage de la valeur",
+          "dateModif": "2026-07-22",
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
@@ -10250,7 +10270,8 @@
           "renvoiNum": null,
           "notaHtml": null,
           "notaSectionsAafficher": null,
-          "_texte_complet_recupere": true
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -10611,7 +10632,8 @@
           "renvoiNum": null,
           "notaHtml": null,
           "notaSectionsAafficher": null,
-          "_texte_complet_recupere": true
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         }
       ],
       "articles": [],

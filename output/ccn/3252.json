@@ -6627,7 +6627,7 @@
               "id": "KALIARTI000050299472",
               "cid": "KALIARTI000050299472",
               "intOrdre": 5242870,
-              "etat": "VIGUEUR_ETEN",
+              "etat": "REMPLACE",
               "num": "8.4.1",
               "path": "/KALISCTA000050299254/KALIARTI000050299472",
               "pathTitle": [
@@ -6677,7 +6677,7 @@
               "id": "KALIARTI000054174983",
               "cid": "KALIARTI000050299472",
               "intOrdre": 5242870,
-              "etat": "VIGUEUR_NON_ETEN",
+              "etat": "VIGUEUR_ETEN",
               "num": "8.4.1",
               "path": "/KALISCTA000050299254/KALIARTI000054174983",
               "pathTitle": [
@@ -6704,6 +6704,18 @@
                   "datePubliTexte": "2026-06-01",
                   "dateSignaTexte": "2025-12-17",
                   "dateDebutCible": "2026-09-01"
+                },
+                {
+                  "textCid": "JORFTEXT000054471854",
+                  "textTitle": "Arrêté du 3 juillet 2026 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000054471857",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2026-07-24",
+                  "dateSignaTexte": "2026-07-03",
+                  "dateDebutCible": "2999-01-01"
                 }
               ],
               "lstLienCitation": [
@@ -16418,7 +16430,7 @@
                       "id": "KALIARTI000054174995",
                       "cid": "KALIARTI000050299713",
                       "intOrdre": 524287,
-                      "etat": "VIGUEUR_NON_ETEN",
+                      "etat": "VIGUEUR_ETEN",
                       "num": null,
                       "path": "/KALISCTA000050299258/KALISCTA000050957956/KALISCTA000050299653/KALIARTI000054174995",
                       "pathTitle": [
@@ -16447,6 +16459,18 @@
                           "datePubliTexte": "2026-06-01",
                           "dateSignaTexte": "2025-12-17",
                           "dateDebutCible": "2026-09-01"
+                        },
+                        {
+                          "textCid": "JORFTEXT000054471854",
+                          "textTitle": "Arrêté du 3 juillet 2026 - art. 1, v. init.",
+                          "linkType": "ETEND",
+                          "linkOrientation": "cible",
+                          "articleNum": "1",
+                          "articleId": "JORFARTI000054471857",
+                          "natureText": "ARRETE",
+                          "datePubliTexte": "2026-07-24",
+                          "dateSignaTexte": "2026-07-03",
+                          "dateDebutCible": "2999-01-01"
                         }
                       ],
                       "lstLienCitation": [
@@ -18242,7 +18266,7 @@
                   "id": "KALIARTI000054174986",
                   "cid": "KALIARTI000054174934",
                   "intOrdre": 1252698790,
-                  "etat": "VIGUEUR_NON_ETEN",
+                  "etat": "VIGUEUR_ETEN",
                   "num": "3.10",
                   "path": "/KALISCTA000050299258/KALISCTA000050957956/KALIARTI000054174986",
                   "pathTitle": [
@@ -18270,6 +18294,18 @@
                       "datePubliTexte": "2026-06-01",
                       "dateSignaTexte": "2025-12-17",
                       "dateDebutCible": "2026-09-01"
+                    },
+                    {
+                      "textCid": "JORFTEXT000054471854",
+                      "textTitle": "Arrêté du 3 juillet 2026 - art. 1, v. init.",
+                      "linkType": "ETEND",
+                      "linkOrientation": "cible",
+                      "articleNum": "1",
+                      "articleId": "JORFARTI000054471857",
+                      "natureText": "ARRETE",
+                      "datePubliTexte": "2026-07-24",
+                      "dateSignaTexte": "2026-07-03",
+                      "dateDebutCible": "2999-01-01"
                     }
                   ],
                   "lstLienCitation": [
@@ -18298,6 +18334,19 @@
                       "numTexte": "2015-1702",
                       "datePubli": 1450742400000,
                       "dateDebut": 32472144000000
+                    },
+                    {
+                      "textCid": "KALITEXT000054162247",
+                      "textTitle": "Protection sociale complémentaire des mannequins - art. 1er (VE)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "cible",
+                      "articleNum": "1er",
+                      "articleId": "KALIARTI000054162251",
+                      "natureText": "Avenant",
+                      "parentCid": null,
+                      "numTexte": "6",
+                      "datePubli": 1780272000000,
+                      "dateDebut": 1788220800000
                     },
                     {
                       "textCid": "LEGITEXT000006073189",
@@ -20243,7 +20292,7 @@
           "id": "KALITEXT000054162247",
           "cid": "KALITEXT000054162247",
           "intOrdre": 2102744404,
-          "etat": "VIGUEUR_NON_ETEN",
+          "etat": "VIGUEUR_ETEN",
           "title": "Avenant n° 6 du 17 décembre 2025 relatif à la protection sociale complémentaire des mannequins",
           "dateModif": "2026-06-01",
           "dateDebut": null,
@@ -21598,7 +21647,8 @@
           "renvoiNum": null,
           "notaHtml": null,
           "notaSectionsAafficher": null,
-          "_texte_complet_recupere": true
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -22472,7 +22522,8 @@
           "renvoiNum": null,
           "notaHtml": null,
           "notaSectionsAafficher": null,
-          "_texte_complet_recupere": true
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -22749,7 +22800,8 @@
           "renvoiNum": null,
           "notaHtml": null,
           "notaSectionsAafficher": null,
-          "_texte_complet_recupere": true
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         }
       ],
       "articles": [],
