@@ -8040,13 +8040,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696643",
+              "cid": "KALISCTA000005696643",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grilles de salaires au 1er juillet 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-06-20",
+              "dateFin": "1996-07-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005782448",
+                  "cid": "KALIARTI000005782448",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696643/KALIARTI000005782448",
+                  "pathTitle": [
+                    "Grilles de salaires au 1er juillet 1995."
+                  ],
+                  "content": "<p></p>   Entre les signataires, il a été convenu qu'à compter du 1er juillet 1995 pour les postes et emplois tels que définis dans la convention collective nationale des commerces de gros de la confiserie, chocolaterie, biscuiterie et alimentation fine et des négociants-distributeurs de levure et affectés de leur coefficient hiérarchique correspondant, la grille des salaires conventionnels (base 39 heures), publiée dans l'avenant D à effet du 1er juillet 1994, est majorée de 3,4 p. 100 pour les coefficients 115 à 190 inclus, de 2 p. 100 au-delà.<p></p><p></p>   La grille publiée ci-dessous annule et remplace les grilles antérieures.<p></p><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = SALAIRE CONVENTIONNEL (base 39 heures hebdomadaires) applicable au 1er juillet 1995<p></p><p></p><TABLE><TR><TD>(1) </TD><TD>   (2)   </TD></TR><TR><TD>115 </TD><TD>   6.224F</TD></TR><TR><TD>118 </TD><TD>   6.250F</TD></TR><TR><TD>120 </TD><TD>   6.274F</TD></TR><TR><TD>125 </TD><TD>   6.300F</TD></TR><TR><TD>128 </TD><TD>   6.304F</TD></TR><TR><TD>130 </TD><TD>   6.351F</TD></TR><TR><TD>135 </TD><TD>   6.376F</TD></TR><TR><TD>138 </TD><TD>   6.400F</TD></TR><TR><TD>140 </TD><TD>   6.427F</TD></TR><TR><TD>145 </TD><TD>   6.452F</TD></TR><TR><TD>150 </TD><TD>   6.478F</TD></TR><TR><TD>155 </TD><TD>   6.503F</TD></TR><TR><TD>160 </TD><TD>   6.530F</TD></TR><TR><TD>165 </TD><TD>   6.554F</TD></TR><TR><TD>170 </TD><TD>   6.579F</TD></TR><TR><TD>175 </TD><TD>   6.742F</TD></TR><TR><TD>180 </TD><TD>   6.844F</TD></TR><TR><TD>185 </TD><TD>   6.977F</TD></TR><TR><TD>190 </TD><TD>   7.112F</TD></TR><TR><TD>200 </TD><TD>   7.289F</TD></TR><TR><TD>210 </TD><TD>   7.559F</TD></TR><TR><TD>212 </TD><TD>   7.612F</TD></TR><TR><TD>230 </TD><TD>   8.106F</TD></TR><TR><TD>250 </TD><TD>   8.624F</TD></TR><TR><TD>260 </TD><TD>   8.891F</TD></TR><TR><TD>270 </TD><TD>   9.166F</TD></TR><TR><TD>280 </TD><TD>   9.429F</TD></TR><TR><TD>290 </TD><TD>   9.699F</TD></TR><TR><TD>300 </TD><TD>   9.968F</TD></TR><TR><TD>310 </TD><TD>  10.236F</TD></TR><TR><TD>325 </TD><TD>  10.635F</TD></TR><TR><TD>330 </TD><TD>  10.768F</TD></TR><TR><TD>380 </TD><TD>  12.107F</TD></TR><TR><TD>450 </TD><TD>  13.987F</TD></TR><TR><TD>650 </TD><TD>  19.367F</TD></TR></TABLE><p></p><p></p>   Les partenaires sociaux ont décidé de se revoir au cours du dernier trimestre 1995 dans le cas où un dérapage des prix significatif serait enregistré par rapport aux actuelles prévisions.<font color=\"808080\"><em>   NOTA : Arrêté du 3 octobre 1995 art. 1 : L'avenant du 20 juin 1995 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 3 octobre 1995 art. 1 : L'avenant du 20 juin 1995 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° F 1995-06-20 BO Conventions collectives 95-29, étendu par arrêté du 3 octobre 1995 JORF 12 octobre 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 803606400000,
+                  "dateFin": 836870400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -8060,13 +8134,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696644",
+              "cid": "KALISCTA000005696644",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grilles de salaires au 1er juillet 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-07-09",
+              "dateFin": "1999-03-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005782449",
+                  "cid": "KALIARTI000005782449",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696644/KALIARTI000005782449",
+                  "pathTitle": [
+                    "Grilles de salaires au 1er juillet 1996."
+                  ],
+                  "content": "<p></p>   Entre les signataires, il a été convenu qu'à compter du 1er juillet 1996, pour les postes et emplois tels que définis dans la convention collective nationale des commerces de gros de la confiserie, chocolaterie, biscuiterie et alimentation fine et des négociants-distributeurs de levure, et affectés de leur coefficient hiérarchique correspondant, la grille des salaires conventionnels, base 39 heures, publiée dans l'avenant F à effet du 1er juillet 1995, est majorée de 3 p. 100 pour les coefficients 115 à 212 inclus et de 160 F en valeur absolue à compter du coefficient 230.<p></p><p></p>   A noter que les coefficients 115 et 118 s'alignent sur la valeur du coefficient 120.<p></p><p></p>   La grille publiée ci-dessous annule et remplace les grilles antérieures.<p></p> Salaires conventionnels de base (39 heures hebdomadaires)<p></p><p></p>COEFFICIENTS - APPLICATION AU 1er JUILLET 1996<p></p><p></p><p></p>   (1) : Coefficients<p></p><p></p>   (2) : Salaires au 1er juillet 1996<p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD></TR><TR><TD> 115 </TD><TD> 6.462 F </TD></TR><TR><TD> 118 </TD><TD> 6.462 F </TD></TR><TR><TD> 120 </TD><TD> 6.462 F </TD></TR><TR><TD> 125 </TD><TD> 6.489 F </TD></TR><TR><TD> 128 </TD><TD> 6.493 F </TD></TR><TR><TD> 130 </TD><TD> 6.542 F </TD></TR><TR><TD> 135 </TD><TD> 6.567 F </TD></TR><TR><TD> 138 </TD><TD> 6.592 F </TD></TR><TR><TD> 140 </TD><TD> 6.620 F </TD></TR><TR><TD> 145 </TD><TD> 6.646 F </TD></TR><TR><TD> 150 </TD><TD> 6.672 F </TD></TR><TR><TD> 155 </TD><TD> 6.698 F </TD></TR><TR><TD> 160 </TD><TD> 6.726 F </TD></TR><TR><TD> 165 </TD><TD> 6.751 F </TD></TR><TR><TD> 170 </TD><TD> 6.776 F </TD></TR><TR><TD> 175 </TD><TD> 6.944 F </TD></TR><TR><TD> 180 </TD><TD> 7.049 F </TD></TR><TR><TD> 185 </TD><TD> 7.186 F </TD></TR><TR><TD> 190 </TD><TD> 7.325 F </TD></TR><TR><TD> 200 </TD><TD> 7.508 F </TD></TR><TR><TD> 210 </TD><TD> 7.786 F </TD></TR><TR><TD> 212 </TD><TD> 7.840 F </TD></TR><TR><TD> 230 </TD><TD> 8.266 F </TD></TR><TR><TD> 250 </TD><TD> 8.784 F </TD></TR><TR><TD> 260 </TD><TD> 9.051 F </TD></TR><TR><TD> 270 </TD><TD> 9.326 F </TD></TR><TR><TD> 280 </TD><TD> 9.589 F </TD></TR><TR><TD> 290 </TD><TD> 9.859 F </TD></TR><TR><TD> 300 </TD><TD>10.128 F </TD></TR><TR><TD> 310 </TD><TD>10.396 F </TD></TR><TR><TD> 325 </TD><TD>10.795 F </TD></TR><TR><TD> 330 </TD><TD>10.928 F </TD></TR><TR><TD> 380 </TD><TD>12.267 F </TD></TR><TR><TD> 450 </TD><TD>14.147 F </TD></TR><TR><TD> 650 </TD><TD>19.527 F </TD></TR></TABLE><p></p><p></p>   Les partenaires sociaux ont décidé de se revoir au cours du dernier trimestre 1996 dans le cas où un dérapage des prix significatif serait enregistré par rapport aux actuelles prévisions.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant G 1996-07-09 BO conventions collectives 96-31, étendu par arrêté du 23 octobre 1996 JORF 5 novembre 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 836870400000,
+                  "dateFin": 920937600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -8080,13 +8228,99 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696645",
+              "cid": "KALISCTA000005696645",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grilles de salaires au 1er avril 1999",
+              "dateModif": null,
+              "dateDebut": "1999-03-09",
+              "dateFin": "2019-02-27",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005782450",
+                  "cid": "KALIARTI000005782450",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696645/KALIARTI000005782450",
+                  "pathTitle": [
+                    "Grilles de salaires au 1er avril 1999"
+                  ],
+                  "content": "<p>Entre les signataires, il a été convenu qu'à compter du 1er avril 1999 pour les postes et emplois tels que définis dans la convention collective nationale des commerces de gros de la confiserie, chocolaterie, biscuiterie et alimentation fine et des négociants-distributeurs de levure et affectés de leur coefficient hiérarchique correspondant, la grille des salaires conventionnels - base 39 heures -, publiée dans la recommandation patronale à effet du 1er octobre 1997, est majorée de 1,5 % pour les coefficients 115 à 212 inclus et de 1 % à partir du coefficient 230.</p><p>La grille publiée ci-dessous annule et remplace les grilles antérieures.</p><p></p><p>SALAIRE CONVENTIONNEL DE BASE 39 HEURES HEBDOMADAIRES</p><p></p><table><tbody><tr><td>  Coefficient   </td><td><p>    Salaires </p><p>       au</p><p> 1er avril 1999 </p></td></tr><tr><td>    115 </td><td>     6 764 </td></tr><tr><td>    118 </td><td>     6 764 </td></tr><tr><td>    120 </td><td>     6 764 </td></tr><tr><td>    125 </td><td>     6 764 </td></tr><tr><td>    128 </td><td>     6 764 </td></tr><tr><td>    130 </td><td>     6 773 </td></tr><tr><td>    135 </td><td>     6 798 </td></tr><tr><td>    138 </td><td>     6 825 </td></tr><tr><td>    140 </td><td>     6 853 </td></tr><tr><td>    145 </td><td>     6 881 </td></tr><tr><td>    150 </td><td>     6 907 </td></tr><tr><td>155 </td><td>     6 934 </td></tr><tr><td>160 </td><td>     6 964 </td></tr><tr><td>165 </td><td>     6 989 </td></tr><tr><td>170 </td><td>     7 016 </td></tr><tr><td>175 </td><td>     7 189 </td></tr><tr><td>180 </td><td>     7 298 </td></tr><tr><td>185 </td><td>     7 440 </td></tr><tr><td>190 </td><td>     7 584 </td></tr><tr><td>200 </td><td>     7 773 </td></tr><tr><td>210 </td><td>     8 061 </td></tr><tr><td>212 </td><td>     8 117 </td></tr><tr><td>230 </td><td>     8 500 </td></tr><tr><td>250 </td><td>     9 023 </td></tr><tr><td>260 </td><td>     9 293 </td></tr><tr><td>270 </td><td>     9 571 </td></tr><tr><td>280 </td><td>     9 836 </td></tr><tr><td>290 </td><td>   10 109 </td></tr><tr><td>300 </td><td>   10 381 </td></tr><tr><td>310 </td><td>   10 651 </td></tr><tr><td>325 </td><td>   11 054 </td></tr><tr><td>330 </td><td>   11 189 </td></tr><tr><td>380 </td><td>   12 541 </td></tr><tr><td>450 </td><td>   14 440 </td></tr><tr><td>650 </td><td>   19 874 </td></tr></tbody></table><p><font color=\"#808080\" size=\"1\"><em>(1) Dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance (arrêté du 4 juin 1999, art. 1er).</em></font></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant K 1999-03-09 BO conventions collectives 99-15 étendu par arrêté du 4 juin 1999 JORF 16 juin 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    },
+                    {
+                      "textCid": "KALITEXT000036651032",
+                      "textTitle": "Fusion entre la CCN des commerces de gros et la... - art. 1er (VE)",
+                      "linkType": "ABROGATION",
+                      "linkOrientation": "source",
+                      "articleNum": "1er",
+                      "articleId": "KALIARTI000036651036",
+                      "natureText": "Accord",
+                      "datePubliTexte": "2999-01-01",
+                      "dateSignaTexte": "2017-10-30",
+                      "dateDebutCible": "2019-02-27"
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 920937600000,
+                  "dateFin": 1551225600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
