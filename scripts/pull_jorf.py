@@ -212,12 +212,24 @@ def main():
     ap.add_argument("--out", default="output/jorf")
     ap.add_argument("--depuis", default=None,
                      help="Date de début (JJJJ-MM-JJ). Défaut : 10 ans glissants.")
-    ap.add_argument("--delay", type=float, default=1.0, help="Délai entre appels (s)")
+    ap.add_argument("--delay", type=float, default=0.6, help="Délai entre appels (s)")
     ap.add_argument("--only-missing", action="store_true",
-                     help="Ne récupère le CONTENU que des textes RH pas encore acquis.")
-    ap.add_argument("--max", type=int, default=300,
-                     help="Plafond de CONTENUS récupérés ce run (0 = pas de plafond). "
-                          "L'énumération, elle, est toujours complète.")
+                     help="Ne récupère le CONTENU que des textes RH pas encore acquis. "
+                          "C'est CE mode qui permet de reprendre là où le run précédent "
+                          "s'est arrêté : les textes déjà récupérés sont sautés, on avance "
+                          "dans la pile à chaque run successif.")
+    ap.add_argument("--max", type=int, default=0,
+                     help="Plafond de CONTENUS récupérés ce run (0 = pas de plafond -- on "
+                          "s'arrête sur le temps, pas sur un nombre). L'énumération est "
+                          "toujours complète.")
+    ap.add_argument("--lot", type=int, default=700,
+                     help="Commit + push tous les N textes (défaut 700, selon la stratégie "
+                          "retenue : plusieurs petits lots sûrs plutôt qu'un gros commit final).")
+    ap.add_argument("--minutes-max", type=int, default=330,
+                     help="Temps maximal de la phase de récupération, en minutes (défaut 330 "
+                          "= 5h30). GitHub tue un job à 6h ; on s'arrête AVANT, proprement, "
+                          "en committant ce qui est fait -- le run suivant (--only-missing) "
+                          "reprend la suite. C'est la clé pour couvrir 10 ans sur plusieurs runs.")
     ap.add_argument("--max-jo", type=int, default=2499,
                      help="Plafond de JO à énumérer (garde-fou).")
     args = ap.parse_args()
@@ -291,25 +303,43 @@ def main():
 
     print(f"\n{len(candidats_rh)} texte(s) RH énuméré(s) au total sur la période.")
 
-    # ── Étape 3 : récupération du contenu ──
+    # ── Étape 3 : récupération du contenu, par lots, sous garde-temps ──
     a_traiter = list(candidats_rh.keys())
     if args.only_missing:
         avant = len(a_traiter)
         a_traiter = [t for t in a_traiter if t not in preserved_ok]
-        print(f"Mode --only-missing : {avant - len(a_traiter)} déjà OK, {len(a_traiter)} à récupérer.")
+        print(f"Mode --only-missing : {avant - len(a_traiter)} déjà acquis, {len(a_traiter)} restant à récupérer.")
     if args.max and len(a_traiter) > args.max:
         print(f"Plafond --max {args.max} : le reste au prochain run.")
         a_traiter = a_traiter[:args.max]
 
+    import time as _time
+    debut = _time.monotonic()
+    limite_secondes = args.minutes_max * 60
+
     summary = list(preserved_ok.values())
     n_ok, n_echec = 0, 0
-    CHECKPOINT = 200  # commit + push tous les 200 textes récupérés
+    arrete_par_temps = False
+
+    print(f"Récupération de {len(a_traiter)} texte(s), par lots de {args.lot}, "
+          f"limite {args.minutes_max} min (~{args.minutes_max/60:.1f}h) avant arrêt propre.")
+
     for i, tid in enumerate(a_traiter, 1):
+        # Garde-temps : avant chaque texte, on regarde si on approche la limite.
+        # Si oui, on s'arrête NET et on committe ce qui est fait -- surtout pas
+        # se faire tuer par GitHub à 6h en plein milieu, ce qui perdrait le lot
+        # en cours et laisserait le dépôt dans un état de rebase bancal.
+        if _time.monotonic() - debut > limite_secondes:
+            print(f"\n[garde-temps] {args.minutes_max} min atteintes -- arrêt propre à "
+                  f"{i-1}/{len(a_traiter)}. Le prochain run (--only-missing) reprend la suite.")
+            arrete_par_temps = True
+            break
+
         titre = candidats_rh[tid]
-        print(f"[{i}/{len(a_traiter)}] {titre[:60]}...", end=" ")
+        print(f"[{i}/{len(a_traiter)}] {titre[:55]}...", end=" ")
         result = fetch_un_texte(base_url, token, tid)
         if "_error" in result:
-            print(f"ÉCHEC ({result['_error']}) : {str(result.get('_detail',''))[:200]}")
+            print(f"ÉCHEC ({result['_error']})")
             summary.append({"id": tid, "titre": titre, "status": "erreur"})
             n_echec += 1
         else:
@@ -318,15 +348,25 @@ def main():
             summary.append({"id": tid, "titre": titre, "status": "ok"})
             print("ok")
             n_ok += 1
-        # Checkpoint périodique : on sauve le summary À JOUR puis on commit le
-        # lot, pour que ce qui est déjà récupéré soit à l'abri sur le dépôt.
-        if i % CHECKPOINT == 0:
+
+        # Fin de lot : on sauve le summary à jour PUIS on commit+push le lot.
+        # Ainsi, même si le run est tué juste après, ce lot est déjà sur le
+        # dépôt -- on ne reperd jamais plus qu'un lot en cours.
+        if i % args.lot == 0:
             json.dump(summary, open(summary_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
             commit_partiel(args.out, i, len(a_traiter))
         time.sleep(args.delay)
 
+    # Sauvegarde + commit final de ce qui reste (dernier lot incomplet, ou arrêt
+    # par le temps).
     json.dump(summary, open(summary_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    commit_partiel(args.out, n_ok, len(a_traiter))
+
+    reste = len(a_traiter) - (n_ok + n_echec)
     print(f"\n{n_ok} récupéré(s), {n_echec} échec(s), {len(preserved_ok)} déjà acquis avant ce run.")
+    if arrete_par_temps or reste > 0:
+        print(f"Il reste ~{reste} texte(s) à récupérer -- relancer le run "
+              f"(--only-missing) pour continuer là où on s'est arrêté.")
     return 0
 
 
