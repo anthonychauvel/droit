@@ -113,15 +113,18 @@ def date_dix_ans_glissante():
 
 
 def search_jorf_par_mot_cle(base_url, token, mot_cle, depuis, page=1):
-    """Cherche dans le fonds JORF, mot-clé dans le TITRE du texte -- même
-    principe que search_kali_by_idcc (typeChamp), juste un fonds et un champ
-    différents. Fenêtre de date via publicationDate pour respecter le
+    """Cherche dans le fonds JORF, mot-clé dans TOUT LE TEXTE (typeChamp=ALL,
+    pas TITLE) -- un arrêté peut parler de SMIC en long sans jamais le dire
+    dans son propre titre, souvent générique ("Arrêté du [date] portant...").
+    Repéré le 31/07/2026 : la recherche par titre seul donnait 40 résultats
+    sur 6 mots-clés au lieu des milliers attendus sur 10 ans -- typeChamp=ALL
+    confirmé par la doc d'une bibliothèque tierce utilisant la même API.
     périmètre "10 dernières années" du cahier des charges."""
     body = {
         "fond": "JORF",
         "recherche": {
             "champs": [{
-                "typeChamp": "TITLE",
+                "typeChamp": "ALL",
                 "operateur": "OU",
                 "criteres": [{
                     "valeur": mot_cle,

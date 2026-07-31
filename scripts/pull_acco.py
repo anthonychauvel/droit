@@ -116,13 +116,22 @@ def date_dix_ans_glissante():
 
 
 def search_acco_par_theme(base_url, token, theme, depuis, page=1):
-    """Cherche dans le fonds ACCO, thème dans le TITRE de l'accord -- même
-    principe que search_jorf_par_mot_cle, juste un fonds différent."""
+    """Cherche dans le fonds ACCO, thème dans TOUT LE TEXTE (typeChamp=ALL,
+    pas TITLE) -- un accord d'entreprise est généralement titré par son
+    entreprise/sa nature générique ("Accord NAO 2024"), pas par son thème --
+    même principe que search_jorf_par_mot_cle, juste un fonds différent.
+
+    Note trouvée le 31/07/2026 : les vraies données ACCO ont un champ
+    "themes" STRUCTURÉ ET CODÉ ({code, groupe, libelle}), pas du texte libre
+    -- typeChamp=ALL est un correctif honnête, pas la solution idéale. La
+    bonne façon de filtrer par thème serait probablement de connaître les
+    codes de cette taxonomie et de filtrer dessus, pas de deviner un mot-clé
+    à chercher dans le texte."""
     body = {
         "fond": "ACCO",
         "recherche": {
             "champs": [{
-                "typeChamp": "TITLE",
+                "typeChamp": "ALL",
                 "operateur": "OU",
                 "criteres": [{
                     "valeur": theme,
