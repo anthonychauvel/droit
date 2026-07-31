@@ -1,0 +1,82 @@
+name: Nettoyer fichiers volumineux
+
+# Workflow à LANCER UNE SEULE FOIS, à la main, depuis l'app GitHub sur iPhone :
+#   onglet Actions -> « Nettoyer fichiers volumineux » -> « Run workflow ».
+#
+# Pourquoi : un fichier de diagnostic (output/jorf/_debug/_lastNJo.json, ~199 Mo)
+# a été committé par erreur et dépasse la limite de 100 Mo de GitHub -- tant
+# qu'il est dans l'historique, TOUT push est refusé (« pre-receive hook
+# declined »). L'app iPhone ne peut pas retirer un fichier de cette taille ni
+# réécrire l'historique ; une Action GitHub, si, car elle tourne sur un vrai
+# serveur Linux avec git complet.
+#
+# Ce que fait ce workflow : il réécrit l'historique de la branche main pour
+# faire comme si ces fichiers de debug n'avaient JAMAIS été committés, puis
+# force le push du résultat nettoyé. Après ça, les pushes normaux repassent.
+#
+# SÛR ici parce que : le dossier output/jorf ne contient aucune donnée à
+# garder (confirmé), et tout le reste du dépôt est du contenu régénérable par
+# les aspirateurs. On ne perd rien d'important.
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirmer:
+        description: "Taper OUI pour confirmer le nettoyage (réécrit l'historique)."
+        required: true
+        default: "non"
+
+permissions:
+  contents: write
+
+jobs:
+  nettoyer:
+    if: ${{ github.event.inputs.confirmer == 'OUI' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer tout l'historique
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # indispensable : sans l'historique complet, on ne
+                           # peut pas le réécrire.
+
+      - name: Retirer les fichiers de debug volumineux de tout l'historique
+        run: |
+          git config user.name "nettoyage-bot"
+          git config user.email "nettoyage-bot@users.noreply.github.com"
+
+          echo "Avant nettoyage, plus gros objets de l'historique :"
+          git rev-list --objects --all \
+            | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' 2>/dev/null \
+            | awk '/^blob/ {print $3, $4}' | sort -rn | head -5 || true
+
+          # git filter-branch réécrit chaque commit en supprimant ces chemins,
+          # comme s'ils n'avaient jamais existé. --ignore-unmatch : pas d'erreur
+          # si un commit donné ne contient pas le fichier.
+          git filter-branch --force --index-filter '
+            git rm -r --cached --ignore-unmatch output/jorf/_debug output/acco/_debug output/jorf/_lastNJo.json output/jorf/_debug_reponse_search_brute.json output/acco/_debug_reponse_search_brute.json
+          ' --prune-empty --tag-name-filter cat -- --all
+
+          # ÉTAPE CRUCIALE (vérifiée en test) : filter-branch garde une
+          # sauvegarde de l'ancien historique dans refs/original/. Tant
+          # qu'elle existe, le gros fichier reste atteignable et le push
+          # forcé le renverrait. On la supprime avant de pousser.
+          git for-each-ref --format="%(refname)" refs/original/ \
+            | xargs -n 1 git update-ref -d 2>/dev/null || true
+
+          # Expiration du reflog et compactage, pour que l'objet volumineux
+          # ne soit plus référencé nulle part localement avant le push.
+          git reflog expire --expire=now --all || true
+          git gc --prune=now --aggressive || true
+
+          echo "Nettoyage terminé. Poussée forcée du résultat..."
+          git push origin --force --all
+
+      - name: Confirmer
+        run: |
+          echo "## ✅ Nettoyage terminé" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Les fichiers de debug volumineux ont été retirés de tout l'historique." >> $GITHUB_STEP_SUMMARY
+          echo "Les pushes normaux (aspirateurs) devraient repasser maintenant." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Tu peux supprimer ce workflow, il n'a plus d'utilité." >> $GITHUB_STEP_SUMMARY
