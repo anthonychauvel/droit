@@ -33,6 +33,8 @@ on:
           - code-secu
           - jurisprudence
           - decouvrir-jurisprudence
+          - jorf
+          - acco
           - lister-tous-articles-travail
           - lister-tous-articles-secu
           - lister-tous-ccn
@@ -255,9 +257,25 @@ jobs:
           # validées une fois). Découverte thématique en droit du travail, on ne
           # récupère que les décisions NOUVELLES -> le corpus s'enrichit à chaque run.
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --per-theme 20 --max-decisions 150 --only-missing || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction cc --per-theme 20 --max-decisions 150 --only-missing || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
           else
-            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --per-theme 40 --max-decisions 500 || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction cc --per-theme 40 --max-decisions 500 || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
+          fi
+
+      - name: "Récupérer la jurisprudence (Judilibre — cours d'appel, pôle social)"
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'jurisprudence' || github.event.inputs.cible == 'tout') }}
+        run: |
+          # Repéré le 31/07/2026 : le run programmé ne demandait QUE la Cour de
+          # cassation (jurisdiction=cc, valeur par défaut du script) -- les cours
+          # d'appel (pôle social), pourtant explicitement dans le périmètre du
+          # Module 1, n'étaient récupérées que via le mode manuel
+          # "decouvrir-jurisprudence", jamais automatiquement. Judilibre n'a pas
+          # de code pour un vrai premier degré (prud'hommes) : "ca" EST le
+          # niveau "pôle social" demandé, il n'y a rien de plus bas disponible.
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction ca --per-theme 20 --max-decisions 150 --only-missing || echo "Judilibre (CA) a échoué, pas bloquant"
+          else
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction ca --per-theme 40 --max-decisions 500 || echo "Judilibre (CA) a échoué, pas bloquant"
           fi
 
       - name: "Découvrir largement de la jurisprudence (Judilibre, toutes chambres)"
@@ -265,6 +283,32 @@ jobs:
         run: |
           # Remplit directement output/jurisprudence (toutes chambres, plafond élevé).
           python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber "" --jurisdiction "" --per-theme 50 --max-decisions 800
+
+      - name: "Récupérer le Journal Officiel (volet social)"
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'jorf' || github.event.inputs.cible == 'tout') }}
+        run: |
+          # Module 2 du cahier des charges MonLegiTexte (27/07/2026) : arrêtés
+          # d'extension, SMIC, plafonds, cotisations, activité partielle.
+          # Même identifiants PISTE que le reste, --only-missing en programmé
+          # pour ne traiter que les nouveautés à chaque run.
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python3 scripts/pull_jorf.py --out output/jorf --only-missing --max 100 || echo "JORF a échoué, pas bloquant"
+          else
+            python3 scripts/pull_jorf.py --out output/jorf --max 300 || echo "JORF a échoué, pas bloquant"
+          fi
+
+      - name: "Récupérer les accords d'entreprise (benchmarking RH)"
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'acco' || github.event.inputs.cible == 'tout') }}
+        run: |
+          # Module 3 du cahier des charges MonLegiTexte (27/07/2026) : télétravail,
+          # forfait jours, PPV, CET, égalité pro, QVT, droit à la déconnexion.
+          # Fenêtre glissante 10 ans (jamais fixe), ne supprime jamais l'existant --
+          # voir date_dix_ans_glissante() dans le script.
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python3 scripts/pull_acco.py --out output/acco --only-missing --max 100 || echo "ACCO a échoué, pas bloquant"
+          else
+            python3 scripts/pull_acco.py --out output/acco --max 300 || echo "ACCO a échoué, pas bloquant"
+          fi
 
       - name: Lister tous les articles du Code du travail (préparation seulement)
         if: ${{ always() && github.event.inputs.cible == 'lister-tous-articles-travail' }}
