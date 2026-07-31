@@ -224,6 +224,64 @@ def build_juris_index(juris_dir):
             "num": numero,
             "title": titre,
             "snippet": text[:SNIPPET_LEN],
+            "juridiction": payload.get("juridiction") or "",
+        })
+    return index
+
+
+def build_jorf_index(jorf_dir):
+    """Même principe que build_juris_index -- même format de fichier produit
+    par pull_jorf.py."""
+    if not os.path.isdir(jorf_dir):
+        return []
+    index = []
+    for filepath in sorted(glob.glob(os.path.join(jorf_dir, "*.json"))):
+        if os.path.basename(filepath) == "_summary.json":
+            continue
+        numero = os.path.splitext(os.path.basename(filepath))[0]
+        try:
+            data = json.load(open(filepath, encoding="utf-8"))
+        except Exception:
+            continue
+        if not isinstance(data, dict) or "_error" in data:
+            continue
+        titre = data.get("titre") or f"Texte JORF {numero}"
+        payload = data.get("text") or {}
+        brut = payload.get("texte") or payload.get("texteHtml") or payload.get("content") or ""
+        text = strip_html(brut) if brut else ""
+        index.append({
+            "num": numero,
+            "title": titre,
+            "snippet": text[:SNIPPET_LEN],
+        })
+    return index
+
+
+def build_acco_index(acco_dir):
+    """Même principe, avec en plus les thèmes matchés pour un futur filtre
+    par thématique RH côté interface."""
+    if not os.path.isdir(acco_dir):
+        return []
+    index = []
+    for filepath in sorted(glob.glob(os.path.join(acco_dir, "*.json"))):
+        if os.path.basename(filepath) == "_summary.json":
+            continue
+        numero = os.path.splitext(os.path.basename(filepath))[0]
+        try:
+            data = json.load(open(filepath, encoding="utf-8"))
+        except Exception:
+            continue
+        if not isinstance(data, dict) or "_error" in data:
+            continue
+        titre = data.get("titre") or f"Accord {numero}"
+        payload = data.get("text") or {}
+        brut = payload.get("texte") or payload.get("texteHtml") or payload.get("content") or ""
+        text = strip_html(brut) if brut else ""
+        index.append({
+            "num": numero,
+            "title": titre,
+            "snippet": text[:SNIPPET_LEN],
+            "themes": data.get("themes") or [],
         })
     return index
 
@@ -234,6 +292,8 @@ def main():
     ap.add_argument("--code-dir", default="output/code-travail")
     ap.add_argument("--code-secu-dir", default="output/code-secu")
     ap.add_argument("--juris-dir", default="output/jurisprudence")
+    ap.add_argument("--jorf-dir", default="output/jorf")
+    ap.add_argument("--acco-dir", default="output/acco")
     ap.add_argument("--classification", default="output/classification-source.json",
                      help="Manifeste conservé/complet écrit par classify_source.py (optionnel)")
     ap.add_argument("--out", default="output/search-index.json")
@@ -252,8 +312,11 @@ def main():
     code_secu_index = (build_code_index(args.code_secu_dir, classification.get("code_secu"))
                         if os.path.exists(args.code_secu_dir) else [])
     juris_index = build_juris_index(args.juris_dir) if os.path.exists(args.juris_dir) else []
+    jorf_index = build_jorf_index(args.jorf_dir) if os.path.exists(args.jorf_dir) else []
+    acco_index = build_acco_index(args.acco_dir) if os.path.exists(args.acco_dir) else []
 
-    full_index = {"ccn": ccn_index, "code": code_index, "code_secu": code_secu_index, "juris": juris_index}
+    full_index = {"ccn": ccn_index, "code": code_index, "code_secu": code_secu_index,
+                  "juris": juris_index, "jorf": jorf_index, "acco": acco_index}
 
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     with open(args.out, "w", encoding="utf-8") as f:
@@ -263,7 +326,8 @@ def main():
     size_kb = os.path.getsize(args.out) / 1024
     print(f"Index construit: {len(ccn_index)} CCN ({n_hits} sections indexees), "
           f"{len(code_index)} articles travail, {len(code_secu_index)} articles secu, "
-          f"{len(juris_index)} decisions.")
+          f"{len(juris_index)} decisions, {len(jorf_index)} textes JORF, "
+          f"{len(acco_index)} accords d'entreprise.")
     print(f"Taille: {size_kb:.0f} Ko -> {args.out}")
 
 

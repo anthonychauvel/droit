@@ -132,7 +132,48 @@ def build_juris(juris_dir):
             continue
         payload = data.get("text", data)
         titre = payload.get("titre") or payload.get("title") or f"Décision {num}"
+        # Juridiction ("cc"/"ca"/...) gardée en 3e position -- distinguer
+        # Cour de cassation et cours d'appel (pôle social) côté interface,
+        # pas juste les mélanger dans une même liste indifférenciée.
+        juridiction = payload.get("juridiction") or ""
+        out.append([num, titre, juridiction])
+    return out
+
+
+def build_jorf(jorf_dir):
+    """Même principe que build_juris -- même format de fichier produit par
+    pull_jorf.py ({"titre":..., "text": {...}})."""
+    out = []
+    if not os.path.isdir(jorf_dir):
+        return out
+    for path in sorted(glob.glob(os.path.join(jorf_dir, "*.json"))):
+        if os.path.basename(path) == "_summary.json":
+            continue
+        num = os.path.splitext(os.path.basename(path))[0]
+        data = load_json(path)
+        if not isinstance(data, dict) or "_error" in data:
+            continue
+        titre = data.get("titre") or f"Texte JORF {num}"
         out.append([num, titre])
+    return out
+
+
+def build_acco(acco_dir):
+    """Même principe, format identique produit par pull_acco.py -- avec en
+    plus la liste des thèmes matchés, gardée en 3e position."""
+    out = []
+    if not os.path.isdir(acco_dir):
+        return out
+    for path in sorted(glob.glob(os.path.join(acco_dir, "*.json"))):
+        if os.path.basename(path) == "_summary.json":
+            continue
+        num = os.path.splitext(os.path.basename(path))[0]
+        data = load_json(path)
+        if not isinstance(data, dict) or "_error" in data:
+            continue
+        titre = data.get("titre") or f"Accord {num}"
+        themes = data.get("themes") or []
+        out.append([num, titre, ", ".join(themes)])
     return out
 
 
@@ -142,6 +183,8 @@ def main():
     ap.add_argument("--code-dir", default="output/code-travail")
     ap.add_argument("--code-secu-dir", default="output/code-secu")
     ap.add_argument("--juris-dir", default="output/jurisprudence")
+    ap.add_argument("--jorf-dir", default="output/jorf")
+    ap.add_argument("--acco-dir", default="output/acco")
     ap.add_argument("--classification", default="output/classification-source.json")
     ap.add_argument("--out", default="output/manifest.json")
     args = ap.parse_args()
@@ -152,14 +195,19 @@ def main():
     code = build_code(args.code_dir)
     secu = build_code(args.code_secu_dir)
     juris = build_juris(args.juris_dir)
+    jorf = build_jorf(args.jorf_dir)
+    acco = build_acco(args.acco_dir)
 
     manifest = {
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "counts": {"ccn": len(ccn), "code": len(code), "secu": len(secu), "juris": len(juris)},
+        "counts": {"ccn": len(ccn), "code": len(code), "secu": len(secu), "juris": len(juris),
+                   "jorf": len(jorf), "acco": len(acco)},
         "ccn": ccn,
         "code": code,
         "secu": secu,
         "juris": juris,
+        "jorf": jorf,
+        "acco": acco,
     }
 
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
@@ -168,7 +216,8 @@ def main():
 
     size_kb = os.path.getsize(args.out) / 1024
     print(f"Manifeste : {len(ccn)} CCN, {len(code)} articles travail, "
-          f"{len(secu)} articles sécu, {len(juris)} décisions.")
+          f"{len(secu)} articles sécu, {len(juris)} décisions, {len(jorf)} textes JORF, "
+          f"{len(acco)} accords d'entreprise.")
     print(f"Taille : {size_kb:.0f} Ko -> {args.out}")
 
 
