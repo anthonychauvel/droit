@@ -41,6 +41,7 @@ import sys
 import json
 import time
 import argparse
+import subprocess
 import urllib.request
 import urllib.error
 import urllib.parse
@@ -173,16 +174,39 @@ def extract_ids_from_search(search_result):
     return trouves
 
 
-def fetch_un_accord(base_url, token, text_id, debug_dir=None):
+def fetch_un_accord(base_url, token, text_id):
     """Récupère le texte intégral d'un accord par son identifiant.
     Endpoint /consult/acco -- À VALIDER au premier run réel, voir note en
     tête de fichier."""
-    result = call_api(base_url, token, "/consult/acco", {"textCid": text_id})
-    if debug_dir:
-        os.makedirs(debug_dir, exist_ok=True)
-        with open(os.path.join(debug_dir, f"{text_id}.json"), "w", encoding="utf-8") as f:
-            json.dump(result, f, ensure_ascii=False, indent=2)
-    return result
+    return call_api(base_url, token, "/consult/acco", {"textCid": text_id})
+
+
+def commit_partiel(dossier, n_fait, total):
+    """Commit + push par lots PENDANT la boucle -- même principe que
+    pull_jorf.py : ce qui est déjà récupéré est sauvé sur le dépôt même si le
+    run plante plus loin. Tolérant à l'échec, ne fait jamais échouer le run."""
+    try:
+        subprocess.run(["git", "add", dossier], check=False, capture_output=True)
+        rien = subprocess.run(["git", "diff", "--cached", "--quiet"], capture_output=True).returncode == 0
+        if rien:
+            return
+        subprocess.run(["git", "commit", "-m",
+                        f"ACCO: lot intermédiaire ({n_fait}/{total} accords)"],
+                       check=False, capture_output=True)
+        r = subprocess.run(["git", "push"], capture_output=True, text=True)
+        if r.returncode == 0:
+            print(f"    [checkpoint] {n_fait}/{total} accords committés et poussés.")
+            return
+        subprocess.run(["git", "pull", "--rebase", "--autostash", "origin", "main"],
+                       check=False, capture_output=True)
+        r2 = subprocess.run(["git", "push"], capture_output=True, text=True)
+        if r2.returncode == 0:
+            print(f"    [checkpoint] {n_fait}/{total} accords poussés (après rattrapage).")
+        else:
+            print(f"    [checkpoint] push différé (sera rattrapé au prochain lot ou à la fin).",
+                  file=sys.stderr)
+    except Exception as e:
+        print(f"    [checkpoint] échec non bloquant : {e}", file=sys.stderr)
 
 
 def main():
@@ -279,14 +303,14 @@ def main():
         a_traiter = a_traiter[:args.max]
 
     # 2) Récupération du texte intégral, un par un.
-    debug_dir = os.path.join(args.out, "_debug_search")
     summary = list(preserved_ok.values())
     n_ok, n_echec = 0, 0
+    CHECKPOINT = 200
 
     for i, text_id in enumerate(a_traiter, 1):
         titre, date_pub, themes_matches = candidats[text_id]
         print(f"[{i}/{len(a_traiter)}] {titre[:60]}...", end=" ")
-        result = fetch_un_accord(base_url, token, text_id, debug_dir=debug_dir)
+        result = fetch_un_accord(base_url, token, text_id)
 
         if "_error" in result:
             print(f"ÉCHEC ({result['_error']}) : {str(result.get('_detail',''))[:300]}")
@@ -303,6 +327,9 @@ def main():
                              "themes": themes_matches, "status": "ok"})
             print("ok")
             n_ok += 1
+        if i % CHECKPOINT == 0:
+            json.dump(summary, open(summary_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+            commit_partiel(args.out, i, len(a_traiter))
         time.sleep(args.delay)
 
     with open(summary_path, "w", encoding="utf-8") as f:

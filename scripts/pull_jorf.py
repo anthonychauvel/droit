@@ -111,17 +111,17 @@ def titre_est_rh(titre):
     return bool(MOTIF_RH.search(titre or ""))
 
 
-def lister_jo_conteneurs(base_url, token, depuis, debug_dir):
+def lister_jo_conteneurs(base_url, token, depuis):
     """Étape 1 : liste les JORFCONT (conteneurs de JO) sur la période.
     lastNJo renvoie les N derniers -- on demande large et on filtre par date
     ensuite. N < 2500 (limite documentée) -> pour 10 ans (~2600 JO quotidiens),
     on plafonne à 2499 et on prévient si la période n'est pas entièrement
     couverte."""
     resultat = call_api(base_url, token, "/consult/lastNJo", {"nbElement": 2499})
-    if debug_dir:
-        os.makedirs(debug_dir, exist_ok=True)
-        with open(os.path.join(debug_dir, "_lastNJo.json"), "w", encoding="utf-8") as f:
-            json.dump(resultat, f, ensure_ascii=False, indent=2)
+    # (Le dump de diagnostic de la réponse lastNJo a été retiré : il pesait
+    #  ~200 Mo -- la liste des 2499 JO d'un coup -- et dépassait la limite de
+    #  100 Mo de GitHub, faisant échouer le push. Sa seule utilité était de
+    #  découvrir la structure de la réponse au premier run ; c'est fait.)
     if "_error" in resultat:
         return None, resultat
 
@@ -160,15 +160,51 @@ def lister_textes_du_jo(base_url, token, jorf_cont_id):
     return textes, None
 
 
-def fetch_un_texte(base_url, token, text_id, debug_dir=None):
+def fetch_un_texte(base_url, token, text_id):
     """Étape 3 : contenu intégral. Endpoint déjà fonctionnel depuis le
     correctif CID du 31/07."""
-    result = call_api(base_url, token, "/consult/jorf", {"textCid": text_id})
-    if debug_dir and not os.path.exists(os.path.join(debug_dir, f"{text_id}.json")):
-        os.makedirs(debug_dir, exist_ok=True)
-        with open(os.path.join(debug_dir, f"{text_id}.json"), "w", encoding="utf-8") as f:
-            json.dump(result, f, ensure_ascii=False, indent=2)
-    return result
+    return call_api(base_url, token, "/consult/jorf", {"textCid": text_id})
+
+
+import subprocess
+
+
+def commit_partiel(dossier, n_fait, total):
+    """Commit + push ce qui est déjà récupéré, PENDANT la boucle -- comme ça
+    si le run plante ou dépasse le temps limite plus loin, ce qui est déjà là
+    est sauvé sur le dépôt, pas perdu. Idée de Chauvel (31/07/2026), reprise
+    du principe des tranches du Code du travail : mieux vaut plusieurs petits
+    commits sûrs qu'un seul gros commit final qui peut échouer d'un coup.
+
+    Tolérant à l'échec : si le commit/push échoue (ex. rien à committer, ou
+    conflit réseau ponctuel), on continue la récupération -- le prochain
+    checkpoint ou le commit final rattrapera. On ne fait JAMAIS échouer le run
+    juste parce qu'un checkpoint intermédiaire n'est pas passé.
+    """
+    try:
+        subprocess.run(["git", "add", dossier], check=False, capture_output=True)
+        # Rien de nouveau à committer -> git diff --cached --quiet renvoie 0.
+        rien = subprocess.run(["git", "diff", "--cached", "--quiet"], capture_output=True).returncode == 0
+        if rien:
+            return
+        subprocess.run(["git", "commit", "-m",
+                        f"JORF: lot intermédiaire ({n_fait}/{total} textes)"],
+                       check=False, capture_output=True)
+        r = subprocess.run(["git", "push"], capture_output=True, text=True)
+        if r.returncode == 0:
+            print(f"    [checkpoint] {n_fait}/{total} textes committés et poussés.")
+            return
+        # Un seul rattrapage doux, puis on laisse tomber ce checkpoint.
+        subprocess.run(["git", "pull", "--rebase", "--autostash", "origin", "main"],
+                       check=False, capture_output=True)
+        r2 = subprocess.run(["git", "push"], capture_output=True, text=True)
+        if r2.returncode == 0:
+            print(f"    [checkpoint] {n_fait}/{total} textes poussés (après rattrapage).")
+        else:
+            print(f"    [checkpoint] push différé (sera rattrapé au prochain lot ou à la fin).",
+                  file=sys.stderr)
+    except Exception as e:
+        print(f"    [checkpoint] échec non bloquant : {e}", file=sys.stderr)
 
 
 def main():
@@ -200,7 +236,6 @@ def main():
     print(f"Token OK. Énumération du JO depuis {depuis.isoformat()} (fenêtre glissante 10 ans).")
 
     os.makedirs(args.out, exist_ok=True)
-    debug_dir = os.path.join(args.out, "_debug")
     summary_path = os.path.join(args.out, "_summary.json")
 
     existing = {}
@@ -215,7 +250,7 @@ def main():
 
     # ── Étape 1 : conteneurs de JO ──
     print("Étape 1 : liste des Journaux Officiels...")
-    conteneurs, err = lister_jo_conteneurs(base_url, token, depuis, debug_dir)
+    conteneurs, err = lister_jo_conteneurs(base_url, token, depuis)
     if err:
         print(f"ÉCHEC lastNJo ({err['_error']}) : {str(err.get('_detail',''))[:400]}", file=sys.stderr)
         print("Rien récupéré -- voir le message ci-dessus pour la vraie forme du endpoint.", file=sys.stderr)
@@ -268,10 +303,11 @@ def main():
 
     summary = list(preserved_ok.values())
     n_ok, n_echec = 0, 0
+    CHECKPOINT = 200  # commit + push tous les 200 textes récupérés
     for i, tid in enumerate(a_traiter, 1):
         titre = candidats_rh[tid]
         print(f"[{i}/{len(a_traiter)}] {titre[:60]}...", end=" ")
-        result = fetch_un_texte(base_url, token, tid, debug_dir=debug_dir)
+        result = fetch_un_texte(base_url, token, tid)
         if "_error" in result:
             print(f"ÉCHEC ({result['_error']}) : {str(result.get('_detail',''))[:200]}")
             summary.append({"id": tid, "titre": titre, "status": "erreur"})
@@ -282,6 +318,11 @@ def main():
             summary.append({"id": tid, "titre": titre, "status": "ok"})
             print("ok")
             n_ok += 1
+        # Checkpoint périodique : on sauve le summary À JOUR puis on commit le
+        # lot, pour que ce qui est déjà récupéré soit à l'abri sur le dépôt.
+        if i % CHECKPOINT == 0:
+            json.dump(summary, open(summary_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+            commit_partiel(args.out, i, len(a_traiter))
         time.sleep(args.delay)
 
     json.dump(summary, open(summary_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
