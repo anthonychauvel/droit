@@ -188,6 +188,8 @@
   .val.un{ background:var(--line-soft); color:var(--neutral); } .val.un .d{ background:var(--neutral); }
   .src{ font-family:'IBM Plex Mono',monospace; font-size:9px; text-transform:uppercase; letter-spacing:.03em; padding:2px 6px; border-radius:3px; background:var(--line-soft); color:var(--neutral); margin-left:6px; }
   .src.complet{ background:var(--warn-soft); color:var(--warn); }
+  .src.cass{ background:var(--violet-soft); color:var(--violet-strong); }
+  .src.ca{ background:var(--line-soft); color:var(--neutral); }
 
   .more{ margin:16px auto 0; display:block; background:var(--card); border:1px solid var(--line); color:var(--violet-strong); font-family:'Manrope',sans-serif; font-weight:700; font-size:13px; padding:11px 20px; border-radius:10px; cursor:pointer; }
   .more:hover{ border-color:var(--violet); background:var(--violet-soft); }
@@ -365,6 +367,8 @@
     <button class="nav-item" data-view="code"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 4.5A2.5 2.5 0 016.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15z"/></svg>Code du travail<span class="nc" id="nc-code">…</span></button>
     <button class="nav-item" data-view="secu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>Sécurité sociale<span class="nc" id="nc-secu">…</span></button>
     <button class="nav-item" data-view="juris"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M5 8l-3 6a3 3 0 006 0l-3-6zM19 8l-3 6a3 3 0 006 0l-3-6zM5 8h14M8 21h8"/></svg>Jurisprudence<span class="nc" id="nc-juris">…</span></button>
+    <button class="nav-item" data-view="jorf"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>Journal Officiel<span class="nc" id="nc-jorf">…</span></button>
+    <button class="nav-item" data-view="acco"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Accords d'entreprise<span class="nc" id="nc-acco">…</span></button>
     <button class="nav-item" data-view="maj"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 11-3-6.7L21 8M21 3v5h-5"/></svg>Mises à jour<span class="nc" id="nc-maj"></span></button>
   </nav>
 
@@ -519,7 +523,9 @@ async function loadAll(){
       INDEX.ccn   = (m.ccn  ||[]).map(function(a){ return {num:String(a[0]), title:a[1]||('IDCC '+a[0]), etat:a[2]||'V', source:a[3]||'inconnu'}; });
       INDEX.code  = (m.code ||[]).map(function(a){ return {num:a[0], title:'Article '+a[0], etat:a[1]||'?'}; });
       INDEX.secu  = (m.secu ||[]).map(function(a){ return {num:a[0], title:'Article '+a[0], etat:a[1]||'?'}; });
-      INDEX.juris = (m.juris||[]).map(function(a){ return {num:a[0], title:a[1]||('Décision '+a[0]), etat:null}; });
+      INDEX.juris = (m.juris||[]).map(function(a){ return {num:a[0], title:a[1]||('Décision '+a[0]), etat:null, juridiction:a[2]||''}; });
+      INDEX.jorf = (m.jorf||[]).map(function(a){ return {num:a[0], title:a[1]||('Texte JORF '+a[0]), etat:null}; });
+      INDEX.acco = (m.acco||[]).map(function(a){ return {num:a[0], title:a[1]||('Accord '+a[0]), etat:null, themes:(a[2]||'').split(', ').filter(Boolean)}; });
       manifestOk = true;
     }catch(e){ console.warn('manifest.json indisponible, repli sur _summary', e); }
   })();
@@ -580,6 +586,14 @@ async function loadFromSummaries(){
   INDEX.juris = (juris||[]).filter(function(d){return d.status==='ok';}).map(function(d){
     return {num:d.numero, title:d.titre||('Pourvoi n°'+d.numero), etat:null};
   });
+  var jorf = await sumtry('output/jorf/_summary.json');
+  INDEX.jorf = (jorf||[]).filter(function(d){return d.status==='ok';}).map(function(d){
+    return {num:d.id, title:d.titre||('Texte JORF '+d.id), etat:null};
+  });
+  var acco = await sumtry('output/acco/_summary.json');
+  INDEX.acco = (acco||[]).filter(function(d){return d.status==='ok';}).map(function(d){
+    return {num:d.id, title:d.titre||('Accord '+d.id), etat:null, themes:d.themes||[]};
+  });
 }
 
 function fmt(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'\u202f'); }
@@ -588,11 +602,13 @@ function updateCounts(){
   document.getElementById('nc-code').textContent  = fmt(INDEX.code.length);
   document.getElementById('nc-secu').textContent  = fmt(INDEX.secu.length);
   document.getElementById('nc-juris').textContent = fmt(INDEX.juris.length);
-  var tot = INDEX.ccn.length+INDEX.code.length+INDEX.secu.length+INDEX.juris.length;
+  document.getElementById('nc-jorf').textContent  = fmt(INDEX.jorf.length);
+  document.getElementById('nc-acco').textContent  = fmt(INDEX.acco.length);
+  var tot = INDEX.ccn.length+INDEX.code.length+INDEX.secu.length+INDEX.juris.length+INDEX.jorf.length+INDEX.acco.length;
   document.getElementById('corpus-b').textContent = fmt(tot)+' textes indexés';
   document.getElementById('corpus-line').textContent =
     fmt(INDEX.ccn.length)+' conventions · '+fmt(INDEX.code.length)+' art. travail · '+
-    fmt(INDEX.secu.length)+' art. sécu · '+fmt(INDEX.juris.length)+' décisions';
+    fmt(INDEX.secu.length)+' art. sécu · '+fmt(INDEX.juris.length)+' décisions · '+fmt(INDEX.jorf.length)+' JORF · '+fmt(INDEX.acco.length)+' accords';
 }
 /* ============================================================================
    Normalisation + dictionnaires (métier -> IDCC, synonymes) pour la recherche
@@ -726,6 +742,15 @@ function srcBadge(source){
   if(source==='conserve') return '<span class="src">conservé</span>';
   return '';
 }
+function juridictionBadge(j){
+  if(!j) return '';
+  // Cass. en violet (couleur déjà utilisée pour Jurisprudence dans le menu),
+  // CA (et tout le reste : Cour d'appel, CAA...) dans un ton neutre --
+  // distinguer d'un coup d'œil sans avoir à ouvrir chaque décision.
+  var abrege = /cassation/i.test(j) ? 'Cass.' : (/appel/i.test(j) ? 'CA' : j);
+  var classe = /cassation/i.test(j) ? 'src cass' : 'src ca';
+  return '<span class="'+classe+'" title="'+escAttr(j)+'">'+escapeHtml(abrege)+'</span>';
+}
 function highlight(text, terms){
   var out = escapeHtml(text);
   terms.forEach(function(m){
@@ -767,7 +792,7 @@ function rowHtml(kind, num, title, etat, opts){
   var numDisp = (kind==='ccn') ? ('IDCC '+num) : (kind==='juris' ? num : num);
   return '<div class="row '+kind+'" tabindex="0" role="button" data-kind="'+kind+'" data-num="'+escAttr(num)+'">'+
            '<span class="res-num mono">'+escapeHtml(numDisp)+'</span>'+
-           '<span class="res-main"><span class="res-title">'+escapeHtml(title)+srcBadge(opts.source)+'</span>'+sub+'</span>'+
+           '<span class="res-main"><span class="res-title">'+escapeHtml(title)+srcBadge(opts.source)+juridictionBadge(opts.juridiction)+'</span>'+sub+'</span>'+
            '<span class="res-right">'+right+'</span>'+
          '</div>';
 }
@@ -810,7 +835,7 @@ function setView(v){
   VIEW = v;
   document.querySelectorAll('.nav-item').forEach(function(b){ b.classList.toggle('on', b.dataset.view===v); });
   document.getElementById('view-search').hidden = (v!=='search');
-  document.getElementById('view-browse').hidden = !(v==='ccn'||v==='code'||v==='secu'||v==='juris');
+  document.getElementById('view-browse').hidden = !(v==='ccn'||v==='code'||v==='secu'||v==='juris'||v==='jorf'||v==='acco');
   document.getElementById('view-maj').hidden = (v!=='maj');
   window.scrollTo({top:0});
   if(v==='search'){ document.getElementById('q').focus(); }
@@ -1144,6 +1169,8 @@ function runSearch(){
   var code = searchArticlesV2(SEARCH.code, tokens).slice(0,30);
   var secu = searchArticlesV2(SEARCH.code_secu, tokens).slice(0,20);
   var juris = searchArticlesV2(SEARCH.juris, tokens).slice(0,15);
+  var jorf = searchArticlesV2(SEARCH.jorf, tokens).slice(0,15);
+  var acco = searchArticlesV2(SEARCH.acco, tokens).slice(0,15);
 
   var html = '';
   var multi = tokens.length>=2;
@@ -1175,7 +1202,17 @@ function runSearch(){
   }
   if(juris.length){
     html += '<div class="group-title">Jurisprudence · '+juris.length+'</div><div class="rows">';
-    html += juris.map(function(r){ return rowHtml('juris', r.num, r.title, null, {snippet:highlight(r.snippet.slice(0,180), terms)}); }).join('');
+    html += juris.map(function(r){ return rowHtml('juris', r.num, r.title, null, {snippet:highlight(r.snippet.slice(0,180), terms), juridiction:r.juridiction}); }).join('');
+    html += '</div>';
+  }
+  if(jorf.length){
+    html += '<div class="group-title">Journal Officiel · '+jorf.length+'</div><div class="rows">';
+    html += jorf.map(function(r){ return rowHtml('jorf', r.num, r.title, null, {snippet:highlight(r.snippet.slice(0,180), terms)}); }).join('');
+    html += '</div>';
+  }
+  if(acco.length){
+    html += '<div class="group-title">Accords d\'entreprise · '+acco.length+'</div><div class="rows">';
+    html += acco.map(function(r){ return rowHtml('acco', r.num, r.title, null, {snippet:highlight(r.snippet.slice(0,180), terms), tags:r.themes}); }).join('');
     html += '</div>';
   }
   if(!html){
@@ -1527,6 +1564,8 @@ function computeList(){
   });
   if(source==='ccn') list.sort(function(a,b){ return a.title.localeCompare(b.title,'fr'); });
   else if(source==='juris') list.sort(function(a,b){ return String(a.num).localeCompare(String(b.num),'fr',{numeric:true}); });
+  else if(source==='jorf') list.sort(function(a,b){ return String(a.num).localeCompare(String(b.num),'fr',{numeric:true}); });
+  else if(source==='acco') list.sort(function(a,b){ return String(a.num).localeCompare(String(b.num),'fr',{numeric:true}); });
   else list.sort(function(a,b){ return String(a.num).localeCompare(String(b.num),'fr',{numeric:true}); });
   return list;
 }
@@ -1551,7 +1590,7 @@ function renderBrowse(){
   var slice = list.slice(0, shown);
   var kind = BROWSE.source;
   var html = '<div class="group-title">'+fmt(list.length)+' entrée'+(list.length>1?'s':'')+'</div><div class="rows">';
-  html += slice.map(function(it){ return rowHtml(kind, it.num, it.title, it.etat, {source:it.source}); }).join('');
+  html += slice.map(function(it){ return rowHtml(kind, it.num, it.title, it.etat, {source:it.source, juridiction:it.juridiction, tags:it.themes}); }).join('');
   html += '</div>';
   if(shown < list.length){
     html += '<button class="more" id="more-btn">Afficher plus ('+fmt(list.length-shown)+' restantes)</button>';
@@ -1566,7 +1605,7 @@ function startBrowse(source){
   document.getElementById('browse-h1').textContent = VIEW_TITLES[source][0];
   document.getElementById('browse-p').textContent = VIEW_TITLES[source][1];
   var fi = document.getElementById('filter-input'); fi.value=''; document.getElementById('filter-clr').hidden=true;
-  document.getElementById('subbar').hidden = (source==='juris');
+  document.getElementById('subbar').hidden = (source==='juris'||source==='jorf'||source==='acco');
   renderSubbar();
   renderBrowse();
 }
@@ -1594,6 +1633,8 @@ function pathFor(kind, num){
   if(kind==='ccn')  return 'output/ccn/'+safe+'.json';
   if(kind==='secu') return 'output/code-secu/'+safe+'.json';
   if(kind==='juris')return 'output/jurisprudence/'+safe+'.json';
+  if(kind==='jorf') return 'output/jorf/'+safe+'.json';
+  if(kind==='acco') return 'output/acco/'+safe+'.json';
   return 'output/code-travail/'+safe+'.json';
 }
 function cleanHtml(raw){ return raw ? String(raw).replace(/<script/gi,'&lt;script') : ''; }
@@ -1635,8 +1676,10 @@ async function openDetail(kind, num, target){
   var payload = data;
   if(kind==='code'||kind==='secu') payload = data.article || data;
   if(kind==='juris') payload = data.text || data;
+  if(kind==='jorf') payload = Object.assign({}, data.text||{}, {titre:data.titre, datePublication:data.datePublication});
+  if(kind==='acco') payload = Object.assign({}, data.text||{}, {titre:data.titre, datePublication:data.datePublication});
 
-  var defLabel = kind==='ccn'?'Convention '+num : (kind==='juris'?'Décision '+num : 'Article '+num);
+  var defLabel = kind==='ccn'?'Convention '+num : (kind==='juris'?'Décision '+num : (kind==='jorf'?'Texte JORF '+num : (kind==='acco'?'Accord '+num : 'Article '+num)));
   var title = payload.titre || payload.title || payload.titreLong || defLabel;
   document.getElementById('d-title').textContent = title;
 
@@ -1704,7 +1747,7 @@ function downloadText(filename, content){
 }
 function exportOne(kind, num, payload){
   var title = payload.titre || payload.title ||
-    (kind === 'ccn' ? ('Convention ' + num) : (kind === 'juris' ? ('Décision ' + num) : ('Article ' + num)));
+    (kind === 'ccn' ? ('Convention ' + num) : (kind === 'juris' ? ('Décision ' + num) : (kind === 'jorf' ? ('Texte JORF ' + num) : (kind === 'acco' ? ('Accord ' + num) : ('Article ' + num)))));
   var lines = [title, ''];
   var meta = [];
   meta.push((kind === 'ccn' ? 'IDCC : ' : 'Numéro : ') + num);
@@ -1797,6 +1840,14 @@ function markdownToHtml(md){
       s = s.replace(/^(\d[\w.\-]{4,})/, function(m, num){
         return '<span class="maj-ref" data-kind="juris" data-num="'+num.trim()+'">'+num+'</span>';
       });
+    } else if(kind==='jorf'){
+      s = s.replace(/^(\d[\w.\-]{4,})/, function(m, num){
+        return '<span class="maj-ref" data-kind="jorf" data-num="'+num.trim()+'">'+num+'</span>';
+      });
+    } else if(kind==='acco'){
+      s = s.replace(/^(\d[\w.\-]{4,})/, function(m, num){
+        return '<span class="maj-ref" data-kind="acco" data-num="'+num.trim()+'">'+num+'</span>';
+      });
     }
     return s;
   };
@@ -1813,6 +1864,8 @@ function markdownToHtml(md){
       kind = /Code du travail/i.test(h) ? 'code'
            : /sécurité sociale/i.test(h) ? 'secu'
            : /Jurisprudence/i.test(h) ? 'juris'
+           : /Journal Officiel/i.test(h) ? 'jorf'
+           : /Accords d.entreprise/i.test(h) ? 'acco'
            : null;
       out+='<h3 style="font-size:15px;color:var(--violet-strong);margin:16px 0 6px">'+h+'</h3>'; continue;
     }
@@ -1849,7 +1902,9 @@ async function renderDashboard(){
     {v:'ccn',  n:INDEX.ccn.length,  l:'Conventions collectives'},
     {v:'code', n:INDEX.code.length, l:'Articles · Code du travail'},
     {v:'secu', n:INDEX.secu.length, l:'Articles · Sécurité sociale'},
-    {v:'juris',n:INDEX.juris.length,l:'Décisions de justice'}
+    {v:'juris',n:INDEX.juris.length,l:'Décisions de justice'},
+    {v:'jorf', n:INDEX.jorf.length, l:'Journal Officiel'},
+    {v:'acco', n:INDEX.acco.length, l:'Accords d\'entreprise'}
   ];
   document.getElementById('stat-grid').innerHTML = cards.map(function(c){
     return '<div class="stat" data-view="'+c.v+'"><span class="arrow">→</span>'+
