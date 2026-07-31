@@ -223,17 +223,27 @@ def main():
     # 1) Recherche : un thème à la fois, dédupliqué par identifiant de texte
     #    (un même accord peut couvrir plusieurs thèmes à la fois).
     candidats = {}
+    PAGES_MAX_PAR_THEME = 50  # même garde-fou que pull_jorf.py, pas une vraie limite attendue.
     for theme in themes:
         print(f"Recherche : « {theme} »...")
-        resultat = search_acco_par_theme(base_url, token, theme, args.depuis)
-        if "_error" in resultat:
-            print(f"  échec ({resultat['_error']}), thème suivant.", file=sys.stderr)
-            continue
-        trouves = extract_ids_from_search(resultat)
-        for tid, titre, date_pub in trouves:
-            candidats.setdefault(tid, (titre, date_pub, []))[2].append(theme)
-        print(f"  {len(trouves)} résultat(s).")
-        time.sleep(args.delay)
+        n_pour_ce_theme = 0
+        for page in range(1, PAGES_MAX_PAR_THEME + 1):
+            resultat = search_acco_par_theme(base_url, token, theme, args.depuis, page=page)
+            if "_error" in resultat:
+                print(f"  échec page {page} ({resultat['_error']}), thème suivant.", file=sys.stderr)
+                break
+            trouves = extract_ids_from_search(resultat)
+            if not trouves:
+                break
+            for tid, titre, date_pub in trouves:
+                entree = candidats.setdefault(tid, (titre, date_pub, []))
+                if theme not in entree[2]:
+                    entree[2].append(theme)
+            n_pour_ce_theme += len(trouves)
+            time.sleep(args.delay)
+            if len(trouves) < 20:
+                break
+        print(f"  {n_pour_ce_theme} résultat(s) au total (toutes pages).")
 
     print(f"\n{len(candidats)} accord(s) unique(s) trouvé(s) au total (tous thèmes confondus).")
 

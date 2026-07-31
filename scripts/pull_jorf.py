@@ -222,17 +222,28 @@ def main():
     # 1) Recherche : un mot-clé à la fois, dédupliqué par identifiant de texte
     #    (un même arrêté peut matcher plusieurs mots-clés à la fois).
     candidats = {}  # id -> (titre, date)
+    PAGES_MAX_PAR_MOT_CLE = 50  # 50 × 20 = 1000 résultats max par mot-clé, garde-fou
+                                 # contre une boucle qui s'emballerait si l'API se
+                                 # comporte de façon inattendue -- pas une vraie limite
+                                 # attendue en pratique, juste une sécurité.
     for mot_cle in mots_cles:
         print(f"Recherche : « {mot_cle} »...")
-        resultat = search_jorf_par_mot_cle(base_url, token, mot_cle, args.depuis)
-        if "_error" in resultat:
-            print(f"  échec ({resultat['_error']}), mot-clé suivant.", file=sys.stderr)
-            continue
-        trouves = extract_ids_from_search(resultat)
-        for tid, titre, date_pub in trouves:
-            candidats[tid] = (titre, date_pub)
-        print(f"  {len(trouves)} résultat(s).")
-        time.sleep(args.delay)
+        n_pour_ce_mot = 0
+        for page in range(1, PAGES_MAX_PAR_MOT_CLE + 1):
+            resultat = search_jorf_par_mot_cle(base_url, token, mot_cle, args.depuis, page=page)
+            if "_error" in resultat:
+                print(f"  échec page {page} ({resultat['_error']}), mot-clé suivant.", file=sys.stderr)
+                break
+            trouves = extract_ids_from_search(resultat)
+            if not trouves:
+                break  # page vide -> plus rien à cette page, mot-clé épuisé
+            for tid, titre, date_pub in trouves:
+                candidats[tid] = (titre, date_pub)
+            n_pour_ce_mot += len(trouves)
+            time.sleep(args.delay)
+            if len(trouves) < 20:
+                break  # dernière page partielle -> confirmé qu'il n'y a rien après
+        print(f"  {n_pour_ce_mot} résultat(s) au total (toutes pages).")
 
     print(f"\n{len(candidats)} texte(s) unique(s) trouvé(s) au total (tous mots-clés confondus).")
 
