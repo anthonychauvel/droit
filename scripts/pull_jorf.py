@@ -1,180 +1,170 @@
 #!/usr/bin/env python3
 """
-pull_jorf.py — Module 2 (Journal Officiel, volet social) : récupère les textes
-du fonds JORF pertinents pour la RH (arrêtés d'extension, SMIC, plafonds,
-cotisations, activité partielle...) depuis l'API PISTE/Légifrance.
+pull_jorf.py — Module 2 (Journal Officiel, volet social) : ÉNUMÈRE tous les
+textes parus au JO sur la fenêtre glissante de 10 ans, puis récupère et
+filtre ceux qui touchent la RH.
 
-Usage:
-    python3 pull_jorf.py --out output/jorf --mots-cles "arrêté d'extension,SMIC"
-    (--depuis calculé automatiquement à 10 ans avant aujourd'hui si omis)
+CHANGEMENT MAJEUR du 31/07/2026 -- pourquoi cette réécriture :
+La version précédente cherchait par mot-clé via /search, qui plafonnait à
+~40 résultats quoi qu'on fasse (pagination bloquée côté API). La doc
+officielle Légifrance décrit un flux d'ÉNUMÉRATION complète, bien plus fiable,
+exactement le même principe que list_all_code_articles.py pour le Code du
+travail (lister d'abord, remplir ensuite) :
 
-Variables d'environnement requises (identiques à pull_ccn.py — même
-application PISTE) :
-    PISTE_CLIENT_ID
-    PISTE_CLIENT_SECRET
-    PISTE_ENV = "sandbox" ou "production" (défaut: sandbox)
+  1. /consult/lastNJo   -> liste les N derniers Journaux Officiels (conteneurs
+                           JORFCONT). Plafond documenté : N < 2500.
+  2. /consult/jorfCont  -> pour chaque JO, la liste de tous les JORFTEXT qui y
+                           ont été publiés.
+  3. /consult/jorf      -> le contenu intégral d'un texte (déjà utilisé et
+                           fonctionnel depuis le correctif CID).
 
-IMPORTANT, à valider au premier run réel (pas testable dans ce bac à sable,
-aucun identifiant PISTE disponible ici) :
-  - Le endpoint /consult exact pour un texte JORF individuel est supposé être
-    "/consult/jorf" avec {"textCid": id} par analogie avec les autres consult
-    de cette même API -- à confirmer contre la vraie documentation PISTE au
-    premier essai, pas garanti à 100% comme pour /consult/kaliContIdcc (déjà
-    prouvé par pull_ccn.py).
-  - Le filtre par ÉMETTEUR (ministère) n'est pas implémenté comme paramètre
-    de recherche : je n'ai pas la certitude que /search le supporte
-    nativement pour le fonds JORF. À la place, chaque texte récupéré garde
-    ses métadonnées brutes -- un filtre par émetteur en post-traitement sur
-    le texte récupéré est ajoutable dès que la vraie forme de ces métadonnées
-    est connue (premier run réel).
+On énumère donc TOUT le JO sur la période (des dizaines de milliers de textes),
+puis on ne garde que ceux dont le titre matche un motif RH. C'est plus lourd
+qu'une recherche, mais exhaustif -- l'inverse du compromis précédent.
+
+Variables d'environnement (identiques au reste) :
+    PISTE_CLIENT_ID / PISTE_CLIENT_SECRET / PISTE_ENV (défaut sandbox)
+
+Fenêtre : 10 ans glissants, recalculée à chaque run. Ne supprime jamais
+l'existant -- aucune ligne de suppression dans ce script.
+
+À VALIDER au premier run réel (formes déduites de la doc, pas encore testées
+ici, aucun identifiant PISTE dans ce bac à sable) :
+  - /consult/lastNJo : corps {"nbElement": N} -- nom du champ à confirmer.
+  - /consult/jorfCont : corps {"textCid": "JORFCONT..."} -- à confirmer.
+  Si l'un des deux diffère, le message d'erreur complet (affiché intégralement
+  ci-dessous) donnera la vraie forme.
 """
 import os
 import sys
+import re
 import json
 import time
 import argparse
 import urllib.request
 import urllib.error
 import urllib.parse
-from datetime import date
+from datetime import date, datetime, timedelta
 
 
-# ── Authentification et appel générique : identiques à pull_ccn.py, mêmes
-#    identifiants PISTE, même application -- rien de nouveau à configurer.
 def get_urls():
     env = os.environ.get("PISTE_ENV", "sandbox").lower()
     if env == "production":
-        return (
-            "https://oauth.piste.gouv.fr/api/oauth/token",
-            "https://api.piste.gouv.fr/dila/legifrance/lf-engine-app",
-        )
-    return (
-        "https://sandbox-oauth.piste.gouv.fr/api/oauth/token",
-        "https://sandbox-api.piste.gouv.fr/dila/legifrance/lf-engine-app",
-    )
+        return ("https://oauth.piste.gouv.fr/api/oauth/token",
+                "https://api.piste.gouv.fr/dila/legifrance/lf-engine-app")
+    return ("https://sandbox-oauth.piste.gouv.fr/api/oauth/token",
+            "https://sandbox-api.piste.gouv.fr/dila/legifrance/lf-engine-app")
 
 
 def get_token(token_url, client_id, client_secret):
     data = urllib.parse.urlencode({
-        "grant_type": "client_credentials",
-        "client_id": client_id,
-        "client_secret": client_secret,
-        "scope": "openid",
+        "grant_type": "client_credentials", "client_id": client_id,
+        "client_secret": client_secret, "scope": "openid",
     }).encode()
-    req = urllib.request.Request(
-        token_url, data=data, method="POST",
-        headers={"Content-Type": "application/x-www-form-urlencoded"},
-    )
+    req = urllib.request.Request(token_url, data=data, method="POST",
+        headers={"Content-Type": "application/x-www-form-urlencoded"})
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
-            payload = json.loads(resp.read())
-        return payload["access_token"]
+            return json.loads(resp.read())["access_token"]
     except urllib.error.HTTPError as e:
-        detail = e.read().decode(errors="replace")
-        print(f"ERREUR obtention du jeton ({e.code}): {detail[:500]}", file=sys.stderr)
+        print(f"ERREUR jeton ({e.code}): {e.read().decode(errors='replace')[:500]}", file=sys.stderr)
         sys.exit(1)
 
 
 def call_api(base_url, token, path, body):
     req = urllib.request.Request(
-        base_url + path,
-        data=json.dumps(body).encode("utf-8"),
-        method="POST",
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-        },
-    )
+        base_url + path, data=json.dumps(body).encode("utf-8"), method="POST",
+        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json",
+                 "Accept": "application/json"})
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=60) as resp:
             return json.loads(resp.read())
     except urllib.error.HTTPError as e:
-        body_txt = e.read().decode(errors="replace")
-        return {"_error": e.code, "_detail": body_txt}
+        return {"_error": e.code, "_detail": e.read().decode(errors="replace")}
     except Exception as e:
         return {"_error": "exception", "_detail": str(e)}
 
 
 def date_dix_ans_glissante():
-    """Aujourd'hui moins 10 ans, recalculé à CHAQUE run -- pas une date fixe
-    codée en dur. Cette fenêtre ne sert QU'à borner ce qu'on va CHERCHER de
-    nouveau : elle ne supprime jamais rien de ce qui a déjà été récupéré.
-    Un texte de 2016 récupéré aujourd'hui reste sur disque même le jour où
-    la fenêtre glissante dépasse 2016 -- ce script n'a d'ailleurs aucune
-    ligne qui supprime un fichier, seulement des lignes qui en ajoutent.
-    """
+    """Aujourd'hui moins 10 ans, recalculé à chaque run. Ne borne que
+    l'énumération, ne supprime jamais l'existant."""
     aujourdhui = date.today()
     try:
-        return aujourdhui.replace(year=aujourdhui.year - 10).isoformat()
+        return aujourdhui.replace(year=aujourdhui.year - 10)
     except ValueError:
-        # 29 février tombé sur une année non bissextile 10 ans plus tôt.
-        return aujourdhui.replace(year=aujourdhui.year - 10, day=28).isoformat()
+        return aujourdhui.replace(year=aujourdhui.year - 10, day=28)
 
 
-def search_jorf_par_mot_cle(base_url, token, mot_cle, depuis, page=1):
-    """Cherche dans le fonds JORF, mot-clé dans TOUT LE TEXTE (typeChamp=ALL,
-    pas TITLE) -- un arrêté peut parler de SMIC en long sans jamais le dire
-    dans son propre titre, souvent générique ("Arrêté du [date] portant...").
-    Repéré le 31/07/2026 : la recherche par titre seul donnait 40 résultats
-    sur 6 mots-clés au lieu des milliers attendus sur 10 ans -- typeChamp=ALL
-    confirmé par la doc d'une bibliothèque tierce utilisant la même API.
-    périmètre "10 dernières années" du cahier des charges."""
-    body = {
-        "fond": "JORF",
-        "recherche": {
-            "champs": [{
-                "typeChamp": "ALL",
-                "operateur": "OU",
-                "criteres": [{
-                    "valeur": mot_cle,
-                    "typeRecherche": "UN_DES_MOTS",
-                    "operateur": "OU",
-                }],
-            }],
-            "filtres": [{
-                "facette": "DATE_PUBLICATION",
-                "dates": {"start": depuis, "end": None},
-            }],
-            "sort": "PUBLICATION_DATE_DESC",
-            "fromAdvancedRecherche": False,
-            "pageNumber": page,
-            "pageSize": 20,
-            "typePagination": "DEFAUT",
-            "operateur": "OU",
-        },
-    }
-    return call_api(base_url, token, "/search", body)
+# Motif RH appliqué au TITRE de chaque texte énuméré -- large exprès, un
+# arrêté d'extension de CCN, une revalorisation SMIC, un décret cotisations,
+# doivent tous passer. Insensible à la casse et aux accents (normalisés avant).
+MOTIF_RH = re.compile(
+    r"extension|avenant|convention collective|accord|salair|smic|"
+    r"plafond.*s[ée]curit[ée] sociale|cotisation|activit[ée] partielle|"
+    r"temps de travail|t[ée]l[ée]travail|forfait|[ée]galit[ée] professionnelle|"
+    r"[ée]pargne salariale|participation|int[ée]ressement|pr[ée]voyance|"
+    r"retraite compl[ée]mentaire|apprentissage|formation professionnelle",
+    re.IGNORECASE)
 
 
-def extract_ids_from_search(search_result):
-    """Renvoie [(id_texte, titre, date), ...] depuis une réponse /search.
+def titre_est_rh(titre):
+    return bool(MOTIF_RH.search(titre or ""))
 
-    Repéré le 31/07/2026 sur un vrai run : le champ "id" des sous-sections
-    "titles" porte parfois un suffixe de date collé au CID réel (ex.
-    "JORFTEXT000032950646_01-01-2999") -- probablement une date de fin de
-    validité encodée directement dans l'identifiant d'affichage, pas le CID
-    attendu par /consult. On ne garde que ce qui précède le premier "_" :
-    les CID Légifrance eux-mêmes ne contiennent jamais de underscore.
-    """
-    trouves = []
-    for r in (search_result or {}).get("results", []):
-        titre = r.get("titre") or r.get("title") or ""
-        date_pub = r.get("datePublication") or r.get("date") or ""
-        for section in (r.get("titles") or [{"id": r.get("id")}]):
-            tid = section.get("id") or r.get("id")
-            if tid:
-                tid = str(tid).split("_")[0]
-                trouves.append((tid, titre, date_pub))
-    return trouves
+
+def lister_jo_conteneurs(base_url, token, depuis, debug_dir):
+    """Étape 1 : liste les JORFCONT (conteneurs de JO) sur la période.
+    lastNJo renvoie les N derniers -- on demande large et on filtre par date
+    ensuite. N < 2500 (limite documentée) -> pour 10 ans (~2600 JO quotidiens),
+    on plafonne à 2499 et on prévient si la période n'est pas entièrement
+    couverte."""
+    resultat = call_api(base_url, token, "/consult/lastNJo", {"nbElement": 2499})
+    if debug_dir:
+        os.makedirs(debug_dir, exist_ok=True)
+        with open(os.path.join(debug_dir, "_lastNJo.json"), "w", encoding="utf-8") as f:
+            json.dump(resultat, f, ensure_ascii=False, indent=2)
+    if "_error" in resultat:
+        return None, resultat
+
+    conteneurs = []
+    # La réponse liste des conteneurs ; on tolère plusieurs noms de champ
+    # possibles puisque la forme exacte n'est pas encore confirmée.
+    items = resultat.get("containers") or resultat.get("jo") or resultat.get("results") or []
+    for it in items:
+        cid = it.get("id") or it.get("cid") or it.get("jorfContId")
+        d = it.get("date") or it.get("publicationDate") or ""
+        if cid:
+            conteneurs.append((cid, d))
+    return conteneurs, None
+
+
+def lister_textes_du_jo(base_url, token, jorf_cont_id):
+    """Étape 2 : les JORFTEXT publiés dans un JO donné."""
+    resultat = call_api(base_url, token, "/consult/jorfCont", {"textCid": jorf_cont_id})
+    if "_error" in resultat:
+        return None, resultat
+    textes = []
+
+    def walk(node):
+        if isinstance(node, dict):
+            tid = node.get("id") or node.get("cid")
+            titre = node.get("title") or node.get("titre") or ""
+            if tid and str(tid).startswith("JORFTEXT"):
+                textes.append((str(tid).split("_")[0], titre))
+            for v in node.values():
+                walk(v)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v)
+
+    walk(resultat)
+    return textes, None
 
 
 def fetch_un_texte(base_url, token, text_id, debug_dir=None):
-    """Récupère le texte intégral d'un document JORF par son identifiant.
-    Endpoint /consult/jorf -- À VALIDER au premier run réel, voir note en
-    tête de fichier."""
+    """Étape 3 : contenu intégral. Endpoint déjà fonctionnel depuis le
+    correctif CID du 31/07."""
     result = call_api(base_url, token, "/consult/jorf", {"textCid": text_id})
-    if debug_dir:
+    if debug_dir and not os.path.exists(os.path.join(debug_dir, f"{text_id}.json")):
         os.makedirs(debug_dir, exist_ok=True)
         with open(os.path.join(debug_dir, f"{text_id}.json"), "w", encoding="utf-8") as f:
             json.dump(result, f, ensure_ascii=False, indent=2)
@@ -183,131 +173,119 @@ def fetch_un_texte(base_url, token, text_id, debug_dir=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default="output/jorf", help="Dossier de sortie")
-    ap.add_argument("--mots-cles",
-                     default="arrêté d'extension,avenant,SMIC,plafond de la sécurité sociale,"
-                             "cotisation,activité partielle",
-                     help="Mots-clés séparés par des virgules, recherchés dans le TITRE des textes JORF")
+    ap.add_argument("--out", default="output/jorf")
     ap.add_argument("--depuis", default=None,
-                     help="Date de début (JJJJ-MM-JJ) -- par défaut, calculée comme 10 ans avant "
-                          "AUJOURD'HUI (fenêtre glissante, jamais une date fixe). Ne sert qu'à "
-                          "borner la recherche de nouveaux textes ; ne supprime jamais l'existant.")
-    ap.add_argument("--delay", type=float, default=1.2, help="Délai entre appels (s)")
+                     help="Date de début (JJJJ-MM-JJ). Défaut : 10 ans glissants.")
+    ap.add_argument("--delay", type=float, default=1.0, help="Délai entre appels (s)")
     ap.add_argument("--only-missing", action="store_true",
-                     help="Ne retraite que les textes absents du résumé existant -- beaucoup plus "
-                          "rapide sur les runs suivants (mêmes conventions que pull_ccn.py).")
-    ap.add_argument("--max", type=int, default=200,
-                     help="Plafond de textes traités ce run (0 = pas de plafond).")
+                     help="Ne récupère le CONTENU que des textes RH pas encore acquis.")
+    ap.add_argument("--max", type=int, default=300,
+                     help="Plafond de CONTENUS récupérés ce run (0 = pas de plafond). "
+                          "L'énumération, elle, est toujours complète.")
+    ap.add_argument("--max-jo", type=int, default=2499,
+                     help="Plafond de JO à énumérer (garde-fou).")
     args = ap.parse_args()
-    if args.depuis is None:
-        args.depuis = date_dix_ans_glissante()
+
+    depuis = date.fromisoformat(args.depuis) if args.depuis else date_dix_ans_glissante()
 
     client_id = os.environ.get("PISTE_CLIENT_ID")
     client_secret = os.environ.get("PISTE_CLIENT_SECRET")
     if not client_id or not client_secret:
-        print("ERREUR: PISTE_CLIENT_ID / PISTE_CLIENT_SECRET manquants (GitHub Secrets).", file=sys.stderr)
+        print("ERREUR: identifiants PISTE manquants.", file=sys.stderr)
         sys.exit(1)
 
-    mots_cles = [m.strip() for m in args.mots_cles.split(",") if m.strip()]
-
     token_url, base_url = get_urls()
-    print(f"Environnement: {'production' if 'sandbox' not in base_url else 'SANDBOX (données possiblement périmées)'}")
+    print(f"Environnement: {'production' if 'sandbox' not in base_url else 'SANDBOX'}")
     token = get_token(token_url, client_id, client_secret)
-    print(f"Token OK. {len(mots_cles)} mot(s)-clé(s) à chercher depuis {args.depuis}.")
+    print(f"Token OK. Énumération du JO depuis {depuis.isoformat()} (fenêtre glissante 10 ans).")
 
     os.makedirs(args.out, exist_ok=True)
+    debug_dir = os.path.join(args.out, "_debug")
     summary_path = os.path.join(args.out, "_summary.json")
 
-    # Même principe de reprise que pull_ccn.py : les "ok" déjà acquis restent
-    # acquis, peu importe si un run ultérieur retraite une fenêtre différente.
-    existing_summary = {}
+    existing = {}
     if os.path.exists(summary_path):
         try:
-            with open(summary_path, encoding="utf-8") as f:
-                for entry in json.load(f):
-                    if entry.get("id"):
-                        existing_summary[entry["id"]] = entry
+            for e in json.load(open(summary_path, encoding="utf-8")):
+                if e.get("id"):
+                    existing[e["id"]] = e
         except Exception:
-            existing_summary = {}
-    preserved_ok = {k: v for k, v in existing_summary.items() if v.get("status") == "ok"}
+            existing = {}
+    preserved_ok = {k: v for k, v in existing.items() if v.get("status") == "ok"}
 
-    # 1) Recherche : un mot-clé à la fois, dédupliqué par identifiant de texte
-    #    (un même arrêté peut matcher plusieurs mots-clés à la fois).
-    candidats = {}  # id -> (titre, date)
-    PAGES_MAX_PAR_MOT_CLE = 50  # 50 × 20 = 1000 résultats max par mot-clé, garde-fou
-                                 # contre une boucle qui s'emballerait si l'API se
-                                 # comporte de façon inattendue -- pas une vraie limite
-                                 # attendue en pratique, juste une sécurité.
-    for mot_cle in mots_cles:
-        print(f"Recherche : « {mot_cle} »...")
-        n_pour_ce_mot = 0
-        for page in range(1, PAGES_MAX_PAR_MOT_CLE + 1):
-            resultat = search_jorf_par_mot_cle(base_url, token, mot_cle, args.depuis, page=page)
-            if page == 1 and "_error" not in resultat:
-                # Un seul dump, sur la toute première recherche réussie -- juste
-                # pour voir la vraie forme d'une réponse /search JORF et vérifier
-                # que extract_ids_from_search() en extrait le bon identifiant.
-                debug_path = os.path.join(args.out, "_debug_reponse_search_brute.json")
-                if not os.path.exists(debug_path):
-                    os.makedirs(args.out, exist_ok=True)
-                    with open(debug_path, "w", encoding="utf-8") as f:
-                        json.dump(resultat, f, ensure_ascii=False, indent=2)
-            if "_error" in resultat:
-                print(f"  échec page {page} ({resultat['_error']}) : "
-                      f"{str(resultat.get('_detail',''))[:300]}", file=sys.stderr)
-                break
-            trouves = extract_ids_from_search(resultat)
-            if not trouves:
-                break  # page vide -> plus rien à cette page, mot-clé épuisé
-            for tid, titre, date_pub in trouves:
-                candidats[tid] = (titre, date_pub)
-            n_pour_ce_mot += len(trouves)
+    # ── Étape 1 : conteneurs de JO ──
+    print("Étape 1 : liste des Journaux Officiels...")
+    conteneurs, err = lister_jo_conteneurs(base_url, token, depuis, debug_dir)
+    if err:
+        print(f"ÉCHEC lastNJo ({err['_error']}) : {str(err.get('_detail',''))[:400]}", file=sys.stderr)
+        print("Rien récupéré -- voir le message ci-dessus pour la vraie forme du endpoint.", file=sys.stderr)
+        sys.exit(1)
+
+    depuis_dt = datetime.combine(depuis, datetime.min.time())
+    conteneurs_periode = []
+    for cid, d in conteneurs:
+        try:
+            if d and datetime.fromisoformat(d[:10]) < depuis_dt:
+                continue
+        except ValueError:
+            pass
+        conteneurs_periode.append(cid)
+    conteneurs_periode = conteneurs_periode[:args.max_jo]
+    print(f"  {len(conteneurs)} JO listés, {len(conteneurs_periode)} dans la fenêtre de 10 ans.")
+    if len(conteneurs) >= 2499:
+        print("  ATTENTION : plafond de 2499 JO atteint -- la période de 10 ans n'est "
+              "peut-être pas entièrement couverte (le JO paraît quotidiennement). "
+              "Les JO les plus anciens de la fenêtre peuvent manquer.", file=sys.stderr)
+
+    # ── Étape 2 : énumération des textes, filtrés RH sur le titre ──
+    print("Étape 2 : énumération des textes RH dans chaque JO...")
+    candidats_rh = {}  # id -> titre
+    for i, cid in enumerate(conteneurs_periode, 1):
+        textes, err = lister_textes_du_jo(base_url, token, cid)
+        if err:
+            print(f"  [{i}/{len(conteneurs_periode)}] JO {cid} : échec ({err['_error']})", file=sys.stderr)
             time.sleep(args.delay)
-            if len(trouves) < 20:
-                break  # dernière page partielle -> confirmé qu'il n'y a rien après
-        print(f"  {n_pour_ce_mot} résultat(s) au total (toutes pages).")
+            continue
+        rh = [(tid, titre) for tid, titre in textes if titre_est_rh(titre)]
+        for tid, titre in rh:
+            candidats_rh[tid] = titre
+        if i % 25 == 0 or rh:
+            print(f"  [{i}/{len(conteneurs_periode)}] JO {cid} : {len(textes)} textes, "
+                  f"{len(rh)} RH (cumul {len(candidats_rh)})")
+        time.sleep(args.delay)
 
-    print(f"\n{len(candidats)} texte(s) unique(s) trouvé(s) au total (tous mots-clés confondus).")
+    print(f"\n{len(candidats_rh)} texte(s) RH énuméré(s) au total sur la période.")
 
-    a_traiter = list(candidats.keys())
+    # ── Étape 3 : récupération du contenu ──
+    a_traiter = list(candidats_rh.keys())
     if args.only_missing:
         avant = len(a_traiter)
-        a_traiter = [tid for tid in a_traiter if tid not in preserved_ok]
-        print(f"Mode --only-missing : {avant - len(a_traiter)} déjà OK protégés, {len(a_traiter)} à traiter.")
+        a_traiter = [t for t in a_traiter if t not in preserved_ok]
+        print(f"Mode --only-missing : {avant - len(a_traiter)} déjà OK, {len(a_traiter)} à récupérer.")
     if args.max and len(a_traiter) > args.max:
-        print(f"Plafond --max {args.max} : {len(a_traiter)} candidats, le reste au run suivant.")
+        print(f"Plafond --max {args.max} : le reste au prochain run.")
         a_traiter = a_traiter[:args.max]
 
-    # 2) Récupération du texte intégral, un par un.
-    debug_dir = os.path.join(args.out, "_debug_search")
     summary = list(preserved_ok.values())
     n_ok, n_echec = 0, 0
-
-    for i, text_id in enumerate(a_traiter, 1):
-        titre, date_pub = candidats[text_id]
+    for i, tid in enumerate(a_traiter, 1):
+        titre = candidats_rh[tid]
         print(f"[{i}/{len(a_traiter)}] {titre[:60]}...", end=" ")
-        result = fetch_un_texte(base_url, token, text_id, debug_dir=debug_dir)
-
+        result = fetch_un_texte(base_url, token, tid, debug_dir=debug_dir)
         if "_error" in result:
-            print(f"ÉCHEC ({result['_error']}) : {str(result.get('_detail',''))[:300]}")
-            summary.append({"id": text_id, "titre": titre, "status": "erreur",
-                             "detail": str(result.get("_detail", ""))[:200]})
+            print(f"ÉCHEC ({result['_error']}) : {str(result.get('_detail',''))[:200]}")
+            summary.append({"id": tid, "titre": titre, "status": "erreur"})
             n_echec += 1
         else:
-            chemin = os.path.join(args.out, f"{text_id}.json")
-            with open(chemin, "w", encoding="utf-8") as f:
-                json.dump({"titre": titre, "datePublication": date_pub, "text": result}, f,
-                          ensure_ascii=False, indent=2)
-            summary.append({"id": text_id, "titre": titre, "datePublication": date_pub, "status": "ok"})
+            with open(os.path.join(args.out, f"{tid}.json"), "w", encoding="utf-8") as f:
+                json.dump({"titre": titre, "text": result}, f, ensure_ascii=False, indent=2)
+            summary.append({"id": tid, "titre": titre, "status": "ok"})
             print("ok")
             n_ok += 1
         time.sleep(args.delay)
 
-    with open(summary_path, "w", encoding="utf-8") as f:
-        json.dump(summary, f, ensure_ascii=False, indent=2)
-
-    print(f"\n{n_ok} texte(s) récupéré(s), {n_echec} échec(s), "
-          f"{len(preserved_ok)} déjà acquis avant ce run.")
+    json.dump(summary, open(summary_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    print(f"\n{n_ok} récupéré(s), {n_echec} échec(s), {len(preserved_ok)} déjà acquis avant ce run.")
     return 0
 
 
