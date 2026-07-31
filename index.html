@@ -486,8 +486,8 @@ async function fetchText(rel){
 }
 
 /* ---- état global ---- */
-var INDEX  = { ccn:[], code:[], secu:[], juris:[] };   // {num,title,etat,source}
-var SEARCH = { ccn:[], code:[], code_secu:[], juris:[] };
+var INDEX  = { ccn:[], code:[], secu:[], juris:[], jorf:[], acco:[] };   // {num,title,etat,source}
+var SEARCH = { ccn:[], code:[], code_secu:[], juris:[], jorf:[], acco:[] };
 var CCN_LISTE = [];
 var AUDITS = [];
 var TRENDS = null;   // mode évolutif : mots/expressions fréquents (optionnel)
@@ -829,7 +829,9 @@ var VIEW_TITLES = {
   ccn:  ['Conventions collectives','La liste intégrale des conventions suivies, classée. Cliquez une ligne pour lire le texte.'],
   code: ['Code du travail','Tous les articles récupérés. Filtrez par partie (loi/règlement) ou par livre — chaque ligne indique validé ou abrogé.'],
   secu: ['Code de la sécurité sociale','Tous les articles récupérés. Filtrez par partie ou par livre — validé ou abrogé indiqué directement.'],
-  juris:['Jurisprudence','Les décisions de justice suivies. Cliquez pour lire.']
+  juris:['Jurisprudence','Les décisions de justice suivies. Cliquez pour lire.'],
+  jorf: ['Journal Officiel','Les textes du Journal Officiel touchant la RH : arrêtés d\'extension, SMIC, plafonds, cotisations, activité partielle. Cliquez pour lire.'],
+  acco: ['Accords d\'entreprise','Les accords d\'entreprise récupérés, pour comparer ce qui se négocie ailleurs. Cliquez pour lire.']
 };
 function setView(v){
   VIEW = v;
