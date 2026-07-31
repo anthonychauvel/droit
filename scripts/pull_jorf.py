@@ -122,11 +122,11 @@ def search_jorf_par_mot_cle(base_url, token, mot_cle, depuis, page=1):
         "recherche": {
             "champs": [{
                 "typeChamp": "TITLE",
-                "operateur": "ET",
+                "operateur": "OU",
                 "criteres": [{
                     "valeur": mot_cle,
                     "typeRecherche": "UN_DES_MOTS",
-                    "operateur": "ET",
+                    "operateur": "OU",
                 }],
             }],
             "filtres": [{
@@ -138,7 +138,7 @@ def search_jorf_par_mot_cle(base_url, token, mot_cle, depuis, page=1):
             "pageNumber": page,
             "pageSize": 20,
             "typePagination": "DEFAUT",
-            "operateur": "ET",
+            "operateur": "OU",
         },
     }
     return call_api(base_url, token, "/search", body)
@@ -231,8 +231,18 @@ def main():
         n_pour_ce_mot = 0
         for page in range(1, PAGES_MAX_PAR_MOT_CLE + 1):
             resultat = search_jorf_par_mot_cle(base_url, token, mot_cle, args.depuis, page=page)
+            if page == 1 and "_error" not in resultat:
+                # Un seul dump, sur la toute première recherche réussie -- juste
+                # pour voir la vraie forme d'une réponse /search JORF et vérifier
+                # que extract_ids_from_search() en extrait le bon identifiant.
+                debug_path = os.path.join(args.out, "_debug_reponse_search_brute.json")
+                if not os.path.exists(debug_path):
+                    os.makedirs(args.out, exist_ok=True)
+                    with open(debug_path, "w", encoding="utf-8") as f:
+                        json.dump(resultat, f, ensure_ascii=False, indent=2)
             if "_error" in resultat:
-                print(f"  échec page {page} ({resultat['_error']}), mot-clé suivant.", file=sys.stderr)
+                print(f"  échec page {page} ({resultat['_error']}) : "
+                      f"{str(resultat.get('_detail',''))[:300]}", file=sys.stderr)
                 break
             trouves = extract_ids_from_search(resultat)
             if not trouves:
@@ -267,7 +277,7 @@ def main():
         result = fetch_un_texte(base_url, token, text_id, debug_dir=debug_dir)
 
         if "_error" in result:
-            print(f"ÉCHEC ({result['_error']})")
+            print(f"ÉCHEC ({result['_error']}) : {str(result.get('_detail',''))[:300]}")
             summary.append({"id": text_id, "titre": titre, "status": "erreur",
                              "detail": str(result.get("_detail", ""))[:200]})
             n_echec += 1

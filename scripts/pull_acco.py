@@ -123,11 +123,11 @@ def search_acco_par_theme(base_url, token, theme, depuis, page=1):
         "recherche": {
             "champs": [{
                 "typeChamp": "TITLE",
-                "operateur": "ET",
+                "operateur": "OU",
                 "criteres": [{
                     "valeur": theme,
                     "typeRecherche": "UN_DES_MOTS",
-                    "operateur": "ET",
+                    "operateur": "OU",
                 }],
             }],
             "filtres": [{
@@ -139,7 +139,7 @@ def search_acco_par_theme(base_url, token, theme, depuis, page=1):
             "pageNumber": page,
             "pageSize": 20,
             "typePagination": "DEFAUT",
-            "operateur": "ET",
+            "operateur": "OU",
         },
     }
     return call_api(base_url, token, "/search", body)
@@ -229,8 +229,15 @@ def main():
         n_pour_ce_theme = 0
         for page in range(1, PAGES_MAX_PAR_THEME + 1):
             resultat = search_acco_par_theme(base_url, token, theme, args.depuis, page=page)
+            if page == 1 and "_error" not in resultat:
+                debug_path = os.path.join(args.out, "_debug_reponse_search_brute.json")
+                if not os.path.exists(debug_path):
+                    os.makedirs(args.out, exist_ok=True)
+                    with open(debug_path, "w", encoding="utf-8") as f:
+                        json.dump(resultat, f, ensure_ascii=False, indent=2)
             if "_error" in resultat:
-                print(f"  échec page {page} ({resultat['_error']}), thème suivant.", file=sys.stderr)
+                print(f"  échec page {page} ({resultat['_error']}) : "
+                      f"{str(resultat.get('_detail',''))[:300]}", file=sys.stderr)
                 break
             trouves = extract_ids_from_search(resultat)
             if not trouves:
@@ -267,7 +274,7 @@ def main():
         result = fetch_un_accord(base_url, token, text_id, debug_dir=debug_dir)
 
         if "_error" in result:
-            print(f"ÉCHEC ({result['_error']})")
+            print(f"ÉCHEC ({result['_error']}) : {str(result.get('_detail',''))[:300]}")
             summary.append({"id": text_id, "titre": titre, "status": "erreur",
                              "detail": str(result.get("_detail", ""))[:200]})
             n_echec += 1
