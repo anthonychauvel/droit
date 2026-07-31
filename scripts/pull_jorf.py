@@ -145,7 +145,15 @@ def search_jorf_par_mot_cle(base_url, token, mot_cle, depuis, page=1):
 
 
 def extract_ids_from_search(search_result):
-    """Renvoie [(id_texte, titre, date), ...] depuis une réponse /search."""
+    """Renvoie [(id_texte, titre, date), ...] depuis une réponse /search.
+
+    Repéré le 31/07/2026 sur un vrai run : le champ "id" des sous-sections
+    "titles" porte parfois un suffixe de date collé au CID réel (ex.
+    "JORFTEXT000032950646_01-01-2999") -- probablement une date de fin de
+    validité encodée directement dans l'identifiant d'affichage, pas le CID
+    attendu par /consult. On ne garde que ce qui précède le premier "_" :
+    les CID Légifrance eux-mêmes ne contiennent jamais de underscore.
+    """
     trouves = []
     for r in (search_result or {}).get("results", []):
         titre = r.get("titre") or r.get("title") or ""
@@ -153,6 +161,7 @@ def extract_ids_from_search(search_result):
         for section in (r.get("titles") or [{"id": r.get("id")}]):
             tid = section.get("id") or r.get("id")
             if tid:
+                tid = str(tid).split("_")[0]
                 trouves.append((tid, titre, date_pub))
     return trouves
 

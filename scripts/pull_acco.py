@@ -146,7 +146,12 @@ def search_acco_par_theme(base_url, token, theme, depuis, page=1):
 
 
 def extract_ids_from_search(search_result):
-    """Renvoie [(id_texte, titre, date), ...] depuis une réponse /search."""
+    """Renvoie [(id_texte, titre, date), ...] depuis une réponse /search.
+
+    Même correctif que pull_jorf.py (31/07/2026) : le "id" des sous-sections
+    "titles" peut porter un suffixe de date collé au CID réel -- on ne garde
+    que ce qui précède le premier "_".
+    """
     trouves = []
     for r in (search_result or {}).get("results", []):
         titre = r.get("titre") or r.get("title") or ""
@@ -154,6 +159,7 @@ def extract_ids_from_search(search_result):
         for section in (r.get("titles") or [{"id": r.get("id")}]):
             tid = section.get("id") or r.get("id")
             if tid:
+                tid = str(tid).split("_")[0]
                 trouves.append((tid, titre, date_pub))
     return trouves
 
