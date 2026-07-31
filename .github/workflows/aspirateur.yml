@@ -160,6 +160,7 @@ jobs:
           # de suite, sans attendre la fin des étapes lentes qui suivent).
           python3 scripts/build_search_index.py --out output/search-index.json || true
           python3 scripts/build_trends.py --out output/search-trends.json || true
+          python3 scripts/build_clauses_index.py --ccn-dir output/ccn --out output/clauses-index.json || true
           python3 scripts/build_manifest.py --out output/manifest.json || true
           git add output/ audits/ idcc_list.txt idcc_list_complet.txt idcc_fusions.csv all_articles_code_travail.txt all_articles_code_secu.txt 2>/dev/null || true
           if git diff --staged --quiet; then
@@ -410,6 +411,7 @@ jobs:
         run: |
           python3 scripts/build_search_index.py --out output/search-index.json
           python3 scripts/build_trends.py --out output/search-trends.json || true
+          python3 scripts/build_clauses_index.py --ccn-dir output/ccn --out output/clauses-index.json || true
 
       - name: "Construire le manifeste complet (liste intégrale + états validé/abrogé)"
         if: always()
