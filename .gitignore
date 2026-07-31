@@ -1,0 +1,11 @@
+# Dossiers de diagnostic des aspirateurs JORF/ACCO -- peuvent contenir des
+# réponses d'API volumineuses (la liste des 2499 JO faisait ~200 Mo et
+# dépassait la limite de 100 Mo de GitHub, faisant échouer le push).
+# Ces fichiers ne servaient qu'au diagnostic initial, jamais à l'app.
+output/jorf/_debug/
+output/jorf/_debug_search/
+output/acco/_debug/
+output/acco/_debug_search/
+output/jorf/_lastNJo.json
+output/jorf/_debug_reponse_search_brute.json
+output/acco/_debug_reponse_search_brute.json
