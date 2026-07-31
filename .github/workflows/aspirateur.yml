@@ -83,6 +83,10 @@ concurrency:
 jobs:
   aspirer:
     runs-on: ubuntu-latest
+    # Le garde-temps du script pull_jorf s'arrête à 330 min (5h30) et committe.
+    # On laisse GitHub tuer le job à 355 min au cas où quelque chose traînerait
+    # après -- marge nette, mais bien en dessous des 6h où GitHub coupe brutalement.
+    timeout-minutes: 355
     env:
       PISTE_CLIENT_ID: ${{ secrets.PISTE_CLIENT_ID }}
       PISTE_CLIENT_SECRET: ${{ secrets.PISTE_CLIENT_SECRET }}
@@ -267,16 +271,21 @@ jobs:
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'jurisprudence' || github.event.inputs.cible == 'tout') }}
         run: |
           # Repéré le 31/07/2026 : le run programmé ne demandait QUE la Cour de
-          # cassation (jurisdiction=cc, valeur par défaut du script) -- les cours
-          # d'appel (pôle social), pourtant explicitement dans le périmètre du
-          # Module 1, n'étaient récupérées que via le mode manuel
-          # "decouvrir-jurisprudence", jamais automatiquement. Judilibre n'a pas
-          # de code pour un vrai premier degré (prud'hommes) : "ca" EST le
-          # niveau "pôle social" demandé, il n'y a rien de plus bas disponible.
+          # cassation. Les cours d'appel (pôle social) sont dans le périmètre du
+          # Module 1. Judilibre n'a pas de code pour un vrai premier degré
+          # (prud'hommes) : "ca" EST le niveau "pôle social" demandé.
+          #
+          # CORRECTIF du 31/07 (2e passe) : on NE passe PAS --chamber soc ici.
+          # "soc" (chambre sociale) est un filtre PROPRE à la Cour de cassation ;
+          # les cours d'appel n'ont pas de "chambre sociale" mais des "pôles
+          # sociaux". Demander --chamber soc ET --jurisdiction ca en même temps
+          # se contredit : aucune décision n'est les deux à la fois, d'où le
+          # "zéro cours d'appel" constaté. Sans filtre de chambre, la recherche
+          # thématique (droit du travail) fait déjà le tri sur le fond.
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction ca --per-theme 20 --max-decisions 150 --only-missing || echo "Judilibre (CA) a échoué, pas bloquant"
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --jurisdiction ca --per-theme 20 --max-decisions 150 --only-missing || echo "Judilibre (CA) a échoué, pas bloquant"
           else
-            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction ca --per-theme 40 --max-decisions 500 || echo "Judilibre (CA) a échoué, pas bloquant"
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --jurisdiction ca --per-theme 40 --max-decisions 500 || echo "Judilibre (CA) a échoué, pas bloquant"
           fi
 
       - name: "Découvrir largement de la jurisprudence (Judilibre, toutes chambres)"
@@ -288,15 +297,16 @@ jobs:
       - name: "Récupérer le Journal Officiel (volet social)"
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'jorf' || github.event.inputs.cible == 'tout') }}
         run: |
-          # Module 2 du cahier des charges MonLegiTexte (27/07/2026) : arrêtés
-          # d'extension, SMIC, plafonds, cotisations, activité partielle.
-          # Même identifiants PISTE que le reste, --only-missing en programmé
-          # pour ne traiter que les nouveautés à chaque run.
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            python3 scripts/pull_jorf.py --out output/jorf --only-missing --max 100 || echo "JORF a échoué, pas bloquant"
-          else
-            python3 scripts/pull_jorf.py --out output/jorf --max 300 || echo "JORF a échoué, pas bloquant"
-          fi
+          # Module 2 du cahier des charges MonLegiTexte : arrêtés d'extension,
+          # SMIC, plafonds, cotisations, activité partielle.
+          #
+          # Stratégie retenue (31/07/2026) : TOUJOURS --only-missing, pour que
+          # chaque run reprenne là où le précédent s'est arrêté. Pas de plafond
+          # de nombre (--max 0) : on s'arrête sur le TEMPS (--minutes-max 330 =
+          # 5h30), avant que GitHub ne tue le job à 6h, en committant par lots
+          # de 700. Il faut donc plusieurs runs successifs pour couvrir 10 ans
+          # de JORF -- chacun avance dans la pile, aucun ne repart de zéro.
+          python3 scripts/pull_jorf.py --out output/jorf --only-missing --lot 700 --minutes-max 330 || echo "JORF a échoué, pas bloquant"
 
       - name: "Récupérer les accords d'entreprise (benchmarking RH)"
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'acco' || github.event.inputs.cible == 'tout') }}
