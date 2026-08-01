@@ -127,14 +127,17 @@ def date_dix_ans_glissante():
 # écarter du non-RH.
 MOTIF_RH = re.compile(
     r"t[ée]l[ée]travail|forfait.?jours?|forfait.?annuel|"
-    r"prime de partage|partage de la valeur|\bppv\b|"
-    r"compte [ée]pargne.?temps|\bcet\b|"
+    r"prime|salaire|r[ée]mun[ée]ration|augmentation|pouvoir d.achat|"
+    r"n[ée]gociation annuelle|\bnao\b|"
+    r"partage de la valeur|\bppv\b|"
+    r"int[ée]ressement|participation|[ée]pargne salariale|\bpee\b|\bperco\b|plan d.[ée]pargne|"
+    r"compte [ée]pargne.?temps|\bcet\b|\bcetu\b|"
     r"[ée]galit[ée] (professionnelle|femmes?.hommes?|h.?/?.?f)|"
-    r"qualit[ée] de vie|\bqvt\b|qvct|"
+    r"qualit[ée] de vie|\bqvt\b|qvct|conditions de travail|"
     r"droit [àa] la d[ée]connexion|d[ée]connexion|"
-    r"temps de travail|am[ée]nagement du temps|"
-    r"astreinte|t[ée]l[ée]travail|r[ée]mun[ée]ration|salaire|"
-    r"[ée]pargne salariale|int[ée]ressement|participation",
+    r"temps de travail|am[ée]nagement du temps|dur[ée]e du travail|"
+    r"astreinte|cong[ée]s|classification|"
+    r"pr[ée]voyance|compl[ée]mentaire sant[ée]|mutuelle|retraite",
     re.IGNORECASE)
 
 
@@ -142,19 +145,53 @@ def titre_est_rh(titre):
     return bool(MOTIF_RH.search(titre or ""))
 
 
-def rechercher_acco_par_dates(client, debut, fin, page=1, page_size=100):
-    """Recherche /search sur le fonds JORF, bornée par dates de publication.
+# Thèmes de recherche envoyés à l'API ACCO (un /search par thème, sans date).
+# Liste ÉLARGIE fondée sur les VRAIS thèmes de négociation collective 2024
+# (sources DARES/INSEE), classés par fréquence réelle de négociation :
+#   1. salaires/primes (10,3% des entreprises) -- le n°1
+#   2. épargne salariale (6,8%, "la moitié des accords conclus")
+#   3. temps de travail (5,4%)  4. conditions de travail (4,2%)
+# On couvre ces gros volumes + les sujets structurels (télétravail, égalité,
+# PPV, CETU...). Les premiers thèmes de la liste sont les plus négociés : comme
+# on récupère par ordre de thème, ils remplissent le corpus en priorité.
+THEMES_ACCO = [
+    # --- Les plus négociés (gros volumes) ---
+    "salaires augmentation",
+    "prime pouvoir d'achat",
+    "négociation annuelle obligatoire",
+    "intéressement",
+    "participation aux bénéfices",
+    "épargne salariale plan",
+    "prime de partage de la valeur",
+    "temps de travail aménagement",
+    "conditions de travail",
+    # --- Sujets structurels forts ---
+    "télétravail",
+    "forfait jours",
+    "compte épargne temps",
+    "égalité professionnelle femmes hommes",
+    "qualité de vie au travail",
+    "droit à la déconnexion",
+    "prévoyance complémentaire santé",
+    "retraite supplémentaire",
+    "classification rémunération",
+    "astreinte",
+    "congés",
+]
 
-    C'EST LA MÉTHODE QUI REMPLACE l'énumération conteneur-par-conteneur
-    (01/08) : jorfCont ignorait le textCid demandé et renvoyait toujours le
-    même JO (erreur "mismatch" en boucle). /search par tranche de dates,
-    lui, ne demande jamais un JO précis -- donc pas de mismatch possible --
-    et renvoie directement les titres. On découpe la fenêtre de 10 ans en
-    petites tranches (un mois) pour rester sous le plafond de résultats de
-    /search qui plombait la 1re version.
 
-    typeChamp=ALL : cherche dans tout le texte (pas juste le titre), pour ne
-    rater aucun texte RH.
+def rechercher_acco_par_theme(client, theme, page=1, page_size=50):
+    """Recherche /search sur le fonds ACCO, par THÈME, SANS filtre de date.
+
+    DÉCOUVERTE du diagnostic (01/08) : le filtre DATE_PUBLICATION fait PLANTER
+    le fonds ACCO (erreur 500 côté serveur Légifrance). Sans ce filtre, la
+    recherche marche parfaitement (54 491 accords trouvés). On cherche donc par
+    thème RH directement, sans borne de date. Si un filtrage par date devient
+    nécessaire, il se fera côté nous, après récupération.
+
+    Autre découverte : /consult/acco plante AUSSI en 500. Mais le résultat de
+    recherche contient déjà un champ 'text' et des 'extracts' -- on s'en
+    servira comme contenu, sans appeler /consult.
     """
     body = {
         "fond": "ACCO",
@@ -163,18 +200,10 @@ def rechercher_acco_par_dates(client, debut, fin, page=1, page_size=100):
                 "typeChamp": "ALL",
                 "operateur": "ET",
                 "criteres": [{
-                    "valeur": "travail",   # amorce large ; le vrai tri RH se
-                                            # fait ensuite sur le titre via MOTIF_RH
+                    "valeur": theme,
                     "typeRecherche": "UN_DES_MOTS",
                     "operateur": "ET",
                 }],
-            }],
-            "filtres": [{
-                "facette": "DATE_PUBLICATION",
-                "dates": {
-                    "start": debut,   # "AAAA-MM-JJ"
-                    "end": fin,
-                },
             }],
             "sort": "PUBLICATION_DATE_DESC",
             "fromAdvancedRecherche": False,
@@ -187,25 +216,41 @@ def rechercher_acco_par_dates(client, debut, fin, page=1, page_size=100):
     return client.call("/search", body)
 
 
-def extraire_textes_recherche(resultat):
-    """Renvoie [(id, titre), ...] depuis une réponse /search JORF.
-    L'id du texte est un JORFTEXT ; on retire un éventuel suffixe _date."""
+def extraire_accords_recherche(resultat):
+    """Renvoie [(id, titre, texte, extraits), ...] depuis une réponse /search
+    ACCO. On récupère le texte DIRECTEMENT du résultat (le /consult plante), en
+    nettoyant les balises <mark> de surlignage."""
+    def sans_marques(s):
+        if not s:
+            return ""
+        return s.replace("<mark>", "").replace("</mark>", "")
+
     out = []
     results = resultat.get("results") or resultat.get("resultats") or []
     for r in results:
-        titre = r.get("titre") or r.get("title") or ""
-        # L'id peut être au niveau du résultat ou dans 'titles'
+        titre = ""
         tid = None
         for t in (r.get("titles") or r.get("titres") or []):
             if t.get("id"):
                 tid = t["id"]
-                if not titre:
-                    titre = t.get("titre") or t.get("title") or ""
+                titre = t.get("title") or t.get("titre") or ""
                 break
         if not tid:
             tid = r.get("id")
-        if tid and str(tid).startswith("JORFTEXT"):
-            out.append((str(tid).split("_")[0], titre))
+            titre = r.get("titre") or r.get("title") or ""
+        if not (tid and str(tid).startswith("ACCOTEXT")):
+            continue
+        texte = sans_marques(r.get("text") or "")
+        # Les extraits : liste de blocs, chacun avec 'values' (liste de chaînes).
+        extraits = []
+        for ex in (r.get("extracts") or []):
+            if isinstance(ex, dict):
+                vals = ex.get("values") or ex.get("value") or []
+                if isinstance(vals, list):
+                    extraits.extend(sans_marques(str(v)) for v in vals)
+                elif vals:
+                    extraits.append(sans_marques(str(vals)))
+        out.append((str(tid).split("_")[0], sans_marques(titre), texte, extraits))
     return out
 
 
@@ -333,108 +378,93 @@ def main():
             existing = {}
     preserved_ok = {k: v for k, v in existing.items() if v.get("status") == "ok"}
 
-    # ── Recherche des textes RH par tranches de dates mensuelles ──
-    # Plus d'énumération conteneur-par-conteneur (jorfCont buguait). On balaie
-    # la fenêtre de 10 ans mois par mois via /search, en paginant chaque mois.
-    tranches = mois_glissants(depuis, date.today())
-    print(f"Recherche ACCO sur {len(tranches)} tranches mensuelles "
-          f"(de {tranches[0][0]} à {tranches[-1][1]})...")
-
-    candidats_rh = {}  # id -> titre
-    for idx, (deb, fin) in enumerate(tranches, 1):
-        page = 1
-        total_mois = 0
-        while True:
-            resultat = rechercher_acco_par_dates(client, deb, fin, page=page, page_size=100)
-            if "_error" in resultat:
-                print(f"  [{idx}/{len(tranches)}] {deb[:7]} : échec "
-                      f"({resultat['_error']}) {str(resultat.get('_detail',''))[:120]}", file=sys.stderr)
-                break
-            textes = extraire_textes_recherche(resultat)
-            if not textes:
-                break
-            rh = [(tid, titre) for tid, titre in textes if titre_est_rh(titre)]
-            for tid, titre in rh:
-                candidats_rh[tid] = titre
-            total_mois += len(rh)
-            # Pagination : s'il y a moins que page_size, c'était la dernière page.
-            if len(textes) < 100:
-                break
-            page += 1
-            if page > 50:  # garde-fou anti-boucle
-                break
-            time.sleep(args.delay)
-        if total_mois or idx % 12 == 0:
-            print(f"  [{idx}/{len(tranches)}] {deb[:7]} : +{total_mois} RH "
-                  f"(cumul {len(candidats_rh)})")
-        time.sleep(args.delay)
-
-    print(f"\n{len(candidats_rh)} texte(s) RH trouvé(s) au total sur la période.")
-
-    # ── Étape 3 : récupération du contenu, par lots, sous garde-temps ──
-    a_traiter = list(candidats_rh.keys())
-    if args.only_missing:
-        avant = len(a_traiter)
-        a_traiter = [t for t in a_traiter if t not in preserved_ok]
-        print(f"Mode --only-missing : {avant - len(a_traiter)} déjà acquis, {len(a_traiter)} restant à récupérer.")
-    if args.max and len(a_traiter) > args.max:
-        print(f"Plafond --max {args.max} : le reste au prochain run.")
-        a_traiter = a_traiter[:args.max]
-
+    # ── Recherche par thème RH, SANS filtre de date, avec sauvegarde DIRECTE ──
+    # Le diagnostic du 01/08 a montré : (1) le filtre de date fait planter ACCO
+    # en 500, (2) /consult/acco plante AUSSI en 500. Mais la recherche sans date
+    # marche et renvoie déjà le texte de chaque accord (champ 'text' + extraits).
+    # On récupère donc tout depuis la recherche, sans jamais appeler /consult.
     import time as _time
     debut = _time.monotonic()
     limite_secondes = args.minutes_max * 60
 
     summary = list(preserved_ok.values())
-    n_ok, n_echec = 0, 0
+    n_ok = 0
+    deja = set(preserved_ok.keys())
     arrete_par_temps = False
+    depuis_iso = depuis.isoformat()
 
-    print(f"Récupération de {len(a_traiter)} texte(s), par lots de {args.lot}, "
-          f"limite {args.minutes_max} min (~{args.minutes_max/60:.1f}h) avant arrêt propre.")
+    print(f"Recherche ACCO sur {len(THEMES_ACCO)} thèmes (sans filtre de date), "
+          f"sauvegarde directe, lots de {args.lot}, limite {args.minutes_max} min.")
 
-    for i, tid in enumerate(a_traiter, 1):
-        # Garde-temps : avant chaque texte, on regarde si on approche la limite.
-        # Si oui, on s'arrête NET et on committe ce qui est fait -- surtout pas
-        # se faire tuer par GitHub à 6h en plein milieu, ce qui perdrait le lot
-        # en cours et laisserait le dépôt dans un état de rebase bancal.
-        if _time.monotonic() - debut > limite_secondes:
-            print(f"\n[garde-temps] {args.minutes_max} min atteintes -- arrêt propre à "
-                  f"{i-1}/{len(a_traiter)}. Le prochain run (--only-missing) reprend la suite.")
-            arrete_par_temps = True
+    for t_idx, theme in enumerate(THEMES_ACCO, 1):
+        if arrete_par_temps:
             break
+        page = 1
+        total_theme = 0
+        while True:
+            if _time.monotonic() - debut > limite_secondes:
+                print(f"\n[garde-temps] {args.minutes_max} min atteintes -- arrêt propre. "
+                      f"Le prochain run (--only-missing) reprend la suite.")
+                arrete_par_temps = True
+                break
+            resultat = rechercher_acco_par_theme(client, theme, page=page, page_size=50)
+            if "_error" in resultat:
+                print(f"  [{t_idx}/{len(THEMES_ACCO)}] '{theme}' p{page} : échec "
+                      f"({resultat['_error']}) {str(resultat.get('_detail',''))[:100]}", file=sys.stderr)
+                break
+            accords = extraire_accords_recherche(resultat)
+            if not accords:
+                break
+            for tid, titre, texte, extraits in accords:
+                # Filtre RH sur le titre + only-missing.
+                if not titre_est_rh(titre):
+                    continue
+                if args.only_missing and tid in deja:
+                    continue
+                if tid in deja:
+                    continue
+                # Sauvegarde DIRECTE : le texte vient de la recherche, pas d'un
+                # /consult. On garde la même forme {titre, text} que le JORF pour
+                # que le front-end l'affiche pareil ; 'text' contient articles.
+                contenu = {
+                    "titre": titre,
+                    "text": {
+                        "titre": titre,
+                        "articles": [{"content": texte}] if texte else [],
+                        "extraits": extraits,
+                        "source": "recherche ACCO (consult indisponible)",
+                    },
+                }
+                with open(os.path.join(args.out, f"{tid}.json"), "w", encoding="utf-8") as f:
+                    json.dump(contenu, f, ensure_ascii=False, indent=2)
+                summary.append({"id": tid, "titre": titre, "status": "ok"})
+                deja.add(tid)
+                n_ok += 1
+                total_theme += 1
+                if args.max and n_ok >= args.max:
+                    break
+                # Commit par lots.
+                if n_ok % args.lot == 0:
+                    json.dump(summary, open(summary_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+                    commit_partiel(args.out, n_ok, "?")
+            if args.max and n_ok >= args.max:
+                print(f"Plafond --max {args.max} atteint.")
+                arrete_par_temps = True
+                break
+            if len(accords) < 50:
+                break
+            page += 1
+            if page > 100:  # garde-fou anti-boucle
+                break
+            time.sleep(args.delay)
+        print(f"  [{t_idx}/{len(THEMES_ACCO)}] '{theme}' : +{total_theme} accords (cumul {n_ok})")
 
-        titre = candidats_rh[tid]
-        print(f"[{i}/{len(a_traiter)}] {titre[:55]}...", end=" ")
-        result = fetch_un_accord(client, None, tid)
-        if "_error" in result:
-            print(f"ÉCHEC ({result['_error']})")
-            summary.append({"id": tid, "titre": titre, "status": "erreur"})
-            n_echec += 1
-        else:
-            with open(os.path.join(args.out, f"{tid}.json"), "w", encoding="utf-8") as f:
-                json.dump({"titre": titre, "text": result}, f, ensure_ascii=False, indent=2)
-            summary.append({"id": tid, "titre": titre, "status": "ok"})
-            print("ok")
-            n_ok += 1
-
-        # Fin de lot : on sauve le summary à jour PUIS on commit+push le lot.
-        # Ainsi, même si le run est tué juste après, ce lot est déjà sur le
-        # dépôt -- on ne reperd jamais plus qu'un lot en cours.
-        if i % args.lot == 0:
-            json.dump(summary, open(summary_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-            commit_partiel(args.out, i, len(a_traiter))
-        time.sleep(args.delay)
-
-    # Sauvegarde + commit final de ce qui reste (dernier lot incomplet, ou arrêt
-    # par le temps).
     json.dump(summary, open(summary_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-    commit_partiel(args.out, n_ok, len(a_traiter))
+    commit_partiel(args.out, n_ok, "final")
 
-    reste = len(a_traiter) - (n_ok + n_echec)
-    print(f"\n{n_ok} récupéré(s), {n_echec} échec(s), {len(preserved_ok)} déjà acquis avant ce run.")
-    if arrete_par_temps or reste > 0:
-        print(f"Il reste ~{reste} texte(s) à récupérer -- relancer le run "
-              f"(--only-missing) pour continuer là où on s'est arrêté.")
+    print(f"\n{n_ok} accord(s) récupéré(s) ce run, {len(preserved_ok)} déjà acquis avant.")
+    if arrete_par_temps:
+        print("Arrêt anticipé -- relancer (--only-missing) pour continuer.")
     return 0
 
 

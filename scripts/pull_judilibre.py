@@ -55,6 +55,7 @@ import urllib.request
 
 # Thèmes de droit du travail par défaut (mode découverte). Modifiable via --themes.
 THEMES_DEFAUT = [
+    # --- Durée du travail (contentieux classique) ---
     "forfait jours nullité",
     "forfait jours convention individuelle",
     "cadre dirigeant requalification",
@@ -62,15 +63,28 @@ THEMES_DEFAUT = [
     "heures complémentaires temps partiel",
     "temps partiel requalification",
     "contingent annuel heures supplémentaires",
+    # --- Rupture du contrat ---
     "rupture conventionnelle",
     "prise d'acte de la rupture",
     "licenciement sans cause réelle et sérieuse",
     "faute grave licenciement",
+    "licenciement économique",
     "inaptitude reclassement",
+    # --- Santé, sécurité, discriminations (contentieux croissant) ---
     "harcèlement moral",
+    "harcèlement sexuel",
+    "discrimination syndicale",
+    "égalité de traitement rémunération",
+    "égalité professionnelle femmes hommes",
+    "accident du travail faute inexcusable",
+    "maladie professionnelle",
+    "obligation de sécurité employeur",
+    # --- Contrat et exécution ---
     "requalification CDD en CDI",
     "droit à la déconnexion",
     "congés payés report maladie",
+    "clause de non-concurrence",
+    "modification du contrat de travail",
 ]
 
 # Libellés courts pour composer un titre lisible
