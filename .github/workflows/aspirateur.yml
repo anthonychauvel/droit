@@ -34,6 +34,7 @@ on:
           - jurisprudence
           - decouvrir-jurisprudence
           - jorf
+          - diag-jorf
           - acco
           - lister-tous-articles-travail
           - lister-tous-articles-secu
@@ -293,6 +294,13 @@ jobs:
         run: |
           # Remplit directement output/jurisprudence (toutes chambres, plafond élevé).
           python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber "" --jurisdiction "" --per-theme 50 --max-decisions 800
+
+      - name: "DIAGNOSTIC JORF (voir la vraie structure de l'API)"
+        if: ${{ always() && github.event.inputs.cible == 'diag-jorf' }}
+        run: |
+          # À lancer une fois pour comprendre pourquoi l'énumération plafonne :
+          # affiche la vraie forme des réponses lastNJo et jorfCont dans les logs.
+          python3 scripts/diag_jorf.py
 
       - name: "Récupérer le Journal Officiel (volet social)"
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'jorf' || github.event.inputs.cible == 'tout') }}
