@@ -244,10 +244,16 @@ def commit_partiel(dossier, n_fait, total):
         # Rien de nouveau à committer -> git diff --cached --quiet renvoie 0.
         rien = subprocess.run(["git", "diff", "--cached", "--quiet"], capture_output=True).returncode == 0
         if rien:
+            print(f"    [checkpoint] rien de nouveau à committer à {n_fait}.", file=sys.stderr)
             return
-        subprocess.run(["git", "commit", "-m",
+        rc = subprocess.run(["git", "commit", "-m",
                         f"JORF: lot intermédiaire ({n_fait}/{total} textes)"],
-                       check=False, capture_output=True)
+                       capture_output=True, text=True)
+        if rc.returncode != 0:
+            # Ne PAS avaler : afficher pourquoi (souvent identité git non configurée).
+            print(f"    [checkpoint] ÉCHEC git commit à {n_fait} : "
+                  f"{(rc.stderr or rc.stdout)[:200]}", file=sys.stderr)
+            return
         r = subprocess.run(["git", "push"], capture_output=True, text=True)
         if r.returncode == 0:
             print(f"    [checkpoint] {n_fait}/{total} textes committés et poussés.")
@@ -259,10 +265,10 @@ def commit_partiel(dossier, n_fait, total):
         if r2.returncode == 0:
             print(f"    [checkpoint] {n_fait}/{total} textes poussés (après rattrapage).")
         else:
-            print(f"    [checkpoint] push différé (sera rattrapé au prochain lot ou à la fin).",
-                  file=sys.stderr)
+            print(f"    [checkpoint] ÉCHEC push à {n_fait} : "
+                  f"{(r2.stderr or r.stderr)[:200]}", file=sys.stderr)
     except Exception as e:
-        print(f"    [checkpoint] échec non bloquant : {e}", file=sys.stderr)
+        print(f"    [checkpoint] exception non bloquante : {e}", file=sys.stderr)
 
 
 def main():
