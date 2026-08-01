@@ -71,18 +71,46 @@ def get_token(token_url, client_id, client_secret):
         sys.exit(1)
 
 
-def call_api(base_url, token, path, body):
-    req = urllib.request.Request(
-        base_url + path, data=json.dumps(body).encode("utf-8"), method="POST",
-        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json",
-                 "Accept": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            return json.loads(resp.read())
-    except urllib.error.HTTPError as e:
-        return {"_error": e.code, "_detail": e.read().decode(errors="replace")}
-    except Exception as e:
-        return {"_error": "exception", "_detail": str(e)}
+# Le token PISTE expire (~1h). Sur un run long (plusieurs heures pour couvrir
+# 10 ans de JORF), prendre le token une seule fois au début fait échouer TOUS
+# les appels en 401 dès l'expiration -- c'est exactement le "0 récupéré, 12
+# échec (401)" observé le 01/08. Ce client garde les identifiants et redemande
+# un token tout seul dès qu'un 401 tombe, puis rejoue l'appel une fois.
+class PisteClient:
+    def __init__(self, token_url, base_url, client_id, client_secret):
+        self.token_url = token_url
+        self.base_url = base_url
+        self.client_id = client_id
+        self.client_secret = client_secret
+        self.token = get_token(token_url, client_id, client_secret)
+
+    def _renouveler(self):
+        print("    [token] 401 reçu -> renouvellement du token PISTE...", file=sys.stderr)
+        self.token = get_token(self.token_url, self.client_id, self.client_secret)
+
+    def call(self, path, body, _reessai=True):
+        req = urllib.request.Request(
+            self.base_url + path, data=json.dumps(body).encode("utf-8"), method="POST",
+            headers={"Authorization": f"Bearer {self.token}",
+                     "Content-Type": "application/json", "Accept": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                return json.loads(resp.read())
+        except urllib.error.HTTPError as e:
+            if e.code == 401 and _reessai:
+                # Token probablement expiré : on en reprend un et on rejoue UNE fois.
+                self._renouveler()
+                return self.call(path, body, _reessai=False)
+            return {"_error": e.code, "_detail": e.read().decode(errors="replace")}
+        except Exception as e:
+            return {"_error": "exception", "_detail": str(e)}
+
+
+# Compat : les fonctions existantes prennent un "token" en 2e argument. On leur
+# passe désormais le client, et call_api délègue. Ainsi le reste du script ne
+# change pas de forme.
+def call_api(client, token_ignore, path, body):
+    return client.call(path, body)
 
 
 def date_dix_ans_glissante():
@@ -244,7 +272,8 @@ def main():
 
     token_url, base_url = get_urls()
     print(f"Environnement: {'production' if 'sandbox' not in base_url else 'SANDBOX'}")
-    token = get_token(token_url, client_id, client_secret)
+    client = PisteClient(token_url, base_url, client_id, client_secret)
+    token = None  # le token vit désormais dans le client, renouvelé tout seul
     print(f"Token OK. Énumération du JO depuis {depuis.isoformat()} (fenêtre glissante 10 ans).")
 
     os.makedirs(args.out, exist_ok=True)
@@ -262,7 +291,7 @@ def main():
 
     # ── Étape 1 : conteneurs de JO ──
     print("Étape 1 : liste des Journaux Officiels...")
-    conteneurs, err = lister_jo_conteneurs(base_url, token, depuis)
+    conteneurs, err = lister_jo_conteneurs(client, None, depuis)
     if err:
         print(f"ÉCHEC lastNJo ({err['_error']}) : {str(err.get('_detail',''))[:400]}", file=sys.stderr)
         print("Rien récupéré -- voir le message ci-dessus pour la vraie forme du endpoint.", file=sys.stderr)
@@ -288,7 +317,7 @@ def main():
     print("Étape 2 : énumération des textes RH dans chaque JO...")
     candidats_rh = {}  # id -> titre
     for i, cid in enumerate(conteneurs_periode, 1):
-        textes, err = lister_textes_du_jo(base_url, token, cid)
+        textes, err = lister_textes_du_jo(client, None, cid)
         if err:
             print(f"  [{i}/{len(conteneurs_periode)}] JO {cid} : échec ({err['_error']})", file=sys.stderr)
             time.sleep(args.delay)
@@ -337,7 +366,7 @@ def main():
 
         titre = candidats_rh[tid]
         print(f"[{i}/{len(a_traiter)}] {titre[:55]}...", end=" ")
-        result = fetch_un_texte(base_url, token, tid)
+        result = fetch_un_texte(client, None, tid)
         if "_error" in result:
             print(f"ÉCHEC ({result['_error']})")
             summary.append({"id": tid, "titre": titre, "status": "erreur"})
