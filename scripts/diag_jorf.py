@@ -128,33 +128,57 @@ def main():
         print(f"ÉCHEC : {r2['_error']} — {r2.get('_detail')}")
         return 1
     print("Clés de premier niveau :", list(r2.keys()))
-    print("\nStructure (aperçu, prof max 4 pour voir les textes) :")
-    print(apercu(r2, max_prof=4))
 
-    # Compter les JORFTEXT et voir s'ils ont un titre
-    trouves = []
-    def walk(node):
-        if isinstance(node, dict):
-            tid = node.get("id") or node.get("cid")
-            titre = node.get("title") or node.get("titre") or ""
-            if tid and str(tid).startswith("JORFTEXT"):
-                trouves.append((str(tid), titre))
-            for v in node.values():
-                walk(v)
-        elif isinstance(node, list):
-            for v in node:
-                walk(v)
-    walk(r2)
-    print(f"\n--- {len(trouves)} JORFTEXT trouvés dans ce JO ---")
-    for tid, titre in trouves[:10]:
-        a = "AVEC titre" if titre else ">>> SANS TITRE <<<"
-        print(f"  {tid} : {a} : {titre[:60]}")
+    # Vérif cruciale : l'ID du joCont renvoyé == l'ID demandé ?
+    items = r2.get("items") or []
+    if items and isinstance(items[0], dict):
+        jocont = items[0].get("joCont", {})
+        renvoye = jocont.get("id", "")
+        print(f"\n>>> ID demandé  : {cont_id}")
+        print(f">>> ID renvoyé  : {renvoye}")
+        print(f">>> CORRESPONDENT : {'OUI' if renvoye == cont_id else 'NON -- CEST LE BUG'}")
+        # Où sont les textes ? Explorer les clés de joCont
+        print(f"\nClés de joCont : {list(jocont.keys())}")
+        struct = jocont.get("structure")
+        print(f"Type de 'structure' : {type(struct).__name__}, "
+              f"{len(struct) if isinstance(struct,(list,dict)) else '?'} éléments")
+
+    # Compter les JORFTEXT par la méthode structure vs walk global
+    def compter(node, restreint):
+        found = []
+        def walk(n, ok=True):
+            if isinstance(n, dict):
+                tid = n.get("id") or n.get("cid")
+                if tid and str(tid).startswith("JORFTEXT") and ok:
+                    found.append(str(tid))
+                for k, v in n.items():
+                    if restreint:
+                        walk(v, ok=(k in ("structure","sections","articles","children","items","tms","joCont")))
+                    else:
+                        walk(v, ok=True)
+            elif isinstance(n, list):
+                for v in n: walk(v, ok)
+        walk(node)
+        return found
+
+    tous = compter(r2, restreint=False)
+    struct_only = compter(r2, restreint=True)
+    print(f"\nJORFTEXT trouvés (walk global)     : {len(set(tous))}")
+    print(f"JORFTEXT trouvés (structure seule) : {len(set(struct_only))}")
+
+    # 2 bis) REFAIRE sur un 2e JO différent pour voir si les IDs changent
+    if len(items_liste := (r1.get("containers") or [])) > 1:
+        cont_id2 = items_liste[1].get("id")
+        print(f"\n--- 2e JO pour comparer : {cont_id2} ---")
+        r2b = call(base, token, "/consult/jorfCont", {"textCid": cont_id2})
+        tous2 = compter(r2b, restreint=False)
+        # Les JORFTEXT du JO1 et du JO2 doivent être DIFFÉRENTS
+        communs = set(tous) & set(tous2)
+        print(f"JORFTEXT du JO1 : {len(set(tous))}, du JO2 : {len(set(tous2))}")
+        print(f"En commun : {len(communs)} "
+              f"{'(NORMAL si 0-2)' if len(communs)<3 else '<<< PROBLÈME : mêmes textes partout'}")
 
     print("\n=== FIN DIAGNOSTIC ===")
-    print("Points à vérifier ci-dessus :")
-    print("  - les JORFTEXT ont-ils un titre à l'étape 2 ? (si SANS TITRE, le")
-    print("    filtre RH rejette tout car il lit un titre vide)")
-    print("  - combien de JORFTEXT par JO ?")
     return 0
 
 

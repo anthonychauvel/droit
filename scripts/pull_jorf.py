@@ -166,25 +166,68 @@ def lister_jo_conteneurs(base_url, token, depuis):
 
 
 def lister_textes_du_jo(base_url, token, jorf_cont_id):
-    """Étape 2 : les JORFTEXT publiés dans un JO donné."""
+    """Étape 2 : les JORFTEXT publiés dans un JO donné.
+
+    CORRECTIF 01/08 (bug du cumul figé) : la réponse jorfCont contient TOUT
+    l'arbre du conteneur, y compris des références à d'AUTRES JO (liens,
+    sommaires croisés). Un walk() naïf sur tout l'arbre ramassait donc des
+    JORFTEXT qui ne sont PAS de ce JO -- et comme c'étaient souvent les mêmes
+    (le JO le plus récent, très lié), le cumul restait bloqué. On restreint
+    l'extraction à la STRUCTURE du conteneur demandé : items[].joCont.structure,
+    et on vérifie au passage que le joCont renvoyé est bien celui demandé.
+    """
     resultat = call_api(base_url, token, "/consult/jorfCont", {"textCid": jorf_cont_id})
     if "_error" in resultat:
         return None, resultat
     textes = []
 
-    def walk(node):
+    def extraire_de_structure(node):
+        """Ne descend QUE dans la structure/les sections d'articles du JO,
+        pas dans les liens vers d'autres conteneurs."""
         if isinstance(node, dict):
             tid = node.get("id") or node.get("cid")
             titre = node.get("title") or node.get("titre") or ""
             if tid and str(tid).startswith("JORFTEXT"):
                 textes.append((str(tid).split("_")[0], titre))
-            for v in node.values():
-                walk(v)
+            # On ne suit que les branches de contenu, pas 'liens'/'joEA' etc.
+            for cle in ("structure", "sections", "articles", "children", "items", "tms"):
+                if cle in node:
+                    extraire_de_structure(node[cle])
         elif isinstance(node, list):
             for v in node:
-                walk(v)
+                extraire_de_structure(v)
 
-    walk(resultat)
+    # La vraie charge est sous items[].joCont.structure (confirmé par le diag).
+    items = resultat.get("items") or []
+    for it in items:
+        jocont = it.get("joCont") if isinstance(it, dict) else None
+        if not jocont:
+            continue
+        # Vérif : ce joCont est-il bien celui qu'on a demandé ? Sinon, l'API a
+        # renvoyé autre chose et on ne veut pas de ses textes.
+        renvoye = jocont.get("id") or ""
+        if renvoye and renvoye != jorf_cont_id:
+            # On le signale mais on n'ajoute rien : pas de pollution croisée.
+            return [], {"_error": "mismatch",
+                        "_detail": f"demandé {jorf_cont_id}, renvoyé {renvoye}"}
+        extraire_de_structure(jocont.get("structure", []))
+
+    # Repli : si la structure attendue n'existe pas, on tente l'ancien walk
+    # global (mieux que rien), mais ça ne devrait plus servir.
+    if not textes:
+        def walk(node):
+            if isinstance(node, dict):
+                tid = node.get("id") or node.get("cid")
+                titre = node.get("title") or node.get("titre") or ""
+                if tid and str(tid).startswith("JORFTEXT"):
+                    textes.append((str(tid).split("_")[0], titre))
+                for v in node.values():
+                    walk(v)
+            elif isinstance(node, list):
+                for v in node:
+                    walk(v)
+        walk(resultat.get("items", []))
+
     return textes, None
 
 
