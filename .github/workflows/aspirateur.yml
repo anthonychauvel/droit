@@ -314,6 +314,13 @@ jobs:
           # 5h30), avant que GitHub ne tue le job à 6h, en committant par lots
           # de 700. Il faut donc plusieurs runs successifs pour couvrir 10 ans
           # de JORF -- chacun avance dans la pile, aucun ne repart de zéro.
+          #
+          # CRUCIAL (01/08) : le script committe LUI-MÊME par lots (commit_partiel).
+          # Il faut donc configurer l'identité git ICI, avant de le lancer --
+          # sinon 'git commit' échoue ("Please tell me who you are"), l'erreur
+          # est avalée, et RIEN n'est poussé (bug des 20635 "ok" mais output vide).
+          git config user.name "Aspirateur Légifrance (bot)"
+          git config user.email "action@github.com"
           python3 scripts/pull_jorf.py --out output/jorf --only-missing --lot 700 --minutes-max 330 || echo "JORF a échoué, pas bloquant"
 
       - name: "Récupérer les accords d'entreprise (benchmarking RH)"
