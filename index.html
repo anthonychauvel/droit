@@ -1539,7 +1539,14 @@ function subChips(source){
     var LV = (source==='code')?LIVRE_TRAVAIL:LIVRE_SECU;
     Object.keys(LV).forEach(function(d){ if(byLivre[d]) chips.push(chip('livre:'+d, 'Livre '+d+' · '+LV[d], byLivre[d])); });
   } else {
-    chips.push(chip('all','Toutes les décisions', INDEX.juris.length));
+    // Juris, JORF, ACCO : un seul bouton, avec le bon libellé et le bon compte.
+    var libelles = {
+      juris: 'Toutes les décisions',
+      jorf:  'Tous les textes',
+      acco:  'Tous les accords'
+    };
+    var lib = libelles[source] || 'Tout';
+    chips.push(chip('all', lib, (INDEX[source] || []).length));
   }
   return chips;
 }
@@ -1800,6 +1807,22 @@ async function openDetail(kind, num, target){
   var abroge = payload.etat && /ABROGE/i.test(payload.etat);
   var body='';
   if(kind==='ccn' && Array.isArray(payload.sections)) body = renderSections(payload.sections);
+  else if((kind==='jorf'||kind==='acco')){
+    // Le vrai texte d'un JORF/ACCO est dans articles[].content et sections[],
+    // comme une CCN. On ajoute les visas et signataires, propres au JO.
+    if(payload.visa) body += '<div class="sec-text">'+cleanHtml(payload.visa)+'</div>';
+    if(Array.isArray(payload.articles) && payload.articles.length){
+      body += payload.articles.map(function(a){
+        var num = a.num ? '<div class="sec-title">Article '+escapeHtml(String(a.num))+'</div>' : '';
+        return num + '<div class="sec-text">'+cleanHtml(a.content||a.texte||'')+'</div>';
+      }).join('');
+    }
+    if(Array.isArray(payload.sections) && payload.sections.length){
+      body += renderSections(payload.sections);
+    }
+    if(payload.signers) body += '<div class="sec-text">'+cleanHtml(payload.signers)+'</div>';
+    if(!body) body = '<div class="sec-text" style="color:var(--ink-soft)">Ce texte n\'a pas de corps structuré (souvent un texte publié uniquement en PDF). Utilisez « Télécharger le texte » ou le lien Légifrance.</div>';
+  }
   else if(payload.texteHtml||payload.texte||payload.content) body = '<div class="sec-text">'+cleanHtml(payload.texteHtml||payload.texte||payload.content)+'</div>';
   else if(abroge) body = '<div class="sec-text" style="color:var(--ink-soft)">Article abrogé, plus en vigueur — il est normal qu\'il n\'y ait pas (ou peu) de texte à afficher.</div>';
   else body = '<div class="sec-text" style="color:var(--ink-soft)">Contenu structuré non détecté pour cette entrée.</div>';
