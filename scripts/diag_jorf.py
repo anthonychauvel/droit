@@ -142,6 +142,20 @@ def main():
         struct = jocont.get("structure")
         print(f"Type de 'structure' : {type(struct).__name__}, "
               f"{len(struct) if isinstance(struct,(list,dict)) else '?'} éléments")
+        # DÉVOILER le contenu de structure -- c'est là que doivent être les textes
+        if isinstance(struct, dict):
+            print(f"\n>>> Clés de 'structure' : {list(struct.keys())}")
+            for k, v in struct.items():
+                if isinstance(v, list):
+                    print(f"    structure['{k}'] = liste de {len(v)}")
+                    if v and isinstance(v[0], dict):
+                        print(f"        1er élément, clés : {list(v[0].keys())}")
+                        # Montrer id + titre du 1er
+                        print(f"        id={v[0].get('id')}  titre={str(v[0].get('title') or v[0].get('titre'))[:50]}")
+                elif isinstance(v, dict):
+                    print(f"    structure['{k}'] = dict, clés : {list(v.keys())}")
+                else:
+                    print(f"    structure['{k}'] = {str(v)[:60]}")
 
     # Compter les JORFTEXT par la méthode structure vs walk global
     def compter(node, restreint):
