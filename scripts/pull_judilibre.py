@@ -285,8 +285,12 @@ def main():
                     help="Thèmes de recherche (défaut : liste droit du travail intégrée)")
     ap.add_argument("--arrets-file", default=None,
                     help="Mode numéros : un numéro de pourvoi par ligne")
-    ap.add_argument("--chamber", default="soc",
-                    help="Chambre (défaut 'soc' = sociale ; vide = toutes)")
+    ap.add_argument("--chamber", default="",
+                    help="Chambre (vide = toutes ; 'soc' = sociale, PROPRE à la "
+                         "Cour de cassation). NE PAS mettre 'soc' par défaut : ça "
+                         "s'appliquerait aussi aux cours d'appel (--jurisdiction ca) "
+                         "qui n'ont pas de 'chambre sociale' mais des pôles sociaux, "
+                         "et renverrait 0 résultat. Chaque appel précise ce qu'il veut.")
     ap.add_argument("--jurisdiction", default="cc",
                     help="Juridiction : 'cc' (Cour de cassation, défaut), 'ca' (cours d'appel), vide = toutes")
     ap.add_argument("--per-theme", type=int, default=25,
