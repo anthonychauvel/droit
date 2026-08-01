@@ -326,15 +326,15 @@ jobs:
       - name: "Récupérer les accords d'entreprise (benchmarking RH)"
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'acco' || github.event.inputs.cible == 'tout') }}
         run: |
-          # Module 3 du cahier des charges MonLegiTexte (27/07/2026) : télétravail,
-          # forfait jours, PPV, CET, égalité pro, QVT, droit à la déconnexion.
-          # Fenêtre glissante 10 ans (jamais fixe), ne supprime jamais l'existant --
-          # voir date_dix_ans_glissante() dans le script.
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            python3 scripts/pull_acco.py --out output/acco --only-missing --max 100 || echo "ACCO a échoué, pas bloquant"
-          else
-            python3 scripts/pull_acco.py --out output/acco --max 300 || echo "ACCO a échoué, pas bloquant"
-          fi
+          # Module 3 du cahier des charges MonLegiTexte : télétravail, forfait
+          # jours, PPV, CET, égalité pro, QVT, droit à la déconnexion.
+          # MÊME méthode et MÊME stratégie que le JORF (recherche /search par
+          # tranches mensuelles, garde-temps 5h30, lots de 700, --only-missing
+          # pour reprendre). L'identité git est configurée ICI, comme pour le
+          # JORF, sinon commit_partiel échouerait silencieusement.
+          git config user.name "Aspirateur Légifrance (bot)"
+          git config user.email "action@github.com"
+          python3 scripts/pull_acco.py --out output/acco --only-missing --lot 700 --minutes-max 330 || echo "ACCO a échoué, pas bloquant"
 
       - name: Lister tous les articles du Code du travail (préparation seulement)
         if: ${{ always() && github.event.inputs.cible == 'lister-tous-articles-travail' }}
