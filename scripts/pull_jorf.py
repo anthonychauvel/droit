@@ -168,65 +168,61 @@ def lister_jo_conteneurs(base_url, token, depuis):
 def lister_textes_du_jo(base_url, token, jorf_cont_id):
     """Étape 2 : les JORFTEXT publiés dans un JO donné.
 
-    CORRECTIF 01/08 (bug du cumul figé) : la réponse jorfCont contient TOUT
-    l'arbre du conteneur, y compris des références à d'AUTRES JO (liens,
-    sommaires croisés). Un walk() naïf sur tout l'arbre ramassait donc des
-    JORFTEXT qui ne sont PAS de ce JO -- et comme c'étaient souvent les mêmes
-    (le JO le plus récent, très lié), le cumul restait bloqué. On restreint
-    l'extraction à la STRUCTURE du conteneur demandé : items[].joCont.structure,
-    et on vérifie au passage que le joCont renvoyé est bien celui demandé.
+    CORRECTIF FINAL 01/08 (bug du cumul figé, élucidé par diagnostic) :
+    la vraie liste des textes d'un JO est dans
+        items[].joCont.structure.tms[].liensTxt[]
+    (arborescence de sections 'tms', chaque section portant ses textes dans
+    'liensTxt'). L'ancien walk() global ramassait 83 JORFTEXT AILLEURS dans la
+    réponse -- un bloc commun à tous les JO -- d'où les mêmes 83 textes partout
+    et le cumul figé. On extrait donc UNIQUEMENT depuis structure.tms.liensTxt.
     """
     resultat = call_api(base_url, token, "/consult/jorfCont", {"textCid": jorf_cont_id})
     if "_error" in resultat:
         return None, resultat
     textes = []
 
-    def extraire_de_structure(node):
-        """Ne descend QUE dans la structure/les sections d'articles du JO,
-        pas dans les liens vers d'autres conteneurs."""
-        if isinstance(node, dict):
-            tid = node.get("id") or node.get("cid")
-            titre = node.get("title") or node.get("titre") or ""
+    def extraire_liens_txt(section):
+        """Une section 'tms' contient ses textes dans 'liensTxt' et ses
+        sous-sections dans 'tms'. On descend récursivement."""
+        if not isinstance(section, dict):
+            return
+        for lien in (section.get("liensTxt") or []):
+            if not isinstance(lien, dict):
+                continue
+            tid = lien.get("id") or lien.get("cid") or lien.get("idTexte")
+            titre = lien.get("title") or lien.get("titre") or ""
             if tid and str(tid).startswith("JORFTEXT"):
                 textes.append((str(tid).split("_")[0], titre))
-            # On ne suit que les branches de contenu, pas 'liens'/'joEA' etc.
-            for cle in ("structure", "sections", "articles", "children", "items", "tms"):
-                if cle in node:
-                    extraire_de_structure(node[cle])
-        elif isinstance(node, list):
-            for v in node:
-                extraire_de_structure(v)
+        # Sous-sections
+        for sous in (section.get("tms") or []):
+            extraire_liens_txt(sous)
 
-    # La vraie charge est sous items[].joCont.structure (confirmé par le diag).
     items = resultat.get("items") or []
+    _trace = []  # pour un diagnostic au vol sur le 1er JO
     for it in items:
-        jocont = it.get("joCont") if isinstance(it, dict) else None
-        if not jocont:
+        if not isinstance(it, dict):
             continue
-        # Vérif : ce joCont est-il bien celui qu'on a demandé ? Sinon, l'API a
-        # renvoyé autre chose et on ne veut pas de ses textes.
+        jocont = it.get("joCont")
+        if not isinstance(jocont, dict):
+            continue
         renvoye = jocont.get("id") or ""
         if renvoye and renvoye != jorf_cont_id:
-            # On le signale mais on n'ajoute rien : pas de pollution croisée.
             return [], {"_error": "mismatch",
                         "_detail": f"demandé {jorf_cont_id}, renvoyé {renvoye}"}
-        extraire_de_structure(jocont.get("structure", []))
+        structure = jocont.get("structure") or {}
+        for section in (structure.get("tms") or []):
+            # Trace : forme d'un liensTxt réel (une seule fois, si vide de résultat)
+            if not _trace and isinstance(section, dict) and section.get("liensTxt"):
+                premier = section["liensTxt"][0]
+                _trace.append(("liensTxt[0] clés",
+                               list(premier.keys()) if isinstance(premier, dict) else type(premier).__name__))
+            extraire_liens_txt(section)
 
-    # Repli : si la structure attendue n'existe pas, on tente l'ancien walk
-    # global (mieux que rien), mais ça ne devrait plus servir.
-    if not textes:
-        def walk(node):
-            if isinstance(node, dict):
-                tid = node.get("id") or node.get("cid")
-                titre = node.get("title") or node.get("titre") or ""
-                if tid and str(tid).startswith("JORFTEXT"):
-                    textes.append((str(tid).split("_")[0], titre))
-                for v in node.values():
-                    walk(v)
-            elif isinstance(node, list):
-                for v in node:
-                    walk(v)
-        walk(resultat.get("items", []))
+    # Si on n'a rien extrait mais qu'il y avait des liensTxt, afficher leur forme
+    # pour comprendre du premier coup (visible dans les logs du run réel).
+    if not textes and _trace:
+        print(f"    [trace] aucun texte extrait, forme de {_trace[0][0]} : {_trace[0][1]}",
+              file=sys.stderr)
 
     return textes, None
 
