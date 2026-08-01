@@ -1688,13 +1688,14 @@ function renderBrowseClauses(){
     var titre = e.clause_titre || 'Clause';
     var texte = e.texte || '';
     var apercu = texte.length > 600 ? texte.slice(0,600)+'…' : texte;
-    return '<div class="row" style="flex-direction:column;align-items:stretch;cursor:default">'
-      + '<div style="display:flex;gap:10px;align-items:baseline;margin-bottom:4px">'
-      +   '<span class="res-num mono">IDCC '+escapeHtml(e.idcc||'')+'</span>'
-      +   '<span style="font-weight:600;color:var(--violet-strong)">'+escapeHtml(e.ccn_titre||'')+'</span>'
+    return '<div class="row" style="flex-direction:column;align-items:stretch;cursor:default;gap:4px">'
+      + '<div>'
+      +   '<span style="display:inline-block;font-family:\'IBM Plex Mono\',monospace;font-size:11px;font-weight:600;'
+      +     'background:var(--violet-soft);color:var(--violet-strong);padding:2px 7px;border-radius:4px">IDCC '+escapeHtml(e.idcc||'')+'</span>'
       + '</div>'
-      + '<div style="font-weight:600;margin-bottom:6px">'+escapeHtml(titre)+'</div>'
-      + (texte ? '<div style="font-size:14px;line-height:1.5;color:var(--neutral);white-space:pre-wrap">'+escapeHtml(apercu)+'</div>'
+      + '<div style="font-size:13px;color:var(--neutral)">'+escapeHtml(e.ccn_titre||'')+'</div>'
+      + '<div style="font-weight:600;margin-top:2px">'+escapeHtml(titre)+'</div>'
+      + (texte ? '<div style="font-size:14px;line-height:1.5;color:var(--neutral);white-space:pre-wrap;margin-top:2px">'+escapeHtml(apercu)+'</div>'
                : '<div style="font-size:13px;color:var(--neutral);font-style:italic">(texte non disponible)</div>')
       + '</div>';
   }).join('');
