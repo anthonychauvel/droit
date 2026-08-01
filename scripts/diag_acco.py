@@ -102,38 +102,76 @@ def main():
 
     # 1) La recherche ACCO passe-t-elle (ou 500) ?
     print("=" * 60)
-    print("1) /search fond=ACCO, thème 'télétravail', sur un mois récent")
+    print("1) /search fond=ACCO, thème 'télétravail', AVEC filtre de date")
     print("=" * 60)
     r = recherche_acco(base, token, "2025-01-01", "2025-01-31")
     if "_error" in r:
-        print(f">>> ÉCHEC : {r['_error']}")
-        print(f">>> Détail : {r.get('_detail')}")
-        if r["_error"] == 500:
-            print(">>> Toujours le 500. La structure de requête ne convient pas au")
-            print("    fonds ACCO -- le détail ci-dessus devrait dire pourquoi.")
-        return 1
-    print("La recherche PASSE (plus de 500).")
-    print("Clés de premier niveau :", list(r.keys()))
-    total = r.get("totalResultNumber") or r.get("total") or "?"
-    print(f"Nombre total de résultats annoncé : {total}")
+        print(f">>> ÉCHEC : {r['_error']} — {str(r.get('_detail'))[:200]}")
+    else:
+        total = r.get("totalResultNumber") or r.get("total") or "?"
+        print(f"PASSE. Total annoncé : {total}")
 
-    # 2) Structure d'un résultat : où sont l'id et le titre ?
+    # 1bis) SANS filtre de date -- pour voir si c'est la date qui fait planter
     print("\n" + "=" * 60)
-    print("2) Structure d'un résultat de recherche")
+    print("1bis) /search fond=ACCO SANS filtre de date")
     print("=" * 60)
-    results = r.get("results") or r.get("resultats") or []
-    if not results:
-        print("Aucun résultat sur ce mois. Essai sur une fenêtre plus large...")
-        r2 = recherche_acco(base, token, "2024-01-01", "2024-12-31")
-        results = r2.get("results") or r2.get("resultats") or []
-    if not results:
-        print(">>> Toujours aucun résultat -- le fonds ACCO a peut-être peu de")
-        print("    contenu accessible par ce thème, ou le filtre de date bloque.")
-        return 0
-    print(f"{len(results)} résultat(s). Structure du 1er :")
-    print(apercu(results[0], max_prof=3))
+    r_nodate = call(base, token, "/search", {
+        "fond": "ACCO",
+        "recherche": {
+            "champs": [{
+                "typeChamp": "ALL", "operateur": "ET",
+                "criteres": [{"valeur": "télétravail", "typeRecherche": "UN_DES_MOTS", "operateur": "ET"}],
+            }],
+            "sort": "PERTINENCE", "fromAdvancedRecherche": False,
+            "pageNumber": 1, "pageSize": 10, "typePagination": "DEFAUT", "operateur": "ET",
+        },
+    })
+    if "_error" in r_nodate:
+        print(f">>> ÉCHEC : {r_nodate['_error']} — {str(r_nodate.get('_detail'))[:200]}")
+        print(">>> Si ça échoue AUSSI sans date, le problème n'est pas la date.")
+    else:
+        total = r_nodate.get("totalResultNumber") or r_nodate.get("total") or "?"
+        print(f">>> PASSE sans date ! Total : {total}")
+        print(">>> Donc c'était le FILTRE DE DATE qui faisait planter ACCO.")
+        results = r_nodate.get("results") or r_nodate.get("resultats") or []
+        if results:
+            print("\nStructure du 1er résultat (sans date) :")
+            print(apercu(results[0], max_prof=3))
 
-    # Extraire l'id du 1er résultat
+    # 1ter) Avec un tri par date mais toujours sans filtre
+    print("\n" + "=" * 60)
+    print("1ter) /search fond=ACCO, tri par date de publication, sans filtre")
+    print("=" * 60)
+    r_sort = call(base, token, "/search", {
+        "fond": "ACCO",
+        "recherche": {
+            "champs": [{
+                "typeChamp": "ALL", "operateur": "ET",
+                "criteres": [{"valeur": "télétravail", "typeRecherche": "UN_DES_MOTS", "operateur": "ET"}],
+            }],
+            "sort": "PUBLICATION_DATE_DESC", "fromAdvancedRecherche": False,
+            "pageNumber": 1, "pageSize": 10, "typePagination": "DEFAUT", "operateur": "ET",
+        },
+    })
+    if "_error" in r_sort:
+        print(f">>> ÉCHEC : {r_sort['_error']} — {str(r_sort.get('_detail'))[:150]}")
+        print(">>> Si ça échoue, c'est le TRI par date qui pose problème sur ACCO.")
+    else:
+        total = r_sort.get("totalResultNumber") or r_sort.get("total") or "?"
+        print(f">>> PASSE avec tri par date. Total : {total}")
+
+    if "_error" in r and "_error" in r_nodate and "_error" in r_sort:
+        print("\n>>> Les 3 variantes échouent : le fonds ACCO semble indisponible")
+        print("    ou refuse ce type de recherche côté serveur Légifrance.")
+        return 1
+    # Continuer avec la variante qui a marché pour tester le consult
+    r_ok = r_nodate if "_error" not in r_nodate else (r_sort if "_error" not in r_sort else r)
+
+    # 2) Structure + consult sur un id récupéré
+    results = r_ok.get("results") or r_ok.get("resultats") or []
+    if not results:
+        print("\n>>> Une recherche a marché mais 0 résultat -- rien à consulter.")
+        return 0
     premier = results[0]
     tid = None
     for t in (premier.get("titles") or premier.get("titres") or []):
@@ -141,19 +179,16 @@ def main():
             tid = t["id"]; break
     if not tid:
         tid = premier.get("id")
-    print(f"\nID extrait du 1er résultat : {tid}")
-
-    # 3) /consult/acco sur cet id : contenu récupérable ?
+    print(f"\nID du 1er résultat : {tid}")
     if tid:
         print("\n" + "=" * 60)
         print(f"3) /consult/acco sur {tid}")
         print("=" * 60)
         c = call(base, token, "/consult/acco", {"textCid": str(tid).split("_")[0]})
         if "_error" in c:
-            print(f">>> ÉCHEC consult : {c['_error']} — {c.get('_detail')}")
+            print(f">>> ÉCHEC consult : {c['_error']} — {str(c.get('_detail'))[:150]}")
         else:
             print("Consult OK. Clés :", list(c.keys()))
-            print("\nStructure (aperçu) :")
             print(apercu(c, max_prof=2))
 
     print("\n=== FIN DIAGNOSTIC ===")
