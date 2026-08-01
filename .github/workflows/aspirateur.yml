@@ -267,7 +267,7 @@ jobs:
           if [ "${{ github.event_name }}" = "schedule" ]; then
             python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction cc --per-theme 20 --max-decisions 150 --only-missing || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
           else
-            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction cc --per-theme 40 --max-decisions 500 || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction cc --per-theme 40 --max-decisions 700 || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
           fi
 
       - name: "Récupérer la jurisprudence (Judilibre — cours d'appel, pôle social)"
@@ -288,7 +288,7 @@ jobs:
           if [ "${{ github.event_name }}" = "schedule" ]; then
             python3 scripts/pull_judilibre.py --out output/jurisprudence --jurisdiction ca --per-theme 20 --max-decisions 150 --only-missing || echo "Judilibre (CA) a échoué, pas bloquant"
           else
-            python3 scripts/pull_judilibre.py --out output/jurisprudence --jurisdiction ca --per-theme 40 --max-decisions 500 || echo "Judilibre (CA) a échoué, pas bloquant"
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --jurisdiction ca --per-theme 40 --max-decisions 700 || echo "Judilibre (CA) a échoué, pas bloquant"
           fi
 
       - name: "Découvrir largement de la jurisprudence (Judilibre, toutes chambres)"
@@ -350,7 +350,12 @@ jobs:
           # JORF, sinon commit_partiel échouerait silencieusement.
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
-          python3 scripts/pull_acco.py --out output/acco --only-missing --lot 700 --minutes-max 330 || echo "ACCO a échoué, pas bloquant"
+          # Plafond 20 000 accords, pour aligner sur les ~20 000 articles du
+          # Code du travail. Triés par date DÉCROISSANTE (les plus récents
+          # d'abord) sur 20 thèmes RH réels (données DARES : salaires, épargne,
+          # temps de travail... les plus négociés en tête). --only-missing pour
+          # reprendre d'un run à l'autre, lots de 700, garde-temps 5h30.
+          python3 scripts/pull_acco.py --out output/acco --only-missing --max 20000 --lot 700 --minutes-max 330 || echo "ACCO a échoué, pas bloquant"
 
       - name: Lister tous les articles du Code du travail (préparation seulement)
         if: ${{ always() && github.event.inputs.cible == 'lister-tous-articles-travail' }}
