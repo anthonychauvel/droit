@@ -1,39 +1,32 @@
 #!/usr/bin/env python3
 """
-pull_jorf.py — Module 2 (Journal Officiel, volet social) : ÉNUMÈRE tous les
-textes parus au JO sur la fenêtre glissante de 10 ans, puis récupère et
-filtre ceux qui touchent la RH.
+pull_jorf.py — Module 2 (Journal Officiel, volet social) : recherche les
+textes RH parus au JO sur la fenêtre glissante de 10 ans, puis récupère leur
+contenu intégral.
 
-CHANGEMENT MAJEUR du 31/07/2026 -- pourquoi cette réécriture :
-La version précédente cherchait par mot-clé via /search, qui plafonnait à
-~40 résultats quoi qu'on fasse (pagination bloquée côté API). La doc
-officielle Légifrance décrit un flux d'ÉNUMÉRATION complète, bien plus fiable,
-exactement le même principe que list_all_code_articles.py pour le Code du
-travail (lister d'abord, remplir ensuite) :
+HISTORIQUE DES APPROCHES (pour ne pas refaire les mêmes erreurs) :
+  1) /search par mot-clé dans le TITRE -> plafonnait à ~40 résultats. Abandonné.
+  2) Énumération conteneur-par-conteneur via lastNJo + jorfCont -> jorfCont
+     IGNORAIT le textCid demandé et renvoyait toujours le même JO (erreur
+     "mismatch" en boucle sur des milliers de JO). Abandonné le 01/08/2026.
+  3) ACTUELLE : /search sur le fonds JORF, borné par DATE_PUBLICATION, découpé
+     en tranches MENSUELLES (une recherche par mois sur 10 ans = ~121 tranches).
+     Avantages : pas de mismatch possible (on ne demande jamais un JO précis),
+     titres renvoyés directement, chaque mois reste sous le plafond de résultats.
 
-  1. /consult/lastNJo   -> liste les N derniers Journaux Officiels (conteneurs
-                           JORFCONT). Plafond documenté : N < 2500.
-  2. /consult/jorfCont  -> pour chaque JO, la liste de tous les JORFTEXT qui y
-                           ont été publiés.
-  3. /consult/jorf      -> le contenu intégral d'un texte (déjà utilisé et
-                           fonctionnel depuis le correctif CID).
+Flux :
+  a. rechercher_jorf_par_dates(debut, fin)  -> /search, une tranche mensuelle,
+     paginée. Renvoie (id, titre) des textes.
+  b. filtre MOTIF_RH sur le titre               -> ne garde que le RH.
+  c. /consult/jorf {textCid}                    -> contenu intégral (fonctionne
+     depuis le correctif CID, avec renouvellement de token sur 401).
 
-On énumère donc TOUT le JO sur la période (des dizaines de milliers de textes),
-puis on ne garde que ceux dont le titre matche un motif RH. C'est plus lourd
-qu'une recherche, mais exhaustif -- l'inverse du compromis précédent.
-
-Variables d'environnement (identiques au reste) :
-    PISTE_CLIENT_ID / PISTE_CLIENT_SECRET / PISTE_ENV (défaut sandbox)
+Variables d'environnement : PISTE_CLIENT_ID / PISTE_CLIENT_SECRET / PISTE_ENV.
 
 Fenêtre : 10 ans glissants, recalculée à chaque run. Ne supprime jamais
-l'existant -- aucune ligne de suppression dans ce script.
-
-À VALIDER au premier run réel (formes déduites de la doc, pas encore testées
-ici, aucun identifiant PISTE dans ce bac à sable) :
-  - /consult/lastNJo : corps {"nbElement": N} -- nom du champ à confirmer.
-  - /consult/jorfCont : corps {"textCid": "JORFCONT..."} -- à confirmer.
-  Si l'un des deux diffère, le message d'erreur complet (affiché intégralement
-  ci-dessous) donnera la vraie forme.
+l'existant. --only-missing pour reprendre là où un run précédent s'est arrêté ;
+garde-temps (--minutes-max) pour s'arrêter proprement avant le timeout GitHub
+de 6h, en committant par lots (--lot).
 """
 import os
 import sys
@@ -139,92 +132,90 @@ def titre_est_rh(titre):
     return bool(MOTIF_RH.search(titre or ""))
 
 
-def lister_jo_conteneurs(base_url, token, depuis):
-    """Étape 1 : liste les JORFCONT (conteneurs de JO) sur la période.
-    lastNJo renvoie les N derniers -- on demande large et on filtre par date
-    ensuite. N < 2500 (limite documentée) -> pour 10 ans (~2600 JO quotidiens),
-    on plafonne à 2499 et on prévient si la période n'est pas entièrement
-    couverte."""
-    resultat = call_api(base_url, token, "/consult/lastNJo", {"nbElement": 2499})
-    # (Le dump de diagnostic de la réponse lastNJo a été retiré : il pesait
-    #  ~200 Mo -- la liste des 2499 JO d'un coup -- et dépassait la limite de
-    #  100 Mo de GitHub, faisant échouer le push. Sa seule utilité était de
-    #  découvrir la structure de la réponse au premier run ; c'est fait.)
-    if "_error" in resultat:
-        return None, resultat
+def rechercher_jorf_par_dates(client, debut, fin, page=1, page_size=100):
+    """Recherche /search sur le fonds JORF, bornée par dates de publication.
 
-    conteneurs = []
-    # La réponse liste des conteneurs ; on tolère plusieurs noms de champ
-    # possibles puisque la forme exacte n'est pas encore confirmée.
-    items = resultat.get("containers") or resultat.get("jo") or resultat.get("results") or []
-    for it in items:
-        cid = it.get("id") or it.get("cid") or it.get("jorfContId")
-        d = it.get("date") or it.get("publicationDate") or ""
-        if cid:
-            conteneurs.append((cid, d))
-    return conteneurs, None
+    C'EST LA MÉTHODE QUI REMPLACE l'énumération conteneur-par-conteneur
+    (01/08) : jorfCont ignorait le textCid demandé et renvoyait toujours le
+    même JO (erreur "mismatch" en boucle). /search par tranche de dates,
+    lui, ne demande jamais un JO précis -- donc pas de mismatch possible --
+    et renvoie directement les titres. On découpe la fenêtre de 10 ans en
+    petites tranches (un mois) pour rester sous le plafond de résultats de
+    /search qui plombait la 1re version.
 
-
-def lister_textes_du_jo(base_url, token, jorf_cont_id):
-    """Étape 2 : les JORFTEXT publiés dans un JO donné.
-
-    CORRECTIF FINAL 01/08 (bug du cumul figé, élucidé par diagnostic) :
-    la vraie liste des textes d'un JO est dans
-        items[].joCont.structure.tms[].liensTxt[]
-    (arborescence de sections 'tms', chaque section portant ses textes dans
-    'liensTxt'). L'ancien walk() global ramassait 83 JORFTEXT AILLEURS dans la
-    réponse -- un bloc commun à tous les JO -- d'où les mêmes 83 textes partout
-    et le cumul figé. On extrait donc UNIQUEMENT depuis structure.tms.liensTxt.
+    typeChamp=ALL : cherche dans tout le texte (pas juste le titre), pour ne
+    rater aucun texte RH.
     """
-    resultat = call_api(base_url, token, "/consult/jorfCont", {"textCid": jorf_cont_id})
-    if "_error" in resultat:
-        return None, resultat
-    textes = []
+    body = {
+        "fond": "JORF",
+        "recherche": {
+            "champs": [{
+                "typeChamp": "ALL",
+                "operateur": "ET",
+                "criteres": [{
+                    "valeur": "travail",   # amorce large ; le vrai tri RH se
+                                            # fait ensuite sur le titre via MOTIF_RH
+                    "typeRecherche": "UN_DES_MOTS",
+                    "operateur": "ET",
+                }],
+            }],
+            "filtres": [{
+                "facette": "DATE_PUBLICATION",
+                "dates": {
+                    "start": debut,   # "AAAA-MM-JJ"
+                    "end": fin,
+                },
+            }],
+            "sort": "PUBLICATION_DATE_DESC",
+            "fromAdvancedRecherche": False,
+            "pageNumber": page,
+            "pageSize": page_size,
+            "typePagination": "DEFAUT",
+            "operateur": "ET",
+        },
+    }
+    return client.call("/search", body)
 
-    def extraire_liens_txt(section):
-        """Une section 'tms' contient ses textes dans 'liensTxt' et ses
-        sous-sections dans 'tms'. On descend récursivement."""
-        if not isinstance(section, dict):
-            return
-        for lien in (section.get("liensTxt") or []):
-            if not isinstance(lien, dict):
-                continue
-            tid = lien.get("id") or lien.get("cid") or lien.get("idTexte")
-            titre = lien.get("title") or lien.get("titre") or ""
-            if tid and str(tid).startswith("JORFTEXT"):
-                textes.append((str(tid).split("_")[0], titre))
-        # Sous-sections
-        for sous in (section.get("tms") or []):
-            extraire_liens_txt(sous)
 
-    items = resultat.get("items") or []
-    _trace = []  # pour un diagnostic au vol sur le 1er JO
-    for it in items:
-        if not isinstance(it, dict):
-            continue
-        jocont = it.get("joCont")
-        if not isinstance(jocont, dict):
-            continue
-        renvoye = jocont.get("id") or ""
-        if renvoye and renvoye != jorf_cont_id:
-            return [], {"_error": "mismatch",
-                        "_detail": f"demandé {jorf_cont_id}, renvoyé {renvoye}"}
-        structure = jocont.get("structure") or {}
-        for section in (structure.get("tms") or []):
-            # Trace : forme d'un liensTxt réel (une seule fois, si vide de résultat)
-            if not _trace and isinstance(section, dict) and section.get("liensTxt"):
-                premier = section["liensTxt"][0]
-                _trace.append(("liensTxt[0] clés",
-                               list(premier.keys()) if isinstance(premier, dict) else type(premier).__name__))
-            extraire_liens_txt(section)
+def extraire_textes_recherche(resultat):
+    """Renvoie [(id, titre), ...] depuis une réponse /search JORF.
+    L'id du texte est un JORFTEXT ; on retire un éventuel suffixe _date."""
+    out = []
+    results = resultat.get("results") or resultat.get("resultats") or []
+    for r in results:
+        titre = r.get("titre") or r.get("title") or ""
+        # L'id peut être au niveau du résultat ou dans 'titles'
+        tid = None
+        for t in (r.get("titles") or r.get("titres") or []):
+            if t.get("id"):
+                tid = t["id"]
+                if not titre:
+                    titre = t.get("titre") or t.get("title") or ""
+                break
+        if not tid:
+            tid = r.get("id")
+        if tid and str(tid).startswith("JORFTEXT"):
+            out.append((str(tid).split("_")[0], titre))
+    return out
 
-    # Si on n'a rien extrait mais qu'il y avait des liensTxt, afficher leur forme
-    # pour comprendre du premier coup (visible dans les logs du run réel).
-    if not textes and _trace:
-        print(f"    [trace] aucun texte extrait, forme de {_trace[0][0]} : {_trace[0][1]}",
-              file=sys.stderr)
 
-    return textes, None
+def mois_glissants(depuis, jusqu_a):
+    """Génère les bornes (debut, fin) mois par mois entre deux dates, en
+    'AAAA-MM-JJ'. Découper en mois garde chaque recherche sous le plafond."""
+    from datetime import date, timedelta
+    cur = date(depuis.year, depuis.month, 1)
+    fin_totale = jusqu_a
+    tranches = []
+    while cur <= fin_totale:
+        # 1er du mois suivant
+        if cur.month == 12:
+            suivant = date(cur.year + 1, 1, 1)
+        else:
+            suivant = date(cur.year, cur.month + 1, 1)
+        fin_tranche = min(suivant - timedelta(days=1), fin_totale)
+        tranches.append((cur.isoformat(), fin_tranche.isoformat()))
+        cur = suivant
+    return tranches
 
 
 def fetch_un_texte(base_url, token, text_id):
@@ -297,8 +288,6 @@ def main():
                           "= 5h30). GitHub tue un job à 6h ; on s'arrête AVANT, proprement, "
                           "en committant ce qui est fait -- le run suivant (--only-missing) "
                           "reprend la suite. C'est la clé pour couvrir 10 ans sur plusieurs runs.")
-    ap.add_argument("--max-jo", type=int, default=2499,
-                     help="Plafond de JO à énumérer (garde-fou).")
     args = ap.parse_args()
 
     depuis = date.fromisoformat(args.depuis) if args.depuis else date_dix_ans_glissante()
@@ -328,48 +317,43 @@ def main():
             existing = {}
     preserved_ok = {k: v for k, v in existing.items() if v.get("status") == "ok"}
 
-    # ── Étape 1 : conteneurs de JO ──
-    print("Étape 1 : liste des Journaux Officiels...")
-    conteneurs, err = lister_jo_conteneurs(client, None, depuis)
-    if err:
-        print(f"ÉCHEC lastNJo ({err['_error']}) : {str(err.get('_detail',''))[:400]}", file=sys.stderr)
-        print("Rien récupéré -- voir le message ci-dessus pour la vraie forme du endpoint.", file=sys.stderr)
-        sys.exit(1)
+    # ── Recherche des textes RH par tranches de dates mensuelles ──
+    # Plus d'énumération conteneur-par-conteneur (jorfCont buguait). On balaie
+    # la fenêtre de 10 ans mois par mois via /search, en paginant chaque mois.
+    tranches = mois_glissants(depuis, date.today())
+    print(f"Recherche JORF sur {len(tranches)} tranches mensuelles "
+          f"(de {tranches[0][0]} à {tranches[-1][1]})...")
 
-    depuis_dt = datetime.combine(depuis, datetime.min.time())
-    conteneurs_periode = []
-    for cid, d in conteneurs:
-        try:
-            if d and datetime.fromisoformat(d[:10]) < depuis_dt:
-                continue
-        except ValueError:
-            pass
-        conteneurs_periode.append(cid)
-    conteneurs_periode = conteneurs_periode[:args.max_jo]
-    print(f"  {len(conteneurs)} JO listés, {len(conteneurs_periode)} dans la fenêtre de 10 ans.")
-    if len(conteneurs) >= 2499:
-        print("  ATTENTION : plafond de 2499 JO atteint -- la période de 10 ans n'est "
-              "peut-être pas entièrement couverte (le JO paraît quotidiennement). "
-              "Les JO les plus anciens de la fenêtre peuvent manquer.", file=sys.stderr)
-
-    # ── Étape 2 : énumération des textes, filtrés RH sur le titre ──
-    print("Étape 2 : énumération des textes RH dans chaque JO...")
     candidats_rh = {}  # id -> titre
-    for i, cid in enumerate(conteneurs_periode, 1):
-        textes, err = lister_textes_du_jo(client, None, cid)
-        if err:
-            print(f"  [{i}/{len(conteneurs_periode)}] JO {cid} : échec ({err['_error']})", file=sys.stderr)
+    for idx, (deb, fin) in enumerate(tranches, 1):
+        page = 1
+        total_mois = 0
+        while True:
+            resultat = rechercher_jorf_par_dates(client, deb, fin, page=page, page_size=100)
+            if "_error" in resultat:
+                print(f"  [{idx}/{len(tranches)}] {deb[:7]} : échec "
+                      f"({resultat['_error']}) {str(resultat.get('_detail',''))[:120]}", file=sys.stderr)
+                break
+            textes = extraire_textes_recherche(resultat)
+            if not textes:
+                break
+            rh = [(tid, titre) for tid, titre in textes if titre_est_rh(titre)]
+            for tid, titre in rh:
+                candidats_rh[tid] = titre
+            total_mois += len(rh)
+            # Pagination : s'il y a moins que page_size, c'était la dernière page.
+            if len(textes) < 100:
+                break
+            page += 1
+            if page > 50:  # garde-fou anti-boucle
+                break
             time.sleep(args.delay)
-            continue
-        rh = [(tid, titre) for tid, titre in textes if titre_est_rh(titre)]
-        for tid, titre in rh:
-            candidats_rh[tid] = titre
-        if i % 25 == 0 or rh:
-            print(f"  [{i}/{len(conteneurs_periode)}] JO {cid} : {len(textes)} textes, "
-                  f"{len(rh)} RH (cumul {len(candidats_rh)})")
+        if total_mois or idx % 12 == 0:
+            print(f"  [{idx}/{len(tranches)}] {deb[:7]} : +{total_mois} RH "
+                  f"(cumul {len(candidats_rh)})")
         time.sleep(args.delay)
 
-    print(f"\n{len(candidats_rh)} texte(s) RH énuméré(s) au total sur la période.")
+    print(f"\n{len(candidats_rh)} texte(s) RH trouvé(s) au total sur la période.")
 
     # ── Étape 3 : récupération du contenu, par lots, sous garde-temps ──
     a_traiter = list(candidats_rh.keys())
