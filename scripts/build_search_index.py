@@ -27,6 +27,9 @@ import glob
 import argparse
 
 SNIPPET_LEN = 280      # extrait pour les articles de code
+SNIPPET_LEN_LONG = 600 # extrait plus long pour JORF/ACCO (contenu riche : on
+                       # veut que la recherche matche au-delà du tout début du
+                       # texte, ex. un montant ou une prime cités plus loin)
 SECTION_KW_LEN = 240   # extrait de texte embarqué par section de convention
 
 
@@ -229,6 +232,44 @@ def build_juris_index(juris_dir):
     return index
 
 
+def texte_depuis_payload(payload):
+    """Extrait le texte d'un payload JORF/ACCO pour le snippet de recherche.
+
+    CORRECTIF 01/08 : l'ancien code cherchait le texte dans payload.texte /
+    texteHtml / content -- mais le vrai contenu est dans payload.articles[].content
+    (et payload.sections, et payload.extraits pour ACCO). Résultat : snippet
+    vide, la recherche ne matchait que le titre. On lit maintenant la vraie
+    structure, comme le fait l'affichage.
+    """
+    morceaux = []
+    # Champs directs (au cas où)
+    for cle in ("texte", "texteHtml", "content", "visa", "signers"):
+        v = payload.get(cle)
+        if isinstance(v, str) and v.strip():
+            morceaux.append(v)
+    # Articles (la vraie source du contenu)
+    for art in (payload.get("articles") or []):
+        if isinstance(art, dict):
+            c = art.get("content") or art.get("texte") or ""
+            if c:
+                morceaux.append(c)
+    # Sections imbriquées
+    def walk_sections(sections):
+        for s in sections or []:
+            if isinstance(s, dict):
+                for art in (s.get("articles") or []):
+                    if isinstance(art, dict) and (art.get("content") or art.get("texte")):
+                        morceaux.append(art.get("content") or art.get("texte"))
+                walk_sections(s.get("sections"))
+    walk_sections(payload.get("sections"))
+    # Extraits (ACCO)
+    for ex in (payload.get("extraits") or []):
+        if isinstance(ex, str) and ex.strip():
+            morceaux.append(ex)
+    brut = " ".join(morceaux)
+    return strip_html(brut) if brut else ""
+
+
 def build_jorf_index(jorf_dir):
     """Même principe que build_juris_index -- même format de fichier produit
     par pull_jorf.py."""
@@ -247,12 +288,11 @@ def build_jorf_index(jorf_dir):
             continue
         titre = data.get("titre") or f"Texte JORF {numero}"
         payload = data.get("text") or {}
-        brut = payload.get("texte") or payload.get("texteHtml") or payload.get("content") or ""
-        text = strip_html(brut) if brut else ""
+        text = texte_depuis_payload(payload)
         index.append({
             "num": numero,
             "title": titre,
-            "snippet": text[:SNIPPET_LEN],
+            "snippet": text[:SNIPPET_LEN_LONG],
         })
     return index
 
@@ -275,12 +315,11 @@ def build_acco_index(acco_dir):
             continue
         titre = data.get("titre") or f"Accord {numero}"
         payload = data.get("text") or {}
-        brut = payload.get("texte") or payload.get("texteHtml") or payload.get("content") or ""
-        text = strip_html(brut) if brut else ""
+        text = texte_depuis_payload(payload)
         index.append({
             "num": numero,
             "title": titre,
-            "snippet": text[:SNIPPET_LEN],
+            "snippet": text[:SNIPPET_LEN_LONG],
             "themes": data.get("themes") or [],
         })
     return index
