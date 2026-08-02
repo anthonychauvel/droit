@@ -679,7 +679,17 @@ var SYN_RAW = {
  'patron':['employeur'],'boss':['employeur'],'boite':['entreprise'],'boulot':['travail'],'taf':['travail'],
  'rupture conventionnelle':['rupture conventionnelle homologuee'],'preavis':['delai de preavis'],'cdd':['contrat a duree determinee'],'cdi':['contrat a duree indeterminee'],'fin de contrat':['rupture du contrat'],'indemnite de licenciement':['indemnite legale de licenciement'],'chomage':['allocation chomage'],
  'conges payes':['conges payes'],'cp':['conges payes'],'arret maladie':['arret de travail'],'conge maternite':['conge maternite'],'conge paternite':['conge paternite'],'jour ferie':['jours feries'],'ferie':['jour ferie'],'rtt':['reduction du temps de travail'],
- 'cadre autonome':['forfait jours'],'deconnexion':['droit a la deconnexion'],'teletravail':['travail a distance'],'at':['accident du travail'],'mutuelle':['complementaire sante'],'convention collective':['ccn','idcc'],'harcelement':['harcelement moral','harcelement sexuel']
+ 'cadre autonome':['forfait jours'],'deconnexion':['droit a la deconnexion'],'teletravail':['travail a distance'],'at':['accident du travail'],'mutuelle':['complementaire sante'],'convention collective':['ccn','idcc'],'harcelement':['harcelement moral','harcelement sexuel'],
+ 'vire':['licenciement'],'virer':['licenciement'],'me faire virer':['licenciement'],'se faire virer':['licenciement'],'licencie':['licenciement'],'degage':['licenciement'],'mis a la porte':['licenciement'],'foutu dehors':['licenciement'],'renvoye':['licenciement'],
+ 'demission':['demission','rupture du contrat'],'demissionner':['demission'],'je pars':['demission','rupture du contrat'],'quitter mon travail':['demission'],'partir':['demission','rupture du contrat'],
+ 'pas paye':['rappel de salaire','salaire impaye'],'impaye':['rappel de salaire'],'heures pas payees':['rappel de salaire','heures supplementaires'],'salaire en retard':['rappel de salaire'],'pas ete paye':['rappel de salaire'],
+ 'enceinte':['grossesse','conge maternite'],'grossesse':['grossesse','conge maternite'],'je suis enceinte':['grossesse','conge maternite'],'future maman':['conge maternite'],
+ 'malade':['arret de travail','arret maladie'],'je suis malade':['arret de travail'],'accident':['accident du travail'],'accident boulot':['accident du travail'],
+ 'discrimination':['discrimination'],'discrimine':['discrimination'],'traite differemment':['discrimination','egalite de traitement'],'pas egalite':['egalite de traitement'],
+ 'augmentation':['augmentation de salaire','revalorisation'],'augmente':['augmentation de salaire'],'plus de salaire':['augmentation de salaire'],'revalorisation':['revalorisation salariale'],
+ 'prime de transport':['indemnite transport','frais de transport'],'tickets resto':['titre restaurant'],'ticket resto':['titre restaurant'],'panier repas':['prime panier','indemnite repas'],'frais kilometriques':['indemnite kilometrique'],
+ 'jours de repos':['repos','rtt'],'planning':['horaires de travail','organisation du temps de travail'],'horaires':['horaires de travail'],'pause':['temps de pause'],'pause dej':['temps de pause'],
+ 'prud homme':['conseil de prud hommes'],'prudhomme':['conseil de prud hommes'],'aux prudhommes':['conseil de prud hommes'],'porter plainte':['conseil de prud hommes','inspection du travail'],'mes droits':['droit du travail']
 };
 var PRO = {}, SYN = {};
 Object.keys(PRO_RAW).forEach(function(k){ PRO[normaliser(k)] = PRO_RAW[k]; });
