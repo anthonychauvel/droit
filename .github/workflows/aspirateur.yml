@@ -350,12 +350,14 @@ jobs:
       - name: "Récupérer les accords d'entreprise (benchmarking RH)"
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'acco' || github.event.inputs.cible == 'tout') }}
         run: |
-          # Module 3 du cahier des charges MonLegiTexte : télétravail, forfait
-          # jours, PPV, CET, égalité pro, QVT, droit à la déconnexion.
-          # MÊME méthode et MÊME stratégie que le JORF (recherche /search par
-          # tranches mensuelles, garde-temps 5h30, lots de 700, --only-missing
-          # pour reprendre). L'identité git est configurée ICI, comme pour le
-          # JORF, sinon commit_partiel échouerait silencieusement.
+          # Module 3 : accords d'entreprise, TEXTE COMPLET.
+          # Récupère le texte INTÉGRAL de chaque accord via /consult/acco {"id"}
+          # (le param "textCid" plantait en 500 ; "id" fonctionne -- découverte
+          # du 01/08). Sans plafond : on récupère TOUT le corpus (~54 000
+          # accords sur les 20 thèmes RH, après déduplication). Chaque accord
+          # = 1 appel consult, donc ~7-8h -> plusieurs runs sous garde-temps
+          # (5h30), --only-missing reprend là où le précédent s'est arrêté.
+          # L'identité git est configurée ICI (sinon commit_partiel échoue).
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
           python3 scripts/pull_acco.py --out output/acco --only-missing --lot 700 --minutes-max 330 || echo "ACCO a échoué, pas bloquant"
