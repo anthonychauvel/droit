@@ -572,22 +572,30 @@ async function loadAll(){
     catch(e){ TRENDS = null; }
   })();
 
-  await Promise.all([pManifest, pSearch, pCcnListe, pTrends, pClauses]);
-
-  // 4) Repli : si pas de manifeste, reconstruire les listes à partir des _summary
+  // Le manifest (6 Mo) porte les compteurs et les listes. On l'attend EN
+  // PREMIER et on affiche les compteurs tde suite, SANS attendre le
+  // search-index (30+ Mo) qui ne sert qu'à la recherche. Ça supprime le délai
+  // de 0-3s avant l'affichage du récap : l'utilisateur voit les chiffres dès
+  // que les 6 Mo du manifest sont là, pendant que l'index charge en fond.
+  await pManifest;
   if(!manifestOk){
     await loadFromSummaries();
   }
+  updateCounts();   // ← compteurs affichés immédiatement
 
-  // 5) Enrichir les états des articles depuis le search-index si le manifeste
-  //    ne les avait pas (ou en repli) — le search-index porte "etat" par article.
+  // Le reste continue en arrière-plan : search-index, listes annexes. La
+  // recherche ne sera pleinement opérationnelle qu'une fois pSearch fini,
+  // mais le menu et les compteurs sont déjà utilisables.
+  await Promise.all([pSearch, pCcnListe, pTrends, pClauses]);
+
+  // Enrichir les états des articles depuis le search-index (une fois chargé).
   var etatByNum = {};
   (SEARCH.code||[]).forEach(function(a){ if(a.etat) etatByNum['c:'+a.num]=shortEtat(a.etat); });
   (SEARCH.code_secu||[]).forEach(function(a){ if(a.etat) etatByNum['s:'+a.num]=shortEtat(a.etat); });
   INDEX.code.forEach(function(it){ if((it.etat==='?'||!it.etat) && etatByNum['c:'+it.num]) it.etat=etatByNum['c:'+it.num]; });
   INDEX.secu.forEach(function(it){ if((it.etat==='?'||!it.etat) && etatByNum['s:'+it.num]) it.etat=etatByNum['s:'+it.num]; });
 
-  updateCounts();
+  updateCounts();   // ← re-maj après enrichissement des états
 }
 
 async function loadFromSummaries(){
