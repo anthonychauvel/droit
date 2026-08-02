@@ -34,6 +34,7 @@ on:
           - jurisprudence
           - decouvrir-jurisprudence
           - jorf
+          - reparer-titres
           - diag-jorf
           - diag-acco
           - diag-judilibre
@@ -296,6 +297,17 @@ jobs:
         run: |
           # Remplit directement output/jurisprudence (toutes chambres, plafond élevé).
           python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber "" --jurisdiction "" --per-theme 50 --max-decisions 800
+
+      - name: "Réparer les titres JORF vides (anciens textes)"
+        if: ${{ always() && github.event.inputs.cible == 'reparer-titres' }}
+        run: |
+          # Répare les ~50 titres vides des textes JORF récupérés par l'ancienne
+          # méthode d'énumération (avant la recherche par dates). Va chercher
+          # leur titre via /consult/jorf et le remplit. Le manifest est ensuite
+          # régénéré par les étapes de build en fin de workflow.
+          git config user.name "Aspirateur Légifrance (bot)"
+          git config user.email "action@github.com"
+          python3 scripts/reparer_titres_jorf.py --out output/jorf || echo "Réparation titres échouée, pas bloquant"
 
       - name: "DIAGNOSTIC JORF (voir la vraie structure de l'API)"
         if: ${{ always() && github.event.inputs.cible == 'diag-jorf' }}
