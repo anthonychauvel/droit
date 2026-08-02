@@ -77,12 +77,24 @@ class PisteClient:
         self.client_id = client_id
         self.client_secret = client_secret
         self.token = get_token(token_url, client_id, client_secret)
+        import time as _t
+        self._token_ts = _t.monotonic()   # heure d'obtention du token
 
-    def _renouveler(self):
-        print("    [token] 401 reçu -> renouvellement du token PISTE...", file=sys.stderr)
+    def _renouveler(self, prevention=False):
+        import time as _t
+        raison = "préventif (~50 min)" if prevention else "401 reçu"
+        print(f"    [token] renouvellement {raison}...", file=sys.stderr)
         self.token = get_token(self.token_url, self.client_id, self.client_secret)
+        self._token_ts = _t.monotonic()
 
     def call(self, path, body, _reessai=True):
+        import time as _t
+        # Renouvellement PRÉVENTIF : si le token a plus de 50 min, on le
+        # renouvelle AVANT de l'utiliser, pour éviter le cycle coûteux
+        # échec 401 -> renouvellement -> rejeu (qui doublait le temps de
+        # certains appels et ralentissait tout le run).
+        if _t.monotonic() - self._token_ts > 3000:  # 50 min
+            self._renouveler(prevention=True)
         req = urllib.request.Request(
             self.base_url + path, data=json.dumps(body).encode("utf-8"), method="POST",
             headers={"Authorization": f"Bearer {self.token}",
@@ -92,7 +104,7 @@ class PisteClient:
                 return json.loads(resp.read())
         except urllib.error.HTTPError as e:
             if e.code == 401 and _reessai:
-                # Token probablement expiré : on en reprend un et on rejoue UNE fois.
+                # Filet de sécurité : si un 401 passe quand même, on renouvelle.
                 self._renouveler()
                 return self.call(path, body, _reessai=False)
             return {"_error": e.code, "_detail": e.read().decode(errors="replace")}
@@ -383,7 +395,8 @@ def main():
     ap.add_argument("--out", default="output/acco")
     ap.add_argument("--depuis", default=None,
                      help="Date de début (JJJJ-MM-JJ). Défaut : 10 ans glissants.")
-    ap.add_argument("--delay", type=float, default=0.6, help="Délai entre appels (s)")
+    ap.add_argument("--delay", type=float, default=0.3, help="Délai entre appels (s). "
+                    "0.3 est un bon compromis vitesse/prudence ; monter si l'API bloque.")
     ap.add_argument("--only-missing", action="store_true",
                      help="Ne récupère le CONTENU que des textes RH pas encore acquis. "
                           "C'est CE mode qui permet de reprendre là où le run précédent "
