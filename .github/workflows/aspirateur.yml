@@ -34,9 +34,9 @@ on:
           - jurisprudence
           - decouvrir-jurisprudence
           - jorf
-          - reparer-titres
           - diag-jorf
           - diag-acco
+          - diag-acco-texte
           - diag-judilibre
           - acco
           - lister-tous-articles-travail
@@ -268,7 +268,7 @@ jobs:
           if [ "${{ github.event_name }}" = "schedule" ]; then
             python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction cc --per-theme 20 --max-decisions 150 --only-missing || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
           else
-            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction cc --per-theme 40 --max-decisions 700 || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction cc --per-theme 40 --max-decisions 500 || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
           fi
 
       - name: "Récupérer la jurisprudence (Judilibre — cours d'appel, pôle social)"
@@ -289,7 +289,7 @@ jobs:
           if [ "${{ github.event_name }}" = "schedule" ]; then
             python3 scripts/pull_judilibre.py --out output/jurisprudence --jurisdiction ca --per-theme 20 --max-decisions 150 --only-missing || echo "Judilibre (CA) a échoué, pas bloquant"
           else
-            python3 scripts/pull_judilibre.py --out output/jurisprudence --jurisdiction ca --per-theme 40 --max-decisions 700 || echo "Judilibre (CA) a échoué, pas bloquant"
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --jurisdiction ca --per-theme 40 --max-decisions 500 || echo "Judilibre (CA) a échoué, pas bloquant"
           fi
 
       - name: "Découvrir largement de la jurisprudence (Judilibre, toutes chambres)"
@@ -297,17 +297,6 @@ jobs:
         run: |
           # Remplit directement output/jurisprudence (toutes chambres, plafond élevé).
           python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber "" --jurisdiction "" --per-theme 50 --max-decisions 800
-
-      - name: "Réparer les titres JORF vides (anciens textes)"
-        if: ${{ always() && github.event.inputs.cible == 'reparer-titres' }}
-        run: |
-          # Répare les ~50 titres vides des textes JORF récupérés par l'ancienne
-          # méthode d'énumération (avant la recherche par dates). Va chercher
-          # leur titre via /consult/jorf et le remplit. Le manifest est ensuite
-          # régénéré par les étapes de build en fin de workflow.
-          git config user.name "Aspirateur Légifrance (bot)"
-          git config user.email "action@github.com"
-          python3 scripts/reparer_titres_jorf.py --out output/jorf || echo "Réparation titres échouée, pas bloquant"
 
       - name: "DIAGNOSTIC JORF (voir la vraie structure de l'API)"
         if: ${{ always() && github.event.inputs.cible == 'diag-jorf' }}
@@ -322,6 +311,13 @@ jobs:
           # Teste /search sur le fonds ACCO et /consult/acco, pour voir si le
           # 500 persiste et quelle est la vraie structure des résultats.
           python3 scripts/diag_acco.py
+
+      - name: "DIAGNOSTIC ACCO texte (peut-on récupérer plus long ?)"
+        if: ${{ always() && github.event.inputs.cible == 'diag-acco-texte' }}
+        run: |
+          # Teste toutes les pistes pour récupérer PLUS de texte par accord :
+          # tailleExtrait, endpoints alternatifs. Décide 20000 long vs 54000 court.
+          python3 scripts/diag_acco_texte.py
 
       - name: "DIAGNOSTIC Judilibre (pourquoi pas de cours d'appel)"
         if: ${{ always() && github.event.inputs.cible == 'diag-judilibre' }}
@@ -362,12 +358,7 @@ jobs:
           # JORF, sinon commit_partiel échouerait silencieusement.
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
-          # Plafond 20 000 accords, pour aligner sur les ~20 000 articles du
-          # Code du travail. Triés par date DÉCROISSANTE (les plus récents
-          # d'abord) sur 20 thèmes RH réels (données DARES : salaires, épargne,
-          # temps de travail... les plus négociés en tête). --only-missing pour
-          # reprendre d'un run à l'autre, lots de 700, garde-temps 5h30.
-          python3 scripts/pull_acco.py --out output/acco --only-missing --max 20000 --lot 700 --minutes-max 330 || echo "ACCO a échoué, pas bloquant"
+          python3 scripts/pull_acco.py --out output/acco --only-missing --lot 700 --minutes-max 330 || echo "ACCO a échoué, pas bloquant"
 
       - name: Lister tous les articles du Code du travail (préparation seulement)
         if: ${{ always() && github.event.inputs.cible == 'lister-tous-articles-travail' }}
