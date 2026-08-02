@@ -273,10 +273,62 @@ def mois_glissants(depuis, jusqu_a):
     return tranches
 
 
-def fetch_un_accord(base_url, token, text_id):
-    """Étape 3 : contenu intégral. Endpoint déjà fonctionnel depuis le
-    correctif CID du 31/07."""
-    return call_api(base_url, token, "/consult/jorf", {"textCid": text_id})
+def fetch_texte_complet_acco(client, text_id):
+    """Récupère le texte INTÉGRAL d'un accord.
+
+    DÉCOUVERTE 01/08 (diagnostic) : /consult/acco plante en 500 avec le
+    paramètre {"textCid": ...}, MAIS fonctionne avec {"id": ...} et renvoie
+    le texte complet dans un champ 'acco'. C'est LA solution au 500.
+    """
+    return client.call("/consult/acco", {"id": text_id})
+
+
+def extraire_texte_complet(reponse):
+    """Extrait tout le texte d'une réponse /consult/acco {"id":...}.
+
+    La réponse a la forme {executionTime, dereferenced, acco:{...}}. Le champ
+    'acco' contient le texte, mais sa structure interne n'est pas certaine
+    (articles ? sections ? contenu direct ?). On récupère donc TOUT le texte
+    trouvé dans 'acco', de façon défensive, quelle que soit la forme.
+    """
+    acco = reponse.get("acco") or {}
+    morceaux = []
+
+    def sans_html(s):
+        import re as _re
+        return _re.sub(r"<[^>]+>", "", str(s)).replace("&nbsp;", " ").strip()
+
+    def collecter(node, prof=0):
+        if prof > 8:
+            return
+        if isinstance(node, dict):
+            # Champs de contenu connus
+            for cle in ("content", "contenu", "texte", "text", "corps"):
+                v = node.get(cle)
+                if isinstance(v, str) and len(v.strip()) > 10:
+                    morceaux.append(sans_html(v))
+            # Descendre dans les structures
+            for cle in ("articles", "sections", "liens", "children", "elements", "items"):
+                if cle in node:
+                    collecter(node[cle], prof + 1)
+            # Si rien trouvé aux clés connues, parcourir tout
+            if not any(k in node for k in ("content", "contenu", "texte", "text",
+                                            "articles", "sections")):
+                for v in node.values():
+                    collecter(v, prof + 1)
+        elif isinstance(node, list):
+            for v in node:
+                collecter(v, prof + 1)
+
+    collecter(acco)
+    # Dédoublonner en gardant l'ordre
+    vus = set()
+    uniques = []
+    for m in morceaux:
+        if m and m not in vus:
+            vus.add(m)
+            uniques.append(m)
+    return "\n\n".join(uniques)
 
 
 import subprocess
@@ -392,9 +444,11 @@ def main():
     deja = set(preserved_ok.keys())
     arrete_par_temps = False
     depuis_iso = depuis.isoformat()
+    _trace_faite = [False]      # pour n'afficher la structure qu'une fois
+    _echecs_consult = [0]       # compteur d'échecs de consult (repli sur extrait)
 
-    print(f"Recherche ACCO sur {len(THEMES_ACCO)} thèmes (sans filtre de date), "
-          f"sauvegarde directe, lots de {args.lot}, limite {args.minutes_max} min.")
+    print(f"Recherche ACCO sur {len(THEMES_ACCO)} thèmes, récupération du TEXTE "
+          f"COMPLET via consult (id), lots de {args.lot}, limite {args.minutes_max} min.")
 
     for t_idx, theme in enumerate(THEMES_ACCO, 1):
         if arrete_par_temps:
@@ -415,7 +469,7 @@ def main():
             accords = extraire_accords_recherche(resultat)
             if not accords:
                 break
-            for tid, titre, texte, extraits in accords:
+            for tid, titre, texte_court, extraits in accords:
                 # Filtre RH sur le titre + only-missing.
                 if not titre_est_rh(titre):
                     continue
@@ -423,16 +477,35 @@ def main():
                     continue
                 if tid in deja:
                     continue
-                # Sauvegarde DIRECTE : le texte vient de la recherche, pas d'un
-                # /consult. On garde la même forme {titre, text} que le JORF pour
-                # que le front-end l'affiche pareil ; 'text' contient articles.
+
+                # Récupérer le TEXTE COMPLET via /consult/acco {"id": ...}
+                # (le diagnostic a montré que ce paramètre marche, contrairement
+                # à "textCid" qui plante en 500). Repli sur l'extrait si échec.
+                texte_complet = ""
+                rep = fetch_texte_complet_acco(client, tid)
+                if "_error" not in rep:
+                    texte_complet = extraire_texte_complet(rep)
+                    # Trace : au tout premier accord récupéré, montrer la
+                    # structure pour confirmer qu'on extrait bien le texte.
+                    if not _trace_faite[0]:
+                        acco_obj = rep.get("acco") or {}
+                        print(f"    [trace] 1er accord {tid} : clés de 'acco' = "
+                              f"{list(acco_obj.keys())[:12]}", file=sys.stderr)
+                        print(f"    [trace] texte complet extrait : {len(texte_complet)} caractères "
+                              f"(vs extrait recherche : {len(texte_court)})", file=sys.stderr)
+                        _trace_faite[0] = True
+                else:
+                    _echecs_consult[0] += 1
+                # Si le consult n'a rien donné, on garde au moins l'extrait.
+                texte_final = texte_complet if texte_complet else texte_court
+
                 contenu = {
                     "titre": titre,
                     "text": {
                         "titre": titre,
-                        "articles": [{"content": texte}] if texte else [],
+                        "articles": [{"content": texte_final}] if texte_final else [],
                         "extraits": extraits,
-                        "source": "recherche ACCO (consult indisponible)",
+                        "source": "consult ACCO (id)" if texte_complet else "extrait recherche",
                     },
                 }
                 with open(os.path.join(args.out, f"{tid}.json"), "w", encoding="utf-8") as f:
@@ -447,6 +520,7 @@ def main():
                 if n_ok % args.lot == 0:
                     json.dump(summary, open(summary_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
                     commit_partiel(args.out, n_ok, "?")
+                time.sleep(args.delay)  # délai entre consult pour ménager l'API
             if args.max and n_ok >= args.max:
                 print(f"Plafond --max {args.max} atteint.")
                 arrete_par_temps = True
