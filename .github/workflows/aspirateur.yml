@@ -100,6 +100,28 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: "Config Git : stratégie anti-conflit sur les fichiers générés"
+        run: |
+          # Les fichiers générés (index, manifest, counts, clauses, trends) sont
+          # RÉGÉNÉRÉS à chaque run : en cas de conflit de merge/rebase, garder
+          # NOTRE version est toujours sans risque (le prochain run régénère de
+          # toute façon la même chose). On pose la stratégie "ours" pour eux via
+          # .gitattributes + un driver de merge. Ça évite les conflits de rebase
+          # qui ont fait échouer le run du 03/08 sur search-index.json.
+          # Posé ICI (après checkout) pour protéger TOUS les pushes du run, pas
+          # seulement l'étape finale.
+          git config user.name "Aspirateur Légifrance (bot)"
+          git config user.email "action@github.com"
+          git config merge.ours.driver true
+          printf '%s\n' \
+            'output/search-index.json merge=ours' \
+            'output/manifest.json merge=ours' \
+            'output/counts.json merge=ours' \
+            'output/clauses-index.json merge=ours' \
+            'output/search-trends.json merge=ours' \
+            'output/ccn-liste.json merge=ours' \
+            > .gitattributes
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -484,7 +506,10 @@ jobs:
         run: |
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
-          git add output/ audits/ 2>/dev/null || true
+          # .gitattributes + merge.ours.driver sont posés dès le début du job
+          # (étape "Config Git"), donc les conflits sur les fichiers générés se
+          # résolvent tout seuls en faveur de notre version.
+          git add output/ audits/ .gitattributes 2>/dev/null || true
           for f in all_articles_code_travail.txt all_articles_code_secu.txt idcc_list_complet.txt jurisprudence_decouverte.txt; do
             [ -f "$f" ] && git add "$f"
           done
@@ -508,7 +533,7 @@ jobs:
           # run régénère de toute façon la même chose.
           reussi=0
           for tentative in 1 2 3; do
-            [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ] && git rebase --abort 2>/dev/null || true
+            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then git rebase --abort 2>/dev/null || true; fi
 
             if [ "$tentative" -lt 3 ]; then
               git pull --rebase --autostash origin main
@@ -527,7 +552,7 @@ jobs:
           done
 
           if [ "$reussi" -ne 1 ]; then
-            [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ] && git rebase --abort 2>/dev/null || true
+            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then git rebase --abort 2>/dev/null || true; fi
             echo "::error::Échec du push après 3 tentatives (rebase puis merge -X ours). Rien n'a été perdu localement, mais rien n'est parti sur main -- relancer le run."
             exit 1
           fi
