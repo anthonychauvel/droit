@@ -338,6 +338,16 @@
   .assist-reset{ margin-top:12px; background:none; border:none; color:var(--gold-strong);
     font-size:13px; font-weight:600; cursor:pointer; padding:4px 0; }
   .assist-live-note{ font-size:12.5px; color:#5b6b82; margin-top:6px; font-style:italic; }
+  .assist-ccn-input{ width:100%; box-sizing:border-box; border:1px solid var(--line);
+    border-radius:11px; padding:10px 13px; font-size:14px; margin-top:4px; }
+  .assist-ccn-input:focus{ outline:none; border-color:var(--gold-strong); box-shadow:0 0 0 3px var(--violet-soft); }
+  .assist-ccn-res{ display:flex; flex-direction:column; gap:6px; margin-top:8px; }
+  .assist-ccn-choice{ text-align:left; border:1px solid var(--line); background:#fff;
+    border-radius:9px; padding:9px 11px; font-size:13px; color:var(--violet-strong); cursor:pointer; }
+  .assist-ccn-choice:hover{ border-color:var(--gold); background:var(--violet-soft); }
+  .assist-ccn-idcc{ font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:12px;
+    background:var(--violet-soft); padding:1px 6px; border-radius:4px; margin-right:4px; }
+  .assist-ccn-empty{ font-size:12.5px; color:#5b6b82; padding:4px 0; }
   .finder{ background:linear-gradient(180deg,#ffffff,#f7faff); border:1px solid var(--line); border-radius:16px;
     padding:16px 16px 14px; margin-bottom:22px; box-shadow:0 14px 34px -20px rgba(15,45,82,.35); }
   .finder-title{ font-family:'Manrope',sans-serif; font-weight:800; font-size:16.5px; color:var(--violet-strong); }
@@ -1452,6 +1462,7 @@ var ASSIST_ARBRE = {
    peut cliquer un texte à tout moment.
    ==========================================================================*/
 var ASSIST_PATH = [];   // chemin courant : ['paie','primes','treizieme']
+var ASSIST_CCN = null;  // IDCC de la convention choisie (filtre le bloc CCN)
 
 function assistMotsCumules(){
   // Concatène les 'q' de chaque niveau du chemin courant.
@@ -1509,8 +1520,92 @@ function renderAssist(){
     if(!noeud.enfants) break;                // feuille atteinte → plus de sous-niveau
   }
 
+  // ÉTAPE FINALE "Votre convention" : n'apparaît qu'une fois qu'on a creusé le
+  // thème (au moins 2 choix faits, càd on voit déjà des textes). Optionnelle :
+  // permet de resserrer le bloc Conventions sur SA convention, sans bloquer
+  // celui qui ne la connaît pas (il a déjà ses textes au-dessus).
+  if(ASSIST_PATH.length >= 2){
+    var blocC = document.createElement('div');
+    var labC = document.createElement('div');
+    labC.className = 'assist-step-label';
+    labC.textContent = 'Votre convention (facultatif — pour voir la vôtre)';
+    blocC.appendChild(labC);
+
+    if(ASSIST_CCN){
+      // CCN choisie : afficher une puce active + bouton pour l'enlever.
+      var choisie = (INDEX.ccn||[]).filter(function(it){ return String(it.num)===String(ASSIST_CCN); })[0];
+      var nom = choisie ? (String(choisie.title||'').slice(0,42)) : ('IDCC '+ASSIST_CCN);
+      var chipsC = document.createElement('div'); chipsC.className='assist-chips';
+      var active = document.createElement('button');
+      active.className = 'assist-chip on';
+      active.textContent = 'IDCC '+ASSIST_CCN+' · '+nom+'  ✕';
+      active.onclick = function(){ ASSIST_CCN=null; renderAssist(); relancerAssist(); };
+      chipsC.appendChild(active);
+      blocC.appendChild(chipsC);
+    } else {
+      // Pas encore de CCN : champ de recherche pour la trouver.
+      var champC = document.createElement('input');
+      champC.type = 'search';
+      champC.id = 'assist-ccn-q';
+      champC.placeholder = 'Votre métier, secteur ou IDCC (ex. coiffure, 1314…)';
+      champC.setAttribute('autocomplete','off');
+      champC.className = 'assist-ccn-input';
+      champC.oninput = function(){ assistChercherCCN(this.value); };
+      blocC.appendChild(champC);
+      var resC = document.createElement('div');
+      resC.id = 'assist-ccn-res'; resC.className = 'assist-ccn-res';
+      blocC.appendChild(resC);
+    }
+    cont.appendChild(blocC);
+  }
+
   // Note live + bouton reset
   document.getElementById('assist-reset').hidden = (ASSIST_PATH.length===0);
+}
+
+function assistChercherCCN(q){
+  // Cherche une convention par métier/secteur/IDCC et propose des choix.
+  var box = document.getElementById('assist-ccn-res');
+  if(!box) return;
+  q = (q||'').trim();
+  if(q.length < 2){ box.innerHTML=''; return; }
+  var qn = normaliser(q);
+  var res = [];
+  // 1) IDCC direct (chiffres)
+  if(/^\d{3,4}$/.test(q)){
+    (INDEX.ccn||[]).forEach(function(it){ if(String(it.num)===q) res.push(it); });
+  }
+  // 2) Par mot du titre / métier
+  if(res.length < 8){
+    (INDEX.ccn||[]).forEach(function(it){
+      if(res.indexOf(it)!==-1) return;
+      if(normaliser(String(it.title||'')).indexOf(qn)!==-1) res.push(it);
+    });
+  }
+  res = res.slice(0,8);
+  if(!res.length){ box.innerHTML='<div class="assist-ccn-empty">Aucune convention trouvée. Essayez un autre mot ou votre IDCC (4 chiffres, sur le bulletin de paie).</div>'; return; }
+  box.innerHTML = res.map(function(it){
+    return '<button class="assist-ccn-choice" data-idcc="'+it.num+'">'
+      + '<span class="assist-ccn-idcc">IDCC '+it.num+'</span> '
+      + escapeHtml(String(it.title||'').slice(0,60)) + '</button>';
+  }).join('');
+  box.querySelectorAll('.assist-ccn-choice').forEach(function(b){
+    b.onclick = function(){ assistChoisirCCN(this.dataset.idcc); };
+  });
+}
+
+function assistChoisirCCN(idcc){
+  ASSIST_CCN = idcc;
+  renderAssist();
+  relancerAssist();
+}
+
+function relancerAssist(){
+  // Relance la recherche avec les mots du thème (le filtre CCN s'applique dans
+  // runSearch via ASSIST_CCN).
+  var champ = document.getElementById('q');
+  champ.value = assistMotsCumules();
+  runSearch();
 }
 
 function assistChoisir(profondeur, cle){
@@ -1519,19 +1614,15 @@ function assistChoisir(profondeur, cle){
   ASSIST_PATH = ASSIST_PATH.slice(0, profondeur);
   ASSIST_PATH.push(cle);
   renderAssist();
-  // Recherche LIVE : on remplit le champ avec les mots cumulés et on lance la
-  // recherche existante. Les résultats s'affichent dessous et se resserrent.
   var mots = assistMotsCumules();
   var champ = document.getElementById('q');
   champ.value = mots;
   runSearch();
-  // Ne PAS faire défiler vers les résultats : l'utilisateur doit garder les
-  // questions sous les yeux pour continuer à affiner. Les résultats se
-  // chargent en dessous ; il descend quand il veut.
 }
 
 function assistReset(){
   ASSIST_PATH = [];
+  ASSIST_CCN = null;
   renderAssist();
   var champ = document.getElementById('q');
   champ.value = '';
@@ -1558,6 +1649,25 @@ function runSearch(){
   var terms = expandTerms(tokens);
   tokens.forEach(function(t){ fuzzyExpand(t).forEach(function(w){ if(terms.indexOf(w)===-1) terms.push(w); }); });
   var ccn = searchCCNv2(tokens, rawNorm).slice(0,40);
+  // Filtre CCN du mode assisté : si l'utilisateur a précisé SA convention, on
+  // ne garde QUE la sienne dans le bloc "Conventions" -- mais on ne touche PAS
+  // aux autres sources (Code, sécu, jurisprudence, accords), qui complètent sa
+  // situation sur le même thème. Son droit se lit en croisant sa CCN avec le
+  // reste, pas en s'enfermant dans sa seule convention.
+  var ccnFiltree = false;
+  if(typeof ASSIST_CCN!=='undefined' && ASSIST_CCN){
+    var avant = ccn.length;
+    ccn = ccn.filter(function(r){ return String(r.num)===String(ASSIST_CCN); });
+    // Si sa CCN n'est pas dans les résultats du thème (elle ne traite pas ce
+    // sujet), on tente de l'afficher quand même en la cherchant directement.
+    if(!ccn.length){
+      var directe = (INDEX.ccn||[]).filter(function(it){ return String(it.num)===String(ASSIST_CCN); });
+      if(directe.length){
+        ccn = searchCCNv2([String(ASSIST_CCN)], String(ASSIST_CCN)).filter(function(r){ return String(r.num)===String(ASSIST_CCN); }).slice(0,1);
+      }
+    }
+    ccnFiltree = (avant !== ccn.length) || ccn.length>0;
+  }
   var code = searchArticlesV2(SEARCH.code, tokens).slice(0,30);
   var secu = searchArticlesV2(SEARCH.code_secu, tokens).slice(0,20);
   var juris = searchArticlesV2(SEARCH.juris, tokens).slice(0,15);
@@ -1575,7 +1685,7 @@ function runSearch(){
   }
 
   if(ccn.length){
-    html += '<div class="group-title">Conventions collectives · '+ccn.length+'</div><div class="rows">';
+    html += '<div class="group-title">'+(ccnFiltree ? 'Votre convention' : 'Conventions collectives · '+ccn.length)+'</div><div class="rows">';
     html += ccn.map(function(r){
       var snip = (r.sections[0] && r.sections[0].kw) ? excerpt(r.sections[0].kw, terms, 150) : '';
       return rowHtml('ccn', r.num, r.title, r.etat, {snippet:snip, sections:r.sections, launchpad:r.launchpad, source:r.source});
