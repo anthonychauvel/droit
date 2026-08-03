@@ -214,6 +214,15 @@ def main():
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(manifest, f, ensure_ascii=False, separators=(",", ":"))
 
+    # Petit fichier counts.json SÉPARÉ (quelques centaines d'octets) : il ne
+    # contient QUE les compteurs. L'app le charge en premier pour afficher le
+    # récap instantanément, sans attendre le manifest complet (7+ Mo à cause
+    # des listes JORF/ACCO). Supprime le délai de démarrage sur mobile.
+    counts_path = os.path.join(os.path.dirname(args.out) or ".", "counts.json")
+    with open(counts_path, "w", encoding="utf-8") as f:
+        json.dump({"generated": manifest["generated"], "counts": manifest["counts"]},
+                  f, ensure_ascii=False)
+
     size_kb = os.path.getsize(args.out) / 1024
     print(f"Manifeste : {len(ccn)} CCN, {len(code)} articles travail, "
           f"{len(secu)} articles sécu, {len(juris)} décisions, {len(jorf)} textes JORF, "
