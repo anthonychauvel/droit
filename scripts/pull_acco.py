@@ -541,7 +541,9 @@ def main():
             if len(accords) < 50:
                 break
             page += 1
-            if page > 100:  # garde-fou anti-boucle
+            if page > 300:  # garde-fou anti-boucle (15 000 accords/thème max ;
+                            # monté de 100 à 300 le 02/08 pour vérifier s'il
+                            # restait des accords au-delà de 27 578)
                 break
             time.sleep(args.delay)
         print(f"  [{t_idx}/{len(THEMES_ACCO)}] '{theme}' : +{total_theme} accords (cumul {n_ok})")
