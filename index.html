@@ -320,6 +320,24 @@
   .dym-q:hover{ border-color:var(--gold-strong); background:#f3e4be; }
 
   /* Finder « Je ne connais pas ma convention » */
+  /* Mode assisté ("découvreur") */
+  .assist{ background:linear-gradient(180deg,#fffdf6,#fbf6e8); border:1px solid var(--violet-soft);
+    border-radius:16px; padding:16px 16px 14px; margin-bottom:18px; }
+  .assist-title{ font-weight:700; font-size:17px; color:var(--violet-strong); }
+  .assist-sub{ font-size:13.5px; color:#5b6b82; margin-top:4px; line-height:1.5; }
+  .assist-steps{ margin-top:12px; display:flex; flex-direction:column; gap:12px; }
+  .assist-step-label{ font-size:12px; font-weight:600; color:var(--gold-strong);
+    text-transform:uppercase; letter-spacing:.03em; margin-bottom:7px; }
+  .assist-chips{ display:flex; flex-wrap:wrap; gap:8px; }
+  .assist-chip{ border:1px solid var(--line); background:#fff; color:var(--violet-strong);
+    border-radius:11px; padding:9px 13px; font-size:14px; font-weight:600; cursor:pointer;
+    transition:all .12s; -webkit-tap-highlight-color:transparent; }
+  .assist-chip:hover{ border-color:var(--gold); background:var(--violet-soft); }
+  .assist-chip.on{ background:var(--gold-metal); border-color:var(--gold-strong); color:#3a2e07;
+    box-shadow:0 2px 8px -2px rgba(190,154,46,.5); }
+  .assist-reset{ margin-top:12px; background:none; border:none; color:var(--gold-strong);
+    font-size:13px; font-weight:600; cursor:pointer; padding:4px 0; }
+  .assist-live-note{ font-size:12.5px; color:#5b6b82; margin-top:6px; font-style:italic; }
   .finder{ background:linear-gradient(180deg,#ffffff,#f7faff); border:1px solid var(--line); border-radius:16px;
     padding:16px 16px 14px; margin-bottom:22px; box-shadow:0 14px 34px -20px rgba(15,45,82,.35); }
   .finder-title{ font-family:'Manrope',sans-serif; font-weight:800; font-size:16.5px; color:var(--violet-strong); }
@@ -408,6 +426,14 @@
     <div id="search-results"></div>
 
     <div id="search-landing">
+      <div class="assist" id="assist">
+        <div class="assist-intro" id="assist-intro">
+          <div class="assist-title">Vous ne savez pas par où commencer ?</div>
+          <div class="assist-sub">Choisissez votre situation. Les textes qui vous concernent s'affichent au fur et à mesure — cliquez-en un dès qu'il vous parle.</div>
+        </div>
+        <div class="assist-steps" id="assist-steps"></div>
+        <button class="assist-reset" id="assist-reset" hidden>↺ Recommencer</button>
+      </div>
       <div class="stat-grid" id="stat-grid"></div>
       <div class="finder" id="finder">
         <div class="finder-title">Je ne connais pas ma convention</div>
@@ -1202,6 +1228,305 @@ document.getElementById('tokens').addEventListener('click', function(e){
   document.getElementById('q').value = cur.join(' ');
   runSearch();
 });
+
+/* ============================================================================
+   ARBRE DU MODE ASSISTÉ ("découvreur")
+   ----------------------------------------------------------------------------
+   6 portes → sous-thèmes → questions précises. À chaque niveau, un champ "q"
+   donne les mots-clés à chercher (ils s'ADDITIONNENT au fur et à mesure). La
+   recherche se relance à chaque clic et se resserre. L'utilisateur peut
+   cliquer un texte à tout moment sans finir le parcours.
+
+   Chaque nœud : { label (ce que voit l'utilisateur), q (mots-clés recherchés),
+   enfants (niveau suivant) }. Le "q" du niveau N s'ajoute à celui du niveau N-1.
+   ==========================================================================*/
+var ASSIST_ARBRE = {
+  paie: {
+    label: "Ma paie", icone: "salaire",
+    q: "salaire remuneration bulletin paie",
+    enfants: {
+      minimum: { label: "Mon salaire minimum", q: "minimum conventionnel smic salaire minimum",
+        enfants: {
+          grille:   { label: "La grille de ma convention", q: "grille classification coefficient" },
+          smic:     { label: "Le SMIC", q: "smic salaire minimum de croissance" },
+          respecte: { label: "Mon salaire est-il au minimum ?", q: "minimum conventionnel respect salaire" },
+        } },
+      heures_sup: { label: "Mes heures supplémentaires", q: "heures supplementaires majoration",
+        enfants: {
+          majoration: { label: "La majoration (25%, 50%)", q: "majoration heures supplementaires taux" },
+          contingent: { label: "Le contingent annuel", q: "contingent annuel heures supplementaires" },
+          preuve:     { label: "Prouver mes heures", q: "preuve heures supplementaires decompte" },
+          impayees:   { label: "Elles ne sont pas payées", q: "rappel de salaire heures supplementaires impayees" },
+        } },
+      primes: { label: "Mes primes", q: "prime",
+        enfants: {
+          treizieme:  { label: "Le 13e mois", q: "13e mois treizieme mois prime annuelle gratification" },
+          anciennete: { label: "La prime d'ancienneté", q: "prime anciennete" },
+          transport:  { label: "La prime de transport", q: "indemnite transport frais de transport" },
+          ppv:        { label: "La prime de partage de la valeur (PPV)", q: "prime de partage de la valeur ppv" },
+          vacances:   { label: "La prime de vacances", q: "prime de vacances conges" },
+        } },
+      impayes: { label: "On ne m'a pas tout payé", q: "rappel de salaire impaye",
+        enfants: {
+          rappel:   { label: "Réclamer un rappel de salaire", q: "rappel de salaire reclamation" },
+          solde:    { label: "Mon solde de tout compte", q: "solde de tout compte recu" },
+          bulletin: { label: "Une erreur sur mon bulletin", q: "bulletin de salaire mentions erreur" },
+        } },
+    } },
+
+  conges: {
+    label: "Mes congés", icone: "conges",
+    q: "conges repos absence",
+    enfants: {
+      payes: { label: "Mes congés payés", q: "conges payes acquisition",
+        enfants: {
+          acquisition: { label: "Combien j'en acquiers", q: "acquisition conges payes jours" },
+          refus:       { label: "Mon employeur refuse", q: "refus conges payes employeur" },
+          report:      { label: "Reporter mes congés", q: "report conges payes" },
+          indemnite:   { label: "L'indemnité de congés", q: "indemnite conges payes calcul" },
+        } },
+      maladie: { label: "Arrêt maladie", q: "arret maladie arret de travail",
+        enfants: {
+          maintien:  { label: "Le maintien de mon salaire", q: "maintien de salaire arret maladie indemnites" },
+          conges_m:  { label: "Congés payés pendant l'arrêt", q: "conges payes arret maladie report" },
+          licenciem: { label: "Peut-on me licencier ?", q: "licenciement arret maladie inaptitude" },
+        } },
+      famille: { label: "Maternité, paternité, famille", q: "conge maternite paternite familial",
+        enfants: {
+          maternite: { label: "Congé maternité", q: "conge maternite duree protection" },
+          paternite: { label: "Congé paternité", q: "conge paternite jours" },
+          parental:  { label: "Congé parental", q: "conge parental education" },
+          enfant:    { label: "Enfant malade", q: "conge enfant malade" },
+        } },
+      speciaux: { label: "Jours fériés, RTT, autres", q: "jours feries rtt repos",
+        enfants: {
+          feries: { label: "Les jours fériés", q: "jours feries chomes travailles" },
+          rtt:    { label: "Les RTT", q: "rtt reduction du temps de travail jours" },
+          evenem: { label: "Mariage, décès, déménagement", q: "conges evenements familiaux mariage deces" },
+        } },
+    } },
+
+  contrat: {
+    label: "Mon contrat", icone: "contrat",
+    q: "contrat de travail",
+    enfants: {
+      type: { label: "Mon type de contrat", q: "contrat cdd cdi",
+        enfants: {
+          cdd:      { label: "CDD", q: "contrat a duree determinee cdd terme" },
+          cdi:      { label: "CDI", q: "contrat a duree indeterminee cdi" },
+          interim:  { label: "Intérim", q: "travail temporaire interim mission" },
+          requalif: { label: "Requalifier mon CDD en CDI", q: "requalification cdd cdi" },
+        } },
+      essai: { label: "Ma période d'essai", q: "periode d essai",
+        enfants: {
+          duree:  { label: "Sa durée", q: "periode d essai duree renouvellement" },
+          rupture:{ label: "Sa rupture", q: "rupture periode d essai delai de prevenance" },
+        } },
+      modif: { label: "Une modification de mon contrat", q: "modification du contrat de travail",
+        enfants: {
+          conditions: { label: "Changement de mes conditions", q: "modification contrat conditions accord salarie" },
+          lieu:       { label: "Changement de lieu / mutation", q: "mutation clause de mobilite lieu de travail" },
+          horaires:   { label: "Changement d'horaires", q: "modification horaires de travail" },
+        } },
+      clauses: { label: "Les clauses de mon contrat", q: "clause contrat",
+        enfants: {
+          non_concur: { label: "Clause de non-concurrence", q: "clause de non-concurrence contrepartie" },
+          mobilite:   { label: "Clause de mobilité", q: "clause de mobilite" },
+          exclusiv:   { label: "Clause d'exclusivité", q: "clause d exclusivite" },
+        } },
+    } },
+
+  rupture: {
+    label: "Une rupture", icone: "rupture",
+    q: "rupture du contrat fin de contrat",
+    enfants: {
+      licenciement: { label: "Un licenciement", q: "licenciement",
+        enfants: {
+          motif:     { label: "Le motif (est-il valable ?)", q: "licenciement cause reelle et serieuse motif" },
+          faute:     { label: "Licenciement pour faute", q: "faute grave faute lourde licenciement" },
+          economique:{ label: "Licenciement économique", q: "licenciement economique" },
+          indemnite: { label: "Mon indemnité de licenciement", q: "indemnite legale de licenciement calcul" },
+          procedure: { label: "La procédure", q: "procedure licenciement entretien prealable" },
+          contester: { label: "Contester mon licenciement", q: "contestation licenciement prud hommes" },
+        } },
+      demission: { label: "Une démission", q: "demission",
+        enfants: {
+          preavis:  { label: "Mon préavis", q: "preavis demission duree" },
+          retract:  { label: "Revenir sur ma démission", q: "retractation demission" },
+          legitime: { label: "Démission légitime (chômage)", q: "demission legitime allocation chomage" },
+        } },
+      conventionnelle: { label: "Une rupture conventionnelle", q: "rupture conventionnelle",
+        enfants: {
+          montant:   { label: "Le montant de l'indemnité", q: "indemnite rupture conventionnelle calcul" },
+          procedure: { label: "La procédure et les délais", q: "rupture conventionnelle procedure delai retractation homologation" },
+          refus:     { label: "Mon employeur refuse", q: "refus rupture conventionnelle" },
+        } },
+      autres: { label: "Autres fins de contrat", q: "rupture fin",
+        enfants: {
+          prise_acte: { label: "Prise d'acte de la rupture", q: "prise d acte de la rupture" },
+          retraite:   { label: "Départ à la retraite", q: "depart retraite mise a la retraite" },
+          fin_cdd:    { label: "Fin de CDD", q: "fin de cdd terme indemnite de precarite" },
+        } },
+    } },
+
+  conflit: {
+    label: "Un conflit", icone: "conflit",
+    q: "litige conflit",
+    enfants: {
+      harcelement: { label: "Harcèlement", q: "harcelement",
+        enfants: {
+          moral:   { label: "Harcèlement moral", q: "harcelement moral agissements" },
+          sexuel:  { label: "Harcèlement sexuel", q: "harcelement sexuel" },
+          preuve:  { label: "Comment le prouver", q: "harcelement preuve elements" },
+          reagir:  { label: "Que faire, qui prévenir", q: "harcelement signalement recours inspection" },
+        } },
+      discrimination: { label: "Discrimination", q: "discrimination",
+        enfants: {
+          egalite:  { label: "Inégalité de traitement", q: "egalite de traitement discrimination" },
+          femme_h:  { label: "Égalité femmes-hommes", q: "egalite professionnelle femmes hommes" },
+          syndical: { label: "Discrimination syndicale", q: "discrimination syndicale" },
+        } },
+      securite: { label: "Ma sécurité au travail", q: "securite sante au travail",
+        enfants: {
+          obligation: { label: "L'obligation de sécurité", q: "obligation de securite employeur" },
+          danger:     { label: "Droit de retrait (danger)", q: "droit de retrait danger grave imminent" },
+          accident:   { label: "Accident du travail", q: "accident du travail faute inexcusable" },
+          maladie_p:  { label: "Maladie professionnelle", q: "maladie professionnelle tableau" },
+        } },
+      recours: { label: "Faire valoir mes droits", q: "recours prud hommes",
+        enfants: {
+          prudhommes: { label: "Les prud'hommes", q: "conseil de prud hommes saisine procedure" },
+          inspection: { label: "L'inspection du travail", q: "inspection du travail signalement" },
+          syndicat:   { label: "Un syndicat, un représentant", q: "delegue syndical representant du personnel cse" },
+        } },
+    } },
+
+  temps: {
+    label: "Mon temps de travail", icone: "temps",
+    q: "temps de travail duree horaires",
+    enfants: {
+      duree: { label: "Ma durée de travail", q: "duree du travail 35 heures",
+        enfants: {
+          legale:  { label: "La durée légale (35h)", q: "duree legale 35 heures hebdomadaire" },
+          maximale:{ label: "Les durées maximales", q: "duree maximale travail amplitude" },
+          repos:   { label: "Mes temps de repos", q: "repos quotidien hebdomadaire temps de pause" },
+        } },
+      forfait: { label: "Le forfait jours", q: "forfait jours",
+        enfants: {
+          convention: { label: "La convention de forfait", q: "convention de forfait jours validite" },
+          cadre:      { label: "Cadre autonome", q: "cadre autonome forfait jours" },
+          controle:   { label: "Le contrôle de ma charge", q: "forfait jours charge de travail suivi" },
+        } },
+      teletravail: { label: "Le télétravail", q: "teletravail travail a distance",
+        enfants: {
+          mise_place: { label: "Mise en place / accord", q: "teletravail accord mise en place" },
+          droits:     { label: "Mes droits en télétravail", q: "teletravail droits frais equipement" },
+          deconnexion:{ label: "Droit à la déconnexion", q: "droit a la deconnexion" },
+        } },
+      amenagement: { label: "Aménagement, astreintes", q: "amenagement du temps de travail astreinte",
+        enfants: {
+          astreinte: { label: "Les astreintes", q: "astreinte compensation" },
+          nuit:      { label: "Le travail de nuit", q: "travail de nuit contreparties" },
+          partiel:   { label: "Le temps partiel", q: "temps partiel heures complementaires" },
+        } },
+    } },
+};
+
+
+/* ============================================================================
+   MODE ASSISTÉ — logique de navigation + recherche live
+   À chaque clic, on descend dans l'arbre ET on relance la recherche existante
+   avec les mots-clés CUMULÉS (porte + sous-thème + question). Les meilleurs
+   résultats remontent en tête : l'utilisateur voit l'entonnoir se resserrer et
+   peut cliquer un texte à tout moment.
+   ==========================================================================*/
+var ASSIST_PATH = [];   // chemin courant : ['paie','primes','treizieme']
+
+function assistMotsCumules(){
+  // Concatène les 'q' de chaque niveau du chemin courant.
+  var mots = [];
+  var niveau = ASSIST_ARBRE;
+  var noeud = {enfants: niveau};
+  for(var i=0;i<ASSIST_PATH.length;i++){
+    noeud = noeud.enfants[ASSIST_PATH[i]];
+    if(!noeud) break;
+    if(noeud.q) mots.push(noeud.q);
+  }
+  return mots.join(' ');
+}
+
+function assistNoeudCourant(){
+  // Renvoie {enfants: ...} du niveau à afficher (enfants du dernier choix).
+  var noeud = {enfants: ASSIST_ARBRE};
+  for(var i=0;i<ASSIST_PATH.length;i++){
+    if(!noeud.enfants[ASSIST_PATH[i]]) return null;
+    noeud = noeud.enfants[ASSIST_PATH[i]];
+  }
+  return noeud;
+}
+
+function renderAssist(){
+  var cont = document.getElementById('assist-steps');
+  if(!cont) return;
+  cont.innerHTML = '';
+  var labelsNiveaux = ['Votre situation', 'Plus précisément', 'Votre question'];
+
+  // Reconstruire chaque niveau franchi + le niveau courant à choisir.
+  var noeud = {enfants: ASSIST_ARBRE};
+  for(var prof=0; prof<=ASSIST_PATH.length; prof++){
+    var enfants = noeud.enfants;
+    if(!enfants) break;
+    var choixFait = ASSIST_PATH[prof];   // ce qui a été choisi à ce niveau (ou undefined)
+    var bloc = document.createElement('div');
+    var lab = document.createElement('div');
+    lab.className = 'assist-step-label';
+    lab.textContent = labelsNiveaux[prof] || 'Affiner';
+    bloc.appendChild(lab);
+    var chips = document.createElement('div');
+    chips.className = 'assist-chips';
+    Object.keys(enfants).forEach(function(cle){
+      var b = document.createElement('button');
+      b.className = 'assist-chip' + (choixFait===cle ? ' on' : '');
+      b.textContent = enfants[cle].label;
+      b.onclick = (function(profondeur, clef){ return function(){ assistChoisir(profondeur, clef); }; })(prof, cle);
+      chips.appendChild(b);
+    });
+    bloc.appendChild(chips);
+    cont.appendChild(bloc);
+    if(choixFait===undefined) break;         // niveau en attente de choix → on s'arrête
+    noeud = enfants[choixFait];
+    if(!noeud.enfants) break;                // feuille atteinte → plus de sous-niveau
+  }
+
+  // Note live + bouton reset
+  document.getElementById('assist-reset').hidden = (ASSIST_PATH.length===0);
+}
+
+function assistChoisir(profondeur, cle){
+  // Tronquer le chemin à ce niveau puis ajouter le nouveau choix (permet de
+  // revenir en arrière en recliquant un niveau supérieur).
+  ASSIST_PATH = ASSIST_PATH.slice(0, profondeur);
+  ASSIST_PATH.push(cle);
+  renderAssist();
+  // Recherche LIVE : on remplit le champ avec les mots cumulés et on lance la
+  // recherche existante. Les résultats s'affichent dessous et se resserrent.
+  var mots = assistMotsCumules();
+  var champ = document.getElementById('q');
+  champ.value = mots;
+  runSearch();
+  // Faire défiler doucement vers les résultats pour qu'on les voie apparaître.
+  var res = document.getElementById('search-results');
+  if(res) setTimeout(function(){ res.scrollIntoView({behavior:'smooth', block:'nearest'}); }, 60);
+}
+
+function assistReset(){
+  ASSIST_PATH = [];
+  renderAssist();
+  var champ = document.getElementById('q');
+  champ.value = '';
+  runSearch();  // revient au landing (champ vide)
+}
+
 
 function runSearch(){
   var raw = document.getElementById('q').value;
@@ -2103,6 +2428,12 @@ document.getElementById('ex-grid').addEventListener('click', function(e){
    Initialisation
    ==========================================================================*/
 renderExamples();
+// Mode assisté : afficher les portes dès le départ, brancher le reset.
+if(typeof renderAssist==='function'){
+  renderAssist();
+  var _ar = document.getElementById('assist-reset');
+  if(_ar) _ar.onclick = assistReset;
+}
 document.getElementById('corpus-line').textContent = 'Chargement de l\'index…';
 
 // Deep-link, utilisé par les liens de l'application SimulHeures :
