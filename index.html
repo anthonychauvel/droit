@@ -9,6 +9,12 @@
 <meta name="robots" content="noindex, nofollow">
 <title>MonLegiTexte — recherche &amp; lecture du droit (CCN · Code du travail · Sécu · Jurisprudence)</title>
 
+<!-- Démarre le téléchargement du minuscule counts.json dès l'analyse du HTML,
+     avant que le gros script inline soit parsé → les totaux s'affichent au plus
+     tôt. (On ne précharge PAS manifest/search-index : volumineux, risque de
+     double téléchargement selon l'appariement CORS du préchargement.) -->
+<link rel="preload" href="output/counts.json" as="fetch">
+
 <!-- Icône et comportement à l'ajout sur l'écran d'accueil (iOS). -->
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -93,8 +99,9 @@
   .nav-item:hover{ background:rgba(255,255,255,.06); color:#fff; }
   .nav-item.on{ background:var(--gold-metal); color:var(--marine); box-shadow:inset 0 1px 0 rgba(255,255,255,.5), 0 2px 10px -3px rgba(0,0,0,.4); }
   .nav-item .ic{ width:18px; height:18px; flex-shrink:0; }
-  .nav-item .nc{ margin-left:auto; font-family:'IBM Plex Mono',monospace; font-size:11px; opacity:.7; }
+  .nav-item .nc{ margin-left:auto; font-family:'IBM Plex Mono',monospace; font-size:11px; opacity:.7; font-variant-numeric:tabular-nums; display:inline-block; min-width:3.4ch; text-align:right; }
   .nav-item.on .nc{ opacity:.9; }
+  .loading-inline{ font-size:12.5px; color:#5b6b82; background:var(--violet-soft); border-radius:8px; padding:8px 11px; margin-bottom:10px; }
 
   .side-foot{
     margin-top:auto; padding:14px 12px; background:rgba(255,255,255,.05);
@@ -175,6 +182,7 @@
   .res-main{ min-width:0; }
   .res-title{ font-size:14.5px; font-weight:600; color:var(--ink); line-height:1.35; overflow-wrap:anywhere; }
   .res-sub{ font-size:12.5px; color:var(--ink-soft); margin-top:3px; line-height:1.45; }
+  .res-note{ font-size:12px; color:#5b6b82; margin-top:4px; line-height:1.45; padding-left:8px; border-left:2px solid var(--gold); font-style:italic; }
   .res-sub mark{ background:#fbe6b0; color:var(--ink); padding:0 1px; border-radius:2px; }
   .tags{ display:flex; flex-wrap:wrap; gap:5px; margin-top:6px; }
   .tag{ font-family:'IBM Plex Mono',monospace; font-size:10px; padding:2px 7px; border-radius:12px; background:var(--violet-soft); color:var(--violet-strong); }
@@ -537,6 +545,7 @@ var SEARCH = { ccn:[], code:[], code_secu:[], juris:[], jorf:[], acco:[] };
 var CCN_LISTE = [];
 var AUDITS = [];
 var TRENDS = null;   // mode évolutif : mots/expressions fréquents (optionnel)
+var SEARCH_READY = false;  // true quand search-index.json est chargé (articles + sections CCN prêts)
 var DETAIL_CACHE = {};
 var ETAT_LABEL = { V:'Validé', A:'Abrogé', M:'Modifié', P:'Périmé', '?':'À vérifier' };
 
@@ -562,6 +571,15 @@ async function loadAll(){
   // comme avant -- seul l'ORDRE d'exécution change, pas le comportement en cas
   // d'échec de l'un d'entre eux.
   var manifestOk = false;
+
+  // ÉTAPE 0 — compteurs INSTANTANÉS via counts.json (quelques centaines d'octets).
+  // Lancé en TOUT PREMIER pour que sa requête parte avant les gros fichiers, et
+  // peint le récap (y compris la ligne corpus, seule visible sur mobile) dès son
+  // arrivée — sans attendre le manifest complet (7+ Mo).
+  var pCounts = (async function(){
+    try{ var c0 = await fetchJSON('output/counts.json'); if(c0 && c0.counts) paintCounts(c0.counts); }
+    catch(e){ /* pas grave : le manifest prendra le relais */ }
+  })();
 
   var pManifest = (async function(){
     try{
@@ -608,19 +626,8 @@ async function loadAll(){
     catch(e){ TRENDS = null; }
   })();
 
-  // ÉTAPE 0 : compteurs INSTANTANÉS via counts.json (quelques centaines
-  // d'octets). Ça affiche le récap sans attendre le manifest complet (7+ Mo).
-  try{
-    var c0 = await fetchJSON('output/counts.json');
-    if(c0 && c0.counts){
-      var cc = c0.counts;
-      var mapC = {ccn:'nc-ccn',code:'nc-code',secu:'nc-secu',juris:'nc-juris',jorf:'nc-jorf',acco:'nc-acco'};
-      Object.keys(mapC).forEach(function(k){
-        var el = document.getElementById(mapC[k]);
-        if(el && typeof cc[k]==='number') el.textContent = fmt(cc[k]);
-      });
-    }
-  }catch(e){ /* pas grave : le manifest prendra le relais */ }
+  // Les compteurs sont déjà peints (ou le seront dans l'instant) via pCounts.
+  await pCounts;
 
   // Le manifest (7+ Mo) porte les LISTES complètes (pour parcourir les onglets).
   // On l'attend, mais les compteurs sont DÉJÀ affichés grâce à counts.json.
@@ -643,6 +650,31 @@ async function loadAll(){
   INDEX.secu.forEach(function(it){ if((it.etat==='?'||!it.etat) && etatByNum['s:'+it.num]) it.etat=etatByNum['s:'+it.num]; });
 
   updateCounts();   // ← re-maj après enrichissement des états
+
+  // Les vraies données (search-index, ccn-liste) sont là. Si l'utilisateur a
+  // interagi AVANT (moteur/maps construits à vide puis mis en cache), on purge
+  // ces caches pour qu'ils se reconstruisent sur les données chargées.
+  resetEngineCaches();
+  SEARCH_READY = true;
+
+  // Si une recherche est déjà à l'écran, on la relance : articles et sections de
+  // convention apparaissent d'eux-mêmes, sans que l'utilisateur ait à retaper.
+  var _q = document.getElementById('q');
+  if(_q && _q.value.trim()){ runSearch(); }
+
+  // Pré-chauffe le moteur pendant un temps mort → la 1re recherche est instantanée
+  // (le gros du travail — vocabulaire fuzzy, IDF — est fait à l'avance).
+  (window.requestIdleCallback || function(f){ return setTimeout(f, 200); })(function(){
+    try{ getENG(); getSuggest(); }catch(e){}
+  });
+}
+
+// Purge les caches dérivés des données. À appeler quand de NOUVELLES données
+// arrivent : sinon un cache construit à vide (interaction avant chargement)
+// resterait figé et la recherche semblerait cassée jusqu'au rechargement.
+function resetEngineCaches(){
+  CCN_SEARCH_MAP = null; CCN_SECTOR_MAP = null;
+  ENG = null; SUGGEST = null;
 }
 
 async function loadFromSummaries(){
@@ -676,23 +708,30 @@ async function loadFromSummaries(){
 }
 
 function fmt(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'\u202f'); }
+// Peint les compteurs (badges nav) ET la ligne "corpus" visible (seule chose
+// affichée sur mobile) à partir d'un objet {ccn,code,secu,juris,jorf,acco}.
+// Utilisé par counts.json (instantané) ET par updateCounts (après manifest).
+function paintCounts(cc){
+  cc = cc || {};
+  var map = {ccn:'nc-ccn',code:'nc-code',secu:'nc-secu',juris:'nc-juris',jorf:'nc-jorf',acco:'nc-acco'};
+  Object.keys(map).forEach(function(k){ var el=document.getElementById(map[k]); if(el && typeof cc[k]==='number') el.textContent=fmt(cc[k]); });
+  var n=function(k){ return typeof cc[k]==='number'?cc[k]:0; };
+  var tot=n('ccn')+n('code')+n('secu')+n('juris')+n('jorf')+n('acco');
+  if(tot>0){
+    var cb=document.getElementById('corpus-b'); if(cb) cb.textContent=fmt(tot)+' textes indexés';
+    var cl=document.getElementById('corpus-line'); if(cl) cl.textContent=
+      fmt(n('ccn'))+' conventions · '+fmt(n('code'))+' art. travail · '+fmt(n('secu'))+' art. sécu · '+
+      fmt(n('juris'))+' décisions · '+fmt(n('jorf'))+' JORF · '+fmt(n('acco'))+' accords';
+  }
+}
 function updateCounts(){
-  document.getElementById('nc-ccn').textContent   = fmt(INDEX.ccn.length);
-  document.getElementById('nc-code').textContent  = fmt(INDEX.code.length);
-  document.getElementById('nc-secu').textContent  = fmt(INDEX.secu.length);
-  document.getElementById('nc-juris').textContent = fmt(INDEX.juris.length);
-  document.getElementById('nc-jorf').textContent  = fmt(INDEX.jorf.length);
-  document.getElementById('nc-acco').textContent  = fmt(INDEX.acco.length);
+  paintCounts({ccn:INDEX.ccn.length, code:INDEX.code.length, secu:INDEX.secu.length,
+               juris:INDEX.juris.length, jorf:INDEX.jorf.length, acco:INDEX.acco.length});
   document.getElementById('nc-cl_salaire').textContent        = fmt(CLAUSES.salaire.length);
   document.getElementById('nc-cl_heures_sup').textContent     = fmt(CLAUSES.heures_sup.length);
   document.getElementById('nc-cl_forfait_jours').textContent  = fmt(CLAUSES.forfait_jours.length);
   document.getElementById('nc-cl_temps_partiel').textContent  = fmt(CLAUSES.temps_partiel.length);
   document.getElementById('nc-cl_classification').textContent = fmt(CLAUSES.classification.length);
-  var tot = INDEX.ccn.length+INDEX.code.length+INDEX.secu.length+INDEX.juris.length+INDEX.jorf.length+INDEX.acco.length;
-  document.getElementById('corpus-b').textContent = fmt(tot)+' textes indexés';
-  document.getElementById('corpus-line').textContent =
-    fmt(INDEX.ccn.length)+' conventions · '+fmt(INDEX.code.length)+' art. travail · '+
-    fmt(INDEX.secu.length)+' art. sécu · '+fmt(INDEX.juris.length)+' décisions · '+fmt(INDEX.jorf.length)+' JORF · '+fmt(INDEX.acco.length)+' accords';
 }
 /* ============================================================================
    Normalisation + dictionnaires (métier -> IDCC, synonymes) pour la recherche
@@ -857,16 +896,34 @@ function highlight(text, terms){
   return out;
 }
 /* Extrait de texte centré sur le 1er terme trouvé, surligné */
-function excerpt(text, terms, len){
+function excerpt(text, terms, len, priorityTerms){
   if(!text) return ''; len = len||150;
-  var norm = normaliser(text), pos=-1;
-  for(var i=0;i<terms.length;i++){ if(terms[i].length<3) continue; var p=norm.indexOf(terms[i]); if(p!==-1 && (pos===-1||p<pos)) pos=p; }
+  text = String(text);
+  // Découpe en mots EN GARDANT les séparateurs (pour reconstituer le texte tel
+  // quel). On travaille par mot : pas de correspondance de position fragile entre
+  // texte original (accents/ponctuation) et forme normalisée.
+  var words = text.split(/(\s+)/);
+  function findWord(list){
+    if(!list || !list.length) return -1;
+    for(var i=0;i<words.length;i++){
+      var w=normaliser(words[i]); if(!w) continue;
+      for(var j=0;j<list.length;j++){ var t=list[j]; if(t && t.length>=3 && w.indexOf(t)!==-1) return i; }
+    }
+    return -1;
+  }
+  // Priorité au terme du sujet (focus) : la fenêtre se cale sur « contingent »
+  // plutôt que sur le début ; à défaut, sur le 1er terme trouvé.
+  var wi = findWord(priorityTerms); if(wi===-1) wi = findWord(terms);
   var start=0;
-  if(pos>60 && norm.length===text.length) start = pos-50; // fenêtre (accents ~1:1)
-  var slice = text.slice(start, start+len);
-  if(start>0) slice='…'+slice;
-  if(start+len < text.length) slice=slice+'…';
-  return highlight(slice, terms);
+  if(wi>0){ var s=wi, back=0; while(s>0 && back<50){ s--; back+=words[s].length; } start=s; }
+  var out='', acc=0, cut=false;
+  for(var k=start;k<words.length;k++){
+    if(acc+words[k].length>len && acc>0){ cut=true; break; }
+    out+=words[k]; acc+=words[k].length;
+  }
+  if(start>0) out='…'+out.replace(/^\s+/,'');
+  if(cut) out=out.replace(/\s+$/,'')+'…';
+  return highlight(out, terms);
 }
 
 /* Une ligne de résultat/liste. kind: ccn|code|secu|juris */
@@ -874,6 +931,7 @@ function rowHtml(kind, num, title, etat, opts){
   opts = opts || {};
   var sub = '';
   if(opts.snippet) sub += '<div class="res-sub">'+opts.snippet+'</div>';
+  if(opts.note) sub += '<div class="res-note">'+escapeHtml(opts.note)+'</div>';
   if(opts.sections && opts.sections.length){
     sub += '<div class="sec-chips">'+(opts.launchpad?'<span class="sec-lead">Sections clés</span>':'')+opts.sections.map(function(s){
       var t=s.title||s.titre||''; if(!t) return '';
@@ -996,7 +1054,8 @@ var SYN_EXTRA = {
  'grille':['minima','salaire','coefficient'],'coef':['coefficient'],'minima':['minimum conventionnel','salaire'],'remuneration':['salaire'],'appointements':['salaire'],'bareme':['grille','salaire'],
  'astreinte':['permanence'],'annualisation':['modulation'],'amenagement':['modulation','forfait'],'jrtt':['rtt','repos'],'anciennete':['prime d anciennete'],
  'essai':['periode d essai'],'maladie':['arret de travail'],'nuit':['travail de nuit'],'dimanche':['travail du dimanche'],'prime':['indemnite'],'indemnite':['prime'],
- 'rupture conv':['rupture conventionnelle'],'stc':['solde de tout compte'],'precarite':['prime de precarite'],'prudhommes':['conseil de prud hommes'],'prud hommes':['conseil de prud hommes'],'abandon':['abandon de poste'],'requalification':['cdd cdi'],'maternite':['conge maternite'],'paternite':['conge paternite']
+ 'rupture conv':['rupture conventionnelle'],'stc':['solde de tout compte'],'precarite':['prime de precarite'],'prudhommes':['conseil de prud hommes'],'prud hommes':['conseil de prud hommes'],'abandon':['abandon de poste'],'requalification':['cdd cdi'],'maternite':['conge maternite'],'paternite':['conge paternite'],
+ 'carence':['delai de carence','jour de carence'],'panier':['prime de panier','panier repas'],'ticket restaurant':['titre restaurant'],'tickets restaurant':['titre restaurant'],'titres restaurant':['titre restaurant'],'mutuelle':['complementaire sante','frais de sante'],'prevoyance':['garantie de prevoyance'],'trajet':['temps de trajet','temps de deplacement'],'deplacement':['frais de deplacement','indemnite kilometrique'],'kilometrique':['indemnite kilometrique'],'coupure':['amplitude','interruption'],'pause':['temps de pause'],'enfant malade':['conge enfant malade'],'depart retraite':['depart a la retraite','indemnite de depart en retraite']
 };
 /* Mot/bigramme de la requête -> catégories de section DÉJÀ produites par le pipeline */
 var CAT_KEYWORDS_RAW = {
@@ -1068,7 +1127,7 @@ function variantsOf(tok){
 function catsForToken(vars){ var E=getENG(), cats={}; vars.forEach(function(v){ (E.catByKw[v]||[]).forEach(function(c){ cats[c]=1; }); }); return Object.keys(cats); }
 
 /* Recherche CCN v2 : identité (titre/secteur/métier) + sujet (catégorie/section) */
-function searchCCNv2(tokens, rawNorm){
+function searchCCNv2(tokens, rawNorm, focusTokens){
   var E=getENG();
   var metPhrase={}; Object.keys(PRO).forEach(function(ph){ if(rawNorm.indexOf(ph)!==-1){ PRO[ph].forEach(function(id){ metPhrase[String(id)]=true; }); } });
   var padR=' '+rawNorm+' ';
@@ -1095,6 +1154,25 @@ function searchCCNv2(tokens, rawNorm){
   var qCatsArr=Object.keys(qCats);
   var qTermsArr=Object.keys(qTerms).filter(function(x){ return x.length>=4; });
   var hasTopic = qCatsArr.length>0 || qTermsArr.length>0;
+
+  /* FOCUS (mode assisté) : catégories/termes de la SEULE question-feuille. Sert à
+     resserrer les sections affichées sur ce point précis. Dérivé exactement comme
+     qCats/qTerms mais à partir de focusTokens uniquement. */
+  var fCats={}, fTerms={};
+  if(focusTokens && focusTokens.length){
+    var fnoteCats=function(k){ (E.catByKw[k]||[]).forEach(function(c){ fCats[c]=1; }); };
+    var fnoteSyn=function(k){ (E.SYN[k]||[]).forEach(function(s){ fTerms[s]=1; fnoteCats(s); }); };
+    focusTokens.forEach(function(t){ variantsOf(t).forEach(function(v){ fnoteCats(v); fnoteSyn(v); }); });
+    for(var fbi=0; fbi<focusTokens.length; fbi++){ for(var fnn=2; fnn<=3; fnn++){ if(fbi+fnn<=focusTokens.length){
+      var fph=focusTokens.slice(fbi,fbi+fnn).join(' ');
+      if(E.catByKw[fph]){ fnoteCats(fph); fTerms[fph]=1; }
+      if(E.SYN[fph]){ fnoteSyn(fph); fTerms[fph]=1; }
+    } } }
+    Object.keys(fCats).forEach(function(c){ (CAT_KEYWORDS_RAW[c]||[]).forEach(function(kw){ fTerms[normaliser(kw)]=1; }); });
+  }
+  var fCatsArr=Object.keys(fCats), fTermsArr=Object.keys(fTerms).filter(function(x){ return x.length>=4; });
+  var focusOn = !!(focusTokens && focusTokens.length && (fCatsArr.length>0 || fTermsArr.length>0));
+
   var res=[];
   (INDEX.ccn||[]).forEach(function(it){
     var id=it.num, hits=E.ccnHits[id]||[], cats=E.ccnCats[id]||{};
@@ -1111,7 +1189,7 @@ function searchCCNv2(tokens, rawNorm){
 
     // SUJET : chaque section est NOTÉE selon sa pertinence au thème demandé
     // (catégorie visée > titre parlant du thème > texte parlant du thème).
-    var scored=[], topic=0, topicIdf=0;
+    var scored=[], fscored=[], topic=0, topicIdf=0;
     if(hasTopic){
       hits.forEach(function(h){
         var ht=normaliser(h.title||''), hk=normaliser(h.kw||''), sc=0;
@@ -1122,6 +1200,15 @@ function searchCCNv2(tokens, rawNorm){
           else if(hk.indexOf(term)!==-1) sc+=25;
         });
         if(sc>0) scored.push({h:h, sc:sc});
+        if(focusOn){
+          var fs=0;
+          fCatsArr.forEach(function(c){ if(hcats.indexOf(c)!==-1) fs+=100; });
+          fTermsArr.forEach(function(term){
+            if(ht.indexOf(term)!==-1) fs+=60;
+            else if(hk.indexOf(term)!==-1) fs+=25;
+          });
+          if(fs>0) fscored.push({h:h, sc:fs});
+        }
       });
       if(scored.length){
         scored.sort(function(a,b){ return b.sc-a.sc; });
@@ -1129,12 +1216,20 @@ function searchCCNv2(tokens, rawNorm){
         tokens.forEach(function(t){ if(V[t].some(function(v){ return qTerms[v]; })) topicIdf += idf(t); });
       }
     }
+    // Mode focus : on ne garde QUE les sections de la question-feuille. Si aucune
+    // ne correspond, focusMiss = true (la convention ne dit rien sur ce point) et
+    // on ne l'inclut que si elle est identifiée par ailleurs (sa CCN / son métier).
+    var focusMiss=false;
+    if(focusOn){
+      if(fscored.length){ fscored.sort(function(a,b){ return b.sc-a.sc; }); scored=fscored; topic=Math.max(topic,1); }
+      else { scored=[]; topic=0; focusMiss=true; }
+    }
     var secMap={}; scored.slice(0,5).forEach(function(s){ secMap[s.h.title]=s.h; });
     if(metPhrase[id]) identity=Math.max(identity,1);
     var total=identity+topic; if(total===0) return;
     var secs=Object.keys(secMap).map(function(k){ return secMap[k]; }).slice(0,5);
     var launchpad=false;
-    if(identity>0 && topic===0 && !secs.length && hits.length){
+    if(!focusOn && identity>0 && topic===0 && !secs.length && hits.length){
       var ord=['contingent_hs','majoration_hs','minima_salariaux','duree_travail','temps_partiel','modulation_annualisation','astreintes','repos','conges','rupture_preavis'];
       var byCat={}; hits.forEach(function(h){ var c=h.cat||(h.cats&&h.cats[0]); if(c && !byCat[c]) byCat[c]=h; });
       secs=ord.map(function(c){ return byCat[c]; }).filter(Boolean).slice(0,4);
@@ -1143,33 +1238,54 @@ function searchCCNv2(tokens, rawNorm){
     }
     var pfx = normaliser(it.title).indexOf(tokens[0])===0?15:0;
     var phraseBonus = (tokens.length>=2 && titleHay.indexOf(tokens.join(' '))!==-1)?60:0;
-    var score = identity*1000 + topic*300 + Math.round(topicIdf*6) + (exactIdcc?5000:0) + (metPhrase[id]?200:0) + pfx + phraseBonus + secs.length*5;
-    res.push({num:id, title:it.title, etat:it.etat, source:it.source, identity:identity, topic:topic, cover:total, sections:secs, launchpad:launchpad, exact:exactIdcc, score:score});
+    var etatB = (it.etat==='V')?40 : (it.etat==='A'||it.etat==='P')?-400 : 0;
+    var score = identity*1000 + topic*300 + Math.round(topicIdf*6) + (exactIdcc?5000:0) + (metPhrase[id]?200:0) + pfx + phraseBonus + secs.length*5 + etatB;
+    res.push({num:id, title:it.title, etat:it.etat, source:it.source, identity:identity, topic:topic, cover:total, sections:secs, launchpad:launchpad, focusMiss:focusMiss, exact:exactIdcc, score:score});
   });
   res.sort(function(a,b){ return b.score-a.score; });
   return res;
 }
 /* Recherche articles v2 (variantes fuzzy + numéro exact/préfixe + phrase) */
-function searchArticlesV2(list, tokens){
+function searchArticlesV2(list, tokens, focusTokens){
   var V={}; tokens.forEach(function(t){ V[t]=variantsOf(t); });
+  var FV=null;
+  if(focusTokens && focusTokens.length){
+    // termes du focus (mots >=4 + synonymes), pondérés par rareté (idf) : on ne
+    // retient que les plus discriminants pour ne pas rattacher tout le thème
+    // (« heures » est commun ; « contingent » est spécifique).
+    var fcand={};
+    focusTokens.forEach(function(t){ if(t.length>=4) fcand[t]=1; (SYN[t]||[]).forEach(function(s){ s.split(' ').forEach(function(w){ if(w.length>=4) fcand[w]=1; }); }); });
+    var cand=Object.keys(fcand);
+    if(cand.length){ var maxIdf=0; cand.forEach(function(w){ var v=idf(w); if(v>maxIdf) maxIdf=v; });
+      FV=cand.filter(function(w){ return idf(w) >= maxIdf*0.6; }); if(!FV.length) FV=cand; }
+  }
   var phrase=tokens.join(' ');
   var out=[];
   (list||[]).forEach(function(a){
     var hay = a._h || (a._h = normaliser((a.num||'')+' '+(a.snippet||'')+' '+(a.title||'')));
     var cnum = a._cn || (a._cn = normaliser(a.num||'').replace(/ /g,''));
-    var covered=0, idfB=0, pad=' '+hay+' ';
+    var covered=0, idfB=0, exactHits=0, pad=' '+hay+' ';
     tokens.forEach(function(t){ var matched=null, vv=V[t];
       for(var i=0;i<vv.length;i++){ if(hay.indexOf(vv[i])!==-1){ matched=vv[i]; break; } }
-      if(matched){ covered++; idfB += idf(matched)*8 + (pad.indexOf(' '+matched+' ')!==-1?15:0); } });
+      if(matched){ covered++; if(matched===t) exactHits++; idfB += idf(matched)*8 + (pad.indexOf(' '+matched+' ')!==-1?15:0); } });
     var numExact=false, numPref=false;
     tokens.forEach(function(t){ var ct=t.replace(/ /g,''); if(!ct) return;
       if(cnum===ct) numExact=true;
       else if(ct.length>=3 && cnum.indexOf(ct)===0) numPref=true;
       else if(/^[0-9]+$/.test(ct) && ct.length>=3 && cnum.indexOf(ct)!==-1) numPref=true; });
     if(covered===0 && !numExact && !numPref) return;
+    // focus : l'article parle-t-il du point précis demandé ? (le fait remonter,
+    // et sert au resserrement par source côté runSearch)
+    var fhit=false, fbonus=0;
+    if(FV){ for(var fi=0; fi<FV.length; fi++){ if(hay.indexOf(FV[fi])!==-1){ fhit=true; fbonus += 150 + Math.round(idf(FV[fi])*20); } } }
     var phraseBonus=(tokens.length>=2 && hay.indexOf(phrase)!==-1)?120:0;
-    var score = covered*100 + (numExact?4000:0) + (numPref?300:0) + phraseBonus + Math.round(idfB);
-    out.push({num:a.num, title:a.title||('Article '+a.num), snippet:a.snippet||'', etat:a.etat?shortEtat(a.etat):'?', cover:covered||1, score:score});
+    // Le droit EN VIGUEUR d'abord : à pertinence comparable, un texte à jour passe
+    // devant un abrogé/périmé (≈ 3/4 d'un mot-clé — la pertinence reste prioritaire,
+    // un texte abrogé très pertinent peut encore remonter, mais plus bas).
+    var etat = a.etat?shortEtat(a.etat):'?';
+    var etatB = (etat==='V')?35 : (etat==='M')?15 : (etat==='A')?-75 : (etat==='P')?-50 : 0;
+    var score = covered*100 + exactHits*25 + (numExact?4000:0) + (numPref?300:0) + phraseBonus + Math.round(idfB) + fbonus + etatB;
+    out.push({num:a.num, title:a.title||('Article '+a.num), snippet:a.snippet||'', etat:etat, cover:covered||1, fhit:fhit, score:score});
   });
   out.sort(function(a,b){ return b.score-a.score; });
   return out;
@@ -1463,6 +1579,7 @@ var ASSIST_ARBRE = {
    ==========================================================================*/
 var ASSIST_PATH = [];   // chemin courant : ['paie','primes','treizieme']
 var ASSIST_CCN = null;  // IDCC de la convention choisie (filtre le bloc CCN)
+var ASSIST_FOCUS = null;  // q de la question-feuille : resserre sections/articles sur ce seul point
 
 function assistMotsCumules(){
   // Concatène les 'q' de chaque niveau du chemin courant.
@@ -1565,25 +1682,61 @@ function renderAssist(){
 
 function assistChercherCCN(q){
   // Cherche une convention par métier/secteur/IDCC et propose des choix.
+  // On NE se contente PAS d'un sous-chaîne du titre (« commerces de gros » au
+  // pluriel, « non alimentaire » absent du titre… ne matchent pas). On score par :
+  //   1) IDCC exact  2) carte métier/secteur PRO  3) recouvrement de mots du titre,
+  // avec tolérance singulier/pluriel (égalité ou préfixe >=4 lettres).
   var box = document.getElementById('assist-ccn-res');
   if(!box) return;
   q = (q||'').trim();
   if(q.length < 2){ box.innerHTML=''; return; }
   var qn = normaliser(q);
-  var res = [];
-  // 1) IDCC direct (chiffres)
-  if(/^\d{3,4}$/.test(q)){
-    (INDEX.ccn||[]).forEach(function(it){ if(String(it.num)===q) res.push(it); });
-  }
-  // 2) Par mot du titre / métier
-  if(res.length < 8){
-    (INDEX.ccn||[]).forEach(function(it){
-      if(res.indexOf(it)!==-1) return;
-      if(normaliser(String(it.title||'')).indexOf(qn)!==-1) res.push(it);
-    });
-  }
-  res = res.slice(0,8);
-  if(!res.length){ box.innerHTML='<div class="assist-ccn-empty">Aucune convention trouvée. Essayez un autre mot ou votre IDCC (4 chiffres, sur le bulletin de paie).</div>'; return; }
+  var qWords = tokenize(q);   // mots significatifs (sans mots-outils)
+  function motMatch(a,b){ if(a===b) return true;
+    if(a.length>=4 && b.length>=4){ return a.indexOf(b)===0 || b.indexOf(a)===0; } return false; }
+  function overlap(mots, cible){ var n=0; mots.forEach(function(w){
+    for(var i=0;i<cible.length;i++){ if(motMatch(w,cible[i])){ n++; break; } } }); return n; }
+
+  var scoreById = {};
+  function bump(id, s){ id=String(id); if(s>(scoreById[id]||0)) scoreById[id]=s; }
+
+  // 1) IDCC direct (3-4 chiffres) — priorité absolue
+  if(/^\d{3,4}$/.test(q)){ (INDEX.ccn||[]).forEach(function(it){ if(String(it.num)===q) bump(it.num,100000); }); }
+
+  // 2) Métier / secteur (carte PRO déjà normalisée) — rattrape « commerce de
+  //    gros non alimentaire » -> 573 même si ces mots ne sont pas dans le titre.
+  Object.keys(PRO).forEach(function(cle){
+    var cleWords = cle.split(' ');
+    var ov = overlap(cleWords, qWords);
+    if(!ov) return;
+    var s = 1000*ov + Math.round(400*(ov/cleWords.length)) + (qn.indexOf(cle)!==-1?300:0);
+    PRO[cle].forEach(function(id){ bump(id, s); });
+  });
+
+  // 2bis) Surnoms de conventions (Syntec, HCR, BTP, CCN 66, FEHAP…) — signal fort :
+  //       beaucoup de salariés connaissent leur convention par son nom courant.
+  Object.keys(ALIAS).forEach(function(cle){
+    var cleWords = cle.split(' ');
+    var ov = overlap(cleWords, qWords);
+    if(!ov) return;
+    var s = 2000*ov + Math.round(500*(ov/cleWords.length)) + (qn.indexOf(cle)!==-1?400:0);
+    ALIAS[cle].forEach(function(id){ bump(id, s); });
+  });
+
+  // 3) Titre de la convention (+ secteur connu) par recouvrement de mots
+  (INDEX.ccn||[]).forEach(function(it){
+    var hay = it._ccnw || (it._ccnw = (normaliser(it.title||'')+' '+((CCN_SECTOR_MAP&&CCN_SECTOR_MAP[it.num])?CCN_SECTOR_MAP[it.num]:'')).split(' ').filter(Boolean));
+    var ov = overlap(qWords, hay);
+    if(ov) bump(it.num, 100*ov + (normaliser(it.title||'').indexOf(qn)!==-1?300:0));
+  });
+
+  var byNum={}; (INDEX.ccn||[]).forEach(function(it){ byNum[String(it.num)]=it; });
+  var res = Object.keys(scoreById)
+    .filter(function(id){ return byNum[id]; })
+    .sort(function(a,b){ return scoreById[b]-scoreById[a]; })
+    .slice(0,8)
+    .map(function(id){ return byNum[id]; });
+  if(!res.length){ box.innerHTML='<div class="assist-ccn-empty">Aucune convention trouvée. Essayez un autre mot (métier, secteur) ou votre IDCC (4 chiffres, sur le bulletin de paie).</div>'; return; }
   box.innerHTML = res.map(function(it){
     return '<button class="assist-ccn-choice" data-idcc="'+it.num+'">'
       + '<span class="assist-ccn-idcc">IDCC '+it.num+'</span> '
@@ -1613,6 +1766,13 @@ function assistChoisir(profondeur, cle){
   // revenir en arrière en recliquant un niveau supérieur).
   ASSIST_PATH = ASSIST_PATH.slice(0, profondeur);
   ASSIST_PATH.push(cle);
+  // Focus = le nœud le PLUS PROFOND choisi, dès qu'on a dépassé la porte
+  // (profondeur >= 2). Resserre sections/articles sur l'intention la plus précise
+  // à CHAQUE étape (pas seulement sur la question-feuille). Les mots des portes
+  // parentes servent au rappel mais ne pilotent plus le tri fin (« salaire »,
+  // « paie »… ne noient plus « contingent »).
+  var n = assistNoeudCourant();
+  ASSIST_FOCUS = (ASSIST_PATH.length >= 2 && n && n.q) ? n.q : null;
   renderAssist();
   var mots = assistMotsCumules();
   var champ = document.getElementById('q');
@@ -1623,6 +1783,7 @@ function assistChoisir(profondeur, cle){
 function assistReset(){
   ASSIST_PATH = [];
   ASSIST_CCN = null;
+  ASSIST_FOCUS = null;
   renderAssist();
   var champ = document.getElementById('q');
   champ.value = '';
@@ -1648,7 +1809,12 @@ function runSearch(){
   var dym = didYouMean(tokens);
   var terms = expandTerms(tokens);
   tokens.forEach(function(t){ fuzzyExpand(t).forEach(function(w){ if(terms.indexOf(w)===-1) terms.push(w); }); });
-  var ccn = searchCCNv2(tokens, rawNorm).slice(0,40);
+  // Focus (mode assisté) : la question-feuille resserre sections & articles.
+  var focusTokens = (typeof ASSIST_FOCUS!=='undefined' && ASSIST_FOCUS) ? tokenize(ASSIST_FOCUS) : null;
+  // Extrait d'article : en mode focus, on cale la fenêtre sur le point demandé
+  // (la phrase « contingent… ») plutôt que sur le début du texte.
+  var artSnip = function(r){ return focusTokens ? excerpt(r.snippet||'', terms, 180, focusTokens) : highlight(String(r.snippet||'').slice(0,180), terms); };
+  var ccn = searchCCNv2(tokens, rawNorm, focusTokens).slice(0,40);
   // Filtre CCN du mode assisté : si l'utilisateur a précisé SA convention, on
   // ne garde QUE la sienne dans le bloc "Conventions" -- mais on ne touche PAS
   // aux autres sources (Code, sécu, jurisprudence, accords), qui complètent sa
@@ -1663,20 +1829,27 @@ function runSearch(){
     if(!ccn.length){
       var directe = (INDEX.ccn||[]).filter(function(it){ return String(it.num)===String(ASSIST_CCN); });
       if(directe.length){
-        ccn = searchCCNv2([String(ASSIST_CCN)], String(ASSIST_CCN)).filter(function(r){ return String(r.num)===String(ASSIST_CCN); }).slice(0,1);
+        ccn = searchCCNv2([String(ASSIST_CCN)], String(ASSIST_CCN), focusTokens).filter(function(r){ return String(r.num)===String(ASSIST_CCN); }).slice(0,1);
       }
     }
     ccnFiltree = (avant !== ccn.length) || ccn.length>0;
   }
-  var code = searchArticlesV2(SEARCH.code, tokens).slice(0,30);
-  var secu = searchArticlesV2(SEARCH.code_secu, tokens).slice(0,20);
-  var juris = searchArticlesV2(SEARCH.juris, tokens).slice(0,15);
-  var jorf = searchArticlesV2(SEARCH.jorf, tokens).slice(0,15);
-  var acco = searchArticlesV2(SEARCH.acco, tokens).slice(0,15);
+  var code = searchArticlesV2(SEARCH.code, tokens, focusTokens).slice(0,30);
+  var secu = searchArticlesV2(SEARCH.code_secu, tokens, focusTokens).slice(0,20);
+  var juris = searchArticlesV2(SEARCH.juris, tokens, focusTokens).slice(0,15);
+  var jorf = searchArticlesV2(SEARCH.jorf, tokens, focusTokens).slice(0,15);
+  var acco = searchArticlesV2(SEARCH.acco, tokens, focusTokens).slice(0,15);
+  // Mode focus : chaque source se resserre sur le point précis. Les articles qui
+  // en parlent passent devant ; s'il y en a, on ne garde qu'eux (sinon on laisse
+  // le thème large plutôt qu'une source vide).
+  if(focusTokens){
+    var focusTrim=function(l){ var f=l.filter(function(x){ return x.fhit; }); return f.length?f:l; };
+    code=focusTrim(code); secu=focusTrim(secu); juris=focusTrim(juris); jorf=focusTrim(jorf); acco=focusTrim(acco);
+  }
 
   var html = '';
   var multi = tokens.length>=2;
-  if(multi){
+  if(multi && !focusTokens){
     var maxCover = Math.max(
       ccn[0]?ccn[0].cover:0, code[0]?code[0].cover:0, secu[0]?secu[0].cover:0, juris[0]?juris[0].cover:0);
     if(maxCover>=2){
@@ -1687,40 +1860,44 @@ function runSearch(){
   if(ccn.length){
     html += '<div class="group-title">'+(ccnFiltree ? 'Votre convention' : 'Conventions collectives · '+ccn.length)+'</div><div class="rows">';
     html += ccn.map(function(r){
-      var snip = (r.sections[0] && r.sections[0].kw) ? excerpt(r.sections[0].kw, terms, 150) : '';
-      return rowHtml('ccn', r.num, r.title, r.etat, {snippet:snip, sections:r.sections, launchpad:r.launchpad, source:r.source});
+      var snip = (r.sections[0] && r.sections[0].kw) ? excerpt(r.sections[0].kw, terms, 150, focusTokens) : '';
+      var note = (focusTokens && r.focusMiss)
+        ? 'Rien de spécifique sur ce point dans cette convention — la règle par défaut est celle du Code du travail (ci-dessous).'
+        : '';
+      return rowHtml('ccn', r.num, r.title, r.etat, {snippet:snip, note:note, sections:r.sections, launchpad:r.launchpad, source:r.source});
     }).join('');
     html += '</div>';
   }
   if(code.length){
     html += '<div class="group-title">Code du travail · '+code.length+'</div><div class="rows">';
-    html += code.map(function(r){ return rowHtml('code', r.num, r.title, r.etat, {snippet:highlight(r.snippet.slice(0,180), terms)}); }).join('');
+    html += code.map(function(r){ return rowHtml('code', r.num, r.title, r.etat, {snippet:artSnip(r)}); }).join('');
     html += '</div>';
   }
   if(secu.length){
     html += '<div class="group-title">Code de la sécurité sociale · '+secu.length+'</div><div class="rows">';
-    html += secu.map(function(r){ return rowHtml('secu', r.num, r.title, r.etat, {snippet:highlight(r.snippet.slice(0,180), terms)}); }).join('');
+    html += secu.map(function(r){ return rowHtml('secu', r.num, r.title, r.etat, {snippet:artSnip(r)}); }).join('');
     html += '</div>';
   }
   if(juris.length){
     html += '<div class="group-title">Jurisprudence · '+juris.length+'</div><div class="rows">';
-    html += juris.map(function(r){ return rowHtml('juris', r.num, r.title, null, {snippet:highlight(r.snippet.slice(0,180), terms), juridiction:r.juridiction}); }).join('');
+    html += juris.map(function(r){ return rowHtml('juris', r.num, r.title, null, {snippet:artSnip(r), juridiction:r.juridiction}); }).join('');
     html += '</div>';
   }
   if(jorf.length){
     html += '<div class="group-title">Journal Officiel · '+jorf.length+'</div><div class="rows">';
-    html += jorf.map(function(r){ return rowHtml('jorf', r.num, r.title, null, {snippet:highlight(r.snippet.slice(0,180), terms)}); }).join('');
+    html += jorf.map(function(r){ return rowHtml('jorf', r.num, r.title, null, {snippet:artSnip(r)}); }).join('');
     html += '</div>';
   }
   if(acco.length){
     html += '<div class="group-title">Accords d\'entreprise · '+acco.length+'</div><div class="rows">';
-    html += acco.map(function(r){ return rowHtml('acco', r.num, r.title, null, {snippet:highlight(r.snippet.slice(0,180), terms), tags:r.themes}); }).join('');
+    html += acco.map(function(r){ return rowHtml('acco', r.num, r.title, null, {snippet:artSnip(r), tags:r.themes}); }).join('');
     html += '</div>';
   }
   if(!html){
     html = '<div class="empty"><div class="big">Rien trouvé pour ces mots.</div>Essayez un métier plutôt qu\'un terme technique, retirez un mot-clé, ou vérifiez l\'orthographe.</div>';
   }
   if(dym){ html = '<div class="dym">Vouliez-vous dire <button type="button" class="dym-q" data-q="'+escAttr(dym)+'">'+escapeHtml(dym)+'</button> ?</div>' + html; }
+  if(!SEARCH_READY){ html = '<div class="loading-inline">Indexation des textes en cours… les articles et sections de convention apparaissent dès qu\'ils sont prêts.</div>' + html; }
   box.innerHTML = html;
 }
 
@@ -1728,6 +1905,7 @@ function runSearch(){
 document.getElementById('q').addEventListener('keydown', function(e){ if(e.key==='Enter'){ clearTimeout(window.__st); runSearch(); } });
 document.getElementById('go').addEventListener('click', runSearch);
 document.getElementById('q').addEventListener('input', function(){
+  ASSIST_FOCUS = null;   // frappe libre : on sort du sujet resserré de l'entonnoir
   clearTimeout(window.__st); window.__st = setTimeout(runSearch, 160);
   renderSuggest();
 });
