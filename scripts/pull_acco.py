@@ -41,6 +41,22 @@ import urllib.parse
 from datetime import date, datetime, timedelta
 
 
+# ── Reglages de pagination / veille (ACCO) ───────────────────────────────────
+# Fenetre de resultats Legifrance : ~10 000 par recherche (page 200 x 50). La
+# page 201 renvoie 503 -- c'est le PLAFOND de la fenetre, pas une panne : on
+# s'arrete avant, proprement.
+MAX_PAGE = 200
+# En veille (--only-missing), tri par date DESC : les nouveautes sont EN HAUT.
+# Des qu'on a rattrape le deja-connu, tout le reste (plus ancien) est deja la.
+# On scanne toujours un plancher de pages (accords parfois antidates de
+# quelques jours), PUIS on stoppe le theme apres STOP_APRES_RIEN resultats
+# consecutifs sans une seule nouveaute. Fait passer un run de veille de
+# ~4 000 appels de recherche (20 themes x 200 pages) a quelques dizaines.
+MIN_PAGES_VEILLE = 4
+STOP_APRES_RIEN = 150          # 3 pages de 50 sans rien de neuf -> theme a jour
+RETRY_5XX = 3                  # petites tentatives sur 5xx transitoire (backoff plafonne)
+
+
 def get_urls():
     env = os.environ.get("PISTE_ENV", "sandbox").lower()
     if env == "production":
@@ -414,6 +430,12 @@ def main():
                           "= 5h30). GitHub tue un job à 6h ; on s'arrête AVANT, proprement, "
                           "en committant ce qui est fait -- le run suivant (--only-missing) "
                           "reprend la suite. C'est la clé pour couvrir 10 ans sur plusieurs runs.")
+    ap.add_argument("--deadline-epoch", type=str, default="",
+                     help="Échéance ABSOLUE partagée (timestamp Unix, secondes), fixée une "
+                          "fois par le workflow pour TOUTE la phase de récupération. Empêche "
+                          "JORF et ACCO (même job, plafond GitHub 355 min) de s'additionner "
+                          "au-delà du plafond : on s'arrête au plus tôt entre --minutes-max "
+                          "et cette échéance. Vide/absent = ignoré.")
     args = ap.parse_args()
 
     depuis = date.fromisoformat(args.depuis) if args.depuis else date_dix_ans_glissante()
@@ -451,6 +473,22 @@ def main():
     import time as _time
     debut = _time.monotonic()
     limite_secondes = args.minutes_max * 60
+    # Budget PARTAGÉ JORF+ACCO : si le workflow passe une échéance absolue
+    # commune (--deadline-epoch), on s'arrête au plus tôt entre nos --minutes-max
+    # et cette échéance. C'est ce qui empêche 330 (JORF) + 330 (ACCO) de dépasser
+    # le plafond du job (cause de l'annulation à 355 min).
+    deadline_epoch = None
+    if (args.deadline_epoch or "").strip():
+        try:
+            deadline_epoch = float(args.deadline_epoch.strip())
+        except ValueError:
+            print(f"[budget partagé] --deadline-epoch illisible ({args.deadline_epoch!r}), ignoré.",
+                  file=sys.stderr)
+    if deadline_epoch is not None:
+        reste = deadline_epoch - time.time()
+        limite_secondes = max(0, min(limite_secondes, int(reste)))
+        print(f"[budget partagé] échéance commune dans ~{int(reste // 60)} min "
+              f"-> limite ACCO effective ~{limite_secondes // 60} min.", file=sys.stderr)
 
     summary = list(preserved_ok.values())
     n_ok = 0
@@ -468,32 +506,60 @@ def main():
             break
         page = 1
         total_theme = 0
+        rien_de_neuf = 0          # résultats consécutifs sans nouveauté (arrêt veille)
         while True:
             if _time.monotonic() - debut > limite_secondes:
-                print(f"\n[garde-temps] {args.minutes_max} min atteintes -- arrêt propre. "
+                print(f"\n[garde-temps] limite de temps atteinte -- arrêt propre. "
                       f"Le prochain run (--only-missing) reprend la suite.")
                 arrete_par_temps = True
                 break
-            resultat = rechercher_acco_par_theme(client, theme, page=page, page_size=50)
-            if "_error" in resultat:
-                print(f"  [{t_idx}/{len(THEMES_ACCO)}] '{theme}' p{page} : échec "
-                      f"({resultat['_error']}) {str(resultat.get('_detail',''))[:100]}", file=sys.stderr)
+            if page > MAX_PAGE:
+                print(f"  [{t_idx}/{len(THEMES_ACCO)}] '{theme}' : plafond de pagination "
+                      f"(~{MAX_PAGE * 50} résultats) atteint, fin de la fenêtre accessible.")
                 break
+
+            # Recherche d'une page, avec petites tentatives sur 5xx TRANSITOIRE
+            # (backoff plafonné : jamais de longue attente -> ne peut pas faire
+            # déborder le run). Le 401 est déjà géré dans le client. Un 503 au
+            # plafond de fenêtre est NORMAL -> on ne s'acharne pas.
+            resultat = {"_error": "init"}
+            for essai in range(1, RETRY_5XX + 1):
+                resultat = rechercher_acco_par_theme(client, theme, page=page, page_size=50)
+                err = resultat.get("_error") if isinstance(resultat, dict) else None
+                if err is None:
+                    break
+                if err == 503 and page >= MAX_PAGE:
+                    break
+                transitoire = (err == "exception") or (isinstance(err, int) and 500 <= err < 600)
+                if not transitoire or essai == RETRY_5XX:
+                    break
+                attente = min(2 ** essai, 8)
+                print(f"    [retry] '{theme}' p{page} : {err}, nouvelle tentative "
+                      f"dans {attente}s ({essai}/{RETRY_5XX})", file=sys.stderr)
+                time.sleep(attente)
+
+            if isinstance(resultat, dict) and "_error" in resultat:
+                niveau = "fin de fenêtre" if resultat.get("_error") == 503 else "arrêt du thème"
+                print(f"  [{t_idx}/{len(THEMES_ACCO)}] '{theme}' p{page} : {niveau} "
+                      f"({resultat['_error']}) {str(resultat.get('_detail',''))[:80]}", file=sys.stderr)
+                break
+
             accords = extraire_accords_recherche(resultat)
             if not accords:
                 break
             for tid, titre, texte_court, extraits in accords:
-                # Filtre RH sur le titre + only-missing.
+                # Filtre RH sur le titre + only-missing. Un item non-RH ou déjà
+                # acquis = "rien de neuf" : il alimente le compteur d'arrêt veille.
                 if not titre_est_rh(titre):
-                    continue
-                if args.only_missing and tid in deja:
+                    rien_de_neuf += 1
                     continue
                 if tid in deja:
+                    rien_de_neuf += 1
                     continue
 
-                # Récupérer le TEXTE COMPLET via /consult/acco {"id": ...}
-                # (le diagnostic a montré que ce paramètre marche, contrairement
-                # à "textCid" qui plante en 500). Repli sur l'extrait si échec.
+                # Nouveauté RH -> TEXTE COMPLET via /consult/acco {"id": ...}
+                # ("textCid" plante en 500). Repli sur l'extrait si échec.
+                rien_de_neuf = 0
                 texte_complet = ""
                 rep = fetch_texte_complet_acco(client, tid)
                 if "_error" not in rep:
@@ -538,13 +604,22 @@ def main():
                 print(f"Plafond --max {args.max} atteint.")
                 arrete_par_temps = True
                 break
+
+            # ── Arrêt anticipé VEILLE ──
+            # En only-missing, dès qu'on enchaîne STOP_APRES_RIEN résultats sans
+            # une seule nouveauté (après un plancher de pages), le thème est à
+            # jour : le tri DESC garantit que tout le reste, plus ancien, est déjà
+            # acquis. La rotation sur 5 semaines repasse de toute façon le fonds
+            # en entier, donc un éventuel accord antidaté profond est rattrapé là.
+            if (args.only_missing and page >= MIN_PAGES_VEILLE
+                    and rien_de_neuf >= STOP_APRES_RIEN):
+                print(f"  [{t_idx}/{len(THEMES_ACCO)}] '{theme}' : à jour "
+                      f"({rien_de_neuf} résultats consécutifs déjà connus) -> arrêt du thème.")
+                break
+
             if len(accords) < 50:
                 break
             page += 1
-            if page > 300:  # garde-fou anti-boucle (15 000 accords/thème max ;
-                            # monté de 100 à 300 le 02/08 pour vérifier s'il
-                            # restait des accords au-delà de 27 578)
-                break
             time.sleep(args.delay)
         print(f"  [{t_idx}/{len(THEMES_ACCO)}] '{theme}' : +{total_theme} accords (cumul {n_ok})")
 
