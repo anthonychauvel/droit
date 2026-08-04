@@ -1826,10 +1826,12 @@ function runSearch(){
   tokens.forEach(function(t){ fuzzyExpand(t).forEach(function(w){ if(terms.indexOf(w)===-1) terms.push(w); }); });
   // Focus (mode assisté) : la question-feuille resserre sections & articles.
   var focusTokens = (typeof ASSIST_FOCUS!=='undefined' && ASSIST_FOCUS) ? tokenize(ASSIST_FOCUS) : null;
-  // Extrait d'article : en mode focus, on cale la fenêtre sur le point demandé
-  // (la phrase « contingent… ») plutôt que sur le début du texte.
-  var artSnip = function(r){ return focusTokens ? excerpt(r.snippet||'', terms, 180, focusTokens) : highlight(String(r.snippet||'').slice(0,180), terms); };
-  var ccn = searchCCNv2(tokens, rawNorm, focusTokens).slice(0,40);
+  // Extrait d'article : on cale TOUJOURS la fenêtre sur les mots cherchés (la
+  // disposition demandée), en priorité le focus s'il y en a — même logique que
+  // pour les sections de convention, en recherche libre comme dans l'entonnoir.
+  var artSnip = function(r){ return excerpt(String(r.snippet||''), terms, focusTokens?260:200, focusTokens); };
+  var ccnAll = searchCCNv2(tokens, rawNorm, focusTokens);
+  var ccn = ccnAll.slice(0,40);
   // Filtre CCN du mode assisté : si l'utilisateur a précisé SA convention, on
   // ne garde QUE la sienne dans le bloc "Conventions" -- mais on ne touche PAS
   // aux autres sources (Code, sécu, jurisprudence, accords), qui complètent sa
@@ -1837,17 +1839,19 @@ function runSearch(){
   // reste, pas en s'enfermant dans sa seule convention.
   var ccnFiltree = false;
   if(typeof ASSIST_CCN!=='undefined' && ASSIST_CCN){
-    var avant = ccn.length;
-    ccn = ccn.filter(function(r){ return String(r.num)===String(ASSIST_CCN); });
-    // Si sa CCN n'est pas dans les résultats du thème (elle ne traite pas ce
-    // sujet), on tente de l'afficher quand même en la cherchant directement.
+    // Filtrer sur la convention choisie depuis le classement COMPLET (pas le top-40) :
+    // sinon, sans ancre métier dans la requête, la convention tombe au-delà du 40e
+    // et on basculait à tort sur un repli qui affichait « Pas trouvé ».
+    ccn = ccnAll.filter(function(r){ return String(r.num)===String(ASSIST_CCN); }).slice(0,1);
+    // Vraiment absente du classement (elle ne traite pas ce sujet) : on l'affiche
+    // tout de même via une recherche directe (qui portera la note « pas trouvé »).
     if(!ccn.length){
       var directe = (INDEX.ccn||[]).filter(function(it){ return String(it.num)===String(ASSIST_CCN); });
       if(directe.length){
         ccn = searchCCNv2([String(ASSIST_CCN)], String(ASSIST_CCN), focusTokens).filter(function(r){ return String(r.num)===String(ASSIST_CCN); }).slice(0,1);
       }
     }
-    ccnFiltree = (avant !== ccn.length) || ccn.length>0;
+    ccnFiltree = ccn.length>0;
   }
   var code = searchArticlesV2(SEARCH.code, tokens, focusTokens, rawNorm).slice(0,30);
   var secu = searchArticlesV2(SEARCH.code_secu, tokens, focusTokens, rawNorm).slice(0,20);
@@ -1875,7 +1879,7 @@ function runSearch(){
   if(ccn.length){
     html += '<div class="group-title">'+(ccnFiltree ? 'Votre convention' : 'Conventions collectives · '+ccn.length)+'</div><div class="rows">';
     html += ccn.map(function(r){
-      var snip = (r.sections[0] && r.sections[0].kw) ? excerpt(r.sections[0].kw, terms, 150, focusTokens) : '';
+      var snip = (r.sections[0] && r.sections[0].kw) ? excerpt(r.sections[0].kw, terms, 260, focusTokens) : '';
       var note = (focusTokens && r.focusMiss)
         ? 'Pas trouvé dans la version indexée de cette convention — ouvrez son texte complet (touchez la convention) pour vérifier. À défaut de clause conventionnelle, c\'est le Code du travail (ci-dessous) qui s\'applique.'
         : '';
