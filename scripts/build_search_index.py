@@ -26,11 +26,13 @@ import re
 import glob
 import argparse
 
-SNIPPET_LEN = 280      # extrait pour les articles de code
+SNIPPET_LEN = 600      # extrait pour les articles de code (aligné : assez de texte
+                       # pour que l'affichage se recentre sur la disposition, même
+                       # si elle n'est pas au tout début — 70% des articles > 280)
 SNIPPET_LEN_LONG = 600 # extrait plus long pour JORF/ACCO (contenu riche : on
                        # veut que la recherche matche au-delà du tout début du
                        # texte, ex. un montant ou une prime cités plus loin)
-SECTION_KW_LEN = 240   # extrait de texte embarqué par section de convention
+SECTION_KW_LEN = 600   # extrait de texte embarqué par section de convention
 
 
 def strip_html(raw):
@@ -93,10 +95,22 @@ def cats_for(text_lower):
     return found
 
 
+_OBSOLETE_PREFIXES = ("ABROGE", "PERIME", "REMPLACE", "ANNULE")
+
+
+def _obsolete_article(art):
+    """Version d'article qui n'est plus en vigueur (remplacée/abrogée/périmée)."""
+    e = (art.get("etat") or "").upper()
+    return e.startswith(_OBSOLETE_PREFIXES) or "MORT_NEE" in e
+
+
 def own_text(node):
     """Texte PROPRE d'une section : son contenu direct + le contenu de ses
     articles directs, SANS descendre dans les sous-sections (pour ne pas
-    dupliquer le texte des enfants et gonfler l'index)."""
+    dupliquer le texte des enfants et gonfler l'index). On ne retient QUE les
+    versions d'article EN VIGUEUR : sinon on prévisualise une version obsolète
+    (ex. le contingent 120 h remplacé en 2001 au lieu du 180/220 h en vigueur
+    depuis 2012)."""
     if not isinstance(node, dict):
         return ""
     parts = []
@@ -104,14 +118,36 @@ def own_text(node):
         val = node.get(key)
         if val:
             parts.append(strip_html(val))
-    for art in (node.get("articles") or []):
-        if isinstance(art, dict):
-            for key in ("content", "texte", "texteHtml"):
-                val = art.get(key)
-                if val:
-                    parts.append(strip_html(val))
-                    break
+    arts = [a for a in (node.get("articles") or []) if isinstance(a, dict)]
+    vivants = [a for a in arts if not _obsolete_article(a)]
+    for art in (vivants if vivants else arts):
+        for key in ("content", "texte", "texteHtml"):
+            val = art.get(key)
+            if val:
+                parts.append(strip_html(val))
+                break
     return re.sub(r"\s+", " ", " ".join(parts)).strip()
+
+
+def make_kw(text, cats, length=SECTION_KW_LEN):
+    """Aperçu centré sur la 1re occurrence d'un mot-clé de la catégorie PRINCIPALE
+    (la plus spécifique = cats[0]), pour prévisualiser la DISPOSITION de ce thème
+    (ex. « …fixé à 180 heures… ») et non le début générique de l'article. À défaut,
+    début du texte."""
+    if not text:
+        return ""
+    low = text.lower()
+    pos = -1
+    principal = cats[0] if cats else None
+    for kw in KEYWORDS.get(principal, ()):
+        p = low.find(kw)
+        if p != -1 and (pos == -1 or p < pos):
+            pos = p
+    if pos > 80:
+        start = max(0, pos - 60)
+        snip = text[start:start + length]
+        return ("…" + snip) if start > 0 else snip
+    return text[:length]
 
 
 def walk_ccn_sections(node, path_titles=None, is_root=True):
@@ -129,13 +165,13 @@ def walk_ccn_sections(node, path_titles=None, is_root=True):
         basis = (titre + " " + own).lower()
         cats = cats_for(basis)
         if cats:
-            kw = own if own else titre
+            kw = make_kw(own, cats) if own else titre[:SECTION_KW_LEN]
             results.append({
                 "path": " > ".join(current_path),
                 "title": titre,
                 "cat": cats[0],          # principale (la plus spécifique)
                 "cats": cats,            # toutes
-                "kw": kw[:SECTION_KW_LEN],
+                "kw": kw,
             })
     for child in (node.get("sections") or []):
         results.extend(walk_ccn_sections(child, current_path, is_root=False))
