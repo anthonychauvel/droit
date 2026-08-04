@@ -7120,13 +7120,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697497",
+              "cid": "KALISCTA000005697497",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et barème des appointements minima mensuels au 1er avril 2001",
+              "dateModif": null,
+              "dateDebut": "2001-04-11",
+              "dateFin": "2022-07-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005784549",
+                  "cid": "KALIARTI000005784549",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005697497/KALIARTI000005784549",
+                  "pathTitle": [
+                    "Salaires et barème des appointements minima mensuels au 1er avril 2001"
+                  ],
+                  "content": "<p></p>   Convention signée le 21 décembre 1972 et déposée au secrétariat du conseil des prud'hommes de la Seine, section des industries chimiques, le 29 décembre 1972 sous le n° 3118.<p></p><p></p>   Les organisations syndicales signataires de la convention collective du 21 décembre 1972 sont convenues de ce qui suit :<p></p><p></p>   A dater du 1er avril 2001, le barème des appointements minima mensuels figurant à l'annexe I de la convention collective nationale de la transformation du papier du 21 décembre 1972 sera calculé sur la base de 4 568 F. Pour le coefficient 100 (primes et avantages compris dans les conditions prévues aux articles 20 et 21 de la convention), quel que soit l'horaire ou le forfait appliqué dans l'entreprise ou l'établissement.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 33 2001-04-11 BO conventions collectives 2001-21",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 986947200000,
+                  "dateFin": 1656633600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7140,13 +7214,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697498",
+              "cid": "KALISCTA000005697498",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et barème des appointements minima mensuels",
+              "dateModif": null,
+              "dateDebut": "2002-06-11",
+              "dateFin": "2006-11-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005784550",
+                  "cid": "KALIARTI000005784550",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005697498/KALIARTI000005784550",
+                  "pathTitle": [
+                    "Salaires et barème des appointements minima mensuels"
+                  ],
+                  "content": "<p></p>   Les organisations syndicales signataires de la convention collective du 21 décembre 1972 sont convenues de ce qui suit :<p></p><p></p>   A dater du 1er juin 2002, le barème des appointements minima mensuels figurant à l'annexe I de la convention collective nationale de la transformation du papier (papier, carton et pellicule cellulosique) du 21 décembre 1972 sera calculé sur la base de 707 Euros pour le coefficient 100 (primes et avantages compris dans les conditions prévues aux articles 20 et 21 de la convention) quel que soit l'horaire ou le forfait appliqué dans l'entreprise ou l'établissement.<p></p><p></p>   Fait à Paris, le 11 juin 2002.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 34 2002-06-11 BO conventions collectives 2002-43",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1023753600000,
+                  "dateFin": 1164153600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7161,12 +7309,90 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005868749",
+              "cid": "KALIARTI000005868749",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005868749",
+              "pathTitle": [],
+              "content": "<p>Reconnaissant les nécessités économiques de maintenir tout à la fois le pouvoir d'achat des salariés et la compétitivité des entreprises ainsi que leur capacité d'investissement, garante du taux d'emploi sur le territoire national, les parties signataires conviennent de revaloriser les salaires minima conventionnels avec un effort particulier sur le salaire du premier coefficient de la grille de classification OEDTAM. </p><p>Elles entendent insister sur les principes généraux d'égalité qui doivent guider les politiques de rémunération. A cet effet, elles rappellent tout particulièrement :</p><p>-que les employeurs sont tenus d'assurer, pour un même travail ou pour un travail de valeur égale, l'égalité de rémunération entre les hommes et les femmes ;</p><p>-que les différents éléments composant la rémunération doivent être établis selon des normes identiques pour les hommes et pour les femmes. </p><p>Article 1er </p><p>Salaires mensuels minima conventionnels \" OEDTAM \" </p><p>Le salaire mensuel minimum conventionnel s'entend de la rémunération versée par l'employeur au salarié en raison de l'emploi de ce dernier à temps plein. </p><p>Dans le respect des dispositions conventionnelles, il comprend :</p><p>-le salaire de base ;</p><p>-tous les autres avantages et accessoires payés directement ou indirectement en espèces ou en nature par l'employeur dont la base de calcul est mensuelle. </p><p>Sont expressément exclus desdits avantages et accessoires :</p><p>-la prime d'ancienneté dans la limite résultant de la stricte application de la convention collective ;</p><p>-l'avantage pécuniaire de nuit dans la limite résultant de la stricte application de la convention collective ;</p><p>-les primes pour travail du dimanche et des jours fériés dans les limites résultant de la stricte application de la convention collective ;</p><p>-les primes dites de \" treizième mois \", de \" vacances \" ou similaires non versées mensuellement ;</p><p>-les montants correspondant au paiement des heures supplémentaires et des majorations légales s'y rattachant ;</p><p>-les primes ou indemnités ayant le caractère d'un remboursement de frais ;</p><p>-les sommes liées à la participation ou l'intéressement. </p><p>La grille des salaires minima conventionnels OEDTAM, pour un salarié à temps plein dont le niveau de salaire n'obéit pas à des dispositions légales ou réglementaires particulières, est arrêtée comme suit : </p><p>(voir textes salaires) </p><p>Article 2 </p><p>Salaires mensuels minima conventionnels \" Ingénieurs et cadres \" </p><p>Le salaire mensuel minimum conventionnel s'entend de la rémunération versée par l'employeur au salarié travaillant à temps plein. </p><p>Il englobe le salaire de base et tous les autres avantages et accessoires payés directement ou indirectement en espèce ou en nature par l'employeur, dans les conditions des articles 20 et 21 des conventions collectives, à l'exclusion :</p><p>-des majorations légales pour heures supplémentaires ;</p><p>-des indemnités ayant le caractère d'un remboursement de frais ;</p><p>-des sommes liées à la participation ou l'intéressement. </p><p>(voir textes salaires) </p><p>Article 3 </p><p>Garantie annuelle de rémunération </p><p>1. Contexte </p><p>Les salaires minima mensuels conventionnels ne permettant pas d'estimer le montant des rémunérations annuelles qui sont souvent constituées d'éléments versés sur une périodicité autre que mensuelle, il est apparu judicieux à la profession de pouvoir communiquer sur une rémunération annuelle plus proche de la réalité économique. </p><p>Une garantie de rémunération sur l'année est ainsi instituée. Elle comprend tous les élements de rémunération soumis aux conditions de sécurité sociale. Elle s'applique en complément du salaire minimum mensuel, son instauration ne pouvant porter préjudice ni à l'application des salaires mensuels ni au versement des primes ou des éléments accessoires de salaires pouvant exister dans les entreprises. </p><p>2. Montant de la garantie </p><p>Tout salarié à temps plein bénéficiant du salaire mensuel minimum conventionnel, et notamment tout salarié nouvellement embauché dans la branche, est assuré de bénéficier, au minimum, d'un montant annuel de rémunération fixé à : </p><p>(voir textes salaires) </p><p>Article 4 </p><p>Champ d'application </p><p>Le présent accord est conclu dans le champ d'application des conventions collectives :</p><p>-pour ses articles 1er et 3 et suivants :</p><p>-de la convention collective nationale pour les ouvriers, employés, dessinateurs, techniciens et agents de maîtrise de la production des papiers-cartons et celluloses du 20 janvier 1988 ;</p><p>-de la convention collective nationale des ouvriers, employés, dessinateurs, techniciens et agents de maîtrise de la transformation des papiers et cartons et des industries connexes du 16 février 1988 ;</p><p>-pour ses articles 2 et suivants :</p><p>-de la convention collective nationale des ingénieurs et cadres de la production des papiers, cartons et celluloses du 4 décembre 1972 ;</p><p>-de la convention collective nationale des ingénieurs et cadres de la transformation des papiers et cartons et des industries connexes du 21 décembre 1972. </p><p>Article 5 </p><p>Procédure de dépôt et d'extension </p><p>Le présent accord fera l'objet de la même publicité que les conventions collectives nationales. Il sera déposé à la direction départementale du travail et de l'emploi de Paris et remis au secrétariat-greffe du conseil de prud'hommes de Paris dans les conditions prévues par les articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">L. 132-10 </a>et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006806113&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. R132-1 (Ab)\">R. 132-1</a> du code du travail. </p><p>La partie patronale s'emploiera à obtenir l'extension des dispositions de l'article 1er, conformément à la législation en vigueur. </p><p>Fait à Paris, le 22 novembre 2006.</p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Accord professionnel 2006-11-22 BO conventions collectives 2007-4 étendu par arrêté du 29 mars 2007 JORF 20 avril 2007",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L132-10 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L132-10",
+                  "articleId": "LEGIARTI000006647014",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 122860800000
+                },
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. R132-1 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "R132-1",
+                  "articleId": "LEGIARTI000006806113",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 122860800000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1164153600000,
+              "dateFin": 1656633600000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
