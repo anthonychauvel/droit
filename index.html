@@ -546,6 +546,7 @@ var CCN_LISTE = [];
 var AUDITS = [];
 var TRENDS = null;   // mode évolutif : mots/expressions fréquents (optionnel)
 var SEARCH_READY = false;  // true quand search-index.json est chargé (articles + sections CCN prêts)
+var COUNTS = null;   // décomptes issus de counts.json (pour peindre le récap AVANT le manifest)
 var DETAIL_CACHE = {};
 var ETAT_LABEL = { V:'Validé', A:'Abrogé', M:'Modifié', P:'Périmé', '?':'À vérifier' };
 
@@ -577,7 +578,8 @@ async function loadAll(){
   // peint le récap (y compris la ligne corpus, seule visible sur mobile) dès son
   // arrivée — sans attendre le manifest complet (7+ Mo).
   var pCounts = (async function(){
-    try{ var c0 = await fetchJSON('output/counts.json'); if(c0 && c0.counts) paintCounts(c0.counts); }
+    try{ var c0 = await fetchJSON('output/counts.json');
+      if(c0 && c0.counts){ COUNTS = c0.counts; paintCounts(COUNTS); renderDashboard(); } }
     catch(e){ /* pas grave : le manifest prendra le relais */ }
   })();
 
@@ -1201,13 +1203,13 @@ function searchCCNv2(tokens, rawNorm, focusTokens){
         });
         if(sc>0) scored.push({h:h, sc:sc});
         if(focusOn){
-          var fs=0;
+          var fs=0, fTermHit=false;
           fCatsArr.forEach(function(c){ if(hcats.indexOf(c)!==-1) fs+=100; });
           fTermsArr.forEach(function(term){
-            if(ht.indexOf(term)!==-1) fs+=60;
-            else if(hk.indexOf(term)!==-1) fs+=25;
+            if(ht.indexOf(term)!==-1){ fs+=60; fTermHit=true; }
+            else if(hk.indexOf(term)!==-1){ fs+=25; fTermHit=true; }
           });
-          if(fs>0) fscored.push({h:h, sc:fs});
+          if(fs>0) fscored.push({h:h, sc:fs, term:fTermHit});
         }
       });
       if(scored.length){
@@ -1221,7 +1223,15 @@ function searchCCNv2(tokens, rawNorm, focusTokens){
     // on ne l'inclut que si elle est identifiée par ailleurs (sa CCN / son métier).
     var focusMiss=false;
     if(focusOn){
-      if(fscored.length){ fscored.sort(function(a,b){ return b.sc-a.sc; }); scored=fscored; topic=Math.max(topic,1); }
+      if(fscored.length){
+        // Priorité aux sections qui matchent un TERME du sujet (« contingent »…)
+        // et pas seulement la CATÉGORIE (souvent sur-attribuée par le classeur) :
+        // écarte les faux positifs (ex. « Formation CHSCT » taguée contingent_hs).
+        var fTermHits = fscored.filter(function(s){ return s.term; });
+        scored = (fTermHits.length ? fTermHits : fscored);
+        scored.sort(function(a,b){ return b.sc-a.sc; });
+        topic = Math.max(topic,1);
+      }
       else { scored=[]; topic=0; focusMiss=true; }
     }
     var secMap={}; scored.slice(0,5).forEach(function(s){ secMap[s.h.title]=s.h; });
@@ -1246,7 +1256,7 @@ function searchCCNv2(tokens, rawNorm, focusTokens){
   return res;
 }
 /* Recherche articles v2 (variantes fuzzy + numéro exact/préfixe + phrase) */
-function searchArticlesV2(list, tokens, focusTokens){
+function searchArticlesV2(list, tokens, focusTokens, rawNorm){
   var V={}; tokens.forEach(function(t){ V[t]=variantsOf(t); });
   var FV=null;
   if(focusTokens && focusTokens.length){
@@ -1260,6 +1270,10 @@ function searchArticlesV2(list, tokens, focusTokens){
       FV=cand.filter(function(w){ return idf(w) >= maxIdf*0.6; }); if(!FV.length) FV=cand; }
   }
   var phrase=tokens.join(' ');
+  // Numéros d'article complets présents dans la requête, reconstruits depuis la
+  // requête brute : le tokenizer coupe « L3121-30 » en « l3121 »+« 30 », et sans
+  // ça « L312-1 » (n° compact « l3121 ») ressortait AVANT « L3121-30 ».
+  var qNums = ((rawNorm||'').match(/[lrd]?\d{2,4}(?:[ .\-]\d{1,4})?[a-z]?/g)||[]).map(function(s){ return s.replace(/[ .\-]/g,''); });
   var out=[];
   (list||[]).forEach(function(a){
     var hay = a._h || (a._h = normaliser((a.num||'')+' '+(a.snippet||'')+' '+(a.title||'')));
@@ -1269,10 +1283,11 @@ function searchArticlesV2(list, tokens, focusTokens){
       for(var i=0;i<vv.length;i++){ if(hay.indexOf(vv[i])!==-1){ matched=vv[i]; break; } }
       if(matched){ covered++; if(matched===t) exactHits++; idfB += idf(matched)*8 + (pad.indexOf(' '+matched+' ')!==-1?15:0); } });
     var numExact=false, numPref=false;
-    tokens.forEach(function(t){ var ct=t.replace(/ /g,''); if(!ct) return;
-      if(cnum===ct) numExact=true;
-      else if(ct.length>=3 && cnum.indexOf(ct)===0) numPref=true;
-      else if(/^[0-9]+$/.test(ct) && ct.length>=3 && cnum.indexOf(ct)!==-1) numPref=true; });
+    qNums.forEach(function(qn){
+      if(cnum===qn) numExact=true;
+      else if(qn.length>=4 && cnum.indexOf(qn)===0) numPref=true;
+      else if(/^[0-9]+$/.test(qn) && qn.length>=3 && cnum.indexOf(qn)!==-1) numPref=true;
+    });
     if(covered===0 && !numExact && !numPref) return;
     // focus : l'article parle-t-il du point précis demandé ? (le fait remonter,
     // et sert au resserrement par source côté runSearch)
@@ -1834,11 +1849,11 @@ function runSearch(){
     }
     ccnFiltree = (avant !== ccn.length) || ccn.length>0;
   }
-  var code = searchArticlesV2(SEARCH.code, tokens, focusTokens).slice(0,30);
-  var secu = searchArticlesV2(SEARCH.code_secu, tokens, focusTokens).slice(0,20);
-  var juris = searchArticlesV2(SEARCH.juris, tokens, focusTokens).slice(0,15);
-  var jorf = searchArticlesV2(SEARCH.jorf, tokens, focusTokens).slice(0,15);
-  var acco = searchArticlesV2(SEARCH.acco, tokens, focusTokens).slice(0,15);
+  var code = searchArticlesV2(SEARCH.code, tokens, focusTokens, rawNorm).slice(0,30);
+  var secu = searchArticlesV2(SEARCH.code_secu, tokens, focusTokens, rawNorm).slice(0,20);
+  var juris = searchArticlesV2(SEARCH.juris, tokens, focusTokens, rawNorm).slice(0,15);
+  var jorf = searchArticlesV2(SEARCH.jorf, tokens, focusTokens, rawNorm).slice(0,15);
+  var acco = searchArticlesV2(SEARCH.acco, tokens, focusTokens, rawNorm).slice(0,15);
   // Mode focus : chaque source se resserre sur le point précis. Les articles qui
   // en parlent passent devant ; s'il y en a, on ne garde qu'eux (sinon on laisse
   // le thème large plutôt qu'une source vide).
@@ -1862,7 +1877,7 @@ function runSearch(){
     html += ccn.map(function(r){
       var snip = (r.sections[0] && r.sections[0].kw) ? excerpt(r.sections[0].kw, terms, 150, focusTokens) : '';
       var note = (focusTokens && r.focusMiss)
-        ? 'Rien de spécifique sur ce point dans cette convention — la règle par défaut est celle du Code du travail (ci-dessous).'
+        ? 'Pas trouvé dans la version indexée de cette convention — ouvrez son texte complet (touchez la convention) pour vérifier. À défaut de clause conventionnelle, c\'est le Code du travail (ci-dessous) qui s\'applique.'
         : '';
       return rowHtml('ccn', r.num, r.title, r.etat, {snippet:snip, note:note, sections:r.sections, launchpad:r.launchpad, source:r.source});
     }).join('');
@@ -2673,13 +2688,15 @@ document.addEventListener('click', function(e){
 
 /* ---- Tableau de bord d'accueil (stats live + dernières vérifications) ---- */
 async function renderDashboard(){
+  // Nombres : le manifest (exact) s'il est chargé, sinon counts.json (instantané).
+  var num=function(k){ return (INDEX[k] && INDEX[k].length) ? INDEX[k].length : (COUNTS && typeof COUNTS[k]==='number' ? COUNTS[k] : 0); };
   var cards = [
-    {v:'ccn',  n:INDEX.ccn.length,  l:'Conventions collectives'},
-    {v:'code', n:INDEX.code.length, l:'Articles · Code du travail'},
-    {v:'secu', n:INDEX.secu.length, l:'Articles · Sécurité sociale'},
-    {v:'juris',n:INDEX.juris.length,l:'Décisions de justice'},
-    {v:'jorf', n:INDEX.jorf.length, l:'Journal Officiel'},
-    {v:'acco', n:INDEX.acco.length, l:'Accords d\'entreprise'}
+    {v:'ccn',  n:num('ccn'),  l:'Conventions collectives'},
+    {v:'code', n:num('code'), l:'Articles · Code du travail'},
+    {v:'secu', n:num('secu'), l:'Articles · Sécurité sociale'},
+    {v:'juris',n:num('juris'),l:'Décisions de justice'},
+    {v:'jorf', n:num('jorf'), l:'Journal Officiel'},
+    {v:'acco', n:num('acco'), l:'Accords d\'entreprise'}
   ];
   document.getElementById('stat-grid').innerHTML = cards.map(function(c){
     return '<div class="stat" data-view="'+c.v+'"><span class="arrow">→</span>'+
