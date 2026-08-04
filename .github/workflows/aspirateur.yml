@@ -127,6 +127,15 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: "Budget temps partagé JORF + ACCO"
+        if: ${{ always() }}
+        run: |
+          # JORF et ACCO tournent dans CE job (timeout-minutes: 355). On fixe UNE
+          # échéance absolue commune que les deux respectent (--deadline-epoch),
+          # pour que leurs budgets ne s'additionnent plus au-delà du plafond du
+          # job -- c'était la cause de l'annulation à 355 min (run #132).
+          echo "ASPIR_DEADLINE=$(( $(date +%s) + 315*60 ))" >> "$GITHUB_ENV"
+
       - name: "Veille : recenser TOUS les numéros (IDCC + articles) — lundi, pour injecter les nouveaux"
         if: ${{ always() && github.event_name == 'schedule' }}
         run: |
@@ -367,7 +376,7 @@ jobs:
           # est avalée, et RIEN n'est poussé (bug des 20635 "ok" mais output vide).
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
-          python3 scripts/pull_jorf.py --out output/jorf --only-missing --lot 700 --minutes-max 330 || echo "JORF a échoué, pas bloquant"
+          python3 scripts/pull_jorf.py --out output/jorf --only-missing --lot 700 --minutes-max 150 || echo "JORF a échoué, pas bloquant"
 
       - name: "Récupérer les accords d'entreprise (benchmarking RH)"
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'acco' || github.event.inputs.cible == 'tout') }}
@@ -382,7 +391,7 @@ jobs:
           # L'identité git est configurée ICI (sinon commit_partiel échoue).
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
-          python3 scripts/pull_acco.py --out output/acco --only-missing --lot 700 --minutes-max 330 || echo "ACCO a échoué, pas bloquant"
+          python3 scripts/pull_acco.py --out output/acco --only-missing --lot 700 --minutes-max 330 --deadline-epoch "$ASPIR_DEADLINE" || echo "ACCO a échoué, pas bloquant"
 
       - name: Lister tous les articles du Code du travail (préparation seulement)
         if: ${{ always() && github.event.inputs.cible == 'lister-tous-articles-travail' }}
