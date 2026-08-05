@@ -888,13 +888,24 @@ function juridictionBadge(j){
 }
 function highlight(text, terms){
   var out = escapeHtml(text);
+  // Chaque lettre ASCII du terme accepte ses variantes accentuées (surligne aussi
+  // « congés » pour « conges », « supplémentaires » pour « supplementaires »).
+  var accent = {a:'[aàâä]', e:'[eéèêë]', i:'[iîï]', o:'[oôö]', u:'[uùûü]', c:'[cç]', n:'[nñ]', y:'[yÿ]'};
+  var ms = [];
   terms.forEach(function(m){
-    if(m.length<3) return;
-    try{
-      var re = new RegExp('('+m.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
-      out = out.replace(re, '<mark>$1</mark>');
-    }catch(e){}
+    if(!m || m.length < 3) return;
+    var pat = m.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/[aeioucny]/g, function(ch){ return accent[ch] || ch; });
+    ms.push(pat);
   });
+  if(!ms.length) return out;
+  ms.sort(function(a, b){ return b.length - a.length; });  // le plus long d'abord
+  try{
+    // Bord de mot AVANT (début ou caractère non-lettre) + le terme + la FIN du mot
+    // (lettres accentuées comprises) : on surligne le MOT ENTIER, jamais un
+    // fragment au milieu d'un mot (« accom·plie·s », « ·salar·iés »).
+    var re = new RegExp('(^|[^0-9a-zà-ÿ])((?:' + ms.join('|') + ')[0-9a-zà-ÿ]*)', 'gi');
+    out = out.replace(re, function(_, pre, w){ return pre + '<mark>' + w + '</mark>'; });
+  }catch(e){}
   return out;
 }
 /* Extrait de texte centré sur le 1er terme trouvé, surligné */
@@ -963,7 +974,7 @@ document.addEventListener('click', function(e){
 });
 document.addEventListener('click', function(e){
   var d = e.target.closest('.dym-q');
-  if(d){ var q=document.getElementById('q'); q.value=d.dataset.q; hideSuggest(); clearTimeout(window.__st); runSearch(); q.focus(); }
+  if(d){ var q=document.getElementById('q'); q.value=d.dataset.q; hideSuggest(); clearTimeout(window.__st); runSearch(); }
 });
 document.addEventListener('keydown', function(e){
   if((e.key==='Enter'||e.key===' ') && document.activeElement && document.activeElement.classList.contains('row')){
@@ -1000,8 +1011,7 @@ function setView(v){
   document.getElementById('view-browse').hidden = !(v==='ccn'||v==='code'||v==='secu'||v==='juris'||v==='jorf'||v==='acco'||estClause);
   document.getElementById('view-maj').hidden = (v!=='maj');
   window.scrollTo({top:0});
-  if(v==='search'){ document.getElementById('q').focus(); }
-  else if(v==='maj'){ renderAudits(); }
+  if(v==='maj'){ renderAudits(); }
   else if(estClause){ startBrowseClauses(v); }
   else { startBrowse(v); }
 }
@@ -2025,7 +2035,7 @@ function renderSuggest(){
 function applySuggest(i){
   var s=SUG_ITEMS[i]; if(!s) return;
   var q=document.getElementById('q'); q.value=s.applied; hideSuggest();
-  clearTimeout(window.__st); runSearch(); q.focus();
+  clearTimeout(window.__st); runSearch();
 }
 function hideSuggest(){ var b=document.getElementById('suggest'); b.hidden=true; b.innerHTML=''; SUG_ITEMS=[]; SUG_ACTIVE=-1; }
 (function(){
