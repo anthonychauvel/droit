@@ -7060,13 +7060,109 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697494",
+              "cid": "KALISCTA000005697494",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et barème des appointements minima mensuels au 1er décembre 1994",
+              "dateModif": null,
+              "dateDebut": "1994-12-16",
+              "dateFin": "1996-05-29",
+              "sectionConsultee": false,
+              "sections": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALISCTA000005737332",
+                  "cid": "KALISCTA000005737332",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "title": "(Avenant \" Salaires \" n° 30  du 16 décembre 1994 à la convention signée le 21 décembre 1972 et déposée au secrétariat du conseil des prud'hommes de la Seine, section des industries chimiques, le 29 décembre 1972 sous le n° 3118)",
+                  "dateModif": null,
+                  "dateDebut": "1994-12-16",
+                  "dateFin": "1996-05-29",
+                  "sectionConsultee": false,
+                  "sections": [],
+                  "articles": [
+                    {
+                      "executionTime": 0,
+                      "dereferenced": false,
+                      "id": "KALIARTI000005784545",
+                      "cid": "KALIARTI000005784545",
+                      "intOrdre": 42949,
+                      "etat": "MODIFIE",
+                      "num": null,
+                      "path": "/KALISCTA000005697494/KALISCTA000005737332/KALIARTI000005784545",
+                      "pathTitle": [
+                        "Salaires et barème des appointements minima mensuels au 1er décembre 1994",
+                        "(Avenant \" Salaires \" n° 30  du 16 décembre 1994 à la convention signée le 21 décembre 1972 et déposée au secrétariat du conseil des prud'hommes de la Seine, section des industries chimiques, le 29 décembre 1972 sous le n° 3118)"
+                      ],
+                      "content": "<p></p>   Les organisations syndicales signataires de la convention collective du 4 décembre 1972 sont convenues de ce qui suit :<p></p><p></p>   A dater du 1er décembre 1994, le barème des appointements minima mensuels figurant à l'annexe I de la convention collective nationale de la transformation des papiers, cartons et de la pellicule cellulosique du 21 décembre 1972, sera calculé sur la base de 4 200 F pour le coefficient 100 (primes et avantages compris dans les conditions prévues aux articles 20 et 21 de la convention) pour 39 heures par semaine.<p></p>",
+                      "nota": null,
+                      "comporteLiens": false,
+                      "comporteLiensSP": false,
+                      "modificatorTitle": null,
+                      "modificatorCid": null,
+                      "modificatorDate": null,
+                      "articleVersion": "1.0",
+                      "type": null,
+                      "lstLienModification": [
+                        {
+                          "textCid": "",
+                          "textTitle": "Avenant n° 30 1994-12-16 BO Conventions collectives 95-2",
+                          "linkType": "CREATION",
+                          "linkOrientation": "source",
+                          "articleNum": "",
+                          "articleId": "",
+                          "natureText": "",
+                          "datePubliTexte": null,
+                          "dateSignaTexte": null,
+                          "dateDebutCible": null
+                        }
+                      ],
+                      "lstLienCitation": [],
+                      "conditionDiffere": null,
+                      "historique": null,
+                      "surtitre": "SALAIRES",
+                      "renvoi": null,
+                      "versionLabel": null,
+                      "infosComplementaires": null,
+                      "infosComplementairesHtml": null,
+                      "infosRestructurationBranche": null,
+                      "infosRestructurationBrancheHtml": null,
+                      "dateDebut": 787536000000,
+                      "dateFin": 833328000000,
+                      "notaSectionsAafficher": null,
+                      "multipleVersions": false
+                    }
+                  ],
+                  "commentaire": null,
+                  "renvoi": "",
+                  "renvoiNum": "",
+                  "notaHtml": null,
+                  "notaSectionsAafficher": []
+                }
+              ],
+              "articles": [],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7080,13 +7176,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697495",
+              "cid": "KALISCTA000005697495",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et barème des appointements minima mensuels au 1er juin 1996",
+              "dateModif": null,
+              "dateDebut": "1996-05-29",
+              "dateFin": "1998-10-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005784547",
+                  "cid": "KALIARTI000005784547",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005697495/KALIARTI000005784547",
+                  "pathTitle": [
+                    "Salaires et barème des appointements minima mensuels au 1er juin 1996"
+                  ],
+                  "content": "<p></p>   Les organisations syndicales signataires de la convention collective du 4 décembre 1972 sont convenues de ce qui suit :<p></p><p></p>   A dater du 1er juin 1996, le barème des appointements mensuels figurant à l'annexe I de la convention collective nationale de la transformation des papiers cartons et de la pellicule cellulosique du 21 décembre 1972 sera calculé sur la base de 4.347 F pour le coefficient 100 (primes et avantages compris dans les conditions prévues aux articles 20 et 21 de la convention) pour trente-neuf heures par semaine.<p></p><p></p>   Une commission paritaire destinée à faire le point sur la question des salaires minima se tiendra dans le dernier trimestre 1996.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 31 1996-05-29 BO conventions collectives 96-29",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 833328000000,
+                  "dateFin": 908928000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7100,13 +7270,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697496",
+              "cid": "KALISCTA000005697496",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et barème des appointements minima mensuels au 1er octobre 1998",
+              "dateModif": null,
+              "dateDebut": "1998-10-21",
+              "dateFin": "2001-04-11",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005784548",
+                  "cid": "KALIARTI000005784548",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005697496/KALIARTI000005784548",
+                  "pathTitle": [
+                    "Salaires et barème des appointements minima mensuels au 1er octobre 1998"
+                  ],
+                  "content": "<p></p>   Les organisations syndicales signataires de la convention collective du 21 décembre 1972 sont convenues de ce qui suit :<p></p><p></p>   A dater du 1er octobre 1998, le barème des appointements minimaux mensuels figurant à l'annexe I à la convention collective nationale de la production des papiers, cartons et celluloses du 4 décembre 1972 sera calculé sur la base de 4 457 F pour le coefficient 100 (primes et avantages compris dans les conditions prévues aux articles 20 et 21 de la convention) pour 39 heures par semaine.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 32 1998-10-21 BO conventions collectives 98-47",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 908928000000,
+                  "dateFin": 986947200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

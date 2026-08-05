@@ -6913,13 +6913,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724062",
+              "cid": "KALISCTA000005724062",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juin 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-05-24",
+              "dateFin": "1996-07-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851189",
+                  "cid": "KALIARTI000005851189",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005724062/KALIARTI000005851189",
+                  "pathTitle": [
+                    "Salaires au 1er juin 1995."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Le barème des salaires mensuels minima garantis, applicable en France métropolitaine, pour un horaire forfaitaire de 169 heures, des personnels visés par les avenants et annexes de la convention collective nationale des maisons à succursales de vente au détail d'habillement du 30 juin 1972 est fixé comme suit à compter du 1er juin 1995 :<p></p><p></p><p></p>   (1) = CATEGORIE<p></p><p></p>   (2) = SALAIRE MENSUEL au 1er juin 1995 (en francs)<p></p><p></p>  AGENTS DE MAITRISE<p></p><TABLE><TR><TD>(1)</TD><TD>  (2)  </TD></TR><TR><TD> A </TD><TD> 6.810 </TD></TR><TR><TD> B </TD><TD> 7.196 </TD></TR><TR><TD> C </TD><TD> 7.879 </TD></TR></TABLE><p></p><p></p> CADRES :-----------:<p></p><TABLE><TR><TD>(1)</TD><TD>  (2)  </TD></TR><TR><TD>A 1</TD><TD>  9 347</TD></TR><TR><TD>A 2</TD><TD>  9 818</TD></TR><TR><TD>B 1</TD><TD> 10 493</TD></TR><TR><TD>B 2</TD><TD> 11 699</TD></TR><TR><TD>C 1</TD><TD> 12 965</TD></TR><TR><TD>C 2</TD><TD> 14 927</TD></TR><TR><TD>D 1</TD><TD> 19 218</TD></TR><TR><TD>D 2</TD><TD> 23 795</TD></TR></TABLE><p></p>Article 2<p></p><p></p>   Conformément à l'article 31 de la convention collective, les valeurs mensuelles absolues des primes d'ancienneté par catégorie d'emploi et tranche d'ancienneté, applicables en France métropolitaine, sont fixées, à partir du 1er juin 1995, de la manière suivante :<p></p><p></p><p></p>   (1) = Catégorie<p></p><p></p> AGENTS DE MAITRISE <p></p><TABLE><TR><TD>(1)</TD><TD> TRANCHES D'ANCIENNETE </TD></TR><TR><TD></TD><TD> 3 ans </TD><TD> 6 ans </TD><TD> 9 ans </TD></TR><TR><TD> A </TD><TD>  154  </TD><TD>  308  </TD><TD>  462  </TD></TR><TR><TD> B </TD><TD>  164  </TD><TD>  328  </TD><TD>  492  </TD></TR><TR><TD> C </TD><TD>  180  </TD><TD>  360  </TD><TD>  540  </TD></TR></TABLE><p></p><p></p><p></p>   (1) = Catégorie<p></p><p></p> AGENTS DE MAITRISE <p></p><TABLE><TR><TD>(1)</TD><TD> TRANCHES D'ANCIENNETE </TD></TR><TR><TD></TD><TD> 12 ans</TD><TD> 15 ans</TD><TD> 20 ans</TD></TR><TR><TD> A </TD><TD>  616  </TD><TD>  770  </TD><TD>  1.027</TD></TR><TR><TD> B </TD><TD>  656  </TD><TD>  820  </TD><TD>  1.093</TD></TR><TR><TD> C </TD><TD>  720  </TD><TD>  900  </TD><TD>  1.200</TD></TR></TABLE><p></p><p></p><p></p>   (1) = CatégorieCADRES (+) <p></p><TABLE><TR><TD>(1)</TD><TD> TRANCHES D'ANCIENNETE</TD></TR><TR><TD></TD><TD> 3 ans </TD><TD> 6 ans</TD><TD> 9 ans </TD></TR><TR><TD>A 1</TD><TD>  213  </TD><TD>  426 </TD><TD>   639 </TD></TR><TR><TD>A 2</TD><TD>  225  </TD><TD>  450 </TD><TD>   675 </TD></TR><TR><TD>B 1</TD><TD>  240  </TD><TD>  480 </TD><TD>   720 </TD></TR><TR><TD>B 2</TD><TD>  269  </TD><TD>  538 </TD><TD>   807 </TD></TR><TR><TD>C 1</TD><TD>  297  </TD><TD>  594 </TD><TD>   891 </TD></TR><TR><TD>C 2</TD><TD>  346  </TD><TD>  692 </TD><TD> 1.038 </TD></TR><TR><TD>D 1</TD><TD>  443  </TD><TD>  886 </TD><TD> 1.329 </TD></TR><TR><TD>D 2</TD><TD>  545  </TD><TD>1.090 </TD><TD> 1.635 </TD></TR></TABLE><p></p><p></p><p></p>   (1) = Catégorie<p></p> CADRES (+) <p></p><TABLE><TR><TD>(1)</TD><TD> TRANCHES D'ANCIENNETE </TD></TR><TR><TD></TD><TD> 12 ans</TD><TD> 15 ans</TD><TD> 20 ans</TD></TR><TR><TD>A 1</TD><TD>  852  </TD><TD> 1.065 </TD><TD> 1.420 </TD></TR><TR><TD>A 2</TD><TD>   900 </TD><TD> 1.125 </TD><TD> 1.500 </TD></TR><TR><TD>B 1</TD><TD>   960 </TD><TD> 1.200 </TD><TD> 1.600 </TD></TR><TR><TD>B 2</TD><TD> 1.076 </TD><TD> 1.345 </TD><TD> 1.793 </TD></TR><TR><TD>C 1</TD><TD> 1.188 </TD><TD> 1.485 </TD><TD> 1.980 </TD></TR><TR><TD>C 2</TD><TD> 1.384 </TD><TD> 1.730 </TD><TD> 2.307 </TD></TR><TR><TD>D 1</TD><TD> 1.772 </TD><TD> 2.215 </TD><TD> 2.953 </TD></TR><TR><TD>D 2</TD><TD> 2.180 </TD><TD> 2.725 </TD><TD> 3.633 </TD></TR></TABLE><p></p><p></p>   (+) Prime incluse forfaitairement dans le salaire réel perçu.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 39 1995-05-24 BO Conventions collectives 95-25",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 801273600000,
+                  "dateFin": 836784000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6933,13 +7007,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724063",
+              "cid": "KALISCTA000005724063",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Salaires au 1er juillet 1996",
+              "dateModif": null,
+              "dateDebut": "1996-07-08",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851190",
+                  "cid": "KALIARTI000005851190",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005724063/KALIARTI000005851190",
+                  "pathTitle": [
+                    "Salaires au 1er juillet 1996"
+                  ],
+                  "content": "<p align=\"center\"><strong>Article 1er</strong></p><p>Le barème des salaires mensuels minima garantis, applicable en France métropolitaine, pour un horaire forfaitaire de 169 heures, des personnels visés par les avenants et annexes de la convention collective nationale des maisons à succursales de vente au détail d'habillement du 30 juin 1972 est fixé comme suit à compter du 1er juillet 1996.</p><p>(1) = CATEGORIE</p><p>(2) = SALAIRE MENSUEL au 1er juillet 1996</p><p>EMPLOYES</p><p><table><tbody><tr><td>(1)</td><td>(2) </td></tr><tr><td>A </td><td>6 407 F</td></tr><tr><td>B </td><td>6 415 F</td></tr><tr><td>C </td><td>6 420 F</td></tr><tr><td>D </td><td>6 440 F</td></tr><tr><td>E </td><td>6 485 F</td></tr><tr><td>F </td><td>6 550 F</td></tr><tr><td>G </td><td>6 715 F</td></tr><tr><td>H </td><td>6 890 F</td></tr></tbody></table></p><p>(1) = CATEGORIE</p><p>(2) = SALAIRE MENSUEL au 1er juillet 1996</p><p>AGENTS DE MAÎTRISE </p><p><table><tbody><tr><td>(1)</td><td>(2) </td></tr><tr><td>A </td><td>6 960 F</td></tr><tr><td>B </td><td>7 355 F</td></tr><tr><td>C </td><td>8 053 F</td></tr></tbody></table></p><p>CADRES (1) = CATEGORIE</p><p>(2) = SALAIRE MENSUEL au 1er juillet 1996</p><p><table><tbody><tr><td>(1)</td><td>(2) </td></tr><tr><td>A 1</td><td>9 553 F</td></tr><tr><td>A 2</td><td>10 034 F</td></tr><tr><td>B 1</td><td>10 724 F</td></tr><tr><td>B 2</td><td>11 957 F</td></tr><tr><td>C 1</td><td>13 251 F</td></tr><tr><td>C 2</td><td>15 295 F</td></tr><tr><td>D 1</td><td>19 641 F</td></tr><tr><td>D 2</td><td>24 319 F</td></tr></tbody></table></p><p align=\"center\"><strong>Article 2</strong></p><p>Conformément à l'article 31 de la convention collective, les valeurs mensuelles absolues des primes d'ancienneté par catégorie d'emploi et tranche d'ancienneté, applicables en France métropolitaine, sont fixées, à partir du 1er juillet 1996, de la manière suivante :</p><p>(1) = Catégorie</p><p>EMPLOYES</p><p><table><tbody><tr><td>(1)</td><td>TRANCHES D'ANCIENNETE</td></tr><tr><td></td><td>3 ans</td><td>6 ans</td><td>9 ans </td></tr><tr><td>A </td><td>137 </td><td>274 </td><td>410 </td></tr><tr><td>B </td><td>138 </td><td>275 </td><td>413 </td></tr><tr><td>C </td><td>139 </td><td>277 </td><td>416 </td></tr><tr><td>D </td><td>140 </td><td>280 </td><td>420 </td></tr><tr><td>E </td><td>142 </td><td>285 </td><td>427 </td></tr><tr><td>F </td><td>145 </td><td>290 </td><td>435 </td></tr><tr><td>G </td><td>149 </td><td>298 </td><td>448 </td></tr><tr><td>H </td><td>155 </td><td>309 </td><td>463 </td></tr></tbody></table></p><p>(1) = Catégorie</p><p><table><tbody><tr><td>(1)</td><td>TRANCHES D'ANCIENNETE </td></tr><tr><td></td><td>12 ans</td><td>15 ans</td><td>20 ans</td></tr><tr><td>A </td><td>547</td><td>684 </td><td>911 </td></tr><tr><td>B </td><td>551</td><td>689 </td><td>918 </td></tr><tr><td>C </td><td>554</td><td>693 </td><td>924 </td></tr><tr><td>D </td><td>560</td><td>701 </td><td>935 </td></tr><tr><td>E </td><td>569</td><td>712 </td><td>948 </td></tr><tr><td>F </td><td>580</td><td>725 </td><td>967 </td></tr><tr><td>G </td><td>597</td><td>746 </td><td>995 </td></tr><tr><td>H </td><td>618</td><td>773 </td><td>1 030 </td></tr></tbody></table></p><p>(1) = Catégorie</p><p>AGENTS DE MAÎTRISE </p><p><table><tbody><tr><td>(1)</td><td>TRANCHES D'ANCIENNETE</td></tr><tr><td></td><td>3 ans</td><td>6 ans</td><td>9 ans</td></tr><tr><td>A </td><td>156 </td><td>312 </td><td>468 </td></tr><tr><td>B </td><td>166 </td><td>332 </td><td>498 </td></tr><tr><td>C </td><td>182 </td><td>365 </td><td>547 </td></tr></tbody></table></p><p>(1) = Catégorie</p><p>AGENTS DE MAÎTRISE </p><p><table><tbody><tr><td>(1)</td><td>TRANCHES D'ANCIENNETE</td></tr><tr><td></td><td>12 ans</td><td>15 ans</td><td>20 ans</td></tr><tr><td>A </td><td>624 </td><td>780 </td><td>1 040 </td></tr><tr><td>B </td><td>665 </td><td>831 </td><td>1 107 </td></tr><tr><td>C </td><td>729 </td><td>912 </td><td>1 216 </td></tr></tbody></table></p><p>(1) = Catégorie</p><p>CADRES (+) </p><p><table><tbody><tr><td>(1)</td><td>TRANCHES D'ANCIENNETE</td></tr><tr><td></td><td>3 ans</td><td>6 ans</td><td>9 ans</td></tr><tr><td>A 1</td><td>216 </td><td>432 </td><td>647 </td></tr><tr><td>A 2</td><td>228 </td><td>456 </td><td>684 </td></tr><tr><td>B 1</td><td>243 </td><td>486 </td><td>730 </td></tr><tr><td>B 2</td><td>273 </td><td>545 </td><td>818 </td></tr><tr><td>C 1</td><td>301 </td><td>602 </td><td>903 </td></tr><tr><td>C 2</td><td>351 </td><td>702 </td><td>1 053 </td></tr><tr><td>D 1</td><td>449 </td><td>898 </td><td>1 347 </td></tr><tr><td>D 2</td><td>552 </td><td>1 104 </td><td>1 657 </td></tr></tbody></table></p><p>(1) = Catégorie</p><p>CADRES (+) </p><p><table><tbody><tr><td>(1)</td><td>TRANCHES D'ANCIENNETE</td></tr><tr><td></td><td>12 ans</td><td>15 ans</td><td>20 ans</td></tr><tr><td>A 1</td><td>863</td><td>1 079</td><td>1 439 </td></tr><tr><td>A 2</td><td>912</td><td>1 140</td><td>1 520 </td></tr><tr><td>B 1</td><td>973</td><td>1 216</td><td>1 621 </td></tr><tr><td>B 2</td><td>1.090</td><td>1 363</td><td>1 817 </td></tr><tr><td>C 1</td><td>1.204</td><td>1 505</td><td>2 006 </td></tr><tr><td>C 2</td><td>1.404</td><td>1 755</td><td>2 341 </td></tr><tr><td>D 1</td><td>1.795</td><td>2 244</td><td>2 992 </td></tr><tr><td>D 2</td><td>2.208</td><td>2 761</td><td>3 681 </td></tr></tbody></table></p><p>(+) Prime incluse forfaitairement dans le salaire réel perçu.</p><p align=\"center\"><strong>Article 3</strong></p><p>Le présent accord est fait en nombre suffisant d'exemplaires pour remise à chacune des organisations signataires de la convention collective et dépôt dans les conditions prévues à l'article L. 132-10 du code du travail.</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 40 1996-07-08 BO conventions collectives 96-33, étendu par arrêté du 16 octobre 1996 JORF 25 octobre 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 836784000000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6953,13 +7101,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724064",
+              "cid": "KALISCTA000005724064",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Salaires au 1er juin 2000",
+              "dateModif": null,
+              "dateDebut": "2000-05-23",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851191",
+                  "cid": "KALIARTI000005851191",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005724064/KALIARTI000005851191",
+                  "pathTitle": [
+                    "Salaires au 1er juin 2000"
+                  ],
+                  "content": "<p>Les parties signataires conviennent d'une révision des salaires minima conventionnels en vigueur depuis le 1er juillet 1996, à compter du 1er juin 2000.</p><p align=\"center\"><strong>Article 1er</strong></p><p>Le barème des salaires mensuels minima garantis, applicable en France métropolitaine, pour un horaire forfaitaire de 169 heures, des personnels visés par les avenants et annexes de la convention collective nationale des maisons à succursales de vente au détail d'habillement du 30 juin 1972 est fixé comme suit.</p><p align=\"center\">Salaires mensuels pour 169 heures</p><p align=\"center\">à compter du 1er juin 2000</p><p></p><p><table><tbody><tr><td></td><td>SALAIRE </td><td>SALAIRE </td></tr><tr><td></td><td>minimum garanti </td><td>horaire </td></tr><tr><td>CATEGORIE </td><td>pour 169 heures </td><td>correspondant </td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td>(en francs) </td><td>(en francs) </td></tr><tr><td>Employés </td><td></td><td></td></tr><tr><td>A </td><td>6 920 </td><td>40,95 </td></tr><tr><td>B </td><td>6 929 </td><td>41,00 </td></tr><tr><td>C </td><td>6 937 </td><td>41,05 </td></tr><tr><td>D </td><td>6 955 </td><td>41,15 </td></tr><tr><td>E </td><td>7 003 </td><td>41,44 </td></tr><tr><td>F </td><td>7 041 </td><td>41,66 </td></tr><tr><td>G </td><td>7 218 </td><td>42,71 </td></tr><tr><td>H </td><td>7 407 </td><td>43,83 </td></tr><tr><td>Agents de </td><td></td><td></td></tr><tr><td>maîtrise </td><td></td><td></td></tr><tr><td>A </td><td>7 447 </td><td>44,07 </td></tr><tr><td>B </td><td>7 833 </td><td>46,35 </td></tr><tr><td>C </td><td>8 536 </td><td>50,51 </td></tr><tr><td>Cadres </td><td></td><td></td></tr><tr><td>A1 </td><td>10 078 </td><td>59,64 </td></tr><tr><td>A2 </td><td>10 586 </td><td>62,64 </td></tr><tr><td>B1 </td><td>11 315 </td><td>66,95 </td></tr><tr><td>B2 </td><td>12 614 </td><td>74,64 </td></tr><tr><td>C1 </td><td>13 980 </td><td>82,72 </td></tr><tr><td>C2 </td><td>16 136 </td><td>95,48 </td></tr><tr><td>D1 </td><td>20 721 </td><td>122,61 </td></tr><tr><td>D2 </td><td>25 656 </td><td>151,81 </td></tr></tbody></table></p><p align=\"center\"><strong>Article 2</strong></p><p>Les valeurs mensuelles absolues des primes d'ancienneté calculées pour un horaire mensuel de 169 heures par catégorie d'emploi et tranche d'ancienneté, applicables en France métropolitaine, sont revalorisées de 4,5 % pour la catégorie « employés » et de 4 % pour les catégories « agents de maîtrise » et « cadres », à partir du 1er juin 2000, de la manière suivante :</p><p></p><p><table><tbody><tr><td></td><td>TRANCHES D'ANCIENNETE (en francs) </td></tr><tr><td>CATEGORIE </td><td>3 </td><td>6 </td><td>9 </td><td>12 </td><td>15 </td><td>20 </td></tr><tr><td></td><td>ans </td><td>ans </td><td>ans </td><td>ans </td><td>ans </td><td>ans </td></tr><tr><td></td><td></td><td>Employés </td></tr><tr><td>A </td><td>143 </td><td>286 </td><td>429 </td><td>572 </td><td>715 </td><td>953 </td></tr><tr><td>B </td><td>144 </td><td>288 </td><td>432 </td><td>576 </td><td>720 </td><td>960 </td></tr><tr><td>C </td><td>145 </td><td>290 </td><td>435 </td><td>580 </td><td>725 </td><td>967 </td></tr><tr><td>D </td><td>146 </td><td>292 </td><td>438 </td><td>584 </td><td>730 </td><td>973 </td></tr><tr><td>E </td><td>148 </td><td>296 </td><td>444 </td><td>592 </td><td>740 </td><td>987 </td></tr><tr><td>F </td><td>152 </td><td>304 </td><td>456 </td><td>608 </td><td>760 </td><td>1 013 </td></tr><tr><td>G </td><td>156 </td><td>312 </td><td>468 </td><td>624 </td><td>780 </td><td>1 040 </td></tr><tr><td>H </td><td>162 </td><td>324 </td><td>486 </td><td>648 </td><td>810 </td><td>1 080 </td></tr><tr><td>Agents de maitrise </td></tr><tr><td>A </td><td>163 </td><td>326 </td><td>489 </td><td>652 </td><td>815 </td><td>1 086 </td></tr><tr><td>B </td><td>173 </td><td>346 </td><td>519 </td><td>692 </td><td>865 </td><td>1 153 </td></tr><tr><td>C </td><td>189 </td><td>378 </td><td>567 </td><td>756 </td><td>945 </td><td>1 260 </td></tr><tr><td>Cadres (prime incluse forfaitairement </td></tr><tr><td>dans le salaire réel perçu) </td></tr><tr><td>A1 </td><td>225 </td><td>450 </td><td>675 </td><td>900 </td><td>1 125 </td><td>1 500 </td></tr><tr><td>A2 </td><td>237 </td><td>474 </td><td>711 </td><td>948 </td><td>1 185 </td><td>1 580 </td></tr><tr><td>B1 </td><td>253 </td><td>506 </td><td>759 </td><td>1 012 </td><td>1 265 </td><td>1 687 </td></tr><tr><td>B2 </td><td>284 </td><td>568 </td><td>852 </td><td>1 136 </td><td>1 420 </td><td>1 893 </td></tr><tr><td>C1 </td><td>313 </td><td>626 </td><td>939 </td><td>1 252 </td><td>1 565 </td><td>2 087 </td></tr><tr><td>C2 </td><td>365 </td><td>730 </td><td>1 095 </td><td>1 460 </td><td>1 825 </td><td>2 433 </td></tr><tr><td>D1 </td><td>467 </td><td>934 </td><td>1 401 </td><td>1 868 </td><td>2 335 </td><td>3 113 </td></tr><tr><td>D2 </td><td>574 </td><td>1148 </td><td>1 722 </td><td>2 296 </td><td>2 870 </td><td>3 827 </td></tr></tbody></table></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 41 2000-05-23 BO conventions collectives 2000-28",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 959040000000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
