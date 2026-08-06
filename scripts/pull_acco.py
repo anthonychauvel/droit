@@ -103,7 +103,7 @@ class PisteClient:
         self.token = get_token(self.token_url, self.client_id, self.client_secret)
         self._token_ts = _t.monotonic()
 
-    def call(self, path, body, _reessai=True):
+    def call(self, path, body, _reessai=True, _n401=0):
         import time as _t
         # Renouvellement PRÉVENTIF : si le token a plus de 50 min, on le
         # renouvelle AVANT de l'utiliser, pour éviter le cycle coûteux
@@ -119,10 +119,20 @@ class PisteClient:
             with urllib.request.urlopen(req, timeout=60) as resp:
                 return json.loads(resp.read())
         except urllib.error.HTTPError as e:
-            if e.code == 401 and _reessai:
-                # Filet de sécurité : si un 401 passe quand même, on renouvelle.
+            token_frais = (_t.monotonic() - self._token_ts) < 60
+            # 429, ou 401 sur un token FRAIS (< 60 s) = rate-limiting PISTE, PAS une
+            # expiration. Renégocier un token ne sert à rien (le nouveau est limité
+            # pareil) et coûte ~30 s : on TEMPORISE (backoff) puis on rejoue.
+            if (e.code == 429 or (e.code == 401 and token_frais)) and _n401 < 4:
+                pause = min(30, 3 * (2 ** _n401))     # 3, 6, 12, 24 s
+                print(f"    [rate-limit] {e.code} sur token frais -> pause {pause}s "
+                      f"(tentative {_n401 + 1})", file=sys.stderr)
+                _t.sleep(pause)
+                return self.call(path, body, _reessai, _n401 + 1)
+            # 401 sur un token VIEUX (> 60 s) = vraie expiration -> un seul renew.
+            if e.code == 401 and _reessai and not token_frais:
                 self._renouveler()
-                return self.call(path, body, _reessai=False)
+                return self.call(path, body, _reessai=False, _n401=_n401)
             return {"_error": e.code, "_detail": e.read().decode(errors="replace")}
         except Exception as e:
             return {"_error": "exception", "_detail": str(e)}
@@ -548,6 +558,15 @@ def main():
             if not accords:
                 break
             for tid, titre, texte_court, extraits in accords:
+                # Garde-temps FIN : vérifié à CHAQUE accord (et pas seulement en
+                # tête de page de 50). Sinon, quand une page devient lente (rate-
+                # limit -> backoffs), elle déborde l'échéance ET le timeout du job
+                # avant la prochaine vérif -> annulation SIGTERM (exit 143).
+                if _time.monotonic() - debut > limite_secondes:
+                    print("\n[garde-temps] limite atteinte en cours de page -- arrêt propre. "
+                          "Le prochain run (--only-missing) reprend la suite.")
+                    arrete_par_temps = True
+                    break
                 # Filtre RH sur le titre + only-missing. Un item non-RH ou déjà
                 # acquis = "rien de neuf" : il alimente le compteur d'arrêt veille.
                 if not titre_est_rh(titre):
@@ -600,6 +619,8 @@ def main():
                     json.dump(summary, open(summary_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
                     commit_partiel(args.out, n_ok, "?")
                 time.sleep(args.delay)  # délai entre consult pour ménager l'API
+            if arrete_par_temps:   # garde-temps déclenché en cours de page
+                break
             if args.max and n_ok >= args.max:
                 print(f"Plafond --max {args.max} atteint.")
                 arrete_par_temps = True
