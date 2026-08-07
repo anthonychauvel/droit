@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <!-- Réservé aux utilisateurs de l'application SimulHeures : ne doit pas être
      référencé par les moteurs de recherche. Doublon volontaire de l'en-tête
      X-Robots-Tag du worker, au cas où la page serait servie autrement. -->
@@ -468,7 +468,7 @@
     </div>
     <div class="hint">Tapez plusieurs mots : chacun devient un <b>filtre</b> cumulatif, et les résultats s'affichent au fur et à mesure. Astuce : appuyez sur <span class="kbd">/</span> n'importe où pour revenir ici.</div>
     <div class="tokens" id="tokens"></div>
-    <div class="search-toggles" id="search-toggles" hidden>
+    <div class="search-toggles" id="search-toggles" hidden style="display:none">
       <button class="toggle-vigueur" id="toggle-vigueur" aria-pressed="false">
         <span class="tv-box"></span>Textes en vigueur seulement
       </button>
@@ -1262,6 +1262,12 @@ function searchCCNv2(tokens, rawNorm, focusTokens){
     if(E.SYN[ph]){ noteSyn(ph); qTerms[ph]=1; }
   } } }
   Object.keys(qCats).forEach(function(c){ (CAT_KEYWORDS_RAW[c]||[]).forEach(function(kw){ qTerms[normaliser(kw)]=1; }); });
+  // AJOUT : inclure aussi les MOTS BRUTS tapés (≥4 lettres) comme termes de
+  // recherche de section. Sinon un mot qui n'est ni une catégorie ni un
+  // synonyme connu (ex. "mobilité", "prévoyance") ne matche aucune section et
+  // la convention est écartée alors qu'elle traite le sujet. On cherche donc
+  // toujours le mot littéral dans les titres de sections.
+  tokens.forEach(function(t){ if(t.length>=4) qTerms[t]=1; });
   var qCatsArr=Object.keys(qCats);
   var qTermsArr=Object.keys(qTerms).filter(function(x){ return x.length>=4; });
   var hasTopic = qCatsArr.length>0 || qTermsArr.length>0;
