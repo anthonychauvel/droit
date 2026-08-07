@@ -26,12 +26,12 @@ import re
 import glob
 import argparse
 
-SNIPPET_LEN = 600      # extrait pour les articles de code (aligné : assez de texte
-                       # pour que l'affichage se recentre sur la disposition, même
-                       # si elle n'est pas au tout début — 70% des articles > 280)
-SNIPPET_LEN_LONG = 600 # extrait plus long pour JORF/ACCO (contenu riche : on
-                       # veut que la recherche matche au-delà du tout début du
-                       # texte, ex. un montant ou une prime cités plus loin)
+SNIPPET_LEN = 220      # extrait pour les articles de code. Réduit (était 600)
+                       # car l'index dépassait 100 Mo (limite GitHub). 220 car
+                       # suffisent pour matcher le contenu d'un article.
+SNIPPET_LEN_LONG = 300 # extrait pour JORF/ACCO. Réduit de 600 à 300 : avec
+                       # 60 000+ accords, 600 faisait exploser l'index au-delà
+                       # de 100 Mo. 300 car matchent encore bien le contenu.
 SECTION_KW_LEN = 600   # extrait de texte embarqué par section de convention
 
 
@@ -404,6 +404,17 @@ def main():
           f"{len(juris_index)} decisions, {len(jorf_index)} textes JORF, "
           f"{len(acco_index)} accords d'entreprise.")
     print(f"Taille: {size_kb:.0f} Ko -> {args.out}")
+
+    # GARDE-FOU : GitHub refuse tout fichier > 100 Mo. Alerter bien avant, pour
+    # réduire les snippets (ou basculer en index compressé) avant que les runs
+    # ne puissent plus pousser. L'index grossit avec chaque nouvel accord.
+    size_mo = size_kb / 1024
+    if size_mo > 90:
+        print(f"::warning::search-index.json fait {size_mo:.0f} Mo, proche de la "
+              f"limite GitHub de 100 Mo. Réduire SNIPPET_LEN_LONG ou compresser.")
+    if size_mo > 99:
+        print(f"::error::search-index.json fait {size_mo:.0f} Mo, DÉPASSE bientôt "
+              f"la limite GitHub de 100 Mo. Le push VA échouer. Réduire d'urgence.")
 
 
 if __name__ == "__main__":
