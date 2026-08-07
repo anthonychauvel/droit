@@ -73,6 +73,7 @@
     background:linear-gradient(180deg,#143a68 0%,#0F2D52 55%,#0a2444 100%);
     box-shadow:inset -1px 0 0 rgba(212,175,55,.28);
     padding:26px 16px 18px; display:flex; flex-direction:column;
+    padding-top:calc(26px + env(safe-area-inset-top));
     position:sticky; top:0; height:100vh; overflow-y:auto;
   }
   .brand{ padding:2px 4px 20px; }
@@ -291,7 +292,7 @@
 
   @media (max-width:860px){
     body{ flex-direction:column; }
-    aside{ width:100%; height:auto; position:relative; flex-direction:row; align-items:center; flex-wrap:wrap; padding:12px 14px; gap:6px; }
+    aside{ width:100%; height:auto; position:relative; flex-direction:row; align-items:center; flex-wrap:wrap; padding:12px 14px; gap:6px; padding-top:calc(12px + env(safe-area-inset-top)); }
     .brand{ padding:0; margin-right:6px; } .brand-sub{ display:none; } .tricolore{ display:none; }
     nav{ flex-direction:row; flex-wrap:wrap; gap:4px; }
     .nav-item{ width:auto; padding:8px 11px; font-size:13px; } .nav-item .nc{ display:none; }
