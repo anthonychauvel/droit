@@ -166,6 +166,24 @@
   /* Group titles */
   .group-title{ font-family:'Manrope',sans-serif; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft); margin:26px 0 10px; }
   .group-title:first-child{ margin-top:2px; }
+  .search-toggles{ margin:4px 0 2px; }
+  .src-counts{ display:flex; flex-wrap:wrap; gap:7px; margin:14px 0 4px; padding-bottom:14px; border-bottom:1px solid var(--line-soft); }
+  .src-pill{ display:inline-flex; align-items:center; gap:6px; background:var(--lavender);
+    border:1px solid var(--line); border-radius:20px; padding:5px 12px; font-size:12.5px;
+    font-weight:600; color:var(--violet-strong); cursor:pointer; -webkit-tap-highlight-color:transparent;
+    transition:all .12s; }
+  .src-pill:hover{ background:var(--violet-soft); border-color:var(--gold); }
+  .src-pill .sp-n{ font-family:'Manrope',sans-serif; font-weight:800; font-size:12.5px;
+    background:var(--gold-metal); color:#3a2e07; padding:0 6px; border-radius:10px; min-width:16px; text-align:center; }
+  .toggle-vigueur{ display:inline-flex; align-items:center; gap:8px; background:#fff;
+    border:1px solid var(--line); border-radius:20px; padding:7px 14px; font-size:13px;
+    font-weight:600; color:var(--violet-strong); cursor:pointer; -webkit-tap-highlight-color:transparent; }
+  .toggle-vigueur .tv-box{ width:16px; height:16px; border:1.5px solid var(--line); border-radius:5px;
+    display:inline-block; position:relative; transition:all .12s; }
+  .toggle-vigueur[aria-pressed="true"]{ border-color:var(--gold-strong); background:var(--violet-soft); }
+  .toggle-vigueur[aria-pressed="true"] .tv-box{ background:var(--gold-metal); border-color:var(--gold-strong); }
+  .toggle-vigueur[aria-pressed="true"] .tv-box::after{ content:"\2713"; position:absolute; top:-3px; left:1px;
+    font-size:12px; color:#3a2e07; font-weight:800; }
 
   /* Result rows */
   .rows{ display:flex; flex-direction:column; }
@@ -249,10 +267,13 @@
   .scrim{ position:fixed; inset:0; background:rgba(20,22,45,.5); opacity:0; visibility:hidden; transition:opacity .2s; z-index:40; }
   .scrim.open{ opacity:1; visibility:visible; }
   .panel{
-    position:fixed; top:0; right:0; height:100vh; width:min(680px,94vw); background:var(--card);
+    position:fixed; top:0; right:0; height:100vh; height:100dvh; width:min(680px,94vw); background:var(--card);
     box-shadow:-24px 0 60px -30px rgba(20,22,45,.5); transform:translateX(100%); transition:transform .24s cubic-bezier(.4,0,.2,1);
-    z-index:41; display:flex; flex-direction:column;
+    z-index:41; display:flex; flex-direction:column; max-width:100vw;
   }
+  /* Quand le panneau est ouvert : figer la page dessous (évite que l'écran se
+     décale et le scroll fantôme sur mobile). */
+  body.panel-lock{ overflow:hidden; position:fixed; width:100%; }
   .panel.open{ transform:translateX(0); }
   .panel-top{ display:flex; align-items:flex-start; gap:12px; padding:22px 24px 16px; border-bottom:1px solid var(--line); }
   .panel-top .meta{ min-width:0; flex:1; }
@@ -260,7 +281,7 @@
   .detail-title{ font-family:'Manrope',sans-serif; font-weight:800; font-size:19px; color:var(--marine); margin:5px 0 8px; line-height:1.25; }
   .panel-close{ border:none; background:var(--lavender); color:var(--ink-soft); width:34px; height:34px; border-radius:9px; cursor:pointer; font-size:17px; line-height:1; flex-shrink:0; }
   .panel-close:hover{ background:var(--violet-soft); color:var(--violet-strong); }
-  .panel-body{ overflow-y:auto; padding:20px 24px 40px; }
+  .panel-body{ overflow-y:auto; overflow-x:hidden; padding:20px 24px 40px; overflow-wrap:anywhere; word-break:break-word; -webkit-overflow-scrolling:touch; }
   .panel-actions{ display:flex; gap:9px; flex-wrap:wrap; margin-bottom:18px; }
   .panel-actions a,.panel-actions button{ font-family:'Manrope',sans-serif; font-weight:700; font-size:12.5px; text-decoration:none; padding:9px 14px; border-radius:9px; cursor:pointer; border:1px solid var(--line); background:var(--card); color:var(--ink); }
   .panel-actions .primary{ background:var(--marine); border-color:var(--marine); color:#fff; }
@@ -447,6 +468,11 @@
     </div>
     <div class="hint">Tapez plusieurs mots : chacun devient un <b>filtre</b> cumulatif, et les résultats s'affichent au fur et à mesure. Astuce : appuyez sur <span class="kbd">/</span> n'importe où pour revenir ici.</div>
     <div class="tokens" id="tokens"></div>
+    <div class="search-toggles" id="search-toggles" hidden>
+      <button class="toggle-vigueur" id="toggle-vigueur" aria-pressed="false">
+        <span class="tv-box"></span>Textes en vigueur seulement
+      </button>
+    </div>
     <div class="assist" id="assist">
       <div class="assist-intro" id="assist-intro">
         <div class="assist-title">Vous ne savez pas par où commencer ?</div>
@@ -850,6 +876,19 @@ var STOP = {};
 function tokenize(q){
   return normaliser(q).split(' ').filter(function(w){ return w.length>=2 && !STOP[w]; });
 }
+/* Extrait les expressions entre guillemets "..." d'une requête. Renvoie la
+   liste des phrases exactes (normalisées) à exiger dans les résultats.
+   Ex: 'salaire "13e mois"' -> ['13e mois']. Permet une recherche précise. */
+function phrasesExactes(q){
+  var out = [];
+  var re = /"([^"]+)"|«\s*([^»]+)\s*»/g;   // guillemets droits ou français
+  var m;
+  while((m = re.exec(q))){
+    var p = normaliser(m[1] || m[2] || '').trim();
+    if(p && p.indexOf(' ')!==-1) out.push(p);  // au moins 2 mots (sinon inutile)
+  }
+  return out;
+}
 /* Élargit un ensemble de tokens avec les synonymes (pour matcher le texte). */
 function expandTerms(tokens){
   var set = {};
@@ -967,7 +1006,15 @@ function rowHtml(kind, num, title, etat, opts){
   }
   var right = valChipHtml(etat);
   var numDisp = (kind==='ccn') ? ('IDCC '+num) : (kind==='juris' ? num : num);
-  return '<div class="row '+kind+'" tabindex="0" role="button" data-kind="'+kind+'" data-num="'+escAttr(num)+'">'+
+  // Pour une CCN, on mémorise sur la ligne la section la PLUS pertinente (la
+  // première du classement) : cliquer la ligne ouvrira le texte directement à
+  // cet endroit, pas au début de la convention.
+  var rowTarget = '';
+  if(kind==='ccn' && opts.sections && opts.sections.length){
+    var t0 = opts.sections[0].title || opts.sections[0].titre || '';
+    if(t0) rowTarget = ' data-target="'+escAttr(t0)+'"';
+  }
+  return '<div class="row '+kind+'" tabindex="0" role="button" data-kind="'+kind+'" data-num="'+escAttr(num)+'"'+rowTarget+'>'+
            '<span class="res-num mono">'+escapeHtml(numDisp)+'</span>'+
            '<span class="res-main"><span class="res-title">'+escapeHtml(title)+srcBadge(opts.source)+juridictionBadge(opts.juridiction)+'</span>'+sub+'</span>'+
            '<span class="res-right">'+right+'</span>'+
@@ -980,9 +1027,16 @@ document.addEventListener('click', function(e){
   if(chip){ e.stopPropagation(); e.preventDefault(); openDetail('ccn', chip.dataset.num, chip.dataset.target); }
 }, true);
 document.addEventListener('click', function(e){
+  var pill = e.target.closest('.src-pill');
+  if(pill && pill.dataset.anchor){
+    var cible = document.getElementById(pill.dataset.anchor);
+    if(cible) cible.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+});
+document.addEventListener('click', function(e){
   if(e.target.closest('.sec-chip')) return;
   var row = e.target.closest('.row');
-  if(row){ openDetail(row.dataset.kind, row.dataset.num); }
+  if(row){ openDetail(row.dataset.kind, row.dataset.num, row.dataset.target || undefined); }
 });
 document.addEventListener('click', function(e){
   var a = e.target.closest && e.target.closest('.art-link');
@@ -1297,10 +1351,28 @@ function searchCCNv2(tokens, rawNorm, focusTokens){
     var secs=Object.keys(secMap).map(function(k){ return secMap[k]; }).slice(0,5);
     var launchpad=false;
     if(!focusOn && identity>0 && topic===0 && !secs.length && hits.length){
-      var ord=['contingent_hs','majoration_hs','minima_salariaux','duree_travail','temps_partiel','modulation_annualisation','astreintes','repos','conges','rupture_preavis'];
-      var byCat={}; hits.forEach(function(h){ var c=h.cat||(h.cats&&h.cats[0]); if(c && !byCat[c]) byCat[c]=h; });
-      secs=ord.map(function(c){ return byCat[c]; }).filter(Boolean).slice(0,4);
-      if(!secs.length) secs=hits.slice(0,4);
+      // La convention est trouvée par identité (c'est SA CCN) mais aucune
+      // section n'a matché le thème. AVANT de proposer des sections génériques,
+      // on cherche les sections dont le TITRE contient les mots cherchés (ex.
+      // "temps partiel") : ce sont les plus pertinentes pour sa question.
+      var secsMatch = [];
+      if(tokens.length){
+        hits.forEach(function(h){
+          var ht = normaliser(String(h.title||h.titre||''));
+          if(ht && tokens.some(function(t){ return t.length>2 && ht.indexOf(t)!==-1; })){
+            if(secsMatch.indexOf(h)===-1) secsMatch.push(h);
+          }
+        });
+      }
+      if(secsMatch.length){
+        secs = secsMatch.slice(0,4);
+      } else {
+        // Aucune section ne matche le mot cherché : sections clés génériques.
+        var ord=['contingent_hs','majoration_hs','minima_salariaux','duree_travail','temps_partiel','modulation_annualisation','astreintes','repos','conges','rupture_preavis'];
+        var byCat={}; hits.forEach(function(h){ var c=h.cat||(h.cats&&h.cats[0]); if(c && !byCat[c]) byCat[c]=h; });
+        secs=ord.map(function(c){ return byCat[c]; }).filter(Boolean).slice(0,4);
+        if(!secs.length) secs=hits.slice(0,4);
+      }
       launchpad=true;
     }
     var pfx = normaliser(it.title).indexOf(tokens[0])===0?15:0;
@@ -1660,6 +1732,7 @@ var ASSIST_ARBRE = {
    ==========================================================================*/
 var ASSIST_PATH = [];   // chemin courant : ['paie','primes','treizieme']
 var ASSIST_CCN = null;  // IDCC de la convention choisie (filtre le bloc CCN)
+var FILTRE_VIGUEUR = false;  // masquer les textes abrogés quand true
 var ASSIST_FOCUS = null;  // q de la question-feuille : resserre sections/articles sur ce seul point
 
 function assistMotsCumules(){
@@ -1880,8 +1953,10 @@ function runSearch(){
   var box = document.getElementById('search-results');
   var landing = document.getElementById('search-landing');
   renderTokens(tokens);
-  if(!tokens.length){ box.innerHTML=''; landing.hidden=false; return; }
+  var toggles = document.getElementById('search-toggles');
+  if(!tokens.length){ box.innerHTML=''; landing.hidden=false; if(toggles) toggles.hidden=true; return; }
   landing.hidden = true;
+  if(toggles) toggles.hidden = false;
 
   if(!INDEX.ccn.length && !INDEX.code.length){
     box.innerHTML = '<div class="loading">Chargement des données…</div>';
@@ -1927,6 +2002,47 @@ function runSearch(){
   var juris = searchArticlesV2(SEARCH.juris, tokens, focusTokens, rawNorm, eng.artInv.juris).slice(0,15);
   var jorf = searchArticlesV2(SEARCH.jorf, tokens, focusTokens, rawNorm, eng.artInv.jorf).slice(0,15);
   var acco = searchArticlesV2(SEARCH.acco, tokens, focusTokens, rawNorm, eng.artInv.acco).slice(0,15);
+
+  // Filtre "en vigueur seulement" : masque les textes abrogés/périmés. L'état
+  // n'est pas dans le search-index (null) mais dans le manifest (INDEX) : on le
+  // croise via une table num->état. Un salarié ne veut pas d'un texte abrogé.
+  if(typeof FILTRE_VIGUEUR!=='undefined' && FILTRE_VIGUEUR){
+    if(!window.__etatCode){
+      window.__etatCode = {};
+      (INDEX.code||[]).forEach(function(it){ if(it.etat) window.__etatCode[it.num]=it.etat; });
+      window.__etatSecu = {};
+      (INDEX.secu||[]).forEach(function(it){ if(it.etat) window.__etatSecu[it.num]=it.etat; });
+    }
+    var abroge = function(e){ e=(e||'').toString().toUpperCase().charAt(0); return e==='A'||e==='P'; };
+    var etatFiable = function(r, table){ var em=table[r.num]; if(em && em!=='?') return em; return r.etat; };
+    code = code.filter(function(r){ return !abroge(etatFiable(r, window.__etatCode)); });
+    secu = secu.filter(function(r){ return !abroge(etatFiable(r, window.__etatSecu)); });
+    ccn  = ccn.filter(function(r){ return !abroge(r.etat); });
+  }
+
+  // Expression exacte entre guillemets : si l'utilisateur a tapé "13e mois",
+  // on ne garde que les résultats qui contiennent l'expression ENTIÈRE (pas
+  // les mots dispersés). Recherche de précision, à la demande.
+  var phrases = phrasesExactes(raw);
+  if(phrases.length){
+    var contientPhrases = function(r){
+      var hay = normaliser((r.title||'')+' '+(r.snippet||''));
+      return phrases.every(function(p){ return hay.indexOf(p)!==-1; });
+    };
+    code = code.filter(contientPhrases);
+    secu = secu.filter(contientPhrases);
+    juris = juris.filter(contientPhrases);
+    jorf = jorf.filter(contientPhrases);
+    acco = acco.filter(contientPhrases);
+    // Pour les CCN, on vérifie dans les sections (hits) : au moins une section
+    // dont le titre contient l'expression.
+    ccn = ccn.filter(function(r){
+      if(!r.sections || !r.sections.length) return false;
+      return r.sections.some(function(s){
+        return phrases.every(function(p){ return normaliser(String(s.title||s.titre||'')).indexOf(p)!==-1; });
+      });
+    });
+  }
   // Mode focus : chaque source se resserre sur le point précis. Les articles qui
   // en parlent passent devant ; s'il y en a, on ne garde qu'eux (sinon on laisse
   // le thème large plutôt qu'une source vide).
@@ -1936,6 +2052,22 @@ function runSearch(){
   }
 
   var html = '';
+  // Barre de compteurs par source (vue d'ensemble) : montre où se trouve la
+  // matière AVANT de dérouler. Chaque pastille non vide est cliquable et fait
+  // défiler vers sa section. Aide à voir "il y a surtout du Code" en un coup d'œil.
+  var srcCounts = [
+    {k:'ccn',   n:ccn.length,   lbl:(ccnFiltree?'Votre CCN':'Conventions'), anc:'grp-ccn'},
+    {k:'code',  n:code.length,  lbl:'Code du travail', anc:'grp-code'},
+    {k:'secu',  n:secu.length,  lbl:'Sécurité sociale', anc:'grp-secu'},
+    {k:'juris', n:juris.length, lbl:'Jurisprudence', anc:'grp-juris'},
+    {k:'jorf',  n:jorf.length,  lbl:'Journal officiel', anc:'grp-jorf'},
+    {k:'acco',  n:acco.length,  lbl:'Accords', anc:'grp-acco'}
+  ].filter(function(x){ return x.n>0; });
+  if(srcCounts.length>1){
+    html += '<div class="src-counts">'+srcCounts.map(function(x){
+      return '<button class="src-pill" data-anchor="'+x.anc+'"><span class="sp-n">'+x.n+'</span> '+x.lbl+'</button>';
+    }).join('')+'</div>';
+  }
   var multi = tokens.length>=2;
   if(multi && !focusTokens){
     var maxCover = Math.max(
@@ -1946,7 +2078,7 @@ function runSearch(){
   }
 
   if(ccn.length){
-    html += '<div class="group-title">'+(ccnFiltree ? 'Votre convention' : 'Conventions collectives · '+ccn.length)+'</div><div class="rows">';
+    html += '<div class="group-title" id="grp-ccn">'+(ccnFiltree ? 'Votre convention' : 'Conventions collectives · '+ccn.length)+'</div><div class="rows">';
     html += ccn.map(function(r){
       var snip = (r.sections[0] && r.sections[0].kw) ? excerpt(r.sections[0].kw, terms, 260, focusTokens) : '';
       var note = (focusTokens && r.focusMiss)
@@ -1957,27 +2089,27 @@ function runSearch(){
     html += '</div>';
   }
   if(code.length){
-    html += '<div class="group-title">Code du travail · '+code.length+'</div><div class="rows">';
+    html += '<div class="group-title" id="grp-code">Code du travail · '+code.length+'</div><div class="rows">';
     html += code.map(function(r){ return rowHtml('code', r.num, r.title, r.etat, {snippet:artSnip(r)}); }).join('');
     html += '</div>';
   }
   if(secu.length){
-    html += '<div class="group-title">Code de la sécurité sociale · '+secu.length+'</div><div class="rows">';
+    html += '<div class="group-title" id="grp-secu">Code de la sécurité sociale · '+secu.length+'</div><div class="rows">';
     html += secu.map(function(r){ return rowHtml('secu', r.num, r.title, r.etat, {snippet:artSnip(r)}); }).join('');
     html += '</div>';
   }
   if(juris.length){
-    html += '<div class="group-title">Jurisprudence · '+juris.length+'</div><div class="rows">';
+    html += '<div class="group-title" id="grp-juris">Jurisprudence · '+juris.length+'</div><div class="rows">';
     html += juris.map(function(r){ return rowHtml('juris', r.num, r.title, null, {snippet:artSnip(r), juridiction:r.juridiction}); }).join('');
     html += '</div>';
   }
   if(jorf.length){
-    html += '<div class="group-title">Journal Officiel · '+jorf.length+'</div><div class="rows">';
+    html += '<div class="group-title" id="grp-jorf">Journal Officiel · '+jorf.length+'</div><div class="rows">';
     html += jorf.map(function(r){ return rowHtml('jorf', r.num, r.title, null, {snippet:artSnip(r)}); }).join('');
     html += '</div>';
   }
   if(acco.length){
-    html += '<div class="group-title">Accords d\'entreprise · '+acco.length+'</div><div class="rows">';
+    html += '<div class="group-title" id="grp-acco">Accords d\'entreprise · '+acco.length+'</div><div class="rows">';
     html += acco.map(function(r){ return rowHtml('acco', r.num, r.title, null, {snippet:artSnip(r), tags:r.themes}); }).join('');
     html += '</div>';
   }
@@ -2517,8 +2649,8 @@ function scrollToSection(target){
   if(found){ try{ found.scrollIntoView({block:'center',behavior:'smooth'}); }catch(e){ found.scrollIntoView(); }
     found.classList.add('sec-flash'); setTimeout(function(){ found.classList.remove('sec-flash'); }, 2600); }
 }
-function openPanel(){ document.getElementById('scrim').classList.add('open'); document.getElementById('panel').classList.add('open'); }
-function closeDetail(){ document.getElementById('scrim').classList.remove('open'); document.getElementById('panel').classList.remove('open'); }
+function openPanel(){ document.getElementById('scrim').classList.add('open'); document.getElementById('panel').classList.add('open'); document.body.classList.add('panel-lock'); }
+function closeDetail(){ document.getElementById('scrim').classList.remove('open'); document.getElementById('panel').classList.remove('open'); document.body.classList.remove('panel-lock'); }
 document.getElementById('scrim').addEventListener('click', closeDetail);
 document.getElementById('d-close').addEventListener('click', closeDetail);
 
@@ -2836,6 +2968,14 @@ if(typeof renderAssist==='function'){
   renderAssist();
   var _ar = document.getElementById('assist-reset');
   if(_ar) _ar.onclick = assistReset;
+}
+var _tv = document.getElementById('toggle-vigueur');
+if(_tv){
+  _tv.onclick = function(){
+    FILTRE_VIGUEUR = !FILTRE_VIGUEUR;
+    _tv.setAttribute('aria-pressed', FILTRE_VIGUEUR ? 'true' : 'false');
+    runSearch();
+  };
 }
 document.getElementById('corpus-line').textContent = 'Chargement de l\'index…';
 
