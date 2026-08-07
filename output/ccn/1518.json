@@ -51983,13 +51983,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005725593",
+              "cid": "KALISCTA000005725593",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point et salaires au 1er janvier 1997.",
+              "dateModif": null,
+              "dateDebut": "1998-02-01",
+              "dateFin": "2001-04-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005854869",
+                  "cid": "KALIARTI000005854869",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005725593/KALIARTI000005854869",
+                  "pathTitle": [
+                    "Valeur du point et salaires au 1er janvier 1997."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur du point prévue à l'article 1.4 de l'annexe I est fixée à 31,56 F en métropole et à 29,67 F dans les DOM.<p></p> Article 2<p></p><p></p>   En l'absence d'un accord pluriannuel 1998, 1999, 2000 portant sur la réduction du temps de travail, l'aménagement du temps de travail et les salaires signé au 30 juin 1998, la valeur du point prévue à l'article 1.4 de l'annexe I est fixée à 31,90 F au 1er janvier 1999 en métropole et à 30,62 F dans les DOM.<p></p> Article 3<p></p><p></p>   Le présent avenant est applicable le mois suivant la publication de l'arrêté d'extension.<p></p> Article 4<p></p><p></p>   Le présent accord fera l'objet d'un dépôt à la direction départementale de l'emploi et d'une demande d'extension.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 7 janvier 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 7 janvier 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 44 1997-10-28, en vigueur le mois suivant l'extension BO conventions collectives 97-47, étendu par arrêté du 7 janvier 1998 JORF 16 janvier 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 886291200000,
+                  "dateFin": 988243200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -52003,13 +52077,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005725594",
+              "cid": "KALISCTA000005725594",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Valeur du point et salaires",
+              "dateModif": null,
+              "dateDebut": "2001-11-20",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005854870",
+                  "cid": "KALIARTI000005854870",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005725594/KALIARTI000005854870",
+                  "pathTitle": [
+                    "Valeur du point et salaires"
+                  ],
+                  "content": "<p>Préambule</p><p>Dans le cadre du passage à l'euro, la valeur de point fixée à 31,90 F ainsi que les salaires prévus à l'article 1.4.3 de la convention collective de l'animation devront être convertis.</p><p>Article 1er</p><p>La valeur du point prévue à l'article 1.7 de l'annexe I de la convention collective de l'animation est fixée à 4,87 € (1).</p><p>Le salaire minimum conventionnel prévu à l'article 1.4.3 de l'annexe I est fixé :</p><p>- pour les animateurs-techniciens à 1 067,15 € pour 26 heures de service hebdomadaires ;</p><p>- pour les professeurs à 1 234,84 € pour 24 heures de service hebdomadaires.</p><p>Article 2</p><p>Les dispositions ci-dessus seront applicables au plus tard le 1er janvier 2002.</p><p>Article 3</p><p>Le présent accord fera l'objet d'un dépôt à la direction départementale de l'emploi et d'une demande d'extension.</p><p><font color=\"#808080\" size=\"1\"><em>(1) Phrase étendue sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 relatif à la garantie mensuelle de rémunération instituée au profit des salariés rémunérés au SMIC (arrêté du 15 mars 2002, art. 1er).</em></font></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 61 2001-11-20 BO conventions collectives 2001-52 étendu par arrêté du 15 mars 2002 JORF 27 mars 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1006214400000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -52023,13 +52171,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005725595",
+              "cid": "KALISCTA000005725595",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point et salaires.",
+              "dateModif": null,
+              "dateDebut": "2003-01-01",
+              "dateFin": "2005-06-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005854871",
+                  "cid": "KALIARTI000005854871",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005725595/KALIARTI000005854871",
+                  "pathTitle": [
+                    "Valeur du point et salaires."
+                  ],
+                  "content": "...........<p></p> Article 5<p></p><p></p>   Le groupe I est supprimé.<p></p><p></p>   Tous les salariés en poste sont reclassés au groupe II.<p></p> ...........<p></p> Article 10<p></p><p></p>   La valeur du point prévue à l'article 1.7 de l'annexe I est fixée conformément au tableau ci-dessous :<p></p><p></p>   (Montants en euros.)   <p></p><TABLE><TR><TD>       DATE       </TD><TD>MÉTROPOLE</TD><TD> DOM </TD></TR><TR><TD>1er janvier 2003  </TD><TD>   5,02     </TD><TD> 4,91</TD></TR><TR><TD>1er septembre 2003</TD><TD>   5,04     </TD><TD> 4,96</TD></TR><TR><TD>1er mai 2004      </TD><TD>   5,11     </TD><TD> 5,06</TD></TR><TR><TD>1er janvier 2005  </TD><TD>   5,14     </TD><TD> 5,10</TD></TR></TABLE><p></p> Article 11<p></p>   Dans les entreprises n'ayant pas appliqué la recommandation patronale de janvier 2002, il sera versé une prime à chaque salarié.<p></p>   Cette prime sera versée avec la paie de décembre 2002 et sera égale à 1 % de la totalité des salaires bruts hors ancienneté de l'année 2002. Ce versement enterviendra au plus tard le mois suivant l'extension du présent accord.    En cas d'accord d'entreprise ou d'engagement unilatéral de l'employeur accordant une augmentation collective des rémunérations postérieure au 31 décembre 2001 et inférieure au montant fixé par la recommandation, il ne sera versé que le montant brut de l'éventuel différentiel entre l'augmentation accordée et le montant de la prime fixée au présent article. Article 12<p></p>   Dans le cas où l'inflation (hors tabac) dépasserait 2 % entre le 1er avril 2003 et le 31 mars 2004, les partenaires sociaux conviennent de se rencontrer pour étudier l'adaptation du présent accord salarial. Par ailleurs, les partenaires sociaux conviennent de se rencontrer au plus tard en septembre 2004 afin d'ouvrir des négociations salariales pour la période 2005-2006. Article 13<p></p>   Le présent avenant prend effet le 1er janvier 2003.<p></p>   Il fera l'objet d'un dépôt à la direction départementale de l'emploi et d'une demande d'extension.<font color=\"808080\"><em>   NOTA : Arrêté du 7 février 2003 art. 1 : les articles 9 (Déroulement de carrière) et 10 sont étendus sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000, modifiée par la loi n° 2003-47 du 17 janvier 2003, relative aux salaires, au temps de travail et au développement de l'emploi.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 7 février 2003 art. 1 : les articles 9 (Déroulement de carrière) et 10 sont étendus sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000, modifiée par la loi n° 2003-47 du 17 janvier 2003, relative aux salaires, au temps de travail et au développement de l'emploi.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 67 2002-09-25 en vigueur le 1er janvier 2003 BO conventions collectives 2002-41 étendu par arrêté du 7 février 2003 JORF 19 février 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1041379200000,
+                  "dateFin": 1118793600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

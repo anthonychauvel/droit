@@ -12501,13 +12501,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696238",
+              "cid": "KALISCTA000005696238",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er juillet 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-12-06",
+              "dateFin": "2001-07-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005781321",
+                  "cid": "KALIARTI000005781321",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696238/KALIARTI000005781321",
+                  "pathTitle": [
+                    "Salaires à compter du 1er juillet 2000."
+                  ],
+                  "content": "<p></p>   1. A compter du premier juillet 2000, la valeur du point est fixée à 19,25 francs, et la valeur de la constante est fixée à 1 650 F.<p></p><p></p>   2. En application de l'accord du premier septembre 1999, conclu dans le cadre de la réduction du temps de travail à 35 heures, il est rappelé que cette revalorisation ne s'appliquera que dans les sociétés coopératives qui ne sont pas encore engagées dans le gel.<p></p><p></p>   3. Il est précisé, par ailleurs, que cette revalorisation 2000 participe de l'atteinte d'un objectif d'un taux de croissance à quatre ans d'une masse salariale indice 500 d'une valeur fixée à la moitié du taux d'inflation constaté pour les quatre années prévues par l'accord (2000-2004).<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Protocole d'accord 2000-12-06 BO conventions collectives 2001-2",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 976060800000,
+                  "dateFin": 994204800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12521,13 +12595,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696239",
+              "cid": "KALISCTA000005696239",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er juillet 2001 et 1er janvier 2002.",
+              "dateModif": null,
+              "dateDebut": "2002-11-28",
+              "dateFin": "2003-12-23",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005781323",
+                  "cid": "KALIARTI000005781323",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696239/KALIARTI000005781323",
+                  "pathTitle": [
+                    "Salaires à compter du 1er juillet 2001 et 1er janvier 2002."
+                  ],
+                  "content": "<p></p>   1. A compter du 1er janvier 2002, la valeur du point est fixée à 3 euros, et la valeur de la constante est fixée à 253 euros.<p></p><p></p>   2. A compter du 1er juillet 2001, le coefficient ouvrier qualifié (personnel d'entretien et de gardiennage, 1re catégorie) est porté de 290 points à 300 points.<p></p><p></p>   3. A compter du 1er juillet 2001, tous les autres coefficients (à l'exception du coefficient ouvrier qualifié) planchers de la classification sont majorés de 5 points (par exemple, classe II, annexe I, passage de 310 points à 315 points, classe I, annexe III passage de 450 points à 455 points, etc.).<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Protocole d'accord 2001-07-04 BO conventions collectives 2001-38",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1038441600000,
+                  "dateFin": 1072137600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12541,13 +12689,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696240",
+              "cid": "KALISCTA000005696240",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er janvier 2003.",
+              "dateModif": null,
+              "dateDebut": "2002-11-28",
+              "dateFin": "2004-12-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005781324",
+                  "cid": "KALIARTI000005781324",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696240/KALIARTI000005781324",
+                  "pathTitle": [
+                    "Salaires à compter du 1er janvier 2003."
+                  ],
+                  "content": "<p></p>   A compter du 1er janvier 2003, la valeur du point est fixée à 3,04 Euros, et la valeur de la constante est fixée à 260 Euros.<p></p><p></p>   Fait à Paris, le 28 novembre 2002.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2002-11-28 BO conventions collectives 2003-4",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1038441600000,
+                  "dateFin": 1102464000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

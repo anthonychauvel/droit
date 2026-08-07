@@ -7133,13 +7133,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697263",
+              "cid": "KALISCTA000005697263",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Calcul du barème des appointements minima mensuels au 1er janvier 1991",
+              "dateModif": null,
+              "dateDebut": "1991-01-14",
+              "dateFin": "1991-06-12",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005784231",
+                  "cid": "KALIARTI000005784231",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005697263/KALIARTI000005784231",
+                  "pathTitle": [
+                    "Calcul du barème des appointements minima mensuels au 1er janvier 1991"
+                  ],
+                  "content": "<p></p>   Les organisations syndicales signataires de la convention collective du 4 décembre 1972 sont convenues de ce qui suit :<p></p><p></p>   A dater du 1er janvier 1991, le barème des appointements minima mensuels figurant à l'annexe I de la convention collective nationale de la production des papiers, cartons et celluloses du 4 décembre 1972 sera calculé sur la base de 3 790 F pour le coefficient 100 (primes et avantages compris dans les conditions prévues aux articles 20 et 21 de la convention) pour trente-neuf heures par semaine.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 25 1991-01-14 BO Conventions collectives 91-9",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 663811200000,
+                  "dateFin": 676684800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7153,13 +7227,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697264",
+              "cid": "KALISCTA000005697264",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Calcul du barème des appointements minima mensuels au 1er juin 1991",
+              "dateModif": null,
+              "dateDebut": "1991-06-12",
+              "dateFin": "1993-03-24",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005784232",
+                  "cid": "KALIARTI000005784232",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005697264/KALIARTI000005784232",
+                  "pathTitle": [
+                    "Calcul du barème des appointements minima mensuels au 1er juin 1991"
+                  ],
+                  "content": "<p></p>   Les organisations syndicales signataires de la convention collective du 4 décembre 1972 sont convenues de ce qui suit :<p></p><p></p>   A dater du 1er juin 1991, le barème des appointements minima mensuels figurant à l'annexe I de la convention collective nationale de la production des papiers, cartons et celluloses du 4 décembre 1972 sera calculé sur la base de 3 847 F pour le coefficient 100 (primes et avantages compris dans les conditions prévues aux articles 20 et 21 de la convention) pour trente-neuf heures par semaine.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 26 1991-06-12 BO Conventions collectives 92-3",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 676684800000,
+                  "dateFin": 732931200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7173,13 +7321,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697265",
+              "cid": "KALISCTA000005697265",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Calcul du barème des appointements minima mensuels au 1er mars 1993",
+              "dateModif": null,
+              "dateDebut": "1993-03-24",
+              "dateFin": "1994-12-16",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005784234",
+                  "cid": "KALIARTI000005784234",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005697265/KALIARTI000005784234",
+                  "pathTitle": [
+                    "Calcul du barème des appointements minima mensuels au 1er mars 1993"
+                  ],
+                  "content": "<p></p>   Les organisations syndicales signataires de la convention collective du 4 décembre 1972 sont convenues de ce qui suit :<p></p><p></p>   A dater du 1er mars 1993, le barème des appointements minima mensuels figurant à l'annexe I de la convention collective nationale de la production des papiers, cartons et celluloses du 4 décembre 1972 sera calculé sur la base de 4 060 F pour le coefficient 100 (primes et avantages compris dans les conditions prévues aux art. 20 et 21 de la convention) pour trente-neuf heures par semaine.<p></p><p></p>   Les parties signataires se rencontreront de nouveau dans le courant du mois de septembre 1993.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 29 1993-03-24 BO Conventions collectives 93-14",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 732931200000,
+                  "dateFin": 787536000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
