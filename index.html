@@ -101,6 +101,9 @@
   .nav-item.on{ background:var(--gold-metal); color:var(--marine); box-shadow:inset 0 1px 0 rgba(255,255,255,.5), 0 2px 10px -3px rgba(0,0,0,.4); }
   .nav-item .ic{ width:18px; height:18px; flex-shrink:0; }
   .nav-item .nc{ margin-left:auto; font-family:'IBM Plex Mono',monospace; font-size:11px; opacity:.7; font-variant-numeric:tabular-nums; display:inline-block; min-width:3.4ch; text-align:right; }
+  .nav-group-label{ font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.06em;
+    color:rgba(255,255,255,.4); margin:16px 0 6px; padding-left:11px; }
+  .nav-group-label:first-child{ margin-top:2px; }
   .nav-item.on .nc{ opacity:.9; }
   .loading-inline{ font-size:12.5px; color:#5b6b82; background:var(--violet-soft); border-radius:8px; padding:8px 11px; margin-bottom:10px; }
 
@@ -471,19 +474,23 @@
   </div>
 
   <nav id="nav">
+    <div class="nav-group-label">Pour commencer</div>
     <button class="nav-item on" data-view="search"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Recherche</button>
-    <button class="nav-item" data-view="ccn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="7" r="3.2"/><circle cx="17" cy="8" r="2.8"/><path d="M2 21v-1a6 6 0 016-6h1a6 6 0 016 6v1M16 12.5a5 5 0 015 5V19"/></svg>Conventions<span class="nc" id="nc-ccn">…</span></button>
+    <div class="nav-group-label">Mes textes de référence</div>
+    <button class="nav-item" data-view="ccn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="7" r="3.2"/><circle cx="17" cy="8" r="2.8"/><path d="M2 21v-1a6 6 0 016-6h1a6 6 0 016 6v1M16 12.5a5 5 0 015 5V19"/></svg>Ma convention<span class="nc" id="nc-ccn">…</span></button>
     <button class="nav-item" data-view="code"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 4.5A2.5 2.5 0 016.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15z"/></svg>Code du travail<span class="nc" id="nc-code">…</span></button>
     <button class="nav-item" data-view="secu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>Sécurité sociale<span class="nc" id="nc-secu">…</span></button>
-    <button class="nav-item" data-view="juris"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M5 8l-3 6a3 3 0 006 0l-3-6zM19 8l-3 6a3 3 0 006 0l-3-6zM5 8h14M8 21h8"/></svg>Jurisprudence<span class="nc" id="nc-juris">…</span></button>
-    <button class="nav-item" data-view="jorf"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>Journal Officiel<span class="nc" id="nc-jorf">…</span></button>
-    <button class="nav-item" data-view="acco"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Accords d'entreprise<span class="nc" id="nc-acco">…</span></button>
+    <div class="nav-group-label">Trouver par thème</div>
     <button class="nav-item" data-view="cl_salaire"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Salaires<span class="nc" id="nc-cl_salaire">…</span></button>
     <button class="nav-item" data-view="cl_heures_sup"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Heures sup<span class="nc" id="nc-cl_heures_sup">…</span></button>
-    <button class="nav-item" data-view="cl_forfait_jours"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Forfait jours<span class="nc" id="nc-cl_forfait_jours">…</span></button>
     <button class="nav-item" data-view="cl_temps_partiel"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 12V7M12 12h4"/></svg>Temps partiel<span class="nc" id="nc-cl_temps_partiel">…</span></button>
-    <button class="nav-item" data-view="cl_classification"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Classifications<span class="nc" id="nc-cl_classification">…</span></button>
-    <button class="nav-item" data-view="maj"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 11-3-6.7L21 8M21 3v5h-5"/></svg>Mises à jour<span class="nc" id="nc-maj"></span></button>
+    <button class="nav-item" data-view="cl_forfait_jours"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Forfait jours<span class="nc" id="nc-cl_forfait_jours">…</span></button>
+    <button class="nav-item" data-view="cl_classification"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Grilles &amp; coefficients<span class="nc" id="nc-cl_classification">…</span></button>
+    <div class="nav-group-label">Pour aller plus loin</div>
+    <button class="nav-item" data-view="juris"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M5 8l-3 6a3 3 0 006 0l-3-6zM19 8l-3 6a3 3 0 006 0l-3-6zM5 8h14M8 21h8"/></svg>Décisions de justice<span class="nc" id="nc-juris">…</span></button>
+    <button class="nav-item" data-view="acco"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Accords d'entreprise<span class="nc" id="nc-acco">…</span></button>
+    <button class="nav-item" data-view="jorf"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>Journal Officiel<span class="nc" id="nc-jorf">…</span></button>
+    <button class="nav-item" data-view="maj"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 11-3-6.7L21 8M21 3v5h-5"/></svg>Vérifications<span class="nc" id="nc-maj"></span></button>
   </nav>
 
   <div class="side-foot">
@@ -1119,14 +1126,14 @@ var VIEW_TITLES = {
   ccn:  ['Conventions collectives','La liste intégrale des conventions suivies, classée. Cliquez une ligne pour lire le texte.'],
   code: ['Code du travail','Tous les articles récupérés. Filtrez par partie (loi/règlement) ou par livre — chaque ligne indique validé ou abrogé.'],
   secu: ['Code de la sécurité sociale','Tous les articles récupérés. Filtrez par partie ou par livre — validé ou abrogé indiqué directement.'],
-  juris:['Jurisprudence','Les décisions de justice suivies. Cliquez pour lire.'],
+  juris:['Décisions de justice','Les décisions de justice (jurisprudence) qui interprètent le droit du travail. Cliquez pour lire.'],
   jorf: ['Journal Officiel','Les textes du Journal Officiel touchant la RH : arrêtés d\'extension, SMIC, plafonds, cotisations, activité partielle. Cliquez pour lire.'],
   acco: ['Accords d\'entreprise','Les accords d\'entreprise récupérés, pour comparer ce qui se négocie ailleurs. Cliquez pour lire.'],
   cl_salaire: ['Salaires par convention','Les grilles et clauses de salaire déjà extraites des conventions, sans ouvrir le texte entier. Cliquez pour lire.'],
   cl_heures_sup: ['Heures supplémentaires','Les clauses heures sup / majoration / contingent par convention. Cliquez pour lire.'],
   cl_forfait_jours: ['Forfait jours','Les clauses forfait jours / cadres autonomes par convention. Cliquez pour lire.'],
   cl_temps_partiel: ['Temps partiel','Les clauses temps partiel / heures complémentaires par convention. Cliquez pour lire.'],
-  cl_classification: ['Classifications','Les grilles de classification et coefficients par convention. Cliquez pour lire.']
+  cl_classification: ['Grilles & coefficients','Les grilles de classification et coefficients de chaque convention. Le coefficient sert à calculer votre salaire minimum. Cliquez pour lire.']
 };
 function setView(v){
   VIEW = v;
@@ -2966,9 +2973,32 @@ function themesCouvertsHtml(num){
     + '<div class="tc-pills">'+pills+'</div></div>';
 }
 
+// Extrait une date (année, mois, jour) du titre d'une section pour pouvoir
+// trier du plus récent au plus ancien. Les titres portent presque toujours la
+// date ("Accord du 5 mai 1992", "Avenant n° 2 du 2 juillet 2015").
+var _MOIS_FR = {janvier:1,fevrier:2,mars:3,avril:4,mai:5,juin:6,juillet:7,aout:8,septembre:9,octobre:10,novembre:11,decembre:12};
+function dateDuTitre(titre){
+  var t = normaliser(titre || '');
+  var m = t.match(/(\d{1,2})\s+(janvier|fevrier|mars|avril|mai|juin|juillet|aout|septembre|octobre|novembre|decembre)\s+(\d{4})/);
+  if(m){ return (parseInt(m[3],10)*10000) + ((_MOIS_FR[m[2]]||0)*100) + parseInt(m[1],10); }
+  var m2 = t.match(/\b(19|20)\d{2}\b/);
+  if(m2){ return parseInt(m2[0],10)*10000; }
+  return -1;   // pas de date trouvée
+}
 function renderSections(sections){
   if(!Array.isArray(sections)) return '';
-  return sections.map(function(s){
+  // Trier ce niveau du plus RÉCENT au plus ancien (date extraite du titre).
+  // Exception : le "Texte de base" (la convention fondatrice) reste EN TÊTE même
+  // s'il est ancien — c'est le socle. Les sections sans date vont à la fin.
+  var estTexteBase = function(s){ return /texte de base/.test(normaliser(s.title||s.titre||'')); };
+  var triees = sections.slice().sort(function(a,b){
+    var ba = estTexteBase(a), bb = estTexteBase(b);
+    if(ba && !bb) return -1;      // texte de base toujours avant
+    if(bb && !ba) return 1;
+    var da = dateDuTitre(a.title || a.titre), db = dateDuTitre(b.title || b.titre);
+    return db - da;               // décroissant : récent d'abord
+  });
+  return triees.map(function(s){
     var t = s.title || s.titre, inner='';
     if(Array.isArray(s.sections) && s.sections.length) inner += renderSections(s.sections);
     if(Array.isArray(s.articles)) inner += s.articles.map(function(a){ return '<div class="sec-text">'+linkifyArticles(cleanHtml(a.content||a.texte||''))+'</div>'; }).join('');
