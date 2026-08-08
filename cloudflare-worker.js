@@ -17,6 +17,12 @@
  */
 const ORIGIN = "https://raw.githubusercontent.com/anthonychauvel/droit/main";
 
+/* Gros index servis en brotli si le navigateur l'accepte et si le .br existe.
+ * Le workflow génère output/<nom>.json.br (voir scripts/compress_index.py).
+ * Transfert mobile ~10x plus léger (159 Mo -> 16,5 Mo mesuré). Repli automatique
+ * sur le JSON brut si le .br n'a pas encore été généré : rien ne casse. */
+const COMPRESSIBLE = /\/(search-index|clauses-index|manifest|classification-source)\.json$/;
+
 /* Durées de cache au bord Cloudflare (en secondes). À ajuster si besoin. */
 const TTL_INDEX = 300;      // manifest / index / audits : 5 min (fraîcheur des mises à jour)
 const TTL_FILE  = 3600;     // fiches d'articles / décisions / CCN : 1 h (elles changent rarement)
@@ -74,8 +80,41 @@ export default {
     // Petite sécurité : pas de remontée de dossier
     if (path.includes("..")) return new Response("Requête invalide", { status: 400 });
 
-    // 1) Cache au bord : si on l'a déjà, on répond sans toucher GitHub
     const cache = caches.default;
+
+    // 0) Voie brotli pour les gros index : si le client accepte "br" ET qu'un
+    //    fichier .br existe côté dépôt, on le sert tel quel avec Content-Encoding:
+    //    br (le navigateur décompresse de façon transparente — l'appli continue
+    //    d'appeler fetch('output/search-index.json'), rien à changer côté front).
+    //    Clé de cache distincte (?__enc=br) pour ne jamais servir des octets
+    //    compressés à un client qui ne les attend pas.
+    const acceptsBr = (request.headers.get("Accept-Encoding") || "").includes("br");
+    if (acceptsBr && COMPRESSIBLE.test(path)) {
+      const brKey = new Request(url.origin + path + "?__enc=br");
+      const brHit = await cache.match(brKey);
+      if (brHit) return brHit;
+
+      const upBr = await fetch(ORIGIN + path + ".br", {
+        cf: { cacheTtl: 0, cacheEverything: false },
+        headers: { "User-Agent": "cloudflare-worker-droit" },
+      });
+      if (upBr.ok) {
+        const h = new Headers();
+        h.set("Content-Type", "application/json; charset=utf-8");
+        h.set("Content-Encoding", "br");
+        h.set("Vary", "Accept-Encoding");
+        h.set("Cache-Control", `public, max-age=${TTL_INDEX}`);
+        h.set("X-Content-Type-Options", "nosniff");
+        h.set("X-Robots-Tag", "noindex, nofollow");
+        h.set("Access-Control-Allow-Origin", "*");
+        const respBr = new Response(upBr.body, { status: 200, headers: h });
+        ctx.waitUntil(cache.put(brKey, respBr.clone()));
+        return respBr;
+      }
+      // .br absent (pas encore généré par un run) : on retombe sur le brut ci-dessous.
+    }
+
+    // 1) Cache au bord : si on l'a déjà, on répond sans toucher GitHub
     const cached = await cache.match(request);
     if (cached) return cached;
 
