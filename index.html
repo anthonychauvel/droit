@@ -283,6 +283,17 @@
   .panel-close{ border:none; background:var(--lavender); color:var(--ink-soft); width:34px; height:34px; border-radius:9px; cursor:pointer; font-size:17px; line-height:1; flex-shrink:0; }
   .panel-close:hover{ background:var(--violet-soft); color:var(--violet-strong); }
   .panel-body{ overflow-y:auto; overflow-x:hidden; padding:20px 24px 40px; padding-bottom:calc(40px + env(safe-area-inset-bottom)); overflow-wrap:anywhere; word-break:break-word; -webkit-overflow-scrolling:touch; }
+  .themes-couverts{ background:var(--violet-soft); border:1px solid var(--line); border-radius:14px;
+    padding:14px 16px; margin-bottom:20px; }
+  .themes-couverts .tc-lead{ font-size:12.5px; font-weight:700; color:var(--violet-strong);
+    text-transform:uppercase; letter-spacing:.04em; margin-bottom:10px; }
+  .themes-couverts .tc-pills{ display:flex; flex-wrap:wrap; gap:7px; }
+  .theme-pill{ display:inline-flex; align-items:center; gap:6px; background:#fff;
+    border:1px solid var(--line); border-radius:18px; padding:6px 12px; font-size:13px;
+    font-weight:600; color:var(--ink); cursor:pointer; -webkit-tap-highlight-color:transparent; transition:all .12s; }
+  .theme-pill:hover{ border-color:var(--gold-strong); background:var(--lavender); }
+  .theme-pill .tp-n{ font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:11.5px;
+    background:var(--gold-metal); color:#3a2e07; padding:0 6px; border-radius:9px; min-width:15px; text-align:center; }
   .panel-actions{ display:flex; gap:9px; flex-wrap:wrap; margin-bottom:18px; }
   .panel-actions a,.panel-actions button{ font-family:'Manrope',sans-serif; font-weight:700; font-size:12.5px; text-decoration:none; padding:9px 14px; border-radius:9px; cursor:pointer; border:1px solid var(--line); background:var(--card); color:var(--ink); }
   .panel-actions .primary{ background:var(--marine); border-color:var(--marine); color:#fff; }
@@ -365,6 +376,16 @@
   .assist-chip:hover{ border-color:var(--gold); background:var(--violet-soft); }
   .assist-chip.on{ background:var(--gold-metal); border-color:var(--gold-strong); color:#3a2e07;
     box-shadow:0 2px 8px -2px rgba(190,154,46,.5); }
+  .assist-situations{ margin-bottom:6px; }
+  .situ-groupe-label{ font-size:11px; font-weight:700; color:var(--ink-soft); text-transform:uppercase;
+    letter-spacing:.05em; margin:14px 0 7px; opacity:.75; }
+  .situ-groupe-label:first-of-type{ margin-top:4px; }
+  .situ-chip{ border-color:var(--gold); background:linear-gradient(135deg,#fff 0%,var(--violet-soft) 100%);
+    color:var(--ink); font-weight:700; }
+  .situ-chip:hover{ border-color:var(--gold-strong); background:var(--gold-metal); color:#3a2e07;
+    box-shadow:0 3px 10px -3px rgba(190,154,46,.55); }
+  .assist-sep{ text-align:center; font-size:12px; color:var(--ink-soft); margin:14px 0 12px;
+    position:relative; text-transform:lowercase; font-style:italic; }
   .assist-reset{ margin-top:12px; background:none; border:none; color:var(--gold-strong);
     font-size:13px; font-weight:600; cursor:pointer; padding:4px 0; }
   .assist-live-note{ font-size:12.5px; color:#5b6b82; margin-top:6px; font-style:italic; }
@@ -372,6 +393,9 @@
     border-radius:11px; padding:10px 13px; font-size:14px; margin-top:4px; }
   .assist-ccn-input:focus{ outline:none; border-color:var(--gold-strong); box-shadow:0 0 0 3px var(--violet-soft); }
   .assist-ccn-res{ display:flex; flex-direction:column; gap:6px; margin-top:8px; }
+  .assist-ccn-aide{ font-size:12.5px; color:var(--ink-soft); margin-top:9px; line-height:1.4; }
+  .assist-ccn-aide a{ color:var(--violet-strong); font-weight:600; text-decoration:none; border-bottom:1px solid var(--violet-soft); }
+  .assist-ccn-aide a:hover{ border-bottom-color:var(--gold-strong); }
   .assist-ccn-choice{ text-align:left; border:1px solid var(--line); background:#fff;
     border-radius:9px; padding:9px 11px; font-size:13px; color:var(--violet-strong); cursor:pointer; }
   .assist-ccn-choice:hover{ border-color:var(--gold); background:var(--violet-soft); }
@@ -1729,6 +1753,145 @@ var ASSIST_ARBRE = {
     } },
 };
 
+/* SITUATIONS (piste "je vis une situation") : raccourcis qui, en UN clic,
+   lancent une recherche couvrant PLUSIEURS droits croisés à la fois — ce qu'un
+   salarié ne pense pas à chercher séparément. On n'ajoute AUCUN calcul ni
+   conseil : on aiguille vers tous les textes pertinents d'un coup (la recherche
+   croise ensuite CCN + Code + jurisprudence comme d'habitude). Chaque situation
+   a un "q" volontairement large (tous les thèmes concernés) et une phrase
+   d'accroche parlante. */
+var ASSIST_SITUATIONS = {
+  // — Fin de contrat —
+  licenciement: {
+    groupe: "Fin de contrat",
+    label: "On veut me licencier",
+    q: "licenciement preavis indemnite licenciement conges payes solde tout compte entretien prealable cause reelle serieuse"
+  },
+  licenciement_faute: {
+    groupe: "Fin de contrat",
+    label: "Licencié pour faute",
+    q: "faute grave lourde licenciement disciplinaire mise a pied preavis indemnite sanction"
+  },
+  demission: {
+    groupe: "Fin de contrat",
+    label: "Je veux démissionner",
+    q: "demission preavis conges payes solde tout compte certificat travail dispense"
+  },
+  rupture_conv: {
+    groupe: "Fin de contrat",
+    label: "Rupture conventionnelle",
+    q: "rupture conventionnelle indemnite specifique preavis homologation conges payes retractation"
+  },
+  fin_cdd: {
+    groupe: "Fin de contrat",
+    label: "Fin de mon CDD",
+    q: "cdd fin contrat prime precarite indemnite fin contrat renouvellement requalification terme"
+  },
+  retraite: {
+    groupe: "Fin de contrat",
+    label: "Départ à la retraite",
+    q: "retraite depart mise a la retraite indemnite preavis anciennete allocation"
+  },
+
+  // — Ma paie —
+  heures_sup: {
+    groupe: "Ma paie",
+    label: "Mes heures supplémentaires",
+    q: "heures supplementaires majoration contingent repos compensateur duree travail"
+  },
+  salaire_impaye: {
+    groupe: "Ma paie",
+    label: "Un salaire pas payé",
+    q: "salaire rappel salaire impaye retard paiement bulletin paie mise en demeure"
+  },
+  minima: {
+    groupe: "Ma paie",
+    label: "Suis-je payé au minimum ?",
+    q: "minimum conventionnel smic salaire minimum grille classification coefficient"
+  },
+  primes: {
+    groupe: "Ma paie",
+    label: "Mes primes et 13e mois",
+    q: "prime treizieme mois 13e mois prime anciennete gratification prime vacances"
+  },
+
+  // — Ma santé —
+  arret_maladie: {
+    groupe: "Ma santé",
+    label: "Je suis en arrêt maladie",
+    q: "maladie maintien salaire prevoyance indemnites journalieres subrogation carence absence"
+  },
+  inaptitude: {
+    groupe: "Ma santé",
+    label: "Déclaré inapte",
+    q: "inaptitude reclassement medecine travail licenciement inaptitude indemnite avis medical"
+  },
+  accident: {
+    groupe: "Ma santé",
+    label: "Accident ou maladie pro",
+    q: "accident travail maladie professionnelle rechute indemnite protection reclassement"
+  },
+
+  // — Ma famille —
+  maternite: {
+    groupe: "Ma famille",
+    label: "J'attends un enfant",
+    q: "maternite grossesse conge maternite protection licenciement allaitement visite prenatale"
+  },
+  paternite: {
+    groupe: "Ma famille",
+    label: "Congé paternité / naissance",
+    q: "paternite accueil enfant conge naissance duree indemnisation"
+  },
+  parental: {
+    groupe: "Ma famille",
+    label: "Congé parental",
+    q: "conge parental education duree reprise temps partiel reintegration"
+  },
+  deuil_famille: {
+    groupe: "Ma famille",
+    label: "Un décès dans ma famille",
+    q: "deces conge deuil evenement familial absence exceptionnelle enfant conjoint"
+  },
+  solidarite: {
+    groupe: "Ma famille",
+    label: "Aider un proche malade",
+    q: "solidarite familiale proche aidant conge presence parentale enfant malade"
+  },
+
+  // — Mon contrat / conflits —
+  mutation: {
+    groupe: "Mon contrat",
+    label: "On modifie mon poste / lieu",
+    q: "mutation mobilite geographique modification contrat clause mobilite refus changement"
+  },
+  sanction: {
+    groupe: "Mon contrat",
+    label: "Je conteste une sanction",
+    q: "sanction disciplinaire avertissement mise a pied blame procedure entretien contestation"
+  },
+  harcelement: {
+    groupe: "Mon contrat",
+    label: "Harcèlement / discrimination",
+    q: "harcelement moral sexuel discrimination egalite traitement protection alerte"
+  },
+  essai: {
+    groupe: "Mon contrat",
+    label: "Ma période d'essai",
+    q: "periode essai rupture preavis duree renouvellement delai prevenance"
+  },
+  conge_special: {
+    groupe: "Mon contrat",
+    label: "Congé sans solde / sabbatique",
+    q: "conge sans solde sabbatique conge sabbatique disponibilite reprise duree"
+  },
+  formation: {
+    groupe: "Mon contrat",
+    label: "Ma formation / CPF",
+    q: "formation cpf compte personnel formation professionnelle plan developpement competences"
+  }
+};
+
 
 /* ============================================================================
    MODE ASSISTÉ — logique de navigation + recherche live
@@ -1770,6 +1933,49 @@ function renderAssist(){
   if(!cont) return;
   cont.innerHTML = '';
   var labelsNiveaux = ['Votre situation', 'Plus précisément', 'Votre question'];
+
+  // SITUATIONS : raccourcis multi-thèmes, affichés seulement au départ (avant
+  // qu'on commence à creuser une porte). Un clic lance une recherche large qui
+  // couvre tous les droits liés à la situation. Groupées par famille (fin de
+  // contrat, paie, santé, famille, contrat) pour rester lisibles.
+  if(ASSIST_PATH.length===0 && typeof ASSIST_SITUATIONS!=='undefined'){
+    var blocS = document.createElement('div');
+    blocS.className = 'assist-situations';
+    var labS = document.createElement('div');
+    labS.className = 'assist-step-label';
+    labS.textContent = 'Je vis une situation';
+    blocS.appendChild(labS);
+    // Regrouper les clés par 'groupe' en gardant l'ordre d'apparition.
+    var groupes = [];
+    var parGroupe = {};
+    Object.keys(ASSIST_SITUATIONS).forEach(function(cle){
+      var g = ASSIST_SITUATIONS[cle].groupe || 'Autres';
+      if(!parGroupe[g]){ parGroupe[g]=[]; groupes.push(g); }
+      parGroupe[g].push(cle);
+    });
+    groupes.forEach(function(g){
+      var gLab = document.createElement('div');
+      gLab.className = 'situ-groupe-label';
+      gLab.textContent = g;
+      blocS.appendChild(gLab);
+      var chipsS = document.createElement('div');
+      chipsS.className = 'assist-chips situ-chips';
+      parGroupe[g].forEach(function(cle){
+        var b = document.createElement('button');
+        b.className = 'assist-chip situ-chip';
+        b.textContent = ASSIST_SITUATIONS[cle].label;
+        b.onclick = (function(clef){ return function(){ assistSituation(clef); }; })(cle);
+        chipsS.appendChild(b);
+      });
+      blocS.appendChild(chipsS);
+    });
+    cont.appendChild(blocS);
+    // Petit séparateur "ou explorez par thème"
+    var sep = document.createElement('div');
+    sep.className = 'assist-sep';
+    sep.textContent = 'ou explorez par thème';
+    cont.appendChild(sep);
+  }
 
   // Reconstruire chaque niveau franchi + le niveau courant à choisir.
   var noeud = {enfants: ASSIST_ARBRE};
@@ -1833,6 +2039,16 @@ function renderAssist(){
       var resC = document.createElement('div');
       resC.id = 'assist-ccn-res'; resC.className = 'assist-ccn-res';
       blocC.appendChild(resC);
+      // AJOUT : pour les ~31% de salariés qui ne connaissent PAS leur convention,
+      // un lien vers l'outil OFFICIEL du Code du travail numérique, qui la trouve
+      // à partir du nom/SIRET de l'entreprise (données DSN, fiables et à jour).
+      // On aiguille vers la source officielle plutôt que de deviner nous-mêmes.
+      var aideC = document.createElement('div');
+      aideC.className = 'assist-ccn-aide';
+      aideC.innerHTML = 'Vous ne la connaissez pas ? '
+        + '<a href="https://code.travail.gouv.fr/outils/convention-collective" '
+        + 'target="_blank" rel="noopener">Trouvez-la avec le nom de votre entreprise ↗</a>';
+      blocC.appendChild(aideC);
     }
     cont.appendChild(blocC);
   }
@@ -1931,6 +2147,20 @@ function relancerAssist(){
   var champ = document.getElementById('q');
   champ.value = assistMotsCumules();
   runSearchDebounced();
+}
+
+function assistSituation(cle){
+  // Une situation = recherche large multi-thèmes en un clic. On remplit le champ
+  // avec tous les mots-clés de la situation et on lance la recherche croisée.
+  // On NE touche PAS au parcours par portes (ASSIST_PATH reste vide) : la
+  // situation est un raccourci, pas une étape d'arbre.
+  var situ = ASSIST_SITUATIONS[cle];
+  if(!situ) return;
+  var champ = document.getElementById('q');
+  champ.value = situ.q;
+  // Focus sur les mots de la situation pour resserrer sections/articles.
+  ASSIST_FOCUS = situ.q;
+  runSearch();
 }
 
 function assistChoisir(profondeur, cle){
@@ -2649,6 +2879,41 @@ function linkifyArticles(html){
     });
   });
 }
+// Inventaire FACTUEL des thèmes qu'une convention traite. On ne juge pas
+// (« droit caché ») : on compte les sections par thème à partir des catégories
+// DÉJÀ taggées dans le search-index, et on liste. Le salarié découvre ainsi des
+// thèmes auxquels il ne pensait pas (prévoyance, primes, télétravail…) sans
+// qu'on décide à sa place ce qui est important. Ordre : on met en avant les
+// thèmes souvent ignorés (primes, télétravail, astreintes) avant les évidents.
+function themesCouvertsHtml(num){
+  var E=getENG();
+  var ccn = (typeof CCN_SEARCH_MAP!=='undefined') ? CCN_SEARCH_MAP[String(num)] : null;
+  if(!ccn || !ccn.hits || !ccn.hits.length) return '';
+  // Compter les sections par catégorie.
+  var compte={};
+  ccn.hits.forEach(function(h){
+    (h.cats || (h.cat?[h.cat]:[])).forEach(function(c){ compte[c]=(compte[c]||0)+1; });
+  });
+  var cats=Object.keys(compte);
+  if(cats.length<2) return '';   // rien d'intéressant à montrer si un seul thème
+  // Ordre d'affichage : thèmes souvent oubliés d'abord, pour la découverte.
+  var ordre=['primes','teletravail','astreintes','modulation_annualisation','repos',
+             'temps_partiel','contingent_hs','majoration_hs','conges','contrat_essai',
+             'rupture_preavis','duree_travail','minima_salariaux'];
+  cats.sort(function(a,b){
+    var ia=ordre.indexOf(a), ib=ordre.indexOf(b);
+    if(ia<0) ia=99; if(ib<0) ib=99; return ia-ib;
+  });
+  var pills=cats.map(function(c){
+    var lbl=(typeof CAT_LABELS!=='undefined' && CAT_LABELS[c]) ? CAT_LABELS[c] : c;
+    return '<button class="theme-pill" data-cat="'+escAttr(c)+'">'+escapeHtml(lbl)
+      +' <span class="tp-n">'+compte[c]+'</span></button>';
+  }).join('');
+  return '<div class="themes-couverts">'
+    + '<div class="tc-lead">Cette convention traite aussi de :</div>'
+    + '<div class="tc-pills">'+pills+'</div></div>';
+}
+
 function renderSections(sections){
   if(!Array.isArray(sections)) return '';
   return sections.map(function(s){
@@ -2671,9 +2936,27 @@ function openPanel(){ document.getElementById('scrim').classList.add('open'); do
 function closeDetail(){ document.getElementById('scrim').classList.remove('open'); document.getElementById('panel').classList.remove('open'); document.body.classList.remove('panel-lock'); }
 document.getElementById('scrim').addEventListener('click', closeDetail);
 document.getElementById('d-close').addEventListener('click', closeDetail);
+// Clic sur une pastille de thème (inventaire en haut d'une CCN) : scroller vers
+// la première section de ce thème. On retrouve son titre via les hits taggés.
+document.getElementById('d-body').addEventListener('click', function(e){
+  var pill = e.target.closest('.theme-pill');
+  if(!pill) return;
+  var cat = pill.dataset.cat;
+  var num = window.__ccnOuverte;
+  var ccn = (typeof CCN_SEARCH_MAP!=='undefined' && num) ? CCN_SEARCH_MAP[String(num)] : null;
+  if(!ccn || !ccn.hits) return;
+  // Première section (hit) qui porte cette catégorie → son titre → scroll.
+  var cible=null;
+  for(var i=0;i<ccn.hits.length;i++){
+    var h=ccn.hits[i], hc=h.cats||(h.cat?[h.cat]:[]);
+    if(hc.indexOf(cat)!==-1){ cible=h.title||h.titre; break; }
+  }
+  if(cible) scrollToSection(cible);
+});
 
 async function openDetail(kind, num, target){
   openPanel();
+  window.__ccnOuverte = (kind==='ccn') ? num : null;
   document.getElementById('d-num').textContent = (kind==='ccn'?'IDCC ':'')+num;
   document.getElementById('d-title').textContent = 'Chargement…';
   document.getElementById('d-val').innerHTML = '';
@@ -2701,7 +2984,7 @@ async function openDetail(kind, num, target){
   // Corps
   var abroge = payload.etat && /ABROGE/i.test(payload.etat);
   var body='';
-  if(kind==='ccn' && Array.isArray(payload.sections)) body = renderSections(payload.sections);
+  if(kind==='ccn' && Array.isArray(payload.sections)){ body = themesCouvertsHtml(num) + renderSections(payload.sections); }
   else if((kind==='jorf'||kind==='acco')){
     // Le vrai texte d'un JORF/ACCO est dans articles[].content et sections[],
     // comme une CCN. On ajoute les visas et signataires, propres au JO.
