@@ -1,0 +1,143 @@
+name: Nettoyer l'historique (récupérer l'espace)
+
+# =====================================================================
+#  ⚠  À LANCER UNE SEULE FOIS, à la main, et SEULEMENT APRÈS avoir :
+#     1) déployé le Worker qui sert le .br (étape 1, ZIP précédent),
+#     2) laissé tourner l'aspirateur au moins une fois pour qu'il commite
+#        les fichiers output/*.json.br,
+#     3) ouvert l'appli et vérifié dans DevTools que search-index.json
+#        arrive bien en « content-encoding: br » et que la recherche marche.
+#  Si tu lances AVANT ces 3 points, l'appli n'aura plus ni le brut ni le .br.
+# =====================================================================
+#
+# POURQUOI
+# --------
+# Le dépôt a gonflé (~14 Go) parce que 4 gros index JSON étaient réécrits
+# ENTIERS à chaque run et empilés dans l'historique Git :
+#   search-index (~78 Mo) + clauses (~60 Mo) + manifest (~14 Mo) + classif (~1 Mo).
+# S'y ajoutent ~360 Mo de dossiers doublons (-complet) et quelques fichiers de
+# test. Un « git rm » ne récupère rien : tant que c'est dans l'historique,
+# chaque clone retélécharge tout. Seule une réécriture d'historique libère la
+# place.
+#
+# CE QUE FAIT CE WORKFLOW
+# -----------------------
+# Il efface, de TOUS les commits :
+#   - les doublons  output/code-travail-complet  +  output/code-secu-complet ;
+#   - les fichiers junk (Ff, scripts/Fg, output/code-travail/Fg, le zip diag) ;
+#   - TOUTES les versions des 4 index JSON BRUTS.
+# Les versions .br restent (c'est ce que sert le Worker désormais). Il ajoute
+# les JSON bruts au .gitignore pour qu'ils ne reviennent jamais, puis force le
+# push. Le dépôt rétrécit fortement et cesse de regonfler.
+#
+# SÛR ici parce que : plus rien ne lit le JSON brut (lecteur.html retiré, tout
+# passe par le Worker qui sert le .br). Les fiches et les .br sont intacts, le
+# reste est régénérable par les aspirateurs.
+#
+# Ce workflow REMPLACE les anciens nettoyer-volumineux / nettoyer-doublons-complet
+# (il fait tout). Supprime-les après, ainsi que celui-ci.
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirmer:
+        description: "Taper OUI pour confirmer (réécrit l'historique, force push)."
+        required: true
+        default: "non"
+
+permissions:
+  contents: write
+
+# Ne jamais tourner en même temps qu'un aspirateur : une réécriture d'historique
+# pendant qu'un run pousse finirait en conflit garanti.
+concurrency:
+  group: aspirateur-legifrance
+  cancel-in-progress: false
+
+jobs:
+  nettoyer:
+    if: ${{ github.event.inputs.confirmer == 'OUI' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Libérer de l'espace disque sur le runner
+        run: |
+          # Un dépôt de ~14 Go + la réécriture ont besoin de place. On retire
+          # des SDK préinstallés inutiles ici (gagne ~30 Go).
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc \
+                      /opt/hostedtoolcache/CodeQL /usr/local/share/boost \
+                      /usr/share/swift 2>/dev/null || true
+          df -h /
+
+      - name: Récupérer tout l'historique
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # indispensable pour réécrire l'historique complet.
+
+      - name: Installer git-filter-repo
+        run: |
+          # git-filter-repo est l'outil moderne (bien plus rapide et léger que
+          # filter-branch), important sur un dépôt de cette taille.
+          python3 -m pip install --quiet git-filter-repo --break-system-packages \
+            || python3 -m pip install --quiet git-filter-repo
+          git filter-repo --version
+
+      - name: Réécrire l'historique (retirer doublons + junk + index bruts)
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          echo "== Taille .git AVANT =="
+          du -sh .git || true
+
+          git filter-repo --force --invert-paths \
+            --path output/code-travail-complet \
+            --path output/code-secu-complet \
+            --path output/code-travail/Fg \
+            --path scripts/Fg \
+            --path scripts/diag-acco-contenu.zip \
+            --path Ff \
+            --path output/search-index.json \
+            --path output/clauses-index.json \
+            --path output/manifest.json \
+            --path output/classification-source.json
+
+          echo "== Taille .git APRÈS réécriture =="
+          du -sh .git || true
+
+      - name: "Bloquer le retour des index bruts (.gitignore) + push forcé"
+        run: |
+          git config user.name "nettoyage-bot"
+          git config user.email "nettoyage-bot@users.noreply.github.com"
+
+          # Ajoute les 4 index bruts au .gitignore s'ils n'y sont pas déjà, pour
+          # que les prochains runs ne commitent que les .br.
+          for p in output/search-index.json output/clauses-index.json \
+                   output/manifest.json output/classification-source.json; do
+            grep -qxF "$p" .gitignore 2>/dev/null || echo "$p" >> .gitignore
+          done
+          git add .gitignore
+          git diff --staged --quiet || git commit -m "Ne plus versionner les index JSON bruts (servis en .br)"
+
+          # filter-repo retire le remote par sécurité : on le remet avec le token.
+          git remote remove origin 2>/dev/null || true
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+
+          echo "Force push de l'historique nettoyé..."
+          git push origin --force --all
+          git push origin --force --tags || true
+
+          echo "== Taille .git finale =="
+          du -sh .git || true
+
+      - name: Confirmer
+        run: |
+          {
+            echo "## ✅ Historique nettoyé"
+            echo ""
+            echo "Doublons \`-complet\`, fichiers junk et versions BRUTES des 4 gros"
+            echo "index retirés de tout l'historique. Les \`.br\` (servis par le"
+            echo "Worker) sont intacts."
+            echo ""
+            echo "Les index bruts sont désormais dans \`.gitignore\` : les prochains"
+            echo "runs ne commitent que les \`.br\`. Le dépôt cesse de regonfler."
+            echo ""
+            echo "Tu peux supprimer ce workflow et les anciens \`nettoyer-*\`."
+          } >> "$GITHUB_STEP_SUMMARY"
