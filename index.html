@@ -364,6 +364,16 @@
   /* Mode assisté ("découvreur") */
   .assist{ background:linear-gradient(180deg,#fffdf6,#fbf6e8); border:1px solid var(--violet-soft);
     border-radius:16px; padding:16px 16px 14px; margin-bottom:18px; }
+  .assist-intro{ width:100%; display:flex; align-items:center; gap:12px; background:none; border:none;
+    padding:0; cursor:pointer; text-align:left; -webkit-tap-highlight-color:transparent; }
+  .assist-intro-txt{ flex:1; min-width:0; }
+  .assist-chevron{ flex-shrink:0; font-size:18px; color:var(--gold-strong); transition:transform .2s;
+    width:32px; height:32px; display:flex; align-items:center; justify-content:center;
+    background:var(--violet-soft); border-radius:9px; }
+  .assist-intro[aria-expanded="true"] .assist-chevron{ transform:rotate(180deg); }
+  .cl-explain{ background:var(--violet-soft); border:1px solid var(--line); border-left:3px solid var(--gold-strong);
+    border-radius:10px; padding:14px 16px; margin-bottom:18px; font-size:13.5px; line-height:1.6; color:var(--ink); }
+  .cl-explain b{ color:var(--violet-strong); }
   .assist-title{ font-weight:700; font-size:17px; color:var(--violet-strong); }
   .assist-sub{ font-size:13.5px; color:#5b6b82; margin-top:4px; line-height:1.5; }
   .assist-steps{ margin-top:12px; display:flex; flex-direction:column; gap:12px; }
@@ -380,6 +390,13 @@
   .situ-groupe-label{ font-size:11px; font-weight:700; color:var(--ink-soft); text-transform:uppercase;
     letter-spacing:.05em; margin:14px 0 7px; opacity:.75; }
   .situ-groupe-label:first-of-type{ margin-top:4px; }
+  .situ-ccn-invite{ background:var(--violet-soft); border:1px dashed var(--gold); border-radius:12px;
+    padding:16px 18px; margin-bottom:8px; display:flex; flex-direction:column; gap:12px; }
+  .situ-ccn-invite .sci-txt{ font-size:13.5px; color:var(--ink); line-height:1.5; }
+  .situ-ccn-invite .sci-btn{ align-self:flex-start; background:var(--gold-metal); color:#3a2e07;
+    border:none; border-radius:20px; padding:9px 18px; font-size:13.5px; font-weight:700; cursor:pointer;
+    -webkit-tap-highlight-color:transparent; transition:all .12s; }
+  .situ-ccn-invite .sci-btn:hover{ box-shadow:0 3px 10px -3px rgba(190,154,46,.55); transform:translateY(-1px); }
   .situ-chip{ border-color:var(--gold); background:linear-gradient(135deg,#fff 0%,var(--violet-soft) 100%);
     color:var(--ink); font-weight:700; }
   .situ-chip:hover{ border-color:var(--gold-strong); background:var(--gold-metal); color:#3a2e07;
@@ -499,11 +516,14 @@
       </button>
     </div>
     <div class="assist" id="assist">
-      <div class="assist-intro" id="assist-intro">
-        <div class="assist-title">Vous ne savez pas par où commencer ?</div>
-        <div class="assist-sub">Choisissez votre situation. Les textes qui vous concernent s'affichent en dessous au fur et à mesure — cliquez-en un dès qu'il vous parle.</div>
-      </div>
-      <div class="assist-steps" id="assist-steps"></div>
+      <button class="assist-intro" id="assist-intro" aria-expanded="false" aria-controls="assist-steps">
+        <div class="assist-intro-txt">
+          <div class="assist-title">Vous ne savez pas par où commencer ?</div>
+          <div class="assist-sub">Mode découverte : choisissez une situation ou un thème, les textes qui vous concernent s'affichent au fur et à mesure.</div>
+        </div>
+        <span class="assist-chevron" aria-hidden="true">▾</span>
+      </button>
+      <div class="assist-steps" id="assist-steps" hidden></div>
       <button class="assist-reset" id="assist-reset" hidden>↺ Recommencer</button>
     </div>
     <div id="search-results"></div>
@@ -2004,11 +2024,10 @@ function renderAssist(){
     if(!noeud.enfants) break;                // feuille atteinte → plus de sous-niveau
   }
 
-  // ÉTAPE FINALE "Votre convention" : n'apparaît qu'une fois qu'on a creusé le
-  // thème (au moins 2 choix faits, càd on voit déjà des textes). Optionnelle :
-  // permet de resserrer le bloc Conventions sur SA convention, sans bloquer
-  // celui qui ne la connaît pas (il a déjà ses textes au-dessus).
-  if(ASSIST_PATH.length >= 2){
+  // ÉTAPE FINALE "Votre convention" : apparaît quand on a creusé le thème (au
+  // moins 2 choix faits) OU quand une SITUATION est active (car là, préciser sa
+  // convention est justement ce qui débloque l'affichage de SES droits).
+  if(ASSIST_PATH.length >= 2 || (typeof window!=='undefined' && window.__situationActive)){
     var blocC = document.createElement('div');
     var labC = document.createElement('div');
     labC.className = 'assist-step-label';
@@ -2055,6 +2074,25 @@ function renderAssist(){
 
   // Note live + bouton reset
   document.getElementById('assist-reset').hidden = (ASSIST_PATH.length===0);
+}
+
+function scrollToConventionPicker(){
+  // Amène l'utilisateur au champ "Votre convention" du découvreur (affiché car une
+  // situation est active) et y met le focus, pour qu'il indique sa convention.
+  var landing = document.getElementById('search-landing');
+  if(landing) landing.hidden = false;   // le découvreur est dans le landing
+  var champC = document.getElementById('assist-ccn-input');
+  if(champC){
+    champC.scrollIntoView({behavior:'smooth', block:'center'});
+    setTimeout(function(){ try{ champC.focus(); }catch(e){} }, 300);
+  } else {
+    // Au cas où l'étape n'est pas encore rendue, la forcer puis réessayer.
+    if(typeof renderAssist==='function') renderAssist();
+    setTimeout(function(){
+      var c = document.getElementById('assist-ccn-input');
+      if(c){ c.scrollIntoView({behavior:'smooth', block:'center'}); try{ c.focus(); }catch(e){} }
+    }, 120);
+  }
 }
 
 function assistChercherCCN(q){
@@ -2160,10 +2198,16 @@ function assistSituation(cle){
   champ.value = situ.q;
   // Focus sur les mots de la situation pour resserrer sections/articles.
   ASSIST_FOCUS = situ.q;
+  // Marque qu'on est en mode "situation" : tant que l'utilisateur n'a pas choisi
+  // sa convention, afficher TOUTES les CCN n'a aucun sens (il ne sait pas laquelle
+  // est la sienne). On masquera le bloc CCN au profit d'une invitation à préciser.
+  window.__situationActive = true;
   runSearch();
 }
 
 function assistChoisir(profondeur, cle){
+  // Choisir une porte du parcours par thème sort du mode "situation".
+  if(typeof window!=='undefined') window.__situationActive = false;
   // Tronquer le chemin à ce niveau puis ajouter le nouveau choix (permet de
   // revenir en arrière en recliquant un niveau supérieur).
   ASSIST_PATH = ASSIST_PATH.slice(0, profondeur);
@@ -2185,6 +2229,7 @@ function assistChoisir(profondeur, cle){
 function assistReset(){
   ASSIST_PATH = [];
   ASSIST_FOCUS = null;
+  if(typeof window!=='undefined') window.__situationActive = false;
   // On GARDE la convention choisie (ASSIST_CCN) : « Recommencer » remet à zéro le
   // questionnaire mais on reste dans la même convention. Pour en changer, la puce
   // « votre convention » a sa propre croix (×).
@@ -2304,7 +2349,7 @@ function runSearch(){
   // matière AVANT de dérouler. Chaque pastille non vide est cliquable et fait
   // défiler vers sa section. Aide à voir "il y a surtout du Code" en un coup d'œil.
   var srcCounts = [
-    {k:'ccn',   n:ccn.length,   lbl:(ccnFiltree?'Votre CCN':'Conventions'), anc:'grp-ccn'},
+    {k:'ccn',   n:(window.__situationActive && !ccnFiltree)?0:ccn.length,   lbl:(ccnFiltree?'Votre CCN':'Conventions'), anc:'grp-ccn'},
     {k:'code',  n:code.length,  lbl:'Code du travail', anc:'grp-code'},
     {k:'secu',  n:secu.length,  lbl:'Sécurité sociale', anc:'grp-secu'},
     {k:'juris', n:juris.length, lbl:'Jurisprudence', anc:'grp-juris'},
@@ -2325,7 +2370,20 @@ function runSearch(){
     }
   }
 
-  if(ccn.length){
+  // MODE SITUATION sans convention choisie : afficher TOUTES les CCN n'a pas de
+  // sens (l'utilisateur ne sait pas laquelle est la sienne). On masque le bloc et
+  // on l'invite à préciser sa convention pour voir SES droits. Le Code du travail,
+  // la sécu et la jurisprudence (universels) restent affichés ci-dessous.
+  var situationSansCCN = (typeof window!=='undefined' && window.__situationActive && !ccnFiltree);
+  if(situationSansCCN){
+    html += '<div class="group-title" id="grp-ccn">Votre convention</div>';
+    html += '<div class="situ-ccn-invite">'
+      + '<div class="sci-txt">Pour voir ce que <b>votre</b> convention prévoit sur ce point, '
+      + 'indiquez-la. Sans elle, seul le socle commun ci-dessous (Code du travail, '
+      + 'jurisprudence) s\'affiche.</div>'
+      + '<button class="sci-btn" onclick="scrollToConventionPicker()">Choisir ma convention</button>'
+      + '</div>';
+  } else if(ccn.length){
     html += '<div class="group-title" id="grp-ccn">'+(ccnFiltree ? 'Votre convention' : 'Conventions collectives · '+ccn.length)+'</div><div class="rows">';
     html += ccn.map(function(r){
       var snip = (r.sections[0] && r.sections[0].kw) ? excerpt(r.sections[0].kw, terms, 260, focusTokens) : '';
@@ -2374,6 +2432,7 @@ document.getElementById('q').addEventListener('keydown', function(e){ if(e.key==
 document.getElementById('go').addEventListener('click', runSearch);
 document.getElementById('q').addEventListener('input', function(){
   ASSIST_FOCUS = null;   // frappe libre : on sort du sujet resserré de l'entonnoir
+  if(typeof window!=='undefined') window.__situationActive = false;  // frappe libre = plus une situation
   clearTimeout(window.__st); window.__st = setTimeout(runSearch, 160);
   renderSuggest();
 });
@@ -2793,7 +2852,32 @@ function renderBrowseClauses(){
   }
   var shown = Math.min(CL_STATE.shown, liste.length);
   var slice = liste.slice(0, shown);
-  var html = '<div class="group-title">'+fmt(liste.length)+' clause'+(liste.length>1?'s':'')+'</div><div class="rows">';
+  // Libellé clair selon le thème (pas le jargon "clauses" que l'utilisateur ne
+  // comprend pas). Chaque entrée est une disposition tirée d'une convention.
+  var LIB_CL = {
+    classification: ['grille de classification','grilles de classification'],
+    salaire:        ['clause de salaire','clauses de salaire'],
+    heures_sup:     ['clause heures sup.','clauses heures sup.'],
+    forfait_jours:  ['clause forfait-jours','clauses forfait-jours'],
+    temps_partiel:  ['clause temps partiel','clauses temps partiel']
+  };
+  var lib = LIB_CL[CL_STATE.theme] || ['clause','clauses'];
+  var motCl = liste.length>1 ? lib[1] : lib[0];
+  // Encadré pédagogique : explique ce que le salarié regarde et à quoi ça sert.
+  // Affiché en tête, une fois, quand aucun filtre n'est actif (pour ne pas gêner
+  // quand on cherche une convention précise).
+  var EXPLICATIONS = {
+    classification: "Une <b>grille de classification</b> range les emplois d'une branche par niveaux (ou catégories, échelons). À chaque niveau correspond un <b>coefficient</b> : un nombre qui sert à calculer le salaire minimum du poste (souvent coefficient × valeur du point, ou en lisant le minimum en face du niveau). Pour situer votre poste : repérez votre niveau/coefficient sur votre bulletin de paie, puis retrouvez-le dans la grille de votre convention ci-dessous.",
+    salaire: "Ces clauses fixent les <b>salaires minima</b> de la branche : le plancher en dessous duquel votre employeur ne peut pas descendre pour votre coefficient. Comparez avec votre salaire réel — la convention ne peut être que plus favorable que le SMIC.",
+    heures_sup: "Ces clauses précisent, pour votre branche, la <b>majoration des heures supplémentaires</b> et parfois le contingent annuel. La convention peut prévoir des taux différents (souvent plus favorables) que le Code du travail.",
+    forfait_jours: "Ces clauses encadrent le <b>forfait en jours</b> (pour les cadres autonomes surtout) : nombre de jours travaillés par an, garanties de repos et de charge de travail prévues par la branche.",
+    temps_partiel: "Ces clauses précisent les règles du <b>temps partiel</b> dans la branche : durée minimale, heures complémentaires, majorations, coupures — souvent plus protectrices que le socle légal."
+  };
+  var html = '';
+  if(EXPLICATIONS[CL_STATE.theme] && !CL_STATE.filter){
+    html += '<div class="cl-explain">'+EXPLICATIONS[CL_STATE.theme]+'</div>';
+  }
+  html += '<div class="group-title">'+fmt(liste.length)+' '+motCl+'</div><div class="rows">';
   html += slice.map(function(e){
     var titre = e.clause_titre || 'Clause';
     var texte = e.texte || '';
@@ -3264,12 +3348,34 @@ document.getElementById('ex-grid').addEventListener('click', function(e){
    Initialisation
    ==========================================================================*/
 renderExamples();
-// Mode assisté : afficher les portes dès le départ, brancher le reset.
-if(typeof renderAssist==='function'){
-  renderAssist();
-  var _ar = document.getElementById('assist-reset');
-  if(_ar) _ar.onclick = assistReset;
-}
+// Mode découverte REPLIABLE : on ne génère PAS les propositions à l'ouverture
+// (page d'accueil plus légère et rendu plus rapide). Elles sont créées au premier
+// dépliage. Un clic sur l'intro déplie/replie.
+(function(){
+  var intro = document.getElementById('assist-intro');
+  var steps = document.getElementById('assist-steps');
+  var reset = document.getElementById('assist-reset');
+  if(reset) reset.onclick = assistReset;
+  if(!intro || !steps) return;
+  var genereUneFois = false;
+  intro.addEventListener('click', function(){
+    var ouvert = steps.hidden === false;
+    if(ouvert){
+      // Replier
+      steps.hidden = true;
+      if(reset && ASSIST_PATH.length===0) reset.hidden = true;
+      intro.setAttribute('aria-expanded','false');
+      document.getElementById('assist').classList.remove('open');
+    } else {
+      // Déplier : générer les propositions à ce moment seulement.
+      if(typeof renderAssist==='function') renderAssist();
+      genereUneFois = true;
+      steps.hidden = false;
+      intro.setAttribute('aria-expanded','true');
+      document.getElementById('assist').classList.add('open');
+    }
+  });
+})();
 var _tv = document.getElementById('toggle-vigueur');
 if(_tv){
   _tv.onclick = function(){
