@@ -374,6 +374,10 @@
   .cl-explain{ background:var(--violet-soft); border:1px solid var(--line); border-left:3px solid var(--gold-strong);
     border-radius:10px; padding:14px 16px; margin-bottom:18px; font-size:13.5px; line-height:1.6; color:var(--ink); }
   .cl-explain b{ color:var(--violet-strong); }
+  .cl-plus{ align-self:flex-start; margin-top:6px; background:none; border:none; color:var(--violet-strong);
+    font-size:13px; font-weight:600; cursor:pointer; padding:2px 0; text-decoration:underline;
+    text-decoration-color:var(--violet-soft); -webkit-tap-highlight-color:transparent; }
+  .cl-plus:hover{ text-decoration-color:var(--gold-strong); }
   .assist-title{ font-weight:700; font-size:17px; color:var(--violet-strong); }
   .assist-sub{ font-size:13.5px; color:#5b6b82; margin-top:4px; line-height:1.5; }
   .assist-steps{ margin-top:12px; display:flex; flex-direction:column; gap:12px; }
@@ -1081,7 +1085,13 @@ document.addEventListener('click', function(e){
 document.addEventListener('click', function(e){
   if(e.target.closest('.sec-chip')) return;
   var row = e.target.closest('.row');
-  if(row){ openDetail(row.dataset.kind, row.dataset.num, row.dataset.target || undefined); }
+  // N'ouvrir le détail que pour les lignes de résultat/liste qui portent un
+  // data-kind (recherche, browse). Les lignes de clause (Classifications,
+  // Salaires…) n'ont pas ces attributs : elles ne sont pas cliquables, on
+  // ignore le clic (évitait un panneau "undefined / Texte indisponible").
+  if(row && row.dataset.kind && row.dataset.num){
+    openDetail(row.dataset.kind, row.dataset.num, row.dataset.target || undefined);
+  }
 });
 document.addEventListener('click', function(e){
   var a = e.target.closest && e.target.closest('.art-link');
@@ -2830,10 +2840,17 @@ function renderBrowseClauses(){
     html += '<div class="cl-explain">'+EXPLICATIONS[CL_STATE.theme]+'</div>';
   }
   html += '<div class="group-title">'+fmt(liste.length)+' '+motCl+'</div><div class="rows">';
-  html += slice.map(function(e){
+  html += slice.map(function(e, idx){
     var titre = e.clause_titre || 'Clause';
     var texte = e.texte || '';
-    var apercu = texte.length > 600 ? texte.slice(0,600)+'…' : texte;
+    var estLong = texte.length > 600;
+    var apercu = estLong ? texte.slice(0,600)+'…' : texte;
+    // Texte long : on affiche l'aperçu + un bouton pour déplier le texte complet
+    // SUR PLACE (ces clauses n'ont pas de fiche séparée à ouvrir dans le panneau).
+    var texteHtml = texte
+      ? '<div class="cl-texte" data-full="'+escAttr(texte)+'" style="font-size:14px;line-height:1.5;color:var(--neutral);white-space:pre-wrap;margin-top:2px">'+escapeHtml(apercu)+'</div>'
+        + (estLong ? '<button class="cl-plus" type="button">Lire la suite</button>' : '')
+      : '<div style="font-size:13px;color:var(--neutral);font-style:italic">(texte non disponible)</div>';
     return '<div class="row" style="flex-direction:column;align-items:stretch;cursor:default;gap:4px">'
       + '<div>'
       +   '<span style="display:inline-block;font-family:\'IBM Plex Mono\',monospace;font-size:11px;font-weight:600;'
@@ -2841,8 +2858,7 @@ function renderBrowseClauses(){
       + '</div>'
       + '<div style="font-size:13px;color:var(--neutral)">'+escapeHtml(e.ccn_titre||'')+'</div>'
       + '<div style="font-weight:600;margin-top:2px">'+escapeHtml(titre)+'</div>'
-      + (texte ? '<div style="font-size:14px;line-height:1.5;color:var(--neutral);white-space:pre-wrap;margin-top:2px">'+escapeHtml(apercu)+'</div>'
-               : '<div style="font-size:13px;color:var(--neutral);font-style:italic">(texte non disponible)</div>')
+      + texteHtml
       + '</div>';
   }).join('');
   html += '</div>';
@@ -2852,6 +2868,24 @@ function renderBrowseClauses(){
   box.innerHTML = html;
   var mb = document.getElementById('cl-more');
   if(mb) mb.addEventListener('click', function(){ CL_STATE.shown += PAGE*3; renderBrowseClauses(); });
+  // "Lire la suite" : déplie le texte complet de la clause sur place (ces clauses
+  // n'ont pas de fiche séparée). Délégation sur le conteneur.
+  box.addEventListener('click', function(e){
+    var btn = e.target.closest('.cl-plus');
+    if(!btn) return;
+    var bloc = btn.previousElementSibling;   // le div .cl-texte juste avant
+    if(!bloc || !bloc.dataset.full) return;
+    var deplie = btn.getAttribute('data-open')==='1';
+    if(deplie){
+      bloc.textContent = bloc.dataset.full.slice(0,600)+'…';
+      btn.textContent = 'Lire la suite';
+      btn.removeAttribute('data-open');
+    } else {
+      bloc.textContent = bloc.dataset.full;   // texte complet
+      btn.textContent = 'Réduire';
+      btn.setAttribute('data-open','1');
+    }
+  });
 }
 
 function startBrowse(source){
