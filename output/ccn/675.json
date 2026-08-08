@@ -5824,13 +5824,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724043",
+              "cid": "KALISCTA000005724043",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Négociation sur les salaires",
+              "dateModif": null,
+              "dateDebut": "1986-04-28",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851163",
+                  "cid": "KALIARTI000005851163",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005724043/KALIARTI000005851163",
+                  "pathTitle": [
+                    "Négociation sur les salaires"
+                  ],
+                  "content": "<p>Cet accord, conclu conformément aux articles L. 132-11 à L. 132-17 du code du travail, a pour objet de définir les règles concernant la négociation sur les salaires :</p><p>- d'une part, au niveau de l'ensemble des entreprises entrant dans le champ d'application de la convention collective nationale des maisons à succursales de vente au détail d'habillement ;</p><p>- d'autre part, au niveau de chacune de ces entreprises.</p><p>Il concerne l'ensemble des catégories professionnelles contenues dans les annexes « Classifications » de la CCN.</p><p>Le présent accord est conclu pour une durée déterminée de 1 an à compter du 1er mai 1986.</p><p>Les entreprises dont les résultats économiques le permettraient, pourront s'orienter vers des propositions supérieures à celles du présent accord.</p><p>A la demande de la partie la plus diligente, les parties signataires se rencontreront au cours des deux mois qui précèdent l'échéance du présent accord pour :</p><p>a) Négocier le contenu de l'article 2 ;</p><p>b) Négocier les éventuelles demandes de révision des autres articles.</p><p>Si les négociations aboutissaient à un constat de désaccord, le présent accord cesserait à la date d'expiration et seules les dispositions légales contenues dans cet accord continueraient d'être appliquées.</p><p>Les entreprises qui n'auraient pas connu un taux de progression du chiffre d'affaires hors taxes au moins égal au taux prévu à l'article 2 ci-dessous ou qui auraient un résultat d'exercice déficitaire ne seraient concernées que par le premier alinéa de l'article 3 et par l'article 4 du présent accord.</p><p>A l'échéance prévue, les parties signataires du présent accord conviennent de faire un point aussi précis que possible des entreprises déclarant se trouver dans l'une ou l'autre des situations mentionnées ci-dessus.</p><p align=\"center\">Article 1er</p><p>Une négociation annuelle sera menée par les organisations patronales et salariales liées par la CCN des maisons à succursales de vente au détail d'habillement.</p><p>Cette négociation comportera un examen de l'évolution des salaires effectifs moyens par catégorie professionnelle et par sexe, au regard de l'évolution économique et de la situation de l'emploi dans la branche d'activité.</p><p align=\"center\">Article 2</p><p>En moyenne annuelle pour 1986, les salaires effectifs moyens progresseront d'au moins 1,85 % dans chaque entreprise entrant dans le champ d'application de la convention collective nationale des maisons à succursales de vente au détail d'habillement.</p><p>En tenant compte des structures de rémunération qui leur sont propres, il appartiendra à chacune des entreprises liées par la CCN des maisons à succursales de vente au détail d'habillement de s'assurer que le niveau de progression minimal ainsi défini est effectivement atteint.</p><p align=\"center\">Article 3</p><p>Chaque entreprise entrant dans le champ d'application de la CCN s'engage à négocier avec ses organisations syndicales représentatives un accord sur les salaires effectifs qu'elle pratique.</p><p>Cet accord salarial d'entreprise peut prévoir en fonction de la situation économique de l'entreprise et de sa politique salariale :</p><p>a) Des modalités particulières d'application des majorations de salaires négociées au niveau de la CCN à condition que l'augmentation de la masse salariale totale de l'entreprise, à effectifs constants, soit au moins égale à l'augmentation qui résulterait des majorations décidées au niveau de la CCN et que les minima hiérarchiques soient respectés ;</p><p>b) Des majorations des salaires effectifs supérieures à celles prévues au niveau de la CCN.</p><p align=\"center\">Article 4</p><p>A compter du 1er mai 1986, aucun salarié ne pourra percevoir une rémunération mensuelle brute inférieure à 4 500 F pour 169 heures.</p><p align=\"center\">Article 5</p><p>Conformément à l'article L. 132-10 du code du travail, le présent accord sera déposé auprès des services du ministre chargé du travail, un exemplaire étant également remis au secrétariat-greffe du conseil de prud'hommes de Paris.</p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 27 1986-04-28 étendu par arrêté du 6 août 1986 JORF 14 août 1986",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-11 à L132-17, L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 515030400000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6813,13 +6901,123 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724055",
+              "cid": "KALISCTA000005724055",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Avenant portant révision des salaires minimaux garantis et des primes d'ancienneté",
+              "dateModif": null,
+              "dateDebut": "1989-05-17",
+              "dateFin": "1990-05-21",
+              "sectionConsultee": false,
+              "sections": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALISCTA000005752487",
+                  "cid": "KALISCTA000005752487",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "title": "Salaires au 1er juin 1989.",
+                  "dateModif": null,
+                  "dateDebut": "1989-05-17",
+                  "dateFin": "1990-05-21",
+                  "sectionConsultee": false,
+                  "sections": [],
+                  "articles": [
+                    {
+                      "executionTime": 0,
+                      "dereferenced": false,
+                      "id": "KALIARTI000005851184",
+                      "cid": "KALIARTI000005851184",
+                      "intOrdre": 42949,
+                      "etat": "ABROGE",
+                      "num": null,
+                      "path": "/KALISCTA000005724055/KALISCTA000005752487/KALIARTI000005851184",
+                      "pathTitle": [
+                        "Avenant portant révision des salaires minimaux garantis et des primes d'ancienneté",
+                        "Salaires au 1er juin 1989."
+                      ],
+                      "content": "Article 1er<p></p><p></p>   Les barèmes des salaires mensuels minima garantis, pour un horaire forfaitaire de 169 heures, des personnels visés par les avenants et annexes de la convention collective nationale des maisons à succursales de vente au détail d'habillement du 30 juin 1972 sont fixés comme suit à partir du 1er juin 1989 : (1)<p></p><p></p><p></p>   Employés A : 4850 F<p></p><p></p>   Employés B : 4965 F<p></p><p></p>   Employés C : 4055 F<p></p><p></p>   Employés D : 4105 F<p></p><p></p>   Employés E : 4150 F<p></p><p></p>   Employés F : 4279 F<p></p><p></p>   Employés G : 4470 F<p></p><p></p>   Employés H : 5728 F<p></p><p></p> Article 2<p></p><p></p>   Conformément à l'article 31 de la convention collective, les valeurs mensuelles absolues des primes d'ancienneté par catégorie d'emplois et tranches d'ancienneté sont fixées à partir du 1er juin 1989 de la manière suivante :<p></p><p></p><p></p>   Employés : (3)<p></p> Ancienneté : 3 ans<p></p><p></p>   Catégorie A : 116<p></p><p></p>   Catégorie B : 118<p></p><p></p>   Catégorie C : 120<p></p><p></p>   Catégorie D : 122<p></p><p></p>   Catégorie E : 124<p></p><p></p>   Catégorie F : 128<p></p><p></p>   Catégorie G : 132<p></p><p></p>   Catégorie H : 139<p></p> Ancienneté : 6 ans<p></p><p></p>   Catégorie A : 232<p></p><p></p>   Catégorie B : 236<p></p><p></p>   Catégorie C : 240<p></p><p></p>   Catégorie D : 244<p></p><p></p>   Catégorie E : 248<p></p><p></p>   Catégorie F : 256<p></p><p></p>   Catégorie G : 264<p></p><p></p>   Catégorie H : 278<p></p>Ancienneté : 9 ans<p></p><p></p>   Catégorie A : 348<p></p><p></p>   Catégorie B : 354<p></p><p></p>   Catégorie C : 360<p></p><p></p>   Catégorie D : 366<p></p><p></p>   Catégorie E : 372<p></p><p></p>   Catégorie F : 384<p></p><p></p>   Catégorie G : 396<p></p><p></p>   Catégorie H : 417<p></p> Ancienneté : 12 ans<p></p><p></p>   Catégorie A : 464<p></p><p></p>   Catégorie B : 472<p></p><p></p>   Catégorie C : 480<p></p><p></p>   Catégorie D : 488<p></p><p></p>   Catégorie E : 496<p></p><p></p>   Catégorie F : 512<p></p><p></p>   Catégorie G : 528<p></p><p></p>   Catégorie H : 556<p></p> Ancienneté : 15 ans<p></p><p></p>   Catégorie A : 580<p></p><p></p>   Catégorie B : 590<p></p><p></p>   Catégorie C : 600<p></p><p></p>   Catégorie D : 610<p></p><p></p>   Catégorie E : 620<p></p><p></p>   Catégorie F : 640<p></p><p></p>   Catégorie G : 660<p></p><p></p>   Catégorie H : 695<p></p> Ancienneté : 20 ans<p></p><p></p>   Catégorie A : 773<p></p><p></p>   Catégorie B : 786<p></p><p></p>   Catégorie C : 800<p></p><p></p>   Catégorie D : 813<p></p><p></p>   Catégorie E : 827<p></p><p></p>   Catégorie F : 853<p></p><p></p>   Catégorie G : 880<p></p><p></p>   Catégorie H : 927<p></p><p></p><p></p>   Agents de maîtrise: (3)<p></p> Ancienneté : 3 ans<p></p><p></p>   Catégorie A : 141<p></p><p></p>   Catégorie B : 150<p></p><p></p>   Catégorie C : 164<p></p> Ancienneté : 6 ans<p></p><p></p>   Catégorie A : 282<p></p><p></p>   Catégorie B : 300<p></p><p></p>   Catégorie C : 328<p></p> Ancienneté : 9 ans<p></p><p></p>   Catégorie A : 423<p></p><p></p>   Catégorie B : 450<p></p><p></p>   Catégorie C : 492<p></p>Ancienneté : 12 ans<p></p><p></p>   Catégorie A : 564<p></p><p></p>   Catégorie B : 600<p></p><p></p>   Catégorie C : 656<p></p> Ancienneté : 15 ans<p></p><p></p>   Catégorie A : 705<p></p><p></p>   Catégorie B : 750<p></p><p></p>   Catégorie C : 820<p></p> Ancienneté : 20 ans<p></p><p></p>   Catégorie A : 940<p></p><p></p>   Catégorie B : 1 000<p></p><p></p>   Catégorie C : 1 093<p></p><p></p><p></p>   Cadres (3) :<p></p><p></p>   (Prime incluse forfaitairement dans le salaire réel perçu)<p></p> Ancienneté : 3 ans<p></p><p></p>   Catégorie A1 : 195<p></p><p></p>   Catégorie A2 : 204<p></p><p></p>   Catégorie B1 : 219<p></p><p></p>   Catégorie B2 : 245<p></p><p></p>   Catégorie C1 : 270<p></p><p></p>   Catégorie C2 : 316<p></p><p></p>   Catégorie D1 : 404<p></p><p></p>   Catégorie D2 : 496<p></p><p></p> Ancienneté : 6 ans<p></p><p></p>   Catégorie A1 : 390<p></p><p></p>   Catégorie A2 : 408<p></p><p></p>   Catégorie B1 : 438<p></p><p></p>   Catégorie B2 : 490<p></p><p></p>   Catégorie C1 : 540<p></p><p></p>   Catégorie C2 : 632<p></p><p></p>   Catégorie D1 : 808<p></p><p></p>   Catégorie D2 : 992<p></p> Ancienneté : 9 ans<p></p><p></p>   Catégorie A1 : 585<p></p><p></p>   Catégorie A2 : 612<p></p><p></p>   Catégorie B1 : 657<p></p><p></p>   Catégorie B2 : 735<p></p><p></p>   Catégorie C1 : 810<p></p><p></p>   Catégorie C2 : 948<p></p><p></p>   Catégorie D1 : 1 212<p></p><p></p>   Catégorie D2 : 1 488<p></p> Ancienneté : 12 ans<p></p><p></p>   Catégorie A1 : 780<p></p><p></p>   Catégorie A2 : 816<p></p><p></p>   Catégorie B1 : 876<p></p><p></p>   Catégorie B2 : 980<p></p><p></p>   Catégorie C1 : 1 080<p></p><p></p>   Catégorie C2 : 1 264<p></p><p></p>   Catégorie D1 : 1 616<p></p><p></p>   Catégorie D2 : 1 984<p></p>Ancienneté : 15 ans<p></p><p></p>   Catégorie A1 : 975<p></p><p></p>   Catégorie A2 : 1 020<p></p><p></p>   Catégorie B1 : 1 095<p></p><p></p>   Catégorie B2 : 1 225<p></p><p></p>   Catégorie C1 : 1 350<p></p><p></p>   Catégorie C2 : 1 580<p></p><p></p>   Catégorie D1 : 2 020<p></p><p></p>   Catégorie D2 : 2 480<p></p> Ancienneté : 20 ans<p></p><p></p>   Catégorie A1 : 1 300<p></p><p></p>   Catégorie A2 : 1 360<p></p><p></p>   Catégorie B1 : 1 460<p></p><p></p>   Catégorie B2 : 1 633<p></p><p></p>   Catégorie C1 : 1 800<p></p><p></p>   Catégorie C2 : 2 107<p></p><p></p>   Catégorie D1 : 2 693<p></p><p></p>   Catégorie D2 : 3 307<p></p><p></p>Article 3<p></p><p></p>   Le présent accord est fait en un nombre suffisant d'exemplaires pour remise à chacune des organisations signataires de la convention collective et dépôt dans les conditions prévues à l'article L132-10 du code du travail.<p></p><font color=\"808080\"><em>   (1) Avenant étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>    (2) Pour la France métropolitaine, salaires à compter du 1er janvier et 1er juillet 1991, voir avenant n° 33 du 12 décembre 1990.<p></p>    (3) Pour la France métropolitaine, valeurs mensuelles des primes d'ancienneté à compter du 1er janvier et 1er juillet 1991, voir avenant n° 33 du 12 décembre 1990.<p></p></em></font>",
+                      "nota": "   (1) Avenant étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>    (2) Pour la France métropolitaine, salaires à compter du 1er janvier et 1er juillet 1991, voir avenant n° 33 du 12 décembre 1990.<p></p>    (3) Pour la France métropolitaine, valeurs mensuelles des primes d'ancienneté à compter du 1er janvier et 1er juillet 1991, voir avenant n° 33 du 12 décembre 1990.<p></p>",
+                      "comporteLiens": true,
+                      "comporteLiensSP": false,
+                      "modificatorTitle": null,
+                      "modificatorCid": null,
+                      "modificatorDate": null,
+                      "articleVersion": "1.0",
+                      "type": null,
+                      "lstLienModification": [
+                        {
+                          "textCid": "",
+                          "textTitle": "Avenant n° 30 1989-05-17 étendu par arrêté du 17 août 1989 JORF 30 août 1989",
+                          "linkType": "CREATION",
+                          "linkOrientation": "source",
+                          "articleNum": "",
+                          "articleId": "",
+                          "natureText": "",
+                          "datePubliTexte": null,
+                          "dateSignaTexte": null,
+                          "dateDebutCible": null
+                        }
+                      ],
+                      "lstLienCitation": [
+                        {
+                          "textCid": "",
+                          "textTitle": "Code du travail L132-10",
+                          "linkType": "CITATION",
+                          "linkOrientation": "source",
+                          "articleNum": "",
+                          "articleId": "",
+                          "natureText": "",
+                          "parentCid": null,
+                          "numTexte": "",
+                          "datePubli": null,
+                          "dateDebut": null
+                        }
+                      ],
+                      "conditionDiffere": null,
+                      "historique": null,
+                      "surtitre": "Salaires",
+                      "renvoi": null,
+                      "versionLabel": null,
+                      "infosComplementaires": null,
+                      "infosComplementairesHtml": null,
+                      "infosRestructurationBranche": null,
+                      "infosRestructurationBrancheHtml": null,
+                      "dateDebut": 611366400000,
+                      "dateFin": 643248000000,
+                      "notaSectionsAafficher": null,
+                      "multipleVersions": false
+                    }
+                  ],
+                  "commentaire": null,
+                  "renvoi": "",
+                  "renvoiNum": "",
+                  "notaHtml": null,
+                  "notaSectionsAafficher": []
+                }
+              ],
+              "articles": [],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6833,13 +7031,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724056",
+              "cid": "KALISCTA000005724056",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juin 1990.",
+              "dateModif": null,
+              "dateDebut": "1990-05-21",
+              "dateFin": "1990-12-12",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851185",
+                  "cid": "KALIARTI000005851185",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005724056/KALIARTI000005851185",
+                  "pathTitle": [
+                    "Salaires au 1er juin 1990."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Le barème des salaires mensuels minima garantis, pour un horaire forfaitaire de 169 heures, des personnels visés par les avenants et annexes de la convention collective nationale des maisons à succursales de vente au détail d'habillement du 30 juin 1972 sont fixés comme suit à compter du 1er juin 1990 : (1)<p></p><p></p><p></p>   Agents de maîtrise :(1)<p></p><p></p>    Salaires mensuels (en francs)<p></p> A : 6036 F<p></p> B : 6380 F<p></p> C : 6983 F<p></p><p></p><p></p>   Cadres :(1)<p></p><p></p>    Salaires mensuels (en francs)<p></p> A 1 : 8286 F<p></p> A 2 : 8703 F<p></p> B 1 : 9302 F<p></p> B 2 : 10371 F<p></p> C 1 : 11494 F<p></p> C 2 : 13277 F<p></p> D 1 : 17036 F<p></p> D 2 : 21095 F<p></p><p></p> Article 2<p></p><p></p>   Conformément à l'article 31 de la convention collective, les valeurs mensuelles absolues des primes d'ancienneté par catégorie d'emplois et tranches d'ancienneté sont fixées à partir du 1er juin 1990 de la manière suivante :<p></p><p></p>   Agents de maîtrise: (1)<p></p> Ancienneté : 3 ans<p></p><p></p>   Catégorie A : 144<p></p><p></p>   Catégorie B : 153<p></p><p></p>   Catégorie C : 167<p></p> Ancienneté : 6 ans<p></p><p></p>   Catégorie A : 288<p></p><p></p>   Catégorie B : 306<p></p><p></p>   Catégorie C : 334<p></p> Ancienneté : 9 ans<p></p><p></p>   Catégorie A : 432<p></p><p></p>   Catégorie B : 459<p></p><p></p>   Catégorie C : 501<p></p> Ancienneté : 12 ans<p></p><p></p>   Catégorie A : 576<p></p><p></p>   Catégorie B : 612<p></p><p></p>   Catégorie C : 668<p></p> Ancienneté : 15 ans<p></p><p></p>   Catégorie A : 720<p></p><p></p>   Catégorie B : 765<p></p><p></p>   Catégorie C : 835<p></p> Ancienneté : 20 ans<p></p><p></p>   Catégorie A : 960<p></p><p></p>   Catégorie B : 1 020<p></p><p></p>   Catégorie C : 1 113<p></p><p></p>    Cadres (1) :<p></p><p></p>   (Prime incluse forfaitairement dans le salaire réel perçu)<p></p> Ancienneté : 3 ans<p></p><p></p>   Catégorie A1 : 199<p></p><p></p>   Catégorie A2 : 208<p></p><p></p>   Catégorie B1 : 224<p></p><p></p>   Catégorie B2 : 250<p></p><p></p>   Catégorie C1 : 276<p></p><p></p>   Catégorie C2 : 323<p></p><p></p>   Catégorie D1 : 412<p></p><p></p>   Catégorie D2 : 506<p></p><p></p> Ancienneté : 6 ans<p></p><p></p>   Catégorie A1 : 398<p></p><p></p>   Catégorie A2 : 416<p></p><p></p>   Catégorie B1 : 448<p></p><p></p>   Catégorie B2 : 500<p></p><p></p>   Catégorie C1 : 552<p></p><p></p>   Catégorie C2 : 646<p></p><p></p>   Catégorie D1 : 824<p></p><p></p>   Catégorie D2 : 1 012<p></p> Ancienneté : 9 ans<p></p><p></p>   Catégorie A1 : 597<p></p><p></p>   Catégorie A2 : 624<p></p><p></p>   Catégorie B1 : 672<p></p><p></p>   Catégorie B2 : 750<p></p><p></p>   Catégorie C1 : 828<p></p><p></p>   Catégorie C2 : 969<p></p><p></p>   Catégorie D1 : 1 236<p></p><p></p>   Catégorie D2 : 1 518<p></p> Ancienneté : 12 ans<p></p><p></p>   Catégorie A1 : 796<p></p><p></p>   Catégorie A2 : 832<p></p><p></p>   Catégorie B1 : 896<p></p><p></p>   Catégorie B2 : 1 000<p></p><p></p>   Catégorie C1 : 1 104<p></p><p></p>   Catégorie C2 : 1 292<p></p><p></p>   Catégorie D1 : 1 648<p></p><p></p>   Catégorie D2 : 2 024<p></p> Ancienneté : 15 ans<p></p><p></p>   Catégorie A1 : 995<p></p><p></p>   Catégorie A2 : 1 040<p></p><p></p>   Catégorie B1 : 1 120<p></p><p></p>   Catégorie B2 : 1 250<p></p><p></p>   Catégorie C1 : 1 380<p></p><p></p>   Catégorie C2 : 1 615<p></p><p></p>   Catégorie D1 : 2 060<p></p><p></p>   Catégorie D2 : 2 530<p></p>Ancienneté : 20 ans<p></p><p></p>   Catégorie A1 : 1 327<p></p><p></p>   Catégorie A2 : 1 387<p></p><p></p>   Catégorie B1 : 1 493<p></p><p></p>   Catégorie B2 : 1 667<p></p><p></p>   Catégorie C1 : 1 840<p></p><p></p>   Catégorie C2 : 2 153<p></p><p></p>   Catégorie D1 : 2 747<p></p><p></p>   Catégorie D2 : 3 373<p></p><p></p> Article 3<p></p><p></p>   Le présent accord est fait en un nombre suffisant d'exemplaires pour remise à chacune des organisations signataires de la convention collective et dépôt dans les conditions prévues à l'article L132-10 du code du travail.<p></p><font color=\"808080\"><em>   (1) Pour la France métropolitaine, valeurs mensuelles des primes d'ancienneté à compter du 1er janvier et 1er juillet 1991, voir avenant n° 33 du 12 décembre 1990.<p></p></em></font>",
+                  "nota": "   (1) Pour la France métropolitaine, valeurs mensuelles des primes d'ancienneté à compter du 1er janvier et 1er juillet 1991, voir avenant n° 33 du 12 décembre 1990.<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 32 1990-05-21 étendu par arrêté du 20 septembre 1990 JORF 4 octobre 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 643248000000,
+                  "dateFin": 660960000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

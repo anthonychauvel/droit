@@ -12063,13 +12063,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696001",
+              "cid": "KALISCTA000005696001",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er mai et au 1er octobre 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-02-19",
+              "dateFin": "1996-11-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005780754",
+                  "cid": "KALIARTI000005780754",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696001/KALIARTI000005780754",
+                  "pathTitle": [
+                    "Salaires au 1er mai et au 1er octobre 1996."
+                  ],
+                  "content": "1. APPOINTEMENTS MENSUELS GARANTIS<p></p><p></p>   La formule utilisée pour la détermination des appointements mensuels garantis est actualisée comme suit :<p></p> a) A la date du 1er mai 1996<p></p><p></p>   - jusqu'au coefficient 165 :  AMG = 6 640 + (K-165) x 11,3333<p></p><p></p>   - à partir du coefficient 180 :  AMG = 7 160 + (K-180) x 33,7257<p></p> b) A la date du 1er octobre 1996<p></p><p></p>   - jusqu'au coefficient 165 :  AMG = 6 715 + (K-165) x 11,3333<p></p><p></p>   - à partir du coefficient 180 :  AMG = 7 233 + (K-180) x 33,7257<p></p><p></p>   Les appointements mensuels garantis du coefficient 125 sont ceux du coefficient 135.<p></p><p></p> 2. SALAIRE CONVENTIONNEL DE REFERENCE<p></p><p></p>   Le salaire conventionnel de référence sera de 20 F à compter du 1er mai 1996.<p></p><p></p>   Il sera porté à 20,30 F le 1er octobre 1996.<p></p><p></p> 3. REUNION PARITAIRE SUR LES SALAIRES<p></p><p></p>   Les partenaires se rencontreront au plus tard le 31 octobre 1996 pour faire le point sur l'application du présent accord et préparer la réunion paritaire relative aux salaires minima applicable en 1997.<p></p><p></p> 4. DEPOT<p></p><p></p>   Le présent accord sera déposé en cinq exemplaires à la direction départementale du travail et de l'emploi de Paris, conformément aux dispositions des articles L. 132-10 et R. 132-1 du code du travail.<p></p><p></p>   Un exemplaire sera remis au secrétariat-greffe du conseil des prud'hommes de Paris.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1996-02-19 BO conventions collectives 96-15",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10, R132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 824688000000,
+                  "dateFin": 848361600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12083,13 +12171,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696002",
+              "cid": "KALISCTA000005696002",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juin et au 1er octobre 1997.",
+              "dateModif": null,
+              "dateDebut": "1996-11-19",
+              "dateFin": "1997-12-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005780755",
+                  "cid": "KALIARTI000005780755",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696002/KALIARTI000005780755",
+                  "pathTitle": [
+                    "Salaires au 1er juin et au 1er octobre 1997."
+                  ],
+                  "content": "Article 1er<p></p> Appointements mensuels garantis<p></p><p></p>   La formule utilisée pour la détermination des appointements mensuels garantis est actualisée comme suit :<p></p><p></p>   a) A la date du 1er décembre 1996 :<p></p><p></p>   - jusqu'au coefficient 165 :<p></p> A.M.G. = 6 750 + (K - 165) x 11,3333 ;<p></p><p></p>   - à partir du coefficient 180 :<p></p> A.M.G. = 7 270 + (K - 180) x 33,7257.<p></p><p></p>   b) A la date du 1er juin 1997 :<p></p><p></p>   - jusqu'au coefficient 165 :<p></p> A.M.G. = 6 818 + (K - 165) x 11,4466 ;<p></p><p></p>   - à partir du coefficient 180 :<p></p> A.M.G. = 7 343 + (K - 180) x 34,0630.<p></p><p></p>   c) A la date du 1er octobre 1997 :<p></p><p></p>   - jusqu'au coefficient 165 :<p></p> A.M.G. = 6 851 + (K - 165) x 11,5033 ;<p></p><p></p>   - à partir du coefficient 180 :<p></p> A.M.G. = 7 379 + (K - 180) x 34,2316.<p></p><p></p>   Les appointements mensuels garantis du coefficient 125 sont ceux du coefficient 135.<p></p> Article 2<p></p> Salaire conventionnel de référence<p></p><p></p>   Le salaire conventionnel de référence sera de 20,40 F à compter du 1er décembre 1996.<p></p><p></p>   Il sera porté à 20,55 F le 1er juin 1997.<p></p><p></p>   Il sera porté à 20,70 F le 1er octobre 1997.<p></p> Article 3<p></p> Réunion paritaire sur les salaires<p></p><p></p>   Les partenaires se rencontreront au plus tard le 31 octobre 1997 pour faire le point sur l'application du présent accord et préparer la réunion paritaire relative aux salaires minima applicables en 1998.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1996-11-19 BO conventions collectives 96-51",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10, R132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 848361600000,
+                  "dateFin": 882489600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12103,13 +12279,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696003",
+              "cid": "KALISCTA000005696003",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier et au 1er juin 1998.",
+              "dateModif": null,
+              "dateDebut": "1997-12-19",
+              "dateFin": "2004-09-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005780756",
+                  "cid": "KALIARTI000005780756",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696003/KALIARTI000005780756",
+                  "pathTitle": [
+                    "Salaires au 1er janvier et au 1er juin 1998."
+                  ],
+                  "content": "Article 1er<p></p> Appointements mensuels garantis<p></p><p></p>   La formule utilisée pour la détermination des appointements mensuels garantis sera :<p></p><p></p>   a) Au 1er janvier 1998 :<p></p><p></p>   - jusqu'au coefficient 165 :<p></p> AMG = 6 980 F + (K - 165) x 10 ; <p></p><p></p>   - à partir du coefficient 180 :<p></p> AMG = 7 483 F + (K - 180) x 34,62. <p></p><p></p>   b) Au 1er juin 1998 :<p></p><p></p>   - jusqu'au coefficient 165 :<p></p> AMG = 6 980 F + (K - 165) x 10 ; <p></p><p></p>   - à partir du coefficient 180 :<p></p> AMG = 7 500 F + (K - 180) x 34,70. <p></p>Article 2<p></p> Salaire conventionnel de référence<p></p><p></p>   Le salaire conventionnel de référence sera :<p></p><p></p>   a) Au 1er janvier 1998 : 20,90 F.<p></p><p></p>   b) Au 1er juin 1998 : 21,00 F.<p></p> Article 3<p></p>Application de l'accord<p></p><p></p>   Le présent accord est applicable pour l'année 1998. Les partenaires se rencontreront au plus tard le 31 octobre 1998 pour faire le point sur l'application du présent accord et préparer la réunion paritaire relative aux salaires minima applicables en 1999.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1997-12-19 BO conventions collectives 98-6",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10, R132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 882489600000,
+                  "dateFin": 1095638400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

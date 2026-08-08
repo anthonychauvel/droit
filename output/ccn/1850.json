@@ -7138,13 +7138,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005713008",
+              "cid": "KALISCTA000005713008",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-04-07",
+              "dateFin": "2002-04-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005824959",
+                  "cid": "KALIARTI000005824959",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005713008/KALIARTI000005824959",
+                  "pathTitle": [
+                    "Salaires au 1er avril 2000."
+                  ],
+                  "content": "Salaires minima des avocats salariés<p></p><p></p>   Les partenaires sociaux décident de fixer comme suit les salaires minima des avocats salariés à compter du 1er avril 2000.<p></p><p></p>     Ensemble du barreau français sauf Paris :<p></p><p></p>   Avocat stagiaire, première année : 118 500 F <p></p><p></p>   Avocat stagiaire, deuxième année : 129 260 F <p></p><p></p>   Avocat inscrit au tableau 172 350 F <p></p><p></p>   Avocat titulaire d'une mention de spécialisation ou ayant 5 ans d'exercice dans la profession : 216 000 F<p></p><p></p>     Avocats salariés du barreau de Paris :<p></p><p></p>   Avocat stagiaire, première année : 129 260 F <p></p><p></p>   Avocat stagiaire, deuxième année : 142 150 F <p></p><p></p>   Avocat inscrit au tableau : 193 900 F <p></p><p></p>   Avocat titulaire d'une mention de spécialisation ou ayant 5 ans d'exercice dans la profession : 233 000 F <p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 5 2000-04-07 BO conventions collectives 2000-23 étendu par arrêté du 4 décembre 2001 JORF 15 décembre 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 955065600000,
+                  "dateFin": 1018224000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7158,13 +7232,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005713009",
+              "cid": "KALISCTA000005713009",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er décembre 2001.",
+              "dateModif": null,
+              "dateDebut": "2001-10-05",
+              "dateFin": "2006-02-03",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005824960",
+                  "cid": "KALIARTI000005824960",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005713009/KALIARTI000005824960",
+                  "pathTitle": [
+                    "Salaires au 1er décembre 2001."
+                  ],
+                  "content": "<p></p>   Les salaires minima mensuels des coefficients de la grille de salaires annexée à l'avenant n° 50 nouvelle classification portant création d'une nouvelle grille des salaires minima hiérarchiques sont modifiés comme suit :<p></p><p></p>   Le salaire minimum mensuel du :<p></p><p></p>   - coefficient 205 est fixé à 7 400,00 F ;<p></p><p></p>   - coefficient 215 est fixé à 7 500,00 F.<p></p><p></p>   Les salaires minima mensuels des coefficients 225 à 560 sont augmentés de 1,5 %.<p></p><p></p>   La valeur du point de salaire des coefficients 225 à 560 passe à 34,12 F.<p></p><p></p>   La grille des salaires minima mensuels devient :<p></p> ---------------------------------------------------<p></p><TABLE><TR><TD>NIVEAU</TD><TD>  COEFFICIENT       </TD><TD>   SALAIRE MINIMUM   </TD></TR><TR><TD></TD><TD></TD><TD>      (en francs)    </TD></TR><TR><TD>  4   </TD><TD>      205           </TD><TD>       7 400,00      </TD></TR><TR><TD></TD><TD>      215           </TD><TD>       7 500,00      </TD></TR><TR><TD></TD><TD>      225           </TD><TD>       7 679,4       </TD></TR><TR><TD></TD><TD>      240           </TD><TD>       8 191,43      </TD></TR><TR><TD>  3   </TD><TD>      240 (débutant)</TD><TD>       8 191,43      </TD></TR><TR><TD></TD><TD>      250 (débutant)</TD><TD>       8 532,74      </TD></TR><TR><TD></TD><TD>      265           </TD><TD>       9 044,70      </TD></TR><TR><TD></TD><TD>      270 (débutant)</TD><TD>       9 215,35      </TD></TR><TR><TD></TD><TD>      285           </TD><TD>       9 727,31      </TD></TR><TR><TD></TD><TD>      300           </TD><TD>      10 239,28      </TD></TR><TR><TD></TD><TD>      350           </TD><TD>      11 945,83      </TD></TR><TR><TD>  2   </TD><TD>      385 (débutant)</TD><TD>      13 140,40      </TD></TR><TR><TD></TD><TD>      410           </TD><TD>      13 993,68      </TD></TR><TR><TD></TD><TD>      450           </TD><TD>      15 401,59      </TD></TR><TR><TD></TD><TD>      480           </TD><TD>      16 382,84      </TD></TR><TR><TD>  1   </TD><TD>      510           </TD><TD>      17 406,77      </TD></TR><TR><TD></TD><TD>      560           </TD><TD>      19 113,22      </TD></TR></TABLE><p></p> ---------------------------------------------------<p></p>   Il est rappelé que 13 mensualités doivent être payées en application de l'article 12 de la convention collective.<p></p>   Le présent avenant prend effet à compter du 1er jour du mois suivant la date de publication de son arrêté d'extension, et en tout état de cause de la volonté des parties contractantes au plus tard le 1er décembre 2001.<p></p>   Fait à Paris, le 5 octobre 2001.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 68 2001-10-05 BO conventions collectives 2001-44 étendu par arrêté du 22 février 2002 JORF 6 mars 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1002240000000,
+                  "dateFin": 1138924800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7178,13 +7326,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005713010",
+              "cid": "KALISCTA000005713010",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 2002.",
+              "dateModif": null,
+              "dateDebut": "2002-01-18",
+              "dateFin": "2002-04-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005824961",
+                  "cid": "KALIARTI000005824961",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005713010/KALIARTI000005824961",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 2002."
+                  ],
+                  "content": "<p></p>   Les salaires minima résultant de l'avenant n° 68 s'appliquent à tous les cabinets quel qu'en soit l'effectif en référence à la nouvelle durée hebdomadaire légale du travail entrée en vigueur au 1er janvier 2002 (art. L. 212-1 du code du travail).<p></p><p></p>   Les dispositions applicables en cas d'heures supplémentaires (contingent, financement, etc.) sont celles définies par l'avenant n° 57, étendu par arrêté en date du 17 novembre 1999 (publié au Journal officiel le 23 novembre 1999).<p></p><p></p>   Des augmentations de salaires peuvent être négociées pour les salariés rémunérés au-dessus des minima au sein des cabinets.<p></p><p></p>   Les partenaires sociaux décident de fixer en septembre 2002 la prochaine réunion de négociation des salaires applicables au 1er janvier 2003.<p></p><p></p>   Le présent avenant s'appliquera à la date de publication de l'arrêté d'extension pour les dispositions non applicables à ce jour.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 69 2002-01-18 BO conventions collectives 2002-11",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1011312000000,
+                  "dateFin": 1018224000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
