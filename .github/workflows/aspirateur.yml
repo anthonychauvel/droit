@@ -120,6 +120,10 @@ jobs:
             'output/clauses-index.json merge=ours' \
             'output/search-trends.json merge=ours' \
             'output/ccn-liste.json merge=ours' \
+            'output/search-index.json.br merge=ours' \
+            'output/manifest.json.br merge=ours' \
+            'output/clauses-index.json.br merge=ours' \
+            'output/classification-source.json.br merge=ours' \
             > .gitattributes
 
       - name: Setup Python
@@ -509,6 +513,18 @@ jobs:
         if: always()
         run: |
           python3 scripts/generate_audit_report.py --out audits
+
+      - name: "Compresser les gros index (brotli) pour un transfert mobile ~10x plus léger"
+        if: always()
+        run: |
+          # Cloudflare ne compresse PAS à la volée les réponses > ~10 Mo, et un
+          # Worker gratuit n'a pas le budget CPU pour compresser 78 Mo lui-même.
+          # On pré-compresse donc ici : le worker sert le .br avec l'en-tête
+          # Content-Encoding: br, le navigateur décompresse tout seul. Le JSON
+          # brut reste commité (lecteur.html et le repli GitHub Pages le lisent).
+          # Mesuré : 159 Mo -> 16,5 Mo au total (search-index 81->9, clauses 63->6).
+          pip install brotli --break-system-packages --quiet || pip install brotli
+          python3 scripts/compress_index.py --dir output --quality 9 || echo "compression échouée, pas bloquant (le worker retombe sur le brut)"
 
       - name: Commit et push des résultats
         if: always()
