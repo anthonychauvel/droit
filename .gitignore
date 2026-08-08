@@ -9,3 +9,14 @@ output/acco/_debug_search/
 output/jorf/_lastNJo.json
 output/jorf/_debug_reponse_search_brute.json
 output/acco/_debug_reponse_search_brute.json
+
+# Index JSON BRUTS : on ne les versionne plus. Le build les génère localement
+# à chaque run pour produire leur version compressée .br (voir
+# scripts/compress_index.py), et c'est le .br que le Worker Cloudflare sert
+# (Content-Encoding: br). Ne garder que le .br évite de réécrire ~150 Mo de
+# JSON brut dans l'historique Git à chaque run -- la cause du gonflement du
+# dépôt. Les .br (output/*.json.br) NE sont PAS ignorés : eux sont commités.
+output/search-index.json
+output/clauses-index.json
+output/manifest.json
+output/classification-source.json
