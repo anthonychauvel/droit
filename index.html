@@ -1951,128 +1951,73 @@ function assistNoeudCourant(){
 function renderAssist(){
   var cont = document.getElementById('assist-steps');
   if(!cont) return;
-  cont.innerHTML = '';
   var labelsNiveaux = ['Votre situation', 'Plus précisément', 'Votre question'];
+  // OPTIMISATION : on construit tout le HTML en CHAÎNE puis on l'injecte en UNE
+  // fois (innerHTML). Évite des dizaines de createElement/appendChild successifs
+  // (chacun pouvant déclencher un reflow) → plus de latence à l'ouverture des
+  // filtres sur mobile. Les clics sont gérés par DÉLÉGATION (un seul écouteur,
+  // posé une fois plus bas), via des attributs data-*.
+  var html = '';
 
-  // SITUATIONS : raccourcis multi-thèmes, affichés seulement au départ (avant
-  // qu'on commence à creuser une porte). Un clic lance une recherche large qui
-  // couvre tous les droits liés à la situation. Groupées par famille (fin de
-  // contrat, paie, santé, famille, contrat) pour rester lisibles.
+  // SITUATIONS : raccourcis multi-thèmes, affichés seulement au départ.
   if(ASSIST_PATH.length===0 && typeof ASSIST_SITUATIONS!=='undefined'){
-    var blocS = document.createElement('div');
-    blocS.className = 'assist-situations';
-    var labS = document.createElement('div');
-    labS.className = 'assist-step-label';
-    labS.textContent = 'Je vis une situation';
-    blocS.appendChild(labS);
-    // Regrouper les clés par 'groupe' en gardant l'ordre d'apparition.
-    var groupes = [];
-    var parGroupe = {};
+    var groupes = [], parGroupe = {};
     Object.keys(ASSIST_SITUATIONS).forEach(function(cle){
       var g = ASSIST_SITUATIONS[cle].groupe || 'Autres';
       if(!parGroupe[g]){ parGroupe[g]=[]; groupes.push(g); }
       parGroupe[g].push(cle);
     });
+    html += '<div class="assist-situations"><div class="assist-step-label">Je vis une situation</div>';
     groupes.forEach(function(g){
-      var gLab = document.createElement('div');
-      gLab.className = 'situ-groupe-label';
-      gLab.textContent = g;
-      blocS.appendChild(gLab);
-      var chipsS = document.createElement('div');
-      chipsS.className = 'assist-chips situ-chips';
+      html += '<div class="situ-groupe-label">'+escapeHtml(g)+'</div>';
+      html += '<div class="assist-chips situ-chips">';
       parGroupe[g].forEach(function(cle){
-        var b = document.createElement('button');
-        b.className = 'assist-chip situ-chip';
-        b.textContent = ASSIST_SITUATIONS[cle].label;
-        b.onclick = (function(clef){ return function(){ assistSituation(clef); }; })(cle);
-        chipsS.appendChild(b);
+        html += '<button class="assist-chip situ-chip" data-situ="'+escAttr(cle)+'">'+escapeHtml(ASSIST_SITUATIONS[cle].label)+'</button>';
       });
-      blocS.appendChild(chipsS);
+      html += '</div>';
     });
-    cont.appendChild(blocS);
-    // Petit séparateur "ou explorez par thème"
-    var sep = document.createElement('div');
-    sep.className = 'assist-sep';
-    sep.textContent = 'ou explorez par thème';
-    cont.appendChild(sep);
+    html += '</div>';
+    html += '<div class="assist-sep">ou explorez par thème</div>';
   }
 
-  // Reconstruire chaque niveau franchi + le niveau courant à choisir.
+  // Niveaux de l'arbre (parcours par thème).
   var noeud = {enfants: ASSIST_ARBRE};
   for(var prof=0; prof<=ASSIST_PATH.length; prof++){
     var enfants = noeud.enfants;
     if(!enfants) break;
-    var choixFait = ASSIST_PATH[prof];   // ce qui a été choisi à ce niveau (ou undefined)
-    var bloc = document.createElement('div');
-    var lab = document.createElement('div');
-    lab.className = 'assist-step-label';
-    lab.textContent = labelsNiveaux[prof] || 'Affiner';
-    bloc.appendChild(lab);
-    var chips = document.createElement('div');
-    chips.className = 'assist-chips';
+    var choixFait = ASSIST_PATH[prof];
+    html += '<div><div class="assist-step-label">'+escapeHtml(labelsNiveaux[prof] || 'Affiner')+'</div><div class="assist-chips">';
     Object.keys(enfants).forEach(function(cle){
-      var b = document.createElement('button');
-      b.className = 'assist-chip' + (choixFait===cle ? ' on' : '');
-      b.textContent = enfants[cle].label;
-      b.onclick = (function(profondeur, clef){ return function(){ assistChoisir(profondeur, clef); }; })(prof, cle);
-      chips.appendChild(b);
+      html += '<button class="assist-chip'+(choixFait===cle?' on':'')+'" data-prof="'+prof+'" data-cle="'+escAttr(cle)+'">'+escapeHtml(enfants[cle].label)+'</button>';
     });
-    bloc.appendChild(chips);
-    cont.appendChild(bloc);
-    if(choixFait===undefined) break;         // niveau en attente de choix → on s'arrête
+    html += '</div></div>';
+    if(choixFait===undefined) break;
     noeud = enfants[choixFait];
-    if(!noeud.enfants) break;                // feuille atteinte → plus de sous-niveau
+    if(!noeud.enfants) break;
   }
 
-  // ÉTAPE FINALE "Votre convention" : apparaît quand on a creusé le thème (au
-  // moins 2 choix faits) OU quand une SITUATION est active (car là, préciser sa
-  // convention est justement ce qui débloque l'affichage de SES droits).
+  // ÉTAPE "Votre convention" : après 2 choix OU en mode situation.
   if(ASSIST_PATH.length >= 2 || (typeof window!=='undefined' && window.__situationActive)){
-    var blocC = document.createElement('div');
-    var labC = document.createElement('div');
-    labC.className = 'assist-step-label';
-    labC.textContent = 'Votre convention (facultatif — pour voir la vôtre)';
-    blocC.appendChild(labC);
-
+    html += '<div><div class="assist-step-label">Votre convention (facultatif — pour voir la vôtre)</div>';
     if(ASSIST_CCN){
-      // CCN choisie : afficher une puce active + bouton pour l'enlever.
       var choisie = (INDEX.ccn||[]).filter(function(it){ return String(it.num)===String(ASSIST_CCN); })[0];
       var nom = choisie ? (String(choisie.title||'').slice(0,42)) : ('IDCC '+ASSIST_CCN);
-      var chipsC = document.createElement('div'); chipsC.className='assist-chips';
-      var active = document.createElement('button');
-      active.className = 'assist-chip on';
-      active.textContent = 'IDCC '+ASSIST_CCN+' · '+nom+'  ✕';
-      active.onclick = function(){ ASSIST_CCN=null; renderAssist(); relancerAssist(); };
-      chipsC.appendChild(active);
-      blocC.appendChild(chipsC);
+      html += '<div class="assist-chips"><button class="assist-chip on" data-ccn-clear="1">IDCC '+escapeHtml(ASSIST_CCN)+' · '+escapeHtml(nom)+'  ✕</button></div>';
     } else {
-      // Pas encore de CCN : champ de recherche pour la trouver.
-      var champC = document.createElement('input');
-      champC.type = 'search';
-      champC.id = 'assist-ccn-q';
-      champC.placeholder = 'Votre métier, secteur ou IDCC (ex. coiffure, 1314…)';
-      champC.setAttribute('autocomplete','off');
-      champC.className = 'assist-ccn-input';
-      champC.oninput = function(){ assistChercherCCN(this.value); };
-      blocC.appendChild(champC);
-      var resC = document.createElement('div');
-      resC.id = 'assist-ccn-res'; resC.className = 'assist-ccn-res';
-      blocC.appendChild(resC);
-      // AJOUT : pour les ~31% de salariés qui ne connaissent PAS leur convention,
-      // un lien vers l'outil OFFICIEL du Code du travail numérique, qui la trouve
-      // à partir du nom/SIRET de l'entreprise (données DSN, fiables et à jour).
-      // On aiguille vers la source officielle plutôt que de deviner nous-mêmes.
-      var aideC = document.createElement('div');
-      aideC.className = 'assist-ccn-aide';
-      aideC.innerHTML = 'Vous ne la connaissez pas ? '
-        + '<a href="https://code.travail.gouv.fr/outils/convention-collective" '
-        + 'target="_blank" rel="noopener">Trouvez-la avec le nom de votre entreprise ↗</a>';
-      blocC.appendChild(aideC);
+      html += '<input type="search" id="assist-ccn-input" placeholder="Votre métier, secteur ou IDCC (ex. coiffure, 1314…)" autocomplete="off" class="assist-ccn-input">';
+      html += '<div id="assist-ccn-res" class="assist-ccn-res"></div>';
+      html += '<div class="assist-ccn-aide">Vous ne la connaissez pas ? '
+        + '<a href="https://code.travail.gouv.fr/outils/convention-collective" target="_blank" rel="noopener">Trouvez-la avec le nom de votre entreprise ↗</a></div>';
     }
-    cont.appendChild(blocC);
+    html += '</div>';
   }
 
-  // Note live + bouton reset
+  cont.innerHTML = html;   // une seule injection
+
+  // Rebrancher l'input CCN (délégation impossible pour 'input' sur champ recréé).
+  var champC = document.getElementById('assist-ccn-input');
+  if(champC){ champC.oninput = function(){ assistChercherCCN(this.value); }; }
+
   document.getElementById('assist-reset').hidden = (ASSIST_PATH.length===0);
 }
 
@@ -2180,10 +2125,17 @@ function runSearchDebounced(){
 }
 
 function relancerAssist(){
-  // Relance la recherche avec les mots du thème (le filtre CCN s'applique dans
-  // runSearch via ASSIST_CCN).
+  // Relance la recherche en conservant les filtres déjà posés. Deux cas :
+  //  - parcours par THÈME : les mots viennent de ASSIST_PATH (arbre) → on les
+  //    reconstruit avec assistMotsCumules().
+  //  - SITUATION : ASSIST_PATH est vide, les mots sont déjà dans le champ → il ne
+  //    faut SURTOUT PAS les écraser avec une chaîne vide (sinon choisir sa CCN
+  //    effaçait les filtres de la situation).
   var champ = document.getElementById('q');
-  champ.value = assistMotsCumules();
+  if(ASSIST_PATH.length > 0){
+    champ.value = assistMotsCumules();      // parcours par thème : on reconstruit
+  }
+  // sinon (situation ou frappe libre) : on garde le contenu actuel du champ tel quel
   runSearchDebounced();
 }
 
@@ -3373,6 +3325,18 @@ renderExamples();
       steps.hidden = false;
       intro.setAttribute('aria-expanded','true');
       document.getElementById('assist').classList.add('open');
+    }
+  });
+  // DÉLÉGATION : un seul écouteur pour tous les clics du découvreur (situations,
+  // portes de l'arbre, retrait de la CCN). Évite de poser un onclick par bouton
+  // à chaque rendu → plus léger, moins de latence.
+  steps.addEventListener('click', function(e){
+    var t = e.target.closest('button');
+    if(!t) return;
+    if(t.dataset.situ){ assistSituation(t.dataset.situ); return; }
+    if(t.dataset.cclear || t.dataset.ccnClear){ ASSIST_CCN=null; renderAssist(); relancerAssist(); return; }
+    if(t.dataset.prof!==undefined && t.dataset.cle!==undefined){
+      assistChoisir(parseInt(t.dataset.prof,10), t.dataset.cle); return;
     }
   });
 })();
