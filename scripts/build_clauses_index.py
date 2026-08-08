@@ -68,15 +68,50 @@ def texte_du_noeud(noeud):
     return " ".join(m for m in morceaux if m).strip()
 
 
+def _norm_titre(t):
+    t = str(t or "").lower()
+    for a, b in [("é","e"),("è","e"),("ê","e"),("à","a"),("ô","o"),("û","u"),("ç","c"),("î","i")]:
+        t = t.replace(a, b)
+    return t
+
+# Mots dans le TITRE d'une section qui trahissent une clause de classification,
+# même si elle n'a pas été enrichie par un fetch_* (pas de _type_complement).
+_TITRE_CLASSIF = ["classification", "coefficient", "qualification", "echelon",
+                  "grille", "categorie professionnelle", "niveaux", "classement"]
+
+
 def collecter_clauses(data):
-    """Parcourt tout l'arbre d'une CCN et renvoie les nœuds portant un
-    _type_complement -- ce sont les clauses enrichies par les fetch_*."""
-    trouves = []
+    """Parcourt tout l'arbre d'une CCN et renvoie les nœuds à indexer, avec le
+    thème associé. Deux sources :
+      1. les nœuds enrichis par les fetch_* (champ _type_complement) — texte
+         complet déjà récupéré ;
+      2. EN PLUS, pour la classification : les sections dont le TITRE l'indique
+         (classification, coefficient, échelon…), même sans enrichissement — on
+         utilise alors le texte brut de leurs articles. Sinon on ratait la
+         majorité des grilles (ex. la 573 : 8 enrichies sur 14 réelles).
+    """
+    trouves = []       # liste de (theme, noeud)
+    vus = set()        # éviter les doublons (même section captée deux fois)
+
+    def cle(n):
+        return n.get("id") or n.get("cid") or id(n)
 
     def walk(n):
         if isinstance(n, dict):
+            k = cle(n)
+            # Source 1 : nœud enrichi par un fetch_*
             if n.get("_type_complement") and n.get("_texte_complet_recupere"):
-                trouves.append(n)
+                if k not in vus:
+                    trouves.append((n["_type_complement"], n))
+                    vus.add(k)
+            # Source 2 : section de classification repérée par son titre
+            elif n.get("title"):
+                tn = _norm_titre(n.get("title"))
+                if any(m in tn for m in _TITRE_CLASSIF):
+                    # On n'indexe que si elle a un contenu exploitable (articles).
+                    if (n.get("articles") or n.get("sections")) and k not in vus:
+                        trouves.append(("classification", n))
+                        vus.add(k)
             for v in n.values():
                 walk(v)
         elif isinstance(n, list):
@@ -111,8 +146,7 @@ def main():
         if clauses:
             n_ccn += 1
 
-        for clause in clauses:
-            theme = clause.get("_type_complement")
+        for theme, clause in clauses:
             if theme not in index:
                 continue
             texte = texte_du_noeud(clause)
