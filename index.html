@@ -1914,12 +1914,23 @@ function assistChoisirCCN(idcc){
   relancerAssist();
 }
 
+// Recherche DÉBOUNCÉE : dans le mode assisté, chaque clic accumule des mots et
+// relance runSearch() sur tout le corpus (60 000+ accords) — coûteux sur mobile.
+// Si l'utilisateur enchaîne les clics, on ne lance la recherche qu'une fois, à la
+// fin de la salve (après 180 ms sans nouveau clic), au lieu d'une fois par clic.
+// L'affichage des questions (renderAssist) reste immédiat ; seule la recherche
+// lourde est différée. Résultat : plus de latence pendant qu'on répond.
+function runSearchDebounced(){
+  clearTimeout(window.__assistTimer);
+  window.__assistTimer = setTimeout(function(){ runSearch(); }, 180);
+}
+
 function relancerAssist(){
   // Relance la recherche avec les mots du thème (le filtre CCN s'applique dans
   // runSearch via ASSIST_CCN).
   var champ = document.getElementById('q');
   champ.value = assistMotsCumules();
-  runSearch();
+  runSearchDebounced();
 }
 
 function assistChoisir(profondeur, cle){
@@ -1938,7 +1949,7 @@ function assistChoisir(profondeur, cle){
   var mots = assistMotsCumules();
   var champ = document.getElementById('q');
   champ.value = mots;
-  runSearch();
+  runSearchDebounced();
 }
 
 function assistReset(){
