@@ -2868,24 +2868,6 @@ function renderBrowseClauses(){
   box.innerHTML = html;
   var mb = document.getElementById('cl-more');
   if(mb) mb.addEventListener('click', function(){ CL_STATE.shown += PAGE*3; renderBrowseClauses(); });
-  // "Lire la suite" : déplie le texte complet de la clause sur place (ces clauses
-  // n'ont pas de fiche séparée). Délégation sur le conteneur.
-  box.addEventListener('click', function(e){
-    var btn = e.target.closest('.cl-plus');
-    if(!btn) return;
-    var bloc = btn.previousElementSibling;   // le div .cl-texte juste avant
-    if(!bloc || !bloc.dataset.full) return;
-    var deplie = btn.getAttribute('data-open')==='1';
-    if(deplie){
-      bloc.textContent = bloc.dataset.full.slice(0,600)+'…';
-      btn.textContent = 'Lire la suite';
-      btn.removeAttribute('data-open');
-    } else {
-      bloc.textContent = bloc.dataset.full;   // texte complet
-      btn.textContent = 'Réduire';
-      btn.setAttribute('data-open','1');
-    }
-  });
 }
 
 function startBrowse(source){
@@ -3382,6 +3364,30 @@ if(_tv){
     runSearch();
   };
 }
+// "Lire la suite" des clauses (Classifications, Salaires…) : handler posé UNE
+// SEULE FOIS ici en délégation permanente sur le conteneur. (Avant il était
+// ré-attaché à chaque rendu de renderBrowseClauses → plusieurs écouteurs
+// empilés se déclenchaient au même clic et le texte se repliait aussitôt.)
+(function(){
+  var box = document.getElementById('browse-results');
+  if(!box) return;
+  box.addEventListener('click', function(e){
+    var btn = e.target.closest('.cl-plus');
+    if(!btn) return;
+    var bloc = btn.previousElementSibling;   // le div .cl-texte juste avant
+    if(!bloc || !bloc.dataset.full) return;
+    var deplie = btn.getAttribute('data-open')==='1';
+    if(deplie){
+      bloc.textContent = bloc.dataset.full.slice(0,600)+'…';
+      btn.textContent = 'Lire la suite';
+      btn.removeAttribute('data-open');
+    } else {
+      bloc.textContent = bloc.dataset.full;   // texte complet
+      btn.textContent = 'Réduire';
+      btn.setAttribute('data-open','1');
+    }
+  });
+})();
 document.getElementById('corpus-line').textContent = 'Chargement de l\'index…';
 
 // Deep-link, utilisé par les liens de l'application SimulHeures :
