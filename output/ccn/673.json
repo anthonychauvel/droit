@@ -4237,13 +4237,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731173",
+              "cid": "KALISCTA000005731173",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er septembre 2001.",
+              "dateModif": null,
+              "dateDebut": "2002-01-29",
+              "dateFin": "2002-12-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868889",
+                  "cid": "KALIARTI000005868889",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731173/KALIARTI000005868889",
+                  "pathTitle": [
+                    "Salaires à partir du 1er septembre 2001."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   A compter du 1er septembre 2001, les salaires horaires minima de base prévus à l'article 30 des clauses générales de la convention collective nationale sont établis de la manière suivante selon barème joint.<p></p><p></p>   Valeur du point au coefficient 100 : 21,86 F.<p></p><p></p>   Coefficients liés à la classification des emplois (avenants n°s 49 et 50 du 19 décembre 2001) à la convention collective nationale de la fourrure.<p></p><p></p> -----------------------------------------------------<p></p><TABLE><TR><TD></TD><TD> SALAIRE HORAIRE  </TD><TD>  SALAIRE MENSUEL </TD></TR><TR><TD> COEFFICIENT </TD><TD>    minimum       </TD><TD>     minimum      </TD></TR><TR><TD></TD><TD>  (en francs)     </TD><TD>  base 169 heures </TD></TR><TR><TD></TD><TD></TD><TD>    (en francs)   </TD></TR><TR><TD>    200      </TD><TD>     43,72        </TD><TD>      7 388,68    </TD></TR><TR><TD>    202      </TD><TD>     44,16        </TD><TD>      7 463,04    </TD></TR><TR><TD>    204      </TD><TD>     44,59        </TD><TD>      7 535,71    </TD></TR><TR><TD>    206      </TD><TD>     45,03        </TD><TD>      7 610,07    </TD></TR><TR><TD>    208      </TD><TD>     45,47        </TD><TD>      7 684,43    </TD></TR><TR><TD>    210      </TD><TD>     45,91        </TD><TD>      7 758,79    </TD></TR><TR><TD>    212      </TD><TD>     46,34        </TD><TD>      7 831,46    </TD></TR><TR><TD>    214      </TD><TD>     46,78        </TD><TD>      7 905,82    </TD></TR><TR><TD>    216      </TD><TD>     47,22        </TD><TD>      7 980,18    </TD></TR><TR><TD>    220      </TD><TD>     48,09        </TD><TD>      8 127,21    </TD></TR><TR><TD>    226      </TD><TD>     49,40        </TD><TD>      8 348,60    </TD></TR><TR><TD>    232      </TD><TD>     50,72        </TD><TD>      8 571,72    </TD></TR><TR><TD>    244      </TD><TD>     53,34        </TD><TD>      9 014,46    </TD></TR><TR><TD>    256      </TD><TD>     55,96        </TD><TD>      9 457,24    </TD></TR><TR><TD>    272      </TD><TD>     59,46        </TD><TD>     10 048,74    </TD></TR><TR><TD>    305      </TD><TD>     66,67        </TD><TD>     11 267,23    </TD></TR><TR><TD>                   Cadres et assimilés             </TD></TR><TR><TD>           (avenant n° 51 du 19 décembre 2001)     </TD></TR><TR><TD>    314      </TD><TD>     68,64        </TD><TD>     11 600,16    </TD></TR><TR><TD>    351      </TD><TD>     76,73        </TD><TD>     12 967,37    </TD></TR><TR><TD>    363      </TD><TD>     79,35        </TD><TD>     13 410,15    </TD></TR><TR><TD>    375      </TD><TD>     81,97        </TD><TD>     13 852,93    </TD></TR><TR><TD>    423      </TD><TD>     92,47        </TD><TD>     15 627,43    </TD></TR><TR><TD>    435      </TD><TD>     95,09        </TD><TD>     16 070,21    </TD></TR><TR><TD>    544      </TD><TD>    118,92        </TD><TD>     20 097,48    </TD></TR><TR><TD>    629      </TD><TD>    137,50        </TD><TD>     23 237,50    </TD></TR></TABLE><p></p> -----------------------------------------------------<font color=\"808080\"><em>   NOTA : Arrêté du 10 juin 2002 art. 1 : le barème annexé est étendu sous réserve de l'application des règles communautaires relatives à la conversion, et aux arrondis, en euros, et des dispositions réglementaires portant fixation du salaire minimum de croissance ;<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 10 juin 2002 art. 1 : le barème annexé est étendu sous réserve de l'application des règles communautaires relatives à la conversion, et aux arrondis, en euros, et des dispositions réglementaires portant fixation du salaire minimum de croissance ;<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 52 2002-01-29 BO conventions collectives 2002-12-13",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1012262400000,
+                  "dateFin": 1040342400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -4277,13 +4351,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731175",
+              "cid": "KALISCTA000005731175",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er septembre 2002.",
+              "dateModif": null,
+              "dateDebut": "2002-12-20",
+              "dateFin": "2003-12-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868891",
+                  "cid": "KALIARTI000005868891",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731175/KALIARTI000005868891",
+                  "pathTitle": [
+                    "Salaires à partir du 1er septembre 2002."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les salaires horaires minima de base prévus à l'article 30 des clauses générales de la convention collective nationale sont établis de la manière suivante selon barème joint.<p></p><p></p>   A compter du 1er septembre 2002 :<p></p><p></p>   Le coefficient 200 sera augmenté de 2,4 %. Il lui sera accolé la lettre \" a \" signifiant que le pourcentage d'augmentation de ce coefficient est supérieur au pourcentage d'augmentation de la valeur du point au coefficient 100.<p></p><p></p>   De la même manière, le coefficient 202 b sera augmenté de 2,2 %.<p></p><p></p>   Le coefficient 204 c sera augmenté de 2 %.<p></p><p></p>   Le coefficient 206 d sera augmenté de 1,8 %.<p></p><p></p>   Le coefficient 208 et le reste de la grille seront augmentés de 1,7 %, portant la valeur du point au coefficient 100 à 3,39 Euros.<p></p><p></p>   Fait à Paris, le 20 décembre 2002.<p></p><p></p>   Barème des salaires minima applicable à compter du 1er septembre 2002<p></p><p></p>   (Valeur du point au coefficient 100 : 3,39 Euros.).<p></p><p></p>   (1) COEFFICIENTS liés à la classification des emplois à la convention collective nationale de la fourrure (avenants n° 49 et 50 du 19-12-2001)<p></p><TABLE><TR><TD></TD><TD> SALAIRE HORAIRE  </TD><TD>  SALAIRE MENSUEL      </TD></TR><TR><TD> COEFFICIENT </TD><TD>    minimum       </TD><TD>     minimum           </TD></TR><TR><TD>   (1)       </TD><TD>  (en euros)      </TD><TD>  base 169 heures      </TD></TR><TR><TD></TD><TD></TD><TD>    (en euros)         </TD></TR><TR><TD>    200 a    </TD><TD>      6,83        </TD><TD> 1 154,27 + 104 mn RTT </TD></TR><TR><TD>    202 b    </TD><TD>      6,88        </TD><TD> 1 162,72 + 104 mn RTT </TD></TR><TR><TD>    204 c    </TD><TD>      6,93        </TD><TD> 1 171,17 + 104 mn RTT </TD></TR><TR><TD>    206 d    </TD><TD>      6,98        </TD><TD> 1 179,62 + 104 mn RTT </TD></TR><TR><TD>    208      </TD><TD>      7,05        </TD><TD> 1 191,45 + 104 mn RTT </TD></TR><TR><TD>    210      </TD><TD>      7,12        </TD><TD> 1 203,28 + 104 mn RTT </TD></TR><TR><TD>    212      </TD><TD>      7,19        </TD><TD> 1 215,11 + 104 mn RTT </TD></TR><TR><TD>    214      </TD><TD>      7,25        </TD><TD> 1 225,25 + 104 mn RTT </TD></TR><TR><TD>    216      </TD><TD>      7,32        </TD><TD> 1 237,08 + 104 mn RTT </TD></TR><TR><TD>    220      </TD><TD>      7,46        </TD><TD> 1 260,74 + 104 mn RTT </TD></TR><TR><TD>    226      </TD><TD>      7,66        </TD><TD> 1 294,54 + 104 mn RTT </TD></TR><TR><TD>    232      </TD><TD>      7,86        </TD><TD> 1 328,34 + 104 mn RTT </TD></TR><TR><TD>    244      </TD><TD>      8,27        </TD><TD> 1 397,63 + 104 mn RTT </TD></TR><TR><TD>    256      </TD><TD>      8,68        </TD><TD> 1 466,925+ 104 mn RTT </TD></TR><TR><TD>    272      </TD><TD>      9,22        </TD><TD> 1 558,18 + 104 mn RTT </TD></TR><TR><TD>    305      </TD><TD>     10,34        </TD><TD> 1 747,46 + 104 mn RTT </TD></TR></TABLE><p></p><p></p>   Cadres et assimilés<p></p><p></p>   (1) COEFFICIENTS liés à la classification des emplois à la convention collective nationale de la fourrure (avenant n° 51 du 19-12-2001)<p></p><TABLE><TR><TD></TD><TD> SALAIRE HORAIRE  </TD><TD>  SALAIRE MENSUEL      </TD></TR><TR><TD> COEFFICIENT </TD><TD>    minimum       </TD><TD>     minimum           </TD></TR><TR><TD>   (1)       </TD><TD>  (en euros)      </TD><TD>  base 169 heures      </TD></TR><TR><TD></TD><TD></TD><TD>    (en euros)         </TD></TR><TR><TD>    314      </TD><TD>     10,64        </TD><TD> 1 798,16 + 104 mn RTT </TD></TR><TR><TD>    351      </TD><TD>     11,90        </TD><TD> 2 011,10 + 104 mn RTT </TD></TR><TR><TD>    363      </TD><TD>     12,31        </TD><TD> 2 080,39 + 104 mn RTT </TD></TR><TR><TD>    375      </TD><TD>     12,71        </TD><TD> 2 147,99 + 104 mn RTT </TD></TR><TR><TD>    423      </TD><TD>     14,34        </TD><TD> 2 423,46 + 104 mn RTT </TD></TR><TR><TD>    435      </TD><TD>     14,75        </TD><TD> 2 492,75 + 104 mn RTT </TD></TR><TR><TD>    544      </TD><TD>     18,44        </TD><TD> 3 116,36 + 104 mn RTT </TD></TR><TR><TD>    629      </TD><TD>     21,32        </TD><TD> 3 603,08 + 104 mn RTT </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 54 2002-12-20 BO conventions collectives 2003-12 étendu par arrêté du 2 juin 2003 JORF 11 juin 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1040342400000,
+                  "dateFin": 1071446400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -4297,13 +4445,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731176",
+              "cid": "KALISCTA000005731176",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er septembre 2002",
+              "dateModif": null,
+              "dateDebut": "2002-12-20",
+              "dateFin": "2003-12-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868892",
+                  "cid": "KALIARTI000005868892",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731176/KALIARTI000005868892",
+                  "pathTitle": [
+                    "Salaires à partir du 1er septembre 2002"
+                  ],
+                  "content": "<p></p>   Augmentation des salaires Paris - Ile-de-France (Paris, Seine-et-Marne, Yvelines, Essonne, Hauts-de-Seine, Seine-Saint-Denis,  Val-de-Marne, Val-d'Oise) à compter du 1er septembre 2002 :<p></p> + 1,7 %.<p></p><p></p>   Ce pourcentage comprend les augmentations qui auraient pu être appliquées dans les entreprises depuis le 1er septembre 2001.<p></p><p></p>   Fait à Paris, le 20 décembre 2002.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 55 2002-12-20 BO conventions collectives 2003-12 étendu par arrêté du 2 juin 2003 JORF 11 juin 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES Ile de France",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1040342400000,
+                  "dateFin": 1071446400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

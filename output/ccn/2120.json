@@ -12904,13 +12904,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005694802",
+              "cid": "KALISCTA000005694802",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires annuels minima de branche  hors ancienneté au 1er janvier 2000",
+              "dateModif": null,
+              "dateDebut": "2000-01-10",
+              "dateFin": "2002-10-29",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005777804",
+                  "cid": "KALIARTI000005777804",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005694802/KALIARTI000005777804",
+                  "pathTitle": [
+                    "Grille de salaires annuels minima de branche  hors ancienneté au 1er janvier 2000"
+                  ],
+                  "content": "<p></p>   Pour une durée du travail correspondant à la durée légale du travail<p></p><TABLE><TR><TD>CATÉGORIE</TD><TD>EN FRANCS</TD><TD>EN EUROS (1)</TD><TD>  EN POINTS  </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>bancaires (2)</TD></TR><TR><TD> Techniciens</TD><TD></TD><TD></TD></TR><TR><TD> Niveau A   </TD><TD>  86 000 </TD><TD> 13 111     </TD><TD>  6 143      </TD></TR><TR><TD> Niveau B   </TD><TD>  91 000 </TD><TD> 13 873     </TD><TD>  6 500      </TD></TR><TR><TD> Niveau C   </TD><TD>  96 000 </TD><TD> 14 635     </TD><TD>  6 857      </TD></TR><TR><TD> Niveau D   </TD><TD> 105 000 </TD><TD> 16 007     </TD><TD>  7 500      </TD></TR><TR><TD> Niveau E   </TD><TD> 110 000 </TD><TD> 16 769     </TD><TD>  7 857      </TD></TR><TR><TD> Niveau F   </TD><TD> 120 000 </TD><TD> 18 294     </TD><TD>  8 571      </TD></TR><TR><TD> Niveau G   </TD><TD> 133 000 </TD><TD> 20 276     </TD><TD>  9 500      </TD></TR><TR><TD>  Cadres              </TD><TD></TD><TD></TD></TR><TR><TD> Niveau H   </TD><TD> 148 000 </TD><TD> 22 562     </TD><TD> 10 571      </TD></TR><TR><TD> Niveau I   </TD><TD> 182 000 </TD><TD> 27 746     </TD><TD> 13 000      </TD></TR><TR><TD> Niveau J   </TD><TD> 221 000 </TD><TD> 33 691     </TD><TD> 15 786      </TD></TR><TR><TD> Niveau K   </TD><TD> 264 000 </TD><TD> 40 247     </TD><TD> 18 857      </TD></TR></TABLE><p></p><p></p>   (1) 1 euro = 6,55957 francs ; sommes arrondies à l'unité la plus proche.<p></p>   (2) 1 point bancaire = 14 francs ; sommes arrondies à l'unité la plus proche.<font color=\"808080\"><em>   Nota - Pendant la période 2000-2001, lorsque la durée collective du travail de l'entreprise reste supérieure à la durée légale, les salaires minima ci-dessus, à l'exclusion de ceux du niveau A, sont abaissés de 5 %.<p></p></em></font>",
+                  "nota": "   Nota - Pendant la période 2000-2001, lorsque la durée collective du travail de l'entreprise reste supérieure à la durée légale, les salaires minima ci-dessus, à l'exclusion de ceux du niveau A, sont abaissés de 5 %.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Convention collective nationale 2000-01-10",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 947462400000,
+                  "dateFin": 1035849600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12924,13 +12998,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005694806",
+              "cid": "KALISCTA000005694806",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires annuels minima de branche  à l'ancienneté au 1er janvier 2000 (en francs)",
+              "dateModif": null,
+              "dateDebut": "2000-01-10",
+              "dateFin": "2002-10-29",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005777979",
+                  "cid": "KALIARTI000005777979",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005694806/KALIARTI000005777979",
+                  "pathTitle": [
+                    "Grille de salaires annuels minima de branche  à l'ancienneté au 1er janvier 2000 (en francs)"
+                  ],
+                  "content": "<p></p>   Pour une durée du travail correspondant à la durée légale du travail<p></p><TABLE><TR><TD>CATÉGORIE</TD><TD>A 5 ANS</TD><TD>A 10 ANS</TD><TD>A 15 ANS</TD><TD>A 20 ANS</TD></TR><TR><TD></TD><TD>(en fr)</TD><TD> (en fr)</TD><TD> (en fr)</TD><TD> (en fr)</TD></TR><TR><TD> Techniciens</TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>Niveau A    </TD><TD> 88 580</TD><TD>  91 237</TD><TD>  93 975</TD><TD>  96 794</TD></TR><TR><TD>Niveau B    </TD><TD> 93 730</TD><TD>  96 542</TD><TD>  99 438</TD><TD> 102 421</TD></TR><TR><TD>Niveau C    </TD><TD> 98 880</TD><TD> 101 846</TD><TD> 104 902</TD><TD></TD></TR><TR><TD>Niveau D    </TD><TD>108 150</TD><TD> 111 395</TD><TD> 114 736</TD><TD></TD></TR><TR><TD>Niveau E    </TD><TD>113 300</TD><TD> 116 699</TD><TD> 120 200</TD><TD></TD></TR><TR><TD>Niveau F    </TD><TD>123 600</TD><TD> 127 308</TD><TD> 131 127</TD><TD></TD></TR><TR><TD>Niveau G    </TD><TD>136 990</TD><TD> 141 100</TD><TD> 145 333</TD><TD></TD></TR><TR><TD>Niveau H    </TD><TD>152 440</TD><TD> 157 013</TD><TD></TD><TD></TD></TR><TR><TD>Niveau I    </TD><TD>187 460</TD><TD> 193 084</TD><TD></TD><TD></TD></TR><TR><TD>Niveau J    </TD><TD>227 630</TD><TD> 234 459</TD><TD></TD><TD></TD></TR><TR><TD>Niveau K    </TD><TD>271 920</TD><TD> 280 078</TD><TD></TD><TD></TD></TR></TABLE><p></p><font color=\"808080\"><em>   Nota - Pendant la période 2000-2001, lorsque la durée collective du travail de l'entreprise reste supérieure à la durée légale, les salaires minima ci-dessus, à l'exclusion de ceux du niveau A, sont abaissés de 5 %.<p></p></em></font>",
+                  "nota": "   Nota - Pendant la période 2000-2001, lorsque la durée collective du travail de l'entreprise reste supérieure à la durée légale, les salaires minima ci-dessus, à l'exclusion de ceux du niveau A, sont abaissés de 5 %.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Convention collective nationale 2000-01-10",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 947462400000,
+                  "dateFin": 1035849600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13025,12 +13173,77 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005778622",
+              "cid": "KALIARTI000005778622",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000005778622",
+              "pathTitle": [],
+              "content": "<p>Article unique </p><p>Dans le cadre de l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006646389&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-12 (Ab)\">article 132-12, alinéa 1, du code du travail</a>, il a été convenu entre les signataires du présent accord de modifier, en date du 1er novembre 2002, les annexes VI et VII de la convention collective de la banque. </p><p>En conséquence, les textes ci-joints annulent et remplacent ceux qui figurent actuellement dans la convention collective. </p><p>Fait à Paris, le 29 octobre 2002. </p><p>ANNEXE VI </p><p>TITRE V </p><p>Rémunération </p><p>Grille de salaires annuels minima de branche </p><p>hors ancienneté au 1er novembre 2002 </p><p>(Pour une durée du travail correspondant à la durée légale du travail) </p><p></p><p>TECHNICIENS NIVEAU A En euros (1) 14 043 </p><p>EN POINTS bancaires (2) 6 562 </p><p></p><p>TECHNICIENS NIVEAU B En euros (1) 14 742 </p><p>EN POINTS bancaires (2) 6 889 </p><p></p><p>TECHNICIENS </p><p>NIVEAU C </p><p>En euros (1) 15 373 </p><p>EN POINTS bancaires (2) 7 184 </p><p></p><p>TECHNICIENS </p><p>NIVEAU D </p><p>En euros (1) 16 814 </p><p>EN POINTS bancaires (2) 7 857 </p><p></p><p>TECHNICIENS </p><p>NIVEAU E </p><p>En euros (1) 17 614 </p><p>EN POINTS bancaires (2) 8 231 </p><p></p><p>TECHNICIENS </p><p>NIVEAU F </p><p>En euros (1) 19 215 </p><p>EN POINTS bancaires (2) 8 979 </p><p>TECHNICIENS </p><p>NIVEAU G </p><p>En euros (1) 21 298 </p><p>EN POINTS bancaires (2) 9 952 </p><p></p><p>CADRES </p><p>NIVEAU H </p><p>En euros (1) 23 607 </p><p>EN POINTS bancaires (2) 11 031 </p><p></p><p>CADRES </p><p>NIVEAU I </p><p>En euros (1) 28 843 </p><p>EN POINTS bancaires (2) 13 478 </p><p></p><p>CADRES </p><p>NIVEAU J </p><p>En euros (1) 34 849 </p><p>EN POINTS bancaires (2) 16 285 </p><p></p><p>CADRES </p><p>NIVEAU K </p><p>En euros (1) 41 469 </p><p>EN POINTS bancaires (2) 19 378 </p><p></p><p>(1) 1 euro = 6,55957 F. </p><p>(2) Valeur du point bancaire = 2,14 Euros. </p><p></p><p>ANNEXE VII </p><p>TITRE V </p><p>Rémunération </p><p>Grille de salaires annuels minima de branche </p><p>à l'ancienneté au 1er novembre 2002 </p><p>(Pour une durée du travail correspondant à la durée légale du travail) </p><p></p><p>TECHNICIENS </p><p>NIVEAU A </p><p>A 5 ANS (en euros) (1) : 14 392 </p><p>A 10 ANS (en euros) (1) : 14 824 </p><p>A 15 ANS (en euros) (1) : 15 268 </p><p>A 20 ANS (en euros) (1) : 15 726 </p><p></p><p>TECHNICIENS </p><p>NIVEAU B </p><p>A 5 ANS (en euros) (1) : 15 108 </p><p>A 10 ANS (en euros) (1) : 15 562 </p><p>A 15 ANS (en euros) (1) : 16 028 </p><p>A 20 ANS (en euros) (1) : 16 509 </p><p></p><p>NIVEAU C </p><p>A 5 ANS (en euros) (1) : 15 755 </p><p>A 10 ANS (en euros) (1) : 16 228 </p><p>A 15 ANS (en euros) (1) : 16 715 </p><p></p><p>NIVEAU D </p><p>A 5 ANS (en euros) (1) : 17 232 </p><p>A 10 ANS (en euros) (1) : 17 750 </p><p>A 15 ANS (en euros) (1) : 18 281 </p><p></p><p>NIVEAU E </p><p>A 5 ANS (en euros) (1) : 18 052 </p><p>A 10 ANS (en euros) (1) : 18 595 </p><p>A 15 ANS (en euros) (1) : 19 153 </p><p></p><p>NIVEAU F </p><p>A 5 ANS (en euros) (1) : 19 694 </p><p>A 10 ANS (en euros) (1) : 20 285 </p><p>A 15 ANS (en euros) (1) : 20 894 </p><p>NIVEAU G </p><p>A 5 ANS (en euros) (1) : 21 828 </p><p>A 10 ANS (en euros) (1) : 22 484 </p><p>A 15 ANS (en euros) (1) : 23 158 </p><p></p><p>CADRES </p><p>NIVEAU H </p><p>A 5 ANS (en euros) (1) : 24 195 </p><p>A 10 ANS (en euros) (1) : 24 922 </p><p></p><p>CADRES </p><p>NIVEAU I </p><p>A 5 ANS (en euros) (1) : 29 561 </p><p>A 10 ANS (en euros) (1) : 30 447 </p><p></p><p>NIVEAU J </p><p>A 5 ANS (en euros) (1) : 35 716 </p><p>A 10 ANS (en euros) (1) : 36 787 </p><p></p><p>NIVEAU K </p><p>A 5 ANS (en euros) (1) : 42 501 </p><p>A 10 ANS (en euros) (1) : 43 776 </p><p>(1) 1 euro = 6,55957 F. </p><p><font color=\"#808080\" size=\"1\"><em>les deux grilles de salaires annuels sont étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance et de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée (Arrêté du 17 novembre 2004, art. 1er).</em></font></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Accord 2002-10-29 BO conventions collectives 2002-49 étendu par arrêté du 17 novembre 2004 JORF 11 décembre 2004",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L132-12 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L132-12",
+                  "articleId": "LEGIARTI000006646389",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 406080000000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1035849600000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

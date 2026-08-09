@@ -9089,12 +9089,90 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000034822367",
+              "cid": "KALIARTI000034822367",
+              "intOrdre": 524287,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000034822367",
+              "pathTitle": [],
+              "content": "<p align=\"left\">Conformément au  4e alinéa de l'article 22 de la convention collective du 18 janvier 2002, ainsi qu'à l'article 2 de l'avenant du 24 juin 2004, les partenaires sociaux, réunis en commission paritaire, ont décidé, après avoir négocié, de majorer au 1er janvier 2017 les salaires annuels minima fixés à l'annexe IV, réévalués précédemment et en dernier lieu par l' avenant du 4 décembre 2014 , comme suit :<br clear=\"none\" />\n– + 1,20 % pour les classes A, B et C   ;<br clear=\"none\" />\n– + 0,8 % pour les classes D, E, F, G et H.<br clear=\"none\" />\nAinsi, à compter du 1er janvier 2017, la nouvelle grille des salaires minima est la suivante :</p><p align=\"right\">(En euros.)</p><p align=\"left\"></p><center><table border=\"1\"><tbody><tr><th>Classe</th><th>Salaire annuel minimum</th></tr><tr><td align=\"center\">A</td><td align=\"center\">18   659</td></tr><tr><td align=\"center\">B</td><td align=\"center\">19   900</td></tr><tr><td align=\"center\">C</td><td align=\"center\">21   144</td></tr><tr><td align=\"center\">D</td><td align=\"center\">23   539</td></tr><tr><td align=\"center\">E</td><td align=\"center\">27   876</td></tr><tr><td align=\"center\">F</td><td align=\"center\">33   080</td></tr><tr><td align=\"center\">G</td><td align=\"center\">38   406</td></tr><tr><td align=\"center\">H</td><td align=\"center\">47   077</td></tr></tbody></table></center><p></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1",
+              "type": "AUTONOME",
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000035059221",
+                  "textTitle": "Arrêté du 12 juin 2017 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000035059224",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2017-06-30",
+                  "dateSignaTexte": "2017-06-12",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "KALITEXT000030555204",
+                  "textTitle": "Salaires au 1er janvier 2015",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "KALITEXT000030555204",
+                  "natureText": "Avenant",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 1430870400000,
+                  "dateDebut": 1420070400000
+                },
+                {
+                  "textCid": "KALITEXT000005664567",
+                  "textTitle": "Convention collective nationale du 18 janvier 2002 - art. 22",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "22",
+                  "articleId": "KALIARTI000005812508",
+                  "natureText": "Convention collective nationale ",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 1011312000000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1483228800000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

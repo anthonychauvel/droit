@@ -11672,13 +11672,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005712441",
+              "cid": "KALISCTA000005712441",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril et 1er octobre 1997",
+              "dateModif": null,
+              "dateDebut": "1997-03-18",
+              "dateFin": "1998-06-03",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005823564",
+                  "cid": "KALIARTI000005823564",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005712441/KALIARTI000005823564",
+                  "pathTitle": [
+                    "Salaires au 1er avril et 1er octobre 1997"
+                  ],
+                  "content": "Article 1er<p></p> Champ d'application<p></p><p></p>   Le présent accord couvre le champ d'application tel que défini à la convention collective (art. 1er), c'est-à-dire les entreprises de \" commerce de gros de bois et dérivés (négoce de bois d'oeuvre et produits dérivés) NAF 515 E à l'exclusion d'une part du commerce de gros de liège et produits en liège, et d'autre part des importateurs de bois du nord, de bois tropicaux ou américains dont l'activité principale d'approvisionnement résulte de l'achat à l'importation ou sur les marchés internationaux, lesdites opérations étant supérieures à 50 % des achats totaux en bois et dérivés du bois \".<p></p>Article 2<p></p> Salaires minimaux mensuels ouvriers<p></p> Pour 169 heures<p></p><p></p>   SALAIRE MENSUEL à compter du 1er avril 1997 (en francs)<p></p><p></p><TABLE><TR><TD>Niv</TD><TD>   Echelon   </TD><TD>Coef</TD><TD>Salaire</TD></TR><TR><TD>  I</TD><TD>     AB      </TD><TD>100 </TD><TD>  6 471</TD></TR><TR><TD> II</TD><TD>1er échelon C</TD><TD>105 </TD><TD>  6 529</TD></TR><TR><TD></TD><TD>2e échelon D </TD><TD>110 </TD><TD>  6 587</TD></TR><TR><TD></TD><TD>1er échelon E</TD><TD>115 </TD><TD>  6 730</TD></TR><TR><TD>III</TD><TD>2e échelon F </TD><TD>125 </TD><TD>  7 016</TD></TR><TR><TD></TD><TD>3e échelon G </TD><TD>135 </TD><TD>  7 301</TD></TR><TR><TD></TD><TD>1er échelon H</TD><TD>150 </TD><TD>  7 730</TD></TR><TR><TD>IV </TD><TD>2e échelon I </TD><TD>170 </TD><TD>  8 302</TD></TR><TR><TD></TD><TD>3e échelon J </TD><TD>200 </TD><TD>  9 159</TD></TR></TABLE><p></p><p></p>   SALAIRE MENSUEL à compter du 1er octobre 1997 (en francs)<p></p><p></p><TABLE><TR><TD>Niv</TD><TD>   Echelon   </TD><TD>Coef</TD><TD>Salaire</TD></TR><TR><TD>  I</TD><TD>     AB      </TD><TD>100 </TD><TD>  6 535</TD></TR><TR><TD> II</TD><TD>1er échelon C</TD><TD>105 </TD><TD>  6 580</TD></TR><TR><TD></TD><TD>2e échelon D </TD><TD>110 </TD><TD>  6 627</TD></TR><TR><TD></TD><TD>1er échelon E</TD><TD>115 </TD><TD>  6 771</TD></TR><TR><TD>III</TD><TD>2e échelon F </TD><TD>125 </TD><TD>  7 058</TD></TR><TR><TD></TD><TD>3e échelon G </TD><TD>135 </TD><TD>  7 345</TD></TR><TR><TD></TD><TD>1er échelon H</TD><TD>150 </TD><TD>  7 776</TD></TR><TR><TD>IV </TD><TD>2e échelon I </TD><TD>170 </TD><TD>  8 350</TD></TR><TR><TD></TD><TD>3e échelon J </TD><TD>200 </TD><TD>  9 212</TD></TR></TABLE><p></p>Article 3<p></p> Salaires minimaux mensuels<p></p> des personnels administratif, commercial et technique<p></p> (ACT pour 169 heures)<p></p><p></p><p></p>   SALAIRE MENSUEL à compter du 1er avril 1997 (en francs)<p></p><TABLE><TR><TD>Niv</TD><TD>   Echelon   </TD><TD>Coef</TD><TD>Salaire</TD></TR><TR><TD>act</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> 1 </TD><TD></TD><TD>100 </TD><TD>  6 471</TD></TR><TR><TD>act</TD><TD>1er échelon  </TD><TD>110 </TD><TD>  6 587</TD></TR><TR><TD> 2 </TD><TD>2e échelon   </TD><TD>120 </TD><TD>  6 873</TD></TR><TR><TD>act</TD><TD>1er échelon  </TD><TD>135 </TD><TD>  7 301</TD></TR><TR><TD> 3 </TD><TD>2e échelon   </TD><TD>150 </TD><TD>  7 730</TD></TR><TR><TD>act</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> 4 </TD><TD></TD><TD>170 </TD><TD>  8 302</TD></TR><TR><TD>act</TD><TD>1er échelon  </TD><TD>190 </TD><TD>  8 873</TD></TR><TR><TD> 5 </TD><TD>2e échelon   </TD><TD>210 </TD><TD>  9 445</TD></TR><TR><TD>act</TD><TD>1er échelon  </TD><TD>240 </TD><TD> 10 302</TD></TR><TR><TD> 6 </TD><TD>2e échelon   </TD><TD>270 </TD><TD> 11 160</TD></TR><TR><TD>act</TD><TD>1er échelon  </TD><TD>320 </TD><TD> 12 589</TD></TR><TR><TD> 7 </TD><TD>2e échelon   </TD><TD>370 </TD><TD> 14 018</TD></TR></TABLE><p></p><p></p>   SALAIRE MENSUEL à compter du 1er octobre 1997 (en francs)<p></p><TABLE><TR><TD>Niv</TD><TD>   Echelon   </TD><TD>Coef</TD><TD>Salaire</TD></TR><TR><TD>act</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> 1 </TD><TD></TD><TD>100 </TD><TD>  6 535</TD></TR><TR><TD>act</TD><TD>1er échelon  </TD><TD>110 </TD><TD>  6 627</TD></TR><TR><TD> 2 </TD><TD>2e échelon   </TD><TD>120 </TD><TD>  6 914</TD></TR><TR><TD>act</TD><TD>1er échelon  </TD><TD>135 </TD><TD>  7 345</TD></TR><TR><TD> 3 </TD><TD>2e échelon   </TD><TD>150 </TD><TD>  7 776</TD></TR><TR><TD>act</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> 4 </TD><TD></TD><TD>170 </TD><TD>  8 350</TD></TR><TR><TD>act</TD><TD>1er échelon  </TD><TD>190 </TD><TD>  8 925</TD></TR><TR><TD> 5 </TD><TD>2e échelon   </TD><TD>210 </TD><TD>  9 499</TD></TR><TR><TD>act</TD><TD>1er échelon  </TD><TD>240 </TD><TD> 10 361</TD></TR><TR><TD> 6 </TD><TD>2e échelon   </TD><TD>270 </TD><TD> 11 222</TD></TR><TR><TD>act</TD><TD>1er échelon  </TD><TD>320 </TD><TD> 12 658</TD></TR><TR><TD> 7 </TD><TD>2e échelon   </TD><TD>370 </TD><TD> 14 094</TD></TR></TABLE><p></p>Article 4<p></p> Salaire mensuel minimal des agents de maîtrise (AM)<p></p> (pour 169 heures)<p></p><p></p><p></p>   SALAIRE MENSUEL à compter du 1er avril 1997 (en francs)<p></p><TABLE><TR><TD>Niv</TD><TD>   Echelon   </TD><TD>Coef</TD><TD>Salaire</TD></TR><TR><TD>AM </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> 1 </TD><TD></TD><TD>190 </TD><TD>  8 873</TD></TR><TR><TD>AM </TD><TD>1er échelon  </TD><TD>230 </TD><TD> 10 016</TD></TR><TR><TD> 2 </TD><TD>2e échelon   </TD><TD>270 </TD><TD> 11 160</TD></TR><TR><TD>AM </TD><TD>1er échelon  </TD><TD>320 </TD><TD> 12 589</TD></TR><TR><TD> 3 </TD><TD>2e échelon   </TD><TD>370 </TD><TD> 14 018</TD></TR></TABLE><p></p><p></p>   SALAIRE MENSUEL à compter du 1er octobre 1997 (en francs)<p></p><TABLE><TR><TD>Niv</TD><TD>   Echelon   </TD><TD>Coef</TD><TD>Salaire</TD></TR><TR><TD>AM </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> 1 </TD><TD></TD><TD>190 </TD><TD>  8 925</TD></TR><TR><TD>AM </TD><TD>1er échelon  </TD><TD>230 </TD><TD> 10 074</TD></TR><TR><TD> 2 </TD><TD>2e échelon   </TD><TD>270 </TD><TD> 11 222</TD></TR><TR><TD>AM </TD><TD>1er échelon  </TD><TD>320 </TD><TD> 12 658</TD></TR><TR><TD> 3 </TD><TD>2e échelon   </TD><TD>370 </TD><TD> 14 094</TD></TR></TABLE><p></p>Article 5<p></p> Salaire mensuel minimal des cadres (C)<p></p><p></p><TABLE><TR><TD>Niv</TD><TD>Coef</TD><TD> Salaire  </TD><TD>  Salaire </TD></TR><TR><TD></TD><TD></TD><TD>au 1/4/97 </TD><TD>au 1/10/97</TD></TR><TR><TD>C1 </TD><TD>280 </TD><TD>  11 445  </TD><TD>  11 510  </TD></TR><TR><TD>C2 </TD><TD>360 </TD><TD>  13 732  </TD><TD>  13 807  </TD></TR><TR><TD>C3 </TD><TD>420 </TD><TD>  15 447  </TD><TD>  15 530  </TD></TR><TR><TD>C4 </TD><TD>460 </TD><TD>  16 590  </TD><TD>  16 679  </TD></TR><TR><TD>C5 </TD><TD>480 </TD><TD>  17 161  </TD><TD>  17 254  </TD></TR><TR><TD>C6 </TD><TD>510 </TD><TD>  18 019  </TD><TD>  18 115  </TD></TR><TR><TD>C7 </TD><TD>550 </TD><TD>  19 162  </TD><TD>  19 264  </TD></TR><TR><TD>C8 </TD><TD>600 </TD><TD>  20 591  </TD><TD>  20 700  </TD></TR></TABLE><p></p>Article 6<p></p> Valeur du point d'ancienneté<p></p><p></p>   A compter du 1er avril 1997, la valeur du point d'ancienneté est fixée à 31,50 F.<p></p>Article 7<p></p> Dépôt et extension<p></p><p></p>   Les parties signataires demandent l'extension du présent accord.<p></p><p></p>   La partie patronale aura la charge des formalités de dépôt conformément à la loi. Copie du récépissé de dépôt sera adressée aux organisations syndicales de salariés dans un délai de quinze jours à dater du récépissé.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 10 juillet 1997 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 10 juillet 1997 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 1 1997-03-18 BO conventions collectives 97-20, étendu par arrêté du 10 juillet 1997 JORF 22 juillet 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires minimaux et prime d'ancienneté",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 858643200000,
+                  "dateFin": 896832000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -11880,13 +11954,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005712444",
+              "cid": "KALISCTA000005712444",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Salaires au 1er décembre 2003",
+              "dateModif": null,
+              "dateDebut": "2003-12-01",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005823568",
+                  "cid": "KALIARTI000005823568",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005712444/KALIARTI000005823568",
+                  "pathTitle": [
+                    "Salaires au 1er décembre 2003"
+                  ],
+                  "content": "<p align=\"center\"><strong>Article 1er</strong></p><p align=\"center\"><em>Champ d'application</em></p><p>Le présent accord couvre le négoce de bois d'œuvre et produits dérivés ainsi défini :</p><p>Toute entreprise ou établissement de commerce de gros de bois et produits dérivés (NAF 51.5E), à l'exclusion, d'une part, du commerce de gros de liège et produits en liège et, d'autre part, des importateurs de bois du Nord, de bois tropicaux ou américains dont l'activité principale d'approvisionnement résulte de l'achat à l'importation ou sur les marchés internationaux, lesdites opérations étant supérieures à 50 % des achats totaux en bois et dérivés de bois.</p><p align=\"center\"><strong>Article 2</strong></p><p align=\"center\"><em>Minima mensuels</em></p><p align=\"left\">Base de 151, 67 heures.</p><p align=\"left\">Personnel Ouvrier</p><p><em>(En euros.)</em></p><p><table><tbody><tr><td>CLASSIFICATION </td><td>SALAIRE MENSUEL </td></tr><tr><td></td><td>à compter du </td></tr><tr><td></td><td>1er décembre 2003 </td></tr><tr><td></td><td></td></tr><tr><td>Niveau I </td><td></td></tr><tr><td>Echelon AB, coefficient 100 </td><td>1 122 </td></tr><tr><td>Niveau II </td><td></td></tr><tr><td>1er Echelon C, coefficient 100 </td><td>1 127 </td></tr><tr><td>2e Echelon D, coefficient 110 </td><td>1 133 </td></tr><tr><td>Niveau III </td><td></td></tr><tr><td>1er Echelon E, coefficient 115 </td><td>1 143 </td></tr><tr><td>2e Echelon F, coefficient 125 </td><td>1 184 </td></tr><tr><td>3e Echelon G, coefficient 135 </td><td>1 232 </td></tr><tr><td>Niveau IV </td><td></td></tr><tr><td>1er Echelon H, coefficient 150 </td><td>1 304 </td></tr><tr><td>2e Echelon I, coefficient 170 </td><td>1 400 </td></tr><tr><td>3e Echelon J, coefficient 200 </td><td>1 545 </td></tr></tbody></table></p><p>Personnel Administratif, commercial et technique</p><p><em>(En euros.)</em><table><tbody><tr><td></td><td>SALAIRE MENSUEL </td></tr><tr><td>CLASSIFICATION </td><td>à compter du </td></tr><tr><td></td><td>1er décembre 2003 </td></tr><tr><td></td><td></td></tr><tr><td>ACT I </td><td></td></tr><tr><td>Coefficient 100 </td><td>1 122 </td></tr><tr><td>ACT II </td><td></td></tr><tr><td>1er échelon, coefficient 110 </td><td>1 133 </td></tr><tr><td>2e échelon, coefficient 120 </td><td>1 159 </td></tr><tr><td>ACT III </td><td></td></tr><tr><td>1er échelon, coefficient 135 </td><td>1 232 </td></tr><tr><td>2e échelon, coefficient 150 </td><td>1 304 </td></tr><tr><td>ACT IV </td><td></td></tr><tr><td>Coefficient 170 </td><td>1 400 </td></tr><tr><td>ACT V </td><td></td></tr><tr><td>1er échelon, coefficient 190 </td><td>1 497 </td></tr><tr><td>2e échelon, coefficient 210 </td><td>1 593 </td></tr><tr><td>ACT VI </td><td></td></tr><tr><td>1er échelon, coefficient 240 </td><td>1 737 </td></tr><tr><td>2e échelon, coefficient 270 </td><td>1 882 </td></tr><tr><td>ACT VII </td><td></td></tr><tr><td>1er échelon, coefficient 320 </td><td>2 123 </td></tr><tr><td>2e échelon, coefficient 370 </td><td>2 364 </td></tr></tbody></table></p><p>Personnel Agent de maîtrise</p><p><em>(En euros.)</em></p><p><table><tbody><tr><td></td><td>SALAIRE MENSUEL </td></tr><tr><td>CLASSIFICATION </td><td>à compter du </td></tr><tr><td></td><td>1er décembre 2003 </td></tr><tr><td></td><td></td></tr><tr><td>AM 1 </td><td></td></tr><tr><td>Coefficient 190 </td><td>1 496 </td></tr><tr><td>AM 2 </td><td></td></tr><tr><td>1er échelon, coefficient 230 </td><td>1 689 </td></tr><tr><td>2e échelon, coefficient 270 </td><td>1 882 </td></tr><tr><td>AM 3 </td><td></td></tr><tr><td>1er échelon, coefficient 320 </td><td>2 123 </td></tr><tr><td>2e échelon, coefficient 370 </td><td>2 364 </td></tr></tbody></table></p><p>Personnel Cadre</p><p><em>(En euros.)</em><table><tbody><tr><td></td><td>SALAIRE MENSUEL </td></tr><tr><td>CLASSIFICATION </td><td>à compter du </td></tr><tr><td></td><td>1er décembre 2003 </td></tr><tr><td></td><td></td></tr><tr><td>C1, coefficient 280 </td><td>1 930 </td></tr><tr><td>C2, coefficient 360 </td><td>2 315 </td></tr><tr><td>C3, coefficient 420 </td><td>2 604 </td></tr><tr><td>C4, coefficient 460 </td><td>2 797 </td></tr><tr><td>C5, coefficient 480 </td><td>2 893 </td></tr><tr><td>C6, coefficient 510 </td><td>3 038 </td></tr><tr><td>C7, coefficient 550 </td><td>3 231 </td></tr><tr><td>C8, coefficient 600 </td><td>3 472 </td></tr></tbody></table></p><p align=\"center\"><strong>Article 3</strong></p><p align=\"center\"><em>Valeur du point d'ancienneté</em></p><p>A compter du 1er décembre 2003, la valeur du point d'ancienneté est fixée à 5,19 €.</p><p align=\"center\"><strong></strong></p><p align=\"center\"><strong>Article 4</strong></p><p align=\"center\"><em> Politique salariale</em></p><p>Les parties signataires s'engagent à :</p><p>- négocier au cours du premier semestre 2004 un accord portant sur les salaires minimaux conventionnels et la valeur du point d'ancienneté applicable au 1er janvier 2004 ;</p><p>- réexaminer l'évolution annuelle de la prime d'ancienneté au 1er janvier de chaque année ;</p><p>- à mettre en oeuvre, dans un délai de 2 ans à compter du présent avenant, les conditions d'une grille en salaire binôme permettant l'établissement d'un salaire minima conventionnel, applicable et différencié par coefficient.</p><p align=\"center\"><strong>Article 5</strong></p><p align=\"center\"><em>Extension</em></p><p>Les parties signataires demandent l'extension du présent accord.</p><p>Fait à Paris, le 1er décembre 2003.</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2003-12-01 BO conventions collectives 2004-2",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1070236800000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

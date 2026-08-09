@@ -7058,13 +7058,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005713004",
+              "cid": "KALISCTA000005713004",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires pour la période du 1er janvier 1997 au 31 décembre 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-04-24",
+              "dateFin": "1999-08-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005824953",
+                  "cid": "KALIARTI000005824953",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005713004/KALIARTI000005824953",
+                  "pathTitle": [
+                    "Salaires pour la période du 1er janvier 1997 au 31 décembre 1997."
+                  ],
+                  "content": "<p></p>   En application de l'article 4-2 de la convention collective nationale de l'avocat salarié, les salaires annuels bruts minima sont fixés, pour la période du 1er janvier 1997 au 31 décembre 1997 comme suit :<p></p><p></p>   Avocat stagiaire 1re année ... 114 450 F<p></p><p></p>   Avocat stagiaire 2e année ... 124 850 F<p></p><p></p>   Avocat inscrit au tableau ... 166 470 F<p></p><p></p>   Avocat titulaire d'une mention de spécialisation ou ayant 5 ans d'exercice de la profession ... 193 500 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 3 1997-04-24 BO conventions collectives 97-26, étendu par arrêté du 2 octobre 1997 JORF 14 octobre 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 861840000000,
+                  "dateFin": 933811200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7098,13 +7172,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005713006",
+              "cid": "KALISCTA000005713006",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril 1999.",
+              "dateModif": null,
+              "dateDebut": "1999-03-26",
+              "dateFin": "2001-04-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005824956",
+                  "cid": "KALIARTI000005824956",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005713006/KALIARTI000005824956",
+                  "pathTitle": [
+                    "Salaires au 1er avril 1999."
+                  ],
+                  "content": "<p></p>   En application de l'article 4.2 de la convention collective nationale de l'avocat salarié, les salaires annuels bruts minima sont fixés, comme suit, à compter du 1er avril 1999 :<p></p><p></p>   Avocat stagiaire (1re année) ...   116 740 F<p></p><p></p>   Avocat stagiaire (2e année) ...   127 350 F<p></p><p></p>   Avocat inscrit au tableau ...   169 800 F<p></p><p></p>   Avocat titulaire d'une mention de spécialisation ou ayant 5 ans d'exercice de la profession ...   197 370 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 4 1999-03-26 BO conventions collectives 99-24 étendu par arrêté du 28 juillet 1999 JORF 5 août 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 922406400000,
+                  "dateFin": 986601600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7118,13 +7266,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005713007",
+              "cid": "KALISCTA000005713007",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril 1999.",
+              "dateModif": null,
+              "dateDebut": "1999-03-26",
+              "dateFin": "2002-04-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005824957",
+                  "cid": "KALIARTI000005824957",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005713007/KALIARTI000005824957",
+                  "pathTitle": [
+                    "Salaires au 1er avril 1999."
+                  ],
+                  "content": "<p></p>   En application de l'article 4.2 de la convention collective nationale de l'avocat salarié, les salaires annuels bruts minima sont fixés, pour les avocats salariés du ressort du barreau de Paris, comme suit, à compter du 1er avril 1999 :<p></p><p></p>   Avocat stagiaire (1re année) ...   127 350 F<p></p><p></p>   Avocat stagiaire (2e année) ...   140 050 F<p></p><p></p>   Avocat inscrit au tableau ...   191 025 F<p></p><p></p>   Avocat titulaire d'une mention de spécialisation ou ayant 5 ans d'exercice de la profession ...   212 240 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 4 bis 1999-03-26 BO conventions collectives 99-24 étendu par arrêté du 28 juillet 1999 JORF 5 août 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (Barreau de Paris)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 922406400000,
+                  "dateFin": 1018224000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -36424,13 +36424,88 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005708058",
+              "cid": "KALISCTA000005708058",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires aux 1er janvier, 1er février et 1er septembre 1990.",
+              "dateModif": null,
+              "dateDebut": "1989-11-16",
+              "dateFin": "1990-11-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005811535",
+                  "cid": "KALIARTI000005811535",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005708058/KALIARTI000005811535",
+                  "pathTitle": [
+                    "Salaires aux 1er janvier, 1er février et 1er septembre 1990."
+                  ],
+                  "content": "PREAMBULE.<p></p><p></p>   Pour répondre à l'attente des salariés de l'industrie du pétrole et avec la volonté commune de revenir à un règlement conventionnel de la question salariale, les parties signataires ont conclu le présent accord.<p></p><p></p>   Les organisations de salariés signataires précisent, pour leur part, que cet accord, qui règle l'évolution des salaires pour 1990, ne saurait effacer les conséquences de l'absence d'accords salariaux de branche durant la période 1984-1989.<p></p><p></p>Article 1er<p></p><p></p>   Le salaire minimum hiérarchique mensuel au coefficient 100 est porté, pour un horaire de trente-neuf heures par semaine :<p></p><p></p>   - à 3.525,28 F à compter du 1er janvier 1990 ;<p></p><p></p>   - à 3.578,16 F à compter du 1er février 1990 ;<p></p><p></p>   - à 3.613,95 F à compter du 1er septembre 1990.<p></p><p></p>   La majoration conventionnelle est calculée, par point de différence entre 880 et le coefficient de l'intéressé :<p></p><p></p>   - sur la base de 0,8844 F, à compter du 1er janvier 1990 ;<p></p><p></p>   - sur la base de 0,8977 F, à compter du 1er février 1990 ;<p></p><p></p>   - sur la base de 0,9067 F, à compter du 1er septembre 1990.<p></p><p></p>Article 2<p></p><p></p>   Pour tous les salariés, la partie du salaire mensuel de base, toutes primes exclues, égale ou inférieure à 12 000 F, est majorée de 1,5 p. 100 au 1er février 1990 et de 1 p. 100 au 1er septembre 1990.<p></p><p></p>Article 3<p></p><p></p>   Lors des négociations prévues à l'article L. 132-27 du code du travail, les entreprises devront prévoir, pour l'année 1990, que le niveau global d'évolution des salaires de chaque catégorie de personnel sera au moins équivalent à celui prévu à l'article 2 du présent accord.<p></p><p></p>Article 4<p></p><p></p>   Les salariés à temps complet ayant six mois de présence continue dans l'entreprise percevront, avant le 31 décembre 1989, une prime d'un montant égal à 7 p. 100 de leur salaire mensuel de base majoré de la prime d'ancienneté. Toutefois, le montant de cette prime ne pourra être inférieur à 1.000 F.<p></p><p></p>Article 5<p></p><p></p>   A partir du 1er janvier 1990, la ressource minimale annuelle garantie, toutes primes et gratifications comprises, à l'exclusion des primes d'ancienneté et de quart, est fixée à 78.000 F pour tout salarié à temps complet ayant six mois de présence continue dans l'entreprise.<p></p><p></p>Article 6<p></p><p></p>   Lors de la réunion de l'automne 1990, les parties signataires s'engagent, d'une part, à examiner la politique salariale de la branche et les minima conventionnels en fonction des évolutions économiques et de la situation de la branche depuis la date du présent accord et, d'autre part, à fixer les évolutions pour 1991.<p></p><p></p>Article 7<p></p><p></p>   Conformément aux dispositions des articles L. 132-10 et R. 132-1 du code du travail, le texte du présent accord sera déposé auprès des services du ministère chargé du travail et au secrétariat-greffe du conseil des prud'hommes de Paris.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-27, L132-10, R132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 627177600000,
+                  "dateFin": 659145600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -36444,13 +36519,88 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005708059",
+              "cid": "KALISCTA000005708059",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires aux 1er février, 1er juin et 1er septembre 1991.",
+              "dateModif": null,
+              "dateDebut": "1990-11-21",
+              "dateFin": "1991-11-29",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005811536",
+                  "cid": "KALIARTI000005811536",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005708059/KALIARTI000005811536",
+                  "pathTitle": [
+                    "Salaires aux 1er février, 1er juin et 1er septembre 1991."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Au titre de l'article 6 de l'accord salarial du 16 novembre 1989 :<p></p><p></p>   - le salaire minimum hiérarchique mensuel au coefficient 100 est porté, pour un horaire de trente-neuf heures par semaine, à 3.660,93 F, à compter du 1er septembre 1990 (+ 1,3 p. 100) ;<p></p><p></p>   - la majoration conventionnelle est calculée, par point de différence entre 880 et le coefficient de l'intéressé, sur la base de 0,9185 F, à compter du 1er décembre 1990 (+ 1,3 p. 100) ;<p></p><p></p>   - les salariés à temps complet ayant six mois de présence continue dans l'entreprise percevront, avant le 31 janvier 1991, une prime d'un montant égal à 7 p. 100 de leur salaire mensuel de base majoré de la prime d'ancienneté. Toutefois, le montant de cette prime ne pourra être inférieur à 1.000 F.<p></p><p></p>Article 2<p></p><p></p>   Le salaire minimum hiérarchique mensuel au coefficient 100 est porté, pour un horaire de trente-neuf heures par semaine :<p></p><p></p>   - à 3.715,85 F, à compter du 1er février 1991 (+ 1,5 p. 100) ;<p></p><p></p>   - à 3.753,00 F, à compter du 1er juin 1991 (+ 1 p. 100) ;<p></p><p></p>   - à 3.801,79 F, à compter du 1er septembre 1991 (+ 1,3 p. 100) ;<p></p><p></p>   La majoration conventionnelle est calculée, par point de différence entre 880 et le coefficient de l'intéressé :<p></p><p></p>   - sur la base de 0,9323 F, à compter du 1er février 1991 (+ 1,5 p. 100) ;<p></p><p></p>   - sur la base de 0,9416 F, à compter du 1er juin 1991 (+ 1 p. 100) ;<p></p><p></p>   - sur la base de 0,9538 F, à compter du 1er septembre 1991 (+ 1,3 p. 100) ;<p></p><p></p>Article 3<p></p><p></p>   Pour tous les salariés, la partie du salaire mensuel de base, toutes primes exclues, égale ou inférieure à 12.700 F, est majorée de 1,5 p. 100 au 1er février 1991 et de 1,3 p. 100 au 1er septembre 1991.<p></p><p></p>Article 4<p></p><p></p>   Lors des négociations prévues à l'article L. 132-27 du code du travail, les entreprises devront prévoir, pour l'année 1991, que le niveau global d'évolution des salaires de chaque catégorie de personnel sera au moins équivalent à celui prévu à l'article 3 du présent accord.<p></p><p></p>Article 5<p></p><p></p>   A partir du 1er janvier 1991, la ressource minimale annuelle garantie, toutes primes et gratifications comprises, à l'exclusion des primes d'ancienneté et de quart, est fixée à 80.000 F pour tout salarié à temps complet ayant six mois de présence continue dans l'entreprise.<p></p><p></p>Article 6<p></p><p></p>   Lors de la réunion de l'automne 1991, les parties signataires s'engagent, d'une part, à examiner la politique salariale de la branche et les minima conventionnels en fonction des évolutions économiques et de la situation de la branche depuis la date du présent accord et, d'autre part, à fixer les évolutions pour 1992.<p></p><p></p>Article 7<p></p><p></p>   Conformément aux dispositions des articles L. 132-10 et R. 132-1 du code du travail, le texte du présent accord sera déposé auprès des services du ministère chargé du travail et au secrétariat-greffe du conseil des prud'hommes de Paris.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-27, L132-10, R132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 659145600000,
+                  "dateFin": 691372800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -36464,13 +36614,88 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005708061",
+              "cid": "KALISCTA000005708061",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er décembre 1991, et aux 1er février et 1er septembre 1992.",
+              "dateModif": null,
+              "dateDebut": "1991-11-29",
+              "dateFin": "1995-11-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005811537",
+                  "cid": "KALIARTI000005811537",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005708061/KALIARTI000005811537",
+                  "pathTitle": [
+                    "Salaires au 1er décembre 1991, et aux 1er février et 1er septembre 1992."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Le salaire minimum hiérarchique mensuel au coefficient 100 est porté, pour un horaire de trente-neuf heures par semaine :<p></p><p></p>   - à 3.858,82 F, à compter du 1er décembre 1991 (+ 1,5 p. 100) ;<p></p><p></p>   - à 3.928,28 F, à compter du 1er février 1992 (+ 1,8 p. 100) ;<p></p><p></p>   - à 3.967,56 F, à compter du 1er septembre 1992 (+ 1 p. 100) ;<p></p><p></p>   La majoration conventionnelle est calculée, par point de différence entre 880 et le coefficient de l'intéressé :<p></p><p></p>   - sur la base de 0,9681 F, à compter du 1er décembre 1991 (+ 1,5 p. 100) ;<p></p><p></p>   - sur la base de 0,9855 F, à compter du 1er février 1992 (+ 1,8 p. 100) ;<p></p><p></p>   - sur la base de 0,9954 F, à compter du 1er septembre 1992 (+ 1 p. 100) ;<p></p><p></p>Article 2<p></p><p></p>   Pour tous les salariés, la partie du salaire mensuel de base, toutes primes exclues, égale ou inférieure à 12.700 F, est majorée de 0,5 p. 100 au 1er décembre 1991.<p></p><p></p>   Toutefois, les entreprises qui ont pris, pour 1991, des mesures générales supérieures à celles prévues par l'accord du 21 novembre 1990 pourront les imputer sur la disposition ci-dessus.<p></p><p></p>Article 3<p></p><p></p>   Pour tous les salariés, la partie du salaire mensuel de base, toutes primes exclues, égale ou inférieure à 13.500 F, est majorée de 1,8 p. 100 au 1er février 1992 et de 1 p. 100 au 1er septembre 1992.<p></p><p></p>Article 4<p></p><p></p>   Lors des négociations prévues à l'article L. 132-27 du code du travail, les entreprises devront prévoir, pour l'année 1992, que le niveau global d'évolution des salaires de chaque catégorie de personnel sera au moins équivalent à celui prévu à l'article 3 du présent accord.<p></p><p></p>Article 5<p></p><p></p>   A partir du 1er janvier 1992, la ressource minimale annuelle garantie, toutes primes et gratifications comprises, à l'exclusion des primes d'ancienneté et de quart, est fixée à 83.000 F pour tout salarié à temps complet ayant six mois de présence continue dans l'entreprise.<p></p><p></p>Article 6<p></p><p></p>   Lors de la réunion de l'automne 1992, les parties signataires s'engagent, d'une part, à examiner la politique salariale de la branche et les minima conventionnels en fonction des évolutions économiques et de la situation de la branche depuis la date du présent accord et, d'autre part, à fixer les évolutions pour 1993.<p></p><p></p>Article 7<p></p><p></p>   Conformément aux dispositions des articles L. 132-10 et R. 132-1 du code du travail, le texte du présent accord sera déposé auprès des services du ministère chargé du travail et au secrétariat-greffe du conseil des prud'hommes de Paris.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-27, L132-10, R132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 691372800000,
+                  "dateFin": 816912000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

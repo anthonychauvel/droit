@@ -13692,13 +13692,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005691224",
+              "cid": "KALISCTA000005691224",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires, valeur du point et primes d'ancienneté à compter du 1er janvier 1996.",
+              "dateModif": null,
+              "dateDebut": "1995-12-06",
+              "dateFin": "1996-06-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005769262",
+                  "cid": "KALIARTI000005769262",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005691224/KALIARTI000005769262",
+                  "pathTitle": [
+                    "Salaires, valeur du point et primes d'ancienneté à compter du 1er janvier 1996."
+                  ],
+                  "content": "<p></p>   A compter du 1er janvier 1996, la valeur du point est fixée à 34,35 F. Toutefois, pour les coefficients 140, 145, 155, 170, 180 et 190, les minima ainsi obtenus seront majorés de :<p></p><p></p>   32,7 p. 100 pour le coefficient 140, soit 6.382 F ;<p></p><p></p>   29,5 p. 100 pour le coefficient 145, soit 6.450 F ;<p></p><p></p>   22,4 p. 100 pour le coefficient 155, soit 6.517 F ;<p></p><p></p>   13   p. 100 pour le coefficient 170, soit 6.599 F. ;<p></p><p></p>    9   p. 100 pour le coefficient 180, soit 6.739 F ;<p></p><p></p>    6   p. 100 pour le coefficient 190, soit 6.918 F.<p></p><p></p>   Ces salaires minima s'entendent pour une durée égale à 169 heures de travail.<p></p><p></p>   La valeur du point \" Cadre \" est fixée suivant le coefficient de raccordement ci-après : valeur du point \" Collaborateur \" x 4.<p></p><p></p>   La valeur du point \" Collaborateur \" étant de 34,35 F, la valeur du point \" Cadre \" est de 137,40 F.<p></p><p></p>   La prochaine réunion est fixée au 19 juin 1996, à 14 heures. Elle aura à son ordre du jour la fixation des minima au 1er juillet 1996.<p></p><p></p><p></p><p></p>   Compte tenu des coefficients de hiérarchisation appliqués aux indices 140 à 190, les minima professionnels applicables à compter du 1er janvier 1996 sont les suivants :<p></p><p></p><p></p>   SALAIRES MINIMAUX AU 1ER JANVIER 1996<p></p><p></p> CATEGORIE COLLABORATEURS<p></p><TABLE><TR><TD>Coef.</TD><TD> SALAIRES MINIMAUX</TD></TR><TR><TD></TD><TD> AU 01-01-96      </TD></TR><TR><TD>Niveau I                </TD></TR><TR><TD> 140 </TD><TD>     6.382 F      </TD></TR><TR><TD> 145 </TD><TD>     6.450 F      </TD></TR><TR><TD> 155 </TD><TD>     6.517 F      </TD></TR><TR><TD>Niveau II               </TD></TR><TR><TD> 170 </TD><TD>     6.599 F      </TD></TR><TR><TD> 180 </TD><TD>     6.739 F      </TD></TR><TR><TD> 190 </TD><TD>     6.918 F      </TD></TR><TR><TD>Niveau III              </TD></TR><TR><TD> 215 </TD><TD>     7.385 F      </TD></TR><TR><TD> 225 </TD><TD>     7.729 F      </TD></TR><TR><TD> 240 </TD><TD>     8.244 F      </TD></TR></TABLE><p></p><TABLE><TR><TD>Niveau IV               </TD></TR><TR><TD> 255 </TD><TD>     8.759 F      </TD></TR><TR><TD> 270 </TD><TD>     9.275 F      </TD></TR><TR><TD> 285 </TD><TD>     9.790 F      </TD></TR><TR><TD>Niveau V                </TD></TR><TR><TD> 305 </TD><TD>    10.477 F      </TD></TR><TR><TD> 335 </TD><TD>    11.507 F      </TD></TR><TR><TD> 365 </TD><TD>    12.538 F      </TD></TR></TABLE><p></p><p></p> CATEGORIE CADRES<p></p><TABLE><TR><TD>Coef.</TD><TD> SALAIRES MINIMAUX</TD></TR><TR><TD></TD><TD> AU 01-01-96      </TD></TR><TR><TD>Position I              </TD></TR><TR><TD>  60 </TD><TD>    8.244 F       </TD></TR><TR><TD>  68 </TD><TD>    9.343 F       </TD></TR><TR><TD>  76 </TD><TD>   10.442 F       </TD></TR><TR><TD> 100 </TD><TD>   13.740 F       </TD></TR><TR><TD> 108 </TD><TD>   14.839 F       </TD></TR><TR><TD> 114 </TD><TD>   15.664 F       </TD></TR><TR><TD>Position II             </TD></TR><TR><TD> 120 </TD><TD>   16.488 F       </TD></TR><TR><TD> 125 </TD><TD>   17.175 F       </TD></TR><TR><TD> 130 </TD><TD>   17.862 F       </TD></TR><TR><TD> 135 </TD><TD>   18.549 F       </TD></TR><TR><TD>Position III            </TD></TR><TR><TD> 135 </TD><TD>   18.549 F       </TD></TR><TR><TD> 180 </TD><TD>   24.732 F       </TD></TR><TR><TD> 240 </TD><TD>   32.976 F       </TD></TR></TABLE><p></p>PRIMES D'ANCIENNETE<p></p> (valables pour les salariés non cadres seulement : coefficient 140 à 365)<p></p><p></p><TABLE><TR><TD>Coef. </TD><TD>    ANCIENNETE     </TD></TR><TR><TD></TD><TD></TD></TR><TR><TD></TD><TD>3 années </TD><TD> 4 années</TD></TR><TR><TD> 140  </TD><TD> 191,46  </TD><TD>  255,28 </TD></TR><TR><TD> 145  </TD><TD> 193,50  </TD><TD>  258,00 </TD></TR><TR><TD> 155  </TD><TD> 195,51  </TD><TD>  260,68 </TD></TR><TR><TD> 170  </TD><TD> 197,97  </TD><TD>  263,96 </TD></TR><TR><TD> 180  </TD><TD> 202,17  </TD><TD>  269,56 </TD></TR><TR><TD> 190  </TD><TD> 207,54  </TD><TD>  276,72 </TD></TR><TR><TD> 215  </TD><TD> 221,55  </TD><TD>  295,40 </TD></TR><TR><TD> 225  </TD><TD> 231,87  </TD><TD>  309,16 </TD></TR><TR><TD> 240  </TD><TD> 247,32  </TD><TD>  329,76 </TD></TR><TR><TD> 255  </TD><TD> 262,77  </TD><TD>  350,36 </TD></TR><TR><TD> 270  </TD><TD> 278,25  </TD><TD>  371,00 </TD></TR><TR><TD> 285  </TD><TD> 293,70  </TD><TD>  391,60 </TD></TR><TR><TD> 305  </TD><TD> 314,31  </TD><TD>  419,08 </TD></TR><TR><TD> 335  </TD><TD> 345,21  </TD><TD>  460,28 </TD></TR><TR><TD> 365  </TD><TD> 376,14  </TD><TD>  501,52 </TD></TR></TABLE><p></p><p></p> :--------------------------:<p></p><TABLE><TR><TD>Coef. </TD><TD>    ANCIENNETE     </TD></TR><TR><TD></TD><TD></TD></TR><TR><TD></TD><TD>5 années </TD><TD> 6 années</TD></TR><TR><TD> 140  </TD><TD>  319,10 </TD><TD>  382,92 </TD></TR><TR><TD> 145  </TD><TD>  322,50 </TD><TD>  387,00 </TD></TR><TR><TD> 155  </TD><TD>  325,85 </TD><TD>  391,02 </TD></TR><TR><TD> 170  </TD><TD>  329,95 </TD><TD>  395,94 </TD></TR><TR><TD> 180  </TD><TD>  336,95 </TD><TD>  404,34 </TD></TR><TR><TD> 190  </TD><TD>  345,90 </TD><TD>  415,08 </TD></TR><TR><TD> 215  </TD><TD>  369,25 </TD><TD>  443,10 </TD></TR><TR><TD> 225  </TD><TD>  386,45 </TD><TD>  463,74 </TD></TR><TR><TD> 240  </TD><TD>  412,20 </TD><TD>  494,64 </TD></TR><TR><TD> 255  </TD><TD>  437,95 </TD><TD>  525,54 </TD></TR><TR><TD> 270  </TD><TD>  463,75 </TD><TD>  556,50 </TD></TR><TR><TD> 285  </TD><TD>  489,50 </TD><TD>  587,40 </TD></TR><TR><TD> 305  </TD><TD>  523,85 </TD><TD>  628,62 </TD></TR><TR><TD> 335  </TD><TD>  575,35 </TD><TD>  690,42 </TD></TR><TR><TD> 365  </TD><TD>  626,90 </TD><TD>  752,28 </TD></TR></TABLE><p></p><p></p> :--------------------------:<p></p><TABLE><TR><TD>Coef. </TD><TD>    ANCIENNETE     </TD></TR><TR><TD></TD><TD></TD></TR><TR><TD></TD><TD>7 années </TD><TD> 8 années</TD></TR><TR><TD> 140  </TD><TD>  446,74 </TD><TD>  510,56 </TD></TR><TR><TD> 145  </TD><TD>  451,50 </TD><TD>  516,00 </TD></TR><TR><TD> 155  </TD><TD>  456,19 </TD><TD>  521,36 </TD></TR><TR><TD> 170  </TD><TD>  461,93 </TD><TD>  527,92 </TD></TR><TR><TD> 180  </TD><TD>  471,73 </TD><TD>  539,12 </TD></TR><TR><TD> 190  </TD><TD>  484,26 </TD><TD>  553,44 </TD></TR><TR><TD> 215  </TD><TD>  516,95 </TD><TD>  590,80 </TD></TR><TR><TD> 225  </TD><TD>  541,03 </TD><TD>  618,32 </TD></TR><TR><TD> 240  </TD><TD>  577,08 </TD><TD>  659,52 </TD></TR><TR><TD> 255  </TD><TD>  613,13 </TD><TD>  700,72 </TD></TR><TR><TD> 270  </TD><TD>  649,25 </TD><TD>  742,00 </TD></TR><TR><TD> 285  </TD><TD>  685,30 </TD><TD>  783,20 </TD></TR><TR><TD> 305  </TD><TD>  733,39 </TD><TD>  838,16 </TD></TR><TR><TD> 335  </TD><TD>  805,49 </TD><TD>  920,56 </TD></TR><TR><TD> 365  </TD><TD>  877,66 </TD><TD>1.003,04 </TD></TR></TABLE><p></p><p></p> :---------------------------:<p></p><TABLE><TR><TD>Coef. </TD><TD>    ANCIENNETE      </TD></TR><TR><TD></TD><TD></TD></TR><TR><TD></TD><TD>9 années </TD><TD>10 années </TD></TR><TR><TD> 140  </TD><TD>  574,38 </TD><TD>   638,20 </TD></TR><TR><TD> 145  </TD><TD>  580,50 </TD><TD>   645,00 </TD></TR><TR><TD> 155  </TD><TD>  586,53 </TD><TD>   651,70 </TD></TR><TR><TD> 170  </TD><TD>  593,91 </TD><TD>   659,90 </TD></TR><TR><TD> 180  </TD><TD>  606,51 </TD><TD>   673,90 </TD></TR><TR><TD> 190  </TD><TD>  622,62 </TD><TD>   691,80 </TD></TR><TR><TD> 215  </TD><TD>  664,65 </TD><TD>   738,50 </TD></TR><TR><TD> 225  </TD><TD>  695,61 </TD><TD>   772,90 </TD></TR><TR><TD> 240  </TD><TD>  741,96 </TD><TD>   824,40 </TD></TR><TR><TD> 255  </TD><TD>  788,31 </TD><TD>   875,90 </TD></TR><TR><TD> 270  </TD><TD>  834,75 </TD><TD>   927,50 </TD></TR><TR><TD> 285  </TD><TD>  881,10 </TD><TD>   979,00 </TD></TR><TR><TD> 305  </TD><TD>  942,93 </TD><TD> 1.047,70 </TD></TR><TR><TD> 335  </TD><TD>1.035,63 </TD><TD> 1.150,70 </TD></TR><TR><TD> 365  </TD><TD>1.128,42 </TD><TD> 1.253,80 </TD></TR></TABLE><p></p><TABLE><TR><TD>Coef. </TD><TD>    ANCIENNETE     </TD></TR><TR><TD></TD><TD></TD></TR><TR><TD></TD><TD>11 années</TD><TD>12 années</TD></TR><TR><TD> 140  </TD><TD>  702,02 </TD><TD>  765,84 </TD></TR><TR><TD> 145  </TD><TD>  709,50 </TD><TD>  774,00 </TD></TR><TR><TD> 155  </TD><TD>  716,87 </TD><TD>  782,04 </TD></TR><TR><TD> 170  </TD><TD>  725,89 </TD><TD>  791,88 </TD></TR><TR><TD> 180  </TD><TD>  741,29 </TD><TD>  808,68 </TD></TR><TR><TD> 190  </TD><TD>  760,98 </TD><TD>  830,16 </TD></TR><TR><TD> 215  </TD><TD>  812,35 </TD><TD>  886,20 </TD></TR><TR><TD> 225  </TD><TD>  850,19 </TD><TD>  927,48 </TD></TR><TR><TD> 240  </TD><TD>  906,84 </TD><TD>  989,28 </TD></TR><TR><TD> 255  </TD><TD>  963,49 </TD><TD>1.051,08 </TD></TR><TR><TD> 270  </TD><TD>1.020,25 </TD><TD>1.113,00 </TD></TR><TR><TD> 285  </TD><TD>1.076,90 </TD><TD>1.174,80 </TD></TR><TR><TD> 305  </TD><TD>1.152,47 </TD><TD>1.257,24 </TD></TR><TR><TD> 335  </TD><TD>1.265,77 </TD><TD>1.380,84 </TD></TR><TR><TD> 365  </TD><TD>1.379,18 </TD><TD>1.504,56 </TD></TR></TABLE><p></p><TABLE><TR><TD>Coef. </TD><TD>    ANCIENNETE     </TD></TR><TR><TD></TD><TD></TD></TR><TR><TD></TD><TD>13 années</TD><TD>14 années</TD></TR><TR><TD> 140  </TD><TD>  829,66 </TD><TD>  893,48 </TD></TR><TR><TD> 145  </TD><TD>  838,50 </TD><TD>  903,00 </TD></TR><TR><TD> 155  </TD><TD>  847,21 </TD><TD>  912,38 </TD></TR><TR><TD> 170  </TD><TD>  857,87 </TD><TD>  923,86 </TD></TR><TR><TD> 180  </TD><TD>  876,07 </TD><TD>  943,46 </TD></TR><TR><TD> 190  </TD><TD>  899,34 </TD><TD>  968,52 </TD></TR><TR><TD> 215  </TD><TD>  960,05 </TD><TD>1.033,90 </TD></TR><TR><TD> 225  </TD><TD>1.004,77 </TD><TD>1.082,06 </TD></TR><TR><TD> 240  </TD><TD>1.071,72 </TD><TD>1.154,16 </TD></TR><TR><TD> 255  </TD><TD>1.138,67 </TD><TD>1.226,26 </TD></TR><TR><TD> 270  </TD><TD>1.205,75 </TD><TD>1.298,50 </TD></TR><TR><TD> 285  </TD><TD>1.272,70 </TD><TD>1.370,60 </TD></TR><TR><TD> 305  </TD><TD>1.362,01 </TD><TD>1.466,78 </TD></TR><TR><TD> 335  </TD><TD>1.495,91 </TD><TD>1.610,98 </TD></TR><TR><TD> 365  </TD><TD>1.629,94 </TD><TD>1.755,32 </TD></TR></TABLE><p></p><TABLE><TR><TD>Coef. </TD><TD> ANCIENNETE   </TD></TR><TR><TD></TD><TD></TD></TR><TR><TD></TD><TD> 15 années    </TD></TR><TR><TD></TD><TD> et au delà   </TD></TR><TR><TD> 140  </TD><TD>    957,30    </TD></TR><TR><TD> 145  </TD><TD>    967,50    </TD></TR><TR><TD> 155  </TD><TD>    977,55    </TD></TR><TR><TD> 170  </TD><TD>    989,85    </TD></TR><TR><TD> 180  </TD><TD>  1.010,85    </TD></TR><TR><TD> 190  </TD><TD>  1.037,70    </TD></TR><TR><TD> 215  </TD><TD>  1.107,75    </TD></TR><TR><TD> 225  </TD><TD>  1.159,35    </TD></TR><TR><TD> 240  </TD><TD>  1.236,60    </TD></TR><TR><TD> 255  </TD><TD>  1.313,85    </TD></TR><TR><TD> 270  </TD><TD>  1.391,25    </TD></TR><TR><TD> 285  </TD><TD>  1.468,50    </TD></TR><TR><TD> 305  </TD><TD>  1.571,55    </TD></TR><TR><TD> 335  </TD><TD>  1.726,05    </TD></TR><TR><TD> 365  </TD><TD>  1.880,70    </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 32 1995-12-06 BO conventions collectives 96-6, étendu par arrêté du 9 avril 1996 JORF 18 avril 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 818208000000,
+                  "dateFin": 835142400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13712,13 +13786,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005691225",
+              "cid": "KALISCTA000005691225",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires, valeur du point et primes d'ancienneté à compter du 1er juillet 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-06-19",
+              "dateFin": "1996-12-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005769263",
+                  "cid": "KALIARTI000005769263",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005691225/KALIARTI000005769263",
+                  "pathTitle": [
+                    "Salaires, valeur du point et primes d'ancienneté à compter du 1er juillet 1996."
+                  ],
+                  "content": "<p></p>   A compter du 1er juillet 1996, la valeur du point est fixée à 35,04 F. Toutefois, pour les coefficients 140, 145, 155, 170, 180 et 190, les minima ainsi obtenus seront majorés de :<p></p><p></p>   - 32,7 p. 100 pour le coefficient 140, soit 6 510 F ;<p></p><p></p>   - 29,5 p. 100 pour le coefficient 145, soit 6 580 F ;<p></p><p></p>   - 22,4 p. 100 pour le coefficient 155, soit 6 648 F ;<p></p><p></p>   - 13 p. 100 pour le coefficient 170, soit 6 731 F ;<p></p><p></p>   -  9 p. 100 pour le coefficient 180, soit 6 875 F ;<p></p><p></p>   -  6 p. 100 pour le coefficient 190, soit 7 057 F.<p></p><p></p>   Ces salaires minima s'entendent pour une durée égale à 169 heures de travail.<p></p><p></p>   La valeur du point \" Cadre \" est fixée suivant le coefficient de raccordement ci-dessous :<p></p><p></p>   Valeur du point \" Collaborateur \" x 4.<p></p><p></p>   La valeur du point \" Collaborateur \" étant de 35,04 F, la valeur du point \" Cadre \" est de 140,16 F.<p></p><p></p>   La prochaine réunion est fixée en décembre 1996. Elle aura à son ordre du jour la fixation des minima au 1er janvier 1997. Toutefois, si le coefficient 140 était inférieur au S.M.I.C. au 1er juillet 1996, les partenaires sociaux décident de se réunir à nouveau en septembre 1996.<p></p><p></p>ANNEXE II<p></p><p></p>   Compte tenu des coefficients de hiérarchisation appliquée aux indices 140 à 190, les minima professionnels applicables à compter du 1er juillet 1996 sont les suivants :<p></p><p></p><p></p>   (1) = CATEGORIE<p></p><p></p>   (2) = COEFFICIENT<p></p><p></p>   (3) = SALAIRE MINIMAL au 1er juillet 1996<p></p><p></p><TABLE><TR><TD>  Collaborateurs  </TD></TR><TR><TD> (1)</TD><TD>(2) </TD><TD>  (3)   </TD></TR><TR><TD></TD><TD>140 </TD><TD> 6.510 F</TD></TR><TR><TD>  I </TD><TD>145 </TD><TD> 6.580 F</TD></TR><TR><TD></TD><TD>155 </TD><TD> 6.648 F</TD></TR><TR><TD></TD><TD>170 </TD><TD> 6.731 F</TD></TR><TR><TD>  II</TD><TD>180 </TD><TD> 6.875 F</TD></TR><TR><TD></TD><TD>190 </TD><TD> 7.057 F</TD></TR><TR><TD></TD><TD>215 </TD><TD> 7.534 F</TD></TR><TR><TD>III </TD><TD>225 </TD><TD> 7.884 F</TD></TR><TR><TD></TD><TD>240 </TD><TD> 8.410 F</TD></TR><TR><TD></TD><TD>255 </TD><TD> 8.935 F</TD></TR><TR><TD>IV  </TD><TD>270 </TD><TD> 9.461 F</TD></TR><TR><TD></TD><TD>285 </TD><TD> 9.986 F</TD></TR><TR><TD></TD><TD>305 </TD><TD>10.687 F</TD></TR><TR><TD>V   </TD><TD>335 </TD><TD>11.738 F</TD></TR><TR><TD></TD><TD>365 </TD><TD>12.790 F</TD></TR></TABLE><p></p><p></p>   (1) = POSITION<p></p><p></p>   (2) = COEFFICIENT<p></p><p></p>   (3) = SALAIRE MINIMAL au 1er juillet 1996<p></p><p></p><TABLE><TR><TD>     Cadres       </TD></TR><TR><TD> (1)</TD><TD>(2) </TD><TD>  (3)   </TD></TR><TR><TD></TD><TD>  60</TD><TD>  8.410F</TD></TR><TR><TD> I  </TD><TD>  68</TD><TD>  9.531F</TD></TR><TR><TD></TD><TD>  76</TD><TD> 10.652F</TD></TR><TR><TD></TD><TD> 100</TD><TD> 14.016F</TD></TR><TR><TD></TD><TD> 108</TD><TD> 15.137F</TD></TR><TR><TD></TD><TD> 114</TD><TD> 15.978F</TD></TR><TR><TD> II </TD><TD> 120</TD><TD> 16.819F</TD></TR><TR><TD></TD><TD> 125</TD><TD> 17.520F</TD></TR><TR><TD></TD><TD> 130</TD><TD> 18.221F</TD></TR><TR><TD></TD><TD> 135</TD><TD> 18.922F</TD></TR><TR><TD></TD><TD> 135</TD><TD> 18.922F</TD></TR><TR><TD> III</TD><TD> 180</TD><TD> 25.229F</TD></TR><TR><TD></TD><TD> 240</TD><TD> 33.638F</TD></TR></TABLE><p></p>PRIMES D'ANCIENNETE<p></p> (valables pour les salariés non cadres seulement : coefficient 140 à 365)<p></p><TABLE><TR><TD>Coef</TD><TD>       Ancienneté        </TD></TR><TR><TD></TD><TD> 3 ans </TD><TD>  4 ans </TD><TD>  5 ans </TD></TR><TR><TD>140 </TD><TD>195,30F</TD><TD> 260,40F</TD><TD> 325,50F</TD></TR><TR><TD>145 </TD><TD>197,40F</TD><TD> 263,20F</TD><TD> 329,00F</TD></TR><TR><TD>155 </TD><TD>199,44F</TD><TD> 265,92F</TD><TD> 332,40F</TD></TR><TR><TD>170 </TD><TD>201,93F</TD><TD> 269,24F</TD><TD> 336,55F</TD></TR><TR><TD>180 </TD><TD>206,25F</TD><TD> 275,00F</TD><TD> 343,75F</TD></TR><TR><TD>190 </TD><TD>211,71F</TD><TD> 282,28F</TD><TD> 352,85F</TD></TR><TR><TD>215 </TD><TD>226,02F</TD><TD> 301,36F</TD><TD> 376,70F</TD></TR><TR><TD>225 </TD><TD>236,52F</TD><TD> 315,36F</TD><TD> 394,20F</TD></TR><TR><TD>Coef</TD><TD>       Ancienneté        </TD></TR><TR><TD></TD><TD> 6 ans  </TD><TD> 7 ans  </TD><TD> 8 ans </TD></TR><TR><TD>140 </TD><TD>390,60F </TD><TD>455,70F </TD><TD>520,80F</TD></TR><TR><TD>145 </TD><TD>394,80F </TD><TD>460,60F </TD><TD>526,40F</TD></TR><TR><TD>155 </TD><TD>398,88F </TD><TD>465,36F </TD><TD>531,84F</TD></TR><TR><TD>170 </TD><TD>403,86F </TD><TD>471,17F </TD><TD>538,48F</TD></TR><TR><TD>180 </TD><TD>412,50F </TD><TD>481,25F </TD><TD>550,00F</TD></TR><TR><TD>190 </TD><TD>423,42F </TD><TD>493,99F </TD><TD>564,56F</TD></TR><TR><TD>215 </TD><TD>452,04F </TD><TD>527,38F </TD><TD>602,72F</TD></TR><TR><TD>225 </TD><TD>473,04F </TD><TD>551,88F </TD><TD>630,72F</TD></TR></TABLE><p></p><TABLE><TR><TD>Coef</TD><TD>       Ancienneté        </TD></TR><TR><TD></TD><TD> 9 ans  </TD><TD>10 ans  </TD><TD>11 ans </TD></TR><TR><TD>140 </TD><TD>585,90F </TD><TD>651,00F </TD><TD>716,10F</TD></TR><TR><TD>145 </TD><TD>592,20F </TD><TD>658,00F </TD><TD>723,80F</TD></TR><TR><TD>155 </TD><TD>598,32F </TD><TD>664,80F </TD><TD>731,28F</TD></TR><TR><TD>170 </TD><TD>605,79F </TD><TD>673,10F </TD><TD>740,41F</TD></TR><TR><TD>180 </TD><TD>618,75F </TD><TD>687,50F </TD><TD>756,25F</TD></TR><TR><TD>190 </TD><TD>635,13F </TD><TD>705,70F </TD><TD>776,27F</TD></TR><TR><TD>215 </TD><TD>678,06F </TD><TD>753,40F </TD><TD>828,74F</TD></TR><TR><TD>225 </TD><TD>709,56F </TD><TD>788,40F </TD><TD>867,24F</TD></TR></TABLE><p></p><TABLE><TR><TD>Coef</TD><TD>       Ancienneté           </TD></TR><TR><TD></TD><TD>12 ans  </TD><TD>13 ans   </TD><TD> 14 ans  </TD></TR><TR><TD>140 </TD><TD>781,20F </TD><TD>  846,30F</TD><TD>  911,40F</TD></TR><TR><TD>145 </TD><TD>789,60F </TD><TD>  855,40F</TD><TD>  921,20F</TD></TR><TR><TD>155 </TD><TD>797,76F </TD><TD>  864,24F</TD><TD>  930,72F</TD></TR><TR><TD>170 </TD><TD>807,72F </TD><TD>  875,03F</TD><TD>  942,34F</TD></TR><TR><TD>180 </TD><TD>825,00F </TD><TD>  893,75F</TD><TD>  962,50F</TD></TR><TR><TD>190 </TD><TD>846,84F </TD><TD>  917,41F</TD><TD>  987,98F</TD></TR><TR><TD>215 </TD><TD>904,08F </TD><TD>  979,42F</TD><TD>1.054,76F</TD></TR><TR><TD>225 </TD><TD>946,08F </TD><TD>1.024,92F</TD><TD>1.103,76F</TD></TR></TABLE><p></p><TABLE><TR><TD>Coef</TD><TD>    Ancienneté    </TD></TR><TR><TD></TD><TD>15 ans et au delà </TD></TR><TR><TD>140 </TD><TD>   976,50F        </TD></TR><TR><TD>145 </TD><TD>   987,00F        </TD></TR><TR><TD>155 </TD><TD>   997,20F        </TD></TR><TR><TD>170 </TD><TD> 1.009,65F        </TD></TR><TR><TD>180 </TD><TD> 1.031,25F        </TD></TR><TR><TD>190 </TD><TD> 1.058,55F        </TD></TR><TR><TD>215 </TD><TD> 1.130,10F        </TD></TR><TR><TD>225 </TD><TD> 1.182,60F        </TD></TR></TABLE><p></p><TABLE><TR><TD>Coef</TD><TD>       Ancienneté        </TD></TR><TR><TD></TD><TD> 3 ans </TD><TD>  4 ans  </TD><TD> 5 ans </TD></TR><TR><TD>240 </TD><TD>252,30F</TD><TD> 336,40F </TD><TD>420,50F</TD></TR><TR><TD>255 </TD><TD>268,05F</TD><TD> 357,40F </TD><TD>446,75F</TD></TR><TR><TD>270 </TD><TD>283,83F</TD><TD> 378,44F </TD><TD>473,05F</TD></TR><TR><TD>285 </TD><TD>299,58F</TD><TD> 399,44F </TD><TD>499,30F</TD></TR><TR><TD>305 </TD><TD>320,61F</TD><TD> 427,48F </TD><TD>534,35F</TD></TR><TR><TD>335 </TD><TD>352,14F</TD><TD> 469,52F </TD><TD>586,90F</TD></TR><TR><TD>365 </TD><TD>383,70F</TD><TD> 511,60F </TD><TD>639,50F</TD></TR><TR><TD>Coef</TD><TD>       Ancienneté         </TD></TR><TR><TD></TD><TD> 6 ans </TD><TD>  7 ans </TD><TD> 8 ans   </TD></TR><TR><TD>240 </TD><TD>504,60F</TD><TD> 588,70F</TD><TD>  672,80F</TD></TR><TR><TD>255 </TD><TD>536,10F</TD><TD> 625,45F</TD><TD>  714,80F</TD></TR><TR><TD>270 </TD><TD>567,66F</TD><TD> 662,27F</TD><TD>  756,88F</TD></TR><TR><TD>285 </TD><TD>599,16F</TD><TD> 699,02F</TD><TD>  798,88F</TD></TR><TR><TD>305 </TD><TD>641,22F</TD><TD> 748,09F</TD><TD>  854,96F</TD></TR><TR><TD>335 </TD><TD>704,28F</TD><TD> 821,66F</TD><TD>  939,04F</TD></TR><TR><TD>365 </TD><TD>767,40F</TD><TD> 895,30F</TD><TD>1.023,20F</TD></TR></TABLE><p></p><TABLE><TR><TD>Coef</TD><TD>     Ancienneté    </TD></TR><TR><TD></TD><TD> 9 ans   </TD><TD> 10 ans  </TD></TR><TR><TD>240 </TD><TD>  756,90F</TD><TD>  841,00F</TD></TR><TR><TD>255 </TD><TD>  804,15F</TD><TD>  893,50F</TD></TR><TR><TD>270 </TD><TD>  851,49F</TD><TD>  946,10F</TD></TR><TR><TD>285 </TD><TD>  898,74F</TD><TD>  998,60F</TD></TR><TR><TD>305 </TD><TD>  961,83F</TD><TD>1.068,70F</TD></TR><TR><TD>335 </TD><TD>1.056,42F</TD><TD>1.173,80F</TD></TR><TR><TD>365 </TD><TD>1.151,10F</TD><TD>1.279,00F</TD></TR><TR><TD>Coef</TD><TD>     Ancienneté     </TD></TR><TR><TD></TD><TD>11 ans   </TD><TD> 12 ans   </TD></TR><TR><TD>240 </TD><TD>  925,10F</TD><TD> 1.009,20F</TD></TR><TR><TD>255 </TD><TD>  982,85F</TD><TD> 1.072,20F</TD></TR><TR><TD>270 </TD><TD>1.040,71F</TD><TD> 1.135,32F</TD></TR><TR><TD>285 </TD><TD>1.098,46F</TD><TD> 1.198,32F</TD></TR><TR><TD>305 </TD><TD>1.175,57F</TD><TD> 1.282,44F</TD></TR><TR><TD>335 </TD><TD>1.291,18F</TD><TD> 1.408,56F</TD></TR><TR><TD>365 </TD><TD>1.406,90F</TD><TD> 1.534,80F</TD></TR></TABLE><p></p><TABLE><TR><TD>Coef</TD><TD>     Ancienneté     </TD></TR><TR><TD></TD><TD>13 ans   </TD><TD> 14 ans   </TD></TR><TR><TD>240 </TD><TD>1.093,30F</TD><TD> 1.177,40F</TD></TR><TR><TD>255 </TD><TD>1.161,55F</TD><TD> 1.250,90F</TD></TR><TR><TD>270 </TD><TD>1.229,93F</TD><TD> 1.324,54F</TD></TR><TR><TD>285 </TD><TD>1.298,18F</TD><TD> 1.398,04F</TD></TR><TR><TD>305 </TD><TD>1.389,31F</TD><TD> 1.496,18F</TD></TR><TR><TD>335 </TD><TD>1.525,94F</TD><TD> 1.643,32F</TD></TR><TR><TD>365 </TD><TD>1.662,70F</TD><TD> 1.790,60F</TD></TR><TR><TD>Coef</TD><TD>     Ancienneté   </TD></TR><TR><TD></TD><TD>15 ans et au delà </TD></TR><TR><TD>240 </TD><TD>   1.261,50F      </TD></TR><TR><TD>255 </TD><TD>   1.340,25F      </TD></TR><TR><TD>270 </TD><TD>   1.419,15F      </TD></TR><TR><TD>285 </TD><TD>   1.497,90F      </TD></TR><TR><TD>305 </TD><TD>   1.603,05F      </TD></TR><TR><TD>335 </TD><TD>   1.760,70F      </TD></TR><TR><TD>365 </TD><TD>   1.918,50F      </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 33 1996-06-19 BO conventions collectives 96-31, étendu par arrêté du 22 octobre 1996 JORF 31 octobre 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (Annexe II)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 835142400000,
+                  "dateFin": 849657600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13732,13 +13880,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005691226",
+              "cid": "KALISCTA000005691226",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires, valeur du point et primes d'ancienneté à compter du 1er janvier 1997.",
+              "dateModif": null,
+              "dateDebut": "1996-12-04",
+              "dateFin": "1997-06-11",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005769264",
+                  "cid": "KALIARTI000005769264",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005691226/KALIARTI000005769264",
+                  "pathTitle": [
+                    "Salaires, valeur du point et primes d'ancienneté à compter du 1er janvier 1997."
+                  ],
+                  "content": "<p></p>   A compter du 1er janvier 1997, la valeur du point est fixée à 35,22 F. Toutefois, pour les coefficients 140, 145, 155, 170, 180 et 190, les minima ainsi obtenus seront majorés de :<p></p><p></p>   32,7 p. 100 pour le coefficient 140, soit 6 543 F ;<p></p><p></p>   29,5 p. 100 pour le coefficient 145, soit 6 613 F ;<p></p><p></p>   22,4 p. 100 pour le coefficient 155, soit 6 682 F ;<p></p><p></p>   13   p. 100 pour le coefficient 170, soit 6 766 F ;<p></p><p></p>    9   p. 100 pour le coefficient 180, soit 6 910 F ;<p></p><p></p>    6   p. 100 pour le coefficient 190, soit 7 093 F.<p></p><p></p>   Ces salaires minima s'entendent pour une durée égale à 169 heures de travail.<p></p><p></p>   La valeur du point \" Cadre \" est fixée suivant le coefficient de raccordement ci-dessous :<p></p><p></p>   Valeur du point \" Collaborateur \" x 4.<p></p><p></p>   La valeur du point \" Collaborateur \" étant de 35,22 F, la valeur du point \" Cadre \" est de 140,88 F.<p></p><p></p>   La prochaine réunion est fixée en juin 1997. Elle aura à son ordre du jour la fixation des minima au 1er juillet 1997.<p></p><p></p>   Compte tenu des coefficients de hiérarchisation appliqués aux indices 140 à 190, les minima professionnels applicables à compter du 1er janvier 1997 sont les suivants :<p></p><p></p>    (1) = CATEGORIE<p></p><p></p>   (2) = COEFFICIENT<p></p><p></p>   (3) = SALAIRE MINIMAL au 1er janvier 1997<p></p><TABLE><TR><TD>  Collaborateurs  </TD></TR><TR><TD> (1)</TD><TD>(2) </TD><TD>  (3)   </TD></TR><TR><TD></TD><TD>140 </TD><TD>  6 543F</TD></TR><TR><TD>  I </TD><TD>145 </TD><TD>  6 613F</TD></TR><TR><TD></TD><TD>155 </TD><TD>  6 682F</TD></TR><TR><TD></TD><TD>170 </TD><TD>  6 766F</TD></TR><TR><TD>  II</TD><TD>180 </TD><TD>  6 910F</TD></TR><TR><TD></TD><TD>190 </TD><TD>  7 093F</TD></TR><TR><TD></TD><TD>215 </TD><TD>  7 572F</TD></TR><TR><TD>III </TD><TD>225 </TD><TD>  7 925F</TD></TR><TR><TD></TD><TD>240 </TD><TD>  8 453F</TD></TR><TR><TD></TD><TD>255 </TD><TD>  8 981F</TD></TR><TR><TD>IV  </TD><TD>270 </TD><TD>  9 509F</TD></TR><TR><TD></TD><TD>285 </TD><TD> 10 038F</TD></TR><TR><TD></TD><TD>305 </TD><TD> 10 742F</TD></TR><TR><TD>V   </TD><TD>335 </TD><TD> 11 799F</TD></TR><TR><TD></TD><TD>365 </TD><TD> 12 855F</TD></TR></TABLE><p></p><p></p>   (1) = POSITION<p></p><p></p>   (2) = COEFFICIENT<p></p><p></p>   (3) = SALAIRE MINIMAL au 1er janvier 1997<p></p><TABLE><TR><TD>       Cadres   </TD></TR><TR><TD>(1)</TD><TD>(2) </TD><TD>  (3)  </TD></TR><TR><TD></TD><TD> 60 </TD><TD> 8 453F</TD></TR><TR><TD> I </TD><TD> 68 </TD><TD> 9 580F</TD></TR><TR><TD></TD><TD> 76 </TD><TD>10 707F</TD></TR><TR><TD></TD><TD>100 </TD><TD>14 088F</TD></TR><TR><TD></TD><TD>108 </TD><TD>15 215F</TD></TR><TR><TD></TD><TD>114 </TD><TD>16 060F</TD></TR><TR><TD>II </TD><TD>120 </TD><TD>16 907F</TD></TR><TR><TD></TD><TD>125 </TD><TD>17 610F</TD></TR><TR><TD></TD><TD>130 </TD><TD>18 314F</TD></TR><TR><TD></TD><TD>135 </TD><TD>19 019F</TD></TR><TR><TD></TD><TD>135 </TD><TD>19 019F</TD></TR><TR><TD>III</TD><TD>180 </TD><TD>25 358F</TD></TR><TR><TD></TD><TD>240 </TD><TD>33 811F</TD></TR></TABLE><p></p>Primes d'ancienneté valables pour les salariés non cadres seulement<p></p> Coefficients 140 à 365<p></p><TABLE><TR><TD> C </TD><TD>       Ancienneté          </TD></TR><TR><TD> E </TD><TD> 3 ans</TD><TD> 4 ans</TD><TD> 5 ans</TD><TD>6 ans </TD></TR><TR><TD> F </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>140</TD><TD>196,29</TD><TD>261,72</TD><TD>327,15</TD><TD>392,58</TD></TR><TR><TD>145</TD><TD>198,39</TD><TD>264,52</TD><TD>330,65</TD><TD>396,78</TD></TR><TR><TD>155</TD><TD>200,46</TD><TD>267,28</TD><TD>334,10</TD><TD>400,92</TD></TR><TR><TD>170</TD><TD>202,98</TD><TD>270,64</TD><TD>338,30</TD><TD>405,96</TD></TR><TR><TD>180</TD><TD>207,30</TD><TD>276,40</TD><TD>345,50</TD><TD>414,60</TD></TR><TR><TD>190</TD><TD>212,79</TD><TD>283,72</TD><TD>354,65</TD><TD>425,58</TD></TR><TR><TD>215</TD><TD>227,16</TD><TD>302,88</TD><TD>378,60</TD><TD>454,32</TD></TR><TR><TD>225</TD><TD>237,75</TD><TD>317,00</TD><TD>396,25</TD><TD>475,50</TD></TR><TR><TD>240</TD><TD>253,59</TD><TD>338,12</TD><TD>422,65</TD><TD>507,18</TD></TR><TR><TD>255</TD><TD>269,43</TD><TD>359,24</TD><TD>449,05</TD><TD>538,86</TD></TR><TR><TD>270</TD><TD>285,27</TD><TD>380,36</TD><TD>475,45</TD><TD>570,54</TD></TR><TR><TD>285</TD><TD>301,14</TD><TD>401,52</TD><TD>501,90</TD><TD>602,28</TD></TR><TR><TD>305</TD><TD>322,26</TD><TD>429,68</TD><TD>537,10</TD><TD>644,52</TD></TR><TR><TD>335</TD><TD>353,97</TD><TD>471,96</TD><TD>589,95</TD><TD>707,94</TD></TR><TR><TD>365</TD><TD>385,65</TD><TD>514,20</TD><TD>642,75</TD><TD>771,30</TD></TR></TABLE><p></p><TABLE><TR><TD> C </TD><TD>       Ancienneté             </TD></TR><TR><TD> E </TD><TD> 7 ans</TD><TD> 8 ans </TD><TD> 9 ans </TD><TD>10 ans </TD></TR><TR><TD> F </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>140</TD><TD>458,01</TD><TD> 523,44</TD><TD> 588,87</TD><TD> 654,30</TD></TR><TR><TD>145</TD><TD>462,91</TD><TD> 529,04</TD><TD> 595,17</TD><TD> 661,30</TD></TR><TR><TD>155</TD><TD>467,74</TD><TD> 534,56</TD><TD> 601,38</TD><TD> 668,20</TD></TR><TR><TD>170</TD><TD>473,62</TD><TD> 541,28</TD><TD> 608,94</TD><TD> 676,60</TD></TR><TR><TD>180</TD><TD>483,70</TD><TD> 552,80</TD><TD> 621,90</TD><TD> 691,00</TD></TR><TR><TD>190</TD><TD>496,51</TD><TD> 567,44</TD><TD> 638,37</TD><TD> 709,30</TD></TR><TR><TD>215</TD><TD>530,04</TD><TD> 605,76</TD><TD> 681,48</TD><TD> 757,20</TD></TR><TR><TD>225</TD><TD>554,75</TD><TD> 634,00</TD><TD> 713,25</TD><TD> 792,50</TD></TR><TR><TD>240</TD><TD>591,71</TD><TD> 676,24</TD><TD> 760,77</TD><TD> 845,30</TD></TR><TR><TD>255</TD><TD>628,67</TD><TD> 718,48</TD><TD> 808,29</TD><TD> 898,10</TD></TR><TR><TD>270</TD><TD>665,63</TD><TD> 760,72</TD><TD> 855,81</TD><TD> 950,90</TD></TR><TR><TD>285</TD><TD>702,66</TD><TD> 803,04</TD><TD> 903,42</TD><TD>1003,80</TD></TR><TR><TD>305</TD><TD>751,94</TD><TD> 859,36</TD><TD> 966,78</TD><TD>1074,20</TD></TR><TR><TD>335</TD><TD>825,93</TD><TD> 943,92</TD><TD>1061,91</TD><TD>1179,90</TD></TR><TR><TD>365</TD><TD>899,85</TD><TD>1028,40</TD><TD>1156,95</TD><TD>1285,50</TD></TR></TABLE><p></p><TABLE><TR><TD> C </TD><TD>       Ancienneté      </TD></TR><TR><TD> E </TD><TD>11 ans </TD><TD>12 ans </TD><TD>13 ans </TD></TR><TR><TD> F </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>140</TD><TD> 719,73</TD><TD> 785,16</TD><TD> 850,59</TD></TR><TR><TD>145</TD><TD> 727,43</TD><TD> 793,56</TD><TD> 859,69</TD></TR><TR><TD>155</TD><TD> 735,02</TD><TD> 801,84</TD><TD> 868,66</TD></TR><TR><TD>170</TD><TD> 744,26</TD><TD> 811,92</TD><TD> 879,58</TD></TR><TR><TD>180</TD><TD> 760,10</TD><TD> 829,20</TD><TD> 898,30</TD></TR><TR><TD>190</TD><TD> 780,23</TD><TD> 851,16</TD><TD> 922,09</TD></TR><TR><TD>215</TD><TD> 832,92</TD><TD> 908,62</TD><TD> 984,36</TD></TR><TR><TD>225</TD><TD> 871,75</TD><TD> 951,00</TD><TD>1030,25</TD></TR><TR><TD>240</TD><TD> 929,83</TD><TD>1014,36</TD><TD>1098,89</TD></TR><TR><TD>255</TD><TD> 987,91</TD><TD>1077,72</TD><TD>1167,53</TD></TR><TR><TD>270</TD><TD>1045,99</TD><TD>1141,08</TD><TD>1236,17</TD></TR><TR><TD>285</TD><TD>1104,18</TD><TD>1204,56</TD><TD>1304,94</TD></TR><TR><TD>305</TD><TD>1181,62</TD><TD>1289,04</TD><TD>1396,46</TD></TR><TR><TD>335</TD><TD>1297,89</TD><TD>1415,88</TD><TD>1533,87</TD></TR><TR><TD>365</TD><TD>1414,05</TD><TD>1542,60</TD><TD>1671,15</TD></TR></TABLE><p></p><TABLE><TR><TD> C </TD><TD>       Ancienneté      </TD></TR><TR><TD> E </TD><TD>14 ans  </TD><TD>15 ans et au  </TD></TR><TR><TD> F </TD><TD></TD><TD>   delà       </TD></TR><TR><TD>140</TD><TD> 916,02 </TD><TD>  981,45      </TD></TR><TR><TD>145</TD><TD> 925,82 </TD><TD>  991,95      </TD></TR><TR><TD>155</TD><TD> 935,48 </TD><TD>  1002,30     </TD></TR><TR><TD>170</TD><TD> 947,24 </TD><TD>  1014,90     </TD></TR><TR><TD>180</TD><TD> 967,40 </TD><TD>  1036,50     </TD></TR><TR><TD>190</TD><TD> 993,02 </TD><TD>  1063,95     </TD></TR><TR><TD>215</TD><TD>1060,08 </TD><TD>  1135,80     </TD></TR><TR><TD>225</TD><TD>1109,50 </TD><TD>  1188,75     </TD></TR><TR><TD>240</TD><TD>1183,42 </TD><TD>  1267,95     </TD></TR><TR><TD>255</TD><TD>1257,34 </TD><TD>  1347,15     </TD></TR><TR><TD>270</TD><TD>1331,26 </TD><TD>  1426,35     </TD></TR><TR><TD>285</TD><TD>1405,32 </TD><TD>  1505,70     </TD></TR><TR><TD>305</TD><TD>1503,88 </TD><TD>  1611,30     </TD></TR><TR><TD>335</TD><TD>1651,86 </TD><TD>  1769,85     </TD></TR><TR><TD>365</TD><TD>1799,70 </TD><TD>  1928,25     </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 34 1996-12-04 BO conventions collectives 97-3, étendu par arrêté du 25 février 1997 JORF 6 mars 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (Annexe II)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 849657600000,
+                  "dateFin": 865987200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
