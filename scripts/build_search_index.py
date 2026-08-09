@@ -416,31 +416,46 @@ def main():
     jorf_index = build_jorf_index(args.jorf_dir) if os.path.exists(args.jorf_dir) else []
     acco_index = build_acco_index(args.acco_dir) if os.path.exists(args.acco_dir) else []
 
-    full_index = {"ccn": ccn_index, "code": code_index, "code_secu": code_secu_index,
-                  "juris": juris_index, "jorf": jorf_index, "acco": acco_index}
+    parts = {"ccn": ccn_index, "code": code_index, "code_secu": code_secu_index,
+             "juris": juris_index, "jorf": jorf_index, "acco": acco_index}
 
-    os.makedirs(os.path.dirname(args.out), exist_ok=True)
-    with open(args.out, "w", encoding="utf-8") as f:
-        json.dump(full_index, f, ensure_ascii=False, separators=(",", ":"))
+    # DÉCOUPAGE PAR SOURCE : au lieu d'un unique search-index.json (qui grossit
+    # sans fin avec l'ACCO/JORF et finira par dépasser la limite GitHub de
+    # 100 Mo par fichier), on écrit UN FICHIER PAR SOURCE :
+    #   output/search-index-acco.json, output/search-index-jorf.json, etc.
+    # Chaque fichier contient le tableau d'entrées de cette source. Le front les
+    # recharge en parallèle (avec repli automatique sur l'ancien monolithique le
+    # temps de la transition). L'ancien search-index.json n'est plus régénéré
+    # ici : il peut être supprimé (git rm) une fois le découpé vérifié.
+    out_dir = os.path.dirname(args.out) or "."
+    os.makedirs(out_dir, exist_ok=True)
+    base, ext = os.path.splitext(args.out)   # ex: "output/search-index", ".json"
 
     n_hits = sum(len(c["hits"]) for c in ccn_index)
-    size_kb = os.path.getsize(args.out) / 1024
-    print(f"Index construit: {len(ccn_index)} CCN ({n_hits} sections indexees), "
-          f"{len(code_index)} articles travail, {len(code_secu_index)} articles secu, "
-          f"{len(juris_index)} decisions, {len(jorf_index)} textes JORF, "
-          f"{len(acco_index)} accords d'entreprise.")
-    print(f"Taille: {size_kb:.0f} Ko -> {args.out}")
+    sizes_mo = {}
+    for src, rows in parts.items():
+        path = f"{base}-{src}{ext}"          # ex: output/search-index-acco.json
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(rows, f, ensure_ascii=False, separators=(",", ":"))
+        sizes_mo[src] = os.path.getsize(path) / 1024 / 1024
 
-    # GARDE-FOU : GitHub refuse tout fichier > 100 Mo. Alerter bien avant, pour
-    # réduire les snippets (ou basculer en index compressé) avant que les runs
-    # ne puissent plus pousser. L'index grossit avec chaque nouvel accord.
-    size_mo = size_kb / 1024
-    if size_mo > 90:
-        print(f"::warning::search-index.json fait {size_mo:.0f} Mo, proche de la "
-              f"limite GitHub de 100 Mo. Réduire SNIPPET_LEN_LONG ou compresser.")
-    if size_mo > 99:
-        print(f"::error::search-index.json fait {size_mo:.0f} Mo, DÉPASSE bientôt "
-              f"la limite GitHub de 100 Mo. Le push VA échouer. Réduire d'urgence.")
+    print(f"Index construit (decoupe par source): {len(ccn_index)} CCN "
+          f"({n_hits} sections indexees), {len(code_index)} articles travail, "
+          f"{len(code_secu_index)} articles secu, {len(juris_index)} decisions, "
+          f"{len(jorf_index)} textes JORF, {len(acco_index)} accords d'entreprise.")
+    for src, mo in sorted(sizes_mo.items(), key=lambda kv: -kv[1]):
+        print(f"  {base}-{src}{ext} : {mo:.1f} Mo")
+
+    # GARDE-FOU : alerter si le PLUS GROS fichier decoupe approche 100 Mo
+    # (bien plus loin qu'avant, puisque le monolithe est eclate par source).
+    biggest = max(sizes_mo.values()) if sizes_mo else 0
+    if biggest > 90:
+        gros = max(sizes_mo, key=sizes_mo.get)
+        print(f"::warning::le plus gros index decoupe (search-index-{gros}{ext}) fait "
+              f"{biggest:.0f} Mo, proche de la limite GitHub de 100 Mo.")
+    if biggest > 99:
+        gros = max(sizes_mo, key=sizes_mo.get)
+        print(f"::error::search-index-{gros}{ext} depasse bientot 100 Mo. Le push VA echouer.")
 
 
 if __name__ == "__main__":
