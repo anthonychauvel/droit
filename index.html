@@ -403,6 +403,9 @@
   .assist-title{ font-weight:700; font-size:17px; color:var(--violet-strong); }
   .assist-sub{ font-size:13.5px; color:#5b6b82; margin-top:4px; line-height:1.5; }
   .assist-steps{ margin-top:12px; display:flex; flex-direction:column; gap:12px; }
+  /* Correctif : l'attribut hidden doit TOUJOURS masquer, même quand une classe
+     impose display:flex (sinon le bouton "replier" ne referme pas le déroulé). */
+  .assist [hidden]{ display:none; }
   .assist-step-label{ font-size:12px; font-weight:600; color:var(--gold-strong);
     text-transform:uppercase; letter-spacing:.03em; margin-bottom:7px; }
   .assist-chips{ display:flex; flex-wrap:wrap; gap:8px; }
