@@ -288,6 +288,16 @@
      décale et le scroll fantôme sur mobile). */
   body.panel-lock{ overflow:hidden; position:fixed; width:100%; }
   .panel.open{ transform:translateX(0); }
+  /* Bouton "retour en haut" : flottant en bas à droite, apparaît au défilement. */
+  #to-top{ position:fixed; z-index:39;
+    right:calc(16px + env(safe-area-inset-right)); bottom:calc(16px + env(safe-area-inset-bottom));
+    width:46px; height:46px; border-radius:50%; border:1px solid var(--line); background:var(--card);
+    color:var(--violet-strong); font-size:20px; line-height:1; cursor:pointer;
+    box-shadow:0 6px 20px -6px rgba(20,22,45,.35);
+    opacity:0; transform:translateY(12px); pointer-events:none; transition:opacity .2s, transform .2s; }
+  #to-top.show{ opacity:1; transform:translateY(0); pointer-events:auto; }
+  #to-top:hover{ background:var(--violet-soft); }
+  body.panel-lock #to-top{ opacity:0; pointer-events:none; }  /* masqué quand une fiche est ouverte */
   .panel-top{ display:flex; align-items:flex-start; gap:12px; padding:22px 24px 16px; border-bottom:1px solid var(--line); padding-top:calc(22px + env(safe-area-inset-top)); }
   .panel-top .meta{ min-width:0; flex:1; }
   .detail-num{ font-size:12.5px; color:var(--violet-strong); font-weight:600; }
@@ -618,6 +628,8 @@
   </div>
   <div class="panel-body" id="d-body"></div>
 </div>
+
+<button id="to-top" aria-label="Retour en haut" title="Retour en haut">↑</button>
 
 <script>
 'use strict';
@@ -3071,10 +3083,48 @@ function scrollToSection(target){
   if(found){ try{ found.scrollIntoView({block:'center',behavior:'smooth'}); }catch(e){ found.scrollIntoView(); }
     found.classList.add('sec-flash'); setTimeout(function(){ found.classList.remove('sec-flash'); }, 2600); }
 }
-function openPanel(){ document.getElementById('scrim').classList.add('open'); document.getElementById('panel').classList.add('open'); document.body.classList.add('panel-lock'); }
-function closeDetail(){ document.getElementById('scrim').classList.remove('open'); document.getElementById('panel').classList.remove('open'); document.body.classList.remove('panel-lock'); }
+function openPanel(){
+  // Verrouille le scroll de la page dessous SANS perdre la position : on
+  // mémorise la hauteur de défilement et on décale le body (qui passe en
+  // position:fixed via .panel-lock) d'autant, pour la restaurer à l'identique
+  // à la fermeture. Le if évite d'écraser la position quand on ouvre un 2e
+  // article depuis un lien interne au panneau (le body est alors déjà figé,
+  // donc window.scrollY vaudrait 0).
+  if(!document.body.classList.contains('panel-lock')){
+    var y = window.scrollY || window.pageYOffset || 0;
+    document.body.dataset.scrollY = String(y);
+    document.body.style.top = (-y) + 'px';
+    document.body.classList.add('panel-lock');
+  }
+  document.getElementById('scrim').classList.add('open');
+  document.getElementById('panel').classList.add('open');
+}
+function closeDetail(){
+  document.getElementById('scrim').classList.remove('open');
+  document.getElementById('panel').classList.remove('open');
+  document.body.classList.remove('panel-lock');
+  // Restaure la position de défilement d'avant l'ouverture -> on reste à la
+  // même hauteur dans la liste de résultats pour continuer à cliquer.
+  var y = parseInt(document.body.dataset.scrollY || '0', 10);
+  document.body.style.top = '';
+  window.scrollTo(0, y);
+}
 document.getElementById('scrim').addEventListener('click', closeDetail);
 document.getElementById('d-close').addEventListener('click', closeDetail);
+
+// Bouton "retour en haut" : visible seulement après avoir défilé, ramène en
+// haut de la page en douceur (utile après avoir parcouru une longue liste).
+(function(){
+  var btn = document.getElementById('to-top');
+  if(!btn) return;
+  function onScroll(){
+    if((window.scrollY || window.pageYOffset || 0) > 400) btn.classList.add('show');
+    else btn.classList.remove('show');
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  btn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  onScroll();
+})();
 // Clic sur une pastille de thème (inventaire en haut d'une CCN) : scroller vers
 // la première section de ce thème. On retrouve son titre via les hits taggés.
 document.getElementById('d-body').addEventListener('click', function(e){
