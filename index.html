@@ -327,7 +327,7 @@
     body{ flex-direction:column; }
     aside{ width:100%; height:auto; position:relative; flex-direction:row; align-items:center; flex-wrap:wrap; padding:12px 14px; gap:6px; padding-top:calc(12px + env(safe-area-inset-top)); }
     .brand{ padding:0; margin-right:6px; } .brand-sub{ display:none; } .tricolore{ display:none; }
-    nav{ flex-direction:row; flex-wrap:wrap; gap:4px; }
+    nav{ flex-direction:row; flex-wrap:wrap; gap:4px; align-items:flex-start; }
     .nav-item{ width:auto; padding:8px 11px; font-size:13px; } .nav-item .nc{ display:none; }
     .side-foot{ display:none; }
     main{ padding:22px 16px 70px; }
@@ -416,6 +416,20 @@
   .assist-chip.on{ background:var(--gold-metal); border-color:var(--gold-strong); color:#3a2e07;
     box-shadow:0 2px 8px -2px rgba(190,154,46,.5); }
   .assist-situations{ margin-bottom:6px; }
+  /* Choix de la catégorie du découvreur (situation OU thème) */
+  .assist-modes{ display:flex; flex-direction:column; gap:10px; margin-top:12px; }
+  .assist-mode-btn{ display:flex; flex-direction:column; align-items:flex-start; gap:3px;
+    width:100%; text-align:left; padding:14px 16px; border:1px solid var(--gold);
+    background:#fff; border-radius:12px; cursor:pointer; font-family:inherit;
+    transition:border-color .12s, background .12s, box-shadow .12s; }
+  .assist-mode-btn:hover{ border-color:var(--gold-strong); background:var(--violet-soft);
+    box-shadow:0 6px 18px -10px rgba(20,22,45,.4); }
+  .assist-mode-btn .amb-t{ font-size:15px; font-weight:700; color:var(--ink); }
+  .assist-mode-btn .amb-s{ font-size:12.5px; color:var(--ink-soft); }
+  .assist-back-mode{ align-self:flex-start; background:none; border:none; cursor:pointer;
+    font-family:inherit; font-size:12.5px; font-weight:600; color:var(--violet-strong);
+    padding:2px 0 8px; }
+  .assist-back-mode:hover{ color:var(--gold-strong); }
   .situ-groupe-label{ font-size:11px; font-weight:700; color:var(--ink-soft); text-transform:uppercase;
     letter-spacing:.05em; margin:14px 0 7px; opacity:.75; }
   .situ-groupe-label:first-of-type{ margin-top:4px; }
@@ -2010,6 +2024,7 @@ var ASSIST_SITUATIONS = {
    peut cliquer un texte à tout moment.
    ==========================================================================*/
 var ASSIST_PATH = [];   // chemin courant : ['paie','primes','treizieme']
+var ASSIST_MODE = null; // null = choix (situation/thème), 'situation', ou 'theme'
 var ASSIST_CCN = null;  // IDCC de la convention choisie (filtre le bloc CCN)
 var FILTRE_VIGUEUR = false;  // masquer les textes abrogés quand true
 var ASSIST_FOCUS = null;  // q de la question-feuille : resserre sections/articles sur ce seul point
@@ -2041,15 +2056,34 @@ function renderAssist(){
   var cont = document.getElementById('assist-steps');
   if(!cont) return;
   var labelsNiveaux = ['Votre situation', 'Plus précisément', 'Votre question'];
-  // OPTIMISATION : on construit tout le HTML en CHAÎNE puis on l'injecte en UNE
-  // fois (innerHTML). Évite des dizaines de createElement/appendChild successifs
-  // (chacun pouvant déclencher un reflow) → plus de latence à l'ouverture des
-  // filtres sur mobile. Les clics sont gérés par DÉLÉGATION (un seul écouteur,
-  // posé une fois plus bas), via des attributs data-*.
+  // Construction du HTML en une chaîne puis injection unique (perf). Clics gérés
+  // par DÉLÉGATION (un seul écouteur, plus bas) via des attributs data-*.
   var html = '';
 
-  // SITUATIONS : raccourcis multi-thèmes, affichés seulement au départ.
-  if(ASSIST_PATH.length===0 && typeof ASSIST_SITUATIONS!=='undefined'){
+  // ÉTAPE 0 — CHOIX DE LA CATÉGORIE. Tant qu'aucune n'est choisie, on n'affiche
+  // QUE ce choix (situation OU thème), jamais les deux listes à la fois : on
+  // s'engage sur un seul chemin, puis on va à sa convention.
+  if(!ASSIST_MODE){
+    html += '<div class="assist-modes">'
+      + '<button class="assist-mode-btn" type="button" data-mode="situation">'
+      +   '<span class="amb-t">Je vis une situation</span>'
+      +   '<span class="amb-s">Licenciement, congés, litige, paternité…</span>'
+      + '</button>'
+      + '<button class="assist-mode-btn" type="button" data-mode="theme">'
+      +   '<span class="amb-t">Explorer par thème</span>'
+      +   '<span class="amb-s">Ma paie, mon contrat, temps de travail…</span>'
+      + '</button>'
+      + '</div>';
+    cont.innerHTML = html;
+    var _r0 = document.getElementById('assist-reset'); if(_r0) _r0.hidden = true;
+    return;
+  }
+
+  // Retour au choix situation / thème.
+  html += '<button class="assist-back-mode" type="button" data-back-mode="1">\u2039 Situation ou thème</button>';
+
+  // MODE « SITUATION » — uniquement les raccourcis de situation.
+  if(ASSIST_MODE === 'situation' && typeof ASSIST_SITUATIONS!=='undefined'){
     var groupes = [], parGroupe = {};
     Object.keys(ASSIST_SITUATIONS).forEach(function(cle){
       var g = ASSIST_SITUATIONS[cle].groupe || 'Autres';
@@ -2066,27 +2100,31 @@ function renderAssist(){
       html += '</div>';
     });
     html += '</div>';
-    html += '<div class="assist-sep">ou explorez par thème</div>';
   }
 
-  // Niveaux de l'arbre (parcours par thème).
-  var noeud = {enfants: ASSIST_ARBRE};
-  for(var prof=0; prof<=ASSIST_PATH.length; prof++){
-    var enfants = noeud.enfants;
-    if(!enfants) break;
-    var choixFait = ASSIST_PATH[prof];
-    html += '<div><div class="assist-step-label">'+escapeHtml(labelsNiveaux[prof] || 'Affiner')+'</div><div class="assist-chips">';
-    Object.keys(enfants).forEach(function(cle){
-      html += '<button class="assist-chip'+(choixFait===cle?' on':'')+'" data-prof="'+prof+'" data-cle="'+escAttr(cle)+'">'+escapeHtml(enfants[cle].label)+'</button>';
-    });
-    html += '</div></div>';
-    if(choixFait===undefined) break;
-    noeud = enfants[choixFait];
-    if(!noeud.enfants) break;
+  // MODE « THÈME » — l'arbre de thèmes, niveau par niveau.
+  if(ASSIST_MODE === 'theme'){
+    var noeud = {enfants: ASSIST_ARBRE};
+    for(var prof=0; prof<=ASSIST_PATH.length; prof++){
+      var enfants = noeud.enfants;
+      if(!enfants) break;
+      var choixFait = ASSIST_PATH[prof];
+      html += '<div><div class="assist-step-label">'+escapeHtml(labelsNiveaux[prof] || 'Affiner')+'</div><div class="assist-chips">';
+      Object.keys(enfants).forEach(function(cle){
+        html += '<button class="assist-chip'+(choixFait===cle?' on':'')+'" data-prof="'+prof+'" data-cle="'+escAttr(cle)+'">'+escapeHtml(enfants[cle].label)+'</button>';
+      });
+      html += '</div></div>';
+      if(choixFait===undefined) break;
+      noeud = enfants[choixFait];
+      if(!noeud.enfants) break;
+    }
   }
 
-  // ÉTAPE "Votre convention" : après 2 choix OU en mode situation.
-  if(ASSIST_PATH.length >= 2 || (typeof window!=='undefined' && window.__situationActive)){
+  // ÉTAPE « Votre convention » — en mode situation dès qu'une situation est
+  // active ; en mode thème après 2 choix.
+  var montreCCN = (ASSIST_MODE==='situation' && typeof window!=='undefined' && window.__situationActive)
+               || (ASSIST_MODE==='theme' && ASSIST_PATH.length >= 2);
+  if(montreCCN){
     html += '<div><div class="assist-step-label">Votre convention (facultatif — pour voir la vôtre)</div>';
     if(ASSIST_CCN){
       var choisie = (INDEX.ccn||[]).filter(function(it){ return String(it.num)===String(ASSIST_CCN); })[0];
@@ -2107,7 +2145,7 @@ function renderAssist(){
   var champC = document.getElementById('assist-ccn-input');
   if(champC){ champC.oninput = function(){ assistChercherCCN(this.value); }; }
 
-  document.getElementById('assist-reset').hidden = (ASSIST_PATH.length===0);
+  var _r = document.getElementById('assist-reset'); if(_r) _r.hidden = false;
 }
 
 function scrollToConventionPicker(){
@@ -2269,6 +2307,7 @@ function assistChoisir(profondeur, cle){
 
 function assistReset(){
   ASSIST_PATH = [];
+  ASSIST_MODE = null;
   ASSIST_FOCUS = null;
   if(typeof window!=='undefined') window.__situationActive = false;
   // On GARDE la convention choisie (ASSIST_CCN) : « Recommencer » remet à zéro le
@@ -3535,6 +3574,20 @@ renderExamples();
   steps.addEventListener('click', function(e){
     var t = e.target.closest('button');
     if(!t) return;
+    // Choix de la catégorie (situation / thème) : on entre dans le mode choisi.
+    if(t.dataset.mode){
+      ASSIST_MODE = t.dataset.mode; ASSIST_PATH = []; ASSIST_FOCUS = null;
+      if(typeof window!=='undefined') window.__situationActive = false;
+      renderAssist(); return;
+    }
+    // Retour au choix situation / thème : on remet à zéro le parcours.
+    if(t.dataset.backMode){
+      ASSIST_MODE = null; ASSIST_PATH = []; ASSIST_FOCUS = null;
+      if(typeof window!=='undefined') window.__situationActive = false;
+      renderAssist();
+      var _q = document.getElementById('q'); if(_q) _q.value = '';
+      runSearch(); return;
+    }
     if(t.dataset.situ){ assistSituation(t.dataset.situ); return; }
     if(t.dataset.cclear || t.dataset.ccnClear){ ASSIST_CCN=null; renderAssist(); relancerAssist(); return; }
     if(t.dataset.prof!==undefined && t.dataset.cle!==undefined){
