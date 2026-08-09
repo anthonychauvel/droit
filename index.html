@@ -2531,27 +2531,27 @@ function runSearch(){
     html += '</div>';
   }
   if(code.length){
-    html += grpHead('code','Code du travail',code.length)+'</div><div class="rows">';
+    html += grpHead('code','Code du travail',code.length)+'<div class="rows">';
     html += code.map(function(r){ return rowHtml('code', r.num, r.title, r.etat, {snippet:artSnip(r), date:r.date, mod:r.mod}); }).join('');
     html += '</div>';
   }
   if(secu.length){
-    html += grpHead('secu','Code de la sécurité sociale',secu.length)+'</div><div class="rows">';
+    html += grpHead('secu','Code de la sécurité sociale',secu.length)+'<div class="rows">';
     html += secu.map(function(r){ return rowHtml('secu', r.num, r.title, r.etat, {snippet:artSnip(r), date:r.date, mod:r.mod}); }).join('');
     html += '</div>';
   }
   if(juris.length){
-    html += grpHead('juris','Jurisprudence',juris.length)+'</div><div class="rows">';
+    html += grpHead('juris','Jurisprudence',juris.length)+'<div class="rows">';
     html += juris.map(function(r){ return rowHtml('juris', r.num, r.title, null, {snippet:artSnip(r), juridiction:r.juridiction}); }).join('');
     html += '</div>';
   }
   if(jorf.length){
-    html += grpHead('jorf','Journal Officiel',jorf.length)+'</div><div class="rows">';
+    html += grpHead('jorf','Journal Officiel',jorf.length)+'<div class="rows">';
     html += jorf.map(function(r){ return rowHtml('jorf', r.num, r.title, null, {snippet:artSnip(r)}); }).join('');
     html += '</div>';
   }
   if(acco.length){
-    html += grpHead('acco',"Accords d'entreprise",acco.length)+'</div><div class="rows">';
+    html += grpHead('acco',"Accords d'entreprise",acco.length)+'<div class="rows">';
     html += acco.map(function(r){ return rowHtml('acco', r.num, r.title, null, {snippet:artSnip(r), tags:r.themes}); }).join('');
     html += '</div>';
   }
