@@ -25,6 +25,7 @@ import os
 import re
 import glob
 import argparse
+import datetime as _dt
 
 SNIPPET_LEN = 220      # extrait pour les articles de code. Réduit (était 600)
                        # car l'index dépassait 100 Mo (limite GitHub). 220 car
@@ -203,6 +204,21 @@ def build_ccn_index(ccn_dir, classification=None):
     return index
 
 
+def _fmt_date(ts):
+    """Timestamp Légifrance (millisecondes depuis epoch) -> 'JJ/MM/AAAA'.
+    Formaté en UTC pour éviter tout décalage de fuseau. None si invalide."""
+    try:
+        ts = int(ts)
+    except (TypeError, ValueError):
+        return None
+    if ts <= 0:
+        return None
+    try:
+        return _dt.datetime.fromtimestamp(ts / 1000, _dt.timezone.utc).strftime("%d/%m/%Y")
+    except (OverflowError, OSError, ValueError):
+        return None
+
+
 def _article_payload_and_etat(data):
     if isinstance(data, dict) and isinstance(data.get("article"), dict):
         art = data["article"]
@@ -232,13 +248,23 @@ def build_code_index(code_dir, classification=None):
             or (payload.get("texteHtml") if isinstance(payload, dict) else None)
             or data.get("texte") or data.get("content") or data.get("texteHtml") or ""
         )
-        index.append({
+        entry = {
             "num": art,
             "title": f"Article {art}",
             "snippet": text[:SNIPPET_LEN],
             "etat": etat,
             "source": classification.get(art, "inconnu"),
-        })
+        }
+        # Date d'entrée en vigueur + marqueur "modifié" (versions multiples),
+        # pour affichage direct dans la liste de résultats. Champs optionnels :
+        # absents si l'info n'est pas disponible (le front les ignore alors).
+        if isinstance(payload, dict):
+            d = _fmt_date(payload.get("dateDebut"))
+            if d:
+                entry["date"] = d
+            if payload.get("isMultipleVersions") is True:
+                entry["mod"] = True
+        index.append(entry)
     return index
 
 
