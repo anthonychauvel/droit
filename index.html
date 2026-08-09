@@ -1018,7 +1018,12 @@ var STOP = {};
 /* Découpe la requête en "mots-clés" affichés (chips). On garde les mots >=2
    qui ne sont pas des mots-outils. */
 function tokenize(q){
-  return normaliser(q).split(' ').filter(function(w){ return w.length>=2 && !STOP[w]; });
+  var mots = normaliser(q).split(' ').filter(function(w){ return w.length>=2 && !STOP[w]; });
+  // Dédoublonnage : un même mot ne devient qu'UN seul filtre (évite « formation »
+  // affiché deux fois et un travail de recherche redondant). Ordre préservé.
+  var vus = {}, uniq = [];
+  mots.forEach(function(w){ if(!vus[w]){ vus[w]=1; uniq.push(w); } });
+  return uniq;
 }
 /* Extrait les expressions entre guillemets "..." d'une requête. Renvoie la
    liste des phrases exactes (normalisées) à exiger dans les résultats.
