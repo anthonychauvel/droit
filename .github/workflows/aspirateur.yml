@@ -115,6 +115,7 @@ jobs:
           git config merge.ours.driver true
           printf '%s\n' \
             'output/search-index.json merge=ours' \
+            'output/search-index-*.json merge=ours' \
             'output/manifest.json merge=ours' \
             'output/counts.json merge=ours' \
             'output/clauses-index.json merge=ours' \
