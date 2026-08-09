@@ -210,6 +210,9 @@
   .res-main{ min-width:0; }
   .res-title{ font-size:14.5px; font-weight:600; color:var(--ink); line-height:1.35; overflow-wrap:anywhere; }
   .res-sub{ font-size:12.5px; color:var(--ink-soft); margin-top:3px; line-height:1.45; }
+  .res-date{ font-size:12px; color:var(--ink-soft); margin-top:3px; line-height:1.4; font-variant-numeric:tabular-nums; }
+  .res-date .res-mod{ color:#b06a2c; font-weight:600; }
+  .res-date .res-orig{ color:var(--ink-soft); }
   .res-note{ font-size:12px; color:#5b6b82; margin-top:4px; line-height:1.45; padding-left:8px; border-left:2px solid var(--gold); font-style:italic; }
   .res-sub mark{ background:#fbe6b0; color:var(--ink); padding:0 1px; border-radius:2px; }
   .tags{ display:flex; flex-wrap:wrap; gap:5px; margin-top:6px; }
@@ -1067,6 +1070,11 @@ function excerpt(text, terms, len, priorityTerms){
 function rowHtml(kind, num, title, etat, opts){
   opts = opts || {};
   var sub = '';
+  if(opts.date){
+    sub += '<div class="res-date">En vigueur depuis le '+escapeHtml(opts.date)+
+           (opts.mod ? ' <span class="res-mod">· modifié</span>' : ' <span class="res-orig">· version d\'origine</span>')+
+           '</div>';
+  }
   if(opts.snippet) sub += '<div class="res-sub">'+opts.snippet+'</div>';
   if(opts.note) sub += '<div class="res-note">'+escapeHtml(opts.note)+'</div>';
   if(opts.sections && opts.sections.length){
@@ -1533,7 +1541,7 @@ function searchArticlesV2(list, tokens, focusTokens, rawNorm, inv){
     var etat = a.etat?shortEtat(a.etat):'?';
     var etatB = (etat==='V')?35 : (etat==='M')?15 : (etat==='A')?-75 : (etat==='P')?-50 : 0;
     var score = covered*100 + exactHits*25 + (numExact?4000:0) + (numPref?300:0) + phraseBonus + Math.round(idfB) + fbonus + etatB;
-    out.push({num:a.num, title:a.title||('Article '+a.num), snippet:a.snippet||'', etat:etat, cover:covered||1, fhit:fhit, score:score});
+    out.push({num:a.num, title:a.title||('Article '+a.num), snippet:a.snippet||'', etat:etat, date:a.date, mod:a.mod, cover:covered||1, fhit:fhit, score:score});
   });
   out.sort(function(a,b){ return b.score-a.score; });
   return out;
@@ -1593,7 +1601,7 @@ function searchArticles(list, tokens, kindLabel){
     if(covered===0) return;
     var numMatch = tokens.some(function(t){ return normaliser(a.num).indexOf(t)===0; });
     var score = covered*100 + (numMatch?20:0);
-    out.push({num:a.num, title:a.title||('Article '+a.num), snippet:a.snippet||'', etat:a.etat?shortEtat(a.etat):'?', cover:covered, score:score});
+    out.push({num:a.num, title:a.title||('Article '+a.num), snippet:a.snippet||'', etat:a.etat?shortEtat(a.etat):'?', date:a.date, mod:a.mod, cover:covered, score:score});
   });
   out.sort(function(a,b){ return b.score-a.score; });
   return out;
@@ -2392,12 +2400,12 @@ function runSearch(){
   }
   if(code.length){
     html += '<div class="group-title" id="grp-code">Code du travail · '+code.length+'</div><div class="rows">';
-    html += code.map(function(r){ return rowHtml('code', r.num, r.title, r.etat, {snippet:artSnip(r)}); }).join('');
+    html += code.map(function(r){ return rowHtml('code', r.num, r.title, r.etat, {snippet:artSnip(r), date:r.date, mod:r.mod}); }).join('');
     html += '</div>';
   }
   if(secu.length){
     html += '<div class="group-title" id="grp-secu">Code de la sécurité sociale · '+secu.length+'</div><div class="rows">';
-    html += secu.map(function(r){ return rowHtml('secu', r.num, r.title, r.etat, {snippet:artSnip(r)}); }).join('');
+    html += secu.map(function(r){ return rowHtml('secu', r.num, r.title, r.etat, {snippet:artSnip(r), date:r.date, mod:r.mod}); }).join('');
     html += '</div>';
   }
   if(juris.length){
