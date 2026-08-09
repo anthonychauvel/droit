@@ -675,6 +675,28 @@ function shortEtat(raw){
   return '?';
 }
 
+/* Charge l'index de recherche DÉCOUPÉ par source : output/search-index-<src>.json
+ * (un fichier par source, au lieu d'un unique search-index.json qui finirait par
+ * dépasser la limite GitHub de 100 Mo). Les fichiers sont chargés en parallèle et
+ * réassemblés dans la même forme qu'avant : {ccn, code, code_secu, juris, jorf, acco}.
+ * REPLI AUTOMATIQUE : si les fichiers découpés ne sont pas encore générés (période
+ * de transition) ou si l'un manque, on complète depuis l'ancien search-index.json
+ * monolithique. Rien ne casse tant que l'un OU l'autre est présent. */
+async function loadSearchIndex(){
+  var SRC = ['ccn','code','code_secu','juris','jorf','acco'];
+  var got = {}, missing = false;
+  await Promise.all(SRC.map(async function(s){
+    try{ got[s] = await fetchJSON('output/search-index-'+s+'.json'); }
+    catch(e){ missing = true; }   // ce fichier découpé n'existe pas (encore)
+  }));
+  if(!missing) return got;        // cas nominal : tous les fichiers découpés présents
+  // Repli : ancien index monolithique, pour combler les sources manquantes.
+  var mono = {};
+  try{ mono = await fetchJSON('output/search-index.json'); }catch(e){}
+  SRC.forEach(function(s){ if(got[s]===undefined) got[s] = (mono[s]||[]); });
+  return got;
+}
+
 async function loadAll(){
   // Les quatre chargements ci-dessous sont indépendants les uns des autres --
   // les lancer en parallèle (Promise.all) plutôt qu'en séquence (await un
@@ -714,8 +736,8 @@ async function loadAll(){
   // rechargement, sinon un onglet garderait le contenu de la session précédente.
   CONTENU_CACHE = {};
   var pSearch = (async function(){
-    try{ SEARCH = await fetchJSON('output/search-index.json'); }
-    catch(e){ console.warn('search-index.json indisponible', e); SEARCH = {ccn:[],code:[],code_secu:[],juris:[]}; }
+    try{ SEARCH = await loadSearchIndex(); }
+    catch(e){ console.warn('index de recherche indisponible', e); SEARCH = {ccn:[],code:[],code_secu:[],juris:[],jorf:[],acco:[]}; }
   })();
 
   var pCcnListe = (async function(){
@@ -3120,13 +3142,18 @@ async function openDetail(kind, num, target){
   }
   else if(payload.texteHtml||payload.texte||payload.content) body = '<div class="sec-text">'+linkifyArticles(cleanHtml(payload.texteHtml||payload.texte||payload.content))+'</div>';
   else if(abroge) body = '<div class="sec-text" style="color:var(--ink-soft)">Article abrogé, plus en vigueur — il est normal qu\'il n\'y ait pas (ou peu) de texte à afficher.</div>';
-  else body = '<div class="sec-text" style="color:var(--ink-soft)">Contenu structuré non détecté pour cette entrée.</div>';
+  else body = '<div class="sec-text" style="color:var(--ink-soft)">Cet article n\'a pas de texte dans la base — souvent une ancienne numérotation ou un renvoi vers un autre code. Utilisez le lien Légifrance ci-dessus pour le retrouver.</div>';
 
   // Lien Légifrance si un identifiant est présent
   var legi='';
   var artId = payload.id || payload.cid || (data.article && data.article.id);
   if((kind==='code'||kind==='secu') && artId && /^LEGIARTI/.test(String(artId))){
     legi = '<a class="primary" target="_blank" rel="noopener" href="https://www.legifrance.gouv.fr/codes/article_lc/'+encodeURIComponent(artId)+'">Voir sur Légifrance ↗</a>';
+  } else if((kind==='code'||kind==='secu') && num){
+    // Pas d'identifiant LEGIARTI (fiche non résolue : souvent une ancienne
+    // numérotation ou un renvoi vers un article d'un autre code). Au lieu d'un
+    // cul-de-sac, on propose une recherche Légifrance par numéro.
+    legi = '<a class="primary" target="_blank" rel="noopener" href="https://www.legifrance.gouv.fr/search/all?tab_selection=all&searchField=ALL&query='+encodeURIComponent(num)+'&page=1&init=true">Chercher « '+escapeHtml(String(num))+' » sur Légifrance ↗</a>';
   }
   var actions = '<div class="panel-actions">'+legi+
     '<button id="d-export">Télécharger le texte (.txt)</button></div>';
