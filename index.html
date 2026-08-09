@@ -2385,6 +2385,20 @@ function runSearch(){
     code=focusTrim(code); secu=focusTrim(secu); juris=focusTrim(juris); jorf=focusTrim(jorf); acco=focusTrim(acco);
   }
 
+  // Tri par date d'entrée en vigueur, du plus RÉCENT au plus VIEUX (Code et Sécu,
+  // seules sources qui portent une date). Tri STABLE : à date égale, l'ordre de
+  // pertinence est conservé. Les entrées sans date passent en fin de liste.
+  var _dateKey = function(r){
+    var d = r && r.date;                                  // "JJ/MM/AAAA"
+    if(!d) return -1;
+    var p = String(d).split('/');
+    if(p.length !== 3) return -1;
+    return (+p[2]) * 10000 + (+p[1]) * 100 + (+p[0]);     // AAAAMMJJ comparable
+  };
+  var _parDateDesc = function(a, b){ return _dateKey(b) - _dateKey(a); };
+  code.sort(_parDateDesc);
+  secu.sort(_parDateDesc);
+
   var html = '';
   // Barre de compteurs par source (vue d'ensemble) : montre où se trouve la
   // matière AVANT de dérouler. Chaque pastille non vide est cliquable et fait
