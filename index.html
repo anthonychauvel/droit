@@ -139,7 +139,7 @@
   .searchbox .si{ width:19px; height:19px; stroke:var(--ink-soft); flex-shrink:0; }
   #q{ flex:1; min-width:0; border:none; outline:none; background:none; font-size:16px; padding:11px 2px; font-family:inherit; color:var(--ink); }
   #q::placeholder{ color:#a7abc6; }
-  .go{ border:none; background:var(--gold-metal); color:var(--marine); width:42px; height:42px; border-radius:10px; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:filter .12s; box-shadow:inset 0 1px 0 rgba(255,255,255,.55), 0 5px 14px -5px rgba(190,154,46,.75); }
+  .go{ border:none; background:var(--gold-metal); color:var(--marine); width:42px; height:42px; border-radius:10px; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:filter .12s,transform .12s; box-shadow:inset 0 1px 0 rgba(255,255,255,.55), 0 5px 14px -5px rgba(190,154,46,.75); }
   .go:hover{ filter:brightness(1.07); }
   .go svg{ width:18px; height:18px; stroke:var(--marine); }
   .hint{ font-size:12.5px; color:var(--ink-soft); margin:10px 2px 0; }
@@ -200,7 +200,7 @@
   .row{
     display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:14px;
     padding:13px 12px; border-radius:10px; cursor:pointer; border:1px solid transparent;
-    transition:background .1s,border-color .1s;
+    transition:background .1s,border-color .1s,transform .1s;
   }
   .row:hover{ background:var(--card); border-color:var(--line); }
   .row + .row{ border-top:1px solid var(--line-soft); }
@@ -315,6 +315,15 @@
   #to-top.show{ opacity:1; transform:translateY(0); pointer-events:auto; }
   #to-top:hover{ background:var(--violet-soft); }
   body.panel-lock #to-top{ opacity:0; pointer-events:none; }  /* masqué quand une fiche est ouverte */
+  /* ===== Micro-interactions (auto-désactivées par prefers-reduced-motion) ===== */
+  /* Apparition des résultats : une seule fois, à l'arrivée sur la liste. */
+  @keyframes resEnter{ from{ opacity:0; transform:translateY(8px); } to{ opacity:1; transform:translateY(0); } }
+  .res-enter{ animation:resEnter .28s cubic-bezier(.22,.61,.36,1); }
+  /* Retour tactile au tap : léger enfoncement. */
+  .stat:active, .ex:active, .assist-mode-btn:active{ transform:scale(.98); }
+  .assist-chip:active{ transform:scale(.96); }
+  .go:active{ transform:scale(.92); }
+  .row:active{ transform:scale(.992); }
   .panel-top{ display:flex; align-items:flex-start; gap:12px; padding:22px 24px 16px; border-bottom:1px solid var(--line); padding-top:calc(22px + env(safe-area-inset-top)); }
   .panel-top .meta{ min-width:0; flex:1; }
   .detail-num{ font-size:12.5px; color:var(--violet-strong); font-weight:600; }
@@ -438,7 +447,7 @@
   .assist-mode-btn{ display:flex; flex-direction:column; align-items:flex-start; gap:3px;
     width:100%; text-align:left; padding:14px 16px; border:1px solid var(--gold);
     background:#fff; border-radius:12px; cursor:pointer; font-family:inherit;
-    transition:border-color .12s, background .12s, box-shadow .12s; }
+    transition:border-color .12s, background .12s, box-shadow .12s, transform .12s; }
   .assist-mode-btn:hover{ border-color:var(--gold-strong); background:var(--violet-soft);
     box-shadow:0 6px 18px -10px rgba(20,22,45,.4); }
   .assist-mode-btn .amb-t{ font-size:15px; font-weight:700; color:var(--ink); }
@@ -2370,6 +2379,7 @@ function runSearch(){
   renderTokens(tokens);
   var toggles = document.getElementById('search-toggles');
   if(!tokens.length){ box.innerHTML=''; landing.hidden=false; if(toggles) toggles.hidden=true; return; }
+  var arriveeResultats = !landing.hidden;  // le landing était visible -> on ARRIVE sur les résultats
   landing.hidden = true;
   if(toggles) toggles.hidden = false;
 
@@ -2561,6 +2571,11 @@ function runSearch(){
   if(dym){ html = '<div class="dym">Vouliez-vous dire <button type="button" class="dym-q" data-q="'+escAttr(dym)+'">'+escapeHtml(dym)+'</button> ?</div>' + html; }
   if(!SEARCH_READY){ html = '<div class="loading-inline">Indexation des textes en cours… les articles et sections de convention apparaissent dès qu\'ils sont prêts.</div>' + html; }
   box.innerHTML = html;
+  // Animation d'apparition : UNE SEULE FOIS, à l'arrivée sur les résultats (pas
+  // à chaque frappe -> aucun scintillement). Auto-désactivée pour qui préfère
+  // moins de mouvement (règle prefers-reduced-motion globale).
+  box.classList.remove('res-enter');
+  if(arriveeResultats){ void box.offsetWidth; box.classList.add('res-enter'); }
 }
 
 /* Recherche déclenchée à Entrée, au bouton, ET au fil de la frappe (fluide). */
