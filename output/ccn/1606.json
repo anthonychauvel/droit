@@ -9953,13 +9953,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731971",
+              "cid": "KALISCTA000005731971",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des salaires 1994.",
+              "dateModif": null,
+              "dateDebut": "1994-05-31",
+              "dateFin": "1996-01-24",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005870887",
+                  "cid": "KALIARTI000005870887",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731971/KALIARTI000005870887",
+                  "pathTitle": [
+                    "Grille des salaires 1994."
+                  ],
+                  "content": "<p></p>   Employés<p></p><p></p>   Base : 54.520 F<p></p><p></p>   Valeur du point : 151,27 F<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = DEGRE<p></p><p></p>   (3) = COEFFICIENT<p></p><p></p>   (4) = REMUNERATION ANNUELLE BRUTE MINIMALE TOUS AVANTAGES CONFONDUS<p></p><p></p><p></p><TABLE><TR><TD> (1) </TD><TD> (2) </TD><TD> (3) </TD><TD>    (4)    </TD></TR><TR><TD>  I  </TD><TD>  A  </TD><TD> 110 </TD><TD>  71.340 F </TD></TR><TR><TD>  I  </TD><TD>  B  </TD><TD> 120 </TD><TD>  72.674 F </TD></TR><TR><TD> II  </TD><TD>  C  </TD><TD> 140 </TD><TD>  75.699 F </TD></TR><TR><TD> II  </TD><TD>  D  </TD><TD> 150 </TD><TD>  77.213 F </TD></TR><TR><TD> II  </TD><TD>  E  </TD><TD> 160 </TD><TD>  78.725 F </TD></TR><TR><TD> III </TD><TD>  F  </TD><TD> 190 </TD><TD>  83.264 F </TD></TR><TR><TD> III </TD><TD>  G  </TD><TD> 200 </TD><TD>  84.776 F </TD></TR></TABLE><p></p><p></p><p></p>   Agents de maîtrise<p></p><p></p>   Base : 63.818 F<p></p><p></p>   Valeur du point : 152,04 F<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = DEGRE<p></p><p></p>   (3) = COEFFICIENT<p></p><p></p>   (4) = REMUNERATION ANNUELLE BRUTE MINIMALE TOUS AVANTAGES CONFONDUS<p></p><p></p><p></p><TABLE><TR><TD> (1) </TD><TD> (2) </TD><TD> (3) </TD><TD>    (4)    </TD></TR><TR><TD> IV  </TD><TD>  H  </TD><TD> 220 </TD><TD>  97.266 F </TD></TR><TR><TD> IV  </TD><TD>  I  </TD><TD> 250 </TD><TD> 101.828 F </TD></TR><TR><TD> IV  </TD><TD>  J  </TD><TD> 280 </TD><TD> 106.388 F </TD></TR><TR><TD>  V  </TD><TD>  K  </TD><TD> 320 </TD><TD> 142.751 F </TD></TR><TR><TD>  V  </TD><TD>  L  </TD><TD> 400 </TD><TD> 154.974 F </TD></TR><TR><TD>  V  </TD><TD>  M  </TD><TD> 500 </TD><TD> 170.253 F </TD></TR><TR><TD>  V  </TD><TD>  N  </TD><TD> 600 </TD><TD> 185.533 F </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1994-05-31, BO conventions collectives 94-23 étendu par arrêté du 25 juillet 1994 JORF 4 août 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 770342400000,
+                  "dateFin": 822441600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -9973,13 +10047,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731972",
+              "cid": "KALISCTA000005731972",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des salaires 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-01-24",
+              "dateFin": "1996-12-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005870888",
+                  "cid": "KALIARTI000005870888",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731972/KALIARTI000005870888",
+                  "pathTitle": [
+                    "Grille des salaires 1996."
+                  ],
+                  "content": "<p></p>   Employés<p></p><p></p>   Base : 57.246F<p></p><p></p>   Valeur du point : 158,83F<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = DEGRE<p></p><p></p>   (3) = COEFFICIENT<p></p><p></p>   (4) = REMUNERATION ANNUELLE BRUTE MINIMALE TOUS AVANTAGES CONFONDUS<p></p><p></p><p></p><TABLE><TR><TD> (1) </TD><TD> (2) </TD><TD> (3) </TD><TD>    (4)    </TD></TR><TR><TD>  I  </TD><TD>  A  </TD><TD> 110 </TD><TD>  75.750 F </TD></TR><TR><TD>  I  </TD><TD>  B  </TD><TD> 120 </TD><TD>  76.308 F </TD></TR><TR><TD> II  </TD><TD>  C  </TD><TD> 140 </TD><TD>  79.484 F </TD></TR><TR><TD> II  </TD><TD>  D  </TD><TD> 150 </TD><TD>  81.074 F </TD></TR><TR><TD> II  </TD><TD>  E  </TD><TD> 160 </TD><TD>  82.661 F </TD></TR><TR><TD> III </TD><TD>  F  </TD><TD> 190 </TD><TD>  87.427 F </TD></TR><TR><TD> III </TD><TD>  G  </TD><TD> 200 </TD><TD>  89.015 F </TD></TR></TABLE><p></p><p></p><p></p>   Agents de maîtrise<p></p><p></p>   Base : 67.009F<p></p><p></p>   Valeur du point : 159,64F<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = DEGRE<p></p><p></p>   (3) = COEFFICIENT<p></p><p></p>   (4) = REMUNERATION ANNUELLE BRUTE MINIMALE TOUS AVANTAGES CONFONDUS<p></p><p></p><p></p><TABLE><TR><TD> (1) </TD><TD> (2) </TD><TD> (3) </TD><TD>    (4)    </TD></TR><TR><TD> IV  </TD><TD>  H  </TD><TD> 220 </TD><TD> 102.129 F </TD></TR><TR><TD> IV  </TD><TD>  I  </TD><TD> 250 </TD><TD> 106.919 F </TD></TR><TR><TD> IV  </TD><TD>  J  </TD><TD> 280 </TD><TD> 111.707 F </TD></TR></TABLE><p></p><p></p>   Cadres<p></p><p></p>   Base : 98.550F<p></p><p></p>   Valeur du point : 160,43F<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = DEGRE<p></p><p></p>   (3) = COEFFICIENT<p></p><p></p>   (4) = REMUNERATION ANNUELLE BRUTE MINIMALE TOUS AVANTAGES CONFONDUS<p></p><p></p><p></p><TABLE><TR><TD> (1) </TD><TD> (2) </TD><TD> (3) </TD><TD>    (4)    </TD></TR><TR><TD>  V  </TD><TD>  K  </TD><TD> 320 </TD><TD> 149.889 F </TD></TR><TR><TD>  V  </TD><TD>  L  </TD><TD> 400 </TD><TD> 162.723 F </TD></TR><TR><TD>  V  </TD><TD>  M  </TD><TD> 500 </TD><TD> 178.766 F </TD></TR><TR><TD>  V  </TD><TD>  N  </TD><TD> 600 </TD><TD> 194.810 F </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1996-01-24 BO conventions collectives 96-8, étendu par arrêté du 10 avril 1996 JORF 20 avril 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 822441600000,
+                  "dateFin": 849830400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -9993,13 +10141,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731973",
+              "cid": "KALISCTA000005731973",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des salaires 1997.",
+              "dateModif": null,
+              "dateDebut": "1996-12-06",
+              "dateFin": "1998-10-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005870889",
+                  "cid": "KALIARTI000005870889",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731973/KALIARTI000005870889",
+                  "pathTitle": [
+                    "Grille des salaires 1997."
+                  ],
+                  "content": "<p></p>   Employés<p></p><p></p>   Base : 58.563F<p></p><p></p>   Valeur du point : 162,48F<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = DEGRE<p></p><p></p>   (3) = COEFFICIENT<p></p><p></p>   (4) = REMUNERATION ANNUELLE BRUTE MINIMALE TOUS AVANTAGES CONFONDUS<p></p><p></p><p></p><TABLE><TR><TD> (1) </TD><TD> (2) </TD><TD> (3) </TD><TD>    (4)    </TD></TR><TR><TD>  I  </TD><TD>  A  </TD><TD> 110 </TD><TD>  77.653 F </TD></TR><TR><TD>  I  </TD><TD>  B  </TD><TD> 120 </TD><TD>  78.064 F </TD></TR><TR><TD> II  </TD><TD>  C  </TD><TD> 140 </TD><TD>  81.312 F </TD></TR><TR><TD> II  </TD><TD>  D  </TD><TD> 150 </TD><TD>  82.939 F </TD></TR><TR><TD> II  </TD><TD>  E  </TD><TD> 160 </TD><TD>  84.562 F </TD></TR><TR><TD> III </TD><TD>  F  </TD><TD> 190 </TD><TD>  89.438 F </TD></TR><TR><TD> III </TD><TD>  G  </TD><TD> 200 </TD><TD>  91.062 F </TD></TR></TABLE><p></p><p></p><p></p>   Agents de maîtrise<p></p><p></p>   Base : 68.550F<p></p><p></p>   Valeur du point : 163,31F<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = DEGRE<p></p><p></p>   (3) = COEFFICIENT<p></p><p></p>   (4) = REMUNERATION ANNUELLE BRUTE MINIMALE TOUS AVANTAGES CONFONDUS<p></p><p></p><p></p><TABLE><TR><TD> (1) </TD><TD> (2) </TD><TD> (3) </TD><TD>    (4)    </TD></TR><TR><TD> IV  </TD><TD>  H  </TD><TD> 220 </TD><TD> 104.478 F </TD></TR><TR><TD> IV  </TD><TD>  I  </TD><TD> 250 </TD><TD> 109.378 F </TD></TR><TR><TD> IV  </TD><TD>  J  </TD><TD> 280 </TD><TD> 114.276 F </TD></TR></TABLE><p></p><p></p>   Cadres<p></p><p></p>   Base : 100.817F<p></p><p></p>   Valeur du point : 164,12F<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = DEGRE<p></p><p></p>   (3) = COEFFICIENT<p></p><p></p>   (4) = REMUNERATION ANNUELLE BRUTE MINIMALE TOUS AVANTAGES CONFONDUS<p></p><p></p><p></p><TABLE><TR><TD> (1) </TD><TD> (2) </TD><TD> (3) </TD><TD>    (4)    </TD></TR><TR><TD>  V  </TD><TD>  K  </TD><TD> 320 </TD><TD> 153.336 F </TD></TR><TR><TD>  V  </TD><TD>  L  </TD><TD> 400 </TD><TD> 166.466 F </TD></TR><TR><TD>  V  </TD><TD>  M  </TD><TD> 500 </TD><TD> 182.878 F </TD></TR><TR><TD>  V  </TD><TD>  N  </TD><TD> 600 </TD><TD> 199.291 F </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1996-12-06 BO conventions collectives 97-2, étendu par arrêté du 14 février 1997 JORF 25 février 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 849830400000,
+                  "dateFin": 908323200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

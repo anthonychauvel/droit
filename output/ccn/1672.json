@@ -13267,7 +13267,9 @@
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14903,12 +14905,77 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005792345",
+              "cid": "KALIARTI000005792345",
+              "intOrdre": 42949,
+              "etat": "MODIFIE",
+              "num": null,
+              "path": "/KALIARTI000005792345",
+              "pathTitle": [],
+              "content": "<p></p>1. Dans le cadre de l'article 33 a de la convention collective nationale du 27 mai 1992, le barème des rémunérations minimales annuelles (RMA) prévu à l'annexe II de ladite convention est fixé, à effet du 1er janvier 2006, conformément au tableau joint au présent accord. <p></p><p></p>2. Le barème des rémunérations minimales annuelles (RMA) fixé au 1° ci-dessus est applicable dans les entreprises indépendamment du contenu et des résultats quels qu'ils soient, des négociations d'entreprise sur les salaires effectifs prévues par l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006646422&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-27 (Ab)\">article L. 132-27 du code du travail</a>. <p></p><p></p>Cette mise en application s'effectue dans les conditions prévues par les articles 31 et 32 de la convention collective nationale du 27 mai 1992.<p></p><p></p>3. Le présent accord ne concerne pas le personnel qui n'est plus en fonction dans les entreprises à la date de sa signature. <p></p><p></p>Fait à Paris, le 10 mars 2006. <p></p><p></p>ANNEXE : Rémunérations minimales annuelles <p></p><p></p>A effet du 1er janvier 2006 <p></p><TABLE><TR><TD>CLASSES </TD><TD>MONTANTS EN EUROS </TD></TR><TR><TD>1 </TD><TD>15 410 </TD></TR><TR><TD>2 </TD><TD>16 400 </TD></TR><TR><TD>3 </TD><TD>18 920 </TD></TR><TR><TD>4 </TD><TD>22 460 </TD></TR><TR><TD>5 </TD><TD>26 550 </TD></TR><TR><TD>6 </TD><TD>35 090 </TD></TR><TR><TD>7 </TD><TD>47 730</TD></TR></TABLE><p></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Protocole d'accord 2006-03-10 BO conventions collectives 2006-19",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L132-27 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L132-27",
+                  "articleId": "LEGIARTI000006646422",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 406080000000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1141948800000,
+              "dateFin": 1173225600000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14922,13 +14989,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005700302",
+              "cid": "KALISCTA000005700302",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Rémunérations minimales pour l'année 2007",
+              "dateModif": null,
+              "dateDebut": "2007-03-07",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005792346",
+                  "cid": "KALIARTI000005792346",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005700302/KALIARTI000005792346",
+                  "pathTitle": [
+                    "Rémunérations minimales pour l'année 2007"
+                  ],
+                  "content": "<p>Vu les articles 31,32 et 33 a de la convention collective nationale du 27 mai 1992 ; </p><p>Vu les articles L. 132-12 et L. 132-12-3 du code du travail, </p><p>il est convenu ce qui suit : </p><p align=\"center\">Article 1 <sup>er </sup></p><p>Barème des rémunérations minimales annuelles </p><p>1° Dans le cadre de l'article 33 a de la convention collective nationale du 27 mai 1992, le barème des rémunérations minimales annuelles (RMA) prévu à l'annexe II de ladite convention est fixé, à effet du 1 <sup>er </sup>janvier 2007, conformément au tableau joint au présent accord. </p><p>2° Le barème des rémunérations minimales annuelles (RMA) fixé au 1° ci-dessus est applicable dans les entreprises, indépendamment du contenu et des résultats, quels qu'ils soient, des négociations d'entreprise sur les salaires effectifs prévues à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006646422&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-27 (Ab)\">article L. 132-27 du code du travail</a>. </p><p>Cette mise en application s'effectue dans les conditions prévues par les articles 31 et 32 de la convention collective nationale du 27 mai 1992.</p><p>3° Les dispositions ci-dessus ne concernent pas le personnel qui n'est plus en fonction dans les entreprises à la date de signature du présent accord. </p><p align=\"center\">Article 2 </p><p>Suppression des écarts de rémunération entre les femmes et les hommes </p><p>1° Il est rappelé que les employeurs sont tenus d'assurer, pour un même travail ou pour un travail de valeur égale, l'égalité de rémunération entre les femmes et les hommes. </p><p>Le barème des RMA fixé au 1° de l'article 1er ci-dessus est conforme à ce principe et ne peut conduire à des différences de traitement entre les femmes et les hommes. </p><p>2° Au sein de chaque entreprise, les employeurs s'attacheront à vérifier qu'il n'existe pas d'écarts de rémunération non justifiés entre les femmes et les hommes. </p><p>Si tel n'est pas le cas, ils mettront en oeuvre toutes les mesures utiles pour remédier à ces disparités salariales avant le 31 décembre 2010. </p><p>Fait à Paris, le 7 mars 2007. </p><p>ANNEXE : Rémunérations minimales annuelles à effet du 1 <sup>er </sup>janvier 2007 </p><p>(En euros) </p><center><table border=\"1\"><tbody><tr><th>NIVEAU </th><th>SALAIRE </th></tr><tr><td align=\"center\">I </td><td align=\"center\">15 720 </td></tr><tr><td align=\"center\">II </td><td align=\"center\">16 730 </td></tr><tr><td align=\"center\">III </td><td align=\"center\">19 300 </td></tr><tr><td align=\"center\">IV </td><td align=\"center\">22 910 </td></tr><tr><td align=\"center\">V </td><td align=\"center\">27 090 </td></tr><tr><td align=\"center\">VI </td><td align=\"center\">35 800 </td></tr><tr><td align=\"center\">VII </td><td align=\"center\">48 690</td></tr></tbody></table></center>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2007-03-07 BO conventions collectives 2007-23",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-27 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-27",
+                      "articleId": "LEGIARTI000006646422",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 406080000000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1173225600000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

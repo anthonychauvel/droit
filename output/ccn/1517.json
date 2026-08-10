@@ -26638,13 +26638,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727777",
+              "cid": "KALISCTA000005727777",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima mensuels.",
+              "dateModif": null,
+              "dateDebut": "1998-01-20",
+              "dateFin": "2001-09-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005860191",
+                  "cid": "KALIARTI000005860191",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727777/KALIARTI000005860191",
+                  "pathTitle": [
+                    "Salaires minima mensuels."
+                  ],
+                  "content": "<p></p>   Entre les parties signataires de la convention collective nationale des commerces non alimentaires signée le 14 juin 1988 et modifiée par l'avenant n° 2 du 9 novembre 1988, il a été convenu de fixer la grille des salaires minima mensuels pour 169 heures, à compter du premier jour du mois qui suit l'arrêté d'extension, comme suit :<p></p><TABLE><TR><TD> Niveau </TD><TD> Montant </TD></TR><TR><TD>  I     </TD><TD>  6 700 F</TD></TR><TR><TD>  II    </TD><TD>  6 800 F</TD></TR><TR><TD>  III   </TD><TD>  7 000 F</TD></TR><TR><TD>  IV    </TD><TD>  7 260 F</TD></TR><TR><TD>  V     </TD><TD>  7 700 F</TD></TR><TR><TD>  VI    </TD><TD>  8 240 F</TD></TR><TR><TD>  VII   </TD><TD> 10 500 F</TD></TR><TR><TD>  VIII  </TD><TD> 12 000 F</TD></TR></TABLE><p></p><p></p>   Conformément à l'article L. 132-10 du code du travail, le présent avenant sera déposé auprès des services du ministre chargé du travail et au secrétariat-greffe du conseil des prud'hommes de Paris.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 11 1998-01-20 BO conventions collectives 98-10 étendu par arrêté du 15 avril 1998 JORF 23 avril 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 885254400000,
+                  "dateFin": 999734400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26658,13 +26732,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727778",
+              "cid": "KALISCTA000005727778",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima mensuels au 1er janvier 2002.",
+              "dateModif": null,
+              "dateDebut": "2001-09-06",
+              "dateFin": "2005-11-30",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005860193",
+                  "cid": "KALIARTI000005860193",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727778/KALIARTI000005860193",
+                  "pathTitle": [
+                    "Salaires minima mensuels au 1er janvier 2002."
+                  ],
+                  "content": "<p></p>   Entre les parties signataires de la convention collective nationale des commerces non alimentaires signée le 14 juin 1988 et modifiée par l'avenant n° 2 du 9 novembre 1988, il a été convenu de fixer la grille des salaires minima mensuels à compter du premier jour du mois qui suit l'arrêté d'extention comme suit :<p></p> ---------------------------------------<p></p><TABLE><TR><TD></TD><TD>        SALAIRE MENSUEL    </TD></TR><TR><TD></TD><TD>  (en francs) </TD><TD>  (en euros)</TD></TR><TR><TD>  I      </TD><TD>     7 389    </TD><TD>     1 126  </TD></TR><TR><TD>  II     </TD><TD>     7 400    </TD><TD>     1 128  </TD></TR><TR><TD>  III    </TD><TD>     7 450    </TD><TD>     1 136  </TD></TR><TR><TD>  IV     </TD><TD>     7 700    </TD><TD>     1 174  </TD></TR><TR><TD>  V      </TD><TD>     8 162    </TD><TD>     1 244  </TD></TR><TR><TD>  VI     </TD><TD>     8 734    </TD><TD>     1 331  </TD></TR><TR><TD>  VII    </TD><TD>    11 500    </TD><TD>     1 753  </TD></TR><TR><TD>  VIII   </TD><TD>    13 000    </TD><TD>     1 982  </TD></TR></TABLE><p></p> ---------------------------------------<p></p>   Cette grille est valable pour 169 heures jusqu'au 31 décembre 2001. Elle sera applicable dans le cadre de la nouvelle durée légale à compter du 1er janvier 2002.<p></p>   Compte tenu de l'incidence de la nouvelle durée légale sur la situation économique des entreprises commerciales des secteurs couverts par le champ d'application de la convention collective susdite, attentives à leur devenir, les parties signataires conviendront d'une période de modération des salaires.<p></p>   Conformément à l'article L. 132-10 du code du travail, le présent avenant sera déposé auprès des services du ministre chargé du travail et au secrétariat-greffe du conseil de prud'hommes de Paris.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 13 2001-09-06 BO conventions collectives 2001-41 étendu par arrêté du 29 novembre 2001 JORF 11 décembre 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 999734400000,
+                  "dateFin": 1133308800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26679,12 +26827,77 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005860194",
+              "cid": "KALIARTI000005860194",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005860194",
+              "pathTitle": [],
+              "content": "<p></p>(1) Entre les parties signataires de la convention collective nationale des commerces de détail non alimentaires signée le 14 juin 1988 et modifiée par l'avenant n° 2 du 9 novembre 1988, il a été convenu de fixer la grille des salaires minima mensuels pour 151,67 heures à compter du 1er janvier 2006, comme suit :<p></p><p></p>-niveau I : 1 220 Euros ;<p></p><p></p>-niveau II : 1 222 Euros ;<p></p><p></p>-niveau III : 1 233 Euros ;<p></p><p></p>-niveau IV : 1 262 Euros ;<p></p><p></p>-niveau V : 1 337 Euros ;<p></p><p></p>-niveau VI : 1 431 Euros ;<p></p><p></p>-niveau VII : 1 885 Euros ;<p></p><p></p>-niveau VIII : 2 200 Euros. <p></p><p></p>Conformément à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">article L. 132-10 du code du travail</a>, le présent avenant sera déposé auprès des services du ministre chargé du travail et au secrétariat-greffe du conseil de prud'hommes de Paris. <p></p><p></p>Fait à Paris, le 30 novembre 2005. <p></p><font color=\"808080\"><em>(1) Avenant étendu, à l'exclusion du secteur des détaillants en maroquinerie et voyage.</em></font>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 14 2005-11-30 BO conventions collectives 2006-3 étendu par arrêté du 12 mai 2006 JORF 25 mai 2006",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L132-10 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L132-10",
+                  "articleId": "LEGIARTI000006647014",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 122860800000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires.",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1133308800000,
+              "dateFin": 1171324800000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

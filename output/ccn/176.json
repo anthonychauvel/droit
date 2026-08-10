@@ -32343,13 +32343,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727333",
+              "cid": "KALISCTA000005727333",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima",
+              "dateModif": null,
+              "dateDebut": "2000-10-18",
+              "dateFin": "2001-04-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005859214",
+                  "cid": "KALIARTI000005859214",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727333/KALIARTI000005859214",
+                  "pathTitle": [
+                    "Salaires minima"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   A compter du 1er novembre 2000, la valeur constante et la valeur du point permettant de calculer les salaires minima conventionnels pour 169 heures et pour 151,67 heures sont revalorisés de 3,3%.<p></p><p></p>   La valeur constante et la valeur du point permettant de calculer les salaires minima conventionnels pour 169 heures sont revalorisés de 1 % au 1er janvier 2001 et de 0,5 % au 1er juillet 2001.<p></p><p></p>   La valeur constante et la valeur du point permettant de calculer les salaires minima conventionnels pour 151,67 heures sont revalorisés de 6 % au 1er janvier 2001 et de 0,5 % au 1er juillet 2001.<p></p>Article 2<p></p><p></p>   Le paragraphe II \" Salaires minima professionnels \" de l'avenant I de la convention collective nationale de l'industrie pharmaceutique modifiée, est abrogé et remplacé par les dispositions suivantes :<p></p> \" II. - Salaires minima professionnels<p></p><p></p>   1. A compter du 1er novembre 2000, les salaires minima mensuels pour 169 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 6 920 F ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 46,74 F.<p></p><TABLE><TR><TD>SALAIRES MINIMA POUR 169 HEURES AU 1er NOVEMBRE 2000</TD></TR><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD></TD><TD></TD><TD> (en fr.)</TD></TR><TR><TD>   1 A  </TD><TD>  0   </TD><TD> 6 920   </TD></TR><TR><TD>1 B     </TD><TD>  3   </TD><TD> 7 060   </TD></TR><TR><TD>1 C/2 A </TD><TD>  8   </TD><TD> 7 294   </TD></TR><TR><TD>  2 B   </TD><TD>  12  </TD><TD> 7 481   </TD></TR><TR><TD>2 C/3 A </TD><TD>  23  </TD><TD> 7 995   </TD></TR><TR><TD>  3 B   </TD><TD>  28  </TD><TD> 8 229   </TD></TR><TR><TD>3 C/4 A </TD><TD>  46  </TD><TD> 9 070   </TD></TR><TR><TD>  4 B   </TD><TD>  54  </TD><TD> 9 444   </TD></TR><TR><TD>4 C/5 A </TD><TD>  77  </TD><TD> 10 519  </TD></TR><TR><TD>  5 B   </TD><TD>  88  </TD><TD> 11 033  </TD></TR><TR><TD>5 C/6 A </TD><TD>  118 </TD><TD> 12 435  </TD></TR><TR><TD>  6 B   </TD><TD>  132 </TD><TD> 13 090  </TD></TR><TR><TD>  6 C   </TD><TD>  169 </TD><TD> 14 819  </TD></TR><TR><TD>  7 A   </TD><TD>  183 </TD><TD> 15 473  </TD></TR><TR><TD>  7 B   </TD><TD>  246 </TD><TD> 18 418  </TD></TR><TR><TD>  8 A   </TD><TD>  260 </TD><TD> 19 072  </TD></TR><TR><TD>  8 B   </TD><TD>  335 </TD><TD> 22 578  </TD></TR><TR><TD>  9 A   </TD><TD>  349 </TD><TD> 23 232  </TD></TR><TR><TD>  9 B   </TD><TD>  438 </TD><TD> 27 392  </TD></TR><TR><TD>  10    </TD><TD>  494 </TD><TD> 30 010  </TD></TR><TR><TD>  11    </TD><TD>  550 </TD><TD> 32 627  </TD></TR></TABLE><p></p><p></p>   2. A compter du 1er novembre 2000, les salaires minima mensuels pour 151,67 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 6 210 F ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 41,95 F.<p></p><p></p><TABLE><TR><TD>SALAIRES MINIMA POUR 151,67 HEURES AU 1er NOVEMBRE 2000</TD></TR><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD></TD><TD></TD><TD> (en fr.)</TD></TR><TR><TD>  1 A   </TD><TD> 0    </TD><TD>  6 210  </TD></TR></TABLE><p></p> 1 B      : 3    :  6 336  :<p></p> 1 C/2 A  : 8    :  6 546  :<p></p><TABLE><TR><TD>  2 B   </TD><TD> 12   </TD><TD>  6 713  </TD></TR><TR><TD>2 C/3 A </TD><TD> 23   </TD><TD>  7 175  </TD></TR><TR><TD>  3 B   </TD><TD> 28   </TD><TD>  7 385  </TD></TR><TR><TD>3 C/4 A </TD><TD> 46   </TD><TD>  8 140  </TD></TR><TR><TD>  4 B   </TD><TD> 54   </TD><TD>  8 475  </TD></TR><TR><TD>4 C/5 A </TD><TD> 77   </TD><TD>  9 440  </TD></TR><TR><TD>  5 B   </TD><TD> 88   </TD><TD>  9 902  </TD></TR><TR><TD>5 C/6 A </TD><TD> 118  </TD><TD>  11 160 </TD></TR><TR><TD>  6 B   </TD><TD> 132  </TD><TD>  11 747 </TD></TR><TR><TD>  6 C   </TD><TD> 169  </TD><TD>  13 300 </TD></TR><TR><TD>  7 A   </TD><TD> 183  </TD><TD>  13 887 </TD></TR><TR><TD>  7 B   </TD><TD> 246  </TD><TD>  16 530 </TD></TR><TR><TD>  8 A   </TD><TD> 260  </TD><TD>  17 117 </TD></TR><TR><TD>  8 B   </TD><TD> 335  </TD><TD>  20 263 </TD></TR><TR><TD>  9 A   </TD><TD> 349  </TD><TD>  20 851 </TD></TR><TR><TD>  9 B   </TD><TD> 438  </TD><TD>  24 584 </TD></TR><TR><TD>  10    </TD><TD> 494  </TD><TD>  26 933 </TD></TR><TR><TD>  11    </TD><TD> 550  </TD><TD>  29 283 </TD></TR></TABLE><p></p><p></p>   3. A compter du 1er janvier 2001, les salaires minima mensuels pour 169 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 6 989 F ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 47,21 F.<p></p><p></p><TABLE><TR><TD>SALAIRES MINIMA POUR 169 HEURES AU 1er JANVIER 2001</TD></TR><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD></TD><TD></TD><TD> (en fr.)</TD></TR><TR><TD>  1 A   </TD><TD>  0   </TD><TD>  6 989  </TD></TR><TR><TD>1 B     </TD><TD>  3   </TD><TD>  7 131  </TD></TR><TR><TD>1 C/2 A </TD><TD>  8   </TD><TD>  7 367  </TD></TR><TR><TD>  2 B   </TD><TD>  12  </TD><TD>  7 556  </TD></TR><TR><TD>2 C/3 A </TD><TD>  23  </TD><TD>  8 075  </TD></TR><TR><TD>  3 B   </TD><TD>  28  </TD><TD>  8 311  </TD></TR><TR><TD>3 C/4 A </TD><TD>  46  </TD><TD>  9 161  </TD></TR><TR><TD>  4 B   </TD><TD>  54  </TD><TD>  9 538  </TD></TR><TR><TD>4 C/5 A </TD><TD>  77  </TD><TD>  10 624 </TD></TR><TR><TD>  5 B   </TD><TD>  88  </TD><TD>  11 143 </TD></TR><TR><TD>5 C/6 A </TD><TD>  118 </TD><TD>  12 560 </TD></TR><TR><TD>  6 B   </TD><TD>  132 </TD><TD>  13 221 </TD></TR><TR><TD>  6 C   </TD><TD>  169 </TD><TD>  14 967 </TD></TR><TR><TD>  7 A   </TD><TD>  183 </TD><TD>  15 628 </TD></TR><TR><TD>  7 B   </TD><TD>  246 </TD><TD>  18 603 </TD></TR><TR><TD>  8 A   </TD><TD>  260 </TD><TD>  19 264 </TD></TR><TR><TD>  8 B   </TD><TD>  335 </TD><TD>  22 804 </TD></TR><TR><TD>  9 A   </TD><TD>  349 </TD><TD>  23 465 </TD></TR><TR><TD>  9 B   </TD><TD>  438 </TD><TD>  27 667 </TD></TR><TR><TD>  10    </TD><TD>  494 </TD><TD>  30 311 </TD></TR><TR><TD>  11    </TD><TD>  550 </TD><TD>  32 955 </TD></TR></TABLE><p></p><p></p>   4. A compter du 1er juillet 2001, les salaires minima mensuels pour 169 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 7 024 F ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 47,45 F.<p></p><p></p><TABLE><TR><TD>SALAIRES MINIMA POUR 169 HEURES AU 1er JUILLET 2001</TD></TR><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD></TD><TD></TD><TD> (en fr.)</TD></TR><TR><TD>  1 A   </TD><TD>  0   </TD><TD>  7 024  </TD></TR><TR><TD>  1 B   </TD><TD>  3   </TD><TD>  7 166  </TD></TR><TR><TD>1 C/2 A </TD><TD>  8   </TD><TD>  7 404  </TD></TR><TR><TD>  2 B   </TD><TD>  12  </TD><TD>  7 593  </TD></TR><TR><TD>2 C/3 A </TD><TD>  23  </TD><TD>  8 115  </TD></TR><TR><TD>  3 B   </TD><TD>  28  </TD><TD>  8 353  </TD></TR><TR><TD>3 C/4 A </TD><TD>  46  </TD><TD>  9 207  </TD></TR><TR><TD>  4 B   </TD><TD>  54  </TD><TD>  9 586  </TD></TR><TR><TD>4 C/5 A </TD><TD>  77  </TD><TD>  10 678 </TD></TR><TR><TD>  5 B   </TD><TD>  88  </TD><TD>  11 200 </TD></TR><TR><TD>5 C/6 A </TD><TD>  118 </TD><TD>  12 623 </TD></TR><TR><TD>  6 B   </TD><TD>  132 </TD><TD>  13 287 </TD></TR><TR><TD>  6 C   </TD><TD>  169 </TD><TD>  15 043 </TD></TR><TR><TD>  7 A   </TD><TD>  183 </TD><TD>  15 707 </TD></TR><TR><TD>  7 B   </TD><TD>  246 </TD><TD>  18 697 </TD></TR><TR><TD>  8 A   </TD><TD>  260 </TD><TD>  19 361 </TD></TR><TR><TD>  8 B   </TD><TD>  335 </TD><TD>  22 920 </TD></TR><TR><TD>  9 A   </TD><TD>  349 </TD><TD>  23 584 </TD></TR><TR><TD>  9 B   </TD><TD>  438 </TD><TD>  27 807 </TD></TR><TR><TD>  10    </TD><TD>  494 </TD><TD>  30 464 </TD></TR><TR><TD>  11    </TD><TD>  550 </TD><TD>  33 122 </TD></TR></TABLE><p></p><p></p>   5. A compter du 1er janvier 2001, les salaires minima mensuels pour 151,67 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 6 583 F ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 44,47 F.<p></p><p></p><TABLE><TR><TD>SALAIRES MINIMA POUR 151,67 HEURES AU 1er JANVIER 2001</TD></TR><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD></TD><TD></TD><TD> (en fr.)</TD></TR><TR><TD>  1 A   </TD><TD> 0    </TD><TD> 6 583   </TD></TR><TR><TD>  1 B   </TD><TD> 3    </TD><TD> 6 716   </TD></TR><TR><TD>1 C/2 A </TD><TD> 8    </TD><TD> 6 939   </TD></TR><TR><TD>  2 B   </TD><TD> 12   </TD><TD> 7 117   </TD></TR><TR><TD>2 C/3 A </TD><TD> 23   </TD><TD> 7 606   </TD></TR><TR><TD>  3 B   </TD><TD> 28   </TD><TD> 7 828   </TD></TR><TR><TD>3 C/4 A </TD><TD> 46   </TD><TD> 8 629   </TD></TR><TR><TD>  4 B   </TD><TD> 54   </TD><TD> 8 984   </TD></TR><TR><TD>4 C/5 A </TD><TD> 77   </TD><TD> 10 007  </TD></TR><TR><TD>  5 B   </TD><TD> 88   </TD><TD> 10 496  </TD></TR><TR><TD>5 C/6 A </TD><TD> 118  </TD><TD> 11 830  </TD></TR><TR><TD>  6 B   </TD><TD> 132  </TD><TD> 12 453  </TD></TR><TR><TD>  6 C   </TD><TD> 169  </TD><TD> 14 098  </TD></TR><TR><TD>  7 A   </TD><TD> 183  </TD><TD> 14 721  </TD></TR><TR><TD>  7 B   </TD><TD> 246  </TD><TD> 17 523  </TD></TR><TR><TD>  8 A   </TD><TD> 260  </TD><TD> 18 145  </TD></TR><TR><TD>  8 B   </TD><TD> 335  </TD><TD> 21 480  </TD></TR><TR><TD>  9 A   </TD><TD> 349  </TD><TD> 22 103  </TD></TR><TR><TD>  9 B   </TD><TD> 438  </TD><TD> 26 061  </TD></TR><TR><TD>  10    </TD><TD> 494  </TD><TD> 28 551  </TD></TR><TR><TD>  11    </TD><TD> 550  </TD><TD> 31 042  </TD></TR></TABLE><p></p><p></p>   6. A compter du 1er juillet 2001, les salaires minima mensuels pour 151,67 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 6 616 F ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 44,69 F.<p></p><p></p><TABLE><TR><TD>SALAIRES MINIMA POUR 151,67 HEURES AU 1er JUILLET 2001</TD></TR><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD></TD><TD></TD><TD> (en fr.)</TD></TR><TR><TD>  1 A   </TD><TD> 0    </TD><TD> 6 616   </TD></TR><TR><TD>  1 B   </TD><TD> 3    </TD><TD> 6 750   </TD></TR><TR><TD>1 C/2 A </TD><TD> 8    </TD><TD> 6 974   </TD></TR><TR><TD>  2 B   </TD><TD> 12   </TD><TD> 7 152   </TD></TR><TR><TD>2 C/3 A </TD><TD> 23   </TD><TD> 7 644   </TD></TR><TR><TD>  3 B   </TD><TD> 28   </TD><TD> 7 867   </TD></TR><TR><TD>3 C/4 A </TD><TD> 46   </TD><TD> 8 672   </TD></TR><TR><TD>  4 B   </TD><TD> 54   </TD><TD> 9 029   </TD></TR><TR><TD>4 C/5 A </TD><TD> 77   </TD><TD> 10 057  </TD></TR><TR><TD>  5 B   </TD><TD> 88   </TD><TD> 10 549  </TD></TR><TR><TD>5 C/6 A </TD><TD> 118  </TD><TD> 11 889  </TD></TR><TR><TD>  6 B   </TD><TD> 132  </TD><TD> 12 515  </TD></TR><TR><TD>  6 C   </TD><TD> 169  </TD><TD> 14 169  </TD></TR><TR><TD>  7 A   </TD><TD> 183  </TD><TD> 14 794  </TD></TR><TR><TD>  7 B   </TD><TD> 246  </TD><TD> 17 610  </TD></TR><TR><TD>  8 A   </TD><TD> 260  </TD><TD> 18 235  </TD></TR><TR><TD>  8 B   </TD><TD> 335  </TD><TD> 21 587  </TD></TR></TABLE><p></p><p></p>   9 A   : 349  : 22 213  :<p></p><TABLE><TR><TD>  9 B   </TD><TD> 438  </TD><TD> 26 190  </TD></TR><TR><TD>  10    </TD><TD> 494  </TD><TD> 28 693  </TD></TR><TR><TD>  11    </TD><TD> 550  </TD><TD> 31 196  </TD></TR></TABLE><p></p> Article 3<p></p>   Les parties signataires s'engagent à se rencontrer au début du 2e trimestre 2001 ainsi qu'au début du 4e trimestre 2001 pour examiner la situation des salaires minima.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2000-10-18 BO conventions collectives 2000-48",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 971827200000,
+                  "dateFin": 988243200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -32363,13 +32437,114 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727334",
+              "cid": "KALISCTA000005727334",
+              "intOrdre": 42949,
+              "etat": "REMPLACE",
+              "title": "Salaires minima",
+              "dateModif": null,
+              "dateDebut": "2002-04-10",
+              "dateFin": "2005-09-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005859215",
+                  "cid": "KALIARTI000005859215",
+                  "intOrdre": 42949,
+                  "etat": "REMPLACE",
+                  "num": null,
+                  "path": "/KALISCTA000005727334/KALIARTI000005859215",
+                  "pathTitle": [
+                    "Salaires minima"
+                  ],
+                  "content": "<p></p>Préambule <p></p><p></p>Dans la continuité des négociations menées sur les salaires minima conventionnels mensuels, le présent accord et l'accord du même jour sur \" les salaires minima conventionnels mensuels \" constituent un ensemble indissociable. <p></p><p></p>Par conséquent, les partenaires sociaux conviennent ce qui suit : <p></p>Article 1er <p></p><p></p>Les partenaires sociaux s'engagent à se réunir le 7 juin 2002 pour négocier le principe et les modalités de salaires minima conventionnels annuels. Seront notamment abordés :<p></p><p></p>-les éléments de salaire entrant dans l'assiette du salaire minimum annuel ;<p></p><p></p>-les modalités de calcul des salaires minima annuels ;<p></p><p></p>-le montant des salaires minima annuels ;<p></p><p></p>-les modalités de calcul de la prime d'ancienneté ;<p></p><p></p>-le calendrier d'application ;<p></p><p></p>-les mesures transitoires permettant notamment le rattrapage de la grille des salaires 151,67 heures par rapport à la grille des salaires 169 heures telle qu'elle résulte de l'accord du même jour sur les salaires minima conventionnels annuels. <p></p>Article 2 <p></p><p></p>Dans la perspective d'une mise en place effective des salaires minima conventionnels annuels, les partenaires sociaux s'engagent à se réunir pour examiner l'incidence de l'évolution du SMIC sur les salaires minima conventionnels annuels. <p></p>Article 3 <p></p><p></p>Conformément aux articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">L. 132-10 </a>et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006806113&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. R132-1 (Ab)\">R. 132-1</a> du code du travail, le présent accord collectif sera déposé en 5 exemplaires à la direction départementale du travail et de l'emploi de Paris et remis au secrétariat-greffe du conseil de prud'hommes de Paris. <p></p><font color=\"808080\"><em>NOTA : Arrêté du 8 octobre 2002 : l'article 2 est étendu sous réserve, d'une part, de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance (SMIC) et, d'autre part, de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 relative à la réduction négociée du temps de travail qui institue au profit des salariés rémunérés au SMIC une garantie de rémunération revalorisée au 1er juillet de chaque année. <p></p>L'article 3 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance (SMIC) ainsi que des règlements communautaires du Conseil n° CE 1103/97 du 17 juin 1997 fixant certaines dispositions relatives à l'introduction de l'euro, n° CE 974/98 du 3 mai 1998 concernant l'introduction de l'euro et n° CE 2866/98 du 31 décembre 1998 concernant les taux de conversion entre l'euro et les monnaies des Etats membres adoptant l'euro.<p></p></em></font>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2002-04-10 BO conventions collectives 2002-19 étendu par arrêté du 8 octobre 2002 JORF 18 octobre 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-10 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-10",
+                      "articleId": "LEGIARTI000006647014",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    },
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. R132-1 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "R132-1",
+                      "articleId": "LEGIARTI000006806113",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1018396800000,
+                  "dateFin": 1126224000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -32383,13 +32558,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727335",
+              "cid": "KALISCTA000005727335",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima",
+              "dateModif": null,
+              "dateDebut": "2002-04-10",
+              "dateFin": "2005-09-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005859216",
+                  "cid": "KALIARTI000005859216",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727335/KALIARTI000005859216",
+                  "pathTitle": [
+                    "Salaires minima"
+                  ],
+                  "content": "<p></p>   Préambule<p></p><p></p>   Dans le cadre de la négociation annuelle obligatoire sur les salaires prévue à l'article L. 132-12 du code du travail, les partenaires sociaux se sont réunis les 9 juillet, 8 octobre, 13 décembre, 20 décembre 2001 et les 7 janvier, 31 janvier et 18 février 2002.<p></p><p></p>   Le présent accord et l'accord du même jour \" sur l'engagement de négocier sur les salaires minima conventionnels annuels \" constituent un ensemble indissociable.<p></p><p></p>   Par conséquent, il a été convenu ce qui suit :<p></p> Article 1er<p></p><p></p>   A compter du 1er avril 2002, la valeur constante et la valeur du point permettant de calculer les salaires minima conventionnels annuels pour 151,67 heures sont revalorisés de 2 %, dont 0,6 % au titre du rattrapage entre la grille des salaires minima 169 heures et la grille des salaires 151,67 heures.<p></p> Article 2<p></p><p></p>   Le paragraphe II \" Salaires minima professionnels \" de l'avenant I de la convention collective nationale de l'industrie pharmaceutique modifiée est abrogé et remplacé par les dispositions suivantes :<p></p><p></p>   \" II. - Salaires minima professionnels<p></p><p></p>   A compter du 1er avril 2002, les salaires minima mensuels pour 151,67 heures sont calculés à partir de la formule suivante : y = a + bx ;<p></p><p></p>   y : salaires minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au 1er niveau du 1er groupe de classification, soit 1 028,77 Euros ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 6,94921 Euros.<p></p> Salaires minima pour 151,67 heures au 1er avril 2002<p></p> (En euros.)   <p></p> -----------------------------------------------<p></p><TABLE><TR><TD>  GROUPE  </TD><TD>   POINT   </TD><TD>   SALAIRE MINIMAL    </TD></TR><TR><TD>   1 A    </TD><TD>     0     </TD><TD>       1 028,77       </TD></TR><TR><TD>   1 B    </TD><TD>     3     </TD><TD>       1 049,62       </TD></TR><TR><TD>   1 C/2 A</TD><TD>     8     </TD><TD>       1 084,36       </TD></TR><TR><TD>   2 B    </TD><TD>    12     </TD><TD>       1 112,16       </TD></TR><TR><TD>   2 C/3 A</TD><TD>    23     </TD><TD>       1 188,60       </TD></TR><TR><TD>   3 B    </TD><TD>    28     </TD><TD>       1 223,35       </TD></TR><TR><TD>   3 C/4 A</TD><TD>    46     </TD><TD>       1 348,43       </TD></TR></TABLE><p></p><TABLE><TR><TD>   4 B    </TD><TD>    54     </TD><TD>       1 404,03       </TD></TR><TR><TD>   4 C/5 A</TD><TD>    77     </TD><TD>       1 563,86       </TD></TR><TR><TD>   5 B    </TD><TD>    88     </TD><TD>       1 640,30       </TD></TR><TR><TD>   5 C/6 A</TD><TD>   118     </TD><TD>       1 848,78       </TD></TR><TR><TD>   6 B    </TD><TD>   132     </TD><TD>       1 946,06       </TD></TR><TR><TD>   6 C    </TD><TD>   169     </TD><TD>       2 203,19       </TD></TR><TR><TD>   7 A    </TD><TD>   183     </TD><TD>       2 300,47       </TD></TR><TR><TD>   7 B    </TD><TD>   246     </TD><TD>       2 738,27       </TD></TR><TR><TD>   8 A    </TD><TD>   260     </TD><TD>       2 835,56       </TD></TR><TR><TD>   8 B    </TD><TD>   335     </TD><TD>       3 356,75       </TD></TR><TR><TD>   9 A    </TD><TD>   349     </TD><TD>       3 454,04       </TD></TR><TR><TD>   9 B    </TD><TD>   438     </TD><TD>       4 072,52       </TD></TR><TR><TD>  10      </TD><TD>   494     </TD><TD>       4 461,68       </TD></TR><TR><TD>  11      </TD><TD>   550     </TD><TD>       4 850,83       </TD></TR></TABLE><p></p> ----------------------------------------------- Article 3<p></p>   La grille des salaires minima conventionnels mensuels pour 169 heures figurant dans l'accord collectif du 18 octobre 2000 n'est plus applicable depuis le 1er janvier 2002.<p></p>   Néanmoins, pour les entreprises ayant décidé de la conserver comme référence effective, cette grille est revalorisée à titre indicatif de 1,4 % à compter du 1er avril 2002, et ce jusqu'à la mise en oeuvre des mesures transitoires prévues dans l'accord collectif du même jour sur l'engagement de négocier sur les salaires minima conventionnels annuels. Article 4<p></p>   Conformément aux articles L. 132-10 et R. 132-1 du code du travail, le présent accord collectif sera déposé en 5 exemplaires à la direction départementale du travail et de l'emploi à Paris et remis au secrétariat-greffe du conseil de prud'hommes de Paris.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2002-04-10 BO conventions collectives 2002-19 étendu par arrêté du 8 octobre 2002 JORF 18 octobre 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1018396800000,
+                  "dateFin": 1126224000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

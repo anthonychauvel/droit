@@ -34251,13 +34251,114 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696915",
+              "cid": "KALISCTA000005696915",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Rémunérations à compter du 1er septembre 2005",
+              "dateModif": null,
+              "dateDebut": "2005-09-20",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783207",
+                  "cid": "KALIARTI000005783207",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005696915/KALIARTI000005783207",
+                  "pathTitle": [
+                    "Rémunérations à compter du 1er septembre 2005"
+                  ],
+                  "content": "<p align=\"center\"><strong>Barème national des salaires minima mensuels garantis <br/><p> </strong>(base 35 heures par semaine) <br/>applicable à compter du 1er septembre 2005 </p><table border=\"1\" width=\"595\" cellPadding=\"2\"><tbody><tr><td align=\"center\" vAlign=\"middle\">COEFFICIENT </td><td align=\"center\" vAlign=\"middle\"><p>SALAIRE MINIMUM MENSUEL <br/>base 151,67 h par mois <br/>(en euros) </p></td></tr><tr><td align=\"center\" vAlign=\"middle\"><p>150 </p><p>160 </p><p>170 </p><p>180 </p><p>195 </p><p>215 </p><p>225 </p><p>245 </p><p>260 </p><p>275 </p><p>295 </p><p>315 </p><p>340 </p><p>365 </p><p>410 </p><p>450 </p><p>500 </p><p>600 </p><p>700 </p><p>800 </p></td><td align=\"center\" vAlign=\"middle\"><p>1 218,00 </p><p>1 225,08 </p><p>1 230,35 </p><p>1 235,80 </p><p>1 262,66 </p><p>1 302,29 </p><p>1 333,64 </p><p>1 404,04 </p><p>1 438,07 </p><p>1 486,11 </p><p>1 571,11 </p><p>1 651,76 </p><p>1 768,66 </p><p>1 880,89 </p><p>2 066,65 </p><p>2 248,94 </p><p>2 467,50 </p><p>2 910,32 </p><p>3 375,17 </p><p>3 790,94 </p></td></tr></tbody></table><p align=\"center\">Champ d'application du présent avenant </p><p>Le champ d'application professionnel, personnel et géographique du présent avenant est celui prévu par l'article 1er du chapitre Ier de la convention collective, modifié par l'avenant n° 33 du 22 avril 1986. </p><p align=\"center\">Dépôt de l'avenant </p><p>Le présent avenant, établi en application des <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006646990&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-1 (Ab)\">articles L. 132-1 et suivants du code du travail</a>, est fait en nombre suffisant d'exemplaires pour remise à chacune des organisations signataires et dépôt dans les conditions prévues à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">article L. 132-10 du code du travail</a>. </p><p>Les parties signataires demandent l'extension du présent avenant au ministère de l'emploi, du travail et de la cohésion sociale.</p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 76 2005-09-20 BO conventions collectives 2005-45 étendu par arrêté du 20 février 2006 JORF 1er mars 2006",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-1 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-1",
+                      "articleId": "LEGIARTI000006646990",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    },
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-10 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-10",
+                      "articleId": "LEGIARTI000006647014",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1127174400000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -34271,13 +34372,114 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696916",
+              "cid": "KALISCTA000005696916",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Barème national des salaires minima garantis à compter du 1er juillet 2006",
+              "dateModif": null,
+              "dateDebut": "2006-07-04",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783208",
+                  "cid": "KALIARTI000005783208",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005696916/KALIARTI000005783208",
+                  "pathTitle": [
+                    "Barème national des salaires minima garantis à compter du 1er juillet 2006"
+                  ],
+                  "content": "<p align=\"center\"><strong>Barème national des salaires minima mensuels garantis <br/><p> </strong>(base 35 heures par semaine) <br/>applicable à compter du 1er juillet 2006 </p><table border=\"1\" width=\"595\" cellPadding=\"2\"><tbody><tr><td align=\"center\" vAlign=\"middle\">COEFFICIENT </td><td align=\"center\" vAlign=\"middle\"><p>SALAIRE MINIMUM MENSUEL <br/>base 151,67 h par mois <br/>(en euros) </p></td></tr><tr><td align=\"center\" vAlign=\"middle\"><p>150 </p><p>160 </p><p>170 </p><p>180 </p><p>195 </p><p>215 </p><p>225 </p><p>245 </p><p>260 </p><p>275 </p><p>295 </p><p>315 </p><p>340 </p><p>365 </p><p>410 </p><p>450 </p><p>500 </p><p>600 </p><p>700 </p><p>800 </p></td><td align=\"center\" vAlign=\"middle\"><p>1 254,54 </p><p>1 261,83 </p><p>1 267,26 </p><p>1 272,87 </p><p>1 300,54 </p><p>1 338,75 </p><p>1 370,98 </p><p>1 443,35 </p><p>1 474,02 </p><p>1 523,26 </p><p>1 610,39 </p><p>1 693,05 </p><p>1 812,88 </p><p>1 927,91 </p><p>2 118,32 </p><p>2 305,16 </p><p>2 529,19 </p><p>2 983,08 </p><p>3 459,55 </p><p>3 885,71 </p></td></tr></tbody></table><p align=\"center\">Champ d'application du présent avenant </p><p>Le champ d'application professionnel, personnel et géographique du présent avenant est celui prévu par l'article 1er du chapitre Ier de la convention collective, modifié par l'avenant n° 33 du 22 avril 1986. </p><p align=\"center\">Dépôt de l'avenant </p><p>Le présent avenant, établi en application des <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006646990&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-1 (Ab)\">articles L. 132-1 et suivants du code du travail</a>, est fait en nombre suffisant d'exemplaires pour remise à chacune des organisations signataires et dépôt dans les conditions prévues à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">article L. 132-10 du code du travail</a>. </p><p>Les parties signataires demandent l'extension du présent avenant au ministère de l'emploi, du travail et de la cohésion sociale.</p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 77 2006-07-04 BO conventions collectives 2006-39 étendu par arrêté du 18 décembre 2006 JORF 22 décembre 2006",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-1 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-1",
+                      "articleId": "LEGIARTI000006646990",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    },
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-10 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-10",
+                      "articleId": "LEGIARTI000006647014",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1151971200000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -34292,12 +34494,103 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000018192863",
+              "cid": "KALIARTI000018192863",
+              "intOrdre": 524287,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000018192863",
+              "pathTitle": [],
+              "content": "<p align=\"center\"><strong>Barème national des salaires minima mensuels garantis <br/><p> </strong>(base 35 heures par semaine) <br/>applicable à compter du 1er juillet 2007</p><p align=\"center\"></p><center><table border=\"1\" width=\"595\" cellPadding=\"2\"><tbody><tr><td align=\"center\" vAlign=\"middle\">COEFFICIENT </td><td align=\"center\" vAlign=\"middle\"><p>SALAIRE MINIMUM MENSUEL <br/>base 151,67 h par mois<br/>(en euros) </p></td></tr><tr><td align=\"center\" vAlign=\"middle\"><p>150</p><p>160</p><p>170</p><p>180</p><p>195</p><p>215</p><p>225</p><p>245</p><p>260</p><p>275</p><p>295</p><p>315</p><p>340</p><p>365</p><p>410</p><p>450</p><p>500</p><p>600</p><p>700</p><p>800</p></td><td align=\"center\" vAlign=\"middle\"><p>1 280,89</p><p>1 288,33</p><p>1 293,87</p><p>1 299,60</p><p>1 327,85</p><p>1 366,86</p><p>1 399,77</p><p>1 473,66</p><p>1 504,97</p><p>1 555,25</p><p>1 644,21</p><p>1 728,60</p><p>1 850,95</p><p>1 968,40</p><p>2 162,80</p><p>2 353,57</p><p>2 582,30</p><p>3 045,72</p><p>3 532,20</p><p>3 967,31</p></td></tr></tbody></table></center><p align=\"center\">Champ d'application du présent avenant </p><p>Le champ d'application professionnel, personnel et géographique du présent avenant est celui prévu par l'<a href=\"/affichIDCCArticle.do?cidTexte=KALITEXT000005650573&idArticle=KALIARTI000005782844&categorieLien=cid\">article 1er du chapitre Ier de la convention collective</a>, modifié par avenant n° 33 du 22 avril 1986. </p><p align=\"center\">Dépôt de l'avenant </p><p>Le présent avenant, établi en application des <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006646990&dateTexte=&categorieLien=cid\">articles L. 132-1 et suivants du code du travail</a>, est fait en nombre suffisant d'exemplaires pour remise à chacune des organisations signataires et dépôt dans les conditions prévues à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\">article L. 132-10 du code du travail</a>. <br/>Les parties signataires demandent l'extension du présent avenant au ministère du travail, des relations sociales et de la solidarité.</p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1",
+              "type": "AUTONOME",
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000017650150",
+                  "textTitle": "Arrêté du 10 décembre 2007, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "",
+                  "articleId": "JORFTEXT000017650150",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2007-12-15",
+                  "dateSignaTexte": "2007-12-10",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "KALITEXT000005650573",
+                  "textTitle": "Convention collective nationale du 30 octobre 1969 - art. 1",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "1",
+                  "articleId": "KALIARTI000005782844",
+                  "natureText": "Convention collective nationale ",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 514512000000
+                },
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L132-1",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L132-1",
+                  "articleId": "LEGIARTI000006646990",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 122860800000
+                },
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L132-10",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L132-10",
+                  "articleId": "LEGIARTI000006647014",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 122860800000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1183420800000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

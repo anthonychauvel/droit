@@ -35497,13 +35497,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724345",
+              "cid": "KALISCTA000005724345",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeurs des appointements minimaux des IC et des ETAM 1995",
+              "dateModif": null,
+              "dateDebut": "1996-03-01",
+              "dateFin": "1998-03-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851837",
+                  "cid": "KALIARTI000005851837",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005724345/KALIARTI000005851837",
+                  "pathTitle": [
+                    "Valeurs des appointements minimaux des IC et des ETAM 1995"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur du point des ingénieurs et cadres est fixée à 105,48 F et ce à compter de la date prévue à l'article 3 du présent accord.<p></p> Article 2<p></p><p></p>   Pour les employés, techniciens et agents de maîtrise (E.T.A.M.). les salaires minimaux conventionnels sont déterminés de la manière suivante :<p></p><p></p>   Position : 1.1 ; coefficient : 200 ; salaire minimum : 6 361 F brut.<p></p><p></p>   Pour les autres coefficients :<p></p><p></p>   - valeur du point : 17,47 F ;<p></p><p></p>   - partie fixe : 2.745,03 F.<p></p><p></p>   soit :<p></p><p></p><p></p>   (1) = POSITION<p></p><p></p>   (2) = COEFFICIENT<p></p><p></p>   (3) = SALAIRES MINIMAUX BRUTS<p></p><p></p><TABLE><TR><TD>  (1) </TD><TD> (2) </TD><TD>  (3)    </TD></TR><TR><TD>1.2   </TD><TD> 210 </TD><TD>  6.414 F</TD></TR><TR><TD>1.3.1 </TD><TD> 220 </TD><TD>  6.588 F</TD></TR><TR><TD>1.3.2 </TD><TD> 230 </TD><TD>  6.763 F</TD></TR><TR><TD>1.4.1 </TD><TD> 240 </TD><TD>  6.938 F</TD></TR><TR><TD>1.4.2 </TD><TD> 250 </TD><TD>  7.113 F</TD></TR><TR><TD>2.1   </TD><TD> 275 </TD><TD>  7.549 F</TD></TR><TR><TD>2.2   </TD><TD> 310 </TD><TD>  8.161 F</TD></TR><TR><TD>2.3   </TD><TD> 355 </TD><TD>  8.947 F</TD></TR><TR><TD>3.1   </TD><TD> 400 </TD><TD>  9.733 F</TD></TR><TR><TD>3.2   </TD><TD> 450 </TD><TD> 10.607 F</TD></TR><TR><TD>3.3   </TD><TD> 500 </TD><TD> 11.480 F</TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 16 1995-07-11, en vigueur le 1er jour du mois civil suivant la publication de l'arrêté d'extension, BO conventions collectives 95-42, étendu par arrêté du 8 février 1996 JORF 21 février 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 825638400000,
+                  "dateFin": 888710400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -35517,13 +35591,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724346",
+              "cid": "KALISCTA000005724346",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeurs des appointements minimaux des IC et des ETAM",
+              "dateModif": null,
+              "dateDebut": "1998-03-01",
+              "dateFin": "2001-04-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851838",
+                  "cid": "KALIARTI000005851838",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005724346/KALIARTI000005851838",
+                  "pathTitle": [
+                    "Valeurs des appointements minimaux des IC et des ETAM"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur du point des ingénieurs et cadres est fixée à 109 F et ce à compter de la date prévue à l'article troisième du présent accord.<p></p> Article 2<p></p><p></p>   Pour les employés, techniciens et agents de maîtrise (ETAM), les salaires minimaux conventionnels sont déterminés de la manière suivante :<p></p><p></p>   - position : 1.1 ... coefficient : 200 ... salaire minimum :<p></p> 6 700 F brut ;<p></p><p></p>   - position : 1.2 ... coefficient : 210 ... salaire minimum :<p></p> 6 710 F brut.  <p></p><p></p>   Pour les autres coefficients :<p></p><p></p>   - valeur du point ... 18,05 F ;<p></p><p></p>   - partie fixe ... 2 910,00 F,<p></p><p></p>   soit :<p></p><p></p><TABLE><TR><TD></TD><TD></TD><TD>SALAIRES </TD></TR><TR><TD>POSITION</TD><TD> COEF</TD><TD>MINIMAUX </TD></TR><TR><TD></TD><TD></TD><TD>BRUTS    </TD></TR><TR><TD>1.3.1   </TD><TD> 220 </TD><TD>  6.881 F</TD></TR><TR><TD>1.3.2   </TD><TD> 230 </TD><TD>  7.062 F</TD></TR><TR><TD>1.4.1   </TD><TD> 240 </TD><TD>  7.242 F</TD></TR><TR><TD>1.4.2   </TD><TD> 250 </TD><TD>  7.423 F</TD></TR><TR><TD>2.1     </TD><TD> 275 </TD><TD>  7.874 F</TD></TR><TR><TD>2.2     </TD><TD> 310 </TD><TD>  8.506 F</TD></TR><TR><TD>2.3     </TD><TD> 355 </TD><TD>  9.318 F</TD></TR><TR><TD>3.1     </TD><TD> 400 </TD><TD> 10.130 F</TD></TR><TR><TD>3.2     </TD><TD> 450 </TD><TD> 11.033 F</TD></TR><TR><TD>3.3     </TD><TD> 500 </TD><TD> 11.935 F</TD></TR></TABLE><p></p>  Article 3<p></p>   Les dispositions du présent accord fixant les nouvelles valeurs des appointements minimaux conventionnels, entreront en vigueur pour l'ensemble des entreprises de la branche, adhérentes ou non à une organisation patronale, le premier jour du mois civil suivant la publication de l'arrêté d'extension du présent avenant au Journal officiel de la République française ; dans le cadre du champ d'application transitoire de la convention collective nationale tel que défini par l'accord du 21 novembre 1995 (JO du 21 février 1996).",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 20 1997-11-27 en vigueur le 1er jour du mois civil suivant la publication de l'arrêté d'extension BO conventions collectives 98-2 étendu par arrêté du 13 février 1998 JORF 21 février 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 888710400000,
+                  "dateFin": 988243200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -35537,13 +35685,99 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724347",
+              "cid": "KALISCTA000005724347",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Valeurs des appointements minimaux des IC",
+              "dateModif": null,
+              "dateDebut": "2001-03-01",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851839",
+                  "cid": "KALIARTI000005851839",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005724347/KALIARTI000005851839",
+                  "pathTitle": [
+                    "Valeurs des appointements minimaux des IC"
+                  ],
+                  "content": "<p>Les partenaires sociaux signataires de l'accord du 22 juin 1999, ont décidé, conformément aux dispositions du chapitre 10 dudit accord, paragraphe 1, de revaloriser les rémunérations des positions 1.1 à 2.1 des ingénieurs et cadres.</p><p align=\"center\">1. Modalités de la revalorisation</p><p>Cette revalorisation de la rémunération sera obtenue par une modification des coefficients associés à ces positions :</p><table border=\"1\"><tbody><tr><td><p align=\"center\">POSITION</p></td><td><p align=\"center\">ANCIEN COEF </p></td><td><p align=\"center\">NOUVEAU COEF </p></td></tr><tr><td><p align=\"center\">1.1 </p></td><td><p align=\"center\">90 </p></td><td><p align=\"center\">95 </p></td></tr><tr><td><p align=\"center\">1.2 </p></td><td><p align=\"center\">95 </p></td><td><p align=\"center\">100 </p></td></tr><tr><td><p align=\"center\">2.10 </p></td><td><p align=\"center\">100 </p></td><td><p align=\"center\">105 </p></td></tr><tr><td><p align=\"center\">2.11 </p></td><td><p align=\"center\">110 </p></td><td><p align=\"center\">115 </p></td></tr></tbody></table><p>Il en résulte que les salaires minimaux bruts de ingénieurs et cadres de ces 4 positions seront dorénavant les suivants (valeur actuelle du point : 109 F) :</p><table border=\"1\"><tbody><tr><td><p align=\"center\">POSITION</p></td><td><p align=\"center\">COEF </p></td><td><p align=\"center\">SALAIRE BRUT(en francs) </p></td></tr><tr><td><p align=\"center\">1.1 </p></td><td><p align=\"center\">95 </p></td><td><p align=\"center\">10 355 </p></td></tr><tr><td><p align=\"center\">1.2 </p></td><td><p align=\"center\">100 </p></td><td><p align=\"center\">10 900 </p></td></tr><tr><td><p align=\"center\">2.1 </p></td><td><p align=\"center\">105 </p></td><td><p align=\"center\">11 445 </p></td></tr><tr><td><p align=\"center\">2.11 </p></td><td><p align=\"center\">115 </p></td><td><p align=\"center\">12 535 </p></td></tr></tbody></table><p align=\"center\">2. Date de mise en application</p><p>Le présent avenant sera applicable à compter du premier jour du mois civil suivant la publication de son arrêté ministériel d'extension ou au plus tard le 1er mars 2001.</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "KALITEXT000005679905",
+                      "textTitle": "ANNEXE II CLASSIFICATION DES INGENIEURS ET CADRES (VE)",
+                      "linkType": "MODIFIE",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "KALITEXT000005679905",
+                      "natureText": "Annexe",
+                      "datePubliTexte": "2999-01-01",
+                      "dateSignaTexte": "1987-12-15",
+                      "dateDebutCible": "1988-01-01"
+                    },
+                    {
+                      "textCid": "",
+                      "textTitle": "Annexe I 2000-12-07 en vigueur le 1er jour du mois suivant l'extension BO conventions collectives 2001-2",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 983404800000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

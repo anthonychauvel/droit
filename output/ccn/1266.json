@@ -20843,13 +20843,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690564",
+              "cid": "KALISCTA000005690564",
+              "intOrdre": 42949,
+              "etat": "PERIME",
+              "title": "Salaires de base mensuels et revenus minimaux mensuels au 1er juillet 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-02-21",
+              "dateFin": "2002-03-29",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767561",
+                  "cid": "KALIARTI000005767561",
+                  "intOrdre": 42949,
+                  "etat": "PERIME",
+                  "num": null,
+                  "path": "/KALISCTA000005690564/KALIARTI000005767561",
+                  "pathTitle": [
+                    "Salaires de base mensuels et revenus minimaux mensuels au 1er juillet 1997."
+                  ],
+                  "content": "Article 1er<p></p> Salaires de base mensuels<p></p><p></p>   Les salaires de base mensuels (pour une durée de travail de 169 heures) tels que définis au point B de l'avenant n° 11 à la convention collective nationale sont modifiés comme suit, à compter des rémunérations versées au titre de juillet 1997 :<p></p><TABLE><TR><TD> Niveau </TD><TD>salaire de base </TD></TR><TR><TD></TD><TD>mensuels (en F.)</TD></TR><TR><TD>  I A   </TD><TD>    6 500       </TD></TR><TR><TD>  I B   </TD><TD>    6 560       </TD></TR><TR><TD>  II A  </TD><TD>    6 700       </TD></TR><TR><TD>  II B  </TD><TD>    6 800       </TD></TR><TR><TD>  III A </TD><TD>    7 000       </TD></TR><TR><TD>  III B </TD><TD>    7 400       </TD></TR><TR><TD>  IV A  </TD><TD>    7 900       </TD></TR><TR><TD>  IV B  </TD><TD>    8 400       </TD></TR><TR><TD>  V A   </TD><TD>    9 100       </TD></TR><TR><TD>  V B   </TD><TD>   13 000       </TD></TR></TABLE><p></p>Article 2<p></p> Revenus minima mensuels<p></p><p></p>   Les revenus minima mensuels (pour une durée de travail de 169 heures) tels que définis à l'article 16 bis, paragraphe C-2 de l'avenant n° 5 à la convention collective nationale sont modifiés comme suit à compter des rémunérations versées au titre de juillet 1997 :<p></p><TABLE><TR><TD> Niveau </TD><TD>Revenus minima  </TD></TR><TR><TD></TD><TD>mensuels (en F.)</TD></TR><TR><TD>  I A   </TD><TD>    6 880       </TD></TR><TR><TD>  I B   </TD><TD>    7 213       </TD></TR><TR><TD>  II A  </TD><TD>    7 499       </TD></TR><TR><TD>  II B  </TD><TD>    7 605       </TD></TR><TR><TD>  III A </TD><TD>    7 818       </TD></TR><TR><TD>  III B </TD><TD>    8 397       </TD></TR><TR><TD>  IV A  </TD><TD>    8 938       </TD></TR><TR><TD>  IV B  </TD><TD>    9 480       </TD></TR><TR><TD>  V A   </TD><TD>   10 238       </TD></TR><TR><TD>  V B   </TD><TD>   14 463       </TD></TR></TABLE><p></p>Article 3<p></p><p></p>   Le présent avenant entre en vigueur au 5e mois civil suivant la signature de l'avenant n° 21, c'est-à-dire pour les rémunérations versées au titre de juillet 1997.<p></p><p></p>   Les parties signataires conviennent de demander au ministère du travail et des affaires sociales l'extension du présent avenant afin de le rendre applicable à l'ensemble des entreprises entrant dans le champ d'application de la convention collective nationale du 20 juin 1983.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 22 1997-02-21 BO conventions collectives 97-17, étendu par arrêté du 25 juillet 1997 JORF 2 août 1997 rectificatif 1997-05-14 BO conventions collectives 97-27",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 5 1988-03-18 art. 16 bis",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 856483200000,
+                  "dateFin": 1017360000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -20863,13 +20951,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690565",
+              "cid": "KALISCTA000005690565",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires de base mensuels et revenus minimaux mensuels au 1er avril 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-03-27",
+              "dateFin": "1999-06-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767563",
+                  "cid": "KALIARTI000005767563",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690565/KALIARTI000005767563",
+                  "pathTitle": [
+                    "Salaires de base mensuels et revenus minimaux mensuels au 1er avril 1997."
+                  ],
+                  "content": "Article 1er<p></p> Salaires de base mensuels (SMB)<p></p><p></p>   Les salaires de base mensuels (pour une durée de travail de 169 heures) tels que définis au point B de l'avenant n° 11 à la convention collective nationale sont modifiés comme suit, à compter du 1er avril 1997 :<p></p><TABLE><TR><TD>NIVEAU   </TD><TD>SALAIRE DE BASE MENSUEL</TD></TR><TR><TD>ER 1     </TD><TD>    6 492 F            </TD></TR><TR><TD>ER 2     </TD><TD>    6 679 F            </TD></TR><TR><TD>ERQ 1    </TD><TD>    7 066 F            </TD></TR><TR><TD>ERQ 2    </TD><TD>    7 729 F            </TD></TR><TR><TD>Gérant   </TD><TD>    8 500 F            </TD></TR><TR><TD>Cadre (+)</TD><TD>   12 695 F            </TD></TR></TABLE><p></p><p></p>   (+) Les propositions sont faites pour le niveau cadre tel que défini dans la convention collective nationale, dans les fiches de fonction cadre administratif et cadre d'exploitation.<p></p> Article 2<p></p> Revenus minima mensuels (RMM)<p></p><p></p>   Les revenus minima mensuels (pour une durée de travail de 169 heures) tels que définis à l'article 16 bis, paragraphe C, de l'avenant n° 5 à la convention collective nationale sont modifiés comme suit à compter du 1er avril 1997 :<p></p><TABLE><TR><TD>NIVEAU   </TD><TD> REVENU MINIMUM MENSUEL</TD></TR><TR><TD>ER 1     </TD><TD>      7 143 F          </TD></TR><TR><TD>ER 2     </TD><TD>      7 476 F          </TD></TR><TR><TD>ERQ 1    </TD><TD>      8 035 F          </TD></TR><TR><TD>ERQ 2    </TD><TD>      8 753 F          </TD></TR><TR><TD>Gérant   </TD><TD>      9 588 F          </TD></TR><TR><TD>Cadre (+)</TD><TD>     14 133 F          </TD></TR></TABLE><p></p><p></p>   (+) Les propositions sont faites pour le niveau cadre tel que défini dans la convention collective nationale, dans les fiches de fonction cadre administratif et cadre d'exploitation. Article 3<p></p>   Le présent avenant entre en vigueur au jour de sa signature.<p></p>   Les parties signataires conviennent de demander au ministère du travail, de l'emploi et de la formation professionnelle l'extension du présent avenant afin de le rendre applicable à l'ensemble des entreprises entrant dans le champ d'application de la convention collective nationale du 20 juin 1983.",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 23 1997-03-27 BO conventions collectives 97-23, étendu par arrêté du 23 juillet 1997 JORF 2 août 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 5 1988-03-18 art. 16 bis",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 859420800000,
+                  "dateFin": 928800000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -20883,13 +21059,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690566",
+              "cid": "KALISCTA000005690566",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires de base mensuels et revenus minimaux mensuels au 1er janvier 2001 et au 1er janvier 1999",
+              "dateModif": null,
+              "dateDebut": "1999-06-08",
+              "dateFin": "2001-02-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767564",
+                  "cid": "KALIARTI000005767564",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690566/KALIARTI000005767564",
+                  "pathTitle": [
+                    "Salaires de base mensuels et revenus minimaux mensuels au 1er janvier 2001 et au 1er janvier 1999"
+                  ],
+                  "content": "<p></p>   Ainsi, dans ces entreprises, la grille des salaires minima de la convention collective nationale sera, pour 35 heures hebdomadaires au 1er janvier 2001 :<p></p><p></p><TABLE><TR><TD>NIVEAU   </TD><TD>SALAIRE DE BASE MENSUEL</TD></TR><TR><TD></TD><TD>       (en francs)     </TD></TR><TR><TD>     IA  </TD><TD>         6 650,00      </TD></TR><TR><TD>     IB  </TD><TD>         6 700,00      </TD></TR><TR><TD>    IIA  </TD><TD>         6 850,00      </TD></TR><TR><TD>    IIB  </TD><TD>         6 950,00      </TD></TR><TR><TD>   IIIA  </TD><TD>         7 150,00      </TD></TR><TR><TD>   IIIB  </TD><TD>         7 550,00      </TD></TR><TR><TD>    IVA  </TD><TD>         8 060,00      </TD></TR><TR><TD>    IVB  </TD><TD>         8 570,00      </TD></TR><TR><TD>     VA  </TD><TD>         9 300,00      </TD></TR><TR><TD>     VB  </TD><TD>        13 200,00      </TD></TR></TABLE><p></p><p></p>   Cependant, pour anticiper partiellement la revalorisation de cette grille des minima pour 35 heures hebdomadaires applicable au 1er janvier 2001, la grille des minima applicable au 1er janvier 1999, pour 39 heures hebdomadaires sera de :<p></p><p></p><TABLE><TR><TD>NIVEAU   </TD><TD> REVENU MINIMUM MENSUEL</TD></TR><TR><TD></TD><TD>      (en francs)      </TD></TR><TR><TD>      IA </TD><TD>         6 605,00      </TD></TR><TR><TD>      IB </TD><TD>         6 630,00      </TD></TR><TR><TD>     IIA </TD><TD>         6 790,00      </TD></TR><TR><TD>     IIB </TD><TD>         6 870,00      </TD></TR><TR><TD>    IIIA </TD><TD>         7 070,00      </TD></TR><TR><TD>    IIIB </TD><TD>         7 475,00      </TD></TR><TR><TD>     IVA </TD><TD>         7 980,00      </TD></TR><TR><TD>     IVB </TD><TD>         8 485,00      </TD></TR><TR><TD>      VA </TD><TD>         9 190,00      </TD></TR><TR><TD>      VB </TD><TD>        13 100,00      </TD></TR></TABLE><p></p><p></p>   Dans le cadre des différentes organisations possibles du travail, les accords négociés au sein des entreprises devront éviter, notamment au moyen du lissage des rémunérations, que les variations d'activité ne se traduisent par des fluctuations du salaire perçu par les salariés.<p></p>   Le lissage sera effectué sur la moyenne de l'horaire hebdomadaire. Chaque salarié sera titulaire d'un compte horaire. A l'échéance de chaque année civile, une régularisation sera éventuellement réalisée.<p></p>   Dans ce contexte, le décompte des jours d'absence se fera à la fin du mois où s'est située l'absence du salarié sur la base du salaire horaire réel du mois considéré en fonction du nombre d'heures de travail qu'il comporte.<p></p><p></p>   En cas d'arrivée ou de départ en cours d'année, la régularisation de la rémunération lissée devra s'effectuer en ne tenant plus compte du salaire moyen convenu, mais en fonction des heures réellement effectuées et du taux horaire applicable au moment du versement du salaire. Il conviendra de comparer cette rémunération avec la totalité de celle perçue par le salarié. Un ajustement de la rémunération devra s'effectuer sur la base de cette comparaison.<p></p><p></p>   En cas de transfert de personnel au titre de l'article L. 122-12 du code du travail ou de l'avenant n° 3 à la convention collective nationale, les mêmes règles de régularisation s'appliqueront, à charge pour le cédant de transférer au cessionnaire les droits acquis par le salarié.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord cadre 1999-01-15 en vigueur à l'extension BO conventions collectives 99-13 étendu par arrêté du 25 mai 1999 JORF 8 juin 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 5 1988-03-18 art. 16 bis",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 928800000000,
+                  "dateFin": 981504000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

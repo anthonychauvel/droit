@@ -6155,13 +6155,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717840",
+              "cid": "KALISCTA000005717840",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires pour 1998.",
+              "dateModif": null,
+              "dateDebut": "1998-09-28",
+              "dateFin": "2001-12-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836272",
+                  "cid": "KALIARTI000005836272",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005717840/KALIARTI000005836272",
+                  "pathTitle": [
+                    "Salaires pour 1998."
+                  ],
+                  "content": "Article 1er<p></p> Champ d'application<p></p><p></p>   Le présent accord, établi en vertu de l'article L. 132-2 du code du travail, s'applique aux entreprises des industries de la production et de la transformation des métaux définies par l'annexe I de la convention collective nationale des ingénieurs et cadres de la métallurgie du 13 mars 1972 modifiée.<p></p> Article 2<p></p> Barème d'appointements annuels minimaux pour 1998<p></p><p></p>   Le barème des appointements minima garantis en 1998, pour une durée annuelle correspondant à un horaire de travail mensuel de 169 heures, est le suivant :<p></p> I. - Position I<p></p><p></p>   Années de début :<p></p><p></p>   21 ans ...  93 180 F<p></p><p></p>   22 ans ... 105 604 F<p></p><p></p>   23 ans et au-delà ... 118 028 F<p></p><p></p>   Majoration par année d'expérience acquise au-delà de 23 ans, dans les conditions prévues à l'article 21 de la convention collective nationale des ingénieurs et cadres de la métallurgie, dans la limite de trois périodes d'un an : 12 424 F.<p></p>  II. - Position II<p></p><p></p>   Position de début ... 155 300 F<p></p><p></p>   Après 3 ans en position II dans l'entreprise ... 167 724 F<p></p><p></p>   Après une nouvelle période de 3 ans ... 177 042 F<p></p><p></p>   Après une nouvelle période de 3 ans ... 186 360 F<p></p><p></p>   Après une nouvelle période de 3 ans ... 194 125 F<p></p><p></p>   Après une nouvelle période de 3 ans ... 201 890 F<p></p><p></p>   Après une nouvelle période de 3 ans ... 209 655 F<p></p> III. - Position III<p></p><p></p>   Position repère III A ... 209 655 F<p></p><p></p>   Position repère III B ... 279 540 F<p></p><p></p>   Position repère III C ... 372 720 F<p></p><p></p>   Le barème ci-dessus fixant des garanties annuelles d'appointements minima pour la durée du travail considérée, ses valeurs seront applicables pro rata temporis en cas de survenance en cours d'année d'une entrée en fonction, d'une année d'expérience en position I, d'une progression de l'ancienneté requise en position II, d'un changement de classement, d'un départ de l'entreprise, ainsi qu'en cas de remplacement provisoire dans les conditions de l'article 25 de la convention collective nationale des ingénieurs et cadres de la métallurgie.<p></p> Article 3<p></p><p></p>   S'agissant d'appointements annuels minimaux, la vérification du compte d'un ingénieur ou cadre interviendra en fin d'année ou, en cas de départ de l'entreprise en cours d'année, à la fin de son contrat de travail.<p></p> Article 4<p></p><p></p>   Le présent accord, établi en fonction des conditions économiques connues à la date de sa conclusion, a été fait en un nombre suffisant d'exemplaires pour remise à chacune des organisations signataires et dépôt dans les conditions prévues par l'article L.  132-10 du code du travail.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1998-09-28 BO conventions collectives 98-45 étendu par arrêté du 22 décembre 1998 JORF 31 décembre 1998 à l'exception de la réparation d'appareils électriques pour le ménage non associé à un magasin de vente",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-2, L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 906940800000,
+                  "dateFin": 1008374400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6175,13 +6263,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717841",
+              "cid": "KALISCTA000005717841",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires pour 1999.",
+              "dateModif": null,
+              "dateDebut": "1999-12-22",
+              "dateFin": "2001-12-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836274",
+                  "cid": "KALIARTI000005836274",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005717841/KALIARTI000005836274",
+                  "pathTitle": [
+                    "Salaires pour 1999."
+                  ],
+                  "content": "<p></p>   après avoir pris acte de la déclaration de l'UIMM relative à l'incertitude que le projet de deuxième loi sur les 35 heures introduit dans la négociation salariale annuelle, ont décidé, à titre conservatoire, et pour éviter l'absence de garanties conventionnelles, d'apporter les modifications suivantes à l'accord national du 28 septembre 1998.<p></p> Article 1er<p></p><p></p>   Le barème des appointements minima garantis des ingénieurs et cadres pour l'année 1998, résultant de l'accord national du 28 septembre 1998, est maintenu, à titre conservatoire, pour l'année 1999.<p></p> Article 2<p></p><p></p>   Les parties soussignées conviennent de se revoir dans les meilleurs délais et au plus tard dans les 3 mois suivant la promulgation de la deuxième loi relative à la réduction du temps de travail.<p></p><p></p>   Au cours de cette rencontre, les parties reprendront la négociation annuelle sur les minima.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1999-12-22 BO conventions collectives 2000-2 étendu par arrêté du 6 mars 2000 JORF 16 mars 2000 à l'exception de la réparation d'appareils électriques pour le ménage non associé à un magasin de vente",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 945820800000,
+                  "dateFin": 1008374400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6196,12 +6358,63 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005836275",
+              "cid": "KALIARTI000005836275",
+              "intOrdre": 85898,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005836275",
+              "pathTitle": [],
+              "content": "<p></p>   il a été décidé de fixer dans les conditions ci-après les appointements minimaux garantis prévus par l'article 23 de la convention collective nationale des ingénieurs et cadres de la métallurgie.<p></p> Article 1er<p></p> Champ d'application<p></p><p></p>   Le présent accord, établi en vertu de l'article L. 132-2 du code du travail, s'applique aux entreprises des industries de la production et de la transformation des métaux définies par l'annexe I à la convention collective nationale des ingénieurs et cadres de la métallurgie du 13 mars 1972 modifiée.<p></p>Article 2<p></p> Barèmes des appointements annuels minimaux à partir de 2001. I. - Barème pour un forfait en heures sur l'année<p></p> de plus de 1 600 heures et de 1 760 heures au plus<p></p><p></p>   Le barème des appointements minimaux annuels garantis à partir de 2001, pour une durée annuelle de travail comprise en 1 600 et 1 760 heures au plus, dans le cadre d'un forfait en heures sur l'année, est fixé comme suit :<p></p>   COEFFICIENT                SALAIRE<p></p>                             (en francs)<p></p>        60                      97 499<p></p>        68                     110 500<p></p>        76                     123 500 <p></p>        80                     129 999 <p></p>        86                     139 749 <p></p>        92                     149 500 <p></p>       100                     162 500 <p></p>       108                     175 499 <p></p>       114                     185 250 <p></p>       120                     195 000 <p></p>       125                     203 125 <p></p>       130                     211 249 <p></p>       135                     219 374<p></p>       180                     292 499<p></p>       240                     390 000 <p></p><p></p>   Le barème figurant à l'alinéa précédent inclut la majoration de 15 % prévue, pour ce type de forfait, par l'artice 13 de l'accord national du 28 juillet 1998 sur l'organisation du travail dans la métallurgie, tel que modifié par l'avenant du 29 janvier 2000.<p></p><p></p>   A titre exceptionnel, dans les entreprises soumises à la durée légale du travail de 35 heures, lorsqu'un ingénieur ou cadre a conclu avec son employeur une convention de forfait en heures sur le mois, telle que prévue à l'article L. 212-15-3 du code du travail, sur une base moyenne mensuelle d'au moins de 160 heures, sa rémunération forfaitaire ne pourra être inférieure, en 2001, au salaire minimum correspondant au classement de l'intéressé et prévu par le présent barème.<p></p><p></p>   Le présent barème ne s'applique pas aux conventions de forfait qui, maintenant un décompte hebdomadaire de la durée du travail, se bornent à inclure le paiement des heures supplémentaires dans la rémunération mensuelle, dans les conditions rappelées à l'article 12 de l'accord national du 28 juillet 1998 modifié sur l'organisation du travail dans la métallurgie.<p></p><p></p>   II. Barème de principe, applicable aux entreprises soumises à la durée légale du travail de 35 heures, pour un horaire hebdomadaire de travail de 35 heures<p></p><p></p>   Le barème des appointements minimaux annuels garantis à partir de 2001, pour une durée hebdomadaire de travail effectif de 35 heures, sur la base mensualisée de 151,66 heures est fixé comme suit, pour les entreprises soumises à la durée légale du travail de 35 heures :<p></p>    COEFFICIENT              SALAIRE<p></p>                            (en francs)<p></p>        60                     84 782<p></p>        68                     96 087<p></p>        76                    107 391 <p></p>        80                    113 043 <p></p>        86                    121 521 <p></p>        92                    130 000 <p></p>       100                    141 304 <p></p>       108                    152 608 <p></p>       114                    161 087 <p></p>       120                    169 565 <p></p>       125                    176 630<p></p>       130                    183 695<p></p>       135                    190 760 <p></p><p></p>   Le barème ci-dessus fixant les garanties annuelles d'appointements minimaux pour la durée du travail considérée, les valeurs dudit barème seront adaptées en fonction de la durée de travail effectif à laquelle est soumis l'ingénieur ou cadre.<p></p>III. Barème applicable aux entreprises soumises à la durée légale du travail de 39 heures, pour un horaire hebdomadaire de travail de 39 heures<p></p><p></p>   Le barème des appointements minimaux annuels garantis à partir de 2001, pour une durée hebdomadaire de travail effectif de 39 heures, sur la base mensualisée de 169 heures, est fixé comme suit, pour les entreprises soumises à la durée légale du travail de 39 heures :<p></p>   COEFFICIENT                SALAIRE<p></p>                            (en francs)<p></p>     60                        94 471<p></p>     68                       107 068<p></p>     76                       119 664 <p></p>     80                       125 962 <p></p>     86                       135 409 <p></p>     92                       144 857 <p></p>    100                       157 453 <p></p>    108                       170 049 <p></p>    114                       179 497 <p></p>    120                       188 944 <p></p>    125                       196 816<p></p>    130                       204 689<p></p>    135                       212 561 <p></p><p></p>   Le barème ci-dessus fixant des garanties annuelles d'appointements minimaux pour la durée du travail considérée, les valeurs dudit barème seront adaptées en fonction de la durée de travail effectif à laquelle est soumis l'ingénieur ou cadre.<p></p>IV. Barème pour un forfait en heures sur l'année<p></p> de plus de 1 760 heures et de 1 920 heures au plus<p></p><p></p>   Le barème des appointements minimaux annuels garantis à partir de 2001, pour une durée annuelle de travail comprise entre plus de 1 760 heures et 1 920 heures au plus, dans le cadre d'un forfait en heures sur l'année, est fixé comme suit :<p></p>   COEFFICIENT               SALAIRE<p></p>                           (en francs)<p></p>     60                       110 217<p></p>     68                       124 913<p></p>     76                       139 608 <p></p>     80                       146 956 <p></p>     86                       157 977 <p></p>     92                       169 000 <p></p>     100                      183 695 <p></p>     108                      198 390 <p></p>     114                      209 413 <p></p>     120                      220 435 <p></p>     125                      229 619 <p></p>     130                      238 804 <p></p>     135                      247 988<p></p>     180                      292 499<p></p>     240                      390 000 <p></p><p></p>   Le barème figurant à l'alinéa précédent inclut la majoration de 30 % prévue, pour ce type de forfait, par l'article 13 de l'accord national du 28 juillet 1998 sur l'organisation du travail dans la métallurgie, tel que modifié par l'avenant du 29 janvier 2000.<p></p><p></p>   Le présent barème ne s'applique pas aux conventions de forfait qui, maintenant un décompte hebdomadaire de la durée du travail, se bornent à inclure le paiement des heures supplémentaires dans la rémunération mensuelle, dans les conditions rappelées à l'article 12 de l'accord national du 28 juillet 1998 modifié sur l'organisation du travail dans la métallurgie.<p></p>V. - Barème pour un forfait en jours sur l'année<p></p><p></p>   Le barème des appointements minimaux annuels garantis à partir de 2001, base 217 jours, pour les ingénieurs et cadres à temps complet, quel que soit le nombre de jours sur l'année prévu par le contrat de travail, dans le cadre d'un forfait en jours sur l'année, est fixé comme suit, sans préjudice des dispositions de l'article 2 de l'accord national du 29 janvier 2000, portant révision provisoire des classifications dans la métallurgie :<p></p>   COEFFICIENT               SALAIRE<p></p>                            (en francs)<p></p>     60                      -------<p></p>     68                      -------<p></p>     76                      -------<p></p>     80                      146 956 <p></p>     86                      157 977 <p></p>     92                      169 000 <p></p>    100                      183 695 <p></p>    108                      198 390 <p></p>    114                      209 413 <p></p>    120                      220 435 <p></p>    125                      229 619 <p></p>    130                      238 804 <p></p>    135                      247 988<p></p>    180                      292 499<p></p>    240                      390 000 <p></p><p></p>   Le barème figurant à l'alinéa précédent inclut la majoration de 30 % prévue, pour ce type de forfait, par l'article 14 de l'accord national du 28 juillet 1998, sur l'organisation du travail dans la métallurgie, tel que modifié par l'avenant du 29 janvier 2000.<p></p><p></p>   A moins que l'ingénieur ou cadre ne soit employé à temps complet, quel que soit le nombre de jours stipulé au contrat de travail, le barème ci-dessus fixant des garanties annuelles d'appointements minimaux pour le nombre annuel de 217 jours de travail effectif, les valeurs dudit barème seront adaptées en fonction du nombre de jours ou de demi-jours de travail effectif, prévu par le contrat de travail de l'ingénieur ou cadre.<p></p>VI. Barème pour un forfait sans référence horaire<p></p><p></p>   Le barème des appointements minimaux annuels garantis à partir de 2001, pour un forfait sans référence horaire, est fixé comme suit, sans préjudice des dispositions de l'article 2 de l'accord national du 29 janvier 2000, portant révision provisoire des classifications dans la métallurgie :<p></p>   COEFFICIENT                    SALAIRE<p></p>                                 (en francs)<p></p>     60                            -------<p></p>     68                            -------<p></p>     76                            -------<p></p>     80                            219 374 <p></p>     86                            219 374 <p></p>     92                            219 374 <p></p>     100                           219 374 <p></p>     108                           219 374 <p></p>     114                           219 374 <p></p>     120                           220 435 <p></p>     125                           229 619 <p></p>     130                           238 804 <p></p>     135                           247 988<p></p>     180                           292 499<p></p>     240                           390 000 <p></p><p></p>   Le barème figurant à l'alinéa précédent inclut la majoration de 30 % prévue, pour ce type de forfait, par l'article 15 de l'accord national du 28 juillet 1998 sur l'organisation du travail dans la métallurgie, tel que modifié par l'avenant du 29 janvier 2000.<p></p>Article 3<p></p> Application des barèmes.<p></p><p></p>   S'agissant d'appointements annuels minimaux, la vérification du compte d'un ingénieur ou cadre interviendra en fin d'année ou, en cas de départ de l'entreprise en cours d'année, à la fin du contrat de travail.<p></p><p></p>   Les valeurs prévues par les barèmes ci-dessus seront applicables pro rata temporis en cas de survenance en cours d'année d'une entrée en fonction, d'un changement de classement, d'une suspension du contrat de travail, d'un départ de l'entreprise, ainsi qu'en cas de remplacement provisoire dans les conditions de l'article 25 de la convention collective nationale des ingénieurs et cadres de la métallurgie.<p></p><p></p>   Pour l'application de l'article 21 de la convention collective nationale des ingénieurs et cadres de la métallurgie, la valeur du point d'indice est déterminée exclusivement en divisant, par l'indice 100, la valeur des appointements minimaux annuels prévue pour ledit indice par le barème applicable à l'ingénieur ou cadre considéré.<p></p>Article 4<p></p> Plancher annuel de transition.<p></p><p></p>   Sans préjudice des barèmes d'appointements annuels minimaux prévus par l'article 2, il est institué, à partir de l'année 2001, un plancher annuel de transition qui constitue le montant fixe au dessous duquel aucun ingénieur ou cadre visé au paragraphe I ne pourra être rémunéré, pour le classement qui lui est applicable.<p></p><p></p>   Le plancher annuel de transition visé à l'alinéa précédent est applicable également pour l'année 2000. Toutefois, pour cette année, la vérification du compte d'un ingénieur ou cadre interviendra au plus tard le 31 mars 2001.<p></p><p></p>   Les négociations qui s'ouvriront en 2001, sur une classification unique pour l'ensemble des salariés de la branche et sur la révision de la convention collective nationale des ingénieurs et cadres du 13 mars 1972 modifiée, porteront, entre autres, sur la structure des salaires minimaux, ainsi que sur le rôle et l'articulation, avec les autres barèmes prévus par le présent accord, du plancher annuel de transition. En tout état de cause, en l'absence de conclusion de ces négociations au 31 décembre 2001, la question du plancher annuel de transition sera traitée dans le cadre de la négociation portant sur les appointements minimaux pour 2002.<p></p> I.  Salariés bénéficiaires<p></p><p></p>   Le plancher annuel de transition est applicable aux ingénieurs et cadres à temps plein. Ses valeurs, figurant au paragraphe II, sont invariables, quel que soit l'horaire de travail à temps plein auquel est soumis l'ingénieur ou cadre.<p></p><p></p>   Le plancher annuel de transition s'applique également, à due proportion, aux ingénieurs et cadres à temps partiel qui ont bénéficié, en application de la loi du 13 juin 1998 ou de la loi du 19 janvier 2000, d'une réduction de leur durée du travail, d'un pourcentage inférieur ou égal à celui de la réduction d'horaire dont ont bénéficié les salariés à temps plein de l'entreprise ou de l'établissement. La valeur du plancher proportionnel, ainsi applicable aux ingénieurs et cadres à temps partiel, est déterminée en divisant par 39 les valeurs du barème figurant au paragraphe II, puis en multipliant le résultat par l'horaire hebdomadaire à temps partiel auquel était soumis l'ingénieur ou cadre avant la réduction d'horaire.<p></p>II. Barème du plancher annuel de transition en 2001<p></p>   COEFFICIENT             SALAIRE<p></p>                          (en francs)<p></p>      60                      93 180<p></p>      68                      105 604<p></p>      76                      118 028 <p></p>      80                      124 240 <p></p>      86                      133 558 <p></p>      92                      142 876 <p></p>      100                     155 300 <p></p>      108                     167 724 <p></p>      114                     177 042 <p></p>      120                     186 360 <p></p>      125                     194 125 <p></p>      130                     201 890 <p></p>      135                     209 655<p></p>      180                     279 540<p></p>      240                     372 720 <p></p>III. Application<p></p><p></p>   Le plancher annuel de transition ne servira pas de base de calcul aux majorations de 15 % ou de 30 %, respectivement prévues par les articles 13, 14 et 15 de l'accord national du 28 juillet 1998 sur l'organisation du travail dans la métallurgie, tel que modifié par l'avenant du 29 janvier 2000, au profit des ingénieurs et cadres ayant conclu avec leur employeur l'une des conventions de forfait définies par lesdits articles.<p></p><p></p>   L'assiette de comparaison du plancher annuel de transition est définie conformément à l'article 23 de la convention collective nationale des ingénieurs et cadres de la métallurgie du 13 mars 1972 modifiée. A ce titre, elle comprend, notamment, les éventuelles compensations salariales pour réduction d'horaire. En outre, et le cas échéant, elle comprend la rémunération des heures supplémentaires ainsi que leurs majorations.<p></p><p></p>   Le plancher de transition étant annuel, la vérification du compte d'un ingénieur ou cadre interviendra en fin d'année ou, en cas de départ de l'entreprise en cours d'année, à la fin de son contrat de travail.<p></p><p></p>   Les valeurs du plancher annuel de transition, fixées par le barème ci-dessus, seront applicables pro rata temporis en cas de survenance en cours d'année d'une entrée en fonction, d'un changement de classement, d'une suspension du contrat de travail, d'un départ de l'entreprise, ainsi qu'en cas de remplacement provisoire dans les conditions de l'article 25 de la convention collective nationale des ingénieurs et cadres de la métallurgie.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 31 juillet 2001 art. 1 : les paragraphes I et IV de l'article 2 (Barème des appointements annuels minimaux à partir de 2001) sont étendus sous réserve de l'application de l'article L. 212-15-4, alinéa 1, du code du travail.<p></p>    Le dernier alinéa du paragraphe II et le dernier alinéa du paragraphe III de l'article 2 susmentionné sont étendus sous réserve de l'application des majorations prévues à l'article L. 212-5 du code du travail lorsque la durée effective du travail est supérieure à la durée légale applicable à l'entreprise.<p></p>    Le dernier alinéa du paragraphe V de l'article 2 susmentionné est étendu sous réserve de l'application du dernier alinéa de l'article L. 212-15-3 (III) du code du travail.<p></p>    NOTA : (1) L'arrêté du 26 novembre 2001 supprime l'exclusion de la dernière phrase de l'alinéa 2 du paragraphe III \"application\" de l'article 45 (Plancher annuel de transition).<p></p></em></font>",
+              "nota": "   NOTA : Arrêté du 31 juillet 2001 art. 1 : les paragraphes I et IV de l'article 2 (Barème des appointements annuels minimaux à partir de 2001) sont étendus sous réserve de l'application de l'article L. 212-15-4, alinéa 1, du code du travail.<p></p>    Le dernier alinéa du paragraphe II et le dernier alinéa du paragraphe III de l'article 2 susmentionné sont étendus sous réserve de l'application des majorations prévues à l'article L. 212-5 du code du travail lorsque la durée effective du travail est supérieure à la durée légale applicable à l'entreprise.<p></p>    Le dernier alinéa du paragraphe V de l'article 2 susmentionné est étendu sous réserve de l'application du dernier alinéa de l'article L. 212-15-3 (III) du code du travail.<p></p>    NOTA : (1) L'arrêté du 26 novembre 2001 supprime l'exclusion de la dernière phrase de l'alinéa 2 du paragraphe III \"application\" de l'article 45 (Plancher annuel de transition).<p></p>",
+              "comporteLiens": false,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Accord 2000-12-15 BO Conventions collectives 2001-3 étendu par arrêté du 31 juillet 2001 JORF 17 août 2001",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "SALAIRES",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 976838400000,
+              "dateFin": 1008115200000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -13535,13 +13535,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719928",
+              "cid": "KALISCTA000005719928",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et primes d'ancienneté au 1er janvier 1994.",
+              "dateModif": null,
+              "dateDebut": "1994-01-01",
+              "dateFin": "1994-07-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005840545",
+                  "cid": "KALIARTI000005840545",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719928/KALIARTI000005840545",
+                  "pathTitle": [
+                    "Salaires et primes d'ancienneté au 1er janvier 1994."
+                  ],
+                  "content": "<p></p>   Fixant les salaires minima du 1er janvier 1994 des activités de détail ci-après :<p></p><p></p>   - commerces de l'habillement et des articles textiles de Haute-Normandie.<p></p>Article 1er<p></p><p></p>   Les salaires minima du personnel, âgé de dix-huit ans au moins et non titulaire d'un contrat d'apprentissage, sont fixés comme suit :<p></p><p></p>   Catégorie 1 : moins de 3 mois (S.M.I.C.) ... 5.900 F<p></p><p></p>   Catégorie 2 : de 3 mois à 1 an ... 6.000 F<p></p><p></p>   Catégorie 3 : de 1 à 3 ans ... 6.110 F<p></p><p></p>   Catégorie 4 : de 3 à 5 ans ... 6.250 F<p></p><p></p>   Catégorie 5 : à partir de 5 ans ... 6.390 F<p></p><p></p>   Catégorie 6 : plus de 5 ans ... 6.675 F<p></p><p></p>   Catégorie 7 : Hautement qualifié ... 6.900 F<p></p><p></p>   Catégorie 8 : 1er vendeur H.Q. ... 7.190 F<p></p>Article 2<p></p><p></p>   La classification des emplois est celle fixée par l'avenant régional à la convention collective nationale du commerce de détail de l'habillement et des articles textiles sur supplément n° 1 du 9 juin 1989 applicable en Haute-Normandie.<p></p><p></p>   Article 3<p></p><p></p>   Les primes d'ancienneté du personnel devront être calculées sur les salaires minima ci-dessus fixés et déterminés comme suit :<p></p><p></p>   Après 3 ans ... 3 p. 100<p></p><p></p>   Après 6 ans ... 6 p. 100<p></p><p></p>   Après 9 ans ... 9 p. 100<p></p><p></p>   Après 12 ans ... 12 p. 100<p></p><p></p>   Après 15 ans ... 15 p. 100.<p></p>Article 4<p></p><p></p>   Le présent accord prendra effet au 1er janvier 1994.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1993-12-13 en vigueur le 1er janvier 1994 étendu par arrêté du 10 juin 1994 JORF 24 juin 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires région Haute-Normandie",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 757382400000,
+                  "dateFin": 773020800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13555,13 +13629,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719931",
+              "cid": "KALISCTA000005719931",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et primes d'ancienneté au 1er juillet 1994.",
+              "dateModif": null,
+              "dateDebut": "1994-07-01",
+              "dateFin": "1995-07-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005840546",
+                  "cid": "KALIARTI000005840546",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719931/KALIARTI000005840546",
+                  "pathTitle": [
+                    "Salaires et primes d'ancienneté au 1er juillet 1994."
+                  ],
+                  "content": "<p></p>   Fixant les salaires minima du 1er juillet 1994 des activités de détail ci-après :<p></p> Commerces de l'habillement<p></p> et des articles textiles de Haute-Normandie<p></p> Article 1er<p></p><p></p>   Les salaires minima du personnel, âgé de dix-huit ans au moins et non titulaire d'un contrat d'apprentissage, sont fixés comme suit :<p></p> Catégorie 1 : moins de 3 mois (S.M.I.C.) : 6 036 F<p></p> Catégorie 2 : de 3 mois à 1 an : 6 150 F<p></p> Catégorie 3 : de 1 à 3 ans : 6 263 F<p></p> Catégorie 4 : de 3 à 5 ans : 6 406 F<p></p> Catégorie 5 : à partir de 5 ans : 6 550 F<p></p> Catégorie 6 : plus de 5 ans : 6 842 F<p></p> Catégorie 7 : hautement qualifié : 7 073 F<p></p> Catégorie 8 : 1er vendeur H.Q. : 7 370 F<p></p>Article 2<p></p><p></p>   La classification des emplois est celle fixée par l'avenant régional à la convention collective nationale du commerce de détail de l'habillement et des articles textiles sur supplément n° 1 du 9 juin 1989 applicable en Haute-Normandie.<p></p>Article 3<p></p><p></p>   Les primes d'ancienneté du personnel devront être calculées sur les salaires minima ci-dessus fixés et déterminés comme suit :<p></p> - après  3 ans : 3 p. 100 ;<p></p> - après  6 ans : 6 p. 100 ;<p></p> - après  9 ans : 9 p. 100 ;<p></p> - après 12 ans : 12 p. 100 ;<p></p> - après 15 ans : 15 p. 100.<p></p> Article 4<p></p><p></p>   Le présent accord prendra effet au 1er juillet 1994.<p></p> Article 5<p></p><p></p>   Cet accord est valable pour la Haute-Normandie.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1994-06-22 BO conventions collectives 94-48 en vigueur le 1er juillet 1994 étendu par arrêté du 12 janvier 1995 JORF 24 janvier 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires région Haute-Normandie",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 773020800000,
+                  "dateFin": 804556800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13575,13 +13723,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719932",
+              "cid": "KALISCTA000005719932",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des salaires minima.",
+              "dateModif": null,
+              "dateDebut": "1995-03-01",
+              "dateFin": "1996-11-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005840547",
+                  "cid": "KALIARTI000005840547",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719932/KALIARTI000005840547",
+                  "pathTitle": [
+                    "Barème des salaires minima."
+                  ],
+                  "content": "Article 1er.<p></p><p></p>   Le barème des salaires minima garantis des employés, objet de l'annexe II de la convention collective nationale du 25 novembre 1987, se trouve modifié de la façon suivante et sera applicable à comter du premier du mois suivant la publication de l'arrêté d'extension au Journal Officiel :<p></p> Employés :<p></p><TABLE><TR><TD> Catégorie 1 </TD><TD> 6.050 F </TD></TR><TR><TD> Catégorie 2 </TD><TD> 6.075 F </TD></TR><TR><TD> Catégorie 3 </TD><TD> 6.100 F </TD></TR><TR><TD> Catégorie 4 </TD><TD> 6.180 F </TD></TR><TR><TD> Catégorie 5 </TD><TD> 6.350 F </TD></TR><TR><TD> Catégorie 6 </TD><TD> 6.450 F </TD></TR><TR><TD> Catégorie 7 </TD><TD> 6.650 F </TD></TR><TR><TD> Catégorie 8 </TD><TD> 6.850 F </TD></TR></TABLE><p></p>  Primes d'ancienneté inchangées.<p></p>   Article 2<p></p> Cadres :<p></p><TABLE><TR><TD> Catégorie A1</TD><TD>  7.750 F </TD></TR><TR><TD> Catégorie A2</TD><TD>  8.350 F </TD></TR><TR><TD> Catégorie B </TD><TD>  9.300 F </TD></TR><TR><TD> Catégorie C </TD><TD> 10.300 F </TD></TR><TR><TD> Catégorie D </TD><TD> 11.400 F </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 8 1994-11-04 en vigueur le 1er jour du mois suivant la publication de l'arrêté d'extension BO conventions collectives 94-49, étendu par arrêté du 31 janvier 1995 JORF 10 février 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires Annexe II, employés, cadres",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 794016000000,
+                  "dateFin": 846806400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
