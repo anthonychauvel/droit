@@ -324,6 +324,22 @@
   .assist-chip:active{ transform:scale(.96); }
   .go:active{ transform:scale(.92); }
   .row:active{ transform:scale(.992); }
+  /* Historique des versions d'un article (vue détail) */
+  .ver-block{ margin-top:24px; padding-top:16px; border-top:1px solid var(--line); }
+  .ver-title{ margin-bottom:14px; }
+  .ver-list{ list-style:none; margin:0; padding:0; }
+  .ver-item{ position:relative; padding:0 0 18px 24px; }
+  .ver-item::before{ content:""; position:absolute; left:5px; top:15px; bottom:-3px; width:2px; background:var(--line); }
+  .ver-item:last-child{ padding-bottom:0; }
+  .ver-item:last-child::before{ display:none; }
+  .ver-dot{ position:absolute; left:0; top:4px; width:12px; height:12px; border-radius:50%; background:#fff; border:2px solid #c7cde0; box-sizing:border-box; }
+  .ver-cur .ver-dot{ border-color:#3060a8; background:#3060a8; box-shadow:0 0 0 3px rgba(48,96,168,.15); }
+  .ver-per{ font-size:13.5px; font-weight:600; color:var(--ink); }
+  .ver-badge{ display:inline-block; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:#2f7d4f; background:#e9f6ee; padding:2px 7px; border-radius:999px; vertical-align:1px; margin-left:4px; }
+  .ver-meta{ font-size:12px; color:var(--ink-soft); margin-top:2px; }
+  .ver-legi{ color:#3060a8; text-decoration:none; font-weight:600; }
+  .ver-legi:hover{ text-decoration:underline; }
+  .ver-note{ font-size:11.5px; color:var(--ink-soft); margin-top:14px; font-style:italic; }
   .panel-top{ display:flex; align-items:flex-start; gap:12px; padding:22px 24px 16px; border-bottom:1px solid var(--line); padding-top:calc(22px + env(safe-area-inset-top)); }
   .panel-top .meta{ min-width:0; flex:1; }
   .detail-num{ font-size:12.5px; color:var(--violet-strong); font-weight:600; }
@@ -3256,6 +3272,46 @@ document.getElementById('d-body').addEventListener('click', function(e){
   if(cible) scrollToSection(cible);
 });
 
+/* Formate un timestamp Légifrance (millisecondes) en JJ/MM/AAAA (UTC, pour
+   éviter tout décalage de fuseau et coller au reste de l'appli). */
+function fmtTs(ts){
+  var n = parseInt(ts, 10);
+  if(!n || n <= 0) return '?';
+  var d = new Date(n);
+  return ('0'+d.getUTCDate()).slice(-2)+'/'+('0'+(d.getUTCMonth()+1)).slice(-2)+'/'+d.getUTCFullYear();
+}
+
+/* Frise des versions d'un article (Code du travail / Sécurité sociale).
+   100 % FACTUEL : reprend la liste articleVersions de la fiche Légifrance
+   (période + numéro de version + état), avec un lien vers le texte de chaque
+   version sur Légifrance. N'affiche rien s'il n'y a qu'une seule version.
+   Aucune reformulation — on ne fait qu'ordonner et dater des données officielles. */
+function versionsTimeline(payload){
+  var vs = payload && payload.articleVersions;
+  if(!Array.isArray(vs) || vs.length < 2) return '';
+  var curId = payload.id;
+  var SENT = 32472144000000; // 01/01/2999 = pas de date de fin
+  var arr = vs.slice().sort(function(a,b){ return (b.dateDebut||0) - (a.dateDebut||0); }); // plus récent -> plus ancien
+  var items = arr.map(function(v){
+    var courante = (v.id && v.id===curId) || String(v.etat||'').toUpperCase().indexOf('VIGUEUR')===0;
+    var deb = fmtTs(v.dateDebut);
+    var fin = (v.dateFin && v.dateFin < SENT) ? fmtTs(v.dateFin) : null;
+    var periode = fin ? ('Du '+deb+' au '+fin) : ('Depuis le '+deb);
+    var lien = v.id ? '<a class="ver-legi" target="_blank" rel="noopener" href="https://www.legifrance.gouv.fr/codes/article_lc/'+encodeURIComponent(v.id)+'">texte de cette version \u2197</a>' : '';
+    return '<li class="ver-item'+(courante?' ver-cur':'')+'">'
+      + '<span class="ver-dot"></span>'
+      + '<div class="ver-body">'
+      +   '<div class="ver-per">'+escapeHtml(periode)+(courante?' <span class="ver-badge">en vigueur</span>':'')+'</div>'
+      +   '<div class="ver-meta">Version '+escapeHtml(String(v.version||'?'))+(lien?(' \u00b7 '+lien):'')+'</div>'
+      + '</div></li>';
+  }).join('');
+  return '<div class="ver-block">'
+    + '<div class="sec-title ver-title">Historique des versions ('+vs.length+')</div>'
+    + '<ul class="ver-list">'+items+'</ul>'
+    + '<div class="ver-note">Comment cet article a évolué. Chaque version renvoie à son texte officiel sur Légifrance.</div>'
+    + '</div>';
+}
+
 async function openDetail(kind, num, target){
   openPanel();
   window.__ccnOuverte = (kind==='ccn') ? num : null;
@@ -3306,6 +3362,10 @@ async function openDetail(kind, num, target){
   else if(payload.texteHtml||payload.texte||payload.content) body = '<div class="sec-text">'+linkifyArticles(cleanHtml(payload.texteHtml||payload.texte||payload.content))+'</div>';
   else if(abroge) body = '<div class="sec-text" style="color:var(--ink-soft)">Article abrogé, plus en vigueur — il est normal qu\'il n\'y ait pas (ou peu) de texte à afficher.</div>';
   else body = '<div class="sec-text" style="color:var(--ink-soft)">Cet article n\'a pas de texte dans la base — souvent une ancienne numérotation ou un renvoi vers un autre code. Utilisez le lien Légifrance ci-dessus pour le retrouver.</div>';
+
+  // Frise des versions (Code / Sécu) : affichée sous le texte si l'article a
+  // connu plusieurs versions. Factuel, données Légifrance déjà chargées.
+  if(kind==='code'||kind==='secu') body += versionsTimeline(payload);
 
   // Lien Légifrance si un identifiant est présent
   var legi='';
