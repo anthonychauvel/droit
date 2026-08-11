@@ -2506,7 +2506,14 @@ function assistSituation(cle){
   var _ct=document.getElementById('corpus-total'); if(_ct) _ct.hidden=true;
   var _box=document.getElementById('search-results'); if(_box) _box.innerHTML='<div class="loading">Recherche en cours…</div>';
   clearTimeout(window.__assistTimer);
-  window.__assistTimer = setTimeout(function(){ runSearch(); }, 30);
+  window.__assistTimer = setTimeout(function(){
+    runSearch();
+    // Puis on déroule jusqu'au DÉBUT des résultats (ils sont sous l'accueil et la
+    // barre de recherche), comme une recherche validée — pour voir tout de suite
+    // ce que la situation a trouvé, sans avoir à scroller à la main.
+    var _b = document.getElementById('search-results');
+    if(_b) setTimeout(function(){ try{ _b.scrollIntoView({behavior:'smooth', block:'start'}); }catch(e){ _b.scrollIntoView(); } }, 60);
+  }, 30);
 }
 
 function assistChoisir(profondeur, cle){
