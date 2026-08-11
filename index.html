@@ -2499,7 +2499,14 @@ function assistSituation(cle){
   // sa convention, afficher TOUTES les CCN n'a aucun sens (il ne sait pas laquelle
   // est la sienne). On masquera le bloc CCN au profit d'une invitation à préciser.
   window.__situationActive = true;
-  runSearch();
+  // Feedback immédiat : on masque l'accueil et on affiche un indicateur, puis on
+  // lance la recherche au tick suivant pour que l'écran se peigne AVANT le calcul
+  // multi-thèmes (sinon le tap paraît figé sur mobile, même allégé).
+  var _landing=document.getElementById('search-landing'); if(_landing) _landing.hidden=true;
+  var _ct=document.getElementById('corpus-total'); if(_ct) _ct.hidden=true;
+  var _box=document.getElementById('search-results'); if(_box) _box.innerHTML='<div class="loading">Recherche en cours…</div>';
+  clearTimeout(window.__assistTimer);
+  window.__assistTimer = setTimeout(function(){ runSearch(); }, 30);
 }
 
 function assistChoisir(profondeur, cle){
@@ -2562,13 +2569,26 @@ function runSearch(){
   var dym = didYouMean(tokens);
   var terms = expandTerms(tokens);
   tokens.forEach(function(t){ fuzzyExpand(t).forEach(function(w){ if(terms.indexOf(w)===-1) terms.push(w); }); });
+  // Garde-fou perf : une requête TRÈS longue (ex. une « situation » du découvreur
+  // = 12-15 mots) fait exploser l'union de candidats sur 60 000+ accords → gros
+  // gel sur mobile. On ne lance la recherche que sur les mots les PLUS
+  // discriminants (idf le plus élevé), dédupliqués. L'affichage (chips, extraits,
+  // surlignage) garde la requête complète — seul le matching est allégé, et les
+  // mots communs écartés sont ceux qui matchaient tout et n'apportaient rien.
+  var searchTokens = tokens;
+  if(tokens.length > 8){
+    var _seen={}, _uniq=[];
+    tokens.forEach(function(t){ if(!_seen[t]){ _seen[t]=1; _uniq.push(t); } });
+    _uniq.sort(function(a,b){ return idf(b)-idf(a); });
+    searchTokens = _uniq.slice(0, 8);
+  }
   // Focus (mode assisté) : la question-feuille resserre sections & articles.
   var focusTokens = (typeof ASSIST_FOCUS!=='undefined' && ASSIST_FOCUS) ? tokenize(ASSIST_FOCUS) : null;
   // Extrait d'article : on cale TOUJOURS la fenêtre sur les mots cherchés (la
   // disposition demandée), en priorité le focus s'il y en a — même logique que
   // pour les sections de convention, en recherche libre comme dans l'entonnoir.
   var artSnip = function(r){ return excerpt(String(r.snippet||''), terms, focusTokens?260:200, focusTokens); };
-  var ccnAll = searchCCNv2(tokens, rawNorm, focusTokens);
+  var ccnAll = searchCCNv2(searchTokens, rawNorm, focusTokens);
   var ccn = ccnAll.slice(0,40);
   // Filtre CCN du mode assisté : si l'utilisateur a précisé SA convention, on
   // ne garde QUE la sienne dans le bloc "Conventions" -- mais on ne touche PAS
@@ -2592,11 +2612,11 @@ function runSearch(){
     ccnFiltree = ccn.length>0;
   }
   var eng = getENG();
-  var code = searchArticlesV2(SEARCH.code, tokens, focusTokens, rawNorm, eng.artInv.code).slice(0,30);
-  var secu = searchArticlesV2(SEARCH.code_secu, tokens, focusTokens, rawNorm, eng.artInv.code_secu).slice(0,20);
-  var juris = searchArticlesV2(SEARCH.juris, tokens, focusTokens, rawNorm, eng.artInv.juris).slice(0,15);
-  var jorf = searchArticlesV2(SEARCH.jorf, tokens, focusTokens, rawNorm, eng.artInv.jorf).slice(0,15);
-  var acco = searchArticlesV2(SEARCH.acco, tokens, focusTokens, rawNorm, eng.artInv.acco).slice(0,15);
+  var code = searchArticlesV2(SEARCH.code, searchTokens, focusTokens, rawNorm, eng.artInv.code).slice(0,30);
+  var secu = searchArticlesV2(SEARCH.code_secu, searchTokens, focusTokens, rawNorm, eng.artInv.code_secu).slice(0,20);
+  var juris = searchArticlesV2(SEARCH.juris, searchTokens, focusTokens, rawNorm, eng.artInv.juris).slice(0,15);
+  var jorf = searchArticlesV2(SEARCH.jorf, searchTokens, focusTokens, rawNorm, eng.artInv.jorf).slice(0,15);
+  var acco = searchArticlesV2(SEARCH.acco, searchTokens, focusTokens, rawNorm, eng.artInv.acco).slice(0,15);
 
   // Filtre "en vigueur seulement" : masque les textes abrogés/périmés. L'état
   // n'est pas dans le search-index (null) mais dans le manifest (INDEX) : on le
