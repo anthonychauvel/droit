@@ -586,6 +586,19 @@
 .maj-tech summary::-webkit-details-marker{display:none}
 .maj-tech summary::before{content:"\25B8  ";color:var(--gold-strong)}
 .maj-tech[open] summary::before{content:"\25BE  "}
+.glo-tools{display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+#glo-filter{flex:1;min-width:220px;padding:11px 14px;border:1px solid var(--line);border-radius:11px;font:inherit;background:var(--card);color:var(--ink)}
+#glo-filter:focus{outline:none;border-color:var(--violet)}
+.glo-count{font-size:12.5px;color:var(--ink-soft);font-weight:600;white-space:nowrap}
+.glo-sec{margin-bottom:24px}
+.glo-sec-h{font-family:'Manrope',sans-serif;font-weight:800;font-size:15.5px;color:var(--marine);display:flex;align-items:center;gap:8px}
+.glo-n{font-size:12px;font-weight:700;color:var(--marine);background:#eef1f8;border-radius:999px;padding:1px 9px}
+.glo-sec-sub{font-size:12.5px;color:var(--ink-soft);margin:3px 0 10px}
+.glo-row{display:flex;align-items:baseline;gap:10px;padding:9px 12px;border-bottom:1px solid var(--line-soft)}
+.glo-term{font-weight:700;color:var(--ink);flex-shrink:0;min-width:140px}
+.glo-arrow{color:var(--gold-strong);flex-shrink:0}
+.glo-def{color:var(--ink-soft);font-size:13.5px}
+@media (max-width:560px){.glo-term{min-width:108px}.glo-row{flex-wrap:wrap;gap:3px 10px}}
 </style>
 </head>
 <body>
@@ -627,6 +640,7 @@
         <button class="nav-item" data-view="acco"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>Accords d'entreprise<span class="nc" id="nc-acco">…</span></button>
         <button class="nav-item" data-view="jorf"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>Journal Officiel<span class="nc" id="nc-jorf">…</span></button>
         <button class="nav-item" data-view="maj"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 11-3-6.7L21 8M21 3v5h-5"/></svg>Vérifications<span class="nc" id="nc-maj"></span></button>
+        <button class="nav-item" data-view="glossaire"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/><path d="M9 7h6M9 11h4"/></svg>Glossaire<span class="nc" id="nc-glossaire"></span></button>
       </div>
     </div>
   </nav>
@@ -720,6 +734,18 @@
       <p>Le robot vérifie les textes officiels deux fois par semaine. Vous voyez ici l'essentiel : le robot a-t-il bien tourné, et y a-t-il une vraie modification du droit.</p>
     </div>
     <div id="maj-results"></div>
+  </section>
+
+  <section id="view-glossaire" hidden>
+    <div class="head">
+      <h1>Glossaire du moteur</h1>
+      <p>En toute transparence : voici les mots du quotidien, sigles et abréviations que le moteur comprend et traduit tout seul en termes juridiques officiels. Parlez comme d'habitude à gauche — il cherche les bons termes à droite. (Il corrige aussi les fautes de frappe courantes.)</p>
+    </div>
+    <div class="glo-tools">
+      <input id="glo-filter" type="text" placeholder="Filtrer (ex. cse, virer, chômage partiel…)" autocomplete="off" oninput="_gloFilter()">
+      <span id="glo-count" class="glo-count"></span>
+    </div>
+    <div id="glossaire-list"></div>
   </section>
 
   <footer id="app-footer">
@@ -1020,7 +1046,8 @@ var PRO_RAW = {
  'boulanger':[843],'boulangere':[843],'patissier':[1267],'chocolatier':[1286],'boucher':[3254],'bouchere':[3254],'poissonnier':[3254,1589],'charcutier':[953],'industrie laitiere':[112],'brasseur':[1513],
  'agriculteur salarie':[7024],'ouvrier agricole':[7024],'viticulture':[7005],'vendanges':[7005],'maraichage':[7024],'horticulture':[7024],'paysagiste':[7018],'jardinier paysagiste':[7018],'elevage':[7024],'pecheur':[5619],
  'agent de securite':[1351],'gardiennage':[1351],'vigile':[1351],'agent de nettoyage':[3043],'agent d entretien':[3043],'proprete':[3043],'nettoyage industriel':[3043],'gardien immeuble':[1043],'concierge':[1043],
- 'animateur centre de loisirs':[1518],'coach sportif':[2511],'educateur sportif':[2511],'salle de sport':[2511],'comedien':[1285,3097],'technicien spectacle':[3090,3252],'intermittent du spectacle':[3090],'pressing':[2002],'blanchisserie':[2002],'pompes funebres':[759],'agent funeraire':[759],'photographe':[3168],'telecommunications':[2148],'centre d appel':[1486,3127],'services a la personne':[3127],'agence interim':[1413,2378],'interimaire':[2378],'organisme de formation':[1516],'formateur':[1516]
+ 'animateur centre de loisirs':[1518],'coach sportif':[2511],'educateur sportif':[2511],'salle de sport':[2511],'comedien':[1285,3097],'technicien spectacle':[3090,3252],'intermittent du spectacle':[3090],'pressing':[2002],'blanchisserie':[2002],'pompes funebres':[759],'agent funeraire':[759],'photographe':[3168],'telecommunications':[2148],'centre d appel':[1486,3127],'services a la personne':[3127],'agence interim':[1413,2378],'interimaire':[2378],'organisme de formation':[1516],'formateur':[1516],
+ 'ambulancier':[16],'ambulanciere':[16],'ambulance':[16],'transport sanitaire':[16],'demenageur':[16],'demenagement':[16],'magasinier':[16,1536],'cariste':[16,1536],'preparateur de commande':[16,1536],'agent logistique':[16,1536],'operateur logistique':[16,1536],'logistique':[16,1536],'entrepot':[16,1536]
 };
 var SYN_RAW = {
  'heure sup':['heures supplementaires'],'heures supp':['heures supplementaires'],'heure supp':['heures supplementaires'],'hs':['heures supplementaires'],'heure comp':['heures complementaires'],'heures comp':['heures complementaires'],'temps partiel':['heures complementaires'],'forfait jour':['forfait jours'],'au forfait':['forfait jours'],'recup':['repos compensateur'],
@@ -1349,8 +1376,10 @@ function setView(v){
   document.getElementById('view-search').hidden = (v!=='search');
   document.getElementById('view-browse').hidden = !(v==='ccn'||v==='code'||v==='secu'||v==='juris'||v==='jorf'||v==='acco'||estClause);
   document.getElementById('view-maj').hidden = (v!=='maj');
+  document.getElementById('view-glossaire').hidden = (v!=='glossaire');
   window.scrollTo({top:0});
   if(v==='maj'){ renderAudits(); }
+  else if(v==='glossaire'){ renderGlossaire(); }
   else if(estClause){ startBrowseClauses(v); }
   else { startBrowse(v); }
 }
@@ -1429,6 +1458,53 @@ var SYN_EXTRA2 = {
  // Frais, formation, retraite, divers
  'note de frais':['frais professionnels','frais de deplacement'],'frais professionnels':['frais professionnels'],'grand deplacement':['frais de deplacement'],'vehicule de fonction':['avantages en nature'],'jours teletravail':['travail a distance'],'distanciel':['travail a distance'],'formation':['formation professionnelle'],'cpf':['compte personnel de formation'],'compte personnel de formation':['compte personnel de formation'],'bilan de competences':['bilan de competences'],'vae':['validation des acquis'],'entretien professionnel':['entretien professionnel'],'entretien annuel':['entretien professionnel'],'retraite':['depart a la retraite'],'depart en retraite':['depart a la retraite'],'mise a la retraite':['mise a la retraite'],'retraite progressive':['retraite progressive'],'cumul emploi retraite':['cumul emploi retraite']
 };
+/* Abréviations & sigles du droit du travail (langage courant → termes officiels).
+   Les utilisateurs tapent très souvent en sigles (CSE, CDD, RQTH, AT/MP…).
+   Fusionné dans le moteur au même titre que SYN_RAW/SYN_EXTRA/SYN_EXTRA2. On
+   évite les sigles qui sont aussi des mots-outils français (ce, du, pas). */
+var SYN_EXTRA3 = {
+ 'cse':['comite social et economique'],'dp':['delegues du personnel','representants du personnel'],'chsct':['sante securite conditions de travail','comite social et economique'],'cssct':['commission sante securite et conditions de travail'],'dup':['delegation unique du personnel'],'irp':['institutions representatives du personnel','representants du personnel'],'ds':['delegue syndical'],'rss':['representant de section syndicale'],'bdese':['base de donnees economiques sociales et environnementales'],'bdes':['base de donnees economiques et sociales'],'ues':['unite economique et sociale'],'nao':['negociation annuelle obligatoire','salaire'],'cppni':['commission paritaire permanente de negociation et d interpretation'],
+ 'cdi':['contrat a duree indeterminee'],'cdd':['contrat a duree determinee'],'cddu':['contrat a duree determinee d usage'],'ctt':['contrat de travail temporaire','interim'],'cdii':['cdi interimaire'],'cui':['contrat unique d insertion'],'cifre':['convention industrielle de formation par la recherche'],'tese':['titre emploi service entreprise'],'ptp':['projet de transition professionnelle'],
+ 'hs':['heures supplementaires'],'hc':['heures complementaires'],'rtt':['reduction du temps de travail'],'jrtt':['rtt','repos'],'cet':['compte epargne temps'],'fj':['forfait jours'],'fh':['forfait heures'],
+ 'rc':['rupture conventionnelle'],'rcc':['rupture conventionnelle collective'],'pse':['plan de sauvegarde de l emploi','licenciement economique'],'pdv':['plan de depart volontaire'],'apc':['accord de performance collective'],'gpec':['gestion previsionnelle des emplois et des competences'],'gepp':['gestion des emplois et des parcours professionnels'],'stc':['solde de tout compte'],
+ 'mp':['maladie professionnelle'],'atmp':['accident du travail','maladie professionnelle'],'itt':['incapacite temporaire de travail'],'ipp':['incapacite permanente partielle'],'ij':['indemnites journalieres'],'ijss':['indemnites journalieres'],'duer':['document unique d evaluation des risques'],'duerp':['document unique d evaluation des risques professionnels'],'rps':['risques psychosociaux'],'tms':['troubles musculo squelettiques'],'mdt':['medecine du travail'],'sst':['sante et securite au travail'],'spst':['service de prevention et de sante au travail'],'vip':['visite d information et de prevention'],'c2p':['compte professionnel de prevention','penibilite'],'cpp':['compte professionnel de prevention'],'ald':['affection de longue duree'],
+ 'smic':['salaire minimum','minimum conventionnel'],'mg':['minimum garanti'],'pmss':['plafond mensuel de la securite sociale'],'pass':['plafond annuel de la securite sociale'],'ppv':['prime de partage de la valeur'],'pepa':['prime de partage de la valeur'],'pee':['plan d epargne entreprise'],'perco':['plan d epargne pour la retraite collectif'],'per':['plan d epargne retraite'],'pereco':['plan d epargne retraite d entreprise collectif'],'csg':['contribution sociale generalisee'],'crds':['contribution au remboursement de la dette sociale'],'ir':['impot sur le revenu'],'tr':['titre restaurant'],'fmd':['forfait mobilites durables'],'ik':['indemnite kilometrique'],'ifm':['indemnite de fin de mission','prime de precarite'],'icp':['indemnite compensatrice de conges payes'],
+ 'cpf':['compte personnel de formation'],'dif':['droit individuel a la formation','compte personnel de formation'],'cif':['conge individuel de formation'],'vae':['validation des acquis de l experience'],'cep':['conseil en evolution professionnelle'],'opco':['operateur de competences'],'poe':['preparation operationnelle a l emploi'],'proa':['reconversion ou promotion par alternance'],'cqp':['certificat de qualification professionnelle'],
+ 'rqth':['reconnaissance de la qualite de travailleur handicape','travailleur handicape'],'th':['travailleur handicape'],'aah':['allocation aux adultes handicapes'],'oeth':['obligation d emploi des travailleurs handicapes'],'mdph':['maison departementale des personnes handicapees'],
+ 'are':['allocation de retour a l emploi','allocation chomage'],'aref':['allocation d aide au retour a l emploi formation'],'ass':['allocation de solidarite specifique'],'asp':['allocation de securisation professionnelle'],'csp':['contrat de securisation professionnelle'],'rsa':['revenu de solidarite active'],'ft':['france travail','allocation chomage'],
+ 'ajpp':['allocation journaliere de presence parentale'],'ajpa':['allocation journaliere du proche aidant'],'prepare':['prestation partagee d education de l enfant','conge parental'],'paje':['prestation d accueil du jeune enfant'],
+ 'cph':['conseil de prud hommes'],'ags':['garantie des salaires','creances salariales'],'dpae':['declaration prealable a l embauche'],'dsn':['declaration sociale nominative'],'dreets':['inspection du travail','administration du travail'],'egpro':['egalite professionnelle'],'qvt':['qualite de vie au travail'],'qvct':['qualite de vie et des conditions de travail'],'idcc':['convention collective'],'ccn':['convention collective']
+};
+/* Langage très parlé / familier → termes officiels. Surtout des mots SIMPLES
+   (un token) car ils sont les plus fiables ; les expressions à plusieurs mots
+   ne matchent que si elles ne commencent pas par un mot-outil (au, du…) que le
+   moteur retire. Complète patron/boss/boulot/taf déjà présents dans SYN_RAW. */
+var SYN_EXTRA4 = {
+ 'virer':['licenciement'],'vire':['licenciement'],'viree':['licenciement'],'jarte':['licenciement'],'lourde':['faute lourde'],'convoque':['entretien prealable','licenciement'],'convocation':['entretien prealable'],'placardise':['harcelement moral'],'harcele':['harcelement moral'],'discrimine':['discrimination'],'sanctionne':['sanction disciplinaire'],
+ 'demissionner':['demission'],'demissionne':['demission'],
+ 'smicard':['salaire minimum'],'impaye':['rappel de salaire'],'augmentation':['salaire','negociation annuelle obligatoire'],'augmente':['salaire'],'recup':['repos compensateur','rtt'],
+ 'burnout':['risques psychosociaux'],'enceinte':['conge maternite','grossesse'],'grossesse':['conge maternite','grossesse'],'requalification':['requalification','contrat a duree determinee'],
+ 'me faire virer':['licenciement'],'faire virer':['licenciement'],'faire greve':['droit de greve'],'poser conges':['conges payes'],'travail non declare':['travail dissimule'],'heures non payees':['rappel de salaire','heures supplementaires']
+};
+/* Fautes d'orthographe fréquentes + langage très familier → termes officiels.
+   Le fuzzy du moteur en rattrape déjà une partie ; ici on fige les plus
+   courantes pour qu'elles soient sûres à 100 %. Mots simples surtout ; pour les
+   expressions, pas de mot-outil interne (le moteur retire au/de/du…). */
+var SYN_EXTRA5 = {
+ 'licensiement':['licenciement'],'licenciment':['licenciement'],'licentiement':['licenciement'],'licencement':['licenciement'],'licenciemment':['licenciement'],'demition':['demission'],'demmission':['demission'],'demissioner':['demission'],'preavie':['preavis'],'preavi':['preavis'],'harcellement':['harcelement moral'],'harcelment':['harcelement moral'],'ancienete':['anciennete','prime d anciennete'],'prudhome':['conseil de prud hommes'],'prudhomme':['conseil de prud hommes'],'prudhommes':['conseil de prud hommes'],'renumeration':['salaire','remuneration'],'indemnitee':['indemnite'],'indemniter':['indemnite'],'travaille':['travail'],'essaie':['periode d essai'],'convension':['convention collective'],
+ 'heures suplementaires':['heures supplementaires'],'heure suplementaire':['heures supplementaires'],'heures supplementaire':['heures supplementaires'],'convention colective':['convention collective'],'convension collective':['convention collective'],'rupture conventionelle':['rupture conventionnelle'],'maladie profesionnelle':['maladie professionnelle'],'temp partiel':['temps partiel'],'salaire minimun':['salaire minimum'],'conge paye':['conges payes'],'conges paye':['conges payes'],'periode dessai':['periode d essai'],
+ 'debauche':['duree du travail','horaires de travail'],'debaucher':['duree du travail'],'embauche':['contrat de travail','periode d essai'],'embaucher':['contrat de travail'],'bosser':['contrat de travail','travail'],'bosse':['travail'],'chomdu':['allocation chomage'],'chomedu':['allocation chomage'],'lourder':['licenciement'],'patronne':['employeur'],'debrayage':['droit de greve','greve']
+};
+/* Nouveaux thèmes courants (activité partielle, alternance, stage, statuts,
+   rémunération variable, formes particulières d'emploi). Mots simples et
+   expressions sans mot-outil interne. */
+var SYN_EXTRA6 = {
+ 'chomage partiel':['activite partielle'],'chomage technique':['activite partielle'],'activite partielle':['activite partielle'],'apld':['activite partielle de longue duree'],
+ 'apprenti':['contrat d apprentissage'],'apprentie':['contrat d apprentissage'],'apprentissage':['contrat d apprentissage'],'alternance':['contrat d apprentissage','contrat de professionnalisation'],'alternant':['contrat d apprentissage','contrat de professionnalisation'],'contrat pro':['contrat de professionnalisation'],'professionnalisation':['contrat de professionnalisation'],'stage':['convention de stage','gratification de stage'],'stagiaire':['convention de stage','gratification de stage'],'gratification':['gratification de stage'],
+ 'cadre':['statut cadre','forfait jours'],'cadre dirigeant':['cadre dirigeant'],'maitrise':['agent de maitrise'],'am':['agent de maitrise'],'tam':['agent de maitrise'],'etam':['agent de maitrise','technicien'],
+ 'variable':['remuneration variable','prime d objectif'],'commission':['remuneration variable'],'commissions':['remuneration variable'],'objectifs':['prime d objectif'],'prime objectif':['prime d objectif'],
+ 'portage salarial':['portage salarial'],'detachement':['detachement','travailleur detache'],'travailleur detache':['detachement'],'faux independant':['requalification','salariat deguise'],'salariat deguise':['requalification'],'deconnexion':['droit a la deconnexion'],'dedit formation':['dedit formation'],'preretraite':['preretraite']
+};
 /* Mot/bigramme de la requête -> catégories de section DÉJÀ produites par le pipeline */
 var CAT_KEYWORDS_RAW = {
   contingent_hs:['contingent','contingent annuel','quota','heures supplementaires','heure sup','220 heures'],
@@ -1454,7 +1530,7 @@ function getENG(){
   E.ccnCats={}; (SEARCH.ccn||[]).forEach(function(c){ var s={}; (c.hits||[]).forEach(function(h){ (h.cats||(h.cat?[h.cat]:[])).forEach(function(ct){ s[ct]=1; }); }); E.ccnCats[String(c.num)]=s; });
   // SYN fusionné (SYN_RAW + SYN_EXTRA)
   E.SYN={}; function addSyn(map){ Object.keys(map).forEach(function(k){ var kn=normaliser(k); E.SYN[kn]=(E.SYN[kn]||[]).concat(map[k].map(normaliser)); }); }
-  addSyn(SYN_RAW); addSyn(SYN_EXTRA); addSyn(SYN_EXTRA2);
+  addSyn(SYN_RAW); addSyn(SYN_EXTRA); addSyn(SYN_EXTRA2); addSyn(SYN_EXTRA3); addSyn(SYN_EXTRA4); addSyn(SYN_EXTRA5); addSyn(SYN_EXTRA6);
   // mot -> catégories
   E.catByKw={}; Object.keys(CAT_KEYWORDS_RAW).forEach(function(cat){ CAT_KEYWORDS_RAW[cat].forEach(function(kw){ kw=normaliser(kw); (E.catByKw[kw]=E.catByKw[kw]||[]).push(cat); }); });
   // métiers : phrases (PRO déjà normalisé) + index par mot
@@ -3624,6 +3700,50 @@ function simplifierRapport(md, entry){
   }
   out += '<details class="maj-tech"><summary>Voir le rapport technique complet</summary><div class="sec-text">'+markdownToHtml(md)+'</div></details>';
   return out;
+}
+/* Glossaire transparent : rend le lexique (langage courant + sigles) directement
+   depuis les dictionnaires du moteur, pour qu'il ne se périme jamais. On exclut
+   SYN_EXTRA5 (fautes de frappe) de l'affichage — c'est une aide, pas du glossaire. */
+function _gloMerge(dicts){
+  var m={};
+  dicts.forEach(function(d){ Object.keys(d).forEach(function(k){
+    var kn=normaliser(k); if(!m[kn]) m[kn]={}; (d[k]||[]).forEach(function(v){ m[kn][normaliser(v)]=1; });
+  }); });
+  return Object.keys(m).sort().map(function(k){ return {k:k, v:Object.keys(m[k])}; });
+}
+function _gloSection(titre, sous, arr, upper){
+  var rows=arr.map(function(e){
+    var disp = upper ? e.k.toUpperCase() : (e.k.charAt(0).toUpperCase()+e.k.slice(1));
+    return '<div class="glo-row" data-k="'+escapeHtml(e.k+' '+e.v.join(' '))+'">'+
+      '<span class="glo-term">'+escapeHtml(disp)+'</span>'+
+      '<span class="glo-arrow" aria-hidden="true">\u2192</span>'+
+      '<span class="glo-def">'+escapeHtml(e.v.join(', '))+'</span></div>';
+  }).join('');
+  return '<div class="glo-sec"><div class="glo-sec-h">'+escapeHtml(titre)+' <span class="glo-n">'+arr.length+'</span></div>'+
+    '<div class="glo-sec-sub">'+escapeHtml(sous)+'</div>'+rows+'</div>';
+}
+function renderGlossaire(){
+  var box=document.getElementById('glossaire-list'); if(!box) return;
+  if(box.getAttribute('data-built')!=='1'){
+    var sigles=_gloMerge([SYN_EXTRA3]);
+    var mots=_gloMerge([SYN_RAW, SYN_EXTRA, SYN_EXTRA2, SYN_EXTRA4, SYN_EXTRA6]);
+    box.innerHTML = _gloSection('Sigles & abréviations','Tapez le sigle, le moteur cherche le terme complet.', sigles, true)
+      + _gloSection('Mots du quotidien','Parlez comme d\'habitude, le moteur traduit en terme officiel.', mots, false);
+    box.setAttribute('data-built','1');
+    var c=document.getElementById('glo-count'); if(c) c.textContent=(sigles.length+mots.length)+' termes reconnus';
+  }
+  _gloFilter();
+}
+function _gloFilter(){
+  var el=document.getElementById('glo-filter'); var q=normaliser(el?el.value:'');
+  document.querySelectorAll('#glossaire-list .glo-sec').forEach(function(sec){
+    var vis=0;
+    sec.querySelectorAll('.glo-row').forEach(function(r){
+      var hit=!q || r.getAttribute('data-k').indexOf(q)!==-1;
+      r.style.display=hit?'':'none'; if(hit) vis++;
+    });
+    sec.style.display = vis? '' : 'none';
+  });
 }
 async function renderAudits(){
   var box = document.getElementById('maj-results');
