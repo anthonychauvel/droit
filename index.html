@@ -555,6 +555,37 @@
 .pchip{font:inherit;font-size:13.5px;font-weight:600;color:#16233b;background:#eef0fa;border:1px solid transparent;border-radius:999px;padding:7px 14px;cursor:pointer;transition:border-color .15s,background .15s,transform .12s}
 .pchip:hover,.pchip:focus-visible{border-color:#d4af5f;background:#f3eede;outline:none}.pchip:active{transform:scale(.96)}
 @media (prefers-reduced-motion:reduce){#corpus-meter .cm-seg{transition:none}}
+/* Compteur global (héros) en haut de l'accueil — grimpe à l'ouverture */
+#corpus-total{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:6px 0 20px;padding:20px 24px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,#fbfdff,#f2f6fc);box-shadow:0 16px 38px -26px rgba(15,45,82,.45)}
+#corpus-total .ct-num{font-family:'Manrope',sans-serif;font-size:clamp(38px,8vw,56px);font-weight:800;line-height:.95;letter-spacing:-.02em;color:var(--marine);font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
+#corpus-total .ct-lab{font-size:13.5px;color:var(--ink-soft);font-weight:600;line-height:1.45;max-width:360px}
+#corpus-total .ct-lab b{display:block;margin-top:3px;color:var(--violet-strong);font-weight:700;font-size:12.5px}
+/* Mises à jour — vue simplifiée (le robot a-t-il tourné + vraie maj ?) */
+.maj-status{display:flex;align-items:center;gap:14px;padding:16px 18px;border:1px solid var(--ok);border-radius:14px;background:linear-gradient(180deg,var(--ok-soft),#fff 92%);margin-bottom:16px}
+.maj-status .ms-ico{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--ok);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
+.maj-status .ms-t{font-family:'Manrope',sans-serif;font-weight:800;font-size:15px;color:var(--marine)}
+.maj-status .ms-d{font-size:12.5px;color:var(--ink-soft);margin-top:2px}
+.maj-list{display:flex;flex-direction:column;gap:8px}
+.maj-item{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:11px;padding:13px 16px;cursor:pointer;transition:border-color .12s,transform .12s}
+.maj-item:hover{border-color:var(--violet);transform:translateY(-1px)}
+.maj-item .mi-d{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ink-soft);flex-shrink:0}
+.maj-item .mi-v{font-size:13.5px;font-weight:600;color:var(--ink);flex:1;min-width:0}
+.maj-item .mi-v.ok{color:var(--ok)}
+.maj-item .mi-v.chg{color:var(--warn)}
+.maj-item .mi-go{color:var(--violet);font-weight:800;flex-shrink:0}
+.maj-verdict{display:flex;align-items:flex-start;gap:13px;padding:16px 18px;border-radius:14px;margin-bottom:14px}
+.maj-verdict.ok{border:1px solid var(--ok);background:linear-gradient(180deg,var(--ok-soft),#fff 92%)}
+.maj-verdict.chg{border:1px solid var(--warn);background:linear-gradient(180deg,var(--warn-soft),#fff 92%)}
+.maj-verdict .mv-ico{flex-shrink:0;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff}
+.maj-verdict.ok .mv-ico{background:var(--ok)}
+.maj-verdict.chg .mv-ico{background:var(--warn)}
+.maj-verdict .mv-t{font-family:'Manrope',sans-serif;font-weight:800;font-size:15.5px;color:var(--marine)}
+.maj-verdict .mv-s{font-size:13px;color:var(--ink-soft);margin-top:3px;line-height:1.5}
+.maj-tech{margin-top:14px;border-top:1px solid var(--line-soft);padding-top:8px}
+.maj-tech summary{cursor:pointer;font-size:12.5px;font-weight:600;color:var(--ink-soft);padding:6px 0;list-style:none}
+.maj-tech summary::-webkit-details-marker{display:none}
+.maj-tech summary::before{content:"\25B8  ";color:var(--gold-strong)}
+.maj-tech[open] summary::before{content:"\25BE  "}
 </style>
 </head>
 <body>
@@ -614,6 +645,10 @@
 <main id="main">
   <!-- SEARCH VIEW -->
   <section id="view-search">
+    <div id="corpus-total" hidden>
+      <div class="ct-num" id="corpus-total-num" data-n="0">0</div>
+      <div class="ct-lab">références officielles réunies et consultables<b>Code du travail · Sécurité sociale · conventions · jurisprudence · accords · Journal Officiel</b></div>
+    </div>
     <div class="head">
       <h1>Trouver la bonne règle, vite</h1>
       <p>Combinez des mots-clés — une convention et un thème, un métier et une question. Ex. <b>commerce de gros</b> + <b>heures supplémentaires</b>.</p>
@@ -682,7 +717,7 @@
   <section id="view-maj" hidden>
     <div class="head">
       <h1>Mises à jour</h1>
-      <p>Un rapport par run de vérification (deux par semaine). Chaque run s'ajoute — aucun n'écrase le précédent. Le plus récent d'abord.</p>
+      <p>Le robot vérifie les textes officiels deux fois par semaine. Vous voyez ici l'essentiel : le robot a-t-il bien tourné, et y a-t-il une vraie modification du droit.</p>
     </div>
     <div id="maj-results"></div>
   </section>
@@ -1373,6 +1408,27 @@ var SYN_EXTRA = {
  'rupture conv':['rupture conventionnelle'],'stc':['solde de tout compte'],'precarite':['prime de precarite'],'prudhommes':['conseil de prud hommes'],'prud hommes':['conseil de prud hommes'],'abandon':['abandon de poste'],'requalification':['cdd cdi'],'maternite':['conge maternite'],'paternite':['conge paternite'],
  'carence':['delai de carence','jour de carence'],'panier':['prime de panier','panier repas'],'ticket restaurant':['titre restaurant'],'tickets restaurant':['titre restaurant'],'titres restaurant':['titre restaurant'],'mutuelle':['complementaire sante','frais de sante'],'prevoyance':['garantie de prevoyance'],'trajet':['temps de trajet','temps de deplacement'],'deplacement':['frais de deplacement','indemnite kilometrique'],'kilometrique':['indemnite kilometrique'],'coupure':['amplitude','interruption'],'pause':['temps de pause'],'enfant malade':['conge enfant malade'],'depart retraite':['depart a la retraite','indemnite de depart en retraite']
 };
+/* Vocabulaire de synonymes ÉLARGI (fusionné dans le moteur au même titre que
+   SYN_RAW / SYN_EXTRA). But : mieux rattraper les formulations courantes des
+   utilisateurs et les termes juridiques équivalents. Les clés et valeurs sont
+   normalisées automatiquement (accents/casse). Ne remplace rien : addSyn
+   concatène sur les entrées existantes. */
+var SYN_EXTRA2 = {
+ // Paie & rémunération
+ 'paye':['salaire'],'paie':['salaire'],'feuille de paie':['bulletin de salaire'],'feuille de paye':['bulletin de salaire'],'bulletin de paie':['bulletin de salaire'],'bulletin de paye':['bulletin de salaire'],'salaire brut':['salaire'],'brut':['salaire'],'net':['salaire net'],'net a payer':['salaire net'],'smic':['salaire minimum','minimum conventionnel'],'smic horaire':['salaire minimum'],'taux horaire':['salaire','taux horaire'],'point':['valeur du point'],'valeur du point':['valeur du point'],'coefficient':['coefficient','grille'],'classification':['grille','coefficient','classification'],'niveau':['classification','coefficient'],'echelon':['classification','coefficient'],'prime de fin d annee':['13e mois','prime annuelle'],'prime de vacances':['prime de vacances'],'prime exceptionnelle':['prime'],'prime macron':['prime de partage de la valeur'],'ppv':['prime de partage de la valeur'],'interessement':['interessement'],'participation':['participation'],'avantage en nature':['avantages en nature'],'avantages en nature':['avantages en nature'],'saisie sur salaire':['saisie sur salaire'],'acompte':['acompte sur salaire'],'rappel':['rappel de salaire'],'medaille du travail':['prime d anciennete'],
+ // Temps de travail
+ 'heures en plus':['heures supplementaires'],'heures faites en plus':['heures supplementaires'],'depassement horaire':['heures supplementaires'],'heures de nuit':['travail de nuit'],'travailler la nuit':['travail de nuit'],'travailler le dimanche':['travail du dimanche'],'jours feries travailles':['jours feries'],'pont':['jour ferie'],'amplitude':['amplitude','duree du travail'],'amplitude horaire':['amplitude'],'temps de travail effectif':['temps de travail'],'duree maximale':['duree du travail'],'repos quotidien':['repos'],'repos hebdomadaire':['repos'],'jour de repos':['repos','rtt'],'annualise':['annualisation','modulation'],'annualisation':['annualisation','modulation'],'modulation':['modulation'],'forfait heures':['forfait heures'],'astreinte':['astreinte','permanence'],'permanence':['astreinte'],'temps de trajet':['temps de trajet','temps de deplacement'],
+ // Contrat & rupture
+ 'me faire licencier':['licenciement'],'me licencier':['licenciement'],'licenciement economique':['licenciement'],'licenciement pour faute':['licenciement','faute grave'],'faute grave':['faute grave'],'faute lourde':['faute lourde'],'mise a pied':['mise a pied'],'avertissement':['sanction disciplinaire'],'blame':['sanction disciplinaire'],'sanction':['sanction disciplinaire'],'clause de non concurrence':['clause de non concurrence'],'non concurrence':['clause de non concurrence'],'clause de mobilite':['clause de mobilite'],'mutation':['clause de mobilite','modification du contrat'],'modification du contrat':['modification du contrat'],'changement de contrat':['modification du contrat'],'reclassement':['reclassement'],'inaptitude':['inaptitude'],'licenciement inaptitude':['inaptitude','licenciement'],'prise d acte':['prise d acte'],'resiliation judiciaire':['resiliation judiciaire'],'depart negocie':['rupture conventionnelle'],'rupture anticipee':['rupture du contrat'],'fin cdd':['fin de contrat','prime de precarite'],'renouvellement cdd':['contrat a duree determinee'],'periode d essai':['periode d essai'],'fin de periode d essai':['periode d essai'],'certificat de travail':['certificat de travail'],'attestation france travail':['attestation employeur','allocation chomage'],'attestation pole emploi':['attestation employeur','allocation chomage'],'pole emploi':['allocation chomage'],'france travail':['allocation chomage'],'allocation':['allocation chomage'],'transaction':['transaction','rupture du contrat'],
+ // Congés & absences
+ 'conge':['conges payes'],'vacances':['conges payes'],'poser des conges':['conges payes'],'jours de conges':['conges payes'],'solde de conges':['conges payes'],'fractionnement':['conges payes'],'conge sans solde':['conge sans solde'],'conge parental':['conge parental'],'conge sabbatique':['conge sabbatique'],'conge deces':['conges exceptionnels'],'conge mariage':['conges exceptionnels'],'conge naissance':['conges exceptionnels','conge paternite'],'conge demenagement':['conges exceptionnels'],'evenement familial':['conges exceptionnels'],'conge proche aidant':['conge proche aidant'],'don de jours':['don de jours de repos'],'conge enfant malade':['conge enfant malade'],
+ // Santé & sécurité
+ 'arret':['arret de travail','arret maladie'],'prolongation arret':['arret de travail'],'maladie professionnelle':['maladie professionnelle'],'accident de trajet':['accident de trajet'],'mi temps therapeutique':['temps partiel therapeutique'],'temps partiel therapeutique':['temps partiel therapeutique'],'invalidite':['invalidite'],'ijss':['indemnites journalieres'],'indemnites journalieres':['indemnites journalieres'],'ij':['indemnites journalieres'],'subrogation':['subrogation','maintien de salaire'],'maintien de salaire':['maintien de salaire'],'visite medicale':['medecine du travail'],'medecine du travail':['medecine du travail'],'droit de retrait':['droit de retrait'],'penibilite':['compte professionnel de prevention','penibilite'],
+ // Représentation, conflit, droits
+ 'cse':['comite social et economique'],'comite d entreprise':['comite social et economique'],'delegue du personnel':['comite social et economique','representants du personnel'],'representant du personnel':['representants du personnel'],'delegue syndical':['delegue syndical'],'syndicat':['organisation syndicale'],'greve':['droit de greve'],'droit de greve':['droit de greve'],'lanceur d alerte':['lanceur d alerte'],'droit d alerte':['droit d alerte'],'agissement sexiste':['harcelement sexuel'],'egalite hommes femmes':['egalite professionnelle','egalite de traitement'],'index egalite':['egalite professionnelle'],'inspection du travail':['inspection du travail'],'inspecteur du travail':['inspection du travail'],'defenseur des droits':['discrimination'],
+ // Frais, formation, retraite, divers
+ 'note de frais':['frais professionnels','frais de deplacement'],'frais professionnels':['frais professionnels'],'grand deplacement':['frais de deplacement'],'vehicule de fonction':['avantages en nature'],'jours teletravail':['travail a distance'],'distanciel':['travail a distance'],'formation':['formation professionnelle'],'cpf':['compte personnel de formation'],'compte personnel de formation':['compte personnel de formation'],'bilan de competences':['bilan de competences'],'vae':['validation des acquis'],'entretien professionnel':['entretien professionnel'],'entretien annuel':['entretien professionnel'],'retraite':['depart a la retraite'],'depart en retraite':['depart a la retraite'],'mise a la retraite':['mise a la retraite'],'retraite progressive':['retraite progressive'],'cumul emploi retraite':['cumul emploi retraite']
+};
 /* Mot/bigramme de la requête -> catégories de section DÉJÀ produites par le pipeline */
 var CAT_KEYWORDS_RAW = {
   contingent_hs:['contingent','contingent annuel','quota','heures supplementaires','heure sup','220 heures'],
@@ -1398,7 +1454,7 @@ function getENG(){
   E.ccnCats={}; (SEARCH.ccn||[]).forEach(function(c){ var s={}; (c.hits||[]).forEach(function(h){ (h.cats||(h.cat?[h.cat]:[])).forEach(function(ct){ s[ct]=1; }); }); E.ccnCats[String(c.num)]=s; });
   // SYN fusionné (SYN_RAW + SYN_EXTRA)
   E.SYN={}; function addSyn(map){ Object.keys(map).forEach(function(k){ var kn=normaliser(k); E.SYN[kn]=(E.SYN[kn]||[]).concat(map[k].map(normaliser)); }); }
-  addSyn(SYN_RAW); addSyn(SYN_EXTRA);
+  addSyn(SYN_RAW); addSyn(SYN_EXTRA); addSyn(SYN_EXTRA2);
   // mot -> catégories
   E.catByKw={}; Object.keys(CAT_KEYWORDS_RAW).forEach(function(cat){ CAT_KEYWORDS_RAW[cat].forEach(function(kw){ kw=normaliser(kw); (E.catByKw[kw]=E.catByKw[kw]||[]).push(cat); }); });
   // métiers : phrases (PRO déjà normalisé) + index par mot
@@ -2414,9 +2470,11 @@ function runSearch(){
   var landing = document.getElementById('search-landing');
   renderTokens(tokens);
   var toggles = document.getElementById('search-toggles');
-  if(!tokens.length){ box.innerHTML=''; landing.hidden=false; if(toggles) toggles.hidden=true; return; }
+  var _ct = document.getElementById('corpus-total');
+  if(!tokens.length){ box.innerHTML=''; landing.hidden=false; if(_ct) _ct.hidden=(parseInt(_ct.getAttribute('data-n'),10)||0)===0; if(toggles) toggles.hidden=true; return; }
   var arriveeResultats = !landing.hidden;  // le landing était visible -> on ARRIVE sur les résultats
   landing.hidden = true;
+  if(_ct) _ct.hidden = true;
   if(toggles) toggles.hidden = false;
 
   if(!INDEX.ccn.length && !INDEX.code.length){
@@ -3524,21 +3582,69 @@ function exportOne(kind, num, payload){
 }
 
 /* ---- Mises à jour ---- */
+/* Un run est « sans changement du droit » (rattrapage / RAS) si son résumé le
+   dit explicitement, ou si le compte de VRAIS changements est nul. On ne se fie
+   PAS au nombre brut de fichiers touchés, qui inclut le rattrapage du fonds
+   (complètement de clauses) — c'est justement ce qui faisait croire à tort
+   qu'il y avait une mise à jour. */
+function _majSansChangement(r){
+  if(!r) return true;
+  var t = ((r.resume||'')+' '+(r.titre||'')).toLowerCase();
+  if(/aucun changement du droit|pas un changement du droit|rattrap|incorporer|pas encore suivi/.test(t)) return true;
+  var reel = (typeof r.changements_droit==='number') ? r.changements_droit : (r.total_changements||0);
+  return reel===0;
+}
+function _estRubriqueReelle(h){ return /code du travail|s[eé]curit[eé] sociale|jurisprudence|journal officiel|accords? d.entreprise/i.test(h); }
+function _decouperMd(md){
+  var lines=String(md||'').split('\n'), secs=[], cur={h:'',lvl:0,body:[]};
+  for(var i=0;i<lines.length;i++){ var l=lines[i], m2=/^##\s+(.*)$/.exec(l);
+    if(m2){ cur={h:m2[1],lvl:2,body:[]}; secs.push(cur); } else { cur.body.push(l); } }
+  return secs;
+}
+/* Rapport lisible pour l'utilisateur : un verdict clair (le robot a tourné + y
+   a-t-il une VRAIE modification du droit), et tout le détail technique replié
+   dans un « rapport complet » facultatif. */
+function simplifierRapport(md, entry){
+  var secs = _decouperMd(md);
+  var reelles = secs.filter(function(s){ return s.lvl===2 && _estRubriqueReelle(s.h) && /(^|\n)-\s+/.test(s.body.join('\n')); });
+  var marqueurRien = /aucun changement du droit|pas un changement du droit|ce n.est pas un changement|rattrap|[àa] incorporer|pas encore suivi/i.test(md);
+  var aReel = reelles.length>0 && !marqueurRien;
+  var date = escapeHtml((entry&&entry.date)||'');
+  var out = '';
+  if(aReel){
+    out += '<div class="maj-verdict chg"><div class="mv-ico">!</div><div>'+
+           '<div class="mv-t">Mise à jour du droit</div>'+
+           '<div class="mv-s">Vérification du '+date+' : des textes officiels ont changé. Voici lesquels.</div></div></div>';
+    var sousMd = reelles.map(function(s){ return '## '+s.h+'\n'+s.body.join('\n'); }).join('\n');
+    out += '<div class="sec-text">'+markdownToHtml(sousMd)+'</div>';
+  } else {
+    out += '<div class="maj-verdict ok"><div class="mv-ico">\u2713</div><div>'+
+           '<div class="mv-t">Aucune modification du droit</div>'+
+           '<div class="mv-s">Le robot a bien vérifié le '+date+'. Rien n\'a changé dans vos droits — il a seulement complété sa base interne. Rien à faire de votre côté.</div></div></div>';
+  }
+  out += '<details class="maj-tech"><summary>Voir le rapport technique complet</summary><div class="sec-text">'+markdownToHtml(md)+'</div></details>';
+  return out;
+}
 async function renderAudits(){
   var box = document.getElementById('maj-results');
   if(!AUDITS.length){
     try{ AUDITS = await fetchJSON('audits/index.json'); }catch(e){ AUDITS=[]; }
   }
   if(!AUDITS.length){
-    box.innerHTML = '<div class="empty"><div class="big">Aucun rapport pour l\'instant.</div>Le premier apparaîtra après un run de vérification.</div>';
+    box.innerHTML = '<div class="empty"><div class="big">Aucune vérification pour l\'instant.</div>La première apparaîtra après le prochain passage du robot.</div>';
     return;
   }
-  box.innerHTML = AUDITS.map(function(r,i){
-    var zero = (r.total_changements===0);
-    return '<div class="audit" data-audit="'+i+'"><div><div class="ad">'+escapeHtml(r.date||'')+(r.heure?' — '+escapeHtml(r.heure):'')+'</div>'+
-      '<div class="ar">'+escapeHtml(r.resume||'')+'</div></div>'+
-      '<div class="badge'+(zero?' zero':'')+'">'+(zero?'RAS':(r.total_changements+' chgt'))+'</div></div>';
+  var d = AUDITS[0]||{};
+  var banner = '<div class="maj-status"><div class="ms-ico" aria-hidden="true">\u2713</div><div>'+
+    '<div class="ms-t">Veille automatique effectuée</div>'+
+    '<div class="ms-d">Dernier passage du robot : <b>'+escapeHtml(d.date||'—')+'</b>'+(d.heure?' ('+escapeHtml(d.heure)+')':'')+' · deux vérifications par semaine</div></div></div>';
+  var lignes = AUDITS.map(function(r,i){
+    var rien = _majSansChangement(r);
+    return '<div class="maj-item" data-audit="'+i+'"><span class="mi-d">'+escapeHtml(r.date||'')+'</span>'+
+      '<span class="mi-v '+(rien?'ok':'chg')+'">'+(rien?'À jour — aucune modification du droit':'Mise à jour du droit')+'</span>'+
+      '<span class="mi-go" aria-hidden="true">\u203a</span></div>';
   }).join('');
+  box.innerHTML = banner + '<div class="maj-list">'+lignes+'</div>';
 }
 async function openAudit(entry){
   if(!entry) return;
@@ -3549,7 +3655,7 @@ async function openAudit(entry){
   document.getElementById('d-body').innerHTML = '<div class="loading">Chargement du rapport…</div>';
   try{
     var md = await fetchText('audits/'+entry.fichier);
-    document.getElementById('d-body').innerHTML = '<div class="sec-text">'+markdownToHtml(md)+'</div>';
+    document.getElementById('d-body').innerHTML = simplifierRapport(md, entry);
   }catch(err){ document.getElementById('d-body').innerHTML = '<div class="empty">Impossible de charger ce rapport.</div>'; }
 }
 document.getElementById('maj-results').addEventListener('click', function(e){
@@ -3667,6 +3773,7 @@ function animerNombre(el, to, dur){
 }
 var _MLT_couleurs={ccn:'#35a37a',code:'#1e5aa0',secu:'#2f8f9c',juris:'#d4af37',jorf:'#cf4436',acco:'#6a6fb0'};
 var _MLT_animated=false;
+var _MLT_totalDone=false;
 function animerStats(sg, cards){
   var total=cards.reduce(function(s,c){return s+(c.n||0);},0);
   var meter=document.getElementById('corpus-meter');
@@ -3695,15 +3802,10 @@ function animerStats(sg, cards){
   }
 }
 function renderPopular(){
-  if(!TRENDS || !TRENDS.phrases) return;
-  var landing=document.getElementById('search-landing'); if(!landing) return;
-  var host=document.getElementById('popular-row');
-  if(!host){ host=document.createElement('div'); host.id='popular-row'; host.className='popular-row';
-    var exT=landing.querySelector('.ex-title'); if(exT) landing.insertBefore(host, exT); else landing.appendChild(host); }
-  var ph=(TRENDS.phrases||[]).filter(function(p){ return p[0]&&p[0].length>=5&&p[0].length<=34; }).slice(0,10);
-  if(!ph.length){ host.innerHTML=''; return; }
-  host.innerHTML='<div class="popular-title">Recherches fréquentes</div><div class="popular-chips">'+
-    ph.map(function(p){ return '<button class="pchip" type="button" data-q="'+escAttr(p[0])+'">'+escapeHtml(p[0])+'</button>'; }).join('')+'</div>';
+  /* Catégorie « Recherches fréquentes » retirée (jugée peu utile). On nettoie
+     un éventuel bloc laissé par une session précédente. À la place, le
+     vocabulaire du moteur est enrichi via SYN_EXTRA2 (synonymes). */
+  var host=document.getElementById('popular-row'); if(host) host.remove();
 }
 document.addEventListener('click', function(e){
   var c=e.target.closest?e.target.closest('.pchip'):null;
@@ -3721,22 +3823,31 @@ async function renderDashboard(){
     {v:'jorf', n:num('jorf'), l:'Journal Officiel'},
     {v:'acco', n:num('acco'), l:'Accords d\'entreprise'}
   ];
+  // Compteur global : somme de tout le corpus, grimpe une fois à l'ouverture.
+  var _total = cards.reduce(function(s,c){ return s+(c.n||0); }, 0);
+  var _ct = document.getElementById('corpus-total'), _ctn = document.getElementById('corpus-total-num');
+  if(_ct && _ctn && _total>0){
+    _ct.hidden = false;
+    _ctn.setAttribute('data-n', _total);
+    if(!_MLT_totalDone){ _MLT_totalDone = true; _ctn.textContent = '0'; animerNombre(_ctn, _total, 1500); }
+    else { _ctn.textContent = fmt(_total); }
+  }
   var _sg = document.getElementById('stat-grid');
   _sg.innerHTML = cards.map(function(c){
     return '<div class="stat" data-view="'+c.v+'"><span class="arrow">→</span>'+
       '<div class="num" data-n="'+c.n+'">'+fmt(c.n)+'</div><div class="lab">'+c.l+'</div></div>';
   }).join('');
   animerStats(_sg, cards);
-  renderPopular();
+  renderPopular();  // no-op de nettoyage (bloc « Recherches fréquentes » retiré)
   var box = document.getElementById('latest-maj');
   if(!AUDITS.length){ try{ AUDITS = await fetchJSON('audits/index.json'); }catch(e){ AUDITS=[]; } }
   if(AUDITS.length){
     box.innerHTML = '<h3><span class="pulse"></span>Dernières vérifications automatiques</h3>'+
       AUDITS.slice(0,3).map(function(r,i){
-        var zero = (r.total_changements===0);
+        var rien = _majSansChangement(r);
         return '<div class="latest-row" data-audit="'+i+'"><span class="lr-d">'+escapeHtml(r.date||'')+'</span>'+
-          '<span class="lr-t">'+escapeHtml(r.resume||'Vérification effectuée')+'</span>'+
-          '<span class="lr-b'+(zero?' zero':'')+'">'+(zero?'RAS':(r.total_changements+' chgt'))+'</span></div>';
+          '<span class="lr-t">'+(rien?'Aucune modification du droit':'Mise à jour du droit')+'</span>'+
+          '<span class="lr-b'+(rien?' zero':'')+'">'+(rien?'À jour':'Maj')+'</span></div>';
       }).join('');
     box.hidden = false;
   } else { box.hidden = true; }
