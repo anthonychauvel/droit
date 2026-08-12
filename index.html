@@ -1817,6 +1817,20 @@ function variantsOf(tok){
   (E.SYN[tok]||[]).forEach(function(s){ s.split(' ').forEach(function(w){ if(w.length>=2) set[w]=1; }); });
   return Object.keys(set);
 }
+// Termes pour le SCORING (pas la sélection de candidats) : un synonyme d'UN SEUL
+// mot s'apparie au mot ; un synonyme de PLUSIEURS mots ne compte QUE si la
+// LOCUTION ENTIÈRE est présente (sinon « cse » → « comité social et économique »
+// matcherait « social » isolé, ex. « siège social »). Les mots isolés d'une
+// locution restent dans variantsOf, pour trouver les candidats et surligner.
+function matchTermsOf(tok){
+  var E=getENG(), set={}; set[tok]=1;
+  fuzzyExpand(tok).forEach(function(w){ set[w]=1; });
+  (E.SYN[tok]||[]).forEach(function(s){
+    if(s.indexOf(' ')===-1){ if(s.length>=2) set[s]=1; }   // mot unique -> le mot
+    else { set[s]=1; }                                      // locution -> la locution entière
+  });
+  return Object.keys(set);
+}
 function catsForToken(vars){ var E=getENG(), cats={}; vars.forEach(function(v){ (E.catByKw[v]||[]).forEach(function(c){ cats[c]=1; }); }); return Object.keys(cats); }
 
 /* Recherche CCN v2 : identité (titre/secteur/métier) + sujet (catégorie/section) */
@@ -1826,8 +1840,8 @@ function searchCCNv2(tokens, rawNorm, focusTokens){
   var padR=' '+rawNorm+' ';
   Object.keys(ALIAS).forEach(function(a){ if(padR.indexOf(' '+a+' ')!==-1){ ALIAS[a].forEach(function(id){ metPhrase[String(id)]=true; }); } });
   tokens.forEach(function(t){ if(/^\d{3,4}$/.test(t)){ var z=stripZeros(t); if(!E.idccSet[z] && BROCHURE[z]){ BROCHURE[z].forEach(function(id){ metPhrase[String(id)]=true; }); } } });
-  var V={},MW={};
-  tokens.forEach(function(t){ var v=variantsOf(t); V[t]=v;
+  var V={},MW={},M={};
+  tokens.forEach(function(t){ var v=variantsOf(t); V[t]=v; M[t]=matchTermsOf(t);
     var m={}; v.forEach(function(w){ if(E.metierWord[w]) Object.keys(E.metierWord[w]).forEach(function(id){ m[id]=1; }); }); MW[t]=m; });
 
   /* SIGNAUX DE THÈME : catégories + termes, depuis les mots ET les expressions
@@ -1886,7 +1900,7 @@ function searchCCNv2(tokens, rawNorm, focusTokens){
     var titleHay = it._ht || (it._ht = normaliser(it.title)+' '+((CCN_SECTOR_MAP&&CCN_SECTOR_MAP[id])?CCN_SECTOR_MAP[id]:''));
     var identity=0, exactIdcc=false;
     tokens.forEach(function(t){
-      var v=V[t], hitId=false;
+      var v=M[t], hitId=false;
       if(/^\d{2,}$/.test(t) && stripZeros(t)===stripZeros(String(id))){ hitId=true; exactIdcc=true; }
       if(hayHas(titleHay,v)) hitId=true;
       if(metPhrase[id]) hitId=true;
@@ -1974,7 +1988,7 @@ function searchCCNv2(tokens, rawNorm, focusTokens){
 }
 /* Recherche articles v2 (variantes fuzzy + numéro exact/préfixe + phrase) */
 function searchArticlesV2(list, tokens, focusTokens, rawNorm, inv){
-  var V={}; tokens.forEach(function(t){ V[t]=variantsOf(t); });
+  var V={}, M={}; tokens.forEach(function(t){ V[t]=variantsOf(t); M[t]=matchTermsOf(t); });
   var FV=null;
   if(focusTokens && focusTokens.length){
     // termes du focus (mots >=4 + synonymes), pondérés par rareté (idf) : on ne
@@ -2005,7 +2019,7 @@ function searchArticlesV2(list, tokens, focusTokens, rawNorm, inv){
     var hay = a._h || (a._h = normaliser((a.num||'')+' '+(a.snippet||'')+' '+(a.title||'')));
     var cnum = a._cn || (a._cn = normaliser(a.num||'').replace(/ /g,''));
     var covered=0, idfB=0, exactHits=0, pad=' '+hay+' ';
-    tokens.forEach(function(t){ var matched=null, vv=V[t];
+    tokens.forEach(function(t){ var matched=null, vv=M[t];
       for(var i=0;i<vv.length;i++){ if(hay.indexOf(vv[i])!==-1){ matched=vv[i]; break; } }
       if(matched){ covered++; if(matched===t) exactHits++; idfB += idf(matched)*8 + (pad.indexOf(' '+matched+' ')!==-1?15:0); } });
     var numExact=false, numPref=false;
@@ -3888,6 +3902,19 @@ function collectText(payload){
 }
 function downloadText(filename, content){
   var blob = new Blob([content], {type: 'text/plain;charset=utf-8'});
+  // Sur iPhone/Safari, un « download » classique ouvre l'aperçu Quick Look, et le
+  // fermer par la croix RECHARGE la page (on perd sa recherche). Le PARTAGE natif
+  // s'ouvre en surcouche sans quitter la page → on le privilégie quand il sait
+  // gérer les fichiers ; sinon on retombe sur le téléchargement classique.
+  try{
+    if(navigator.canShare && typeof File === 'function'){
+      var f = new File([blob], filename, {type:'text/plain'});
+      if(navigator.canShare({files:[f]})){
+        navigator.share({files:[f], title:filename}).catch(function(){});
+        return;
+      }
+    }
+  }catch(e){}
   var url = URL.createObjectURL(blob);
   var a = document.createElement('a');
   a.href = url; a.download = filename;
