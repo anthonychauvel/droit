@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
 <!-- Réservé aux utilisateurs de l'application SimulHeures : ne doit pas être
      référencé par les moteurs de recherche. Doublon volontaire de l'en-tête
      X-Robots-Tag du worker, au cas où la page serait servie autrement. -->
@@ -615,7 +616,7 @@
 @media(prefers-reduced-motion:reduce){#cover-inner{-webkit-transition:opacity .4s ease;transition:opacity .4s ease;}#cover-inner::after{-webkit-animation:none;animation:none;}#cover.opening #cover-inner{-webkit-transform:none;transform:none;opacity:0;box-shadow:none;}}
 </style>
 <div id="cover" role="button" tabindex="0" aria-label="Entrer dans MonLegiTexte"><div id="cover-inner"></div></div>
-<script>(function(){var c=document.getElementById('cover');if(!c)return;var done=false;function o(){if(done)return;done=true;c.classList.add('opening');var f=function(){c.classList.add('gone');};var t=setTimeout(f,1600);c.addEventListener('transitionend',function(e){if(e.propertyName==='transform'||e.propertyName==='-webkit-transform'){clearTimeout(t);f();}});}c.addEventListener('click',o);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();o();}});})();</script>
+<script>(function(){var c=document.getElementById('cover');if(!c)return;var done=false;function o(){if(done)return;done=true;window.__coverGone=true;c.classList.add('opening');try{if(typeof _lancerCompteursAccueil==='function')_lancerCompteursAccueil();}catch(e){}var f=function(){c.classList.add('gone');};var t=setTimeout(f,1600);c.addEventListener('transitionend',function(e){if(e.propertyName==='transform'||e.propertyName==='-webkit-transform'){clearTimeout(t);f();}});}c.addEventListener('click',o);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();o();}});})();</script>
 
 
 <aside>
@@ -3936,6 +3937,18 @@ function animerNombre(el, to, dur){
 var _MLT_couleurs={ccn:'#35a37a',code:'#1e5aa0',secu:'#2f8f9c',juris:'#d4af37',jorf:'#cf4436',acco:'#6a6fb0'};
 var _MLT_animated=false;
 var _MLT_totalDone=false;
+// Le décompte de l'accueil ne démarre QUE quand la couverture s'ouvre (sinon il
+// tournerait derrière la couverture et serait fini avant qu'on la voie).
+function _peutAnimerAccueil(){ var c=document.getElementById('cover'); return !c || window.__coverGone===true; }
+function _lancerCompteursAccueil(){
+  var _ctn=document.getElementById('corpus-total-num');
+  if(_ctn && !_MLT_totalDone){ var tot=parseInt(_ctn.getAttribute('data-n'),10)||0;
+    if(tot>0){ _MLT_totalDone=true; _ctn.textContent='0'; animerNombre(_ctn,tot,1500); } }
+  var sg=document.getElementById('stat-grid');
+  if(sg && !_MLT_animated){ var nums=sg.querySelectorAll('.num');
+    if(nums.length){ _MLT_animated=true; nums.forEach(function(el,i){ var to=parseInt(el.getAttribute('data-n'),10)||0; el.textContent='0';
+      setTimeout(function(){ animerNombre(el,to,1200); }, _MLT_reduce?0:120+i*90); }); } }
+}
 function animerStats(sg, cards){
   var total=cards.reduce(function(s,c){return s+(c.n||0);},0);
   var meter=document.getElementById('corpus-meter');
@@ -3955,7 +3968,7 @@ function animerStats(sg, cards){
     var segs=meter.querySelectorAll('.cm-seg');
     cards.forEach(function(c,i){ if(segs[i]){ var pct=(c.n/total*100); setTimeout(function(){ segs[i].style.width=pct+'%'; }, _MLT_reduce?0:120+i*110); } });
   }
-  if(!_MLT_animated && total>0){
+  if(!_MLT_animated && total>0 && _peutAnimerAccueil()){
     _MLT_animated=true;
     sg.querySelectorAll('.num').forEach(function(el,i){
       var to=parseInt(el.getAttribute('data-n'),10)||0; el.textContent='0';
@@ -3991,8 +4004,9 @@ async function renderDashboard(){
   if(_ct && _ctn && _total>0){
     _ct.hidden = false;
     _ctn.setAttribute('data-n', _total);
-    if(!_MLT_totalDone){ _MLT_totalDone = true; _ctn.textContent = '0'; animerNombre(_ctn, _total, 1500); }
-    else { _ctn.textContent = fmt(_total); }
+    if(_MLT_totalDone){ _ctn.textContent = fmt(_total); }
+    else if(!_peutAnimerAccueil()){ _ctn.textContent = '0'; }
+    else { _MLT_totalDone = true; _ctn.textContent = '0'; animerNombre(_ctn, _total, 1500); }
   }
   var _sg = document.getElementById('stat-grid');
   _sg.innerHTML = cards.map(function(c){
