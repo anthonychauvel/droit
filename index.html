@@ -703,6 +703,14 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
         <button class="nav-item" data-view="glossaire"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/><path d="M9 7h6M9 11h4"/></svg>Glossaire<span class="nc" id="nc-glossaire"></span></button>
       </div>
     </div>
+    <div class="nav-group" data-group="infos">
+      <button class="nav-group-label" type="button" aria-expanded="false"><span>Informations</span><span class="ngl-chev">&#9662;</span></button>
+      <div class="nav-group-items">
+        <button class="nav-item" data-view="faq"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 015.5 1.5c0 1.8-2.6 2.3-2.6 2.3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>FAQ</button>
+        <button class="nav-item" data-view="cgu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h5"/></svg>Conditions d'utilisation</button>
+        <button class="nav-item" data-view="mentions"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>Mentions légales</button>
+      </div>
+    </div>
   </nav>
 
   <div class="side-foot">
@@ -808,6 +816,127 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
     <div id="glossaire-list"></div>
   </section>
 
+<style>/* === Pages d'information (FAQ / CGU / Mentions) === */
+.info-page{max-width:760px;}
+.info-page h2{font-family:'Playfair Display',Georgia,serif;font-size:18px;color:var(--marine);font-weight:700;margin:26px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--line);}
+.info-page h2:first-child{margin-top:4px;}
+.info-page p{font-size:14px;line-height:1.62;color:var(--ink);margin:0 0 11px;}
+.info-page ul{margin:0 0 12px;padding-left:20px;}
+.info-page li{font-size:14px;line-height:1.55;color:var(--ink);margin-bottom:5px;}
+.info-page a{color:var(--gold-strong);text-decoration:underline;text-underline-offset:2px;}
+.info-box{background:var(--line-soft);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0;}
+.info-box p:last-child,.info-box ul:last-child{margin-bottom:0;}
+.info-warn{background:linear-gradient(180deg,#fff8e8,#fffdf7);border:1px solid #e7c765;border-left:4px solid var(--gold-strong);border-radius:0 12px 12px 0;padding:14px 16px;margin:14px 0;}
+.info-warn p{font-size:13.5px;} .info-warn p:last-child{margin-bottom:0;}
+.info-contact{background:linear-gradient(180deg,#f4f8fd,#fbfdff);border:1px solid var(--line);border-left:4px solid var(--marine);border-radius:0 12px 12px 0;padding:14px 16px;}
+.info-contact p:last-child{margin-bottom:0;}
+.info-updated{color:var(--ink-soft);font-size:12.5px;font-style:italic;margin:0 0 16px;}
+.faq-q{font-family:'Manrope',sans-serif;font-weight:700;font-size:15px;color:var(--marine);margin:20px 0 5px;display:flex;gap:8px;}
+.faq-q::before{content:"Q.";color:var(--gold-strong);font-weight:800;flex-shrink:0;}
+.faq-a{font-size:14px;line-height:1.6;color:var(--ink);margin:0;padding-left:22px;}
+</style>
+<section id="view-faq" hidden>
+  <div class="head"><h1>Questions fréquentes</h1><p>Tout ce qu'il faut savoir sur MonLégiTexte, en clair.</p></div>
+  <div class="info-page">
+    <div class="faq-q">Qu'est-ce que MonLégiTexte&nbsp;?</div>
+    <p class="faq-a">Un moteur de recherche et de lecture du droit du travail français&nbsp;: conventions collectives, Code du travail, Sécurité sociale, jurisprudence, Journal Officiel et accords d'entreprise. Vous tapez comme vous parlez, il retrouve le bon texte officiel. C'est un outil pensé <b>pour le salarié</b>.</p>
+    <div class="faq-q">Est-ce vraiment gratuit&nbsp;?</div>
+    <p class="faq-a">Oui, totalement. Aucun abonnement, aucune publicité, aucune vente. C'est un projet personnel mis à disposition gratuitement.</p>
+    <div class="faq-q">D'où viennent les textes&nbsp;?</div>
+    <p class="faq-a">De sources <b>officielles</b>&nbsp;: <a href="https://www.legifrance.gouv.fr" target="_blank" rel="noopener">Légifrance</a> (via l'API PISTE de la DILA) pour le Code du travail, la Sécurité sociale, les conventions collectives, les accords et le Journal Officiel&nbsp;; et <a href="https://www.courdecassation.fr/acces-rapide-judilibre" target="_blank" rel="noopener">Judilibre</a> (Cour de cassation) pour la jurisprudence.</p>
+    <div class="faq-q">Les textes sont-ils à jour&nbsp;?</div>
+    <p class="faq-a">Un robot vérifie les textes officiels <b>deux fois par semaine</b> (voir l'onglet «&nbsp;Vérifications&nbsp;»). Le sceau doré «&nbsp;✓&nbsp;» devant la date d'un texte indique la date de la version en vigueur. Malgré ce soin, seuls les textes officiels sur Légifrance font foi à un instant donné.</p>
+    <div class="faq-q">Est-ce que ça remplace un avocat ou un conseil juridique&nbsp;?</div>
+    <p class="faq-a"><b>Non.</b> MonLégiTexte affiche les textes bruts à titre informatif&nbsp;: il ne donne aucun conseil juridique ni avis personnalisé. En cas de doute ou de situation particulière, consultez un professionnel&nbsp;: avocat, juriste, représentant du personnel, syndicat, inspection du travail ou service RH.</p>
+    <div class="faq-q">Collectez-vous mes données&nbsp;?</div>
+    <p class="faq-a">Non. Aucune donnée collectée, aucun compte, aucun cookie, aucun mouchard. Vos recherches sont traitées <b>dans votre navigateur</b> et ne quittent pas votre appareil. Voir les <a href="#" onclick="setView('mentions');return false;">Mentions légales</a>.</p>
+    <div class="faq-q">Comment trouver ma convention collective&nbsp;?</div>
+    <p class="faq-a">Tapez le nom de votre métier ou de votre secteur (ex. «&nbsp;coiffeur&nbsp;», «&nbsp;restauration&nbsp;»), ou directement votre numéro IDCC. Le moteur comprend le langage courant et les sigles (CSE, CDD, RQTH…).</p>
+    <div class="faq-q">Le moteur comprend-il les sigles et les fautes de frappe&nbsp;?</div>
+    <p class="faq-a">Oui&nbsp;: il traduit les sigles et abréviations en termes officiels et corrige les fautes courantes. L'onglet <a href="#" onclick="setView('glossaire');return false;">Glossaire</a> liste tout ce qu'il comprend.</p>
+    <div class="faq-q">Puis-je l'installer comme une application&nbsp;?</div>
+    <p class="faq-a">Oui. Sur iPhone&nbsp;: bouton Partager, puis «&nbsp;Sur l'écran d'accueil&nbsp;». Vous l'aurez en plein écran, sans barre d'adresse, comme une vraie appli.</p>
+    <div class="faq-q">J'ai trouvé une erreur ou j'ai une question.</div>
+    <p class="faq-a">Écrivez à <a href="mailto:appareils.treves6g@icloud.com">appareils.treves6g@icloud.com</a>. Tout retour est utile.</p>
+  </div>
+</section>
+<section id="view-cgu" hidden>
+  <div class="head"><h1>Conditions d'utilisation</h1><p>Les règles d'usage de MonLégiTexte.</p></div>
+  <div class="info-page">
+    <p class="info-updated">Dernière mise à jour&nbsp;: août 2026</p>
+    <h2>1. Objet</h2>
+    <p>Les présentes conditions générales d'utilisation (CGU) régissent l'accès et l'utilisation du service MonLégiTexte (ci-après «&nbsp;le Service&nbsp;»), accessible à l'adresse <b>monlegitexte.heuressupfrance.workers.dev</b>. Toute utilisation du Service implique l'acceptation pleine et entière des présentes CGU.</p>
+    <h2>2. Description du Service</h2>
+    <p>Le Service est un outil <b>gratuit, informatif et pédagogique</b> de recherche et de consultation de textes du droit du travail français, à partir de sources officielles. Il ne propose aucun service de conseil, de calcul personnalisé ni d'accompagnement individuel.</p>
+    <h2>3. Gratuité et usage strictement personnel</h2>
+    <p>Le Service est fourni gratuitement et destiné à un usage strictement personnel. Sont interdits, sauf autorisation écrite préalable de l'éditeur&nbsp;:</p>
+    <div class="info-box"><ul>
+      <li>toute utilisation commerciale, vente, location ou monétisation du Service&nbsp;;</li>
+      <li>toute intégration dans un produit ou service commercial&nbsp;;</li>
+      <li>toute reproduction puis redistribution sous un autre nom&nbsp;;</li>
+      <li>toute suppression des mentions de propriété&nbsp;;</li>
+      <li>tout déploiement à l'échelle d'une entreprise sans accord écrit.</li>
+    </ul></div>
+    <h2>4. Absence de valeur juridique</h2>
+    <div class="info-warn">
+      <p>Les informations et textes proposés par le Service sont fournis <b>à titre purement indicatif et pédagogique</b>. Ils ne constituent ni un conseil juridique, ni un avis fiscal, et n'ont <b>aucune valeur légale ou contractuelle</b>.</p>
+      <p>Le droit du travail évolue régulièrement. Malgré le soin apporté aux mises à jour, l'exactitude à un instant donné ne peut être garantie. <b>Seuls font foi</b> les textes officiels en vigueur publiés sur Légifrance, les documents officiels de l'employeur et l'avis d'un professionnel qualifié.</p>
+    </div>
+    <h2>5. Fourniture «&nbsp;en l'état&nbsp;» et responsabilité</h2>
+    <p>Le Service est fourni «&nbsp;en l'état&nbsp;», sans garantie d'aucune sorte. L'éditeur, en sa qualité de particulier mettant gracieusement l'outil à disposition, ne saurait être tenu responsable&nbsp;: de toute erreur, imprécision ou omission&nbsp;; de toute décision prise sur la base des informations affichées&nbsp;; de tout préjudice direct ou indirect résultant de l'utilisation ou de l'impossibilité d'utiliser le Service&nbsp;; d'une indisponibilité temporaire ou définitive. L'utilisation du Service relève de la seule responsabilité de l'utilisateur.</p>
+    <h2>6. Sources et propriété intellectuelle</h2>
+    <p>Les textes juridiques proviennent de sources officielles (Légifrance / DILA, Judilibre / Cour de cassation) et demeurent soumis à leurs propres conditions de réutilisation (notamment la Licence Ouverte / Etalab). Ils restent la propriété de leurs producteurs respectifs. Le code source, la structure et l'identité visuelle de MonLégiTexte sont protégés — © 2026 Anthony Chauvel, tous droits réservés.</p>
+    <h2>7. Disponibilité</h2>
+    <p>Le Service peut être modifié, suspendu ou interrompu à tout moment, sans préavis, notamment pour des raisons de maintenance ou d'évolution des sources officielles.</p>
+    <h2>8. Modification des CGU</h2>
+    <p>Les présentes CGU peuvent être mises à jour à tout moment. La version applicable est celle publiée sur cette page au moment de l'utilisation.</p>
+    <h2>9. Droit applicable</h2>
+    <p>Les présentes CGU sont régies par le droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français seront seuls compétents.</p>
+  </div>
+</section>
+<section id="view-mentions" hidden>
+  <div class="head"><h1>Mentions légales</h1><p>Éditeur, hébergement et informations légales.</p></div>
+  <div class="info-page">
+    <p class="info-updated">Dernière mise à jour&nbsp;: août 2026</p>
+    <p>Conformément aux articles 6-III et 19 de la loi n°&nbsp;2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN), les présentes mentions légales sont portées à la connaissance des utilisateurs du service MonLégiTexte (ci-après «&nbsp;le Service&nbsp;»).</p>
+    <h2>1. Éditeur</h2>
+    <div class="info-box">
+      <p>Le Service est édité par un <b>particulier</b>, à titre strictement personnel et non professionnel&nbsp;:</p>
+      <ul>
+        <li><b>Nom&nbsp;:</b> Anthony Chauvel</li>
+        <li><b>Qualité&nbsp;:</b> personne physique — éditeur non professionnel</li>
+        <li><b>Contact&nbsp;:</b> <a href="mailto:appareils.treves6g@icloud.com">appareils.treves6g@icloud.com</a></li>
+      </ul>
+      <p style="font-size:12.5px;color:var(--ink-soft);">L'éditeur agit en tant que personne physique non commerçante. À ce titre, conformément à l'article 6-III-2 de la LCEN, il peut ne tenir à disposition du public que les éléments permettant de le contacter, son identité complète étant communiquée à l'hébergeur.</p>
+    </div>
+    <h2>2. Directeur de la publication</h2>
+    <div class="info-box"><p>Le directeur de la publication est l'éditeur du Service, Anthony Chauvel.</p></div>
+    <h2>3. Hébergement</h2>
+    <div class="info-box">
+      <p>Le Service est déployé et hébergé par&nbsp;:</p>
+      <p><b>Cloudflare, Inc.</b><br>101 Townsend Street, San Francisco, CA 94107, États-Unis<br>Site&nbsp;: <a href="https://www.cloudflare.com" target="_blank" rel="noopener">cloudflare.com</a></p>
+      <p style="font-size:12.5px;color:var(--ink-soft);">Le Service fonctionne sous la forme d'un Cloudflare Worker.</p>
+    </div>
+    <h2>4. Nature et objet du Service</h2>
+    <div class="info-box"><p>MonLégiTexte est un <b>outil informatif et pédagogique gratuit</b>, conçu et mis à disposition à titre personnel et non commercial. Il permet de rechercher et de consulter des textes du droit du travail français. Il est fourni gratuitement, sans vente, sans abonnement et sans publicité.</p></div>
+    <h2>5. Sources des données</h2>
+    <div class="info-box"><p>Les contenus juridiques proviennent de&nbsp;: <b>Légifrance</b> / DILA (via l'API PISTE), réutilisés selon la Licence Ouverte (Etalab)&nbsp;; et <b>Judilibre</b> / Cour de cassation pour la jurisprudence. Ces données restent la propriété de leurs producteurs et sont réutilisées dans le respect de leurs licences. Les liens renvoient vers les textes officiels correspondants.</p></div>
+    <h2>6. Absence de valeur juridique</h2>
+    <div class="info-warn">
+      <p>L'ensemble des contenus est fourni <b>à titre purement indicatif et pédagogique</b> et n'a aucune valeur légale ou contractuelle. Seuls les textes officiels en vigueur (Légifrance) font foi. En cas de doute, consultez un professionnel qualifié.</p>
+    </div>
+    <h2>7. Limitation de responsabilité</h2>
+    <div class="info-box"><p>Le Service est fourni «&nbsp;en l'état&nbsp;», sans garantie. L'éditeur ne saurait être tenu responsable des erreurs ou omissions, des décisions prises sur la base des informations affichées, d'un préjudice résultant de l'utilisation, ou d'une indisponibilité du Service.</p></div>
+    <h2>8. Propriété intellectuelle</h2>
+    <div class="info-box"><p>© 2026 Anthony Chauvel. Le code source, la structure et l'identité visuelle du Service sont protégés par le droit de la propriété intellectuelle. Toute reproduction ou représentation, totale ou partielle, sans autorisation écrite, est interdite. Les textes officiels cités restent la propriété de leurs producteurs.</p></div>
+    <h2>9. Données personnelles</h2>
+    <div class="info-box"><p>Le Service fonctionne de manière entièrement autonome&nbsp;: <b>aucune donnée personnelle n'est collectée</b>, stockée sur un serveur ou transmise à un tiers par l'éditeur. Aucun compte, aucun cookie, aucun outil de suivi ou de mesure d'audience. Vos recherches sont traitées localement dans votre navigateur et ne quittent pas votre appareil. Le Service n'est pas référencé par les moteurs de recherche.</p></div>
+    <h2>10. Droit applicable</h2>
+    <div class="info-box"><p>Les présentes mentions sont régies par le droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français seront seuls compétents.</p></div>
+    <h2>11. Contact</h2>
+    <div class="info-contact"><p>Pour toute question relative au Service ou aux présentes mentions&nbsp;:<br><b>Email&nbsp;:</b> <a href="mailto:appareils.treves6g@icloud.com">appareils.treves6g@icloud.com</a></p></div>
+  </div>
+</section>
   <footer id="app-footer">
     <strong>Note d'information &amp; avertissement</strong>
     <p>MonLégiTexte est un outil <b>indicatif et pédagogique</b> d'aide à la recherche. Il ne fournit aucun conseil juridique, aucune interprétation ni reformulation : il restitue uniquement les <b>textes officiels bruts</b> (Code du travail, conventions collectives, accords d'entreprise, jurisprudence…) ciblés par vos mots-clés. Chaque texte renvoie à sa source officielle (Légifrance / DILA).</p>
@@ -816,12 +945,31 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
 </main>
 
 <div class="scrim" id="scrim"></div>
+<style>/* === Mode lecture (barre de confort dans le panneau) === */
+.read-tools{display:flex;align-items:center;gap:4px;flex-shrink:0;}
+.read-btn{border:1px solid var(--line);background:var(--card);color:var(--ink-soft);min-width:31px;height:31px;padding:0 7px;border-radius:8px;cursor:pointer;font-weight:700;font-size:13px;line-height:1;display:flex;align-items:center;justify-content:center;transition:border-color .12s,color .12s,background .12s;}
+.read-btn:hover{border-color:var(--gold);color:var(--marine);}
+.read-btn.on{background:var(--gold-metal);color:#4a3808;border-color:var(--gold);}
+#d-body{--read-size:15px;}
+#d-body .sec-text{font-size:var(--read-size);line-height:1.7;transition:font-size .12s ease;}
+/* Mode parchemin : fond chaud + serif, pour lire de longs textes */
+#panel.parchemin .panel-body{background:linear-gradient(180deg,#f6eeda,#f0e6cd);}
+#panel.parchemin .sec-text{color:#3d3427;font-family:Georgia,'Times New Roman',serif;}
+#panel.parchemin .sec-text a,#panel.parchemin .art-link{color:#8a6d1e;}
+#panel.parchemin .detail-title,#panel.parchemin .detail-num{color:#4a3d29;}
+#panel.parchemin .panel-body h2,#panel.parchemin .panel-body h3{color:#3a2f1d;}
+</style>
 <div class="panel" id="panel" role="dialog" aria-modal="true" aria-label="Détail du texte">
   <div class="panel-top">
     <div class="meta">
       <div class="detail-num mono" id="d-num"></div>
       <div class="detail-title" id="d-title"></div>
       <div id="d-val"></div>
+    </div>
+    <div class="read-tools" role="group" aria-label="Confort de lecture">
+      <button class="read-btn" type="button" onclick="_lectureDelta(-1.5)" aria-label="Réduire le texte" title="Réduire le texte">A−</button>
+      <button class="read-btn" type="button" onclick="_lectureDelta(1.5)" aria-label="Agrandir le texte" title="Agrandir le texte">A+</button>
+      <button class="read-btn" id="rd-parch" type="button" onclick="_lectureParchemin()" aria-label="Mode parchemin" title="Mode parchemin (lecture)">◐</button>
     </div>
     <button class="panel-close" id="d-close" aria-label="Fermer">✕</button>
   </div>
@@ -1437,9 +1585,13 @@ function setView(v){
   document.getElementById('view-browse').hidden = !(v==='ccn'||v==='code'||v==='secu'||v==='juris'||v==='jorf'||v==='acco'||estClause);
   document.getElementById('view-maj').hidden = (v!=='maj');
   document.getElementById('view-glossaire').hidden = (v!=='glossaire');
+  document.getElementById('view-faq').hidden = (v!=='faq');
+  document.getElementById('view-cgu').hidden = (v!=='cgu');
+  document.getElementById('view-mentions').hidden = (v!=='mentions');
   window.scrollTo({top:0});
   if(v==='maj'){ renderAudits(); }
   else if(v==='glossaire'){ renderGlossaire(); }
+  else if(v==='faq'||v==='cgu'||v==='mentions'){ try{ window.scrollTo({top:0}); }catch(e){} }
   else if(estClause){ startBrowseClauses(v); }
   else { startBrowse(v); }
 }
@@ -2635,7 +2787,13 @@ function runSearch(){
   var rawNorm = normaliser(raw);
   var dym = didYouMean(tokens);
   var terms = expandTerms(tokens);
-  tokens.forEach(function(t){ fuzzyExpand(t).forEach(function(w){ if(terms.indexOf(w)===-1) terms.push(w); }); });
+  // Le surlignage des extraits d'articles (Code, Sécu, Jurisprudence, JO, accords)
+  // doit connaître les MÊMES synonymes que le matching : on nourrit `terms` avec
+  // variantsOf() (qui inclut E.SYN = tous les dicts SYN_EXTRA* + le fuzzy), pas
+  // seulement expandTerms (bâti sur SYN_RAW seul). Sans ça « cse » trouvait bien
+  // les articles mais ne surlignait « comité social et économique » que sur les
+  // CCN. On filtre >=3 lettres (les mots-outils « de/la » sont inutiles à surligner).
+  tokens.forEach(function(t){ variantsOf(t).forEach(function(w){ if(w.length>=3 && terms.indexOf(w)===-1) terms.push(w); }); });
   // Garde-fou perf : une requête TRÈS longue (ex. une « situation » du découvreur
   // = 12-15 mots) fait exploser l'union de candidats sur 60 000+ accords → gros
   // gel sur mobile. On ne lance la recherche que sur les mots les PLUS
@@ -3480,6 +3638,12 @@ function scrollToSection(target){
   if(found){ try{ found.scrollIntoView({block:'center',behavior:'smooth'}); }catch(e){ found.scrollIntoView(); }
     found.classList.add('sec-flash'); setTimeout(function(){ found.classList.remove('sec-flash'); }, 2600); }
 }
+// Mode lecture : taille de police + parchemin. État en MÉMOIRE DE SESSION
+// uniquement (pas de localStorage) — cohérent avec « aucun stockage local ».
+var _lectureSize = 15;
+function _lectureApplique(){ var b=document.getElementById('d-body'); if(b) b.style.setProperty('--read-size', _lectureSize+'px'); }
+function _lectureDelta(d){ _lectureSize = Math.max(12, Math.min(26, _lectureSize + d)); _lectureApplique(); }
+function _lectureParchemin(){ var p=document.getElementById('panel'); if(!p) return; var on=p.classList.toggle('parchemin'); var btn=document.getElementById('rd-parch'); if(btn) btn.classList.toggle('on', on); }
 function openPanel(){
   // Verrouille le scroll de la page dessous SANS perdre la position : on
   // mémorise la hauteur de défilement et on décale le body (qui passe en
@@ -3495,6 +3659,7 @@ function openPanel(){
   }
   document.getElementById('scrim').classList.add('open');
   document.getElementById('panel').classList.add('open');
+  _lectureApplique();
 }
 function closeDetail(){
   document.getElementById('scrim').classList.remove('open');
