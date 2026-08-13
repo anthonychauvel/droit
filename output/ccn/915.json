@@ -15550,13 +15550,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696962",
+              "cid": "KALISCTA000005696962",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et valeur du point à compter du 1er janvier 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-03-21",
+              "dateFin": "1997-05-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783406",
+                  "cid": "KALIARTI000005783406",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696962/KALIARTI000005783406",
+                  "pathTitle": [
+                    "Salaires et valeur du point à compter du 1er janvier 1996."
+                  ],
+                  "content": "<p></p>   A compter du 1er janvier 1996, la valeur du point retenue pour le calcul des rémunérations mensuelles concernant le personnel figurant à l'annexe I de la convention collective, est fixée comme suit :<p></p><p></p>   - pour le salaire de base coefficient 100 : 50,25 F<p></p><p></p>   - pour le coefficient hiérarchique (différence entre le coefficient de l'emploi et le coefficient de base) : 23,35 F <p></p><p></p><p></p>   La grille des salaires s'établit comme suit :<p></p><p></p> (1) Coefficient.<p></p> (2) Salaire mensuel.<p></p> -------------------<p></p><TABLE><TR><TD>  (1)  </TD><TD>   (2)   </TD></TR><TR><TD> 115   </TD><TD> 5.375 F </TD></TR><TR><TD> 120   </TD><TD> 5.492 F </TD></TR><TR><TD> 130   </TD><TD> 5.726 F </TD></TR><TR><TD> 140   </TD><TD> 5.959 F </TD></TR><TR><TD> 150   </TD><TD> 6.193 F </TD></TR><TR><TD> 155   </TD><TD> 6.309 F </TD></TR><TR><TD> 160   </TD><TD> 6.426 F </TD></TR><TR><TD> 170   </TD><TD> 6.660 F </TD></TR><TR><TD> 185   </TD><TD> 7.010 F </TD></TR><TR><TD> 240   </TD><TD> 8.294 F </TD></TR></TABLE><p></p> --------------------- sur la base de trente-neuf heures par semaine.<p></p>   Par ailleurs, le salaire mensuel minimum (prime d'ancienneté non comprise) ne pourra être inférieur à 6.417 F pour 39 heures de travail sur treize mois.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 33 1996-03-21 BO conventions collectives 96-26",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES du personnel administratif",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 827366400000,
+                  "dateFin": 863568000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -15570,13 +15644,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696963",
+              "cid": "KALISCTA000005696963",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et valeur du point à compter du 1er janvier 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-03-21",
+              "dateFin": "1997-05-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783407",
+                  "cid": "KALIARTI000005783407",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696963/KALIARTI000005783407",
+                  "pathTitle": [
+                    "Salaires et valeur du point à compter du 1er janvier 1996."
+                  ],
+                  "content": "<p></p>   A compter du 1er janvier 1996, la valeur du point retenue pour le calcul des rémunérations mensuelles concernant le personnel figurant aux annexes II et III de la convention collective demeure sans changement, comme suit :<p></p><p></p><p></p>   - pour le salaire de base, coefficient 200 : 31,71 F <p></p><p></p>   - pour le coefficient hiérarchique (différence entre le coefficient de l'emploi et le coefficient de base) : 21,43 F <p></p><p></p><p></p>   La grille des salaires s'établit comme suit :<p></p><p></p> (1) Coefficient.<p></p> (2) Salaire mensuel.<p></p> --------------------<p></p><TABLE><TR><TD>  (1)  </TD><TD>    (2)   </TD></TR><TR><TD> 200   </TD><TD>  6.342 F </TD></TR><TR><TD> 240   </TD><TD>  7.199 F </TD></TR><TR><TD> 330   </TD><TD>  9.128 F </TD></TR><TR><TD> 400   </TD><TD> 10.628 F </TD></TR><TR><TD> 430   </TD><TD> 11.271 F </TD></TR></TABLE><p></p> --------------------",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 34 1996-03-21 BO conventions collectives 96-26",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES des collaborateurs commerciaux et techniques, cadres",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 827366400000,
+                  "dateFin": 863568000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -15684,13 +15832,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696965",
+              "cid": "KALISCTA000005696965",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et valeur du point à compter du 1er janvier 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-05-14",
+              "dateFin": "1998-09-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783409",
+                  "cid": "KALIARTI000005783409",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696965/KALIARTI000005783409",
+                  "pathTitle": [
+                    "Salaires et valeur du point à compter du 1er janvier 1997."
+                  ],
+                  "content": "<p></p>   A compter du 1er janvier 1997, la valeur du point retenue pour le calcul des rémunérations mensuelles concernent le personnel figurant aux annexes II et III de la convention collective demeure sans changement, comme suit :<p></p><p></p>   - pour le salaire de base, coefficient 200 : 32,25 F<p></p><p></p>   - pour le coefficient hiérarchique (différence entre le coefficient de l'emploi et le coefficient de base) : 21,79 F<p></p><p></p>      La grille des salaires s'établit comme suit :<p></p><p></p>   - coefficient 200 : 6 450 F<p></p><p></p>   - coefficient 240 : 7 322 F<p></p><p></p>   - coefficient 330 : 9 283 F<p></p><p></p>   - coefficient 400 : 10 808 F<p></p><p></p>   - coefficient 430 : 11 462 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 37 1997-05-14 BO conventions collectives 97-43",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES des collaborateurs commerciaux et techniques, cadres",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 863568000000,
+                  "dateFin": 906336000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

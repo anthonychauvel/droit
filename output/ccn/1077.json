@@ -12726,13 +12726,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697162",
+              "cid": "KALISCTA000005697162",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Salaires et grilles à compter du 1er juillet 2000 (base 39 heures)",
+              "dateModif": null,
+              "dateDebut": "2000-07-01",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783922",
+                  "cid": "KALIARTI000005783922",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005697162/KALIARTI000005783922",
+                  "pathTitle": [
+                    "Salaires et grilles à compter du 1er juillet 2000 (base 39 heures)"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les parties signataires sont convenues des modifications indiquées ci-dessus, applicables à compter du 1er janvier 2000, à la convention collective nationale des entreprises du négoce et de l'industrie des produits du sol, engrais et produits connexes.<p></p><p></p>   Le barème des salaires conventionnels, pour 39 heures hebdomadaires, tel qu'il figure à l'annexe II de la convention collective nationale des entreprises du négoce et de l'industrie des produits du sol est déterminé, à compter du 1er juillet 2000 par l'application de la grille suivante.<p></p> Article 2<p></p><p></p>   Pour les entreprises de plus de 20 salariés n'ayant pas réduit le temps de travail au 1er juillet 2000, la présente grille de minima conventionnels s'entend non compris les bonifications de 10 % pour chaque heure supplémentaire entre 35 et 39 heures.<p></p> Article 3<p></p><p></p>   Conformément à l'article 69 de la convention, les parties signataires conviennent de demander l'extension du présent avenant.<p></p><p></p> Grille des salaires applicable au 1er juillet 2000<p></p> Base 39 heures pour les entreprises de moins de 20 salariés<p></p> et les entreprises de plus de 20 salariés n'ayant pas réduit le temps de travail<p></p> Salaire : 5 180 F + 16,65 F (C - 100) - Complément : 15,89 F (200 - C)<p></p><p></p> COEF. = (1) SALAIRE de base (en francs) = (2) VARIABLE 1 = (3) VARIABLE 2 = (4) SALAIRE conventionnel (en francs) = (5) <p></p><TABLE><TR><TD> (1) </TD><TD>    (2)   </TD><TD>    (3)   </TD><TD>    (4)     </TD><TD>    (5)    </TD></TR><TR><TD> 115 </TD><TD> 5 180,00 </TD><TD>   249,75 </TD><TD>  1 668,45  </TD><TD>  7 098,20 </TD></TR><TR><TD> 120 </TD><TD> 5 180,00 </TD><TD>   333,00 </TD><TD>  1 589,00  </TD><TD>  7 102,00 </TD></TR><TR><TD> 140 </TD><TD> 5 180,00 </TD><TD>   666,00 </TD><TD>  1 271,20  </TD><TD>  7 117,20 </TD></TR><TR><TD> 155 </TD><TD> 5 180,00 </TD><TD>   915,75 </TD><TD>  1 032,85  </TD><TD>  7 128,60 </TD></TR><TR><TD> 165 </TD><TD> 5 180,00 </TD><TD> 1 082,25 </TD><TD>    873,95  </TD><TD>  7 136,20 </TD></TR><TR><TD> 180 </TD><TD> 5 180,00 </TD><TD> 1 332,00 </TD><TD>    635,60  </TD><TD>  7 147,60 </TD></TR><TR><TD> 200 </TD><TD> 5 180,00 </TD><TD> 1 665,00 </TD><TD>    317,80  </TD><TD>  7 162,80 </TD></TR><TR><TD> 220 </TD><TD> 5 180,00 </TD><TD> 1 998,00 </TD><TD>      0,00  </TD><TD>  7 178,00 </TD></TR><TR><TD> 235 </TD><TD> 5 180,00 </TD><TD> 2 247,75 </TD><TD></TD><TD>  7 427,75 </TD></TR><TR><TD> 240 </TD><TD> 5 180,00 </TD><TD> 2 331,00 </TD><TD></TD><TD>  7 511,00 </TD></TR><TR><TD> 245 </TD><TD> 5 180,00 </TD><TD> 2 414,25 </TD><TD></TD><TD>  7 594,25 </TD></TR><TR><TD> 250 </TD><TD> 5 180,00 </TD><TD> 2 497,50 </TD><TD></TD><TD>  7 677,50 </TD></TR><TR><TD> 255 </TD><TD> 5 180,00 </TD><TD> 2 580,75 </TD><TD></TD><TD>  7 760,75 </TD></TR><TR><TD> 260 </TD><TD> 5 180,00 </TD><TD> 2 664,00 </TD><TD></TD><TD>  7 844,00 </TD></TR><TR><TD> 270 </TD><TD> 5 180,00 </TD><TD> 2 830,50 </TD><TD></TD><TD>  8 010,50 </TD></TR><TR><TD> 275 </TD><TD> 5 180,00 </TD><TD> 2 913,75 </TD><TD></TD><TD>  8 093,75 </TD></TR><TR><TD> 285 </TD><TD> 5 180,00 </TD><TD> 3 080,25 </TD><TD></TD><TD>  8 260,25 </TD></TR><TR><TD> 290 </TD><TD> 5 180,00 </TD><TD> 3 163,50 </TD><TD></TD><TD>  8 343,50 </TD></TR><TR><TD> 295 </TD><TD> 5 180,00 </TD><TD> 3 246,75 </TD><TD></TD><TD>  8 426,75 </TD></TR><TR><TD> 305 </TD><TD> 5 180,00 </TD><TD> 3 413,25 </TD><TD></TD><TD>  8 593,25 </TD></TR><TR><TD> 310 </TD><TD> 5 180,00 </TD><TD> 3 496,50 </TD><TD></TD><TD>  8 676,50 </TD></TR><TR><TD> 315 </TD><TD> 5 180,00 </TD><TD> 3 579,75 </TD><TD></TD><TD>  8 759,75 </TD></TR><TR><TD> 325 </TD><TD> 5 180,00 </TD><TD> 3 746,25 </TD><TD></TD><TD>  8 926,25 </TD></TR><TR><TD> 335 </TD><TD> 5 180,00 </TD><TD> 3 912,75 </TD><TD></TD><TD>  9 092,75 </TD></TR><TR><TD> 340 </TD><TD> 5 180,00 </TD><TD> 3 996,00 </TD><TD></TD><TD>  9 176,00 </TD></TR><TR><TD> 350 </TD><TD> 5 180,00 </TD><TD> 4 162,50 </TD><TD></TD><TD>  9 342,50 </TD></TR><TR><TD> 400 </TD><TD> 5 180,00 </TD><TD> 4 995,00 </TD><TD></TD><TD> 10 175,00 </TD></TR><TR><TD> 425 </TD><TD> 5 180,00 </TD><TD> 5 411,25 </TD><TD></TD><TD> 10 591,25 </TD></TR><TR><TD> 430 </TD><TD> 5 180,00 </TD><TD> 5 494,50 </TD><TD></TD><TD> 10 674,50 </TD></TR><TR><TD> 450 </TD><TD> 5 180,00 </TD><TD> 5 827,50 </TD><TD></TD><TD> 11 007,50 </TD></TR><TR><TD> 460 </TD><TD> 5 180,00 </TD><TD> 5 994,00 </TD><TD></TD><TD> 11 174,00 </TD></TR><TR><TD> 470 </TD><TD> 5 180,00 </TD><TD> 6 160,50 </TD><TD></TD><TD> 11 340,50 </TD></TR><TR><TD> 495 </TD><TD> 5 180,00 </TD><TD> 6 576,75 </TD><TD></TD><TD> 11 756,75 </TD></TR><TR><TD> 520 </TD><TD> 5 180,00 </TD><TD> 6 993,00 </TD><TD></TD><TD> 12 173,00 </TD></TR><TR><TD> 540 </TD><TD> 5 180,00 </TD><TD> 7 326,00 </TD><TD></TD><TD> 12 506,00 </TD></TR><TR><TD> 560 </TD><TD> 5 180,00 </TD><TD> 7 659,00 </TD><TD></TD><TD> 12 839,00 </TD></TR><TR><TD> 580 </TD><TD> 5 180,00 </TD><TD> 7 992,00 </TD><TD></TD><TD> 13 172,00 </TD></TR><TR><TD> 600 </TD><TD> 5 180,00 </TD><TD> 8 325,00 </TD><TD></TD><TD> 13 505,00 </TD></TR><TR><TD> 620 </TD><TD> 5 180,00 </TD><TD> 8 658,00 </TD><TD></TD><TD> 13 838,00 </TD></TR><TR><TD> 680 </TD><TD> 5 180,00 </TD><TD> 9 657,00 </TD><TD></TD><TD> 14 837,00 </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 46 2000-07-07 en vigueur au 1er juillet 2000 BO conventions collectives 2000-44 étendu par arrêté du 6 décembre 2000 JORF 15 décembre 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES (base 39 heures)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 962409600000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12766,13 +12840,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697164",
+              "cid": "KALISCTA000005697164",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Salaires et grilles à compter du 1er juillet 2001 (base 35 heures)",
+              "dateModif": null,
+              "dateDebut": "2001-07-01",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783925",
+                  "cid": "KALIARTI000005783925",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005697164/KALIARTI000005783925",
+                  "pathTitle": [
+                    "Salaires et grilles à compter du 1er juillet 2001 (base 35 heures)"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les parties signataires sont convenues des modifications indiquées ci-dessous, applicables à compter du 1er juillet 2001, à la convention collective nationale des entreprises du négoce et de l'industrie des produits du sol, engrais et produits connexes.<p></p><p></p>   Le barème des salaires conventionnels, pour 39 heures hebdomadaires, tel qu'il figure à l'annexe II de la convention collective nationale des entreprises du négoce et de l'industrie des produits du sol est déterminé, à compter du 1er juillet 2001, par l'application de la grille suivante.<p></p> Article 2<p></p><p></p>   Pour les entreprises de plus de 20 salariés n'ayant pas réduit le temps de travail au 1er juillet 2001, la présente grille de minima conventionnels s'entend non compris les bonifications de 25 % pour chaque heure supplémentaire entre 35 et 39 heures.<p></p> Article 3<p></p><p></p>   Conformément à l'article 69 de la convention, les parties signataires conviennent de demander l'extension du présent avenant.<p></p><p></p>   Suivent les signatures des organisations ci-après :<p></p> Grille des salaires applicable au 1er juillet 2001<p></p> Base 39 heures pour les entreprises de moins de 20 salariés<p></p> et les entreprises de plus de 20 salariés n'ayant pas réduit le temps de travail<p></p> Salaire : 5 370 F + 17,10 F (C - 100) - Complément : 16,77 F (200 - C)<p></p> ---------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD>  SALAIRE  </TD><TD></TD><TD></TD><TD>    SALAIRE   </TD></TR><TR><TD>COEF</TD><TD>  de base  </TD><TD>VARIABLE 1</TD><TD> VARIABLE 2 </TD><TD> conventionnel</TD></TR><TR><TD></TD><TD>(en francs)</TD><TD></TD><TD></TD><TD>  (en francs) </TD></TR><TR><TD>115 </TD><TD> 5 370,00  </TD><TD>   256,50 </TD><TD>  1 760,85  </TD><TD>   7 387,35   </TD></TR><TR><TD>120 </TD><TD> 5 370,00  </TD><TD>   342,00 </TD><TD>  1 677,00  </TD><TD>   7 389,00   </TD></TR><TR><TD>140 </TD><TD> 5 370,00  </TD><TD>   684,00 </TD><TD>  1 341,60  </TD><TD>   7 395,60   </TD></TR><TR><TD>155 </TD><TD> 5 370,00  </TD><TD>   940,50 </TD><TD>  1 090,05  </TD><TD>   7 400,55   </TD></TR><TR><TD>165 </TD><TD> 5 370,00  </TD><TD> 1 111,50 </TD><TD>    922,35  </TD><TD>   7 403,85   </TD></TR><TR><TD>180 </TD><TD> 5 370,00  </TD><TD> 1 368,00 </TD><TD>    670,80  </TD><TD>   7 408,80   </TD></TR><TR><TD>200 </TD><TD> 5 370,00  </TD><TD> 1 710,00 </TD><TD>    335,40  </TD><TD>   7 415,40   </TD></TR><TR><TD>220 </TD><TD> 5 370,00  </TD><TD> 2 052,00 </TD><TD>      0,00  </TD><TD>   7 422,00   </TD></TR><TR><TD>235 </TD><TD> 5 370,00  </TD><TD> 2 308,50 </TD><TD></TD><TD>   7 678,50   </TD></TR><TR><TD>240 </TD><TD> 5 370,00  </TD><TD> 2 394,00 </TD><TD></TD><TD>   7 764,00   </TD></TR><TR><TD>245 </TD><TD> 5 370,00  </TD><TD> 2 479,50 </TD><TD></TD><TD>   7 849,50   </TD></TR><TR><TD>250 </TD><TD> 5 370,00  </TD><TD> 2 565,00 </TD><TD></TD><TD>   7 935,00   </TD></TR></TABLE><p></p><TABLE><TR><TD>255 </TD><TD> 5 370,00  </TD><TD> 2 650,50 </TD><TD></TD><TD>   8 020,50   </TD></TR><TR><TD>260 </TD><TD> 5 370,00  </TD><TD> 2 736,00 </TD><TD></TD><TD>   8 106,00   </TD></TR><TR><TD>270 </TD><TD> 5 370,00  </TD><TD> 2 907,00 </TD><TD></TD><TD>   8 277,00   </TD></TR><TR><TD>275 </TD><TD> 5 370,00  </TD><TD> 2 992,50 </TD><TD></TD><TD>   8 362,50   </TD></TR><TR><TD>285 </TD><TD> 5 370,00  </TD><TD> 3 163,50 </TD><TD></TD><TD>   8 533,50   </TD></TR><TR><TD>290 </TD><TD> 5 370,00  </TD><TD> 3 249,00 </TD><TD></TD><TD>   8 619,00   </TD></TR><TR><TD>295 </TD><TD> 5 370,00  </TD><TD> 3 334,50 </TD><TD></TD><TD>   8 704,50   </TD></TR><TR><TD>305 </TD><TD> 5 370,00  </TD><TD> 3 505,50 </TD><TD></TD><TD>   8 875,50   </TD></TR><TR><TD>310 </TD><TD> 5 370,00  </TD><TD> 3 591,00 </TD><TD></TD><TD>   8 961,00   </TD></TR><TR><TD>315 </TD><TD> 5 370,00  </TD><TD> 3 676,50 </TD><TD></TD><TD>   9 046,50   </TD></TR><TR><TD>325 </TD><TD> 5 370,00  </TD><TD> 3 847,50 </TD><TD></TD><TD>   9 217,50   </TD></TR><TR><TD>335 </TD><TD> 5 370,00  </TD><TD> 4 018,50 </TD><TD></TD><TD>   9 388,50   </TD></TR><TR><TD>340 </TD><TD> 5 370,00  </TD><TD> 4 104,00 </TD><TD></TD><TD>   9 474,00   </TD></TR><TR><TD>350 </TD><TD> 5 370,00  </TD><TD> 4 275,00 </TD><TD></TD><TD>   9 645,00   </TD></TR><TR><TD>400 </TD><TD> 5 370,00  </TD><TD> 5 130,00 </TD><TD></TD><TD>  10 500,00   </TD></TR><TR><TD>425 </TD><TD> 5 370,00  </TD><TD> 5 557,50 </TD><TD></TD><TD>  10 927,50   </TD></TR><TR><TD>430 </TD><TD> 5 370,00  </TD><TD> 5 643,00 </TD><TD></TD><TD>  11 013,00   </TD></TR><TR><TD>450 </TD><TD> 5 370,00  </TD><TD> 5 985,00 </TD><TD></TD><TD>  11 355,00   </TD></TR><TR><TD>460 </TD><TD> 5 370,00  </TD><TD> 6 156,00 </TD><TD></TD><TD>  11 526,00   </TD></TR><TR><TD>470 </TD><TD> 5 370,00  </TD><TD> 6 327,00 </TD><TD></TD><TD>  11 697,00   </TD></TR><TR><TD>495 </TD><TD> 5 370,00  </TD><TD> 6 754,50 </TD><TD></TD><TD>  12 124,50   </TD></TR><TR><TD>520 </TD><TD> 5 370,00  </TD><TD> 7 182,00 </TD><TD></TD><TD>  12 552,00   </TD></TR><TR><TD>540 </TD><TD> 5 370,00  </TD><TD> 7 524,00 </TD><TD></TD><TD>  12 894,00   </TD></TR><TR><TD>560 </TD><TD> 5 370,00  </TD><TD> 7 866,00 </TD><TD></TD><TD>  13 236,00   </TD></TR><TR><TD>580 </TD><TD> 5 370,00  </TD><TD> 8 208,00 </TD><TD></TD><TD>  13 578,00   </TD></TR><TR><TD>600 </TD><TD> 5 370,00  </TD><TD> 8 550,00 </TD><TD></TD><TD>  13 920,00   </TD></TR><TR><TD>620 </TD><TD> 5 370,00  </TD><TD> 8 892,00 </TD><TD></TD><TD>  14 262,00   </TD></TR><TR><TD>680 </TD><TD> 5 370,00  </TD><TD> 9 918,00 </TD><TD></TD><TD>  15 288,00   </TD></TR></TABLE><p></p> ---------------------------------------------------------",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 48 2001-07-11 en vigueur le 1er juillet 2001 BO conventions collectives 2001-45 étendu par arrêté du 15 mars 2002 JORF 27 mars 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES (base 35 heures)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 993945600000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12806,13 +12954,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697166",
+              "cid": "KALISCTA000005697166",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et grilles à compter du 1er juillet 2002 (base 35 heures).",
+              "dateModif": null,
+              "dateDebut": "2002-07-10",
+              "dateFin": "2003-06-11",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783927",
+                  "cid": "KALIARTI000005783927",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005697166/KALIARTI000005783927",
+                  "pathTitle": [
+                    "Salaires et grilles à compter du 1er juillet 2002 (base 35 heures)."
+                  ],
+                  "content": "<p></p>   Considérant l'avenant n° 47 du 7 juillet 2000 instituant une grille de salaires conventionnels base 35 heures ;<p></p><p></p>   Considérant qu'au 1er janvier 2002 pour toutes les entreprises, quel que soit leur effectif, la durée légale est de 35 heures hebdomadaires,<p></p><p></p>   il a été convenu ce qui suit :<p></p> Article 1er<p></p> Grille de salaires conventionnels 35 heures hebdomadaires<p></p><p></p>   Les parties signataires ont convenu des modifications suivantes, applicables à compter du 1er juillet 2002, à l'ensemble des entreprises relevant de la convention collective nationale des entreprises du négoce et de l'industrie des produits du sol, engrais et produits connexes, quelle que soit la durée collective applicable dans les entreprises.<p></p> Article 2<p></p> Garanties mensuelles pour les entreprises<p></p> ayant réduit le temps de travail<p></p><p></p>   Les parties conviennent que les garanties mensuelles de rémunération en vigueur au 1er juillet 2002, qui s'appliquent aux entreprises, quel que soit leur effectif, qui ont réduit le temps de travail à 35 heures seront assurées par :<p></p><p></p>   - le nouveau salaire de base tel qu'il résulte des accords d'entreprise ;<p></p><p></p>   - le cas échéant, les primes de réduction du temps de travail telles qu'elles résultent des accords d'entreprise ;<p></p><p></p>   - le cas échéant, un complément différentiel.<p></p> Article 3<p></p><p></p>   Conformément à l'article 69 de la convention, les parties signataires conviennent de demander l'extension du présent avenant.<p></p><p></p>   Fait à Paris, le 10 juillet 2002.<p></p> (Suivent les signatures.) Grille des salaires applicable au 1er juillet 2002<p></p> Base 35 heures pour toutes les entreprises relevant de la convention collective<p></p> du négoce et de l'industrie des produits du sol, engrais et produits connexes<p></p> Salaire : 752,32 Euros + 2,39 Euros (C - 100) - Complément :<p></p> 2,36 Euros (220 - C)<p></p><p></p><p></p>   COEF. = (1)    SALAIRE de base (en francs) = (2)    VARIABLE 1 = (3)    VARIABLE 2 = (4)    SALAIRE conventionnel (en francs) = (5) :-----:----------:-----------:-----------:-----------:<p></p><TABLE><TR><TD> (1) </TD><TD>   (2)    </TD><TD>   (3)     </TD><TD>   (4)     </TD><TD>    (5)    </TD></TR><TR><TD> 115 </TD><TD>  752,32  </TD><TD>   35,85   </TD><TD>  247,80   </TD><TD>  1 035,97 </TD></TR><TR><TD> 120 </TD><TD>  752,32  </TD><TD>   47,80   </TD><TD>  236,00   </TD><TD>  1 036,12 </TD></TR><TR><TD> 140 </TD><TD>  752,32  </TD><TD>   95,60   </TD><TD>  188,80   </TD><TD>  1 036,72 </TD></TR><TR><TD> 155 </TD><TD>  752,32  </TD><TD>  131,45   </TD><TD>  153,40   </TD><TD>  1 037,17 </TD></TR><TR><TD> 165 </TD><TD>  752,32  </TD><TD>  155,35   </TD><TD>  129,80   </TD><TD>  1 037,47 </TD></TR><TR><TD> 180 </TD><TD>  752,32  </TD><TD>  191,20   </TD><TD>   94,40   </TD><TD>  1 037,92 </TD></TR><TR><TD> 200 </TD><TD>  752,32  </TD><TD>  239,00   </TD><TD>   47,20   </TD><TD>  1 038,52 </TD></TR><TR><TD> 220 </TD><TD>  752,32  </TD><TD>  286,80   </TD><TD>    0,00   </TD><TD>  1 039,12 </TD></TR><TR><TD> 235 </TD><TD>  752,32  </TD><TD>  322,65   </TD><TD></TD><TD>  1 074,97 </TD></TR><TR><TD> 240 </TD><TD>  752,32  </TD><TD>  334,60   </TD><TD></TD><TD>  1 086,92 </TD></TR><TR><TD> 245 </TD><TD>  752,32  </TD><TD>  346,55   </TD><TD></TD><TD>  1 098,87 </TD></TR><TR><TD> 250 </TD><TD>  752,32  </TD><TD>  358,50   </TD><TD></TD><TD>  1 110,82 </TD></TR><TR><TD> 255 </TD><TD>  752,32  </TD><TD>  370,45   </TD><TD></TD><TD>  1 122,77 </TD></TR><TR><TD> 260 </TD><TD>  752,32  </TD><TD>  382,40   </TD><TD></TD><TD>  1 134,72 </TD></TR><TR><TD> 270 </TD><TD>  752,32  </TD><TD>  406,30   </TD><TD></TD><TD>  1 158,62 </TD></TR><TR><TD> 275 </TD><TD>  752,32  </TD><TD>  418,25   </TD><TD></TD><TD>  1 170,57 </TD></TR><TR><TD> 285 </TD><TD>  752,32  </TD><TD>  442,15   </TD><TD></TD><TD>  1 194,47 </TD></TR><TR><TD> 290 </TD><TD>  752,32  </TD><TD>  454,10   </TD><TD></TD><TD>  1 206,42 </TD></TR><TR><TD> 295 </TD><TD>  752,32  </TD><TD>  466,05   </TD><TD></TD><TD>  1 218,37 </TD></TR><TR><TD> 305 </TD><TD>  752,32  </TD><TD>  489,95   </TD><TD></TD><TD>  1 242,27 </TD></TR><TR><TD> 310 </TD><TD>  752,32  </TD><TD>  501,90   </TD><TD></TD><TD>  1 254,22 </TD></TR><TR><TD> 315 </TD><TD>  752,32  </TD><TD>  513,85   </TD><TD></TD><TD>  1 266,17 </TD></TR><TR><TD> 325 </TD><TD>  752,32  </TD><TD>  537,75   </TD><TD></TD><TD>  1 290,07 </TD></TR><TR><TD> 335 </TD><TD>  752,32  </TD><TD>  561,65   </TD><TD></TD><TD>  1 313,97 </TD></TR><TR><TD> 340 </TD><TD>  752,32  </TD><TD>  573,60   </TD><TD></TD><TD>  1 325,92 </TD></TR><TR><TD> 350 </TD><TD>  752,32  </TD><TD>  597,50   </TD><TD></TD><TD>  1 349,82 </TD></TR><TR><TD> 400 </TD><TD>  752,32  </TD><TD>  717,00   </TD><TD></TD><TD>  1 469,32 </TD></TR><TR><TD> 425 </TD><TD>  752,32  </TD><TD>  776,75   </TD><TD></TD><TD>  1 529,07 </TD></TR><TR><TD> 430 </TD><TD>  752,32  </TD><TD>  788,70   </TD><TD></TD><TD>  1 541,02 </TD></TR><TR><TD> 450 </TD><TD>  752,32  </TD><TD>  836,50   </TD><TD></TD><TD>  1 588,82 </TD></TR><TR><TD> 460 </TD><TD>  752,32  </TD><TD>  860,40   </TD><TD></TD><TD>  1 612,72 </TD></TR><TR><TD> 470 </TD><TD>  752,32  </TD><TD>  884,30   </TD><TD></TD><TD>  1 636,62 </TD></TR><TR><TD> 495 </TD><TD>  752,32  </TD><TD>  944,05   </TD><TD></TD><TD>  1 696,37 </TD></TR><TR><TD> 520 </TD><TD>  752,32  </TD><TD>1 003,80   </TD><TD></TD><TD>  1 756,12 </TD></TR><TR><TD> 540 </TD><TD>  752,32  </TD><TD>1 051,60   </TD><TD></TD><TD>  1 803,92 </TD></TR><TR><TD> 560 </TD><TD>  752,32  </TD><TD>1 099,40   </TD><TD></TD><TD>  1 851,72 </TD></TR><TR><TD> 580 </TD><TD>  752,32  </TD><TD>1 147,20   </TD><TD></TD><TD>  1 899,52 </TD></TR><TR><TD> 600 </TD><TD>  752,32  </TD><TD>1 195,00   </TD><TD></TD><TD>  1 947,32 </TD></TR><TR><TD> 620 </TD><TD>  752,32  </TD><TD>1 242,80   </TD><TD></TD><TD>  1 995,12 </TD></TR><TR><TD> 680 </TD><TD>  752,32  </TD><TD>1 386,20   </TD><TD></TD><TD>  2 138,52 </TD></TR></TABLE><p></p> ------------------------------------------------------<font color=\"808080\"><em>   NOTA : Arrêté du 23 décembre 2002 art. 1 : les dispositions de l'avenant n° 50 du 10 juillet 2002 (grille de salaires conventionnels calculée sur une base de trente-cinq heures) à la convention collective susvisée, sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 instaurant une garantie de rémunération mensuelle.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 23 décembre 2002 art. 1 : les dispositions de l'avenant n° 50 du 10 juillet 2002 (grille de salaires conventionnels calculée sur une base de trente-cinq heures) à la convention collective susvisée, sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 instaurant une garantie de rémunération mensuelle.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 50 2002-07-10 BO conventions collectives 2002-42 étendu par arrêté du 23 décembre 2002 JORF 4 janvier 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES (base 35 heures)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1026259200000,
+                  "dateFin": 1055289600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

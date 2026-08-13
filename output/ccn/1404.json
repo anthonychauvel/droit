@@ -34191,13 +34191,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696912",
+              "cid": "KALISCTA000005696912",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème national des salaires minima mensuels garantis au 1er juin 2000 (base 39 heures par semaine)",
+              "dateModif": null,
+              "dateDebut": "2000-05-02",
+              "dateFin": "2003-09-25",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783203",
+                  "cid": "KALIARTI000005783203",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696912/KALIARTI000005783203",
+                  "pathTitle": [
+                    "Barème national des salaires minima mensuels garantis au 1er juin 2000 (base 39 heures par semaine)"
+                  ],
+                  "content": "Barème national des salaires minima mensuels garantis<p></p> (base 39 heures par semaine)<p></p> Applicable au 1er juin 2000<p></p><p></p><TABLE><TR><TD>COEF</TD><TD>  SALAIRE  </TD></TR><TR><TD></TD><TD>(en francs)</TD></TR><TR><TD> 150</TD><TD>  6 936    </TD></TR><TR><TD> 160</TD><TD>  6 977    </TD></TR><TR><TD> 170</TD><TD>  7 007    </TD></TR><TR><TD> 180</TD><TD>  7 038    </TD></TR><TR><TD> 195</TD><TD>  7 191    </TD></TR><TR><TD> 215</TD><TD>  7 436    </TD></TR><TR><TD> 225</TD><TD>  7 615    </TD></TR><TR><TD> 245</TD><TD>  8 017    </TD></TR><TR><TD> 260</TD><TD>  8 291    </TD></TR><TR><TD> 275</TD><TD>  8 568    </TD></TR><TR><TD> 295</TD><TD>  9 058    </TD></TR><TR><TD> 315</TD><TD>  9 523    </TD></TR><TR><TD> 340</TD><TD> 10 197    </TD></TR><TR><TD> 365</TD><TD> 10 844    </TD></TR><TR><TD> 410</TD><TD> 11 915    </TD></TR><TR><TD> 450</TD><TD> 12 966    </TD></TR><TR><TD> 500</TD><TD> 14 226    </TD></TR><TR><TD> 600</TD><TD> 16 779    </TD></TR><TR><TD> 700</TD><TD> 19 459    </TD></TR><TR><TD> 800</TD><TD> 21 856    </TD></TR></TABLE><p></p><p></p>   Le champ d'application du présent avenant est celui défini à l'article 1er, chapitre Ier, modifié par avenant n° 33 du 22 avril 1986 de la convention collective.<p></p>   Il fera l'objet des formalités de dépôt prévues à l'article L. 132-10 du code du travail, ainsi que d'une demande d'extension.<font color=\"808080\"><em>   NOTA : Arrêté du 4 août 2000 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 4 août 2000 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 72 2000-05-02 BO conventions collectives 2000-24 étendu par arrêté du 4 août 2000 JORF 26 août 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 957225600000,
+                  "dateFin": 1064448000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -34211,13 +34299,114 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696913",
+              "cid": "KALISCTA000005696913",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème national des salaires minima mensuels garantis au 1er septembre 2003 (base 35 heures par semaine)",
+              "dateModif": null,
+              "dateDebut": "2003-09-25",
+              "dateFin": "2004-06-29",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783204",
+                  "cid": "KALIARTI000005783204",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696913/KALIARTI000005783204",
+                  "pathTitle": [
+                    "Barème national des salaires minima mensuels garantis au 1er septembre 2003 (base 35 heures par semaine)"
+                  ],
+                  "content": "Article 1er <p></p>Salaires <p></p><p></p>Le premier alinéa de l'article 3 \" Salaires \" du chapitre II de la convention collective est annulé et remplacé comme suit : <p></p><p></p>\" Les salariés seront payés mensuellement en fonction de l'horaire de l'entreprise et suivant les barèmes des salaires minima garantis établis pour 151,67 heures par mois, en fonction de leur coefficient hiérarchique résultant de la classification professionnelle. \" <p></p><p></p>L'article 3 du chapitre II de la convention collective est complété comme suit : <p></p><p></p>\" Pour les salariés ayant signé une convention de forfait annuel en heures, il convient de tenir compte des rémunérations forfaitaires minimales garanties et de leurs majorations indiquées à l'article 14-2 de l'accord du 22 janvier 1999 modifié. \" <p></p><p></p>L'article 3 du chapitre III de la convention collective est complété comme suit : <p></p><p></p>\" Dispositions spécifiques à certains cadres en matière de salaires : <p></p><p></p>Pour les salariés cadres ayant signé une convention de forfait, il convient de tenir compte des rémunérations forfaitaires minimales garanties et de leurs majorations définies :<p></p><p></p>-pour les salariés cadres au forfait annuel en heures, dans l'article 14-2 de l'avenant n° 3 du 20 décembre 2000 et à l'avenant n° 4 du 25 septembre 2003 à l'accord du 22 janvier 1999 ;<p></p><p></p>-pour les salariés cadres au forfait annuel en jours, dans l'article 10 de l'avenant n° 3 du 20 décembre 2000 modifié par l'avenant n° 4 du 25 septembre 2003 à l'accord du 22 janvier 1999 ;<p></p><p></p>-pour les cadres dirigeants visés à l'article 9 de l'avenant n° 3 du 20 décembre 2000, dans l'article 15-3 de l'accord sur la durée, l'aménagement du temps de travail du 22 janvier 1999. \" <p></p>Article 2 <p></p>Grilles de salaires minima <p></p><p></p>Toutes les entreprises de la branche étant désormais soumises à la durée légale de 35 heures hebdomadaires, les partenaires sociaux ont redéfini une grille des salaires minima mensuelle sur la base de 151,67 heures. <p></p><p></p>Conscients des répercussions économiques que peuvent avoir ces nouveaux minima dans la branche et pour permettre aux entreprises de s'adapter, les partenaires sociaux se rencontreront chaque année pour discuter de l'évolution des minima, sachant qu'au 1er juillet 2005, le coefficient 150 de la grille devra être au niveau du SMIC mensuel base 35 heures applicable à cette date. <p></p><p></p>Le barème des salaires minima applicable à compter du 1er septembre figure en annexe. <p></p>Article 3 <p></p>Champ d'application du présent avenant <p></p><p></p>Le champ d'application professionnel, personnel et géographique du présent accord est celui prévu par l'article 1er du chapitre Ier de la convention collective, modifié par avenant n° 33 du 22 avril 1986. <p></p>Article 4 <p></p>Dépôt de l'accord <p></p><p></p>Le présent accord, établi en application des <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006646990&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-1 (Ab)\">articles L. 132-1 et suivants du code du travail</a>, est fait en nombre suffisant d'exemplaires pour remise à chacune des organisations signataires et dépôt dans les conditions prévues à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">article L. 132-10 du code du travail</a>. <p></p><p></p>Les parties signataires demandent l'extension du présent accord au ministère de l'emploi et de la solidarité. <p></p><p></p>Fait à Paris, le 25 septembre 2003. <p></p><p></p>Annexe à l'avenant n° 73 du 25 septembre 2003 <p></p><p></p>Barème national des salaires minima mensuels garantis (base 35 heures par semaine) applicable à compter du 1er septembre 2003. <p></p><p></p><TABLE><TR><TD>COEFFICIENT </TD><TD>SALAIRE MINIMUM </TD></TR><TR><TD></TD><TD>mensuel base 151,67 </TD></TR><TR><TD></TD><TD>heures par mois </TD></TR><TR><TD></TD><TD>(en euros) </TD></TR><TR><TD>150 </TD><TD>1 136,20 </TD></TR><TR><TD>160 </TD><TD>1 142,92 </TD></TR><TR><TD>170 </TD><TD>1 147,83 </TD></TR><TR><TD>180 </TD><TD>1 152,91 </TD></TR><TR><TD>195 </TD><TD>1 177,97 </TD></TR><TR><TD>215 </TD><TD>1 218,10 </TD></TR><TR><TD>225 </TD><TD>1 247,42 </TD></TR><TR><TD>245 </TD><TD>1 313,27 </TD></TR><TR><TD>260 </TD><TD>1 358,16 </TD></TR><TR><TD>275 </TD><TD>1 403,53 </TD></TR><TR><TD>295 </TD><TD>1 483,80 </TD></TR><TR><TD>315 </TD><TD>1 559,97 </TD></TR><TR><TD>340 </TD><TD>1 670,38 </TD></TR><TR><TD>365 </TD><TD>1 776,37 </TD></TR><TR><TD>410 </TD><TD>1 951,81 </TD></TR><TR><TD>450 </TD><TD>2 123,97 </TD></TR><TR><TD>500 </TD><TD>2 330,38 </TD></TR><TR><TD>600 </TD><TD>2 748,59 </TD></TR><TR><TD>700 </TD><TD>3 187,61 </TD></TR><TR><TD>800 </TD><TD>3 580,27 </TD></TR></TABLE><p></p><font color=\"808080\"><em>NOTA : arrêté du 18 mai 2004 : <p></p>Texte étendu sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie mensuelle de rémunération.<p></p></em></font>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 73 2003-09-25 BO conventions collectives 2003-47 étendu par arrêté du 18 mai 2004 JORF 29 mai 2004",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-1 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-1",
+                      "articleId": "LEGIARTI000006646990",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    },
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-10 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-10",
+                      "articleId": "LEGIARTI000006647014",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1064448000000,
+                  "dateFin": 1088467200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -34231,13 +34420,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696914",
+              "cid": "KALISCTA000005696914",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er juillet 2004.",
+              "dateModif": null,
+              "dateDebut": "2004-06-29",
+              "dateFin": "2005-09-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783205",
+                  "cid": "KALIARTI000005783205",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696914/KALIARTI000005783205",
+                  "pathTitle": [
+                    "Salaires à compter du 1er juillet 2004."
+                  ],
+                  "content": "<p></p>   La chambre syndicale nationale des voyageurs représentants et cadres de vente de l'automobile, de l'aviation, de la motoculture, du cycle des accessoires et industries annexes (CSNVA),<p></p><p></p>   D'autre part,<p></p><p></p>   il a été convenu ce qui suit :<p></p><p></p>   Barème national des salaires minima mensuels garantis (base 35 heures par semaine) applicable à compter du 1er juillet 2004<p></p><p></p> :---------------------------------:<p></p><TABLE><TR><TD></TD><TD> SALAIRE MINIMUM   </TD></TR><TR><TD> COEFFICIENT </TD><TD> mensuel base      </TD></TR><TR><TD></TD><TD> 151 h 67 par mois </TD></TR><TR><TD></TD><TD>    (en euros)     </TD></TR><TR><TD>     150     </TD><TD>      1 168,01     </TD></TR><TR><TD>     160     </TD><TD>      1 174,92     </TD></TR><TR><TD>     170     </TD><TD>      1 179,97     </TD></TR><TR><TD>     180     </TD><TD>      1 185,19     </TD></TR><TR><TD>     195     </TD><TD>      1 210,95     </TD></TR><TR><TD>     215     </TD><TD>      1 252,21     </TD></TR><TR><TD>     225     </TD><TD>      1 282,35     </TD></TR><TR><TD>     245     </TD><TD>      1 350,04     </TD></TR><TR><TD>     260     </TD><TD>      1 396,19     </TD></TR><TR><TD>     275     </TD><TD>      1 442,83     </TD></TR><TR><TD>     295     </TD><TD>      1 525,35     </TD></TR><TR><TD>     315     </TD><TD>      1 603,65     </TD></TR><TR><TD>     340     </TD><TD>      1 717,15     </TD></TR><TR><TD>     365     </TD><TD>      1 826,11     </TD></TR><TR><TD>     410     </TD><TD>      2 006,46     </TD></TR><TR><TD>     450     </TD><TD>      2 183,44     </TD></TR><TR><TD>     500     </TD><TD>      2 395,63     </TD></TR><TR><TD>     600     </TD><TD>      2 825,55     </TD></TR><TR><TD>     700     </TD><TD>      3 276,86     </TD></TR><TR><TD>     800     </TD><TD>      3 680,52     </TD></TR></TABLE><p></p><p></p>   Rappel de la disposition figurant au 2e alinéa de l'article 2 \" Grilles de salaires minima \" de l'avenant n° 73 du 25 septembre 2003 :<p></p>   \" Conscients des répercussions économiques que peuvent avoir ces nouveaux minima dans la branche et pour permettre aux entreprises de s'adapter, les partenaires sociaux se rencontreront chaque année pour discuter de l'évolution des minima, sachant qu'au 1er juillet 2005, le coefficient 150 de la grille devra être au niveau du SMIC mensuel base 35 heures applicable à cette date. \" Champ d'application du présent avenant<p></p>   Le champ d'application professionnel, personnel et géographique du présent avenant est celui prévu par l'article 1er du chapitre Ier de la convention collective, modifié par avenant n° 33 du 22 avril 1986. Dépôt de l'avenant<p></p>   Le présent avenant, établi en application des articles L. 132.1 et suivants du code du travail, est fait en nombre suffisant d'exemplaires pour remise à chacune des organisations signataires et dépôt dans les conditions prévues à l'article L. 132.10 du code du travail.<p></p>   Les parties signataires demandent l'extension du présent avenant au ministère de l'emploi, du travail et de la cohésion sociale.<p></p>   Fait à Paris, le 29 juin 2004.<font color=\"808080\"><em>   NOTA : Arrêté du 23 décembre 2004 :<p></p>    Avenant étendu sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie mensuelle de rémunération.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 23 décembre 2004 :<p></p>    Avenant étendu sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie mensuelle de rémunération.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 75 2004-06-29 BO conventions collectives 2004-32 étendu par arrêté du 23 décembre 2004 JORF 11 janvier 2005",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires.",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1088467200000,
+                  "dateFin": 1127174400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

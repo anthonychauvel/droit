@@ -27685,13 +27685,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720613",
+              "cid": "KALISCTA000005720613",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et valeur du point au 1er juillet 1996",
+              "dateModif": null,
+              "dateDebut": "1996-06-05",
+              "dateFin": "2000-06-16",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005842244",
+                  "cid": "KALIARTI000005842244",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720613/KALIARTI000005842244",
+                  "pathTitle": [
+                    "Salaires et valeur du point au 1er juillet 1996"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Conformément aux dispositions de l'article III-4 de la convention collective nationale des entreprises d'installation sans fabrication, y compris entretien, réparation, dépannage, etc., de matériel aéraulique, thermique, frigorifique et connexes, le présent avenant fixe les salaires et appointements entrant dans son champ d'application.<p></p> Article 2<p></p><p></p>   Les emplois concernés sont ceux repris par le chapitre XI de la convention collective.<p></p> Article 3<p></p><p></p>   La valeur du point est fixée à 35,42 F à dater du 1er juillet 1996.<p></p> Article 4<p></p><p></p>   Le salaire minimum garanti mensuel pour 169 heures est le produit du coefficient hiérarchique par la valeur du point (K x 35,42 F).<p></p><p></p>   Le salaire horaire s'obtient en divisant le salaire mensuel ainsi déterminé par 169.<p></p> Article 5<p></p><p></p>   La valeur du point fixée par l'article 3 est seule à prendre en considération pour l'application des articles III-6 et IV-3 de la convention, à tous les emplois concernés.<p></p> Article 6<p></p><p></p>   Le salaire minimum conventionnel garanti est fixé ainsi qu'il suit à dater du 1er juillet 1996 à 6 404 F (pour 169 heures).<p></p> Article 7<p></p><p></p>   Les parties conviennent de se rencontrer au cours de la première quinzaine du mois de juin 1997.<p></p><p></p><p></p>   GRILLE DES SALAIRES MINIMA AU 1ER JUILLET 1996.<p></p><p></p> (1) : Niveau<p></p> (2) : Echelon<p></p> (3) : Coefficients<p></p> (4) : Salaire minimum garanti mensuel (en francs).<p></p><p></p><TABLE><TR><TD>(1) </TD><TD> (2) </TD><TD> (3) </TD><TD>  (4)   </TD></TR><TR><TD> I  </TD><TD>  a  </TD><TD> 176 </TD><TD> 6.404 F</TD></TR><TR><TD></TD><TD>  b  </TD><TD> 181 </TD><TD> 6.411 F</TD></TR><TR><TD></TD><TD>  c  </TD><TD> 186 </TD><TD> 6.588 F</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> II </TD><TD>  a  </TD><TD> 195 </TD><TD> 6.907 F</TD></TR><TR><TD></TD><TD>  b  </TD><TD> 205 </TD><TD> 7.261 F</TD></TR><TR><TD></TD><TD>  c  </TD><TD> 210 </TD><TD> 7.438 F</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> III</TD><TD>  a  </TD><TD> 225 </TD><TD> 7.970 F</TD></TR><TR><TD></TD><TD>  b  </TD><TD> 235 </TD><TD> 8.324 F</TD></TR><TR><TD></TD><TD>  c  </TD><TD> 245 </TD><TD> 8.678 F</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> IV </TD><TD>  a  </TD><TD> 260 </TD><TD> 9.209 F</TD></TR><TR><TD></TD><TD>  b  </TD><TD> 280 </TD><TD> 9.918 F</TD></TR><TR><TD></TD><TD>  c  </TD><TD> 300 </TD><TD>10.626 F</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> V  </TD><TD>  a  </TD><TD> 320 </TD><TD>11.334 F</TD></TR><TR><TD></TD><TD>  b  </TD><TD> 340 </TD><TD>12.043 F</TD></TR><TR><TD></TD><TD>  c  </TD><TD> 365 </TD><TD>12.928 F</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>VI  </TD><TD>  a  </TD><TD> 390 </TD><TD>13.814 F</TD></TR><TR><TD></TD><TD>  b  </TD><TD> 430 </TD><TD>15.231 F</TD></TR><TR><TD></TD><TD>  c  </TD><TD> 460 </TD><TD>16.293 F</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>VII </TD><TD>  a  </TD><TD> 500 </TD><TD>17.710 F</TD></TR><TR><TD></TD><TD>  b  </TD><TD> 600 </TD><TD>21.252 F</TD></TR><TR><TD></TD><TD>  c  </TD><TD> 700 </TD><TD>24.794 F</TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 18 octobre 1996 art. 1 : les dispositions du présent avenant sont étendues sous réserve des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 18 octobre 1996 art. 1 : les dispositions du présent avenant sont étendues sous réserve des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 21 1996-06-05 BO conventions collectives 96-29, étendu par arrêté du 18 octobre 1996 JORF 29 octobre 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 833932800000,
+                  "dateFin": 961113600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -27705,13 +27779,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720614",
+              "cid": "KALISCTA000005720614",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et valeur du point au 1er juin 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-06-16",
+              "dateFin": "2001-07-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005842245",
+                  "cid": "KALIARTI000005842245",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720614/KALIARTI000005842245",
+                  "pathTitle": [
+                    "Salaires et valeur du point au 1er juin 2000."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Conformément aux dispositions de l'article 3-4 de la convention collective nationale des entreprises d'installation sans fabrication, y compris entretien, réparation, dépannage, etc., de matériel aéraulique, thermique, frigorifique et connexes, le présent avenant fixe les salaires et primes d'ancienneté entrant dans son champ d'application.<p></p> Article 2<p></p><p></p>   Les emplois concernés sont ceux repris par le chapitre XI de la convention collective.<p></p> Article 3<p></p><p></p>   La valeur du point est fixée à 33,69 à dater du 1er juin 2000 (base 151,667 heures).<p></p> Article 4<p></p><p></p>   Le salaire minimum garanti mensuel pour 151,667 heures est le produit du coefficient hiérarchique par la valeur du point (K x 33,69) sauf pour les quatre premiers coefficients (voir grille).<p></p><p></p>   Le salaire horaire s'obtient en divisant le salaire mensuel ainsi déterminé par 151,667.<p></p> Article 5<p></p><p></p>   La valeur du point maintenue à 35,42 est à prendre en considération pour l'application de l'article 4-3 de la convention.<p></p> Article 6<p></p><p></p>   Le salaire minimum conventionnel garanti est fixé ainsi qu'il suit à dater du 1er juin 2000 : à 6 564 F (pour 151,667 heures) + 336 (PCPA) = 6 900 F.<p></p> Article 7<p></p><p></p>   Conformément à l'article 3-6 de la convention collective nationale modifié par l'article 6 de l'avenant n° 24 du 16 juin 1999, la valeur à prendre en considération pour calculer l'assiette des primes d'ancienneté est fixée à 32,10 à compter du 1er juin 2000.<p></p> Article 8<p></p><p></p>   Les parties conviennent de se revoir sur ces sujets au plus tard en mai 2001.<p></p><p></p>   Grille des salaires au 1er juin 2000<p></p> (1) NIVEAU<p></p> (2) ÉCHELON<p></p> (3) COEFF.<p></p> (4) BASE 151,667 h 35 h hebd. (valeur du point 33,69)<p></p> (5) PCPA prime de compensation du pouvoir d'achat (accord RTT du 16-06-99)<p></p> (6) SALAIRE minimum garanti mensuel (en francs)<p></p><TABLE><TR><TD>(1)</TD><TD>(2)</TD><TD>(3)</TD><TD>  (4)  </TD><TD> (5) </TD><TD>  (5)  </TD></TR><TR><TD>  I</TD><TD> a </TD><TD>176</TD><TD>  6 564</TD><TD>  336</TD><TD>  6 900</TD></TR><TR><TD></TD><TD> b </TD><TD>181</TD><TD>  6 611</TD><TD>  339</TD><TD>  6 950</TD></TR><TR><TD></TD><TD> c </TD><TD>186</TD><TD>  6 659</TD><TD>  341</TD><TD>  7 000</TD></TR><TR><TD> II</TD><TD> a </TD><TD>195</TD><TD>  6 754</TD><TD>  346</TD><TD>  7 100</TD></TR><TR><TD></TD><TD> b </TD><TD>205</TD><TD>  6 907</TD><TD>  354</TD><TD>  7 261</TD></TR><TR><TD></TD><TD> c </TD><TD>210</TD><TD>  7 075</TD><TD>  363</TD><TD>  7 438</TD></TR><TR><TD>III</TD><TD> a </TD><TD>225</TD><TD>  7 581</TD><TD>  389</TD><TD>  7 970</TD></TR><TR><TD></TD><TD> b </TD><TD>235</TD><TD>  7 918</TD><TD>  406</TD><TD>  8 324</TD></TR><TR><TD></TD><TD> c </TD><TD>245</TD><TD>  8 255</TD><TD>  423</TD><TD>  8 678</TD></TR><TR><TD> IV</TD><TD> a </TD><TD>260</TD><TD>  8 760</TD><TD>  449</TD><TD>  9 209</TD></TR><TR><TD></TD><TD> b </TD><TD>280</TD><TD>  9 434</TD><TD>  484</TD><TD>  9 918</TD></TR><TR><TD></TD><TD> c </TD><TD>300</TD><TD> 10 107</TD><TD>  519</TD><TD> 10 626</TD></TR><TR><TD>  V</TD><TD> a </TD><TD>320</TD><TD> 10 780</TD><TD>  554</TD><TD> 11 334</TD></TR><TR><TD></TD><TD> b </TD><TD>340</TD><TD> 11 455</TD><TD>  588</TD><TD> 12 043</TD></TR><TR><TD></TD><TD> c </TD><TD>365</TD><TD> 12 297</TD><TD>  631</TD><TD> 12 928</TD></TR><TR><TD> VI</TD><TD> a </TD><TD>390</TD><TD> 13 140</TD><TD>  674</TD><TD> 13 814</TD></TR><TR><TD></TD><TD> b </TD><TD>430</TD><TD> 14 487</TD><TD>  744</TD><TD> 15 231</TD></TR><TR><TD></TD><TD> c </TD><TD>460</TD><TD> 15 498</TD><TD>  795</TD><TD> 16 293</TD></TR><TR><TD>VII</TD><TD> a </TD><TD>500</TD><TD> 16 845</TD><TD>  865</TD><TD> 17 710</TD></TR><TR><TD></TD><TD> b </TD><TD>600</TD><TD> 20 214</TD><TD>1 038</TD><TD> 21 252</TD></TR><TR><TD></TD><TD> c </TD><TD>700</TD><TD> 23 583</TD><TD>1 211</TD><TD> 24 794</TD></TR></TABLE><p></p><p></p>   Exemple : coefficient 300 x valeur du point 33,69 = 10 107 + PCPA 519 = 10 626.<p></p><p></p>   Assiette des primes d'ancienneté au 1er juin 2000<p></p> (valeur de référence : 32,10)<p></p><TABLE><TR><TD>COEF </TD><TD> ASSIETTE </TD></TR><TR><TD>  176</TD><TD>  5 649,60</TD></TR><TR><TD>  181</TD><TD>  5 810,10</TD></TR><TR><TD>  186</TD><TD>  5 970,60</TD></TR><TR><TD>  195</TD><TD>  6 259,50</TD></TR><TR><TD>  205</TD><TD>  6 580,50</TD></TR><TR><TD>  210</TD><TD>  6 741,00</TD></TR><TR><TD>  225</TD><TD>  4 972,50</TD></TR><TR><TD>  235</TD><TD>  7 543,50</TD></TR><TR><TD>  245</TD><TD>  7 864,50</TD></TR><TR><TD>  260</TD><TD>  8 346,00</TD></TR><TR><TD>  280</TD><TD>  8 988,00</TD></TR><TR><TD>  300</TD><TD>  9 630,00</TD></TR><TR><TD>  320</TD><TD> 10 272,00</TD></TR><TR><TD>  340</TD><TD> 10 914,00</TD></TR><TR><TD>  365</TD><TD> 11 716,50</TD></TR><TR><TD>  390</TD><TD> 12 519,00</TD></TR><TR><TD>  430</TD><TD> 13 803,00</TD></TR><TR><TD>  460</TD><TD> 14 766,00</TD></TR><TR><TD>  500</TD><TD> 16 050,00</TD></TR><TR><TD>  600</TD><TD> 19 260,00</TD></TR><TR><TD>  700</TD><TD> 22 470,00</TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 5 mars 2001 art. 1 : sont rendues obligatoires, pour tous les employeurs et tous les salariés compris dans le champ d'application de la convention collective nationale des entreprises d'installation sans fabrication, y compris entretien, réparation, dépannage de matériel aéraulique, thermique et frigorifique du 21 janvier 1986, les dispositions de l'avenant n° 26 du 16 juin 2000 (salaires minima et primes d'ancienneté) à la convention collective susvisée, sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000, qui institue une garantie mensuelle de rémunération au profit des salariés rémunérés au SMIC.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 5 mars 2001 art. 1 : sont rendues obligatoires, pour tous les employeurs et tous les salariés compris dans le champ d'application de la convention collective nationale des entreprises d'installation sans fabrication, y compris entretien, réparation, dépannage de matériel aéraulique, thermique et frigorifique du 21 janvier 1986, les dispositions de l'avenant n° 26 du 16 juin 2000 (salaires minima et primes d'ancienneté) à la convention collective susvisée, sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000, qui institue une garantie mensuelle de rémunération au profit des salariés rémunérés au SMIC.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 27 2000-06-16 BO conventions collectives 2000-27 étendu par arrêté du 2 mars 2001 JORF 13 mars 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 961113600000,
+                  "dateFin": 995414400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -27725,13 +27873,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720615",
+              "cid": "KALISCTA000005720615",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et valeur du point au 1er septembre 2001",
+              "dateModif": null,
+              "dateDebut": "2001-07-18",
+              "dateFin": "2002-07-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005842246",
+                  "cid": "KALIARTI000005842246",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720615/KALIARTI000005842246",
+                  "pathTitle": [
+                    "Salaires et valeur du point au 1er septembre 2001"
+                  ],
+                  "content": "<p></p>   Article 1er<p></p><p></p>   Conformément aux dispositions de l'article III-4 de la convention collective nationale des entreprises d'installation sans fabrication, y compris entretien, réparation, dépannage, etc., de matériel aéraulique, thermique, frigorifique et connexes, le présent avenant fixe les salaires et primes d'ancienneté entrant dans son champ d'application.<p></p> Article 2<p></p><p></p>   Les emplois concernés sont ceux repris par le chapitre XI de la convention collective.<p></p> Article 3<p></p><p></p>   La valeur du point est fixée à 35,03 à dater du 1er septembre 2001 (base 151,667 heures).<p></p> Article 4<p></p><p></p>   Le salaire minimum garanti mensuel pour 151,667 heures est le produit du coefficient hiérarchique par la valeur du point (K x 35,03) sauf pour les 6 premiers coefficients (voir grille).<p></p><p></p>   Le salaire horaire s'obtient en divisant le salaire mensuel ainsi déterminé par 151,667.<p></p> Article 5<p></p><p></p>   La valeur du point maintenue à 35,42 est à prendre en considération pour l'application de l'article 4.3 de la convention.<p></p> Article 6<p></p><p></p>   Le salaire minimum conventionnel garanti est fixé ainsi qu'il suit à dater du 1er septembre 2001 : 7 360 F (pour 151,667 heures) + 29 (PCPA) = 7 389 F.<p></p> Article 7<p></p><p></p>   Conformément à l'article 3.6 de la convention collective nationale modifié par l'article 6 de l'avenant n° 24 du 16 juin 1999, la valeur à prendre en considération pour calculer l'assiette des primes d'ancienneté est fixée à 32,42 à compter du 1er septembre 2001.<p></p> Grille des salaires au 1er septembre 2001<p></p> (en francs)<p></p><p></p> (1)   NIVEAU<p></p> (2)   ÉCHELON<p></p> (3)   COEFFICIENT<p></p> (4)   BASE 151,667 H (35 h par semaine) (valeur du point : 35,03)<p></p> (5)   PCPA   (prime de compensation du pouvoir d'achat)<p></p>    (accord RTT du 16-6-99)<p></p> (6)   SALAIRE minimal garanti mensuel<p></p><p></p> -----------------------------------------------------------------<RL  : (1) : (2) :   (3)   :    (4)    :     (5)    :     (6)     :<p></p><TABLE><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   176   </TD><TD>   7 360   </TD><TD>     29     </TD><TD>     7 389   </TD></TR><TR><TD></TD><TD>  I  </TD><TD>  b  </TD><TD>   181   </TD><TD>   7 360   </TD><TD>     49     </TD><TD>     7 409   </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   186   </TD><TD>   7 360   </TD><TD>     69     </TD><TD>     7 429   </TD></TR><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   195   </TD><TD>   7 360   </TD><TD>     89     </TD><TD>     7 449   </TD></TR><TR><TD></TD><TD>  II </TD><TD>  b  </TD><TD>   205   </TD><TD>   7 360   </TD><TD>    109     </TD><TD>     7 469   </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   210   </TD><TD>   7 360   </TD><TD>    190     </TD><TD>     7 550   </TD></TR><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   225   </TD><TD>   7 882   </TD><TD>    208     </TD><TD>     8 090   </TD></TR><TR><TD></TD><TD> III </TD><TD>  b  </TD><TD>   235   </TD><TD>   8 232   </TD><TD>    217     </TD><TD>     8 449   </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   245   </TD><TD>   8 582   </TD><TD>    226     </TD><TD>     8 808   </TD></TR><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   260   </TD><TD>   9 108   </TD><TD>    239     </TD><TD>     9 347   </TD></TR><TR><TD></TD><TD> IV  </TD><TD>  b  </TD><TD>   280   </TD><TD>   9 808   </TD><TD>    259     </TD><TD>    10 067   </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   300   </TD><TD>  10 509   </TD><TD>    276     </TD><TD>    10 785   </TD></TR><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   320   </TD><TD>  11 210   </TD><TD>    294     </TD><TD>    11 504   </TD></TR><TR><TD></TD><TD>  V  </TD><TD>  b  </TD><TD>   340   </TD><TD>  11 910   </TD><TD>    314     </TD><TD>    12 224   </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   365   </TD><TD>  12 786   </TD><TD>    336     </TD><TD>    13 122   </TD></TR><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   390   </TD><TD>  13 662   </TD><TD>    359     </TD><TD>    14 021   </TD></TR><TR><TD></TD><TD>  VI </TD><TD>  b  </TD><TD>   430   </TD><TD>  15 063   </TD><TD>    396     </TD><TD>    15 459   </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   460   </TD><TD>  16 114   </TD><TD>    423     </TD><TD>    16 537   </TD></TR><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   500   </TD><TD>  17 515   </TD><TD>    461     </TD><TD>    17 976   </TD></TR><TR><TD></TD><TD> VII </TD><TD>  b  </TD><TD>   600   </TD><TD>  21 018   </TD><TD>    553     </TD><TD>    21 571   </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   700   </TD><TD>  24 521   </TD><TD>    645     </TD><TD>    25 166   </TD></TR><TR><TD></TD><TD> Exemple </TD><TD> coefficient 300 x valeur du point                </TD></TR><TR><TD></TD><TD> 35,03 = 10 509 + PCPA  276 = 10 785.</TD></TR><TR><TD></TD></TR></TABLE><p></p>  -------------------------------------------------------------- Grille des salaires au 1er septembre 2001 (en euros)   (1)   NIVEAU (2)   ÉCHELON (3)   COEFFICIENT (4)   BASE 151,667 H (35 h par semaine) (valeur du point : 35,03) (5)   PCPA   (prime de compensation du pouvoir d'achat)    (accord RTT du 16-6-99) (6)   SALAIRE minimal garanti mensuel --------------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD> (1) </TD><TD> (2) </TD><TD>   (3)   </TD><TD>    (4)    </TD><TD>     (5)    </TD><TD>     (6)     </TD></TR><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   176   </TD><TD>  1 122,02       4,42   </TD><TD>   1 126,45  </TD></TR><TR><TD></TD><TD>  I  </TD><TD>  b  </TD><TD>   181   </TD><TD>  1 122,02 </TD><TD>     7,47   </TD><TD>   1 129,49  </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   186   </TD><TD>  1 122,02 </TD><TD>    10,52   </TD><TD>   1 132,54  </TD></TR><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   195   </TD><TD>  1 122,02 </TD><TD>    13,57   </TD><TD>   1 135,59  </TD></TR><TR><TD></TD><TD>  II </TD><TD>  b  </TD><TD>   205   </TD><TD>  1 122,02 </TD><TD>    16,62   </TD><TD>   1 138,64  </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   210   </TD><TD>  1 122,02 </TD><TD>    28,97   </TD><TD>   1 150,99  </TD></TR><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   225   </TD><TD>  1 201,60 </TD><TD>    31,71   </TD><TD>   1 233,31  </TD></TR><TR><TD></TD><TD> III </TD><TD>  b  </TD><TD>   235   </TD><TD>  1 254,96 </TD><TD>    33,08   </TD><TD>   1 288,04  </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   245   </TD><TD>  1 308,32 </TD><TD>    34,45   </TD><TD>   1 342,77  </TD></TR><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   260   </TD><TD>  1 388,51 </TD><TD>    36,44   </TD><TD>   1 424,94  </TD></TR><TR><TD></TD><TD> IV  </TD><TD>  b  </TD><TD>   280   </TD><TD>  1 495,22 </TD><TD>    39,48   </TD><TD>   1 534,70  </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   300   </TD><TD>  1 602,09 </TD><TD>    42,08   </TD><TD>   1 644,16  </TD></TR><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   320   </TD><TD>  1 708,95 </TD><TD>    44,82   </TD><TD>   1 753,77  </TD></TR><TR><TD></TD><TD>  V  </TD><TD>  b  </TD><TD>   340   </TD><TD>  1 815,67 </TD><TD>    47,87   </TD><TD>   1 863,54  </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   365   </TD><TD>  1 949,21 </TD><TD>    51,22   </TD><TD>   2 000,44  </TD></TR><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   390   </TD><TD>  2 082,76 </TD><TD>    54,73   </TD><TD>   2 137,49  </TD></TR><TR><TD></TD><TD>  VI </TD><TD>  b  </TD><TD>   430   </TD><TD>  2 296,34 </TD><TD>    60,37   </TD><TD>   2 356,71  </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   460   </TD><TD>  2 456,56 </TD><TD>    64,49   </TD><TD>   2 521,05  </TD></TR><TR><TD></TD><TD></TD><TD>  a  </TD><TD>   500   </TD><TD>  2 670,14 </TD><TD>    70,28   </TD><TD>   2 740,42  </TD></TR><TR><TD></TD><TD> VII </TD><TD>  b  </TD><TD>   600   </TD><TD>  3 204,17 </TD><TD>    84,30   </TD><TD>   3 288,48  </TD></TR><TR><TD></TD><TD></TD><TD>  c  </TD><TD>   700   </TD><TD>  3 738,20 </TD><TD>    98,33   </TD><TD>   3 836,53  </TD></TR></TABLE><p></p> Assiette des primes d'ancienneté au 1er septembre 2001<p></p> (Valeur de référence : 32,42 F)<p></p>  ---------------------------------------------<p></p><TABLE><TR><TD></TD><TD>  COEFFICIENT        </TD><TD>        ASSIETTE     </TD></TR><TR><TD></TD><TD></TD><TD>       (en francs)   </TD></TR><TR><TD></TD><TD>       176           </TD><TD>         5 705,90    </TD></TR><TR><TD></TD><TD>       181           </TD><TD>         5 868,00    </TD></TR><TR><TD></TD><TD>       186           </TD><TD>         6 030,10    </TD></TR><TR><TD></TD><TD>       195           </TD><TD>         6 321,90    </TD></TR><TR><TD></TD><TD>       205           </TD><TD>         6 646,10    </TD></TR><TR><TD></TD><TD>       210           </TD><TD>         6 808,20    </TD></TR><TR><TD></TD><TD>       225           </TD><TD>         7 294,50    </TD></TR><TR><TD></TD><TD>       235           </TD><TD>         7 618,70    </TD></TR><TR><TD></TD><TD>       245           </TD><TD>         7 942,90    </TD></TR><TR><TD></TD><TD>       260           </TD><TD>         8 429,20    </TD></TR></TABLE><p></p><TABLE><TR><TD>       280           </TD><TD>         9 077,60    </TD></TR><TR><TD></TD><TD>       300           </TD><TD>         9 726,00    </TD></TR><TR><TD></TD><TD>       320           </TD><TD>        10 374,40    </TD></TR><TR><TD></TD><TD>       340           </TD><TD>        11 022,80    </TD></TR><TR><TD></TD><TD>       365           </TD><TD>        11 833,30    </TD></TR><TR><TD></TD><TD>       390           </TD><TD>        12 643,80    </TD></TR><TR><TD></TD><TD>       430           </TD><TD>        13 940,60    </TD></TR><TR><TD></TD><TD>       460           </TD><TD>        14 913,20    </TD></TR><TR><TD></TD><TD>       500           </TD><TD>        16 210,00    </TD></TR><TR><TD></TD><TD>       600           </TD><TD>        19 452,00    </TD></TR><TR><TD></TD><TD>       700           </TD><TD>        22 694,00    </TD></TR></TABLE><p></p>  ---------------------------------------------<p></p> Assiette des primes d'ancienneté en euros au 1er septembre 2001<p></p> (Valeur de référence : 4,94 Euro)<p></p> ----------------------------------------<p></p><TABLE><TR><TD>  COEFFICIENT  </TD><TD>       ASSIETTE       </TD></TR><TR><TD></TD><TD>      (en euros)      </TD></TR><TR><TD>   176         </TD><TD>        869,86        </TD></TR><TR><TD>   181         </TD><TD>        894,57        </TD></TR><TR><TD>   186         </TD><TD>        919,28        </TD></TR><TR><TD>   195         </TD><TD>        963,77        </TD></TR><TR><TD>   205         </TD><TD>      1 013,19        </TD></TR><TR><TD>   210         </TD><TD>      1 037,90        </TD></TR><TR><TD>   225         </TD><TD>      1 112,04        </TD></TR><TR><TD>   235         </TD><TD>      1 161,46        </TD></TR><TR><TD>   245         </TD><TD>      1 210,89        </TD></TR><TR><TD>   260         </TD><TD>      1 285,02        </TD></TR><TR><TD>   280         </TD><TD>      1 383,87        </TD></TR><TR><TD>   300         </TD><TD>      1 482,72        </TD></TR><TR><TD>   320         </TD><TD>      1 581,57        </TD></TR><TR><TD>   340         </TD><TD>      1 680,42        </TD></TR><TR><TD>   365         </TD><TD>      1 803,97        </TD></TR><TR><TD>   390         </TD><TD>      1 927,53        </TD></TR><TR><TD>   430         </TD><TD>      2 125,23        </TD></TR><TR><TD>   460         </TD><TD>      2 273,50        </TD></TR><TR><TD>   500         </TD><TD>      2 471,20        </TD></TR><TR><TD>   600         </TD><TD>      2 965,44        </TD></TR><TR><TD>   700         </TD><TD>      3 459,68        </TD></TR></TABLE><p></p> ----------------------------------------",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 27 2001-07-18 BO conventions collectives 2001-39 étendu par arrêté du 29 novembre 2001 JORF 11 décembre 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 995414400000,
+                  "dateFin": 1025481600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

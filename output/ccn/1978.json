@@ -20677,13 +20677,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005712174",
+              "cid": "KALISCTA000005712174",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des salaires applicables au 1er juillet 1997 (1).",
+              "dateModif": null,
+              "dateDebut": "1997-06-03",
+              "dateFin": "1998-07-02",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005822931",
+                  "cid": "KALIARTI000005822931",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005712174/KALIARTI000005822931",
+                  "pathTitle": [
+                    "Grille des salaires applicables au 1er juillet 1997 (1)."
+                  ],
+                  "content": "<p></p>   NIVEAU : I.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 100.<p></p><p></p>   SALAIRE MINIMAL en francs 6.600.<p></p><p></p><p></p>   NIVEAU : I.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 105.<p></p><p></p>   SALAIRE MINIMAL en francs 6.650.<p></p><p></p><p></p>   NIVEAU : II.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 115.<p></p><p></p>   SALAIRE MINIMAL en francs 6.750.<p></p><p></p><p></p>   NIVEAU : II.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 120.<p></p><p></p>   SALAIRE MINIMAL en francs 6.850.<p></p><p></p><p></p>   NIVEAU : III.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 130.<p></p><p></p>   SALAIRE MINIMAL en francs 7.100.<p></p><p></p><p></p>   NIVEAU : III.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 140.<p></p><p></p>   SALAIRE MINIMAL en francs 7.450.<p></p><p></p><p></p>   NIVEAU : IV.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 150.<p></p><p></p>   SALAIRE MINIMAL en francs 7.550.<p></p><p></p><p></p>   NIVEAU : IV.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 160.<p></p><p></p>   SALAIRE MINIMAL en francs 7.800.<p></p><p></p><p></p>   NIVEAU : V.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 200.<p></p><p></p>   SALAIRE MINIMAL en francs 8.800.<p></p><p></p><p></p>   NIVEAU : V.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 230.<p></p><p></p>   SALAIRE MINIMAL en francs 9.300.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : A 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 260.<p></p><p></p>   SALAIRE MINIMAL en francs 10.000.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : A 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 350.<p></p><p></p>   SALAIRE MINIMAL en francs 12.000.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : B 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 400.<p></p><p></p>   SALAIRE MINIMAL en francs 13.200.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : B 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 450.<p></p><p></p>   SALAIRE MINIMAL en francs 14.200.<p></p><p></p><p></p>   NIVEAU : VII.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 500.<p></p><p></p>   SALAIRE MINIMAL en francs 15.500.<p></p><p></p>   Fait à Paris, le 3 juin 1997.<p></p><font color=\"808080\"><em>   (1) Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance (arrêté du 7 octobre 1997, art. 1er).<p></p></em></font>",
+                  "nota": "   (1) Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance (arrêté du 7 octobre 1997, art. 1er).<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1997-06-03 BO conventions collectives 97-28 étendu par arrêté du 7 octobre 1997 JORF 21 octobre 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Arrêté 1997-10-07 art. 1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 865296000000,
+                  "dateFin": 899337600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -20697,13 +20785,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005712175",
+              "cid": "KALISCTA000005712175",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des salaires applicable au 1er juillet 1998.",
+              "dateModif": null,
+              "dateDebut": "1998-07-02",
+              "dateFin": "2001-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005822932",
+                  "cid": "KALIARTI000005822932",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005712175/KALIARTI000005822932",
+                  "pathTitle": [
+                    "Grille des salaires applicable au 1er juillet 1998."
+                  ],
+                  "content": "<p></p>   NIVEAU : I.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 100.<p></p><p></p>   SALAIRE MINIMAL en francs 6.800.<p></p><p></p><p></p>   NIVEAU : I.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 105.<p></p><p></p>   SALAIRE MINIMAL en francs 6.900.<p></p><p></p><p></p>   NIVEAU : II.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 115.<p></p><p></p>   SALAIRE MINIMAL en francs 7.000.<p></p><p></p><p></p>   NIVEAU : II.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 120.<p></p><p></p>   SALAIRE MINIMAL en francs 7.100.<p></p><p></p><p></p>   NIVEAU : III.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 130.<p></p><p></p>   SALAIRE MINIMAL en francs 7.300.<p></p><p></p><p></p>   NIVEAU : III.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 140.<p></p><p></p>   SALAIRE MINIMAL en francs 7.600.<p></p><p></p><p></p>   NIVEAU : IV.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 150.<p></p><p></p>   SALAIRE MINIMAL en francs 7.700.<p></p><p></p><p></p>   NIVEAU : IV.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 160.<p></p><p></p>   SALAIRE MINIMAL en francs 8.000.<p></p><p></p><p></p>   NIVEAU : V.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 200.<p></p><p></p>   SALAIRE MINIMAL en francs 9.000.<p></p><p></p><p></p>   NIVEAU : V.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 230.<p></p><p></p>   SALAIRE MINIMAL en francs 9.500.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : A 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 260.<p></p><p></p>   SALAIRE MINIMAL en francs 11.000.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : A 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 350.<p></p><p></p>   SALAIRE MINIMAL en francs 12.500.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : B 1.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 400.<p></p><p></p>   SALAIRE MINIMAL en francs 13.500.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : B 2.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 450.<p></p><p></p>   SALAIRE MINIMAL en francs 14.500.<p></p><p></p><p></p>   NIVEAU : VII.<p></p><p></p>   COEFFICIENT MINIMUM base de 169 heures : 500.<p></p><p></p>   SALAIRE MINIMAL en francs 16.000.<p></p><p></p>   Fait à Paris, le 2 juillet 1998.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1998-07-02 BO conventions collectives 98-33 étendu par arrêté du 1er octobre 1998 JORF 14 octobre 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 899337600000,
+                  "dateFin": 978307200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -20717,13 +20879,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005712176",
+              "cid": "KALISCTA000005712176",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des salaires minima conventionnels à compter du 1er avril 2002.",
+              "dateModif": null,
+              "dateDebut": "2002-02-15",
+              "dateFin": "2004-07-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005822933",
+                  "cid": "KALIARTI000005822933",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005712176/KALIARTI000005822933",
+                  "pathTitle": [
+                    "Grille des salaires minima conventionnels à compter du 1er avril 2002."
+                  ],
+                  "content": "<p></p>   Vu la convention collective nationale étendue du 21 janvier 1997 et son avenant \" Salaires \" du 2 juillet 1998 ;<p></p><p></p>   Vu l'article 5.2 de l'accord national étendu sur la réduction et l'aménagement du temps de travail dans les entreprises de la branche ci-dessus désignée, signé le 13 juin 2000 et son annexe I ;<p></p><p></p>   Vu les dispositions légales et réglementaires relatives à l'euro,<p></p> les partenaires sociaux, réunis en commission mixte paritaire le 10 décembre 2001, sont convenus des dispositions suivantes :<p></p> Article 1er<p></p><p></p>   Les salaires minima conventionnels de la branche sont revalorisés avec application au 1er avril 2002.<p></p> Article 2<p></p><p></p>   Les montants des salaires minima applicables à la branche sont exprimés en euros, selon les dispositions légales et réglementaires en vigueur, sur la base d'un taux de conversion de 1 Euros = 6,55957 F.<p></p> Article 3<p></p><p></p>   Conformément à l'article 5.2 de l'accord national étendu du 13 juin 2000, la grille des salaires minima garantis base 151,67 heures par mois et l'indemnité différentielle correspondant à la différence entre le salaire de base initial (169 heures par mois) et le salaire mensuel de base après réduction du temps de travail, instituée pour les entreprises appliquant la durée légale de 35 heures, sont revalorisés à compter du 1er avril 2002, selon les modalités d'attribution définies dans l'accord national étendu signé le 13 juin 2000.<p></p><p></p>   Afin de se mettre en conformité avec la référence mensuelle de la durée légale de 35 heures retenue par la loi, les partenaires sociaux décident de retenir la référence de 151,67 heures par mois au lieu de 151,66 heures par mois. Cette nouvelle référence mensuelle modifie et remplace celle indiquée dans l'annexe I de l'accord national étendu signé le 13 juin 2000.<p></p> Article 4<p></p><p></p>   L'indemnité différentielle est intégrée dans le salaire de base de 151,67 heures par mois, selon les modalités et l'échéancier suivant :<p></p><p></p>   - 50 % à compter du 1er octobre 2002 ;<p></p><p></p>   - 50 % (intégration totale de l'indemnité différentielle dans le salaire de base 151,67 heures) à compter du 1er juillet 2003.<p></p> Article 5<p></p><p></p>   Le présent accord fait l'objet de la procédure d'extension prévue par les textes légaux en vigueur. Il est applicable à compter du surlendemain de la parution au Journal officiel de l'arrêté d'extension pour l'ensemble du personnel.<p></p><p></p>   Fait à Paris, le 15 février 2002.<p></p><p></p>   ANNEXE<p></p><p></p>   Grille des salaires minima conventionnels<p></p><p></p>   I. Salaires minima conventionnels en euros<p></p><p></p>   Application au 1er avril 2002<p></p><p></p><p></p>   NIVEAU : I.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 100.<p></p><p></p>   BASE 151,67 heures : 1 014,12.<p></p><p></p>   SALAIRE horaire : 6,69.<p></p><p></p>   INDEMNITE différentielle : 115,88.<p></p><p></p><p></p>   NIVEAU : I.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 105.<p></p><p></p>   BASE 151,67 heures : 1 026,69.<p></p><p></p>   SALAIRE horaire : 6,86.<p></p><p></p>   INDEMNITE différentielle : 117,31.<p></p><p></p><p></p>   NIVEAU : II.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 115.<p></p><p></p>   BASE 151,67 heures : 1 040,15.<p></p><p></p>   SALAIRE horaire : 6,86.<p></p><p></p>   INDEMNITE différentielle : 118,85.<p></p><p></p><p></p>   NIVEAU : II.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 120.<p></p><p></p>   BASE 151,67 heures : 1 053,61.<p></p><p></p>   SALAIRE horaire : 6,95.<p></p><p></p>   INDEMNITE différentielle : 120,39.<p></p><p></p><p></p>   NIVEAU : III.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 130.<p></p><p></p>   BASE 151,67 heures : 1 074,25.<p></p><p></p>   SALAIRE horaire : 7,08.<p></p><p></p>   INDEMNITE différentielle : 122,75.<p></p><p></p><p></p>   NIVEAU : III.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 140.<p></p><p></p>   BASE 151,67 heures : 1 115,54.<p></p><p></p>   SALAIRE horaire : 7,36.<p></p><p></p>   INDEMNITE différentielle : 127,46.<p></p><p></p><p></p>   NIVEAU : IV.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 150.<p></p><p></p>   BASE 151,67 heures : 1 127,20.<p></p><p></p>   SALAIRE horaire : 7,43.<p></p><p></p>   INDEMNITE différentielle : 128,80.<p></p><p></p><p></p>   NIVEAU : IV.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 160.<p></p><p></p>   BASE 151,67 heures : 1 170,28.<p></p><p></p>   SALAIRE horaire : 7,72.<p></p><p></p>   INDEMNITE différentielle : 133,72.<p></p><p></p><p></p>   NIVEAU : V.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 200.<p></p><p></p>   BASE 151,67 heures : 1 300,41.<p></p><p></p>   SALAIRE horaire : 8,57.<p></p><p></p>   INDEMNITE différentielle : 148,59.<p></p><p></p><p></p>   NIVEAU : V.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 230.<p></p><p></p>   BASE 151,67 heures : 1 368,62.<p></p><p></p>   SALAIRE horaire : 9,02.<p></p><p></p>   INDEMNITE différentielle : 156,38.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : A 1.<p></p><p></p>   COEFFICIENT : 260.<p></p><p></p>   BASE 151,67 heures : 1 574,14.<p></p><p></p>   SALAIRE horaire : 10,38.<p></p><p></p>   INDEMNITE différentielle : 179,86.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : A 2.<p></p><p></p>   COEFFICIENT : 350.<p></p><p></p>   BASE 151,67 heures : 1 778,76.<p></p><p></p>   SALAIRE horaire : 11,73.<p></p><p></p>   INDEMNITE différentielle : 203,24.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : B 1.<p></p><p></p>   COEFFICIENT : 400.<p></p><p></p>   BASE 151,67 heures : 1 916,07.<p></p><p></p>   SALAIRE horaire : 12,63.<p></p><p></p>   INDEMNITE différentielle : 218,93.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : B 2.<p></p><p></p>   COEFFICIENT : 450.<p></p><p></p>   BASE 151,67 heures : 2 052,48.<p></p><p></p>   SALAIRE horaire : 13,53.<p></p><p></p>   INDEMNITE différentielle : 234,52.<p></p><p></p><p></p>   NIVEAU : VII.<p></p><p></p>   COEFFICIENT : 500.<p></p><p></p>   BASE 151,67 heures : 2 592,00.<p></p><p></p>   SALAIRE horaire : 17,09.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   Grille des salaires minima conventionnels<p></p><p></p>   II. - Salaires minima conventionnels en euros<p></p><p></p>   Application au 1er octobre 2002<p></p><p></p>   1re intégration de l'indemnité différentielle (50 %)<p></p><p></p><p></p>   NIVEAU : I.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 100.<p></p><p></p>   BASE 151,67 heures : 1 072,06.<p></p><p></p>   SALAIRE horaire : 7,07.<p></p><p></p>   INDEMNITE différentielle : 57,94.<p></p><p></p><p></p>   NIVEAU : I.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 105.<p></p><p></p>   BASE 151,67 heures : 1 085,35.<p></p><p></p>   SALAIRE horaire : 7,16.<p></p><p></p>   INDEMNITE différentielle : 58,66.<p></p><p></p><p></p>   NIVEAU : II.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 115.<p></p><p></p>   BASE 151,67 heures : 1 099,58.<p></p><p></p>   SALAIRE horaire : 7,25.<p></p><p></p>   INDEMNITE différentielle : 59,43.<p></p><p></p><p></p>   NIVEAU : II.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 120.<p></p><p></p>   BASE 151,67 heures : 1 113,81.<p></p><p></p>   SALAIRE horaire : 7,34.<p></p><p></p>   INDEMNITE différentielle : 60,20.<p></p><p></p><p></p>   NIVEAU : III.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 130.<p></p><p></p>   BASE 151,67 heures : 1 135,63.<p></p><p></p>   SALAIRE horaire : 7,49.<p></p><p></p>   INDEMNITE différentielle : 61,38.<p></p><p></p><p></p>   NIVEAU : III.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 140.<p></p><p></p>   BASE 151,67 heures : 1 179,27.<p></p><p></p>   SALAIRE horaire : 7,78.<p></p><p></p>   INDEMNITE différentielle : 63,73.<p></p><p></p><p></p>   NIVEAU : IV.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 150.<p></p><p></p>   BASE 151,67 heures : 1 191,60.<p></p><p></p>   SALAIRE horaire : 7,86.<p></p><p></p>   INDEMNITE différentielle : 64,40.<p></p><p></p><p></p>   NIVEAU : IV.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 160.<p></p><p></p>   BASE 151,67 heures : 1 237,14.<p></p><p></p>   SALAIRE horaire : 8,16.<p></p><p></p>   INDEMNITE différentielle : 66,86.<p></p><p></p><p></p>   NIVEAU : V.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 200.<p></p><p></p>   BASE 151,67 heures : 1 374,71.<p></p><p></p>   SALAIRE horaire : 9,06.<p></p><p></p>   INDEMNITE différentielle : 74,30.<p></p><p></p><p></p>   NIVEAU : V.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 230.<p></p><p></p>   BASE 151,67 heures : 1 446,81.<p></p><p></p>   SALAIRE horaire : 9,54.<p></p><p></p>   INDEMNITE différentielle : 78,19.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : A 1.<p></p><p></p>   COEFFICIENT : 260.<p></p><p></p>   BASE 151,67 heures : 1 664,07.<p></p><p></p>   SALAIRE horaire : 10,97.<p></p><p></p>   INDEMNITE différentielle : 89,93.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : A 2.<p></p><p></p>   COEFFICIENT : 350.<p></p><p></p>   BASE 151,67 heures : 1 880,38.<p></p><p></p>   SALAIRE horaire : 12,40.<p></p><p></p>   INDEMNITE différentielle : 101,62.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : B 1.<p></p><p></p>   COEFFICIENT : 400.<p></p><p></p>   BASE 151,67 heures : 2 025,54.<p></p><p></p>   SALAIRE horaire : 13,35.<p></p><p></p>   INDEMNITE différentielle : 109,47.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : B 2.<p></p><p></p>   COEFFICIENT : 450.<p></p><p></p>   BASE 151,67 heures : 2 169,74.<p></p><p></p>   SALAIRE horaire : 14,31.<p></p><p></p>   INDEMNITE différentielle : 117,26.<p></p><p></p><p></p>   NIVEAU : VII.<p></p><p></p>   COEFFICIENT : 500.<p></p><p></p>   BASE 151,67 heures : 2 592,00.<p></p><p></p>   SALAIRE horaire : 17,09.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   Grille des salaires minima conventionnels<p></p><p></p>   III. Salaires minima conventionnels en euros<p></p><p></p>   Application au 1er juillet 2003<p></p><p></p>   Intégration totale de l'indemnité différentielle<p></p><p></p><p></p>   NIVEAU : I.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 100.<p></p><p></p>   BASE 151,67 heures : 1 130,00.<p></p><p></p>   SALAIRE horaire : 7,45.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : I.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 105.<p></p><p></p>   BASE 151,67 heures : 1 144,00.<p></p><p></p>   SALAIRE horaire : 7,54.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : II.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 115.<p></p><p></p>   BASE 151,67 heures : 1 159,00.<p></p><p></p>   SALAIRE horaire : 7,64.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : II.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 120.<p></p><p></p>   BASE 151,67 heures : 1 174,00.<p></p><p></p>   SALAIRE horaire : 7,74.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : III.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 130.<p></p><p></p>   BASE 151,67 heures : 1 197,00.<p></p><p></p>   SALAIRE horaire : 7,89.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : III.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 140.<p></p><p></p>   BASE 151,67 heures : 1 243,00.<p></p><p></p>   SALAIRE horaire : 8,20.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : IV.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 150.<p></p><p></p>   BASE 151,67 heures : 1 256,00.<p></p><p></p>   SALAIRE horaire : 8,28.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : IV.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 160.<p></p><p></p>   BASE 151,67 heures : 1 304,00.<p></p><p></p>   SALAIRE horaire : 8,60.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : V.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   COEFFICIENT : 200.<p></p><p></p>   BASE 151,67 heures : 1 449,00.<p></p><p></p>   SALAIRE horaire : 9,55.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : V.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   COEFFICIENT : 230.<p></p><p></p>   BASE 151,67 heures : 1 525,00.<p></p><p></p>   SALAIRE horaire : 10,05.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : A 1.<p></p><p></p>   COEFFICIENT : 260.<p></p><p></p>   BASE 151,67 heures : 1 754,00.<p></p><p></p>   SALAIRE horaire : 11,56.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : A 2.<p></p><p></p>   COEFFICIENT : 350.<p></p><p></p>   BASE 151,67 heures : 1 982,00.<p></p><p></p>   SALAIRE horaire : 13,07.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : B 1.<p></p><p></p>   COEFFICIENT : 400.<p></p><p></p>   BASE 151,67 heures : 2 135,00.<p></p><p></p>   SALAIRE horaire : 14,08.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : B 2.<p></p><p></p>   COEFFICIENT : 450.<p></p><p></p>   BASE 151,67 heures : 2 287,00.<p></p><p></p>   SALAIRE horaire : 15,08.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p><p></p><p></p>   NIVEAU : VII.<p></p><p></p>   COEFFICIENT : 500.<p></p><p></p>   BASE 151,67 heures : 2 592,00.<p></p><p></p>   SALAIRE horaire : 17,09.<p></p><p></p>   INDEMNITE différentielle : 0,00.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2002-02-15 en vigueur le 1er avril 2002 BO conventions collectives 2002-10 étendu par arrêté du 1er août 2002 JORF 10 août 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1013731200000,
+                  "dateFin": 1089244800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

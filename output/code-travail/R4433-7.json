@@ -86,8 +86,8 @@
     "sectionParentId": "LEGISCTA000018530372",
     "sectionParentTitre": "Chapitre III : Évaluation des risques",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre IV : Prévention de certains risques d'exposition  &gt; Titre III : Prévention des risques d'exposition au bruit  &gt; Chapitre III : Évaluation des risques",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000018530357",
+    "refInjection": "MD-20260805_195123_911_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000018530357",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -141,7 +141,21 @@
         "dateDebutCible": "2008-03-13"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000054618728",
+        "textTitle": "Arrêté du 30 juillet 2026 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGITEXT000054619961",
+        "natureText": "ARRETE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1785888000000,
+        "dateDebut": 1785974400000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

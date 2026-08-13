@@ -20783,13 +20783,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690560",
+              "cid": "KALISCTA000005690560",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires de base mensuels et revenus minimaux mensuels au 1er avril 1994.",
+              "dateModif": null,
+              "dateDebut": "1994-05-11",
+              "dateFin": "1995-04-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767558",
+                  "cid": "KALIARTI000005767558",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690560/KALIARTI000005767558",
+                  "pathTitle": [
+                    "Salaires de base mensuels et revenus minimaux mensuels au 1er avril 1994."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Salaires de base mensuels<p></p><p></p>   Les salaires de base mensuels (pour une durée de travail de 169 heures) tels que définis au point B de l'avenant numéro 11 à la convention collective nationale sont modifiés comme suit à compter du 1er avril 1994 :<p></p><TABLE><TR><TD> NIVEAU   </TD><TD> S.B.M.  </TD></TR><TR><TD> E.R. 1   </TD><TD> 6.070 F </TD></TR><TR><TD> E.R. 2   </TD><TD> 6.294 F </TD></TR><TR><TD> E.R.Q. 1 </TD><TD> 6.658 F </TD></TR><TR><TD> E.R.Q. 2 </TD><TD> 7.282 F </TD></TR><TR><TD> Gérant   </TD><TD> 8.010 F </TD></TR><TR><TD> Cadre (1)</TD><TD>11.963 F </TD></TR></TABLE><p></p><p></p>   (1) Les propositions sont faites pour le \"niveau\" cadre tel que défini dans la convention collective nationale, dans les fiches de fonction cadre administratif et cadre d'exploitation.Article 2<p></p><p></p>   Revenus minimaux mensuels<p></p><p></p>   Les revenus minimaux mensuels (pour une durée de travail de 169 heures), tels que définis à l'article 16 bis, paragraphe c, de l'avenant numéro 5 à la convention collective nationale, sont modifiés comme suit à compter du 1er avril 1994 :<p></p><TABLE><TR><TD> NIVEAU   </TD><TD> R.B.M.  </TD></TR><TR><TD> E.R. 1   </TD><TD> 6.684 F </TD></TR><TR><TD> E.R. 2   </TD><TD> 7.048 F </TD></TR><TR><TD> E.R.Q. 1 </TD><TD> 7.574 F </TD></TR><TR><TD> E.R.Q. 2 </TD><TD> 8.250 F </TD></TR><TR><TD> Gérant   </TD><TD> 9.039 F </TD></TR><TR><TD> Cadre (1)</TD><TD>13.321 F </TD></TR></TABLE><p></p><p></p>   (1) Les propositions sont faites pour le \"niveau\" cadre tel que défini dans la convention collective nationale, dans les fiches de fonction cadre administratif et cadre d'exploilation.",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 13 1994-05-11 BO Conventions collectives 94-23 étendu par arrêté du 25 juillet 1994 JORF 4 août 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 5 1988-03-18 art. 16 bis",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 768614400000,
+                  "dateFin": 797040000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -20803,13 +20891,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690562",
+              "cid": "KALISCTA000005690562",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires de base mensuels et revenus minimaux mensuels au 1er avril 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-04-05",
+              "dateFin": "1996-03-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767559",
+                  "cid": "KALIARTI000005767559",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690562/KALIARTI000005767559",
+                  "pathTitle": [
+                    "Salaires de base mensuels et revenus minimaux mensuels au 1er avril 1995."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Salaires de base mensuels<p></p><p></p>   Les salaires de base mensuels (pour une durée de travail de 169 heures) tels que définis au point B de l'avenant numéro 11 à la convention collective nationale sont modifiés comme suit à compter du 1er avril 1995 :<p></p><TABLE><TR><TD> NIVEAU   </TD><TD> S.B.M.  </TD></TR><TR><TD> E.R. 1   </TD><TD> 6.210 F </TD></TR><TR><TD> E.R. 2   </TD><TD> 6.420 F </TD></TR><TR><TD> E.R.Q. 1 </TD><TD> 6.791 F </TD></TR><TR><TD> E.R.Q. 2 </TD><TD> 7.428 F </TD></TR><TR><TD> Gérant   </TD><TD> 8.170 F </TD></TR><TR><TD> Cadre (1)</TD><TD>12.202 F </TD></TR></TABLE><p></p><p></p>   (1) Les propositions sont faites pour le \"niveau\" cadre tel que défini dans la convention collective nationale, dans les fiches de fonction cadre administratif et cadre d'exploitation.Article 2<p></p><p></p>   Revenus minimaux mensuels<p></p><p></p>   Les revenus minimaux mensuels (pour une durée de travail de 169 heures), tels que définis à l'article 16 bis, paragraphe c, de l'avenant numéro 5 à la convention collective nationale, sont modifiés comme suit à compter du 1er avril 1995 :<p></p><TABLE><TR><TD> NIVEAU   </TD><TD> R.B.M.  </TD></TR><TR><TD> E.R. 1   </TD><TD> 6.835 F </TD></TR><TR><TD> E.R. 2   </TD><TD> 7.187 F </TD></TR><TR><TD> E.R.Q. 1 </TD><TD> 7.723 F </TD></TR><TR><TD> E.R.Q. 2 </TD><TD> 8.413 F </TD></TR><TR><TD> Gérant   </TD><TD> 9.217 F </TD></TR><TR><TD> Cadre (1)</TD><TD>13.585 F </TD></TR></TABLE><p></p><p></p>   (1) Les propositions sont faites pour le \"niveau\" cadre tel que défini dans la convention collective nationale, dans les fiches de fonction cadre administratif et cadre d'exploilation.",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 14 1995-04-05 BO conventions collectives 95-18, étendu par arrêté du 18 juillet 1995 JORF 28 juillet 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 5 1988-03-18 art. 16 bis",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 797040000000,
+                  "dateFin": 827107200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -20823,13 +20999,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690563",
+              "cid": "KALISCTA000005690563",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires de base mensuels et revenus minimaux mensuels au 1er avril 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-03-18",
+              "dateFin": "1997-03-27",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767560",
+                  "cid": "KALIARTI000005767560",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690563/KALIARTI000005767560",
+                  "pathTitle": [
+                    "Salaires de base mensuels et revenus minimaux mensuels au 1er avril 1996."
+                  ],
+                  "content": "Article 1er<p></p> Salaires de base mensuels<p></p><p></p>   Les salaires de base mensuels (pour une durée de travail de 169 heures), tels que définis au point B de l'avenant n° 11 à la convention collective nationale, sont modifiés comme suit, à compter du 1er avril 1996 :<p></p><TABLE><TR><TD> NIVEAU   </TD><TD> S.B.M.  </TD></TR><TR><TD> E.R. 1   </TD><TD> 6.365 F </TD></TR><TR><TD> E.R. 2   </TD><TD> 6.548 F </TD></TR><TR><TD> E.R.Q. 1 </TD><TD> 6.927 F </TD></TR><TR><TD> E.R.Q. 2 </TD><TD> 7.577 F </TD></TR><TR><TD> Gérant   </TD><TD> 8.333 F </TD></TR><TR><TD> Cadre (1)</TD><TD>12.446 F </TD></TR></TABLE><p></p><p></p>   (1) Les propositions sont faites pour le \" niveau \" cadre tel que défini dans la convention collective nationale, dans les fiches de fonction cadre administratif et cadre d'exploitation.Article 2<p></p> Revenus minima mensuels<p></p><p></p>   Les revenus minima mensuels (pour une durée de travail de 169 heures), tels que définis à l'article 16 bis, paragraphe C, de l'avenant n° 5 à la convention collective nationale, sont modifiés comme suit à compter du 1er avril 1996 :<p></p><TABLE><TR><TD> NIVEAU   </TD><TD> R.B.M.  </TD></TR><TR><TD> E.R. 1   </TD><TD> 7.002 F </TD></TR><TR><TD> E.R. 2   </TD><TD> 7.329 F </TD></TR><TR><TD> E.R.Q. 1 </TD><TD> 7.876 F </TD></TR><TR><TD> E.R.Q. 2 </TD><TD> 8.580 F </TD></TR><TR><TD> Gérant   </TD><TD> 9.399 F </TD></TR><TR><TD> Cadre (1)</TD><TD>13.855 F </TD></TR></TABLE><p></p><p></p>   (1) Les propositions sont faites pour le \" niveau \" cadre tel que défini dans la convention collective nationale, dans les fiches de fonction cadre administratif et cadre d'exploitation.<font color=\"808080\"><em>   NOTA : Arrêté du 16 juillet 1996 art. 1 : l'avenant n° 20 du 18 mars 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 16 juillet 1996 art. 1 : l'avenant n° 20 du 18 mars 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 20 1996-03-18 BO conventions collectives 96-20, étendu par arrêté du 16 juillet 1996 JORF 25 juillet 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 5 1988-03-18 art. 16 bis",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 827107200000,
+                  "dateFin": 859420800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

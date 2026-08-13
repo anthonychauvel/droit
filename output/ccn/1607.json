@@ -8971,13 +8971,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693708",
+              "cid": "KALISCTA000005693708",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er avril 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-03-28",
+              "dateFin": "1997-03-28",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005775511",
+                  "cid": "KALIARTI000005775511",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005693708/KALIARTI000005775511",
+                  "pathTitle": [
+                    "Salaires à compter du 1er avril 1997."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les points A et B, tels que définis à l'article 6.1 \" Salaire minimum garanti \" du chapitre VI de la convention collective, ont la valeur suivante :<p></p><p></p>   A : 58,93 ;<p></p><p></p>   B : 34,26.<p></p> Article 2<p></p><p></p>   La grille des salaires minima conventionnels de l'article 3 du chapitre IX \" Mises à jour et avenants \" est établie comme suit (voir page suivante).<p></p> Article 3<p></p><p></p>   Le présent avenant prendra effet à compter du 1er avril 1997.<p></p><p></p>   Il sera déposé à la direction départementale du travail et de l'emploi et au secrétariat-greffe du conseil des prud'hommes, conformément aux articles L. 132-10 et R. 132-1 du livre Ier du code du travail.<p></p> SALAIRES MINIMA CONVENTIONNELS<p></p><p></p><TABLE><TR><TD></TD><TD>       EN  FRANCS        </TD></TR><TR><TD></TD><TD> de 0   </TD><TD> de 3   </TD><TD> de 6  </TD></TR><TR><TD>COEF</TD><TD>   à    </TD><TD>   à    </TD><TD>  à    </TD></TR><TR><TD></TD><TD> 3 ans  </TD><TD> 6 ans  </TD><TD> 9 ans </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>115 </TD><TD>  6.407 </TD><TD>  6.553 </TD><TD>  6.698</TD></TR><TR><TD>118 </TD><TD>  6.510 </TD><TD>  6.656 </TD><TD>  6.801</TD></TR><TR><TD>123 </TD><TD>  6.681 </TD><TD>  6.832 </TD><TD>  6.983</TD></TR><TR><TD>130 </TD><TD>  6.921 </TD><TD>  7.078 </TD><TD>  7.235</TD></TR><TR><TD>138 </TD><TD>  7.195 </TD><TD>  7.359 </TD><TD>  7.523</TD></TR><TR><TD>143 </TD><TD>  7.366 </TD><TD>  7.534 </TD><TD>  7.703</TD></TR><TR><TD>155 </TD><TD>  7.777 </TD><TD>  7.956 </TD><TD>  8.135</TD></TR><TR><TD>170 </TD><TD>  8.291 </TD><TD>  8.483 </TD><TD>  8.675</TD></TR><TR><TD>180 </TD><TD>  8.634 </TD><TD>  8.834 </TD><TD>  9.035</TD></TR><TR><TD>190 </TD><TD>  8.976 </TD><TD>  8.186 </TD><TD>  9.395</TD></TR><TR><TD>200 </TD><TD>  9.319 </TD><TD>  9.537 </TD><TD>  9.755</TD></TR><TR><TD>212 </TD><TD>  9.730 </TD><TD>  9.959 </TD><TD> 10.187</TD></TR><TR><TD>220 </TD><TD> 10.004 </TD><TD> 10.240 </TD><TD> 10.475</TD></TR><TR><TD>255 </TD><TD> 11.203 </TD><TD> 11.469 </TD><TD> 11.735</TD></TR><TR><TD>290 </TD><TD> 12.402 </TD><TD> 12.699 </TD><TD> 12.996</TD></TR><TR><TD>310 </TD><TD> 13.088 </TD><TD> 13.402 </TD><TD> 13.716</TD></TR><TR><TD>330 </TD><TD> 13.773 </TD><TD> 14.104 </TD><TD> 14.436</TD></TR><TR><TD>370 </TD><TD> 15.143 </TD><TD> 15.510 </TD><TD> 15.876</TD></TR><TR><TD>440 </TD><TD> 17.541 </TD><TD> 17.969 </TD><TD> 18.397</TD></TR><TR><TD>480 </TD><TD> 18.912 </TD><TD> 19.374 </TD><TD> 19.837</TD></TR><TR><TD>520 </TD><TD> 20.282 </TD><TD> 20.780 </TD><TD> 21.277</TD></TR><TR><TD>560 </TD><TD> 21.653 </TD><TD> 22.185 </TD><TD> 22.717</TD></TR></TABLE><p></p><p></p>  SALAIRES MINIMA CONVENTIONNELS<p></p><p></p><TABLE><TR><TD></TD><TD>       EN  FRANCS        </TD></TR><TR><TD></TD><TD> de 9   </TD><TD> de 12  </TD><TD> plus  </TD></TR><TR><TD>COEF</TD><TD>   à    </TD><TD>   à    </TD><TD>  de   </TD></TR><TR><TD></TD><TD>12 ans  </TD><TD>15 ans  </TD><TD>15 ans </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>115 </TD><TD>  6.844 </TD><TD>  6.989 </TD><TD>  7.135</TD></TR><TR><TD>118 </TD><TD>  6.949 </TD><TD>  7.095 </TD><TD>  7.242</TD></TR><TR><TD>123 </TD><TD>  7.133 </TD><TD>  7.284 </TD><TD>  7.435</TD></TR><TR><TD>130 </TD><TD>  7.391 </TD><TD>  7.548 </TD><TD>  7.705</TD></TR><TR><TD>138 </TD><TD>  7.686 </TD><TD>  7.850 </TD><TD>  8.014</TD></TR><TR><TD>143 </TD><TD>  7.871 </TD><TD>  8.039 </TD><TD>  8.207</TD></TR><TR><TD>155 </TD><TD>  8.313 </TD><TD>  8.492 </TD><TD>  8.671</TD></TR><TR><TD>170 </TD><TD>  8.867 </TD><TD>  8.216 </TD><TD>  9.250</TD></TR><TR><TD>180 </TD><TD>  9.235 </TD><TD>  9.436 </TD><TD>  9.637</TD></TR><TR><TD>190 </TD><TD>  9.604 </TD><TD>  9.814 </TD><TD> 10.023</TD></TR><TR><TD>200 </TD><TD>  9.973 </TD><TD> 10.191 </TD><TD> 10.409</TD></TR><TR><TD>212 </TD><TD> 10.416 </TD><TD> 10.644 </TD><TD> 10.873</TD></TR><TR><TD>220 </TD><TD> 10.711 </TD><TD> 10.946 </TD><TD> 11.182</TD></TR><TR><TD>255 </TD><TD> 12.001 </TD><TD> 12.267 </TD><TD> 12.534</TD></TR><TR><TD>290 </TD><TD> 13.292 </TD><TD> 13.589 </TD><TD> 13.885</TD></TR><TR><TD>310 </TD><TD> 14.030 </TD><TD> 14.344 </TD><TD> 14.658</TD></TR><TR><TD>330 </TD><TD> 14.767 </TD><TD> 15.099 </TD><TD> 15.430</TD></TR><TR><TD>370 </TD><TD> 16.243 </TD><TD> 16.609 </TD><TD> 16.976</TD></TR><TR><TD>440 </TD><TD> 18.824 </TD><TD> 19.252 </TD><TD> 19.679</TD></TR><TR><TD>480 </TD><TD> 20.299 </TD><TD> 20.762 </TD><TD> 21.225</TD></TR><TR><TD>520 </TD><TD> 21.775 </TD><TD> 22.272 </TD><TD> 22.770</TD></TR><TR><TD>560 </TD><TD> 23.250 </TD><TD> 23.782 </TD><TD> 24.315</TD></TR></TABLE><p></p><p></p>  SALAIRES MINIMA CONVENTIONNELS<p></p><p></p> (1) = COEFFICIENT<p></p> (2) = ANCIENNETE (en francs)<p></p><p></p><TABLE><TR><TD>COEF </TD><TD>  ANCIENNETE </TD></TR><TR><TD> 115 </TD><TD>   4.854F    </TD></TR><TR><TD> 118 </TD><TD>   4.880F    </TD></TR><TR><TD> 123 </TD><TD>   5.026F    </TD></TR><TR><TD> 130 </TD><TD>   5.229F    </TD></TR><TR><TD> 138 </TD><TD>   5.462F    </TD></TR><TR><TD> 143 </TD><TD>   5.608F    </TD></TR><TR><TD> 155 </TD><TD>   5.957F    </TD></TR><TR><TD> 170 </TD><TD>   6.394F    </TD></TR><TR><TD> 180 </TD><TD>   6.685F    </TD></TR><TR><TD> 190 </TD><TD>   6.976F    </TD></TR><TR><TD> 200 </TD><TD>   7.267F    </TD></TR><TR><TD> 212 </TD><TD>   7.616F    </TD></TR><TR><TD> 220 </TD><TD>   7.849F    </TD></TR><TR><TD> 255 </TD><TD>   8.868F    </TD></TR><TR><TD> 290 </TD><TD>   9.887F    </TD></TR><TR><TD> 310 </TD><TD>  10.469F    </TD></TR><TR><TD> 330 </TD><TD>  11.051F    </TD></TR><TR><TD> 370 </TD><TD>  12.216F    </TD></TR><TR><TD> 440 </TD><TD>  14.253F    </TD></TR><TR><TD> 480 </TD><TD>  15.418F    </TD></TR><TR><TD> 520 </TD><TD>  16.582F    </TD></TR><TR><TD> 560 </TD><TD>  17.747F    </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 14 1997-03-28 BO conventions collectives 97-49",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 859507200000,
+                  "dateFin": 859507200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -8991,13 +9065,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693709",
+              "cid": "KALISCTA000005693709",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er septembre 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-03-28",
+              "dateFin": "1998-04-29",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005775512",
+                  "cid": "KALIARTI000005775512",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005693709/KALIARTI000005775512",
+                  "pathTitle": [
+                    "Salaires à compter du 1er septembre 1997."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les points A et B, tels que définis à l'article 6.1 \" Salaire minimum garanti \" du chapitre VI de la convention collective, ont la valeur suivante :<p></p><p></p>   A : 60,13 ;<p></p><p></p>   B : 34,75.<p></p> Article 2<p></p><p></p>   La grille des salaires minima conventionnels de l'article 3 du chapitre IX \" Mises à jour et avenants \" est établie comme suit (voir page suivante).<p></p> Article 3<p></p><p></p>   Le présent avenant prendra effet à compter du 1er septembre 1997.<p></p><p></p>   Il sera déposé à la direction départementale du travail et de l'emploi et au secrétariat-greffe du conseil des prud'hommes, conformément aux articles L. 132-10 et R. 132-1 du livre Ier du code du travail.<p></p>SALAIRES MINIMA CONVENTIONNELS<p></p><p></p><TABLE><TR><TD></TD><TD>       EN  FRANCS        </TD></TR><TR><TD></TD><TD> de 0   </TD><TD> de 3   </TD><TD> de 6  </TD></TR><TR><TD>COEF</TD><TD>   à    </TD><TD>   à    </TD><TD>  à    </TD></TR><TR><TD></TD><TD> 3 ans  </TD><TD> 6 ans  </TD><TD> 9 ans </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>115 </TD><TD>  6.534 </TD><TD>  6.681 </TD><TD>  6.828</TD></TR><TR><TD>118 </TD><TD>  6.639 </TD><TD>  6.786 </TD><TD>  6.934</TD></TR><TR><TD>123 </TD><TD>  6.812 </TD><TD>  6.965 </TD><TD>  7.117</TD></TR><TR><TD>130 </TD><TD>  7.056 </TD><TD>  7.214 </TD><TD>  7.372</TD></TR><TR><TD>138 </TD><TD>  7.334 </TD><TD>  7.499 </TD><TD>  7.665</TD></TR><TR><TD>143 </TD><TD>  7.507 </TD><TD>  7.677 </TD><TD>  7.847</TD></TR><TR><TD>155 </TD><TD>  7.924 </TD><TD>  8.105 </TD><TD>  8.285</TD></TR><TR><TD>170 </TD><TD>  8.446 </TD><TD>  8.639 </TD><TD>  8.833</TD></TR><TR><TD>180 </TD><TD>  8.793 </TD><TD>  8.996 </TD><TD>  9.198</TD></TR><TR><TD>190 </TD><TD>  9.141 </TD><TD>  9.352 </TD><TD>  9.563</TD></TR><TR><TD>200 </TD><TD>  9.488 </TD><TD>  9.708 </TD><TD>  9.928</TD></TR><TR><TD>212 </TD><TD>  9.905 </TD><TD> 10.136 </TD><TD> 10.367</TD></TR><TR><TD>220 </TD><TD> 10.183 </TD><TD> 10.421 </TD><TD> 10.659</TD></TR><TR><TD>255 </TD><TD> 11.399 </TD><TD> 11.668 </TD><TD> 11.937</TD></TR><TR><TD>290 </TD><TD> 12.616 </TD><TD> 12.915 </TD><TD> 13.215</TD></TR><TR><TD>310 </TD><TD> 13.311 </TD><TD> 13.628 </TD><TD> 13.945</TD></TR><TR><TD>330 </TD><TD> 14.006 </TD><TD> 14.340 </TD><TD> 14.675</TD></TR><TR><TD>370 </TD><TD> 15.396 </TD><TD> 15.766 </TD><TD> 16.136</TD></TR><TR><TD>440 </TD><TD> 17.828 </TD><TD> 18.260 </TD><TD> 18.692</TD></TR><TR><TD>480 </TD><TD> 19.218 </TD><TD> 19.685 </TD><TD> 20.152</TD></TR><TR><TD>520 </TD><TD> 20.608 </TD><TD> 21.110 </TD><TD> 21.613</TD></TR><TR><TD>560 </TD><TD> 21.998 </TD><TD> 22.536 </TD><TD> 23.073</TD></TR></TABLE><p></p><p></p>  SALAIRES MINIMA CONVENTIONNELS<p></p><p></p><TABLE><TR><TD></TD><TD>       EN  FRANCS        </TD></TR><TR><TD></TD><TD> de 9   </TD><TD> de 12  </TD><TD> plus  </TD></TR><TR><TD>COEF</TD><TD>   à    </TD><TD>   à    </TD><TD>  de   </TD></TR><TR><TD></TD><TD>12 ans  </TD><TD>15 ans  </TD><TD>15 ans </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>115 </TD><TD>  6.975 </TD><TD>  7.122 </TD><TD>  7.270</TD></TR><TR><TD>118 </TD><TD>  7.082 </TD><TD>  7.230 </TD><TD>  7.378</TD></TR><TR><TD>123 </TD><TD>  7.269 </TD><TD>  7.421 </TD><TD>  7.574</TD></TR><TR><TD>130 </TD><TD>  7.531 </TD><TD>  7.689 </TD><TD>  7.848</TD></TR><TR><TD>138 </TD><TD>  7.830 </TD><TD>  7.996 </TD><TD>  8.161</TD></TR><TR><TD>143 </TD><TD>  8.017 </TD><TD>  8.187 </TD><TD>  8.357</TD></TR><TR><TD>155 </TD><TD>  8.466 </TD><TD>  8.646 </TD><TD>  8.827</TD></TR><TR><TD>170 </TD><TD>  9.027 </TD><TD>  9.221 </TD><TD>  9.414</TD></TR><TR><TD>180 </TD><TD>  9.401 </TD><TD>  9.603 </TD><TD>  9.806</TD></TR><TR><TD>190 </TD><TD>  9.775 </TD><TD>  9.986 </TD><TD> 10.197</TD></TR><TR><TD>200 </TD><TD> 10.149 </TD><TD> 10.369 </TD><TD> 10.589</TD></TR><TR><TD>212 </TD><TD> 10.597 </TD><TD> 10.828 </TD><TD> 11.059</TD></TR><TR><TD>220 </TD><TD> 10.897 </TD><TD> 11.134 </TD><TD> 11.372</TD></TR><TR><TD>255 </TD><TD> 12.205 </TD><TD> 12.474 </TD><TD> 12.743</TD></TR><TR><TD>290 </TD><TD> 13.514 </TD><TD> 13.814 </TD><TD> 14.113</TD></TR><TR><TD>310 </TD><TD> 14.262 </TD><TD> 14.579 </TD><TD> 14.897</TD></TR><TR><TD>330 </TD><TD> 15.010 </TD><TD> 15.345 </TD><TD> 15.680</TD></TR><TR><TD>370 </TD><TD> 16.506 </TD><TD> 16.876 </TD><TD> 17.246</TD></TR><TR><TD>440 </TD><TD> 19.124 </TD><TD> 19.556 </TD><TD> 19.987</TD></TR><TR><TD>480 </TD><TD> 20.619 </TD><TD> 21.087 </TD><TD> 21.554</TD></TR><TR><TD>520 </TD><TD> 22.115 </TD><TD> 22.618 </TD><TD> 23.120</TD></TR><TR><TD>560 </TD><TD> 23.611 </TD><TD> 24.149 </TD><TD> 24.687</TD></TR></TABLE><p></p><p></p>  SALAIRES MINIMA CONVENTIONNELS<p></p><p></p><TABLE><TR><TD>COEF </TD><TD>  ANCIENNETE </TD></TR><TR><TD> 115 </TD><TD>   4.902F    </TD></TR><TR><TD> 118 </TD><TD>   4.929F    </TD></TR><TR><TD> 123 </TD><TD>   5.076F    </TD></TR><TR><TD> 130 </TD><TD>   5.282F    </TD></TR><TR><TD> 138 </TD><TD>   5.517F    </TD></TR><TR><TD> 143 </TD><TD>   5.664F    </TD></TR><TR><TD> 155 </TD><TD>   6.017F    </TD></TR><TR><TD> 170 </TD><TD>   6.458F    </TD></TR><TR><TD> 180 </TD><TD>   6.752F    </TD></TR><TR><TD> 190 </TD><TD>   7.046F    </TD></TR><TR><TD> 200 </TD><TD>   7.340F    </TD></TR><TR><TD> 212 </TD><TD>   7.693F    </TD></TR><TR><TD> 220 </TD><TD>   7.928F    </TD></TR><TR><TD> 255 </TD><TD>   8.957F    </TD></TR><TR><TD> 290 </TD><TD>   9.986F    </TD></TR><TR><TD> 310 </TD><TD>  10.574F    </TD></TR><TR><TD> 330 </TD><TD>  11.162F    </TD></TR><TR><TD> 370 </TD><TD>  12.338F    </TD></TR><TR><TD> 440 </TD><TD>  14.396F    </TD></TR><TR><TD> 480 </TD><TD>  15.572F    </TD></TR><TR><TD> 520 </TD><TD>  16.748F    </TD></TR><TR><TD> 560 </TD><TD>  17.924F    </TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 19 janvier 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 19 janvier 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 15 1997-03-28 BO conventions collectives 97-49, étendu par arrêté du 19 janvier 1998 JORF 28 janvier 1998, rectificatif BO CC 99-25",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 859507200000,
+                  "dateFin": 893808000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -9011,13 +9159,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693710",
+              "cid": "KALISCTA000005693710",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er septembre 1998.",
+              "dateModif": null,
+              "dateDebut": "1998-04-29",
+              "dateFin": "2004-06-30",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005775513",
+                  "cid": "KALIARTI000005775513",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005693710/KALIARTI000005775513",
+                  "pathTitle": [
+                    "Salaires à compter du 1er septembre 1998."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les points A et B, tels que définis à l'article VI-1 \" Salaire minimum garanti \" du chapitre VI de la convention collective, ont la valeur suivante :<p></p><p></p>   - A : 61,39 ;<p></p><p></p>   - B : 35,27.<p></p>Article 2<p></p><p></p>   La grille des salaires minima conventionnels de l'article 3 du chapitre IX \" Mises à jour et avenants \" est établie comme suit :<p></p> (Voir page suivante.)   <p></p>Salaires minima conventionnels (en francs)<p></p> (Indice A : 61,39, indice B : 35,27)<p></p><p></p><TABLE><TR><TD></TD><TD>       EN  FRANCS        </TD></TR><TR><TD></TD><TD> de 0   </TD><TD> de 3   </TD><TD> de 6  </TD></TR><TR><TD>COEF</TD><TD>   à    </TD><TD>   à    </TD><TD>  à    </TD></TR><TR><TD></TD><TD> 3 ans  </TD><TD> 6 ans  </TD><TD> 9 ans </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>115 </TD><TD>  6.668 </TD><TD>  6.817 </TD><TD>  6.966</TD></TR><TR><TD>118 </TD><TD>  6.774 </TD><TD>  6.924 </TD><TD>  7.073</TD></TR><TR><TD>123 </TD><TD>  6.950 </TD><TD>  7.104 </TD><TD>  7.258</TD></TR><TR><TD>130 </TD><TD>  7.197 </TD><TD>  7.357 </TD><TD>  7.518</TD></TR><TR><TD>138 </TD><TD>  7.479 </TD><TD>  7.647 </TD><TD>  7.814</TD></TR><TR><TD>143 </TD><TD>  7.656 </TD><TD>  7.828 </TD><TD>  7.999</TD></TR><TR><TD>155 </TD><TD>  8.079 </TD><TD>  8.261 </TD><TD>  8.444</TD></TR><TR><TD>170 </TD><TD>  8.608 </TD><TD>  8.804 </TD><TD>  9.000</TD></TR><TR><TD>180 </TD><TD>  8.961 </TD><TD>  9.166 </TD><TD>  9.371</TD></TR><TR><TD>190 </TD><TD>  9.313 </TD><TD>  9.527 </TD><TD>  9.741</TD></TR><TR><TD>200 </TD><TD>  9.666 </TD><TD>  9.889 </TD><TD> 10.112</TD></TR><TR><TD>212 </TD><TD> 10.089 </TD><TD> 10.323 </TD><TD> 10.556</TD></TR><TR><TD>220 </TD><TD> 10.371 </TD><TD> 10.612 </TD><TD> 10.853</TD></TR><TR><TD>255 </TD><TD> 11.606 </TD><TD> 11.878 </TD><TD> 12.150</TD></TR><TR><TD>290 </TD><TD> 12.840 </TD><TD> 13.143 </TD><TD> 13.447</TD></TR><TR><TD>310 </TD><TD> 13.546 </TD><TD> 13.867 </TD><TD> 14.188</TD></TR><TR><TD>330 </TD><TD> 14.251 </TD><TD> 14.590 </TD><TD> 14.929</TD></TR><TR><TD>370 </TD><TD> 15.662 </TD><TD> 16.036 </TD><TD> 16.411</TD></TR><TR><TD>440 </TD><TD> 18.131 </TD><TD> 18.568 </TD><TD> 19.005</TD></TR><TR><TD>480 </TD><TD> 19.542 </TD><TD> 20.014 </TD><TD> 20.487</TD></TR><TR><TD>520 </TD><TD> 20.952 </TD><TD> 21.461 </TD><TD> 21.969</TD></TR><TR><TD>560 </TD><TD> 22.363 </TD><TD> 22.907 </TD><TD> 23.451</TD></TR></TABLE><p></p>SALAIRES MINIMA CONVENTIONNELS<p></p><TABLE><TR><TD></TD><TD>       EN  FRANCS        </TD></TR><TR><TD></TD><TD> de 9   </TD><TD> de 12  </TD><TD> plus  </TD></TR><TR><TD>COEF</TD><TD>   à    </TD><TD>   à    </TD><TD>  de   </TD></TR><TR><TD></TD><TD>12 ans  </TD><TD>15 ans  </TD><TD>15 ans </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>115 </TD><TD>  7.115 </TD><TD>  7.263 </TD><TD>  7.412</TD></TR><TR><TD>118 </TD><TD>  7.223 </TD><TD>  7.372 </TD><TD>  7.522</TD></TR><TR><TD>123 </TD><TD>  7.412 </TD><TD>  7.567 </TD><TD>  7.721</TD></TR><TR><TD>130 </TD><TD>  7.678 </TD><TD>  7.839 </TD><TD>  7.999</TD></TR><TR><TD>138 </TD><TD>  7.982 </TD><TD>  8.149 </TD><TD>  8.317</TD></TR><TR><TD>143 </TD><TD>  8.171 </TD><TD>  8.343 </TD><TD>  8.515</TD></TR><TR><TD>155 </TD><TD>  8.627 </TD><TD>  8.809 </TD><TD>  8.992</TD></TR><TR><TD>170 </TD><TD>  9.196 </TD><TD>  9.392 </TD><TD>  9.588</TD></TR><TR><TD>180 </TD><TD>  9.575 </TD><TD>  9.780 </TD><TD>  9.985</TD></TR><TR><TD>190 </TD><TD>  9.955 </TD><TD> 10.169 </TD><TD> 10.383</TD></TR><TR><TD>200 </TD><TD> 10.334 </TD><TD> 10.557 </TD><TD> 10.780</TD></TR><TR><TD>212 </TD><TD> 10.790 </TD><TD> 11.023 </TD><TD> 11.257</TD></TR><TR><TD>220 </TD><TD> 11.093 </TD><TD> 11.334 </TD><TD> 11.575</TD></TR><TR><TD>255 </TD><TD> 12.422 </TD><TD> 12.693 </TD><TD> 12.965</TD></TR><TR><TD>290 </TD><TD> 13.750 </TD><TD> 14.053 </TD><TD> 14.356</TD></TR><TR><TD>310 </TD><TD> 14.509 </TD><TD> 14.830 </TD><TD> 15.151</TD></TR><TR><TD>330 </TD><TD> 15.268 </TD><TD> 15.607 </TD><TD> 15.945</TD></TR><TR><TD>370 </TD><TD> 16.786 </TD><TD> 17.160 </TD><TD> 17.535</TD></TR><TR><TD>440 </TD><TD> 19.442 </TD><TD> 19.879 </TD><TD> 20.316</TD></TR><TR><TD>480 </TD><TD> 20.960 </TD><TD> 21.432 </TD><TD> 21.905</TD></TR><TR><TD>520 </TD><TD> 22.478 </TD><TD> 22.986 </TD><TD> 23.494</TD></TR><TR><TD>560 </TD><TD> 23.996 </TD><TD> 24.540 </TD><TD> 25.084</TD></TR></TABLE><p></p>SALAIRES MINIMA CONVENTIONNELS<p></p><TABLE><TR><TD>COEF </TD><TD>  ANCIENNETE </TD></TR><TR><TD> 115 </TD><TD>   4.961F    </TD></TR><TR><TD> 118 </TD><TD>   4.988F    </TD></TR><TR><TD> 123 </TD><TD>   5.136F    </TD></TR><TR><TD> 130 </TD><TD>   5.345F    </TD></TR><TR><TD> 138 </TD><TD>   5.583F    </TD></TR><TR><TD> 143 </TD><TD>   5.731F    </TD></TR><TR><TD> 155 </TD><TD>   6.088F    </TD></TR><TR><TD> 170 </TD><TD>   6.535F    </TD></TR><TR><TD> 180 </TD><TD>   6.832F    </TD></TR><TR><TD> 190 </TD><TD>   7.130F    </TD></TR><TR><TD> 200 </TD><TD>   7.427F    </TD></TR><TR><TD> 212 </TD><TD>   7.784F    </TD></TR><TR><TD> 220 </TD><TD>   8.022F    </TD></TR><TR><TD> 255 </TD><TD>   9.063F    </TD></TR><TR><TD> 290 </TD><TD>  10.105F    </TD></TR><TR><TD> 310 </TD><TD>  10.700F    </TD></TR><TR><TD> 330 </TD><TD>  11.295F    </TD></TR><TR><TD> 370 </TD><TD>  12.485F    </TD></TR><TR><TD> 440 </TD><TD>  14.567F    </TD></TR><TR><TD> 480 </TD><TD>  15.757F    </TD></TR><TR><TD> 520 </TD><TD>  16.947F    </TD></TR><TR><TD> 560 </TD><TD>  17.137F    </TD></TR></TABLE><p></p>Article 3<p></p><p></p>   Le présent avenant prendra effet à compter du 1er mai 1998.<p></p><p></p>   Il sera déposé à la direction départementale du travail et de l'emploi et au secrétariat-greffe du conseil des prud'hommes, conformément aux articles L. 132-10 et R. 132-1 du livre Ier a du code du travail.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 1er octobre 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 1er octobre 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 16 1998-04-29 BO conventions collectives 98-24 rectificatif BO CC 98-36 étendu par arrêté du 1er octobre 1998 JORF 14 octobre 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 893808000000,
+                  "dateFin": 1088553600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

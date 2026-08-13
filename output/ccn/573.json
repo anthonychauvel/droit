@@ -24153,13 +24153,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718026",
+              "cid": "KALISCTA000005718026",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juillet 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-06-13",
+              "dateFin": "1997-01-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836694",
+                  "cid": "KALIARTI000005836694",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718026/KALIARTI000005836694",
+                  "pathTitle": [
+                    "Salaires au 1er juillet 1996."
+                  ],
+                  "content": "Grille de salaires au 1er juillet 1996<p></p><p></p><p></p>   (A) : Niveau<p></p><p></p>   (B) : Echelon<p></p><p></p>   (C) : Salaire au 1er juillet 1996.<p></p><p></p><TABLE><TR><TD> (A)  </TD><TD>  (B)   </TD><TD>    (C)   </TD></TR><TR><TD> I    </TD><TD> 1er    </TD><TD> 6.406F   </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.470F   </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 6.535F   </TD></TR><TR><TD> II   </TD><TD> 1er    </TD><TD> 6.470F   </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.599F   </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 6.731F   </TD></TR><TR><TD> III  </TD><TD> 1er    </TD><TD> 6.599F   </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.797F   </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 7.001F   </TD></TR><TR><TD> IV   </TD><TD> 1er    </TD><TD> 6.820F   </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 7.093F   </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 7.377F   </TD></TR><TR><TD> V    </TD><TD> 1er    </TD><TD> 7.233F   </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 7.595F   </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 7.975F   </TD></TR><TR><TD> VI   </TD><TD> 1er    </TD><TD> 8.766F   </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 9.292F   </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 9.850F   </TD></TR><TR><TD> VII  </TD><TD> 1er    </TD><TD>  9.432F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 10.092F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 10.798F  </TD></TR><TR><TD> VIII </TD><TD> 1er    </TD><TD> 11.096F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 11.984F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 12.943F  </TD></TR><TR><TD> IX   </TD><TD> 1er    </TD><TD> 14.425F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 16.156F  </TD></TR><TR><TD> X    </TD><TD> 1er    </TD><TD> 19.973F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 23.968F  </TD></TR></TABLE><p></p><p></p>      Cette grille annule et remplace, à compter du 1er juillet 1996, la précédente grille du 1er janvier 1996.<font color=\"808080\"><em>   NOTA : Arrêté du 25 septembre 1996 art. 1 : l'accord du 13 juin 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 25 septembre 1996 art. 1 : l'accord du 13 juin 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1996-06-13 BO conventions collectives 96-30, étendu par arrêté du 25 septembre 1996 JORF 5 octobre 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 834624000000,
+                  "dateFin": 853459200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -24173,13 +24247,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718027",
+              "cid": "KALISCTA000005718027",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier et au 1er juillet 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-01-17",
+              "dateFin": "2002-12-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836696",
+                  "cid": "KALIARTI000005836696",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718027/KALIARTI000005836696",
+                  "pathTitle": [
+                    "Salaires au 1er janvier et au 1er juillet 1997."
+                  ],
+                  "content": "Grille de salaires applicable au 1er janvier et au 1er juillet 1997<p></p><p></p><p></p>   (A) : Niveau<p></p><p></p>   (B) : Echelon<p></p><p></p>   (C) : Salaire au 1er janvier 1997.<p></p><p></p>   (D) : Salaire au 1er juillet 1997.<p></p><p></p><TABLE><TR><TD> (A) </TD><TD>(B)</TD><TD>  (C)   </TD><TD>  (D)  </TD></TR><TR><TD></TD><TD> 1 </TD><TD>  6 470 </TD><TD>  6 535</TD></TR><TR><TD>I    </TD><TD> 2 </TD><TD>  6 535 </TD><TD>  6 600</TD></TR><TR><TD></TD><TD> 3 </TD><TD>  6 600 </TD><TD>  6 666</TD></TR><TR><TD></TD><TD> 1 </TD><TD>  6 535 </TD><TD>  6 600</TD></TR><TR><TD>II   </TD><TD> 2 </TD><TD>  6 665 </TD><TD>  6 732</TD></TR><TR><TD></TD><TD> 3 </TD><TD>  6 798 </TD><TD>  6 866</TD></TR><TR><TD></TD><TD> 1 </TD><TD>  6 665 </TD><TD>  6 732</TD></TR><TR><TD>III  </TD><TD> 2 </TD><TD>  6 865 </TD><TD>  6 934</TD></TR><TR><TD></TD><TD> 3 </TD><TD>  7 071 </TD><TD>  7 142</TD></TR><TR><TD></TD><TD> 1 </TD><TD>  6 888 </TD><TD>  6 957</TD></TR><TR><TD>IV   </TD><TD> 2 </TD><TD>  7 164 </TD><TD>  7 236</TD></TR><TR><TD></TD><TD> 3 </TD><TD>  7 451 </TD><TD>  7 525</TD></TR><TR><TD></TD><TD> 1 </TD><TD>  7 305 </TD><TD>  7 378</TD></TR><TR><TD>V    </TD><TD> 2 </TD><TD>  7 671 </TD><TD>  7 748</TD></TR><TR><TD></TD><TD> 3 </TD><TD>  8 055 </TD><TD>  8 135</TD></TR><TR><TD></TD><TD> 1 </TD><TD>  8 854 </TD><TD>  8 942</TD></TR><TR><TD>VI   </TD><TD> 2 </TD><TD>  9 385 </TD><TD>  9 479</TD></TR><TR><TD></TD><TD> 3 </TD><TD>  9 949 </TD><TD> 10 048</TD></TR><TR><TD></TD><TD> 1 </TD><TD>  9 526 </TD><TD>  9 622</TD></TR><TR><TD>VII  </TD><TD> 2 </TD><TD> 10 193 </TD><TD> 10 295</TD></TR><TR><TD></TD><TD> 3 </TD><TD> 10 906 </TD><TD> 11 015</TD></TR><TR><TD></TD><TD> 1 </TD><TD> 11 207 </TD><TD> 11 319</TD></TR><TR><TD>VIII </TD><TD> 2 </TD><TD> 12 104 </TD><TD> 12 225</TD></TR><TR><TD></TD><TD> 3 </TD><TD> 13 072 </TD><TD> 13 203</TD></TR><TR><TD>IX   </TD><TD> 1 </TD><TD> 14 569 </TD><TD> 14 715</TD></TR><TR><TD></TD><TD> 2 </TD><TD> 16 318 </TD><TD> 16 481</TD></TR><TR><TD>X    </TD><TD> 1 </TD><TD> 20 173 </TD><TD> 20 374</TD></TR><TR><TD></TD><TD> 2 </TD><TD> 24 208 </TD><TD> 24 450</TD></TR></TABLE><p></p><p></p>   Cette grille annule et remplace, à compter du 1er janvier 1997, la précédente grille du 1er juillet 1996.<font color=\"808080\"><em>   Arrêté du 21 mai 1997 art. 1 : le présent texte est étendu à l'exclusion des secteurs suivants :<p></p>    Commerce des produits laitiers ;<p></p>    Commerce et distribution des produits sous température dirigée, glaces, surgelés et réfrigérés,<p></p></em></font>",
+                  "nota": "   Arrêté du 21 mai 1997 art. 1 : le présent texte est étendu à l'exclusion des secteurs suivants :<p></p>    Commerce des produits laitiers ;<p></p>    Commerce et distribution des produits sous température dirigée, glaces, surgelés et réfrigérés,<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1997-01-17 BO conventions collectives 97-14, étendu par arrêté du 21 mai 1997 JORF 3 juin 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 853459200000,
+                  "dateFin": 1039824000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -24193,13 +24341,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718028",
+              "cid": "KALISCTA000005718028",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er mars 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-03-01",
+              "dateFin": "2000-06-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836697",
+                  "cid": "KALIARTI000005836697",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005718028/KALIARTI000005836697",
+                  "pathTitle": [
+                    "Salaires au 1er mars 2000."
+                  ],
+                  "content": "GRILLE DE SALAIRES<p></p> convention collective des commerces de gros<p></p><TABLE><TR><TD>Niv - ECH</TD><TD>  SALAIRE AU </TD></TR><TR><TD></TD><TD>1er MARS 2000</TD></TR><TR><TD></TD><TD>  (en francs)</TD></TR><TR><TD>   I - 1 </TD><TD>  6 881      </TD></TR><TR><TD>   I - 2 </TD><TD>  6 881      </TD></TR><TR><TD>   I - 3 </TD><TD>  6 881      </TD></TR><TR><TD>  II - 1 </TD><TD>  6 881      </TD></TR><TR><TD>  II - 2 </TD><TD>  6 881      </TD></TR><TR><TD>  II - 3 </TD><TD>  6 881      </TD></TR><TR><TD> III - 1 </TD><TD>  6 881      </TD></TR><TR><TD> III - 2 </TD><TD>  6 934      </TD></TR><TR><TD> III - 3 </TD><TD>  7 142      </TD></TR><TR><TD>  IV - 1 </TD><TD>  6 957      </TD></TR><TR><TD>  IV - 2 </TD><TD>  7 236      </TD></TR><TR><TD>  IV - 3 </TD><TD>  7 525      </TD></TR><TR><TD>   V - 1 </TD><TD>  7 378      </TD></TR><TR><TD>   V - 2 </TD><TD>  7 748      </TD></TR><TR><TD>   V - 3 </TD><TD>  8 135      </TD></TR><TR><TD>  VI - 1 </TD><TD>  8 942      </TD></TR><TR><TD>  VI - 2 </TD><TD>  9 479      </TD></TR><TR><TD>  VI - 3 </TD><TD> 10 148      </TD></TR><TR><TD> VII - 1 </TD><TD>  9 622      </TD></TR><TR><TD> VII - 2 </TD><TD> 10 295      </TD></TR><TR><TD> VII - 3 </TD><TD> 11 015      </TD></TR><TR><TD>VIII - 1 </TD><TD> 11 319      </TD></TR><TR><TD>VIII - 2 </TD><TD> 12 225      </TD></TR><TR><TD>VIII - 3 </TD><TD> 13 203      </TD></TR><TR><TD>  IX - 1 </TD><TD> 14 715      </TD></TR><TR><TD>  IX - 2 </TD><TD> 16 481      </TD></TR><TR><TD>   X - 1 </TD><TD> 20 374      </TD></TR><TR><TD>   X - 2 </TD><TD> 24 450      </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2000-03-01 BO conventions collectives 2000-23",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 951868800000,
+                  "dateFin": 961027200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

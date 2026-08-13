@@ -20819,13 +20819,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729097",
+              "cid": "KALISCTA000005729097",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaire minimum conventionnel applicable au 1er mars 1987, au 1er août 1987 et au 1er novembre 1987",
+              "dateModif": null,
+              "dateDebut": "1987-05-26",
+              "dateFin": "1989-10-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863765",
+                  "cid": "KALIARTI000005863765",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005729097/KALIARTI000005863765",
+                  "pathTitle": [
+                    "Salaire minimum conventionnel applicable au 1er mars 1987, au 1er août 1987 et au 1er novembre 1987"
+                  ],
+                  "content": "<p></p>   L'article 2 de l'annexe 1 de la convention collective nationale de travail du 15 mars 1986, instituant un salaire minimum conventionnel garanti, est modifié comme suit :<p></p><p></p>   Les salariés occupant à temps complet un emploi relevant de la convention collective nationale du travail perçoivent un salaire mensuel brut minimum (majoration forfaitaire provisoire de coefficient et ancienneté comprises) calculé comme suit :<p></p><p></p>   1er mars 1987 : 5.835,13 F.<p></p><p></p>   1er août 1987 : 5.864,13 F.<p></p><p></p>   1er novembre 1987 : 5.898,94 F.<p></p><p></p>   Ce salaire minimum conventionnel garanti concerne les emplois référencés :<p></p><p></p>   au coefficient 225 ;<p></p><p></p>   au coefficient 235 + 0 p. 100 ;<p></p><p></p>   au coefficient 235 + 5 p. 100 et + 9 p. 100 ;<p></p><p></p>   au coefficient 245 + 0 p. 100 ;<p></p><p></p>   A ce salaire minimum s'ajoute, le cas échéant :<p></p><p></p>   - le \"surclassement\" internat pour les emplois de :<p></p><p></p>   - candidat élève aux coefficients 225, 235, 245 ;<p></p><p></p>   - agent spécialiste de service général (7 points) ;<p></p><p></p>   - ouvrier professionnel de 3ème catégorie (8 points) ;<p></p><p></p>   - l'indemnité de \"risques et sujétions spéciales\", annexe 5, article 3, alinéa a ;<p></p><p></p>   - la majoration familiale de salaire.<p></p><p></p>   Les salariés à temps incomplet perçoivent un salaire mensuel brut minimum calculé sur les bases ci-dessus au prorata de leur temps de travail.<p></p><p></p>   Les salariés dont le salaire est réduit pour quelque cause que ce soit perçoivent un salaire brut minimum réduit dans les mêmes proportions que le salaire de base. <p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 179 1987-05-26 agréé par arrêté du 1er juillet 1987 JORF 12 juillet 1987",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 548985600000,
+                  "dateFin": 623635200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -20839,13 +20913,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729098",
+              "cid": "KALISCTA000005729098",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point et salaire minimum conventionnel applicables au 1er novembre 1987",
+              "dateModif": null,
+              "dateDebut": "1987-11-10",
+              "dateFin": "1988-12-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863766",
+                  "cid": "KALIARTI000005863766",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005729098/KALIARTI000005863766",
+                  "pathTitle": [
+                    "Valeur du point et salaire minimum conventionnel applicables au 1er novembre 1987"
+                  ],
+                  "content": "<p></p>   Il a été convenu ce qui suit :<p></p><p></p>   Pour compléter l'accord salarial 1987, prévu par l'avenant n° 181 du 9 juillet 1987 à la convention collective, et tenir compte des mesures salariales générales intervenues pour les agents de la fonction publique, il est décidé :<p></p><p></p>Article 1er.<p></p><p></p>   La valeur du point applicable au 1er novembre 1987 est portée à 18,18 F.<p></p><p></p>Article 2.<p></p><p></p>   Au 1er novembre 1987, le salaire minimum conventionnel fixé par l'avenant n° 179 du 26 mai 1987 est porté à 5 922,14 F.<p></p><p></p>Article 3.<p></p><p></p>   A compter du 1er mai 1987, la valeur du point en vigueur au 31 décembre 1986 est majorée de 1 p. 100. Cette majoration de 1 p. 100 s'ajoute à celles prévues à compter du 1er mars 1987, du 1er juillet 1987 et du 1er août 1987, par avenant n° 181 du 9 juillet 1987.<p></p><p></p>   Par contre, elle ne saurait se cumuler avec l'augmentation prévue à compter du 1er novembre 1987 du présent avenant.<p></p><p></p>Article 4.<p></p><p></p>   L'application des articles 2 et 3 du présent avenant sera effectuée par l'attribution d'une indemnité de 1 p. 100 de la masse totale des rémunérations brutes perçues au titre de la période du 1er mai 1987 au 31 octobre 1987.<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 182 1987-11-10 agréé par arrêté du 18 janvier 1988 JORF 4 février 1988",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 563500800000,
+                  "dateFin": 597542400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -20859,13 +21007,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729100",
+              "cid": "KALISCTA000005729100",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Prime uniforme mensuelle (1) et valeur du point au 1er mars et au 1er septembre 1989",
+              "dateModif": null,
+              "dateDebut": "1988-12-08",
+              "dateFin": "1989-10-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863767",
+                  "cid": "KALIARTI000005863767",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005729100/KALIARTI000005863767",
+                  "pathTitle": [
+                    "Prime uniforme mensuelle (1) et valeur du point au 1er mars et au 1er septembre 1989"
+                  ],
+                  "content": "Article 1er.<p></p><p></p>   L'alinéa b de l'article 8, de l'annexe IV, est modifié comme suit :<p></p><p></p>   \"Une prime spécifique de sujétions, au taux mensuel uniforme de ... 23 points de coefficient est attribuée aux :<p></p><p></p>   - chef de service paramédical ;<p></p><p></p>   - puériculture ;<p></p><p></p>   - infirmier ;<p></p><p></p>   - infirmier de secteur psychiatrique.<p></p><p></p>   Cette prime est réduite, le cas échéant, dans les mêmes proportions que le salaire\".<p></p><p></p>Article 2.<p></p><p></p>   En incidence des modifications indiciaires intervenues concernant les personnels infirmiers du secteur hospitalier public (et des conditions d'accès au niveau 2), les emplois conventionnels de :<p></p><p></p>   - puériculture ;<p></p><p></p>   - infirmier (diplômé d'Etat et de secteur psychiatrique).<p></p> bénéficient du classement conventionnel ci-après :<p></p><p></p><p></p>   PROGRESSION D'ANCIENNETE : De début : 1 an.<p></p><p></p>   MAJORATION : \".<p></p><p></p>   COEFFICIENT : 388.<p></p><p></p>   EN INTERNAT : 398.<p></p><p></p><p></p>   PROGRESSION D'ANCIENNETE : Après 1 an : 2 ans.<p></p><p></p>   MAJORATION : 30.<p></p><p></p>   COEFFICIENT : 418.<p></p><p></p>   EN INTERNAT : 429.<p></p><p></p><p></p>   PROGRESSION D'ANCIENNETE : Après 3 ans : 3 ans.<p></p><p></p>   MAJORATION : 35.<p></p><p></p>   COEFFICIENT : 453.<p></p><p></p>   EN INTERNAT : 475.<p></p><p></p><p></p>   PROGRESSION D'ANCIENNETE : Après 6 ans : 4 ans.<p></p><p></p>   MAJORATION : 42.<p></p><p></p>   COEFFICIENT : 495.<p></p><p></p>   EN INTERNAT : 508.<p></p><p></p><p></p>   PROGRESSION D'ANCIENNETE : Après 10 ans : 4 ans.<p></p><p></p>   MAJORATION : 47.<p></p><p></p>   COEFFICIENT : 542.<p></p><p></p>   EN INTERNAT : 556.<p></p><p></p><p></p>   PROGRESSION D'ANCIENNETE : Après 14 ans : 4 ans.<p></p><p></p>   MAJORATION : 38.<p></p><p></p>   COEFFICIENT : 580.<p></p><p></p>   EN INTERNAT : 595.<p></p><p></p><p></p>   PROGRESSION D'ANCIENNETE : Après 18 ans : 3 ans.<p></p><p></p>   MAJORATION : 12.<p></p><p></p>   COEFFICIENT : 592.<p></p><p></p>   EN INTERNAT : 607.<p></p><p></p><p></p>   PROGRESSION D'ANCIENNETE : Après 21 ans : 4 ans.<p></p><p></p>   MAJORATION : 30.<p></p><p></p>   COEFFICIENT : 622.<p></p><p></p>   EN INTERNAT : 638.<p></p><p></p><p></p>   PROGRESSION D'ANCIENNETE : Après 25 ans.<p></p><p></p>   MAJORATION : 33.<p></p><p></p>   COEFFICIENT : 655.<p></p><p></p>   EN INTERNAT : 672.<p></p><p></p><p></p>   S'ajoute la \"prime spécifique de sujétions\" au taux mensuel de 23 points.<p></p><p></p>Article 3.<p></p><p></p>   L'intégration dans le nouveau classement conventionnel des salariés en fonctions à la date d'application du présent avenant se fait conformément au tableau de reclassement ci-après.<p></p><p></p>   I. INFIRMIER.<p></p><p></p><p></p>   COEFFICIENT : 388.<p></p><p></p>   SITUATION ACTUELLE : De début : 300.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   Ancienneté d'échelon : Ancienneté conservée.<p></p><p></p><p></p>   COEFFICIENT : 418.<p></p><p></p>   SITUATION ACTUELLE : Après 1 an : 300 + 5 %.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   Ancienneté d'échelon : 2/3 de l'ancienneté d'échelon.<p></p><p></p><p></p>   COEFFICIENT : 418.<p></p><p></p>   SITUATION ACTUELLE : Après 2 ans 1/2 : 300 + 10 %.<p></p><p></p>   Avant 9 mois.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   Ancienneté d'échelon :<p></p><p></p>   Ancienneté majorée de 1 an et 3 mois.<p></p><p></p><p></p>   COEFFICIENT : 418.<p></p><p></p>   SITUATION ACTUELLE : Après 2 ans 1/2 : 300 + 10 %.<p></p><p></p>   Après 9 mois.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   Ancienneté d'échelon :<p></p><p></p>   2/3 de l'ancienneté conservée au-delà de 9 mois.<p></p><p></p><p></p>   COEFFICIENT : 453.<p></p><p></p>   SITUATION ACTUELLE : Après 4 ans : 300 + 15 %.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté majorée de 6 mois.<p></p><p></p><p></p>   COEFFICIENT : 453.<p></p><p></p>   SITUATION ACTUELLE : Après 5 ans : 300 + 20 %.<p></p><p></p>   Avant 1 an.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté majorée de 2 ans.<p></p><p></p><p></p>   COEFFICIENT : 453.<p></p><p></p>   SITUATION ACTUELLE : Après 5 ans : 300 + 20 %.<p></p><p></p>   Après 1 an.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée au-delà de 1 an.<p></p><p></p><p></p>   COEFFICIENT : 495.<p></p><p></p>   SITUATION ACTUELLE : Après 7 ans : 300 + 25 %.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   1/2 ancienneté + 6 mois.<p></p><p></p><p></p>   COEFFICIENT : 495.<p></p><p></p>   SITUATION ACTUELLE : Après 9 ans : 300 + 25 %.<p></p><p></p>   Avant 2 ans 1/2.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté + 4 an et 6 mois.<p></p><p></p><p></p>   COEFFICIENT : 542.<p></p><p></p>   SITUATION ACTUELLE : Après 9 ans : 300 + 30 %.<p></p><p></p>   Après 2 ans 1/2.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée au-delà de 2 ans 1/2.<p></p><p></p><p></p>   COEFFICIENT : 542.<p></p><p></p>   SITUATION ACTUELLE : Après 12 ans : 300 + 37 %.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   1/2 Ancienneté + 6 mois.<p></p><p></p><p></p>   COEFFICIENT : 542.<p></p><p></p>   SITUATION ACTUELLE : Après 15 ans : 300 + 44 %.<p></p><p></p>   Avant 2 ans.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée + 2 ans.<p></p><p></p><p></p>   COEFFICIENT : 580.<p></p><p></p>   SITUATION ACTUELLE : Après 15 ans : 300 + 44 %.<p></p><p></p>   Après 2 ans.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   1/2 ancienneté au-delà de 2 ans.<p></p><p></p><p></p>   COEFFICIENT : 580.<p></p><p></p>   SITUATION ACTUELLE : Après 18 ans : 300 + 55 %.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   1/2 ancienneté + 6 mois.<p></p><p></p><p></p>   COEFFICIENT : 580.<p></p><p></p>   SITUATION ACTUELLE : Après 21 ans : 300 + 66 %.<p></p><p></p>   Avant 2 ans.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée + 2 ans.<p></p><p></p><p></p>   COEFFICIENT : 592.<p></p><p></p>   SITUATION ACTUELLE : Après 21 ans : 300 + 66 %.<p></p><p></p>   Après 2 ans.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée au-delà de 2 ans.<p></p><p></p><p></p>   COEFFICIENT : 592.<p></p><p></p>   SITUATION ACTUELLE : Après 25 ans : 300 + 71 %.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée.<p></p><p></p><p></p>   2. PUERICULTURE<p></p><p></p><p></p>   COEFFICIENT : 418.<p></p><p></p>   SITUATION ACTUELLE : Echelon de début.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Sans ancienneté.<p></p><p></p><p></p>   COEFFICIENT : 418.<p></p><p></p>   SITUATION ACTUELLE : Après 1 an.<p></p><p></p>   Avant 9 mois.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté majorée de 1 an et 3 mois.<p></p><p></p><p></p>   COEFFICIENT : 453.<p></p><p></p>   SITUATION ACTUELLE : Après 1 an.<p></p><p></p>   Après 9 mois.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   2/3 ancienneté conservée au-delà de 9 mois.<p></p><p></p><p></p>   COEFFICIENT : 453.<p></p><p></p>   SITUATION ACTUELLE :<p></p><p></p>   Après 2 ans 1/2.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée + 6 mois.<p></p><p></p><p></p>   COEFFICIENT : 453.<p></p><p></p>   SITUATION ACTUELLE : Après 4 ans.<p></p><p></p>   Avant 1 an.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée + 2 ans.<p></p><p></p><p></p>   COEFFICIENT : 495.<p></p><p></p>   SITUATION ACTUELLE : Après 4 ans.<p></p><p></p>   Après 1 an.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée au-delà de 1 an.<p></p><p></p><p></p>   COEFFICIENT : 495.<p></p><p></p>   SITUATION ACTUELLE : Après 5 ans 1/2.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   1/2 ancienneté + 6 mois.<p></p><p></p><p></p>   COEFFICIENT : 495.<p></p><p></p>   SITUATION ACTUELLE : Après 7 ans.<p></p><p></p>   Avant 2 ans 1/2.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté majorée de 1 an et 6 mois.<p></p><p></p><p></p>   COEFFICIENT : 542.<p></p><p></p>   SITUATION ACTUELLE : Après 7 ans.<p></p><p></p>   Après 2 ans 1/2.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée au-delà de 1 an et 6 mois.<p></p><p></p><p></p>   COEFFICIENT : 542.<p></p><p></p>   SITUATION ACTUELLE : Après 9 ans.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   1/2 ancienneté + 6 mois.<p></p><p></p><p></p>   COEFFICIENT : 542.<p></p><p></p>   SITUATION ACTUELLE : Après 12 ans.<p></p><p></p>   Avant 2 ans.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté majorée de 2 ans.<p></p><p></p><p></p>   COEFFICIENT : 542.<p></p><p></p>   SITUATION ACTUELLE : Après 12 ans.<p></p><p></p>   Après 2 ans.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   1/2 ancienneté au-delà de 2 ans.<p></p><p></p><p></p>   COEFFICIENT : 580.<p></p><p></p>   SITUATION ACTUELLE : Après 15 ans.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   1/2 ancienneté + 6 mois.<p></p><p></p><p></p>   COEFFICIENT : 580.<p></p><p></p>   SITUATION ACTUELLE : Après 18 ans.<p></p><p></p>   Avant 2 ans.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée + 2 ans.<p></p><p></p><p></p>   COEFFICIENT : 592.<p></p><p></p>   SITUATION ACTUELLE : Après 18 ans.<p></p><p></p>   Après 2 ans.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée au-delà de 2 ans.<p></p><p></p><p></p>   COEFFICIENT : 592.<p></p><p></p>   SITUATION ACTUELLE : Après 21 ans.<p></p><p></p>   Avant 2 ans.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée majorée d'un an.<p></p><p></p><p></p>   COEFFICIENT : 622.<p></p><p></p>   SITUATION ACTUELLE : Après 21 ans.<p></p><p></p>   Après 2 ans.<p></p><p></p>   SITUATION NOUVELLE :<p></p><p></p>   ANCIENNETE D'ECHELON :<p></p><p></p>   Ancienneté conservée au-delà de 2 ans.<p></p><p></p> Article 4.<p></p><p></p>   Les dispositions du présent avenant ont effet du 1er décembre 1988. <p></p><font color=\"808080\"><em>   NB: (1) La prime uniforme mensuelle a été supprimée par l'avenant n° 202 du 27 juin 1989 pour tous les emplois relevant dudit avenant. <p></p></em></font>",
+                  "nota": "   NB: (1) La prime uniforme mensuelle a été supprimée par l'avenant n° 202 du 27 juin 1989 pour tous les emplois relevant dudit avenant. <p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 197 1988-12-08 agréé par arrêté du 16 mars 1989 JORF 16 avril 1989",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 597542400000,
+                  "dateFin": 623635200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
