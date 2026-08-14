@@ -1,0 +1,69 @@
+# =====================================================================
+# WORKFLOW SÉPARÉ — Recensement international (UE / CEDH / OIT)
+# À placer dans le dépôt "droit" sous :  .github/workflows/intl-recensement.yml
+#
+# Totalement indépendant du workflow français (aspirateur) :
+#   - fichier différent, nom différent, déclencheurs propres ;
+#   - groupe de concurrence dédié -> ne s'entrecroise jamais avec le français ;
+#   - ne touche QUE les fichiers output/intl/*.json (jamais le corpus FR).
+#
+# Ce qu'il fait : lance les 3 scripts de RECENSEMENT (compter + lister les
+# identifiants), puis committe les résultats pour qu'on ait les vrais chiffres.
+# =====================================================================
+
+name: Recensement international (UE / CEDH / OIT)
+
+on:
+  workflow_dispatch: {}          # bouton "Run workflow" -> lancement manuel immédiat
+  schedule:
+    - cron: "0 4 1 * *"          # le 1er de chaque mois à 04:00 UTC (rythme propre)
+
+# Empêche deux exécutions simultanées de CE workflow, sans bloquer le français.
+concurrency:
+  group: intl-recensement
+  cancel-in-progress: false
+
+permissions:
+  contents: write                # nécessaire pour committer les résultats
+
+jobs:
+  recenser:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install requests beautifulsoup4
+
+      # continue-on-error : si UNE source doit encore être ajustée, les deux
+      # autres tournent quand même (utile en phase de calage).
+      - name: Recensement EUR-Lex (CELLAR)
+        run: python scripts/recense_eurlex.py
+        continue-on-error: true
+
+      - name: Recensement HUDOC (CEDH)
+        run: python scripts/recense_hudoc.py
+        continue-on-error: true
+
+      - name: Recensement NORMLEX (OIT)
+        run: python scripts/recense_normlex.py
+        continue-on-error: true
+
+      - name: Committer les résultats (output/intl/ uniquement)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/intl/*.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "Aucun changement à committer."
+          else
+            git commit -m "Recensement international (auto) [skip ci]"
+            git pull --rebase --autostash || true
+            git push || echo "Push à réessayer (conflit éventuel)."
+          fi
