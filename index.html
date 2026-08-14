@@ -261,14 +261,17 @@
 
   /* Examples grid (landing) */
   .ex-title{ font-family:'Manrope',sans-serif; font-size:15px; font-weight:800; color:var(--marine); margin:30px 0 12px; }
-  /* Encart SMIC (valeur lue depuis output/smic.json, purement informatif) */
-  .smic-card{ margin-top:26px; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; }
-  .smic-lbl{ font-family:'Manrope',sans-serif; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft); margin-bottom:10px; }
-  .smic-vals{ display:flex; align-items:center; flex-wrap:wrap; gap:8px 16px; }
-  .smic-h, .smic-m{ font-family:'Manrope',sans-serif; font-weight:800; font-size:22px; color:var(--violet-strong); line-height:1.15; }
-  .smic-h small, .smic-m small{ font-family:inherit; font-weight:600; font-size:12.5px; color:var(--ink-soft); }
-  .smic-sep{ width:1px; height:24px; background:var(--line); }
-  .smic-maj{ font-size:11.5px; color:var(--ink-soft); margin-top:10px; }
+  /* Panneau "Chiffres clés" (valeurs lues depuis output/valeurs.json) */
+  .cc-card{ margin-top:26px; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; }
+  .cc-title{ font-family:'Manrope',sans-serif; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft); margin-bottom:8px; }
+  .cc-item{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; padding:9px 0; border-top:1px solid var(--line-soft); }
+  .cc-item:first-of-type{ border-top:none; }
+  .cc-label{ font-size:14px; color:var(--ink); flex:1 1 auto; }
+  .cc-right{ display:flex; flex-direction:column; align-items:flex-end; flex:0 0 auto; text-align:right; }
+  .cc-val{ font-family:'Manrope',sans-serif; font-weight:800; font-size:17px; color:var(--violet-strong); white-space:nowrap; }
+  .cc-val small{ font-family:inherit; font-weight:600; font-size:11.5px; color:var(--ink-soft); }
+  .cc-date{ font-size:11px; color:var(--ink-soft); margin-top:1px; }
+  .cc-foot{ font-size:11px; color:var(--ink-soft); margin-top:12px; font-style:italic; }
 
   /* Dashboard (landing) */
   .stat-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:11px; margin:22px 0 18px; }
@@ -787,7 +790,7 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
       <div class="latest" id="latest-maj" hidden></div>
       <div class="ex-title">Exemples de recherches combinées</div>
       <div class="ex-grid" id="ex-grid"></div>
-      <div class="smic-card" id="smic-card" hidden></div>
+      <div class="cc-card" id="cc-card" hidden></div>
     </div>
   </section>
 
@@ -4299,33 +4302,32 @@ var EXAMPLES = [
   {q:'forfait jours cadre', t:'Forfait jours + cadre', s:'Temps de travail des cadres'},
   {q:'restauration astreinte', t:'Restauration + astreinte', s:'Secteur et sujet précis'}
 ];
-/* Encart SMIC. La valeur vit dans output/smic.json (un seul point à mettre à
-   jour). DÉFENSIF : si le fichier manque, est illisible, ou porte une valeur
-   hors bornes plausibles (garde-fou anti-valeur-aberrante), l'encart ne
-   s'affiche pas plutôt que de montrer un chiffre douteux. Purement factuel. */
-function renderSmic(){
-  var card=document.getElementById('smic-card'); if(!card) return;
-  fetchJSON('output/smic.json').then(function(s){
-    if(!s) return;
-    var h=parseFloat(s.horaire), m=parseFloat(s.mensuel);
-    // garde-fous : le SMIC horaire réel est autour de 12 € ; on refuse tout ce
-    // qui sort d'une fourchette large pour ne jamais afficher une aberration.
-    if(!(h>=8 && h<=30) || !(m>=1000 && m<=4000)) return;
-    var eur=function(x){ return x.toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2})+' €'; };
-    var dv='';
-    if(s.date_vigueur){
-      var p=String(s.date_vigueur).split('-');
-      if(p.length===3){
-        var MM=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
-        var j=parseInt(p[2],10);
-        dv=(j===1?'1er':j)+' '+MM[parseInt(p[1],10)-1]+' '+p[0];
-      }
-    }
-    card.innerHTML='<div class="smic-lbl">Salaire minimum (SMIC) — brut</div>'
-      + '<div class="smic-vals"><span class="smic-h">'+eur(h)+'<small> / heure</small></span>'
-      + '<span class="smic-sep"></span>'
-      + '<span class="smic-m">'+eur(m)+'<small> / mois (35 h)</small></span></div>'
-      + (dv?'<div class="smic-maj">En vigueur depuis le '+dv+'</div>':'');
+/* Panneau "Chiffres clés". Les valeurs vivent dans output/valeurs.json (une
+   LISTE d'items) : on ajoute/retire une valeur en éditant ce seul fichier,
+   sans toucher au code. DÉFENSIF par ligne : une valeur non numérique, nulle,
+   négative ou hors d'une fourchette plausible est ignorée (jamais de chiffre
+   aberrant). Si aucune valeur valide, le panneau ne s'affiche pas. Factuel. */
+function renderChiffres(){
+  var card=document.getElementById('cc-card'); if(!card) return;
+  var MM=['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
+  var fmtDate=function(d){ if(!d) return ''; var p=String(d).split('-'); if(p.length!==3) return '';
+    var j=parseInt(p[2],10); var mo=MM[parseInt(p[1],10)-1]; if(!mo) return '';
+    return (j===1?'1er':j)+' '+mo+' '+p[0]; };
+  var eur=function(x){ return x.toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2})+' €'; };
+  fetchJSON('output/valeurs.json').then(function(v){
+    if(!v || !Array.isArray(v.items)) return;
+    var rows=v.items.filter(function(it){
+      var x=parseFloat(it && it.valeur);
+      return isFinite(x) && x>0 && x<1e7 && it && it.label;  // garde-fou anti-aberration
+    }).map(function(it){
+      var x=parseFloat(it.valeur);
+      return '<div class="cc-item"><span class="cc-label">'+escapeHtml(it.label)+'</span>'
+        + '<span class="cc-right"><span class="cc-val">'+eur(x)+(it.suffixe?' <small>'+escapeHtml(it.suffixe)+'</small>':'')+'</span>'
+        + (it.date?'<span class="cc-date">depuis le '+fmtDate(it.date)+'</span>':'')+'</span></div>';
+    }).join('');
+    if(!rows) return;
+    card.innerHTML='<div class="cc-title">Chiffres clés</div>'+rows
+      + '<div class="cc-foot">Valeurs officielles en vigueur'+(v.maj?(' · à jour au '+fmtDate(v.maj)):'')+'.</div>';
     card.hidden=false;
   }).catch(function(){});
 }
@@ -4345,7 +4347,7 @@ document.getElementById('ex-grid').addEventListener('click', function(e){
    Initialisation
    ==========================================================================*/
 renderExamples();
-renderSmic();
+renderChiffres();
 // Menu en ACCORDÉON : les 4 groupes se déplient/replient. Un seul ouvert à la
 // fois (comme des onglets), pour un menu compact sur mobile. Au départ, on ouvre
 // le groupe qui contient la vue active (Recherche).
