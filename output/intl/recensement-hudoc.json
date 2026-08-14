@@ -3,7 +3,7 @@
   "champ": "Arrets (JUDGMENTS) portant sur l'article 8 ou 14 — a resserrer sur le contexte travail",
   "date_recensement": "2026-08-14",
   "total_hudoc_annonce": 5214,
-  "total_collecte": 5214,
+  "total_collecte": 5212,
   "note": "Compte LARGE (tous art.8/14). L'etape suivante resserrera sur les mots-cles 'travail/emploi/surveillance' via kpthesaurus. Verifier la structure de reponse au 1er run.",
   "items": [
     {
@@ -23735,28 +23735,12 @@
       "date": "2021-03-18T00:00:00"
     },
     {
-      "itemid": "001-213375",
-      "docname": "CASE OF SABANCHIYEVA AND OTHERS v. RUSSIA - [Russian translation] summary by Development of Legal Systems Publ. Co",
-      "appno": "38450/05",
-      "ecli": "ECLI:CE:ECHR:2013:0606JUD003845005",
-      "article": "3;8;8-1;8-2;13;13+8;14;14+8;34;38;41",
-      "date": "2013-06-06T00:00:00"
-    },
-    {
       "itemid": "001-213426",
       "docname": "CASE OF R.M.S. v. SPAIN - [Russian translation] summary by Development of Legal Systems Publ. Co",
       "appno": "28775/12",
       "ecli": "ECLI:CE:ECHR:2013:0618JUD002877512",
       "article": "8;8-1;35;35-1;41",
       "date": "2013-06-18T00:00:00"
-    },
-    {
-      "itemid": "001-213427",
-      "docname": "CASE OF AVILKINA AND OTHERS v. RUSSIA - [Russian translation] summary by Development of Legal Systems Publ. Co",
-      "appno": "1585/09",
-      "ecli": "ECLI:CE:ECHR:2013:0606JUD000158509",
-      "article": "8;8-1;8-2;35;41",
-      "date": "2013-06-06T00:00:00"
     },
     {
       "itemid": "001-213430",
@@ -40005,6 +39989,22 @@
       "ecli": "ECLI:CE:ECHR:2007:0410JUD000633905",
       "article": "2;2-1;8;8-1;14;14+8",
       "date": "2007-04-10T00:00:00"
+    },
+    {
+      "itemid": "001-80075",
+      "docname": "CASE OF IVANOVA v. BULGARIA",
+      "appno": "52435/99",
+      "ecli": "ECLI:CE:ECHR:2007:0412JUD005243599",
+      "article": "9;9-1;9-2;14;41",
+      "date": "2007-04-12T00:00:00"
+    },
+    {
+      "itemid": "001-80156",
+      "docname": "AFFAIRE IVANOVA c. BULGARIE",
+      "appno": "52435/99",
+      "ecli": "ECLI:CE:ECHR:2007:0412JUD005243599",
+      "article": "9;9-1;9-2;14;41",
+      "date": "2007-04-12T00:00:00"
     }
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "source": "NORMLEX / OIT",
+  "date_recensement": "2026-08-14",
+  "statut": "BLOQUE",
+  "dernier_retour": "HTTP 403 (https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:11200:0::NO::P11200_COUNTRY_ID:102691)",
+  "total_detecte": 0,
+  "note": "L'OIT bloque l'acces automatise (probable filtrage des IP de datacenter GitHub). Repli recommande : liste CUREE des conventions ratifiees par la France pertinentes pour un salarie (petite, stable). Alternative lourde : navigateur headless (Playwright) pour cette source."
+}
