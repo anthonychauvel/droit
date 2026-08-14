@@ -261,6 +261,14 @@
 
   /* Examples grid (landing) */
   .ex-title{ font-family:'Manrope',sans-serif; font-size:15px; font-weight:800; color:var(--marine); margin:30px 0 12px; }
+  /* Encart SMIC (valeur lue depuis output/smic.json, purement informatif) */
+  .smic-card{ margin-top:26px; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; }
+  .smic-lbl{ font-family:'Manrope',sans-serif; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft); margin-bottom:10px; }
+  .smic-vals{ display:flex; align-items:center; flex-wrap:wrap; gap:8px 16px; }
+  .smic-h, .smic-m{ font-family:'Manrope',sans-serif; font-weight:800; font-size:22px; color:var(--violet-strong); line-height:1.15; }
+  .smic-h small, .smic-m small{ font-family:inherit; font-weight:600; font-size:12.5px; color:var(--ink-soft); }
+  .smic-sep{ width:1px; height:24px; background:var(--line); }
+  .smic-maj{ font-size:11.5px; color:var(--ink-soft); margin-top:10px; }
 
   /* Dashboard (landing) */
   .stat-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:11px; margin:22px 0 18px; }
@@ -779,6 +787,7 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
       <div class="latest" id="latest-maj" hidden></div>
       <div class="ex-title">Exemples de recherches combinées</div>
       <div class="ex-grid" id="ex-grid"></div>
+      <div class="smic-card" id="smic-card" hidden></div>
     </div>
   </section>
 
@@ -4290,6 +4299,37 @@ var EXAMPLES = [
   {q:'forfait jours cadre', t:'Forfait jours + cadre', s:'Temps de travail des cadres'},
   {q:'restauration astreinte', t:'Restauration + astreinte', s:'Secteur et sujet précis'}
 ];
+/* Encart SMIC. La valeur vit dans output/smic.json (un seul point à mettre à
+   jour). DÉFENSIF : si le fichier manque, est illisible, ou porte une valeur
+   hors bornes plausibles (garde-fou anti-valeur-aberrante), l'encart ne
+   s'affiche pas plutôt que de montrer un chiffre douteux. Purement factuel. */
+function renderSmic(){
+  var card=document.getElementById('smic-card'); if(!card) return;
+  fetchJSON('output/smic.json').then(function(s){
+    if(!s) return;
+    var h=parseFloat(s.horaire), m=parseFloat(s.mensuel);
+    // garde-fous : le SMIC horaire réel est autour de 12 € ; on refuse tout ce
+    // qui sort d'une fourchette large pour ne jamais afficher une aberration.
+    if(!(h>=8 && h<=30) || !(m>=1000 && m<=4000)) return;
+    var eur=function(x){ return x.toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2})+' €'; };
+    var dv='';
+    if(s.date_vigueur){
+      var p=String(s.date_vigueur).split('-');
+      if(p.length===3){
+        var MM=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+        var j=parseInt(p[2],10);
+        dv=(j===1?'1er':j)+' '+MM[parseInt(p[1],10)-1]+' '+p[0];
+      }
+    }
+    card.innerHTML='<div class="smic-lbl">Salaire minimum (SMIC) — brut</div>'
+      + '<div class="smic-vals"><span class="smic-h">'+eur(h)+'<small> / heure</small></span>'
+      + '<span class="smic-sep"></span>'
+      + '<span class="smic-m">'+eur(m)+'<small> / mois (35 h)</small></span></div>'
+      + (dv?'<div class="smic-maj">En vigueur depuis le '+dv+'</div>':'');
+    card.hidden=false;
+  }).catch(function(){});
+}
+
 function renderExamples(){
   document.getElementById('ex-grid').innerHTML = EXAMPLES.map(function(e){
     return '<div class="ex" data-q="'+escAttr(e.q)+'"><div class="k">'+escapeHtml(e.q)+'</div>'+
@@ -4305,6 +4345,7 @@ document.getElementById('ex-grid').addEventListener('click', function(e){
    Initialisation
    ==========================================================================*/
 renderExamples();
+renderSmic();
 // Menu en ACCORDÉON : les 4 groupes se déplient/replient. Un seul ouvert à la
 // fois (comme des onglets), pour un menu compact sur mobile. Au départ, on ouvre
 // le groupe qui contient la vue active (Recherche).
