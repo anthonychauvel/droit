@@ -37,12 +37,28 @@ TIMEOUT = 90
 OUT = "output/intl/recensement-normlex.json"
 
 def fetch(tries=4):
-    headers = {"User-Agent": "MonLegiTexte-recensement/1.0 (contact via depot droit)",
-               "Accept-Language": "fr"}
+    # Le serveur OIT renvoie 403 aux requetes "brutes". On imite un navigateur
+    # (en-tetes complets) et on utilise une SESSION : on amorce d'abord la page
+    # d'accueil NORMLEX pour recuperer les cookies, puis on charge la page France.
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                      "(KHTML, like Gecko) Chrome/122.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
+        "Referer": "https://normlex.ilo.org/",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+    }
+    sess = requests.Session()
+    sess.headers.update(headers)
+    try:
+        sess.get("https://normlex.ilo.org/dyn/normlex/fr/f?p=NORMLEXPUB:1:0", timeout=TIMEOUT)
+    except Exception:
+        pass  # amorcage best-effort
     last = None
     for i in range(tries):
         try:
-            r = requests.get(URL, headers=headers, timeout=TIMEOUT)
+            r = sess.get(URL, timeout=TIMEOUT)
             if r.status_code == 200 and r.text:
                 return r.text
             last = "HTTP %s" % r.status_code

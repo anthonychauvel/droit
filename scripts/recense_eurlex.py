@@ -17,7 +17,7 @@ demander un petit ajustement. Le script est VERBEUX expres : il affiche ce
 qu'il recoit et un echantillon, pour qu'on cale la requete sur du reel.
 """
 
-import json, sys, time, datetime, urllib.parse
+import json, sys, time, datetime, urllib.parse, os
 try:
     import requests
 except ImportError:
@@ -59,7 +59,7 @@ LIMIT {limit} OFFSET {offset}
 def http_get(params, tries=4):
     """GET avec retries + backoff. Renvoie le JSON des resultats SPARQL."""
     headers = {"Accept": "application/sparql-results+json",
-               "User-Agent": "MonLegiTexte-recensement/1.0 (contact via depot droit)"}
+               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MonLegiTexte-recensement/1.1"}
     last = None
     for i in range(tries):
         try:

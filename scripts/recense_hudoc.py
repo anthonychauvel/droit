@@ -32,7 +32,10 @@ BASE = "https://hudoc.echr.coe.int/app/query/results"
 # NB: '%22' = guillemet ; la requete est deja url-encodee cote 'query'.
 QUERY = ('contentsitename:ECHR '
          'AND (documentcollectionid2:"JUDGMENTS") '
-         'AND (article:"8" OR article:"14")')
+         'AND (article:"8" OR article:"14") '
+         # resserrement sur le monde du travail (a ajuster au run suivant) :
+         'AND (employment OR employee OR dismissal OR workplace OR employer '
+         'OR "trade union" OR occupational OR "private life")')
 FIELDS = "itemid,docname,appno,article,ecli,kpdate,conclusion"
 PAGE = 500
 MAX_PAGES = 40
