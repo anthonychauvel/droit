@@ -1,69 +1,69 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 r"""
-RECENSEMENT EUR-Lex — droit social / travail de l'Union europeenne.
+RECENSEMENT EUR-Lex v2 — droit social / travail de l'Union europeenne.
 
-But : COMPTER, sans rien telecharger d'autre, combien d'actes (directives +
-reglements) EN VIGUEUR relevent du champ social/travail, et sortir la liste de
-leurs identifiants CELEX. Sert a dimensionner l'aspiration avant de la lancer.
+Corrige la requete SPARQL (proprietes exactes reprises du package R 'eurlex')
+et ESSAIE PLUSIEURS FORMATS de code de repertoire automatiquement, pour
+trouver en UN seul run celui qui renvoie des resultats.
 
-Source : point d'acces public CELLAR SPARQL (Office des publications de l'UE).
-  -> PAS de cle, PAS de compte (contrairement a PISTE cote francais).
-  -> Pas de CORS : appel cote script uniquement (ce qui est notre cas).
-
-/!\ A CONFIRMER AU 1er RUN : la requete SPARQL ci-dessous suit les schemas
-documentes de CELLAR, mais les proprietes exactes de l'ontologie peuvent
-demander un petit ajustement. Le script est VERBEUX expres : il affiche ce
-qu'il recoit et un echantillon, pour qu'on cale la requete sur du reel.
+Source : point d'acces public CELLAR SPARQL (sans cle, sans compte).
 """
 
-import json, sys, time, datetime, urllib.parse, os
+import json, sys, time, datetime, os
 try:
     import requests
 except ImportError:
     print("ERREUR: le module 'requests' est requis (pip install requests).", file=sys.stderr)
     sys.exit(2)
 
-# ------------------------------------------------------------------ REGLAGES
 ENDPOINT = "http://publications.europa.eu/webapi/rdf/sparql"
-# Code de repertoire EUR-Lex du champ vise :
-#   05.20 = "Libre circulation des travailleurs et politique sociale"
-DIRECTORY_PREFIX = "05.20"
-PAGE = 500          # taille de page (CELLAR plafonne + timeout 60s -> on pagine)
-MAX_PAGES = 40      # garde-fou anti-boucle
+CODES_CANDIDATS = ["0520", "05.20", "05", "052020", "05.20.20"]
+PAGE = 500
+MAX_PAGES = 60
 TIMEOUT = 90
 OUT = "output/intl/recensement-eurlex.json"
 
-# Requete : directives + reglements portant sur un concept de repertoire dont
-# la notation commence par 05.20. On remonte le CELEX, la date, l'etat.
-SPARQL = """
-PREFIX cdm:  <http://publications.europa.eu/ontology/cdm#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-SELECT DISTINCT ?celex ?date ?inforce WHERE {{
-  ?work cdm:work_has_resource-type ?type .
-  FILTER(?type IN (
-    <http://publications.europa.eu/resource/authority/resource-type/DIR>,
-    <http://publications.europa.eu/resource/authority/resource-type/REG>
-  ))
-  ?work cdm:resource_legal_id_celex ?celex .
-  ?work cdm:work_is_about_concept_directory-code ?dir .
-  ?dir skos:notation ?code .
-  FILTER(STRSTARTS(STR(?code), "{prefix}"))
-  OPTIONAL {{ ?work cdm:resource_legal_in-force ?inforce . }}
-  OPTIONAL {{ ?work cdm:work_date_document ?date . }}
-}}
-ORDER BY ?celex
-LIMIT {limit} OFFSET {offset}
-"""
+TYPES = ("<http://publications.europa.eu/resource/authority/resource-type/DIR>||"
+         "?type=<http://publications.europa.eu/resource/authority/resource-type/DIR_IMPL>||"
+         "?type=<http://publications.europa.eu/resource/authority/resource-type/DIR_DEL>||"
+         "?type=<http://publications.europa.eu/resource/authority/resource-type/REG>||"
+         "?type=<http://publications.europa.eu/resource/authority/resource-type/REG_IMPL>||"
+         "?type=<http://publications.europa.eu/resource/authority/resource-type/REG_DEL>")
 
-def http_get(params, tries=4):
-    """GET avec retries + backoff. Renvoie le JSON des resultats SPARQL."""
+def bloc_where(code):
+    return """
+  ?work cdm:work_has_resource-type ?type.
+  FILTER(?type=%s)
+  VALUES (?value) {
+    (<http://publications.europa.eu/resource/authority/fd_555/%s>)
+    (<http://publications.europa.eu/resource/authority/dir-eu-legal-act/%s>)
+  }
+  { ?work cdm:resource_legal_is_about_concept_directory-code ?value. }
+  UNION
+  { ?work cdm:resource_legal_is_about_concept_directory-code ?dir.
+    ?value skos:narrower+ ?dir. }
+""" % (TYPES, code, code)
+
+PREFIXES = ("PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>\n"
+            "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n")
+
+def q_count(code):
+    return PREFIXES + "SELECT (COUNT(DISTINCT ?work) AS ?n) WHERE {" + bloc_where(code) + "}"
+
+def q_list(code, limit, offset):
+    return (PREFIXES + "SELECT DISTINCT ?celex ?force WHERE {" + bloc_where(code) +
+            "  OPTIONAL { ?work cdm:resource_legal_id_celex ?celex. }\n"
+            "  OPTIONAL { ?work cdm:resource_legal_in-force ?force. }\n"
+            "} ORDER BY ?celex LIMIT %d OFFSET %d" % (limit, offset))
+
+def sparql(query, tries=4):
     headers = {"Accept": "application/sparql-results+json",
-               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MonLegiTexte-recensement/1.1"}
+               "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MonLegiTexte-recensement/2.0"}
     last = None
     for i in range(tries):
         try:
-            r = requests.get(ENDPOINT, params=params, headers=headers, timeout=TIMEOUT)
+            r = requests.get(ENDPOINT, params={"query": query}, headers=headers, timeout=TIMEOUT)
             if r.status_code == 200:
                 return r.json()
             last = "HTTP %s" % r.status_code
@@ -74,39 +74,63 @@ def http_get(params, tries=4):
         time.sleep(wait)
     raise RuntimeError("Echec requete SPARQL: %s" % last)
 
+def compter(code):
+    try:
+        data = sparql(q_count(code))
+        b = data.get("results", {}).get("bindings", [])
+        return int(b[0]["n"]["value"]) if b else 0
+    except Exception as e:
+        print("  (code %s: erreur %s)" % (code, e))
+        return -1
+
 def main():
-    print("=== Recensement EUR-Lex (champ social/travail, code %s) ===" % DIRECTORY_PREFIX)
-    celex = {}   # celex -> {date, inforce}
+    print("=== Recensement EUR-Lex v2 (champ social/travail) ===")
+    print("Test des formats de code de repertoire :")
+    scores = {}
+    for code in CODES_CANDIDATS:
+        n = compter(code)
+        scores[code] = n
+        print("  code %-9s -> %s resultats" % (code, n if n >= 0 else "erreur"))
+        time.sleep(1)
+
+    best = max(scores, key=lambda c: scores[c])
+    if scores[best] <= 0:
+        result = {"source": "EUR-Lex / CELLAR", "date_recensement": datetime.date.today().isoformat(),
+                  "total_actes": 0, "codes_testes": scores,
+                  "note": "Aucun code n'a renvoye de resultats. A investiguer : format du code fd_555."}
+        os.makedirs(os.path.dirname(OUT), exist_ok=True)
+        with open(OUT, "w", encoding="utf-8") as f:
+            json.dump(result, f, ensure_ascii=False, indent=2)
+        print("\n/!\\ Aucun resultat sur tous les codes. Voir output pour le detail.")
+        return
+
+    print("\n-> Code retenu : %s (%d actes). Recuperation de la liste..." % (best, scores[best]))
+    celex = {}
     for page in range(MAX_PAGES):
-        q = SPARQL.format(prefix=DIRECTORY_PREFIX, limit=PAGE, offset=page * PAGE)
-        print("Page %d (offset %d)..." % (page + 1, page * PAGE))
-        data = http_get({"query": q})
+        data = sparql(q_list(best, PAGE, page * PAGE))
         rows = data.get("results", {}).get("bindings", [])
         if not rows:
-            print("  (plus de resultats)")
             break
         for b in rows:
             c = b.get("celex", {}).get("value")
-            if not c:
-                continue
-            celex[c] = {
-                "date": b.get("date", {}).get("value", ""),
-                "inforce": b.get("inforce", {}).get("value", ""),
-            }
-        print("  +%d lignes (total unique: %d)" % (len(rows), len(celex)))
+            if c:
+                celex[c] = b.get("force", {}).get("value", "")
+        print("  page %d : +%d (total %d)" % (page + 1, len(rows), len(celex)))
         if len(rows) < PAGE:
             break
-        time.sleep(1)  # politesse
+        time.sleep(1)
 
     ids = sorted(celex.keys())
-    en_vigueur = [c for c in ids if celex[c]["inforce"] in ("true", "1", "")]
+    en_vigueur = [c for c in ids if celex[c] in ("true", "1", "")]
     result = {
         "source": "EUR-Lex / CELLAR",
-        "champ": "Directives + reglements, code repertoire %s (droit social/travail)" % DIRECTORY_PREFIX,
+        "champ": "Directives + reglements, repertoire %s (droit social/travail)" % best,
         "date_recensement": datetime.date.today().isoformat(),
+        "code_repertoire_retenu": best,
+        "codes_testes": scores,
         "total_actes": len(ids),
         "dont_en_vigueur_estime": len(en_vigueur),
-        "note": "Compte indicatif. 'en vigueur' depend du champ inforce (a fiabiliser au 1er run). Ne COMPREND PAS la jurisprudence CJUE (a recenser separement).",
+        "note": "Ne comprend PAS la jurisprudence CJUE (a recenser separement).",
         "celex": ids,
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
@@ -114,14 +138,11 @@ def main():
         json.dump(result, f, ensure_ascii=False, indent=2)
 
     print("\n--- RESULTAT ---")
-    print("Actes trouves      : %d" % len(ids))
-    print("Dont en vigueur    : ~%d" % len(en_vigueur))
+    print("Code repertoire    : %s" % best)
+    print("Actes trouves      : %d (dont ~%d en vigueur)" % (len(ids), len(en_vigueur)))
     print("Ecrit dans         : %s" % OUT)
     if ids:
         print("Echantillon CELEX  : %s" % ", ".join(ids[:8]))
-    else:
-        print("/!\\ AUCUN resultat : la requete SPARQL est probablement a ajuster "
-              "(proprietes d'ontologie). Voir la doc CELLAR / le package R 'eurlex'.")
 
 if __name__ == "__main__":
     main()
