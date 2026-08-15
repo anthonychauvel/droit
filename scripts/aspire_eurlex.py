@@ -1,21 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 r"""
-ASPIRATION EUR-Lex — telecharge le TEXTE INTEGRAL de chaque acte recense.
+ASPIRATION EUR-Lex v2 — via CELLAR (publications.europa.eu), pas eur-lex.europa.eu.
 
-Lit la liste des CELEX depuis output/intl/recensement-eurlex.json, telecharge
-le texte (rendu HTML d'EUR-Lex) et le range en JSON, un fichier par acte, dans
-output/intl/textes-eurlex/<CELEX>.json.
+Le run precedent : tout en "echec reseau" -> eur-lex.europa.eu bloque le runner.
+Or CELLAR (publications.europa.eu) est joignable (le recensement le prouve).
+On reprend donc la methode EXACTE du package R 'eurlex' pour recuperer le texte :
+  URL   : http://publications.europa.eu/resource/celex/<CELEX>
+  En-tetes Accept : text/html, ...  + Accept-Language: fr
+  Statut 200 -> contenu direct ; 300 -> plusieurs versions, on suit les liens.
 
-- REPRENABLE : saute les actes deja telecharges (relance sans re-tout-faire).
-- PAR LOTS : traite au plus LOT actes par run (evite de depasser la duree d'un
-  job). Relancer le workflow reprend la suite.
-- DEFENSIF : retries + backoff ; si le texte extrait est vide/trop court, on
-  marque l'acte "a_revoir" (on n'ecrit pas un fichier bidon).
-
-Source : rendu HTML public d'EUR-Lex (sans cle).
-/!\ L'extraction du texte depuis le HTML peut demander un ajustement au 1er run
-(structure de page). Le script est verbeux et compte les succes/echecs.
+Ecrit un JSON par acte dans output/intl/textes-eurlex/<CELEX>.json.
+REPRENABLE (saute les faits), PAR LOTS, avec log des STATUTS HTTP.
 """
 
 import json, sys, time, datetime, os, re
@@ -30,84 +26,106 @@ except ImportError:
 
 RECENSEMENT = "output/intl/recensement-eurlex.json"
 DEST = "output/intl/textes-eurlex"
-LOT = 250                 # nb max d'actes telecharges par run (reprenable)
+LOT = 250
 TIMEOUT = 60
-MIN_LEN = 200             # en-deca, on considere l'extraction ratee
-# Rendu texte d'un acte (FR ; bascule EN si FR absent geree plus bas).
-URL_FR = "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:%s"
-URL_EN = "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:%s"
+MIN_LEN = 200
+BASE = "http://publications.europa.eu/resource/celex/%s"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                  "(KHTML, like Gecko) Chrome/122.0 Safari/537.36",
-    "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MonLegiTexte-aspiration/2.0",
+    "Accept-Language": "fr",
+    "Content-Language": "fr",
+    "Accept": ("text/html, text/html;type=simplified, text/plain, "
+               "application/xhtml+xml, application/xhtml+xml;type=simplified"),
 }
 
-def get(url, tries=3):
+STATUTS = {}  # compteur de statuts HTTP pour diagnostic
+
+def _get(url, tries=3):
+    last = None
     for i in range(tries):
         try:
-            r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-            if r.status_code == 200 and r.text:
-                return r.text
+            r = requests.get(url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
+            return r
         except Exception as e:
-            pass
-        time.sleep(2 ** i)
-    return None
+            last = repr(e)
+            time.sleep(2 ** i)
+    return None  # echec reseau franc
+
+def fetch_celex(celex):
+    """Renvoie (html, statut). Gere 200 (direct) et 300 (multi-versions)."""
+    r = _get(BASE % celex)
+    if r is None:
+        STATUTS["reseau"] = STATUTS.get("reseau", 0) + 1
+        return None, "reseau"
+    STATUTS[r.status_code] = STATUTS.get(r.status_code, 0) + 1
+    if r.status_code == 200 and r.text:
+        return r.text, 200
+    if r.status_code == 300 and r.text:
+        # Plusieurs manifestations : suivre les liens (on privilegie FR).
+        soup = BeautifulSoup(r.text, "html.parser")
+        liens = [a.get("href") for a in soup.find_all("a") if a.get("href")]
+        liens = [l for l in liens if l and l.startswith("http")]
+        liens_fr = [l for l in liens if "/FR/" in l or ".FRA." in l or "_FR." in l] or liens
+        morceaux = []
+        for l in liens_fr[:6]:
+            rr = _get(l)
+            if rr is not None and rr.status_code == 200 and rr.text:
+                morceaux.append(rr.text)
+        if morceaux:
+            return "\n".join(morceaux), 300
+    return None, r.status_code
 
 def extraire_texte(html):
-    """Extrait le texte principal, tolerant a la structure."""
     soup = BeautifulSoup(html, "html.parser")
-    for bad in soup(["script", "style", "nav", "header", "footer"]):
+    for bad in soup(["script", "style", "nav", "header", "footer", "link", "meta"]):
         bad.decompose()
-    # EUR-Lex : le corps de l'acte est souvent dans un conteneur dedie.
     cont = (soup.find("div", id="text") or soup.find("div", class_="eli-main-content")
-            or soup.find("div", id="document1") or soup.body or soup)
+            or soup.body or soup)
     txt = cont.get_text("\n", strip=True)
     txt = re.sub(r"\n{3,}", "\n\n", txt)
-    # titre
     t = soup.find("title")
-    titre = (t.get_text(strip=True) if t else "").replace(" - EUR-Lex", "")
+    titre = (t.get_text(strip=True) if t else "").replace(" - EUR-Lex", "").strip()
     return titre, txt
-
-def charger_celex():
-    with open(RECENSEMENT, encoding="utf-8") as f:
-        d = json.load(f)
-    return d.get("celex", [])
 
 def main():
     if not os.path.exists(RECENSEMENT):
-        print("ERREUR: %s introuvable (lance d'abord le recensement)." % RECENSEMENT); sys.exit(1)
+        print("ERREUR: %s introuvable." % RECENSEMENT); sys.exit(1)
     os.makedirs(DEST, exist_ok=True)
-    celex = charger_celex()
-    total = len(celex)
-    faits = set(f[:-5] for f in os.listdir(DEST) if f.endswith(".json"))
+    with open(RECENSEMENT, encoding="utf-8") as f:
+        celex = json.load(f).get("celex", [])
+    faits = set(x[:-5] for x in os.listdir(DEST) if x.endswith(".json"))
     a_faire = [c for c in celex if c not in faits]
-    print("=== Aspiration EUR-Lex ===")
-    print("Total recense : %d | deja faits : %d | restants : %d" % (total, len(faits), len(a_faire)))
-    print("Ce run en traite au plus %d." % LOT)
+    print("=== Aspiration EUR-Lex v2 (via CELLAR) ===")
+    print("Total %d | faits %d | restants %d | ce lot: %d max" % (len(celex), len(faits), len(a_faire), LOT))
 
     ok = ko = 0
     for c in a_faire[:LOT]:
-        html = get(URL_FR % c) or get(URL_EN % c)
+        html, st = fetch_celex(c)
         if not html:
-            ko += 1; print("  %s : echec reseau" % c); continue
+            ko += 1
+            if ko <= 8: print("  %s : statut %s" % (c, st))
+            continue
         titre, texte = extraire_texte(html)
         if not texte or len(texte) < MIN_LEN:
-            ko += 1; print("  %s : texte vide/trop court (a_revoir)" % c); continue
-        rec = {"celex": c, "source": "EUR-Lex", "titre": titre,
-               "url": (URL_FR % c), "date_aspiration": datetime.date.today().isoformat(),
-               "texte": texte}
+            ko += 1
+            if ko <= 8: print("  %s : texte trop court (statut %s)" % (c, st))
+            continue
+        rec = {"celex": c, "source": "EUR-Lex", "titre": titre, "statut_http": st,
+               "url": BASE % c, "date_aspiration": datetime.date.today().isoformat(), "texte": texte}
         with open(os.path.join(DEST, c + ".json"), "w", encoding="utf-8") as f:
             json.dump(rec, f, ensure_ascii=False)
         ok += 1
-        if ok % 25 == 0:
-            print("  ... %d telecharges (%d Ko dernier)" % (ok, len(texte) // 1024))
-        time.sleep(0.5)  # politesse
+        if ok % 25 == 0: print("  ... %d OK (dernier: %d Ko)" % (ok, len(texte) // 1024))
+        time.sleep(0.4)
 
-    restants = len(a_faire) - min(LOT, len(a_faire))
     print("\n--- RESULTAT DU RUN ---")
-    print("Telecharges OK : %d | echecs : %d" % (ok, ko))
-    print("Restants apres ce run : %d (relance le workflow pour continuer)" % max(0, restants))
+    print("OK: %d | echecs: %d" % (ok, ko))
+    print("Statuts HTTP rencontres: %s" % STATUTS)
+    print("Restants apres ce run: %d" % max(0, len(a_faire) - min(LOT, len(a_faire))))
+    if ok == 0 and ko > 0:
+        print("/!\\ 0 succes. Regarde 'Statuts HTTP' : 403/blocage, 406 (format), "
+              "ou 'reseau'. On ajuste selon ce qu'on voit.")
 
 if __name__ == "__main__":
     main()
