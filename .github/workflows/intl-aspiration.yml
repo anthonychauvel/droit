@@ -45,6 +45,14 @@ jobs:
         run: python scripts/aspire_eurlex.py
         continue-on-error: true
 
+      - name: Aspiration CJUE (un lot)
+        run: python scripts/aspire_cjue.py
+        continue-on-error: true
+
+      - name: Aspiration HUDOC / CEDH (un lot)
+        run: python scripts/aspire_hudoc.py
+        continue-on-error: true
+
       - name: Committer les textes (output/intl/textes-* uniquement)
         run: |
           git config user.name  "github-actions[bot]"
