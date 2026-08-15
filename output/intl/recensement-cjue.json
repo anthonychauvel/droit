@@ -1,35 +1,3683 @@
 {
   "source": "CJUE / CELLAR",
+  "champ": "Arrets/ordonnances/avis citant les grandes directives sociales UE",
   "date_recensement": "2026-08-15",
-  "total_arrets": 0,
-  "directives_ciblees": [
-    "32003L0088",
-    "31993L0104",
-    "31999L0070",
-    "31997L0081",
-    "32008L0104",
-    "32019L1152",
-    "31991L0533",
-    "31996L0071",
-    "32018L0957",
-    "32014L0067",
-    "31998L0059",
-    "32001L0023",
-    "32002L0014",
-    "32009L0038",
-    "31994L0033",
-    "32008L0094",
-    "32006L0054",
-    "32000L0078",
-    "32000L0043",
-    "32019L1158",
-    "31992L0085",
-    "32010L0041",
-    "31989L0391",
-    "32004R0883",
-    "32009R0987",
-    "32023L0970",
-    "32024L2831"
-  ],
-  "note": "Aucun arret cite ces directives (a verifier : propriete work_cites_work / format CELEX)."
+  "methode": "une requete par directive (evite le timeout de la requete combinee)",
+  "total_arrets_uniques": 911,
+  "par_directive": {
+    "32003L0088": 118,
+    "31993L0104": 50,
+    "31999L0070": 195,
+    "31997L0081": 39,
+    "32008L0104": 14,
+    "32019L1152": 2,
+    "31991L0533": 18,
+    "31996L0071": 40,
+    "32018L0957": 3,
+    "32014L0067": 10,
+    "31998L0059": 36,
+    "32001L0023": 53,
+    "32002L0014": 20,
+    "32009L0038": 2,
+    "31994L0033": 2,
+    "32008L0094": 26,
+    "32006L0054": 66,
+    "32000L0078": 169,
+    "32000L0043": 28,
+    "32019L1158": 5,
+    "31992L0085": 48,
+    "32010L0041": 4,
+    "31989L0391": 64,
+    "32004R0883": 148,
+    "32009R0987": 61,
+    "32023L0970": 0,
+    "32024L2831": 0
+  },
+  "directives_en_erreur": [],
+  "items": [
+    {
+      "celex": "61993CJ0032",
+      "ecli": "ECLI:EU:C:1994:300"
+    },
+    {
+      "celex": "61993CJ0342",
+      "ecli": "ECLI:EU:C:1996:46"
+    },
+    {
+      "celex": "61994CJ0084",
+      "ecli": "ECLI:EU:C:1996:431"
+    },
+    {
+      "celex": "61995CJ0074",
+      "ecli": "ECLI:EU:C:1996:491"
+    },
+    {
+      "celex": "61995CJ0079",
+      "ecli": "ECLI:EU:C:1996:360"
+    },
+    {
+      "celex": "61995CJ0400",
+      "ecli": "ECLI:EU:C:1997:259"
+    },
+    {
+      "celex": "61996CJ0066",
+      "ecli": "ECLI:EU:C:1998:549"
+    },
+    {
+      "celex": "61996CJ0253",
+      "ecli": "ECLI:EU:C:1997:585"
+    },
+    {
+      "celex": "61996CJ0369",
+      "ecli": "ECLI:EU:C:1999:575"
+    },
+    {
+      "celex": "61996CJ0394",
+      "ecli": "ECLI:EU:C:1998:331"
+    },
+    {
+      "celex": "61996CJ0411",
+      "ecli": "ECLI:EU:C:1998:506"
+    },
+    {
+      "celex": "61997CJ0333",
+      "ecli": "ECLI:EU:C:1999:512"
+    },
+    {
+      "celex": "61998CJ0049",
+      "ecli": "ECLI:EU:C:2001:564"
+    },
+    {
+      "celex": "61998CJ0165",
+      "ecli": "ECLI:EU:C:2001:162"
+    },
+    {
+      "celex": "61998CJ0303",
+      "ecli": "ECLI:EU:C:2000:528"
+    },
+    {
+      "celex": "61998CJ0343",
+      "ecli": "ECLI:EU:C:2000:441"
+    },
+    {
+      "celex": "61998CJ0386",
+      "ecli": "ECLI:EU:C:2000:115"
+    },
+    {
+      "celex": "61998CJ0473",
+      "ecli": "ECLI:EU:C:2000:379"
+    },
+    {
+      "celex": "61998TJ0051",
+      "ecli": "ECLI:EU:T:1999:271"
+    },
+    {
+      "celex": "61999CJ0011",
+      "ecli": "ECLI:EU:C:2000:368"
+    },
+    {
+      "celex": "61999CJ0045",
+      "ecli": "ECLI:EU:C:2000:273"
+    },
+    {
+      "celex": "61999CJ0046",
+      "ecli": "ECLI:EU:C:2000:307"
+    },
+    {
+      "celex": "61999CJ0047",
+      "ecli": "ECLI:EU:C:1999:629"
+    },
+    {
+      "celex": "61999CJ0164",
+      "ecli": "ECLI:EU:C:2002:40"
+    },
+    {
+      "celex": "61999CJ0173",
+      "ecli": "ECLI:EU:C:2001:356"
+    },
+    {
+      "celex": "61999CJ0350",
+      "ecli": "ECLI:EU:C:2001:84"
+    },
+    {
+      "celex": "61999CJ0438",
+      "ecli": "ECLI:EU:C:2001:509"
+    },
+    {
+      "celex": "61999CO0241",
+      "ecli": "ECLI:EU:C:2001:371"
+    },
+    {
+      "celex": "61999TJ0333",
+      "ecli": "ECLI:EU:T:2001:251"
+    },
+    {
+      "celex": "62000CJ0005",
+      "ecli": "ECLI:EU:C:2002:81"
+    },
+    {
+      "celex": "62000CJ0049",
+      "ecli": "ECLI:EU:C:2001:611"
+    },
+    {
+      "celex": "62000CJ0109",
+      "ecli": "ECLI:EU:C:2001:513"
+    },
+    {
+      "celex": "62000TJ0178",
+      "ecli": "ECLI:EU:T:2002:253"
+    },
+    {
+      "celex": "62001CJ0103",
+      "ecli": "ECLI:EU:C:2003:301"
+    },
+    {
+      "celex": "62001CJ0320",
+      "ecli": "ECLI:EU:C:2003:114"
+    },
+    {
+      "celex": "62001CJ0342",
+      "ecli": "ECLI:EU:C:2004:160"
+    },
+    {
+      "celex": "62001CJ0397",
+      "ecli": "ECLI:EU:C:2004:584"
+    },
+    {
+      "celex": "62001CJ0425",
+      "ecli": "ECLI:EU:C:2003:346"
+    },
+    {
+      "celex": "62001CJ0441",
+      "ecli": "ECLI:EU:C:2003:308"
+    },
+    {
+      "celex": "62001TJ0120",
+      "ecli": "ECLI:EU:T:2004:367"
+    },
+    {
+      "celex": "62001TJ0181",
+      "ecli": "ECLI:EU:T:2003:13"
+    },
+    {
+      "celex": "62002CJ0032",
+      "ecli": "ECLI:EU:C:2003:555"
+    },
+    {
+      "celex": "62002CJ0055",
+      "ecli": "ECLI:EU:C:2004:605"
+    },
+    {
+      "celex": "62002CJ0077",
+      "ecli": "ECLI:EU:C:2003:458"
+    },
+    {
+      "celex": "62002CJ0147",
+      "ecli": "ECLI:EU:C:2004:192"
+    },
+    {
+      "celex": "62002CJ0151",
+      "ecli": "ECLI:EU:C:2003:437"
+    },
+    {
+      "celex": "62002CJ0184",
+      "ecli": "ECLI:EU:C:2004:497"
+    },
+    {
+      "celex": "62002CJ0284",
+      "ecli": "ECLI:EU:C:2004:722"
+    },
+    {
+      "celex": "62002CJ0313",
+      "ecli": "ECLI:EU:C:2004:607"
+    },
+    {
+      "celex": "62002CJ0335",
+      "ecli": "ECLI:EU:C:2003:312"
+    },
+    {
+      "celex": "62002CJ0341",
+      "ecli": "ECLI:EU:C:2005:220"
+    },
+    {
+      "celex": "62002CJ0425",
+      "ecli": "ECLI:EU:C:2004:706"
+    },
+    {
+      "celex": "62002CJ0460",
+      "ecli": "ECLI:EU:C:2004:780"
+    },
+    {
+      "celex": "62002TJ0219",
+      "ecli": "ECLI:EU:T:2004:318"
+    },
+    {
+      "celex": "62003CJ0060",
+      "ecli": "ECLI:EU:C:2004:610"
+    },
+    {
+      "celex": "62003CJ0188",
+      "ecli": "ECLI:EU:C:2005:59"
+    },
+    {
+      "celex": "62003CJ0191",
+      "ecli": "ECLI:EU:C:2005:513"
+    },
+    {
+      "celex": "62003CJ0203",
+      "ecli": "ECLI:EU:C:2005:76"
+    },
+    {
+      "celex": "62003CJ0333",
+      "ecli": "ECLI:EU:C:2004:369"
+    },
+    {
+      "celex": "62003CJ0356",
+      "ecli": "ECLI:EU:C:2005:20"
+    },
+    {
+      "celex": "62003CJ0358",
+      "ecli": "ECLI:EU:C:2004:824"
+    },
+    {
+      "celex": "62003CJ0386",
+      "ecli": "ECLI:EU:C:2005:461"
+    },
+    {
+      "celex": "62003CO0297",
+      "ecli": "ECLI:EU:C:2005:315"
+    },
+    {
+      "celex": "62003CV0001",
+      "ecli": "ECLI:EU:C:2006:81"
+    },
+    {
+      "celex": "62003TJ0011",
+      "ecli": "ECLI:EU:T:2004:77"
+    },
+    {
+      "celex": "62003TJ0137",
+      "ecli": "ECLI:EU:T:2005:33"
+    },
+    {
+      "celex": "62004CJ0014",
+      "ecli": "ECLI:EU:C:2005:728"
+    },
+    {
+      "celex": "62004CJ0053",
+      "ecli": "ECLI:EU:C:2006:517"
+    },
+    {
+      "celex": "62004CJ0131",
+      "ecli": "ECLI:EU:C:2006:177"
+    },
+    {
+      "celex": "62004CJ0132",
+      "ecli": "ECLI:EU:C:2006:18"
+    },
+    {
+      "celex": "62004CJ0144",
+      "ecli": "ECLI:EU:C:2005:709"
+    },
+    {
+      "celex": "62004CJ0180",
+      "ecli": "ECLI:EU:C:2006:518"
+    },
+    {
+      "celex": "62004CJ0212",
+      "ecli": "ECLI:EU:C:2006:443"
+    },
+    {
+      "celex": "62004CJ0232",
+      "ecli": "ECLI:EU:C:2005:778"
+    },
+    {
+      "celex": "62004CJ0244",
+      "ecli": "ECLI:EU:C:2006:49"
+    },
+    {
+      "celex": "62004CJ0255",
+      "ecli": "ECLI:EU:C:2006:401"
+    },
+    {
+      "celex": "62004CJ0294",
+      "ecli": "ECLI:EU:C:2006:109"
+    },
+    {
+      "celex": "62004CJ0372",
+      "ecli": "ECLI:EU:C:2006:325"
+    },
+    {
+      "celex": "62004CJ0428",
+      "ecli": "ECLI:EU:C:2006:238"
+    },
+    {
+      "celex": "62004CJ0459",
+      "ecli": "ECLI:EU:C:2006:404"
+    },
+    {
+      "celex": "62004CJ0484",
+      "ecli": "ECLI:EU:C:2006:526"
+    },
+    {
+      "celex": "62004CJ0490",
+      "ecli": "ECLI:EU:C:2007:430"
+    },
+    {
+      "celex": "62004CO0052",
+      "ecli": "ECLI:EU:C:2005:467"
+    },
+    {
+      "celex": "62004CO0328",
+      "ecli": "ECLI:EU:C:2005:596"
+    },
+    {
+      "celex": "62005CJ0013",
+      "ecli": "ECLI:EU:C:2006:456"
+    },
+    {
+      "celex": "62005CJ0043",
+      "ecli": "ECLI:EU:C:2006:145"
+    },
+    {
+      "celex": "62005CJ0124",
+      "ecli": "ECLI:EU:C:2006:244"
+    },
+    {
+      "celex": "62005CJ0127",
+      "ecli": "ECLI:EU:C:2007:338"
+    },
+    {
+      "celex": "62005CJ0133",
+      "ecli": "ECLI:EU:C:2006:148"
+    },
+    {
+      "celex": "62005CJ0205",
+      "ecli": "ECLI:EU:C:2006:705"
+    },
+    {
+      "celex": "62005CJ0270",
+      "ecli": "ECLI:EU:C:2007:101"
+    },
+    {
+      "celex": "62005CJ0307",
+      "ecli": "ECLI:EU:C:2007:509"
+    },
+    {
+      "celex": "62005CJ0341",
+      "ecli": "ECLI:EU:C:2007:809"
+    },
+    {
+      "celex": "62005CJ0385",
+      "ecli": "ECLI:EU:C:2007:37"
+    },
+    {
+      "celex": "62005CJ0411",
+      "ecli": "ECLI:EU:C:2007:604"
+    },
+    {
+      "celex": "62005CJ0458",
+      "ecli": "ECLI:EU:C:2007:512"
+    },
+    {
+      "celex": "62005CO0437",
+      "ecli": "ECLI:EU:C:2007:23"
+    },
+    {
+      "celex": "62005FJ0036",
+      "ecli": "ECLI:EU:F:2010:115"
+    },
+    {
+      "celex": "62005FJ0052",
+      "ecli": "ECLI:EU:F:2008:161"
+    },
+    {
+      "celex": "62005FJ0076",
+      "ecli": "ECLI:EU:F:2010:117"
+    },
+    {
+      "celex": "62005TJ0437",
+      "ecli": "ECLI:EU:T:2009:318"
+    },
+    {
+      "celex": "62006CJ0116",
+      "ecli": "ECLI:EU:C:2007:536"
+    },
+    {
+      "celex": "62006CJ0226",
+      "ecli": "ECLI:EU:C:2008:318"
+    },
+    {
+      "celex": "62006CJ0267",
+      "ecli": "ECLI:EU:C:2008:179"
+    },
+    {
+      "celex": "62006CJ0268",
+      "ecli": "ECLI:EU:C:2008:223"
+    },
+    {
+      "celex": "62006CJ0303",
+      "ecli": "ECLI:EU:C:2008:415"
+    },
+    {
+      "celex": "62006CJ0317",
+      "ecli": "ECLI:EU:C:2007:415"
+    },
+    {
+      "celex": "62006CJ0319",
+      "ecli": "ECLI:EU:C:2008:350"
+    },
+    {
+      "celex": "62006CJ0320",
+      "ecli": "ECLI:EU:C:2007:206"
+    },
+    {
+      "celex": "62006CJ0321",
+      "ecli": "ECLI:EU:C:2007:350"
+    },
+    {
+      "celex": "62006CJ0327",
+      "ecli": "ECLI:EU:C:2007:130"
+    },
+    {
+      "celex": "62006CJ0346",
+      "ecli": "ECLI:EU:C:2008:189"
+    },
+    {
+      "celex": "62006CJ0350",
+      "ecli": "ECLI:EU:C:2009:18"
+    },
+    {
+      "celex": "62006CJ0381",
+      "ecli": "ECLI:EU:C:2007:518"
+    },
+    {
+      "celex": "62006CJ0427",
+      "ecli": "ECLI:EU:C:2008:517"
+    },
+    {
+      "celex": "62006CJ0460",
+      "ecli": "ECLI:EU:C:2007:601"
+    },
+    {
+      "celex": "62006CJ0504",
+      "ecli": "ECLI:EU:C:2008:444"
+    },
+    {
+      "celex": "62006CJ0506",
+      "ecli": "ECLI:EU:C:2008:119"
+    },
+    {
+      "celex": "62006CO0276",
+      "ecli": "ECLI:EU:C:2007:215"
+    },
+    {
+      "celex": "62006FJ0138",
+      "ecli": "ECLI:EU:F:2009:48"
+    },
+    {
+      "celex": "62006FO0120",
+      "ecli": "ECLI:EU:F:2006:140"
+    },
+    {
+      "celex": "62006FO0120(01)",
+      "ecli": "ECLI:EU:F:2007:167"
+    },
+    {
+      "celex": "62006TO0279",
+      "ecli": "ECLI:EU:T:2009:241"
+    },
+    {
+      "celex": "62007CJ0054",
+      "ecli": "ECLI:EU:C:2008:397"
+    },
+    {
+      "celex": "62007CJ0055",
+      "ecli": "ECLI:EU:C:2008:248"
+    },
+    {
+      "celex": "62007CJ0306",
+      "ecli": "ECLI:EU:C:2008:743"
+    },
+    {
+      "celex": "62007CJ0313",
+      "ecli": "ECLI:EU:C:2008:574"
+    },
+    {
+      "celex": "62007CJ0378",
+      "ecli": "ECLI:EU:C:2009:250"
+    },
+    {
+      "celex": "62007CJ0388",
+      "ecli": "ECLI:EU:C:2009:128"
+    },
+    {
+      "celex": "62007CJ0396",
+      "ecli": "ECLI:EU:C:2008:656"
+    },
+    {
+      "celex": "62007CJ0466",
+      "ecli": "ECLI:EU:C:2009:85"
+    },
+    {
+      "celex": "62007CJ0555",
+      "ecli": "ECLI:EU:C:2010:21"
+    },
+    {
+      "celex": "62007CJ0559",
+      "ecli": "ECLI:EU:C:2009:198"
+    },
+    {
+      "celex": "62007CJ0561",
+      "ecli": "ECLI:EU:C:2009:363"
+    },
+    {
+      "celex": "62007CO0361",
+      "ecli": "ECLI:EU:C:2008:16"
+    },
+    {
+      "celex": "62007CO0364",
+      "ecli": "ECLI:EU:C:2008:346"
+    },
+    {
+      "celex": "62007FJ0065",
+      "ecli": "ECLI:EU:F:2009:43"
+    },
+    {
+      "celex": "62007FJ0069",
+      "ecli": "ECLI:EU:F:2009:128"
+    },
+    {
+      "celex": "62007FJ0120",
+      "ecli": "ECLI:EU:F:2011:22"
+    },
+    {
+      "celex": "62007FJ0134",
+      "ecli": "ECLI:EU:F:2009:51"
+    },
+    {
+      "celex": "62008CJ0012",
+      "ecli": "ECLI:EU:C:2009:466"
+    },
+    {
+      "celex": "62008CJ0044",
+      "ecli": "ECLI:EU:C:2009:533"
+    },
+    {
+      "celex": "62008CJ0063",
+      "ecli": "ECLI:EU:C:2009:666"
+    },
+    {
+      "celex": "62008CJ0088",
+      "ecli": "ECLI:EU:C:2009:381"
+    },
+    {
+      "celex": "62008CJ0147",
+      "ecli": "ECLI:EU:C:2011:286"
+    },
+    {
+      "celex": "62008CJ0194",
+      "ecli": "ECLI:EU:C:2010:386"
+    },
+    {
+      "celex": "62008CJ0229",
+      "ecli": "ECLI:EU:C:2010:3"
+    },
+    {
+      "celex": "62008CJ0277",
+      "ecli": "ECLI:EU:C:2009:542"
+    },
+    {
+      "celex": "62008CJ0323",
+      "ecli": "ECLI:EU:C:2009:770"
+    },
+    {
+      "celex": "62008CJ0341",
+      "ecli": "ECLI:EU:C:2010:4"
+    },
+    {
+      "celex": "62008CJ0395",
+      "ecli": "ECLI:EU:C:2010:329"
+    },
+    {
+      "celex": "62008CJ0405",
+      "ecli": "ECLI:EU:C:2010:69"
+    },
+    {
+      "celex": "62008CJ0471",
+      "ecli": "ECLI:EU:C:2010:391"
+    },
+    {
+      "celex": "62008CJ0486",
+      "ecli": "ECLI:EU:C:2010:215"
+    },
+    {
+      "celex": "62008CJ0499",
+      "ecli": "ECLI:EU:C:2010:600"
+    },
+    {
+      "celex": "62008CJ0515",
+      "ecli": "ECLI:EU:C:2010:589"
+    },
+    {
+      "celex": "62008CO0049",
+      "ecli": "ECLI:EU:C:2008:286"
+    },
+    {
+      "celex": "62008CO0162",
+      "ecli": "ECLI:EU:C:2009:727"
+    },
+    {
+      "celex": "62008CO0217",
+      "ecli": "ECLI:EU:C:2009:160"
+    },
+    {
+      "celex": "62008CO0519",
+      "ecli": "ECLI:EU:C:2009:269"
+    },
+    {
+      "celex": "62008FJ0006",
+      "ecli": "ECLI:EU:F:2008:160"
+    },
+    {
+      "celex": "62008FJ0082",
+      "ecli": "ECLI:EU:F:2011:45"
+    },
+    {
+      "celex": "62008FJ0087",
+      "ecli": "ECLI:EU:F:2010:159"
+    },
+    {
+      "celex": "62008FJ0088",
+      "ecli": "ECLI:EU:F:2010:160"
+    },
+    {
+      "celex": "62008FO0058",
+      "ecli": "ECLI:EU:F:2013:16"
+    },
+    {
+      "celex": "62008FO0063",
+      "ecli": "ECLI:EU:F:2013:36"
+    },
+    {
+      "celex": "62009CJ0045",
+      "ecli": "ECLI:EU:C:2010:601"
+    },
+    {
+      "celex": "62009CJ0098",
+      "ecli": "ECLI:EU:C:2010:369"
+    },
+    {
+      "celex": "62009CJ0109",
+      "ecli": "ECLI:EU:C:2011:129"
+    },
+    {
+      "celex": "62009CJ0151",
+      "ecli": "ECLI:EU:C:2010:452"
+    },
+    {
+      "celex": "62009CJ0158",
+      "ecli": "ECLI:EU:C:2010:292"
+    },
+    {
+      "celex": "62009CJ0227",
+      "ecli": "ECLI:EU:C:2010:624"
+    },
+    {
+      "celex": "62009CJ0232",
+      "ecli": "ECLI:EU:C:2010:674"
+    },
+    {
+      "celex": "62009CJ0242",
+      "ecli": "ECLI:EU:C:2010:625"
+    },
+    {
+      "celex": "62009CJ0243",
+      "ecli": "ECLI:EU:C:2010:609"
+    },
+    {
+      "celex": "62009CJ0246",
+      "ecli": "ECLI:EU:C:2010:418"
+    },
+    {
+      "celex": "62009CJ0250",
+      "ecli": "ECLI:EU:C:2010:699"
+    },
+    {
+      "celex": "62009CJ0307",
+      "ecli": "ECLI:EU:C:2011:64"
+    },
+    {
+      "celex": "62009CJ0356",
+      "ecli": "ECLI:EU:C:2010:703"
+    },
+    {
+      "celex": "62009CJ0391",
+      "ecli": "ECLI:EU:C:2011:291"
+    },
+    {
+      "celex": "62009CJ0428",
+      "ecli": "ECLI:EU:C:2010:612"
+    },
+    {
+      "celex": "62009CJ0429",
+      "ecli": "ECLI:EU:C:2010:717"
+    },
+    {
+      "celex": "62009CJ0444",
+      "ecli": "ECLI:EU:C:2010:819"
+    },
+    {
+      "celex": "62009CJ0447",
+      "ecli": "ECLI:EU:C:2011:573"
+    },
+    {
+      "celex": "62009CJ0463",
+      "ecli": "ECLI:EU:C:2011:24"
+    },
+    {
+      "celex": "62009CJ0537",
+      "ecli": "ECLI:EU:C:2011:278"
+    },
+    {
+      "celex": "62009CO0298",
+      "ecli": "ECLI:EU:C:2010:343"
+    },
+    {
+      "celex": "62009CO0386",
+      "ecli": "ECLI:EU:C:2010:526"
+    },
+    {
+      "celex": "62009CO0389",
+      "ecli": "ECLI:EU:C:2010:22"
+    },
+    {
+      "celex": "62009CO0519",
+      "ecli": "ECLI:EU:C:2011:221"
+    },
+    {
+      "celex": "62009FJ0027",
+      "ecli": "ECLI:EU:F:2010:58"
+    },
+    {
+      "celex": "62009FJ0028",
+      "ecli": "ECLI:EU:F:2010:59"
+    },
+    {
+      "celex": "62009FJ0034",
+      "ecli": "ECLI:EU:F:2010:60"
+    },
+    {
+      "celex": "62009FJ0035",
+      "ecli": "ECLI:EU:F:2010:61"
+    },
+    {
+      "celex": "62009FJ0036",
+      "ecli": "ECLI:EU:F:2010:62"
+    },
+    {
+      "celex": "62009FJ0037",
+      "ecli": "ECLI:EU:F:2010:63"
+    },
+    {
+      "celex": "62009FJ0038",
+      "ecli": "ECLI:EU:F:2010:64"
+    },
+    {
+      "celex": "62009FJ0039",
+      "ecli": "ECLI:EU:F:2010:65"
+    },
+    {
+      "celex": "62009FJ0041",
+      "ecli": "ECLI:EU:F:2010:66"
+    },
+    {
+      "celex": "62009FJ0042",
+      "ecli": "ECLI:EU:F:2010:67"
+    },
+    {
+      "celex": "62009FJ0044",
+      "ecli": "ECLI:EU:F:2010:68"
+    },
+    {
+      "celex": "62009FJ0047",
+      "ecli": "ECLI:EU:F:2010:36"
+    },
+    {
+      "celex": "62009FJ0050",
+      "ecli": "ECLI:EU:F:2011:55"
+    },
+    {
+      "celex": "62009FJ0098",
+      "ecli": "ECLI:EU:F:2011:156"
+    },
+    {
+      "celex": "62009FJ0102",
+      "ecli": "ECLI:EU:F:2011:138"
+    },
+    {
+      "celex": "62009FJ0105",
+      "ecli": "ECLI:EU:F:2011:41"
+    },
+    {
+      "celex": "62009TJ0123",
+      "ecli": "ECLI:EU:T:2012:164"
+    },
+    {
+      "celex": "62009TJ0325",
+      "ecli": "ECLI:EU:T:2011:506"
+    },
+    {
+      "celex": "62010CJ0030",
+      "ecli": "ECLI:EU:C:2011:66"
+    },
+    {
+      "celex": "62010CJ0108",
+      "ecli": "ECLI:EU:C:2011:542"
+    },
+    {
+      "celex": "62010CJ0149",
+      "ecli": "ECLI:EU:C:2010:534"
+    },
+    {
+      "celex": "62010CJ0155",
+      "ecli": "ECLI:EU:C:2011:588"
+    },
+    {
+      "celex": "62010CJ0159",
+      "ecli": "ECLI:EU:C:2011:508"
+    },
+    {
+      "celex": "62010CJ0177",
+      "ecli": "ECLI:EU:C:2011:557"
+    },
+    {
+      "celex": "62010CJ0214",
+      "ecli": "ECLI:EU:C:2011:761"
+    },
+    {
+      "celex": "62010CJ0235",
+      "ecli": "ECLI:EU:C:2011:119"
+    },
+    {
+      "celex": "62010CJ0282",
+      "ecli": "ECLI:EU:C:2012:33"
+    },
+    {
+      "celex": "62010CJ0297",
+      "ecli": "ECLI:EU:C:2011:560"
+    },
+    {
+      "celex": "62010CJ0310",
+      "ecli": "ECLI:EU:C:2011:467"
+    },
+    {
+      "celex": "62010CJ0337",
+      "ecli": "ECLI:EU:C:2012:263"
+    },
+    {
+      "celex": "62010CJ0393",
+      "ecli": "ECLI:EU:C:2012:110"
+    },
+    {
+      "celex": "62010CJ0415",
+      "ecli": "ECLI:EU:C:2012:217"
+    },
+    {
+      "celex": "62010CJ0522",
+      "ecli": "ECLI:EU:C:2012:475"
+    },
+    {
+      "celex": "62010CJ0571",
+      "ecli": "ECLI:EU:C:2012:233"
+    },
+    {
+      "celex": "62010CJ0577",
+      "ecli": "ECLI:EU:C:2012:814"
+    },
+    {
+      "celex": "62010CJ0583",
+      "ecli": "ECLI:EU:C:2012:638"
+    },
+    {
+      "celex": "62010CJ0586",
+      "ecli": "ECLI:EU:C:2012:39"
+    },
+    {
+      "celex": "62010CJ0589",
+      "ecli": "ECLI:EU:C:2013:303"
+    },
+    {
+      "celex": "62010CO0003",
+      "ecli": "ECLI:EU:C:2010:574"
+    },
+    {
+      "celex": "62010CO0020",
+      "ecli": "ECLI:EU:C:2010:677"
+    },
+    {
+      "celex": "62010CO0151",
+      "ecli": "ECLI:EU:C:2011:223"
+    },
+    {
+      "celex": "62010CO0258",
+      "ecli": "ECLI:EU:C:2011:122"
+    },
+    {
+      "celex": "62010CO0272",
+      "ecli": "ECLI:EU:C:2011:19"
+    },
+    {
+      "celex": "62010CO0273",
+      "ecli": "ECLI:EU:C:2011:167"
+    },
+    {
+      "celex": "62010FJ0006",
+      "ecli": "ECLI:EU:F:2011:139"
+    },
+    {
+      "celex": "62010FJ0007",
+      "ecli": "ECLI:EU:F:2011:140"
+    },
+    {
+      "celex": "62010FJ0008",
+      "ecli": "ECLI:EU:F:2010:151"
+    },
+    {
+      "celex": "62010FJ0015",
+      "ecli": "ECLI:EU:F:2013:194"
+    },
+    {
+      "celex": "62010FJ0022",
+      "ecli": "ECLI:EU:F:2011:64"
+    },
+    {
+      "celex": "62010FJ0027",
+      "ecli": "ECLI:EU:F:2011:20"
+    },
+    {
+      "celex": "62010FJ0062",
+      "ecli": "ECLI:EU:F:2011:141"
+    },
+    {
+      "celex": "62010FJ0085",
+      "ecli": "ECLI:EU:F:2012:97"
+    },
+    {
+      "celex": "62010TO0261",
+      "ecli": "ECLI:EU:T:2010:324"
+    },
+    {
+      "celex": "62011CJ0078",
+      "ecli": "ECLI:EU:C:2012:372"
+    },
+    {
+      "celex": "62011CJ0122",
+      "ecli": "ECLI:EU:C:2013:63"
+    },
+    {
+      "celex": "62011CJ0124",
+      "ecli": "ECLI:EU:C:2012:771"
+    },
+    {
+      "celex": "62011CJ0132",
+      "ecli": "ECLI:EU:C:2012:329"
+    },
+    {
+      "celex": "62011CJ0141",
+      "ecli": "ECLI:EU:C:2012:421"
+    },
+    {
+      "celex": "62011CJ0152",
+      "ecli": "ECLI:EU:C:2012:772"
+    },
+    {
+      "celex": "62011CJ0157",
+      "ecli": "ECLI:EU:C:2012:148"
+    },
+    {
+      "celex": "62011CJ0229",
+      "ecli": "ECLI:EU:C:2012:693"
+    },
+    {
+      "celex": "62011CJ0251",
+      "ecli": "ECLI:EU:C:2012:133"
+    },
+    {
+      "celex": "62011CJ0282",
+      "ecli": "ECLI:EU:C:2013:86"
+    },
+    {
+      "celex": "62011CJ0302",
+      "ecli": "ECLI:EU:C:2012:646"
+    },
+    {
+      "celex": "62011CJ0312",
+      "ecli": "ECLI:EU:C:2013:446"
+    },
+    {
+      "celex": "62011CJ0335",
+      "ecli": "ECLI:EU:C:2013:222"
+    },
+    {
+      "celex": "62011CJ0363",
+      "ecli": "ECLI:EU:C:2012:825"
+    },
+    {
+      "celex": "62011CJ0385",
+      "ecli": "ECLI:EU:C:2012:746"
+    },
+    {
+      "celex": "62011CJ0394",
+      "ecli": "ECLI:EU:C:2013:48"
+    },
+    {
+      "celex": "62011CJ0398",
+      "ecli": "ECLI:EU:C:2013:272"
+    },
+    {
+      "celex": "62011CJ0426",
+      "ecli": "ECLI:EU:C:2013:521"
+    },
+    {
+      "celex": "62011CJ0443",
+      "ecli": "ECLI:EU:C:2013:224"
+    },
+    {
+      "celex": "62011CJ0476",
+      "ecli": "ECLI:EU:C:2013:590"
+    },
+    {
+      "celex": "62011CJ0512",
+      "ecli": "ECLI:EU:C:2014:73"
+    },
+    {
+      "celex": "62011CJ0546",
+      "ecli": "ECLI:EU:C:2013:603"
+    },
+    {
+      "celex": "62011CJ0656",
+      "ecli": "ECLI:EU:C:2014:97"
+    },
+    {
+      "celex": "62011CO0161",
+      "ecli": "ECLI:EU:C:2011:420"
+    },
+    {
+      "celex": "62011CO0349",
+      "ecli": "ECLI:EU:C:2011:826"
+    },
+    {
+      "celex": "62011CO0393",
+      "ecli": "ECLI:EU:C:2013:143"
+    },
+    {
+      "celex": "62011CO0556",
+      "ecli": "ECLI:EU:C:2012:67"
+    },
+    {
+      "celex": "62011CO0617",
+      "ecli": "ECLI:EU:C:2013:657"
+    },
+    {
+      "celex": "62011CO0656",
+      "ecli": "ECLI:EU:C:2012:211"
+    },
+    {
+      "celex": "62011FJ0054",
+      "ecli": "ECLI:EU:F:2012:114"
+    },
+    {
+      "celex": "62011FJ0059",
+      "ecli": "ECLI:EU:F:2012:164"
+    },
+    {
+      "celex": "62011FJ0074",
+      "ecli": "ECLI:EU:F:2013:22"
+    },
+    {
+      "celex": "62011FJ0105",
+      "ecli": "ECLI:EU:F:2012:84"
+    },
+    {
+      "celex": "62011TJ0268",
+      "ecli": "ECLI:EU:T:2012:588"
+    },
+    {
+      "celex": "62011TJ0401(01)",
+      "ecli": "ECLI:EU:T:2017:874"
+    },
+    {
+      "celex": "62012CJ0005",
+      "ecli": "ECLI:EU:C:2013:571"
+    },
+    {
+      "celex": "62012CJ0007",
+      "ecli": "ECLI:EU:C:2013:410"
+    },
+    {
+      "celex": "62012CJ0081",
+      "ecli": "ECLI:EU:C:2013:275"
+    },
+    {
+      "celex": "62012CJ0140",
+      "ecli": "ECLI:EU:C:2013:565"
+    },
+    {
+      "celex": "62012CJ0167",
+      "ecli": "ECLI:EU:C:2014:169"
+    },
+    {
+      "celex": "62012CJ0176",
+      "ecli": "ECLI:EU:C:2014:2"
+    },
+    {
+      "celex": "62012CJ0177",
+      "ecli": "ECLI:EU:C:2013:689"
+    },
+    {
+      "celex": "62012CJ0216",
+      "ecli": "ECLI:EU:C:2013:568"
+    },
+    {
+      "celex": "62012CJ0233",
+      "ecli": "ECLI:EU:C:2013:449"
+    },
+    {
+      "celex": "62012CJ0247",
+      "ecli": "ECLI:EU:C:2013:256"
+    },
+    {
+      "celex": "62012CJ0267",
+      "ecli": "ECLI:EU:C:2013:823"
+    },
+    {
+      "celex": "62012CJ0286",
+      "ecli": "ECLI:EU:C:2012:687"
+    },
+    {
+      "celex": "62012CJ0290",
+      "ecli": "ECLI:EU:C:2013:235"
+    },
+    {
+      "celex": "62012CJ0309",
+      "ecli": "ECLI:EU:C:2013:774"
+    },
+    {
+      "celex": "62012CJ0342",
+      "ecli": "ECLI:EU:C:2013:355"
+    },
+    {
+      "celex": "62012CJ0347",
+      "ecli": "ECLI:EU:C:2014:300"
+    },
+    {
+      "celex": "62012CJ0356",
+      "ecli": "ECLI:EU:C:2014:350"
+    },
+    {
+      "celex": "62012CJ0361",
+      "ecli": "ECLI:EU:C:2013:830"
+    },
+    {
+      "celex": "62012CJ0363",
+      "ecli": "ECLI:EU:C:2014:159"
+    },
+    {
+      "celex": "62012CJ0429",
+      "ecli": "ECLI:EU:C:2014:12"
+    },
+    {
+      "celex": "62012CJ0458",
+      "ecli": "ECLI:EU:C:2014:124"
+    },
+    {
+      "celex": "62012CJ0476",
+      "ecli": "ECLI:EU:C:2014:2332"
+    },
+    {
+      "celex": "62012CJ0501",
+      "ecli": "ECLI:EU:C:2014:2005"
+    },
+    {
+      "celex": "62012CJ0507",
+      "ecli": "ECLI:EU:C:2014:2007"
+    },
+    {
+      "celex": "62012CJ0522",
+      "ecli": "ECLI:EU:C:2013:711"
+    },
+    {
+      "celex": "62012CJ0539",
+      "ecli": "ECLI:EU:C:2014:351"
+    },
+    {
+      "celex": "62012CJ0579",
+      "ecli": "ECLI:EU:C:2013:570"
+    },
+    {
+      "celex": "62012CJ0595",
+      "ecli": "ECLI:EU:C:2014:128"
+    },
+    {
+      "celex": "62012CJ0596",
+      "ecli": "ECLI:EU:C:2014:77"
+    },
+    {
+      "celex": "62012CO0178",
+      "ecli": "ECLI:EU:C:2013:150"
+    },
+    {
+      "celex": "62012CO0194",
+      "ecli": "ECLI:EU:C:2013:102"
+    },
+    {
+      "celex": "62012CO0415",
+      "ecli": "ECLI:EU:C:2013:398"
+    },
+    {
+      "celex": "62012FJ0041",
+      "ecli": "ECLI:EU:F:2013:31"
+    },
+    {
+      "celex": "62012FJ0078",
+      "ecli": "ECLI:EU:F:2015:37"
+    },
+    {
+      "celex": "62012FJ0086",
+      "ecli": "ECLI:EU:F:2013:117"
+    },
+    {
+      "celex": "62012FJ0103",
+      "ecli": "ECLI:EU:F:2013:172"
+    },
+    {
+      "celex": "62012FJ0107",
+      "ecli": "ECLI:EU:F:2014:1"
+    },
+    {
+      "celex": "62012FJ0119",
+      "ecli": "ECLI:EU:F:2014:171"
+    },
+    {
+      "celex": "62012FJ0120",
+      "ecli": "ECLI:EU:F:2014:172"
+    },
+    {
+      "celex": "62012FJ0121",
+      "ecli": "ECLI:EU:F:2014:169"
+    },
+    {
+      "celex": "62012FJ0157",
+      "ecli": "ECLI:EU:F:2014:164"
+    },
+    {
+      "celex": "62012FO0033",
+      "ecli": "ECLI:EU:F:2013:27"
+    },
+    {
+      "celex": "62013CJ0004",
+      "ecli": "ECLI:EU:C:2014:2344"
+    },
+    {
+      "celex": "62013CJ0020",
+      "ecli": "ECLI:EU:C:2015:561"
+    },
+    {
+      "celex": "62013CJ0022",
+      "ecli": "ECLI:EU:C:2014:2401"
+    },
+    {
+      "celex": "62013CJ0032",
+      "ecli": "ECLI:EU:C:2014:107"
+    },
+    {
+      "celex": "62013CJ0038",
+      "ecli": "ECLI:EU:C:2014:152"
+    },
+    {
+      "celex": "62013CJ0081",
+      "ecli": "ECLI:EU:C:2014:2449"
+    },
+    {
+      "celex": "62013CJ0103",
+      "ecli": "ECLI:EU:C:2014:2334"
+    },
+    {
+      "celex": "62013CJ0118",
+      "ecli": "ECLI:EU:C:2014:1755"
+    },
+    {
+      "celex": "62013CJ0179",
+      "ecli": "ECLI:EU:C:2015:12"
+    },
+    {
+      "celex": "62013CJ0182",
+      "ecli": "ECLI:EU:C:2015:317"
+    },
+    {
+      "celex": "62013CJ0190",
+      "ecli": "ECLI:EU:C:2014:146"
+    },
+    {
+      "celex": "62013CJ0198",
+      "ecli": "ECLI:EU:C:2014:2055"
+    },
+    {
+      "celex": "62013CJ0201",
+      "ecli": "ECLI:EU:C:2014:2132"
+    },
+    {
+      "celex": "62013CJ0221",
+      "ecli": "ECLI:EU:C:2014:2286"
+    },
+    {
+      "celex": "62013CJ0250",
+      "ecli": "ECLI:EU:C:2014:278"
+    },
+    {
+      "celex": "62013CJ0252",
+      "ecli": "ECLI:EU:C:2014:2312"
+    },
+    {
+      "celex": "62013CJ0255",
+      "ecli": "ECLI:EU:C:2014:1291"
+    },
+    {
+      "celex": "62013CJ0265",
+      "ecli": "ECLI:EU:C:2014:187"
+    },
+    {
+      "celex": "62013CJ0266",
+      "ecli": "ECLI:EU:C:2015:188"
+    },
+    {
+      "celex": "62013CJ0311",
+      "ecli": "ECLI:EU:C:2014:2337"
+    },
+    {
+      "celex": "62013CJ0315",
+      "ecli": "ECLI:EU:C:2014:2408"
+    },
+    {
+      "celex": "62013CJ0316",
+      "ecli": "ECLI:EU:C:2015:200"
+    },
+    {
+      "celex": "62013CJ0318",
+      "ecli": "ECLI:EU:C:2014:2133"
+    },
+    {
+      "celex": "62013CJ0328",
+      "ecli": "ECLI:EU:C:2014:2197"
+    },
+    {
+      "celex": "62013CJ0333",
+      "ecli": "ECLI:EU:C:2014:2358"
+    },
+    {
+      "celex": "62013CJ0354",
+      "ecli": "ECLI:EU:C:2014:2463"
+    },
+    {
+      "celex": "62013CJ0361",
+      "ecli": "ECLI:EU:C:2015:601"
+    },
+    {
+      "celex": "62013CJ0362",
+      "ecli": "ECLI:EU:C:2014:2044"
+    },
+    {
+      "celex": "62013CJ0392",
+      "ecli": "ECLI:EU:C:2015:318"
+    },
+    {
+      "celex": "62013CJ0394",
+      "ecli": "ECLI:EU:C:2014:2199"
+    },
+    {
+      "celex": "62013CJ0396",
+      "ecli": "ECLI:EU:C:2015:86"
+    },
+    {
+      "celex": "62013CJ0416",
+      "ecli": "ECLI:EU:C:2014:2371"
+    },
+    {
+      "celex": "62013CJ0417",
+      "ecli": "ECLI:EU:C:2015:38"
+    },
+    {
+      "celex": "62013CJ0433",
+      "ecli": "ECLI:EU:C:2015:602"
+    },
+    {
+      "celex": "62013CJ0515",
+      "ecli": "ECLI:EU:C:2015:115"
+    },
+    {
+      "celex": "62013CJ0527",
+      "ecli": "ECLI:EU:C:2015:215"
+    },
+    {
+      "celex": "62013CJ0529",
+      "ecli": "ECLI:EU:C:2015:20"
+    },
+    {
+      "celex": "62013CJ0530",
+      "ecli": "ECLI:EU:C:2014:2359"
+    },
+    {
+      "celex": "62013CJ0533",
+      "ecli": "ECLI:EU:C:2015:173"
+    },
+    {
+      "celex": "62013CJ0549",
+      "ecli": "ECLI:EU:C:2014:2235"
+    },
+    {
+      "celex": "62013CJ0586",
+      "ecli": "ECLI:EU:C:2015:405"
+    },
+    {
+      "celex": "62013CO0050",
+      "ecli": "ECLI:EU:C:2013:873"
+    },
+    {
+      "celex": "62013CO0089",
+      "ecli": "ECLI:EU:C:2014:299"
+    },
+    {
+      "celex": "62013CO0362",
+      "ecli": "ECLI:EU:C:2014:2238"
+    },
+    {
+      "celex": "62013CO0520",
+      "ecli": "ECLI:EU:C:2014:263"
+    },
+    {
+      "celex": "62013CO0646",
+      "ecli": "ECLI:EU:C:2015:276"
+    },
+    {
+      "celex": "62013CO0683",
+      "ecli": "ECLI:EU:C:2014:2028"
+    },
+    {
+      "celex": "62013CO0688",
+      "ecli": "ECLI:EU:C:2015:46"
+    },
+    {
+      "celex": "62013FJ0001",
+      "ecli": "ECLI:EU:F:2014:170"
+    },
+    {
+      "celex": "62013FJ0029",
+      "ecli": "ECLI:EU:F:2014:10"
+    },
+    {
+      "celex": "62013FJ0066",
+      "ecli": "ECLI:EU:F:2014:168"
+    },
+    {
+      "celex": "62013FJ0067",
+      "ecli": "ECLI:EU:F:2014:167"
+    },
+    {
+      "celex": "62013FJ0106",
+      "ecli": "ECLI:EU:F:2015:118"
+    },
+    {
+      "celex": "62013FO0122",
+      "ecli": "ECLI:EU:F:2014:209"
+    },
+    {
+      "celex": "62013TJ0360",
+      "ecli": "ECLI:EU:T:2015:695"
+    },
+    {
+      "celex": "62013TJ0420",
+      "ecli": "ECLI:EU:T:2015:633"
+    },
+    {
+      "celex": "62014CJ0012",
+      "ecli": "ECLI:EU:C:2016:135"
+    },
+    {
+      "celex": "62014CJ0047",
+      "ecli": "ECLI:EU:C:2015:574"
+    },
+    {
+      "celex": "62014CJ0065",
+      "ecli": "ECLI:EU:C:2015:339"
+    },
+    {
+      "celex": "62014CJ0067",
+      "ecli": "ECLI:EU:C:2015:597"
+    },
+    {
+      "celex": "62014CJ0080",
+      "ecli": "ECLI:EU:C:2015:291"
+    },
+    {
+      "celex": "62014CJ0083",
+      "ecli": "ECLI:EU:C:2015:480"
+    },
+    {
+      "celex": "62014CJ0087",
+      "ecli": "ECLI:EU:C:2015:449"
+    },
+    {
+      "celex": "62014CJ0115",
+      "ecli": "ECLI:EU:C:2015:760"
+    },
+    {
+      "celex": "62014CJ0117",
+      "ecli": "ECLI:EU:C:2015:60"
+    },
+    {
+      "celex": "62014CJ0160",
+      "ecli": "ECLI:EU:C:2015:565"
+    },
+    {
+      "celex": "62014CJ0177",
+      "ecli": "ECLI:EU:C:2015:450"
+    },
+    {
+      "celex": "62014CJ0180",
+      "ecli": "ECLI:EU:C:2015:840"
+    },
+    {
+      "celex": "62014CJ0219",
+      "ecli": "ECLI:EU:C:2015:745"
+    },
+    {
+      "celex": "62014CJ0222",
+      "ecli": "ECLI:EU:C:2015:473"
+    },
+    {
+      "celex": "62014CJ0229",
+      "ecli": "ECLI:EU:C:2015:455"
+    },
+    {
+      "celex": "62014CJ0238",
+      "ecli": "ECLI:EU:C:2015:128"
+    },
+    {
+      "celex": "62014CJ0258",
+      "ecli": "ECLI:EU:C:2017:448"
+    },
+    {
+      "celex": "62014CJ0262",
+      "ecli": "ECLI:EU:C:2015:336"
+    },
+    {
+      "celex": "62014CJ0266",
+      "ecli": "ECLI:EU:C:2015:578"
+    },
+    {
+      "celex": "62014CJ0292",
+      "ecli": "ECLI:EU:C:2016:116"
+    },
+    {
+      "celex": "62014CJ0299",
+      "ecli": "ECLI:EU:C:2016:114"
+    },
+    {
+      "celex": "62014CJ0308",
+      "ecli": "ECLI:EU:C:2016:436"
+    },
+    {
+      "celex": "62014CJ0351",
+      "ecli": "ECLI:EU:C:2016:447"
+    },
+    {
+      "celex": "62014CJ0378",
+      "ecli": "ECLI:EU:C:2015:720"
+    },
+    {
+      "celex": "62014CJ0407",
+      "ecli": "ECLI:EU:C:2015:831"
+    },
+    {
+      "celex": "62014CJ0422",
+      "ecli": "ECLI:EU:C:2015:743"
+    },
+    {
+      "celex": "62014CJ0432",
+      "ecli": "ECLI:EU:C:2015:643"
+    },
+    {
+      "celex": "62014CJ0441",
+      "ecli": "ECLI:EU:C:2016:278"
+    },
+    {
+      "celex": "62014CJ0453",
+      "ecli": "ECLI:EU:C:2016:37"
+    },
+    {
+      "celex": "62014CJ0509",
+      "ecli": "ECLI:EU:C:2015:781"
+    },
+    {
+      "celex": "62014CJ0596",
+      "ecli": "ECLI:EU:C:2016:683"
+    },
+    {
+      "celex": "62014CO0086",
+      "ecli": "ECLI:EU:C:2014:2447"
+    },
+    {
+      "celex": "62014CO0152",
+      "ecli": "ECLI:EU:C:2014:2181"
+    },
+    {
+      "celex": "62014CO0496",
+      "ecli": "ECLI:EU:C:2015:312"
+    },
+    {
+      "celex": "62014CO0608",
+      "ecli": "ECLI:EU:C:2015:313"
+    },
+    {
+      "celex": "62014FJ0053",
+      "ecli": "ECLI:EU:F:2015:81"
+    },
+    {
+      "celex": "62014FJ0079",
+      "ecli": "ECLI:EU:F:2015:63"
+    },
+    {
+      "celex": "62014FJ0101",
+      "ecli": "ECLI:EU:F:2015:151"
+    },
+    {
+      "celex": "62014FO0021(01)",
+      "ecli": "ECLI:EU:F:2014:271"
+    },
+    {
+      "celex": "62014TJ0129",
+      "ecli": "ECLI:EU:T:2016:267"
+    },
+    {
+      "celex": "62014TJ0240",
+      "ecli": "ECLI:EU:T:2016:104"
+    },
+    {
+      "celex": "62014TJ0241",
+      "ecli": "ECLI:EU:T:2016:103"
+    },
+    {
+      "celex": "62014TJ0412",
+      "ecli": "ECLI:EU:T:2018:55"
+    },
+    {
+      "celex": "62014TJ0456",
+      "ecli": "ECLI:EU:T:2016:493"
+    },
+    {
+      "celex": "62014TJ0713",
+      "ecli": "ECLI:EU:T:2016:727"
+    },
+    {
+      "celex": "62015CJ0016",
+      "ecli": "ECLI:EU:C:2016:679"
+    },
+    {
+      "celex": "62015CJ0098",
+      "ecli": "ECLI:EU:C:2017:833"
+    },
+    {
+      "celex": "62015CJ0122",
+      "ecli": "ECLI:EU:C:2016:391"
+    },
+    {
+      "celex": "62015CJ0157",
+      "ecli": "ECLI:EU:C:2017:203"
+    },
+    {
+      "celex": "62015CJ0159",
+      "ecli": "ECLI:EU:C:2016:451"
+    },
+    {
+      "celex": "62015CJ0178",
+      "ecli": "ECLI:EU:C:2016:502"
+    },
+    {
+      "celex": "62015CJ0184",
+      "ecli": "ECLI:EU:C:2016:680"
+    },
+    {
+      "celex": "62015CJ0188",
+      "ecli": "ECLI:EU:C:2017:204"
+    },
+    {
+      "celex": "62015CJ0198",
+      "ecli": "ECLI:EU:C:2016:362"
+    },
+    {
+      "celex": "62015CJ0201",
+      "ecli": "ECLI:EU:C:2016:972"
+    },
+    {
+      "celex": "62015CJ0216",
+      "ecli": "ECLI:EU:C:2016:883"
+    },
+    {
+      "celex": "62015CJ0258",
+      "ecli": "ECLI:EU:C:2016:873"
+    },
+    {
+      "celex": "62015CJ0335",
+      "ecli": "ECLI:EU:C:2016:564"
+    },
+    {
+      "celex": "62015CJ0336",
+      "ecli": "ECLI:EU:C:2017:276"
+    },
+    {
+      "celex": "62015CJ0341",
+      "ecli": "ECLI:EU:C:2016:576"
+    },
+    {
+      "celex": "62015CJ0356",
+      "ecli": "ECLI:EU:C:2018:555"
+    },
+    {
+      "celex": "62015CJ0395",
+      "ecli": "ECLI:EU:C:2016:917"
+    },
+    {
+      "celex": "62015CJ0406",
+      "ecli": "ECLI:EU:C:2017:198"
+    },
+    {
+      "celex": "62015CJ0423",
+      "ecli": "ECLI:EU:C:2016:604"
+    },
+    {
+      "celex": "62015CJ0443",
+      "ecli": "ECLI:EU:C:2016:897"
+    },
+    {
+      "celex": "62015CJ0454",
+      "ecli": "ECLI:EU:C:2016:891"
+    },
+    {
+      "celex": "62015CJ0496",
+      "ecli": "ECLI:EU:C:2017:152"
+    },
+    {
+      "celex": "62015CJ0518",
+      "ecli": "ECLI:EU:C:2018:82"
+    },
+    {
+      "celex": "62015CJ0531",
+      "ecli": "ECLI:EU:C:2017:789"
+    },
+    {
+      "celex": "62015CJ0539",
+      "ecli": "ECLI:EU:C:2016:977"
+    },
+    {
+      "celex": "62015CJ0548",
+      "ecli": "ECLI:EU:C:2016:850"
+    },
+    {
+      "celex": "62015CJ0620",
+      "ecli": "ECLI:EU:C:2017:309"
+    },
+    {
+      "celex": "62015CJ0651",
+      "ecli": "ECLI:EU:C:2017:543"
+    },
+    {
+      "celex": "62015CJ0668",
+      "ecli": "ECLI:EU:C:2017:278"
+    },
+    {
+      "celex": "62015CJ0680",
+      "ecli": "ECLI:EU:C:2017:317"
+    },
+    {
+      "celex": "62015CJ0690",
+      "ecli": "ECLI:EU:C:2017:355"
+    },
+    {
+      "celex": "62015CO0328",
+      "ecli": "ECLI:EU:C:2016:273"
+    },
+    {
+      "celex": "62015CO0614",
+      "ecli": "ECLI:EU:C:2016:726"
+    },
+    {
+      "celex": "62015CO0631",
+      "ecli": "ECLI:EU:C:2016:725"
+    },
+    {
+      "celex": "62015FJ0060",
+      "ecli": "ECLI:EU:F:2016:28"
+    },
+    {
+      "celex": "62015FO0021",
+      "ecli": "ECLI:EU:F:2015:102"
+    },
+    {
+      "celex": "62015TJ0366",
+      "ecli": "ECLI:EU:T:2016:729"
+    },
+    {
+      "celex": "62015TJ0602",
+      "ecli": "ECLI:EU:T:2021:764"
+    },
+    {
+      "celex": "62015TJ0682",
+      "ecli": "ECLI:EU:T:2017:644"
+    },
+    {
+      "celex": "62015TJ0742",
+      "ecli": "ECLI:EU:T:2017:528"
+    },
+    {
+      "celex": "62016CJ0089",
+      "ecli": "ECLI:EU:C:2017:538"
+    },
+    {
+      "celex": "62016CJ0103",
+      "ecli": "ECLI:EU:C:2018:99"
+    },
+    {
+      "celex": "62016CJ0126",
+      "ecli": "ECLI:EU:C:2017:489"
+    },
+    {
+      "celex": "62016CJ0143",
+      "ecli": "ECLI:EU:C:2017:566"
+    },
+    {
+      "celex": "62016CJ0149",
+      "ecli": "ECLI:EU:C:2017:708"
+    },
+    {
+      "celex": "62016CJ0158",
+      "ecli": "ECLI:EU:C:2017:1014"
+    },
+    {
+      "celex": "62016CJ0168",
+      "ecli": "ECLI:EU:C:2017:688"
+    },
+    {
+      "celex": "62016CJ0174",
+      "ecli": "ECLI:EU:C:2017:637"
+    },
+    {
+      "celex": "62016CJ0175",
+      "ecli": "ECLI:EU:C:2017:617"
+    },
+    {
+      "celex": "62016CJ0190",
+      "ecli": "ECLI:EU:C:2017:513"
+    },
+    {
+      "celex": "62016CJ0200",
+      "ecli": "ECLI:EU:C:2017:780"
+    },
+    {
+      "celex": "62016CJ0214",
+      "ecli": "ECLI:EU:C:2017:914"
+    },
+    {
+      "celex": "62016CJ0270",
+      "ecli": "ECLI:EU:C:2018:17"
+    },
+    {
+      "celex": "62016CJ0306",
+      "ecli": "ECLI:EU:C:2017:844"
+    },
+    {
+      "celex": "62016CJ0354",
+      "ecli": "ECLI:EU:C:2017:539"
+    },
+    {
+      "celex": "62016CJ0359",
+      "ecli": "ECLI:EU:C:2018:63"
+    },
+    {
+      "celex": "62016CJ0409",
+      "ecli": "ECLI:EU:C:2017:767"
+    },
+    {
+      "celex": "62016CJ0414",
+      "ecli": "ECLI:EU:C:2018:257"
+    },
+    {
+      "celex": "62016CJ0416",
+      "ecli": "ECLI:EU:C:2017:574"
+    },
+    {
+      "celex": "62016CJ0429",
+      "ecli": "ECLI:EU:C:2017:711"
+    },
+    {
+      "celex": "62016CJ0431",
+      "ecli": "ECLI:EU:C:2018:189"
+    },
+    {
+      "celex": "62016CJ0442",
+      "ecli": "ECLI:EU:C:2017:1004"
+    },
+    {
+      "celex": "62016CJ0449",
+      "ecli": "ECLI:EU:C:2017:485"
+    },
+    {
+      "celex": "62016CJ0451",
+      "ecli": "ECLI:EU:C:2018:492"
+    },
+    {
+      "celex": "62016CJ0472",
+      "ecli": "ECLI:EU:C:2018:646"
+    },
+    {
+      "celex": "62016CJ0482",
+      "ecli": "ECLI:EU:C:2018:180"
+    },
+    {
+      "celex": "62016CJ0494",
+      "ecli": "ECLI:EU:C:2018:166"
+    },
+    {
+      "celex": "62016CJ0517",
+      "ecli": "ECLI:EU:C:2018:350"
+    },
+    {
+      "celex": "62016CJ0527",
+      "ecli": "ECLI:EU:C:2018:669"
+    },
+    {
+      "celex": "62016CJ0551",
+      "ecli": "ECLI:EU:C:2018:200"
+    },
+    {
+      "celex": "62016CJ0569",
+      "ecli": "ECLI:EU:C:2018:871"
+    },
+    {
+      "celex": "62016CJ0574",
+      "ecli": "ECLI:EU:C:2018:390"
+    },
+    {
+      "celex": "62016CJ0619",
+      "ecli": "ECLI:EU:C:2018:872"
+    },
+    {
+      "celex": "62016CJ0651",
+      "ecli": "ECLI:EU:C:2018:162"
+    },
+    {
+      "celex": "62016CJ0677",
+      "ecli": "ECLI:EU:C:2018:393"
+    },
+    {
+      "celex": "62016CJ0679",
+      "ecli": "ECLI:EU:C:2018:601"
+    },
+    {
+      "celex": "62016CJ0684",
+      "ecli": "ECLI:EU:C:2018:874"
+    },
+    {
+      "celex": "62016CO0027",
+      "ecli": "ECLI:EU:C:2016:943"
+    },
+    {
+      "celex": "62016CO0443",
+      "ecli": "ECLI:EU:C:2017:109"
+    },
+    {
+      "celex": "62016CO0474",
+      "ecli": "ECLI:EU:C:2017:812"
+    },
+    {
+      "celex": "62016CO0653",
+      "ecli": "ECLI:EU:C:2017:371"
+    },
+    {
+      "celex": "62016TJ0233",
+      "ecli": "ECLI:EU:T:2017:435"
+    },
+    {
+      "celex": "62016TJ0483",
+      "ecli": "ECLI:EU:T:2020:225"
+    },
+    {
+      "celex": "62016TJ0518",
+      "ecli": "ECLI:EU:T:2018:873"
+    },
+    {
+      "celex": "62016TJ0562",
+      "ecli": "ECLI:EU:T:2017:664"
+    },
+    {
+      "celex": "62016TJ0563",
+      "ecli": "ECLI:EU:T:2017:665"
+    },
+    {
+      "celex": "62016TJ0574",
+      "ecli": "ECLI:EU:T:2018:252"
+    },
+    {
+      "celex": "62016TJ0750",
+      "ecli": "ECLI:EU:T:2018:972"
+    },
+    {
+      "celex": "62016TO0524",
+      "ecli": "ECLI:EU:T:2019:99"
+    },
+    {
+      "celex": "62016TO0746",
+      "ecli": "ECLI:EU:T:2017:738"
+    },
+    {
+      "celex": "62017CJ0002",
+      "ecli": "ECLI:EU:C:2018:511"
+    },
+    {
+      "celex": "62017CJ0012",
+      "ecli": "ECLI:EU:C:2018:799"
+    },
+    {
+      "celex": "62017CJ0017",
+      "ecli": "ECLI:EU:C:2018:674"
+    },
+    {
+      "celex": "62017CJ0018",
+      "ecli": "ECLI:EU:C:2018:904"
+    },
+    {
+      "celex": "62017CJ0024",
+      "ecli": "ECLI:EU:C:2019:373"
+    },
+    {
+      "celex": "62017CJ0033",
+      "ecli": "ECLI:EU:C:2018:896"
+    },
+    {
+      "celex": "62017CJ0041",
+      "ecli": "ECLI:EU:C:2018:736"
+    },
+    {
+      "celex": "62017CJ0045",
+      "ecli": "ECLI:EU:C:2018:18"
+    },
+    {
+      "celex": "62017CJ0046",
+      "ecli": "ECLI:EU:C:2018:131"
+    },
+    {
+      "celex": "62017CJ0057",
+      "ecli": "ECLI:EU:C:2018:512"
+    },
+    {
+      "celex": "62017CJ0060",
+      "ecli": "ECLI:EU:C:2018:559"
+    },
+    {
+      "celex": "62017CJ0061",
+      "ecli": "ECLI:EU:C:2018:653"
+    },
+    {
+      "celex": "62017CJ0068",
+      "ecli": "ECLI:EU:C:2018:696"
+    },
+    {
+      "celex": "62017CJ0096",
+      "ecli": "ECLI:EU:C:2018:603"
+    },
+    {
+      "celex": "62017CJ0122",
+      "ecli": "ECLI:EU:C:2018:631"
+    },
+    {
+      "celex": "62017CJ0133",
+      "ecli": "ECLI:EU:C:2018:203"
+    },
+    {
+      "celex": "62017CJ0147",
+      "ecli": "ECLI:EU:C:2018:926"
+    },
+    {
+      "celex": "62017CJ0193",
+      "ecli": "ECLI:EU:C:2019:43"
+    },
+    {
+      "celex": "62017CJ0245",
+      "ecli": "ECLI:EU:C:2018:934"
+    },
+    {
+      "celex": "62017CJ0258",
+      "ecli": "ECLI:EU:C:2019:17"
+    },
+    {
+      "celex": "62017CJ0272",
+      "ecli": "ECLI:EU:C:2019:49"
+    },
+    {
+      "celex": "62017CJ0312",
+      "ecli": "ECLI:EU:C:2018:734"
+    },
+    {
+      "celex": "62017CJ0322",
+      "ecli": "ECLI:EU:C:2019:102"
+    },
+    {
+      "celex": "62017CJ0331",
+      "ecli": "ECLI:EU:C:2018:859"
+    },
+    {
+      "celex": "62017CJ0338",
+      "ecli": "ECLI:EU:C:2018:605"
+    },
+    {
+      "celex": "62017CJ0370",
+      "ecli": "ECLI:EU:C:2020:260"
+    },
+    {
+      "celex": "62017CJ0378",
+      "ecli": "ECLI:EU:C:2018:979"
+    },
+    {
+      "celex": "62017CJ0385",
+      "ecli": "ECLI:EU:C:2018:1018"
+    },
+    {
+      "celex": "62017CJ0396",
+      "ecli": "ECLI:EU:C:2019:375"
+    },
+    {
+      "celex": "62017CJ0432",
+      "ecli": "ECLI:EU:C:2018:879"
+    },
+    {
+      "celex": "62017CJ0451",
+      "ecli": "ECLI:EU:C:2018:861"
+    },
+    {
+      "celex": "62017CJ0457",
+      "ecli": "ECLI:EU:C:2018:912"
+    },
+    {
+      "celex": "62017CJ0466",
+      "ecli": "ECLI:EU:C:2018:758"
+    },
+    {
+      "celex": "62017CJ0477",
+      "ecli": "ECLI:EU:C:2019:60"
+    },
+    {
+      "celex": "62017CJ0494",
+      "ecli": "ECLI:EU:C:2019:387"
+    },
+    {
+      "celex": "62017CJ0509",
+      "ecli": "ECLI:EU:C:2019:424"
+    },
+    {
+      "celex": "62017CJ0579",
+      "ecli": "ECLI:EU:C:2019:162"
+    },
+    {
+      "celex": "62017CJ0609",
+      "ecli": "ECLI:EU:C:2019:981"
+    },
+    {
+      "celex": "62017CJ0619",
+      "ecli": "ECLI:EU:C:2018:936"
+    },
+    {
+      "celex": "62017CJ0631",
+      "ecli": "ECLI:EU:C:2019:381"
+    },
+    {
+      "celex": "62017CJ0664",
+      "ecli": "ECLI:EU:C:2019:496"
+    },
+    {
+      "celex": "62017CJ0677",
+      "ecli": "ECLI:EU:C:2019:408"
+    },
+    {
+      "celex": "62017CO0142",
+      "ecli": "ECLI:EU:C:2018:68"
+    },
+    {
+      "celex": "62017CO0252",
+      "ecli": "ECLI:EU:C:2018:202"
+    },
+    {
+      "celex": "62017CO0315",
+      "ecli": "ECLI:EU:C:2018:207"
+    },
+    {
+      "celex": "62017CO0321",
+      "ecli": "ECLI:EU:C:2017:741"
+    },
+    {
+      "celex": "62017CO0442",
+      "ecli": "ECLI:EU:C:2018:6"
+    },
+    {
+      "celex": "62017CO0472(01)",
+      "ecli": "ECLI:EU:C:2018:684"
+    },
+    {
+      "celex": "62017CO0600",
+      "ecli": "ECLI:EU:C:2019:29"
+    },
+    {
+      "celex": "62017CO0626",
+      "ecli": "ECLI:EU:C:2019:28"
+    },
+    {
+      "celex": "62017TJ0011",
+      "ecli": "ECLI:EU:T:2019:65"
+    },
+    {
+      "celex": "62017TJ0152",
+      "ecli": "ECLI:EU:T:2018:875"
+    },
+    {
+      "celex": "62017TJ0200",
+      "ecli": "ECLI:EU:T:2018:244"
+    },
+    {
+      "celex": "62017TJ0231",
+      "ecli": "ECLI:EU:T:2018:3"
+    },
+    {
+      "celex": "62017TJ0458",
+      "ecli": "ECLI:EU:T:2018:838"
+    },
+    {
+      "celex": "62017TJ0571(01)",
+      "ecli": "ECLI:EU:T:2023:351"
+    },
+    {
+      "celex": "62017TJ0706",
+      "ecli": "ECLI:EU:T:2018:924"
+    },
+    {
+      "celex": "62018CJ0016",
+      "ecli": "ECLI:EU:C:2019:1110"
+    },
+    {
+      "celex": "62018CJ0029",
+      "ecli": "ECLI:EU:C:2019:315"
+    },
+    {
+      "celex": "62018CJ0032",
+      "ecli": "ECLI:EU:C:2019:752"
+    },
+    {
+      "celex": "62018CJ0033",
+      "ecli": "ECLI:EU:C:2019:470"
+    },
+    {
+      "celex": "62018CJ0049",
+      "ecli": "ECLI:EU:C:2019:106"
+    },
+    {
+      "celex": "62018CJ0055",
+      "ecli": "ECLI:EU:C:2019:402"
+    },
+    {
+      "celex": "62018CJ0064",
+      "ecli": "ECLI:EU:C:2019:723"
+    },
+    {
+      "celex": "62018CJ0072",
+      "ecli": "ECLI:EU:C:2019:516"
+    },
+    {
+      "celex": "62018CJ0103",
+      "ecli": "ECLI:EU:C:2020:219"
+    },
+    {
+      "celex": "62018CJ0134",
+      "ecli": "ECLI:EU:C:2019:212"
+    },
+    {
+      "celex": "62018CJ0154",
+      "ecli": "ECLI:EU:C:2019:113"
+    },
+    {
+      "celex": "62018CJ0161",
+      "ecli": "ECLI:EU:C:2019:382"
+    },
+    {
+      "celex": "62018CJ0168",
+      "ecli": "ECLI:EU:C:2019:1128"
+    },
+    {
+      "celex": "62018CJ0177",
+      "ecli": "ECLI:EU:C:2020:26"
+    },
+    {
+      "celex": "62018CJ0192",
+      "ecli": "ECLI:EU:C:2019:924"
+    },
+    {
+      "celex": "62018CJ0194",
+      "ecli": "ECLI:EU:C:2019:385"
+    },
+    {
+      "celex": "62018CJ0254",
+      "ecli": "ECLI:EU:C:2019:318"
+    },
+    {
+      "celex": "62018CJ0274",
+      "ecli": "ECLI:EU:C:2019:828"
+    },
+    {
+      "celex": "62018CJ0298",
+      "ecli": "ECLI:EU:C:2020:121"
+    },
+    {
+      "celex": "62018CJ0317",
+      "ecli": "ECLI:EU:C:2019:499"
+    },
+    {
+      "celex": "62018CJ0344",
+      "ecli": "ECLI:EU:C:2020:239"
+    },
+    {
+      "celex": "62018CJ0366",
+      "ecli": "ECLI:EU:C:2019:757"
+    },
+    {
+      "celex": "62018CJ0372",
+      "ecli": "ECLI:EU:C:2019:206"
+    },
+    {
+      "celex": "62018CJ0396",
+      "ecli": "ECLI:EU:C:2019:929"
+    },
+    {
+      "celex": "62018CJ0397",
+      "ecli": "ECLI:EU:C:2019:703"
+    },
+    {
+      "celex": "62018CJ0398",
+      "ecli": "ECLI:EU:C:2019:1050"
+    },
+    {
+      "celex": "62018CJ0404",
+      "ecli": "ECLI:EU:C:2019:523"
+    },
+    {
+      "celex": "62018CJ0447",
+      "ecli": "ECLI:EU:C:2019:1098"
+    },
+    {
+      "celex": "62018CJ0450",
+      "ecli": "ECLI:EU:C:2019:1075"
+    },
+    {
+      "celex": "62018CJ0460",
+      "ecli": "ECLI:EU:C:2019:1119"
+    },
+    {
+      "celex": "62018CJ0465",
+      "ecli": "ECLI:EU:C:2019:1125"
+    },
+    {
+      "celex": "62018CJ0473",
+      "ecli": "ECLI:EU:C:2019:662"
+    },
+    {
+      "celex": "62018CJ0486",
+      "ecli": "ECLI:EU:C:2019:379"
+    },
+    {
+      "celex": "62018CJ0507",
+      "ecli": "ECLI:EU:C:2020:289"
+    },
+    {
+      "celex": "62018CJ0544",
+      "ecli": "ECLI:EU:C:2019:761"
+    },
+    {
+      "celex": "62018CJ0585",
+      "ecli": "ECLI:EU:C:2019:982"
+    },
+    {
+      "celex": "62018CJ0588",
+      "ecli": "ECLI:EU:C:2020:420"
+    },
+    {
+      "celex": "62018CJ0610",
+      "ecli": "ECLI:EU:C:2020:565"
+    },
+    {
+      "celex": "62018CJ0620",
+      "ecli": "ECLI:EU:C:2020:1001"
+    },
+    {
+      "celex": "62018CJ0626",
+      "ecli": "ECLI:EU:C:2020:1000"
+    },
+    {
+      "celex": "62018CJ0658",
+      "ecli": "ECLI:EU:C:2020:572"
+    },
+    {
+      "celex": "62018CJ0670",
+      "ecli": "ECLI:EU:C:2020:272"
+    },
+    {
+      "celex": "62018CJ0674",
+      "ecli": "ECLI:EU:C:2020:682"
+    },
+    {
+      "celex": "62018CJ0681",
+      "ecli": "ECLI:EU:C:2020:823"
+    },
+    {
+      "celex": "62018CJ0710",
+      "ecli": "ECLI:EU:C:2020:299"
+    },
+    {
+      "celex": "62018CJ0760",
+      "ecli": "ECLI:EU:C:2021:113"
+    },
+    {
+      "celex": "62018CJ0762",
+      "ecli": "ECLI:EU:C:2020:504"
+    },
+    {
+      "celex": "62018CJ0769",
+      "ecli": "ECLI:EU:C:2020:203"
+    },
+    {
+      "celex": "62018CJ0773",
+      "ecli": "ECLI:EU:C:2020:125"
+    },
+    {
+      "celex": "62018CJ0777",
+      "ecli": "ECLI:EU:C:2020:745"
+    },
+    {
+      "celex": "62018CJ0802",
+      "ecli": "ECLI:EU:C:2020:269"
+    },
+    {
+      "celex": "62018CJ0804",
+      "ecli": "ECLI:EU:C:2021:594"
+    },
+    {
+      "celex": "62018CJ0815",
+      "ecli": "ECLI:EU:C:2020:976"
+    },
+    {
+      "celex": "62018CJ0824",
+      "ecli": "ECLI:EU:C:2021:153"
+    },
+    {
+      "celex": "62018CO0258",
+      "ecli": "ECLI:EU:C:2020:98"
+    },
+    {
+      "celex": "62018CO0293",
+      "ecli": "ECLI:EU:C:2019:224"
+    },
+    {
+      "celex": "62018CO0367",
+      "ecli": "ECLI:EU:C:2019:487"
+    },
+    {
+      "celex": "62018CO0439",
+      "ecli": "ECLI:EU:C:2019:858"
+    },
+    {
+      "celex": "62018CO0522(02)",
+      "ecli": "ECLI:EU:C:2020:42"
+    },
+    {
+      "celex": "62018CO0618",
+      "ecli": "ECLI:EU:C:2019:1090"
+    },
+    {
+      "celex": "62018CO0645",
+      "ecli": "ECLI:EU:C:2019:1108"
+    },
+    {
+      "celex": "62018CO0801",
+      "ecli": "ECLI:EU:C:2019:684"
+    },
+    {
+      "celex": "62018TJ0039",
+      "ecli": "ECLI:EU:T:2019:683"
+    },
+    {
+      "celex": "62018TJ0255",
+      "ecli": "ECLI:EU:T:2019:680"
+    },
+    {
+      "celex": "62018TJ0402",
+      "ecli": "ECLI:EU:T:2020:13"
+    },
+    {
+      "celex": "62018TJ0407",
+      "ecli": "ECLI:EU:T:2019:290"
+    },
+    {
+      "celex": "62018TJ0411",
+      "ecli": "ECLI:EU:T:2021:742"
+    },
+    {
+      "celex": "62018TJ0431",
+      "ecli": "ECLI:EU:T:2019:781"
+    },
+    {
+      "celex": "62018TJ0433",
+      "ecli": "ECLI:EU:T:2020:418"
+    },
+    {
+      "celex": "62018TJ0484",
+      "ecli": "ECLI:EU:T:2020:90"
+    },
+    {
+      "celex": "62018TJ0488",
+      "ecli": "ECLI:EU:T:2021:76"
+    },
+    {
+      "celex": "62018TJ0547",
+      "ecli": "ECLI:EU:T:2020:119"
+    },
+    {
+      "celex": "62018TO0538",
+      "ecli": "ECLI:EU:T:2019:420"
+    },
+    {
+      "celex": "62019CJ0016",
+      "ecli": "ECLI:EU:C:2021:64"
+    },
+    {
+      "celex": "62019CJ0017",
+      "ecli": "ECLI:EU:C:2020:379"
+    },
+    {
+      "celex": "62019CJ0029",
+      "ecli": "ECLI:EU:C:2020:36"
+    },
+    {
+      "celex": "62019CJ0030",
+      "ecli": "ECLI:EU:C:2021:269"
+    },
+    {
+      "celex": "62019CJ0107",
+      "ecli": "ECLI:EU:C:2021:722"
+    },
+    {
+      "celex": "62019CJ0119",
+      "ecli": "ECLI:EU:C:2020:676"
+    },
+    {
+      "celex": "62019CJ0135",
+      "ecli": "ECLI:EU:C:2020:177"
+    },
+    {
+      "celex": "62019CJ0181",
+      "ecli": "ECLI:EU:C:2020:794"
+    },
+    {
+      "celex": "62019CJ0211",
+      "ecli": "ECLI:EU:C:2020:344"
+    },
+    {
+      "celex": "62019CJ0223",
+      "ecli": "ECLI:EU:C:2020:753"
+    },
+    {
+      "celex": "62019CJ0243",
+      "ecli": "ECLI:EU:C:2020:872"
+    },
+    {
+      "celex": "62019CJ0282",
+      "ecli": "ECLI:EU:C:2022:3"
+    },
+    {
+      "celex": "62019CJ0300",
+      "ecli": "ECLI:EU:C:2020:898"
+    },
+    {
+      "celex": "62019CJ0302",
+      "ecli": "ECLI:EU:C:2020:957"
+    },
+    {
+      "celex": "62019CJ0326",
+      "ecli": "ECLI:EU:C:2021:438"
+    },
+    {
+      "celex": "62019CJ0344",
+      "ecli": "ECLI:EU:C:2021:182"
+    },
+    {
+      "celex": "62019CJ0428",
+      "ecli": "ECLI:EU:C:2021:548"
+    },
+    {
+      "celex": "62019CJ0463",
+      "ecli": "ECLI:EU:C:2020:932"
+    },
+    {
+      "celex": "62019CJ0511",
+      "ecli": "ECLI:EU:C:2021:274"
+    },
+    {
+      "celex": "62019CJ0535",
+      "ecli": "ECLI:EU:C:2021:595"
+    },
+    {
+      "celex": "62019CJ0538",
+      "ecli": "ECLI:EU:C:2021:809"
+    },
+    {
+      "celex": "62019CJ0550",
+      "ecli": "ECLI:EU:C:2021:514"
+    },
+    {
+      "celex": "62019CJ0580",
+      "ecli": "ECLI:EU:C:2021:183"
+    },
+    {
+      "celex": "62019CJ0585",
+      "ecli": "ECLI:EU:C:2021:210"
+    },
+    {
+      "celex": "62019CJ0636",
+      "ecli": "ECLI:EU:C:2021:885"
+    },
+    {
+      "celex": "62019CJ0644",
+      "ecli": "ECLI:EU:C:2020:810"
+    },
+    {
+      "celex": "62019CJ0652",
+      "ecli": "ECLI:EU:C:2021:208"
+    },
+    {
+      "celex": "62019CJ0726",
+      "ecli": "ECLI:EU:C:2021:439"
+    },
+    {
+      "celex": "62019CJ0742",
+      "ecli": "ECLI:EU:C:2021:597"
+    },
+    {
+      "celex": "62019CJ0784",
+      "ecli": "ECLI:EU:C:2021:427"
+    },
+    {
+      "celex": "62019CJ0795",
+      "ecli": "ECLI:EU:C:2021:606"
+    },
+    {
+      "celex": "62019CJ0799",
+      "ecli": "ECLI:EU:C:2020:960"
+    },
+    {
+      "celex": "62019CJ0824",
+      "ecli": "ECLI:EU:C:2021:862"
+    },
+    {
+      "celex": "62019CJ0843",
+      "ecli": "ECLI:EU:C:2021:55"
+    },
+    {
+      "celex": "62019CJ0866",
+      "ecli": "ECLI:EU:C:2021:865"
+    },
+    {
+      "celex": "62019CJ0909",
+      "ecli": "ECLI:EU:C:2021:893"
+    },
+    {
+      "celex": "62019CJ0914",
+      "ecli": "ECLI:EU:C:2021:430"
+    },
+    {
+      "celex": "62019CJ0928",
+      "ecli": "ECLI:EU:C:2021:656"
+    },
+    {
+      "celex": "62019CJ0942",
+      "ecli": "ECLI:EU:C:2021:440"
+    },
+    {
+      "celex": "62019CJ0948",
+      "ecli": "ECLI:EU:C:2021:906"
+    },
+    {
+      "celex": "62019CO0103",
+      "ecli": "ECLI:EU:C:2021:460"
+    },
+    {
+      "celex": "62019CO0140",
+      "ecli": "ECLI:EU:C:2019:1103"
+    },
+    {
+      "celex": "62019CO0256",
+      "ecli": "ECLI:EU:C:2020:523"
+    },
+    {
+      "celex": "62019CO0376",
+      "ecli": "ECLI:EU:C:2020:99"
+    },
+    {
+      "celex": "62019CO0468",
+      "ecli": "ECLI:EU:C:2020:97"
+    },
+    {
+      "celex": "62019CO0483",
+      "ecli": "ECLI:EU:C:2019:1081"
+    },
+    {
+      "celex": "62019CO0692",
+      "ecli": "ECLI:EU:C:2020:288"
+    },
+    {
+      "celex": "62019CO0841",
+      "ecli": "ECLI:EU:C:2021:159"
+    },
+    {
+      "celex": "62019CV0001(02)",
+      "ecli": "ECLI:EU:C:2021:832"
+    },
+    {
+      "celex": "62019TJ0131",
+      "ecli": "ECLI:EU:T:2020:250"
+    },
+    {
+      "celex": "62019TJ0575",
+      "ecli": "ECLI:EU:T:2021:324"
+    },
+    {
+      "celex": "62019TJ0632",
+      "ecli": "ECLI:EU:T:2021:434"
+    },
+    {
+      "celex": "62019TJ0720",
+      "ecli": "ECLI:EU:T:2021:580"
+    },
+    {
+      "celex": "62019TJ0864",
+      "ecli": "ECLI:EU:T:2022:452"
+    },
+    {
+      "celex": "62020CJ0027",
+      "ecli": "ECLI:EU:C:2021:383"
+    },
+    {
+      "celex": "62020CJ0040",
+      "ecli": "ECLI:EU:C:2022:985"
+    },
+    {
+      "celex": "62020CJ0094",
+      "ecli": "ECLI:EU:C:2021:477"
+    },
+    {
+      "celex": "62020CJ0152",
+      "ecli": "ECLI:EU:C:2021:600"
+    },
+    {
+      "celex": "62020CJ0205",
+      "ecli": "ECLI:EU:C:2022:168"
+    },
+    {
+      "celex": "62020CJ0214",
+      "ecli": "ECLI:EU:C:2021:909"
+    },
+    {
+      "celex": "62020CJ0217",
+      "ecli": "ECLI:EU:C:2021:987"
+    },
+    {
+      "celex": "62020CJ0219",
+      "ecli": "ECLI:EU:C:2022:89"
+    },
+    {
+      "celex": "62020CJ0232",
+      "ecli": "ECLI:EU:C:2022:196"
+    },
+    {
+      "celex": "62020CJ0233",
+      "ecli": "ECLI:EU:C:2021:960"
+    },
+    {
+      "celex": "62020CJ0236",
+      "ecli": "ECLI:EU:C:2022:263"
+    },
+    {
+      "celex": "62020CJ0237",
+      "ecli": "ECLI:EU:C:2022:321"
+    },
+    {
+      "celex": "62020CJ0244",
+      "ecli": "ECLI:EU:C:2021:854"
+    },
+    {
+      "celex": "62020CJ0262",
+      "ecli": "ECLI:EU:C:2022:117"
+    },
+    {
+      "celex": "62020CJ0265",
+      "ecli": "ECLI:EU:C:2022:361"
+    },
+    {
+      "celex": "62020CJ0285",
+      "ecli": "ECLI:EU:C:2021:785"
+    },
+    {
+      "celex": "62020CJ0328",
+      "ecli": "ECLI:EU:C:2022:468"
+    },
+    {
+      "celex": "62020CJ0344",
+      "ecli": "ECLI:EU:C:2022:774"
+    },
+    {
+      "celex": "62020CJ0350",
+      "ecli": "ECLI:EU:C:2021:659"
+    },
+    {
+      "celex": "62020CJ0372",
+      "ecli": "ECLI:EU:C:2021:962"
+    },
+    {
+      "celex": "62020CJ0389",
+      "ecli": "ECLI:EU:C:2022:120"
+    },
+    {
+      "celex": "62020CJ0405",
+      "ecli": "ECLI:EU:C:2022:347"
+    },
+    {
+      "celex": "62020CJ0411",
+      "ecli": "ECLI:EU:C:2022:602"
+    },
+    {
+      "celex": "62020CJ0426",
+      "ecli": "ECLI:EU:C:2022:373"
+    },
+    {
+      "celex": "62020CJ0462",
+      "ecli": "ECLI:EU:C:2021:894"
+    },
+    {
+      "celex": "62020CJ0485",
+      "ecli": "ECLI:EU:C:2022:85"
+    },
+    {
+      "celex": "62020CJ0514",
+      "ecli": "ECLI:EU:C:2022:19"
+    },
+    {
+      "celex": "62020CJ0518",
+      "ecli": "ECLI:EU:C:2022:707"
+    },
+    {
+      "celex": "62020CJ0541",
+      "ecli": "ECLI:EU:C:2024:818"
+    },
+    {
+      "celex": "62020CJ0576",
+      "ecli": "ECLI:EU:C:2022:525"
+    },
+    {
+      "celex": "62020CJ0587",
+      "ecli": "ECLI:EU:C:2022:419"
+    },
+    {
+      "celex": "62020CJ0625",
+      "ecli": "ECLI:EU:C:2022:508"
+    },
+    {
+      "celex": "62020CJ0660",
+      "ecli": "ECLI:EU:C:2023:789"
+    },
+    {
+      "celex": "62020CJ0713",
+      "ecli": "ECLI:EU:C:2022:782"
+    },
+    {
+      "celex": "62020CJ0715",
+      "ecli": "ECLI:EU:C:2024:139"
+    },
+    {
+      "celex": "62020CJ0724",
+      "ecli": "ECLI:EU:C:2022:9"
+    },
+    {
+      "celex": "62020CO0032",
+      "ecli": "ECLI:EU:C:2020:441"
+    },
+    {
+      "celex": "62020CO0105",
+      "ecli": "ECLI:EU:C:2021:62"
+    },
+    {
+      "celex": "62020CO0135",
+      "ecli": "ECLI:EU:C:2020:760"
+    },
+    {
+      "celex": "62020CO0328",
+      "ecli": "ECLI:EU:C:2020:1068"
+    },
+    {
+      "celex": "62020CO0471(03)",
+      "ecli": "ECLI:EU:C:2021:331"
+    },
+    {
+      "celex": "62020CO0523",
+      "ecli": "ECLI:EU:C:2021:160"
+    },
+    {
+      "celex": "62020CO0574",
+      "ecli": "ECLI:EU:C:2023:27"
+    },
+    {
+      "celex": "62020CO0691",
+      "ecli": "ECLI:EU:C:2021:895"
+    },
+    {
+      "celex": "62020TJ0240",
+      "ecli": "ECLI:EU:T:2021:590"
+    },
+    {
+      "celex": "62020TJ0374",
+      "ecli": "ECLI:EU:T:2021:162"
+    },
+    {
+      "celex": "62021CJ0003",
+      "ecli": "ECLI:EU:C:2022:737"
+    },
+    {
+      "celex": "62021CJ0033",
+      "ecli": "ECLI:EU:C:2022:402"
+    },
+    {
+      "celex": "62021CJ0058",
+      "ecli": "ECLI:EU:C:2022:691"
+    },
+    {
+      "celex": "62021CJ0120",
+      "ecli": "ECLI:EU:C:2022:718"
+    },
+    {
+      "celex": "62021CJ0192",
+      "ecli": "ECLI:EU:C:2022:513"
+    },
+    {
+      "celex": "62021CJ0199",
+      "ecli": "ECLI:EU:C:2022:789"
+    },
+    {
+      "celex": "62021CJ0257",
+      "ecli": "ECLI:EU:C:2022:529"
+    },
+    {
+      "celex": "62021CJ0283",
+      "ecli": "ECLI:EU:C:2024:144"
+    },
+    {
+      "celex": "62021CJ0301",
+      "ecli": "ECLI:EU:C:2022:811"
+    },
+    {
+      "celex": "62021CJ0304",
+      "ecli": "ECLI:EU:C:2022:897"
+    },
+    {
+      "celex": "62021CJ0311",
+      "ecli": "ECLI:EU:C:2022:983"
+    },
+    {
+      "celex": "62021CJ0356",
+      "ecli": "ECLI:EU:C:2023:9"
+    },
+    {
+      "celex": "62021CJ0377",
+      "ecli": "ECLI:EU:C:2022:530"
+    },
+    {
+      "celex": "62021CJ0392",
+      "ecli": "ECLI:EU:C:2022:1020"
+    },
+    {
+      "celex": "62021CJ0404",
+      "ecli": "ECLI:EU:C:2022:1023"
+    },
+    {
+      "celex": "62021CJ0410",
+      "ecli": "ECLI:EU:C:2023:138"
+    },
+    {
+      "celex": "62021CJ0427",
+      "ecli": "ECLI:EU:C:2023:505"
+    },
+    {
+      "celex": "62021CJ0477",
+      "ecli": "ECLI:EU:C:2023:140"
+    },
+    {
+      "celex": "62021CJ0488",
+      "ecli": "ECLI:EU:C:2023:1013"
+    },
+    {
+      "celex": "62021CJ0524",
+      "ecli": "ECLI:EU:C:2023:100"
+    },
+    {
+      "celex": "62021CJ0527",
+      "ecli": "ECLI:EU:C:2023:850"
+    },
+    {
+      "celex": "62021CJ0529",
+      "ecli": "ECLI:EU:C:2023:374"
+    },
+    {
+      "celex": "62021CJ0583",
+      "ecli": "ECLI:EU:C:2023:872"
+    },
+    {
+      "celex": "62021CJ0650",
+      "ecli": "ECLI:EU:C:2023:300"
+    },
+    {
+      "celex": "62021CJ0675",
+      "ecli": "ECLI:EU:C:2023:108"
+    },
+    {
+      "celex": "62021CJ0681",
+      "ecli": "ECLI:EU:C:2023:349"
+    },
+    {
+      "celex": "62021CJ0710",
+      "ecli": "ECLI:EU:C:2023:109"
+    },
+    {
+      "celex": "62021CJ0714",
+      "ecli": "ECLI:EU:C:2023:187"
+    },
+    {
+      "celex": "62021CJ0715",
+      "ecli": "ECLI:EU:C:2023:190"
+    },
+    {
+      "celex": "62021CJ0731",
+      "ecli": "ECLI:EU:C:2022:969"
+    },
+    {
+      "celex": "62021CO0133",
+      "ecli": "ECLI:EU:C:2022:294"
+    },
+    {
+      "celex": "62021CO0151",
+      "ecli": "ECLI:EU:C:2021:1005"
+    },
+    {
+      "celex": "62021CO0204(02)",
+      "ecli": "ECLI:EU:C:2021:593"
+    },
+    {
+      "celex": "62021CO0226",
+      "ecli": "ECLI:EU:C:2021:1010"
+    },
+    {
+      "celex": "62021CO0450",
+      "ecli": "ECLI:EU:C:2022:411"
+    },
+    {
+      "celex": "62021CO0464",
+      "ecli": "ECLI:EU:C:2022:337"
+    },
+    {
+      "celex": "62021CO0569",
+      "ecli": "ECLI:EU:C:2022:910"
+    },
+    {
+      "celex": "62021TJ0036",
+      "ecli": "ECLI:EU:T:2022:192"
+    },
+    {
+      "celex": "62021TJ0223",
+      "ecli": "ECLI:EU:T:2023:375"
+    },
+    {
+      "celex": "62021TJ0371",
+      "ecli": "ECLI:EU:T:2024:35"
+    },
+    {
+      "celex": "62021TJ0714",
+      "ecli": "ECLI:EU:T:2023:282"
+    },
+    {
+      "celex": "62021TO0077",
+      "ecli": "ECLI:EU:T:2021:801"
+    },
+    {
+      "celex": "62022CJ0045",
+      "ecli": "ECLI:EU:C:2023:772"
+    },
+    {
+      "celex": "62022CJ0046",
+      "ecli": "ECLI:EU:C:2024:50"
+    },
+    {
+      "celex": "62022CJ0052",
+      "ecli": "ECLI:EU:C:2023:309"
+    },
+    {
+      "celex": "62022CJ0057",
+      "ecli": "ECLI:EU:C:2023:770"
+    },
+    {
+      "celex": "62022CJ0059",
+      "ecli": "ECLI:EU:C:2024:149"
+    },
+    {
+      "celex": "62022CJ0132",
+      "ecli": "ECLI:EU:C:2023:489"
+    },
+    {
+      "celex": "62022CJ0134",
+      "ecli": "ECLI:EU:C:2023:567"
+    },
+    {
+      "celex": "62022CJ0148",
+      "ecli": "ECLI:EU:C:2023:924"
+    },
+    {
+      "celex": "62022CJ0184",
+      "ecli": "ECLI:EU:C:2024:637"
+    },
+    {
+      "celex": "62022CJ0192",
+      "ecli": "ECLI:EU:C:2023:347"
+    },
+    {
+      "celex": "62022CJ0206",
+      "ecli": "ECLI:EU:C:2023:984"
+    },
+    {
+      "celex": "62022CJ0218",
+      "ecli": "ECLI:EU:C:2024:51"
+    },
+    {
+      "celex": "62022CJ0270",
+      "ecli": "ECLI:EU:C:2023:933"
+    },
+    {
+      "celex": "62022CJ0271",
+      "ecli": "ECLI:EU:C:2023:834"
+    },
+    {
+      "celex": "62022CJ0331",
+      "ecli": "ECLI:EU:C:2024:496"
+    },
+    {
+      "celex": "62022CJ0387",
+      "ecli": "ECLI:EU:C:2024:786"
+    },
+    {
+      "celex": "62022CJ0389",
+      "ecli": "ECLI:EU:C:2024:77"
+    },
+    {
+      "celex": "62022CJ0404",
+      "ecli": "ECLI:EU:C:2023:548"
+    },
+    {
+      "celex": "62022CJ0411",
+      "ecli": "ECLI:EU:C:2023:490"
+    },
+    {
+      "celex": "62022CJ0415",
+      "ecli": "ECLI:EU:C:2023:881"
+    },
+    {
+      "celex": "62022CJ0422",
+      "ecli": "ECLI:EU:C:2023:869"
+    },
+    {
+      "celex": "62022CJ0496",
+      "ecli": "ECLI:EU:C:2023:741"
+    },
+    {
+      "celex": "62022CJ0518",
+      "ecli": "ECLI:EU:C:2023:956"
+    },
+    {
+      "celex": "62022CJ0540",
+      "ecli": "ECLI:EU:C:2024:530"
+    },
+    {
+      "celex": "62022CJ0548",
+      "ecli": "ECLI:EU:C:2024:730"
+    },
+    {
+      "celex": "62022CJ0589",
+      "ecli": "ECLI:EU:C:2024:155"
+    },
+    {
+      "celex": "62022CJ0631",
+      "ecli": "ECLI:EU:C:2024:53"
+    },
+    {
+      "celex": "62022CJ0649",
+      "ecli": "ECLI:EU:C:2024:156"
+    },
+    {
+      "celex": "62022CJ0673",
+      "ecli": "ECLI:EU:C:2024:407"
+    },
+    {
+      "celex": "62022CJ0792",
+      "ecli": "ECLI:EU:C:2024:788"
+    },
+    {
+      "celex": "62022CO0025",
+      "ecli": "ECLI:EU:C:2022:590"
+    },
+    {
+      "celex": "62022CO0030",
+      "ecli": "ECLI:EU:C:2023:259"
+    },
+    {
+      "celex": "62022CO0036",
+      "ecli": "ECLI:EU:C:2022:666"
+    },
+    {
+      "celex": "62022CO0037",
+      "ecli": "ECLI:EU:C:2022:664"
+    },
+    {
+      "celex": "62022CO0038",
+      "ecli": "ECLI:EU:C:2022:663"
+    },
+    {
+      "celex": "62022CO0039",
+      "ecli": "ECLI:EU:C:2022:665"
+    },
+    {
+      "celex": "62022CO0040",
+      "ecli": "ECLI:EU:C:2022:662"
+    },
+    {
+      "celex": "62022CO0190",
+      "ecli": "ECLI:EU:C:2023:804"
+    },
+    {
+      "celex": "62022CO0195",
+      "ecli": "ECLI:EU:C:2022:728"
+    },
+    {
+      "celex": "62022CO0244",
+      "ecli": "ECLI:EU:C:2022:674"
+    },
+    {
+      "celex": "62022CO0332",
+      "ecli": "ECLI:EU:C:2024:880"
+    },
+    {
+      "celex": "62022CO0483",
+      "ecli": "ECLI:EU:C:2023:124"
+    },
+    {
+      "celex": "62022CO0628",
+      "ecli": "ECLI:EU:C:2023:952"
+    },
+    {
+      "celex": "62022CO0689",
+      "ecli": "ECLI:EU:C:2024:715"
+    },
+    {
+      "celex": "62022CO0748",
+      "ecli": "ECLI:EU:C:2025:138"
+    },
+    {
+      "celex": "62022CO0795",
+      "ecli": "ECLI:EU:C:2023:783"
+    },
+    {
+      "celex": "62022TJ0039",
+      "ecli": "ECLI:EU:T:2023:709"
+    },
+    {
+      "celex": "62023CJ0027",
+      "ecli": "ECLI:EU:C:2024:404"
+    },
+    {
+      "celex": "62023CJ0036",
+      "ecli": "ECLI:EU:C:2024:355"
+    },
+    {
+      "celex": "62023CJ0041",
+      "ecli": "ECLI:EU:C:2024:554"
+    },
+    {
+      "celex": "62023CJ0053",
+      "ecli": "ECLI:EU:C:2024:388"
+    },
+    {
+      "celex": "62023CJ0116",
+      "ecli": "ECLI:EU:C:2024:292"
+    },
+    {
+      "celex": "62023CJ0125",
+      "ecli": "ECLI:EU:C:2024:163"
+    },
+    {
+      "celex": "62023CJ0195",
+      "ecli": "ECLI:EU:C:2024:337"
+    },
+    {
+      "celex": "62023CJ0196",
+      "ecli": "ECLI:EU:C:2024:596"
+    },
+    {
+      "celex": "62023CJ0277",
+      "ecli": "ECLI:EU:C:2025:18"
+    },
+    {
+      "celex": "62023CJ0284",
+      "ecli": "ECLI:EU:C:2024:558"
+    },
+    {
+      "celex": "62023CJ0309",
+      "ecli": "ECLI:EU:C:2024:693"
+    },
+    {
+      "celex": "62023CJ0314",
+      "ecli": "ECLI:EU:C:2024:842"
+    },
+    {
+      "celex": "62023CJ0322",
+      "ecli": "ECLI:EU:C:2024:900"
+    },
+    {
+      "celex": "62023CJ0329",
+      "ecli": "ECLI:EU:C:2024:802"
+    },
+    {
+      "celex": "62023CJ0349",
+      "ecli": "ECLI:EU:C:2024:889"
+    },
+    {
+      "celex": "62023CJ0367",
+      "ecli": "ECLI:EU:C:2024:529"
+    },
+    {
+      "celex": "62023CJ0397",
+      "ecli": "ECLI:EU:C:2025:602"
+    },
+    {
+      "celex": "62023CJ0408",
+      "ecli": "ECLI:EU:C:2024:901"
+    },
+    {
+      "celex": "62023CJ0417",
+      "ecli": "ECLI:EU:C:2025:1017"
+    },
+    {
+      "celex": "62023CJ0421",
+      "ecli": "ECLI:EU:C:2025:36"
+    },
+    {
+      "celex": "62023CJ0422",
+      "ecli": "ECLI:EU:C:2025:592"
+    },
+    {
+      "celex": "62023CJ0431",
+      "ecli": "ECLI:EU:C:2025:232"
+    },
+    {
+      "celex": "62023CJ0439",
+      "ecli": "ECLI:EU:C:2024:773"
+    },
+    {
+      "celex": "62023CJ0441",
+      "ecli": "ECLI:EU:C:2024:916"
+    },
+    {
+      "celex": "62023CJ0489",
+      "ecli": "ECLI:EU:C:2025:651"
+    },
+    {
+      "celex": "62023CJ0514",
+      "ecli": "ECLI:EU:C:2025:597"
+    },
+    {
+      "celex": "62023CJ0531",
+      "ecli": "ECLI:EU:C:2024:1050"
+    },
+    {
+      "celex": "62023CJ0543",
+      "ecli": "ECLI:EU:C:2025:653"
+    },
+    {
+      "celex": "62023CJ0546",
+      "ecli": "ECLI:EU:C:2024:975"
+    },
+    {
+      "celex": "62023CJ0584",
+      "ecli": "ECLI:EU:C:2025:261"
+    },
+    {
+      "celex": "62023CJ0664",
+      "ecli": "ECLI:EU:C:2024:1046"
+    },
+    {
+      "celex": "62023CJ0678",
+      "ecli": "ECLI:EU:C:2025:878"
+    },
+    {
+      "celex": "62023CJ0743",
+      "ecli": "ECLI:EU:C:2025:954"
+    },
+    {
+      "celex": "62023CO0163",
+      "ecli": "ECLI:EU:C:2025:164"
+    },
+    {
+      "celex": "62023CO0278",
+      "ecli": "ECLI:EU:C:2024:111"
+    },
+    {
+      "celex": "62023CO0333",
+      "ecli": "ECLI:EU:C:2023:858"
+    },
+    {
+      "celex": "62023CO0435",
+      "ecli": "ECLI:EU:C:2024:671"
+    },
+    {
+      "celex": "62023CO0463",
+      "ecli": "ECLI:EU:C:2024:544"
+    },
+    {
+      "celex": "62023CO0603",
+      "ecli": "ECLI:EU:C:2024:930"
+    },
+    {
+      "celex": "62023TJ0148",
+      "ecli": "ECLI:EU:T:2024:684"
+    },
+    {
+      "celex": "62023TJ0261",
+      "ecli": "ECLI:EU:T:2024:191"
+    },
+    {
+      "celex": "62024CJ0005",
+      "ecli": "ECLI:EU:C:2025:689"
+    },
+    {
+      "celex": "62024CJ0007",
+      "ecli": "ECLI:EU:C:2025:439"
+    },
+    {
+      "celex": "62024CJ0038",
+      "ecli": "ECLI:EU:C:2025:690"
+    },
+    {
+      "celex": "62024CJ0068",
+      "ecli": "ECLI:EU:C:2025:607"
+    },
+    {
+      "celex": "62024CJ0069",
+      "ecli": "ECLI:EU:C:2025:612"
+    },
+    {
+      "celex": "62024CJ0070",
+      "ecli": "ECLI:EU:C:2025:615"
+    },
+    {
+      "celex": "62024CJ0110",
+      "ecli": "ECLI:EU:C:2025:768"
+    },
+    {
+      "celex": "62024CJ0134",
+      "ecli": "ECLI:EU:C:2025:839"
+    },
+    {
+      "celex": "62024CJ0151",
+      "ecli": "ECLI:EU:C:2026:144"
+    },
+    {
+      "celex": "62024CJ0203",
+      "ecli": "ECLI:EU:C:2025:662"
+    },
+    {
+      "celex": "62024CJ0210",
+      "ecli": "ECLI:EU:C:2026:145"
+    },
+    {
+      "celex": "62024CJ0212",
+      "ecli": "ECLI:EU:C:2025:341"
+    },
+    {
+      "celex": "62024CJ0219",
+      "ecli": "ECLI:EU:C:2025:442"
+    },
+    {
+      "celex": "62024CJ0249",
+      "ecli": "ECLI:EU:C:2025:661"
+    },
+    {
+      "celex": "62024CJ0253",
+      "ecli": "ECLI:EU:C:2025:660"
+    },
+    {
+      "celex": "62024CJ0257",
+      "ecli": "ECLI:EU:C:2025:567"
+    },
+    {
+      "celex": "62024CJ0258",
+      "ecli": "ECLI:EU:C:2026:211"
+    },
+    {
+      "celex": "62024CJ0268",
+      "ecli": "ECLI:EU:C:2025:526"
+    },
+    {
+      "celex": "62024CJ0272",
+      "ecli": "ECLI:EU:C:2025:874"
+    },
+    {
+      "celex": "62024CJ0296",
+      "ecli": "ECLI:EU:C:2025:999"
+    },
+    {
+      "celex": "62024CJ0356",
+      "ecli": "ECLI:EU:C:2025:926"
+    },
+    {
+      "celex": "62024CJ0357",
+      "ecli": "ECLI:EU:C:2026:258"
+    },
+    {
+      "celex": "62024CJ0373",
+      "ecli": "ECLI:EU:C:2025:842"
+    },
+    {
+      "celex": "62024CJ0402",
+      "ecli": "ECLI:EU:C:2025:840"
+    },
+    {
+      "celex": "62024CJ0419",
+      "ecli": "ECLI:EU:C:2025:464"
+    },
+    {
+      "celex": "62024CJ0597",
+      "ecli": "ECLI:EU:C:2026:198"
+    },
+    {
+      "celex": "62024CJ0633",
+      "ecli": "ECLI:EU:C:2026:36"
+    },
+    {
+      "celex": "62024CJ0654",
+      "ecli": "ECLI:EU:C:2026:57"
+    },
+    {
+      "celex": "62024CJ0668",
+      "ecli": "ECLI:EU:C:2026:60"
+    },
+    {
+      "celex": "62024CJ0757",
+      "ecli": "ECLI:EU:C:2026:159"
+    },
+    {
+      "celex": "62024CO0065",
+      "ecli": "ECLI:EU:C:2024:728"
+    },
+    {
+      "celex": "62024CO0374",
+      "ecli": "ECLI:EU:C:2025:282"
+    },
+    {
+      "celex": "62024CO0823",
+      "ecli": "ECLI:EU:C:2025:584"
+    },
+    {
+      "celex": "62024CO0861",
+      "ecli": "ECLI:EU:C:2026:106"
+    },
+    {
+      "celex": "62024TJ0051",
+      "ecli": "ECLI:EU:T:2024:686"
+    },
+    {
+      "celex": "62024TJ0153",
+      "ecli": "ECLI:EU:T:2025:829"
+    },
+    {
+      "celex": "62024TJ0483",
+      "ecli": "ECLI:EU:T:2025:1121"
+    },
+    {
+      "celex": "62024TJ0552",
+      "ecli": "ECLI:EU:T:2025:911"
+    },
+    {
+      "celex": "62025CJ0116",
+      "ecli": "ECLI:EU:C:2026:336"
+    },
+    {
+      "celex": "62025CO0037",
+      "ecli": "ECLI:EU:C:2025:586"
+    }
+  ]
 }
