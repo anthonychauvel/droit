@@ -47,6 +47,10 @@ jobs:
         run: python scripts/recense_eurlex.py
         continue-on-error: true
 
+      - name: Recensement CJUE (jurisprudence UE)
+        run: python scripts/recense_cjue.py
+        continue-on-error: true
+
       - name: Recensement HUDOC (CEDH)
         run: python scripts/recense_hudoc.py
         continue-on-error: true
