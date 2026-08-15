@@ -1,18 +1,35 @@
 {
   "source": "CJUE / CELLAR",
-  "champ": "Jurisprudence (arrets/ordonnances/avis), repertoire 05",
   "date_recensement": "2026-08-15",
-  "code_repertoire_retenu": "05",
-  "codes_testes": {
-    "05": 1,
-    "0520": 1,
-    "052020": 0
-  },
-  "total_arrets": 1,
-  "items": [
-    {
-      "celex": "E2005J0003",
-      "ecli": ""
-    }
-  ]
+  "total_arrets": 0,
+  "directives_ciblees": [
+    "32003L0088",
+    "31993L0104",
+    "31999L0070",
+    "31997L0081",
+    "32008L0104",
+    "32019L1152",
+    "31991L0533",
+    "31996L0071",
+    "32018L0957",
+    "32014L0067",
+    "31998L0059",
+    "32001L0023",
+    "32002L0014",
+    "32009L0038",
+    "31994L0033",
+    "32008L0094",
+    "32006L0054",
+    "32000L0078",
+    "32000L0043",
+    "32019L1158",
+    "31992L0085",
+    "32010L0041",
+    "31989L0391",
+    "32004R0883",
+    "32009R0987",
+    "32023L0970",
+    "32024L2831"
+  ],
+  "note": "Aucun arret cite ces directives (a verifier : propriete work_cites_work / format CELEX)."
 }
