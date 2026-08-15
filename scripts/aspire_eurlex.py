@@ -52,15 +52,38 @@ def _get(url, tries=3):
             time.sleep(2 ** i)
     return None  # echec reseau franc
 
+# En-tetes de repli : les actes TRES RECENTS (delegues/execution 2024-2026)
+# n\'ont souvent PAS de manifestation "simplified" -> on retente sans cette
+# contrainte, en acceptant le xhtml brut en premier.
+HEADERS_REPLI = dict(HEADERS)
+HEADERS_REPLI["Accept"] = ("application/xhtml+xml, text/html, text/plain, "
+                           "application/pdf")
+
+def _get2(url, headers, tries=3):
+    for i in range(tries):
+        try:
+            return requests.get(url, headers=headers, timeout=TIMEOUT, allow_redirects=True)
+        except Exception:
+            time.sleep(2 ** i)
+    return None
+
 def fetch_celex(celex):
-    """Renvoie (html, statut). Gere 200 (direct) et 300 (multi-versions)."""
-    r = _get(BASE % celex)
+    """Renvoie (html, statut). Gere 200 (direct), 300 (multi-versions), et
+    retente avec des en-tetes de repli si la 1ere tentative echoue (utile
+    pour les actes tres recents sans manifestation "simplified")."""
+    r = _get2(BASE % celex, HEADERS)
+    tentative = "std"
+    if r is None or r.status_code not in (200, 300):
+        r2 = _get2(BASE % celex, HEADERS_REPLI)
+        if r2 is not None and r2.status_code in (200, 300):
+            r = r2; tentative = "repli"
     if r is None:
         STATUTS["reseau"] = STATUTS.get("reseau", 0) + 1
         return None, "reseau"
-    STATUTS[r.status_code] = STATUTS.get(r.status_code, 0) + 1
+    cle = "%s(%s)" % (r.status_code, tentative) if tentative == "repli" else r.status_code
+    STATUTS[cle] = STATUTS.get(cle, 0) + 1
     if r.status_code == 200 and r.text:
-        return r.text, 200
+        return r.text, cle
     if r.status_code == 300 and r.text:
         # Plusieurs manifestations : suivre les liens (on privilegie FR).
         soup = BeautifulSoup(r.text, "html.parser")
@@ -73,8 +96,8 @@ def fetch_celex(celex):
             if rr is not None and rr.status_code == 200 and rr.text:
                 morceaux.append(rr.text)
         if morceaux:
-            return "\n".join(morceaux), 300
-    return None, r.status_code
+            return "\n".join(morceaux), cle
+    return None, cle
 
 def extraire_texte(html):
     soup = BeautifulSoup(html, "html.parser")
