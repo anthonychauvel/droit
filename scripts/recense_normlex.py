@@ -1,153 +1,87 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 r"""
-RECENSEMENT NORMLEX (OIT) — conventions ratifiees par la France.
+RECENSEMENT OIT (conventions ratifiees par la France) — LISTE CUREE.
 
-Le serveur de l'OIT bloque souvent les requetes automatisees (403), en
-particulier depuis des IP de datacenter (comme les runners GitHub). Ce script :
-  1) tente plusieurs URL (chemins EN/FR) avec des en-tetes de navigateur
-     complets + une session (cookies) ;
-  2) s'il est bloque sur toutes, il N'PLANTE PAS : il ecrit un resultat
-     "bloque" avec la marche a suivre (repli sur une liste curee).
+NORMLEX bloque tout acces automatise (403 depuis les IP datacenter GitHub, et
+meme via d'autres voies). On ne s'acharne donc pas : on fournit une LISTE
+CUREE des conventions ratifiees par la France PERTINENTES pour un salarie
+(fondamentales + gouvernance + techniques generales d'emploi).
 
-Repere attendu si l'acces passe : ~129 conventions ratifiees, ~79 en vigueur.
+Volontairement EXCLUES : conventions maritimes, peche, sectorielles ou
+denoncees -> sans interet pour un salarie, elles n'ajoutent que du bruit.
+
+/!\ Liste a VERIFIER/COMPLETER contre NORMLEX quand un acces sera possible.
+Elle couvre les conventions bien etablies comme ratifiees par la France ;
+quelques-unes peuvent demander confirmation. Facile a editer (variable CUREE).
 """
 
-import json, sys, time, datetime, re, os
-try:
-    import requests
-except ImportError:
-    print("ERREUR: le module 'requests' est requis (pip install requests).", file=sys.stderr)
-    sys.exit(2)
-try:
-    from bs4 import BeautifulSoup
-    HAVE_BS4 = True
-except ImportError:
-    HAVE_BS4 = False
+import json, sys, datetime, os
 
-# URL candidates du profil pays FRANCE (P11200_COUNTRY_ID:102691 a verifier).
-URLS = [
-    "https://normlex.ilo.org/dyn/normlex/en/f?p=NORMLEXPUB:11200:0::NO::P11200_COUNTRY_ID:102691",
-    "https://normlex.ilo.org/dyn/normlex/fr/f?p=NORMLEXPUB:11200:0::NO::P11200_COUNTRY_ID:102691",
-    "https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:11200:0::NO::P11200_COUNTRY_ID:102691",
+# Numero -> intitule (francais). Conventions ratifiees par la France, utiles
+# a un salarie. Ordre par numero.
+CUREE = [
+    # --- Fondamentales ---
+    ("C029", "Travail force, 1930", "fondamentale"),
+    ("C087", "Liberte syndicale et protection du droit syndical, 1948", "fondamentale"),
+    ("C098", "Droit d'organisation et de negociation collective, 1949", "fondamentale"),
+    ("C100", "Egalite de remuneration, 1951", "fondamentale"),
+    ("C105", "Abolition du travail force, 1957", "fondamentale"),
+    ("C111", "Discrimination (emploi et profession), 1958", "fondamentale"),
+    ("C138", "Age minimum, 1973", "fondamentale"),
+    ("C155", "Securite et sante des travailleurs, 1981", "fondamentale"),
+    ("C182", "Pires formes de travail des enfants, 1999", "fondamentale"),
+    # --- Gouvernance ---
+    ("C081", "Inspection du travail, 1947", "gouvernance"),
+    ("C122", "Politique de l'emploi, 1964", "gouvernance"),
+    ("C129", "Inspection du travail (agriculture), 1969", "gouvernance"),
+    ("C144", "Consultations tripartites (normes internationales du travail), 1976", "gouvernance"),
+    # --- Techniques generales d'emploi ---
+    ("C001", "Duree du travail (industrie), 1919", "technique"),
+    ("C014", "Repos hebdomadaire (industrie), 1921", "technique"),
+    ("C026", "Methodes de fixation des salaires minima, 1928", "technique"),
+    ("C095", "Protection du salaire, 1949", "technique"),
+    ("C097", "Travailleurs migrants (revisee), 1949", "technique"),
+    ("C102", "Securite sociale (norme minimum), 1952", "technique"),
+    ("C106", "Repos hebdomadaire (commerce et bureaux), 1957", "technique"),
+    ("C118", "Egalite de traitement (securite sociale), 1962", "technique"),
+    ("C132", "Conges payes (revisee), 1970", "technique"),
+    ("C135", "Representants des travailleurs, 1971", "technique"),
+    ("C142", "Mise en valeur des ressources humaines, 1975", "technique"),
+    ("C154", "Negociation collective, 1981", "technique"),
+    ("C156", "Travailleurs ayant des responsabilites familiales, 1981", "technique"),
+    ("C158", "Licenciement, 1982", "technique"),
+    ("C175", "Travail a temps partiel, 1994", "technique"),
+    ("C181", "Agences d'emploi privees, 1997", "technique"),
+    ("C190", "Violence et harcelement, 2019", "technique"),
 ]
-TIMEOUT = 90
+
 OUT = "output/intl/recensement-normlex.json"
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 "
-                  "(KHTML, like Gecko) Version/17.0 Safari/605.1.15",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Accept-Language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "none",
-    "Sec-Fetch-User": "?1",
-    "sec-ch-ua": '"Not_A Brand";v="8", "Chromium";v="120", "Safari";v="17"',
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": '"macOS"',
-    "Referer": "https://normlex.ilo.org/",
-}
-
-def fetch_any(tries=3):
-    """Essaie chaque URL avec session+en-tetes. Renvoie (html, url) ou (None, dernier_statut)."""
-    sess = requests.Session()
-    sess.headers.update(HEADERS)
-    try:
-        sess.get("https://normlex.ilo.org/", timeout=TIMEOUT)  # amorce cookies
-    except Exception:
-        pass
-    dernier = "aucune tentative"
-    for url in URLS:
-        for i in range(tries):
-            try:
-                r = sess.get(url, timeout=TIMEOUT)
-                if r.status_code == 200 and r.text and len(r.text) > 2000:
-                    print("  OK via %s" % url)
-                    return r.text, url
-                dernier = "HTTP %s (%s)" % (r.status_code, url)
-            except Exception as e:
-                dernier = "%s (%s)" % (repr(e), url)
-            print("  ... %s -> %s" % (url, dernier))
-            time.sleep(2 ** i)
-    return None, dernier
-
-def parse(html):
-    conventions = {}
-    if HAVE_BS4:
-        soup = BeautifulSoup(html, "html.parser")
-        for tr in soup.find_all("tr"):
-            row = tr.get_text(" ", strip=True)
-            m = re.search(r"\bC0*(\d{1,3})\b", row)
-            if not m:
-                continue
-            num = "C%03d" % int(m.group(1))
-            low = row.lower()
-            statut = "denoncee" if "denonc" in low else ("en vigueur" if ("en vigueur" in low or "in force" in low) else "")
-            conventions[num] = {"statut": statut}
-        if not conventions:
-            for a in soup.find_all("a"):
-                m = re.search(r"\bC0*(\d{1,3})\b", a.get_text() or "")
-                if m:
-                    conventions.setdefault("C%03d" % int(m.group(1)), {"statut": ""})
-    else:
-        for m in re.finditer(r"\bC0*(\d{1,3})\b", html):
-            conventions.setdefault("C%03d" % int(m.group(1)), {"statut": ""})
-    return conventions
-
-def ecrire(result):
+def main():
+    print("=== Recensement OIT (liste curee — NORMLEX inaccessible) ===")
+    items = [{"num": n, "intitule": t, "categorie": c} for (n, t, c) in CUREE]
+    par_cat = {}
+    for it in items:
+        par_cat[it["categorie"]] = par_cat.get(it["categorie"], 0) + 1
+    result = {
+        "source": "OIT (liste curee)",
+        "date_recensement": datetime.date.today().isoformat(),
+        "statut": "CUREE",
+        "raison": "NORMLEX bloque l'acces automatise (403). Liste curee des conventions "
+                  "ratifiees par la France pertinentes pour un salarie.",
+        "exclus": "Conventions maritimes / peche / sectorielles / denoncees (bruit pour un salarie).",
+        "a_verifier": "Liste a confirmer/completer contre NORMLEX quand un acces sera possible.",
+        "total": len(items),
+        "par_categorie": par_cat,
+        "conventions": items,
+    }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
-
-def main():
-    print("=== Recensement NORMLEX (OIT) — ratifications France ===")
-    if not HAVE_BS4:
-        print("  (info: bs4 absent -> parsing degrade)")
-    html, info = fetch_any()
-    if html is None:
-        print("\n/!\\ Acces NORMLEX BLOQUE (%s)." % info)
-        ecrire({
-            "source": "NORMLEX / OIT",
-            "date_recensement": datetime.date.today().isoformat(),
-            "statut": "BLOQUE",
-            "dernier_retour": info,
-            "total_detecte": 0,
-            "note": "L'OIT bloque l'acces automatise (probable filtrage des IP de "
-                    "datacenter GitHub). Repli recommande : liste CUREE des conventions "
-                    "ratifiees par la France pertinentes pour un salarie (petite, stable). "
-                    "Alternative lourde : navigateur headless (Playwright) pour cette source.",
-        })
-        print("Ecrit un resultat 'bloque' (le workflow continue).")
-        return
-
-    conv = parse(html)
-    nums = sorted(conv.keys(), key=lambda x: int(x[1:]))
-    en_vigueur = [n for n in nums if conv[n].get("statut") == "en vigueur"]
-    denoncees = [n for n in nums if conv[n].get("statut") == "denoncee"]
-    ecrire({
-        "source": "NORMLEX / OIT",
-        "champ": "Conventions ratifiees par la France",
-        "date_recensement": datetime.date.today().isoformat(),
-        "statut": "OK",
-        "url_ok": info,
-        "total_detecte": len(nums),
-        "dont_en_vigueur": len(en_vigueur),
-        "dont_denoncees": len(denoncees),
-        "repere_attendu": "~129 ratifiees, ~79 en vigueur",
-        "conventions": nums,
-        "en_vigueur": en_vigueur,
-    })
-    print("\n--- RESULTAT ---")
-    print("Conventions detectees : %d (en vigueur ~%d, denoncees %d)" % (len(nums), len(en_vigueur), len(denoncees)))
-    print("Ecrit dans            : %s" % OUT)
-    if nums:
-        print("Echantillon           : %s" % ", ".join(nums[:12]))
-    if len(nums) < 50:
-        print("/!\\ Peu de resultats : URL (P11200_COUNTRY_ID) ou parsing a ajuster.")
+    print("Conventions curees : %d" % len(items))
+    print("  par categorie : %s" % par_cat)
+    print("Ecrit dans        : %s" % OUT)
 
 if __name__ == "__main__":
     main()
