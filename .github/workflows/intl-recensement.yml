@@ -16,7 +16,7 @@ name: Recensement international (UE / CEDH / OIT)
 on:
   workflow_dispatch: {}          # bouton "Run workflow" -> lancement manuel immédiat
   schedule:
-    - cron: "0 4 1 * *"          # le 1er de chaque mois à 04:00 UTC (rythme propre)
+    - cron: "0 3 * * 1"          # chaque LUNDI à 03:00 UTC — veille hebdomadaire
 
 # Empêche deux exécutions simultanées de CE workflow, sans bloquer le français.
 concurrency:
