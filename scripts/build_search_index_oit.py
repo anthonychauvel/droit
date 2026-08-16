@@ -144,9 +144,11 @@ def main():
                 break
         else:
             print('ERREUR : {} est un objet mais aucune clé liste connue '
-                  '(conventions/liste/items/data/oit) n\'y a été trouvée. '
-                  'Clés présentes : {}'.format(args.entree, list(brut.keys())),
+                  '(conventions/liste/items/data/oit) n\'y a été trouvée.'.format(args.entree),
                   file=sys.stderr)
+            print('Contenu complet de l\'objet (pour comprendre sa vraie nature) :',
+                  file=sys.stderr)
+            print(json.dumps(brut, ensure_ascii=False, indent=2)[:3000], file=sys.stderr)
             sys.exit(1)
     elif isinstance(brut, list):
         entrees = brut
