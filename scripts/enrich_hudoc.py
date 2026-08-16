@@ -75,40 +75,62 @@ def fetch(start, length, tries=4):
     raise RuntimeError("Echec requete HUDOC query: %s" % last)
 
 
+def themes_fr(article):
+    """Tags thematiques FR DERIVES des articles CEDH. On a l'article de facon
+    fiable -> on en deduit des mots-cles francais, ce qui rend les fiches
+    cherchables par theme EN FRANCAIS malgre un contenu (nom, conclusion) en
+    anglais et des mots-cles d'origine numeriques. Tout le corpus etant filtre
+    sur le contexte travail, on ajoute systematiquement emploi/salarie."""
+    a = (article or "").upper()
+    nums = set(re.findall(r"\d+", a))
+    tags = ["travail", "emploi", "salarié"]
+    if "8" in nums:  tags += ["vie privée", "correspondance", "données personnelles", "surveillance"]
+    if "14" in nums: tags += ["discrimination", "égalité de traitement"]
+    if "10" in nums: tags += ["liberté d'expression"]
+    if "11" in nums: tags += ["liberté d'association", "liberté syndicale", "syndicat"]
+    if "9" in nums:  tags += ["liberté de religion", "convictions"]
+    if "6" in nums:  tags += ["procès équitable"]
+    if "4" in nums:  tags += ["travail forcé", "servitude"]
+    if "P1" in a:    tags += ["biens", "propriété"]
+    # dedup en gardant l'ordre
+    vus = set(); out = []
+    for t in tags:
+        if t not in vus: vus.add(t); out.append(t)
+    return out
+
+
 def composer_texte(c):
-    """Fiche de synthese lisible, champs les PLUS cherchables en premier
-    (docname, mots-cles, conclusion, question), puis le reste."""
+    """Fiche de synthese lisible. On NE MET PAS kpthesaurus (codes numeriques
+    illisibles: '343;100;464') ni issue (references legislatives brutes). On
+    garde le nom d'affaire, des THEMES FR derives de l'article, la conclusion,
+    le resume s'il existe, et les metadonnees."""
     docname = _clean(c.get("docname"))
-    motscles = _clean(c.get("kpthesaurus"))
     conclusion = _clean(c.get("conclusion"))
-    issue = _clean(c.get("issue"))
     resume = _clean(c.get("HighlightedSummary"))
     appno = _clean(c.get("appno"))
-    date = _clean(c.get("kpdate")) or _clean(c.get("judgementdate"))
+    date = _clean(c.get("kpdate"))[:10]
     respondent = _clean(c.get("respondent"))
     article = _clean(c.get("article"))
     violation = _clean(c.get("violation"))
-    nonviolation = _clean(c.get("nonviolation"))
     importance = _clean(c.get("importance"))
 
     parts = []
     if docname: parts.append(docname)
-    if motscles: parts.append("Mots-cles : " + motscles)
-    if conclusion: parts.append("Conclusion : " + conclusion)
-    if issue: parts.append("Question : " + issue)
+    tags = themes_fr(article)
+    if tags: parts.append("Thèmes : " + ", ".join(tags))   # tôt = dans l'extrait cherchable
+    if conclusion: parts.append("Conclusion (résumé officiel de la Cour) : " + conclusion)
     if resume: parts.append(resume)
     meta = []
-    if appno: meta.append("Requete no " + appno)
+    if appno: meta.append("Requête n° " + appno)
     if date: meta.append(date)
-    if respondent: meta.append("Etat : " + respondent)
+    if respondent: meta.append("État défendeur : " + respondent)
     if article: meta.append("Article(s) : " + article)
     if violation: meta.append("Violation : " + violation)
-    if nonviolation: meta.append("Non-violation : " + nonviolation)
     if importance: meta.append("Importance : " + importance)
     if meta: parts.append(" · ".join(meta))
-    parts.append("— Fiche de synthèse (mots-clés, conclusion, résumé). Le texte "
-                 "intégral de l'arrêt de la Cour est consultable sur HUDOC via le "
-                 "lien ci-dessous. —")
+    parts.append("— Fiche de synthèse (nom, conclusion, articles). Le texte "
+                 "intégral de l'arrêt est consultable sur HUDOC via le lien "
+                 "ci-dessous. —")
     return "\n\n".join(parts)
 
 
@@ -141,7 +163,6 @@ def main():
                 "appno": _clean(c.get("appno")), "date": _clean(c.get("kpdate")),
                 "ecli": _clean(c.get("ecli")),
                 "conclusion": _clean(c.get("conclusion")),
-                "motscles": _clean(c.get("kpthesaurus")),
                 "date_enrichissement": datetime.date.today().isoformat(),
                 "texte": texte,
                 "synthese": True,   # marqueur : fiche, pas le texte integral
