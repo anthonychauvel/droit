@@ -5,9 +5,13 @@
 # Distinct du recensement ET du français : fichier/nom/déclencheurs propres,
 # groupe de concurrence dédié. Ne committe QUE output/intl/textes-*.
 #
-# L'aspiration est LOURDE -> lancement MANUEL, par LOTS. Chaque exécution
-# télécharge un lot (le script saute ce qui est déjà fait) : relancer reprend
-# la suite. Pour EUR-Lex (~702 actes, 250/lot) : ~3 lancements.
+# 3 JOBS PARALLÈLES (EUR-Lex / CJUE / HUDOC), au lieu d'un seul job avec 3
+# étapes séquentielles. Raison : les 3 sources n'ont PAS le même volume
+# (HUDOC = 5214 items, bien plus que les 2 autres) — dans un job séquentiel,
+# elles se partagent un même budget de temps total, et la dernière (HUDOC)
+# se faisait couper avant même de pouvoir tourner ("operation was canceled").
+# En jobs séparés, CHACUNE dispose de son PROPRE budget complet de 5h30,
+# et une source lente/en panne ne bloque plus les deux autres.
 # =====================================================================
 
 name: Aspiration internationale (textes)
@@ -15,7 +19,7 @@ name: Aspiration internationale (textes)
 on:
   workflow_dispatch: {}          # bouton "Run workflow" (lancement manuel)
   schedule:
-    - cron: "0 5 * * 1"          # chaque LUNDI à 05:00 UTC — 2h après le recensement (le temps qu'il finisse et committe la liste à jour)
+    - cron: "0 5 * * 1"          # chaque LUNDI à 05:00 UTC — 2h après le recensement
 
 concurrency:
   group: intl-aspiration
@@ -25,58 +29,86 @@ permissions:
   contents: write
 
 jobs:
-  aspirer:
+  aspirer-eurlex:
     runs-on: ubuntu-latest
-    timeout-minutes: 330         # marge sous la limite des 6 h
+    timeout-minutes: 330
     steps:
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
-
       - name: Installer Python
         uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
+        with: { python-version: "3.12" }
       - name: Installer les dépendances
         run: pip install requests beautifulsoup4
-
-      - name: Aspiration EUR-Lex (un lot)
+      - name: Aspiration EUR-Lex
         run: python scripts/aspire_eurlex.py
-        continue-on-error: true
-
-      - name: Aspiration CJUE (un lot)
-        run: python scripts/aspire_cjue.py
-        continue-on-error: true
-
-      - name: Aspiration HUDOC / CEDH (un lot)
-        run: python scripts/aspire_hudoc.py
-        continue-on-error: true
-
-      - name: Committer les textes (output/intl/textes-* uniquement)
+      - name: Commit final de sécurité (EUR-Lex)
+        if: always()
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/intl/textes-*/**.json 2>/dev/null || true
-          git add output/intl/textes-*/*.json 2>/dev/null || true
-          if git diff --staged --quiet; then
-            echo "Aucun nouveau texte à committer."
-            exit 0
-          fi
-          git commit -m "Aspiration internationale (lot) [skip ci]"
-          # Push ROBUSTE : jusqu'à 5 tentatives, avec re-synchronisation
-          # (fetch + rebase) entre chaque, pour absorber un commit concurrent.
-          # Si tout échoue, le JOB ÉCHOUE (visible en rouge) au lieu de se
-          # terminer "avec succès" en ayant en fait perdu le travail du run.
+          git add output/intl/textes-eurlex/*.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "Rien à committer (déjà sauvé en cours de route, ou rien de nouveau)."; exit 0; fi
+          git commit -m "Aspiration EUR-Lex (filet de sécurité) [skip ci]"
           n=0
           until git push; do
-            n=$((n+1))
-            if [ "$n" -ge 5 ]; then
-              echo "::error::Push impossible après 5 tentatives — le lot téléchargé N'A PAS été sauvegardé. Relance le workflow."
-              exit 1
-            fi
-            echo "Push refusé (tentative $n/5) — re-synchronisation puis nouvel essai..."
-            sleep $((n*5))
-            git fetch origin main
-            git rebase origin/main || { echo "::error::Rebase en conflit — intervention manuelle nécessaire."; exit 1; }
+            n=$((n+1)); if [ "$n" -ge 5 ]; then echo "::error::Push EUR-Lex impossible après 5 tentatives."; exit 1; fi
+            sleep $((n*5)); git fetch origin main; git rebase origin/main || { echo "::error::Rebase en conflit."; exit 1; }
+          done
+          echo "Push confirmé sur main."
+
+  aspirer-cjue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Installer les dépendances
+        run: pip install requests beautifulsoup4
+      - name: Aspiration CJUE
+        run: python scripts/aspire_cjue.py
+      - name: Commit final de sécurité (CJUE)
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/intl/textes-cjue/*.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "Rien à committer."; exit 0; fi
+          git commit -m "Aspiration CJUE (filet de sécurité) [skip ci]"
+          n=0
+          until git push; do
+            n=$((n+1)); if [ "$n" -ge 5 ]; then echo "::error::Push CJUE impossible après 5 tentatives."; exit 1; fi
+            sleep $((n*5)); git fetch origin main; git rebase origin/main || { echo "::error::Rebase en conflit."; exit 1; }
+          done
+          echo "Push confirmé sur main."
+
+  aspirer-hudoc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Installer les dépendances
+        run: pip install requests beautifulsoup4
+      - name: Aspiration HUDOC / CEDH
+        run: python scripts/aspire_hudoc.py
+      - name: Commit final de sécurité (HUDOC)
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/intl/textes-hudoc/*.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "Rien à committer."; exit 0; fi
+          git commit -m "Aspiration HUDOC (filet de sécurité) [skip ci]"
+          n=0
+          until git push; do
+            n=$((n+1)); if [ "$n" -ge 5 ]; then echo "::error::Push HUDOC impossible après 5 tentatives."; exit 1; fi
+            sleep $((n*5)); git fetch origin main; git rebase origin/main || { echo "::error::Rebase en conflit."; exit 1; }
           done
           echo "Push confirmé sur main."
