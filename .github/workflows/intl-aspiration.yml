@@ -2,22 +2,17 @@
 # WORKFLOW SÉPARÉ — Aspiration internationale (téléchargement des TEXTES)
 # À placer dans le dépôt "droit" sous : .github/workflows/intl-aspiration.yml
 #
-# Distinct du recensement ET du français : fichier/nom/déclencheurs propres,
-# groupe de concurrence dédié. Ne committe QUE output/intl/textes-*.
-#
-# 3 JOBS PARALLÈLES (EUR-Lex / CJUE / HUDOC), au lieu d'un seul job avec 3
-# étapes séquentielles. Raison : les 3 sources n'ont PAS le même volume
-# (HUDOC = 5214 items, bien plus que les 2 autres) — dans un job séquentiel,
-# elles se partagent un même budget de temps total, et la dernière (HUDOC)
-# se faisait couper avant même de pouvoir tourner ("operation was canceled").
-# En jobs séparés, CHACUNE dispose de son PROPRE budget complet de 5h30,
-# et une source lente/en panne ne bloque plus les deux autres.
+# 3 JOBS PARALLÈLES d'aspiration (EUR-Lex / CJUE / HUDOC), chacun avec son
+# PROPRE budget de 5h30 (une source lente/bloquée ne pénalise plus les autres).
+# + 1 JOB "construire-index" qui reconstruit les index de recherche APRÈS les
+#   3 aspirations -> c'est lui qui fait apparaître l'international dans la
+#   recherche de MonLegiTexte (tu ne peux pas lancer le builder à la main).
 # =====================================================================
 
 name: Aspiration internationale (textes)
 
 on:
-  workflow_dispatch: {}          # bouton "Run workflow" (lancement manuel)
+  workflow_dispatch: {}
   schedule:
     - cron: "0 5 * * 1"          # chaque LUNDI à 05:00 UTC — 2h après le recensement
 
@@ -48,7 +43,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add output/intl/textes-eurlex/*.json 2>/dev/null || true
-          if git diff --staged --quiet; then echo "Rien à committer (déjà sauvé en cours de route, ou rien de nouveau)."; exit 0; fi
+          if git diff --staged --quiet; then echo "Rien à committer."; exit 0; fi
           git commit -m "Aspiration EUR-Lex (filet de sécurité) [skip ci]"
           n=0
           until git push; do
@@ -112,3 +107,34 @@ jobs:
             sleep $((n*5)); git fetch origin main; git rebase origin/main || { echo "::error::Rebase en conflit."; exit 1; }
           done
           echo "Push confirmé sur main."
+
+  # Reconstruit les index de recherche À PARTIR des textes aspirés, APRÈS les
+  # 3 jobs (needs). "if: always()" -> tourne même si un des 3 a échoué/expiré
+  # (ex. HUDOC bloqué), pour qu'EUR-Lex + CJUE soient indexés quand même.
+  # C'est CE job qui fait apparaître l'international dans la recherche.
+  construire-index:
+    runs-on: ubuntu-latest
+    needs: [aspirer-eurlex, aspirer-cjue, aspirer-hudoc]
+    if: always()
+    timeout-minutes: 30
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Construire les index de recherche internationaux
+        run: python scripts/build_search_index_intl.py
+      - name: Committer les index internationaux
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/search-index-eurlex.json output/search-index-cjue.json output/search-index-cedh.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "Index inchangés."; exit 0; fi
+          git commit -m "Index de recherche international (auto) [skip ci]"
+          n=0
+          until git push; do
+            n=$((n+1)); if [ "$n" -ge 5 ]; then echo "::error::Push index impossible après 5 tentatives."; exit 1; fi
+            sleep $((n*5)); git fetch origin main; git rebase origin/main || { echo "::error::Rebase en conflit."; exit 1; }
+          done
+          echo "Index poussés sur main."
