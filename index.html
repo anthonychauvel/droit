@@ -295,6 +295,29 @@
 
   /* Dashboard (landing) */
   .stat-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:11px; margin:22px 0 18px; }
+  /* 3 cartes "Explorer" (France / UE / International) — entrée visuelle avant
+     le détail du tableau des totaux, cliquables comme les pastilles niveau. */
+  .explorer-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:6px 0 22px; }
+  .explorer-card{ display:flex; flex-direction:column; align-items:flex-start; gap:4px; text-align:left;
+    background:var(--card); border:1px solid var(--line); border-radius:15px; padding:16px 17px;
+    cursor:pointer; font-family:inherit; transition:border-color .12s,transform .12s,box-shadow .12s; }
+  .explorer-card:hover{ border-color:var(--violet); transform:translateY(-2px); box-shadow:0 14px 30px -18px rgba(15,45,82,.32); }
+  .explorer-card[data-niveau="europe"]{ box-shadow:inset 3px 0 0 var(--niveau-europe); }
+  .explorer-card[data-niveau="international"]{ box-shadow:inset 3px 0 0 var(--niveau-intl); }
+  .exc-ic{ font-size:22px; line-height:1; }
+  .exc-num{ font-family:'IBM Plex Mono',monospace; font-size:20px; font-weight:600; color:var(--marine); font-variant-numeric:tabular-nums; }
+  .exc-lab{ font-family:'Manrope',sans-serif; font-size:13.5px; font-weight:700; color:var(--ink); }
+  .exc-sub{ font-size:11.5px; color:var(--ink-soft); line-height:1.4; }
+  @media (max-width:860px){ .explorer-grid{ grid-template-columns:1fr; } }
+  /* Mini-tableau des sources UE déjà cherchables, sous le tableau français. */
+  .stat-grid-intl{ margin:0 0 18px; }
+  .sgi-label{ font-family:'Manrope',sans-serif; font-size:12px; font-weight:800; text-transform:uppercase;
+    letter-spacing:.08em; color:var(--niveau-europe); margin:0 0 10px; }
+  .sgi-label .sgi-note{ text-transform:none; font-weight:600; letter-spacing:normal; color:var(--ink-soft); font-size:11.5px; }
+  .stat-grid-intl .stat-grid{ grid-template-columns:repeat(3,1fr); margin:0; }
+  .stat-eu{ box-shadow:inset 3px 0 0 var(--niveau-europe); }
+  .stat-eu .src-ic{ margin-bottom:6px; font-size:18px; }
+  @media (max-width:860px){ .stat-grid-intl .stat-grid{ grid-template-columns:1fr 1fr; } }
   .stat{ background:var(--card); border:1px solid var(--line); border-radius:13px; padding:15px 16px; cursor:pointer; transition:border-color .12s,transform .12s,box-shadow .12s; }
   .stat:hover{ border-color:var(--violet); transform:translateY(-2px); box-shadow:0 14px 30px -18px rgba(15,45,82,.32); }
   .stat .num{ font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600; color:var(--marine); line-height:1; letter-spacing:-.01em; }
@@ -820,7 +843,12 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
     <div id="search-results"></div>
 
     <div id="search-landing">
+      <div class="explorer-grid" id="explorer-grid"></div>
       <div class="stat-grid" id="stat-grid"></div>
+      <div class="stat-grid-intl" id="stat-grid-intl" hidden>
+        <div class="sgi-label">Union européenne <span class="sgi-note">déjà cherchable en texte intégral</span></div>
+        <div class="stat-grid" id="stat-grid-eu"></div>
+      </div>
       <div class="finder" id="finder">
         <div class="finder-title">Je ne connais pas ma convention</div>
         <div class="finder-sub">Le plus sûr : votre <b>IDCC</b> (numéro à 4 chiffres) est écrit sur votre <b>bulletin de paie</b> — tapez-le directement dans la recherche. Sinon, trouvez-la par métier ou par secteur :</div>
@@ -1132,7 +1160,7 @@ async function loadAll(){
   // arrivée — sans attendre le manifest complet (7+ Mo).
   var pCounts = (async function(){
     try{ var c0 = await fetchJSON('output/counts.json');
-      if(c0 && c0.counts){ COUNTS = c0.counts; paintCounts(COUNTS); renderDashboard(); } }
+      if(c0 && c0.counts){ COUNTS = c0.counts; paintCounts(COUNTS); renderDashboard(); renderExplorer(); } }
     catch(e){ /* pas grave : le manifest prendra le relais */ }
   })();
 
@@ -2597,6 +2625,20 @@ var NIVEAU_GROUPES = {       // clés alignées sur SEARCH (code_secu, pas secu)
   europe: ['eurlex','cjue','cedh'],
   international: ['oit']     // pas encore cherchable (§3.5 du cahier) : 0 résultat tant que l'OIT n'est pas indexée
 };
+// Applique un niveau (pastilles OU cartes Explorer/dashboard UE) : met à jour
+// l'état actif + les pastilles visuelles, sans lancer de recherche (une
+// recherche vide ne montre rien -- c'est à l'appelant de gérer la suite,
+// typiquement en amenant l'utilisateur au champ de recherche).
+function activerNiveau(niv){
+  if(niv===NIVEAU_ACTIF) return false;
+  NIVEAU_ACTIF = niv;
+  var _nf = document.getElementById('niveau-filter');
+  if(_nf){
+    var all = _nf.querySelectorAll('.niveau-pill');
+    for(var i=0;i<all.length;i++){ all[i].setAttribute('aria-pressed', all[i].dataset.niveau===niv ? 'true':'false'); }
+  }
+  return true;
+}
 var ASSIST_FOCUS = null;  // q de la question-feuille : resserre sections/articles sur ce seul point
 
 function assistMotsCumules(){
@@ -4446,6 +4488,68 @@ async function renderDashboard(){
 document.getElementById('stat-grid').addEventListener('click', function(e){
   var c = e.target.closest('.stat'); if(c) setView(c.dataset.view);
 });
+// Amène l'utilisateur au champ de recherche avec le niveau demandé déjà actif
+// (cartes Explorer + mini-tableau UE : ces sources n'ont pas de vue "parcourir"
+// dédiée comme les 6 françaises, donc pas de setView possible pour elles —
+// on active le filtre niveau et on invite à taper une recherche).
+function irVersNiveau(niv){
+  activerNiveau(niv);
+  var wrap = document.querySelector('.search-wrap');
+  if(wrap && wrap.scrollIntoView) wrap.scrollIntoView({behavior:'smooth', block:'center'});
+  var q = document.getElementById('q'); if(q) q.focus();
+}
+// 3 cartes "Explorer" (France / UE / International), au-dessus du tableau des
+// totaux. Purement une porte d'entrée visuelle + un raccourci vers le filtre
+// niveau correspondant -- appelée au chargement initial (France déjà connue)
+// et ré-appelée une fois SEARCH chargé (UE/International deviennent réels).
+function renderExplorer(){
+  var host = document.getElementById('explorer-grid'); if(!host) return;
+  var n = function(k){ return (INDEX[k] && INDEX[k].length) ? INDEX[k].length : (COUNTS && typeof COUNTS[k]==='number' ? COUNTS[k] : 0); };
+  var totFr = n('ccn')+n('code')+n('secu')+n('juris')+n('jorf')+n('acco');
+  var ne = function(k){ return (typeof SEARCH!=='undefined' && SEARCH && SEARCH[k]) ? SEARCH[k].length : 0; };
+  var totUe = ne('eurlex')+ne('cjue')+ne('cedh');
+  var totIntl = ne('oit');
+  if(!totFr) return;   // rien à afficher tant que le corpus français n'est pas connu
+  var cards = [
+    {niv:'france', ic:'🇫🇷', lab:'Droit français', sub:'Code du travail · Sécurité sociale · conventions · jurisprudence · accords · JO', n:totFr, dispo:true},
+    {niv:'europe', ic:'🇪🇺', lab:'Union européenne', sub:'EUR-Lex · CJUE · CEDH', n:totUe, dispo:totUe>0},
+    {niv:'international', ic:'🌍', lab:'International', sub:'Organisation internationale du travail', n:totIntl, dispo:totIntl>0}
+  ];
+  host.innerHTML = cards.map(function(c){
+    return '<button type="button" class="explorer-card" data-niveau="'+c.niv+'">'+
+      '<span class="exc-ic" aria-hidden="true">'+c.ic+'</span>'+
+      '<span class="exc-num">'+(c.dispo ? fmt(c.n) : '—')+'</span>'+
+      '<span class="exc-lab">'+escapeHtml(c.lab)+'</span>'+
+      '<span class="exc-sub">'+escapeHtml(c.sub)+(c.dispo?'':' · bientôt')+'</span>'+
+      '</button>';
+  }).join('');
+}
+document.getElementById('explorer-grid').addEventListener('click', function(e){
+  var c = e.target.closest('.explorer-card'); if(c && c.dataset.niveau) irVersNiveau(c.dataset.niveau);
+});
+// Mini-tableau des sources européennes déjà cherchables (EUR-Lex, CJUE, CEDH),
+// sous le tableau français -- distinct de renderDashboard() pour ne rien
+// toucher à son animation/sa barre de composition déjà en place et éprouvées.
+function renderDashboardIntl(){
+  var wrap = document.getElementById('stat-grid-intl'), host = document.getElementById('stat-grid-eu');
+  if(!wrap || !host) return;
+  var n = function(k){ return (typeof SEARCH!=='undefined' && SEARCH && SEARCH[k]) ? SEARCH[k].length : 0; };
+  var cards = [
+    {v:'eurlex', n:n('eurlex'), l:'EUR-Lex · droit de l\'UE'},
+    {v:'cjue',   n:n('cjue'),   l:'CJUE · arrêts'},
+    {v:'cedh',   n:n('cedh'),   l:'CEDH · fiches de synthèse'}
+  ];
+  var total = cards.reduce(function(s,c){ return s+c.n; }, 0);
+  if(!total){ wrap.hidden = true; return; }
+  wrap.hidden = false;
+  host.innerHTML = cards.map(function(c){
+    return '<div class="stat stat-eu" data-view="'+c.v+'">'+srcIcon(c.v)+
+      '<div class="num">'+fmt(c.n)+'</div><div class="lab">'+escapeHtml(c.l)+'</div></div>';
+  }).join('');
+}
+document.getElementById('stat-grid-eu').addEventListener('click', function(e){
+  var c = e.target.closest('.stat'); if(c) irVersNiveau('europe');
+});
 document.getElementById('latest-maj').addEventListener('click', function(e){
   var a = e.target.closest('[data-audit]'); if(a) openAudit(AUDITS[+a.dataset.audit]);
 });
@@ -4597,11 +4701,7 @@ if(_nf){
   _nf.addEventListener('click', function(e){
     var btn = e.target.closest('.niveau-pill');
     if(!btn || !btn.dataset.niveau) return;
-    var niv = btn.dataset.niveau;
-    if(niv===NIVEAU_ACTIF) return;
-    NIVEAU_ACTIF = niv;
-    var all = _nf.querySelectorAll('.niveau-pill');
-    for(var i=0;i<all.length;i++){ all[i].setAttribute('aria-pressed', all[i]===btn ? 'true':'false'); }
+    if(!activerNiveau(btn.dataset.niveau)) return;
     runSearch();
   });
 }
@@ -4655,6 +4755,8 @@ if(deepIdcc){
 
 loadAll().then(function(){
   renderDashboard();
+  renderDashboardIntl();
+  renderExplorer();
   if(!INDEX.ccn.length && !INDEX.code.length){
     document.getElementById('corpus-line').textContent = 'Index introuvable — lancez un run de vérification.';
   }
