@@ -318,6 +318,30 @@
   .stat-eu{ box-shadow:inset 3px 0 0 var(--niveau-europe); }
   .stat-eu .src-ic{ margin-bottom:6px; font-size:18px; }
   @media (max-width:860px){ .stat-grid-intl .stat-grid{ grid-template-columns:1fr 1fr; } }
+  /* Diagramme "hiérarchie des normes" : International (le plus général, en
+     haut, bande la plus étroite) -> UE -> France (le plus large, en bas) --
+     une pyramide, cliquable comme les cartes Explorer. */
+  .hierarchie{ margin:8px 0 26px; }
+  .hier-title{ font-family:'Manrope',sans-serif; font-size:15px; font-weight:800; color:var(--marine); }
+  .hier-sub{ font-size:12.5px; color:var(--ink-soft); margin:4px 0 16px; line-height:1.5; max-width:520px; }
+  .hier-levels{ display:flex; flex-direction:column; align-items:center; gap:10px; }
+  .hier-level{ display:flex; align-items:center; gap:12px; width:var(--hw,100%); box-sizing:border-box;
+    border:1px solid var(--line); border-radius:13px; padding:13px 18px; cursor:pointer;
+    font-family:inherit; text-align:left; position:relative; transition:transform .12s,box-shadow .12s,border-color .12s; }
+  .hier-level:hover{ transform:translateY(-2px); box-shadow:0 12px 26px -16px rgba(15,45,82,.35); }
+  .hier-level:not(:last-child)::after{ content:"↓"; position:absolute; left:50%; bottom:-16px; transform:translateX(-50%);
+    font-size:13px; color:var(--ink-soft); line-height:1; }
+  .hl-ic{ font-size:20px; line-height:1; flex-shrink:0; }
+  .hl-txt{ flex:1; min-width:0; display:flex; flex-direction:column; gap:2px; }
+  .hl-lab{ font-family:'Manrope',sans-serif; font-weight:700; font-size:13.5px; color:var(--ink); }
+  .hl-sub{ font-size:11.5px; color:var(--ink-soft); line-height:1.4; }
+  .hl-n{ font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:14px; color:var(--marine); flex-shrink:0; font-variant-numeric:tabular-nums; }
+  .hier-level.hier-intl{ background:linear-gradient(180deg,#fbeceb,#fff 85%); border-color:#e7c2be; }
+  .hier-level.hier-intl .hl-n{ color:var(--niveau-intl); }
+  .hier-level.hier-europe{ background:linear-gradient(180deg,#eceef1,#fff 85%); border-color:#cfd3d9; }
+  .hier-level.hier-europe .hl-n{ color:var(--niveau-europe); }
+  .hier-level.hier-france{ background:linear-gradient(180deg,#f7edcf,#fff 85%); border-color:#ecdcae; }
+  @media (max-width:560px){ .hier-level{ width:100% !important; } }
   .stat{ background:var(--card); border:1px solid var(--line); border-radius:13px; padding:15px 16px; cursor:pointer; transition:border-color .12s,transform .12s,box-shadow .12s; }
   .stat:hover{ border-color:var(--violet); transform:translateY(-2px); box-shadow:0 14px 30px -18px rgba(15,45,82,.32); }
   .stat .num{ font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600; color:var(--marine); line-height:1; letter-spacing:-.01em; }
@@ -857,6 +881,11 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
         <div class="sgi-label">Union européenne <span class="sgi-note">déjà cherchable en texte intégral</span></div>
         <div class="stat-grid" id="stat-grid-eu"></div>
       </div>
+      <div class="hierarchie" id="hierarchie">
+        <div class="hier-title">Hiérarchie des normes</div>
+        <div class="hier-sub">Du plus général au plus proche de votre contrat — chaque niveau s'applique dans le respect de celui du dessus.</div>
+        <div class="hier-levels" id="hier-levels"></div>
+      </div>
       <div class="finder" id="finder">
         <div class="finder-title">Je ne connais pas ma convention</div>
         <div class="finder-sub">Le plus sûr : votre <b>IDCC</b> (numéro à 4 chiffres) est écrit sur votre <b>bulletin de paie</b> — tapez-le directement dans la recherche. Sinon, trouvez-la par métier ou par secteur :</div>
@@ -1168,7 +1197,7 @@ async function loadAll(){
   // arrivée — sans attendre le manifest complet (7+ Mo).
   var pCounts = (async function(){
     try{ var c0 = await fetchJSON('output/counts.json');
-      if(c0 && c0.counts){ COUNTS = c0.counts; paintCounts(COUNTS); renderDashboard(); renderExplorer(); } }
+      if(c0 && c0.counts){ COUNTS = c0.counts; paintCounts(COUNTS); renderDashboard(); renderExplorer(); renderHierarchie(); } }
     catch(e){ /* pas grave : le manifest prendra le relais */ }
   })();
 
@@ -4556,6 +4585,36 @@ function renderExplorer(){
 document.getElementById('explorer-grid').addEventListener('click', function(e){
   var c = e.target.closest('.explorer-card'); if(c && c.dataset.niveau) irVersNiveau(c.dataset.niveau);
 });
+// Diagramme "hiérarchie des normes" : International -> UE -> France, du plus
+// général (en haut) au plus proche du contrat (en bas, le plus large). Même
+// porte d'entrée que les cartes Explorer (irVersNiveau), juste une autre
+// mise en scène -- pédagogique, pas de reformulation juridique (on ne dit
+// jamais qu'un niveau "l'emporte" sur un autre, juste l'ordre du général au
+// particulier, cohérent avec l'esprit "aiguilleur" de l'outil).
+function renderHierarchie(){
+  var host = document.getElementById('hier-levels'); if(!host) return;
+  var n = function(k){ return (INDEX[k] && INDEX[k].length) ? INDEX[k].length : (COUNTS && typeof COUNTS[k]==='number' ? COUNTS[k] : 0); };
+  var totFr = n('ccn')+n('code')+n('secu')+n('juris')+n('jorf')+n('acco');
+  var ne = function(k){ return (typeof SEARCH!=='undefined' && SEARCH && SEARCH[k]) ? SEARCH[k].length : 0; };
+  var totUe = ne('eurlex')+ne('cjue')+ne('cedh');
+  var totIntl = ne('oit');
+  if(!totFr) return;
+  var niveaux = [
+    {niv:'international', cls:'hier-intl',   ic:'🌍', lab:'International', sub:'Organisation internationale du travail', n:totIntl, dispo:totIntl>0, hw:'46%'},
+    {niv:'europe',         cls:'hier-europe',ic:'🇪🇺', lab:'Union européenne', sub:'EUR-Lex · CJUE · CEDH', n:totUe, dispo:totUe>0, hw:'72%'},
+    {niv:'france',         cls:'hier-france',ic:'🇫🇷', lab:'France', sub:'Code du travail · Sécurité sociale · conventions · jurisprudence · accords · JO', n:totFr, dispo:true, hw:'100%'}
+  ];
+  host.innerHTML = niveaux.map(function(x){
+    return '<button type="button" class="hier-level '+x.cls+'" data-niveau="'+x.niv+'" style="--hw:'+x.hw+'">'+
+      '<span class="hl-ic" aria-hidden="true">'+x.ic+'</span>'+
+      '<span class="hl-txt"><span class="hl-lab">'+escapeHtml(x.lab)+'</span><span class="hl-sub">'+escapeHtml(x.sub)+(x.dispo?'':' · bientôt')+'</span></span>'+
+      '<span class="hl-n">'+(x.dispo ? fmt(x.n) : '—')+'</span>'+
+      '</button>';
+  }).join('');
+}
+document.getElementById('hier-levels').addEventListener('click', function(e){
+  var c = e.target.closest('.hier-level'); if(c && c.dataset.niveau) irVersNiveau(c.dataset.niveau);
+});
 // Mini-tableau des sources européennes déjà cherchables (EUR-Lex, CJUE, CEDH),
 // sous le tableau français -- distinct de renderDashboard() pour ne rien
 // toucher à son animation/sa barre de composition déjà en place et éprouvées.
@@ -4799,6 +4858,7 @@ loadAll().then(function(){
   renderDashboard();
   renderDashboardIntl();
   renderExplorer();
+  renderHierarchie();
   if(!INDEX.ccn.length && !INDEX.code.length){
     document.getElementById('corpus-line').textContent = 'Index introuvable — lancez un run de vérification.';
   }
