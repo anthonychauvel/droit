@@ -236,19 +236,23 @@
   .group-title.grp-secu{ color:#2f8f76; } .group-title.grp-juris{ color:#7350a6; }
   .group-title.grp-jorf{ color:#5f7088; } .group-title.grp-acco{ color:#bf6a37; }
   .group-title.grp-eurlex,.group-title.grp-cjue,.group-title.grp-cedh{ color:var(--niveau-europe); }
+  .group-title.grp-oit{ color:var(--niveau-intl); }
   .res-num .src-ic{ width:13px; height:13px; margin-right:5px; vertical-align:-2px; font-size:12px; line-height:13px; }
   .row.ccn .res-num .src-ic{ color:#b5852c; } .row.code .res-num .src-ic{ color:#3060a8; }
   .row.secu .res-num .src-ic{ color:#2f8f76; } .row.juris .res-num .src-ic{ color:#7350a6; }
   .row.jorf .res-num .src-ic{ color:#5f7088; } .row.acco .res-num .src-ic{ color:#bf6a37; }
   .row.eurlex .res-num .src-ic,.row.cjue .res-num .src-ic,.row.cedh .res-num .src-ic{ color:var(--niveau-europe); }
+  .row.oit .res-num .src-ic{ color:var(--niveau-intl); }
   .row.ccn{ box-shadow:inset 3px 0 0 #b5852c; } .row.code{ box-shadow:inset 3px 0 0 #3060a8; }
   .row.secu{ box-shadow:inset 3px 0 0 #2f8f76; } .row.juris{ box-shadow:inset 3px 0 0 #7350a6; }
   .row.jorf{ box-shadow:inset 3px 0 0 #5f7088; } .row.acco{ box-shadow:inset 3px 0 0 #bf6a37; }
   .row.eurlex,.row.cjue,.row.cedh{ box-shadow:inset 3px 0 0 var(--niveau-europe); }
+  .row.oit{ box-shadow:inset 3px 0 0 var(--niveau-intl); }
   .src-pill.grp-ccn .src-ic{ color:#b5852c; } .src-pill.grp-code .src-ic{ color:#3060a8; }
   .src-pill.grp-secu .src-ic{ color:#2f8f76; } .src-pill.grp-juris .src-ic{ color:#7350a6; }
   .src-pill.grp-jorf .src-ic{ color:#5f7088; } .src-pill.grp-acco .src-ic{ color:#bf6a37; }
   .src-pill.grp-eurlex .src-ic,.src-pill.grp-cjue .src-ic,.src-pill.grp-cedh .src-ic{ color:var(--niveau-europe); }
+  .src-pill.grp-oit .src-ic{ color:var(--niveau-intl); }
   .res-main{ min-width:0; }
   .res-title{ font-size:14.5px; font-weight:600; color:var(--ink); line-height:1.35; overflow-wrap:anywhere; }
   .res-sub{ font-size:12.5px; color:var(--ink-soft); margin-top:3px; line-height:1.45; }
@@ -772,6 +776,12 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
         <button class="nav-item" data-view="cedh"><span class="ic" aria-hidden="true">🕊️</span>CEDH<span class="nc" id="nc-cedh">…</span></button>
       </div>
     </div>
+    <div class="nav-group" data-group="intl">
+      <button class="nav-group-label" type="button" aria-expanded="false"><span>International</span><span class="ngl-chev">▾</span></button>
+      <div class="nav-group-items">
+        <button class="nav-item" data-view="oit"><span class="ic" aria-hidden="true">🌍</span>OIT<span class="nc" id="nc-oit">…</span></button>
+      </div>
+    </div>
     <div class="nav-group" data-group="theme">
       <button class="nav-group-label" type="button" aria-expanded="false"><span>Trouver par thème</span><span class="ngl-chev">▾</span></button>
       <div class="nav-group-items">
@@ -1131,7 +1141,7 @@ async function fetchText(rel){
 }
 
 /* ---- état global ---- */
-var INDEX  = { ccn:[], code:[], secu:[], juris:[], jorf:[], acco:[], eurlex:[], cjue:[], cedh:[] };   // {num,title,etat,source}
+var INDEX  = { ccn:[], code:[], secu:[], juris:[], jorf:[], acco:[], eurlex:[], cjue:[], cedh:[], oit:[] };   // {num,title,etat,source}
 // Clauses thématiques extraites des CCN (clauses-index.json). Structure à part :
 // {theme: [{idcc, ccn_titre, clause_titre, texte}, ...]}. Les 5 vues cl_*
 // (Salaires, Heures sup, Forfait jours, Temps partiel, Classifications)
@@ -1165,7 +1175,7 @@ function shortEtat(raw){
  * de transition) ou si l'un manque, on complète depuis l'ancien search-index.json
  * monolithique. Rien ne casse tant que l'un OU l'autre est présent. */
 async function loadSearchIndex(){
-  var SRC = ['ccn','code','code_secu','juris','jorf','acco','eurlex','cjue','cedh'];
+  var SRC = ['ccn','code','code_secu','juris','jorf','acco','eurlex','cjue','cedh','oit'];
   var got = {}, missing = false;
   await Promise.all(SRC.map(async function(s){
     try{ got[s] = await fetchJSON('output/search-index-'+s+'.json'); }
@@ -1219,7 +1229,7 @@ async function loadAll(){
   CONTENU_CACHE = {};
   var pSearch = (async function(){
     try{ SEARCH = await loadSearchIndex(); }
-    catch(e){ console.warn('index de recherche indisponible', e); SEARCH = {ccn:[],code:[],code_secu:[],juris:[],jorf:[],acco:[],eurlex:[],cjue:[],cedh:[]}; }
+    catch(e){ console.warn('index de recherche indisponible', e); SEARCH = {ccn:[],code:[],code_secu:[],juris:[],jorf:[],acco:[],eurlex:[],cjue:[],cedh:[],oit:[]}; }
   })();
 
   var pCcnListe = (async function(){
@@ -1338,7 +1348,7 @@ function fmt(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'\u202f'); }
 // s'exécute en dernier gagne). Un seul calcul, réutilisé partout.
 function totalCorpusGlobal(totFrance){
   var intl = (typeof SEARCH!=='undefined' && SEARCH) ?
-    ((SEARCH.eurlex||[]).length + (SEARCH.cjue||[]).length + (SEARCH.cedh||[]).length) : 0;
+    ((SEARCH.eurlex||[]).length + (SEARCH.cjue||[]).length + (SEARCH.cedh||[]).length + (SEARCH.oit||[]).length) : 0;
   return totFrance + intl;
 }
 function paintCounts(cc){
@@ -1626,7 +1636,8 @@ var SRC_META = {
   acco: {c:'#bf6a37', e:'🤝'},
   eurlex:{c:'#1a1a1a', e:'🇪🇺'},
   cjue: {c:'#1a1a1a', e:'🏛️'},
-  cedh: {c:'#1a1a1a', e:'🕊️'}
+  cedh: {c:'#1a1a1a', e:'🕊️'},
+  oit: {c:'#c0392b', e:'🌍'}
 };
 function srcIcon(kind){
   var m = SRC_META[kind]; if(!m) return '';
@@ -1730,7 +1741,8 @@ var VIEW_TITLES = {
   cl_classification: ['Grilles & coefficients','Les grilles de classification et coefficients de chaque convention. Le coefficient sert à calculer votre salaire minimum. Cliquez pour lire.'],
   eurlex: ['EUR-Lex — droit de l\'Union européenne','Les actes de l\'UE (règlements, directives) en texte intégral, dans la langue officielle française. Cliquez pour lire.'],
   cjue: ['CJUE — Cour de justice de l\'Union européenne','Les arrêts de la CJUE en texte intégral. Cliquez pour lire.'],
-  cedh: ['CEDH — Cour européenne des droits de l\'homme','Fiches de synthèse HUDOC (thème + conclusion). Le texte intégral de la décision reste sur le site officiel de la Cour, lié depuis chaque fiche.']
+  cedh: ['CEDH — Cour européenne des droits de l\'homme','Fiches de synthèse HUDOC (thème + conclusion). Le texte intégral de la décision reste sur le site officiel de la Cour, lié depuis chaque fiche.'],
+  oit: ['OIT — conventions internationales du travail','Fiches de synthèse des conventions de l\'Organisation internationale du travail (thème + lien vers le texte officiel NORMLEX).']
 };
 function setView(v){
   VIEW = v;
@@ -1747,7 +1759,7 @@ function setView(v){
   }
   var estClause = v.indexOf('cl_')===0;
   document.getElementById('view-search').hidden = (v!=='search');
-  document.getElementById('view-browse').hidden = !(v==='ccn'||v==='code'||v==='secu'||v==='juris'||v==='jorf'||v==='acco'||v==='eurlex'||v==='cjue'||v==='cedh'||estClause);
+  document.getElementById('view-browse').hidden = !(v==='ccn'||v==='code'||v==='secu'||v==='juris'||v==='jorf'||v==='acco'||v==='eurlex'||v==='cjue'||v==='cedh'||v==='oit'||estClause);
   document.getElementById('view-maj').hidden = (v!=='maj');
   document.getElementById('view-glossaire').hidden = (v!=='glossaire');
   document.getElementById('view-faq').hidden = (v!=='faq');
@@ -1976,7 +1988,7 @@ var _artInvDone = false;
 // instantanée dès qu'elle est prête ; en attendant, la recherche balaye tout.
 function buildArtInvChunked(){
   if(_artInvDone) return; _artInvDone = true;
-  var sources = [['code',SEARCH.code],['code_secu',SEARCH.code_secu],['juris',SEARCH.juris],['jorf',SEARCH.jorf],['acco',SEARCH.acco],['eurlex',SEARCH.eurlex],['cjue',SEARCH.cjue],['cedh',SEARCH.cedh]];
+  var sources = [['code',SEARCH.code],['code_secu',SEARCH.code_secu],['juris',SEARCH.juris],['jorf',SEARCH.jorf],['acco',SEARCH.acco],['eurlex',SEARCH.eurlex],['cjue',SEARCH.cjue],['cedh',SEARCH.cedh],['oit',SEARCH.oit]];
   var si=0, inv=null, list=null, i=0, CHUNK=1500;
   function step(){
     if(!ENG){ _artInvDone=false; return; }   // moteur réinitialisé -> abandon
@@ -3075,6 +3087,7 @@ function runSearch(){
   var eurlex = searchArticlesV2(SEARCH.eurlex, searchTokens, focusTokens, rawNorm, eng.artInv.eurlex).slice(0,15);
   var cjue = searchArticlesV2(SEARCH.cjue, searchTokens, focusTokens, rawNorm, eng.artInv.cjue).slice(0,15);
   var cedh = searchArticlesV2(SEARCH.cedh, searchTokens, focusTokens, rawNorm, eng.artInv.cedh).slice(0,15);
+  var oit = searchArticlesV2(SEARCH.oit, searchTokens, focusTokens, rawNorm, eng.artInv.oit).slice(0,15);
 
   // Filtre "niveau" (Où s'applique la règle ?) : vide les groupes hors du
   // niveau actif. 'tous' ne filtre rien. Fait AVANT vigueur/phrases/focus pour
@@ -3090,6 +3103,7 @@ function runSearch(){
     if(_niv.indexOf('eurlex')===-1) eurlex = [];
     if(_niv.indexOf('cjue')===-1) cjue = [];
     if(_niv.indexOf('cedh')===-1) cedh = [];
+    if(_niv.indexOf('oit')===-1) oit = [];
   }
 
   // Filtre "en vigueur seulement" : masque les textes abrogés/périmés. L'état
@@ -3167,7 +3181,8 @@ function runSearch(){
     {k:'acco',  n:acco.length,  lbl:'Accords', anc:'grp-acco'},
     {k:'eurlex',n:eurlex.length,lbl:'Droit européen', anc:'grp-eurlex'},
     {k:'cjue',  n:cjue.length,  lbl:'CJUE', anc:'grp-cjue'},
-    {k:'cedh',  n:cedh.length,  lbl:'CEDH', anc:'grp-cedh'}
+    {k:'cedh',  n:cedh.length,  lbl:'CEDH', anc:'grp-cedh'},
+    {k:'oit',   n:oit.length,   lbl:'OIT', anc:'grp-oit'}
   ].filter(function(x){ return x.n>0; });
   if(srcCounts.length>1){
     html += '<div class="src-counts">'+srcCounts.map(function(x){
@@ -3245,6 +3260,11 @@ function runSearch(){
   if(cedh.length){
     html += grpHead('cedh','Jurisprudence CEDH',cedh.length)+'<div class="rows">';
     html += cedh.map(function(r){ return rowHtml('cedh', r.num, r.title, null, {snippet:artSnip(r)}); }).join('');
+    html += '</div>';
+  }
+  if(oit.length){
+    html += grpHead('oit','Conventions OIT',oit.length)+'<div class="rows">';
+    html += oit.map(function(r){ return rowHtml('oit', r.num, r.title, null, {snippet:artSnip(r)}); }).join('');
     html += '</div>';
   }
   if(!html){
@@ -3777,7 +3797,7 @@ function startBrowse(source){
   document.getElementById('browse-h1').textContent = VIEW_TITLES[source][0];
   document.getElementById('browse-p').textContent = VIEW_TITLES[source][1];
   var fi = document.getElementById('filter-input'); fi.value=''; document.getElementById('filter-clr').hidden=true;
-  document.getElementById('subbar').hidden = (source==='juris'||source==='jorf'||source==='acco'||source==='eurlex'||source==='cjue'||source==='cedh');
+  document.getElementById('subbar').hidden = (source==='juris'||source==='jorf'||source==='acco'||source==='eurlex'||source==='cjue'||source==='cedh'||source==='oit');
   renderSubbar();
   renderBrowse();
 }
@@ -3819,6 +3839,7 @@ function pathFor(kind, num){
   if(kind==='eurlex') return 'output/intl/textes-eurlex/'+safe+'.json';
   if(kind==='cjue')   return 'output/intl/textes-cjue/'+safe+'.json';
   if(kind==='cedh')   return 'output/intl/textes-hudoc/'+safe+'.json';
+  if(kind==='oit')    return 'output/intl/textes-oit/'+safe+'.json';
   return 'output/code-travail/'+safe+'.json';
 }
 function cleanHtml(raw){ return raw ? String(raw).replace(/<script/gi,'&lt;script') : ''; }
@@ -4063,7 +4084,7 @@ async function openDetail(kind, num, target){
   if(kind==='jorf') payload = Object.assign({}, data.text||{}, {titre:data.titre, datePublication:data.datePublication});
   if(kind==='acco') payload = Object.assign({}, data.text||{}, {titre:data.titre, datePublication:data.datePublication});
 
-  var defLabel = kind==='ccn'?'Convention '+num : (kind==='juris'?'Décision '+num : (kind==='jorf'?'Texte JORF '+num : (kind==='acco'?'Accord '+num : (kind==='eurlex'?'Texte UE '+num : (kind==='cjue'?'Arrêt CJUE '+num : (kind==='cedh'?'Arrêt CEDH '+num : 'Article '+num))))));
+  var defLabel = kind==='ccn'?'Convention '+num : (kind==='juris'?'Décision '+num : (kind==='jorf'?'Texte JORF '+num : (kind==='acco'?'Accord '+num : (kind==='eurlex'?'Texte UE '+num : (kind==='cjue'?'Arrêt CJUE '+num : (kind==='cedh'?'Arrêt CEDH '+num : (kind==='oit'?'Convention OIT '+num : 'Article '+num)))))));
   var title = payload.titre || payload.title || payload.titreLong || defLabel;
   document.getElementById('d-title').textContent = title;
 
@@ -4091,7 +4112,7 @@ async function openDetail(kind, num, target){
     if(payload.signers) body += '<div class="sec-text">'+cleanHtml(payload.signers)+'</div>';
     if(!body) body = '<div class="sec-text" style="color:var(--ink-soft)">Ce texte n\'a pas de corps structuré (souvent un texte publié uniquement en PDF). Utilisez « Télécharger le texte » ou le lien Légifrance.</div>';
   }
-  else if(payload.source==='EUR-Lex'||payload.source==='CJUE'||payload.source==='CEDH'){
+  else if(payload.source==='EUR-Lex'||payload.source==='CJUE'||payload.source==='CEDH'||payload.source==='OIT'){
     // Nos textes internationaux sont du texte BRUT (paragraphes séparés par des
     // sauts de ligne), pas du HTML -> on les transforme en vrais <p> avant
     // affichage, sinon ils s'écraseraient en un seul bloc illisible. On ne
@@ -4645,7 +4666,7 @@ document.getElementById('stat-grid-eu').addEventListener('click', function(e){
 // aussi les compteurs du menu (nc-eurlex/nc-cjue/nc-cedh).
 function populerIndexIntl(){
   if(typeof SEARCH==='undefined' || !SEARCH) return;
-  ['eurlex','cjue','cedh'].forEach(function(k){
+  ['eurlex','cjue','cedh','oit'].forEach(function(k){
     INDEX[k] = (SEARCH[k]||[]).map(function(e){ return {num:e.num, title:e.title||('Texte '+e.num), etat:null}; });
     var el = document.getElementById('nc-'+k); if(el) el.textContent = fmt(INDEX[k].length);
   });
