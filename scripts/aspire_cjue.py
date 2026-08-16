@@ -1,19 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 r"""
-ASPIRATION CJUE — memes URLs CELLAR que EUR-Lex, MEME repli inclus
-(actes recents sans manifestation "simplified"). Lit recensement-cjue.json
-(items[].celex) et telecharge le texte des arrets.
+ASPIRATION CJUE v2 — memes URLs CELLAR que EUR-Lex, memes ameliorations
+(sans plafond, commits
+PERIODIQUES et budget de temps interne.
 
-Le run precedent : tout en "echec reseau" -> eur-lex.europa.eu bloque le runner.
-Or CELLAR (publications.europa.eu) est joignable (le recensement le prouve).
-On reprend donc la methode EXACTE du package R 'eurlex' pour recuperer le texte :
-  URL   : http://publications.europa.eu/resource/celex/<CELEX>
-  En-tetes Accept : text/html, ...  + Accept-Language: fr
-  Statut 200 -> contenu direct ; 300 -> plusieurs versions, on suit les liens.
+Changements vs v3 :
+- Plus de "LOT" qui limite le nombre TENTE par run -> on traite TOUT le
+  restant en une seule invocation (le budget de temps ci-dessous protege
+  quand meme contre un run infini).
+- COMMIT + PUSH tous les COMMIT_TOUS fichiers reussis (pas seulement a la
+  toute fin) -> si le job est interrompu, le travail deja fait est deja sur
+  main, jamais perdu.
+- BUDGET DE TEMPS INTERNE (MAX_MINUTES) : le script s'arrete PROPREMENT (avec
+  un dernier commit) avant la limite externe du job (5h30), pour ne jamais se
+  faire tuer en pleine ecriture/commit.
 
-Ecrit un JSON par acte dans output/intl/textes-eurlex/<CELEX>.json.
-REPRENABLE (saute les faits), PAR LOTS, avec log des STATUTS HTTP.
+Methode de recuperation inchangee (CELLAR, avec repli pour les actes recents
+sans manifestation "simplified") : deja prouvee sur 677/702 actes.
 """
 
 import json, sys, time, datetime, os, re
@@ -25,41 +29,28 @@ try:
     from bs4 import BeautifulSoup
 except ImportError:
     print("ERREUR: 'beautifulsoup4' requis.", file=sys.stderr); sys.exit(2)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import _git_commit
 
 RECENSEMENT = "output/intl/recensement-cjue.json"
 DEST = "output/intl/textes-cjue"
-LOT = 250
+COMMIT_TOUS = 700          # commit+push tous les N fichiers reussis
+MAX_MINUTES = 315          # budget interne (5h15) ; marge sous le 5h30 externe
 TIMEOUT = 60
 MIN_LEN = 200
 BASE = "http://publications.europa.eu/resource/celex/%s"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MonLegiTexte-aspiration/2.0",
-    "Accept-Language": "fr",
-    "Content-Language": "fr",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) MonLegiTexte-aspiration/4.0",
+    "Accept-Language": "fr", "Content-Language": "fr",
     "Accept": ("text/html, text/html;type=simplified, text/plain, "
                "application/xhtml+xml, application/xhtml+xml;type=simplified"),
 }
-
-STATUTS = {}  # compteur de statuts HTTP pour diagnostic
-
-def _get(url, tries=3):
-    last = None
-    for i in range(tries):
-        try:
-            r = requests.get(url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
-            return r
-        except Exception as e:
-            last = repr(e)
-            time.sleep(2 ** i)
-    return None  # echec reseau franc
-
-# En-tetes de repli : les actes TRES RECENTS (delegues/execution 2024-2026)
-# n\'ont souvent PAS de manifestation "simplified" -> on retente sans cette
-# contrainte, en acceptant le xhtml brut en premier.
 HEADERS_REPLI = dict(HEADERS)
-HEADERS_REPLI["Accept"] = ("application/xhtml+xml, text/html, text/plain, "
-                           "application/pdf")
+HEADERS_REPLI["Accept"] = "application/xhtml+xml, text/html, text/plain, application/pdf"
+
+STATUTS = {}
+
 
 def _get2(url, headers, tries=3):
     for i in range(tries):
@@ -69,10 +60,12 @@ def _get2(url, headers, tries=3):
             time.sleep(2 ** i)
     return None
 
+
+def _get(url, tries=3):
+    return _get2(url, HEADERS, tries)
+
+
 def fetch_celex(celex):
-    """Renvoie (html, statut). Gere 200 (direct), 300 (multi-versions), et
-    retente avec des en-tetes de repli si la 1ere tentative echoue (utile
-    pour les actes tres recents sans manifestation "simplified")."""
     r = _get2(BASE % celex, HEADERS)
     tentative = "std"
     if r is None or r.status_code not in (200, 300):
@@ -87,7 +80,6 @@ def fetch_celex(celex):
     if r.status_code == 200 and r.text:
         return r.text, cle
     if r.status_code == 300 and r.text:
-        # Plusieurs manifestations : suivre les liens (on privilegie FR).
         soup = BeautifulSoup(r.text, "html.parser")
         liens = [a.get("href") for a in soup.find_all("a") if a.get("href")]
         liens = [l for l in liens if l and l.startswith("http")]
@@ -101,6 +93,7 @@ def fetch_celex(celex):
             return "\n".join(morceaux), cle
     return None, cle
 
+
 def extraire_texte(html):
     soup = BeautifulSoup(html, "html.parser")
     for bad in soup(["script", "style", "nav", "header", "footer", "link", "meta"]):
@@ -113,6 +106,7 @@ def extraire_texte(html):
     titre = (t.get_text(strip=True) if t else "").replace(" - EUR-Lex", "").strip()
     return titre, txt
 
+
 def main():
     if not os.path.exists(RECENSEMENT):
         print("ERREUR: %s introuvable." % RECENSEMENT); sys.exit(1)
@@ -122,11 +116,18 @@ def main():
         celex = [it.get("celex") for it in _d.get("items", []) if it.get("celex")]
     faits = set(x[:-5] for x in os.listdir(DEST) if x.endswith(".json"))
     a_faire = [c for c in celex if c not in faits]
-    print("=== Aspiration CJUE (via CELLAR, avec repli) ===")
-    print("Total %d | faits %d | restants %d | ce lot: %d max" % (len(celex), len(faits), len(a_faire), LOT))
+    print("=== Aspiration CJUE v2 (via CELLAR, sans plafond) ===")
+    print("Total %d | faits %d | restants %d" % (len(celex), len(faits), len(a_faire)))
+    print("Commit tous les %d | budget interne %d min" % (COMMIT_TOUS, MAX_MINUTES))
 
-    ok = ko = 0
-    for c in a_faire[:LOT]:
+    debut = time.time()
+    ok = ko = ok_depuis_commit = 0
+    arret_budget = False
+    for idx, c in enumerate(a_faire, 1):
+        if (time.time() - debut) / 60 > MAX_MINUTES:
+            print("\n/!\\ Budget de temps atteint (%d min) -> arret propre." % MAX_MINUTES)
+            arret_budget = True
+            break
         html, st = fetch_celex(c)
         if not html:
             ko += 1
@@ -141,17 +142,25 @@ def main():
                "url": BASE % c, "date_aspiration": datetime.date.today().isoformat(), "texte": texte}
         with open(os.path.join(DEST, c + ".json"), "w", encoding="utf-8") as f:
             json.dump(rec, f, ensure_ascii=False)
-        ok += 1
+        ok += 1; ok_depuis_commit += 1
         if ok % 25 == 0: print("  ... %d OK (dernier: %d Ko)" % (ok, len(texte) // 1024))
+        if ok_depuis_commit >= COMMIT_TOUS:
+            cok, detail = _git_commit.commit_et_push(
+                [DEST], "Aspiration CJUE (auto, %d faits) [skip ci]" % (len(faits) + ok))
+            print("  -- commit intermediaire (%d fichiers) : %s (%s)" % (ok_depuis_commit, cok, detail))
+            ok_depuis_commit = 0
         time.sleep(0.4)
 
+    if ok_depuis_commit > 0:
+        cok, detail = _git_commit.commit_et_push(
+            [DEST], "Aspiration CJUE (auto, final) [skip ci]")
+        print("  -- commit final (%d fichiers) : %s (%s)" % (ok_depuis_commit, cok, detail))
+
     print("\n--- RESULTAT DU RUN ---")
-    print("OK: %d | echecs: %d" % (ok, ko))
+    print("OK: %d | echecs: %d | arret pour budget de temps: %s" % (ok, ko, arret_budget))
     print("Statuts HTTP rencontres: %s" % STATUTS)
-    print("Restants apres ce run: %d" % max(0, len(a_faire) - min(LOT, len(a_faire))))
-    if ok == 0 and ko > 0:
-        print("/!\\ 0 succes. Regarde 'Statuts HTTP' : 403/blocage, 406 (format), "
-              "ou 'reseau'. On ajuste selon ce qu'on voit.")
+    print("Restants apres ce run: %d" % (len(a_faire) - ok - ko))
+
 
 if __name__ == "__main__":
     main()

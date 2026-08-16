@@ -14,6 +14,8 @@ REPRENABLE, PAR LOTS, DEFENSIF (comme aspire_eurlex.py).
 """
 
 import json, sys, time, datetime, os, re
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import _git_commit
 try:
     import requests
 except ImportError:
@@ -25,7 +27,8 @@ except ImportError:
 
 RECENSEMENT = "output/intl/recensement-hudoc.json"
 DEST = "output/intl/textes-hudoc"
-LOT = 250
+COMMIT_TOUS = 700          # commit+push tous les N fichiers reussis
+MAX_MINUTES = 315          # budget interne (5h15)
 TIMEOUT = 30
 MIN_LEN = 200
 BASE = "https://hudoc.echr.coe.int/app/conversion/docx/html/body?library=ECHR&id=%s"
@@ -95,12 +98,19 @@ def main():
             except Exception:
                 pass
     a_faire = [i for i in tous if i not in faits]
-    print("=== Aspiration HUDOC (CEDH) ===")
-    print("Total %d | faits %d | restants %d | ce lot: %d max" % (len(tous), len(faits), len(a_faire), LOT))
+    print("=== Aspiration HUDOC (CEDH), sans plafond ===")
+    print("Total %d | faits %d | restants %d" % (len(tous), len(faits), len(a_faire)))
+    print("Commit tous les %d | budget interne %d min" % (COMMIT_TOUS, MAX_MINUTES))
 
-    ok = ko = 0
+    debut = time.time()
+    ok = ko = ok_depuis_commit = 0
     statuts = {}
-    for itemid in a_faire[:LOT]:
+    arret_budget = False
+    for itemid in a_faire:
+        if (time.time() - debut) / 60 > MAX_MINUTES:
+            print("\n/!\\ Budget de temps atteint (%d min) -> arret propre." % MAX_MINUTES)
+            arret_budget = True
+            break
         html, st = get(itemid)
         statuts[st] = statuts.get(st, 0) + 1
         if not html:
@@ -119,14 +129,23 @@ def main():
                "texte": texte}
         with open(os.path.join(DEST, _safe(itemid) + ".json"), "w", encoding="utf-8") as f:
             json.dump(rec, f, ensure_ascii=False)
-        ok += 1
+        ok += 1; ok_depuis_commit += 1
         if ok % 25 == 0: print("  ... %d OK (dernier: %d Ko)" % (ok, len(texte) // 1024))
+        if ok_depuis_commit >= COMMIT_TOUS:
+            cok, detail = _git_commit.commit_et_push(
+                [DEST], "Aspiration HUDOC (auto, %d faits) [skip ci]" % (len(faits) + ok))
+            print("  -- commit intermediaire (%d fichiers) : %s (%s)" % (ok_depuis_commit, cok, detail))
+            ok_depuis_commit = 0
         time.sleep(0.3)
 
+    if ok_depuis_commit > 0:
+        cok, detail = _git_commit.commit_et_push([DEST], "Aspiration HUDOC (auto, final) [skip ci]")
+        print("  -- commit final (%d fichiers) : %s (%s)" % (ok_depuis_commit, cok, detail))
+
     print("\n--- RESULTAT DU RUN ---")
-    print("OK: %d | echecs: %d" % (ok, ko))
+    print("OK: %d | echecs: %d | arret pour budget de temps: %s" % (ok, ko, arret_budget))
     print("Statuts rencontres: %s" % statuts)
-    print("Restants apres ce run: %d" % max(0, len(a_faire) - min(LOT, len(a_faire))))
+    print("Restants apres ce run: %d" % (len(a_faire) - ok - ko))
 
 if __name__ == "__main__":
     main()
