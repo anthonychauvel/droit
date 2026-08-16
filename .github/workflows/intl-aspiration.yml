@@ -14,9 +14,8 @@ name: Aspiration internationale (textes)
 
 on:
   workflow_dispatch: {}          # bouton "Run workflow" (lancement manuel)
-  # Décommente pour une reprise automatique quotidienne jusqu'à complétion :
-  # schedule:
-  #   - cron: "0 3 * * *"
+  schedule:
+    - cron: "0 5 * * 1"          # chaque LUNDI à 05:00 UTC — 2h après le recensement (le temps qu'il finisse et committe la liste à jour)
 
 concurrency:
   group: intl-aspiration
