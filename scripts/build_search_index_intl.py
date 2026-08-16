@@ -22,7 +22,9 @@ import argparse, glob, json, os, re
 # Longueurs d'extrait, memes conventions que le pipeline francais :
 # JORF/ACCO (textes longs/legislatifs) -> 300 ; jurisprudence -> 220.
 SNIPPET_LEGISLATIF = 300   # EUR-Lex (directives/reglements)
-SNIPPET_JURIS = 220        # CJUE et CEDH (arrets)
+SNIPPET_JURIS = 220        # CJUE (arrets)
+SNIPPET_CEDH = 500         # CEDH : fiches de synthese -> extrait plus long
+                           # pour que mots-cles + conclusion soient cherchables
 
 
 def strip_espaces(raw):
@@ -95,7 +97,7 @@ def build_cedh_index(src_dir):
         entry = {
             "num": data["itemid"],
             "title": data.get("titre") or data.get("docname") or ("Arrêt CEDH " + data["itemid"]),
-            "snippet": texte[:SNIPPET_JURIS],
+            "snippet": texte[:SNIPPET_CEDH],
         }
         if data.get("appno"):
             entry["appno"] = data["appno"]
