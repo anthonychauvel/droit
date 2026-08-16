@@ -123,7 +123,9 @@ def main():
             if ko <= 8: print("  %s : texte trop court" % itemid)
             continue
         meta = par_id.get(itemid, {})
-        rec = {"itemid": itemid, "source": "CEDH", "appno": meta.get("appno", ""),
+        rec = {"itemid": itemid, "source": "CEDH", "titre": meta.get("docname", ""),
+               "url": "https://hudoc.echr.coe.int/fre?i=%s" % itemid,
+               "appno": meta.get("appno", ""),
                "docname": meta.get("docname", ""), "date": meta.get("date", ""),
                "ecli": meta.get("ecli", ""), "date_aspiration": datetime.date.today().isoformat(),
                "texte": texte}
