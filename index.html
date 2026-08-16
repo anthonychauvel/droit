@@ -1302,6 +1302,16 @@ function fmt(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'\u202f'); }
 // Peint les compteurs (badges nav) ET la ligne "corpus" visible (seule chose
 // affichée sur mobile) à partir d'un objet {ccn,code,secu,juris,jorf,acco}.
 // Utilisé par counts.json (instantané) ET par updateCounts (après manifest).
+// Total du corpus TOUT NIVEAU (France + UE déjà indexée), partagé par
+// paintCounts() ET renderDashboard() -- ces deux fonctions touchent TOUTES LES
+// DEUX #corpus-total-num, et les avoir désynchronisées a déjà causé un bug :
+// l'une écrasait le total de l'autre avec la valeur France seule (celle qui
+// s'exécute en dernier gagne). Un seul calcul, réutilisé partout.
+function totalCorpusGlobal(totFrance){
+  var intl = (typeof SEARCH!=='undefined' && SEARCH) ?
+    ((SEARCH.eurlex||[]).length + (SEARCH.cjue||[]).length + (SEARCH.cedh||[]).length) : 0;
+  return totFrance + intl;
+}
 function paintCounts(cc){
   cc = cc || {};
   var map = {ccn:'nc-ccn',code:'nc-code',secu:'nc-secu',juris:'nc-juris',jorf:'nc-jorf',acco:'nc-acco'};
@@ -1312,9 +1322,7 @@ function paintCounts(cc){
   // cherchable (EUR-Lex, CJUE, CEDH) une fois leur index chargé (SEARCH,
   // rempli par pSearch) -- la ligne "Corpus" du menu (cb/cl juste en dessous)
   // reste, elle, centrée sur le corpus FRANÇAIS (inchangé).
-  var intl = (typeof SEARCH!=='undefined' && SEARCH) ?
-    ((SEARCH.eurlex||[]).length + (SEARCH.cjue||[]).length + (SEARCH.cedh||[]).length) : 0;
-  var totGlobal = tot + intl;
+  var totGlobal = totalCorpusGlobal(tot);
   if(tot>0){
     var cb=document.getElementById('corpus-b'); if(cb) cb.textContent=fmt(tot)+' textes indexés';
     var cl=document.getElementById('corpus-line'); if(cl) cl.textContent=
@@ -4473,15 +4481,18 @@ async function renderDashboard(){
     {v:'jorf', n:num('jorf'), l:'Journal Officiel'},
     {v:'acco', n:num('acco'), l:'Accords d\'entreprise'}
   ];
-  // Compteur global : somme de tout le corpus, grimpe une fois à l'ouverture.
+  // Compteur global : somme de tout le corpus (France + UE déjà indexée),
+  // grimpe une fois à l'ouverture. Les CARTES ci-dessous restent France
+  // seule (_total) ; seul le compteur héros s'élargit (_totalGlobal).
   var _total = cards.reduce(function(s,c){ return s+(c.n||0); }, 0);
+  var _totalGlobal = totalCorpusGlobal(_total);
   var _ct = document.getElementById('corpus-total'), _ctn = document.getElementById('corpus-total-num');
-  if(_ct && _ctn && _total>0){
+  if(_ct && _ctn && _totalGlobal>0){
     _ct.hidden = false;
-    _ctn.setAttribute('data-n', _total);
-    if(_MLT_totalDone){ _ctn.textContent = fmt(_total); }
+    _ctn.setAttribute('data-n', _totalGlobal);
+    if(_MLT_totalDone){ _ctn.textContent = fmt(_totalGlobal); }
     else if(!_peutAnimerAccueil()){ _ctn.textContent = '0'; }
-    else { _MLT_totalDone = true; _ctn.textContent = '0'; animerNombre(_ctn, _total, 1500); }
+    else { _MLT_totalDone = true; _ctn.textContent = '0'; animerNombre(_ctn, _totalGlobal, 1500); }
   }
   var _sg = document.getElementById('stat-grid');
   _sg.innerHTML = cards.map(function(c){
