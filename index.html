@@ -4398,8 +4398,15 @@ var _MLT_reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 function animerNombre(el, to, dur){
   if(_MLT_reduce || !to){ el.textContent = fmt(to); return; }
   var start=null;
-  function step(ts){ if(start===null)start=ts; var p=Math.min(1,(ts-start)/dur),e=1-Math.pow(1-p,4);
-    el.textContent=fmt(Math.round(to*e)); if(p<1)requestAnimationFrame(step); else el.textContent=fmt(to); }
+  function step(ts){
+    // Repli anti-course : si data-n a changé depuis le lancement (ex. le total
+    // UE arrivé PENDANT l'animation du total France, via paintCounts) cette
+    // boucle est PÉRIMÉE -- on l'arrête net plutôt que d'écraser, quelques
+    // frames plus tard, une valeur plus fraîche déjà affichée par ailleurs.
+    if(el.getAttribute && el.getAttribute('data-n')!==null && parseInt(el.getAttribute('data-n'),10)!==to) return;
+    if(start===null)start=ts; var p=Math.min(1,(ts-start)/dur),e=1-Math.pow(1-p,4);
+    el.textContent=fmt(Math.round(to*e)); if(p<1)requestAnimationFrame(step); else el.textContent=fmt(to);
+  }
   requestAnimationFrame(step);
 }
 var _MLT_couleurs={ccn:'#35a37a',code:'#1e5aa0',secu:'#2f8f9c',juris:'#d4af37',jorf:'#cf4436',acco:'#6a6fb0'};
