@@ -103,7 +103,7 @@
   }
   .nav-item:hover{ background:rgba(255,255,255,.06); color:#fff; }
   .nav-item.on{ background:var(--gold-metal); color:var(--marine); box-shadow:inset 0 1px 0 rgba(255,255,255,.5), 0 2px 10px -3px rgba(0,0,0,.4); }
-  .nav-item .ic{ width:18px; height:18px; flex-shrink:0; }
+  .nav-item .ic{ width:18px; height:18px; flex-shrink:0; display:inline-flex; align-items:center; justify-content:center; font-size:15px; font-style:normal; }
   .nav-item .nc{ margin-left:auto; font-family:'IBM Plex Mono',monospace; font-size:11px; opacity:.7; font-variant-numeric:tabular-nums; display:inline-block; min-width:3.4ch; text-align:right; }
   .nav-item-primary{ margin-bottom:6px; }
   .nav-group-label{ display:flex; align-items:center; justify-content:space-between; width:100%;
@@ -740,6 +740,14 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
         <button class="nav-item" data-view="secu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>Sécurité sociale<span class="nc" id="nc-secu">…</span></button>
       </div>
     </div>
+    <div class="nav-group" data-group="ue">
+      <button class="nav-group-label" type="button" aria-expanded="false"><span>Union européenne</span><span class="ngl-chev">▾</span></button>
+      <div class="nav-group-items">
+        <button class="nav-item" data-view="eurlex"><span class="ic" aria-hidden="true">🇪🇺</span>EUR-Lex<span class="nc" id="nc-eurlex">…</span></button>
+        <button class="nav-item" data-view="cjue"><span class="ic" aria-hidden="true">🏛️</span>CJUE<span class="nc" id="nc-cjue">…</span></button>
+        <button class="nav-item" data-view="cedh"><span class="ic" aria-hidden="true">🕊️</span>CEDH<span class="nc" id="nc-cedh">…</span></button>
+      </div>
+    </div>
     <div class="nav-group" data-group="theme">
       <button class="nav-group-label" type="button" aria-expanded="false"><span>Trouver par thème</span><span class="ngl-chev">▾</span></button>
       <div class="nav-group-items">
@@ -1094,7 +1102,7 @@ async function fetchText(rel){
 }
 
 /* ---- état global ---- */
-var INDEX  = { ccn:[], code:[], secu:[], juris:[], jorf:[], acco:[] };   // {num,title,etat,source}
+var INDEX  = { ccn:[], code:[], secu:[], juris:[], jorf:[], acco:[], eurlex:[], cjue:[], cedh:[] };   // {num,title,etat,source}
 // Clauses thématiques extraites des CCN (clauses-index.json). Structure à part :
 // {theme: [{idcc, ccn_titre, clause_titre, texte}, ...]}. Les 5 vues cl_*
 // (Salaires, Heures sup, Forfait jours, Temps partiel, Classifications)
@@ -1682,7 +1690,10 @@ var VIEW_TITLES = {
   cl_heures_sup: ['Heures supplémentaires','Les clauses heures sup / majoration / contingent par convention. Cliquez pour lire.'],
   cl_forfait_jours: ['Forfait jours','Les clauses forfait jours / cadres autonomes par convention. Cliquez pour lire.'],
   cl_temps_partiel: ['Temps partiel','Les clauses temps partiel / heures complémentaires par convention. Cliquez pour lire.'],
-  cl_classification: ['Grilles & coefficients','Les grilles de classification et coefficients de chaque convention. Le coefficient sert à calculer votre salaire minimum. Cliquez pour lire.']
+  cl_classification: ['Grilles & coefficients','Les grilles de classification et coefficients de chaque convention. Le coefficient sert à calculer votre salaire minimum. Cliquez pour lire.'],
+  eurlex: ['EUR-Lex — droit de l\'Union européenne','Les actes de l\'UE (règlements, directives) en texte intégral, dans la langue officielle française. Cliquez pour lire.'],
+  cjue: ['CJUE — Cour de justice de l\'Union européenne','Les arrêts de la CJUE en texte intégral. Cliquez pour lire.'],
+  cedh: ['CEDH — Cour européenne des droits de l\'homme','Fiches de synthèse HUDOC (thème + conclusion). Le texte intégral de la décision reste sur le site officiel de la Cour, lié depuis chaque fiche.']
 };
 function setView(v){
   VIEW = v;
@@ -1699,7 +1710,7 @@ function setView(v){
   }
   var estClause = v.indexOf('cl_')===0;
   document.getElementById('view-search').hidden = (v!=='search');
-  document.getElementById('view-browse').hidden = !(v==='ccn'||v==='code'||v==='secu'||v==='juris'||v==='jorf'||v==='acco'||estClause);
+  document.getElementById('view-browse').hidden = !(v==='ccn'||v==='code'||v==='secu'||v==='juris'||v==='jorf'||v==='acco'||v==='eurlex'||v==='cjue'||v==='cedh'||estClause);
   document.getElementById('view-maj').hidden = (v!=='maj');
   document.getElementById('view-glossaire').hidden = (v!=='glossaire');
   document.getElementById('view-faq').hidden = (v!=='faq');
@@ -3729,7 +3740,7 @@ function startBrowse(source){
   document.getElementById('browse-h1').textContent = VIEW_TITLES[source][0];
   document.getElementById('browse-p').textContent = VIEW_TITLES[source][1];
   var fi = document.getElementById('filter-input'); fi.value=''; document.getElementById('filter-clr').hidden=true;
-  document.getElementById('subbar').hidden = (source==='juris'||source==='jorf'||source==='acco');
+  document.getElementById('subbar').hidden = (source==='juris'||source==='jorf'||source==='acco'||source==='eurlex'||source==='cjue'||source==='cedh');
   renderSubbar();
   renderBrowse();
 }
@@ -4550,6 +4561,18 @@ function renderDashboardIntl(){
 document.getElementById('stat-grid-eu').addEventListener('click', function(e){
   var c = e.target.closest('.stat'); if(c) irVersNiveau('europe');
 });
+// Peuple INDEX.eurlex/cjue/cedh depuis SEARCH (même forme {num,title,snippet}
+// que les sources françaises) une fois l'index de recherche chargé -- c'est ce
+// qui rend les 3 nouveaux onglets du menu (parcourir/filtrer) fonctionnels,
+// exactement comme le manifest le fait pour les sources françaises. Peuple
+// aussi les compteurs du menu (nc-eurlex/nc-cjue/nc-cedh).
+function populerIndexIntl(){
+  if(typeof SEARCH==='undefined' || !SEARCH) return;
+  ['eurlex','cjue','cedh'].forEach(function(k){
+    INDEX[k] = (SEARCH[k]||[]).map(function(e){ return {num:e.num, title:e.title||('Texte '+e.num), etat:null}; });
+    var el = document.getElementById('nc-'+k); if(el) el.textContent = fmt(INDEX[k].length);
+  });
+}
 document.getElementById('latest-maj').addEventListener('click', function(e){
   var a = e.target.closest('[data-audit]'); if(a) openAudit(AUDITS[+a.dataset.audit]);
 });
@@ -4754,6 +4777,7 @@ if(deepIdcc){
 }
 
 loadAll().then(function(){
+  populerIndexIntl();
   renderDashboard();
   renderDashboardIntl();
   renderExplorer();
