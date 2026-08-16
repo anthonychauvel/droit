@@ -1,0 +1,56 @@
+name: OIT — construire l'index de recherche
+
+# Déclenchement MANUEL (bouton "Run workflow" dans l'onglet Actions de GitHub —
+# aucune exécution locale requise) + automatique si recensement-normlex.json
+# est modifié un jour (nouvelle convention ajoutée à la liste curée).
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - 'output/intl/recensement-normlex.json'
+      - 'scripts/build_search_index_oit.py'
+
+permissions:
+  contents: write
+
+jobs:
+  construire-index-oit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Construire l'index + les fiches OIT
+        run: |
+          python3 scripts/build_search_index_oit.py \
+            --entree output/intl/recensement-normlex.json \
+            --sortie-index output/search-index-oit.json \
+            --sortie-fiches output/intl/textes-oit
+
+      - name: Committer et pousser (avec retry + rebase, un autre workflow peut pousser en même temps)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/search-index-oit.json output/intl/textes-oit/
+
+          if git diff --cached --quiet; then
+            echo "Rien de nouveau (index OIT déjà à jour)."
+            exit 0
+          fi
+
+          git commit -m "OIT: reconstruction de l'index de recherche (${{ github.run_id }})"
+
+          n=0
+          until [ "$n" -ge 5 ]; do
+            if git push; then
+              echo "Poussé avec succès."
+              break
+            fi
+            n=$((n+1))
+            echo "Push refusé (tentative $n/5) — rebase sur origin/main puis nouvel essai."
+            git pull --rebase origin main
+            sleep 5
+          done
