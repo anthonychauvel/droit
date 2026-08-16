@@ -120,6 +120,14 @@ jobs:
     steps:
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
+      - name: Se synchroniser sur la DERNIÈRE version de main
+        # checkout@v4 récupère le commit qui a DÉCLENCHÉ le run, pas le main le
+        # plus récent. Or les fiches HUDOC/CEDH sont committées PENDANT ce run
+        # par le job d'enrichissement -> sans cette synchro, le builder ne les
+        # verrait pas (index CEDH à 0). On force donc la dernière version.
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
       - name: Installer Python
         uses: actions/setup-python@v5
         with: { python-version: "3.12" }
