@@ -1748,6 +1748,37 @@ var SYN_EXTRA6 = {
  'variable':['remuneration variable','prime d objectif'],'commission':['remuneration variable'],'commissions':['remuneration variable'],'objectifs':['prime d objectif'],'prime objectif':['prime d objectif'],
  'portage salarial':['portage salarial'],'detachement':['detachement','travailleur detache'],'travailleur detache':['detachement'],'faux independant':['requalification','salariat deguise'],'salariat deguise':['requalification'],'deconnexion':['droit a la deconnexion'],'dedit formation':['dedit formation'],'preretraite':['preretraite']
 };
+/* Abréviations et sigles du droit EUROPÉEN et INTERNATIONAL (nouvelles
+   sources : Droit européen/EUR-Lex, CJUE, CEDH). Un sigle tapé seul (ex.
+   "cjue") doit retrouver les textes qui emploient la formulation complète,
+   même si le sigle lui-même n'apparaît pas littéralement dans le texte
+   officiel (les arrêts se désignent eux-mêmes en toutes lettres). */
+var SYN_EXTRA7 = {
+ 'cjue':['cour de justice','cour de justice de l union europeenne'],
+ 'cjce':['cour de justice','cour de justice des communautes europeennes'],
+ 'cour de justice europeenne':['cour de justice','cour de justice de l union europeenne'],
+ 'cour de justice ue':['cour de justice de l union europeenne'],
+ 'cedh':['cour europeenne des droits de l homme','convention europeenne des droits de l homme'],
+ 'cour edh':['cour europeenne des droits de l homme'],
+ 'convention edh':['convention europeenne des droits de l homme'],
+ 'cour europeenne des droits de l homme':['cedh'],
+ 'oit':['organisation internationale du travail','bureau international du travail'],
+ 'bit':['bureau international du travail','organisation internationale du travail'],
+ 'organisation internationale du travail':['oit'],
+ 'convention oit':['convention internationale du travail'],
+ 'convention internationale du travail':['oit'],
+ 'ue':['union europeenne'],
+ 'union europeenne':['ue'],
+ 'droit europeen':['union europeenne','droit de l union europeenne'],
+ 'tfue':['traite sur le fonctionnement de l union europeenne'],
+ 'tue':['traite sur l union europeenne'],
+ 'directive europeenne':['directive'],
+ 'reglement europeen':['reglement'],
+ 'jurisprudence europeenne':['cour de justice','cour europeenne des droits de l homme'],
+ 'droit international du travail':['organisation internationale du travail','bureau international du travail'],
+ 'cour de strasbourg':['cour europeenne des droits de l homme'],
+ 'cour de luxembourg':['cour de justice de l union europeenne']
+};
 /* Mot/bigramme de la requête -> catégories de section DÉJÀ produites par le pipeline */
 var CAT_KEYWORDS_RAW = {
   contingent_hs:['contingent','contingent annuel','quota','heures supplementaires','heure sup','220 heures'],
@@ -1773,7 +1804,7 @@ function getENG(){
   E.ccnCats={}; (SEARCH.ccn||[]).forEach(function(c){ var s={}; (c.hits||[]).forEach(function(h){ (h.cats||(h.cat?[h.cat]:[])).forEach(function(ct){ s[ct]=1; }); }); E.ccnCats[String(c.num)]=s; });
   // SYN fusionné (SYN_RAW + SYN_EXTRA)
   E.SYN={}; function addSyn(map){ Object.keys(map).forEach(function(k){ var kn=normaliser(k); E.SYN[kn]=(E.SYN[kn]||[]).concat(map[k].map(normaliser)); }); }
-  addSyn(SYN_RAW); addSyn(SYN_EXTRA); addSyn(SYN_EXTRA2); addSyn(SYN_EXTRA3); addSyn(SYN_EXTRA4); addSyn(SYN_EXTRA5); addSyn(SYN_EXTRA6);
+  addSyn(SYN_RAW); addSyn(SYN_EXTRA); addSyn(SYN_EXTRA2); addSyn(SYN_EXTRA3); addSyn(SYN_EXTRA4); addSyn(SYN_EXTRA5); addSyn(SYN_EXTRA6); addSyn(SYN_EXTRA7);
   // mot -> catégories
   E.catByKw={}; Object.keys(CAT_KEYWORDS_RAW).forEach(function(cat){ CAT_KEYWORDS_RAW[cat].forEach(function(kw){ kw=normaliser(kw); (E.catByKw[kw]=E.catByKw[kw]||[]).push(cat); }); });
   // métiers : phrases (PRO déjà normalisé) + index par mot
@@ -4069,7 +4100,7 @@ function renderGlossaire(){
   var box=document.getElementById('glossaire-list'); if(!box) return;
   if(box.getAttribute('data-built')!=='1'){
     var sigles=_gloMerge([SYN_EXTRA3]);
-    var mots=_gloMerge([SYN_RAW, SYN_EXTRA, SYN_EXTRA2, SYN_EXTRA4, SYN_EXTRA6]);
+    var mots=_gloMerge([SYN_RAW, SYN_EXTRA, SYN_EXTRA2, SYN_EXTRA4, SYN_EXTRA6, SYN_EXTRA7]);
     box.innerHTML = _gloSection('Sigles & abréviations','Tapez le sigle, le moteur cherche le terme complet.', sigles, true)
       + _gloSection('Mots du quotidien','Parlez comme d\'habitude, le moteur traduit en terme officiel.', mots, false);
     box.setAttribute('data-built','1');
