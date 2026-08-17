@@ -1,0 +1,64 @@
+name: CEDH — enrichir avec le texte intégral HUDOC
+
+# 5200 fiches, donc PAR LOTS : chaque run en fait un paquet et reprend là où
+# le précédent s'est arrêté (voir enrichir_cedh_textes_hudoc.py). Manuel
+# (bouton Run workflow) + une passe automatique par semaine pour avancer sans
+# y penser (mercredi 04:00 UTC, en dehors des autres crons du dépôt).
+on:
+  workflow_dispatch:
+    inputs:
+      limite:
+        description: 'Nombre max de fiches à traiter ce run'
+        default: '700'
+      budget_minutes:
+        description: 'Arrêt après ce délai (minutes)'
+        default: '300'
+  schedule:
+    - cron: '0 4 * * 3'
+
+permissions:
+  contents: write
+
+jobs:
+  enrichir-cedh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Installer pdfplumber
+        run: pip install pdfplumber --break-system-packages --quiet
+
+      - name: Enrichir un lot de fiches CEDH avec le texte intégral HUDOC
+        run: |
+          python3 scripts/enrichir_cedh_textes_hudoc.py \
+            --fiches output/intl/textes-hudoc \
+            --limite "${{ github.event.inputs.limite || '700' }}" \
+            --budget-minutes "${{ github.event.inputs.budget_minutes || '300' }}"
+
+      - name: Committer et pousser (avec retry + rebase, un autre workflow peut pousser en même temps)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/intl/textes-hudoc/
+
+          if git diff --cached --quiet; then
+            echo "Rien de nouveau (aucune fiche enrichie ce run)."
+            exit 0
+          fi
+
+          git commit -m "CEDH: lot de fiches enrichies avec le texte HUDOC (${{ github.run_id }})"
+
+          n=0
+          until [ "$n" -ge 5 ]; do
+            if git push; then
+              echo "Poussé avec succès."
+              break
+            fi
+            n=$((n+1))
+            echo "Push refusé (tentative $n/5) — rebase sur origin/main puis nouvel essai."
+            git pull --rebase origin main
+            sleep 5
+          done
