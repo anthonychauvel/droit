@@ -8,8 +8,10 @@ on:
   push:
     branches: [main]
     paths:
-      - 'output/intl/recensement-normlex.json'
+      - 'output/intl/oit-liste-curee.json'
       - 'scripts/build_search_index_oit.py'
+      - 'scripts/enrichir_oit_textes_jorf.py'
+      - 'scripts/oit-jorf-mapping.json'
 
 permissions:
   contents: write
@@ -26,9 +28,16 @@ jobs:
       - name: Construire l'index + les fiches OIT
         run: |
           python3 scripts/build_search_index_oit.py \
-            --entree output/intl/recensement-normlex.json \
+            --entree output/intl/oit-liste-curee.json \
             --sortie-index output/search-index-oit.json \
             --sortie-fiches output/intl/textes-oit
+
+      - name: Enrichir avec le texte intégral publié au JORF (contourne le blocage NORMLEX)
+        run: |
+          python3 scripts/enrichir_oit_textes_jorf.py \
+            --mapping scripts/oit-jorf-mapping.json \
+            --fiches output/intl/textes-oit \
+            --index output/search-index-oit.json
 
       - name: Committer et pousser (avec retry + rebase, un autre workflow peut pousser en même temps)
         run: |
