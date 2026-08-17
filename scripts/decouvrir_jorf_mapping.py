@@ -69,7 +69,7 @@ def rechercher_jorf(jeton, requete, taille=10):
             "champs": [{
                 "typeChamp": "ALL",
                 "operateur": "ET",
-                "criteres": [{"valeur": requete, "typeRecherche": "TOUS_LES_MOTS", "operateur": "ET"}],
+                "criteres": [{"valeur": requete, "typeRecherche": "UN_DES_MOTS", "operateur": "ET"}],
             }],
             "pageNumber": 1,
             "pageSize": taille,
@@ -82,8 +82,16 @@ def rechercher_jorf(jeton, requete, taille=10):
         'Content-Type': 'application/json',
         'Authorization': 'Bearer ' + jeton,
     })
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read().decode('utf-8'))
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.loads(r.read().decode('utf-8'))
+    except urllib.error.HTTPError as e:
+        # Le corps de la réponse d'erreur explique en général PRÉCISÉMENT quel
+        # champ/valeur a été refusé -- affiché tel quel plutôt que de deviner
+        # à l'aveugle une 2e fois (typeRecherche="TOUS_LES_MOTS" était déjà une
+        # supposition fausse, corrigée le 17/08 en "UN_DES_MOTS").
+        detail = e.read().decode('utf-8', errors='replace')[:500]
+        raise RuntimeError('{} -- détail : {}'.format(e, detail))
 
 
 def extraire_candidats(obj, acc):
