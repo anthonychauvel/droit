@@ -61,6 +61,16 @@ def premier_champ(entree, noms):
     return None
 
 
+def url_normlex_depuis_code(num):
+    """NORMLEX propose une page par convention adressable directement par son
+    code ILO (ex. C029) via ce paramètre d'URL stable -- pas besoin que la
+    liste curée fournisse elle-même un lien, on le reconstruit à partir du
+    numéro dès qu'il a la forme Cxxx."""
+    if re.match(r'^C\d{2,3}$', str(num)):
+        return 'https://www.ilo.org/dyn/normlex/en/f?p=NORMLEXPUB:12100:0::NO::P12100_ILO_CODE:{}'.format(num)
+    return ''
+
+
 def extraire(entree, index_pos):
     """Retourne (num, titre, theme, url, date, statut) au mieux, ou None si
     l'entrée n'a même pas de titre exploitable (signale une entrée à examiner
@@ -82,6 +92,9 @@ def extraire(entree, index_pos):
         # Repli : numéro généré depuis l'index si aucun identifiant trouvé.
         # Mieux vaut une fiche accessible (num='OIT-3') qu'une fiche perdue.
         num = 'OIT-{}'.format(index_pos + 1)
+
+    if not url:
+        url = url_normlex_depuis_code(num)
 
     return {
         'num': str(num),
