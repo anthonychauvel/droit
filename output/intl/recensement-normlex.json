@@ -1,8 +1,166 @@
 {
-  "source": "NORMLEX / OIT",
-  "date_recensement": "2026-08-15",
-  "statut": "BLOQUE",
-  "dernier_retour": "HTTP 403 (https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:11200:0::NO::P11200_COUNTRY_ID:102691)",
-  "total_detecte": 0,
-  "note": "L'OIT bloque l'acces automatise (probable filtrage des IP de datacenter GitHub). Repli recommande : liste CUREE des conventions ratifiees par la France pertinentes pour un salarie (petite, stable). Alternative lourde : navigateur headless (Playwright) pour cette source."
+  "source": "OIT (liste curee)",
+  "date_recensement": "2026-08-17",
+  "statut": "CUREE",
+  "raison": "NORMLEX bloque l'acces automatise (403). Liste curee des conventions ratifiees par la France pertinentes pour un salarie.",
+  "exclus": "Conventions maritimes / peche / sectorielles / denoncees (bruit pour un salarie).",
+  "a_verifier": "Liste a confirmer/completer contre NORMLEX quand un acces sera possible.",
+  "total": 30,
+  "par_categorie": {
+    "fondamentale": 9,
+    "gouvernance": 4,
+    "technique": 17
+  },
+  "conventions": [
+    {
+      "num": "C029",
+      "intitule": "Travail force, 1930",
+      "categorie": "fondamentale"
+    },
+    {
+      "num": "C087",
+      "intitule": "Liberte syndicale et protection du droit syndical, 1948",
+      "categorie": "fondamentale"
+    },
+    {
+      "num": "C098",
+      "intitule": "Droit d'organisation et de negociation collective, 1949",
+      "categorie": "fondamentale"
+    },
+    {
+      "num": "C100",
+      "intitule": "Egalite de remuneration, 1951",
+      "categorie": "fondamentale"
+    },
+    {
+      "num": "C105",
+      "intitule": "Abolition du travail force, 1957",
+      "categorie": "fondamentale"
+    },
+    {
+      "num": "C111",
+      "intitule": "Discrimination (emploi et profession), 1958",
+      "categorie": "fondamentale"
+    },
+    {
+      "num": "C138",
+      "intitule": "Age minimum, 1973",
+      "categorie": "fondamentale"
+    },
+    {
+      "num": "C155",
+      "intitule": "Securite et sante des travailleurs, 1981",
+      "categorie": "fondamentale"
+    },
+    {
+      "num": "C182",
+      "intitule": "Pires formes de travail des enfants, 1999",
+      "categorie": "fondamentale"
+    },
+    {
+      "num": "C081",
+      "intitule": "Inspection du travail, 1947",
+      "categorie": "gouvernance"
+    },
+    {
+      "num": "C122",
+      "intitule": "Politique de l'emploi, 1964",
+      "categorie": "gouvernance"
+    },
+    {
+      "num": "C129",
+      "intitule": "Inspection du travail (agriculture), 1969",
+      "categorie": "gouvernance"
+    },
+    {
+      "num": "C144",
+      "intitule": "Consultations tripartites (normes internationales du travail), 1976",
+      "categorie": "gouvernance"
+    },
+    {
+      "num": "C001",
+      "intitule": "Duree du travail (industrie), 1919",
+      "categorie": "technique"
+    },
+    {
+      "num": "C014",
+      "intitule": "Repos hebdomadaire (industrie), 1921",
+      "categorie": "technique"
+    },
+    {
+      "num": "C026",
+      "intitule": "Methodes de fixation des salaires minima, 1928",
+      "categorie": "technique"
+    },
+    {
+      "num": "C095",
+      "intitule": "Protection du salaire, 1949",
+      "categorie": "technique"
+    },
+    {
+      "num": "C097",
+      "intitule": "Travailleurs migrants (revisee), 1949",
+      "categorie": "technique"
+    },
+    {
+      "num": "C102",
+      "intitule": "Securite sociale (norme minimum), 1952",
+      "categorie": "technique"
+    },
+    {
+      "num": "C106",
+      "intitule": "Repos hebdomadaire (commerce et bureaux), 1957",
+      "categorie": "technique"
+    },
+    {
+      "num": "C118",
+      "intitule": "Egalite de traitement (securite sociale), 1962",
+      "categorie": "technique"
+    },
+    {
+      "num": "C132",
+      "intitule": "Conges payes (revisee), 1970",
+      "categorie": "technique"
+    },
+    {
+      "num": "C135",
+      "intitule": "Representants des travailleurs, 1971",
+      "categorie": "technique"
+    },
+    {
+      "num": "C142",
+      "intitule": "Mise en valeur des ressources humaines, 1975",
+      "categorie": "technique"
+    },
+    {
+      "num": "C154",
+      "intitule": "Negociation collective, 1981",
+      "categorie": "technique"
+    },
+    {
+      "num": "C156",
+      "intitule": "Travailleurs ayant des responsabilites familiales, 1981",
+      "categorie": "technique"
+    },
+    {
+      "num": "C158",
+      "intitule": "Licenciement, 1982",
+      "categorie": "technique"
+    },
+    {
+      "num": "C175",
+      "intitule": "Travail a temps partiel, 1994",
+      "categorie": "technique"
+    },
+    {
+      "num": "C181",
+      "intitule": "Agences d'emploi privees, 1997",
+      "categorie": "technique"
+    },
+    {
+      "num": "C190",
+      "intitule": "Violence et harcelement, 2019",
+      "categorie": "technique"
+    }
+  ]
 }
