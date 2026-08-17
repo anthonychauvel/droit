@@ -24093,13 +24093,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718023",
+              "cid": "KALISCTA000005718023",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er septembre 1994.",
+              "dateModif": null,
+              "dateDebut": "1994-06-17",
+              "dateFin": "1995-01-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836691",
+                  "cid": "KALIARTI000005836691",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005718023/KALIARTI000005836691",
+                  "pathTitle": [
+                    "Salaires au 1er septembre 1994."
+                  ],
+                  "content": "Grille des salaires au 1er septembre 1994<p></p><p></p><p></p>   (A) : Niveau.<p></p><p></p>   (B) : Echelon.<p></p><p></p>   (C) : Salaire au 1er septembre 1994.<p></p><p></p> ---------------------------:<p></p><TABLE><TR><TD> (A)  </TD><TD>  (B)   </TD><TD>    (C)   </TD></TR><TR><TD> I    </TD><TD> 1er    </TD><TD> 5.978 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.038 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 6.099 F  </TD></TR><TR><TD> II   </TD><TD> 1er    </TD><TD> 6.038 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.159 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 6.283 F  </TD></TR><TR><TD> III  </TD><TD> 1er    </TD><TD> 6.159 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.344 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 6.535 F  </TD></TR><TR><TD> IV   </TD><TD> 1er    </TD><TD> 6.434 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.692 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 6.959 F  </TD></TR><TR><TD> V    </TD><TD> 1er    </TD><TD> 6.871 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 7.214 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 7.574 F  </TD></TR><TR><TD> VI   </TD><TD> 1er    </TD><TD> 8.342 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 8.843 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 9.374 F  </TD></TR><TR><TD> VII  </TD><TD> 1er    </TD><TD> 8.976 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 9.605 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 10.277 F </TD></TR><TR><TD> VIII </TD><TD> 1er    </TD><TD> 10.560 F </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 11.405 F </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 12.317 F </TD></TR><TR><TD> IX   </TD><TD> 1er    </TD><TD> 13.728 F </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 15.375 F </TD></TR><TR><TD> X    </TD><TD> 1er    </TD><TD> 19.008 F </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 22.810 F </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1994-06-17 BO conventions collectives 95-12",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 771811200000,
+                  "dateFin": 790473600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -24113,13 +24187,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718024",
+              "cid": "KALISCTA000005718024",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-01-19",
+              "dateFin": "1995-10-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836692",
+                  "cid": "KALIARTI000005836692",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718024/KALIARTI000005836692",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 1995."
+                  ],
+                  "content": "Grille des salaires au 1er janvier 1995<p></p><p></p><p></p>   (A) : Niveau<p></p><p></p>   (B) : Echelon<p></p><p></p>   (C) : Salaire au 1er janvier 1995.<p></p><p></p> ---------------------------:<p></p><TABLE><TR><TD> (A)  </TD><TD>  (B)   </TD><TD>    (C)   </TD></TR><TR><TD> I    </TD><TD> 1er    </TD><TD> 6.010 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.070 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 6.131 F  </TD></TR><TR><TD> II   </TD><TD> 1er    </TD><TD> 6.070 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.191 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 6.315 F  </TD></TR><TR><TD> III  </TD><TD> 1er    </TD><TD> 6.191 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.377 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 6.568 F  </TD></TR><TR><TD> IV   </TD><TD> 1er    </TD><TD> 6.466 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.725 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 6.994 F  </TD></TR><TR><TD> V    </TD><TD> 1er    </TD><TD> 6.905 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 7.250 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 7.612 F  </TD></TR><TR><TD> VI   </TD><TD> 1er    </TD><TD> 8.384 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 8.887 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 9.421 F  </TD></TR><TR><TD> VII  </TD><TD> 1er    </TD><TD> 9.021 F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 9.653 F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 10.328 F </TD></TR><TR><TD> VIII </TD><TD> 1er    </TD><TD> 10.613 F </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 11.462 F </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 12.379 F </TD></TR><TR><TD> IX   </TD><TD> 1er    </TD><TD> 13.797 F </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 15.452 F </TD></TR><TR><TD> X    </TD><TD> 1er    </TD><TD> 19.103 F </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 22.924 F </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-01-19 BO conventions collectives 95-13 étendu par arrêté du 19 juin 1995 JORF 29 juin 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 790473600000,
+                  "dateFin": 814147200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -24133,13 +24281,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718025",
+              "cid": "KALISCTA000005718025",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 1996.",
+              "dateModif": null,
+              "dateDebut": "1995-10-20",
+              "dateFin": "1996-06-13",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836693",
+                  "cid": "KALIARTI000005836693",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718025/KALIARTI000005836693",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 1996."
+                  ],
+                  "content": "Article unique<p></p><p></p>   La présente grille est le résultat de la négociation de salaires 1995. Les deux parties conviennent que la négociation reprenne comme antérieurement, suffisamment tôt dans l'année dès que les conditions économiques sont connues, normalement en avril.<p></p><p></p> Grille des salaires au 1er janvier 1996<p></p><p></p><p></p>   (A) : Niveau<p></p><p></p>   (B) : Echelon<p></p><p></p>   (C) : Salaire au 1er janvier 1996.<p></p><p></p><TABLE><TR><TD> (A)  </TD><TD>  (B)   </TD><TD>    (C)   </TD></TR><TR><TD> I    </TD><TD> 1er    </TD><TD> 6.250F   </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.313F   </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 6.376F   </TD></TR><TR><TD> II   </TD><TD> 1er    </TD><TD> 6.313F   </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.439F   </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 6.568F   </TD></TR><TR><TD> III  </TD><TD> 1er    </TD><TD> 6.439F   </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.632F   </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 6.831F   </TD></TR><TR><TD> IV   </TD><TD> 1er    </TD><TD> 6.654F   </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 6.920F   </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 7.197F   </TD></TR><TR><TD> V    </TD><TD> 1er    </TD><TD> 7.091F   </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 7.446F   </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 7.818F   </TD></TR><TR><TD> VI   </TD><TD> 1er    </TD><TD> 8.594F   </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 9.110F   </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 9.657F   </TD></TR><TR><TD> VII  </TD><TD> 1er    </TD><TD>  9.247F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD>  9.894F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 10.587F  </TD></TR><TR><TD> VIII </TD><TD> 1er    </TD><TD> 10.878F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 11.748F  </TD></TR><TR><TD></TD><TD> 3ème   </TD><TD> 12.688F  </TD></TR><TR><TD> IX   </TD><TD> 1er    </TD><TD> 14.142F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 15.839F  </TD></TR><TR><TD> X    </TD><TD> 1er    </TD><TD> 19.581F  </TD></TR><TR><TD></TD><TD> 2ème   </TD><TD> 23.497F  </TD></TR></TABLE><p></p><p></p>   Cette grille annule et remplace, à compter du 1er janvier 1996, la précédente grille au 1er janvier 1995.<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-10-20 BO conventions collectives 96-2, étendu par arrêté du 5 mars 1996 JORF 19 mars 1996 modifié par arrêté du 9 avril 1996 JORF 18 avril 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 814147200000,
+                  "dateFin": 834624000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -62030,13 +62030,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005722125",
+              "cid": "KALISCTA000005722125",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires",
+              "dateModif": null,
+              "dateDebut": "2002-11-21",
+              "dateFin": "2002-11-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005845880",
+                  "cid": "KALIARTI000005845880",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005722125/KALIARTI000005845880",
+                  "pathTitle": [
+                    "Salaires"
+                  ],
+                  "content": "<p></p>La valeur du point (de la grille de classification 1985) est fixée : <p></p><p></p>1er janvier 2003 : 5,22 Euros (cinq euros vingt-deux centimes). <p></p><p></p>(+ 1,36 % sur la valeur du point au 1er janvier 2002). <p></p><p></p>Les parties s'engagent à réouvrir la négociation en juin 2003 pour évaluer cet accord de salaire au regard de l'évolution de l'indice INSEE. <p></p><p></p>Les signataires demandent l'extension du présent accord dans les conditions fixées par les <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647043&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L133-8 (Ab)\">articles L. 133-8 et suivants du code du travail</a>. <p></p><p></p>Fait au Kremlin-Bicêtre, le 21 novembre 2002. <p></p><font color=\"808080\"><em>NOTA : Arrêté du 28 mars 2003 art. 1 : les dispositions de l'accord du 21 novembre 2002 relatif à la valeur du point conclu dans le cadre de la convention collective nationale susvisée, sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie de rémunération mensuelle.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 28 mars 2003 art. 1 : les dispositions de l'accord du 21 novembre 2002 relatif à la valeur du point conclu dans le cadre de la convention collective nationale susvisée, sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie de rémunération mensuelle.<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2002-11-21 BO conventions collectives 2003-5 étendu par arrêté du 28 mars 2003 JORF 9 avril 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L133-8 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L133-8",
+                      "articleId": "LEGIARTI000006647043",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1037836800000,
+                  "dateFin": 1037836800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -62070,13 +62158,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005722127",
+              "cid": "KALISCTA000005722127",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Indemnités kilométriques à compter du 1er mars 2003",
+              "dateModif": null,
+              "dateDebut": "2003-03-27",
+              "dateFin": "2005-09-27",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005845883",
+                  "cid": "KALIARTI000005845883",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005722127/KALIARTI000005845883",
+                  "pathTitle": [
+                    "Indemnités kilométriques à compter du 1er mars 2003"
+                  ],
+                  "content": "<p></p>Conformément à l'article 1er du chapitre VII de la convention collective nationale, au 1er mars 2003, ces indemnités sont fixées comme suit : <p></p><p></p><p></p>INDEMNITES KILOMETRIQUES (VOITURES) jusqu'à 5 chevaux : <p></p><p></p>5 000 premiers km : 0,46 euros. <p></p><p></p>de 5 001 à 20 000 km : 0,25 euros. <p></p><p></p>+ de 20 000 km : 0,30 euros. <p></p><p></p><p></p>INDEMNITES KILOMETRIQUES (VOITURES) 6 chevaux : <p></p><p></p>5 000 premiers km : 0,48 euros. <p></p><p></p>de 5 001 à 20 000 km : 0,26 euros. <p></p><p></p>+ de 20 000 km : 0,32 euros. <p></p><p></p><p></p>INDEMNITES KILOMETRIQUES (VOITURES) 7 chevaux : <p></p><p></p>5 000 premiers km : 0,50 euros. <p></p><p></p>de 5 001 à 20 000 km : 0,28 euros. <p></p><p></p>+ de 20 000 km : 0,33 euros. <p></p><p></p><p></p>VELOMOTEURS : 0,21 euros. <p></p><p></p>MOTOS 50-125 cm3 : 0,28 euros. <p></p><p></p>MOTOS 3-4-5 chevaux : 0,33 euros. <p></p><p></p>MOTOS 6 chevaux et plus : 0,43 euros. <p></p><p></p>Exemple (pour 12 500 km, véhicules de 5 CV) : <p></p><p></p>5 000 km remboursés à 0,46 Euros = 2 300 Euros ; <p></p><p></p>7 500 km remboursés à 0,25 Euros = 1 875 Euros ; <p></p><p></p>Total remboursé pour 12 500 km = 4 175 Euros. <p></p><p></p>Les partenaires sociaux signataires demandent l'extension du présent accord, conformément à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647043&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L133-8 (Ab)\">article L. 133-8 du code du travail et suivants</a>. <p></p><p></p>Fait au Kremlin-Bicêtre, le 27 mars 2003.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2003-03-27 BO conventions collectives 2003-19 étendu par arrêté du 31 juillet 2003 JORF 9 août 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L133-8 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L133-8",
+                      "articleId": "LEGIARTI000006647043",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES - Indemnités kilométriques",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1048723200000,
+                  "dateFin": 1127779200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -62090,13 +62266,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005722128",
+              "cid": "KALISCTA000005722128",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point au 1er janvier 2005.",
+              "dateModif": null,
+              "dateDebut": "2004-11-19",
+              "dateFin": "2005-11-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005845884",
+                  "cid": "KALIARTI000005845884",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005722128/KALIARTI000005845884",
+                  "pathTitle": [
+                    "Valeur du point au 1er janvier 2005."
+                  ],
+                  "content": "<p></p>   La valeur du point est fixée au 1er janvier 2005 à 48,68 Euros (quarante-huit euros soixante-huit centimes) + 1,205 % sur la valeur du point au 1er mars 2003.<p></p><p></p>   Les signataires demandent l'extension du présent accord dans les conditions fixées par les articles L. 133-8 et suivants du code du travail.<p></p><p></p>   Fait au Kremlin-Bicêtre, le 19 novembre 2004.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 14 avril 2005 :<p></p>    Avenant étendu, sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie mensuelle de rémunération.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 14 avril 2005 :<p></p>    Avenant étendu, sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie mensuelle de rémunération.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2004-11-19 BO conventions collectives 2005-5 étendu par arrêté du 14 avril 2005 JORF 24 avril 2005",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1100822400000,
+                  "dateFin": 1131580800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

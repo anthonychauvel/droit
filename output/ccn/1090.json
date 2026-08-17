@@ -103981,13 +103981,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005730109",
+              "cid": "KALISCTA000005730109",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Indemnité de panier",
+              "dateModif": null,
+              "dateDebut": "2004-01-13",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005866920",
+                  "cid": "KALIARTI000005866920",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005730109/KALIARTI000005866920",
+                  "pathTitle": [
+                    "Indemnité de panier"
+                  ],
+                  "content": "<p>Le point 4 de l'annexe \"Salaires minima\" de la convention collective est rédigé comme suit :</p><p>4. Travail de nuit :</p><p>Le montant de l'indemnité de panier visée à l'article 1.10 <em>d-</em>6 et 8, est égal à 4,60 €.</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 37 2004-01-13 art. 4 en vigueur le 1er jour du mois suivant l'extension BO conventions collectives 2004-6 étendu par arrêté du 5 août 2004 JORF 19 août 2004",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1073952000000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -104002,12 +104076,77 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005866921",
+              "cid": "KALIARTI000005866921",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005866921",
+              "pathTitle": [],
+              "content": "<p></p>Vu l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006646389&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-12 (Ab)\">article L. 132-12 du code du travail</a>, il a été convenu ce qui suit : <p></p>Article 1er <p></p><p></p>L'annexe \" Salaires minima \" de la convention collective est ainsi <p></p>rédigée : <p></p><p></p>1. Barème général <p></p><p></p>Les barèmes des salaires minima garantis pour 35 heures hebdomadaires ci-dessous s'appliquent aux salariés à temps plein. <p></p><p></p>Les heures supplémentaires éventuellement accomplies au-delà de 35 heures conformément à l'article 1.09 bis ainsi que les majorations qui s'y attachent s'ajoutent au salaire minimum, de même que les majorations forfaitaires de 10 % ou 20 % prévues en cas de forfait selon l'une ou l'autre des formules visées à l'article 1.09. <p></p><p></p>Le salaire minimum est calculé au prorata en cas d'horaire hebdomadaire inférieur à 35 heures. <p></p><p></p>Lorsqu'un salarié relevant du chapitre VI est rémunéré par un fixe et des primes, la partie fixe doit être au moins égale, pour un mois complet, à 50 % du barème ci-dessous conformément à l'article 6.04 a. <p></p><p></p>Minima garantis pour 35 heures <p></p><p></p>Ouvriers.-Employés <p></p><TABLE><TR><TD>ECHELON </TD><TD>MINIMUM GARANTI </TD></TR><TR><TD></TD><TD>(pour 35 heures, en euros) </TD></TR><TR><TD>12 </TD><TD>1 530 </TD></TR><TR><TD>11 </TD><TD>1 489 </TD></TR><TR><TD>10 </TD><TD>1 448 </TD></TR><TR><TD>9 </TD><TD>1 408 </TD></TR><TR><TD>8 </TD><TD>1 367 </TD></TR><TR><TD>7 </TD><TD>1 326 </TD></TR><TR><TD>6 </TD><TD>1 285 </TD></TR><TR><TD>5 </TD><TD>1 265 </TD></TR><TR><TD>4 </TD><TD>1 244 </TD></TR><TR><TD>3 </TD><TD>1 224 </TD></TR><TR><TD>2 </TD><TD>Selon les modalités </TD></TR><TR><TD>1 </TD><TD>du point 2 ci-après </TD></TR></TABLE><p></p><p></p>Maîtrise <p></p><TABLE><TR><TD>ECHELON </TD><TD>MINIMUM GARANTI </TD></TR><TR><TD></TD><TD>(pour 35 heures, en euros) </TD></TR><TR><TD>25 </TD><TD>1 938 </TD></TR><TR><TD>24 </TD><TD>1 836 </TD></TR><TR><TD>23 </TD><TD>1 734 </TD></TR><TR><TD>22 </TD><TD>1 632 </TD></TR><TR><TD>21 </TD><TD>1 581 </TD></TR><TR><TD>20 </TD><TD>1 530 </TD></TR><TR><TD>19 </TD><TD>1 489 </TD></TR><TR><TD>18 </TD><TD>1 448 </TD></TR><TR><TD>17 </TD><TD>1 408 </TD></TR></TABLE><p></p><p></p>Cadres <p></p><TABLE><TR><TD>NIVEAU/ </TD><TD>MINIMUM GARANTI </TD></TR><TR><TD>DEGRE </TD><TD>(pour 35 heures, en euros) </TD></TR><TR><TD>V </TD><TD>4 080 </TD></TR><TR><TD>IV C </TD><TD>3 672 </TD></TR><TR><TD>IV B </TD><TD>3 468 </TD></TR><TR><TD>IV A </TD><TD>3 264 </TD></TR><TR><TD>III C </TD><TD>3 060 </TD></TR><TR><TD>III B </TD><TD>2 856 </TD></TR><TR><TD>III A </TD><TD>2 652 </TD></TR><TR><TD>II C </TD><TD>2 448 </TD></TR><TR><TD>II B </TD><TD>2 244 </TD></TR><TR><TD>II A </TD><TD>2 040 </TD></TR><TR><TD>I C </TD><TD>1 938 </TD></TR><TR><TD>I B </TD><TD>1 836 </TD></TR><TR><TD>I A </TD><TD>1 734 </TD></TR></TABLE><p></p><p></p>2. Rémunérations minimales garanties des \" non-professionnels \" <p></p><p></p>Les garanties légales (SMIC ou garantie mensuelle de rémunération applicables selon la situation du salarié, conformément à la législation en vigueur) s'appliquent dans les conditions suivantes :<p></p><p></p>-salariés classés sur l'échelon 1 : garantie légale arrondie à l'euro supérieur ;<p></p><p></p>-salariés classés sur l'échelon 2 : garantie applicable à l'échelon 1, majorée de 12 Euros. <p></p><p></p>3. Primes de formation-qualification <p></p><p></p>La valeur du point de formation-qualification visé à l'article 2.05 est égale à 2,60 Euros. <p></p><p></p>4. Travail de nuit <p></p><p></p>Le montant de l'indemnité de panier visée à l'article 1.10 d 6 et 8, est égal à 4,60 Euros. <p></p>Article 2 <p></p><p></p>Les organisations soussignées s'engagent à ouvrir une négociation salariale en mars-avril 2005. <p></p>Article 3 <p></p><p></p>Les organisations soussignées conviennent de procéder dans les meilleurs délais au dépôt légal du présent accord, puis aux démarches tendant à son extension. Le présent accord entrera en vigueur le 1er jour du mois suivant celui au cours duquel aura été publié au Journal officiel l'arrêté d'extension le concernant. <p></p><p></p>Fait à Suresnes, le 28 septembre 2004.<p></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant 2004-09-28 BO conventions collectives 2004-46 étendu par arrêté du 14 janvier 2005 JORF 29 janvier 2005",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L132-12 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L132-12",
+                  "articleId": "LEGIARTI000006646389",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 406080000000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires.",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1096329600000,
+              "dateFin": 1113868800000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -104022,12 +104161,77 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005866922",
+              "cid": "KALIARTI000005866922",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005866922",
+              "pathTitle": [],
+              "content": "<p></p>Vu l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006646389&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-12 (Ab)\">article L. 132-12 du code du travail</a> ; <p></p><p></p>Vu l'article 2 de l'accord de salaires minima du 28 septembre 2004, <p></p>il a été convenu ce qui suit : <p></p>Article 1er <p></p><p></p>Au 3e alinéa de l'article 1.18 de la convention collective, le corps de phrase : \" affecté d'un pourcentage identique à celui fixé par la réglementation en vigueur, pour le calcul du SMIC applicable aux jeunes selon l'âge et le type de contrat \", est remplacé par les termes suivants : \" affecté du pourcentage indiqué au tableau figurant au point 2 de l'annexe \" Salaires minima \" de la présente convention collective, selon la situation du jeune \". <p></p>Article 2 <p></p><p></p>Les 3 grilles figurant au \" 1. Barème général \" de l'annexe \" Salaires minima \" de la convention collective, sont ainsi révisées : <p></p><p></p>Minima garantis pour 35 heures <p></p><p></p>Ouvriers employés <p></p><TABLE><TR><TD>ECHELON </TD><TD>MG 35 heures </TD></TR><TR><TD></TD><TD>(en euros) </TD></TR><TR><TD>12 </TD><TD>1 561 </TD></TR><TR><TD>11 </TD><TD>1 519 </TD></TR><TR><TD>10 </TD><TD>1 477 </TD></TR><TR><TD>9 </TD><TD>1 436 </TD></TR><TR><TD>8 </TD><TD>1 395 </TD></TR><TR><TD>7 </TD><TD>1 353 </TD></TR><TR><TD>6 </TD><TD>1 311 </TD></TR><TR><TD>5 </TD><TD>1 290 </TD></TR><TR><TD>4 </TD><TD>1 269 </TD></TR><TR><TD>3 </TD><TD>1 248 </TD></TR><TR><TD>2 </TD><TD>Selon modalités </TD></TR><TR><TD>1 </TD><TD>ci-dessous </TD></TR></TABLE><p></p><p></p>Rémunérations minimales garanties des \" non-professionnels \" :<p></p>-salariés classés sur l'échelon 1 : garantie légale du SMIC avec arrondi à l'euro supérieur ;<p></p>-salariés classés sur l'échelon 2 : garantie applicable à l'échelon 1 majorée de 12. <p></p>Maîtrise <p></p><TABLE><TR><TD>ECHELON </TD><TD>MG 35 heures </TD></TR><TR><TD></TD><TD>(en euros) </TD></TR><TR><TD>25 </TD><TD>1 977 </TD></TR><TR><TD>24 </TD><TD>1 873 </TD></TR><TR><TD>23 </TD><TD>1 769 </TD></TR><TR><TD>22 </TD><TD>1 665 </TD></TR><TR><TD>21 </TD><TD>1 613 </TD></TR><TR><TD>20 </TD><TD>1 561 </TD></TR><TR><TD>19 </TD><TD>1 519 </TD></TR><TR><TD>18 </TD><TD>1 477 </TD></TR><TR><TD>17 </TD><TD>1 436 </TD></TR></TABLE><p></p><p></p>Cadres <p></p><TABLE><TR><TD>NIVEAU-DEGRE </TD><TD>MG 35 heures </TD></TR><TR><TD></TD><TD>(en euros) </TD></TR><TR><TD>V </TD><TD>4 161 </TD></TR><TR><TD>IV C </TD><TD>3 745 </TD></TR><TR><TD>IV B </TD><TD>3 537 </TD></TR><TR><TD>IV A </TD><TD>3 329 </TD></TR><TR><TD>III C </TD><TD>3 121 </TD></TR><TR><TD>III B </TD><TD>2 913 </TD></TR><TR><TD>III A </TD><TD>2 705 </TD></TR><TR><TD>II C </TD><TD>2 497 </TD></TR><TR><TD>II B </TD><TD>2 289 </TD></TR><TR><TD>II A </TD><TD>2 081 </TD></TR><TR><TD>I C </TD><TD>1 977 </TD></TR><TR><TD>I B </TD><TD>1 873 </TD></TR><TR><TD>I A </TD><TD>1 769 </TD></TR></TABLE><p></p>Article 3 <p></p><p></p>Le point 2 de l'annexe \" Salaires minima \" de la convention collective est remplacé par les dispositions suivantes : <p></p><p></p>2. Contrats d'apprentissage et de professionnalisation <p></p><p></p>Pourcentages applicables à la base mensuelle de rémunération en application de l'article 1.18, selon la situation du jeune <p></p><p></p>Contrat d'apprentissage <p></p><TABLE><TR><TD>AGE </TD><TD>16 ET 17 ANS </TD><TD>18 A 20 ANS </TD><TD>21 ANS ET PLUS </TD></TR><TR><TD></TD><TD>(en %) </TD><TD>(en %) </TD><TD>(en %) </TD></TR><TR><TD>1re année </TD><TD>25 </TD><TD>41 </TD><TD>53 </TD></TR><TR><TD>2e année </TD><TD>37 </TD><TD>49 </TD><TD>61 </TD></TR></TABLE><p></p><p></p>Contrat de professionnalisation <p></p><TABLE><TR><TD>AGE </TD><TD>Moins de 21 ANS </TD><TD>21 ANS à moins </TD><TD>26 ANS ET PLUS </TD></TR><TR><TD></TD><TD></TD><TD>de 26 ans </TD><TD></TD></TR><TR><TD></TD><TD>(en %) </TD><TD>(en %) </TD><TD>(en %) </TD></TR><TR><TD>En dessous </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>du niveau IV </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>de l'EN </TD><TD>55 </TD><TD>70 </TD><TD>100 </TD></TR><TR><TD>A partir du </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>niveau IV </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>de l'EN </TD><TD>65 </TD><TD>80 </TD><TD>100 </TD></TR></TABLE><p></p>Article 4 <p></p><p></p>La valeur du point de formation-qualification visée au point 3 de l'annexe \" Salaires minima \" de la convention collective est portée à 2,65. <p></p>Article 5 <p></p><p></p>Le montant de l'indemnité de panier visée au point 4 de l'annexe \" Salaires minima \" de la convention collective est porté à 4,69. <p></p>Article 6 <p></p><p></p>Les organisations soussignées conviennent de procéder dans les meilleurs délais au dépôt légal du présent accord, puis aux démarches tendant à son extension. Le présent accord entrera en vigueur le 1er jour du mois suivant celui au cours duquel aura été publié au Journal officiel l'arrêté d'extension le concernant. <p></p>Article 7 <p></p><p></p>Les organisations soussignées conviennent d'inscrire les salaires minima à l'ordre du jour de la commission paritaire nationale du 13 septembre 2005, dans le cas où le minimum applicable à l'échelon 2 deviendrait supérieur à celui de l'échelon 3 dès juillet 2005, du fait de la prochaine revalorisation du SMIC, ou bien dans le cas où l'écart entre l'échelon 2 et l'échelon 3 deviendrait inférieur ou égal à 15. <p></p><p></p>Fait à Suresnes, le 19 avril 2005.<p></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 44 2005-04-19 BO conventions collectives 2005-23 étendu par arrêté du 26 août 2005 JORF 7 septembre 2005",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L132-12 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L132-12",
+                  "articleId": "LEGIARTI000006646389",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 406080000000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1113868800000,
+              "dateFin": 1147737600000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

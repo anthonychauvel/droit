@@ -7669,13 +7669,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719317",
+              "cid": "KALISCTA000005719317",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grilles de salaires conventionnels au plus tard le 1er mars 2004",
+              "dateModif": null,
+              "dateDebut": "2003-09-10",
+              "dateFin": "2005-10-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839254",
+                  "cid": "KALIARTI000005839254",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719317/KALIARTI000005839254",
+                  "pathTitle": [
+                    "Grilles de salaires conventionnels au plus tard le 1er mars 2004"
+                  ],
+                  "content": "<p></p>   il a été décidé d'adopter la grille des salaires conventionnels suivante, qui remplace l'avenant n° 7 figurant en annexe de la convention collective nationale du 17 décembre 1985.<p></p><p></p>   Les partenaires sociaux conviennent d'un délai d'application de cette nouvelle grille, fixé au plus tard au 1er mars 2004. Ils conviennent également au cours du 1er semestre 2004 de réouvrir les discussions sur cette grille des salaires en tenant compte des avancées des travaux réalisés sur la nomenclature des emplois.<p></p><p></p>   Fait à Paris, le 10 septembre 2003.<p></p><p></p>   Grille conventionnelle pour l'horaire légal (35 h/semaine) application au plus tard au 1er mars 2004<p></p><p></p><TABLE><TR><TD> COEFFICIENT </TD><TD>   EUROS     </TD><TD>      EMPLOI CORRESPONDANT    </TD></TR><TR><TD></TD><TD></TD><TD> dans la convention collective</TD></TR><TR><TD></TD><TD></TD><TD>     Manutentionnaire.        </TD></TR><TR><TD>   100        </TD><TD>  1 136,15  </TD><TD>     Emballeur/conditionneur. </TD></TR><TR><TD></TD><TD></TD><TD>     Agent de nettoyage.      </TD></TR><TR><TD>   105        </TD><TD>  1 152,38  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>   Employé de bureau.         </TD></TR><TR><TD>   110        </TD><TD>  1 168,61  </TD><TD>   Aide-comptable 1er échelon.</TD></TR><TR><TD></TD><TD></TD><TD>   Emballeur/manutentionnaire.</TD></TR><TR><TD></TD><TD></TD><TD>   Cariste 1er échelon.       </TD></TR><TR><TD>   115        </TD><TD>  1 184,84  </TD><TD></TD></TR><TR><TD>   120        </TD><TD>  1 201,07  </TD><TD></TD></TR><TR><TD>   125        </TD><TD>  1 217,30  </TD><TD>    Cariste 2e échelon.       </TD></TR><TR><TD></TD><TD></TD><TD>    Magasinier fournitures.   </TD></TR><TR><TD>   130        </TD><TD>  1 233,53  </TD><TD></TD></TR><TR><TD>   135        </TD><TD>  1 249,76  </TD><TD>      Conducteur/ramasseur.   </TD></TR><TR><TD></TD><TD></TD><TD>      Magasinier produits     </TD></TR><TR><TD>   140        </TD><TD>  1 265,99  </TD><TD></TD></TR><TR><TD>   145        </TD><TD>  1 282,22  </TD><TD></TD></TR><TR><TD>   150        </TD><TD>  1 298,45  </TD><TD>      Secrétaire.             </TD></TR><TR><TD>   155        </TD><TD>  1 314,68  </TD><TD>      Chef de chaine.         </TD></TR><TR><TD></TD><TD></TD><TD>   Peseur.                    </TD></TR><TR><TD></TD><TD></TD><TD>   Agent de maintenance.      </TD></TR><TR><TD>   160        </TD><TD>  1 330,91  </TD><TD>   Aide-comptable 2e échelon. </TD></TR><TR><TD></TD><TD></TD><TD>   Chauffeur longue distance  </TD></TR><TR><TD></TD><TD></TD><TD>   occasionnel.               </TD></TR></TABLE><p></p><TABLE><TR><TD>   165        </TD><TD>  1 347,14  </TD><TD></TD></TR><TR><TD>   170        </TD><TD>  1 363,37  </TD><TD></TD></TR><TR><TD>   175        </TD><TD>  1 379,60  </TD><TD></TD></TR><TR><TD>   180        </TD><TD>  1 395,83  </TD><TD></TD></TR><TR><TD>   185        </TD><TD>  1 412,06  </TD><TD></TD></TR><TR><TD>   190        </TD><TD>  1 428,29  </TD><TD></TD></TR><TR><TD>   195        </TD><TD>  1 444,52  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>         Acheteur.            </TD></TR><TR><TD></TD><TD></TD><TD>         Vendeur.             </TD></TR><TR><TD>   200        </TD><TD>  1 460,75  </TD><TD>         Acheteur/vendeur.    </TD></TR><TR><TD></TD><TD></TD><TD>         Mécanicien           </TD></TR><TR><TD></TD><TD></TD><TD>         Conducteur frigo.    </TD></TR><TR><TD></TD><TD></TD><TD>         Chef d'équipe.       </TD></TR><TR><TD>   205        </TD><TD>  1 476,98  </TD><TD></TD></TR><TR><TD>   210        </TD><TD>  1 493,21  </TD><TD>         Comptable I          </TD></TR><TR><TD>   215        </TD><TD>  1 509,44  </TD><TD></TD></TR><TR><TD>   220        </TD><TD>  1 525,67  </TD><TD></TD></TR><TR><TD>   225        </TD><TD>  1 541,90  </TD><TD></TD></TR><TR><TD>   230        </TD><TD>  1 558,13  </TD><TD></TD></TR><TR><TD>   235        </TD><TD>  1 574,36  </TD><TD></TD></TR><TR><TD>   240        </TD><TD>  1 590,59  </TD><TD></TD></TR><TR><TD>   245        </TD><TD>  1 606,82  </TD><TD></TD></TR><TR><TD>   250        </TD><TD>  1 623,05  </TD><TD>  Conducteur grand routier    </TD></TR><TR><TD></TD><TD></TD><TD>  Contremaitre                </TD></TR><TR><TD>   255        </TD><TD>  1 639,28  </TD><TD></TD></TR><TR><TD>   260        </TD><TD>  1 655,51  </TD><TD></TD></TR><TR><TD>   265        </TD><TD>  1 671,74  </TD><TD></TD></TR><TR><TD>   270        </TD><TD>  1 687,97  </TD><TD></TD></TR><TR><TD>   275        </TD><TD>  1 704,20  </TD><TD>  Attaché de direction        </TD></TR></TABLE><p></p><TABLE><TR><TD>   280        </TD><TD>  1 720,43  </TD><TD></TD></TR><TR><TD>   285        </TD><TD>  1 736,66  </TD><TD></TD></TR><TR><TD>   290        </TD><TD>  1 752,89  </TD><TD></TD></TR><TR><TD>   295        </TD><TD>  1 769,12  </TD><TD></TD></TR><TR><TD>   300        </TD><TD>  1 785,35  </TD><TD></TD></TR><TR><TD>   305        </TD><TD>  1 801,58                                 </TD></TR><TR><TD>   310        </TD><TD>  1 817,81  </TD><TD></TD></TR><TR><TD>   315        </TD><TD>  1 834,04  </TD><TD></TD></TR><TR><TD>   320        </TD><TD>  1 850,27  </TD><TD></TD></TR><TR><TD>   325        </TD><TD>  1 866,50  </TD><TD></TD></TR><TR><TD>   330        </TD><TD>  1 882,73  </TD><TD></TD></TR><TR><TD>   335        </TD><TD>  1 898,96  </TD><TD></TD></TR><TR><TD>   340        </TD><TD>  1 915,19  </TD><TD></TD></TR><TR><TD>   345        </TD><TD>  1 931,42  </TD><TD></TD></TR><TR><TD>   350        </TD><TD>  1 947,65  </TD><TD></TD></TR><TR><TD>   355        </TD><TD>  1 963,88  </TD><TD></TD></TR><TR><TD>   360        </TD><TD>  1 980,11  </TD><TD></TD></TR><TR><TD>   365        </TD><TD>  1 996,34  </TD><TD></TD></TR><TR><TD>   370        </TD><TD>  2 012,57  </TD><TD></TD></TR><TR><TD>   375        </TD><TD>  2 028,80  </TD><TD></TD></TR><TR><TD>   380        </TD><TD>  2 045,03  </TD><TD></TD></TR><TR><TD>   385        </TD><TD>  2 061,26  </TD><TD></TD></TR><TR><TD>   390        </TD><TD>  2 077,49  </TD><TD></TD></TR><TR><TD>   395        </TD><TD>  2 093,72  </TD><TD></TD></TR><TR><TD>   400        </TD><TD>  2 109,95  </TD><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>   405        </TD><TD>  2 126,18  </TD><TD></TD></TR><TR><TD>   410        </TD><TD>  2 142,41  </TD><TD></TD></TR><TR><TD>   415        </TD><TD>  2 158,64  </TD><TD></TD></TR></TABLE><p></p> ---------------:------------:------------------------------:<p></p><TABLE><TR><TD>   420        </TD><TD>  2 174,87  </TD><TD></TD></TR><TR><TD>   425        </TD><TD>  2 191,10  </TD><TD></TD></TR><TR><TD>   430        </TD><TD>  2 207,33  </TD><TD></TD></TR><TR><TD>   435        </TD><TD>  2 223,56  </TD><TD></TD></TR><TR><TD>   440        </TD><TD>  2 239,79  </TD><TD></TD></TR><TR><TD>   445        </TD><TD>  2 256,02  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>         Chef d'entrepot.     </TD></TR><TR><TD>   450        </TD><TD>  2 272,30  </TD><TD>         Cadre commercial.    </TD></TR><TR><TD></TD><TD></TD><TD>         Comptable II.        </TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 27 janvier 2004 étendu à l'exception du secteur des légumes frais prêts à l'emploi.<p></p>    NOTA : Arrêté du 27 janvier 2004 art. 1 : les dispositions de l'avenant n° 8 du 10 septembre 2003 sur les salaires à la convention collective susvisée, sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie mensuelle de rémunération.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 27 janvier 2004 étendu à l'exception du secteur des légumes frais prêts à l'emploi.<p></p>    NOTA : Arrêté du 27 janvier 2004 art. 1 : les dispositions de l'avenant n° 8 du 10 septembre 2003 sur les salaires à la convention collective susvisée, sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie mensuelle de rémunération.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 8 2003-09-10 BO conventions collectives 2003-48 étendu par arrêté du 27 janvier 2004 JORF 5 février 2004",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1063152000000,
+                  "dateFin": 1129852800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7690,12 +7764,77 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005839255",
+              "cid": "KALIARTI000005839255",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000005839255",
+              "pathTitle": [],
+              "content": "<p>Article 1er </p><p>Champ d'application de l'accord </p><p>Entrent dans le champ d'application du présent accord les entreprises relevant de l'annexe particulière du 7 février 1995 \" Légumes frais prêts à l'emploi \" de la convention collective nationale de l'expédition et l'exportation de fruits et légumes du 17 décembre 1985 étendue par arrêté du 24 avril 1986. </p><p>Article 2 </p><p>Entrée en vigueur de l'accord </p><p>Le présent accord entre en vigueur le 1er janvier 2006. </p><p>Article 3 </p><p>Dépôt </p><p>Le présent accord est établi en nombre suffisant d'exemplaires pour remise à chacune des parties, et dépôt dans les conditions prévues à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">article L. 132-10 du code du travail</a>. </p><p>Son extension sera demandée par la partie la plus diligente. </p><p>Fait à Paris, le 9 janvier 2006. </p><p>ANNEXE : Grille des salaires au 1er janvier 2006 </p><p>Légumes frais prêts à l'emploi </p><p><table><tbody><tr><td>NIVEAU </td><td>ECHELON </td><td>GRILLE 35 HEURES </td></tr><tr><td></td><td>1 </td><td>1 218,10 </td></tr><tr><td>I </td><td>2 </td><td>1 221,65 </td></tr><tr><td></td><td>3 </td><td>1 225,32 </td></tr><tr><td></td><td>1 </td><td>1 231,45 </td></tr><tr><td>II </td><td>2 </td><td>1 237,60 </td></tr><tr><td></td><td>3 </td><td>1 243,79 </td></tr><tr><td></td><td>1 </td><td>1 253,12 </td></tr><tr><td>III </td><td>2 </td><td>1 262,52 </td></tr><tr><td></td><td>3 </td><td>1 271,99 </td></tr><tr><td></td><td>1 </td><td>1 284,71 </td></tr><tr><td>IV </td><td>2 </td><td>1 297,55 </td></tr><tr><td></td><td>3 </td><td>1 310,53 </td></tr><tr><td></td><td>1 </td><td>1 360 </td></tr><tr><td>V </td><td>2 </td><td>1 387 </td></tr><tr><td></td><td>3 </td><td>1 415 </td></tr><tr><td></td><td>1 </td><td>1 456 </td></tr><tr><td>VI </td><td>2 </td><td>1 544 </td></tr><tr><td></td><td>3 </td><td>1 637 </td></tr><tr><td></td><td>1 </td><td>1 669 </td></tr><tr><td>VII </td><td>2 </td><td>1 787 </td></tr><tr><td></td><td>3 </td><td>1 912 </td></tr><tr><td></td><td>1 </td><td>1 974 </td></tr><tr><td>VIII </td><td>2 </td><td>2 132 </td></tr><tr><td></td><td>3 </td><td>2 302 </td></tr><tr><td>IX </td><td>1 </td><td>2 458 </td></tr><tr><td></td><td>2 </td><td>2 681 </td></tr><tr><td>X </td><td>1 </td><td>2 959 </td></tr><tr><td></td><td>2 </td><td>3 600 </td></tr><tr><td>IX </td><td>1 </td><td>4 233 </td></tr><tr><td></td><td>2 </td><td>4 876 </td></tr></tbody></table></p><p><font color=\"#808080\" size=\"1\"><em>(1) Dispositions étendues, sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance (arrêté du 20 juillet 2006, art. 1er).</em></font></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 4 2006-01-09 en vigueur le 1er janvier 2006 BO conventions collectives 2006-19 étendu par arrêté du 20 juillet 2006 JORF 1er août 2006",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L132-10 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L132-10",
+                  "articleId": "LEGIARTI000006647014",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 122860800000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "salaires (1)",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1136764800000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7709,13 +7848,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719319",
+              "cid": "KALISCTA000005719319",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille conventionnelle pour l'horaire légal au 1er décembre 2005",
+              "dateModif": null,
+              "dateDebut": "2005-10-21",
+              "dateFin": "2006-12-13",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839256",
+                  "cid": "KALIARTI000005839256",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719319/KALIARTI000005839256",
+                  "pathTitle": [
+                    "Grille conventionnelle pour l'horaire légal au 1er décembre 2005"
+                  ],
+                  "content": "ont décidé d'adopter la grille des salaires conventionnels suivante, qui remplace l'avenant n° 8 figurant en annexe de la convention collective nationale du 17 décembre 1985.<p></p><p></p>   Les partenaires sociaux s'engagent à rouvrir les discussions sur la grille des salaires conventionnels dans le cadre de la révision des classifications en cours.<p></p><p></p>   Fait à Paris, le 21 octobre 2005.<p></p><p></p>   ANNEXE : Grille conventionnelle pour l'horaire légal (35 heures par semaine)<p></p><p></p>   Application au 1er décembre 2005<p></p><p></p>   Après avoir examiné le rapport sur la situation économique de la branche, les signataires du présent accord, conclu en application de la convention collective des télécommunications, conviennent des dispositions suivantes en matière de salaires minima pour 2005 :<p></p><TABLE><TR><TD> COEFFICIENT </TD><TD> MONTANT  </TD><TD>     EMPLOI CORRESPONDANT      </TD></TR><TR><TD></TD><TD> en euros </TD><TD> dans la convention collective </TD></TR><TR><TD>    100      </TD><TD> 1 217,88 </TD><TD> Manutentionnaire              </TD></TR><TR><TD></TD><TD></TD><TD> Emballeur/conditionneur       </TD></TR><TR><TD></TD><TD></TD><TD> Agent de nettoyage            </TD></TR><TR><TD>    105      </TD><TD> 1 221,52 </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> Employé de bureau             </TD></TR><TR><TD>    110      </TD><TD> 1 231,53 </TD><TD> Aide-comptable 1er échelon    </TD></TR><TR><TD></TD><TD></TD><TD> Emballeur/manutentionnaire    </TD></TR><TR><TD></TD><TD></TD><TD> Cariste 1er échelon           </TD></TR><TR><TD>    115      </TD><TD> 1 232,23 </TD><TD></TD></TR><TR><TD>    120      </TD><TD> 1 237,10 </TD><TD></TD></TR><TR><TD>    125      </TD><TD> 1 241,65 </TD><TD> Cariste 2e échelon            </TD></TR><TR><TD></TD><TD></TD><TD> Magasinier fournitures        </TD></TR><TR><TD>    130      </TD><TD> 1 258,20 </TD><TD></TD></TR><TR><TD>    135      </TD><TD> 1 274,26 </TD><TD> Conducteur/ramasseur          </TD></TR><TR><TD></TD><TD></TD><TD> Magasinier produits           </TD></TR><TR><TD>    140      </TD><TD> 1 291,31 </TD><TD></TD></TR><TR><TD>    145      </TD><TD> 1 307,86 </TD><TD></TD></TR><TR><TD>    150      </TD><TD> 1 324,42 </TD><TD> Secrétaire                    </TD></TR><TR><TD>    155      </TD><TD> 1 340,97 </TD><TD> Chef de chaine                </TD></TR><TR><TD></TD><TD></TD><TD> Peseur                        </TD></TR><TR><TD>    160      </TD><TD> 1 357,53 </TD><TD> Agent de maintenance          </TD></TR><TR><TD></TD><TD></TD><TD> Aide-comptable 2e échelon     </TD></TR><TR><TD></TD><TD></TD><TD> Chauffeur longue              </TD></TR><TR><TD></TD><TD></TD><TD> distance occasionnel          </TD></TR><TR><TD>    170      </TD><TD> 1 390,64 </TD><TD></TD></TR><TR><TD>    180      </TD><TD> 1 423,75 </TD><TD></TD></TR><TR><TD>    190      </TD><TD> 1 456,86 </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> Acheteur                      </TD></TR><TR><TD></TD><TD></TD><TD> Vendeur                       </TD></TR><TR><TD>    200      </TD><TD> 1 489,97 </TD><TD> Acheteur/vendeur              </TD></TR><TR><TD></TD><TD></TD><TD> Mécanicien auto               </TD></TR><TR><TD></TD><TD></TD><TD> Conducteur frigo              </TD></TR><TR><TD></TD><TD></TD><TD> Chef d'équipe                 </TD></TR></TABLE><p></p><TABLE><TR><TD>    210      </TD><TD> 1 523,07 </TD><TD> Comptable I                   </TD></TR><TR><TD>    220      </TD><TD> 1 556,18 </TD><TD></TD></TR><TR><TD>    230      </TD><TD> 1 589,29 </TD><TD></TD></TR><TR><TD>    240      </TD><TD> 1 622,40 </TD><TD></TD></TR><TR><TD>    250      </TD><TD> 1 655,51 </TD><TD> Conducteur grand routier      </TD></TR><TR><TD></TD><TD></TD><TD> Contremaitre                  </TD></TR><TR><TD>    275      </TD><TD> 1 738,28 </TD><TD> Attaché de direction          </TD></TR><TR><TD>    300      </TD><TD> 1 821,06 </TD><TD></TD></TR><TR><TD>    325      </TD><TD> 1 903,83 </TD><TD></TD></TR><TR><TD>    350      </TD><TD> 1 986,60 </TD><TD></TD></TR><TR><TD>    375      </TD><TD> 2 069,38 </TD><TD></TD></TR><TR><TD>    400      </TD><TD> 2 152,15 </TD><TD></TD></TR><TR><TD>    425      </TD><TD> 2 234,92 </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> Chef d'entrepot               </TD></TR><TR><TD>    450      </TD><TD> 2 317,75 </TD><TD> Cadre commercial              </TD></TR><TR><TD></TD><TD></TD><TD> Comptable II                  </TD></TR></TABLE><p></p><font color=\"808080\"><em>   Avenant étendu, sous réserve des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance (arrêté du 20 juillet 2006, art. 1er).<p></p></em></font>",
+                  "nota": "   Avenant étendu, sous réserve des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance (arrêté du 20 juillet 2006, art. 1er).<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 9 2005-10-21 BO conventions collectives 2006-13 étendu par arrêté du 20 juillet 2006 JORF 1er août 2006",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1129852800000,
+                  "dateFin": 1165968000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

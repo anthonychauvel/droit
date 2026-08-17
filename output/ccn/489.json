@@ -33971,13 +33971,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005710027",
+              "cid": "KALISCTA000005710027",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima professionnels des ouvriers, employés, agents de maîtrise et cadres au 1er novembre 1994",
+              "dateModif": null,
+              "dateDebut": "1994-11-14",
+              "dateFin": "1995-04-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005817380",
+                  "cid": "KALIARTI000005817380",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005710027/KALIARTI000005817380",
+                  "pathTitle": [
+                    "Salaires minima professionnels des ouvriers, employés, agents de maîtrise et cadres au 1er novembre 1994"
+                  ],
+                  "content": "I. - Salaires minima professionnels<p></p><p></p>   La valeur du point 100 servant de base à la détermination des salaires minima professionnels est fixée à 20,25 F à compter du 1er novembre 1994.<p></p><p></p>   Les salaires minima professionnels de la nouvelle grille sont obtenus en multipliant la valeur du point 100 par le coefficient et en le divisant par 100 pour avoir le salaire horaire, lequel est multiplié par 169h65 pour avoir le salaire mensuel.<p></p><p></p>   Les salaires minima professionnels mensuels incluent tous les éléments de la rémunération : compensation pour réduction d'horaires, primes de production, primes mensuelles diverses à l'exception de la prime d'ancienneté, du treizième mois, de la prime de vacances, des primes de fin d'année, prime d'astreinte, prime de travail posté et de toutes primes ayant le caractère de remboursement de frais.<p></p><p></p>   Le tableau correspondant aux salaires minima professionnels dressé, coefficient par coefficient, par le syndicat patronal, sera annexé au présent accord à titre indicatif.<p></p><p></p> II. - Demande d'extension - Dépôt à la direction départementale du travail<p></p><p></p>   La demande d'extension ainsi que le dépôpt à la direction départementale du travail de Paris du présent avenant seront effectués à la diligence du syndicat patronal.<p></p><p></p>ANNEXE<p></p> Salaires minima professionnels<p></p> Point 100 = 20,25 au 1er novembre 1994<p></p> (1) Coefficient<p></p> (2) Salaire horaire (en francs)<p></p> (3) Salaire mensuel (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD> (2)    </TD><TD> (3)    </TD></TR><TR><TD> 700 </TD><TD> 141,75 </TD><TD> 24.048 </TD></TR><TR><TD> 600 </TD><TD> 121,50 </TD><TD> 20.612 </TD></TR><TR><TD> 510 </TD><TD> 103,28 </TD><TD> 17.521 </TD></TR><TR><TD> 470 </TD><TD>  95,18 </TD><TD> 16.147 </TD></TR><TR><TD> 410 </TD><TD>  83,03 </TD><TD> 14.086 </TD></TR><TR><TD> 355 </TD><TD>  71,89 </TD><TD> 12.196 </TD></TR><TR><TD> 350 </TD><TD>  70,88 </TD><TD> 12.025 </TD></TR><TR><TD> 315 </TD><TD>  63,69 </TD><TD> 10.822 </TD></TR><TR><TD> 290 </TD><TD>  58,73 </TD><TD>  9.964 </TD></TR><TR><TD> 275 </TD><TD>  55,69 </TD><TD>  9.448 </TD></TR><TR><TD> 260 </TD><TD>  52,65 </TD><TD>  8.932 </TD></TR><TR><TD> 240 </TD><TD>  48,60 </TD><TD>  8.245 </TD></TR><TR><TD> 220 </TD><TD>  44,55 </TD><TD>  7.558 </TD></TR><TR><TD> 210 </TD><TD>  42,53 </TD><TD>  7.215 </TD></TR><TR><TD> 200 </TD><TD>  40,50 </TD><TD>  6.871 </TD></TR><TR><TD> 195 </TD><TD>  39,49 </TD><TD>  6.699 </TD></TR><TR><TD> 190 </TD><TD>  38,48 </TD><TD>  6.528 </TD></TR><TR><TD> 185 </TD><TD>  37,46 </TD><TD>  6.355 </TD></TR><TR><TD> 180 </TD><TD>  36,45 </TD><TD>  6.184 </TD></TR><TR><TD> H.C.</TD><TD>  35,56 </TD><TD>  6.033 </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 120 1994-11-14 BO Conventions collectives 94-49 étendu par arrêté du 31 janvier 1995 JORF 10 février 1995 élargi à certains départements par arrêté du 20 avril 1995 JORF 29 avril 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 784771200000,
+                  "dateFin": 798422400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -33991,13 +34065,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005710028",
+              "cid": "KALISCTA000005710028",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima professionnels des ouvriers, employés, agents de maîtrise et cadres au 1er mai 1995",
+              "dateModif": null,
+              "dateDebut": "1995-04-21",
+              "dateFin": "1996-03-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005817381",
+                  "cid": "KALIARTI000005817381",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005710028/KALIARTI000005817381",
+                  "pathTitle": [
+                    "Salaires minima professionnels des ouvriers, employés, agents de maîtrise et cadres au 1er mai 1995"
+                  ],
+                  "content": "I. - Salaires minima professionnels<p></p><p></p>   La valeur du point 100 servant de base à la détermination des salaires minima professionnels est fixée à 20,66 F à compter du 1er mai 1995.<p></p><p></p>   Les salaires minima professionnels de la nouvelle grille sont obtenus en multipliant la valeur du point 100 par le coefficient et en le divisant par 100 pour avoir le salaire horaire, lequel est multiplié par 169,65 heures pour avoir le salaire mensuel.<p></p><p></p>   Les salaires minima professionnels mensuels incluent tous les éléments de la rémunération : compensation pour réductions d'horaires, prime de production, primes mensuelles diverses à l'exception de la prime d'ancienneté, du treizième mois, de la prime de vacances, des primes de fin d'année, prime d'astreinte, prime de travail posté et de toutes primes ayant le caractère de remboursement de frais.<p></p><p></p>   Le tableau correspondant aux salaires minima professionnels dressé, coefficient par coefficient, par le syndicat patronal, sera annexé au présent accord à titre indicatif.<p></p>II. - Prochaine réunion<p></p><p></p>   Les parties conviennent de se revoir en septembre 1995 sauf circonstances particulières.<p></p>III. - Demande d'extension. - Dépôt<p></p> à la direction départementale du travail<p></p><p></p>   La demande d'extension ainsi que le dépôt à la direction départementale du travail de Paris du présent avenant seront effectués à la diligence du syndicat patronal.<p></p><p></p>ANNEXE<p></p> Salaires minima professionnels<p></p> Point 100 = 20,66 au 1er mai 1995<p></p> (1) Coefficient<p></p> (2) Salaire horaire (en francs)<p></p> (3) Salaire mensuel (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD> (2)    </TD><TD> (3)    </TD></TR><TR><TD> 700 </TD><TD> 144,62 </TD><TD> 24 535 </TD></TR><TR><TD> 600 </TD><TD> 123,96 </TD><TD> 21 030 </TD></TR><TR><TD> 510 </TD><TD> 105,37 </TD><TD> 17 876 </TD></TR><TR><TD> 470 </TD><TD>  97,10 </TD><TD> 16 473 </TD></TR><TR><TD> 410 </TD><TD>  84,70 </TD><TD> 14 371 </TD></TR><TR><TD> 355 </TD><TD>  73,34 </TD><TD> 12 442 </TD></TR><TR><TD> 350 </TD><TD>  72,31 </TD><TD> 12 267 </TD></TR><TR><TD> 315 </TD><TD>  65,08 </TD><TD> 11 041 </TD></TR><TR><TD> 290 </TD><TD>  59,91 </TD><TD> 10 164 </TD></TR><TR><TD> 275 </TD><TD>  56,81 </TD><TD>  9 638 </TD></TR><TR><TD> 260 </TD><TD>  53,72 </TD><TD>  9 114 </TD></TR><TR><TD> 240 </TD><TD>  49,58 </TD><TD>  8 411 </TD></TR><TR><TD> 220 </TD><TD>  45,45 </TD><TD>  7 711 </TD></TR><TR><TD> 210 </TD><TD>  43,39 </TD><TD>  7 361 </TD></TR><TR><TD> 200 </TD><TD>  41,32 </TD><TD>  7 010 </TD></TR><TR><TD> 195 </TD><TD>  40,29 </TD><TD>  6 835 </TD></TR><TR><TD> 190 </TD><TD>  39,25 </TD><TD>  6 659 </TD></TR><TR><TD> 185 </TD><TD>  38,22 </TD><TD>  6 484 </TD></TR><TR><TD> 180 </TD><TD>  37,19 </TD><TD>  6 309 </TD></TR><TR><TD> H.C.</TD><TD>  35,56 </TD><TD>  6 033 </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 121 1995-04-21 BO Conventions collectives 95-20, étendu par arrêté du 19 juillet 1995, JORF 19 décembre 1995 JORF 29 juillet 1995, élargi par arrêté du 30 novembre 1995 JORF 19 décembre 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 798422400000,
+                  "dateFin": 827107200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -34011,13 +34159,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005710029",
+              "cid": "KALISCTA000005710029",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima professionnels des ouvriers, employés, agents de maîtrise et cadres au 1er mars 1996",
+              "dateModif": null,
+              "dateDebut": "1996-03-18",
+              "dateFin": "1997-01-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005817382",
+                  "cid": "KALIARTI000005817382",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005710029/KALIARTI000005817382",
+                  "pathTitle": [
+                    "Salaires minima professionnels des ouvriers, employés, agents de maîtrise et cadres au 1er mars 1996"
+                  ],
+                  "content": "Salaires minima professionnels<p></p><p></p>   La valeur du point 100 servant de base à la détermination des salaires minima professionnels est fixée à 21,03 F à compter du 1er mars 1996.<p></p><p></p>   Les salaires minima professionnels de la nouvelle grille sont obtenus, en multipliant la valeur du point 100 par le coefficient et en le divisant par 100 pour avoir le salaire horaire, lequel est multiplié par 169 h 65 pour avoir le salaire mensuel.<p></p><p></p>   Les salaires minima proffessionnels mensuels incluent tous les éléments de la rémunération : compensation pour réductions d'horaires, prime de production, primes mensuelles diverses à l'exception de la prime d'ancienneté, du 13e mois, de la prime de vacances, des primes de fin d'année, prime d'astreinte, prime de travail posté et de toutes primes ayant le caractère de remboursement de frais.<p></p><p></p>   Le tableau correspondant aux salaires minima professionnels dressé, coefficient par coefficient, par le syndicat patronal, sera annexé au présent accord à titre indicatif.<p></p> Prochaine réunion<p></p><p></p>   Les parties conviennent de se revoir au cours du second semestre en fonction des circonstances.<p></p> Demande d'extension.<p></p> Dépôt à la direction départementale du travail<p></p><p></p>      La demande d'extension ainsi que le dépôt à la direction départementale du travail de Paris du présent avenant seront effectués à la diligence du syndicat patronal.<p></p><p></p>ANNEXE<p></p> Salaires minima professionnels<p></p> Point 100 = 21,03 au 1er mars 1996<p></p> (1) Coefficient<p></p> (2) Salaire horaire<p></p> (3) Salaire mensuel<p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)   </TD></TR><TR><TD> 700 </TD><TD> 147,21F </TD><TD> 24.974F </TD></TR><TR><TD> 600 </TD><TD> 126,18F </TD><TD> 21.406F </TD></TR><TR><TD> 510 </TD><TD> 107,25F </TD><TD> 18.195F </TD></TR><TR><TD> 470 </TD><TD>  98,84F </TD><TD> 16.768F </TD></TR><TR><TD> 410 </TD><TD>  86,22F </TD><TD> 14.627F </TD></TR><TR><TD> 355 </TD><TD>  74,66F </TD><TD> 12.666F </TD></TR><TR><TD> 350 </TD><TD>  73,60F </TD><TD> 12.486F </TD></TR><TR><TD> 315 </TD><TD>  66,24F </TD><TD> 11.238F </TD></TR><TR><TD> 290 </TD><TD>  60,99F </TD><TD> 10.347F </TD></TR><TR><TD> 275 </TD><TD>  57,83F </TD><TD>  9.811F </TD></TR><TR><TD> 260 </TD><TD>  54,68F </TD><TD>  9.276F </TD></TR><TR><TD> 240 </TD><TD>  50,47F </TD><TD>  8.562F </TD></TR><TR><TD> 220 </TD><TD>  46,27F </TD><TD>  7.850F </TD></TR><TR><TD> 210 </TD><TD>  44,16F </TD><TD>  7.492F </TD></TR><TR><TD> 200 </TD><TD>  42,06F </TD><TD>  7.135F </TD></TR><TR><TD> 195 </TD><TD>  41,01F </TD><TD>  6.957F </TD></TR><TR><TD> 190 </TD><TD>  39,96F </TD><TD>  6.779F </TD></TR><TR><TD> 185 </TD><TD>  38,91F </TD><TD>  6.601F </TD></TR><TR><TD> 180 </TD><TD>  37,85F </TD><TD>  6.421F </TD></TR><TR><TD> H.C.</TD><TD>  36,98F </TD><TD>  6.274F </TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 11 juin 1996 art. 1 : l'accord du 18 mars 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>    (1) L'avenant n° 122 du 18 mars 1996 est élargi par arrêté du 12 août 1996 JORF 24 août 1996 aux départements suivants : Aube, Marne, Haute-Marne, Bas-Rhin, Haut-Rhin, Meuse, Meurthe-et-Moselle, Moselle, Vosges, Allier, Cantal, Corrèze, Creuse, Indre, Loire, Haute-Loire, Lot, Puy-de-Dôme et partie Sud du Cher (cantons de ce département ne figurant pas à l'article 2 de la convention).<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 11 juin 1996 art. 1 : l'accord du 18 mars 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>    (1) L'avenant n° 122 du 18 mars 1996 est élargi par arrêté du 12 août 1996 JORF 24 août 1996 aux départements suivants : Aube, Marne, Haute-Marne, Bas-Rhin, Haut-Rhin, Meuse, Meurthe-et-Moselle, Moselle, Vosges, Allier, Cantal, Corrèze, Creuse, Indre, Loire, Haute-Loire, Lot, Puy-de-Dôme et partie Sud du Cher (cantons de ce département ne figurant pas à l'article 2 de la convention).<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 122 1996-03-18 BO conventions collectives 96-16, étendu par arrêté du 11 juin 1996 JORF 21 juin 1996 élargi par arrêté du 12 août 1996 JORF 24 août 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 827107200000,
+                  "dateFin": 852508800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

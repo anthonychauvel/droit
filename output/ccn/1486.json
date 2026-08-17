@@ -35377,13 +35377,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724338",
+              "cid": "KALISCTA000005724338",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeurs des appointements minimaux des IC et des ETAM à partir du 1er janvier 1990",
+              "dateModif": null,
+              "dateDebut": "1989-12-20",
+              "dateFin": "1991-07-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851829",
+                  "cid": "KALIARTI000005851829",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005724338/KALIARTI000005851829",
+                  "pathTitle": [
+                    "Valeurs des appointements minimaux des IC et des ETAM à partir du 1er janvier 1990"
+                  ],
+                  "content": "<p></p>   Article 1er  <p></p><p></p>   Le point des ingénieurs et cadres passe à 90,80 F à partir du 1er janvier 1990.<p></p><p></p>   Article 2 <p></p><p></p>   Pour les E.T.A.M., les salaires minimaux sont déterminés de la manière suivante à partir du 1er janvier 1990 : <p></p><p></p>   - valeur du point : 15,47 F.<p></p><p></p>   - partie fixe : 2.200 F. <p></p><p></p>   Soit : <p></p><p></p><p></p>   Position 1.1, coefficient : 200.<p></p><p></p>   Salaire minimum : 5.294 F. <p></p><p></p><p></p>   Position 1.2, coefficient : 210.<p></p><p></p>   Salaire minimum : 5.449 F. <p></p><p></p><p></p>   Position 1.3.1, coefficient : 220.<p></p><p></p>   Salaire minimum : 5.603 F. <p></p><p></p><p></p>   Position 1.3.2, coefficient : 230.<p></p><p></p>   Salaire minimum : 5.758 F. <p></p><p></p><p></p>   Position 1.4.1, coefficient : 240.<p></p><p></p>   Salaire minimum : 5.913 F. <p></p><p></p><p></p>   Position 1.4.2, coefficient : 250.<p></p><p></p>   Salaire minimum : 6.068 F. <p></p><p></p><p></p>   Position 2.1, coefficient : 275.<p></p><p></p>   Salaire minimum : 6.454 F. <p></p><p></p><p></p>   Position 2.2, coefficient : 310.<p></p><p></p>   Salaire minimum : 6.996 F. <p></p><p></p><p></p>   Position 2.3, coefficient : 355.<p></p><p></p>   Salaire minimum : 7.692 F. <p></p><p></p><p></p>   Position 3.1, coefficient : 400.<p></p><p></p>   Salaire minimum : 8.388 F. <p></p><p></p><p></p>   Position 3.2, coefficient : 450.<p></p><p></p>   Salaire minimum : 9.162 F. <p></p><p></p><p></p>   Position 3.3, coefficient : 500.<p></p><p></p>   Salaire minimum : 9.935 F. <p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 4 1989-12-20 étendu par arrêté du 13 mars 1990 JORF 7 avril 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 630115200000,
+                  "dateFin": 678672000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -35397,13 +35471,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724339",
+              "cid": "KALISCTA000005724339",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeurs des appointements minimaux des IC et des ETAM à partir du 1er juillet 1991",
+              "dateModif": null,
+              "dateDebut": "1991-07-05",
+              "dateFin": "1992-01-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851830",
+                  "cid": "KALIARTI000005851830",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005724339/KALIARTI000005851830",
+                  "pathTitle": [
+                    "Valeurs des appointements minimaux des IC et des ETAM à partir du 1er juillet 1991"
+                  ],
+                  "content": "Article 1er.<p></p><p></p>   La valeur du point des ingénieurs et cadres est fixé à 95 F à partir du 1er juillet 1991.<p></p>Article 2.<p></p><p></p>   Pour les employés, techniciens et agents de maîtrise (E.T.A.M.), les salaires minimaux conventionnels sont déterminés de la manière suivante, et ce, à partir du 1er juillet 1991 :<p></p><p></p><p></p>   Position 1.1, coefficient : 200.<p></p><p></p>   Salaire minimum : 5.680 F. <p></p><p></p><p></p>   Pour les autres coefficients :<p></p> valeur du point : 15,75 F<p></p> Partie fixe : 2 450 F<p></p><p></p><p></p>   Position 1.2, coefficient : 210.<p></p><p></p>   Salaire minimum : 5.758 F. <p></p><p></p><p></p>   Position 1.3.1, coefficient : 220.<p></p><p></p>   Salaire minimum : 5.915 F. <p></p><p></p><p></p>   Position 1.3.2, coefficient : 230.<p></p><p></p>   Salaire minimum : 6.073 F. <p></p><p></p><p></p>   Position 1.4.1, coefficient : 240.<p></p><p></p>   Salaire minimum : 6.230 F. <p></p><p></p><p></p>   Position 1.4.2, coefficient : 250.<p></p><p></p>   Salaire minimum : 6.388 F. <p></p><p></p><p></p>   Position 2.1, coefficient : 275.<p></p><p></p>   Salaire minimum : 6.782 F. <p></p><p></p><p></p>   Position 2.2, coefficient : 310.<p></p><p></p>   Salaire minimum : 7.333 F. <p></p><p></p><p></p>   Position 2.3, coefficient : 355.<p></p><p></p>   Salaire minimum : 8.042 F. <p></p><p></p><p></p>   Position 3.1, coefficient : 400.<p></p><p></p>   Salaire minimum : 8.750 F. <p></p><p></p><p></p>   Position 3.2, coefficient : 450.<p></p><p></p>   Salaire minimum : 9.538 F. <p></p><p></p><p></p>   Position 3.3, coefficient : 500.<p></p><p></p>   Salaire minimum : 10.325 F. <p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 6 1991-07-05 étendu par arrêté du 18 octobre 1991 JORF 30 octobre 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 678672000000,
+                  "dateFin": 696038400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -35417,13 +35565,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724340",
+              "cid": "KALISCTA000005724340",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeurs des appointements minimaux des IC et des ETAM à partir du 1er janvier 1992",
+              "dateModif": null,
+              "dateDebut": "1992-01-22",
+              "dateFin": "1993-02-11",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851832",
+                  "cid": "KALIARTI000005851832",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005724340/KALIARTI000005851832",
+                  "pathTitle": [
+                    "Valeurs des appointements minimaux des IC et des ETAM à partir du 1er janvier 1992"
+                  ],
+                  "content": "Article 1er.<p></p><p></p>   Le point des ingénieurs et cadres passe à 97,85 F à partir du 1er janvier 1992.<p></p>Article 2.<p></p><p></p>   Pour les employés, techniciens et agents de maîtrise (E.T.A.M.), les salaires minimaux conventionnels sont déterminés de la manière suivante et ce à partir du 1er janvier 1992 :<p></p><p></p>   Position : 1.1, coefficient : 200, salaire minimum : 5 880 F brut.<p></p><p></p>   Pour les autres coefficients :<p></p><p></p>   - valeur du point : 16,22 F ;<p></p><p></p>   - partie fixe : 2 523,50 F..<p></p><p></p>   Soit :<p></p><p></p>   Positions 1.2 Coefficient 210<p></p> Salaires minimaux bruts : 5 930 F<p></p><p></p>   Positions 1.3.1 Coefficient 220<p></p> Salaires minimaux bruts : 6 092 F<p></p><p></p>   Positions 1.3.2 Coefficient 230<p></p> Salaires minimaux bruts : 6 255 F<p></p><p></p>   Positions 1.4.1 Coefficient 240<p></p> Salaires minimaux bruts : 6 417<p></p><p></p>   Positions 1.4.2 Coefficient 250<p></p> Salaires minimaux bruts : 6 580 F<p></p><p></p>   Positions 2.1 Coefficient 275<p></p> Salaires minimaux bruts : 6 985 F<p></p><p></p>   Positions 2.2 Coefficient 310<p></p> Salaires minimaux bruts : 7 552 F<p></p><p></p>   Positions 2.3 Coefficient 355<p></p> Salaires minimaux bruts : 8 283 F<p></p><p></p>   Positions 3.1 Coefficient 400<p></p> Salaires minimaux bruts : 9 012 F<p></p><p></p>   Positions 3.2 Coefficient 450<p></p> Salaires minimaux bruts : 9 824 F<p></p><p></p>   Positions 3.3 Coefficient 500<p></p> Salaires minimaux bruts : 10 635 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 8 1992-01-22 étendu par arrêté du 22 avril 1992 JORF 2 mai 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 696038400000,
+                  "dateFin": 729388800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
