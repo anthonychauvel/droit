@@ -182,7 +182,9 @@ def main():
             print('  {} : trouvé -> {} ({})'.format(num, meilleur['cid'], meilleur['titre'][:80]))
             trouves.append(num)
         else:
-            print('  {} : rien de fiable trouvé ({} candidat(s) bruts examinés)'.format(num, len(candidats)))
+            print('  {} : rien de fiable trouvé ({} candidat(s) bruts) :'.format(num, len(candidats)))
+            for c in candidats[:10]:
+                print('      -', c['cid'], '|', c['titre'][:100])
             non_trouves.append(num)
 
         time.sleep(0.5)
