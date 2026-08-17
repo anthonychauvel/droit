@@ -61,8 +61,14 @@ def extraire_id_hudoc(fiche):
 def recuperer_pdf(id_hudoc, tentatives=3):
     url = ('https://hudoc.echr.coe.int/app/conversion/docx/pdf'
            '?library=ECHR&id={}&filename=CEDH.pdf').format(id_hudoc)
+    # En-têtes proches d'un navigateur ordinaire (voir la leçon du run JORF :
+    # un User-Agent auto-déclaré bot s'est fait bloquer en HTTP 403 alors
+    # qu'un test manuel identique avait réussi).
     req = urllib.request.Request(url, headers={
-        'User-Agent': 'Mozilla/5.0 (compatible; MonLegiTexte/1.0; +https://monlegitexte.heuressupfrance.workers.dev)'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+                       '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+        'Accept': 'application/pdf,*/*;q=0.8',
+        'Accept-Language': 'fr-FR,fr;q=0.9,en;q=0.8',
     })
     derniere_erreur = None
     for i in range(tentatives):

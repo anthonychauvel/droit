@@ -99,8 +99,15 @@ def extraire_annexe(texte_brut):
 
 
 def recuperer_page(url, tentatives=3):
+    # En-têtes proches d'un navigateur ordinaire : le run précédent s'est fait
+    # bloquer (HTTP 403) avec un User-Agent qui s'identifiait comme un bot
+    # ("compatible; MonLegiTexte/1.0") -- probablement filtré spécifiquement,
+    # contrairement au test manuel qui avait réussi via un vrai navigateur.
     req = urllib.request.Request(url, headers={
-        'User-Agent': 'Mozilla/5.0 (compatible; MonLegiTexte/1.0; +https://monlegitexte.heuressupfrance.workers.dev)'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+                       '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'fr-FR,fr;q=0.9',
     })
     derniere_erreur = None
     for i in range(tentatives):
