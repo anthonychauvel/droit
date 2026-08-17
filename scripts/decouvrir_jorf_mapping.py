@@ -61,7 +61,7 @@ def obtenir_jeton(client_id, client_secret):
         return json.loads(r.read().decode('utf-8'))['access_token']
 
 
-def rechercher_jorf(jeton, requete, taille=10):
+def rechercher_jorf(jeton, requete, taille=20):
     _, url_search = urls_piste()
     corps = json.dumps({
         "fond": "JORF",
@@ -99,16 +99,24 @@ def extraire_candidats(obj, acc):
     recherche (titre + identifiant JORFTEXT), peu importe les noms exacts de
     champs utilisés par la réponse -- schéma non documenté publiquement."""
     if isinstance(obj, dict):
-        titre, cid, date = None, None, None
+        titre, cid_propre, cid_avec_suffixe, date = None, None, None, None
         for k, v in obj.items():
             lk = k.lower()
             if isinstance(v, str):
                 if titre is None and ('titr' in lk or lk == 'title'):
                     titre = v
-                if cid is None and lk in ('cid', 'id', 'textcid') and v.startswith('JORFTEXT'):
-                    cid = v
+                if v.startswith('JORFTEXT'):
+                    # "cid" est le champ PROPRE (sans suffixe de version-date) ;
+                    # "id" porte souvent un suffixe "_JJ-MM-AAAA" collé --
+                    # confondu avec cid le 17/08, corrigé : cid a maintenant
+                    # toujours la priorité, id seulement en repli + nettoyé.
+                    if lk == 'cid':
+                        cid_propre = v
+                    elif lk in ('id', 'textcid') and cid_avec_suffixe is None:
+                        cid_avec_suffixe = v
             if date is None and 'date' in lk and isinstance(v, (int, float)):
                 date = v
+        cid = cid_propre or (re.split(r'_\d', cid_avec_suffixe)[0] if cid_avec_suffixe else None)
         if titre and cid:
             acc.append({'cid': cid, 'titre': titre, 'date': date or 0})
         for v in obj.values():
@@ -165,7 +173,13 @@ def main():
             continue  # déjà mappée (à la main ou par un run précédent)
 
         num_sans_c = num.lstrip('Cc0') or '0'  # "C029" -> "29", "C001" -> "1"
-        requete = 'convention {} organisation internationale travail'.format(num_sans_c)
+        # Expression exacte entre guillemets : sans ça, "UN_DES_MOTS" (seule
+        # valeur acceptée par l'API, voir plus haut) matche n'importe quel
+        # texte contenant juste "convention" -- un mot bien trop courant dans
+        # le JORF (conventions de subvention État/organismes...) pour isoler
+        # les textes OIT. Trouvé le 17/08 : 0/260 résultats pertinents sans
+        # ça. Deux critères combinés : la phrase figée + le numéro isolé.
+        requete = '"organisation internationale du travail" {}'.format(num_sans_c)
         try:
             reponse = rechercher_jorf(jeton, requete)
         except Exception as e:
