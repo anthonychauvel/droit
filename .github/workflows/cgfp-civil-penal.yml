@@ -1,0 +1,131 @@
+name: CGFP + Code civil/pénal (élargi) — un seul run
+
+# Combine les deux chantiers dans le même job : ni le CGFP (~4 245 articles)
+# ni la recherche élargie civil/pénal (quelques dizaines à centaines
+# d'articles) ne sont volumineux -- pas besoin de deux workflows séparés,
+# un seul checkout/setup/commit suffit.
+#
+# CGFP : réutilise TES scripts existants (list_all_code_articles.py,
+# pull_code_travail.py -- déjà génériques, prennent un --code-id) avec
+# LEGITEXT000044416551. Même mécanisme que Code du travail/Code sécu, déjà
+# éprouvé en prod -- peu de risque.
+#
+# Code civil/pénal : script dédié (rechercher_articles_code_civil_penal.py),
+# recherche élargie par mots-clés dans le fond CODE puis filtre par nom de
+# code. Deux hypothèses non testées (nom du champ "code source" dans /search,
+# structure de /consult/code) -- imprime la réponse brute au 1er essai pour
+# diagnostic si rien ne matche, comme pour l'OIT/JORF.
+on:
+  workflow_dispatch:
+    inputs:
+      seulement_manquants:
+        description: "CGFP : ne retraiter que les articles absents/en erreur"
+        required: true
+        default: "oui"
+        type: choice
+        options: [oui, non]
+  schedule:
+    - cron: "17 6 * * 2"   # mardi, décalé des autres crons du dépôt
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cgfp-civil-penal
+  cancel-in-progress: false
+
+jobs:
+  aspirer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      PISTE_CLIENT_ID: ${{ secrets.PISTE_CLIENT_ID }}
+      PISTE_CLIENT_SECRET: ${{ secrets.PISTE_CLIENT_SECRET }}
+      PISTE_ENV: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: "Config Git : stratégie anti-conflit sur les fichiers générés"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config merge.ours.driver true
+          printf '%s\n' \
+            'output/cgfp/*.json merge=ours' \
+            'all_articles_cgfp.txt merge=ours' \
+            'output/code-civil-travail/*.json merge=ours' \
+            'output/code-penal-travail/*.json merge=ours' \
+            'output/search-index-code-civil-travail.json merge=ours' \
+            'output/search-index-code-penal-travail.json merge=ours' \
+            > .gitattributes
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # --- CGFP -----------------------------------------------------------
+      - name: "CGFP : lister tous les articles (si pas déjà fait)"
+        run: |
+          if [ ! -s all_articles_cgfp.txt ]; then
+            python3 scripts/list_all_code_articles.py --code-id LEGITEXT000044416551 --out all_articles_cgfp.txt
+          else
+            echo "all_articles_cgfp.txt déjà présent ($(wc -l < all_articles_cgfp.txt) articles), pas relisté."
+          fi
+
+      - name: "CGFP : récupérer le contenu des articles"
+        run: |
+          mkdir -p output/cgfp
+          FLAG=""
+          if [ "${{ github.event_name == 'schedule' && 'oui' || github.event.inputs.seulement_manquants || 'oui' }}" = "oui" ]; then
+            FLAG="--only-missing"
+          fi
+          python3 scripts/pull_code_travail.py --articles-file all_articles_cgfp.txt --code-id LEGITEXT000044416551 --out output/cgfp $FLAG
+
+      # --- Code civil / pénal (élargi) -------------------------------------
+      - name: "Code civil/pénal : recherche élargie + récupération"
+        run: |
+          python3 scripts/rechercher_articles_code_civil_penal.py \
+            --sortie-civil output/code-civil-travail \
+            --sortie-penal output/code-penal-travail \
+            --index-civil output/search-index-code-civil-travail.json \
+            --index-penal output/search-index-code-penal-travail.json
+
+      # --- Commit unique pour les deux chantiers ---------------------------
+      - name: Committer et pousser (rebase, puis merge -X ours en dernier recours)
+        run: |
+          git add output/cgfp/ all_articles_cgfp.txt \
+                  output/code-civil-travail/ output/code-penal-travail/ \
+                  output/search-index-code-civil-travail.json \
+                  output/search-index-code-penal-travail.json \
+                  .gitattributes
+
+          if git diff --cached --quiet; then
+            echo "Rien de nouveau."
+            exit 0
+          fi
+
+          git commit -m "CGFP + Code civil/pénal (élargi) : mise à jour (${{ github.run_id }})"
+
+          reussi=0
+          for tentative in 1 2 3; do
+            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then git rebase --abort 2>/dev/null || true; fi
+            if [ "$tentative" -lt 3 ]; then
+              git pull --rebase --autostash origin main || true
+            else
+              echo "Dernière tentative : merge (-X ours) plutôt que rebase."
+              git rebase --abort 2>/dev/null || true
+              git pull --no-rebase --autostash -X ours origin main || true
+            fi
+            if git push; then reussi=1; break; fi
+            echo "Tentative $tentative échouée, nouvel essai dans 5s…"
+            sleep 5
+          done
+          if [ "$reussi" -ne 1 ]; then
+            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then git rebase --abort 2>/dev/null || true; fi
+            echo "::error::Échec du push après 3 tentatives."
+            exit 1
+          fi
