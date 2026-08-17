@@ -107,7 +107,17 @@ def extraire_toutes_chaines(obj, acc):
 def extraire_annexe(texte_brut):
     m_debut = re.search(r'ANNEXE\s*CONVENTION', texte_brut, re.I)
     if not m_debut:
-        m_debut = re.search(r"CONVENTION[^\n]{0,80}ORGANISATION INTERNATIONALE DU TRAVAIL", texte_brut, re.I)
+        # Repli : titre "CONVENTION N°X ... Organisation internationale du
+        # travail" en tête de l'annexe. Exclut spécifiquement les mentions
+        # DANS la phrase d'autorisation qui précède ("la convention n°155 de
+        # l'Organisation...", "de la convention...") via lookbehind négatif --
+        # sans ça ce repli matchait cette mention-là, bien avant le vrai texte
+        # (bug trouvé le 17/08 sur C155). Insensible à la casse : le titre réel
+        # peut être tout en majuscules (décrets) ou en casse normale (lois).
+        m_debut = re.search(
+            r"(?<!la )(?<!e la )CONVENTION\s*N[o°]?\.?\s*\d+[\s\S]{0,150}?"
+            r"ORGANISATION INTERNATIONALE DU TRAVAIL",
+            texte_brut, re.I)
     if not m_debut:
         return None
     reste = texte_brut[m_debut.start():]
@@ -195,7 +205,7 @@ def main():
             continue
 
         if i == 0:
-            print('  Réponse brute (1er essai, pour diagnostic) :')
+            print('  Réponse brute (1er essai, aperçu) :')
             print('  ' + json.dumps(reponse, ensure_ascii=False)[:600])
 
         chaines = []
@@ -203,8 +213,8 @@ def main():
         texte_brut = extracteur.html_vers_texte('\n'.join(chaines))
         annexe = extraire_annexe(texte_brut)
         if not annexe:
-            print('  {} : ÉCHEC extraction (repères non trouvés dans la '
-                  'réponse -- voir la réponse brute ci-dessus si 1er essai)'.format(num))
+            print('  {} : ÉCHEC extraction (repères non trouvés) -- réponse COMPLÈTE pour diagnostic :'.format(num))
+            print('  ' + json.dumps(reponse, ensure_ascii=False))
             echecs.append(num)
             continue
 
