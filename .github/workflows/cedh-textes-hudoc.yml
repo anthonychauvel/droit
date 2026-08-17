@@ -2,8 +2,9 @@ name: CEDH — enrichir avec le texte intégral HUDOC
 
 # 5200 fiches, donc PAR LOTS : chaque run en fait un paquet et reprend là où
 # le précédent s'est arrêté (voir enrichir_cedh_textes_hudoc.py). Manuel
-# (bouton Run workflow) + une passe automatique par semaine pour avancer sans
-# y penser (mercredi 04:00 UTC, en dehors des autres crons du dépôt).
+# (bouton Run workflow) + une passe automatique par semaine (mercredi 04:07
+# UTC -- minute décalée à :07 pas :00, même leçon que l'aspirateur Légifrance
+# principal sur la charge GitHub à l'heure ronde).
 on:
   workflow_dispatch:
     inputs:
@@ -14,22 +15,46 @@ on:
         description: 'Arrêt après ce délai (minutes)'
         default: '300'
   schedule:
-    - cron: '0 4 * * 3'
+    - cron: '7 4 * * 3'
 
 permissions:
   contents: write
 
+# Empêche deux runs de tourner en même temps (manuel + programmé qui se
+# chevauchent) -- même leçon que l'aspirateur Légifrance principal.
+concurrency:
+  group: cedh-hudoc
+  cancel-in-progress: false
+
 jobs:
   enrichir-cedh:
     runs-on: ubuntu-latest
+    # Le garde-temps interne du script s'arrête à budget_minutes (300 = 5h par
+    # défaut) et committe déjà tout ce qui est fait à ce moment-là (voir le
+    # commit après le job, pas dans le script -- ici la marge est prise au
+    # niveau du job pour laisser le temps au commit/push final). Même logique
+    # que pull_jorf.py : le job a plus de marge que le budget interne du script.
+    timeout-minutes: 340
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
+      - name: "Config Git : stratégie anti-conflit sur les fichiers générés"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config merge.ours.driver true
+          printf '%s\n' 'output/intl/textes-hudoc/*.json merge=ours' > .gitattributes
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
       - name: Installer pdfplumber
-        run: pip install pdfplumber --break-system-packages --quiet
+        run: pip install pdfplumber --break-system-packages --quiet || pip install pdfplumber --quiet
 
       - name: Enrichir un lot de fiches CEDH avec le texte intégral HUDOC
         run: |
@@ -38,11 +63,9 @@ jobs:
             --limite "${{ github.event.inputs.limite || '700' }}" \
             --budget-minutes "${{ github.event.inputs.budget_minutes || '300' }}"
 
-      - name: Committer et pousser (avec retry + rebase, un autre workflow peut pousser en même temps)
+      - name: Committer et pousser (rebase, puis merge -X ours en dernier recours)
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/intl/textes-hudoc/
+          git add output/intl/textes-hudoc/ .gitattributes
 
           if git diff --cached --quiet; then
             echo "Rien de nouveau (aucune fiche enrichie ce run)."
@@ -51,14 +74,28 @@ jobs:
 
           git commit -m "CEDH: lot de fiches enrichies avec le texte HUDOC (${{ github.run_id }})"
 
-          n=0
-          until [ "$n" -ge 5 ]; do
+          reussi=0
+          for tentative in 1 2 3; do
+            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then git rebase --abort 2>/dev/null || true; fi
+
+            if [ "$tentative" -lt 3 ]; then
+              git pull --rebase --autostash origin main
+            else
+              echo "Dernière tentative : merge (-X ours) plutôt que rebase."
+              git rebase --abort 2>/dev/null || true
+              git pull --no-rebase --autostash -X ours origin main
+            fi
+
             if git push; then
-              echo "Poussé avec succès."
+              reussi=1
               break
             fi
-            n=$((n+1))
-            echo "Push refusé (tentative $n/5) — rebase sur origin/main puis nouvel essai."
-            git pull --rebase origin main
+            echo "Tentative $tentative échouée, nouvel essai dans 5s…"
             sleep 5
           done
+
+          if [ "$reussi" -ne 1 ]; then
+            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then git rebase --abort 2>/dev/null || true; fi
+            echo "::error::Échec du push après 3 tentatives. Le lot enrichi n'est pas parti -- relancer le run (le script reprendra ce même lot, rien n'est marqué fait localement puisque rien n'a été commité)."
+            exit 1
+          fi
