@@ -1,2 +1,6 @@
-output/search-index-oit.json merge=ours
-output/intl/textes-oit/*.json merge=ours
+output/cgfp/*.json merge=ours
+all_articles_cgfp.txt merge=ours
+output/code-civil-travail/*.json merge=ours
+output/code-penal-travail/*.json merge=ours
+output/search-index-code-civil-travail.json merge=ours
+output/search-index-code-penal-travail.json merge=ours
