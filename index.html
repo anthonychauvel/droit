@@ -1231,6 +1231,20 @@ async function loadAll(){
     try{ SEARCH = await loadSearchIndex(); }
     catch(e){ console.warn('index de recherche indisponible', e); SEARCH = {ccn:[],code:[],code_secu:[],juris:[],jorf:[],acco:[],eurlex:[],cjue:[],cedh:[],oit:[]}; }
   })();
+  // Affiche les blocs UE/International DÈS que SEARCH est prêt -- sans
+  // attendre le reste de loadAll() (notamment le manifeste français, 7 Mo+,
+  // nettement plus lent). Avant ce correctif, ces blocs restaient en attente
+  // jusqu'à la toute fin du chargement complet même si leurs propres données
+  // étaient déjà là depuis longtemps -- latence inutile repérée par Anthony
+  // le 17/08. Le volet France de ces mêmes fonctions retombe sur COUNTS
+  // (counts.json, quasi instantané) via leur helper n(), donc rien ne casse
+  // si ceci se déclenche avant le manifeste.
+  pSearch.then(function(){
+    if(typeof populerIndexIntl==='function') populerIndexIntl();
+    if(typeof renderDashboardIntl==='function') renderDashboardIntl();
+    if(typeof renderExplorer==='function') renderExplorer();
+    if(typeof renderHierarchie==='function') renderHierarchie();
+  });
 
   var pCcnListe = (async function(){
     try{ CCN_LISTE = await fetchJSON('output/ccn-liste.json'); }
