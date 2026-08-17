@@ -5,21 +5,23 @@ build_search_index_oit.py
 Construit output/search-index-oit.json (même format {num,title,snippet} que
 les autres sources) ET output/intl/textes-oit/<num>.json (une fiche par
 convention, comme pour la CEDH -- theme/lien vers le texte officiel, PAS le
-texte intégral) à partir de la liste curée output/intl/recensement-normlex.json.
+texte intégral) à partir de la liste curée output/intl/oit-liste-curee.json.
 
 Pourquoi une fiche et pas le texte intégral : NORMLEX bloque l'aspiration
-automatisée (§2.4 du cahier des charges, même blocage que HUDOC pour la CEDH)
--- donc, comme pour la CEDH, on affiche thème + lien officiel plutôt que le
-texte complet.
+automatisée (confirmé le 16/08 -- HTTP 403 sur les IP de datacenter GitHub,
+même blocage que HUDOC pour la CEDH) -- donc, comme pour la CEDH, on affiche
+thème + lien officiel plutôt que le texte complet.
 
-⚠️ DÉFENSIF PAR NÉCESSITÉ : ce script a été écrit SANS avoir vu le contenu
-réel de recensement-normlex.json (accès bloqué -- dépôt non indexé par la
-recherche web, voir échange du 16/08). Il essaie plusieurs noms de champs
-plausibles pour chaque valeur et log clairement ce qu'il trouve/ne trouve pas.
-À LANCER UNE PREMIÈRE FOIS ET À VÉRIFIER le résumé affiché (30 entrées
-attendues) avant de committer -- si les champs ne matchent pas, corriger les
-listes CHAMPS_* ci-dessous avec les vrais noms (visibles dans le résumé, qui
-affiche les clés de la 1re entrée) plutôt que deviner à nouveau.
+Fichier source : output/intl/oit-liste-curee.json -- liste curée à la main
+(PAS le fichier de statut output/intl/recensement-normlex.json, qui appartient
+au workflow intl-recensement.yml et ne doit pas être touché ici). Première
+tranche : 12 conventions vérifiées (les 10 fondamentales + les 2 conventions
+de gouvernance sur l'inspection du travail), sourcées auprès de l'OIT/du Sénat/
+du ministère du Travail le 16/08/2026. À compléter au fur et à mesure.
+
+⚠️ Ce script reste DÉFENSIF sur les noms de champs (plusieurs variantes
+essayées par entrée) au cas où la liste curée serait un jour reprise ou
+étoffée avec une autre structure -- voir le résumé affiché au lancement.
 
 Usage :
     python3 build_search_index_oit.py \
@@ -123,7 +125,7 @@ def construire_texte_fiche(fiche):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--entree', default='output/intl/recensement-normlex.json')
+    ap.add_argument('--entree', default='output/intl/oit-liste-curee.json')
     ap.add_argument('--sortie-index', default='output/search-index-oit.json')
     ap.add_argument('--sortie-fiches', default='output/intl/textes-oit')
     args = ap.parse_args()
