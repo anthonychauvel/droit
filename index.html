@@ -1176,9 +1176,21 @@ function shortEtat(raw){
  * monolithique. Rien ne casse tant que l'un OU l'autre est présent. */
 async function loadSearchIndex(){
   var SRC = ['ccn','code','code_secu','juris','jorf','acco','eurlex','cjue','cedh','oit'];
+  // Anti-cache pour les sources internationales : ces fichiers changent au fil
+  // des runs GitHub Actions (enrichissement JORF/HUDOC, nouvelles conventions),
+  // et un navigateur qui a mis en cache une ancienne version (potentiellement
+  // vide, lors d'un tout premier chargement avant que le fichier existe)
+  // continuerait de la servir indéfiniment sans ce paramètre -- déjà vécu une
+  // fois sur la CEDH, régression repérée le 17/08 sur EUR-Lex/CJUE (revenus à
+  // 0 alors que CEDH restait bon -- ce garde-fou avait disparu entretemps).
+  // Les 6 sources françaises ne sont PAS bustées (volumineuses, stables,
+  // régénérées par un rythme de veille propre).
+  var SRC_INTL = {eurlex:1, cjue:1, cedh:1, oit:1};
+  var suffixeCache = '?v=' + new Date().toISOString().slice(0,10);
   var got = {}, missing = false;
   await Promise.all(SRC.map(async function(s){
-    try{ got[s] = await fetchJSON('output/search-index-'+s+'.json'); }
+    var url = 'output/search-index-'+s+'.json' + (SRC_INTL[s] ? suffixeCache : '');
+    try{ got[s] = await fetchJSON(url); }
     catch(e){ missing = true; }   // ce fichier découpé n'existe pas (encore)
   }));
   if(!missing) return got;        // cas nominal : tous les fichiers découpés présents
