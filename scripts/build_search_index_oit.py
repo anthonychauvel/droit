@@ -42,8 +42,9 @@ CHAMPS_ID     = ['id', 'num', 'numero', 'code', 'convention', 'ref', 'c_num']
 CHAMPS_TITRE  = ['titre', 'title', 'nom', 'name', 'intitule', 'libelle']
 CHAMPS_THEME  = ['theme', 'themes', 'sujet', 'subject', 'categorie', 'category']
 CHAMPS_URL    = ['url', 'lien', 'link', 'href', 'source_url', 'normlex_url']
-CHAMPS_DATE   = ['date', 'date_adoption', 'annee', 'year']
+CHAMPS_DATE   = ['date', 'date_adoption', 'date_ratification', 'annee', 'year']
 CHAMPS_STATUT = ['statut', 'status', 'etat', 'en_vigueur']
+CHAMPS_MOTS_CLES = ['mots_cles', 'motscles', 'mots-cles', 'keywords', 'tags']
 
 
 def normaliser(s):
@@ -72,15 +73,25 @@ def url_normlex_depuis_code(num):
 
 
 def extraire(entree, index_pos):
-    """Retourne (num, titre, theme, url, date, statut) au mieux, ou None si
-    l'entrée n'a même pas de titre exploitable (signale une entrée à examiner
-    à la main plutôt que de produire une fiche vide)."""
+    """Retourne (num, titre, theme, url, date, statut, mots_cles) au mieux, ou
+    None si l'entrée n'a même pas de titre exploitable (signale une entrée à
+    examiner à la main plutôt que de produire une fiche vide)."""
     num = premier_champ(entree, CHAMPS_ID)
     titre = premier_champ(entree, CHAMPS_TITRE)
     theme = premier_champ(entree, CHAMPS_THEME)
     url = premier_champ(entree, CHAMPS_URL)
     date = premier_champ(entree, CHAMPS_DATE)
     statut = premier_champ(entree, CHAMPS_STATUT)
+
+    # Mots-clés : liste de recherche (pas un champ scalaire comme les autres,
+    # donc pas via premier_champ -- accepte le premier champ qui EST une
+    # liste, sous n'importe lequel des noms plausibles).
+    mots_cles = []
+    for c in CHAMPS_MOTS_CLES:
+        v = entree.get(c)
+        if isinstance(v, list) and v:
+            mots_cles = [str(m) for m in v]
+            break
 
     if theme and isinstance(theme, list):
         theme = ', '.join(str(t) for t in theme)
@@ -103,6 +114,7 @@ def extraire(entree, index_pos):
         'url': str(url) if url else '',
         'date': str(date) if date else '',
         'statut': str(statut) if statut else '',
+        'mots_cles': mots_cles,
     }
 
 
@@ -111,23 +123,37 @@ def construire_snippet(fiche):
     if fiche['theme']:
         parts.append('Thème : ' + fiche['theme'])
     if fiche['date']:
-        parts.append('Adoptée en ' + fiche['date'])
+        parts.append('Ratifiée le ' + fiche['date'])
     if fiche['statut']:
         parts.append(fiche['statut'])
+    if fiche['mots_cles']:
+        # Les mots-clés vont dans le snippet -- c'est ce champ qui alimente
+        # l'index de recherche (search-index-oit.json) et donc le matching
+        # plein texte. Sans ça, une recherche "licenciement abusif" ne
+        # remonterait jamais C158, faute du bon vocabulaire dans le texte
+        # cherchable (demande Anthony du 17/08 : mieux vaut de bons mots-clés
+        # qu'un texte intégral introuvable pour la plupart des conventions).
+        parts.append(' · '.join(fiche['mots_cles']))
     return ' — '.join(parts) if parts else 'Convention de l\'Organisation internationale du travail.'
 
 
 def construire_texte_fiche(fiche):
     """Corps affiché dans la fiche (branche payload.source==='OIT' du
     front-end, qui découpe sur \\n\\n -> chaque paragraphe ci-dessous devient
-    un <p>)."""
+    un <p>). Le champ date_ratification (s'il est présent) est une date de
+    RATIFICATION par la France, pas d'adoption de la convention -- l'adoption
+    figure déjà dans le titre (ex. ", 1981"). Ne jamais les confondre."""
     paras = []
     if fiche['theme']:
         paras.append('Thème : ' + fiche['theme'])
-    if fiche['date']:
-        paras.append('Convention adoptée en ' + fiche['date'] + '.')
-    if fiche['statut']:
+    if fiche['statut'] and fiche['date']:
+        paras.append('Ratifiée par la France le ' + fiche['date'] + '. Statut : ' + fiche['statut'] + '.')
+    elif fiche['statut']:
         paras.append('Statut : ' + fiche['statut'] + '.')
+    elif fiche['date']:
+        paras.append('Ratifiée par la France le ' + fiche['date'] + '.')
+    if fiche['mots_cles']:
+        paras.append('Sujets liés : ' + ', '.join(fiche['mots_cles']) + '.')
     paras.append(
         'Le texte intégral officiel de cette convention n\'est pas repris ici '
         '(NORMLEX bloque l\'aspiration automatisée) -- consultez-le via le lien '
