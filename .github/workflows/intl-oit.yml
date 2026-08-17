@@ -1,8 +1,10 @@
 name: OIT — construire l'index de recherche
 
 # Déclenchement MANUEL (bouton "Run workflow" dans l'onglet Actions de GitHub —
-# aucune exécution locale requise) + automatique si recensement-normlex.json
-# est modifié un jour (nouvelle convention ajoutée à la liste curée).
+# aucune exécution locale requise) + automatique si la liste curée ou les
+# scripts changent. Minute décalée à :07 (pas :00) -- même leçon que
+# l'aspirateur Légifrance principal : la charge GitHub est la plus forte pile
+# à l'heure ronde, un run programmé peut être abandonné en silence sinon.
 on:
   workflow_dispatch: {}
   push:
@@ -16,14 +18,47 @@ on:
 permissions:
   contents: write
 
+# Empêche deux runs de tourner en même temps sur ce workflow -- sans ça, deux
+# déclenchements rapprochés peuvent se marcher dessus au moment du push final
+# (même leçon que l'aspirateur Légifrance principal, incident du 27/07).
+# cancel-in-progress à false : le second run ATTEND que le premier finisse,
+# jamais annulé -- on ne veut jamais perdre un run.
+concurrency:
+  group: intl-oit
+  cancel-in-progress: false
+
 jobs:
   construire-index-oit:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PISTE_CLIENT_ID: ${{ secrets.PISTE_CLIENT_ID }}
+      PISTE_CLIENT_SECRET: ${{ secrets.PISTE_CLIENT_SECRET }}
+      PISTE_ENV: production
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
+
+      - name: "Config Git : stratégie anti-conflit sur les fichiers générés"
+        run: |
+          # Les fichiers de sortie (index + fiches) sont RÉGÉNÉRÉS à chaque run
+          # depuis la liste curée -- en cas de conflit de rebase, garder NOTRE
+          # version est toujours sans risque. Même pattern que l'aspirateur
+          # Légifrance principal (.gitattributes + merge.ours).
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config merge.ours.driver true
+          printf '%s\n' \
+            'output/search-index-oit.json merge=ours' \
+            'output/intl/textes-oit/*.json merge=ours' \
+            > .gitattributes
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
       - name: Construire l'index + les fiches OIT
         run: |
@@ -32,18 +67,16 @@ jobs:
             --sortie-index output/search-index-oit.json \
             --sortie-fiches output/intl/textes-oit
 
-      - name: Enrichir avec le texte intégral publié au JORF (contourne le blocage NORMLEX)
+      - name: Enrichir avec le texte intégral publié au JORF (via l'API PISTE déjà authentifiée)
         run: |
           python3 scripts/enrichir_oit_textes_jorf.py \
             --mapping scripts/oit-jorf-mapping.json \
             --fiches output/intl/textes-oit \
             --index output/search-index-oit.json
 
-      - name: Committer et pousser (avec retry + rebase, un autre workflow peut pousser en même temps)
+      - name: Committer et pousser (rebase, puis merge -X ours en dernier recours)
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/search-index-oit.json output/intl/textes-oit/
+          git add output/search-index-oit.json output/intl/textes-oit/ .gitattributes
 
           if git diff --cached --quiet; then
             echo "Rien de nouveau (index OIT déjà à jour)."
@@ -52,14 +85,33 @@ jobs:
 
           git commit -m "OIT: reconstruction de l'index de recherche (${{ github.run_id }})"
 
-          n=0
-          until [ "$n" -ge 5 ]; do
+          # Même enchaînement que l'aspirateur Légifrance principal : jusqu'à 3
+          # tentatives, nettoyage d'un rebase resté englué avant de retenter, et
+          # un vrai merge -X ours en dernier recours plutôt qu'un 4e rebase --
+          # tout ce qu'on commite ici est régénéré par le bot, jamais du contenu
+          # à préserver au mot près.
+          reussi=0
+          for tentative in 1 2 3; do
+            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then git rebase --abort 2>/dev/null || true; fi
+
+            if [ "$tentative" -lt 3 ]; then
+              git pull --rebase --autostash origin main
+            else
+              echo "Dernière tentative : merge (-X ours) plutôt que rebase."
+              git rebase --abort 2>/dev/null || true
+              git pull --no-rebase --autostash -X ours origin main
+            fi
+
             if git push; then
-              echo "Poussé avec succès."
+              reussi=1
               break
             fi
-            n=$((n+1))
-            echo "Push refusé (tentative $n/5) — rebase sur origin/main puis nouvel essai."
-            git pull --rebase origin main
+            echo "Tentative $tentative échouée, nouvel essai dans 5s…"
             sleep 5
           done
+
+          if [ "$reussi" -ne 1 ]; then
+            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then git rebase --abort 2>/dev/null || true; fi
+            echo "::error::Échec du push après 3 tentatives. Rien n'a été perdu localement, mais rien n'est parti sur main -- relancer le run."
+            exit 1
+          fi
