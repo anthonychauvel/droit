@@ -62,6 +62,9 @@ jobs:
             'all_articles_code_penal.txt merge=ours' \
             'all_articles_code_civil_travail.txt merge=ours' \
             'all_articles_code_penal_travail.txt merge=ours' \
+            'output/search-index-cgfp.json merge=ours' \
+            'output/search-index-civil.json merge=ours' \
+            'output/search-index-penal.json merge=ours' \
             > .gitattributes
 
       - name: Setup Python
@@ -109,6 +112,13 @@ jobs:
           python3 scripts/pull_code_travail.py --articles-file all_articles_code_civil_travail.txt --code-id LEGITEXT000006070721 --out output/code-civil-travail
           python3 scripts/pull_code_travail.py --articles-file all_articles_code_penal_travail.txt --code-id LEGITEXT000006070719 --out output/code-penal-travail
 
+      # --- Index de recherche (agrégation des fichiers individuels) -------
+      - name: "Construire les index de recherche (CGFP, Code civil, Code pénal)"
+        run: |
+          python3 scripts/build_search_index_extra.py --dossier output/cgfp --sortie output/search-index-cgfp.json
+          python3 scripts/build_search_index_extra.py --dossier output/code-civil-travail --sortie output/search-index-civil.json
+          python3 scripts/build_search_index_extra.py --dossier output/code-penal-travail --sortie output/search-index-penal.json
+
       # --- Commit unique pour les deux chantiers ---------------------------
       - name: Committer et pousser (rebase, puis merge -X ours en dernier recours)
         run: |
@@ -116,6 +126,9 @@ jobs:
                   output/code-civil-travail/ output/code-penal-travail/ \
                   all_articles_code_civil.txt all_articles_code_penal.txt \
                   all_articles_code_civil_travail.txt all_articles_code_penal_travail.txt \
+                  output/search-index-cgfp.json \
+                  output/search-index-civil.json \
+                  output/search-index-penal.json \
                   .gitattributes
 
           if git diff --cached --quiet; then
