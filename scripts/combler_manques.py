@@ -151,17 +151,24 @@ def combler_eu(univers_path, sortie_dir, nom_source, prefixe_num):
 
     identifiants = []
 
-    def marcher(o):
+    def marcher(o, cle_parente=None):
         if isinstance(o, dict):
             for k, v in o.items():
                 lk = k.lower()
                 if isinstance(v, str) and lk in ('celex', 'num', 'id', 'cid') and re.match(r'^[0-9A-Z].{5,}$', v):
                     identifiants.append(v)
-            for v in o.values():
-                marcher(v)
+                marcher(v, cle_parente=lk)
         elif isinstance(o, list):
+            # Repli trouvé le 18/08 sur le vrai fichier EUR-Lex : une LISTE de
+            # chaînes directement sous une clé "celex" (pas une liste
+            # d'objets {"celex": "xxx"} comme je l'avais supposé) -- capturer
+            # aussi ce cas, pas seulement les chaînes wrappées dans un dict.
+            if cle_parente in ('celex', 'num', 'id', 'cid'):
+                for v in o:
+                    if isinstance(v, str) and re.match(r'^[0-9A-Z].{5,}$', v):
+                        identifiants.append(v)
             for v in o:
-                marcher(v)
+                marcher(v, cle_parente=cle_parente)
     marcher(brut)
     identifiants = sorted(set(identifiants))
 
