@@ -1256,6 +1256,19 @@ async function loadAll(){
     if(typeof renderDashboardIntl==='function') renderDashboardIntl();
     if(typeof renderExplorer==='function') renderExplorer();
     if(typeof renderHierarchie==='function') renderHierarchie();
+    // Le compteur héros (#corpus-total) touche ce même total UE/International
+    // via paintCounts()/renderDashboard() (totalCorpusGlobal) -- sans ce
+    // rappel ici, ces deux fonctions n'étaient reconvoquées qu'à la toute fin
+    // de loadAll() (après le manifeste français, lent), d'où le "saut" repéré
+    // par Anthony le 17/08 : les petites cartes UE/International s'affichaient
+    // déjà vite (grâce au rappel ci-dessus) mais le gros chiffre du haut
+    // restait sur son ancien rythme, puis sautait d'un coup au lieu de monter
+    // en douceur. En les appelant ici aussi, le compteur héros profite du
+    // même déclenchement rapide -- animerNombre() est déjà protégé contre les
+    // écritures concurrentes (voir le correctif data-n du 16/08), donc aucun
+    // risque de conflit avec l'appel tardif qui suit toujours à la fin.
+    if(typeof COUNTS!=='undefined' && COUNTS && typeof paintCounts==='function') paintCounts(COUNTS);
+    if(typeof renderDashboard==='function') renderDashboard();
   });
 
   var pCcnListe = (async function(){
