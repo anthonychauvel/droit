@@ -1,4 +1,222 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000051962081",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Sans préjudice des dispositions relatives aux emplois réservés mentionnés aux chapitres I er et II du titre IV du livre II de la partie réglementaire du code des pensions militaires d'invalidité et des victimes de guerre , les militaires et les anciens militaires peuvent accéder aux corps et cadres d'emplois relevant du présent code selon les modalités fixées par les articles R. 4139-10 à R. 4139-40 du code de la défense .",
+    "texteHtml": "<p><br/>Sans préjudice des dispositions relatives aux emplois réservés mentionnés aux chapitres I<sup>er</sup> et II du titre IV du livre II de la partie réglementaire du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006074068&dateTexte=&categorieLien=cid\">code des pensions militaires d'invalidité et des victimes de guerre</a>, les militaires et les anciens militaires peuvent accéder aux corps et cadres d'emplois relevant du présent code selon les modalités fixées par les <a href=\"/affichCode.do?cidTexte=LEGITEXT000006071307&idSectionTA=LEGISCTA000018709702&dateTexte=&categorieLien=cid\">articles R. 4139-10 à R. 4139-40 du code de la défense</a>.</p>",
+    "num": "R326-2",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "1.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1759276800000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 1073741823,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "PARTIE RÉGLEMENTAIRE ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000050525706",
+          "id": "LEGISCTA000050525706",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Livre III : RECRUTEMENT",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961532",
+          "id": "LEGISCTA000051961532",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Titre II : RECRUTEMENT DES FONCTIONNAIRES",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961636",
+          "id": "LEGISCTA000051961636",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre VI : AUTRES MODALITÉS D'ACCÈS AUX FONCTIONS PUBLIQUES",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962073",
+          "id": "LEGISCTA000051962073",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Section 1 : Modalités particulières d'accès",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962077",
+          "id": "LEGISCTA000051962077",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 1 : Militaires et anciens militaires",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962079",
+          "id": "LEGISCTA000051962079",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 50,
+      "titreTxt": [
+        {
+          "debut": "2022-03-01",
+          "fin": "2999-01-01",
+          "titre": "Code général de la fonction publique",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000044416551",
+          "id": "LEGITEXT000044416551",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000051962081",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000051962079",
+    "sectionParentId": "LEGISCTA000051962079",
+    "sectionParentTitre": "Sous-section 1 : Militaires et anciens militaires",
+    "fullSectionsTitre": "PARTIE RÉGLEMENTAIRE  &gt; Livre III : RECRUTEMENT &gt; Titre II : RECRUTEMENT DES FONCTIONNAIRES &gt; Chapitre VI : AUTRES MODALITÉS D'ACCÈS AUX FONCTIONS PUBLIQUES &gt; Section 1 : Modalités particulières d'accès &gt; Sous-section 1 : Militaires et anciens militaires",
+    "refInjection": "MD-20260513_202631_283_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000051962081",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000044416551",
+        "titre": "Code général de la fonction publique",
+        "titreLong": "Code général de la fonction publique",
+        "etat": "VIGUEUR",
+        "dateDebut": 1646092800000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000044416551",
+        "datePubli": 1638748800000,
+        "datePubliComputed": 1638748800000,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément au premier alinéa de l'article 72 du décret n° 2025-695 du 24 juillet 2025, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de la publication dudit décret, soit le 1er octobre 2025.",
+    "notaHtml": "<p>Conformément au premier alinéa de l'article 72 du décret n° 2025-695 du 24 juillet 2025, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de la publication dudit décret, soit le 1er octobre 2025.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000051954922",
+        "textTitle": "Décret n°2025-695 du 24 juillet 2025 (V)",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGITEXT000051958424",
+        "natureText": "DECRET",
+        "datePubliTexte": "2025-07-25",
+        "dateSignaTexte": "2025-07-24",
+        "dateDebutCible": "2025-07-26"
+      },
+      {
+        "textCid": "JORFTEXT000051954922",
+        "textTitle": "Décret n°2025-695 du 24 juillet 2025 - art.",
+        "linkType": "CREE",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGIARTI000051959195",
+        "natureText": "DECRET",
+        "datePubliTexte": "2025-07-25",
+        "dateSignaTexte": "2025-07-24",
+        "dateDebutCible": "2025-07-26"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006071307",
+        "textTitle": "Code de la défense.",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018709702",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006074068",
+        "textTitle": "Code des pensions militaires d'invalidité et des victimes de la guerre.",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGITEXT000006074068",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": -589680000000
+      }
+    ],
+    "lienConcordes": [],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000051962081",
+        "etat": "VIGUEUR",
+        "version": "1.0",
+        "dateDebut": 1759276800000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R326-2",
+      "326-2"
+    ],
+    "versionPrecedente": null,
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": false,
+    "comporteLiensSP": false
+  }
 }

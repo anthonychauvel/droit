@@ -1,4 +1,255 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000054088271",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Le licenciement en cours ou au terme de la période d'essai ne peut intervenir qu'à l'issue d'un entretien préalable. Dans les collectivités et établissements mentionnés à l'article L. 4 , l'agent peut, au cours de cet entretien, être assisté par la personne de son choix. La décision de licenciement est notifiée à l'intéressé par lettre recommandée avec demande d'avis de réception ou par lettre remise en main propre contre signature. Aucune durée de préavis n'est requise lorsque la décision de mettre fin au contrat intervient en cours ou à l'expiration d'une période d'essai. Le licenciement au cours d'une période d'essai doit être motivé. Le licenciement au cours ou à l'expiration d'une période d'essai ne donne pas lieu au versement de l'indemnité prévue selon le cas : 1° Pour un agent contractuel de l'Etat, à l' article 51 du décret n° 86-83 du 17 janvier 1986 relatif aux dispositions générales applicables aux agents contractuels de l'Etat ; 2° Pour un agent contractuel territorial, à l'article 43 du décret n° 88-145 du 15 février 1988 relatif aux agents contractuels de la fonction publique territoriale ; 3° Pour un agent contractuel hospitalier, à l' article 47 du décret n° 91-155 du 6 février 1991 relatif aux dispositions générales applicables aux agents contractuels de la fonction publique hospitalière.",
+    "texteHtml": "<p>Le licenciement en cours ou au terme de la période d'essai ne peut intervenir qu'à l'issue d'un entretien préalable. Dans les collectivités et établissements mentionnés à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000044416551&idArticle=LEGIARTI000044420587&dateTexte=&categorieLien=cid\">L. 4</a>, l'agent peut, au cours de cet entretien, être assisté par la personne de son choix.<br/><br/>La décision de licenciement est notifiée à l'intéressé par lettre recommandée avec demande d'avis de réception ou par lettre remise en main propre contre signature.<br/><br/>Aucune durée de préavis n'est requise lorsque la décision de mettre fin au contrat intervient en cours ou à l'expiration d'une période d'essai.<br/><br/>Le licenciement au cours d'une période d'essai doit être motivé.<br/><br/>Le licenciement au cours ou à l'expiration d'une période d'essai ne donne pas lieu au versement de l'indemnité prévue selon le cas :<br/><br/> 1° Pour un agent contractuel de l'Etat, à l'<a href=\"/affichTexteArticle.do?cidTexte=JORFTEXT000000699956&idArticle=LEGIARTI000006486630&dateTexte=&categorieLien=cid\">article 51 du décret n° 86-83 du 17 janvier 1986</a> relatif aux dispositions générales applicables aux agents contractuels de l'Etat ;<br/><br/> 2° Pour un agent contractuel territorial, à l'article 43 du décret n° 88-145 du 15 février 1988 relatif aux agents contractuels de la fonction publique territoriale ;<br/><br/> 3° Pour un agent contractuel hospitalier, à l'<a href=\"/affichTexteArticle.do?cidTexte=JORFTEXT000000343794&idArticle=LEGIARTI000006710172&dateTexte=&categorieLien=cid\">article 47 du décret n° 91-155 du 6 février 1991</a> relatif aux dispositions générales applicables aux agents contractuels de la fonction publique hospitalière.</p>",
+    "num": "R332-25",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "2.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1785542400000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 2113929215,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "PARTIE RÉGLEMENTAIRE ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000050525706",
+          "id": "LEGISCTA000050525706",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Livre III : RECRUTEMENT",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961532",
+          "id": "LEGISCTA000051961532",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Titre III : RECRUTEMENT PAR CONTRAT",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962482",
+          "id": "LEGISCTA000051962482",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre II : POSSIBILITÉS DE RECRUTEMENT PAR CONTRAT",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962534",
+          "id": "LEGISCTA000051962534",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Section 1 : Emplois permanents",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962536",
+          "id": "LEGISCTA000051962536",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 2 : Période d'essai",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962581",
+          "id": "LEGISCTA000051962581",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 50,
+      "titreTxt": [
+        {
+          "debut": "2022-03-01",
+          "fin": "2999-01-01",
+          "titre": "Code général de la fonction publique",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000044416551",
+          "id": "LEGITEXT000044416551",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000051962593",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000051962581",
+    "sectionParentId": "LEGISCTA000051962581",
+    "sectionParentTitre": "Sous-section 2 : Période d'essai",
+    "fullSectionsTitre": "PARTIE RÉGLEMENTAIRE  &gt; Livre III : RECRUTEMENT &gt; Titre III : RECRUTEMENT PAR CONTRAT &gt; Chapitre II : POSSIBILITÉS DE RECRUTEMENT PAR CONTRAT &gt; Section 1 : Emplois permanents &gt; Sous-section 2 : Période d'essai",
+    "refInjection": "MD-20260731_202033_922_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054088271",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000044416551",
+        "titre": "Code général de la fonction publique",
+        "titreLong": "Code général de la fonction publique",
+        "etat": "VIGUEUR",
+        "dateDebut": 1646092800000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000044416551",
+        "datePubli": 1638748800000,
+        "datePubliComputed": 1638748800000,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément au premier alinéa de l'article 65 du décret n° 2026-366 du 7 mai 2026, ces dispositions, dans leur rédaction issue du décret précité, entrent en vigueur le premier jour du troisième mois qui suit celui de sa publication.",
+    "notaHtml": "<p>Conformément au premier alinéa de l'article 65 du décret n° 2026-366 du 7 mai 2026, ces dispositions, dans leur rédaction issue du décret précité, entrent en vigueur le premier jour du troisième mois qui suit celui de sa publication.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000054068452",
+        "textTitle": "Décret n°2026-366 du 7 mai 2026 - art. 37",
+        "linkType": "MODIFIE",
+        "linkOrientation": "cible",
+        "articleNum": "37",
+        "articleId": "LEGIARTI000054072898",
+        "natureText": "DECRET",
+        "datePubliTexte": "2026-05-13",
+        "dateSignaTexte": "2026-05-07",
+        "dateDebutCible": "2026-08-01"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000000699956",
+        "textTitle": "Décret n° 86-83 du 17 janvier 1986 - art. 51",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "51",
+        "articleId": "LEGIARTI000006486630",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "86-83",
+        "datePubli": 506476800000,
+        "dateDebut": 506476800000
+      },
+      {
+        "textCid": "JORFTEXT000000343794",
+        "textTitle": "Décret n°91-155 du 6 février 1991 - art. 47",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "47",
+        "articleId": "LEGIARTI000006710172",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "91-155",
+        "datePubli": 666057600000,
+        "dateDebut": 666057600000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. L4",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L4",
+        "articleId": "LEGIARTI000044420587",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1646092800000
+      },
+      {
+        "textCid": "JORFTEXT000054068452",
+        "textTitle": "Décret n°2026-366 du 7 mai 2026 - art. 37",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "37",
+        "articleId": "JORFARTI000054068582",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2026-366",
+        "datePubli": 1778630400000,
+        "dateDebut": 32472144000000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000000871608",
+        "textTitle": "Décret n°88-145 du 15 février 1988 - art. 4, al. 12 à 15 (Ab)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "4",
+        "articleId": "LEGIARTI000046185878",
+        "natureText": "DECRET"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000051962593",
+        "etat": "MODIFIE",
+        "version": "1.0",
+        "dateDebut": 1759276800000,
+        "dateFin": 1785542400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000054088271",
+        "etat": "VIGUEUR",
+        "version": "2.0",
+        "dateDebut": 1785542400000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R332-25",
+      "332-25"
+    ],
+    "versionPrecedente": "LEGIARTI000051962593",
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": true,
+    "comporteLiensSP": false
+  }
 }

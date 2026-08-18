@@ -1,4 +1,293 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000051961881",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Le service statistique ministériel mentionné à l' article R. 325-59 du présent code met en œuvre les procédures obligatoires prévues par la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés ainsi que par la loi n° 51-711 du 7 juin 1951 sur l'obligation, la coordination et le secret en matière de statistiques : 1° Préalablement à la collecte des données prévue aux articles R. 325-61 et R. 325-66 ; 2° Lors du traitement de ces données dans le respect des finalités mentionnées à l'article R. 325-60 .",
+    "texteHtml": "<p><br/>Le service statistique ministériel mentionné à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000044416551&idArticle=LEGIARTI000051961857&dateTexte=&categorieLien=cid\" title=\"Code général de la fonction publique - art. R325-59 (VD)\">article R. 325-59 du présent code </a>met en œuvre les procédures obligatoires prévues par la <a href=\"/affichTexte.do?cidTexte=JORFTEXT000000886460&categorieLien=cid\">loi n° 78-17 du 6 janvier 1978 </a>relative à l'informatique, aux fichiers et aux libertés ainsi que par la <a href=\"/affichTexte.do?cidTexte=JORFTEXT000000888573&categorieLien=cid\">loi n° 51-711 du 7 juin 1951 </a>sur l'obligation, la coordination et le secret en matière de statistiques : <br/>1° Préalablement à la collecte des données prévue aux articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000044416551&idArticle=LEGIARTI000051961863&dateTexte=&categorieLien=cid\" title=\"Code général de la fonction publique - art. R325-61 (VD)\">R. 325-61 </a>et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000044416551&idArticle=LEGIARTI000051961875&dateTexte=&categorieLien=cid\" title=\"Code général de la fonction publique - art. R325-66 (VD)\">R. 325-66 </a>; <br/>2° Lors du traitement de ces données dans le respect des finalités mentionnées à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000044416551&idArticle=LEGIARTI000051961859&dateTexte=&categorieLien=cid\" title=\"Code général de la fonction publique - art. R325-60 (VD)\">R. 325-60</a>.</p>",
+    "num": "R325-68",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "1.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1759276800000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 1073741823,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "PARTIE RÉGLEMENTAIRE ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000050525706",
+          "id": "LEGISCTA000050525706",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Livre III : RECRUTEMENT",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961532",
+          "id": "LEGISCTA000051961532",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Titre II : RECRUTEMENT DES FONCTIONNAIRES",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961636",
+          "id": "LEGISCTA000051961636",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre V : RECRUTEMENT PAR CONCOURS",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961697",
+          "id": "LEGISCTA000051961697",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Section 4 : Collecte et utilisation de données relatives aux candidats",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961851",
+          "id": "LEGISCTA000051961851",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 1 : Base de données « Base concours »",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961853",
+          "id": "LEGISCTA000051961853",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Paragraphe 4 : Confidentialité, conservation, sauvegarde et transmission des données collectées",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961879",
+          "id": "LEGISCTA000051961879",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 53,
+      "titreTxt": [
+        {
+          "debut": "2022-03-01",
+          "fin": "2999-01-01",
+          "titre": "Code général de la fonction publique",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000044416551",
+          "id": "LEGITEXT000044416551",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000051961881",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000051961879",
+    "sectionParentId": "LEGISCTA000051961879",
+    "sectionParentTitre": "Paragraphe 4 : Confidentialité, conservation, sauvegarde et transmission des données collectées",
+    "fullSectionsTitre": "PARTIE RÉGLEMENTAIRE  &gt; Livre III : RECRUTEMENT &gt; Titre II : RECRUTEMENT DES FONCTIONNAIRES &gt; Chapitre V : RECRUTEMENT PAR CONCOURS &gt; Section 4 : Collecte et utilisation de données relatives aux candidats &gt; Sous-section 1 : Base de données « Base concours » &gt; Paragraphe 4 : Confidentialité, conservation, sauvegarde et transmission des données collectées",
+    "refInjection": "MD-20260513_202627_403_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000051961881",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000044416551",
+        "titre": "Code général de la fonction publique",
+        "titreLong": "Code général de la fonction publique",
+        "etat": "VIGUEUR",
+        "dateDebut": 1646092800000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000044416551",
+        "datePubli": 1638748800000,
+        "datePubliComputed": 1638748800000,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément au premier alinéa de l'article 72 du décret n° 2025-695 du 24 juillet 2025, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de la publication dudit décret, soit le 1er octobre 2025.",
+    "notaHtml": "<p>Conformément au premier alinéa de l'article 72 du décret n° 2025-695 du 24 juillet 2025, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de la publication dudit décret, soit le 1er octobre 2025.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000051954922",
+        "textTitle": "Décret n°2025-695 du 24 juillet 2025 (V)",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGITEXT000051958424",
+        "natureText": "DECRET",
+        "datePubliTexte": "2025-07-25",
+        "dateSignaTexte": "2025-07-24",
+        "dateDebutCible": "2025-07-26"
+      },
+      {
+        "textCid": "JORFTEXT000051954922",
+        "textTitle": "Décret n°2025-695 du 24 juillet 2025 - art.",
+        "linkType": "CREE",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGIARTI000051959195",
+        "natureText": "DECRET",
+        "datePubliTexte": "2025-07-25",
+        "dateSignaTexte": "2025-07-24",
+        "dateDebutCible": "2025-07-26"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000000888573",
+        "textTitle": "Loi n° 51-711 du 7 juin 1951",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "JORFTEXT000000888573",
+        "natureText": "LOI",
+        "parentCid": null,
+        "numTexte": "51-711",
+        "datePubli": -585964800000,
+        "dateDebut": 32472144000000
+      },
+      {
+        "textCid": "JORFTEXT000000886460",
+        "textTitle": "LOI n° 78-17 du 6 janvier 1978",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "JORFTEXT000000886460",
+        "natureText": "LOI",
+        "parentCid": null,
+        "numTexte": "78-17",
+        "datePubli": 252979200000,
+        "dateDebut": 32472144000000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R325-59 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "R325-59",
+        "articleId": "LEGIARTI000051961857",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1759276800000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R325-60 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "R325-60",
+        "articleId": "LEGIARTI000051961859",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1759276800000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R325-61 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "R325-61",
+        "articleId": "LEGIARTI000051961863",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1759276800000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R325-66 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "R325-66",
+        "articleId": "LEGIARTI000051961875",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1759276800000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000036610713",
+        "textTitle": "Décret n°2018-114 du 16 février 2018 - art. 6 (VT)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "6",
+        "articleId": "LEGIARTI000036612049",
+        "natureText": "DECRET"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000051961881",
+        "etat": "VIGUEUR",
+        "version": "1.0",
+        "dateDebut": 1759276800000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R325-68",
+      "325-68"
+    ],
+    "versionPrecedente": null,
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": false,
+    "comporteLiensSP": false
+  }
 }

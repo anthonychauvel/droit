@@ -1,4 +1,267 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000051961947",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Le jury comprend au moins un représentant de la catégorie correspondant au cadre d'emplois ou à l'emploi pour le recrutement duquel le concours est organisé.",
+    "texteHtml": "<p><br/>Le jury comprend au moins un représentant de la catégorie correspondant au cadre d'emplois ou à l'emploi pour le recrutement duquel le concours est organisé.</p>",
+    "num": "R325-92",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "1.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1759276800000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 2080374783,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "PARTIE RÉGLEMENTAIRE ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000050525706",
+          "id": "LEGISCTA000050525706",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Livre III : RECRUTEMENT",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961532",
+          "id": "LEGISCTA000051961532",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Titre II : RECRUTEMENT DES FONCTIONNAIRES",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961636",
+          "id": "LEGISCTA000051961636",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre V : RECRUTEMENT PAR CONCOURS",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961697",
+          "id": "LEGISCTA000051961697",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Section 5 : Organisation et attributions des jurys",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961919",
+          "id": "LEGISCTA000051961919",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 2 : Dispositions propres à la fonction publique territoriale",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961934",
+          "id": "LEGISCTA000051961934",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Paragraphe 1 : Composition des jurys",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961936",
+          "id": "LEGISCTA000051961936",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 53,
+      "titreTxt": [
+        {
+          "debut": "2022-03-01",
+          "fin": "2999-01-01",
+          "titre": "Code général de la fonction publique",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000044416551",
+          "id": "LEGITEXT000044416551",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000051961947",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000051961936",
+    "sectionParentId": "LEGISCTA000051961936",
+    "sectionParentTitre": "Paragraphe 1 : Composition des jurys",
+    "fullSectionsTitre": "PARTIE RÉGLEMENTAIRE  &gt; Livre III : RECRUTEMENT &gt; Titre II : RECRUTEMENT DES FONCTIONNAIRES &gt; Chapitre V : RECRUTEMENT PAR CONCOURS &gt; Section 5 : Organisation et attributions des jurys &gt; Sous-section 2 : Dispositions propres à la fonction publique territoriale &gt; Paragraphe 1 : Composition des jurys",
+    "refInjection": "MD-20260513_202627_403_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000051961947",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000044416551",
+        "titre": "Code général de la fonction publique",
+        "titreLong": "Code général de la fonction publique",
+        "etat": "VIGUEUR",
+        "dateDebut": 1646092800000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000044416551",
+        "datePubli": 1638748800000,
+        "datePubliComputed": 1638748800000,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément au premier alinéa de l'article 72 du décret n° 2025-695 du 24 juillet 2025, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de la publication dudit décret, soit le 1er octobre 2025.",
+    "notaHtml": "<p>Conformément au premier alinéa de l'article 72 du décret n° 2025-695 du 24 juillet 2025, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de la publication dudit décret, soit le 1er octobre 2025.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000051954922",
+        "textTitle": "Décret n°2025-695 du 24 juillet 2025 (V)",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGITEXT000051958424",
+        "natureText": "DECRET",
+        "datePubliTexte": "2025-07-25",
+        "dateSignaTexte": "2025-07-24",
+        "dateDebutCible": "2025-07-26"
+      },
+      {
+        "textCid": "JORFTEXT000051954922",
+        "textTitle": "Décret n°2025-695 du 24 juillet 2025 - art.",
+        "linkType": "CREE",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGIARTI000051959195",
+        "natureText": "DECRET",
+        "datePubliTexte": "2025-07-25",
+        "dateSignaTexte": "2025-07-24",
+        "dateDebutCible": "2025-07-26"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000027666449",
+        "textTitle": "Décret n°2013-593 du 5 juillet 2013 - art. 17 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "17",
+        "articleId": "LEGIARTI000051979720",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2013-593",
+        "datePubli": 1373155200000,
+        "dateDebut": 1759276800000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R325-88 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R325-88",
+        "articleId": "LEGIARTI000051961938",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1759276800000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R325-95 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R325-95",
+        "articleId": "LEGIARTI000051961953",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1759276800000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R325-96 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R325-96",
+        "articleId": "LEGIARTI000051961955",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1759276800000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000000320434",
+        "textTitle": "Loi n° 84-53 du 26 janvier 1984 - art. 42, al. 3, ecqc concours (VT)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "42",
+        "articleId": "LEGIARTI000038923739",
+        "natureText": "LOI"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000051961947",
+        "etat": "VIGUEUR",
+        "version": "1.0",
+        "dateDebut": 1759276800000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R325-92",
+      "325-92"
+    ],
+    "versionPrecedente": null,
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": false,
+    "comporteLiensSP": false
+  }
 }

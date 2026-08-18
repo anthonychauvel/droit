@@ -1,4 +1,210 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000051962792",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "L'offre d'emploi mentionne : 1° Les fonctions à exercer ; 2° Les enjeux fondamentaux de l'établissement notamment au regard de l'offre de soins territoriale ; 3° Les compétences recherchées ; 4° Le cas échéant, la nature et le niveau des expériences professionnelles attendus ; 5° Les modalités de la procédure de recrutement ; 6° L'autorité de recrutement ; 7° Les conditions d'exercice de l'emploi, notamment : a) Les conditions de formation des agents contractuels ; b) La localisation géographique de l'emploi ; c) La durée d'occupation de l'emploi ; d) Les modalités d'une éventuelle reconduction ; e) Les éléments de rémunération.",
+    "texteHtml": "<p><br/>L'offre d'emploi mentionne :<br/>1° Les fonctions à exercer ;<br/>2° Les enjeux fondamentaux de l'établissement notamment au regard de l'offre de soins territoriale ;<br/>3° Les compétences recherchées ;<br/>4° Le cas échéant, la nature et le niveau des expériences professionnelles attendus ;<br/>5° Les modalités de la procédure de recrutement ;<br/>6° L'autorité de recrutement ;<br/>7° Les conditions d'exercice de l'emploi, notamment :<br/>a) Les conditions de formation des agents contractuels ;<br/>b) La localisation géographique de l'emploi ;<br/>c) La durée d'occupation de l'emploi ;<br/>d) Les modalités d'une éventuelle reconduction ;<br/>e) Les éléments de rémunération.</p>",
+    "num": "R344-6",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "1.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1759276800000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 1879048191,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "PARTIE RÉGLEMENTAIRE ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000050525706",
+          "id": "LEGISCTA000050525706",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Livre III : RECRUTEMENT",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961532",
+          "id": "LEGISCTA000051961532",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Titre IV : EMPLOIS À LA DÉCISION DU GOUVERNEMENT ET EMPLOIS DE DIRECTION",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962703",
+          "id": "LEGISCTA000051962703",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre IV : EMPLOIS SUPÉRIEURS HOSPITALIERS",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962774",
+          "id": "LEGISCTA000051962774",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Section 2 : Publicité des avis de création ou de vacance d'emploi",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962786",
+          "id": "LEGISCTA000051962786",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 47,
+      "titreTxt": [
+        {
+          "debut": "2022-03-01",
+          "fin": "2999-01-01",
+          "titre": "Code général de la fonction publique",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000044416551",
+          "id": "LEGITEXT000044416551",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000051962792",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000051962786",
+    "sectionParentId": "LEGISCTA000051962786",
+    "sectionParentTitre": "Section 2 : Publicité des avis de création ou de vacance d'emploi",
+    "fullSectionsTitre": "PARTIE RÉGLEMENTAIRE  &gt; Livre III : RECRUTEMENT &gt; Titre IV : EMPLOIS À LA DÉCISION DU GOUVERNEMENT ET EMPLOIS DE DIRECTION &gt; Chapitre IV : EMPLOIS SUPÉRIEURS HOSPITALIERS &gt; Section 2 : Publicité des avis de création ou de vacance d'emploi",
+    "refInjection": "MD-20260513_202631_283_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000051962792",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000044416551",
+        "titre": "Code général de la fonction publique",
+        "titreLong": "Code général de la fonction publique",
+        "etat": "VIGUEUR",
+        "dateDebut": 1646092800000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000044416551",
+        "datePubli": 1638748800000,
+        "datePubliComputed": 1638748800000,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément au premier alinéa de l'article 72 du décret n° 2025-695 du 24 juillet 2025, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de la publication dudit décret, soit le 1er octobre 2025.",
+    "notaHtml": "<p>Conformément au premier alinéa de l'article 72 du décret n° 2025-695 du 24 juillet 2025, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de la publication dudit décret, soit le 1er octobre 2025.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000051954922",
+        "textTitle": "Décret n°2025-695 du 24 juillet 2025 (V)",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGITEXT000051958424",
+        "natureText": "DECRET",
+        "datePubliTexte": "2025-07-25",
+        "dateSignaTexte": "2025-07-24",
+        "dateDebutCible": "2025-07-26"
+      },
+      {
+        "textCid": "JORFTEXT000051954922",
+        "textTitle": "Décret n°2025-695 du 24 juillet 2025 - art.",
+        "linkType": "CREE",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGIARTI000051959195",
+        "natureText": "DECRET",
+        "datePubliTexte": "2025-07-25",
+        "dateSignaTexte": "2025-07-24",
+        "dateDebutCible": "2025-07-26"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R344-13 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R344-13",
+        "articleId": "LEGIARTI000051962814",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1759276800000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000042185337",
+        "textTitle": "Décret n°2020-959 du 31 juillet 2020 - art. 5, al. 4 à 6 (VT)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "5",
+        "articleId": "LEGIARTI000042199633",
+        "natureText": "DECRET"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000051962792",
+        "etat": "VIGUEUR",
+        "version": "1.0",
+        "dateDebut": 1759276800000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R344-6",
+      "344-6"
+    ],
+    "versionPrecedente": null,
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": false,
+    "comporteLiensSP": false
+  }
 }

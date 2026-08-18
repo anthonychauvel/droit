@@ -1,4 +1,232 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000051962530",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Lorsqu'une modification mentionnée à l'article R. 331-12 est envisagée, la proposition est adressée à l'agent par lettre recommandée avec demande d'avis de réception ou par lettre remise en main propre contre signature. Cette lettre informe l'agent qu'il dispose d'un mois à compter de sa réception pour faire connaître, le cas échéant, son acceptation et l'informe des conséquences de son silence. A défaut de réponse dans le délai d'un mois, l'agent est réputé avoir refusé la modification proposée. Conformément aux dispositions du 4° de l' article 45-3 du décret n° 86-83 du 17 janvier 1986 relatif aux dispositions générales applicables aux agents contractuels de l'Etat, du 4° de l'article 39-3 du décret n° 88-145 du 15 février 1988 relatif aux agents contractuels de la fonction publique territoriale et du 4° de l' article 41-3 du décret n° 91-155 du 6 février 1991 relatif aux dispositions générales applicables aux agents contractuels de la fonction publique hospitalière, ce refus justifie le licenciement de l'agent.",
+    "texteHtml": "<p><br/>Lorsqu'une modification mentionnée à l'article R. 331-12 est envisagée, la proposition est adressée à l'agent par lettre recommandée avec demande d'avis de réception ou par lettre remise en main propre contre signature.<br/>Cette lettre informe l'agent qu'il dispose d'un mois à compter de sa réception pour faire connaître, le cas échéant, son acceptation et l'informe des conséquences de son silence.<br/>A défaut de réponse dans le délai d'un mois, l'agent est réputé avoir refusé la modification proposée.<br/>Conformément aux dispositions du 4° de l'<a href=\"/affichTexteArticle.do?cidTexte=JORFTEXT000000699956&idArticle=LEGIARTI000051980396&dateTexte=&categorieLien=id\" title=\"Décret n°86-83 du 17 janvier 1986 - art. 45-3 (VD)\">article 45-3 du décret n° 86-83 du 17 janvier 1986</a> relatif aux dispositions générales applicables aux agents contractuels de l'Etat, du 4° de l'article 39-3 du décret n° 88-145 du 15 février 1988 relatif aux agents contractuels de la fonction publique territoriale et du 4° de l'<a href=\"/affichTexteArticle.do?cidTexte=JORFTEXT000000343794&idArticle=LEGIARTI000051980856&dateTexte=&categorieLien=id\" title=\"Décret n°91-155 du 6 février 1991 - art. 41-3 (VD)\">article 41-3 du décret n° 91-155 du 6 février 1991</a> relatif aux dispositions générales applicables aux agents contractuels de la fonction publique hospitalière, ce refus justifie le licenciement de l'agent.</p>",
+    "num": "R331-13",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "1.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1759276800000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 1610612735,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "PARTIE RÉGLEMENTAIRE ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000050525706",
+          "id": "LEGISCTA000050525706",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Livre III : RECRUTEMENT",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961532",
+          "id": "LEGISCTA000051961532",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Titre III : RECRUTEMENT PAR CONTRAT",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962482",
+          "id": "LEGISCTA000051962482",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre Ier : DISPOSITIONS GÉNÉRALES",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962484",
+          "id": "LEGISCTA000051962484",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Section 2 : Contenu du contrat",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962510",
+          "id": "LEGISCTA000051962510",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 2 : Evolution du contrat",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962526",
+          "id": "LEGISCTA000051962526",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 50,
+      "titreTxt": [
+        {
+          "debut": "2022-03-01",
+          "fin": "2999-01-01",
+          "titre": "Code général de la fonction publique",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000044416551",
+          "id": "LEGITEXT000044416551",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000051962530",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000051962526",
+    "sectionParentId": "LEGISCTA000051962526",
+    "sectionParentTitre": "Sous-section 2 : Evolution du contrat",
+    "fullSectionsTitre": "PARTIE RÉGLEMENTAIRE  &gt; Livre III : RECRUTEMENT &gt; Titre III : RECRUTEMENT PAR CONTRAT &gt; Chapitre Ier : DISPOSITIONS GÉNÉRALES &gt; Section 2 : Contenu du contrat &gt; Sous-section 2 : Evolution du contrat",
+    "refInjection": "MD-20260513_202627_403_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000051962530",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000044416551",
+        "titre": "Code général de la fonction publique",
+        "titreLong": "Code général de la fonction publique",
+        "etat": "VIGUEUR",
+        "dateDebut": 1646092800000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000044416551",
+        "datePubli": 1638748800000,
+        "datePubliComputed": 1638748800000,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément au premier alinéa de l'article 72 du décret n° 2025-695 du 24 juillet 2025, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de la publication dudit décret, soit le 1er octobre 2025.",
+    "notaHtml": "<p>Conformément au premier alinéa de l'article 72 du décret n° 2025-695 du 24 juillet 2025, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de la publication dudit décret, soit le 1er octobre 2025.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000051954922",
+        "textTitle": "Décret n°2025-695 du 24 juillet 2025 (V)",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGITEXT000051958424",
+        "natureText": "DECRET",
+        "datePubliTexte": "2025-07-25",
+        "dateSignaTexte": "2025-07-24",
+        "dateDebutCible": "2025-07-26"
+      },
+      {
+        "textCid": "JORFTEXT000051954922",
+        "textTitle": "Décret n°2025-695 du 24 juillet 2025 - art.",
+        "linkType": "CREE",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGIARTI000051959195",
+        "natureText": "DECRET",
+        "datePubliTexte": "2025-07-25",
+        "dateSignaTexte": "2025-07-24",
+        "dateDebutCible": "2025-07-26"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000000699956",
+        "textTitle": "Décret n°86-83 du 17 janvier 1986 - art. 45-3 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "45-3",
+        "articleId": "LEGIARTI000051980396",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "86-83",
+        "datePubli": 506476800000,
+        "dateDebut": 1759276800000
+      },
+      {
+        "textCid": "JORFTEXT000000343794",
+        "textTitle": "Décret n°91-155 du 6 février 1991 - art. 41-3 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "41-3",
+        "articleId": "LEGIARTI000051980856",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "91-155",
+        "datePubli": 666057600000,
+        "dateDebut": 1759276800000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000000871608",
+        "textTitle": "Décret n°88-145 du 15 février 1988 - art. 39-4, al. 1, ph. 3, al. 2 et 3 (Ab)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "39-4",
+        "articleId": "LEGIARTI000046185829",
+        "natureText": "DECRET"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000051962530",
+        "etat": "VIGUEUR",
+        "version": "1.0",
+        "dateDebut": 1759276800000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R331-13",
+      "331-13"
+    ],
+    "versionPrecedente": null,
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": false,
+    "comporteLiensSP": false
+  }
 }

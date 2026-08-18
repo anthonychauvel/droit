@@ -1,4 +1,214 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000054076143",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "L'agent peut, dans le délai de quinze jours, adresser au président du comité des observations écrites sur le compte rendu. Elles sont alors jointes au compte rendu.",
+    "texteHtml": "<p><br/>L'agent peut, dans le délai de quinze jours, adresser au président du comité des observations écrites sur le compte rendu. Elles sont alors jointes au compte rendu.</p>",
+    "num": "R412-23",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "1.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1785542400000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 2013265919,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "PARTIE RÉGLEMENTAIRE ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000050525706",
+          "id": "LEGISCTA000050525706",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Livre IV : PRINCIPES D'ORGANISATION ET DE GESTION DES RESSOURCES HUMAINES",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076064",
+          "id": "LEGISCTA000054076064",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Titre Ier : DISPOSITIONS GÉNÉRALES",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076066",
+          "id": "LEGISCTA000054076066",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre II : EMPLOIS SUPÉRIEURS",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076072",
+          "id": "LEGISCTA000054076072",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Section 1 : Fonction publique de l'Etat",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076074",
+          "id": "LEGISCTA000054076074",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 2 : Instances collégiales d'évaluation",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076105",
+          "id": "LEGISCTA000054076105",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Paragraphe 4 : Périodicité, contenu et compte rendu de l'évaluation",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076135",
+          "id": "LEGISCTA000054076135",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 53,
+      "titreTxt": [
+        {
+          "debut": "2022-03-01",
+          "fin": "2999-01-01",
+          "titre": "Code général de la fonction publique",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000044416551",
+          "id": "LEGITEXT000044416551",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000054076143",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000054076135",
+    "sectionParentId": "LEGISCTA000054076135",
+    "sectionParentTitre": "Paragraphe 4 : Périodicité, contenu et compte rendu de l'évaluation",
+    "fullSectionsTitre": "PARTIE RÉGLEMENTAIRE  &gt; Livre IV : PRINCIPES D'ORGANISATION ET DE GESTION DES RESSOURCES HUMAINES &gt; Titre Ier : DISPOSITIONS GÉNÉRALES &gt; Chapitre II : EMPLOIS SUPÉRIEURS &gt; Section 1 : Fonction publique de l'Etat &gt; Sous-section 2 : Instances collégiales d'évaluation &gt; Paragraphe 4 : Périodicité, contenu et compte rendu de l'évaluation",
+    "refInjection": "MD-20260731_202033_922_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054076143",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000044416551",
+        "titre": "Code général de la fonction publique",
+        "titreLong": "Code général de la fonction publique",
+        "etat": "VIGUEUR",
+        "dateDebut": 1646092800000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000044416551",
+        "datePubli": 1638748800000,
+        "datePubliComputed": 1638748800000,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément au premier alinéa de l'article 65 du décret n° 2026-366 du 7 mai 2026, ces dispositions, dans leur rédaction issue du décret précité, entrent en vigueur le premier jour du troisième mois qui suit celui de sa publication.",
+    "notaHtml": "<p>Conformément au premier alinéa de l'article 65 du décret n° 2026-366 du 7 mai 2026, ces dispositions, dans leur rédaction issue du décret précité, entrent en vigueur le premier jour du troisième mois qui suit celui de sa publication.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000054068452",
+        "textTitle": "Décret n°2026-366 du 7 mai 2026 - art.",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGIARTI000054072960",
+        "natureText": "DECRET",
+        "datePubliTexte": "2026-05-13",
+        "dateSignaTexte": "2026-05-07",
+        "dateDebutCible": "2026-08-01"
+      },
+      {
+        "textCid": "JORFTEXT000054068452",
+        "textTitle": "Décret n°2026-366 du 7 mai 2026 - art.",
+        "linkType": "CREE",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGIARTI000054072960",
+        "natureText": "DECRET",
+        "datePubliTexte": "2026-05-13",
+        "dateSignaTexte": "2026-05-07",
+        "dateDebutCible": "2026-08-01"
+      }
+    ],
+    "lienCitations": [],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000045684308",
+        "textTitle": "Décret n°2022-720 du 27 avril 2022 - art. 6, al. 2 (VT)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "6",
+        "articleId": "LEGIARTI000045686015",
+        "natureText": "DECRET"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000054076143",
+        "etat": "VIGUEUR",
+        "version": "1.0",
+        "dateDebut": 1785542400000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R412-23",
+      "412-23"
+    ],
+    "versionPrecedente": null,
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": false,
+    "comporteLiensSP": false
+  }
 }

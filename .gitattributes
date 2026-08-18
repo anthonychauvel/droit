@@ -1,1 +1,8 @@
-output/intl/textes-hudoc/*.json merge=ours
+output/cgfp/*.json merge=ours
+all_articles_cgfp.txt merge=ours
+output/code-civil-travail/*.json merge=ours
+output/code-penal-travail/*.json merge=ours
+all_articles_code_civil.txt merge=ours
+all_articles_code_penal.txt merge=ours
+all_articles_code_civil_travail.txt merge=ours
+all_articles_code_penal_travail.txt merge=ours

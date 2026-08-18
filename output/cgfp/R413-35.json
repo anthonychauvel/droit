@@ -1,4 +1,205 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000054076253",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Les lignes directrices relevant de l'article R. 413-34 arrêtent notamment : 1° Les modalités de prise en compte de la valeur professionnelle et des acquis de l'expérience professionnelle des agents territoriaux, en tenant compte, en particulier, de la diversité du parcours et des fonctions exercées, des formations suivies, des conditions particulières d'exercice, qui attestent de l'engagement professionnel, de la capacité d'adaptation et, le cas échéant, de l'aptitude à l'encadrement d'équipes. Ces modalités permettent de prendre en compte les activités professionnelles exercées par les agents, y compris celles intervenant dans le cadre d'une activité syndicale et celles exercées à l'extérieur de l'administration d'origine, auprès d'un employeur public mentionné à l'article L. 2, dans le secteur privé, notamment dans le secteur associatif, ou dans une organisation européenne ou internationale ; 2° Les mesures permettant d'assurer l'égalité entre les femmes et les hommes dans les procédures de promotion et d'avancement en tenant compte de la part respective de femmes et d'hommes dans les cadres d'emplois et grades concernés. 3° Les mesures permettant de favoriser, en matière de recrutement, l'adaptation des compétences à l'évolution des missions et des métiers, la diversité des profils et la valorisation des parcours professionnels ainsi que l'égalité professionnelle entre les femmes et les hommes.",
+    "texteHtml": "<p><br/>Les lignes directrices relevant de l'article R. 413-34 arrêtent notamment :<br/>1° Les modalités de prise en compte de la valeur professionnelle et des acquis de l'expérience professionnelle des agents territoriaux, en tenant compte, en particulier, de la diversité du parcours et des fonctions exercées, des formations suivies, des conditions particulières d'exercice, qui attestent de l'engagement professionnel, de la capacité d'adaptation et, le cas échéant, de l'aptitude à l'encadrement d'équipes.<br/>Ces modalités permettent de prendre en compte les activités professionnelles exercées par les agents, y compris celles intervenant dans le cadre d'une activité syndicale et celles exercées à l'extérieur de l'administration d'origine, auprès d'un employeur public mentionné à l'article L. 2, dans le secteur privé, notamment dans le secteur associatif, ou dans une organisation européenne ou internationale ;<br/>2° Les mesures permettant d'assurer l'égalité entre les femmes et les hommes dans les procédures de promotion et d'avancement en tenant compte de la part respective de femmes et d'hommes dans les cadres d'emplois et grades concernés.<br/>3° Les mesures permettant de favoriser, en matière de recrutement, l'adaptation des compétences à l'évolution des missions et des métiers, la diversité des profils et la valorisation des parcours professionnels ainsi que l'égalité professionnelle entre les femmes et les hommes.</p>",
+    "num": "R413-35",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "1.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1785542400000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 1610612735,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "PARTIE RÉGLEMENTAIRE ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000050525706",
+          "id": "LEGISCTA000050525706",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Livre IV : PRINCIPES D'ORGANISATION ET DE GESTION DES RESSOURCES HUMAINES",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076064",
+          "id": "LEGISCTA000054076064",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Titre Ier : DISPOSITIONS GÉNÉRALES",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076066",
+          "id": "LEGISCTA000054076066",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre III : LIGNES DIRECTRICES DE GESTION",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076158",
+          "id": "LEGISCTA000054076158",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Section 2 : Lignes directrices de gestion au sein de la fonction publique territoriale",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076229",
+          "id": "LEGISCTA000054076229",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 3 : Orientations en matière de promotion et de valorisation des parcours",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076249",
+          "id": "LEGISCTA000054076249",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 50,
+      "titreTxt": [
+        {
+          "debut": "2022-03-01",
+          "fin": "2999-01-01",
+          "titre": "Code général de la fonction publique",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000044416551",
+          "id": "LEGITEXT000044416551",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000054076253",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000054076249",
+    "sectionParentId": "LEGISCTA000054076249",
+    "sectionParentTitre": "Sous-section 3 : Orientations en matière de promotion et de valorisation des parcours",
+    "fullSectionsTitre": "PARTIE RÉGLEMENTAIRE  &gt; Livre IV : PRINCIPES D'ORGANISATION ET DE GESTION DES RESSOURCES HUMAINES &gt; Titre Ier : DISPOSITIONS GÉNÉRALES &gt; Chapitre III : LIGNES DIRECTRICES DE GESTION &gt; Section 2 : Lignes directrices de gestion au sein de la fonction publique territoriale &gt; Sous-section 3 : Orientations en matière de promotion et de valorisation des parcours",
+    "refInjection": "MD-20260731_202029_467_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054076253",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000044416551",
+        "titre": "Code général de la fonction publique",
+        "titreLong": "Code général de la fonction publique",
+        "etat": "VIGUEUR",
+        "dateDebut": 1646092800000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000044416551",
+        "datePubli": 1638748800000,
+        "datePubliComputed": 1638748800000,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément au premier alinéa de l'article 65 du décret n° 2026-366 du 7 mai 2026, ces dispositions, dans leur rédaction issue du décret précité, entrent en vigueur le premier jour du troisième mois qui suit celui de sa publication.",
+    "notaHtml": "<p>Conformément au premier alinéa de l'article 65 du décret n° 2026-366 du 7 mai 2026, ces dispositions, dans leur rédaction issue du décret précité, entrent en vigueur le premier jour du troisième mois qui suit celui de sa publication.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000054068452",
+        "textTitle": "Décret n°2026-366 du 7 mai 2026 - art.",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGIARTI000054072960",
+        "natureText": "DECRET",
+        "datePubliTexte": "2026-05-13",
+        "dateSignaTexte": "2026-05-07",
+        "dateDebutCible": "2026-08-01"
+      },
+      {
+        "textCid": "JORFTEXT000054068452",
+        "textTitle": "Décret n°2026-366 du 7 mai 2026 - art.",
+        "linkType": "CREE",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGIARTI000054072960",
+        "natureText": "DECRET",
+        "datePubliTexte": "2026-05-13",
+        "dateSignaTexte": "2026-05-07",
+        "dateDebutCible": "2026-08-01"
+      }
+    ],
+    "lienCitations": [],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000039434533",
+        "textTitle": "Décret n°2019-1265 du 29 novembre 2019 - art. 19, al. 4 à 8 (VT)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "19",
+        "articleId": "LEGIARTI000050922374",
+        "natureText": "DECRET"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000054076253",
+        "etat": "VIGUEUR",
+        "version": "1.0",
+        "dateDebut": 1785542400000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R413-35",
+      "413-35"
+    ],
+    "versionPrecedente": null,
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": false,
+    "comporteLiensSP": false
+  }
 }

@@ -1,4 +1,263 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000051963134",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Ne sont pas applicables aux agents contractuels recrutés en application des dispositions de l'article L. 352-4 : 1° Les dispositions suivantes du décret n° 86-83 du 17 janvier 1986 relatif aux dispositions générales applicables aux agents contractuels de l'Etat : a) Les titres I er bis, V, VIII, VIII bis et IX ; b) Le titre XI, à l'exception de l'article 48 ; c) Les titres XII et XIII, à l'exception de l'article 56-1 ; d) Les articles 11 et 13 ; 2° Les dispositions suivantes du décret n° 88-145 du 15 février 1988 relatif aux agents contractuels de la fonction publique territoriale : a) Les titres IV, VI, VIII, VIII bis et X ; b) Le titre XI, à l'exception de l'article 49-1 ; c) Les articles 1-2,1-3 et 6 ; 3° Les dispositions suivantes du décret n° 91-155 du 6 février 1991 relatif aux dispositions générales applicables aux agents contractuels de la fonction publique hospitalière : a) Les titres I er bis, V, VIII, VIII bis et IX ; b) Le titre XI, à l'exception de l'article 43 ; c) Les titres XII et XIV, à l'exception de l'article 54-1 ; d) Les articles 6 et 9 ; 4° La sous-section 2 de la section 2 du chapitre I er du titre III du présent livre ; 5° Les sous-sections 2 et 3 de la section 1 du chapitre II du même titre III ; 6° La sous-section 2 de la section 2 du même chapitre II ; 7° Le chapitre III du titre IV du présent livre.",
+    "texteHtml": "<p><br/>Ne sont pas applicables aux agents contractuels recrutés en application des dispositions de l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000044416551&idArticle=LEGIARTI000044422090&dateTexte=&categorieLien=cid\" title=\"Code général de la fonction publique - art. L352-4 (V)\">L. 352-4</a> : <br/>1° Les dispositions suivantes du <a href=\"/affichTexte.do?cidTexte=JORFTEXT000000699956&categorieLien=cid\">décret n° 86-83 du 17 janvier 1986 </a>relatif aux dispositions générales applicables aux agents contractuels de l'Etat : <br/>a) Les titres I <sup>er </sup>bis, V, VIII, VIII bis et IX ; <br/>b) Le titre XI, à l'exception de l'article 48 ; <br/>c) Les titres XII et XIII, à l'exception de l'article 56-1 ; <br/>d) Les articles 11 et 13 ; <br/>2° Les dispositions suivantes du décret n° 88-145 du 15 février 1988 relatif aux agents contractuels de la fonction publique territoriale : <br/>a) Les titres IV, VI, VIII, VIII bis et X ; <br/>b) Le titre XI, à l'exception de l'article 49-1 ; <br/>c) Les articles 1-2,1-3 et 6 ; <br/>3° Les dispositions suivantes du <a href=\"/affichTexte.do?cidTexte=JORFTEXT000000343794&categorieLien=cid\">décret n° 91-155 du 6 février 1991 </a>relatif aux dispositions générales applicables aux agents contractuels de la fonction publique hospitalière : <br/>a) Les titres I <sup>er </sup>bis, V, VIII, VIII bis et IX ; <br/>b) Le titre XI, à l'exception de l'article 43 ; <br/>c) Les titres XII et XIV, à l'exception de l'article 54-1 ; <br/>d) Les articles 6 et 9 ; <br/>4° La sous-section 2 de la section 2 du chapitre I <sup>er </sup>du titre III du présent livre ; <br/>5° Les sous-sections 2 et 3 de la section 1 du chapitre II du même titre III ; <br/>6° La sous-section 2 de la section 2 du même chapitre II ; <br/>7° Le chapitre III du titre IV du présent livre.</p>",
+    "num": "R352-36",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "1.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1759276800000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 1073741823,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "PARTIE RÉGLEMENTAIRE ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000050525706",
+          "id": "LEGISCTA000050525706",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Livre III : RECRUTEMENT",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051961532",
+          "id": "LEGISCTA000051961532",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Titre V : EMPLOI DES PERSONNES EN SITUATION DE HANDICAP",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051962834",
+          "id": "LEGISCTA000051962834",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre II : RECRUTEMENT ET CONDITIONS D'ACCÈS AUX EMPLOIS DES PERSONNES EN SITUATION DE HANDICAP",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051963027",
+          "id": "LEGISCTA000051963027",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Section 2 : Recrutement de personnes en situation de handicap en application des dispositions de l'article L. 352-4",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051963039",
+          "id": "LEGISCTA000051963039",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-10-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 5 : Dispositions diverses",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000051963132",
+          "id": "LEGISCTA000051963132",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 50,
+      "titreTxt": [
+        {
+          "debut": "2022-03-01",
+          "fin": "2999-01-01",
+          "titre": "Code général de la fonction publique",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000044416551",
+          "id": "LEGITEXT000044416551",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000051963134",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000051963132",
+    "sectionParentId": "LEGISCTA000051963132",
+    "sectionParentTitre": "Sous-section 5 : Dispositions diverses",
+    "fullSectionsTitre": "PARTIE RÉGLEMENTAIRE  &gt; Livre III : RECRUTEMENT &gt; Titre V : EMPLOI DES PERSONNES EN SITUATION DE HANDICAP &gt; Chapitre II : RECRUTEMENT ET CONDITIONS D'ACCÈS AUX EMPLOIS DES PERSONNES EN SITUATION DE HANDICAP &gt; Section 2 : Recrutement de personnes en situation de handicap en application des dispositions de l'article L. 352-4 &gt; Sous-section 5 : Dispositions diverses",
+    "refInjection": "MD-20260513_202631_283_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000051963134",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000044416551",
+        "titre": "Code général de la fonction publique",
+        "titreLong": "Code général de la fonction publique",
+        "etat": "VIGUEUR",
+        "dateDebut": 1646092800000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000044416551",
+        "datePubli": 1638748800000,
+        "datePubliComputed": 1638748800000,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément au premier alinéa de l'article 72 du décret n° 2025-695 du 24 juillet 2025, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de la publication dudit décret, soit le 1er octobre 2025.",
+    "notaHtml": "<p>Conformément au premier alinéa de l'article 72 du décret n° 2025-695 du 24 juillet 2025, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de la publication dudit décret, soit le 1er octobre 2025.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000051954922",
+        "textTitle": "Décret n°2025-695 du 24 juillet 2025 (V)",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGITEXT000051958424",
+        "natureText": "DECRET",
+        "datePubliTexte": "2025-07-25",
+        "dateSignaTexte": "2025-07-24",
+        "dateDebutCible": "2025-07-26"
+      },
+      {
+        "textCid": "JORFTEXT000051954922",
+        "textTitle": "Décret n°2025-695 du 24 juillet 2025 - art.",
+        "linkType": "CREE",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGIARTI000051959195",
+        "natureText": "DECRET",
+        "datePubliTexte": "2025-07-25",
+        "dateSignaTexte": "2025-07-24",
+        "dateDebutCible": "2025-07-26"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000000699956",
+        "textTitle": "Décret n° 86-83 du 17 janvier 1986",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "JORFTEXT000000699956",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "86-83",
+        "datePubli": 506476800000,
+        "dateDebut": 32472144000000
+      },
+      {
+        "textCid": "JORFTEXT000000343794",
+        "textTitle": "Décret n°91-155 du 6 février 1991",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "JORFTEXT000000343794",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "91-155",
+        "datePubli": 666057600000,
+        "dateDebut": 32472144000000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. L352-4 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L352-4",
+        "articleId": "LEGIARTI000044422090",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1646092800000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000000371950",
+        "textTitle": "Décret n°95-979 du 25 août 1995 - art. 11 (VT)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "11",
+        "articleId": "LEGIARTI000034246526",
+        "natureText": "DECRET"
+      },
+      {
+        "textCid": "JORFTEXT000000562718",
+        "textTitle": "Décret n°96-1087 du 10 décembre 1996 - art. 10 (VT)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "10",
+        "articleId": "LEGIARTI000006377989",
+        "natureText": "DECRET"
+      },
+      {
+        "textCid": "JORFTEXT000000746674",
+        "textTitle": "Décret n°97-185 du 25 février 1997 - art. 10 (VT)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "10",
+        "articleId": "LEGIARTI000006700792",
+        "natureText": "DECRET"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000051963134",
+        "etat": "VIGUEUR",
+        "version": "1.0",
+        "dateDebut": 1759276800000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R352-36",
+      "352-36"
+    ],
+    "versionPrecedente": null,
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": false,
+    "comporteLiensSP": false
+  }
 }

@@ -1,4 +1,285 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000054087789",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Le comité social d'administration est informé : 1° Chaque année, de la mise en œuvre du plan d'action pluriannuel en faveur de l'égalité professionnelle entre les femmes et les hommes ; 2° De l'actualisation de la base de données sociales mentionnée à l'article R. 232-6 ; 3° Du bilan annuel des recrutements effectués par la voie du “ Parcours d'accès aux carrières de la fonction publique territoriale, hospitalière et de l'Etat ”, en application des dispositions de l' article R. 326-57 ; 4° Du bilan de la mise en œuvre des mesures d'accompagnement de la restructuration dans les conditions prévues à l'article R. 442-7 ; 5° De l'offre d'accompagnement personnalisé prévu à l'article L. 421-3, en application des dispositions de l'article R. 421-3 ; 6° Chaque année, du nombre des demandes formulées et des congés attribués au titre de la formation personnelle en application des dispositions de l'article R. 422-124.",
+    "texteHtml": "<p>Le comité social d'administration est informé :</p><p>1° Chaque année, de la mise en œuvre du plan d'action pluriannuel en faveur de l'égalité professionnelle entre les femmes et les hommes ;</p><p>2° De l'actualisation de la base de données sociales mentionnée à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000044416551&idArticle=LEGIARTI000050548735&dateTexte=&categorieLien=cid\">R. 232-6 </a>;</p><p>3° Du bilan annuel des recrutements effectués par la voie du “ Parcours d'accès aux carrières de la fonction publique territoriale, hospitalière et de l'Etat ”, en application des dispositions de l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000044416551&idArticle=LEGIARTI000051962242&dateTexte=&categorieLien=cid\">article R. 326-57</a> ;</p><p>4° Du bilan de la mise en œuvre des mesures d'accompagnement de la restructuration dans les conditions prévues à l'article R. 442-7 ;</p><p>5° De l'offre d'accompagnement personnalisé prévu à l'article L. 421-3, en application des dispositions de l'article R. 421-3 ;</p><p> 6° Chaque année, du nombre des demandes formulées et des congés attribués au titre de la formation personnelle en application des dispositions de l'article R. 422-124.</p>",
+    "num": "R253-6",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "3.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1785542400000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 1073741823,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "PARTIE RÉGLEMENTAIRE ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000050525706",
+          "id": "LEGISCTA000050525706",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "Livre II : EXERCICE DU DROIT SYNDICAL ET DIALOGUE SOCIAL",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000050546801",
+          "id": "LEGISCTA000050546801",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "Titre V : COMITÉS SOCIAUX",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000050549357",
+          "id": "LEGISCTA000050549357",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre III : ATTRIBUTIONS",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000050549693",
+          "id": "LEGISCTA000050549693",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "Section 1 : Attributions des comités sociaux",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000050549695",
+          "id": "LEGISCTA000050549695",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 1 : Comités sociaux d'administration",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000050549697",
+          "id": "LEGISCTA000050549697",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "Paragraphe 3 : Information",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000050549713",
+          "id": "LEGISCTA000050549713",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 53,
+      "titreTxt": [
+        {
+          "debut": "2022-03-01",
+          "fin": "2999-01-01",
+          "titre": "Code général de la fonction publique",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000044416551",
+          "id": "LEGITEXT000044416551",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000050549715",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000050549713",
+    "sectionParentId": "LEGISCTA000050549713",
+    "sectionParentTitre": "Paragraphe 3 : Information",
+    "fullSectionsTitre": "PARTIE RÉGLEMENTAIRE  &gt; Livre II : EXERCICE DU DROIT SYNDICAL ET DIALOGUE SOCIAL &gt; Titre V : COMITÉS SOCIAUX &gt; Chapitre III : ATTRIBUTIONS &gt; Section 1 : Attributions des comités sociaux &gt; Sous-section 1 : Comités sociaux d'administration &gt; Paragraphe 3 : Information",
+    "refInjection": "MD-20260731_202033_922_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054087789",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000044416551",
+        "titre": "Code général de la fonction publique",
+        "titreLong": "Code général de la fonction publique",
+        "etat": "VIGUEUR",
+        "dateDebut": 1646092800000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000044416551",
+        "datePubli": 1638748800000,
+        "datePubliComputed": 1638748800000,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément au premier alinéa de l'article 65 du décret n° 2026-366 du 7 mai 2026, ces dispositions, dans leur rédaction issue du décret précité, entrent en vigueur le premier jour du troisième mois qui suit celui de sa publication.",
+    "notaHtml": "<p>Conformément au premier alinéa de l'article 65 du décret n° 2026-366 du 7 mai 2026, ces dispositions, dans leur rédaction issue du décret précité, entrent en vigueur le premier jour du troisième mois qui suit celui de sa publication.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000050510977",
+        "textTitle": "Décret n°2024-1038 du 6 novembre 2024 - art.",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "",
+        "natureText": "",
+        "datePubliTexte": null,
+        "dateSignaTexte": null,
+        "dateDebutCible": null
+      },
+      {
+        "textCid": "JORFTEXT000054068452",
+        "textTitle": "Décret n°2026-366 du 7 mai 2026 - art. 8",
+        "linkType": "MODIFIE",
+        "linkOrientation": "cible",
+        "articleNum": "8",
+        "articleId": "LEGIARTI000054072840",
+        "natureText": "DECRET",
+        "datePubliTexte": "2026-05-13",
+        "dateSignaTexte": "2026-05-07",
+        "dateDebutCible": "2026-08-01"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R232-6",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "R232-6",
+        "articleId": "LEGIARTI000050548735",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1738368000000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R326-57",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "R326-57",
+        "articleId": "LEGIARTI000051962242",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1759276800000
+      },
+      {
+        "textCid": "JORFTEXT000051954922",
+        "textTitle": "Décret n°2025-695 du 24 juillet 2025 - art. 17",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "17",
+        "articleId": "JORFARTI000051955011",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2025-695",
+        "datePubli": 1753401600000,
+        "dateDebut": 32472144000000
+      },
+      {
+        "textCid": "JORFTEXT000054068452",
+        "textTitle": "Décret n°2026-366 du 7 mai 2026 - art. 8",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "8",
+        "articleId": "JORFARTI000054068500",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2026-366",
+        "datePubli": 1778630400000,
+        "dateDebut": 32472144000000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000042545890",
+        "textTitle": "Décret n°2020-1427 du 20 novembre 2020 - art. 52 (Ab)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "52",
+        "articleId": "LEGIARTI000042547067",
+        "natureText": "DECRET"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000050549715",
+        "etat": "MODIFIE",
+        "version": "1.0",
+        "dateDebut": 1738368000000,
+        "dateFin": 1759276800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000051968654",
+        "etat": "MODIFIE",
+        "version": "2.0",
+        "dateDebut": 1759276800000,
+        "dateFin": 1785542400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000054087789",
+        "etat": "VIGUEUR",
+        "version": "3.0",
+        "dateDebut": 1785542400000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R253-6",
+      "253-6"
+    ],
+    "versionPrecedente": "LEGIARTI000051968654",
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": true,
+    "comporteLiensSP": false
+  }
 }

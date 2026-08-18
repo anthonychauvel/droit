@@ -1,4 +1,228 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000050548509",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Le crédit global de temps syndical est calculé par addition des deux quantités suivantes : 1° Une heure pour mille heures de travail effectuées par les électeurs au comité social d'établissement de l'établissement ; 2° Par application du barème suivant : - moins de 100 agents : nombre d'heures par mois égal au nombre d'agents occupant un emploi permanent à temps complet ; - 100 à 200 agents : 100 heures par mois ; - 201 à 400 agents : 130 heures par mois ; - 401 à 600 agents : 170 heures par mois ; - 601 à 800 agents : 210 heures par mois ; - 801 à 1 000 agents : 250 heures par mois ; - 1 001 à 1 250 agents : 300 heures par mois ; - 1 251 à 1 500 agents : 350 heures par mois ; - 1 501 à 1 750 agents : 400 heures par mois ; - 1 751 à 2 000 agents : 450 heures par mois ; - 2 001 à 3 000 agents : 550 heures par mois ; - 3 001 à 4 000 agents : 650 heures par mois ; - 4 001 à 5 000 agents : 1 000 heures par mois ; - 5 001 à 6 000 agents : 1 500 heures par mois ; - au-delà de 6 000 agents : 100 heures supplémentaires par mois pour 1 000 agents supplémentaires.",
+    "texteHtml": "<p><br/>Le crédit global de temps syndical est calculé par addition des deux quantités suivantes :<br/>1° Une heure pour mille heures de travail effectuées par les électeurs au comité social d'établissement de l'établissement ;<br/>2° Par application du barème suivant :</p><p><br/>- moins de 100 agents : nombre d'heures par mois égal au nombre d'agents occupant un emploi permanent à temps complet ;<br/>- 100 à 200 agents : 100 heures par mois ;<br/>- 201 à 400 agents : 130 heures par mois ;<br/>- 401 à 600 agents : 170 heures par mois ;<br/>- 601 à 800 agents : 210 heures par mois ;<br/>- 801 à 1 000 agents : 250 heures par mois ;<br/>- 1 001 à 1 250 agents : 300 heures par mois ;<br/>- 1 251 à 1 500 agents : 350 heures par mois ;<br/>- 1 501 à 1 750 agents : 400 heures par mois ;<br/>- 1 751 à 2 000 agents : 450 heures par mois ;<br/>- 2 001 à 3 000 agents : 550 heures par mois ;<br/>- 3 001 à 4 000 agents : 650 heures par mois ;<br/>- 4 001 à 5 000 agents : 1 000 heures par mois ;<br/>- 5 001 à 6 000 agents : 1 500 heures par mois ;<br/>- au-delà de 6 000 agents : 100 heures supplémentaires par mois pour 1 000 agents supplémentaires.</p>",
+    "num": "R214-28",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "1.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1738368000000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 1610612735,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "PARTIE RÉGLEMENTAIRE ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000050525706",
+          "id": "LEGISCTA000050525706",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "Livre II : EXERCICE DU DROIT SYNDICAL ET DIALOGUE SOCIAL",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000050546801",
+          "id": "LEGISCTA000050546801",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "Titre Ier : REPRÉSENTATION DES AGENTS ET GARANTIES DE L'EXERCICE DU DROIT SYNDICAL",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000050546803",
+          "id": "LEGISCTA000050546803",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre IV : CONGÉS ET FACILITÉS ACCORDÉS AUX REPRÉSENTANTS SYNDICAUX",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000050548437",
+          "id": "LEGISCTA000050548437",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "Section 2 : Facilités accordées aux représentants syndicaux",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000050548457",
+          "id": "LEGISCTA000050548457",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 1 : Crédit de temps syndical",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000050548459",
+          "id": "LEGISCTA000050548459",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "Paragraphe 3 : Crédit d'heures ou décharges d'activité de service dans la fonction publique hospitalière",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000050548505",
+          "id": "LEGISCTA000050548505",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 53,
+      "titreTxt": [
+        {
+          "debut": "2022-03-01",
+          "fin": "2999-01-01",
+          "titre": "Code général de la fonction publique",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000044416551",
+          "id": "LEGITEXT000044416551",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000050548509",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000050548505",
+    "sectionParentId": "LEGISCTA000050548505",
+    "sectionParentTitre": "Paragraphe 3 : Crédit d'heures ou décharges d'activité de service dans la fonction publique hospitalière",
+    "fullSectionsTitre": "PARTIE RÉGLEMENTAIRE  &gt; Livre II : EXERCICE DU DROIT SYNDICAL ET DIALOGUE SOCIAL &gt; Titre Ier : REPRÉSENTATION DES AGENTS ET GARANTIES DE L'EXERCICE DU DROIT SYNDICAL &gt; Chapitre IV : CONGÉS ET FACILITÉS ACCORDÉS AUX REPRÉSENTANTS SYNDICAUX &gt; Section 2 : Facilités accordées aux représentants syndicaux &gt; Sous-section 1 : Crédit de temps syndical &gt; Paragraphe 3 : Crédit d'heures ou décharges d'activité de service dans la fonction publique hospitalière",
+    "refInjection": "MD-20260513_202627_403_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000050548509",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000044416551",
+        "titre": "Code général de la fonction publique",
+        "titreLong": "Code général de la fonction publique",
+        "etat": "VIGUEUR",
+        "dateDebut": 1646092800000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000044416551",
+        "datePubli": 1638748800000,
+        "datePubliComputed": 1638748800000,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément au premier alinéa de l'article 30 du décret n° 2024-1038 du 6 novembre 2024, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de sa publication, soit le 1er février 2025.",
+    "notaHtml": "<p>Conformément au premier alinéa de l'article 30 du décret n° 2024-1038 du 6 novembre 2024, ces dispositions entrent en vigueur le premier jour du troisième mois qui suit celui de sa publication, soit le 1er février 2025.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000050510977",
+        "textTitle": "Décret n°2024-1038 du 6 novembre 2024 - art.",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGIARTI000050521300",
+        "natureText": "DECRET",
+        "datePubliTexte": "2024-11-19",
+        "dateSignaTexte": "2024-11-06",
+        "dateDebutCible": "2024-11-20"
+      },
+      {
+        "textCid": "JORFTEXT000050510977",
+        "textTitle": "Décret n°2024-1038 du 6 novembre 2024 - art.",
+        "linkType": "CREE",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGIARTI000050521300",
+        "natureText": "DECRET",
+        "datePubliTexte": "2024-11-19",
+        "dateSignaTexte": "2024-11-06",
+        "dateDebutCible": "2024-11-20"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R214-32 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R214-32",
+        "articleId": "LEGIARTI000050548517",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1738368000000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000000334893",
+        "textTitle": "Décret n°86-660 du 19 mars 1986 - art. 16, al. 03 à 19 (Ab)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "16",
+        "articleId": "LEGIARTI000044834005",
+        "natureText": "DECRET"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000050548509",
+        "etat": "VIGUEUR",
+        "version": "1.0",
+        "dateDebut": 1738368000000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R214-28",
+      "214-28"
+    ],
+    "versionPrecedente": null,
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": false,
+    "comporteLiensSP": false
+  }
 }

@@ -1,4 +1,351 @@
 {
-  "_error": 401,
-  "_detail": ""
+  "executionTime": 0,
+  "dereferenced": false,
+  "article": {
+    "id": "LEGIARTI000054076797",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Durant le congé de formation professionnelle, l'agent public perçoit une indemnité mensuelle forfaitaire égale à 85 % du traitement brut et de l'indemnité de résidence afférents à l'indice qu'il détenait au moment de sa mise en congé. Cette indemnité ne peut excéder le traitement et l'indemnité de résidence afférents à l'indice brut 650 d'un agent en fonctions à Paris. Elle est versée pendant une durée limitée à douze mois. L'indemnité est à la charge de l'administration, de la collectivité ou de l'établissement mentionné aux articles L. 3 et L. 4 dont relève l'agent de l'Etat ou l'agent territorial. Elle est versée à l'agent hospitalier par l'établissement mentionné à l'article L. 5 dont relève l'intéressé.",
+    "texteHtml": "<p><br/>Durant le congé de formation professionnelle, l'agent public perçoit une indemnité mensuelle forfaitaire égale à 85 % du traitement brut et de l'indemnité de résidence afférents à l'indice qu'il détenait au moment de sa mise en congé. Cette indemnité ne peut excéder le traitement et l'indemnité de résidence afférents à l'indice brut 650 d'un agent en fonctions à Paris. Elle est versée pendant une durée limitée à douze mois.<br/>L'indemnité est à la charge de l'administration, de la collectivité ou de l'établissement mentionné aux articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000044416551&idArticle=LEGIARTI000044420585&dateTexte=&categorieLien=cid\" title=\"Code général de la fonction publique - art. L3 (V)\">L. 3</a> et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000044416551&idArticle=LEGIARTI000044420587&dateTexte=&categorieLien=cid\" title=\"Code général de la fonction publique - art. L4 (V)\">L. 4</a> dont relève l'agent de l'Etat ou l'agent territorial.<br/>Elle est versée à l'agent hospitalier par l'établissement mentionné à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000044416551&idArticle=LEGIARTI000044420589&dateTexte=&categorieLien=cid\" title=\"Code général de la fonction publique - art. L5 (V)\">L. 5</a> dont relève l'intéressé.</p>",
+    "num": "R422-118",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "1.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1785542400000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 1073741823,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "2025-02-01",
+          "fin": "2999-01-01",
+          "titre": "PARTIE RÉGLEMENTAIRE ",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000050525706",
+          "id": "LEGISCTA000050525706",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Livre IV : PRINCIPES D'ORGANISATION ET DE GESTION DES RESSOURCES HUMAINES",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076064",
+          "id": "LEGISCTA000054076064",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Titre II : FORMATION PROFESSIONNELLE TOUT AU LONG DE LA VIE",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076320",
+          "id": "LEGISCTA000054076320",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre II : DISPOSITIFS DE FORMATION PROFESSIONNELLE",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076444",
+          "id": "LEGISCTA000054076444",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Section 4 : Dispositifs de formation mis en œuvre à la demande de l'agent",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076661",
+          "id": "LEGISCTA000054076661",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 3 : Congé de formation professionnelle",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076765",
+          "id": "LEGISCTA000054076765",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Paragraphe 1 : Dispositions communes",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076769",
+          "id": "LEGISCTA000054076769",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2026-08-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-Paragraphe 3 : Rémunération des agents",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000054076795",
+          "id": "LEGISCTA000054076795",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 56,
+      "titreTxt": [
+        {
+          "debut": "2022-03-01",
+          "fin": "2999-01-01",
+          "titre": "Code général de la fonction publique",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000044416551",
+          "id": "LEGITEXT000044416551",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000054076797",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000054076795",
+    "sectionParentId": "LEGISCTA000054076795",
+    "sectionParentTitre": "Sous-Paragraphe 3 : Rémunération des agents",
+    "fullSectionsTitre": "PARTIE RÉGLEMENTAIRE  &gt; Livre IV : PRINCIPES D'ORGANISATION ET DE GESTION DES RESSOURCES HUMAINES &gt; Titre II : FORMATION PROFESSIONNELLE TOUT AU LONG DE LA VIE &gt; Chapitre II : DISPOSITIFS DE FORMATION PROFESSIONNELLE &gt; Section 4 : Dispositifs de formation mis en œuvre à la demande de l'agent &gt; Sous-section 3 : Congé de formation professionnelle &gt; Paragraphe 1 : Dispositions communes &gt; Sous-Paragraphe 3 : Rémunération des agents",
+    "refInjection": "MD-20260731_202033_922_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054076797",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000044416551",
+        "titre": "Code général de la fonction publique",
+        "titreLong": "Code général de la fonction publique",
+        "etat": "VIGUEUR",
+        "dateDebut": 1646092800000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000044416551",
+        "datePubli": 1638748800000,
+        "datePubliComputed": 1638748800000,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément au premier alinéa de l'article 65 du décret n° 2026-366 du 7 mai 2026, ces dispositions, dans leur rédaction issue du décret précité, entrent en vigueur le premier jour du troisième mois qui suit celui de sa publication.",
+    "notaHtml": "<p>Conformément au premier alinéa de l'article 65 du décret n° 2026-366 du 7 mai 2026, ces dispositions, dans leur rédaction issue du décret précité, entrent en vigueur le premier jour du troisième mois qui suit celui de sa publication.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000054068452",
+        "textTitle": "Décret n°2026-366 du 7 mai 2026 - art.",
+        "linkType": "CODIFICATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGIARTI000054072960",
+        "natureText": "DECRET",
+        "datePubliTexte": "2026-05-13",
+        "dateSignaTexte": "2026-05-07",
+        "dateDebutCible": "2026-08-01"
+      },
+      {
+        "textCid": "JORFTEXT000054068452",
+        "textTitle": "Décret n°2026-366 du 7 mai 2026 - art.",
+        "linkType": "CREE",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGIARTI000054072960",
+        "natureText": "DECRET",
+        "datePubliTexte": "2026-05-13",
+        "dateSignaTexte": "2026-05-07",
+        "dateDebutCible": "2026-08-01"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. L3 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L3",
+        "articleId": "LEGIARTI000044420585",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1646092800000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. L4 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L4",
+        "articleId": "LEGIARTI000044420587",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1646092800000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. L5 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L5",
+        "articleId": "LEGIARTI000044420589",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1646092800000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R422-119 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R422-119",
+        "articleId": "LEGIARTI000054076799",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1785542400000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R422-131 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R422-131",
+        "articleId": "LEGIARTI000054076832",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1785542400000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R422-132 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R422-132",
+        "articleId": "LEGIARTI000054076834",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1785542400000
+      },
+      {
+        "textCid": "LEGITEXT000044416551",
+        "textTitle": "Code général de la fonction publique - art. R422-136 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R422-136",
+        "articleId": "LEGIARTI000054076848",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1785542400000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "JORFTEXT000000469540",
+        "textTitle": "Décret n°2007-1470 du 15 octobre 2007 - art. 25 (VT), al. 2",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "25",
+        "articleId": "LEGIARTI000046087651",
+        "natureText": "DECRET"
+      },
+      {
+        "textCid": "JORFTEXT000017761652",
+        "textTitle": "Décret n°2007-1845 du 26 décembre 2007 - art. 12 (VT)",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "12",
+        "articleId": "LEGIARTI000017826848",
+        "natureText": "DECRET"
+      },
+      {
+        "textCid": "JORFTEXT000017761652",
+        "textTitle": "Décret n°2007-1845 du 26 décembre 2007 - art. 43 (VT), al. 2",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "43",
+        "articleId": "LEGIARTI000034724910",
+        "natureText": "DECRET"
+      },
+      {
+        "textCid": "JORFTEXT000019354799",
+        "textTitle": "Décret n°2008-824 du 21 août 2008 - art. 31 (VT), al. 1, ph. 1, al. 2, al. 3 ph. 1",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "31",
+        "articleId": "LEGIARTI000019366658",
+        "natureText": "DECRET"
+      },
+      {
+        "textCid": "JORFTEXT000019354799",
+        "textTitle": "Décret n°2008-824 du 21 août 2008 - art. 8 (VT), al. 4 ecqc dispositions communes",
+        "linkType": "CONCORDANCE",
+        "linkOrientation": "source",
+        "articleNum": "8",
+        "articleId": "LEGIARTI000044160946",
+        "natureText": "DECRET"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000054076797",
+        "etat": "VIGUEUR",
+        "version": "1.0",
+        "dateDebut": 1785542400000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R422-118",
+      "422-118"
+    ],
+    "versionPrecedente": null,
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": false,
+    "comporteLiensSP": false
+  }
 }
