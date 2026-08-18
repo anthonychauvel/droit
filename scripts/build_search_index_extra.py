@@ -80,6 +80,54 @@ def premier_champ(d, noms):
     return ''
 
 
+def extraire_titre_texte(d):
+    """Cherche titre/texte n'importe où dans la structure (récursif), pas
+    seulement au premier niveau -- la vraie forme découverte le 18/08 les
+    niche sous une clé "article" : {"article": {"id":..., "texte":...}}.
+    Marche pour n'importe quelle profondeur d'imbrication future aussi."""
+    titre_trouve, texte_trouve = [None], ['']
+
+    def marcher(o):
+        if isinstance(o, dict):
+            if titre_trouve[0] is None:
+                t = premier_champ(o, CHAMPS_TITRE)
+                if t:
+                    titre_trouve[0] = t
+            if not texte_trouve[0]:
+                t = premier_champ(o, CHAMPS_TEXTE)
+                if t:
+                    texte_trouve[0] = t
+            for v in o.values():
+                marcher(v)
+        elif isinstance(o, list):
+            for v in o:
+                marcher(v)
+    marcher(d)
+    return titre_trouve[0] or '', texte_trouve[0] or ''
+
+
+def extraire_num(d, nom_fichier):
+    """Le numéro peut lui aussi être niché sous "article" -- même marche
+    récursive, avec repli sur le nom de fichier si rien n'est trouvé."""
+    resultat = [None]
+
+    def marcher(o):
+        if resultat[0] or not isinstance(o, (dict, list)):
+            return
+        if isinstance(o, dict):
+            v = o.get('num')
+            if v:
+                resultat[0] = v
+                return
+            for vv in o.values():
+                marcher(vv)
+        elif isinstance(o, list):
+            for vv in o:
+                marcher(vv)
+    marcher(d)
+    return resultat[0] or os.path.splitext(nom_fichier)[0]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dossier', required=True)
@@ -92,6 +140,7 @@ def main():
 
     fichiers = sorted(f for f in os.listdir(args.dossier) if f.endswith('.json'))
     index = []
+    ignores = 0
     for i, nom_fichier in enumerate(fichiers):
         chemin = os.path.join(args.dossier, nom_fichier)
         try:
@@ -99,6 +148,21 @@ def main():
                 d = json.load(f)
         except Exception as e:
             print('  {} : ignoré (JSON invalide, {})'.format(nom_fichier, e))
+            ignores += 1
+            continue
+
+        # Un fichier peut être une LISTE au premier niveau (rencontré le
+        # 18/08) plutôt qu'un objet -- au lieu de planter (.get() sur une
+        # liste), on prend le 1er élément s'il y en a un, sinon on ignore
+        # ce fichier proprement.
+        if isinstance(d, list):
+            if not d:
+                ignores += 1
+                continue
+            d = d[0]
+        if not isinstance(d, dict):
+            print('  {} : ignoré (structure JSON inattendue, ni objet ni liste d\'objets)'.format(nom_fichier))
+            ignores += 1
             continue
 
         if i == 0:
@@ -106,9 +170,9 @@ def main():
             print(json.dumps(d, ensure_ascii=False)[:400])
             print('---')
 
-        num = d.get('num') or os.path.splitext(nom_fichier)[0]
-        titre = premier_champ(d, CHAMPS_TITRE) or num
-        texte = premier_champ(d, CHAMPS_TEXTE)
+        num = extraire_num(d, nom_fichier)
+        titre, texte = extraire_titre_texte(d)
+        titre = titre or num
         snippet = texte[:300]
         mots = MOTS_CLES.get(num, [])
         if mots:
@@ -120,7 +184,8 @@ def main():
     with open(args.sortie, 'w', encoding='utf-8') as f:
         json.dump(index, f, ensure_ascii=False)
 
-    print('{} fichiers -> {} entrées indexées -> {}'.format(len(fichiers), len(index), args.sortie))
+    print('{} fichiers -> {} entrées indexées, {} ignorés -> {}'.format(
+        len(fichiers), len(index), ignores, args.sortie))
 
 
 if __name__ == '__main__':
