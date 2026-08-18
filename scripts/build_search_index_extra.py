@@ -32,7 +32,7 @@ CHAMPS_TEXTE = ['texte', 'text', 'content', 'contenu']
 MOTS_CLES = {
     # Code pénal
     '222-33': ['harcèlement sexuel'],
-    '222-33-2': ['harcèlement moral au travail', 'dégradation des conditions de travail'],
+    '222-33-2': ['harcèlement moral au travail', 'dégradation des conditions de travail', 'mise à l\'écart professionnelle', 'isolement au travail'],
     '222-33-2-1': ['harcèlement moral', 'pression au travail'],
     '222-33-2-2': ['cyberharcèlement', 'harcèlement en ligne'],
     '225-1': ['discrimination', 'critères de discrimination'],
@@ -53,7 +53,7 @@ MOTS_CLES = {
     '226-7': ['complicité atteinte vie privée'],
     '433-13': ['usurpation de titre'],
     '431-1': ['délit d\'entrave', 'entrave à la liberté de réunion'],
-    '225-1-1': ['discrimination témoin harcèlement sexuel', 'représailles après signalement de harcèlement'],
+    '225-1-1': ['discrimination témoin harcèlement sexuel', 'représailles après signalement de harcèlement', 'mesure de rétorsion après dénonciation'],
     '121-2': ['responsabilité pénale de l\'entreprise', 'responsabilité pénale personne morale'],
     # Code civil
     '1103': ['force obligatoire du contrat'],
@@ -66,7 +66,7 @@ MOTS_CLES = {
     '1221': ['exécution forcée en nature'],
     '1223': ['réduction du prix'],
     '1231-1': ['dommages-intérêts', 'réparation du préjudice contractuel'],
-    '1240': ['responsabilité civile délictuelle', 'faute', 'réparation du dommage'],
+    '1240': ['responsabilité civile délictuelle', 'réparation du dommage'],
     '1241': ['responsabilité pour négligence'],
     '1242': ['responsabilité du fait d\'autrui'],
     '1244': ['solidarité entre coresponsables'],
