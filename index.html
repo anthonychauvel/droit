@@ -320,6 +320,9 @@
   .sgi-label .sgi-note{ text-transform:none; font-weight:600; letter-spacing:normal; color:var(--ink-soft); font-size:11.5px; }
   .stat-grid-intl .stat-grid{ grid-template-columns:repeat(3,1fr); margin:0; }
   .stat-eu{ box-shadow:inset 3px 0 0 var(--niveau-europe); }
+  .stat-elargi[data-view="cgfp"]{ box-shadow:inset 3px 0 0 #4a5a8f; }
+  .stat-elargi[data-view="civil"]{ box-shadow:inset 3px 0 0 #2f6f4f; }
+  .stat-elargi[data-view="penal"]{ box-shadow:inset 3px 0 0 #8b3a3a; }
   .stat-eu .src-ic{ margin-bottom:6px; font-size:18px; }
   @media (max-width:860px){ .stat-grid-intl .stat-grid{ grid-template-columns:1fr 1fr; } }
   /* Diagramme "hiérarchie des normes" : International (le plus général, en
@@ -782,6 +785,14 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
         <button class="nav-item" data-view="oit"><span class="ic" aria-hidden="true">🌍</span>OIT<span class="nc" id="nc-oit">…</span></button>
       </div>
     </div>
+    <div class="nav-group" data-group="elargi">
+      <button class="nav-group-label" type="button" aria-expanded="false"><span>Droit élargi</span><span class="ngl-chev">▾</span></button>
+      <div class="nav-group-items">
+        <button class="nav-item" data-view="cgfp"><span class="ic" aria-hidden="true">🏛️</span>Fonction publique<span class="nc" id="nc-cgfp">…</span></button>
+        <button class="nav-item" data-view="civil"><span class="ic" aria-hidden="true">📗</span>Code civil<span class="nc" id="nc-civil">…</span></button>
+        <button class="nav-item" data-view="penal"><span class="ic" aria-hidden="true">📕</span>Code pénal<span class="nc" id="nc-penal">…</span></button>
+      </div>
+    </div>
     <div class="nav-group" data-group="theme">
       <button class="nav-group-label" type="button" aria-expanded="false"><span>Trouver par thème</span><span class="ngl-chev">▾</span></button>
       <div class="nav-group-items">
@@ -890,6 +901,10 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
       <div class="stat-grid-intl" id="stat-grid-intl" hidden>
         <div class="sgi-label">Union européenne <span class="sgi-note">déjà cherchable en texte intégral</span></div>
         <div class="stat-grid" id="stat-grid-eu"></div>
+      </div>
+      <div class="stat-grid-intl" id="stat-grid-elargi" hidden>
+        <div class="sgi-label">Droit élargi <span class="sgi-note">fonction publique, Code civil, Code pénal</span></div>
+        <div class="stat-grid" id="stat-grid-elargi-inner"></div>
       </div>
       <div class="hierarchie" id="hierarchie">
         <div class="hier-title">Hiérarchie des normes</div>
@@ -1141,7 +1156,7 @@ async function fetchText(rel){
 }
 
 /* ---- état global ---- */
-var INDEX  = { ccn:[], code:[], secu:[], juris:[], jorf:[], acco:[], eurlex:[], cjue:[], cedh:[], oit:[] };   // {num,title,etat,source}
+var INDEX  = { ccn:[], code:[], secu:[], juris:[], jorf:[], acco:[], eurlex:[], cjue:[], cedh:[], oit:[], civil:[], penal:[], cgfp:[] };   // {num,title,etat,source}
 // Clauses thématiques extraites des CCN (clauses-index.json). Structure à part :
 // {theme: [{idcc, ccn_titre, clause_titre, texte}, ...]}. Les 5 vues cl_*
 // (Salaires, Heures sup, Forfait jours, Temps partiel, Classifications)
@@ -1175,7 +1190,7 @@ function shortEtat(raw){
  * de transition) ou si l'un manque, on complète depuis l'ancien search-index.json
  * monolithique. Rien ne casse tant que l'un OU l'autre est présent. */
 async function loadSearchIndex(){
-  var SRC = ['ccn','code','code_secu','juris','jorf','acco','eurlex','cjue','cedh','oit'];
+  var SRC = ['ccn','code','code_secu','juris','jorf','acco','eurlex','cjue','cedh','oit','civil','penal','cgfp'];
   // Anti-cache pour les sources internationales : ces fichiers changent au fil
   // des runs GitHub Actions (enrichissement JORF/HUDOC, nouvelles conventions),
   // et un navigateur qui a mis en cache une ancienne version (potentiellement
@@ -1241,7 +1256,7 @@ async function loadAll(){
   CONTENU_CACHE = {};
   var pSearch = (async function(){
     try{ SEARCH = await loadSearchIndex(); }
-    catch(e){ console.warn('index de recherche indisponible', e); SEARCH = {ccn:[],code:[],code_secu:[],juris:[],jorf:[],acco:[],eurlex:[],cjue:[],cedh:[],oit:[]}; }
+    catch(e){ console.warn('index de recherche indisponible', e); SEARCH = {ccn:[],code:[],code_secu:[],juris:[],jorf:[],acco:[],eurlex:[],cjue:[],cedh:[],oit:[],civil:[],penal:[],cgfp:[]}; }
   })();
   // Affiche les blocs UE/International DÈS que SEARCH est prêt -- sans
   // attendre le reste de loadAll() (notamment le manifeste français, 7 Mo+,
@@ -1254,6 +1269,7 @@ async function loadAll(){
   pSearch.then(function(){
     if(typeof populerIndexIntl==='function') populerIndexIntl();
     if(typeof renderDashboardIntl==='function') renderDashboardIntl();
+    if(typeof renderDashboardElargi==='function') renderDashboardElargi();
     if(typeof renderExplorer==='function') renderExplorer();
     if(typeof renderHierarchie==='function') renderHierarchie();
     // Le compteur héros (#corpus-total) touche ce même total UE/International
@@ -1386,6 +1402,9 @@ function fmt(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'\u202f'); }
 // l'une écrasait le total de l'autre avec la valeur France seule (celle qui
 // s'exécute en dernier gagne). Un seul calcul, réutilisé partout.
 function totalCorpusGlobal(totFrance){
+  // Seules les VRAIES sources internationales/UE ici -- civil/penal/cgfp
+  // sont françaises, elles s'ajoutent au total France (totFrance) à
+  // l'appel, pas ici, sinon double-comptage.
   var intl = (typeof SEARCH!=='undefined' && SEARCH) ?
     ((SEARCH.eurlex||[]).length + (SEARCH.cjue||[]).length + (SEARCH.cedh||[]).length + (SEARCH.oit||[]).length) : 0;
   return totFrance + intl;
@@ -1396,6 +1415,12 @@ function paintCounts(cc){
   Object.keys(map).forEach(function(k){ var el=document.getElementById(map[k]); if(el && typeof cc[k]==='number') el.textContent=fmt(cc[k]); });
   var n=function(k){ return typeof cc[k]==='number'?cc[k]:0; };
   var tot=n('ccn')+n('code')+n('secu')+n('juris')+n('jorf')+n('acco');
+  // civil/penal/cgfp viennent de SEARCH (comme les sources UE), pas de cc/
+  // COUNTS/manifest -- ajoutées ici au total FRANCE (pas dans
+  // totalCorpusGlobal, qui ne doit garder que les vraies sources UE/intl,
+  // sinon double-comptage).
+  tot += (typeof SEARCH!=='undefined' && SEARCH) ?
+    ((SEARCH.civil||[]).length + (SEARCH.penal||[]).length + (SEARCH.cgfp||[]).length) : 0;
   // Le compteur héros (#corpus-total) élargit le total au droit UE déjà
   // cherchable (EUR-Lex, CJUE, CEDH) une fois leur index chargé (SEARCH,
   // rempli par pSearch) -- la ligne "Corpus" du menu (cb/cl juste en dessous)
@@ -1676,7 +1701,10 @@ var SRC_META = {
   eurlex:{c:'#1a1a1a', e:'🇪🇺'},
   cjue: {c:'#1a1a1a', e:'🏛️'},
   cedh: {c:'#1a1a1a', e:'🕊️'},
-  oit: {c:'#c0392b', e:'🌍'}
+  oit: {c:'#c0392b', e:'🌍'},
+  civil:{c:'#2f6f4f', e:'📗'},
+  penal:{c:'#8b3a3a', e:'📕'},
+  cgfp: {c:'#4a5a8f', e:'🏛️'}
 };
 function srcIcon(kind){
   var m = SRC_META[kind]; if(!m) return '';
@@ -1781,7 +1809,10 @@ var VIEW_TITLES = {
   eurlex: ['EUR-Lex — droit de l\'Union européenne','Les actes de l\'UE (règlements, directives) en texte intégral, dans la langue officielle française. Cliquez pour lire.'],
   cjue: ['CJUE — Cour de justice de l\'Union européenne','Les arrêts de la CJUE en texte intégral. Cliquez pour lire.'],
   cedh: ['CEDH — Cour européenne des droits de l\'homme','Fiches de synthèse HUDOC (thème + conclusion). Le texte intégral de la décision reste sur le site officiel de la Cour, lié depuis chaque fiche.'],
-  oit: ['OIT — conventions internationales du travail','Fiches de synthèse des conventions de l\'Organisation internationale du travail (thème + lien vers le texte officiel NORMLEX).']
+  oit: ['OIT — conventions internationales du travail','Fiches de synthèse des conventions de l\'Organisation internationale du travail (thème + lien vers le texte officiel NORMLEX).'],
+  civil: ['Code civil','Articles du Code civil pertinents pour le droit du travail (responsabilité contractuelle, exécution de bonne foi, contrats).'],
+  penal: ['Code pénal','Articles du Code pénal pertinents pour le droit du travail (harcèlement, discrimination, entrave).'],
+  cgfp: ['Code général de la fonction publique','Le statut des fonctionnaires (titulaires et contractuels de la fonction publique), distinct du Code du travail qui régit le secteur privé.']
 };
 function setView(v){
   VIEW = v;
@@ -1798,7 +1829,7 @@ function setView(v){
   }
   var estClause = v.indexOf('cl_')===0;
   document.getElementById('view-search').hidden = (v!=='search');
-  document.getElementById('view-browse').hidden = !(v==='ccn'||v==='code'||v==='secu'||v==='juris'||v==='jorf'||v==='acco'||v==='eurlex'||v==='cjue'||v==='cedh'||v==='oit'||estClause);
+  document.getElementById('view-browse').hidden = !(v==='ccn'||v==='code'||v==='secu'||v==='juris'||v==='jorf'||v==='acco'||v==='eurlex'||v==='cjue'||v==='cedh'||v==='oit'||v==='civil'||v==='penal'||v==='cgfp'||estClause);
   document.getElementById('view-maj').hidden = (v!=='maj');
   document.getElementById('view-glossaire').hidden = (v!=='glossaire');
   document.getElementById('view-faq').hidden = (v!=='faq');
@@ -2027,7 +2058,7 @@ var _artInvDone = false;
 // instantanée dès qu'elle est prête ; en attendant, la recherche balaye tout.
 function buildArtInvChunked(){
   if(_artInvDone) return; _artInvDone = true;
-  var sources = [['code',SEARCH.code],['code_secu',SEARCH.code_secu],['juris',SEARCH.juris],['jorf',SEARCH.jorf],['acco',SEARCH.acco],['eurlex',SEARCH.eurlex],['cjue',SEARCH.cjue],['cedh',SEARCH.cedh],['oit',SEARCH.oit]];
+  var sources = [['code',SEARCH.code],['code_secu',SEARCH.code_secu],['juris',SEARCH.juris],['jorf',SEARCH.jorf],['acco',SEARCH.acco],['eurlex',SEARCH.eurlex],['cjue',SEARCH.cjue],['cedh',SEARCH.cedh],['oit',SEARCH.oit],['civil',SEARCH.civil],['penal',SEARCH.penal],['cgfp',SEARCH.cgfp]];
   var si=0, inv=null, list=null, i=0, CHUNK=1500;
   function step(){
     if(!ENG){ _artInvDone=false; return; }   // moteur réinitialisé -> abandon
@@ -2720,7 +2751,7 @@ var ASSIST_CCN = null;  // IDCC de la convention choisie (filtre le bloc CCN)
 var FILTRE_VIGUEUR = false;  // masquer les textes abrogés quand true
 var NIVEAU_ACTIF = 'tous';   // 'tous' | 'france' | 'europe' | 'international' — filtre "Où s'applique la règle ?"
 var NIVEAU_GROUPES = {       // clés alignées sur SEARCH (code_secu, pas secu)
-  france: ['ccn','code','code_secu','juris','jorf','acco'],
+  france: ['ccn','code','code_secu','juris','jorf','acco','civil','penal','cgfp'],
   europe: ['eurlex','cjue','cedh'],
   international: ['oit']     // pas encore cherchable (§3.5 du cahier) : 0 résultat tant que l'OIT n'est pas indexée
 };
@@ -3127,6 +3158,9 @@ function runSearch(){
   var cjue = searchArticlesV2(SEARCH.cjue, searchTokens, focusTokens, rawNorm, eng.artInv.cjue).slice(0,15);
   var cedh = searchArticlesV2(SEARCH.cedh, searchTokens, focusTokens, rawNorm, eng.artInv.cedh).slice(0,15);
   var oit = searchArticlesV2(SEARCH.oit, searchTokens, focusTokens, rawNorm, eng.artInv.oit).slice(0,15);
+  var civil = searchArticlesV2(SEARCH.civil, searchTokens, focusTokens, rawNorm, eng.artInv.civil).slice(0,15);
+  var penal = searchArticlesV2(SEARCH.penal, searchTokens, focusTokens, rawNorm, eng.artInv.penal).slice(0,15);
+  var cgfp = searchArticlesV2(SEARCH.cgfp, searchTokens, focusTokens, rawNorm, eng.artInv.cgfp).slice(0,15);
 
   // Filtre "niveau" (Où s'applique la règle ?) : vide les groupes hors du
   // niveau actif. 'tous' ne filtre rien. Fait AVANT vigueur/phrases/focus pour
@@ -3143,6 +3177,9 @@ function runSearch(){
     if(_niv.indexOf('cjue')===-1) cjue = [];
     if(_niv.indexOf('cedh')===-1) cedh = [];
     if(_niv.indexOf('oit')===-1) oit = [];
+    if(_niv.indexOf('civil')===-1) civil = [];
+    if(_niv.indexOf('penal')===-1) penal = [];
+    if(_niv.indexOf('cgfp')===-1) cgfp = [];
   }
 
   // Filtre "en vigueur seulement" : masque les textes abrogés/périmés. L'état
@@ -3221,7 +3258,10 @@ function runSearch(){
     {k:'eurlex',n:eurlex.length,lbl:'Droit européen', anc:'grp-eurlex'},
     {k:'cjue',  n:cjue.length,  lbl:'CJUE', anc:'grp-cjue'},
     {k:'cedh',  n:cedh.length,  lbl:'CEDH', anc:'grp-cedh'},
-    {k:'oit',   n:oit.length,   lbl:'OIT', anc:'grp-oit'}
+    {k:'oit',   n:oit.length,   lbl:'OIT', anc:'grp-oit'},
+    {k:'civil', n:civil.length, lbl:'Code civil', anc:'grp-civil'},
+    {k:'penal', n:penal.length, lbl:'Code pénal', anc:'grp-penal'},
+    {k:'cgfp',  n:cgfp.length,  lbl:'Fonction publique', anc:'grp-cgfp'}
   ].filter(function(x){ return x.n>0; });
   if(srcCounts.length>1){
     html += '<div class="src-counts">'+srcCounts.map(function(x){
@@ -3279,6 +3319,21 @@ function runSearch(){
   if(jorf.length){
     html += grpHead('jorf','Journal Officiel',jorf.length)+'<div class="rows">';
     html += jorf.map(function(r){ return rowHtml('jorf', r.num, r.title, null, {snippet:artSnip(r)}); }).join('');
+    html += '</div>';
+  }
+  if(civil.length){
+    html += grpHead('civil','Code civil',civil.length)+'<div class="rows">';
+    html += civil.map(function(r){ return rowHtml('civil', r.num, r.title, null, {snippet:artSnip(r)}); }).join('');
+    html += '</div>';
+  }
+  if(penal.length){
+    html += grpHead('penal','Code pénal',penal.length)+'<div class="rows">';
+    html += penal.map(function(r){ return rowHtml('penal', r.num, r.title, null, {snippet:artSnip(r)}); }).join('');
+    html += '</div>';
+  }
+  if(cgfp.length){
+    html += grpHead('cgfp','Fonction publique',cgfp.length)+'<div class="rows">';
+    html += cgfp.map(function(r){ return rowHtml('cgfp', r.num, r.title, null, {snippet:artSnip(r)}); }).join('');
     html += '</div>';
   }
   if(acco.length){
@@ -3836,7 +3891,7 @@ function startBrowse(source){
   document.getElementById('browse-h1').textContent = VIEW_TITLES[source][0];
   document.getElementById('browse-p').textContent = VIEW_TITLES[source][1];
   var fi = document.getElementById('filter-input'); fi.value=''; document.getElementById('filter-clr').hidden=true;
-  document.getElementById('subbar').hidden = (source==='juris'||source==='jorf'||source==='acco'||source==='eurlex'||source==='cjue'||source==='cedh'||source==='oit');
+  document.getElementById('subbar').hidden = (source==='juris'||source==='jorf'||source==='acco'||source==='eurlex'||source==='cjue'||source==='cedh'||source==='oit'||source==='civil'||source==='penal'||source==='cgfp');
   renderSubbar();
   renderBrowse();
 }
@@ -3879,6 +3934,9 @@ function pathFor(kind, num){
   if(kind==='cjue')   return 'output/intl/textes-cjue/'+safe+'.json';
   if(kind==='cedh')   return 'output/intl/textes-hudoc/'+safe+'.json';
   if(kind==='oit')    return 'output/intl/textes-oit/'+safe+'.json';
+  if(kind==='civil')  return 'output/code-civil-travail/'+safe+'.json';
+  if(kind==='penal')  return 'output/code-penal-travail/'+safe+'.json';
+  if(kind==='cgfp')   return 'output/cgfp/'+safe+'.json';
   return 'output/code-travail/'+safe+'.json';
 }
 function cleanHtml(raw){ return raw ? String(raw).replace(/<script/gi,'&lt;script') : ''; }
@@ -4574,6 +4632,11 @@ async function renderDashboard(){
   // grimpe une fois à l'ouverture. Les CARTES ci-dessous restent France
   // seule (_total) ; seul le compteur héros s'élargit (_totalGlobal).
   var _total = cards.reduce(function(s,c){ return s+(c.n||0); }, 0);
+  // civil/penal/cgfp (SEARCH, pas dans `cards` -- elles ont leur propre
+  // mini-tableau séparé) s'ajoutent quand même au total FRANCE utilisé pour
+  // le compteur héros, même logique que dans paintCounts().
+  _total += (typeof SEARCH!=='undefined' && SEARCH) ?
+    ((SEARCH.civil||[]).length + (SEARCH.penal||[]).length + (SEARCH.cgfp||[]).length) : 0;
   var _totalGlobal = totalCorpusGlobal(_total);
   var _ct = document.getElementById('corpus-total'), _ctn = document.getElementById('corpus-total-num');
   if(_ct && _ctn && _totalGlobal>0){
@@ -4623,8 +4686,8 @@ function irVersNiveau(niv){
 function renderExplorer(){
   var host = document.getElementById('explorer-grid'); if(!host) return;
   var n = function(k){ return (INDEX[k] && INDEX[k].length) ? INDEX[k].length : (COUNTS && typeof COUNTS[k]==='number' ? COUNTS[k] : 0); };
-  var totFr = n('ccn')+n('code')+n('secu')+n('juris')+n('jorf')+n('acco');
   var ne = function(k){ return (typeof SEARCH!=='undefined' && SEARCH && SEARCH[k]) ? SEARCH[k].length : 0; };
+  var totFr = n('ccn')+n('code')+n('secu')+n('juris')+n('jorf')+n('acco')+ne('civil')+ne('penal')+ne('cgfp');
   var totUe = ne('eurlex')+ne('cjue')+ne('cedh');
   var totIntl = ne('oit');
   if(!totFr) return;   // rien à afficher tant que le corpus français n'est pas connu
@@ -4654,8 +4717,8 @@ document.getElementById('explorer-grid').addEventListener('click', function(e){
 function renderHierarchie(){
   var host = document.getElementById('hier-levels'); if(!host) return;
   var n = function(k){ return (INDEX[k] && INDEX[k].length) ? INDEX[k].length : (COUNTS && typeof COUNTS[k]==='number' ? COUNTS[k] : 0); };
-  var totFr = n('ccn')+n('code')+n('secu')+n('juris')+n('jorf')+n('acco');
   var ne = function(k){ return (typeof SEARCH!=='undefined' && SEARCH && SEARCH[k]) ? SEARCH[k].length : 0; };
+  var totFr = n('ccn')+n('code')+n('secu')+n('juris')+n('jorf')+n('acco')+ne('civil')+ne('penal')+ne('cgfp');
   var totUe = ne('eurlex')+ne('cjue')+ne('cedh');
   var totIntl = ne('oit');
   if(!totFr) return;
@@ -4698,6 +4761,30 @@ function renderDashboardIntl(){
 document.getElementById('stat-grid-eu').addEventListener('click', function(e){
   var c = e.target.closest('.stat'); if(c) irVersNiveau('europe');
 });
+// Mini-tableau CGFP/Code civil/Code pénal -- contrairement aux cartes UE
+// (pas de vue "parcourir" dédiée, click -> filtre niveau), ces 3 sources ONT
+// une vue setView normale (câblée comme les 6 sources françaises), donc le
+// clic ouvre directement la liste, pas juste un filtre.
+function renderDashboardElargi(){
+  var wrap = document.getElementById('stat-grid-elargi'), host = document.getElementById('stat-grid-elargi-inner');
+  if(!wrap || !host) return;
+  var n = function(k){ return (typeof SEARCH!=='undefined' && SEARCH && SEARCH[k]) ? SEARCH[k].length : 0; };
+  var cards = [
+    {v:'cgfp',  n:n('cgfp'),  l:'Fonction publique'},
+    {v:'civil', n:n('civil'), l:'Code civil'},
+    {v:'penal', n:n('penal'), l:'Code pénal'}
+  ];
+  var total = cards.reduce(function(s,c){ return s+c.n; }, 0);
+  if(!total){ wrap.hidden = true; return; }
+  wrap.hidden = false;
+  host.innerHTML = cards.map(function(c){
+    return '<div class="stat stat-elargi" data-view="'+c.v+'">'+srcIcon(c.v)+
+      '<div class="num">'+fmt(c.n)+'</div><div class="lab">'+escapeHtml(c.l)+'</div></div>';
+  }).join('');
+}
+document.getElementById('stat-grid-elargi-inner').addEventListener('click', function(e){
+  var c = e.target.closest('.stat'); if(c) setView(c.dataset.view);
+});
 // Peuple INDEX.eurlex/cjue/cedh depuis SEARCH (même forme {num,title,snippet}
 // que les sources françaises) une fois l'index de recherche chargé -- c'est ce
 // qui rend les 3 nouveaux onglets du menu (parcourir/filtrer) fonctionnels,
@@ -4705,7 +4792,10 @@ document.getElementById('stat-grid-eu').addEventListener('click', function(e){
 // aussi les compteurs du menu (nc-eurlex/nc-cjue/nc-cedh).
 function populerIndexIntl(){
   if(typeof SEARCH==='undefined' || !SEARCH) return;
-  ['eurlex','cjue','cedh','oit'].forEach(function(k){
+  // Le nom garde "Intl" par historique (créée pour l'UE/International), mais
+  // sert désormais aussi Code civil/pénal/CGFP -- même mécanisme générique
+  // (peupler INDEX depuis SEARCH pour des sources sans entrée manifest.json).
+  ['eurlex','cjue','cedh','oit','civil','penal','cgfp'].forEach(function(k){
     INDEX[k] = (SEARCH[k]||[]).map(function(e){ return {num:e.num, title:e.title||('Texte '+e.num), etat:null}; });
     var el = document.getElementById('nc-'+k); if(el) el.textContent = fmt(INDEX[k].length);
   });
@@ -4917,6 +5007,7 @@ loadAll().then(function(){
   populerIndexIntl();
   renderDashboard();
   renderDashboardIntl();
+  renderDashboardElargi();
   renderExplorer();
   renderHierarchie();
   if(!INDEX.ccn.length && !INDEX.code.length){
