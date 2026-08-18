@@ -53,6 +53,8 @@ MOTS_CLES = {
     '226-7': ['complicité atteinte vie privée'],
     '433-13': ['usurpation de titre'],
     '431-1': ['délit d\'entrave', 'entrave à la liberté de réunion'],
+    '225-1-1': ['discrimination témoin harcèlement sexuel', 'représailles après signalement de harcèlement'],
+    '121-2': ['responsabilité pénale de l\'entreprise', 'responsabilité pénale personne morale'],
     # Code civil
     '1103': ['force obligatoire du contrat'],
     '1104': ['bonne foi contractuelle', 'exécution de bonne foi'],
@@ -69,6 +71,9 @@ MOTS_CLES = {
     '1242': ['responsabilité du fait d\'autrui'],
     '1244': ['solidarité entre coresponsables'],
     '1353': ['charge de la preuve'],
+    '1101': ['définition du contrat'],
+    '9': ['respect de la vie privée', 'vie privée au travail'],
+    '2224': ['délai de prescription', 'prescription civile'],
 }
 
 
