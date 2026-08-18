@@ -1829,7 +1829,7 @@ document.addEventListener('click', function(e){
 });
 document.addEventListener('click', function(e){
   var a = e.target.closest && e.target.closest('.art-link');
-  if(a && a.getAttribute('data-num')){ e.stopPropagation(); e.preventDefault(); openDetail('code', a.getAttribute('data-num')); }
+  if(a && a.getAttribute('data-num')){ e.stopPropagation(); e.preventDefault(); openDetail(a.getAttribute('data-kind') || 'code', a.getAttribute('data-num')); }
 }, true);
 document.addEventListener('click', function(e){
   var d = e.target.closest('.dym-q');
@@ -3998,14 +3998,21 @@ function cleanHtml(raw){ return raw ? String(raw).replace(/<script/gi,'&lt;scrip
 // Rend cliquables les références d'articles du Code (L./R./D. NNNN-NN) présentes
 // dans un texte : un tap ouvre l'article. On ne transforme QUE le texte hors
 // balises (on découpe sur <...>), pour ne pas casser le HTML existant.
+// `kindSource` = le code AUQUEL APPARTIENT le texte affiché (pas forcément
+// Code du travail) -- gravé dans data-kind sur chaque lien, pour que le clic
+// rouvre dans le BON code. Avant ce correctif (18/08), le clic était toujours
+// codé en dur sur 'code' (Code du travail) : une citation interne au CGFP ou
+// au Code civil/pénal ouvrait donc le mauvais code et affichait "pas de texte
+// dans la base", même quand l'article existait bien dans son propre code.
 var ART_REF_RE = /\b([LRD])\.?\s?(\d{3,4}(?:\s?-\s?\d{1,4})+)/g;
-function linkifyArticles(html){
+function linkifyArticles(html, kindSource){
   if(!html) return html;
+  var kind = kindSource || 'code';
   return String(html).replace(/(<[^>]+>)|([^<]+)/g, function(_, tag, text){
     if(tag) return tag;
     return text.replace(ART_REF_RE, function(m, L, rest){
       var num = (L + rest).replace(/[\s.]/g, '').toUpperCase();
-      return '<a class="art-link" data-num="' + escAttr(num) + '">' + m + '</a>';
+      return '<a class="art-link" data-num="' + escAttr(num) + '" data-kind="' + escAttr(kind) + '">' + m + '</a>';
     });
   });
 }
@@ -4072,7 +4079,7 @@ function renderSections(sections){
   return triees.map(function(s){
     var t = s.title || s.titre, inner='';
     if(Array.isArray(s.sections) && s.sections.length) inner += renderSections(s.sections);
-    if(Array.isArray(s.articles)) inner += s.articles.map(function(a){ return '<div class="sec-text">'+linkifyArticles(cleanHtml(a.content||a.texte||''))+'</div>'; }).join('');
+    if(Array.isArray(s.articles)) inner += s.articles.map(function(a){ return '<div class="sec-text">'+linkifyArticles(cleanHtml(a.content||a.texte||''), kind)+'</div>'; }).join('');
     if(!t && !inner) return '';
     return (t?'<div class="sec-title" data-t="'+escAttr(normaliser(t))+'">'+escapeHtml(t)+'</div>':'')+inner;
   }).join('');
@@ -4251,11 +4258,11 @@ async function openDetail(kind, num, target){
   else if((kind==='jorf'||kind==='acco')){
     // Le vrai texte d'un JORF/ACCO est dans articles[].content et sections[],
     // comme une CCN. On ajoute les visas et signataires, propres au JO.
-    if(payload.visa) body += '<div class="sec-text">'+linkifyArticles(cleanHtml(payload.visa))+'</div>';
+    if(payload.visa) body += '<div class="sec-text">'+linkifyArticles(cleanHtml(payload.visa), kind)+'</div>';
     if(Array.isArray(payload.articles) && payload.articles.length){
       body += payload.articles.map(function(a){
         var num = a.num ? '<div class="sec-title">Article '+escapeHtml(String(a.num))+'</div>' : '';
-        return num + '<div class="sec-text">'+linkifyArticles(cleanHtml(a.content||a.texte||''))+'</div>';
+        return num + '<div class="sec-text">'+linkifyArticles(cleanHtml(a.content||a.texte||''), kind)+'</div>';
       }).join('');
     }
     if(Array.isArray(payload.sections) && payload.sections.length){
@@ -4270,10 +4277,10 @@ async function openDetail(kind, num, target){
     // affichage, sinon ils s'écraseraient en un seul bloc illisible. On ne
     // touche PAS à la branche générique ci-dessous (comportement FR inchangé).
     var paras = String(payload.texte||'').split(/\n{2,}/).map(function(p){ return p.trim(); }).filter(Boolean);
-    body = paras.map(function(p){ return '<p class="sec-text">'+linkifyArticles(cleanHtml(p))+'</p>'; }).join('');
+    body = paras.map(function(p){ return '<p class="sec-text">'+linkifyArticles(cleanHtml(p), kind)+'</p>'; }).join('');
     if(payload.url) body += '<div class="sec-text" style="margin-top:16px"><a href="'+escAttr(payload.url)+'" target="_blank" rel="noopener">Voir la source officielle ↗</a></div>';
   }
-  else if(payload.texteHtml||payload.texte||payload.content) body = '<div class="sec-text">'+linkifyArticles(cleanHtml(payload.texteHtml||payload.texte||payload.content))+'</div>';
+  else if(payload.texteHtml||payload.texte||payload.content) body = '<div class="sec-text">'+linkifyArticles(cleanHtml(payload.texteHtml||payload.texte||payload.content), kind)+'</div>';
   else if(abroge) body = '<div class="sec-text" style="color:var(--ink-soft)">Article abrogé, plus en vigueur — il est normal qu\'il n\'y ait pas (ou peu) de texte à afficher.</div>';
   else body = '<div class="sec-text" style="color:var(--ink-soft)">Cet article n\'a pas de texte dans la base — souvent une ancienne numérotation ou un renvoi vers un autre code. Utilisez le lien Légifrance ci-dessus pour le retrouver.</div>';
 
