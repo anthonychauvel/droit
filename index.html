@@ -1144,10 +1144,22 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
    côté serveur.
    ==========================================================================*/
 
-async function fetchJSON(rel){
-  var r = await fetch(rel);
-  if(!r.ok) throw new Error('HTTP ' + r.status + ' ' + rel);
-  return await r.json();
+async function fetchJSON(rel, timeoutMs){
+  // Timeout explicite : sans ça, fetch() peut rester bloqué indéfiniment sur
+  // un réseau instable (pas de limite par défaut côté navigateur) -- repéré
+  // le 18/08 : sur un mauvais réseau, une seule source qui traîne bloquait
+  // TOUT le chargement (voir loadSearchIndex, qui attendait les 13 sources
+  // dans un seul Promise.all).
+  timeoutMs = timeoutMs || 15000;
+  var ctrl = new AbortController();
+  var timer = setTimeout(function(){ ctrl.abort(); }, timeoutMs);
+  try{
+    var r = await fetch(rel, {signal: ctrl.signal});
+    if(!r.ok) throw new Error('HTTP ' + r.status + ' ' + rel);
+    return await r.json();
+  } finally {
+    clearTimeout(timer);
+  }
 }
 async function fetchText(rel){
   var r = await fetch(rel);
@@ -1217,29 +1229,45 @@ function shortEtat(raw){
  * de transition) ou si l'un manque, on complète depuis l'ancien search-index.json
  * monolithique. Rien ne casse tant que l'un OU l'autre est présent. */
 async function loadSearchIndex(){
-  var SRC = ['ccn','code','code_secu','juris','jorf','acco','eurlex','cjue','cedh','oit','civil','penal','cgfp'];
-  // Anti-cache pour les sources internationales : ces fichiers changent au fil
-  // des runs GitHub Actions (enrichissement JORF/HUDOC, nouvelles conventions),
-  // et un navigateur qui a mis en cache une ancienne version (potentiellement
-  // vide, lors d'un tout premier chargement avant que le fichier existe)
-  // continuerait de la servir indéfiniment sans ce paramètre -- déjà vécu une
-  // fois sur la CEDH, régression repérée le 17/08 sur EUR-Lex/CJUE (revenus à
-  // 0 alors que CEDH restait bon -- ce garde-fou avait disparu entretemps).
-  // Les 6 sources françaises ne sont PAS bustées (volumineuses, stables,
-  // régénérées par un rythme de veille propre).
-  var SRC_INTL = {eurlex:1, cjue:1, cedh:1, oit:1};
+  // Cœur français : ce qu'il FAUT absolument pour que la recherche
+  // fonctionne. Chargé en un seul groupe, timeout généreux (16s chacune).
+  var SRC_CORE = ['ccn','code','code_secu','juris','jorf','acco'];
+  // Sources supplémentaires (UE, International, Code civil/pénal, CGFP) :
+  // chargées EN ARRIÈRE-PLAN, jamais dans le même Promise.all que le cœur --
+  // repéré le 18/08 (mauvais réseau) : une seule de ces 7 sources qui traîne
+  // ou échoue bloquait TOUT le chargement, y compris le français déjà prêt
+  // en mémoire mais pas encore exposé via SEARCH. Timeout plus court (8s) :
+  // moins critique, mieux vaut échouer vite et réessayer que bloquer.
+  var SRC_EXTRA = ['eurlex','cjue','cedh','oit','civil','penal','cgfp'];
   var suffixeCache = '?v=' + new Date().toISOString().slice(0,10);
+
   var got = {}, missing = false;
-  await Promise.all(SRC.map(async function(s){
-    var url = 'output/search-index-'+s+'.json' + (SRC_INTL[s] ? suffixeCache : '');
-    try{ got[s] = await fetchJSON(url); }
-    catch(e){ missing = true; }   // ce fichier découpé n'existe pas (encore)
+  await Promise.all(SRC_CORE.map(async function(s){
+    try{ got[s] = await fetchJSON('output/search-index-'+s+'.json', 16000); }
+    catch(e){ missing = true; }
   }));
-  if(!missing) return got;        // cas nominal : tous les fichiers découpés présents
-  // Repli : ancien index monolithique, pour combler les sources manquantes.
-  var mono = {};
-  try{ mono = await fetchJSON('output/search-index.json'); }catch(e){}
-  SRC.forEach(function(s){ if(got[s]===undefined) got[s] = (mono[s]||[]); });
+  if(missing){
+    // Repli : ancien index monolithique, pour combler les sources manquantes.
+    var mono = {};
+    try{ mono = await fetchJSON('output/search-index.json', 20000); }catch(e){}
+    SRC_CORE.forEach(function(s){ if(got[s]===undefined) got[s] = (mono[s]||[]); });
+  }
+
+  SRC_EXTRA.forEach(function(s){ got[s] = []; });  // repli immédiat -- mis à jour dès que chaque fetch arrive
+  SRC_EXTRA.forEach(function(s){
+    var url = 'output/search-index-'+s+'.json' + suffixeCache;
+    fetchJSON(url, 8000).then(function(data){
+      got[s] = data;   // même objet que SEARCH côté appelant -- visible immédiatement partout
+      _artInvDone = false;  // force la reconstruction de l'index inversé à la prochaine recherche, pour inclure cette source
+      if(typeof populerIndexIntl==='function') populerIndexIntl();
+      if(typeof renderDashboardIntl==='function') renderDashboardIntl();
+      if(typeof renderDashboardElargi==='function') renderDashboardElargi();
+      if(typeof renderExplorer==='function') renderExplorer();
+      if(typeof renderHierarchie==='function') renderHierarchie();
+      if(typeof renderDashboard==='function') renderDashboard();
+    }).catch(function(){ /* reste à [] -- pas grave, jamais bloquant pour le reste */ });
+  });
+
   return got;
 }
 
