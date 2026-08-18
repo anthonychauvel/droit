@@ -135,6 +135,25 @@ jobs:
             echo "output/intl/recensement-cjue.json absent, étape sautée."
           fi
 
+      - name: "Enregistrer le résultat dans Vérification (onglet Mise à jour de l'appli)"
+        run: |
+          mkdir -p output/ccn output/code-travail output/code-secu \
+                   output/cgfp output/code-civil-travail output/code-penal-travail \
+                   output/intl/textes-eurlex output/intl/textes-cjue
+          git add output/ccn/ output/code-travail/ output/code-secu/ \
+                  output/cgfp/ output/code-civil-travail/ output/code-penal-travail/ \
+                  output/intl/textes-eurlex/ output/intl/textes-cjue/ \
+                  2>/dev/null || true
+          N=$(git diff --cached --name-only | wc -l | tr -d ' ')
+          if [ "$N" -gt 0 ]; then
+            RESUME="$N fiche(s) minimale(s) créée(s) (lien officiel, en attendant le texte intégral)."
+          else
+            RESUME="Vérification effectuée, rien à combler ce run."
+          fi
+          python3 scripts/ecrire_audit.py --slug combler-manques \
+            --titre "Combler les manques — fiches minimales" \
+            --resume "$RESUME" --changements "$N"
+
       - name: Committer et pousser (rebase, puis merge -X ours en dernier recours)
         run: |
           # S'assure que TOUS ces dossiers existent (même vides) avant le git
@@ -150,6 +169,7 @@ jobs:
           git add output/ccn/ output/code-travail/ output/code-secu/ \
                   output/cgfp/ output/code-civil-travail/ output/code-penal-travail/ \
                   output/intl/textes-eurlex/ output/intl/textes-cjue/ \
+                  audits/ \
                   .gitattributes 2>/dev/null || true
 
           if git diff --cached --quiet; then
