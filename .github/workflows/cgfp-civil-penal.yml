@@ -58,8 +58,10 @@ jobs:
             'all_articles_cgfp.txt merge=ours' \
             'output/code-civil-travail/*.json merge=ours' \
             'output/code-penal-travail/*.json merge=ours' \
-            'output/search-index-code-civil-travail.json merge=ours' \
-            'output/search-index-code-penal-travail.json merge=ours' \
+            'all_articles_code_civil.txt merge=ours' \
+            'all_articles_code_penal.txt merge=ours' \
+            'all_articles_code_civil_travail.txt merge=ours' \
+            'all_articles_code_penal_travail.txt merge=ours' \
             > .gitattributes
 
       - name: Setup Python
@@ -86,21 +88,34 @@ jobs:
           python3 scripts/pull_code_travail.py --articles-file all_articles_cgfp.txt --code-id LEGITEXT000044416551 --out output/cgfp $FLAG
 
       # --- Code civil / pénal (élargi) -------------------------------------
-      - name: "Code civil/pénal : recherche élargie + récupération"
+      # L'approche /search dans le fond CODE a échoué (HTTP 400 -- CODE
+      # couvre ~80 codes, exige probablement de préciser lequel, contrairement
+      # à JORF qui a marché avec la même requête). Repli sur des briques déjà
+      # prouvées : lister TOUT le code (comme pour le CGFP), puis filtrer
+      # localement sur les numéros d'articles ciblés -- aucun nouvel appel API.
+      - name: "Code civil/pénal : lister tous les articles"
         run: |
-          python3 scripts/rechercher_articles_code_civil_penal.py \
-            --sortie-civil output/code-civil-travail \
-            --sortie-penal output/code-penal-travail \
-            --index-civil output/search-index-code-civil-travail.json \
-            --index-penal output/search-index-code-penal-travail.json
+          python3 scripts/list_all_code_articles.py --code-id LEGITEXT000006070721 --out all_articles_code_civil.txt
+          python3 scripts/list_all_code_articles.py --code-id LEGITEXT000006070719 --out all_articles_code_penal.txt
+
+      - name: "Code civil/pénal : filtrer sur les articles pertinents (local, sans appel réseau)"
+        run: |
+          python3 scripts/filtrer_articles_civil_penal.py --entree all_articles_code_civil.txt --sortie all_articles_code_civil_travail.txt --code civil
+          python3 scripts/filtrer_articles_civil_penal.py --entree all_articles_code_penal.txt --sortie all_articles_code_penal_travail.txt --code penal
+
+      - name: "Code civil/pénal : récupérer le contenu des articles filtrés"
+        run: |
+          mkdir -p output/code-civil-travail output/code-penal-travail
+          python3 scripts/pull_code_travail.py --articles-file all_articles_code_civil_travail.txt --code-id LEGITEXT000006070721 --out output/code-civil-travail
+          python3 scripts/pull_code_travail.py --articles-file all_articles_code_penal_travail.txt --code-id LEGITEXT000006070719 --out output/code-penal-travail
 
       # --- Commit unique pour les deux chantiers ---------------------------
       - name: Committer et pousser (rebase, puis merge -X ours en dernier recours)
         run: |
           git add output/cgfp/ all_articles_cgfp.txt \
                   output/code-civil-travail/ output/code-penal-travail/ \
-                  output/search-index-code-civil-travail.json \
-                  output/search-index-code-penal-travail.json \
+                  all_articles_code_civil.txt all_articles_code_penal.txt \
+                  all_articles_code_civil_travail.txt all_articles_code_penal_travail.txt \
                   .gitattributes
 
           if git diff --cached --quiet; then
