@@ -137,6 +137,16 @@ jobs:
 
       - name: Committer et pousser (rebase, puis merge -X ours en dernier recours)
         run: |
+          # S'assure que TOUS ces dossiers existent (même vides) avant le git
+          # add -- sinon un seul dossier manquant (étape sautée faute de
+          # fichier univers) fait échouer TOUTE la commande add en un bloc,
+          # y compris les dossiers qui contenaient du vrai travail. Bug réel
+          # trouvé le 18/08 : le "|| true" masquait l'échec silencieusement,
+          # perdant le travail EUR-Lex/CJUE de deux runs de suite.
+          mkdir -p output/ccn output/code-travail output/code-secu \
+                   output/cgfp output/code-civil-travail output/code-penal-travail \
+                   output/intl/textes-eurlex output/intl/textes-cjue
+
           git add output/ccn/ output/code-travail/ output/code-secu/ \
                   output/cgfp/ output/code-civil-travail/ output/code-penal-travail/ \
                   output/intl/textes-eurlex/ output/intl/textes-cjue/ \
