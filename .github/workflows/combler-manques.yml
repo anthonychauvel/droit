@@ -1,0 +1,143 @@
+name: Combler les manques (fiches minimales + lien officiel)
+
+# Tourne APRÈS les autres workflows d'aspiration (aspirateur-legifrance,
+# cgfp-civil-penal) -- lit les listes "univers" qu'ils ont déjà commitées et
+# comble les trous restants avec une fiche minimale + lien officiel, sans
+# jamais toucher un fichier déjà présent (réel ou déjà comblé).
+#
+# Un run réussi plus tard (de n'importe quel autre workflow) écrase
+# naturellement la fiche minimale par le vrai texte, au même nom de fichier
+# -- aucune coordination à faire, juste ne jamais écrire sur de l'existant.
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "37 7 * * 6"   # samedi, après tous les autres crons de la semaine
+
+permissions:
+  contents: write
+
+concurrency:
+  group: combler-manques
+  cancel-in-progress: false
+
+jobs:
+  combler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: "Config Git : stratégie anti-conflit sur les fichiers générés"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config merge.ours.driver true
+          printf '%s\n' \
+            'output/ccn/*.json merge=ours' \
+            'output/code-travail/*.json merge=ours' \
+            'output/code-secu/*.json merge=ours' \
+            'output/cgfp/*.json merge=ours' \
+            'output/code-civil-travail/*.json merge=ours' \
+            'output/code-penal-travail/*.json merge=ours' \
+            > .gitattributes
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: "Combler les CCN manquantes"
+        run: |
+          if [ -s idcc_list_complet.txt ]; then
+            python3 scripts/combler_manques.py --mode ccn \
+              --univers idcc_list_complet.txt --sortie output/ccn \
+              --nom-source "Convention collective"
+          else
+            echo "idcc_list_complet.txt absent, étape sautée."
+          fi
+
+      - name: "Combler les articles manquants (Code du travail)"
+        run: |
+          if [ -s all_articles_code_travail.txt ]; then
+            python3 scripts/combler_manques.py --mode articles \
+              --univers all_articles_code_travail.txt --sortie output/code-travail \
+              --nom-source "Code du travail"
+          else
+            echo "all_articles_code_travail.txt absent, étape sautée."
+          fi
+
+      - name: "Combler les articles manquants (Code de la sécurité sociale)"
+        run: |
+          if [ -s all_articles_code_secu.txt ]; then
+            python3 scripts/combler_manques.py --mode articles \
+              --univers all_articles_code_secu.txt --sortie output/code-secu \
+              --nom-source "Code de la sécurité sociale"
+          else
+            echo "all_articles_code_secu.txt absent, étape sautée."
+          fi
+
+      - name: "Combler les articles manquants (CGFP)"
+        run: |
+          if [ -s all_articles_cgfp.txt ]; then
+            python3 scripts/combler_manques.py --mode articles \
+              --univers all_articles_cgfp.txt --sortie output/cgfp \
+              --nom-source "Code général de la fonction publique"
+          else
+            echo "all_articles_cgfp.txt absent, étape sautée."
+          fi
+
+      - name: "Combler les articles manquants (Code civil, sous-ensemble ciblé)"
+        run: |
+          if [ -s all_articles_code_civil_travail.txt ]; then
+            python3 scripts/combler_manques.py --mode articles \
+              --univers all_articles_code_civil_travail.txt --sortie output/code-civil-travail \
+              --nom-source "Code civil"
+          else
+            echo "all_articles_code_civil_travail.txt absent, étape sautée."
+          fi
+
+      - name: "Combler les articles manquants (Code pénal, sous-ensemble ciblé)"
+        run: |
+          if [ -s all_articles_code_penal_travail.txt ]; then
+            python3 scripts/combler_manques.py --mode articles \
+              --univers all_articles_code_penal_travail.txt --sortie output/code-penal-travail \
+              --nom-source "Code pénal"
+          else
+            echo "all_articles_code_penal_travail.txt absent, étape sautée."
+          fi
+
+      - name: Committer et pousser (rebase, puis merge -X ours en dernier recours)
+        run: |
+          git add output/ccn/ output/code-travail/ output/code-secu/ \
+                  output/cgfp/ output/code-civil-travail/ output/code-penal-travail/ \
+                  .gitattributes 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "Rien de nouveau (aucun manque à combler ce run)."
+            exit 0
+          fi
+
+          git commit -m "Comble les manques : fiches minimales + lien officiel (${{ github.run_id }})"
+
+          reussi=0
+          for tentative in 1 2 3; do
+            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then git rebase --abort 2>/dev/null || true; fi
+            if [ "$tentative" -lt 3 ]; then
+              git pull --rebase --autostash origin main || true
+            else
+              echo "Dernière tentative : merge (-X ours) plutôt que rebase."
+              git rebase --abort 2>/dev/null || true
+              git pull --no-rebase --autostash -X ours origin main || true
+            fi
+            if git push; then reussi=1; break; fi
+            echo "Tentative $tentative échouée, nouvel essai dans 5s…"
+            sleep 5
+          done
+          if [ "$reussi" -ne 1 ]; then
+            if [ -d .git/rebase-merge ] || [ -d .git/rebase-apply ]; then git rebase --abort 2>/dev/null || true; fi
+            echo "::error::Échec du push après 3 tentatives."
+            exit 1
+          fi
