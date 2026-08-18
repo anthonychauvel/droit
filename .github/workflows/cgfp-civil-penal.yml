@@ -25,7 +25,7 @@ on:
         type: choice
         options: [oui, non]
   schedule:
-    - cron: "17 6 * * 2"   # mardi, décalé des autres crons du dépôt
+    - cron: "47 6 * * 5"   # vendredi, décalé des autres crons du dépôt (lundi/jeudi aspirateur, mardi OIT, mercredi CEDH, samedi combler-manques)
 
 permissions:
   contents: write
