@@ -42,6 +42,8 @@ jobs:
             'output/cgfp/*.json merge=ours' \
             'output/code-civil-travail/*.json merge=ours' \
             'output/code-penal-travail/*.json merge=ours' \
+            'output/intl/textes-eurlex/*.json merge=ours' \
+            'output/intl/textes-cjue/*.json merge=ours' \
             > .gitattributes
 
       - name: Setup Python
@@ -109,10 +111,35 @@ jobs:
             echo "all_articles_code_penal_travail.txt absent, étape sautée."
           fi
 
+      - name: "Combler les actes EUR-Lex manquants"
+        run: |
+          # Nom de fichier de recensement DEVINÉ par analogie avec celui de
+          # l'OIT (recensement-normlex.json) -- jamais vérifié pour EUR-Lex.
+          # Si le vrai fichier a un autre nom, ajuster ici après un 1er essai
+          # (le script affiche un diagnostic clair si rien n'est trouvé).
+          if [ -s output/intl/recensement-eurlex.json ]; then
+            python3 scripts/combler_manques.py --mode eu \
+              --univers output/intl/recensement-eurlex.json --sortie output/intl/textes-eurlex \
+              --nom-source "EUR-Lex"
+          else
+            echo "output/intl/recensement-eurlex.json absent, étape sautée."
+          fi
+
+      - name: "Combler les arrêts CJUE manquants"
+        run: |
+          if [ -s output/intl/recensement-cjue.json ]; then
+            python3 scripts/combler_manques.py --mode eu \
+              --univers output/intl/recensement-cjue.json --sortie output/intl/textes-cjue \
+              --nom-source "CJUE"
+          else
+            echo "output/intl/recensement-cjue.json absent, étape sautée."
+          fi
+
       - name: Committer et pousser (rebase, puis merge -X ours en dernier recours)
         run: |
           git add output/ccn/ output/code-travail/ output/code-secu/ \
                   output/cgfp/ output/code-civil-travail/ output/code-penal-travail/ \
+                  output/intl/textes-eurlex/ output/intl/textes-cjue/ \
                   .gitattributes 2>/dev/null || true
 
           if git diff --cached --quiet; then
