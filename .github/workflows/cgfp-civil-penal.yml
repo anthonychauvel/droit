@@ -120,6 +120,24 @@ jobs:
           python3 scripts/build_search_index_extra.py --dossier output/code-penal-travail --sortie output/search-index-penal.json
 
       # --- Commit unique pour les deux chantiers ---------------------------
+      - name: "Enregistrer le résultat dans Vérification (onglet Mise à jour de l'appli)"
+        run: |
+          git add output/cgfp/ all_articles_cgfp.txt \
+                  output/code-civil-travail/ output/code-penal-travail/ \
+                  all_articles_code_civil.txt all_articles_code_penal.txt \
+                  all_articles_code_civil_travail.txt all_articles_code_penal_travail.txt \
+                  output/search-index-cgfp.json output/search-index-civil.json output/search-index-penal.json \
+                  2>/dev/null || true
+          N=$(git diff --cached --name-only | wc -l | tr -d ' ')
+          if [ "$N" -gt 0 ]; then
+            RESUME="$N fichier(s) mis à jour (CGFP, Code civil et/ou Code pénal)."
+          else
+            RESUME="Vérification effectuée, rien de nouveau."
+          fi
+          python3 scripts/ecrire_audit.py --slug cgfp-civil-penal \
+            --titre "CGFP + Code civil/pénal — mise à jour" \
+            --resume "$RESUME" --changements "$N"
+
       - name: Committer et pousser (rebase, puis merge -X ours en dernier recours)
         run: |
           git add output/cgfp/ all_articles_cgfp.txt \
@@ -129,6 +147,7 @@ jobs:
                   output/search-index-cgfp.json \
                   output/search-index-civil.json \
                   output/search-index-penal.json \
+                  audits/ \
                   .gitattributes
 
           if git diff --cached --quiet; then
