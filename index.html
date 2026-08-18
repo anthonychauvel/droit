@@ -1165,6 +1165,33 @@ var CLAUSES = { salaire:[], heures_sup:[], forfait_jours:[], temps_partiel:[], c
 var SEARCH = { ccn:[], code:[], code_secu:[], juris:[], jorf:[], acco:[] };
 var CCN_LISTE = [];
 var AUDITS = [];
+// Sources d'audits : le fichier principal (aspirateur France) + un par
+// nouveau workflow (OIT, CEDH, CGFP/civil/pénal, comblement des manques) --
+// chacun écrit dans SON PROPRE fichier pour ne jamais entrer en conflit git
+// avec les autres (même logique que les .gitattributes séparés). Absent
+// pour l'instant si le workflow correspondant n'a pas encore tourné une
+// fois -- fetchJSON échoue silencieusement, pas d'erreur affichée.
+var AUDITS_SOURCES = [
+  'audits/index.json',
+  'audits/index-oit.json',
+  'audits/index-cedh.json',
+  'audits/index-cgfp-civil-penal.json',
+  'audits/index-combler-manques.json'
+];
+async function chargerAudits(){
+  if(AUDITS.length) return AUDITS;
+  var tout = [];
+  await Promise.all(AUDITS_SOURCES.map(async function(src){
+    try{ var a = await fetchJSON(src); if(Array.isArray(a)) tout = tout.concat(a); }
+    catch(e){ /* ce fichier n'existe pas encore -- normal, pas une erreur */ }
+  }));
+  // Plus récent en premier, quelle que soit la source d'origine -- une
+  // vérification OIT du jour doit apparaître avant une vérification France
+  // d'il y a 3 jours, pas après juste parce que son fichier est distinct.
+  tout.sort(function(a,b){ return String(b.date||'').localeCompare(String(a.date||'')); });
+  AUDITS = tout;
+  return AUDITS;
+}
 var TRENDS = null;   // mode évolutif : mots/expressions fréquents (optionnel)
 var SEARCH_READY = false;  // true quand search-index.json est chargé (articles + sections CCN prêts)
 var COUNTS = null;   // décomptes issus de counts.json (pour peindre le récap AVANT le manifest)
@@ -4414,7 +4441,7 @@ function _gloFilter(){
 async function renderAudits(){
   var box = document.getElementById('maj-results');
   if(!AUDITS.length){
-    try{ AUDITS = await fetchJSON('audits/index.json'); }catch(e){ AUDITS=[]; }
+    await chargerAudits();
   }
   if(!AUDITS.length){
     box.innerHTML = '<div class="empty"><div class="big">Aucune vérification pour l\'instant.</div>La première apparaîtra après le prochain passage du robot.</div>';
@@ -4654,7 +4681,7 @@ async function renderDashboard(){
   animerStats(_sg, cards);
   renderPopular();  // no-op de nettoyage (bloc « Recherches fréquentes » retiré)
   var box = document.getElementById('latest-maj');
-  if(!AUDITS.length){ try{ AUDITS = await fetchJSON('audits/index.json'); }catch(e){ AUDITS=[]; } }
+  if(!AUDITS.length){ await chargerAudits(); }
   if(AUDITS.length){
     box.innerHTML = '<h3><span class="pulse"></span>Dernières vérifications automatiques</h3>'+
       AUDITS.slice(0,3).map(function(r,i){
