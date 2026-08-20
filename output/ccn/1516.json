@@ -17179,13 +17179,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693782",
+              "cid": "KALISCTA000005693782",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Annexe I",
+              "dateModif": null,
+              "dateDebut": "1989-06-01",
+              "dateFin": "1989-10-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005775653",
+                  "cid": "KALIARTI000005775653",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005693782/KALIARTI000005775653",
+                  "pathTitle": [
+                    "Annexe I"
+                  ],
+                  "content": "<p></p>   Grille des qualifications et des rémunérations minimales annuelles des salariés à temps plein, point annuel 440 F<p></p> CATEGORIES de personnel 1 : EMPLOYES :<p></p> 1. Employés spécialisés :<p></p> NIVEAU hiérarchique 2 : A1<p></p> COEFFICIENT 3 : 100<p></p> SALAIRE MINIMUM professionnel (francs) 4 :<p></p> 44.000 + 19.000 = 63.000.<p></p> NIVEAU : NIVEAU hiérarchique 2 : B1<p></p> COEFFICIENT 3 : 120 SALAIRE<p></p> MINIMUM professionnel (francs) 4 : 52.800 + 13.200 = 66.000.<p></p> NIVEAU hiérarchique 2 : B2<p></p> COEFFICIENT 3 : 145<p></p> SALAIRE MINIMUM professionnel (francs) 4 : 63.800 + 6.000 = 69.800.<p></p> CATEGORIES de personnel 1 : TECHNICIENS :<p></p> 1. Techniciens qualifiés 1er degré :<p></p> NIVEAU hiérarchique 2 : C1<p></p> COEFFICIENT 3 :170<p></p> SALAIRE MINIMUM professionnel (francs) 4 : 74.800<p></p> 2. Techniciens qualifiés 1er degré :<p></p> NIVEAU hiérarchique 2 : C2<p></p> COEFFICIENT 3 :185<p></p> SALAIRE MINIMUM professionnel (francs) 4 : 81.400<p></p> CATEGORIES de personnel 1 :<p></p> 3. Techniciens qualifiés 2er degré :<p></p> NIVEAU hiérarchique 2 : D1<p></p> COEFFICIENT 3 : 200<p></p> SALAIRE MINIMUM professionnel (francs) 4 : 88.000<p></p> 4. Techniciens qualifiés 2er degré :<p></p> NIVEAU hiérarchique 2 : D2<p></p> COEFFICIENT 3 : 220<p></p> SALAIRE MINIMUM professionnel (francs) 4 : 96.800<p></p> 5. Techniciens hautement qualifiés :<p></p> NIVEAU hiérarchique 2 : E1<p></p> COEFFICIENT 3 : 240<p></p> SALAIRE MINIMUM professionnel (francs) 4 : 105.600<p></p> CATEGORIES de personnel 1 : CADRES<p></p> NIVEAU hiérarchique 2 : F<p></p> COEFFICIENT 3 : 300<p></p> SALAIRE MINIMUM professionnel (francs) 4 : 132.000<p></p> NIVEAU hiérarchique 2 : G<p></p> COEFFICIENT 3 : 350<p></p> SALAIRE MINIMUM professionnel (francs) 4 : 154.000<p></p> NIVEAU hiérarchique 2 : H<p></p> COEFFICIENT 3 : 450<p></p> SALAIRE MINIMUM professionnel (francs) 4 : 198.000<p></p> NIVEAU hiérarchique 2 : I<p></p> COEFFICIENT 3 : 600<p></p> SALAIRE MINIMUM professionnel (francs) 4 : 264.000<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Convention collective nationale 1988-06-10 en vigueur le 1er juillet 1989 étendue par arrêté du 16 mars 1989 JORF 29 mars 1989",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 612662400000,
+                  "dateFin": 623894400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -17199,13 +17273,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693783",
+              "cid": "KALISCTA000005693783",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er novembre 1989 et du 1er mars 1990.",
+              "dateModif": null,
+              "dateDebut": "1989-10-09",
+              "dateFin": "1990-10-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005775654",
+                  "cid": "KALIARTI000005775654",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005693783/KALIARTI000005775654",
+                  "pathTitle": [
+                    "Salaires à compter du 1er novembre 1989 et du 1er mars 1990."
+                  ],
+                  "content": "<p></p>   Article 1er :<p></p><p></p>   Le relèvement des salaires minima de la convention collective nationale des organismes de formation s'effectue dans les conditions suivantes ; à dater du mois suivant celui de l'arrêté d'extension,<p></p><p></p>   1° Effet au 1er novembre 1989 :<p></p><p></p>   a) La valeur du point est majorée de 5 p. 100, ce qui met le point à 462 F ;<p></p><p></p>   b) La partie fixe du binôme pour les catégories A et B est majorée de 6 p. 100.<p></p> (Voir nouvelle grille annexe.)<p></p><p></p>   2° Effet au 1er mars 1990 :<p></p><p></p>   a) La valeur du point est majorée de 2 p. 100, ce qui met la valeur du point à 471,24;<p></p><p></p>   b) La partie fixe du binôme pour les catégories A et B est majorée de 3 p. 100.<p></p><p></p>   Cette majoration représente un point au titre du rattrapage 1988-1989 et un point au titre de l'anticipation en 1990, à réexaminer lors de la négociation annuelle en 1990.<p></p> (Voir nouvelle grille en annexe.)<p></p><p></p>   Les majorations portent sur les salaires minima conventionnels qui étaient applicables au 1er juin 1989.<p></p><p></p>    Grille des qualifications et des rémunérations minimales annuelles des salariés à temps plein. (point annuel : 462 F)<p></p> A compter du 1er novembre 1989.<p></p> CATEGORIE DE PERSONNEL : Employés :<p></p> 1. Employés spécialisés ;<p></p> NIVEAU hiérarchique : A1<p></p> COEFFICIENT : 100<p></p> SALAIRE MINIMUM professionnel (en francs) : 46.200 + 20.140 = 66.340<p></p> 2. Employés spécialisés ;<p></p> NIVEAU hiérarchique : A2<p></p> COEFFICIENT : 110<p></p> SALAIRE MINIMUM professionnel (en francs) : 50.820 + 17.066 = 67.886<p></p> 3. Employés qualifiés ;<p></p> NIVEAU hiérarchique : B1<p></p> COEFFICIENT : 120<p></p> SALAIRE MINIMUM professionnel (en francs) : 55.440 + 13.992 = 69.432<p></p> 4. Employés qualifiés ;<p></p> NIVEAU hiérarchique : B2<p></p> COEFFICIENT : 145<p></p> SALAIRE MINIMUM professionnel (en francs) : 66.990 + 6.360 = 73.350<p></p><p></p> CATEGORIE DE PERSONNEL : Techniciens :<p></p> 1. Techniciens qualifiés 1er degré ;<p></p> NIVEAU hiérarchique : C1<p></p> COEFFICIENT : 170<p></p> SALAIRE MINIMUM professionnel (en francs) : 78.540<p></p> 2. Techniciens qualifiés 1er degré ;<p></p> NIVEAU hiérarchique : C2<p></p> COEFFICIENT : 185<p></p> SALAIRE MINIMUM professionnel (en francs) : 85.470<p></p> 3. Techniciens qualifiés 2e degré ;<p></p> NIVEAU hiérarchique : D1<p></p> COEFFICIENT : 200<p></p> SALAIRE MINIMUM professionnel (en francs) : 92.400<p></p> 4. Techniciens qualifiés 2nd degré ;<p></p> NIVEAU hiérarchique : D2<p></p> COEFFICIENT : 220<p></p> SALAIRE MINIMUM professionnel (en francs) : 101.640<p></p> 5. Techniciens hautement qualifiés ;<p></p> NIVEAU hiérarchique : E1<p></p> COEFFICIENT : 240<p></p> SALAIRE MINIMUM professionnel (en francs) : 110.880<p></p> 6. Techniciens hautement qualifiés ;<p></p> NIVEAU hiérarchique : E2<p></p> COEFFICIENT : 270<p></p> SALAIRE MINIMUM professionnel (en francs) : 124.740<p></p> CATEGORIE DE PERSONNEL : Cadres :<p></p> NIVEAU hiérarchique : F<p></p> COEFFICIENT : 300<p></p> SALAIRE MINIMUM professionnel (en francs) : 138.600<p></p> NIVEAU hiérarchique : G<p></p> COEFFICIENT : 350<p></p> SALAIRE MINIMUM professionnel (en francs) : 161.700<p></p> NIVEAU hiérarchique : H<p></p> COEFFICIENT : 450<p></p> SALAIRE MINIMUM professionnel (en francs) : 207.900<p></p> NIVEAU hiérarchique : IRL> COEFFICIENT : 600<p></p> SALAIRE MINIMUM professionnel (en francs) : 277.200<p></p><p></p> Grille des qualifications et des rémunérations minimales annuelles des salariés à temps plein. (point annuel : 471,24 F)<p></p> A compter du 1er mars 1990.<p></p> CATEGORIE DE PERSONNEL : Employés :<p></p> 1. Employés spécialisés ;<p></p> NIVEAU hiérarchique : A1<p></p> COEFFICIENT : 100<p></p> SALAIRE MINIMUM professionnel (en francs) :<p></p> 47.124,00 + 20.744,20 = 67.868,20<p></p> 2. Employés spécialisés ;<p></p> NIVEAU hiérarchique : A2<p></p> COEFFICIENT : 110<p></p> SALAIRE MINIMUM professionnel (en francs) :<p></p> 51.836,40 + 17577,98 = 69.414,38<p></p> 3. Employés qualifiés ;<p></p> NIVEAU hiérarchique : B1<p></p> COEFFICIENT : 120<p></p> SALAIRE MINIMUM professionnel (en francs) :<p></p> 56.548,80 + 14.411,76 = 70.960,56 4. Employés qualifiés ;<p></p> NIVEAU hiérarchique : B2<p></p> COEFFICIENT : 145<p></p> SALAIRE MINIMUM professionnel (en francs) :<p></p> 68.329,80 + 6.550,80 = 74.880,60<p></p> CATEGORIE DE PERSONNEL : Techniciens :<p></p> 1. Techniciens qualifiés 1er degré ;<p></p> NIVEAU hiérarchique : C1<p></p> COEFFICIENT : 170<p></p> SALAIRE MINIMUM professionnel (en francs) : 80.110,80<p></p> 2. Techniciens qualifiés 1er degré ;<p></p> NIVEAU hiérarchique : C2<p></p> COEFFICIENT : 185<p></p> SALAIRE MINIMUM professionnel (en francs) : 87.179,40<p></p>3. Techniciens qualifiés 2nd degré ;<p></p> NIVEAU hiérarchique : D1<p></p> COEFFICIENT : 200<p></p> SALAIRE MINIMUM professionnel (en francs) : 94.248,00<p></p> 4. Techniciens qualifiés 2nd degré ;<p></p> NIVEAU hiérarchique : D2<p></p> COEFFICIENT : 220<p></p> SALAIRE MINIMUM professionnel (en francs) : 103.672,80<p></p> 5. Techniciens hautement qualifiés ;<p></p> NIVEAU hiérarchique : E1<p></p> COEFFICIENT : 240<p></p> SALAIRE MINIMUM professionnel (en francs) : 113.097,60<p></p> 6. Techniciens hautement qualifiés ;<p></p> NIVEAU hiérarchique : E2<p></p> COEFFICIENT : 270<p></p>SALAIRE MINIMUM professionnel (en francs) : 127.234,80<p></p> CATEGORIE DE PERSONNEL : Cadres :<p></p> NIVEAU hiérarchique : F<p></p> COEFFICIENT : 300<p></p> SALAIRE MINIMUM professionnel (en francs) : 141.372,00<p></p> NIVEAU hiérarchique : G<p></p> COEFFICIENT : 350<p></p> SALAIRE MINIMUM professionnel (en francs) : 164.934,00<p></p> NIVEAU hiérarchique : H<p></p> COEFFICIENT : 450<p></p> SALAIRE MINIMUM professionnel (en francs) : 212.058,00<p></p> NIVEAU hiérarchique : IRL> COEFFICIENT : 600<p></p> SALAIRE MINIMUM professionnel (en francs) : 282.744,00<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1989-10-09 étendu par arrêté du 21 février 1990 JORF 27 février 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 623894400000,
+                  "dateFin": 656208000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

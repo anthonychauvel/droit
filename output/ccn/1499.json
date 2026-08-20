@@ -6289,13 +6289,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729383",
+              "cid": "KALISCTA000005729383",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "*Salaires au 1er mars et au 1er novembre 1990*",
+              "dateModif": null,
+              "dateDebut": "1990-01-24",
+              "dateFin": "1991-10-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005864271",
+                  "cid": "KALIARTI000005864271",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005729383/KALIARTI000005864271",
+                  "pathTitle": [
+                    "*Salaires au 1er mars et au 1er novembre 1990*"
+                  ],
+                  "content": "<p></p>   A la suite d'une réunion paritaire tenue le 24 janvier 1990, les valeurs des trois termes du S.M.P. définis par la convention collective nationale de la miroiterie, de la transformation et du négoce du verre sont les suivantes :<p></p><p></p><p></p>   A compter du 1er mars 1990<p></p><p></p> Terme A : 26,47.<p></p> Terme B : 0,0788.<p></p> Terme C : 0,0396.<p></p><p></p><p></p>   A compter du 1er novembre 1990<p></p> Terme A : 26,84.<p></p> Terme B : 0,0800.<p></p> Terme C : 0,0402.<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1990-01-24 étendu par arrêté du 11 mai 1990 JORF 22 mai 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 633139200000,
+                  "dateFin": 686880000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6309,13 +6383,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729384",
+              "cid": "KALISCTA000005729384",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er décembre 1990 et au 1er mars 1991",
+              "dateModif": null,
+              "dateDebut": "1990-11-22",
+              "dateFin": "1991-10-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005864272",
+                  "cid": "KALIARTI000005864272",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005729384/KALIARTI000005864272",
+                  "pathTitle": [
+                    "Salaires au 1er décembre 1990 et au 1er mars 1991"
+                  ],
+                  "content": "<p></p>   A la suite d'une réunion paritaire tenue le 22 novembre 1990, les valeurs des trois termes du S.M.P. définis par la convention collective nationale de la miroiterie, de la transformation et du négoce du verre sont les suivantes :<p></p><p></p><p></p>   A compter du 1er décembre 1990<p></p><p></p> Terme A : 27,55.<p></p> Terme B : 0,0804.<p></p> Terme C : 0,0404.<p></p><p></p><p></p>   A compter du 1er mars 1991<p></p> Terme A : 28,10.<p></p> Terme B : 0,0816.<p></p> Terme C : 0,0410.<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1990-11-22 étendu par arrêté du 4 mars 1991 JORF 15 mars 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 659232000000,
+                  "dateFin": 686880000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

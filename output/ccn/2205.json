@@ -23003,12 +23003,90 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005781664",
+              "cid": "KALIARTI000005781664",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000005781664",
+              "pathTitle": [],
+              "content": "<p></p><p align=\"center\"><strong>Article 1 <sup>er </sup></strong></p><p>Au 1 <sup>er </sup>octobre 2001, la valeur du point est fixée à 10,12 Euros (66,41 F) pour 35 heures. </p><p align=\"center\"><strong>Article 2 </strong>(1) </p><p>Le tableau ci-dessous indique les minima des divers niveaux arrondis à l'euro supérieur. </p><p>1 : CATÉGORIE </p><p>2 : NIVEAU </p><p>3 : COEFFICIENT </p><p>4 : SALAIRE MENSUEL</p><p>-----------------------------------------------------------------</p><table><tbody><tr><td></td><td></td><td></td><td>4 </td></tr><tr><td></td><td></td><td></td><td>Euros </td><td>Francs</td></tr></tbody></table><p>-----------------------------------------------------------------</p><table><tbody><tr><td>Employés </td><td>E 1 </td><td>100 </td><td>1 013 </td><td>6 641,00 </td></tr><tr><td></td><td>E 2 </td><td>108 </td><td>1 094 </td><td>7 172,28 </td></tr><tr><td></td><td>E 3 </td><td>117 </td><td>1 185 </td><td>7 769,97</td></tr></tbody></table><p>-----------------------------------------------------------------</p><table><tbody><tr><td>Techniciens </td><td>T 1 </td><td>125 </td><td>1 266 </td><td>8 301,25 </td></tr><tr><td></td><td>T 2 </td><td>146 </td><td>1 479 </td><td>9 695,86 </td></tr><tr><td></td><td>T 3 </td><td>195 </td><td>1 975 </td><td>12 949,95</td></tr></tbody></table><p>-----------------------------------------------------------------</p><table><tbody><tr><td>Cadres </td><td>C 1 </td><td>210 </td><td>2 127 </td><td>13 946,10 </td></tr><tr><td></td><td>C 2 </td><td>270 </td><td>2 734 </td><td>17 930,70 </td></tr><tr><td></td><td>C 3 </td><td>340 </td><td>3 443 </td><td>22 579,40 </td></tr><tr><td></td><td>C 4 </td><td>380 </td><td>3 848 </td><td>25 235,80</td></tr></tbody></table><p>-----------------------------------------------------------------</p><p>Après application de la nouvelle classification, les salaires précédemment exprimés en points majorés éventuellement de l'ancienneté acquise devront être intégralement exprimés en points, y compris l'ancienneté acquise. </p><p align=\"center\"><strong>Article 3 </strong></p><p>Le présent accord prend effet au 1 <sup>er </sup>octobre 2001. </p><p>Il sera déposé, conformément à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">article L. 132-10 du code du travail</a>, et porté à la connaissance des notaires et des salariés, au moyen d'une copie qui sera envoyée dans toutes les études et devra être émargée par tous les membres du personnel. Il sera soumis à la procédure d'extension prévue à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647043&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L133-8 (Ab)\">article L. 133-8 du code du travail</a>, à l'initiative de la partie la plus diligente. </p><p><font color=\"#808080\"><em>(1) Article étendu sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 qui instaure une garantie mensuelle de rémunération en faveur des salariés rémunérés au niveau SMIC (arrêté du 25 février 2002, art. 1er).</em></font></p><p></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 1 2001-06-08 en vigueur le 1er octobre 2001 étendu par arrêté du 25 février 2002 JORF 9 mars 2002",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L132-10 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L132-10",
+                  "articleId": "LEGIARTI000006647014",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 122860800000
+                },
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L133-8 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L133-8",
+                  "articleId": "LEGIARTI000006647043",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 122860800000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1001894400000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -23023,12 +23101,90 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005781677",
+              "cid": "KALIARTI000005781677",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "num": null,
+              "path": "/KALIARTI000005781677",
+              "pathTitle": [],
+              "content": "<p align=\"center\"><strong>Article 1 <sup>er </sup></strong></p><p>Au titre de l'article 14 de la convention collective nationale du notariat du 8 juin 2001, la valeur du point est fixée à 10,35 Euros pour 35 heures.</p><p align=\"center\"><strong>Article 2 </strong></p><p>Le tableau ci-dessous indique les minima des divers niveaux arrondis à l'euro supérieur :</p><p>1 : CATÉGORIE</p><p>2 : NIVEAU</p><p>3 : COEFFICIENT</p><p>4 : SALAIRE MENSUEL</p><p>---------------------------------------------------------------</p><p></p><table><tbody><tr><td></td><td></td><td></td><td>4</td></tr><tr><td></td><td></td><td></td><td>Euros</td><td>Francs</td></tr></tbody></table><p>---------------------------------------------------------------</p><p></p><table><tbody><tr><td>Employés</td><td>E 1</td><td>100</td><td>1 013</td><td>1 035</td></tr><tr><td></td><td>E 2</td><td>108</td><td>1 094</td><td>1 118</td></tr><tr><td></td><td>E 3</td><td>117</td><td>1 185</td><td>1 211</td></tr></tbody></table><p>---------------------------------------------------------------</p><p></p><table><tbody><tr><td>Techniciens</td><td>T 1</td><td>125</td><td>1 266</td><td>1 294</td></tr><tr><td></td><td>T 2</td><td>146</td><td>1 479</td><td>1 512</td></tr><tr><td></td><td>T 3</td><td>195</td><td>1 975</td><td>2 019</td></tr></tbody></table><p>---------------------------------------------------------------</p><p></p><table><tbody><tr><td>Cadres</td><td>C 1</td><td>210</td><td>2 127</td><td>2 174</td></tr><tr><td></td><td>C 2</td><td>270</td><td>2 734</td><td>2 795</td></tr><tr><td></td><td>C 3</td><td>340</td><td>3 443</td><td>3 519</td></tr><tr><td></td><td>C 4</td><td>380</td><td>3 848</td><td>3 933</td></tr></tbody></table><p>---------------------------------------------------------------</p><p>L'augmentation de salaire résultant de l'application du présent accord s'impute sur les indemnités différentielles créées pour maintenir le salaire en cas de réduction du temps de travail.</p><p>Il est expressément rappelé qu'aucun salaire ne peut être inférieur au SMIC.</p><p align=\"center\"><strong>Article 3 </strong></p><p>Le présent accord prend effet au 1 <sup>er </sup>octobre 2002.</p><p>Il sera déposé, conformément à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">article L. 132-10 du code du travail</a>, et porté à la connaissance des notaires et des salariés, au moyen d'une copie qui sera envoyée dans toutes les études et devra être émargée par tous les membres du personnel. Il sera soumis à la procédure d'extension prévue à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647043&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L133-8 (Ab)\">article L. 133-8 du code du travail</a>, à l'initiative de la partie la plus diligente.</p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 2 2002-09-17 BO conventions collectives 2002-41",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L132-10 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L132-10",
+                  "articleId": "LEGIARTI000006647014",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 122860800000
+                },
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L133-8 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L133-8",
+                  "articleId": "LEGIARTI000006647043",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 122860800000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1032220800000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -23042,13 +23198,114 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696362",
+              "cid": "KALISCTA000005696362",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Salaires et à la valeur du point",
+              "dateModif": null,
+              "dateDebut": "2003-02-07",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005781692",
+                  "cid": "KALIARTI000005781692",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005696362/KALIARTI000005781692",
+                  "pathTitle": [
+                    "Salaires et à la valeur du point"
+                  ],
+                  "content": "<p align=\"center\"><b>Article 1 <sup>er </sup></b></p><p>Au titre de l'article 14 de la convention collective nationale du notariat du 8 juin 2001, la valeur du point est fixée à 10,56 Euros pour 35 heures. </p><p align=\"center\"><b>Article 2 </b></p><p>Le tableau ci-dessous indique les minima des divers niveaux arrondis à l'euro supérieur : </p><p>1 : CATÉGORIE </p><p>2 : NIVEAU </p><p>3 : COEFFICIENT </p><p>4 : SALAIRE MENSUEL </p><p><table><tbody><tr><td></td><td></td><td></td><td>4 </td></tr><tr><td></td><td></td><td></td><td>1-10-2002 </td><td>1-04-2002</td></tr></tbody></table></p><p>---------------------------------------------------------------: </p><p><table><tbody><tr><td>Employés </td><td>E 1 </td><td>100 </td><td>1 035 </td><td>1 056 </td></tr><tr><td></td><td>E 2 </td><td>108 </td><td>1 118 </td><td>1 141 </td></tr><tr><td></td><td>E 3 </td><td>117 </td><td>1 211 </td><td>1 236</td></tr></tbody></table></p><p>---------------------------------------------------------------: </p><p><table><tbody><tr><td>Techniciens </td><td>T 1 </td><td>125 </td><td>1 294 </td><td>1 320 </td></tr><tr><td></td><td>T 2 </td><td>146 </td><td>1 512 </td><td>1 542 </td></tr><tr><td></td><td>T 3 </td><td>195 </td><td>2 019 </td><td>2 060</td></tr></tbody></table></p><p>---------------------------------------------------------------: </p><p><table><tbody><tr><td>Cadres </td><td>C 1 </td><td>210 </td><td>2 174 </td><td>2 218 </td></tr><tr><td></td><td>C 2 </td><td>270 </td><td>2 795 </td><td>2 852 </td></tr><tr><td></td><td>C 3 </td><td>340 </td><td>3 519 </td><td>3 591 </td></tr><tr><td></td><td>C 4 </td><td>380 </td><td>3 933 </td><td>4 013 </td></tr></tbody></table></p><p></p><p>L'augmentation de salaire résultant de l'application du présent accord s'impute sur les indemnités différentielles créées pour maintenir le salaire en cas de réduction du temps de travail à 35 heures. Il est expressément rappelé qu'aucun salaire ne peut être inférieur au Smic. </p><p align=\"center\"><b>Article 3 </b></p><p>Le présent accord prend effet au 1 <sup>er </sup>avril 2003. </p><p>Il sera déposé, conformément à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">article L. 132-10 du code du travail</a>, et porté à la connaissance des notaires et des salariés, au moyen d'une copie qui sera envoyée dans tous les offices et devra être émargée par tous les membres du personnel. Il sera soumis à la procédure d'extension prévue à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647043&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L133-8 (Ab)\">article L. 133-8 du code du travail</a>, à l'initiative de la partie la plus diligente.</p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 3 2003-02-07 BO conventions collectives 2003-9",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-10 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-10",
+                      "articleId": "LEGIARTI000006647014",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    },
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L133-8 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L133-8",
+                      "articleId": "LEGIARTI000006647043",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1044576000000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -7589,13 +7589,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719312",
+              "cid": "KALISCTA000005719312",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grilles de salaires conventionnels au 1er avril 1997",
+              "dateModif": null,
+              "dateDebut": "1997-03-13",
+              "dateFin": "1998-02-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839248",
+                  "cid": "KALIARTI000005839248",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719312/KALIARTI000005839248",
+                  "pathTitle": [
+                    "Grilles de salaires conventionnels au 1er avril 1997"
+                  ],
+                  "content": "<p></p>   réunies en commission paritaire le 13 mars 1997, ont décidé d'adopter la grille des salaires conventionnels suivante, qui remplace l'avenant n° 4 figurant en annexe de la convention collective nationale du 17 décembre 1985. Cette grille est applicable à partir du 1er avril 1997.<p></p><p></p>Grille des salaires conventionnels au 1er avril 1997<p></p> (Base : 39 heures par semaine.)<p></p><p></p> Manutentionnaire, emballeur/conditionneur, agent de nettoyage<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 100  </TD><TD>      6 407      </TD></TR><TR><TD> 105  </TD><TD>      6 426      </TD></TR></TABLE><p></p> Employé de bureau, aide-comptable 1er échelon, emballeur/manutentionnaire, cariste 1er échelon<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 110  </TD><TD>       6 501     </TD></TR><TR><TD> 115  </TD><TD>       6 572     </TD></TR><TR><TD> 120  </TD><TD>       6 644     </TD></TR></TABLE><p></p> Cariste 2e échelon, magasinier fournitures<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 125  </TD><TD>       6 713     </TD></TR><TR><TD> 130  </TD><TD>       6 753     </TD></TR></TABLE><p></p> Conducteur/ramasseur, magasinier produits<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 135  </TD><TD>       6 846     </TD></TR><TR><TD> 140  </TD><TD>       6 944     </TD></TR><TR><TD> 145  </TD><TD>       7 042     </TD></TR></TABLE><p></p> Secrétaire<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 150  </TD><TD>       7 139     </TD></TR></TABLE><p></p> Chef de chaîne<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 155  </TD><TD>       7 235     </TD></TR></TABLE><p></p><p></p>   Peseur, agent de maintenance, aide-comptable 2e échelon, chauffeur longue distance occasionnel<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 160  </TD><TD>       7 332     </TD></TR><TR><TD> 165  </TD><TD>       7 432     </TD></TR><TR><TD> 170  </TD><TD>       7 532     </TD></TR><TR><TD> 175  </TD><TD>       7 633     </TD></TR><TR><TD> 180  </TD><TD>       7 731     </TD></TR><TR><TD> 185  </TD><TD>       7 830     </TD></TR><TR><TD> 190  </TD><TD>       7 928     </TD></TR><TR><TD> 195  </TD><TD>       8 026     </TD></TR></TABLE><p></p><p></p>   Acheteur, vendeur, acheteur/vendeur, mécanicien auto, conducteur frigo, chef d'équipe<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 200  </TD><TD>       8 141     </TD></TR><TR><TD> 205  </TD><TD>       8 224     </TD></TR></TABLE><p></p> Comptable I<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 210  </TD><TD>       8 304     </TD></TR><TR><TD> 215  </TD><TD>       8 384     </TD></TR><TR><TD> 220  </TD><TD>       8 462     </TD></TR><TR><TD> 225  </TD><TD>       8 540     </TD></TR><TR><TD> 230  </TD><TD>       8 618     </TD></TR><TR><TD> 235  </TD><TD>       8 693     </TD></TR><TR><TD> 240  </TD><TD>       8 768     </TD></TR><TR><TD> 245  </TD><TD>       8 843     </TD></TR></TABLE><p></p><p></p>   Conducteur grand routier, contremaître<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 250  </TD><TD>       8 916     </TD></TR><TR><TD> 255  </TD><TD>       9 027     </TD></TR><TR><TD> 260  </TD><TD>       9 138     </TD></TR><TR><TD> 265  </TD><TD>       9 250     </TD></TR><TR><TD> 270  </TD><TD>       9 362     </TD></TR></TABLE><p></p><p></p>   Attaché de direction<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 275  </TD><TD>       9 472     </TD></TR><TR><TD> 280  </TD><TD>       9 584     </TD></TR><TR><TD> 285  </TD><TD>       9 695     </TD></TR><TR><TD> 290  </TD><TD>       9 807     </TD></TR><TR><TD> 295  </TD><TD>       9 918     </TD></TR><TR><TD> 300  </TD><TD>      10 030     </TD></TR><TR><TD> 305  </TD><TD>      10 140     </TD></TR><TR><TD> 310  </TD><TD>      10 252     </TD></TR><TR><TD> 315  </TD><TD>      10 363     </TD></TR><TR><TD> 320  </TD><TD>      10 475     </TD></TR><TR><TD> 325  </TD><TD>      10 586     </TD></TR><TR><TD> 330  </TD><TD>      10 697     </TD></TR><TR><TD> 335  </TD><TD>      10 809     </TD></TR><TR><TD> 340  </TD><TD>      10 921     </TD></TR><TR><TD> 345  </TD><TD>      11 032     </TD></TR><TR><TD> 350  </TD><TD>      11 143     </TD></TR><TR><TD> 355  </TD><TD>      11 255     </TD></TR><TR><TD> 360  </TD><TD>      11 365     </TD></TR><TR><TD> 365  </TD><TD>      11 478     </TD></TR><TR><TD> 370  </TD><TD>      11 589     </TD></TR><TR><TD> 375  </TD><TD>      11 700     </TD></TR><TR><TD> 380  </TD><TD>      11 811     </TD></TR><TR><TD> 385  </TD><TD>      11 923     </TD></TR><TR><TD> 390  </TD><TD>      12 034     </TD></TR><TR><TD> 395  </TD><TD>      12 146     </TD></TR><TR><TD> 400  </TD><TD>      12 256     </TD></TR><TR><TD> 405  </TD><TD>      12 368     </TD></TR><TR><TD> 410  </TD><TD>      12 479     </TD></TR><TR><TD> 415  </TD><TD>      12 591     </TD></TR><TR><TD> 420  </TD><TD>      12 703     </TD></TR><TR><TD> 425  </TD><TD>      12 814     </TD></TR><TR><TD> 430  </TD><TD>      12 925     </TD></TR><TR><TD> 435  </TD><TD>      13 036     </TD></TR><TR><TD> 440  </TD><TD>      13 149     </TD></TR><TR><TD> 445  </TD><TD>      13 259     </TD></TR></TABLE><p></p> Chef d'entrepôt, cadre commercial, comptable II<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 450  </TD><TD>     13 371      </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 5 1997-03-13 BO conventions collectives 97-17, étendu à l'exclusion du secteur des légumes frais prêts à l'emploi par arrêté du 25 juin 1997 JORF 4 juillet 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 858211200000,
+                  "dateFin": 888451200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7629,13 +7703,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719314",
+              "cid": "KALISCTA000005719314",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grilles de salaires conventionnels au 1er avril 1998",
+              "dateModif": null,
+              "dateDebut": "1998-02-26",
+              "dateFin": "2001-04-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839250",
+                  "cid": "KALIARTI000005839250",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719314/KALIARTI000005839250",
+                  "pathTitle": [
+                    "Grilles de salaires conventionnels au 1er avril 1998"
+                  ],
+                  "content": "<p></p>   réunies en commission paritaire le 26 février 1998, ont décidé d'adopter la grille des salaires conventionnels suivante, qui remplace l'avenant n° 5 figurant en annexe de la convention collective nationale du 17 décembre 1985. Cette grille est applicable à partir du 1er avril 1998.<p></p><p></p>Grille des salaires conventionnels au 1er avril 1998<p></p> (salaire brut minimum pour 39h par semaine)<p></p><p></p> Manutentionnaire, emballeur/conditionneur, agent de nettoyage<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 100  </TD><TD>      6 664      </TD></TR><TR><TD> 105  </TD><TD>      6 664      </TD></TR></TABLE><p></p> Employé de bureau, aide-comptable 1er échelon, emballeur/manutentionnaire, cariste 1er échelon<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 110  </TD><TD>       6 679     </TD></TR><TR><TD> 115  </TD><TD>       6 679     </TD></TR><TR><TD> 120  </TD><TD>       6 679     </TD></TR></TABLE><p></p> Cariste 2e échelon, magasinier fournitures<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 125  </TD><TD>       6 713     </TD></TR><TR><TD> 130  </TD><TD>       6 753     </TD></TR></TABLE><p></p> Conducteur/ramasseur, magasinier produits<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 135  </TD><TD>       6 846     </TD></TR><TR><TD> 140  </TD><TD>       6 944     </TD></TR><TR><TD> 145  </TD><TD>       7 042     </TD></TR></TABLE><p></p> Secrétaire<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 150  </TD><TD>       7 139     </TD></TR></TABLE><p></p> Chef de chaîne<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 155  </TD><TD>       7 235     </TD></TR></TABLE><p></p><p></p>   Peseur, agent de maintenance, aide-comptable 2e échelon, chauffeur longue distance occasionnel<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 160  </TD><TD>       7 332     </TD></TR><TR><TD> 165  </TD><TD>       7 432     </TD></TR><TR><TD> 170  </TD><TD>       7 532     </TD></TR><TR><TD> 175  </TD><TD>       7 633     </TD></TR><TR><TD> 180  </TD><TD>       7 731     </TD></TR><TR><TD> 185  </TD><TD>       7 830     </TD></TR><TR><TD> 190  </TD><TD>       7 928     </TD></TR><TR><TD> 195  </TD><TD>       8 026     </TD></TR></TABLE><p></p><p></p>   Acheteur, vendeur, acheteur/vendeur, mécanicien auto, conducteur frigo, chef d'équipe<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 200  </TD><TD>       8 141     </TD></TR><TR><TD> 205  </TD><TD>       8 224     </TD></TR></TABLE><p></p> Comptable I<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 210  </TD><TD>       8 304     </TD></TR><TR><TD> 215  </TD><TD>       8 384     </TD></TR><TR><TD> 220  </TD><TD>       8 462     </TD></TR><TR><TD> 225  </TD><TD>       8 540     </TD></TR><TR><TD> 230  </TD><TD>       8 618     </TD></TR><TR><TD> 235  </TD><TD>       8 693     </TD></TR><TR><TD> 240  </TD><TD>       8 768     </TD></TR><TR><TD> 245  </TD><TD>       8 843     </TD></TR></TABLE><p></p><p></p>   Conducteur grand routier, contremaître<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 250  </TD><TD>       8 916     </TD></TR><TR><TD> 255  </TD><TD>       9 027     </TD></TR><TR><TD> 260  </TD><TD>       9 138     </TD></TR><TR><TD> 265  </TD><TD>       9 250     </TD></TR><TR><TD> 270  </TD><TD>       9 362     </TD></TR></TABLE><p></p><p></p>   Attaché de direction<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 275  </TD><TD>       9 472     </TD></TR><TR><TD> 280  </TD><TD>       9 584     </TD></TR><TR><TD> 285  </TD><TD>       9 695     </TD></TR><TR><TD> 290  </TD><TD>       9 807     </TD></TR><TR><TD> 295  </TD><TD>       9 918     </TD></TR><TR><TD> 300  </TD><TD>      10 030     </TD></TR><TR><TD> 305  </TD><TD>      10 140     </TD></TR><TR><TD> 310  </TD><TD>      10 252     </TD></TR><TR><TD> 315  </TD><TD>      10 363     </TD></TR><TR><TD> 320  </TD><TD>      10 475     </TD></TR><TR><TD> 325  </TD><TD>      10 586     </TD></TR><TR><TD> 330  </TD><TD>      10 697     </TD></TR><TR><TD> 335  </TD><TD>      10 809     </TD></TR><TR><TD> 340  </TD><TD>      10 921     </TD></TR><TR><TD> 345  </TD><TD>      11 032     </TD></TR><TR><TD> 350  </TD><TD>      11 143     </TD></TR><TR><TD> 355  </TD><TD>      11 255     </TD></TR><TR><TD> 360  </TD><TD>      11 365     </TD></TR><TR><TD> 365  </TD><TD>      11 478     </TD></TR><TR><TD> 370  </TD><TD>      11 589     </TD></TR><TR><TD> 375  </TD><TD>      11 700     </TD></TR><TR><TD> 380  </TD><TD>      11 811     </TD></TR><TR><TD> 385  </TD><TD>      11 923     </TD></TR><TR><TD> 390  </TD><TD>      12 034     </TD></TR><TR><TD> 395  </TD><TD>      12 146     </TD></TR><TR><TD> 400  </TD><TD>      12 256     </TD></TR><TR><TD> 405  </TD><TD>      12 368     </TD></TR><TR><TD> 410  </TD><TD>      12 479     </TD></TR><TR><TD> 415  </TD><TD>      12 591     </TD></TR><TR><TD> 420  </TD><TD>      12 703     </TD></TR><TR><TD> 425  </TD><TD>      12 814     </TD></TR><TR><TD> 430  </TD><TD>      12 925     </TD></TR><TR><TD> 435  </TD><TD>      13 036     </TD></TR><TR><TD> 440  </TD><TD>      13 149     </TD></TR><TR><TD> 445  </TD><TD>      13 259     </TD></TR></TABLE><p></p> Chef d'entrepôt, cadre commercial, comptable II<p></p><TABLE><TR><TD> Coef </TD><TD> salaire mensuel </TD></TR><TR><TD></TD><TD>  brut minimum   </TD></TR><TR><TD> 450  </TD><TD>     13 371      </TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 6 août 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 6 août 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 6 1998-02-26 BO conventions collectives 98-25 étendu par arrêté du 6 août 1998 JORF 18 août 1998 à l'exception du secteur des légumes frais prêts à l'emploi",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 888451200000,
+                  "dateFin": 988243200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7649,13 +7797,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719315",
+              "cid": "KALISCTA000005719315",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grilles de salaires conventionnels au 1er novembre 2001",
+              "dateModif": null,
+              "dateDebut": "2001-11-06",
+              "dateFin": "2003-09-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839252",
+                  "cid": "KALIARTI000005839252",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719315/KALIARTI000005839252",
+                  "pathTitle": [
+                    "Grilles de salaires conventionnels au 1er novembre 2001"
+                  ],
+                  "content": "<p></p>   Ont décidé d'adopter la grille des salaires conventionnels suivante, qui remplace l'avenant n° 6 figurant en annexe de la convention collective nationale du 17 décembre 1985. Cette grille est applicable à partir du 1er novembre 2001. Lorsqu'une entreprise appliquera l'accord cadre de branche relatif à l'aménagement et à la réduction du temps de travail en date du 7 juin 2001, la grille de référence passera automatiquement de 39 heures par semaine à 35 heures par semaine.<p></p> (Suivent les signatures.) Grille des salaires conventionnels au 1er novembre 2001<p></p>    -------------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD>COEF.</TD><TD>SALAIRE </TD><TD>  SALAIRE   </TD><TD>     EMPLOI CORRESPONDANT      </TD></TR><TR><TD></TD><TD></TD><TD>(1)     </TD><TD>  (1)       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>(en frs)</TD><TD> (en euros) </TD><TD> dans la convention collective </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>    Manutentionnaire.          </TD></TR><TR><TD></TD><TD>100  </TD><TD>  7 389 </TD><TD> 1 126,45   </TD><TD>    Emballeur/conditionneur.   </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>    Agent de nettoyage.        </TD></TR><TR><TD></TD><TD>105  </TD><TD>  7 393 </TD><TD> 1 126,99   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>    Employé de bureau.         </TD></TR><TR><TD></TD><TD>110  </TD><TD>  7 396 </TD><TD> 1 127,54   </TD><TD>    Aide-comptable 1er échelon.</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>    Emballeur/manutentionnaire.</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>    Cariste 1er échelon.       </TD></TR><TR><TD></TD><TD>115  </TD><TD>  7 400 </TD><TD> 1 128,09   </TD><TD></TD></TR><TR><TD></TD><TD>120  </TD><TD>  7 403 </TD><TD> 1 128,64   </TD><TD></TD></TR><TR><TD></TD><TD>125  </TD><TD>  7 407 </TD><TD> 1 129,19   </TD><TD>     Cariste 2e échelon.       </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>     Magasinier fournitures.   </TD></TR><TR><TD></TD><TD>130  </TD><TD>  7 411 </TD><TD> 1 129,74   </TD><TD></TD></TR><TR><TD></TD><TD>135  </TD><TD>  7 414 </TD><TD> 1 130,29   </TD><TD>     Conducteur/ramasseur.     </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>     Magasinier produits       </TD></TR><TR><TD></TD><TD>140  </TD><TD>  7 418 </TD><TD> 1 130,84   </TD><TD></TD></TR><TR><TD></TD><TD>145  </TD><TD>  7 421 </TD><TD> 1 131,39   </TD><TD></TD></TR><TR><TD></TD><TD>150  </TD><TD>  7 425 </TD><TD> 1 131,87   </TD><TD>     Secrétaire.               </TD></TR><TR><TD></TD><TD>155  </TD><TD>  7 524 </TD><TD> 1 147,09   </TD><TD>     Chef de chaîne.          </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>     Peseur. </TD></TR><TR><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>     Agent de maintenance.     </TD></TR><TR><TD></TD><TD> 160 </TD><TD>  7 625 </TD><TD> 1 162,47   </TD><TD>     Aide-comptable 2e échelon.</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>     Chauffeur longue distance </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>     occasionnel.              </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD> 165 </TD><TD>  7 729 </TD><TD> 1 178,32   </TD><TD></TD></TR><TR><TD></TD><TD> 170 </TD><TD>  7 833 </TD><TD> 1 194,18   </TD><TD></TD></TR><TR><TD></TD><TD> 175 </TD><TD>  7 938 </TD><TD> 1 210,19   </TD><TD></TD></TR><TR><TD></TD><TD> 180 </TD><TD>  8 040 </TD><TD> 1 225,73   </TD><TD></TD></TR><TR><TD></TD><TD> 185 </TD><TD>  8 143 </TD><TD> 1 241,42   </TD><TD></TD></TR><TR><TD></TD><TD> 190 </TD><TD>  8 244 </TD><TD> 1 256,80   </TD><TD></TD></TR><TR><TD></TD><TD> 195 </TD><TD>  8 347 </TD><TD> 1 272,50   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>         Acheteur.             </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>         Vendeur.              </TD></TR><TR><TD></TD><TD> 200 </TD><TD>  8 466 </TD><TD> 1 290,57   </TD><TD>         Acheteur/vendeur.     </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>         Mécanicien auto.      </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>         Conducteur frigo.     </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>         Chef d'équipe.        </TD></TR><TR><TD></TD><TD> 205 </TD><TD>  8 553 </TD><TD> 1 303,89   </TD><TD></TD></TR><TR><TD></TD><TD> 210 </TD><TD>  8 636 </TD><TD> 1 316,57   </TD><TD>         Comptable I.          </TD></TR><TR><TD></TD><TD> 215 </TD><TD>  8 718 </TD><TD> 1 329,10   </TD><TD></TD></TR><TR><TD></TD><TD> 220 </TD><TD>  8 799 </TD><TD> 1 341,47   </TD><TD></TD></TR><TR><TD></TD><TD> 225 </TD><TD>  8 882 </TD><TD> 1 353,99   </TD><TD></TD></TR><TR><TD></TD><TD> 230 </TD><TD>  8 962 </TD><TD> 1 366,20   </TD><TD></TD></TR><TR><TD></TD><TD> 235 </TD><TD>  9 040 </TD><TD> 1 378,09   </TD><TD></TD></TR><TR><TD></TD><TD> 240 </TD><TD>  9 118 </TD><TD> 1 389,98   </TD><TD></TD></TR><TR><TD></TD><TD> 245 </TD><TD>  9 197 </TD><TD> 1 402,03   </TD><TD></TD></TR><TR><TD></TD><TD> 250 </TD><TD>  9 273 </TD><TD> 1 413,60   </TD><TD>    Conducteur grand routier.  </TD></TR><TR><TD></TD><TD> 255 </TD><TD>  9 388 </TD><TD> 1 431,20   </TD><TD></TD></TR><TR><TD></TD><TD> 260 </TD><TD>  9 504 </TD><TD> 1 448,80   </TD><TD></TD></TR><TR><TD></TD><TD> 265 </TD><TD>  9 620 </TD><TD> 1 466,56   </TD><TD></TD></TR><TR><TD></TD><TD> 270 </TD><TD>  9 736 </TD><TD> 1 484,32   </TD><TD></TD></TR><TR><TD></TD><TD> 275 </TD><TD>  9 851 </TD><TD> 1 501,76   </TD><TD>    Attaché de direction.      </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD> 280 </TD><TD>  9 967 </TD><TD> 1 519,51   </TD><TD></TD></TR><TR><TD></TD><TD> 285 </TD><TD> 10 083 </TD><TD> 1 537,11   </TD><TD></TD></TR><TR><TD></TD><TD> 290 </TD><TD> 10 199 </TD><TD> 1 554,87   </TD><TD></TD></TR><TR><TD></TD><TD> 295 </TD><TD> 10 315 </TD><TD> 1 572,47   </TD><TD></TD></TR><TR><TD></TD><TD> 300 </TD><TD> 10 431 </TD><TD> 1 590,23   </TD><TD></TD></TR><TR><TD></TD><TD> 305 </TD><TD> 10 546 </TD><TD> 1 607,67   </TD><TD></TD></TR><TR><TD></TD><TD> 310 </TD><TD> 10 662 </TD><TD> 1 625,42   </TD><TD></TD></TR><TR><TD></TD><TD> 315 </TD><TD> 10 778 </TD><TD> 1 643,02   </TD><TD></TD></TR><TR><TD></TD><TD> 320 </TD><TD> 10 894 </TD><TD> 1 660,78   </TD><TD></TD></TR><TR><TD></TD><TD> 325 </TD><TD> 11 009 </TD><TD> 1 678,38   </TD><TD></TD></TR><TR><TD></TD><TD> 330 </TD><TD> 11 125 </TD><TD> 1 695,98   </TD><TD></TD></TR><TR><TD></TD><TD> 335 </TD><TD> 11 241 </TD><TD> 1 713,73   </TD><TD></TD></TR><TR><TD></TD><TD> 340 </TD><TD> 11 358 </TD><TD> 1 731,49   </TD><TD></TD></TR><TR><TD></TD><TD> 345 </TD><TD> 11 473 </TD><TD> 1 749,09   </TD><TD></TD></TR><TR><TD></TD><TD> 350 </TD><TD> 11 589 </TD><TD> 1 766,69   </TD><TD></TD></TR><TR><TD></TD><TD> 355 </TD><TD> 11 705 </TD><TD> 1 784,45   </TD><TD></TD></TR><TR><TD></TD><TD> 360 </TD><TD> 11 820 </TD><TD> 1 801,89   </TD><TD></TD></TR><TR><TD></TD><TD> 365 </TD><TD> 11 937 </TD><TD> 1 819,80   </TD><TD></TD></TR><TR><TD></TD><TD> 370 </TD><TD> 12 053 </TD><TD> 1 837,40   </TD><TD></TD></TR><TR><TD></TD><TD> 375 </TD><TD> 12 168 </TD><TD> 1 855,00   </TD><TD></TD></TR><TR><TD></TD><TD> 380 </TD><TD> 12 283 </TD><TD> 1 872,60   </TD><TD></TD></TR><TR><TD></TD><TD> 385 </TD><TD> 12 400 </TD><TD> 1 890,36   </TD><TD></TD></TR><TR><TD></TD><TD> 390 </TD><TD> 12 515 </TD><TD> 1 907,95   </TD><TD></TD></TR><TR><TD></TD><TD> 395 </TD><TD> 12 632 </TD><TD> 1 925,71   </TD><TD></TD></TR><TR><TD></TD><TD> 400 </TD><TD> 12 746 </TD><TD> 1 943,15   </TD><TD></TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD> 405 </TD><TD> 12 863 </TD><TD> 1 960,91   </TD><TD></TD></TR><TR><TD></TD><TD> 410 </TD><TD> 12 978 </TD><TD> 1 978,51   </TD><TD></TD></TR><TR><TD></TD><TD> 415 </TD><TD> 13 095 </TD><TD> 1 996,26   </TD><TD></TD></TR><TR><TD></TD><TD> 420 </TD><TD> 13 211 </TD><TD> 2 014,02   </TD><TD></TD></TR><TR><TD></TD><TD> 425 </TD><TD> 13 327 </TD><TD> 2 031,62   </TD><TD></TD></TR><TR><TD></TD><TD> 430 </TD><TD> 13 442 </TD><TD> 2 049,22   </TD><TD></TD></TR><TR><TD></TD><TD> 435 </TD><TD> 13 557 </TD><TD> 2 066,82   </TD><TD></TD></TR><TR><TD></TD><TD> 440 </TD><TD> 13 675 </TD><TD> 2 084,73   </TD><TD></TD></TR><TR><TD></TD><TD> 445 </TD><TD> 13 789 </TD><TD> 2 102,17   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>         Chef d'entrepôt.     </TD></TR><TR><TD></TD><TD> 450 </TD><TD> 13 906 </TD><TD> 2 119,93   </TD><TD>         Cadre commercial.     </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>         Comptable II. </TD></TR><TR><TD></TD></TR><TR><TD></TD><TD>(1) Salaire brut minimum, sans ancienneté, pour 39 heures  </TD></TR><TR><TD></TD><TD>par semaine.</TD></TR><TR><TD></TD></TR></TABLE><p></p>    -------------------------------------------------------------",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 7 2001-11-06 BO conventions collectives 2001-51 étendu par arrêté du 19 avril 2002 JORF 30 avril 2002 *à l'exception du secteur des légumes frais prêts à l'emploi*",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1005004800000,
+                  "dateFin": 1063152000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

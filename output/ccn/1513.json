@@ -49880,13 +49880,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728456",
+              "cid": "KALISCTA000005728456",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des salaires minima 1997 et 1998",
+              "dateModif": null,
+              "dateDebut": "1998-11-05",
+              "dateFin": "2002-12-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861916",
+                  "cid": "KALIARTI000005861916",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728456/KALIARTI000005861916",
+                  "pathTitle": [
+                    "Grille des salaires minima 1997 et 1998"
+                  ],
+                  "content": "Article 1er<p></p> Champ d'application<p></p><p></p>   Le présent avenant s'applique au personnel des entreprises entrant dans le champ d'application de la convention collective des eaux embouteillées, des BRSA et de bière dans les conditions prévues par celle-ci et par l'accord du 12 juillet 1989.<p></p><p></p>   Il constitue la treizième actualisation de la grille des salaires négociée le 24 mai 1988.<p></p>Article 2<p></p> Salaires minima<p></p><p></p>   Les salaires minima mensuels bruts sont fixés en fonction de la classification des salariés et en application de la grille suivante :<p></p><p></p><TABLE><TR><TD>éch.</TD><TD>1/9/1997</TD><TD>1/7/1998</TD></TR><TR><TD>      NIVEAU I        </TD></TR><TR><TD> 1  </TD><TD>   6 530</TD><TD>   6 800</TD></TR><TR><TD> 2  </TD><TD>   6 641</TD><TD>   6 871</TD></TR><TR><TD> 3  </TD><TD>   6 873</TD><TD>   6 942</TD></TR><TR><TD>      NIVEAU II       </TD></TR><TR><TD> 1  </TD><TD>   6 992</TD><TD>   7 062</TD></TR><TR><TD> 2  </TD><TD>   7 178</TD><TD>   7 250</TD></TR><TR><TD> 3  </TD><TD>   7 365</TD><TD>   7 439</TD></TR><TR><TD>      NIVEAU III      </TD></TR><TR><TD> 1  </TD><TD>   7 613</TD><TD>   7 689</TD></TR><TR><TD> 2  </TD><TD>   7 799</TD><TD>   7 876</TD></TR><TR><TD> 3  </TD><TD>   7 984</TD><TD>   8 064</TD></TR><TR><TD>      NIVEAU IV       </TD></TR><TR><TD> 1  </TD><TD>   8 480</TD><TD>   8 565</TD></TR><TR><TD> 2  </TD><TD>   8 728</TD><TD>   8 815</TD></TR><TR><TD>      NIVEAU V        </TD></TR><TR><TD> 1  </TD><TD>   9 347</TD><TD>   9 440</TD></TR><TR><TD> 2  </TD><TD>   9 595</TD><TD>   9 691</TD></TR><TR><TD> 3  </TD><TD>   9 842</TD><TD>   9 941</TD></TR></TABLE><p></p><TABLE><TR><TD>      NIVEAU VI       </TD></TR><TR><TD> 1  </TD><TD>  10 462</TD><TD>  10 567</TD></TR><TR><TD> 2  </TD><TD>  10 957</TD><TD>  11 067</TD></TR><TR><TD> 3  </TD><TD>  11 701</TD><TD>  11 818</TD></TR><TR><TD>      NIVEAU VII      </TD></TR><TR><TD> 1  </TD><TD>  12 568</TD><TD>  12 693</TD></TR><TR><TD> 2  </TD><TD>  13 434</TD><TD>  13 568</TD></TR><TR><TD> 3  </TD><TD>  14 301</TD><TD>  14 444</TD></TR><TR><TD>      NIVEAU VIII     </TD></TR><TR><TD> 1  </TD><TD>  15 416</TD><TD>  15 570</TD></TR><TR><TD> 2  </TD><TD>  16 531</TD><TD>  16 696</TD></TR><TR><TD> 3  </TD><TD>  18 575</TD><TD>  18 761</TD></TR></TABLE><p></p><p></p>   I 3 et au-dessus + 1% au 1er juillet 1998. Article 3 Durée de l'accord<p></p>   Les parties ont convenu de se rencontrer avant la fin du 1er trimestre 1999 pour négocier les salaires minima conventionnels 1999 et pour étudier l'évolution de la grille conventionnelle.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1998-11-05 BO conventions collectives 99-6 étendu par arrêté du 23 mars 1999 JORF 1er avril 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 910224000000,
+                  "dateFin": 1039046400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -49900,13 +49974,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728457",
+              "cid": "KALISCTA000005728457",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des salaires minima mensuels",
+              "dateModif": null,
+              "dateDebut": "2002-01-25",
+              "dateFin": "2003-04-29",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861917",
+                  "cid": "KALIARTI000005861917",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728457/KALIARTI000005861917",
+                  "pathTitle": [
+                    "Grille des salaires minima mensuels"
+                  ],
+                  "content": "Article 1er<p></p> Champ d'application<p></p><p></p>   Le présent avenant s'applique au personnel des entreprises entrant dans le champ d'application de la convention collective des eaux embouteillées, des boissons rafraîchissantes sans alcool et de bière, dans les conditions prévues par celle-ci et par l'accord du 12 juillet 1989.<p></p><p></p>   Il constitue la 14e actualisation de la grille des salaires négociée le 24 mai 1988.<p></p> Article 2<p></p> Salaires minima<p></p><p></p>   Les salaires minima mensuels bruts sont fixés en fonction de la classification des salariés et en application de la grille suivante.<p></p> Grille des salaires minima mensuels<p></p> ---------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD></TD><TD> SALAIRE MENSUEL AU 1er OCTOBRE 2001</TD></TR><TR><TD></TD><TD></TD><TD>     (en francs)  </TD><TD>    (en euros)   </TD></TR><TR><TD></TD><TD>    1      </TD><TD>        7 389     </TD><TD>     1 126,45    </TD></TR><TR><TD>  I   </TD><TD>    2      </TD><TD>        7 435     </TD><TD>     1 133,46    </TD></TR><TR><TD></TD><TD>    3      </TD><TD>        7 511     </TD><TD>     1 145,04    </TD></TR><TR><TD></TD><TD>    1      </TD><TD>        7 641     </TD><TD>     1 164,86    </TD></TR><TR><TD>  II  </TD><TD>    2      </TD><TD>        7 769     </TD><TD>     1 184,38    </TD></TR><TR><TD></TD><TD>    3      </TD><TD>        7 923     </TD><TD>     1 207,85    </TD></TR><TR><TD></TD><TD>    1      </TD><TD>        8 158     </TD><TD>     1 243,68    </TD></TR><TR><TD>  III </TD><TD>    2      </TD><TD>        8 356     </TD><TD>     1 273,86    </TD></TR><TR><TD></TD><TD>    3      </TD><TD>        8 555     </TD><TD>     1 304,20    </TD></TR><TR><TD>   IV </TD><TD>    1      </TD><TD>        9 087     </TD><TD>     1 385,31    </TD></TR><TR><TD></TD><TD>    2      </TD><TD>        9 352     </TD><TD>     1 425,70    </TD></TR><TR><TD></TD><TD>    1      </TD><TD>       10 015     </TD><TD>     1 526,78    </TD></TR><TR><TD>   V  </TD><TD>    2      </TD><TD>       10 282     </TD><TD>     1 567,48    </TD></TR><TR><TD></TD><TD>    3      </TD><TD>       10 547     </TD><TD>     1 607,88    </TD></TR><TR><TD></TD><TD>    1      </TD><TD>       11 221     </TD><TD>     1 710,63    </TD></TR><TR><TD>  VI  </TD><TD>    2      </TD><TD>       11 742     </TD><TD>     1 790,06    </TD></TR><TR><TD></TD><TD>    3      </TD><TD>       12 538     </TD><TD>     1 911,41    </TD></TR><TR><TD></TD><TD>    1      </TD><TD>       13 467     </TD><TD>     2 053,03    </TD></TR><TR><TD>  VII </TD><TD>    2      </TD><TD>       14 395     </TD><TD>     2 194,50    </TD></TR><TR><TD></TD><TD>    3      </TD><TD>       15 325     </TD><TD>     2 336,28    </TD></TR><TR><TD></TD><TD>    1      </TD><TD>       16 520     </TD><TD>     2 518,46    </TD></TR><TR><TD>  VIII</TD><TD>    2      </TD><TD>       17 714     </TD><TD>     2 700,48    </TD></TR><TR><TD></TD><TD>    3      </TD><TD>       19 905     </TD><TD>     3 034,50    </TD></TR></TABLE><p></p> ---------------------------------------------------------<p></p>   (*) 1 Euros = 6,55957 F : conversion effectuée selon le règlement européen 1103/97 du 17 juin 1997 (JOCE du 19 juin 1997). Lorsque la 3e décimale est égale ou supérieure à 5, on arrondit au cent supérieur, lorsqu'elle est inférieure à 5, on arrondit au cent inférieur.<p></p><p></p>   Rémunération, base 38 heures : la rémunération vaut pour les horaires 35 heures, la réduction d'horaire de 38 heures à 35 heures ayant été faite dans le cadre de l'accord de branche qui prévoit le maintien du salaire antérieur, ce qui inclut, le cas échéant, l'indemnité de réduction d'horaire.<p></p> Article 3<p></p> Publicité<p></p><p></p>   Le présent avenant est déposé en 5 exemplaires à la direction départementale du travail et de l'emploi.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 1 2002-01-25 BO conventions collectives 2002-7 étendu par arrêté du 25 juin 2002 JORF 4 juillet 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1011916800000,
+                  "dateFin": 1051574400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -49920,13 +50068,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728458",
+              "cid": "KALISCTA000005728458",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des salaires minima mensuels à compter du 1er janvier 2003 et 1er mai 2003",
+              "dateModif": null,
+              "dateDebut": "2003-04-29",
+              "dateFin": "2003-10-30",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861919",
+                  "cid": "KALIARTI000005861919",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728458/KALIARTI000005861919",
+                  "pathTitle": [
+                    "Grille des salaires minima mensuels à compter du 1er janvier 2003 et 1er mai 2003"
+                  ],
+                  "content": "Article 1er<p></p> Champ d'application<p></p><p></p>   Le présent avenant s'applique au personnel des entreprises entrant dans le champ d'application de la convention collective des eaux embouteillées, des BRSA et de bière dans les conditions prévues par celle-ci et par l'accord du 12 juillet 1989.<p></p><p></p>   Il constitue la 15e actualisation de la grille des salaires négociée le 24 mai 1988.<p></p> Article 2<p></p> Salaires minima<p></p><p></p>   Les salaires minima mensuels bruts sont fixés en fonction de la classification des salariés et en application de la grille suivante :<p></p><p></p>   Salaires minima conventionnels<p></p><p></p><p></p>   NIVEAU : I.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 154,27.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 171,58.<p></p><p></p><p></p>   NIVEAU : I.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 161,42.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 178,81.<p></p><p></p><p></p>   NIVEAU : I.<p></p><p></p>   ECHELON : 3.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 173,25.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 190,84.<p></p><p></p><p></p>   NIVEAU : II.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 193,48.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 211,38.<p></p><p></p><p></p>   NIVEAU : II.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 213,41.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 231,61.<p></p><p></p><p></p>   NIVEAU : II.<p></p><p></p>   ECHELON : 3.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 237,37.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 255,94.<p></p><p></p><p></p>   NIVEAU : III.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 273,96.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 293,07.<p></p><p></p><p></p>   NIVEAU : III.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 304,77.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 324,34.<p></p><p></p><p></p>   NIVEAU : III.<p></p><p></p>   ECHELON : 3.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 335,75.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 355,78.<p></p><p></p><p></p>   NIVEAU : IV.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 418,56.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 439,84.<p></p><p></p><p></p>   NIVEAU : IV.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 459,80.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 481,70.<p></p><p></p><p></p>   NIVEAU : V.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 563,00.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 586,45.<p></p><p></p><p></p>   NIVEAU : V.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 604,56.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 628,63.<p></p><p></p><p></p>   NIVEAU : V.<p></p><p></p>   ECHELON : 3.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 604,56.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 670,49.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 750,71.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 776,97.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 831,81.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 859,29.<p></p><p></p><p></p>   NIVEAU : VI.<p></p><p></p>   ECHELON : 3.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 1 955,71.<p></p><p></p>   1er mai 2003 + 1,5 % : 1 985,05.<p></p><p></p><p></p>   NIVEAU : VII.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 2 100,30.<p></p><p></p>   1er mai 2003 + 1,5 % : 2 131,81.<p></p><p></p><p></p>   NIVEAU : VII.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 2 244,74.<p></p><p></p>   1er mai 2003 + 1,5 % : 2 278,42.<p></p><p></p><p></p>   NIVEAU : VII.<p></p><p></p>   ECHELON : 3.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 2 389,50.<p></p><p></p>   1er mai 2003 + 1,5 % : 2 425,34.<p></p><p></p><p></p>   NIVEAU : VIII.<p></p><p></p>   ECHELON : 1.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 2 575,51.<p></p><p></p>   1er mai 2003 + 1,5 % : 2 614,14.<p></p><p></p><p></p>   NIVEAU : VIII.<p></p><p></p>   ECHELON : 2.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 2 761,35.<p></p><p></p>   1er mai 2003 + 1,5 % : 2 802,77.<p></p><p></p><p></p>   NIVEAU : VIII.<p></p><p></p>   ECHELON : 3.<p></p><p></p>   1er janvier 2003 + 2,1 % et + 4,16 Euros : 3 102,38.<p></p><p></p>   1er mai 2003 + 1,5 % : 3 148,92.<p></p><p></p><p></p>   Rémunération : base 38 heures.<p></p><p></p>   La rémunération vaut pour les horaires 35 heures, la réduction d'horaire de 38 heures à 35 heures ayant été faite dans le cadre de l'accord de branche, qui prévoit le maintien du salaire antérieur, ce qui inclut, le cas échéant, l'indemnité de réduction d'horaire.<p></p> Article 3<p></p> Durée de l'accord<p></p><p></p>   Les parties sont convenues de se rencontrer en septembre 2003 pour établir le constat de la situation.<p></p> Article 4<p></p> Publicité<p></p><p></p>   Le présent avenant est déposé en 5 exemplaires à la direction départementale du travail et de l'emploi.<p></p><p></p>   Fait à Paris, le 29 avril 2003.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 11 décembre 2003 art. 1 : les dispositions de l'accord du 29 avril 2003 (salaires) conclu dans le cadre de la convention collective susvisée sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée qui instaure une garantie de rémunération mensuelle.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 11 décembre 2003 art. 1 : les dispositions de l'accord du 29 avril 2003 (salaires) conclu dans le cadre de la convention collective susvisée sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée qui instaure une garantie de rémunération mensuelle.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2003-04-29 BO conventions collectives 2003-33 étendu par arrêté du 11 décembre 2003 JORF 20 décembre 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1051574400000,
+                  "dateFin": 1067472000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

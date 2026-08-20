@@ -26302,13 +26302,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719521",
+              "cid": "KALISCTA000005719521",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "*Salaires au 1er avril et au 1er octobre 1986*",
+              "dateModif": null,
+              "dateDebut": "1986-02-05",
+              "dateFin": "1986-11-13",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839697",
+                  "cid": "KALIARTI000005839697",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719521/KALIARTI000005839697",
+                  "pathTitle": [
+                    "*Salaires au 1er avril et au 1er octobre 1986*"
+                  ],
+                  "content": "<p></p>   L'objet du présent accord est de définir à compter du 1er avril 1986 les salaires minimaux des personnels des cabinets d'experts-comptables et de comptables agréés en application de la convention collective nationale du 9 décembre 1974, modifiée par l'avenant du 13 décembre 1984 relatif aux classifications.<p></p><p></p>Article 1 Rémunération minimale des assistants(es)    En application de l'article 5.3 de la convention collective, les rémunérations minimales annuelles des assistants(es) s'établissent à partir des valeurs de points suivantes :<p></p><p></p>   1° A effet du 1er avril 1986 :<p></p><p></p>   - valeur du coefficient 100 : 398 F ;<p></p><p></p>   - valeur du coefficient différentiel : 238,80 F ;<p></p><p></p>   2° Valeur au 1er octobre 1986 :<p></p><p></p>   - valeur du coefficient 100 : 402 F ;<p></p><p></p>   - valeur du coefficient différentiel : 241,20 F ;<p></p><p></p>   3° Pour l'ensemble de l'année 1986, la rémunération annuelle ne pourra être inférieure, pour douze mois de travail effectif pour un salarié à temps plein, à 54 960 F et, pour le coefficient 160, à 58 500 F.<p></p>Article 2 Rémunération minimale des experts-comptables et des stagiaires    En application de l'article 5.4 de la convention collective, les rémunérations minimales annuelles des experts-comptables et des stagiaires s'établissent à partir des valeurs de points suivantes :<p></p><p></p>   1° A compter du 1er avril 1986 :<p></p><p></p>   - valeur de l'indice 10 : 58 435,50 F ;<p></p><p></p>   - valeur du point d'indice différentiel : 3 506,13 F ;<p></p><p></p>   2° A compter du 1er octobre 1986 :<p></p><p></p>   - valeur de l'indice 10 : 59 019,85 F ;<p></p><p></p>   - valeur du point d'indice différentiel : 3 541,19 F.<p></p><p></p>   Au cas où, d'autre part, l'augmentation du total des indices I.N.S.E.E. entre octobre 1985 et septembre 1986 dépasserait 5 p. 100, d'autre part, les honoraires de la profession d'expert-comptable et de comptable agréé seraient débloqués, une négociation complémentaire aurait lieu fin novembre 1986.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 18 1986-02-05 étendu par arrêté du 18 août 1986 JORF 3 septembre 1986",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 507945600000,
+                  "dateFin": 532224000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26322,13 +26396,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719522",
+              "cid": "KALISCTA000005719522",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "*Salaires au 1er avril et au 1er octobre 1987*",
+              "dateModif": null,
+              "dateDebut": "1986-11-13",
+              "dateFin": "1987-11-25",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839698",
+                  "cid": "KALIARTI000005839698",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719522/KALIARTI000005839698",
+                  "pathTitle": [
+                    "*Salaires au 1er avril et au 1er octobre 1987*"
+                  ],
+                  "content": "<p></p>   L'objet du présent accord est de définir pour l'année 1987 les salaires minima des personnels des cabinets d'experts-comptables et de comptables agréés en application de la convention collective nationale du 9 décembre 1974.<p></p><p></p>Article 1 Rémunération minimale des assistants(es)    En application de l'article 5.3 de la convention collective, les rémunérations minimales annuelles des assistants(es) s'établissent à partir des valeurs de points suivantes :<p></p><p></p>   1. A effet du 1er avril 1987 :<p></p><p></p>   - valeur du coefficient 100 : 408,00 F ;<p></p><p></p>   - valeur du coefficient différentiel : 244,80 F.<p></p><p></p>   2. Valeur au 1er octobre 1987 :<p></p><p></p>   - valeur du coefficient 100 : 414,00 F ;<p></p><p></p>   - valeur du coefficient différentiel : 248,40 F.<p></p><p></p>   3. Pour l'ensemble de l'année 1987, la rémunération annuelle ne pourra être inférieure, pour douze mois de travail effectif pour un salarié à temps plein, à 57 600 F et, pour le coefficient 160, à 60 000 F.<p></p>Article 2 Rémunération minimale des experts-comptables et des stagiaires    En application de l'article 5.4 de la convention collective, les rémunérations minimales annuelles des experts-comptables et des stagiaires s'établissent à partir des valeurs de points suivantes :<p></p><p></p>   1. A compter du 1er avril 1987 :<p></p><p></p>   - valeur de l'indice 10 : 59 905 F ;<p></p><p></p>   - valeur du point d'indice différentiel : 3 594 F.<p></p><p></p>   2. A compter du 1er octobre 1987 :<p></p><p></p>   - valeur de l'indice 10 : 60 804 F ;<p></p><p></p>   - valeur du point d'indice différentiel : 3 648 F.<p></p><p></p>   Au cas où l'augmentation du total des indices I.N.S.E.E., entre octobre 1986 et septembre 1987 dépasserait 5 p. 100, une négociation complémentaire aurait lieu fin novembre 1987.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 19 1986-11-13 étendu par arrêté du 25 mai 1987 JORF 5 juin 1987",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 532224000000,
+                  "dateFin": 564796800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26342,13 +26490,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719523",
+              "cid": "KALISCTA000005719523",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril et au 1er octobre 1988*",
+              "dateModif": null,
+              "dateDebut": "1987-11-25",
+              "dateFin": "1988-11-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839699",
+                  "cid": "KALIARTI000005839699",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719523/KALIARTI000005839699",
+                  "pathTitle": [
+                    "Salaires au 1er avril et au 1er octobre 1988*"
+                  ],
+                  "content": "<p></p>   L'objet du présent accord est de définir pour l'article 1988 les salaires minima des personnels des cabinets d'experts-comptables et de comptables agréés en application de la convention collective nationale du 9 décembre 1974. <p></p><p></p>   Article 1er <p></p><p></p>   Rémunération minimale des assistants(es) <p></p><p></p>   En application de l'article 5-3 de la convention collective, les rémunérations minimales annuelles des assistants(es) s'établissent à partir des valeurs de points suivantes :<p></p><p></p>   1. A effet du 1er avril 1988 : <p></p><p></p>   - valeur du coefficient 100 : 422 F ; <p></p><p></p>   - valeur du coefficient différentiel : 253,20 F.<p></p><p></p>   2. Valeur au 1er octobre 1988 : <p></p><p></p>   - valeur du coefficient 100 : 431 F ; <p></p><p></p>   - valeur du coefficient différentiel : 258,60 F.<p></p><p></p>   Article 2 <p></p><p></p>   Rémunération minimale des experts-comptables et des stagiaires<p></p><p></p>   En application de l'article 5-4de la convention collective, les rémunérations minimales annuelles des experts-comptables et des stagiaires s'établissent à partir des valeurs d'indice suivantes : <p></p><p></p>   1. A compter du 1er avril 1988 : <p></p><p></p>   valeur de l'indice 10 : 62.020 F ;<p></p><p></p>   valeur du point d'indice différentiel : 3.721 F. <p></p><p></p>   2. A compter du 1er octobre 1988 : <p></p><p></p>   - valeur de l'indice 10 : 63.260 F ; <p></p><p></p>   - valeur du point d'indice différentiel : 3.796 F. <p></p><p></p>   Au cas où l'augmentation du total des indices I.N.S.E.E entre octobre 1987 et septembre 1988 dépasserait 4 p. 100 une négociation complémentaire aurait lieu fin novembre 1988.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 20 1987-11-25 étendu par arrêté du 27 avril 1988  JORF 7 mai 1988",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 564796800000,
+                  "dateFin": 595555200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -6226,13 +6226,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720719",
+              "cid": "KALISCTA000005720719",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juin 1989.",
+              "dateModif": null,
+              "dateDebut": "1989-05-17",
+              "dateFin": "1990-11-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005842494",
+                  "cid": "KALIARTI000005842494",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720719/KALIARTI000005842494",
+                  "pathTitle": [
+                    "Salaires au 1er juin 1989."
+                  ],
+                  "content": "<p></p>   1° Employés, du coefficient 120 au coefficient 150 inclus<p></p><p></p>   Coefficient 120 : 4.984 F<p></p><p></p>   Coefficient 125 : 5.031 F<p></p><p></p>   Coefficient 130 : 5.077 F<p></p><p></p>   Coefficient 135 : 5.124 F<p></p><p></p>   Coefficient 140 : 5.170 F<p></p><p></p>   Coefficient 145 : 5.217 F<p></p><p></p>   Coefficient 150 : 5.263 F<p></p><p></p><p></p>   2° Employés au-dessus du coefficient 150<p></p><p></p>   SALAIRE DE BASE : 2.972 F<p></p><p></p>   VALEUR DU POINT : 15,27 F<p></p><p></p>   Coefficient 160 : 5.416 F<p></p><p></p>   Coefficient 165 : 5.492 F<p></p><p></p>   Coefficient 170 : 5.568 F<p></p><p></p>   Coefficient 180 : 5.721 F<p></p><p></p>   Coefficient 190 : 5.874 F<p></p><p></p>   Coefficient 200 : 6.027 F<p></p><p></p>   Coefficient 220 : 6.332 F<p></p><p></p>   Coefficient 230 : 6.485 F<p></p><p></p><p></p>   3° Agents de maîtrise à partir du coefficient 240<p></p><p></p>   SALAIRE DE BASE : 2.786 F<p></p><p></p>   VALEUR DU POINT : 16,72 F<p></p><p></p>   Coefficient 240 : 6.799 F<p></p><p></p>   Coefficient 250 : 6.966 F<p></p><p></p>   Coefficient 260 : 7.133 F<p></p><p></p>   Coefficient 270 : 7.300 F<p></p><p></p>   Coefficient 280 : 7.467 F<p></p><p></p>   Coefficient 290 : 7.635 F<p></p><p></p>   Coefficient 300 : 7.802 F<p></p><p></p>   Coefficient 310 : 7.969 F.<p></p><p></p><p></p>   4° Cadres<p></p><p></p>   SALAIRE DE BASE : 2.456 F<p></p><p></p>   VALEUR DU POINT : 18,06 F<p></p><p></p><p></p>   Coefficient 325 : 8.326 F<p></p><p></p>   Coefficient 375 : 9.229 F<p></p><p></p>   Coefficient 450 : 10.583 F<p></p><p></p>   Coefficient 500 : 11.486 F<p></p><p></p>   Coefficient 600 : 13.292 F<p></p><p></p>   Coefficient 800 : 16.904 F<p></p><font color=\"808080\"><em>   Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.</em></font>",
+                  "nota": "   Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 13 1989-05-17 étendu par arrêté du 28 août 1989 JORF 9 septembre 1989",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 611366400000,
+                  "dateFin": 658627200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6246,13 +6320,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720720",
+              "cid": "KALISCTA000005720720",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er décembre 1990.",
+              "dateModif": null,
+              "dateDebut": "1990-11-15",
+              "dateFin": "1992-11-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005842495",
+                  "cid": "KALIARTI000005842495",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720720/KALIARTI000005842495",
+                  "pathTitle": [
+                    "Salaires au 1er décembre 1990."
+                  ],
+                  "content": "<p></p>   1° Employés, du coefficient 120 au coefficient 150 inclus<p></p><p></p>   Coefficient 120 : 5.400 F<p></p><p></p>   Coefficient 125 : 5.435 F<p></p><p></p>   Coefficient 130 : 5.470 F<p></p><p></p>   Coefficient 135 : 5.505 F<p></p><p></p>   Coefficient 140 : 5.540 F<p></p><p></p>   Coefficient 145 : 5.575 F<p></p><p></p>   Coefficient 150 : 5.610 F<p></p><p></p><p></p>   2° Employés au-dessus du coefficient 150<p></p><p></p>   SALAIRE DE BASE : 3.170 F<p></p><p></p>   VALEUR DU POINT : 16,10 F<p></p><p></p>   Coefficient 160 : 5.746 F<p></p><p></p>   Coefficient 165 : 5.826 F<p></p><p></p>   Coefficient 170 : 5.907 F<p></p><p></p>   Coefficient 180 : 6.068 F<p></p><p></p>   Coefficient 190 : 6.210 F<p></p><p></p>   Coefficient 200 : 6.390 F<p></p><p></p>   Coefficient 220 : 6.712 F<p></p><p></p>   Coefficient 230 : 6.873 F<p></p><p></p><p></p>   3° Agents de maîtrise à partir du coefficient 240<p></p><p></p>   SALAIRE DE BASE : 2.950 F<p></p><p></p>   VALEUR DU POINT : 17,60 F<p></p><p></p>   Coefficient 240 : 7.174 F<p></p><p></p>   Coefficient 250 : 7.350 F<p></p><p></p>   Coefficient 260 : 7.526 F<p></p><p></p>   Coefficient 270 : 7.702 F<p></p><p></p>   Coefficient 280 : 7.878 F<p></p><p></p>   Coefficient 290 : 8.054 F<p></p><p></p>   Coefficient 300 : 8.230 F<p></p><p></p>   Coefficient 310 : 8.406 F<p></p><p></p><p></p>   4° Cadres<p></p><p></p>   SALAIRE DE BASE : 2.600 F<p></p><p></p>   VALEUR DU POINT : 18,90 F<p></p><p></p><p></p>   Coefficient 325 : 8.743 F<p></p><p></p>   Coefficient 375 : 9.688 F<p></p><p></p>   Coefficient 450 : 11.105 F<p></p><p></p>   Coefficient 500 : 12.050 F<p></p><p></p>   Coefficient 600 : 13.940 F<p></p><p></p>   Coefficient 800 : 17.720 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 14 1990-11-15 étendu par arrêté du 18 mars 1991 JORF 30 mars 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 658627200000,
+                  "dateFin": 721353600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6266,13 +6414,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720721",
+              "cid": "KALISCTA000005720721",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er décembre 1992 et au 1er juin 1993.",
+              "dateModif": null,
+              "dateDebut": "1992-11-10",
+              "dateFin": "1997-11-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005842497",
+                  "cid": "KALIARTI000005842497",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720721/KALIARTI000005842497",
+                  "pathTitle": [
+                    "Salaires au 1er décembre 1992 et au 1er juin 1993."
+                  ],
+                  "content": "<p></p>   Il modifie le 14e avenant du 15 novembre 1990, les soussignés s'étant mis d'accord sur des augmentations portant les salaires de base aux niveaux ci-après, à partir du 1er décembre 1992.<p></p><p></p>   1° Employés, du coefficient 120 au coefficient 150 inclus<p></p><p></p> (1) : Coefficient.<p></p> (2) : Au 1er décembre 1992 en F.<p></p> (3) : Au 1er juin 1993 en F.<p></p><p></p> -----------------------------<p></p><TABLE><TR><TD> (1) </TD><TD>    (2)    </TD><TD>    (3)  </TD></TR><TR><TD> 120 </TD><TD> 5.756 F   </TD><TD> 5.870 F </TD></TR><TR><TD> 125 </TD><TD> 5.790 F   </TD><TD> 5.900 F </TD></TR><TR><TD> 130 </TD><TD> 5.825 F   </TD><TD> 5.942 F </TD></TR><TR><TD> 135 </TD><TD> 5.863 F   </TD><TD> 5.980 F </TD></TR><TR><TD> 140 </TD><TD> 5.900 F   </TD><TD> 6.015 F </TD></TR><TR><TD> 145 </TD><TD> 5.937 F   </TD><TD> 6.050 F </TD></TR><TR><TD> 150 </TD><TD> 5.975 F   </TD><TD> 6.080 F </TD></TR></TABLE><p></p> -----------------------------<p></p>   2° Employés au-dessus du coefficient 150 (base au 1er décembre 1992 : 3.395 F et valeur du point à 16,95 ; base au 1er juin 1993 : 3.470 F et valeur du point à 17,30 F)<p></p><p></p> (1) : Coefficient.<p></p> (2) : Au 1er décembre 1992 en F.<p></p> (3) : Au 1er juin 1993 en F.<p></p><p></p> -----------------------------<p></p><TABLE><TR><TD> (1) </TD><TD>    (2)    </TD><TD>    (3)  </TD></TR><TR><TD> 160 </TD><TD> 6.107 F   </TD><TD> 6.238 F </TD></TR><TR><TD> 165 </TD><TD> 6.192 F   </TD><TD> 6.324 F </TD></TR><TR><TD> 170 </TD><TD> 6.276 F   </TD><TD> 6.411 F </TD></TR><TR><TD> 180 </TD><TD> 6.446 F   </TD><TD> 6.584 F </TD></TR><TR><TD> 190 </TD><TD> 6.615 F   </TD><TD> 6.757 F </TD></TR><TR><TD> 200 </TD><TD> 6.785 F   </TD><TD> 9.930 F </TD></TR><TR><TD> 220 </TD><TD> 7.124 F   </TD><TD> 7.276 F </TD></TR><TR><TD> 230 </TD><TD> 7.293 F   </TD><TD> 7.449 F </TD></TR></TABLE><p></p> -----------------------------<p></p>   3° Agents de maîtrise à partir du coefficient 240 (base au 1er décembre 1992 : 3.150 F et valeur du point à 18,55 F ; base au 1er juin 1993 : 3.250 F et valeur du point à 18,91 F)<p></p><p></p> (1) : Coefficient.<p></p> (2) : Au 1er décembre 1992 en F.<p></p> (3) : Au 1er juin 1993 en F.<p></p><p></p> -----------------------------<p></p><TABLE><TR><TD> (1) </TD><TD>    (2)    </TD><TD>    (3)  </TD></TR><TR><TD> 240 </TD><TD> 7.602 F   </TD><TD> 7.788 F </TD></TR><TR><TD> 250 </TD><TD> 7.787 F   </TD><TD> 7.977 F </TD></TR><TR><TD> 260 </TD><TD> 7.973 F   </TD><TD> 8.167 F </TD></TR><TR><TD> 270 </TD><TD> 8.158 F   </TD><TD> 8.356 F </TD></TR><TR><TD> 280 </TD><TD> 8.344 F   </TD><TD> 8.545 F </TD></TR><TR><TD> 290 </TD><TD> 8.529 F   </TD><TD> 8.734 F </TD></TR><TR><TD> 300 </TD><TD> 8.715 F   </TD><TD> 8.923 F </TD></TR><TR><TD> 310 </TD><TD> 8.900 F   </TD><TD> 9.112 F </TD></TR></TABLE><p></p> -----------------------------<p></p>   4° Cadres (base au 1er décembre 1992 : 2.750 F et valeur du point à 19,80 F ; base au 1er juin 1993 : 2.850 F et valeur du point à 20,20 F)  <p></p> (1) : Coefficient.<p></p> (2) : Au 1er décembre 1992 en F.<p></p> (3) : Au 1er juin 1993 en F.<p></p><p></p> ------------------------------<p></p><TABLE><TR><TD> (1) </TD><TD>    (2)    </TD><TD>    (3)   </TD></TR><TR><TD> 325 </TD><TD> 9.185 F   </TD><TD> 9.415 F  </TD></TR><TR><TD> 375 </TD><TD> 10.175 F  </TD><TD> 10.425 F </TD></TR><TR><TD> 450 </TD><TD> 11.660 F  </TD><TD> 11.940 F </TD></TR><TR><TD> 500 </TD><TD> 12.650 F  </TD><TD> 12.950 F </TD></TR><TR><TD> 600 </TD><TD> 14.630 F  </TD><TD> 14.970 F </TD></TR><TR><TD> 800 </TD><TD> 18.590 F  </TD><TD> 19.010 F </TD></TR></TABLE><p></p> ------------------------------<font color=\"808080\"><em>   Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.</em></font>",
+                  "nota": "   Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 15 1992-11-10 étendu par arrêté du 26 juillet 1993 JORF 8 août 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 721353600000,
+                  "dateFin": 879811200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

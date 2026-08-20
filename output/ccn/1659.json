@@ -26209,13 +26209,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005699907",
+              "cid": "KALISCTA000005699907",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril, 1er septembre et 1er décembre 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-06-04",
+              "dateFin": "1996-03-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005791304",
+                  "cid": "KALIARTI000005791304",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005699907/KALIARTI000005791304",
+                  "pathTitle": [
+                    "Salaires au 1er avril, 1er septembre et 1er décembre 1995."
+                  ],
+                  "content": "Article 1er<p></p> Evolution des barèmes de rémunérations minimales garanties<p></p><p></p>   Les barèmes de rémunérations minimales garanties résultant de l'avenant n° 3 du 30 mars 1994 sont revalorisées de :<p></p><p></p>   1 p. 100 au 1er avril 1995 ;<p></p><p></p>   1 p. 100 au 1er septembre 1995 ;<p></p><p></p>   0,5 p. 100 au 1er décembre 1995.<p></p> Article 2<p></p> Evolution de la rémunération forfaitaire à l'hectare<p></p><p></p>   Les barèmes de la rémunération forfaitaire à l'hectare résultant de l'avenant n° 3 du 30 mars 1994 sont revalorisés de 2,5 p. 100 au 1er juillet 1995.<p></p><p></p>ANNEXE relative aux rémunérations minima garanties.<p></p> Barème des rémunérations minima garanties au 1er avril 1995<p></p> (base : 169,65 heures par mois pour le barème mensuel)<p></p><p></p><p></p>   (1) = COEFFICIENTS<p></p><p></p>   (2) = REMUNERATIONS MINIMA GARANTIES<p></p><p></p>   (3) = Horaire (en francs)<p></p><p></p>   (4) = Mensuelle (en francs)<p></p><p></p><TABLE><TR><TD></TD><TD>     (2)      </TD></TR><TR><TD>(1) </TD><TD>  (3)  </TD><TD>  (4) </TD></TR><TR><TD>120 </TD><TD> 35,98 </TD><TD> 6.104</TD></TR><TR><TD>130 </TD><TD> 36,11 </TD><TD> 6.126</TD></TR><TR><TD>140 </TD><TD> 36,27 </TD><TD> 6.153</TD></TR><TR><TD>145 </TD><TD> 36,45 </TD><TD> 6.184</TD></TR><TR><TD>150 </TD><TD> 36,63 </TD><TD> 6.214</TD></TR><TR><TD>160 </TD><TD> 37,09 </TD><TD> 6.292</TD></TR><TR><TD>165 </TD><TD> 37,34 </TD><TD> 6.335</TD></TR><TR><TD>180 </TD><TD> 37,88 </TD><TD> 6.426</TD></TR><TR><TD>185 </TD><TD> 38,60 </TD><TD> 6.548</TD></TR><TR><TD>210 </TD><TD> 42,04 </TD><TD> 7.132</TD></TR></TABLE><p></p><p></p>   (1) = COEFFICIENTS<p></p><p></p>   (2) = REMUNERATIONS MINIMA garanties mensuelles (en francs)<p></p><p></p><TABLE><TR><TD>(1) </TD><TD>  (2)   </TD></TR><TR><TD>220 </TD><TD>  7 359 </TD></TR><TR><TD>240 </TD><TD>  7 863 </TD></TR><TR><TD>250 </TD><TD>  8 108 </TD></TR><TR><TD>270 </TD><TD>  8 630 </TD></TR><TR><TD>300 </TD><TD>  9 375 </TD></TR><TR><TD>330 </TD><TD> 10 117 </TD></TR><TR><TD>360 </TD><TD> 10 821 </TD></TR><TR><TD>400 </TD><TD> 11 818 </TD></TR><TR><TD>500 </TD><TD> 14 659 </TD></TR><TR><TD>600 </TD><TD> 17 591 </TD></TR><TR><TD>800 </TD><TD> 23 437 </TD></TR></TABLE><p></p>Barème des rémunérations minima garanties au 1er septembre 1995<p></p><p></p>   (1) = COEFFICIENTS<p></p><p></p>   (2) = REMUNERATIONS MINIMA GARANTIES<p></p><p></p>   (3) = Horaire (en francs)<p></p><p></p>   (4) = Mensuelle (en francs)<p></p><p></p><TABLE><TR><TD></TD><TD>     (2)      </TD></TR><TR><TD>(1) </TD><TD>  (3)  </TD><TD>  (4) </TD></TR><TR><TD>120 </TD><TD> 36,34 </TD><TD> 6 165</TD></TR><TR><TD>130 </TD><TD> 36,47 </TD><TD> 6 187</TD></TR><TR><TD>140 </TD><TD> 36,63 </TD><TD> 6 214</TD></TR><TR><TD>145 </TD><TD> 36,81 </TD><TD> 6 245</TD></TR><TR><TD>150 </TD><TD> 37,00 </TD><TD> 6 277</TD></TR><TR><TD>160 </TD><TD> 37,46 </TD><TD> 6 355</TD></TR><TR><TD>165 </TD><TD> 37,71 </TD><TD> 6 398</TD></TR><TR><TD>180 </TD><TD> 38,26 </TD><TD> 6 491</TD></TR><TR><TD>185 </TD><TD> 38,99 </TD><TD> 6 615</TD></TR><TR><TD>210 </TD><TD> 42,46 </TD><TD> 7 203</TD></TR></TABLE><p></p><p></p><p></p>   (1) = COEFFICIENTS<p></p><p></p>   (2) = REMUNERATIONS MINIMA<p></p><p></p>   (3) = garanties mensuelles (en francs)<p></p><p></p><TABLE><TR><TD>(1) </TD><TD>  (2)   </TD></TR><TR><TD> 220 </TD><TD>  7 433</TD></TR><TR><TD> 240 </TD><TD>  7 942</TD></TR><TR><TD> 250 </TD><TD>  8 189</TD></TR><TR><TD> 270 </TD><TD>  8 716</TD></TR><TR><TD> 300 </TD><TD>  9 469</TD></TR><TR><TD> 330 </TD><TD> 10 218</TD></TR><TR><TD> 360 </TD><TD> 10 929</TD></TR><TR><TD> 400 </TD><TD> 11 936</TD></TR><TR><TD> 500 </TD><TD> 14 806</TD></TR><TR><TD> 600 </TD><TD> 17 767</TD></TR><TR><TD> 800 </TD><TD> 23 671</TD></TR></TABLE><p></p>Barème des rémunérations minima garanties au 1er décembre 1995<p></p><p></p>   (1) = COEFFICIENTS<p></p><p></p>   (2) = REMUNERATIONS MINIMA GARANTIES<p></p><p></p>   (3) = Horaire (en francs)<p></p><p></p>   (4) = Mensuelle (en francs)<p></p><p></p><TABLE><TR><TD></TD><TD>     (2)      </TD></TR><TR><TD>(1) </TD><TD>  (3)  </TD><TD>  (4) </TD></TR><TR><TD>120 </TD><TD> 36,52 </TD><TD> 6 196</TD></TR><TR><TD>130 </TD><TD> 36,65 </TD><TD> 6 218</TD></TR><TR><TD>140 </TD><TD> 36,81 </TD><TD> 6 245</TD></TR><TR><TD>145 </TD><TD> 36,99 </TD><TD> 6 275</TD></TR><TR><TD>150 </TD><TD> 37,19 </TD><TD> 6 309</TD></TR><TR><TD>160 </TD><TD> 37,65 </TD><TD> 6 387</TD></TR><TR><TD>165 </TD><TD> 37,90 </TD><TD> 6 430</TD></TR><TR><TD>180 </TD><TD> 38,45 </TD><TD> 6 523</TD></TR><TR><TD>185 </TD><TD> 39,18 </TD><TD> 6 647</TD></TR><TR><TD>210 </TD><TD> 42,67 </TD><TD> 7 239</TD></TR></TABLE><p></p><p></p>   (1) = COEFFICIENTS<p></p><p></p>   (2) = REMUNERATIONS MINIMA garanties mensuelles (en francs)<p></p><p></p><TABLE><TR><TD>(1) </TD><TD>  (2)  </TD></TR><TR><TD>220 </TD><TD>  7 470</TD></TR><TR><TD>240 </TD><TD>  7 982</TD></TR><TR><TD>250 </TD><TD>  8 230</TD></TR><TR><TD>270 </TD><TD>  8 760</TD></TR><TR><TD>300 </TD><TD>  9 516</TD></TR><TR><TD>330 </TD><TD> 10 269</TD></TR><TR><TD>360 </TD><TD> 10 984</TD></TR><TR><TD>400 </TD><TD> 11 996</TD></TR><TR><TD>500 </TD><TD> 14 880</TD></TR><TR><TD>600 </TD><TD> 17 856</TD></TR><TR><TD>800 </TD><TD> 23 789</TD></TR></TABLE><p></p>  Rémunération forfaitaire à l'hectare au 1er juillet 1995 (en francs)<p></p>   ETAT DE LA LINIERE : Normal<p></p>   ARRACHAGE Double :  52,06<p></p>   ARRACHAGE Simple :  62,48  <p></p>   ETAT DE LA LINIERE : Versé  < 30 %<p></p>   ARRACHAGE Double :  83,31<p></p>   ARRACHAGE Simple :  93,73<p></p>   RETOURNAGE : 52,06<p></p>   ENROULAGE : 83,31 <p></p>   ETAT DE LA LINIERE : Versé > 30 % et < 70 %<p></p>   ARRACHAGE Double : 104,13<p></p>   ARRACHAGE Simple : 145,79<font color=\"808080\"><em>   NOTA. Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA. Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 4 1995-04-06 BO Conventions collectives 95-27 étendu par arrêté du 15 septembre 1995 JORF 27 septembre 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (annexe)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 802224000000,
+                  "dateFin": 827193600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26229,13 +26303,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005699908",
+              "cid": "KALISCTA000005699908",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril, 1er juillet et 1er septembre 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-03-19",
+              "dateFin": "1997-04-03",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005791306",
+                  "cid": "KALIARTI000005791306",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005699908/KALIARTI000005791306",
+                  "pathTitle": [
+                    "Salaires au 1er avril, 1er juillet et 1er septembre 1996."
+                  ],
+                  "content": "Article 1er<p></p> Evolution des barèmes de rémunérations minimales garanties<p></p><p></p>   Les barèmes de rémunérations minimales garanties résultant de l'avenant n° 4 du 6 avril 1995 sont remis en ordre au 1er avril 1996 conformément au tableau ci-dessous :<p></p><p></p> (1) COEFFICIENTS<p></p> (2) REMUNERATIONS MINIMA GARANTIES<p></p> (3) Horaire (en francs)<p></p> (4) Mensuelle (en francs)<p></p><p></p><TABLE><TR><TD></TD><TD>     (2)      </TD></TR><TR><TD>(1) </TD><TD>  (3)  </TD><TD>  (4) </TD></TR><TR><TD>120 </TD><TD> 36,90 </TD><TD> 6.260</TD></TR><TR><TD>130 </TD><TD> 37,00 </TD><TD> 6.277</TD></TR><TR><TD>150 </TD><TD> 37,10 </TD><TD> 6.294</TD></TR><TR><TD>170 </TD><TD> 37,80 </TD><TD> 6.413</TD></TR><TR><TD>190 </TD><TD> 39,00 </TD><TD> 6.616</TD></TR><TR><TD>210 </TD><TD> 42,70 </TD><TD> 7.244</TD></TR></TABLE><p></p>(1) COEFFICIENTS<p></p> (2) REMUNERATIONS MINIMA garanties mensuelles (en francs)<p></p><p></p><TABLE><TR><TD>(1) </TD><TD>  (2)   </TD></TR><TR><TD>220 </TD><TD>  7.470 </TD></TR><TR><TD>240 </TD><TD>  7.982 </TD></TR><TR><TD>250 </TD><TD>  8.230 </TD></TR><TR><TD>270 </TD><TD>  8.760 </TD></TR><TR><TD>300 </TD><TD>  9.516 </TD></TR><TR><TD>330 </TD><TD> 10.350 </TD></TR><TR><TD>360 </TD><TD> 11.027 </TD></TR><TR><TD>400 </TD><TD> 12.100 </TD></TR><TR><TD>500 </TD><TD> 14.880 </TD></TR><TR><TD>600 </TD><TD> 17.856 </TD></TR><TR><TD>800 </TD><TD> 23.789 </TD></TR></TABLE><p></p><p></p><p></p>   Les barèmes ainsi définis sont revalorisés de :<p></p><p></p>   1 p. 100 au 1er juillet 1996 ;<p></p><p></p>   1 p. 100 au 1er septembre 1996.<p></p><p></p> Article 2<p></p> Dispositions relatives à l'attribution des nouveaux coefficients<p></p><p></p>   1° Les nouveaux coefficients sont attribués aux salariés conformément au tableau ci-dessous :<p></p><p></p><TABLE><TR><TD> Ancien      </TD><TD> Nouveau     </TD></TR><TR><TD> coefficient </TD><TD> coefficient </TD></TR><TR><TD>    140      </TD><TD>    150      </TD></TR><TR><TD>    145      </TD><TD>    150      </TD></TR><TR><TD>    150      </TD><TD>    150      </TD></TR><TR><TD>    160      </TD><TD>    170      </TD></TR><TR><TD>    165      </TD><TD>    170      </TD></TR><TR><TD>    180      </TD><TD>    190      </TD></TR><TR><TD>    185      </TD><TD>    190      </TD></TR></TABLE><p></p><p></p>   2° Toutefois, les salariés auxquels avaient été attribués l'un des coefficients ci-dessous à la date du 1er mars 1996, conserveront une rémunération minimum garantie identique à celle existant à cette même date jusqu'au 1er juillet 1996 et conforme au tableau ci-après :<p></p> (1) COEFFICIENTS<p></p> (2) REMUNERATIONS MINIMA GARANTIES<p></p> (3) Horaire (en francs)<p></p> (4) Mensuelle (en francs)<p></p><p></p><TABLE><TR><TD></TD><TD>     (2)      </TD></TR><TR><TD>(1) </TD><TD>  (3)  </TD><TD>  (4) </TD></TR><TR><TD>120 </TD><TD> 37,19 </TD><TD> 6.309</TD></TR><TR><TD>165 </TD><TD> 37,90 </TD><TD> 6.430</TD></TR><TR><TD>185 </TD><TD> 39,18 </TD><TD> 6.647</TD></TR></TABLE><p></p><p></p>   A la date du 1er juillet 1996 leurs rémunérations minimales garanties seront celles qui correspondront respectivement aux coefficients 150, 170 et 190.  Article 3 Evolution de la rémunération forfaitaire à l'hectare<p></p>   Les barèmes de la rémunération forfaitaire à l'hectare résultant de l'avenant n° 4 du 6 avril 1995 sont revalorisés de 2 p. 100 au 1er juillet 1996.ANNEXE relative aux rémunérations minimales garanties<p></p> Barème au 1er juillet 1996<p></p> (base : 169,65 heures par mois pour le barème mensuel)<p></p><p></p> (1) COEFFICIENTS<p></p> (2) REMUNERATIONS MINIMA GARANTIES<p></p> (3) Horaire (en francs)<p></p> (4) Mensuelle (en francs)<p></p><p></p><TABLE><TR><TD></TD><TD>     (2)      </TD></TR><TR><TD>(1) </TD><TD>  (3)  </TD><TD>  (4) </TD></TR><TR><TD>120 </TD><TD> 37,27 </TD><TD> 6.323</TD></TR><TR><TD>130 </TD><TD> 37,37 </TD><TD> 6.340</TD></TR><TR><TD>150 </TD><TD> 37,47 </TD><TD> 6.357</TD></TR><TR><TD>170 </TD><TD> 38,18 </TD><TD> 6.477</TD></TR><TR><TD>190 </TD><TD> 39,39 </TD><TD> 6.683</TD></TR><TR><TD>210 </TD><TD> 43,13 </TD><TD> 7.317</TD></TR></TABLE><p></p><p></p> (1) COEFFICIENTS<p></p> (2) REMUNERATIONS MINIMA garanties mensuelles (en francs)<p></p><p></p><TABLE><TR><TD>(1) </TD><TD>  (2)   </TD></TR><TR><TD>220 </TD><TD>  7.545 </TD></TR><TR><TD>240 </TD><TD>  8.062 </TD></TR><TR><TD>250 </TD><TD>  8.312 </TD></TR><TR><TD>270 </TD><TD>  8.848 </TD></TR><TR><TD>300 </TD><TD>  9.611 </TD></TR><TR><TD>330 </TD><TD> 10.454 </TD></TR><TR><TD>360 </TD><TD> 11.319 </TD></TR><TR><TD>400 </TD><TD> 12.221 </TD></TR><TR><TD>500 </TD><TD> 15.029 </TD></TR><TR><TD>600 </TD><TD> 18.035 </TD></TR><TR><TD>800 </TD><TD> 24.027 </TD></TR></TABLE><p></p>Barème au 1er septembre 1996<p></p> (base : 169,65 heures par mois pour le barème mensuel)<p></p><p></p> (1) COEFFICIENTS<p></p> (2) REMUNERATIONS MINIMA GARANTIES<p></p> (3) Horaire (en francs)<p></p> (4) Mensuelle (en francs)<p></p><p></p><TABLE><TR><TD></TD><TD>     (2)      </TD></TR><TR><TD>(1) </TD><TD>  (3)  </TD><TD>  (4) </TD></TR><TR><TD>120 </TD><TD> 37,64 </TD><TD> 6.386</TD></TR><TR><TD>130 </TD><TD> 37,74 </TD><TD> 6.403</TD></TR><TR><TD>150 </TD><TD> 37,84 </TD><TD> 6.420</TD></TR><TR><TD>170 </TD><TD> 38,56 </TD><TD> 6.542</TD></TR><TR><TD>190 </TD><TD> 39,78 </TD><TD> 6.749</TD></TR><TR><TD>210 </TD><TD> 43,56 </TD><TD> 7.390</TD></TR></TABLE><p></p><p></p> (1) COEFFICIENTS<p></p> (2) REMUNERATIONS MINIMA garanties mensuelles (en francs)<p></p><p></p><TABLE><TR><TD>(1) </TD><TD>  (2)   </TD></TR><TR><TD>220 </TD><TD>  7.620 </TD></TR><TR><TD>240 </TD><TD>  8.143 </TD></TR><TR><TD>250 </TD><TD>  8.395 </TD></TR><TR><TD>270 </TD><TD>  8.936 </TD></TR><TR><TD>300 </TD><TD>  9.707 </TD></TR><TR><TD>330 </TD><TD> 10.559 </TD></TR><TR><TD>360 </TD><TD> 11.432 </TD></TR><TR><TD>400 </TD><TD> 12.343 </TD></TR><TR><TD>500 </TD><TD> 15.179 </TD></TR><TR><TD>600 </TD><TD> 18.215 </TD></TR><TR><TD>800 </TD><TD> 24.267 </TD></TR></TABLE><p></p>Rémunération forfaitaire à l'hectare au 1er juillet 1996 (en francs)<p></p><p></p>   ETAT DE LA LINIERE : Normal<p></p><p></p>   ARRACHAGE Double : 53,10<p></p><p></p>   ARRACHAGE Simple : 63,73 <p></p><p></p><p></p>   ETAT DE LA LINIERE : Versé  < 30 %<p></p><p></p>   ARRACHAGE Double : 84,98<p></p><p></p>   ARRACHAGE Simple : 95,60<p></p><p></p>   RETOURNAGE : 53,10<p></p><p></p>   ENROULAGE : 84,98<p></p><p></p><p></p>   ETAT DE LA LINIERE : Versé > 30 % et < 70 %<p></p><p></p>   ARRACHAGE Double : 106,21<p></p><p></p>   ARRACHAGE Simple : 148,71<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 27 juillet 1996 art. 1 : l'avenant n° 5 du 19 mars 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 27 juillet 1996 art. 1 : l'avenant n° 5 du 19 mars 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 5 1996-03-19 BO conventions collectives 96-23, étendu par arrêté du 29 juillet 1996 JORF 7 août 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (annexe)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 827193600000,
+                  "dateFin": 860025600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26249,13 +26397,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005699909",
+              "cid": "KALISCTA000005699909",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril, 1er juillet et 1er septembre 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-04-03",
+              "dateFin": "1998-04-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005791307",
+                  "cid": "KALIARTI000005791307",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005699909/KALIARTI000005791307",
+                  "pathTitle": [
+                    "Salaires au 1er avril, 1er juillet et 1er septembre 1997."
+                  ],
+                  "content": "Article 1er<p></p> Evolution des barèmes de rémunérations minimales garanties<p></p><p></p>   Les barèmes de rémunérations minimales garanties résultant de l'avenant n° 5 du 19 mars 1996 sont remis en ordre au 1er avril 1997 conformément au tableau ci-dessous :<p></p><p></p><TABLE><TR><TD>COEFF </TD><TD> REMUNERATIONS MINIMALES </TD></TR><TR><TD></TD><TD> GARANTIES               </TD></TR><TR><TD></TD><TD>Horaire    </TD><TD>  Mensuelle  </TD></TR><TR><TD> 120  </TD><TD>  37,90F   </TD><TD>   6 430F    </TD></TR><TR><TD> 130  </TD><TD>  38,00F   </TD><TD>   6 447F    </TD></TR><TR><TD> 150  </TD><TD>  38,10F   </TD><TD>   6 464F    </TD></TR><TR><TD> 170  </TD><TD>  38,83F   </TD><TD>   6 588F    </TD></TR><TR><TD> 190  </TD><TD>  39,98F   </TD><TD>   6 783F    </TD></TR><TR><TD> 210  </TD><TD>  43,78F   </TD><TD>   7 427F    </TD></TR><TR><TD>COEFF </TD><TD>REMUNERATIONS MINIMALES</TD></TR><TR><TD></TD><TD>garantie mensuelle     </TD></TR><TR><TD> 220  </TD><TD>     7 658F            </TD></TR><TR><TD> 240  </TD><TD>     8 184F            </TD></TR><TR><TD> 250  </TD><TD>     8 437F            </TD></TR><TR><TD> 270  </TD><TD>     8 981F            </TD></TR><TR><TD> 300  </TD><TD>     9 755F            </TD></TR><TR><TD> 330  </TD><TD>    10 612F            </TD></TR><TR><TD> 360  </TD><TD>    11 489F            </TD></TR><TR><TD> 400  </TD><TD>    12 405F            </TD></TR><TR><TD> 500  </TD><TD>    15 255F            </TD></TR><TR><TD> 600  </TD><TD>    18 306F            </TD></TR><TR><TD> 800  </TD><TD>    24 388F            </TD></TR></TABLE><p></p><p></p>   Les barèmes ainsi définis sont revalorisés de :<p></p>   1 % au 1er juillet 1997 ;<p></p>   1 % au 1er septembre 1997. Article 2 Evolution de la rémunération forfaitaire à l'hectare<p></p>   Pour tenir compte de l'évolution prévisible du salaire minimum de croissance, les barèmes de la rémunération forfaitaire à l'hectare résultant de l'avenant n° 5 du 19 mars 1996 sont revalorisés de 2,7 % dès le 1er juillet 1997.A N N E X E<p></p> relative aux rémunérations minimales garanties<p></p> Barème des RMG au 1er juillet 1997<p></p> (Base : 169,65 heures par mois pour le barème mensuel)<p></p><TABLE><TR><TD>COEFF </TD><TD>REMUNERATIONS MINIMALES</TD></TR><TR><TD></TD><TD>GARANTIES              </TD></TR><TR><TD></TD><TD>Horaire  </TD><TD>  Mensuelle  </TD></TR><TR><TD> 120  </TD><TD> 38,28   </TD><TD>  6 494      </TD></TR><TR><TD> 130  </TD><TD> 38,38   </TD><TD>  6 511      </TD></TR><TR><TD> 150  </TD><TD> 38,48   </TD><TD>  6 528      </TD></TR><TR><TD> 170  </TD><TD> 39,22   </TD><TD>  6 654      </TD></TR><TR><TD> 190  </TD><TD> 40,38   </TD><TD>  6 850      </TD></TR><TR><TD> 210  </TD><TD> 44,22   </TD><TD>  7 502      </TD></TR><TR><TD>COEFF </TD><TD>REMUNERATIONS MINIMALES</TD></TR><TR><TD></TD><TD>garantie mensuelle     </TD></TR><TR><TD> 220  </TD><TD>       7 735           </TD></TR><TR><TD> 240  </TD><TD>       8 266           </TD></TR><TR><TD> 250  </TD><TD>       8 521           </TD></TR><TR><TD> 270  </TD><TD>       9 071           </TD></TR><TR><TD> 300  </TD><TD>       9 853           </TD></TR><TR><TD> 330  </TD><TD>      10 718           </TD></TR><TR><TD> 360  </TD><TD>      11 604           </TD></TR><TR><TD> 400  </TD><TD>      12 529           </TD></TR><TR><TD> 500  </TD><TD>      15 408           </TD></TR><TR><TD> 600  </TD><TD>      18 489           </TD></TR><TR><TD> 800  </TD><TD>      24 632           </TD></TR></TABLE><p></p>A N N E X E<p></p> relative aux rémunérations minimales garanties<p></p> Barème des RMG au 1er septembre 1997<p></p> (Base : 169,65 heures par mois pour le barème mensuel)<p></p><TABLE><TR><TD>COEFF </TD><TD>REMUNERATIONS MINIMALES</TD></TR><TR><TD></TD><TD>GARANTIES              </TD></TR><TR><TD></TD><TD>Horaire  </TD><TD>  Mensuelle  </TD></TR><TR><TD>  120 </TD><TD>  38,66F </TD><TD>  6 559F     </TD></TR><TR><TD>  130 </TD><TD>  38,76F </TD><TD>  6 576F     </TD></TR><TR><TD>  150 </TD><TD>  38,86F </TD><TD>  6 593F     </TD></TR><TR><TD>  170 </TD><TD>  39,61F </TD><TD>  6 720F     </TD></TR><TR><TD>  190 </TD><TD>  40,78F </TD><TD>  6 918F     </TD></TR><TR><TD>  210 </TD><TD>  44,66F </TD><TD>  7 577F     </TD></TR><TR><TD>COEFF </TD><TD>REMUNERATIONS MINIMALES</TD></TR><TR><TD></TD><TD>garantie mensuelle     </TD></TR><TR><TD> 220  </TD><TD>       7 812F          </TD></TR><TR><TD> 240  </TD><TD>       8 349F          </TD></TR><TR><TD> 250  </TD><TD>       8 606F          </TD></TR><TR><TD> 270  </TD><TD>       9 162F          </TD></TR><TR><TD> 300  </TD><TD>       9 952F          </TD></TR><TR><TD> 330  </TD><TD>      10 825F          </TD></TR><TR><TD> 360  </TD><TD>      11 720F          </TD></TR><TR><TD> 400  </TD><TD>      12 654F          </TD></TR><TR><TD> 500  </TD><TD>      15 562F          </TD></TR><TR><TD> 600  </TD><TD>      18 674F          </TD></TR><TR><TD> 800  </TD><TD>      24 878F          </TD></TR></TABLE><p></p>Rémunération forfaitaire à l'hectare au 1er juillet 1997<p></p> (en francs)<p></p><p></p>   (1) = Retournage<p></p><p></p>   (2) = Enroulage<p></p><TABLE><TR><TD> ETAT   </TD><TD> Arrachage   </TD><TD> (1) </TD><TD> (2) </TD></TR><TR><TD>LINIERE </TD><TD>double</TD><TD>simple</TD><TD></TD><TD></TD></TR><TR><TD>Normal  </TD><TD> 54,53</TD><TD> 65,45</TD><TD></TD><TD></TD></TR><TR><TD>Versé   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>< 30 % </TD><TD> 87,27</TD><TD> 98,18</TD><TD>54,53</TD><TD>87,27</TD></TR><TR><TD>Versé   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>> 30 % </TD><TD>109,08</TD><TD>152,73</TD><TD></TD><TD></TD></TR><TR><TD>et < 70 %</TD><TD></TD><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 6 1997-04-03 BO conventions collectives 97-20, étendu par arrêté du 9 juillet 1997 JORF 19 juillet 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (annexe)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 860025600000,
+                  "dateFin": 893203200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

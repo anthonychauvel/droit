@@ -13355,13 +13355,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719919",
+              "cid": "KALISCTA000005719919",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des salaires minima au 1er janvier 1990.",
+              "dateModif": null,
+              "dateDebut": "1989-11-07",
+              "dateFin": "1993-02-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005840535",
+                  "cid": "KALIARTI000005840535",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719919/KALIARTI000005840535",
+                  "pathTitle": [
+                    "Barème des salaires minima au 1er janvier 1990."
+                  ],
+                  "content": "<p></p>   Article 1er<p></p><p></p>   Le brarème des salaires minima garantis des employés, objet de l'annexe II de la convention collective nationale du 25 novembre 1987, se trouve modifié de la façon suivante :<p></p><p></p>      A compter du 1er janvier 1990<p></p> Catégorie 1 : 5055 F<p></p> Catégorie 2 : 5070 F<p></p> Catégorie 3 : 5095 F<p></p> Catégorie 4 : 5175 F<p></p> Catégorie 5 : 5250 F<p></p> Catégorie 6 : 5375 F<p></p> Catégorie 7 : 5540 F<p></p> Catégorie 8 : 5730 F<p></p><p></p><p></p>   Article 2<p></p><p></p>   Les primes d'ancienneté, objet de l'annexe II de la convention collective nationale du 25 novembre 1987, se trouvent également modifiées de la façon suivante à compter du 1er janvier 1990 :<p></p><p></p>      CATEGORIES 1 ET 2<p></p> 95 F pour 3 ans<p></p> 160 F pour 6 ans<p></p> 210 F pour 9 ans<p></p> 265 F pour 12 ans<p></p> 315 F pour 15 ans<p></p><p></p><p></p>      CATEGORIES 3 ET 4<p></p> 105 F pour 3 ans<p></p> 170 F pour 6 ans<p></p> 220 F pour 9 ans<p></p> 275 F pour 12 ans<p></p> 325 F pour 15 ans<p></p><p></p><p></p>      CATEGORIES 5 ET 6<p></p> 115 F pour 3 ans<p></p> 190 F pour 6 ans<p></p> 250 F pour 9 ans<p></p> 315 F pour 12 ans<p></p> 375 F pour 15 ans<p></p><p></p><p></p>      CATEGORIES 7 ET 8<p></p> 125 F pour 3 ans<p></p> 200 F pour 6 ans<p></p> 260 F pour 9 ans<p></p> 325 F pour 12 ans<p></p> 385 F pour 15 ans<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 4 1989-11-07 étendu par arrêté du 16 janvier 1990 JORF 30 janvier 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 626400000000,
+                  "dateFin": 729216000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13375,13 +13449,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719920",
+              "cid": "KALISCTA000005719920",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "*Primes d'ancienneté*",
+              "dateModif": null,
+              "dateDebut": "1989-10-13",
+              "dateFin": "1991-03-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005840536",
+                  "cid": "KALIARTI000005840536",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": "10",
+                  "path": "/KALISCTA000005719920/KALIARTI000005840536",
+                  "pathTitle": [
+                    "*Primes d'ancienneté*"
+                  ],
+                  "content": "<p></p>   Le tableau figurant à l'annexe II de la convention collective nationale et qui fixe le montant des primes d'ancienneté est remplacé par le tableau suivant, étant précisé que ces montants s'appliquent à tous les salariés, quelle que soit leur date d'entrée dans l'établissement :<p></p><p></p>      CATEGORIES O1 ET O2<p></p> 90 F pour 3 ans<p></p> 158,08 F pour 6 ans<p></p> 237,12 F pour 9 ans<p></p> 316,15 F pour 12 ans<p></p> 395,19 F pour 15 ans<p></p><p></p><p></p>      CATEGORIES O3 ET O4<p></p> 100 F pour 3 ans<p></p> 160 F pour 6 ans<p></p> 237,12 F pour 9 ans<p></p> 316,15 F pour 12 ans<p></p> 395,19 F pour 15 ans<p></p><p></p><p></p>      CATEGORIES O5 ET O6<p></p> 110 F pour 3 ans<p></p> 180 F pour 6 ans<p></p> 240,00 F pour 9 ans<p></p> 316,15 F pour 12 ans<p></p> 395,19 F pour 15 ans<p></p><p></p><p></p>      CATEGORIES O7 ET O8<p></p> 120 F pour 3 ans<p></p> 190 F pour 6 ans<p></p> 250,00 F pour 9 ans<p></p> 316,15 F pour 12 ans<p></p> 395,19 F pour 15 ans<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 1989-10-13 étendu par arrêté du 14 août 1990 JORF 23 août 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires (département du Calvados)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 624240000000,
+                  "dateFin": 667785600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13395,13 +13543,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719921",
+              "cid": "KALISCTA000005719921",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et primes d'ancienneté du personnel d'encadrement au 1er mars 1991",
+              "dateModif": null,
+              "dateDebut": "1991-03-01",
+              "dateFin": "1991-11-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005840537",
+                  "cid": "KALIARTI000005840537",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719921/KALIARTI000005840537",
+                  "pathTitle": [
+                    "Salaires et primes d'ancienneté du personnel d'encadrement au 1er mars 1991"
+                  ],
+                  "content": "<p></p>      Pourla catégorie A.1 et A.2<p></p><p></p>   Pour moins de trois ans d'ancienneté :<p></p> Minima catégorie A.1 : 6.920 F<p></p> Minima catégorie A.2 : 7.430 F<p></p><p></p>   Montant de la prime d'ancienneté à rajouter en sus à partir de trois mois de présence :<p></p> 3 ans d'ancienneté :<p></p><p></p>   - Catégorie A.1 : + 150 F<p></p><p></p>   - Catégorie A.2 : + 150 F<p></p> 6 ans d'ancienneté :<p></p><p></p>   - Catégorie A.1 : + 230 F<p></p><p></p>   - Catégorie A.2 : + 230 F<p></p> 9 ans d'ancienneté :<p></p><p></p>   - Catégorie A.1 : + 290 F<p></p><p></p>   - Catégorie A.2 : + 290 F<p></p> 12 ans d'ancienneté :<p></p><p></p>   - Catégorie A.1 : + 350 F<p></p><p></p>   - Catégorie A.2 : + 350 F<p></p> 15 ans d'ancienneté :<p></p><p></p>   - Catégorie A.1 : + 420 F<p></p><p></p>   - Catégorie A.2 : + 420 F<p></p><p></p><p></p>      Minima pour les catégories B, C, D<p></p> Moins de 3 ans d'ancienneté :<p></p><p></p>   - Minima catégorie B : 8.200 F<p></p><p></p>   - Minima catégorie C : 9.225 F<p></p><p></p>   - Minima catégorie D : 10.250 F<p></p> 3 ans d'ancienneté :<p></p><p></p>   - Minima catégorie B : 8.300 F<p></p><p></p>   - Minima catégorie C : 9.325 F<p></p><p></p>   - Minima catégorie D : 10.350 F<p></p> 6 ans d'ancienneté :<p></p><p></p>   - Minima catégorie B : 8.400 F<p></p><p></p>   - Minima catégorie C : 9.425 F<p></p><p></p>   - Minima catégorie D : 10.450 F<p></p> 9 ans d'ancienneté :<p></p><p></p>   - Minima catégorie B : 8.500 F<p></p><p></p>   - Minima catégorie C : 9.525 F<p></p><p></p>   - Minima catégorie D : 10.550 F<p></p> 12 ans d'ancienneté :<p></p><p></p>   - Minima catégorie B : 8.600 F<p></p><p></p>   - Minima catégorie C : 9.625 F<p></p><p></p>   - Minima catégorie D : 10.650 F<p></p> 15 ans d'ancienneté :<p></p><p></p>   - Minima catégorie B : 8.700 F<p></p><p></p>   - Minima catégorie C : 9.725 F<p></p><p></p>   - Minima catégorie D : 10.750 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 1991-03-01 étendu par arrêté du 1er juillet 1991 JORF 17 juillet 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II salaires Personnel d'encadrement",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 667785600000,
+                  "dateFin": 689299200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

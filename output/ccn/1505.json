@@ -47568,13 +47568,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005733616",
+              "cid": "KALISCTA000005733616",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires de février 1994 à janvier 1995",
+              "dateModif": null,
+              "dateDebut": "1994-02-01",
+              "dateFin": "1994-12-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005874794",
+                  "cid": "KALIARTI000005874794",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005733616/KALIARTI000005874794",
+                  "pathTitle": [
+                    "Grille de salaires de février 1994 à janvier 1995"
+                  ],
+                  "content": "Classifications et salaires<p></p><p></p>   Comme suite aux décisions prises par les deux collèges lors de la session de commission nationale mixte du mercredi 17 novembre 1993, la grille de salaires ci-dessous est applicable de février à juin 1994. Sont exclus, provisoirement, de cette grille, les départements d'outre-mer.<p></p><p></p> GRILLE DE SALAIRES<p></p><p></p> (1) Coefficient<p></p> (2) Catégorie<p></p> (3) Pour 39 heures<p></p> (4) Pour 42 heures<p></p> (5) Pour 45 heures<p></p><TABLE><TR><TD>(1) (2)   (3)    (4)    (5) </TD></TR><TR><TD>100</TD><TD> I </TD><TD> 5.980</TD><TD> 6.440</TD><TD> 7.015</TD></TR><TR><TD>110</TD><TD> II</TD><TD> 6.156</TD><TD> 6.630</TD><TD> 7.222</TD></TR><TR><TD>120</TD><TD>III</TD><TD> 6.603</TD><TD> 7.111</TD><TD> 7.746</TD></TR><TR><TD>130</TD><TD> IV</TD><TD> 7.022</TD><TD> 7.562</TD><TD> 8.237</TD></TR><TR><TD>160</TD><TD>  V</TD><TD> 8.585</TD><TD> 9.245</TD><TD>10.070</TD></TR><TR><TD>220</TD><TD> VI</TD><TD>11.817</TD><TD>12.726</TD><TD>13.862</TD></TR></TABLE><p></p><p></p>   Comme suite aux décisions prises par les deux collèges lors de la session de commission nationale mixte du mercredi 12 novembre 1993, la grille de salaires ci-dessous est applicable de juillet 1994 à janvier 1995.<p></p><p></p>   Sont exclus, provisoirement, de cette grille, les départements d'outre-mer.<p></p><p></p> GRILLE DE SALAIRES<p></p><p></p> (1) Coefficient<p></p> (2) Catégorie<p></p> (3) Pour 39 heures<p></p> (4) Pour 42 heures<p></p> (5) Pour 45 heures<p></p><TABLE><TR><TD>(1) (2)   (3)    (4)    (5) </TD></TR><TR><TD>100</TD><TD> I </TD><TD> 6.028</TD><TD> 6.492</TD><TD> 7.072</TD></TR><TR><TD>110</TD><TD> II</TD><TD> 6.205</TD><TD> 6.682</TD><TD> 7.279</TD></TR><TR><TD>120</TD><TD>III</TD><TD> 6.656</TD><TD> 7.168</TD><TD> 7.808</TD></TR><TR><TD>130</TD><TD> IV</TD><TD> 7.078</TD><TD> 7.622</TD><TD> 8.303</TD></TR><TR><TD>160</TD><TD>  V</TD><TD> 8.654</TD><TD> 9.320</TD><TD>10.152</TD></TR><TR><TD>220</TD><TD> VI</TD><TD>11.912</TD><TD>12.828</TD><TD>13.973</TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 12 1993-11-17 en vigueur le 1er février 1994 étendu par arrêté du 15 février 1994 JORF 23 février 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 760060800000,
+                  "dateFin": 787449600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -47588,13 +47662,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005733617",
+              "cid": "KALISCTA000005733617",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires de février 1995 à juin 1995",
+              "dateModif": null,
+              "dateDebut": "1994-12-15",
+              "dateFin": "1995-02-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005874795",
+                  "cid": "KALIARTI000005874795",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005733617/KALIARTI000005874795",
+                  "pathTitle": [
+                    "Grille de salaires de février 1995 à juin 1995"
+                  ],
+                  "content": "Classification et salaires<p></p><p></p>   Comme suite aux décisions prises par les deux collèges lors de la session de la commission nationale mixte du jeudi 15 décembre 1994, la grille de salaires ci-dessous est applicable de février à juin 1995. Sont exclus provisoirement de cette grille les départements d'outre-mer.<p></p> GRILLE DE SALAIRES<p></p><p></p> (1) Coefficient<p></p> (2) Catégorie<p></p> (3) Pour 39 heures<p></p> (4) Pour 42 heures<p></p> (5) Pour 45 heures<p></p><TABLE><TR><TD>(1) (2)   (3)    (4)    (5) </TD></TR><TR><TD>100</TD><TD> I </TD><TD> 6.058</TD><TD> 6.524</TD><TD> 7.107</TD></TR><TR><TD>110</TD><TD> II</TD><TD> 6.236</TD><TD> 6.716</TD><TD> 7.316</TD></TR><TR><TD>120</TD><TD>III</TD><TD> 6.689</TD><TD> 7.204</TD><TD> 7.847</TD></TR><TR><TD>130</TD><TD> IV</TD><TD> 7.113</TD><TD> 7.660</TD><TD> 8.344</TD></TR><TR><TD>160</TD><TD>  V</TD><TD> 8.697</TD><TD> 9.366</TD><TD>10.202</TD></TR><TR><TD>220</TD><TD> VI</TD><TD>11.972</TD><TD>12.893</TD><TD>14.044</TD></TR></TABLE><p></p><p></p>   Comme suite aux décisions prises par les deux collèges lors de la session de la commission nationale mixte du jeudi 15 décembre 1994, la grille de salaires ci-dessous est applicable de juillet 1995 à janvier 1996. Sont exclus provisoirement de cette grille les départements d'outre-mer.<p></p><p></p> GRILLE DE SALAIRES<p></p><p></p> (1) Coefficient<p></p> (2) Catégorie<p></p> (3) Pour 39 heures<p></p> (4) Pour 42 heures<p></p> (5) Pour 45 heures<p></p><TABLE><TR><TD>(1) (2)   (3)    (4)    (5) </TD></TR><TR><TD>100</TD><TD> I </TD><TD> 6.088</TD><TD> 6.558</TD><TD> 7.143</TD></TR><TR><TD>110</TD><TD> II</TD><TD> 6.267</TD><TD> 6.749</TD><TD> 7.352</TD></TR><TR><TD>120</TD><TD>III</TD><TD> 6.723</TD><TD> 7.240</TD><TD> 7.886</TD></TR><TR><TD>130</TD><TD> IV</TD><TD> 7.149</TD><TD> 7.699</TD><TD> 8.386</TD></TR><TR><TD>160</TD><TD>  V</TD><TD> 8.741</TD><TD> 9.413</TD><TD>10.253</TD></TR><TR><TD>220</TD><TD> VI</TD><TD>12.031</TD><TD>12.957</TD><TD>14.114</TD></TR></TABLE><p></p>Date d'application<p></p><p></p>   Le présent avenant entre en vigueur le 1er février 1995.<p></p> Publicité, extension<p></p><p></p>   Le présent avenant sera déposé en cinq exemplaires à la direction départementale du travail et de l'emploi, 18, avenue Parmentier, 75011 Paris.<p></p><p></p>   Les parties signataires ont convenu de demander, sans délai, l'extension du présent avenant, l'Union nationale des syndicats de détaillants en fruits, légumes et primeurs étant chargée des formalités visées ci-dessus.<p></p><font color=\"808080\"><em>   Le présent avenant salaires a été annulé et remplacé par l'avenant n° 17 du 21 décembre 1994.<p></p></em></font>",
+                  "nota": "   Le présent avenant salaires a été annulé et remplacé par l'avenant n° 17 du 21 décembre 1994.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 17 1994-12-15 BO conventions collectives 94-52",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 787449600000,
+                  "dateFin": 791596800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -47608,13 +47756,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005733618",
+              "cid": "KALISCTA000005733618",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires de février 1995 à juin 1995",
+              "dateModif": null,
+              "dateDebut": "1995-02-01",
+              "dateFin": "1995-06-30",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005874796",
+                  "cid": "KALIARTI000005874796",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005733618/KALIARTI000005874796",
+                  "pathTitle": [
+                    "Grille de salaires de février 1995 à juin 1995"
+                  ],
+                  "content": "Classifications et salaires<p></p><p></p>   Comme suite aux décisions prises par les deux collèges lors de la session de la commission nationale mixte du jeudi 15 décembre 1994, la grille de salaires ci-dessous est applicable de février à juin 1995. Sont exclus, provisoirement, de cette grille les départements d'outre-mer.<p></p><p></p> GRILLE DE SALAIRES (en francs).<p></p><p></p> (1) Coefficient<p></p> (2) Catégorie<p></p> (3) Pour 39 heures<p></p> (4) Pour 42 heures<p></p> (5) Pour 45 heures<p></p><TABLE><TR><TD>(1) (2)   (3)    (4)    (5) </TD></TR><TR><TD>100</TD><TD> I </TD><TD> 6.058</TD><TD> 6.524</TD><TD> 7.107</TD></TR><TR><TD>110</TD><TD> II</TD><TD> 6.236</TD><TD> 6.716</TD><TD> 7.316</TD></TR><TR><TD>120</TD><TD>III</TD><TD> 6.689</TD><TD> 7.204</TD><TD> 7.847</TD></TR><TR><TD>130</TD><TD> IV</TD><TD> 7.113</TD><TD> 7.660</TD><TD> 8.344</TD></TR><TR><TD>160</TD><TD>  V</TD><TD> 8.697</TD><TD> 9.366</TD><TD>10.202</TD></TR><TR><TD>220</TD><TD> VI</TD><TD>11.972</TD><TD>12.893</TD><TD>14.044</TD></TR></TABLE><p></p><p></p>   Comme suite aux décisions prises par les deux collèges lors de la session de la commission nationale mixte du jeudi 15 décembre 1994, la grille de salaires ci-dessous est applicable de juillet 1995 à janvier 1996. Sont exclus, provisoirement, de cette grille les départements d'outre-mer.<p></p><p></p> (1) Coefficient<p></p> (2) Catégorie<p></p> (3) Pour 39 heures<p></p> (4) Pour 42 heures<p></p> (5) Pour 45 heures<p></p><TABLE><TR><TD>(1) (2)   (3)    (4)    (5) </TD></TR><TR><TD>100</TD><TD> I </TD><TD> 6.088</TD><TD> 6.558</TD><TD> 7.143</TD></TR><TR><TD>110</TD><TD> II</TD><TD> 6.267</TD><TD> 6.749</TD><TD> 7.352</TD></TR><TR><TD>120</TD><TD>III</TD><TD> 6.723</TD><TD> 7.240</TD><TD> 7.886</TD></TR><TR><TD>130</TD><TD> IV</TD><TD> 7.149</TD><TD> 7.699</TD><TD> 8.386</TD></TR><TR><TD>160</TD><TD>  V</TD><TD> 8.741</TD><TD> 9.413</TD><TD>10.253</TD></TR><TR><TD>220</TD><TD> VI</TD><TD>12.031</TD><TD>12.957</TD><TD>14.114</TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 17 1994-12-21 en vigueur le 1er février 1995 BO conventions collectives 95-1 étendu par arrêté du 15 février 1995 JORF 23 février 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 791596800000,
+                  "dateFin": 804470400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
