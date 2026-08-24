@@ -15370,13 +15370,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696952",
+              "cid": "KALISCTA000005696952",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er janvier 1988.",
+              "dateModif": null,
+              "dateDebut": "1988-06-29",
+              "dateFin": "1989-07-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783396",
+                  "cid": "KALIARTI000005783396",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696952/KALIARTI000005783396",
+                  "pathTitle": [
+                    "Salaires à compter du 1er janvier 1988."
+                  ],
+                  "content": "<p></p>   1. A compter du 1er janvier 1988, la valeur du point retenue pour le calcul des rémunérations mensuelles concernant le personnel figurant aux annexes II et III est fixée comme suit :<p></p><p></p>   - pour le salaire de base coefficient 200 : 26,43 F ;<p></p><p></p>   - pour le coefficient hiérarchique (différence entre le coefficient de l'emploi et le coefficient de base) : 17,86 F.<p></p><p></p>   La grille des salaires s'établit comme suit :<p></p><p></p>   Coefficient 200 = 5 286 F<p></p><p></p>   Coefficient 240 = 6 000 F<p></p><p></p>   Coefficient 330 = 7 608 F<p></p><p></p>   Coefficient 400 = 8 858 F<p></p><p></p>   Coefficient 430 = 9 394 F<p></p><p></p>   2. A compter du 1er janvier 1988, la valeur du point retenue pour le calcul des rémunérations mensuelles concernant le personnel figurant à l'annexe I de la convention collective est fixée comme suit :<p></p><p></p>   - pour le salaire de base coefficient 100 : 39,87 F ;<p></p><p></p>   - pour le coefficient hiérarchique (différence entre le coefficient de l'emploi et le coefficient de base) : 18,53 F.<p></p><p></p>   La grille de salaires s'établit comme suit :<p></p><p></p>   Coefficient 115 = 4 265 F<p></p><p></p>   Coefficient 120 = 4 358 F<p></p><p></p>   Coefficient 130 = 4 543 F<p></p><p></p>   Coefficient 140 = 4 728 F<p></p><p></p>   Coefficient 150 = 4 914 F<p></p><p></p>   Coefficient 155 = 5 006 F<p></p><p></p>   Coefficient 160 = 5 099 F<p></p><p></p>   Coefficient 170 = 5 284 F<p></p><p></p>   Coefficient 185 = 5 562 F<p></p><p></p>   Coefficient 240 = 6 581 F<p></p> sur la base de trente-neuf heures par semaine.<p></p><p></p>   Par ailleurs, le salaire mensuel minimum (prime d'ancienneté non comprise) ne pourra être inférieur à 5 000 F pour trente-neuf heures de travail sur treize mois.<p></p><p></p>   Fait à Levallois, le 29 juin 1988.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 17 1988-06-29",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES employés, agent de maîtrise, collaborateurs commerciaux et techniques, cadres",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 583545600000,
+                  "dateFin": 615600000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -15390,13 +15464,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696953",
+              "cid": "KALISCTA000005696953",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et coefficients.",
+              "dateModif": null,
+              "dateDebut": "1988-07-05",
+              "dateFin": "1993-03-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783397",
+                  "cid": "KALIARTI000005783397",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696953/KALIARTI000005783397",
+                  "pathTitle": [
+                    "Salaires et coefficients."
+                  ],
+                  "content": "<p></p>   Pour le salaire de base, coefficient 200 : 27,36 F ;<p></p><p></p>   Pour le coefficient hiérarchique (différence entre le coefficient de l'emploi et le coefficient de base) : 18,49 F.<p></p><p></p>   La grille des salaires s'établit comme suit :<p></p><p></p>   Coefficient 200 = 5 471 F<p></p><p></p>   Coefficient 240 = 6 212 F<p></p><p></p>   Coefficient 330 = 7 876 F<p></p><p></p>   Coefficient 400 = 9 170 F<p></p><p></p>   Coefficient 430 = 9 724 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 18 1989-07-05",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES employés, agent de maîtrise, collaborateurs commerciaux et techniques, cadres",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 584064000000,
+                  "dateFin": 731635200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -15410,13 +15558,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696954",
+              "cid": "KALISCTA000005696954",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er janvier 1989.",
+              "dateModif": null,
+              "dateDebut": "1988-07-05",
+              "dateFin": "1993-03-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783398",
+                  "cid": "KALIARTI000005783398",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696954/KALIARTI000005783398",
+                  "pathTitle": [
+                    "Salaires à compter du 1er janvier 1989."
+                  ],
+                  "content": "<p></p>   A compter du 1er janvier 1989, la valeur du point retenue pour le calcul des rémunérations mensuelles concernant le personnel figurant à l'annexe I de la convention collective est fixée comme suit :<p></p><p></p>   - pour le salaire de base coefficient 100 : 41,27 F ;<p></p><p></p>   - pour le coefficient hiérarchique (différence entre le coefficient de l'emploi et le coefficient de base) : 19,18 F.<p></p><p></p>   La grille des salaires s'établit comme suit :<p></p><p></p>   Coefficient 115 = 4 415 F<p></p><p></p>   Coefficient 120 = 4 511 F<p></p><p></p>   Coefficient 130 = 4 702 F<p></p><p></p>   Coefficient 140 = 4 894 F<p></p><p></p>   Coefficient 150 = 5 086 F<p></p><p></p>   Coefficient 155 = 5 182 F<p></p><p></p>   Coefficient 160 = 5 278 F<p></p><p></p>   Coefficient 170 = 5 470 F<p></p><p></p>   Coefficient 185 = 5 757 F<p></p><p></p>   Coefficient 240 = 6 812 F<p></p> sur la base de trente-neuf heures par semaine.<p></p><p></p>   Par ailleurs, le salaire mensuel minimum (prime d'ancienneté non comprise) ne pourra être inférieur à 5 175 F pour trente-neuf heures de travail.<p></p><p></p>   Fait à Levallois, le 5 juillet 1989.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 19 1989-07-05",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES employés, agent de maîtrise, collaborateurs commerciaux et techniques, cadres.",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 584064000000,
+                  "dateFin": 731635200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

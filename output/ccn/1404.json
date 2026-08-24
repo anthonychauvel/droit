@@ -34011,13 +34011,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696901",
+              "cid": "KALISCTA000005696901",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème national des salaires minima mensuels garantis au 1er janvier 1994.",
+              "dateModif": null,
+              "dateDebut": "1993-12-14",
+              "dateFin": "1994-12-16",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783192",
+                  "cid": "KALIARTI000005783192",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696901/KALIARTI000005783192",
+                  "pathTitle": [
+                    "Barème national des salaires minima mensuels garantis au 1er janvier 1994."
+                  ],
+                  "content": "<p></p>   BAREME NATIONAL DES SALAIRES MINIMA MENSUELS GARANTIS (en francs).    (base 39 heures par semaine)<p></p><p></p>   1er janvier 1994<p></p> =============================<p></p><TABLE><TR><TD> COEFFICIENTS </TD><TD> SALAIRES </TD></TR><TR><TD>     150      </TD><TD>   5.979  </TD></TR><TR><TD>     160      </TD><TD>   5.986  </TD></TR><TR><TD>     170      </TD><TD>   5.991  </TD></TR><TR><TD>     180      </TD><TD>   6.038  </TD></TR><TR><TD>     195      </TD><TD>   6.296  </TD></TR><TR><TD>     215      </TD><TD>   6.641  </TD></TR><TR><TD>     225      </TD><TD>   6.815  </TD></TR><TR><TD>     245      </TD><TD>   7.195  </TD></TR><TR><TD>     260      </TD><TD>   7.457  </TD></TR><TR><TD>     275      </TD><TD>   7.718  </TD></TR><TR><TD>     295      </TD><TD>   8.178  </TD></TR><TR><TD>     315      </TD><TD>   8.605  </TD></TR><TR><TD>     340      </TD><TD>   9.214  </TD></TR><TR><TD>     365      </TD><TD>   9.797  </TD></TR><TR><TD>     410      </TD><TD>  10.798  </TD></TR><TR><TD>     450      </TD><TD>  11.751  </TD></TR><TR><TD>     500      </TD><TD>  12.893  </TD></TR><TR><TD>     600      </TD><TD>  15.207  </TD></TR><TR><TD>     700      </TD><TD>  17.636  </TD></TR><TR><TD>     800      </TD><TD>  19.807  </TD></TR></TABLE><p></p> ===========================",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 56 1993-12-14 étendu par arrêté du 10 juin 1994 JORF 7 juillet 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 755827200000,
+                  "dateFin": 787536000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -34031,13 +34105,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696902",
+              "cid": "KALISCTA000005696902",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème national des salaires minima mensuels garantis au 1er janvier 1995.",
+              "dateModif": null,
+              "dateDebut": "1994-12-16",
+              "dateFin": "1995-06-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783193",
+                  "cid": "KALIARTI000005783193",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696902/KALIARTI000005783193",
+                  "pathTitle": [
+                    "Barème national des salaires minima mensuels garantis au 1er janvier 1995."
+                  ],
+                  "content": "<p></p>   BAREME NATIONAL DES SALAIRES MINIMA MENSUELS GARANTIS (en francs).    (base 39 heures par semaine)<p></p><p></p>   1er janvier 1995<p></p> ===========================<p></p><TABLE><TR><TD> COEFFICIENTS </TD><TD> SALAIRES </TD></TR><TR><TD>     150      </TD><TD>   6.069  </TD></TR><TR><TD>     160      </TD><TD>   6.119  </TD></TR><TR><TD>     170      </TD><TD>   6.169  </TD></TR><TR><TD>     180      </TD><TD>   6.219  </TD></TR><TR><TD>     195      </TD><TD>   6.390  </TD></TR><TR><TD>     215      </TD><TD>   6.721  </TD></TR><TR><TD>     225      </TD><TD>   6.897  </TD></TR><TR><TD>     245      </TD><TD>   7.281  </TD></TR><TR><TD>     260      </TD><TD>   7.546  </TD></TR><TR><TD>     275      </TD><TD>   7.811  </TD></TR><TR><TD>     295      </TD><TD>   8.276  </TD></TR><TR><TD>     315      </TD><TD>   8.708  </TD></TR><TR><TD>     340      </TD><TD>   9.325  </TD></TR><TR><TD>     365      </TD><TD>   9.915  </TD></TR><TR><TD>     410      </TD><TD>  10.928  </TD></TR><TR><TD>     450      </TD><TD>  11.892  </TD></TR><TR><TD>     500      </TD><TD>  13.048  </TD></TR><TR><TD>     600      </TD><TD>  15.389  </TD></TR><TR><TD>     700      </TD><TD>  17.848  </TD></TR><TR><TD>     800      </TD><TD>  20.045  </TD></TR></TABLE><p></p> ===========================",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 58 1994-12-16 BO Conventions collectives 95-5 étendu par arrêté du 11 avril 1995 JORF 23 avril 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 787536000000,
+                  "dateFin": 803606400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -34051,13 +34199,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696904",
+              "cid": "KALISCTA000005696904",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème national des salaires minima mensuels garantis au 1er juillet 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-06-20",
+              "dateFin": "1996-01-25",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783194",
+                  "cid": "KALIARTI000005783194",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696904/KALIARTI000005783194",
+                  "pathTitle": [
+                    "Barème national des salaires minima mensuels garantis au 1er juillet 1995."
+                  ],
+                  "content": "<p></p>   BAREME NATIONAL DES SALAIRES MINIMA MENSUELS GARANTIS (en francs).    (base 39 heures par semaine)<p></p><p></p>   1er juillet 1995<p></p><TABLE><TR><TD> COEFFICIENTS</TD><TD> SALAIRES </TD></TR><TR><TD>     150     </TD><TD>   6.251 F</TD></TR><TR><TD>     160     </TD><TD>   6.303 F</TD></TR><TR><TD>     170     </TD><TD>   6.354 F</TD></TR><TR><TD>     180     </TD><TD>   6.406 F</TD></TR><TR><TD>     195     </TD><TD>   6.582 F</TD></TR><TR><TD>     215     </TD><TD>   6.902 F</TD></TR><TR><TD>     225     </TD><TD>   7.069 F</TD></TR><TR><TD>     245     </TD><TD>   7.441 F</TD></TR><TR><TD>     260     </TD><TD>   7.697 F</TD></TR><TR><TD>     275     </TD><TD>   7.952 F</TD></TR><TR><TD>     295     </TD><TD>   8.408 F</TD></TR><TR><TD>     315     </TD><TD>   8.839 F</TD></TR><TR><TD>     340     </TD><TD>   9.465 F</TD></TR><TR><TD>     365     </TD><TD>  10.064 F</TD></TR><TR><TD>     410     </TD><TD>  11.059 F</TD></TR><TR><TD>     450     </TD><TD>  12.035 F</TD></TR><TR><TD>     500     </TD><TD>  13.205 F</TD></TR><TR><TD>     600     </TD><TD>  15.574 F</TD></TR><TR><TD>     700     </TD><TD>  18.062 F</TD></TR><TR><TD>     800     </TD><TD>  20.286 F</TD></TR></TABLE><p></p><p></p><p></p><p></p>   Le champ d'application du présent accord, en attente de l'extension de l'avenant n° 55 du 4 mai 1994, est celui correspondant au champ initial défini à l'article 1er, chapitre Ier, modifié par avenant n° 33 du 22 avril 1986.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 61 1995-06-20 BO conventions collectives 95-33, étendu par arrêté du 31 octobre 1995 JORF 11 novembre 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 803606400000,
+                  "dateFin": 822528000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

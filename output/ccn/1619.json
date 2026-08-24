@@ -34344,13 +34344,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005695651",
+              "cid": "KALISCTA000005695651",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 2002.",
+              "dateModif": null,
+              "dateDebut": "2002-04-18",
+              "dateFin": "2003-12-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005779900",
+                  "cid": "KALIARTI000005779900",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005695651/KALIARTI000005779900",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 2002."
+                  ],
+                  "content": "Article 6.4<p></p><p></p>   Cet article est supprimé.<p></p><p></p>   Il est créé un nouvel article 8 intitulé et rédigé comme suit :<p></p> ..............<p></p><p></p>   Grille des taux horaires minimaux des personnels<p></p> des cabinets dentaires applicables au 1er janvier 2002<p></p> Horaire mensuel légal et conventionnel de 151,67 heures<p></p> -----------------------------------------------------------------<p></p><TABLE><TR><TD>             CATEGORIE                      </TD><TD> TAUX HORAIRE     </TD></TR><TR><TD></TD><TD>   (en euros)     </TD></TR><TR><TD></TD><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>  1. Personnel d'entretien..................</TD><TD>     7,43         </TD></TR><TR><TD>  2. Réceptionniste ou hotesse d'accueil....</TD><TD>     7,43         </TD></TR><TR><TD>  3. Aide dentaire </TD><TD></TD><TD></TD></TR><TR><TD>  3.1. Aides dentaires stagiaires 1re année.</TD><TD>     7,43         </TD></TR><TR><TD>  3.2. Aides dentaires stagiaires 2e année..</TD><TD>     7,43         </TD></TR><TR><TD>  3.3. Aides dentaires qualifiées...........</TD><TD>     7,64         </TD></TR><TR><TD>  4. Assistante dentaire </TD><TD></TD><TD></TD></TR><TR><TD>  4.1. Assistantes dentaires stagiaires </TD><TD></TD><TD></TD></TR><TR><TD>  4.1.1. Sous contrat à durée indéterminée </TD><TD></TD><TD></TD></TR><TR><TD>  4.1.1.1. Assistantes dentaires stagiaires </TD><TD></TD></TR><TR><TD>           1re année........................</TD><TD>     7,43         </TD></TR><TR><TD>  4.1.1.2. Assistantes dentaires stagiaires </TD><TD></TD></TR><TR><TD>           2e année.........................</TD><TD>     7,64         </TD></TR><TR><TD>  4.1.2. Sous contrat de qualification </TD><TD></TD><TD></TD></TR><TR><TD>  4.1.2.1. Assistantes dentaires stagiaires </TD><TD></TD></TR><TR><TD>           1re année........................</TD><TD>     80 % du SMIC </TD></TR><TR><TD>  4.1.2.2. Assistantes dentaires stagiaires </TD><TD></TD></TR><TR><TD>           2e année.........................</TD><TD>    100 % du SMIC </TD></TR><TR><TD>  4.2. Assistantes dentaires qualifiées </TD><TD></TD><TD></TD></TR><TR><TD>  4.2.1. Assistantes dentaires qualifiées...</TD><TD>     8,24         </TD></TR><TR><TD>  4.2.2. Assistantes dentaires qualifiées   </TD><TD></TD></TR><TR><TD>         ODF................................</TD><TD>     8,54         </TD></TR><TR><TD>  5. Prothésistes dentaires de laboratoire </TD><TD></TD><TD></TD></TR><TR><TD>  5.1. Niveau 1.............................</TD><TD>     7,94         </TD></TR><TR><TD>  5.2. Niveau 2.............................</TD><TD>     9,94         </TD></TR><TR><TD>  5.3. Niveau 3 12,21.......................</TD><TD></TD></TR><TR><TD>  5.4. Niveau 4 13,28.......................</TD><TD></TD></TR><TR><TD>  Prime de secrétariat......................</TD><TD></TD></TR><TR><TD>10 % du salaire mensuel minimal de base de  </TD><TD></TD></TR><TR><TD>l'assistante dentaire  qualifiée            </TD><TD></TD></TR><TR><TD>(proratisée pour les temps partiels)........</TD><TD>   125,00         </TD></TR></TABLE><p></p> -----------------------------------------------------------------",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2002-04-18 en vigueur le 1er janvier 2002 BO conventions collectives 2002-29 étendu par arrêté du 10 février 2003 JORF 19 février 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1019088000000,
+                  "dateFin": 1070582400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -34364,13 +34438,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005695652",
+              "cid": "KALISCTA000005695652",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er octobre 2003 et 1er décembre 2003.",
+              "dateModif": null,
+              "dateDebut": "2003-12-05",
+              "dateFin": "2004-03-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005779902",
+                  "cid": "KALIARTI000005779902",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005695652/KALIARTI000005779902",
+                  "pathTitle": [
+                    "Salaires au 1er octobre 2003 et 1er décembre 2003."
+                  ],
+                  "content": "<p></p>   La commission mixte des cabinets dentaires, réunie le 5 décembre 2003, décide les augmentations salariales suivantes :<p></p><p></p>   - à compter du 1er octobre 2003 : cf. grille ;<p></p><p></p>   - à compter du 1er décembre 2003 : cf. grille.<p></p><p></p>   Ces augmentations seront applicables à la signature et soumises à une demande d'extension.<p></p><p></p>   Fait à Paris, le 5 décembre 2003.<p></p><p></p>   Grille des taux horaires minimaux des personnels des cabinets dentaires applicables au 1er octobre 2003<p></p><p></p>   Rappel : horaire mensuel légal et conventionnel = 151,67 heures    (Garantie mensuelle de rémunération = 1,7986 au 1er juillet 2003 applicable pour les postes 1, 2, 3.1, 3.2 - Pour les postes 4.1.2.1, 4.1.2.2 : SMIC = 7,19 Euros)<p></p><p></p>   En euros.<p></p><p></p>   1. Personnel d'entretien : 7,70.<p></p><p></p>   2. Réceptionnistes ou hôtesses d'accueil : 7,70.<p></p><p></p>   3. Aides dentaires<p></p><p></p>   3.1 Aides dentaires stagiaires 1re année : 7,70.<p></p><p></p>   3.2 Aides dentaires stagiaires 2e année : 7,70.<p></p><p></p>   3.3 Aides dentaires qualifiées 7,84.<p></p><p></p>   4. Assistantes dentaires<p></p><p></p>   4.1. Assistantes dentaires stagiaires<p></p><p></p>   4.1.1 Sous contrat à durée indéterminée<p></p><p></p>   4.1.1.1 Assistantes dentaires stagiaires 1re année : 7,70.<p></p><p></p>   4.1.1.2 Assistantes dentaires stagiaires 2e année : 7,84.<p></p><p></p>   4.1.2 Sous contrat de qualification<p></p><p></p>   4.1.2.1 : Assistantes dentaires stagiaires 1re année :<p></p>80 % du SMIC en vigueur.<p></p><p></p>   4.1.2.2 : Assistantes dentaires stagiaires 2e année : 100 % du SMIC en vigueur<p></p><p></p>   4.2 : Assistantes dentaires qualifiées<p></p><p></p>   4.2.1 : Assistantes dentaires qualifiées : 8,39.<p></p><p></p>   4.2.2 : Assistantes dentaires qualifiées ODF : 8,69.<p></p><p></p>   5. Prothésistes dentaires de laboratoire<p></p><p></p>   5.1 : Niveau 1 : 8,08.<p></p><p></p>   5.2 Niveau 2 : 10,12<p></p><p></p>   5.3 Niveau 3 : 12,43.<p></p><p></p>   5.4 Niveau 4 : 13,52.<p></p><p></p>   Prime de secrétariat (10 % du salaire mensuel minimal de base de l'assistante dentaire qualifiée) : 127 Euros (proratisée pour les temps partiels).<p></p><p></p>   Grille des taux horaires minimaux des personnels des cabinets dentaires applicables au 1er décembre 2003<p></p><p></p>   Rappel : horaire mensuel légal et conventionnel = 151,67 heures (Garantie mensuelle de rémunération = 1,7986 au 1er juillet 2003 applicable pour les postes 1, 2, 3.1, 3.2 - Pour les postes 4.1.2.1, 4.1.2.2 : SMIC = 7,19 Euros)<p></p><p></p>   En euros.<p></p><p></p>   1. Personnel d'entretien : 7,70.<p></p><p></p>   2. Réceptionnistes ou hôtesses d'accueil : 7,70    3. Aides dentaires.<p></p><p></p>   3.1 Aides dentaires stagiaires 1re année : 7,70<p></p><p></p>   3.2 Aides dentaires stagiaires 2e année : 7,70<p></p><p></p>   3.3 Aides dentaires qualifiées : 7,96.<p></p><p></p>   4. Assistantes dentaires<p></p><p></p>   4.1 Assistantes dentaires stagiaires<p></p><p></p>   4.1.1 Sous contrat à durée indéterminée<p></p><p></p>   4.1.1.1 Assistantes dentaires stagiaires 1re année : 7,70.<p></p><p></p>   4.1.1.2 Assistantes dentaires stagiaires 2e année : 7,96.<p></p><p></p>   41.2 Sous contrat de qualification<p></p><p></p>   4.1.2.1 Assistantes dentaires stagiaires 1re année :<p></p> 80 % du SMIC en vigueur.<p></p><p></p>   4.1.2.2 Assistantes dentaires stagiaires 2e année :<p></p> 100 % du SMIC en vigueur.<p></p><p></p>   4.2 Assistantes dentaires qualifiées<p></p><p></p>   4.2.1 : Assistantes dentaires qualifiées : 8,52.<p></p><p></p>   4.2.2 Assistantes dentaires qualifiées ODF : 8,83.<p></p><p></p>   5 Prothésistes dentaires de laboratoire<p></p><p></p>   5.1 Niveau 1 : 8,20<p></p><p></p>   5.2 Niveau 2 : 10,28<p></p><p></p>   5.3 Niveau 3 : 12,63.<p></p><p></p>   5.4 Niveau 4 : 13,74.<p></p><p></p>   Prime de secrétariat (10 % du salaire mensuel minimal de base de l'assistante dentaire qualifiée) : 129 Euros (proratisée pour les temps partiels).<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 16 mars 2004 art. 1 : le taux horaire des assistantes dentaires stagiaires de première année sous contrat à durée indéterminée est étendu sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 200 modifiée instaurant une garantie de rémunération mensuelle.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 16 mars 2004 art. 1 : le taux horaire des assistantes dentaires stagiaires de première année sous contrat à durée indéterminée est étendu sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 200 modifiée instaurant une garantie de rémunération mensuelle.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2003-12-05 BO conventions collectives 2004-6 étendu par arrêté du 16 mars 2004 JORF 25 mars 2004",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires.",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1070582400000,
+                  "dateFin": 1080259200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -34384,13 +34532,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005695653",
+              "cid": "KALISCTA000005695653",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires horaires au 1er avril 2004.",
+              "dateModif": null,
+              "dateDebut": "2004-03-26",
+              "dateFin": "2004-09-02",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005779903",
+                  "cid": "KALIARTI000005779903",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005695653/KALIARTI000005779903",
+                  "pathTitle": [
+                    "Salaires horaires au 1er avril 2004."
+                  ],
+                  "content": "<p></p>   Les taux horaires de l'assistante dentaire qualifiée, de l'assistante dentaire qualifiée ODF, des prothésistes dentaires de laboratoire niveau 2-3-4 sont réévalués de 0,6 % (grille annexée).<p></p><p></p>   Fait à Paris, le 26 mars 2004.<p></p><p></p>   ANNEXE<p></p><p></p>   Grille des taux horaires minimaux des personnels des cabinets dentaires (Applicable au 1er avril 2004)<p></p><p></p>   Rappel : horaire mensuel légal et conventionnel = 151,67 heures.<p></p><p></p>   Garantie mensuelle de rémunération : 1,7986 au 1er juillet 2003 applicable pour les postes 1, 2, 3.1, 3.2, 4.1.1.1 ; pour les postes 4.1.2.1 - 4.1.2.2 : SMIC = 7,19 Euros.<p></p><p></p>   1. Personnel d'entretien (GMR 4) : 7,70 Euros<p></p><p></p>   2. Réceptionnistes ou hôtesses d'accueil (GMR 4) : 7,70 Euros<p></p><p></p>   3. Aides dentaires :<p></p><p></p>   3.1. Aides dentaires stagiaires 1re année (GMR 4) : 7,70 Euros<p></p><p></p>   3.2. Aides dentaires stagiaires 2e année (GMR 4) : 7,70 Euros<p></p><p></p>   3.3. Aides dentaires qualifiées : 7,96 Euros<p></p><p></p>   4. Assistantes dentaires :<p></p><p></p>   4.1. Assistantes dentaires stagiaires :<p></p><p></p>   4.1.1. Sous contrat à durée indéterminée :<p></p><p></p>   4.1.1.1. Assistantes dentaires stagiaires 1re année (GMR 4) : 7,70 Euros<p></p><p></p>   4.1.1.2. Assistantes dentaires stagiaires 2e année : 7,96 Euros<p></p><p></p>   4.1.2. Sous contrat de qualification :<p></p><p></p>   4.1.2.1. Assistantes dentaires stagiaires 1re année (SMIC en vigueur) : 80,00 %<p></p><p></p>   4.1.2.2. Assistantes dentaires stagiaires 2e année (SMIC en vigueur) : 100,00 %<p></p><p></p>   4.2. Assistantes dentaires qualifiées :<p></p><p></p>   4.2.1. Assistantes dentaires qualifiées : 8,57 Euros<p></p><p></p>   4.2.2. Assistantes dentaires qualifiées ODF : 8,88 Euros<p></p><p></p>   5. Prothésistes dentaires de laboratoire :<p></p><p></p>   5.1. Niveau 1 : 8,20 Euros<p></p><p></p>   5.2. Niveau 2 : 10,34 Euros<p></p><p></p>   5.3. Niveau 3 : 12,71 Euros<p></p><p></p>   5.4. Niveau 4 : 13,82 Euros<p></p><p></p>   Prime de secrétariat :<p></p><p></p>   10 % du salaire mensuel minimal de base de l'assistante dentaire   qualifiée (proratisée pour les temps partiels) :<p></p> 130,00 Euros.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2004-03-26 BO conventions collectives 2004-20 étendu par arrêté du 29 juillet 2004 JORF 10 août 2004",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires.",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1080259200000,
+                  "dateFin": 1094083200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

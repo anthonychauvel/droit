@@ -14297,13 +14297,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005694136",
+              "cid": "KALISCTA000005694136",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima à compter du 1er janvier 2001.",
+              "dateModif": null,
+              "dateDebut": "2000-12-15",
+              "dateFin": "2001-07-13",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776559",
+                  "cid": "KALIARTI000005776559",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005694136/KALIARTI000005776559",
+                  "pathTitle": [
+                    "Salaires minima à compter du 1er janvier 2001."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur des salaires minima est réévaluée et s'établit comme suit, selon la grille ci-jointe, à compter du 1er janvier 2001.<p></p> Article 2<p></p><p></p>   Les parties décident de demander l'extension du présent avenant.<p></p> Article 3<p></p><p></p>   Les tarifs minima des fileteurs aux pièces sont réévalués de 1,45 %.<p></p> Article 4<p></p><p></p>   Cette grille ne s'applique pas aux saleurs-saurisseurs.<p></p> -<p></p><p></p>   Entreprises passées aux 35 heures<p></p><p></p><TABLE><TR><TD>COEFF</TD><TD>SALAIRE</TD><TD>SALAIRE/MOIS</TD><TD>SALAIRE/MOIS</TD><TD>IND DIFF</TD><TD>SALAIRE</TD><TD>% AUGM</TD></TR><TR><TD></TD><TD>horair</TD><TD>   (169 h)  </TD><TD> (151,66 h) </TD><TD></TD><TD> réel  </TD><TD>ancien</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>grille</TD></TR><TR><TD>  100 </TD><TD> 42,45</TD><TD> 7 174,05   </TD><TD> 6 437,96   </TD><TD> 736,09 </TD><TD>7 174,05</TD><TD> 0   </TD></TR><TR><TD>  105 </TD><TD> 42,52</TD><TD> 7 185,88   </TD><TD> 6 448,58   </TD><TD> 737,30 </TD><TD>7 185,88</TD><TD> 0   </TD></TR><TR><TD>  110 </TD><TD> 42,59</TD><TD> 7 197,71   </TD><TD> 6 459,19   </TD><TD> 738,52 </TD><TD>7 197,71</TD><TD> 0   </TD></TR><TR><TD>  115 </TD><TD> 42,91</TD><TD> 7 251,79   </TD><TD> 6 507,73   </TD><TD> 744,06 </TD><TD>7 251,79</TD><TD> 0   </TD></TR><TR><TD>  120 </TD><TD> 43,85</TD><TD> 7 410,65   </TD><TD> 6 650,29   </TD><TD> 760,36 </TD><TD>7 410,65</TD><TD> 1,45</TD></TR><TR><TD>  140 </TD><TD> 45,88</TD><TD> 7 753,72   </TD><TD> 6 958,16   </TD><TD> 795,56 </TD><TD>7 753,72</TD><TD> 1,45</TD></TR><TR><TD>  175 </TD><TD> 51,40</TD><TD> 8 686,60   </TD><TD> 7 795,32   </TD><TD> 891,28 </TD><TD>8 686,60</TD><TD> 1,45</TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 12 2000-12-15 BO conventions collectives 2001-2 étendu par arrêté du 26 février 2001 JORF 8 mars 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 976838400000,
+                  "dateFin": 994982400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14317,13 +14391,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005694137",
+              "cid": "KALISCTA000005694137",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima à compter du 1er juillet 2001.",
+              "dateModif": null,
+              "dateDebut": "2001-07-13",
+              "dateFin": "2001-04-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776560",
+                  "cid": "KALIARTI000005776560",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005694137/KALIARTI000005776560",
+                  "pathTitle": [
+                    "Salaires minima à compter du 1er juillet 2001."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur des salaires à compter du 1er juillet 2001 s'établit de la façon suivante :<p></p> Grille des salaires base 169 heures par mois<p></p> --------------------------------------------------------------<p></p><TABLE><TR><TD> COEF. </TD><TD> SALAIRE        </TD><TD>   SALAIRE      </TD><TD>   AUGMENTATION   </TD></TR><TR><TD></TD><TD> horaire/169 h  </TD><TD>  mensuel total </TD><TD> ancienne grille  </TD></TR><TR><TD>  100  </TD><TD>    44,15       </TD><TD>    7 461,35    </TD><TD>       4,01       </TD></TR><TR><TD>  105  </TD><TD>    44,27       </TD><TD>    7 481,63    </TD><TD>       4,12       </TD></TR><TR><TD>  110  </TD><TD>    44,39       </TD><TD>    7 501,91    </TD><TD>       4,23       </TD></TR><TR><TD>  115  </TD><TD>    44,76       </TD><TD>    7 564,44    </TD><TD>       4,32       </TD></TR><TR><TD>  120  </TD><TD>    45,75       </TD><TD>    7 731,75    </TD><TD>       4,34       </TD></TR><TR><TD>  140  </TD><TD>    47,78       </TD><TD>    8 074,82    </TD><TD>       4,15       </TD></TR><TR><TD>  175  </TD><TD>    53,30       </TD><TD>    9 007,70    </TD><TD>       3,70       </TD></TR></TABLE><p></p> --------------------------------------------------------------<p></p> Grille des salaires base 151,66 heures par mois pour les entreprises passées<p></p> aux 35 heures depuis le 15 décembre 2000<p></p><p></p> ----------------------------------------------------------------<p></p><TABLE><TR><TD>COEF.</TD><TD>SALAIRE </TD><TD>SALAIRE </TD><TD>INDEMNITÉ  </TD><TD>SALAIRE </TD><TD>% AUGMENTATION</TD></TR><TR><TD></TD><TD>horaire </TD><TD>mensuel </TD><TD>différentielle</TD><TD> mensuel</TD><TD>   ancienne   </TD></TR><TR><TD></TD><TD>151,66 h</TD><TD>151,66 h</TD><TD></TD><TD>  total </TD><TD>    grille    </TD></TR><TR><TD> 100 </TD><TD> 44,15  </TD><TD>6 695,79</TD><TD>    680,65    </TD><TD>7 376,44</TD><TD>     2,83     </TD></TR><TR><TD> 105 </TD><TD> 44,27  </TD><TD>6 713,99</TD><TD>    674,28    </TD><TD>7 388,27</TD><TD>     2,82     </TD></TR><TR><TD> 110 </TD><TD> 44,39  </TD><TD>6 732,19</TD><TD>    667,91    </TD><TD>7 400,10</TD><TD>     2,82     </TD></TR><TR><TD> 115 </TD><TD> 44,76  </TD><TD>6 788,31</TD><TD>    665,87    </TD><TD>7 454,18</TD><TD>     2,79     </TD></TR><TR><TD> 120 </TD><TD> 45,75  </TD><TD>6 938,45</TD><TD>    674,59    </TD><TD>7 613,04</TD><TD>     2,74     </TD></TR><TR><TD> 140 </TD><TD> 47,78  </TD><TD>7 246,32</TD><TD>    709,79    </TD><TD>7 956,11</TD><TD>     2,61     </TD></TR><TR><TD> 175 </TD><TD> 53,30  </TD><TD>8 083,48</TD><TD>    805,51    </TD><TD>8 888,99</TD><TD>     2,33     </TD></TR></TABLE><p></p> ---------------------------------------------------------------- Article 2<p></p>   Cette grille s'applique aux mareyeurs-expéditeurs et ne s'applique pas pour les saleurs-saurisseurs. Article 3<p></p>   Les parties décident de demander l'extension du présent avenant. Article 4<p></p>   Les fileurs aux pièces ne sont pas concernés par cet avenant.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n°13 2001-07-13 BO conventions collectives 2001-37 étendu par arrêté du 25 octobre 2001 JORF 3 novembre 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 994982400000,
+                  "dateFin": 988243200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14337,13 +14485,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005694138",
+              "cid": "KALISCTA000005694138",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima à compter du 1er juillet 2001.",
+              "dateModif": null,
+              "dateDebut": "2001-08-30",
+              "dateFin": "2002-07-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776561",
+                  "cid": "KALIARTI000005776561",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005694138/KALIARTI000005776561",
+                  "pathTitle": [
+                    "Salaires minima à compter du 1er juillet 2001."
+                  ],
+                  "content": "<p></p>   Article 1er<p></p><p></p>   La valeur des salaires minima applicables aux entreprises appliquant un horaire au plus égal à 35 heures par semaine est réévaluée et s'établit comme suite à compter du 1er juillet 2001.<p></p> (1)   COEFFICIENT<p></p> (2)   SALAIRE horaire<p></p> (3)   SALAIRE MENSUEL base 151,67 h<p></p> (4)   INDEMNITÉ différentielle<p></p> (5)   SALAIRE MENSUEL base 151,67 heures<p></p> ------------------------------------------------------------<p></p><TABLE><TR><TD> (1) </TD><TD>  (2)  </TD><TD>    (3)     </TD><TD>    (4)     </TD><TD>        (5)       </TD></TR><TR><TD> 100 </TD><TD> 44,15 </TD><TD>  6 696,23  </TD><TD>  484,21    </TD><TD>     7 180,44     </TD></TR><TR><TD> 105 </TD><TD> 44,27 </TD><TD>  6 714,43  </TD><TD>  493,05    </TD><TD>     7 207,48     </TD></TR><TR><TD> 110 </TD><TD> 44,39 </TD><TD>  6 732,63  </TD><TD>  484,99    </TD><TD>     7 217,62     </TD></TR><TR><TD> 115 </TD><TD> 44,46 </TD><TD>  6 788,75  </TD><TD>  489,71    </TD><TD>     7 278,46     </TD></TR><TR><TD> 120 </TD><TD> 45,75 </TD><TD>  6 938,90  </TD><TD>  481,52    </TD><TD>     7 420,42     </TD></TR><TR><TD> 140 </TD><TD> 47,78 </TD><TD>  7 246,79  </TD><TD>  619,50    </TD><TD>     7 866,29     </TD></TR><TR><TD> 175 </TD><TD> 53,30 </TD><TD>  8 084,01  </TD><TD>  701,64    </TD><TD>     8 785,65     </TD></TR></TABLE><p></p> ------------------------------------------------------------ Article 2<p></p>   Cette grille s'applique aux saleurs-saurisseurs de poissons et ne s'applique pas aux mareyeurs-expéditeurs. Article 3<p></p>   Les parties décident de demander l'extension du présent avenant.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 13 bis 2001-08-30 BO conventions collectives 2001-41 étendu par arrêté du 8 janvier 2002 JORF 19 janvier 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 999129600000,
+                  "dateFin": 1025827200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

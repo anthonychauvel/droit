@@ -19301,13 +19301,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005730555",
+              "cid": "KALISCTA000005730555",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes au 1er avril et au 1er octobre 1994.",
+              "dateModif": null,
+              "dateDebut": "1994-01-31",
+              "dateFin": "1995-02-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005867876",
+                  "cid": "KALIARTI000005867876",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005730555/KALIARTI000005867876",
+                  "pathTitle": [
+                    "Barèmes au 1er avril et au 1er octobre 1994."
+                  ],
+                  "content": "Article 1er<p></p> Salaires minima professionnels garantis.<p></p><p></p>   Le barème national des salaires minima garantis est fixé comme suit :<p></p><p></p>   Augmentation de 1,3 p. 100 au 1er avril 1994, étant précisé que cette augmentation se traduira par un minimum d'augmentation en valeur absolue de 120 francs pour les coefficients 115 et 120 et 90 francs pour les coefficients 125 et 130.<p></p><p></p><p></p>   Le barème au 1er avril 1994 s'établit donc ainsi : <p></p><p></p><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD>    (2)   </TD></TR><TR><TD> 100 </TD><TD>  5.565 F </TD></TR><TR><TD> 115 </TD><TD>  5.867 F </TD></TR><TR><TD> 120 </TD><TD>  5.970 F </TD></TR><TR><TD> 125 </TD><TD>  5.990 F </TD></TR><TR><TD> 130 </TD><TD>  6.035 F </TD></TR><TR><TD> 135 </TD><TD>  6.068 F </TD></TR><TR><TD> 140 </TD><TD>  6.104 F </TD></TR><TR><TD> 145 </TD><TD>  6.141 F </TD></TR><TR><TD> 150 </TD><TD>  6.225 F </TD></TR><TR><TD> 155 </TD><TD>  6.309 F </TD></TR><TR><TD> 160 </TD><TD>  6.405 F </TD></TR><TR><TD> 165 </TD><TD>  6.501 F </TD></TR><TR><TD> 170 </TD><TD>  6.598 F </TD></TR><TR><TD> 175 </TD><TD>  6.716 F </TD></TR><TR><TD> 180 </TD><TD>  6.835 F </TD></TR><TR><TD> 185 </TD><TD>  6.953 F </TD></TR><TR><TD> 190 </TD><TD>  7.072 F </TD></TR><TR><TD> 195 </TD><TD>  7.198 F </TD></TR></TABLE><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD>    (2)   </TD></TR><TR><TD> 200 </TD><TD>  7.325 F </TD></TR><TR><TD> 205 </TD><TD>  7.454 F </TD></TR><TR><TD> 210 </TD><TD>  7.582 F </TD></TR><TR><TD> 215 </TD><TD>  7.711 F </TD></TR><TR><TD> 220 </TD><TD>  7.840 F </TD></TR><TR><TD> 225 </TD><TD>  7.968 F </TD></TR><TR><TD> 230 </TD><TD>  8.097 F </TD></TR><TR><TD> 235 </TD><TD>  8.227 F </TD></TR><TR><TD> 240 </TD><TD>  8.358 F </TD></TR><TR><TD> 245 </TD><TD>  8.490 F </TD></TR><TR><TD> 250 </TD><TD>  8.623 F </TD></TR><TR><TD> 255 </TD><TD>  8.758 F </TD></TR><TR><TD> 260 </TD><TD>  8.893 F </TD></TR></TABLE><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD>    (2)   </TD></TR><TR><TD> 265 </TD><TD>  9.027 F </TD></TR><TR><TD> 270 </TD><TD>  9.161 F </TD></TR><TR><TD> 275 </TD><TD>  9.295 F </TD></TR><TR><TD> 280 </TD><TD>  9.432 F </TD></TR><TR><TD> 285 </TD><TD>  9.569 F </TD></TR><TR><TD> 290 </TD><TD>  9.706 F </TD></TR><TR><TD> 295 </TD><TD>  9.840 F </TD></TR></TABLE><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD>    (2)   </TD></TR><TR><TD> 300 </TD><TD>  9.974 F </TD></TR><TR><TD> 305 </TD><TD> 10.110 F </TD></TR><TR><TD> 310 </TD><TD> 10.245 F </TD></TR><TR><TD> 315 </TD><TD> 10.381 F </TD></TR><TR><TD> 320 </TD><TD> 10.517 F </TD></TR><TR><TD> 325 </TD><TD> 10.653 F </TD></TR><TR><TD> 330 </TD><TD> 10.788 F </TD></TR><TR><TD> 335 </TD><TD> 10.924 F </TD></TR><TR><TD> 340 </TD><TD> 11.061 F </TD></TR><TR><TD> 345 </TD><TD> 11.197 F </TD></TR><TR><TD> 350 </TD><TD> 11.332 F </TD></TR><TR><TD> 400 </TD><TD> 12.695 F </TD></TR><TR><TD> 600 </TD><TD> 18.135 F </TD></TR><TR><TD> 700 </TD><TD> 20.860 F </TD></TR></TABLE><p></p><p></p><p></p>   Augmentation de 1 p. 100 au 1er octobre 1994 :<p></p><p></p>   Le barème au 1er octobre 1994 s'établit donc ainsi :<p></p><p></p><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD>    (2)   </TD></TR><TR><TD> 100 </TD><TD> 5.621 F </TD></TR><TR><TD> 115 </TD><TD> 5.926 F </TD></TR><TR><TD> 120 </TD><TD> 6.030 F </TD></TR><TR><TD> 125 </TD><TD> 6.050 F </TD></TR><TR><TD> 130 </TD><TD> 6.095 F </TD></TR><TR><TD> 135 </TD><TD> 6.129 F </TD></TR><TR><TD> 140 </TD><TD> 6.165 F </TD></TR><TR><TD> 145 </TD><TD> 6.202 F </TD></TR><TR><TD> 150 </TD><TD> 6.287 F </TD></TR><TR><TD> 155 </TD><TD> 6.372 F </TD></TR></TABLE><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD>    (2)   </TD></TR><TR><TD> 160 </TD><TD> 6.469 F </TD></TR><TR><TD> 165 </TD><TD> 6.566 F </TD></TR><TR><TD> 170 </TD><TD> 6.664 F </TD></TR><TR><TD> 175 </TD><TD> 6.783 F </TD></TR><TR><TD> 180 </TD><TD> 6.903 F </TD></TR><TR><TD> 185 </TD><TD> 7.023 F </TD></TR><TR><TD> 190 </TD><TD> 7.143 F </TD></TR><TR><TD> 195 </TD><TD> 7.270 F </TD></TR></TABLE><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD>    (2)   </TD></TR><TR><TD> 200 </TD><TD> 7.398 F </TD></TR><TR><TD> 205 </TD><TD> 7.529 F </TD></TR><TR><TD> 210 </TD><TD> 7.658 F </TD></TR><TR><TD> 215 </TD><TD> 7.788 F </TD></TR><TR><TD> 220 </TD><TD> 7.918 F </TD></TR><TR><TD> 225 </TD><TD> 8.048 F </TD></TR><TR><TD> 230 </TD><TD> 8.178 F </TD></TR><TR><TD> 235 </TD><TD> 8.309 F </TD></TR><TR><TD> 240 </TD><TD> 8.442 F </TD></TR><TR><TD> 245 </TD><TD> 8.575 F </TD></TR><TR><TD> 250 </TD><TD> 8.709 F </TD></TR><TR><TD> 255 </TD><TD> 8.846 F </TD></TR></TABLE><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD>    (2)   </TD></TR><TR><TD> 260 </TD><TD> 8.982 F </TD></TR><TR><TD> 265 </TD><TD> 9.117 F </TD></TR><TR><TD> 270 </TD><TD> 9.253 F </TD></TR><TR><TD> 275 </TD><TD> 9.388 F </TD></TR><TR><TD> 280 </TD><TD> 9.526 F </TD></TR><TR><TD> 285 </TD><TD> 9.665 F </TD></TR><TR><TD> 290 </TD><TD> 9.803 F </TD></TR><TR><TD> 295 </TD><TD> 9.938 F </TD></TR><TR><TD> 300 </TD><TD> 10.074 F </TD></TR><TR><TD> 305 </TD><TD> 10.211 F </TD></TR><TR><TD> 310 </TD><TD> 10.347 F </TD></TR><TR><TD> 315 </TD><TD> 10.485 F </TD></TR></TABLE><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD>    (2)   </TD></TR><TR><TD> 320 </TD><TD> 10.622 F </TD></TR><TR><TD> 325 </TD><TD> 10.760 F </TD></TR><TR><TD> 330 </TD><TD> 10.896 F </TD></TR><TR><TD> 335 </TD><TD> 11.033 F </TD></TR><TR><TD> 340 </TD><TD> 11.172 F </TD></TR><TR><TD> 345 </TD><TD> 11.309 F </TD></TR><TR><TD> 350 </TD><TD> 11.445 F </TD></TR><TR><TD> 400 </TD><TD> 12.822 F </TD></TR><TR><TD> 600 </TD><TD> 18.316 F </TD></TR><TR><TD> 700 </TD><TD> 21.069 F </TD></TR></TABLE><p></p>Article 2. Salaires réels.<p></p><p></p>   Les parties signataires décident, dans le cadre de la négociation générale de l'évolution des salaires réels en 1994, une augmentation des salaires de base de 1 p. 100 au 1er avril 1994 et de 1 p. 100 au 1er octobre 1994. Cet accord reflète la volonté de poursuivre la mise en place des dispositions relatives aux salaires réels dans le même état d'esprit que celui qui a prévalu depuis quelques années ; c'est pourquoi les parties signataires considèrent qu'il serait souhaitable que, dans les entreprises où la situation économique le permet, les dispositions relatives aux salaires de base soient complétées dans le cadre de dispositions particulières.<p></p>Article 3    En cas de situation exceptionnelle résultant des incertitudes de l'évolution économique, les parties signataires conviennent de prendre contact à la diligence de l'une d'entre elles afin d'en examiner les conséquences.<p></p><p></p><font color=\"808080\"><em>   Etendu sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.</em></font>",
+                  "nota": "   Etendu sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1994-01-31 étendu par arrêté du 30 mai 1994 JORF 9 juin 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 759974400000,
+                  "dateFin": 792028800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -19321,13 +19395,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005730556",
+              "cid": "KALISCTA000005730556",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes au 1er avril et au 1er octobre 1995.",
+              "dateModif": null,
+              "dateDebut": "1994-01-31",
+              "dateFin": "1996-02-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005867877",
+                  "cid": "KALIARTI000005867877",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005730556/KALIARTI000005867877",
+                  "pathTitle": [
+                    "Barèmes au 1er avril et au 1er octobre 1995."
+                  ],
+                  "content": "Article 1er<p></p> Salaires minima professionnels garantis<p></p><p></p>   Le barème national des salaires minima garantis est fixé comme suit :<p></p> Augmentation de 1,3 p. 100 au 1er avril 1995<p></p><p></p>   Le barème au 1er avril 1995 s'établit donc ainsi :<p></p><p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><p></p><TABLE><TR><TD> (1)</TD><TD>    (2)   </TD></TR><TR><TD>115 </TD><TD>  6.003 F </TD></TR><TR><TD>120 </TD><TD>  6.108 F </TD></TR><TR><TD>125 </TD><TD>  6.129 F </TD></TR><TR><TD>130 </TD><TD>  6.174 F </TD></TR><TR><TD>135 </TD><TD>  6.209 F </TD></TR><TR><TD>140 </TD><TD>  6.245 F </TD></TR><TR><TD>145 </TD><TD>  6.283 F </TD></TR><TR><TD>150 </TD><TD>  6.369 F </TD></TR><TR><TD>155 </TD><TD>  6.455 F </TD></TR><TR><TD>160 </TD><TD>  6.553 F </TD></TR><TR><TD>165 </TD><TD>  6.651 F </TD></TR><TR><TD>170 </TD><TD>  6.751 F </TD></TR><TR><TD>175 </TD><TD>  6.871 F </TD></TR><TR><TD>180 </TD><TD>  6.993 F </TD></TR><TR><TD>185 </TD><TD>  7.114 F </TD></TR><TR><TD>190 </TD><TD>  7.236 F </TD></TR><TR><TD>195 </TD><TD>  7.365 F </TD></TR></TABLE><p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><TABLE><TR><TD> (1)</TD><TD>    (2)   </TD></TR><TR><TD>200 </TD><TD>  7.494 F </TD></TR><TR><TD>205 </TD><TD>  7.627 F </TD></TR><TR><TD>210 </TD><TD>  7.758 F </TD></TR><TR><TD>215 </TD><TD>  7.889 F </TD></TR><TR><TD>220 </TD><TD>  8.021 F </TD></TR><TR><TD>225 </TD><TD>  8.153 F </TD></TR><TR><TD>230 </TD><TD>  8.284 F </TD></TR><TR><TD>235 </TD><TD>  8.417 F </TD></TR><TR><TD>240 </TD><TD>  8.552 F </TD></TR><TR><TD>245 </TD><TD>  8.686 F </TD></TR><TR><TD>250 </TD><TD>  8.822 F </TD></TR><TR><TD>255 </TD><TD>  8.961 F </TD></TR><TR><TD>260 </TD><TD>  9.099 F </TD></TR><TR><TD>265 </TD><TD>  9.236 F </TD></TR><TR><TD>270 </TD><TD>  9.373 F </TD></TR><TR><TD>275 </TD><TD>  9.510 F </TD></TR><TR><TD>280 </TD><TD>  9.650 F </TD></TR><TR><TD>285 </TD><TD>  9.791 F </TD></TR><TR><TD>290 </TD><TD>  9.930 F </TD></TR><TR><TD>295 </TD><TD> 10.067 F </TD></TR></TABLE><p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><TABLE><TR><TD> (1)</TD><TD>    (2)   </TD></TR><TR><TD>300 </TD><TD> 10.205 F </TD></TR><TR><TD>305 </TD><TD> 10.344 F </TD></TR><TR><TD>310 </TD><TD> 10.482 F </TD></TR><TR><TD>315 </TD><TD> 10.621 F </TD></TR><TR><TD>320 </TD><TD> 10.760 F </TD></TR><TR><TD>325 </TD><TD> 10.900 F </TD></TR><TR><TD>330 </TD><TD> 11.038 F </TD></TR><TR><TD>335 </TD><TD> 11.176 F </TD></TR><TR><TD>340 </TD><TD> 11.317 F </TD></TR><TR><TD>345 </TD><TD> 11.456 F </TD></TR><TR><TD>350 </TD><TD> 11.594 F </TD></TR><TR><TD>400 </TD><TD> 12.989 F </TD></TR><TR><TD>600 </TD><TD> 18.554 F </TD></TR><TR><TD>700 </TD><TD> 21.343 F </TD></TR></TABLE><p></p><p></p>   Augmentation de 1 p. 100 au 1er octobre 1995<p></p><p></p>   Le barème au 1er octobre 1995 s'établit donc ainsi F :<p></p><p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><p></p><TABLE><TR><TD> (1)</TD><TD>   (2)   </TD></TR><TR><TD>115 </TD><TD> 6.063 F </TD></TR><TR><TD>120 </TD><TD> 6.169 F </TD></TR><TR><TD>125 </TD><TD> 6.190 F </TD></TR><TR><TD>130 </TD><TD> 6.236 F </TD></TR><TR><TD>135 </TD><TD> 6.271 F </TD></TR><TR><TD>140 </TD><TD> 6.307 F </TD></TR><TR><TD>145 </TD><TD> 6.346 F </TD></TR><TR><TD>150 </TD><TD> 6.433 F </TD></TR><TR><TD>155 </TD><TD> 6.520 F </TD></TR><TR><TD>160 </TD><TD> 6.619 F </TD></TR><TR><TD>165 </TD><TD> 6.718 F </TD></TR><TR><TD>170 </TD><TD> 6.819 F </TD></TR><TR><TD>175 </TD><TD> 6.940 F </TD></TR><TR><TD>180 </TD><TD> 7.063 F </TD></TR><TR><TD>185 </TD><TD> 7.185 F </TD></TR><TR><TD>190 </TD><TD> 7.308 F </TD></TR><TR><TD>195 </TD><TD> 7.439 F </TD></TR></TABLE><p></p>(1) COEFFICIENT<p></p> (2) SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><p></p><TABLE><TR><TD> (1)</TD><TD>   (2)   </TD></TR><TR><TD>200 </TD><TD> 7.569 F </TD></TR><TR><TD>205 </TD><TD> 7.703 F </TD></TR><TR><TD>210 </TD><TD> 7.836 F </TD></TR><TR><TD>215 </TD><TD> 7.968 F </TD></TR><TR><TD>220 </TD><TD> 8.101 F </TD></TR><TR><TD>225 </TD><TD> 8.235 F </TD></TR><TR><TD>230 </TD><TD> 8.367 F </TD></TR><TR><TD>235 </TD><TD> 8.501 F </TD></TR><TR><TD>240 </TD><TD> 8.638 F </TD></TR><TR><TD>245 </TD><TD> 8.773 F </TD></TR><TR><TD>250 </TD><TD> 8.910 F </TD></TR><TR><TD>255 </TD><TD> 9.051 F </TD></TR><TR><TD>260 </TD><TD> 9.190 F </TD></TR><TR><TD>265 </TD><TD> 9.328 F </TD></TR><TR><TD>270 </TD><TD> 9.467 F </TD></TR><TR><TD>275 </TD><TD> 9.605 F </TD></TR><TR><TD>280 </TD><TD> 9.747 F </TD></TR><TR><TD>285 </TD><TD> 9.889 F </TD></TR><TR><TD>290 </TD><TD>10.029 F </TD></TR><TR><TD>295 </TD><TD>10.168 F </TD></TR></TABLE><p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><p></p><TABLE><TR><TD> (1)</TD><TD>   (2)   </TD></TR><TR><TD>300 </TD><TD>10.307 F </TD></TR><TR><TD>305 </TD><TD>10.447 F </TD></TR><TR><TD>310 </TD><TD>10.587 F </TD></TR><TR><TD>315 </TD><TD>10.727 F </TD></TR><TR><TD>320 </TD><TD>10.868 F </TD></TR><TR><TD>325 </TD><TD>11.009 F </TD></TR><TR><TD>330 </TD><TD>11.148 F </TD></TR><TR><TD>335 </TD><TD>11.288 F </TD></TR><TR><TD>340 </TD><TD>11.430 F </TD></TR><TR><TD>345 </TD><TD>11.571 F </TD></TR><TR><TD>350 </TD><TD>11.710 F </TD></TR><TR><TD>400 </TD><TD>13.119 F </TD></TR><TR><TD>600 </TD><TD>18.740 F </TD></TR><TR><TD>700 </TD><TD>21.556 F </TD></TR></TABLE><p></p>Article 2<p></p> Salaires réels<p></p><p></p>   Les parties signataires décident, dans le cadre de la négociation générale de l'évolution des salaires réels en 1995, une augmentation des salaires de base de 1 p. 100 au 1er avril 1995 et de 1 p. 100 au 1er octobre 1995. Cet accord reflète la volonté de poursuivre la mise en place des dispositions relatives aux salaires réels dans le même état d'esprit que celui qui a prévalu depuis quelques années ; c'est pourquoi les parties signataires considèrent qu'il serait souhaitable que, dans les entreprises où la situation économique le permet, les dispositions relatives aux salaires de base soient complétées dans le cadre de dispositions particulières.<p></p><p></p>Article 3<p></p><p></p>   En cas de situation exceptionnelle résultant des incertitudes de l'évolution économique, les parties signataires conviennent de prendre contact à la diligence de l'une d'entre elles afin d'en examiner les conséquences.<p></p><p></p>Article 4<p></p><p></p>   Les parties signataires s'engagent à demander, en commun, l'extension du présent accord.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord national 1994-01-31 BO Conventions collectives 95-11 étendu par arrêté du 5 mai 1995 JORF 11 mai 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 759974400000,
+                  "dateFin": 823824000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -19341,13 +19489,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005730557",
+              "cid": "KALISCTA000005730557",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes au 1er avril et au 1er octobre 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-02-09",
+              "dateFin": "1997-02-12",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005867878",
+                  "cid": "KALIARTI000005867878",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005730557/KALIARTI000005867878",
+                  "pathTitle": [
+                    "Barèmes au 1er avril et au 1er octobre 1996."
+                  ],
+                  "content": "Article 1er<p></p> Salaires minima professionnels garantis<p></p><p></p>   Le barème national des salaires minima garantis est fixé comme suit :<p></p> Augmentation de 2 p. 100 au 1er avril 1996<p></p><p></p>   Le barème au 1er avril 1996 s'établit donc ainsi :<p></p><p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE PAR MOIS de 169,65 heures<p></p><p></p><TABLE><TR><TD> (1)</TD><TD>    (2)   </TD></TR><TR><TD>115 </TD><TD>  6.184 F </TD></TR><TR><TD>120 </TD><TD>  6.292 F </TD></TR><TR><TD>125 </TD><TD>  6.314 F </TD></TR><TR><TD>130 </TD><TD>  6.361 F </TD></TR><TR><TD>135 </TD><TD>  6.396 F </TD></TR><TR><TD>140 </TD><TD>  6.433 F </TD></TR><TR><TD>145 </TD><TD>  6.473 F </TD></TR><TR><TD>150 </TD><TD>  6.562 F </TD></TR><TR><TD>155 </TD><TD>  6.650 F </TD></TR><TR><TD>160 </TD><TD>  6.751 F </TD></TR><TR><TD>165 </TD><TD>  6.852 F </TD></TR><TR><TD>170 </TD><TD>  6.955 F </TD></TR><TR><TD>175 </TD><TD>  7.079 F </TD></TR><TR><TD>180 </TD><TD>  7.204 F </TD></TR><TR><TD>185 </TD><TD>  7.329 F </TD></TR><TR><TD>190 </TD><TD>  7.454 F </TD></TR><TR><TD>195 </TD><TD>  7.588 F </TD></TR></TABLE><p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE PAR MOIS de 169,65 heures (en francs)<p></p><TABLE><TR><TD> (1)</TD><TD>    (2)   </TD></TR><TR><TD>200 </TD><TD>  7.720 F </TD></TR><TR><TD>205 </TD><TD>  7.857 F </TD></TR><TR><TD>210 </TD><TD>  7.993 F </TD></TR><TR><TD>215 </TD><TD>  8.127 F </TD></TR><TR><TD>220 </TD><TD>  8.263 F </TD></TR><TR><TD>225 </TD><TD>  8.400 F </TD></TR><TR><TD>230 </TD><TD>  8.534 F </TD></TR><TR><TD>235 </TD><TD>  8.671 F </TD></TR><TR><TD>240 </TD><TD>  8.811 F </TD></TR><TR><TD>245 </TD><TD>  8.948 F </TD></TR><TR><TD>250 </TD><TD>  9.088 F </TD></TR><TR><TD>255 </TD><TD>  9.232 F </TD></TR><TR><TD>260 </TD><TD>  9.374 F </TD></TR><TR><TD>265 </TD><TD>  9.515 F </TD></TR><TR><TD>270 </TD><TD>  9.656 F </TD></TR><TR><TD>275 </TD><TD>  9.797 F </TD></TR><TR><TD>280 </TD><TD>  9.942 F </TD></TR><TR><TD>285 </TD><TD> 10.087 F </TD></TR><TR><TD>290 </TD><TD> 10.230 F </TD></TR><TR><TD>295 </TD><TD> 10.371 F </TD></TR></TABLE><p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE PAR MOIS de 169,65 heures<p></p><TABLE><TR><TD> (1)</TD><TD>    (2)   </TD></TR><TR><TD>300 </TD><TD> 10.513 F </TD></TR><TR><TD>305 </TD><TD> 10.656 F </TD></TR><TR><TD>310 </TD><TD> 10.799 F </TD></TR><TR><TD>315 </TD><TD> 10.942 F </TD></TR><TR><TD>320 </TD><TD> 11.085 F </TD></TR><TR><TD>325 </TD><TD> 11.229 F </TD></TR><TR><TD>330 </TD><TD> 11.371 F </TD></TR><TR><TD>335 </TD><TD> 11.514 F </TD></TR><TR><TD>340 </TD><TD> 11.659 F </TD></TR><TR><TD>345 </TD><TD> 11.802 F </TD></TR><TR><TD>350 </TD><TD> 11.944 F </TD></TR><TR><TD>400 </TD><TD> 13.381 F </TD></TR><TR><TD>600 </TD><TD> 19.115 F </TD></TR><TR><TD>700 </TD><TD> 21.987 F </TD></TR></TABLE><p></p><p></p>   Augmentation de 1 p. 100 au 1er octobre 1996<p></p><p></p>   Le barème au 1er octobre 1996 s'établit donc ainsi :<p></p><p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE PAR MOIS de 169,65 heures<p></p><p></p><TABLE><TR><TD> (1)</TD><TD>   (2)   </TD></TR><TR><TD>115 </TD><TD> 6.246 F </TD></TR><TR><TD>120 </TD><TD> 6.355 F </TD></TR><TR><TD>125 </TD><TD> 6.377 F </TD></TR><TR><TD>130 </TD><TD> 6.425 F </TD></TR><TR><TD>135 </TD><TD> 6.460 F </TD></TR><TR><TD>140 </TD><TD> 6.497 F </TD></TR><TR><TD>145 </TD><TD> 6.538 F </TD></TR><TR><TD>150 </TD><TD> 6.628 F </TD></TR><TR><TD>155 </TD><TD> 6.717 F </TD></TR><TR><TD>160 </TD><TD> 6.819 F </TD></TR><TR><TD>165 </TD><TD> 6.921 F </TD></TR><TR><TD>170 </TD><TD> 7.025 F </TD></TR><TR><TD>175 </TD><TD> 7.150 F </TD></TR><TR><TD>180 </TD><TD> 7.276 F </TD></TR><TR><TD>185 </TD><TD> 7.402 F </TD></TR><TR><TD>190 </TD><TD> 7.529 F </TD></TR><TR><TD>195 </TD><TD> 7.664 F </TD></TR></TABLE><p></p>(1) COEFFICIENT<p></p> (2) SALAIRE PAR MOIS de 169,65 heures<p></p><p></p><TABLE><TR><TD> (1)</TD><TD>   (2)   </TD></TR><TR><TD>200 </TD><TD> 7.797 F </TD></TR><TR><TD>205 </TD><TD> 7.936 F </TD></TR><TR><TD>210 </TD><TD> 8.073 F </TD></TR><TR><TD>215 </TD><TD> 8.208 F </TD></TR><TR><TD>220 </TD><TD> 8.346 F </TD></TR><TR><TD>225 </TD><TD> 8.484 F </TD></TR><TR><TD>230 </TD><TD> 8.619 F </TD></TR><TR><TD>235 </TD><TD> 8.758 F </TD></TR><TR><TD>240 </TD><TD> 8.899 F </TD></TR><TR><TD>245 </TD><TD> 9.037 F </TD></TR><TR><TD>250 </TD><TD> 9.179 F </TD></TR><TR><TD>255 </TD><TD> 9.324 F </TD></TR><TR><TD>260 </TD><TD> 9.468 F </TD></TR><TR><TD>265 </TD><TD> 9.610 F </TD></TR><TR><TD>270 </TD><TD> 9.753 F </TD></TR><TR><TD>275 </TD><TD> 9.895 F </TD></TR><TR><TD>280 </TD><TD>10.041 F </TD></TR><TR><TD>285 </TD><TD>10.188 F </TD></TR><TR><TD>290 </TD><TD>10.332 F </TD></TR><TR><TD>295 </TD><TD>10.475 F </TD></TR></TABLE><p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE PAR MOIS de 169,65 heures<p></p><p></p><TABLE><TR><TD> (1)</TD><TD>   (2)   </TD></TR><TR><TD>300 </TD><TD>10.618 F </TD></TR><TR><TD>305 </TD><TD>10.763 F </TD></TR><TR><TD>310 </TD><TD>10.907 F </TD></TR><TR><TD>315 </TD><TD>11.051 F </TD></TR><TR><TD>320 </TD><TD>11.196 F </TD></TR><TR><TD>325 </TD><TD>11.341 F </TD></TR><TR><TD>330 </TD><TD>11.485 F </TD></TR><TR><TD>335 </TD><TD>11.629 F </TD></TR><TR><TD>340 </TD><TD>11.776 F </TD></TR><TR><TD>345 </TD><TD>11.920 F </TD></TR><TR><TD>350 </TD><TD>12.063 F </TD></TR><TR><TD>400 </TD><TD>13.515 F </TD></TR><TR><TD>600 </TD><TD>19.306 F </TD></TR><TR><TD>700 </TD><TD>22.207 F </TD></TR></TABLE><p></p>Article 2<p></p> Salaires réels<p></p><p></p>   Les parties signataires décident, dans le cadre de la négociation générale de l'évolution des salaires réels en 1996, une augmentation des salaires de base de 1 p. 100 au 1er avril 1996 et de 1 p. 100 au 1er octobre 1996. Cet accord reflète la volonté de poursuivre la mise en place des dispositions relatives aux salaires réels dans le même état d'esprit que celui qui a prévalu depuis quelques années.<p></p><p></p>Article 3<p></p><p></p>   En cas de situation exceptionnelle résultant des incertitudes de l'évolution économique, les parties signataires conviennent de prendre contact à la diligence de l'une d'entre elles afin d'en examiner les conséquences.<p></p><p></p>Article 4<p></p><p></p>   Les parties signataires s'engagent à demander, en commun, l'extension du présent accord.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 2 mai 1996 art. 1 : accord étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 2 mai 1996 art. 1 : accord étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1996-02-09 BO conventions collectives 96-10, étendu par arrêté du 2 mai 1996 JORF 14 mai 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 823824000000,
+                  "dateFin": 855705600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

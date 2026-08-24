@@ -49820,13 +49820,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728453",
+              "cid": "KALISCTA000005728453",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille et salaires minima pour l'année 1995",
+              "dateModif": null,
+              "dateDebut": "1995-03-20",
+              "dateFin": "1996-02-12",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861913",
+                  "cid": "KALIARTI000005861913",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728453/KALIARTI000005861913",
+                  "pathTitle": [
+                    "Grille et salaires minima pour l'année 1995"
+                  ],
+                  "content": "Article 1<p></p> Champ d'application<p></p><p></p>   Le présent avenant s'applique au personnel des entreprises entrant dans le champ d'application de la convention collective des eaux embouteillées, des boissons rafraîchissantes sans alcool et de la bière dans les conditions prévues par celle-ci et par l'accord du 12 juillet 1989.<p></p><p></p>   Il constitue la dixième actualisation de la grille des salaires négociée le 24 mai 1988.<p></p> Article 2<p></p> Salaires minimaux<p></p><p></p>   Les salaires minima mensuels bruts sont fixés en fonction de la classification des salariés et en application de la grille suivante.<p></p><p></p>GRILLE DES SALAIRES MINIMAUX 1995 PAR NIVEAU ET ECHELON AU :<p></p><p></p>   1er JUILLET 1994<p></p><p></p>   1er AVRIL 1995 + 1 p. 100<p></p><p></p>   1er JUILLET 1995 + 0,5 p. 100<p></p><p></p><p></p>   A = ECHELONS<p></p><p></p>   B = SALAIRES POUR 1995<p></p><p></p><TABLE><TR><TD>A</TD><TD>           B            </TD></TR><TR><TD>e</TD><TD> 1er  </TD><TD> 1er    </TD><TD> 1er    </TD></TR><TR><TD>c</TD><TD> juil.</TD><TD> avril  </TD><TD> juillet</TD></TR><TR><TD>h</TD><TD> 1994 </TD><TD> 1995   </TD><TD> 1995   </TD></TR><TR><TD>e</TD><TD></TD><TD> + 1 %  </TD><TD> + 0,5 %</TD></TR><TR><TD></TD><TD> Niveau I               </TD></TR><TR><TD>1</TD><TD> 6.010</TD><TD>  6.070 </TD><TD> 6.100  </TD></TR><TR><TD>2</TD><TD> 6.128</TD><TD>  6.189 </TD><TD> 6.220  </TD></TR><TR><TD>3</TD><TD> 6.366</TD><TD>  6.430 </TD><TD> 6.462  </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD> Niveau II              </TD></TR><TR><TD>1</TD><TD> 6.506</TD><TD>  6.571 </TD><TD> 6.604  </TD></TR><TR><TD>2</TD><TD> 6.684</TD><TD>  6.751 </TD><TD> 6.784  </TD></TR><TR><TD>3</TD><TD> 6.861</TD><TD>  6.930 </TD><TD> 6.965  </TD></TR><TR><TD></TD><TD> Niveau III             </TD></TR><TR><TD>1</TD><TD> 7.098</TD><TD>  7.169 </TD><TD> 7.205  </TD></TR><TR><TD>2</TD><TD> 7.276</TD><TD>  7.348 </TD><TD> 7.385  </TD></TR><TR><TD>3</TD><TD> 7.453</TD><TD>  7.528 </TD><TD> 7.565  </TD></TR><TR><TD></TD><TD> Niveau IV              </TD></TR><TR><TD>1</TD><TD> 7.926</TD><TD>  8.005 </TD><TD> 8.045  </TD></TR><TR><TD>2</TD><TD> 8.163</TD><TD>  8.244 </TD><TD> 8.285  </TD></TR><TR><TD></TD><TD> Niveau V               </TD></TR><TR><TD>1</TD><TD> 8.753</TD><TD>  8.841 </TD><TD> 8.885  </TD></TR><TR><TD>2</TD><TD> 8.990</TD><TD>  9.080 </TD><TD> 9.125  </TD></TR><TR><TD>3</TD><TD> 9.226</TD><TD>  9.319 </TD><TD> 9.365  </TD></TR><TR><TD></TD><TD> Niveau VI              </TD></TR><TR><TD>1</TD><TD> 9.817</TD><TD>  9.915 </TD><TD> 9.965  </TD></TR><TR><TD>2</TD><TD>10.290</TD><TD> 10.393 </TD><TD>10.445  </TD></TR><TR><TD>3</TD><TD>11.000</TD><TD> 11.110 </TD><TD>11.165  </TD></TR><TR><TD></TD><TD> Niveau VII             </TD></TR><TR><TD>1</TD><TD>11.827</TD><TD> 11.945 </TD><TD>12.005  </TD></TR><TR><TD>2</TD><TD>12.654</TD><TD> 12.781 </TD><TD>12.844  </TD></TR><TR><TD>3</TD><TD>13.481</TD><TD> 13.616 </TD><TD>13.684  </TD></TR><TR><TD></TD><TD> Niveau VIII            </TD></TR><TR><TD>1</TD><TD>14.545  </TD><TD> 14.690 </TD><TD>14.764</TD></TR><TR><TD>2</TD><TD>15.609  </TD><TD> 15.765 </TD><TD>15.844</TD></TR><TR><TD>3</TD><TD>17.560  </TD><TD> 17.735 </TD><TD>17.824</TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1995-03-20 BO Conventions collectives 95-17, étendu par arrêté du 21 juin 1995 JORF 1er juillet 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 795657600000,
+                  "dateFin": 824083200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -49840,13 +49914,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728454",
+              "cid": "KALISCTA000005728454",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille et salaires minimaux pour l'année 1996",
+              "dateModif": null,
+              "dateDebut": "1996-02-12",
+              "dateFin": "1997-02-11",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861914",
+                  "cid": "KALIARTI000005861914",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728454/KALIARTI000005861914",
+                  "pathTitle": [
+                    "Grille et salaires minimaux pour l'année 1996"
+                  ],
+                  "content": "Article 1er<p></p> Champ d'application<p></p><p></p>   Le présent avenant s'applique au personnel des entreprises entrant dans le champ d'application de la convention collective des eaux embouteillées, des boissons rafraîchissantes sans alcool et de la bière dans les conditions prévues par celle-ci et par l'accord du 12 juillet 1989.<p></p><p></p>   Il constitue la onzième actualisation de la grille des salaires négociée le 24 mai 1988.<p></p><p></p> Article 2<p></p> Salaires minimaux<p></p><p></p>   Les salaires minima mensuels bruts sont fixés en fonction de la classification des salariés et en application de la grille suivante.<p></p><p></p>GRILLE DES SALAIRES MINIMAUX 1996<p></p><p></p>   (A) Niveau<p></p><TABLE><TR><TD> A</TD><TD>   GRILLE DES SALAIRES    </TD></TR><TR><TD></TD><TD> 1er    </TD><TD> 1er    </TD><TD> 1er    </TD></TR><TR><TD></TD><TD> Nov.   </TD><TD> Janv.  </TD><TD> Avril  </TD></TR><TR><TD></TD><TD> 1995   </TD><TD> 1996   </TD><TD> 1996   </TD></TR><TR><TD></TD><TD> Niveau I                 </TD></TR><TR><TD> 1</TD><TD>  6.250 </TD><TD>  6.250 </TD><TD>  6.313 </TD></TR><TR><TD> 2</TD><TD>  6.370 </TD><TD>  6.370 </TD><TD>  6.434 </TD></TR><TR><TD> 3</TD><TD>  6.612 </TD><TD>  6.612 </TD><TD>  6.678 </TD></TR><TR><TD></TD><TD> Niveau II                </TD></TR><TR><TD> 1</TD><TD>  6.684 </TD><TD>  6.754 </TD><TD>  6.822 </TD></TR><TR><TD> 2</TD><TD>  6.864 </TD><TD>  6.934 </TD><TD>  7.003 </TD></TR><TR><TD> 3</TD><TD>  7.045 </TD><TD>  7.115 </TD><TD>  7.186 </TD></TR><TR><TD></TD><TD> Niveau III               </TD></TR><TR><TD> 1</TD><TD>  7.285 </TD><TD>  7.355 </TD><TD>  7.429 </TD></TR><TR><TD> 2</TD><TD>  7.465 </TD><TD>  7.535 </TD><TD>  7.610 </TD></TR><TR><TD> 3</TD><TD>  7.645 </TD><TD>  7.715 </TD><TD>  7.792 </TD></TR><TR><TD></TD><TD> Niveau IV                 </TD></TR><TR><TD> 1</TD><TD>  8.125 </TD><TD>  8.195 </TD><TD>  8.277 </TD></TR><TR><TD> 2</TD><TD>  8.365 </TD><TD>  8.435 </TD><TD>  8.519 </TD></TR><TR><TD></TD><TD> Niveau V                 </TD></TR><TR><TD> 1</TD><TD>  8.965 </TD><TD>  9.035 </TD><TD>  9.125 </TD></TR><TR><TD> 2</TD><TD>  9.205 </TD><TD>  9.275 </TD><TD>  9.368 </TD></TR><TR><TD> 3</TD><TD>  9.445 </TD><TD>  9.515 </TD><TD>  9.610 </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD> Niveau VI                </TD></TR><TR><TD> 1</TD><TD> 10.045 </TD><TD> 10.115 </TD><TD> 10.216 </TD></TR><TR><TD> 2</TD><TD> 10.525 </TD><TD> 10.595 </TD><TD> 10.701 </TD></TR><TR><TD> 3</TD><TD> 11.245 </TD><TD> 11.315 </TD><TD> 11.428 </TD></TR><TR><TD></TD><TD> Niveau VII               </TD></TR><TR><TD> 1</TD><TD> 12.085 </TD><TD> 12.155 </TD><TD> 12.277 </TD></TR><TR><TD> 2</TD><TD> 12.924 </TD><TD> 12.994 </TD><TD> 13.124 </TD></TR><TR><TD> 3</TD><TD> 13.764 </TD><TD> 13.834 </TD><TD> 13.972 </TD></TR><TR><TD></TD><TD> Niveau VIII              </TD></TR><TR><TD> 1</TD><TD> 14.844 </TD><TD> 14.914 </TD><TD> 15.063 </TD></TR><TR><TD> 2</TD><TD> 15.924 </TD><TD> 15.994 </TD><TD> 16.154 </TD></TR><TR><TD> 3</TD><TD> 17.904 </TD><TD> 17.974 </TD><TD> 18.154 </TD></TR></TABLE><p></p><p></p>   Au 1er janvier 1996 : niveaux II et + : 70 F.<p></p>   Au 1er avril 1996 : + 1 %.  Article 3 Durée de l'accord<p></p>   Les parties ont convenu de se rencontrer en septembre 1996 pour établir un constat de la situation.<font color=\"808080\"><em>   NOTA : Arrêté du 24 juin 1996 art. 1 : l'avenant du 12 février 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 24 juin 1996 art. 1 : l'avenant du 12 février 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1996-02-12 BO conventions collectives 96-18, étendu par arrêté du 24 juin 1996 JORF 4 juillet 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 824083200000,
+                  "dateFin": 855619200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -49860,13 +50008,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728455",
+              "cid": "KALISCTA000005728455",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des salaires minima 1997",
+              "dateModif": null,
+              "dateDebut": "1997-02-11",
+              "dateFin": "1998-11-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861915",
+                  "cid": "KALIARTI000005861915",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728455/KALIARTI000005861915",
+                  "pathTitle": [
+                    "Grille des salaires minima 1997"
+                  ],
+                  "content": "Article 1er<p></p> Champ d'application<p></p><p></p>   Le présent avenant s'applique au personnel des entreprises entrant dans le champ d'application de la convention collective des eaux embouteillées, des BRSA et de bière, dans les conditions prévues par celle-ci et par l'accord du 12 juillet 1989.<p></p><p></p>   Il constitue la douzième actualisation de la grille des salaires négociée le 24 mai 1988.<p></p>Article 2<p></p> Salaires minima<p></p><p></p>   Les salaires minima mensuels bruts sont fixés en fonction de la classification des salariés et en application de la grille suivante.<p></p>Grille des salaires minima 1997 (en francs)<p></p><TABLE><TR><TD>éch.</TD><TD>1/3/1997</TD><TD>1/9/1997</TD></TR><TR><TD>      NIVEAU I        </TD></TR><TR><TD> 1  </TD><TD>  6 507 </TD><TD>  6 530 </TD></TR><TR><TD> 2  </TD><TD>  6 617 </TD><TD>  6 641 </TD></TR><TR><TD> 3  </TD><TD>  6 845 </TD><TD>  6 873 </TD></TR><TR><TD>      NIVEAU II       </TD></TR><TR><TD> 1  </TD><TD>  6 962 </TD><TD>  6 992 </TD></TR><TR><TD> 2  </TD><TD>  7 145 </TD><TD>  7 178 </TD></TR><TR><TD> 3  </TD><TD>  7 329 </TD><TD>  7 365 </TD></TR><TR><TD>      NIVEAU III      </TD></TR><TR><TD> 1  </TD><TD>  7 573 </TD><TD>  7 613 </TD></TR><TR><TD> 2  </TD><TD>  7 756 </TD><TD>  7 799 </TD></TR><TR><TD> 3  </TD><TD>  7 939 </TD><TD>  7 984 </TD></TR><TR><TD>      NIVEAU IV       </TD></TR><TR><TD> 1  </TD><TD>  8 427 </TD><TD>  8 480 </TD></TR><TR><TD> 2  </TD><TD>  8 670 </TD><TD>  8 728 </TD></TR><TR><TD>      NIVEAU V        </TD></TR><TR><TD> 1  </TD><TD>  9 280 </TD><TD>  9 347 </TD></TR><TR><TD> 2  </TD><TD>  9 524 </TD><TD>  9 595 </TD></TR><TR><TD> 3  </TD><TD>  9 768 </TD><TD>  9 842 </TD></TR><TR><TD>      NIVEAU VI       </TD></TR><TR><TD> 1  </TD><TD> 10 380 </TD><TD> 10 462 </TD></TR><TR><TD> 2  </TD><TD> 10 873 </TD><TD> 10 957 </TD></TR><TR><TD> 3  </TD><TD> 11 612 </TD><TD> 11 701 </TD></TR><TR><TD>      NIVEAU VII      </TD></TR><TR><TD> 1  </TD><TD> 12 474 </TD><TD> 12 568 </TD></TR><TR><TD> 2  </TD><TD> 13 335 </TD><TD> 13 434 </TD></TR><TR><TD> 3  </TD><TD> 14 197 </TD><TD> 14 301 </TD></TR><TR><TD>      NIVEAU VIII     </TD></TR><TR><TD> 1  </TD><TD> 15 305 </TD><TD> 15 416 </TD></TR><TR><TD> 2  </TD><TD> 16 413 </TD><TD> 16 531 </TD></TR><TR><TD> 3  </TD><TD> 18 445 </TD><TD> 18 575 </TD></TR></TABLE><p></p>Article 3<p></p> Durée de l'accord<p></p><p></p>   Les parties ont convenu de se rencontrer en novembre 1997 pour établir le constat de la situation.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1997-02-11 BO conventions collectives 97-13, étendu par arrêté du 12 mai 1997 JORF 23 mai 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 855619200000,
+                  "dateFin": 910224000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

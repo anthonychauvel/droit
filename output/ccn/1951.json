@@ -28540,13 +28540,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005713937",
+              "cid": "KALISCTA000005713937",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaire minimum hiérachique et valeur du point au 1er juillet 1999.",
+              "dateModif": null,
+              "dateDebut": "1999-06-28",
+              "dateFin": "2000-07-03",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005827258",
+                  "cid": "KALIARTI000005827258",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005713937/KALIARTI000005827258",
+                  "pathTitle": [
+                    "Salaire minimum hiérachique et valeur du point au 1er juillet 1999."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur du point prévue par l'article 12-10 de la convention collective nationale des experts en automobile est à 51,33 francs, à partir du 1er juillet 1999.<p></p><p></p> Salaire brut minimum hiérarchique<p></p> (Base 165 heures soit 38 heures par semaine)<p></p> Valeur du point au 1er juillet 1999 : 51,33 francs<p></p><TABLE><TR><TD></TD><TD></TD><TD>PERSONNEL          </TD></TR><TR><TD></TD><TD></TD><TD>administratif      </TD></TR><TR><TD></TD><TD></TD><TD>Coef  </TD><TD>   Salaire  </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD> (en francs)</TD></TR><TR><TD></TD><TD>   1   </TD><TD>  135 </TD><TD>   6 925,55 </TD></TR><TR><TD>  I   </TD><TD>   2   </TD><TD>  137 </TD><TD>   7 032,21 </TD></TR><TR><TD></TD><TD>   3   </TD><TD>  140 </TD><TD>   7 186,20 </TD></TR><TR><TD></TD><TD>   1   </TD><TD>  145 </TD><TD>   7 442,85 </TD></TR><TR><TD> II   </TD><TD>   2   </TD><TD>  147 </TD><TD>   7 545,51 </TD></TR><TR><TD></TD><TD>   3   </TD><TD>  150 </TD><TD>   7 699,50 </TD></TR><TR><TD></TD><TD>   1   </TD><TD>  155 </TD><TD>   7 956,15 </TD></TR><TR><TD></TD><TD>   2   </TD><TD>  160 </TD><TD>   8 212,80 </TD></TR><TR><TD> III  </TD><TD>   3   </TD><TD>  165 </TD><TD>   8 469,45 </TD></TR><TR><TD></TD><TD>   4   </TD><TD>  180 </TD><TD>   9 239,40 </TD></TR><TR><TD></TD><TD>   1   </TD><TD>  200 </TD><TD>  10 266,00 </TD></TR><TR><TD></TD><TD>   2   </TD><TD>  230 </TD><TD>  11 805,90 </TD></TR><TR><TD>  IV  </TD><TD>   3   </TD><TD>  300 </TD><TD>  15 399,00 </TD></TR><TR><TD></TD><TD>   4   </TD><TD>  320 </TD><TD>  16 425,60 </TD></TR><TR><TD>      CADRE DE DIRECTION          </TD></TR><TR><TD>   V  </TD><TD></TD><TD>  400 </TD><TD>  20 532,00 </TD></TR></TABLE><p></p><p></p> :------:-------:-------------------:<p></p><TABLE><TR><TD></TD><TD></TD><TD>PERSONNEL          </TD></TR><TR><TD></TD><TD></TD><TD>technicien         </TD></TR><TR><TD></TD><TD></TD><TD>Coef  </TD><TD>   Salaire  </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD> (en francs)</TD></TR><TR><TD></TD><TD>   1   </TD><TD></TD><TD></TD></TR><TR><TD>  I   </TD><TD>   2   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   3   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   1   </TD><TD></TD><TD></TD></TR><TR><TD> II   </TD><TD>   2   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   3   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   1   </TD><TD>  165 </TD><TD>   8 469,45 </TD></TR><TR><TD></TD><TD>   2   </TD><TD>  175 </TD><TD>   8 982,75 </TD></TR><TR><TD> III  </TD><TD>   3   </TD><TD>  180 </TD><TD>   9 239,40 </TD></TR><TR><TD></TD><TD>   4   </TD><TD>  190 </TD><TD>   9 752,90 </TD></TR><TR><TD></TD><TD>   1   </TD><TD>  230 </TD><TD>  11 805,90 </TD></TR><TR><TD></TD><TD>   2   </TD><TD>  250 </TD><TD>  12 832,50 </TD></TR><TR><TD>  IV  </TD><TD>   3   </TD><TD>  300 </TD><TD>  15 399,00 </TD></TR><TR><TD></TD><TD>   4   </TD><TD>  320 </TD><TD>  16 425,60 </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 5 1999-06-28 BO conventions collectives 99-37 étendu par arrêté du 26 octobre 1999 JORF 9 novembre 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 930528000000,
+                  "dateFin": 962582400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -28560,13 +28634,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005713938",
+              "cid": "KALISCTA000005713938",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaire minimum hiérachique et valeur du point au 1er juillet 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-07-03",
+              "dateFin": "2001-10-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005827259",
+                  "cid": "KALIARTI000005827259",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005713938/KALIARTI000005827259",
+                  "pathTitle": [
+                    "Salaire minimum hiérachique et valeur du point au 1er juillet 2000."
+                  ],
+                  "content": "Article 12-10<p></p> Salaire brut minimum hiérarchique<p></p> (Base 165 heures, soit 38 heures par semaine)<p></p><p></p>   Valeur du point au 1er juillet 2000 : 52,36 F.<p></p><p></p>   Pour les échelons des niveaux 1 et 2, les salaires bruts minima hiérarchiques sont portés aux valeurs définies ci-dessous :<p></p><TABLE><TR><TD></TD><TD></TD><TD>PERSONNEL          </TD></TR><TR><TD></TD><TD></TD><TD>administratif      </TD></TR><TR><TD></TD><TD></TD><TD>Coef  </TD><TD>   Salaire  </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD> (en francs)</TD></TR><TR><TD></TD><TD>   1   </TD><TD>  135 </TD><TD>   7 141,50 </TD></TR><TR><TD>  I   </TD><TD>   2   </TD><TD>  137 </TD><TD>   7 247,30 </TD></TR><TR><TD></TD><TD>   3   </TD><TD>  140 </TD><TD>   7 406,00 </TD></TR><TR><TD></TD><TD>   1   </TD><TD>  145 </TD><TD>   7 670,50 </TD></TR><TR><TD> II   </TD><TD>   2   </TD><TD>  147 </TD><TD>   7 776,30 </TD></TR><TR><TD></TD><TD>   3   </TD><TD>  150 </TD><TD>   7 935,00 </TD></TR><TR><TD></TD><TD>   1   </TD><TD>  155 </TD><TD>   8 115,80 </TD></TR><TR><TD></TD><TD>   2   </TD><TD>  160 </TD><TD>   8 377,60 </TD></TR><TR><TD> III  </TD><TD>   3   </TD><TD>  165 </TD><TD>   8 639,40 </TD></TR><TR><TD></TD><TD>   4   </TD><TD>  180 </TD><TD>   9 424,80 </TD></TR><TR><TD></TD><TD>   1   </TD><TD>  200 </TD><TD>  10 472,00 </TD></TR><TR><TD></TD><TD>   2   </TD><TD>  230 </TD><TD>  12 042,80 </TD></TR><TR><TD>  IV  </TD><TD>   3   </TD><TD>  300 </TD><TD>  15 708,00 </TD></TR><TR><TD></TD><TD>   4   </TD><TD>  320 </TD><TD>  16 755,20 </TD></TR><TR><TD>      CADRE DE DIRECTION          </TD></TR><TR><TD>   V  </TD><TD></TD><TD>  400 </TD><TD>  20 944,00 </TD></TR></TABLE><p></p><p></p> :------:-------:-------------------:<p></p><TABLE><TR><TD></TD><TD></TD><TD>PERSONNEL          </TD></TR><TR><TD></TD><TD></TD><TD>technicien         </TD></TR><TR><TD></TD><TD></TD><TD>Coef  </TD><TD>   Salaire  </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD> (en francs)</TD></TR><TR><TD></TD><TD>   1   </TD><TD></TD><TD></TD></TR><TR><TD>  I   </TD><TD>   2   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   3   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   1   </TD><TD></TD><TD></TD></TR><TR><TD> II   </TD><TD>   2   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   3   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   1   </TD><TD>  165 </TD><TD>   8 639,40 </TD></TR><TR><TD></TD><TD>   2   </TD><TD>  175 </TD><TD>   9 163,00 </TD></TR><TR><TD> III  </TD><TD>   3   </TD><TD>  180 </TD><TD>   9 424,80 </TD></TR><TR><TD></TD><TD>   4   </TD><TD>  190 </TD><TD>   9 948,40 </TD></TR><TR><TD></TD><TD>   1   </TD><TD>  230 </TD><TD>  12 042,80 </TD></TR><TR><TD></TD><TD>   2   </TD><TD>  250 </TD><TD>  13 090,00 </TD></TR><TR><TD>  IV  </TD><TD>   3   </TD><TD>  300 </TD><TD>  15 708,00 </TD></TR><TR><TD></TD><TD>   4   </TD><TD>  320 </TD><TD>  16 755,20 </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 8 2000-07-03 BO conventions collectives 2000-35 étendu par arrêté du 9 octobre 2000 JORF 15 octobre 2000 à l'exception des groupements d'intérêt économique qui relèvent de la convention collective des sociétés d'assurance",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 962582400000,
+                  "dateFin": 1003276800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -28768,13 +28916,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005713941",
+              "cid": "KALISCTA000005713941",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Salaires relatif à la valeur du point",
+              "dateModif": null,
+              "dateDebut": "2001-03-26",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005827263",
+                  "cid": "KALIARTI000005827263",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005713941/KALIARTI000005827263",
+                  "pathTitle": [
+                    "Salaires relatif à la valeur du point"
+                  ],
+                  "content": "<p></p>   il est créé un alinéa en dessous du tableau de l'article 12.10 rédigé comme suit :<p></p><p></p>   Le résultat de la différence entre la nouvelle et l'ancienne valeur du point, multiplié par le coefficient du salarié, est ajouté au salaire réel.<p></p><p></p>   Cette augmentation ne se cumule pas mais s'impute sur celle accordée par l'entreprise ou le cabinet d'expertise.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 9 2001-03-26 BO conventions collectives 2001-51 étendu par arrêté du 10 avril 2002 JORF 23 avril 2002 *à l'exception des groupements d'intérêt économique qui relèvent de la convention collective des sociétés d'assurance*",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 985564800000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

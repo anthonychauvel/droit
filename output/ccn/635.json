@@ -6166,13 +6166,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720716",
+              "cid": "KALISCTA000005720716",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril 1987.",
+              "dateModif": null,
+              "dateDebut": "1987-03-18",
+              "dateFin": "1988-01-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005842491",
+                  "cid": "KALIARTI000005842491",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720716/KALIARTI000005842491",
+                  "pathTitle": [
+                    "Salaires au 1er avril 1987."
+                  ],
+                  "content": "   Les soussignés se sont mis d'accord sur les augmentations de valeurs portant les salaires de base aux niveaux ci-après à partir du 1er avril 1987 (en francs).<p></p><p></p>    1° Employés : coefficient 120 au coefficient 150 inclus<p></p><p></p>    COEFFICIENT : 120<p></p>    SALAIRE DE BASE : 4.660 F.<p></p><p></p>    COEFFICIENT : 125<p></p>    SALAIRE DE BASE : 4.707 F.<p></p><p></p>    COEFFICIENT : 130<p></p>    SALAIRE DE BASE : 4.754 F.<p></p><p></p>    COEFFICIENT : 135<p></p>    SALAIRE DE BASE : 4.801 F.<p></p><p></p>    COEFFICIENT : 140<p></p>    SALAIRE DE BASE : 4.848 F.<p></p><p></p>    COEFFICIENT : 145<p></p>    SALAIRE DE BASE : 4.895 F.<p></p><p></p>    COEFFICIENT : 150<p></p>    SALAIRE DE BASE : 4.942 F. <p></p>   2° Employés : au-dessus du coefficient 150 (de 150 à 220)<p></p>    Base : 2.790 F plus valeur du point (14,35 F)<p></p><p></p>    COEFFICIENT : 160<p></p>    SALAIRE DE BASE : 5.086 F.<p></p><p></p>    COEFFICIENT : 165<p></p>    SALAIRE DE BASE : 5.158 F.<p></p><p></p>    COEFFICIENT : 170<p></p>    SALAIRE DE BASE : 5.230 F.<p></p><p></p>    COEFFICIENT : 180<p></p>    SALAIRE DE BASE : 5.373 F.<p></p><p></p>    COEFFICIENT : 190<p></p>    SALAIRE DE BASE : 5.516 F.<p></p><p></p>    COEFFICIENT : 200<p></p>    SALAIRE DE BASE : 5.660 F.<p></p><p></p>    COEFFICIENT : 220<p></p>    SALAIRE DE BASE : 5.946 F. <p></p>   3° Cadres : base 2.300 F plus valeur du point à 17 F<p></p><p></p>    COEFFICIENT : 325<p></p>    SALAIRE DE BASE : 7.825 F.<p></p><p></p>    COEFFICIENT : 375<p></p>    SALAIRE DE BASE : 8.675 F.<p></p><p></p>    COEFFICIENT : 450<p></p>    SALAIRE DE BASE : 9.950 F.<p></p><p></p>    COEFFICIENT : 500<p></p>    SALAIRE DE BASE : 10.800 F.<p></p><p></p>    COEFFICIENT : 600<p></p>    SALAIRE DE BASE : 12.500 F.<p></p><p></p>    COEFFICIENT : 800<p></p>    SALAIRE DE BASE : 15.900 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 10 1987-03-18 étendu par arrêté du 6 août 1987 JORF 22 août 1987",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 543024000000,
+                  "dateFin": 570153600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6186,13 +6260,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720717",
+              "cid": "KALISCTA000005720717",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril 1988.",
+              "dateModif": null,
+              "dateDebut": "1988-01-26",
+              "dateFin": "1989-05-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005842492",
+                  "cid": "KALIARTI000005842492",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720717/KALIARTI000005842492",
+                  "pathTitle": [
+                    "Salaires au 1er avril 1988."
+                  ],
+                  "content": "<p></p>   Les soussignés s'étant mis d'accord sur des augmentations portant les salaires de base aux niveaux ci-après, à partir du 1er avril 1988 :<p></p><p></p>   1° Employés, du coefficient 120 au coefficient 150 inclus<p></p><p></p>   COEFFICIENT 120<p></p><p></p>   SALAIRE DE BASE : 4830 francs<p></p><p></p><p></p>   COEFFICIENT 125<p></p><p></p>   SALAIRE DE BASE : 4875 francs<p></p><p></p><p></p>   COEFFICIENT 130<p></p><p></p>   SALAIRE DE BASE : 4920 francs<p></p><p></p><p></p>   COEFFICIENT 135<p></p><p></p>   SALAIRE DE BASE : 4965 francs<p></p><p></p><p></p>   COEFFICIENT 140<p></p><p></p>   SALAIRE DE BASE : 5010 francs<p></p><p></p><p></p>   COEFFICIENT 145<p></p><p></p>   SALAIRE DE BASE : 5055 francs<p></p><p></p><p></p>   COEFFICIENT 150<p></p><p></p>   SALAIRE DE BASE : 5100 francs<p></p><p></p><p></p>   2° Employés au-dessus du coefficient 150<p></p><p></p>   Base : 2880 F et valeur du point : 14,80 F<p></p><p></p>   COEFFICIENT 160<p></p><p></p>   SALAIRE DE BASE : 5248 francs<p></p><p></p><p></p>   COEFFICIENT 165<p></p><p></p>   SALAIRE DE BASE : 5322 francs<p></p><p></p><p></p>   COEFFICIENT 170<p></p><p></p>   SALAIRE DE BASE : 5396 francs<p></p><p></p><p></p>   COEFFICIENT 180<p></p><p></p>   SALAIRE DE BASE : 5544 francs<p></p><p></p><p></p>   COEFFICIENT 190<p></p><p></p>   SALAIRE DE BASE : 5692 francs<p></p><p></p><p></p>   COEFFICIENT 200<p></p><p></p>   SALAIRE DE BASE : 5840 francs<p></p><p></p><p></p>   COEFFICIENT 220<p></p><p></p>   SALAIRE DE BASE : 6136 francs<p></p><p></p><p></p>   3° Cadres<p></p><p></p>   Base : 2380 F et valeur du point : 17,50 F<p></p><p></p><p></p>   COEFFICIENT 325<p></p><p></p>   SALAIRE DE BASE : 8067,50 francs<p></p><p></p><p></p>   COEFFICIENT 375<p></p><p></p>   SALAIRE DE BASE : 8942,50 francs<p></p><p></p><p></p>   COEFFICIENT 450<p></p><p></p>   SALAIRE DE BASE : 10255,00 francs<p></p><p></p><p></p>   COEFFICIENT 500<p></p><p></p>   SALAIRE DE BASE : 11130,00 francs<p></p><p></p><p></p>   COEFFICIENT 600<p></p><p></p>   SALAIRE DE BASE : 12880,00 francs<p></p><p></p><p></p>   COEFFICIENT 800<p></p><p></p>   SALAIRE DE BASE : 16380,00 francs<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 11 1988-01-26 étendu par arrêté du 27 avril 1988 JORF 7 mai 1988",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 570153600000,
+                  "dateFin": 611366400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6206,13 +6354,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720718",
+              "cid": "KALISCTA000005720718",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril 1988.",
+              "dateModif": null,
+              "dateDebut": "1988-03-21",
+              "dateFin": "1989-05-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005842493",
+                  "cid": "KALIARTI000005842493",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720718/KALIARTI000005842493",
+                  "pathTitle": [
+                    "Salaires au 1er avril 1988."
+                  ],
+                  "content": "<p></p>   Les soussignés s'étant mis d'accord sur des augmentations portant les salaires de base aux niveaux ci-après, à partir du 1er avril 1988 :<p></p><p></p>   1° Employés, du coefficient 120 au coefficient 150 inclus<p></p><p></p>   COEFFICIENT 120<p></p><p></p>   SALAIRE DE BASE : 4830 francs<p></p><p></p><p></p>   COEFFICIENT 125<p></p><p></p>   SALAIRE DE BASE : 4875 francs<p></p><p></p><p></p>   COEFFICIENT 130<p></p><p></p>   SALAIRE DE BASE : 4920 francs<p></p><p></p><p></p>   COEFFICIENT 135<p></p><p></p>   SALAIRE DE BASE : 4965 francs<p></p><p></p><p></p>   COEFFICIENT 140<p></p><p></p>   SALAIRE DE BASE : 5010 francs<p></p><p></p><p></p>   COEFFICIENT 145<p></p><p></p>   SALAIRE DE BASE : 5055 francs<p></p><p></p><p></p>   COEFFICIENT 150<p></p><p></p>   SALAIRE DE BASE : 5100 francs<p></p><p></p><p></p>   2° Employés au-dessus du coefficient 150<p></p><p></p>   Base : 2880 F et valeur du point : 14,80 F<p></p><p></p>   COEFFICIENT 160<p></p><p></p>   SALAIRE DE BASE : 5248 francs<p></p><p></p><p></p>   COEFFICIENT 165<p></p><p></p>   SALAIRE DE BASE : 5322 francs<p></p><p></p><p></p>   COEFFICIENT 170<p></p><p></p>   SALAIRE DE BASE : 5396 francs<p></p><p></p><p></p>   COEFFICIENT 180<p></p><p></p>   SALAIRE DE BASE : 5544 francs<p></p><p></p><p></p>   COEFFICIENT 190<p></p><p></p>   SALAIRE DE BASE : 5692 francs<p></p><p></p><p></p>   COEFFICIENT 200<p></p><p></p>   SALAIRE DE BASE : 5840 francs<p></p><p></p><p></p>   COEFFICIENT 220<p></p><p></p>   SALAIRE DE BASE : 6136 francs<p></p><p></p><p></p>   COEFFICIENT 230<p></p><p></p>   SALAIRE DE BASE : 6284 francs<p></p><p></p>   MAITRISE    SALAIRE DE BASE : 2.700 F<p></p><p></p>   VALEUR DU POINT : 16,20 F<p></p><p></p>   Coefficient 240 : 6.588 F<p></p><p></p>   Coefficient 250 : 6.750 F<p></p><p></p>   Coefficient 260 : 6.912 F<p></p><p></p>   Coefficient 270 : 7.074 F<p></p><p></p>   Coefficient 280 : 7.236 F<p></p><p></p>   Coefficient 290 : 7.398 F<p></p><p></p>   Coefficient 300 : 7.560 F<p></p><p></p>   Coefficient 310 : 7.722 F<p></p><p></p><p></p>   3° Cadres<p></p><p></p>   Base : 2380 F et valeur du point : 17,50 F<p></p><p></p><p></p>   COEFFICIENT 325<p></p><p></p>   SALAIRE DE BASE : 8.067,50 F<p></p><p></p><p></p>   COEFFICIENT 375<p></p><p></p>   SALAIRE DE BASE : 8.942,50 F<p></p><p></p><p></p>   COEFFICIENT 450<p></p><p></p>   SALAIRE DE BASE : 1.0255 F<p></p><p></p><p></p>   COEFFICIENT 500<p></p><p></p>   SALAIRE DE BASE : 1.1130 F<p></p><p></p><p></p>   COEFFICIENT 600<p></p><p></p>   SALAIRE DE BASE : 1.880 F<p></p><p></p><p></p>   COEFFICIENT 800<p></p><p></p>   SALAIRE DE BASE : 1.6380 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 12 1988-03-21 étendu par arrêté du 21 juillet 1988 JORF 30 juillet 1988",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 574905600000,
+                  "dateFin": 611366400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
