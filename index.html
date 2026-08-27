@@ -4079,7 +4079,7 @@ function renderSections(sections){
   return triees.map(function(s){
     var t = s.title || s.titre, inner='';
     if(Array.isArray(s.sections) && s.sections.length) inner += renderSections(s.sections);
-    if(Array.isArray(s.articles)) inner += s.articles.map(function(a){ return '<div class="sec-text">'+linkifyArticles(cleanHtml(a.content||a.texte||''), kind)+'</div>'; }).join('');
+    if(Array.isArray(s.articles)) inner += s.articles.map(function(a){ return '<div class="sec-text">'+linkifyArticles(cleanHtml(a.content||a.texte||''))+'</div>'; }).join('');
     if(!t && !inner) return '';
     return (t?'<div class="sec-title" data-t="'+escAttr(normaliser(t))+'">'+escapeHtml(t)+'</div>':'')+inner;
   }).join('');
