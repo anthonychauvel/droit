@@ -10805,13 +10805,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005706327",
+              "cid": "KALISCTA000005706327",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires  et valeur du point d'ancienneté au 1er janvier 1999.",
+              "dateModif": null,
+              "dateDebut": "1999-01-01",
+              "dateFin": "2000-07-12",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005806731",
+                  "cid": "KALIARTI000005806731",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005706327/KALIARTI000005806731",
+                  "pathTitle": [
+                    "Salaires  et valeur du point d'ancienneté au 1er janvier 1999."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les salaires et horaires de la convention collective nationale pour les salariés des entreprises d'accouvage et de sélection, déterminés selon la grille de rémunération (annexe III à la convention) arrêtée par l'avenant n° 42, sont fixés au 1er janvier 1999 selon les barèmes suivants :<p></p><p></p> SALAIRES AU 1er JANVIER 1999<p></p><TABLE><TR><TD>      Niveau I       </TD></TR><TR><TD>Coef</TD><TD>Salaire</TD><TD>Salaire </TD></TR><TR><TD></TD><TD>horaire</TD><TD>mensuel </TD></TR><TR><TD>I 1 </TD><TD> 40,66 </TD><TD>6 871,54</TD></TR></TABLE><p></p><TABLE><TR><TD>      Niveau II      </TD></TR><TR><TD></TD><TD>Coef</TD><TD>Salaire</TD><TD>Salaire  </TD></TR><TR><TD></TD><TD></TD><TD>horaire</TD><TD>mensuel  </TD></TR><TR><TD>Echelon 1</TD><TD>II 1</TD><TD> 40,84 </TD><TD> 6 901,96</TD></TR><TR><TD>Echelon 2</TD><TD>II 2</TD><TD> 41,02 </TD><TD> 6 932,38</TD></TR><TR><TD>Echelon 3</TD><TD>II 3</TD><TD> 41,20 </TD><TD> 6 962,80</TD></TR></TABLE><p></p><TABLE><TR><TD>           Niveau III           </TD></TR><TR><TD></TD><TD>Coef </TD><TD>Salaire</TD><TD>Salaire</TD></TR><TR><TD></TD><TD></TD><TD>horaire</TD><TD>mensuel</TD></TR><TR><TD>Chef      </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>d'équipe  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>1er degré </TD><TD>III 1</TD><TD>41,38</TD><TD> 6 993,22</TD></TR><TR><TD>Echelon 1 </TD><TD>III 1</TD><TD>41,38</TD><TD> 6 993,22</TD></TR><TR><TD>Echelon 2 </TD><TD>III 2</TD><TD>41,70</TD><TD> 7 047,30</TD></TR><TR><TD>Echelon 3 </TD><TD>III 3</TD><TD>44,05</TD><TD> 7 444,45</TD></TR><TR><TD>Chef      </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>d'équipe  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>2e degré  </TD><TD>III 4</TD><TD>47,54</TD><TD> 8 034,26</TD></TR><TR><TD>     Niveau IV, techniciens</TD></TR><TR><TD></TD></TR><TR><TD>débutant </TD><TD></TD></TR><TR><TD>1er degré</TD><TD>IV 1</TD><TD> 44,05</TD><TD>  7 444,45</TD></TR><TR><TD>2e degré </TD><TD>IV 2</TD><TD> 46,78</TD><TD>  7 905,82</TD></TR><TR><TD>3e degré </TD><TD>IV 3</TD><TD> 50,41</TD><TD>  8 519,29</TD></TR><TR><TD>4e degré </TD><TD>IV 4</TD><TD> 54,71</TD><TD>  9 245,99</TD></TR></TABLE><p></p><TABLE><TR><TD>  Niveau V, Ingénieurs ou cadres</TD></TR><TR><TD>débutant </TD><TD></TD></TR><TR><TD>1er degré</TD><TD>V 1 </TD><TD>44,05 </TD><TD> 7 444,45 </TD></TR><TR><TD>2e degré </TD><TD>V 2 </TD><TD>46,78 </TD><TD> 7 905,82 </TD></TR><TR><TD>3e degré </TD><TD>V 3 </TD><TD>50,41 </TD><TD> 8 519,29 </TD></TR><TR><TD>4e degré </TD><TD>V 4 </TD><TD>54,71 </TD><TD> 9 245,99 </TD></TR><TR><TD> Niveau VI, Chef de service     </TD></TR><TR><TD>1er degré</TD><TD> VI 1</TD><TD> 50,41</TD><TD> 8 519,29</TD></TR><TR><TD> 2e degré</TD><TD> VI 2</TD><TD> 54,71</TD><TD> 9 245,99</TD></TR><TR><TD> 3e degré</TD><TD> VI 3</TD><TD> 60,45</TD><TD>10 216,05</TD></TR><TR><TD> 4e degré</TD><TD> VI 4</TD><TD> 67,62</TD><TD>11 427,78</TD></TR><TR><TD>Directeur</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>de département </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> VI 5</TD><TD> 74,78</TD><TD>12 637,82</TD></TR><TR><TD>Directeur</TD><TD> VI 6</TD><TD> 98,82</TD><TD>16 700,58</TD></TR></TABLE><p></p> Article 2<p></p>   La valeur du point d'ancienneté prévue à l'article 15 de la convention est fixée à 0,147 F à compter du 1er janvier 1999.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 50 1998-11-20 en vigueur le 1er janvier 1999 BO conventions collectives 98-51 étendu par arrêté du 18 février 1999 JORF 2 mars 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE III SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 915148800000,
+                  "dateFin": 963360000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -10825,13 +10899,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005706328",
+              "cid": "KALISCTA000005706328",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires  et valeur du point d'ancienneté au 1er juillet 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-07-01",
+              "dateFin": "2000-12-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005806732",
+                  "cid": "KALIARTI000005806732",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005706328/KALIARTI000005806732",
+                  "pathTitle": [
+                    "Salaires  et valeur du point d'ancienneté au 1er juillet 2000."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les salaires et horaires de la convention collective nationale pour les salariés des entreprises d'accouvage et de sélection, déterminés selon la grille de rémunération (annexe III à la convention) arrêtée par l'avenant n° 42, sont fixés au 1er juillet 2000 selon les barèmes suivants :<p></p><p></p> SALAIRES AU 1er JUILLET 2000<p></p><p></p>   (1) ENTREPRISE n'ayant pas souscrit d'accord RTT<p></p><p></p>   (2) ENTREPRISE ayant souscrit un accord RTT<p></p><TABLE><TR><TD>      Niveau I       </TD></TR><TR><TD></TD><TD>   (1) </TD><TD> (2) RTT</TD></TR><TR><TD>Coef</TD><TD>Salaire</TD><TD>Salaire </TD></TR><TR><TD></TD><TD>horaire</TD><TD>horaire </TD></TR><TR><TD>I 1 </TD><TD> 42,02 </TD><TD> 43,60  </TD></TR></TABLE><p></p><TABLE><TR><TD>      Niveau II      </TD></TR><TR><TD></TD><TD></TD><TD>  (1)  </TD><TD> (2) RTT </TD></TR><TR><TD></TD><TD>Coef</TD><TD>Salaire</TD><TD>Salaire  </TD></TR><TR><TD></TD><TD></TD><TD>horaire</TD><TD>horaire  </TD></TR><TR><TD>Echelon 1</TD><TD>II 1</TD><TD> 42,20 </TD><TD>  43,80  </TD></TR><TR><TD>Echelon 2</TD><TD>II 2</TD><TD> 42,40 </TD><TD>  44,00  </TD></TR><TR><TD>Echelon 3</TD><TD>II 3</TD><TD> 42,60 </TD><TD>  44,20  </TD></TR></TABLE><p></p><TABLE><TR><TD>           Niveau III           </TD></TR><TR><TD></TD><TD></TD><TD>   (1) </TD><TD>(2) RTT</TD></TR><TR><TD></TD><TD>Coef </TD><TD>Salaire</TD><TD>Salaire</TD></TR><TR><TD></TD><TD></TD><TD>horaire</TD><TD>horaire</TD></TR><TR><TD>Chef      </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>d'équipe  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>1er degré </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>Echelon 1 </TD><TD>III 1</TD><TD>42,80</TD><TD>  44,40  </TD></TR><TR><TD>Echelon 2 </TD><TD>III 2</TD><TD>43,10</TD><TD>  44,60  </TD></TR><TR><TD>Echelon 3 </TD><TD>III 3</TD><TD>45,50</TD><TD>  46,80  </TD></TR><TR><TD>Chef      </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>d'équipe  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>2e degré  </TD><TD>III 4</TD><TD>48,97</TD><TD>  49,73  </TD></TR><TR><TD>     Niveau IV, techniciens</TD></TR><TR><TD></TD></TR><TR><TD>débutant </TD><TD></TD></TR><TR><TD>1er degré</TD><TD>IV 1</TD><TD> 45,50</TD><TD>   46,80  </TD></TR><TR><TD>2e degré </TD><TD>IV 2</TD><TD> 48,20</TD><TD>   49,35  </TD></TR><TR><TD>3e degré </TD><TD>IV 3</TD><TD> 51,92</TD><TD>   52,33  </TD></TR><TR><TD>4e degré </TD><TD>IV 4</TD><TD> 55,97</TD><TD>   56,79  </TD></TR></TABLE><p></p><TABLE><TR><TD>  Niveau V, Ingénieurs ou cadres</TD></TR><TR><TD>débutant </TD><TD></TD></TR><TR><TD>1er degré</TD><TD>V 1 </TD><TD>45,50 </TD><TD>  46,80   </TD></TR><TR><TD>2e degré </TD><TD>V 2 </TD><TD>48,20 </TD><TD>  49,35   </TD></TR><TR><TD>3e degré </TD><TD>V 3 </TD><TD>51,92 </TD><TD>  52,33   </TD></TR><TR><TD>4e degré </TD><TD>V 4 </TD><TD>55,97 </TD><TD>  56,79   </TD></TR><TR><TD> Niveau VI, Chef de service     </TD></TR><TR><TD>1er degré</TD><TD> VI 1</TD><TD> 51,92</TD><TD>  52,33  </TD></TR><TR><TD> 2e degré</TD><TD> VI 2</TD><TD> 55,97</TD><TD>  56,79  </TD></TR><TR><TD> 3e degré</TD><TD> VI 3</TD><TD> 61,84</TD><TD>  62,75  </TD></TR><TR><TD> 4e degré</TD><TD> VI 4</TD><TD> 69,19</TD><TD>  70,19  </TD></TR><TR><TD>Directeur</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>de département </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> VI 5</TD><TD> 76,50</TD><TD>  77,63  </TD></TR><TR><TD>Directeur</TD><TD> VI 6</TD><TD>101,10</TD><TD> 102,58  </TD></TR></TABLE><p></p> Article 2<p></p>   La valeur du point d'ancienneté prévue à l'article 15 de la convention est fixée à 0,152 franc à compter du 1er juillet 2000. Article 3<p></p>   Les parties signataires demandent l'extension du présent avenant qui prendra effet au 1er juillet 2000.<font color=\"808080\"><em>   NOTA : Arrêté du 6 octobre 2000 art. 2 : L'extension de l'avenant précité est prononcée sous réserve de l'application des dispositions de l'article 32 (paragraphes I et II) de la loi n° 2000-37 du 19 janvier 2000 ainsi que des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 6 octobre 2000 art. 2 : L'extension de l'avenant précité est prononcée sous réserve de l'application des dispositions de l'article 32 (paragraphes I et II) de la loi n° 2000-37 du 19 janvier 2000 ainsi que des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 51 2000-07-12 en vigueur le 1er juillet 2000 BO conventions collectives 2000-31 étendu par arrêté du 6 octobre 2000 JORF 17 octobre 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE III SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 962409600000,
+                  "dateFin": 977270400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -10845,13 +10993,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005706329",
+              "cid": "KALISCTA000005706329",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires  et valeur du point d'ancienneté au 1er janvier et 1er juillet 2001.",
+              "dateModif": null,
+              "dateDebut": "2001-01-01",
+              "dateFin": "2004-02-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005806733",
+                  "cid": "KALIARTI000005806733",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005706329/KALIARTI000005806733",
+                  "pathTitle": [
+                    "Salaires  et valeur du point d'ancienneté au 1er janvier et 1er juillet 2001."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les salaires et horaires de la convention collective nationale pour les salariés des entreprises d'accouvage et de sélection, déterminés selon la grille de rémunération (annexe III de la convention) arrêtée par l'avenant n° 42, sont fixés au 1er janvier 2001 et au 1er juillet 2001 selon les barèmes suivants.<p></p><p></p>   Salaires au 1er janvier et au 1er juillet 2001<p></p><TABLE><TR><TD>CATÉGORIE   </TD><TD> COEF </TD><TD>  ENTREPRISE        </TD><TD>    ENTREPRISE     </TD></TR><TR><TD></TD><TD></TD><TD>n'ayant pas souscrit</TD><TD>  ayant souscrit   </TD></TR><TR><TD></TD><TD></TD><TD>    d'accord RTT    </TD><TD>  un accord RTT    </TD></TR><TR><TD></TD><TD></TD><TD>Salaire h</TD><TD>Salaire h </TD><TD>Salaire h</TD><TD>Salaire h</TD></TR><TR><TD></TD><TD></TD><TD>au 1/1/1 </TD><TD>au 1/7/1  </TD><TD>au 1/1/1 </TD><TD>au 1</TD><TD>7</TD><TD>1 </TD></TR><TR><TD></TD><TD></TD><TD> NIVEAU I</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>  I 1 </TD><TD>  42,44  </TD><TD>  43,32   </TD><TD>  45,69  </TD><TD>  46,61  </TD></TR><TR><TD></TD><TD></TD><TD> NIVEAU II          </TD><TD></TD><TD></TD></TR><TR><TD>Echelon 1      </TD><TD> II 1 </TD><TD>  42,62  </TD><TD>  43,51   </TD><TD>  45,90  </TD><TD>  46,82  </TD></TR><TR><TD>Echelon 2      </TD><TD> II 2 </TD><TD>  42,82  </TD><TD>  43,71   </TD><TD>  46,11  </TD><TD>  47,04  </TD></TR><TR><TD>Echelon 3      </TD><TD> II 3 </TD><TD>  43,03  </TD><TD>  43,92   </TD><TD>  46,32  </TD><TD>  47,25  </TD></TR><TR><TD></TD><TD></TD><TD> NIVEAU III         </TD><TD></TD><TD></TD></TR><TR><TD>Chef d'équipe 1er degré (échelon 1)        </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> III 1</TD><TD>  43,23  </TD><TD>  44,13   </TD><TD>  46,53  </TD><TD>  47,46  </TD></TR><TR><TD>Chef d'équipe 1er degré (échelon 2)        </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> III 2</TD><TD>  43,53  </TD><TD>  44,44   </TD><TD>  46,74  </TD><TD>  47,68  </TD></TR><TR><TD>Chef d'équipe 1er degré (échelon 3)        </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> III 3</TD><TD>  45,96  </TD><TD>  46,50   </TD><TD>  49,05  </TD><TD>  49,61  </TD></TR><TR><TD>Chef d'équipe 2e degré</TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> III 4</TD><TD>  49,46  </TD><TD>  49,95   </TD><TD>  52,12  </TD><TD>  52,61  </TD></TR><TR><TD></TD><TD></TD><TD> NIVEAU IV          </TD><TD></TD><TD></TD></TR><TR><TD>Technicien débutant 1er degré   </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> IV 1 </TD><TD>  45,96  </TD><TD>  46,50   </TD><TD>  49,05  </TD><TD>  49,61  </TD></TR><TR><TD>Technicien 2e degré   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> IV 2 </TD><TD>  48,68  </TD><TD>  49,16   </TD><TD>  51,72  </TD><TD>  52,21  </TD></TR><TR><TD>Technicien 3e degré   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> IV 3 </TD><TD>  52,44  </TD><TD>  52,96   </TD><TD>  54,84  </TD><TD>  55,37  </TD></TR><TR><TD>Technicien 4e degré   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> IV 4 </TD><TD>  56,53  </TD><TD>  57,09   </TD><TD>  59,52  </TD><TD>  60,08  </TD></TR><TR><TD></TD><TD></TD><TD> NIVEAU V</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>Ingénieur ou cadre débutant 1er degré      </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> V 1  </TD><TD>  45,96  </TD><TD>  46,50   </TD><TD>  49,05  </TD><TD>  49,61  </TD></TR><TR><TD>Ingénieur ou cadre 2e degré     </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> V 2  </TD><TD>  48,68  </TD><TD>  49,16   </TD><TD>  51,72  </TD><TD>  52,21  </TD></TR><TR><TD>Ingénieur ou cadre 3e degré     </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> V 3  </TD><TD>  52,44  </TD><TD>  52,96   </TD><TD>  54,84  </TD><TD>  55,37  </TD></TR></TABLE><p></p><TABLE><TR><TD>Ingénieur ou cadre 4e degré     </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> V 4  </TD><TD>  56,53  </TD><TD>  57,09   </TD><TD>  59,52  </TD><TD>  60,08  </TD></TR><TR><TD></TD><TD></TD><TD> NIVEAU VI          </TD><TD></TD><TD></TD></TR><TR><TD>Chef de service 1er degré       </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> VI 1 </TD><TD>  52,44  </TD><TD>  52,96   </TD><TD>  54,84  </TD><TD>  55,37  </TD></TR><TR><TD>Chef de service 2e degré        </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> VI 2 </TD><TD>  56,53  </TD><TD>  57,09   </TD><TD>  59,52  </TD><TD>  60,08  </TD></TR><TR><TD>Chef de service 3e degré        </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> VI 3 </TD><TD>  62,46  </TD><TD>  63,08   </TD><TD>  65,76  </TD><TD>  66,39  </TD></TR><TR><TD>Chef de service 4e degré        </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> VI 4 </TD><TD>  69,88  </TD><TD>  70,57   </TD><TD>  73,56  </TD><TD>  74,26  </TD></TR><TR><TD>Directeur de département        </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> VI 5 </TD><TD>  77,26  </TD><TD>  78,03   </TD><TD>  81,36  </TD><TD>  82,13  </TD></TR><TR><TD>Directeur      </TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> VI 6 </TD><TD> 102,11  </TD><TD> 103,12   </TD><TD> 107,50  </TD><TD> 108,53  </TD></TR></TABLE><p></p>Article 2<p></p><p></p>   La valeur du point d'ancienneté prévue à l'article 15 de la convention est fixée à 0,155 F à compter du 1er janvier 2001.<p></p> Article 3<p></p><p></p>   Les parties signataires demandent l'extension du présent avenant qui prendra effet au 1er janvier 2001.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 5 mars 2001 art. 2 : Texte étendu sous réserve de l'application des dispositions règlementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 5 mars 2001 art. 2 : Texte étendu sous réserve de l'application des dispositions règlementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 52 2000-12-20 en vigueur le 1er janvier 2001 BO conventions collectives 2001-2 étendu par arrêté du 5 mars 2001 JORF 15 mars 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE III SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 978307200000,
+                  "dateFin": 1076371200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

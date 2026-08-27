@@ -5812,13 +5812,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005689947",
+              "cid": "KALISCTA000005689947",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point à compter du 1er novembre 1993.",
+              "dateModif": null,
+              "dateDebut": "1993-10-06",
+              "dateFin": "1997-02-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766320",
+                  "cid": "KALIARTI000005766320",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005689947/KALIARTI000005766320",
+                  "pathTitle": [
+                    "Valeur du point à compter du 1er novembre 1993."
+                  ],
+                  "content": "Article 1er.<p></p><p></p>   En application des articles L. 132-1 et suivants du code du travail concernant les conventions collectives, la valeur du point applicable aux cadres dans les entreprises de négoce des matériaux de construction est fixée à 32,41 F à compter du 1er novembre 1993, base mensuelle 169 heures.<p></p><p></p>   La rémunération minimale hiérarchique est obtenue en multipliant la valeur du point par le coefficient attribué au salarié.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 33 1993-10-06 étendu par arrêté du 8 avril 1994 JORF 19 avril 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail article L132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES cadres",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 749865600000,
+                  "dateFin": 856310400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -5832,13 +5920,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005689948",
+              "cid": "KALISCTA000005689948",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point à compter du 1er novembre 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-09-27",
+              "dateFin": "1997-02-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766321",
+                  "cid": "KALIARTI000005766321",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005689948/KALIARTI000005766321",
+                  "pathTitle": [
+                    "Valeur du point à compter du 1er novembre 1995."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   En application des articles L. 132-1 et suivants du code du travail concernant les conventions collectives, la valeur du point applicable aux cadres dans les entreprises de négoce des matériaux de construction est fixée à 34,22 F à compter du 1er novembre 1995, base mensuelle 169 heures.<p></p><p></p> La rémunération minimale hiérarchique est obtenue en multipliant la valeur du point par le coefficient attribué au salarié.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 34 1995-09-27, BO conventions collectives 95-45",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail article L132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES cadres",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 812160000000,
+                  "dateFin": 856310400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -5852,13 +6028,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005689949",
+              "cid": "KALISCTA000005689949",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-02-19",
+              "dateFin": "2001-01-30",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766322",
+                  "cid": "KALIARTI000005766322",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005689949/KALIARTI000005766322",
+                  "pathTitle": [
+                    "Salaires 1997."
+                  ],
+                  "content": "Article 1er<p></p> Champ d'application<p></p><p></p>   L'expression \" négoce des matériaux de construction \" recouvre les activités du commerce de gros des matériaux de construction et par extension de tous produits connexes.<p></p><p></p>   Les dispositions du présent accord s'appliquent donc aux entreprises de négoce en matériaux de construction relevant du nouveau champ d'application économique des entreprises de négoce en matériaux de construction.<p></p> Article 2<p></p> Salaires minimaux conventionnels<p></p><p></p>   Le barème des salaires minimaux conventionnels est fixé par négociation à l'échelon national de la manière suivante :<p></p><p></p>   Pour les niveaux VI à IX, le salaire minimal conventionnel résulte du produit K x Vp, dans lequel K est le coefficient hiérarchique correspondant à chaque niveau et échelon ; Vp la valeur du point.<p></p><p></p>Cadres<p></p> Valeur du point : 28,11 F<p></p><p></p>   SALAIRES minimaux conventionnels (+)<p></p><p></p>   (+) Les salaires minimaux conventionnels sont ceux applicables durant la période de mise en application.<p></p><TABLE><TR><TD>Niv.</TD><TD>Ech</TD><TD>Coef</TD><TD>Salaires</TD></TR><TR><TD>VI  </TD><TD> A </TD><TD>350 </TD><TD> 9.839F </TD></TR><TR><TD></TD><TD> B </TD><TD>380 </TD><TD>10.682F </TD></TR><TR><TD></TD><TD> A </TD><TD>410 </TD><TD>11.525F </TD></TR><TR><TD>VII </TD><TD> B </TD><TD>450 </TD><TD>12.650F </TD></TR><TR><TD></TD><TD> C </TD><TD>490 </TD><TD>13.774F </TD></TR><TR><TD></TD><TD> A </TD><TD>550 </TD><TD>15.461F </TD></TR><TR><TD>VIII</TD><TD> B </TD><TD>600 </TD><TD>16.866F </TD></TR><TR><TD></TD><TD> C </TD><TD>650 </TD><TD>18.272F </TD></TR><TR><TD>IX  </TD><TD> A </TD><TD>680 </TD><TD>19.115F </TD></TR><TR><TD></TD><TD> B </TD><TD>750 </TD><TD>21.083F </TD></TR></TABLE><p></p><p></p>   En cas de revalorisation du SMIC, les parties s'engagent à se rencontrer.Article 3<p></p> Dates d'application<p></p><p></p>   La grille des salaires minimaux conventionnels prend effet en même temps que l'application dans l'entreprise de la nouvelle grille de classification. Passé le délai de mise en application, tous les salaires minimaux conventionnels seront conformes à la nouvelle grille.<p></p>Article 4<p></p> Dépôt. - Extension<p></p><p></p>   Le présent accord sera fait en un nombre suffisant d'exemplaires pour être remis à chacune des parties contractantes et déposé dans les conditions prévues par le code du travail, en vue de son extension.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1997-02-19 BO conventions collectives 97-10, étendu par arrêté du 18 juillet 1997 JORF 1er août 1997 rectificatif BO 97-22 rectificatif BO CC 97-41",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail article L132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES cadres",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 856310400000,
+                  "dateFin": 980812800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

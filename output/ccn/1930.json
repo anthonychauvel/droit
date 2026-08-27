@@ -46276,13 +46276,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005713464",
+              "cid": "KALISCTA000005713464",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er décembre 1998.",
+              "dateModif": null,
+              "dateDebut": "1999-03-12",
+              "dateFin": "2000-08-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005825931",
+                  "cid": "KALIARTI000005825931",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005713464/KALIARTI000005825931",
+                  "pathTitle": [
+                    "Salaires au 1er décembre 1998."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Le coefficient 120 est le coefficient d'embauche le plus bas. Il passe à 125 après 3 mois.<p></p><p></p>   Pour les coefficients inférieurs à 155 le salaire minimum garanti est déterminé par application de la formule suivante, dans laquelle \" C \" représente le coefficient hiérarchique affecté à l'emploi considéré :<p></p><p></p>   Salaire horaire à compter du 1er décembre 1998 :<p></p><p></p>   39,029 + (0,0477 x C-100).<p></p><p></p>   Pour les autres coefficients, le salaire minimum garanti est déterminé par application de la formule suivante, dans laquelle \" C \" représente le coefficient hiérarchique affecté à l'emploi considéré pour les annexes de catégorie :<p></p><p></p>   Salaire horaire à compter du 1er décembre 1998 :<p></p><p></p>   32,468 + (0,1668 x C-100).<p></p><p></p>   L'article 2 est supprimé.<p></p> Salaires minima garantis<p></p><p></p><TABLE><TR><TD> COEFFICIENT  </TD><TD> SALAIRE HORAIRE</TD></TR><TR><TD></TD><TD>   (en francs)  </TD></TR><TR><TD>      120     </TD><TD>      39,98     </TD></TR><TR><TD>      125     </TD><TD>      40,22     </TD></TR><TR><TD>      135     </TD><TD>      40,70     </TD></TR><TR><TD>      145     </TD><TD>      41,18     </TD></TR><TR><TD>      155     </TD><TD>      41,65     </TD></TR><TR><TD>      170     </TD><TD>      44,14     </TD></TR><TR><TD>      190     </TD><TD>      47,48     </TD></TR><TR><TD>      200     </TD><TD>      49,15     </TD></TR></TABLE><p></p><p></p>   Exemple de salaires mensuels pour un horaire de 39 heures par semaine :<p></p><TABLE><TR><TD> COEFFICIENT  </TD><TD> SALAIRE HORAIRE</TD></TR><TR><TD></TD><TD>   (en francs)  </TD></TR><TR><TD>      120     </TD><TD>    6 780,61    </TD></TR><TR><TD>      125     </TD><TD>    6 821,31    </TD></TR><TR><TD>      135     </TD><TD>    6 902,72    </TD></TR><TR><TD>      145     </TD><TD>    6 984,13    </TD></TR><TR><TD>      155     </TD><TD>    7 063,84    </TD></TR><TR><TD>      170     </TD><TD>    7 486,14    </TD></TR><TR><TD>      190     </TD><TD>    8 052,61    </TD></TR><TR><TD>      200     </TD><TD>    8 335,84    </TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 4 août 1999 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 4 août 1999 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 4 1999-03-12 BO conventions collectives 99-17 étendu par arrêté du 4 août 1999 JORF 8 août 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 921196800000,
+                  "dateFin": 965088000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -46296,13 +46370,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005713465",
+              "cid": "KALISCTA000005713465",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er août 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-08-01",
+              "dateFin": "2001-04-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005825933",
+                  "cid": "KALIARTI000005825933",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005713465/KALIARTI000005825933",
+                  "pathTitle": [
+                    "Salaires au 1er août 2000."
+                  ],
+                  "content": "Article 1er<p></p> Objet de l'avenant<p></p><p></p>   Le présent avenant s'applique aux salariés des entreprises entrant dans le champ d'application de la convention collective nationale de la meunerie du 23 décembre 1955 mise à jour par l'accord du 16 juin 1996, étendu par arrêté du 11 décembre 1997 (Journal officiel du 20 décembre 1997).<p></p><p></p>   Il constitue l'annexe I \" Salaires \" de cette convention et remplace l'avenant n° 04 du 12 mars 1999.<p></p> Article 2<p></p> Salaires horaires<p></p><p></p>   Le coefficient 120 est le coefficient d'embauche le plus bas. Il est porté à 125 pour les salariés justifiant de 3 mois d'ancienneté.<p></p><p></p>   Pour les coefficients inférieurs à 155, le salaire minimum garanti est déterminé par application de la formule suivante, dans laquelle \" C \" représente le coefficient hiérarchique affecté à l'emploi considéré conformément aux dispositions de l'annexe \" Classifications \" :<p></p> Salaire horaire : 39,492 + (0,0484 x C - 100)<p></p><p></p>   Pour les autres coefficients, le salaire minimum garanti est déterminé par application de la formule suivante, dans laquelle \" C \" représente le coefficient hiérarchique affecté à l'emploi considéré conformément aux dispositions de l'annexe \" Classifications \" :<p></p> Salaire horaire : 32,877 + (0,1686 x C - 100)<p></p> Salaires minima garantis<p></p><p></p><TABLE><TR><TD>COEF</TD><TD>SALAIRE HORAIRE</TD></TR><TR><TD></TD><TD>  (en francs)  </TD></TR><TR><TD> 120</TD><TD> 40,46         </TD></TR><TR><TD> 125</TD><TD> 40,70         </TD></TR><TR><TD> 135</TD><TD> 41,19         </TD></TR><TR><TD> 145</TD><TD> 41,67         </TD></TR><TR><TD> 155</TD><TD> 42,15         </TD></TR><TR><TD> 170</TD><TD> 44,68         </TD></TR><TR><TD> 190</TD><TD> 48,05         </TD></TR><TR><TD> 200</TD><TD> 49,74         </TD></TR></TABLE><p></p><p></p>   Les salaires définis par le présent avenant sont des minima conventionnels. En conséquence, leur fixation et leur augmentation n'emportent pas, en tant que telles, de conséquences particulières au niveau des salaires réels versés aux salariés dans la mesure où ces derniers demeurent supérieurs ou équivalents.<p></p>   Afin d'éviter les distorsions liées à la revalorisation du salaire horaire minimum au sein de la branche, les entreprises ayant mis en oeuvre la réduction du temps de travail avec prime de réduction du temps de travail conformément à l'article 14, paragraphe 1 \" Salaires \", de l'avenant n° 05 du 12 mars 1999, réduiront ladite prime d'un montant égal à celui de l'augmentation du salaire minimum résultant du présent avenant.Article 3<p></p> Date d'application<p></p><p></p>   Le présent accord s'applique le 1er août 2000 pour les entreprises adhérentes aux syndicats signataires et, pour les autres, le premier jour du mois suivant la publication de son arrêté d'extension au Journal officiel.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 13 novembre 2000 art. 1 : Les dispositions de l'avenant n° 10 du 11 juillet 2000 (salaires minima) sont étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance et de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 relatif à la garantie de rémunération.</em></font>",
+                  "nota": "   NOTA : Arrêté du 13 novembre 2000 art. 1 : Les dispositions de l'avenant n° 10 du 11 juillet 2000 (salaires minima) sont étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance et de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 relatif à la garantie de rémunération.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 10 2000-07-11 en vigueur le 1er août 2000 BO conventions collectives 2000-40 étendu par arrêté du 13 novembre 2000 JORF 23 novembre 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 965088000000,
+                  "dateFin": 986342400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -46316,13 +46464,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005713466",
+              "cid": "KALISCTA000005713466",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 2001.",
+              "dateModif": null,
+              "dateDebut": "2001-01-01",
+              "dateFin": "2002-12-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005825934",
+                  "cid": "KALIARTI000005825934",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005713466/KALIARTI000005825934",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 2001."
+                  ],
+                  "content": "A N N E X E<p></p><p></p>   A. - Le montant de la prime de vacances est fixé à 1 400 F.<p></p><p></p>   B. - Rémunération annuelle minimum (RAM), coefficient 120 à 210, rémunération minimum mensuelle (Remm).<p></p><p></p><p></p><TABLE><TR><TD></TD><TD></TD><TD>  SALAIRE    </TD><TD>  PRIME      </TD><TD></TD><TD></TD></TR><TR><TD> NIVEAU </TD><TD> COEF. </TD><TD>   ANNUEL    </TD><TD>de vacances  </TD><TD>  TOTAL   </TD><TD> REMM. </TD></TR><TR><TD></TD><TD></TD><TD> sur 13 mois </TD><TD> (en francs) </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> (en francs) </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>  120  </TD><TD>  92 908,46  </TD><TD>   1 400     </TD><TD> 94 308,46</TD><TD> 6 982 </TD></TR><TR><TD>    I   </TD><TD>  125  </TD><TD>  93 270,06  </TD><TD>   1 400     </TD><TD> 94 670,06</TD><TD> 6 990 </TD></TR><TR><TD></TD><TD>  130  </TD><TD>  93 652,34  </TD><TD>   1 400     </TD><TD> 95 052,34</TD><TD> 7 000 </TD></TR><TR><TD></TD><TD>  135  </TD><TD>  94 009,43  </TD><TD>   1 400     </TD><TD> 95 409,43</TD><TD> 7 025 </TD></TR><TR><TD></TD><TD>  140  </TD><TD>  94 365,34  </TD><TD>   1 400     </TD><TD> 95 765,34</TD><TD> 7 050 </TD></TR><TR><TD></TD><TD>  145  </TD><TD>  94 717,97  </TD><TD>   1 400     </TD><TD> 96 117,97</TD><TD> 7 075 </TD></TR><TR><TD>   II   </TD><TD>  150  </TD><TD>  95 068,38  </TD><TD>   1 400     </TD><TD> 96 468,38</TD><TD> 7 100 </TD></TR><TR><TD></TD><TD>  155  </TD><TD>  95 417,58  </TD><TD>   1 400     </TD><TD> 96 817,58</TD><TD> 7 150 </TD></TR><TR><TD></TD><TD>  160  </TD><TD>  97 118,79  </TD><TD>   1 400     </TD><TD> 98 518,79</TD><TD> 7 290 </TD></TR><TR><TD></TD><TD>  165  </TD><TD>  98 826,55  </TD><TD>   1 400     </TD><TD>100 226,55</TD><TD> 7 425 </TD></TR><TR><TD></TD><TD>  170  </TD><TD> 101 021,43  </TD><TD>   1 400     </TD><TD>102 421,43</TD><TD> 7 575 </TD></TR><TR><TD></TD><TD>  175  </TD><TD> 102 712,64  </TD><TD>   1 400     </TD><TD>104 112,64</TD><TD> 7 700 </TD></TR><TR><TD>   III  </TD><TD>  180  </TD><TD> 104 398,03  </TD><TD>   1 400     </TD><TD>105 798,03</TD><TD> 7 850 </TD></TR><TR><TD></TD><TD>  185  </TD><TD> 106 075,55  </TD><TD>   1 400     </TD><TD>107 475,55</TD><TD> 8 000 </TD></TR><TR><TD></TD><TD>  190  </TD><TD> 107 743,14  </TD><TD>   1 400     </TD><TD>109 143,14</TD><TD> 8 150 </TD></TR><TR><TD></TD><TD>  195  </TD><TD> 109 406,95  </TD><TD>   1 400     </TD><TD>110 806,95</TD><TD> 8 275 </TD></TR><TR><TD></TD><TD>  200  </TD><TD> 111 067,95  </TD><TD>   1 400     </TD><TD>112 467,95</TD><TD> 8 450 </TD></TR><TR><TD>   IV   </TD><TD>  205  </TD><TD> 112 707,86  </TD><TD>   1 400     </TD><TD>114 107,86  8 600 </TD></TR><TR><TD></TD><TD>  210  </TD><TD> 114 361,17  </TD><TD>   1 400     </TD><TD>115 761,17  8 700 </TD></TR></TABLE><p></p> -----------------------------------------------------------------<p></p>   C. - Pour les coefficients supérieurs correspondant aux classifications des techniciens agents de maîtrise et cadres, la rémunération annuelle minimum (RAM) est déterminée par application de la formule suivante, dans laquelle C représente le coefficient hiérarchique affecté à l'emploi considéré conformément aux dispositions de l'annexe \" Classifications \" :<p></p><p></p>    210 formule : 73 828 + (378,60 x C - 100).<p></p><p></p>   Exemple :<p></p> -------------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD> SALAIRE ANNUEL </TD><TD>   PRIMES     </TD><TD>    RAM       </TD></TR><TR><TD> COEFFICIENT</TD><TD>  sur 13 mois   </TD><TD> de vacances  </TD><TD>  (en francs) </TD></TR><TR><TD></TD><TD>  (en francs)   </TD><TD> (en francs)  </TD><TD></TD></TR><TR><TD>    220     </TD><TD>   119 260      </TD><TD>    1 400     </TD><TD>   120 660    </TD></TR><TR><TD>    250     </TD><TD>   130 618      </TD><TD>    1 400     </TD><TD>   132 018    </TD></TR><TR><TD>    300     </TD><TD>   149 548      </TD><TD>    1 400     </TD><TD>   150 948    </TD></TR><TR><TD>    350     </TD><TD>   168 478      </TD><TD>    1 400     </TD><TD>   169 878    </TD></TR><TR><TD>    400     </TD><TD>   187 408      </TD><TD>    1 400     </TD><TD>   188 808    </TD></TR><TR><TD>    450     </TD><TD>   206 338      </TD><TD>    1 400     </TD><TD>   207 738    </TD></TR><TR><TD>    500     </TD><TD>   225 268      </TD><TD>    1 400     </TD><TD>   226 668    </TD></TR><TR><TD>    550     </TD><TD>   244 198      </TD><TD>    1 400     </TD><TD>   245 598    </TD></TR></TABLE><p></p> -------------------------------------------------------------",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 12 2001-04-04 en vigueur le 1er janvier 2001 BO conventions collectives 2001-24 étendu par arrêté du 7 novembre 2001 JORF 16 novembre 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 978307200000,
+                  "dateFin": 1039132800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

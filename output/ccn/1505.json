@@ -47448,13 +47448,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005733610",
+              "cid": "KALISCTA000005733610",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaire",
+              "dateModif": null,
+              "dateDebut": "1988-05-09",
+              "dateFin": "2022-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005874787",
+                  "cid": "KALIARTI000005874787",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005733610/KALIARTI000005874787",
+                  "pathTitle": [
+                    "Grille de salaire"
+                  ],
+                  "content": "<p></p>    Coefficient : 100<p></p><p></p>   39 heures : 4.800<p></p><p></p>   42 heures : 5.169<p></p><p></p>   45 heures : 5.631<p></p><p></p><p></p>   Coefficient : 103<p></p><p></p>   39 heures : 4.944<p></p><p></p>   42 heures : 5.324<p></p><p></p>   45 heures : 5.800<p></p><p></p><p></p>   Coefficient : 107<p></p><p></p>   39 heures : 5.136<p></p><p></p>   42 heures : 5.531<p></p><p></p>   45 heures : 6.025<p></p><p></p><p></p>   Coefficient : 108<p></p><p></p>   39 heures : 5.184<p></p><p></p>   42 heures : 5.583<p></p><p></p>   45 heures : 6.081<p></p><p></p><p></p>   Coefficient : 110<p></p><p></p>   39 heures : 5.280<p></p><p></p>   42 heures : 5.687<p></p><p></p>   45 heures : 6.194<p></p><p></p><p></p>   Coefficient : 112<p></p><p></p>   39 heures : 5.376<p></p><p></p>   42 heures : 5.790<p></p><p></p>   45 heures : 6.306<p></p><p></p><p></p>   Coefficient : 116<p></p><p></p>   39 heures : 5.568<p></p><p></p>   42 heures : 5.997<p></p><p></p>   45 heures : 6.532<p></p><p></p><p></p>   Coefficient : 120<p></p><p></p>   39 heures : 5.760<p></p><p></p>   42 heures : 6.203<p></p><p></p>   45 heures : 6.757<p></p><p></p><p></p>   Coefficient : 125<p></p><p></p>   39 heures : 6.000<p></p><p></p>   42 heures : 6.461<p></p><p></p>   45 heures : 7.039<p></p><p></p><p></p>   Coefficient : 130<p></p><p></p>   39 heures : 6.240<p></p><p></p>   42 heures : 6.720<p></p><p></p>   45 heures : 7.320<p></p><p></p>    Coefficient : 150<p></p><p></p>   39 heures : 7.200<p></p><p></p>   42 heures : 7.764<p></p><p></p>   45 heures : 8.446<p></p><p></p><p></p>   Coefficient : 155<p></p><p></p>   39 heures : 7.440<p></p><p></p>   42 heures : 8.013<p></p><p></p>   45 heures : 8.728<p></p><p></p><p></p>   Coefficient : 160<p></p><p></p>   39 heures : 7.680<p></p><p></p>   42 heures : 8.271<p></p><p></p>   45 heures : 9.009<p></p><p></p><p></p>   Coefficient : 190<p></p><p></p>   39 heures : 9.120<p></p><p></p>   42 heures : 9.822<p></p><p></p>   45 heures : 10.698<p></p><p></p><p></p>   Coefficient : 200<p></p><p></p>   39 heures : 9.600<p></p><p></p>   42 heures : 10.339<p></p><p></p>   45 heures : 10.262<p></p><p></p><p></p>   Coefficient : 210<p></p><p></p>   39 heures : 10.080<p></p><p></p>   42 heures : 10.856<p></p><p></p>   45 heures : 11.825<p></p><p></p><p></p>   Coefficient : 220<p></p><p></p>   39 heures : 10.560<p></p><p></p>   42 heures : 11.373<p></p><p></p>   45 heures : 12.388<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 1 1988-05-09 étendu par arrêté du 20 juin 1988 JORF 25 juin 1988",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 579139200000,
+                  "dateFin": 1640995200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -47468,13 +47542,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005733611",
+              "cid": "KALISCTA000005733611",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires au 1er janvier 1990",
+              "dateModif": null,
+              "dateDebut": "1989-12-20",
+              "dateFin": "1990-12-13",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005874788",
+                  "cid": "KALIARTI000005874788",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005733611/KALIARTI000005874788",
+                  "pathTitle": [
+                    "Grille de salaires au 1er janvier 1990"
+                  ],
+                  "content": "<p></p>   La grille de salaires ci-dessous est applicable au 1er janvier 1990.<p></p><p></p>   Coefficient : 100<p></p><p></p>   39 heures : 5 055<p></p><p></p>   42 heures : 5 444<p></p><p></p>   45 heures : 5 929<p></p><p></p><p></p>   Coefficient : 107<p></p><p></p>   39 heures : 5 409<p></p><p></p>   42 heures : 5 825<p></p><p></p>   45 heures : 6 345<p></p><p></p><p></p>   Coefficient : 112<p></p><p></p>   39 heures : 5 661<p></p><p></p>   42 heures : 6 096<p></p><p></p>   45 heures : 6 640<p></p><p></p><p></p>   Coefficient : 120<p></p><p></p>   39 heures : 6 066<p></p><p></p>   42 heures : 6 533<p></p><p></p>   45 heures : 7 166<p></p><p></p><p></p>   Coefficient : 155<p></p><p></p>   39 heures : 7 835<p></p><p></p>   42 heures : 8 438<p></p><p></p>   45 heures : 9 191<p></p><p></p><p></p>   Coefficient : 220<p></p><p></p>   39 heures : 11 121<p></p><p></p>   42 heures : 11 976<p></p><p></p>   45 heures : 13 045<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 4 1989-12-20 étendu par arrêté du 16 mars 1990 JORF 29 mars 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 630115200000,
+                  "dateFin": 661046400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -47488,13 +47636,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005733612",
+              "cid": "KALISCTA000005733612",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires au 1er février 1991",
+              "dateModif": null,
+              "dateDebut": "1990-12-13",
+              "dateFin": "1991-04-11",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005874789",
+                  "cid": "KALIARTI000005874789",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005733612/KALIARTI000005874789",
+                  "pathTitle": [
+                    "Grille de salaires au 1er février 1991"
+                  ],
+                  "content": "<p></p>   Comme suite aux décisions prises par les deux collèges lors de la session de commission nationale mixte du 12 décembre 1990, la grille de salaires ci-dessous est applicable au 1er février 1991.<p></p><p></p><p></p>   Coefficient : 100<p></p><p></p>   39 heures : 5.400<p></p><p></p>   42 heures : 5.816<p></p><p></p>   45 heures : 6.335<p></p><p></p><p></p>   Coefficient : 110<p></p><p></p>   39 heures : 5.800<p></p><p></p>   42 heures : 6.247<p></p><p></p>   45 heures : 6.804<p></p><p></p><p></p>   Coefficient : 116<p></p><p></p>   39 heures : 6.075<p></p><p></p>   42 heures : 6.543<p></p><p></p>   45 heures : 7.127<p></p><p></p><p></p>   Coefficient : 125<p></p><p></p>   39 heures : 6.450<p></p><p></p>   42 heures : 6.947<p></p><p></p>   45 heures : 7.567<p></p><p></p><p></p>   Coefficient : 160<p></p><p></p>   39 heures : 8.250<p></p><p></p>   42 heures : 8.885<p></p><p></p>   45 heures : 9.678<p></p><p></p><p></p>   Coefficient : 220<p></p><p></p>   39 heures : 11.350<p></p><p></p>   42 heures : 12.224<p></p><p></p>   45 heures : 13.315<p></p><p></p><p></p>   Date d'application :<p></p><p></p>   Le présent avenant entre en vigueur le 1er février 1991.<p></p><p></p><p></p>   Publicité - Extension :<p></p><p></p>   Le présent avenant sera déposé en cinq exemplaires à la direction départementale du travail et de l'emploi, 18, avenue Parmentier, 75011 Paris.<p></p><p></p>   Les parties signataires sont convenues de demander, sans délai, l'extension du présent avenant, l'Union nationale des syndicats de détaillants en fruits, légumes et primeurs étant chargée des formalités visées ci-dessus.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 6 1990-12-13 étendu par arrêté du 20 février 1991 JORF 2 mars 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 661046400000,
+                  "dateFin": 671328000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

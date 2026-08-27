@@ -34284,13 +34284,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005695648",
+              "cid": "KALISCTA000005695648",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minimaux au 1er février 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-01-24",
+              "dateFin": "1997-11-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005779897",
+                  "cid": "KALIARTI000005779897",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005695648/KALIARTI000005779897",
+                  "pathTitle": [
+                    "Salaires minimaux au 1er février 1997."
+                  ],
+                  "content": "<p></p>   La commission mixte des cabinets dentaires, réunie le 24 janvier 1997, décide d'appliquer les augmentations suivantes sur les rémunérations minimales :<p></p><p></p>   0,5 p. 100 au 1er février 1997 (base septembre 1996) ;<p></p><p></p>   0,5 p. 100 au 1er juillet 1997 (base février 1997).<p></p><p></p>   Les parties conviennent de se revoir pour compléter la discussion dès parution de l'arrêté d'approbation de la convention nationale des chirurgiens dentistes, ou à défaut, dans la première quinzaine d'octobre 1997.<p></p>GRILLE DES SALAIRES MINIMAUX AU 1ER FéVRIER 1997<p></p> (après une augmentation de 0,5 p.100)<p></p><p></p>   1. Personnel d'entretien  6 406,79<p></p><p></p>   (S.M.I.C.) (+) <p></p><p></p>   2. Réceptionnistes ou hôtesses d'accueil  6 523,46 <p></p><p></p>   3. Aides dentaires : <p></p><p></p>   3.1. Aides dentaires stagiaires 1re année  6 406,79<p></p><p></p>   (S.M.I.C.) (+) <p></p><p></p>   3.2. Aides dentaires stagiaires 2e année  6 523,46 <p></p><p></p>   3.3. Aides dentaires qualifiées  6 834,63 <p></p><p></p>   4. Assistantes dentaires : <p></p><p></p>   4.1. Assistantes dentaires stagiaires :  <p></p><p></p>   4.1.1. Sous contrat à durée indéterminée :<p></p><p></p>   Assistantes dentaires stagières : <p></p><p></p>   4.1.1.1.    - 1re année  6 406,79<p></p><p></p>   (S.M.I.C.) (+) <p></p><p></p>   4.1.1.2.    - 2e année  6 632,94 <p></p><p></p>   4.1.2. Sous contrat de qualification :<p></p><p></p>   Assistantes dentaires stagières : <p></p><p></p>   4.1.2.1.    - 1re année  5 125,43<p></p><p></p>   (80 p. 100 S.M.I.C.) (+) <p></p><p></p>   4.1.2.2.    - 2e année  6 406,79<p></p><p></p>   (100 p. 100 S.M.I.C.) (+) <p></p><p></p>   4.2. Assistantes dentaires qualifiées :  <p></p><p></p>   4.2.1. Assistantes dentaires qualifiées 7 453,40 <p></p><p></p>   4.2.2. Assistantes dentaires qualifiées O.D.F. 7 826,07 <p></p><p></p>   5. Prothésistes dentaires de laboratoire :  <p></p><p></p>   5.1. Niveau 1  7 343,66 <p></p><p></p>   5.2. Niveau 2  9 791,55 <p></p><p></p>   5.3. Niveau 3 12 029,64 <p></p><p></p>   5.4. Niveau 4 13 081,26 <p></p><p></p>    Prime de secrétariat :<p></p> 10 p. 100 du salaire minimal de base de l'assistante dentaire qualifiée     745,00 <p></p><p></p>   (+) Seule valeur du S.M.I.C. connue de nous, à l'heure où nous écrivons ces lignes. Sa valeur devrait changer au 1er juillet 1997, en fonction de l'indice I.N.S.E.E du coût de la vie.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1997-01-24 BO conventions collectives 97-8, étendu par arrêté du 25 juin 1997 JORF 8 juillet 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 854064000000,
+                  "dateFin": 880070400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -34304,13 +34378,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005695649",
+              "cid": "KALISCTA000005695649",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minimaux au 1er décembre 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-11-21",
+              "dateFin": "2001-05-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005779898",
+                  "cid": "KALIARTI000005779898",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005695649/KALIARTI000005779898",
+                  "pathTitle": [
+                    "Salaires minimaux au 1er décembre 1997."
+                  ],
+                  "content": "<p></p>   La commission mixte des cabinets dentaires, réunie le 21 novembre 1997, décide d'appliquer l'augmentation suivante sur les rémunérations minimales (base juillet 1997) : 0,5 % au 1er décembre 1997.<p></p> ANNEXE<p></p>GRILLE DES SALAIRES MINIMAUX AU 1ER DECEMBRE 1997<p></p> (après une augmentation conventionnelle de 0,5 %)<p></p><p></p>   1. Personnel d'entretien  6 663,67 (S.M.I.C.)<p></p><p></p>   2. Réceptionnistes ou hôtesses d'accueil  6 696,98 <p></p><p></p>   3. Aides dentaires : <p></p><p></p>   3.1. Aides dentaires stagiaires 1re année  6 663,67 (S.M.I.C.)<p></p><p></p>   3.2. Aides dentaires stagiaires 2e année  6 696,78 <p></p><p></p>   3.3. Aides dentaires qualifiées  6 903,14 <p></p><p></p>   4. Assistantes dentaires : <p></p><p></p>   4.1. Assistantes dentaires stagiaires :  <p></p><p></p>   4.1.1. Sous contrat à durée indéterminée :<p></p><p></p>   Assistantes dentaires stagiaires : <p></p><p></p>   4.1.1.1.    - 1re année  6 663,67 (S.M.I.C.)<p></p><p></p>   4.1.1.2.    - 2e année  6 699,43 <p></p><p></p>   4.1.2. Sous contrat de qualification :<p></p><p></p>   Assistantes dentaires stagières : <p></p><p></p>   4.1.2.1.    - 1re année  5 330,94 (80 p. 100 S.M.I.C.)<p></p><p></p>   4.1.2.2.    - 2e année  6 663,67 (100 p. 100 S.M.I.C.)<p></p><p></p>   4.2. Assistantes dentaires qualifiées :  <p></p><p></p>   4.2.1. Assistantes dentaires qualifiées 7 528,12 <p></p><p></p>   4.2.2. Assistantes dentaires qualifiées O.D.F. 7 904,52 <p></p><p></p>   5. Prothésistes dentaires de laboratoire :  <p></p><p></p>   5.1. Niveau 1  7 417,28 <p></p><p></p>   5.2. Niveau 2  9 889,71 <p></p><p></p>   5.3. Niveau 3 12 150,23 <p></p><p></p>   5.4. Niveau 4 13 212,40 <p></p><p></p>    Prime de secrétariat :<p></p> 10 p. 100 du salaire minimal de base de l'assistante dentaire qualifiée     752,00 <p></p><font color=\"808080\"><em>   NOTA: Cet accord ne concerne pas les personnes rémunérées sur la base du SMIC ou en pourcentage du SMIC.<p></p></em></font>",
+                  "nota": "   NOTA: Cet accord ne concerne pas les personnes rémunérées sur la base du SMIC ou en pourcentage du SMIC.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1997-11-21 BO conventions collectives 98-3 étendu par arrêté du 20 février 1998 JORF 3 mars 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 880070400000,
+                  "dateFin": 990144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -34324,13 +34472,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005695650",
+              "cid": "KALISCTA000005695650",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minimaux.",
+              "dateModif": null,
+              "dateDebut": "2001-12-01",
+              "dateFin": "2002-04-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005779899",
+                  "cid": "KALIARTI000005779899",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005695650/KALIARTI000005779899",
+                  "pathTitle": [
+                    "Salaires minimaux."
+                  ],
+                  "content": "Grille des salaires minimaux du personnel des cabinets dentaires<p></p> applicables après extension ministérielle de l'accord ARTT,<p></p> calculés sur la nouvelle durée légale et conventionnelle de travail<p></p><p></p><p></p> ...<p></p><p></p><p></p>    En francs<p></p><p></p><p></p><p></p>   1. Personnel d'entretien : 7 101,38 <p></p><p></p>   2. Réceptionnistes ou hôtesses d'accueil : 7 200,00 <p></p><p></p>   3. Aides dentaires <p></p><p></p>   3.1. Aides dentaires stagiaires 1re année : 7 101,38 <p></p><p></p>   3.2. Aides dentaires stagiaires 2e année : 7 300,00 <p></p><p></p>   3.3. Aides dentaires qualifiées : 7 600,00 <p></p><p></p>   4. Assistantes dentaires <p></p><p></p>   4.1. Assistantes dentaires stagiaires <p></p><p></p>   4.1.1. Sous contrat à durée indéterminée <p></p><p></p>   4.1.1.1. Assistantes dentaires stagiaires 1re année : 7 300,00<p></p><p></p>   4.1.1.2. Assistantes dentaires stagiaires 2e année : 7 600,00<p></p><p></p>   4.1.2. Sous contrat de qualification <p></p><p></p>   4.1.2.1. Assistantes dentaires stagiaires 1re année : 5 681,11 (80 % SMIC) <p></p><p></p>   4.1.2.2. Assistantes dentaires stagiaires 2e année : 7 101,38 (100 % SMIC) <p></p><p></p>   4.2. Assistantes dentaires qualifiées <p></p><p></p>   4.2.1. Assistantes dentaires qualifiées : 8.200,00 <p></p><p></p>   4.2.2. Assistantes dentaires qualifiées ODF : 8 500,00 <p></p><p></p>   5. Prothésistes dentaires de laboratoire <p></p><p></p>   5.1. Niveau 1 : 7 900,00 <p></p><p></p>   5.2. Niveau 2 : 9 889,71 <p></p><p></p>   5.3. Niveau 3 : 12 150,23 <p></p><p></p>   5.4. Niveau 4 : 13 212,40 <p></p><p></p>   Prime de secrétariat :<p></p><p></p>   10 % du salaire minimal de base de l'assistante dentaire qualifiée soit : 820,00 F.<p></p><p></p>   Réunion de la commission mixte des cabinets dentaires le 18 mai 2001.<p></p><p></p>   Signature de l'accord d'aménagement et de réduction du temps de travail.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 26 novembre 2001 art. 1 : la grille des salaires minimaux est étendue sous réserve de l'application de l'article 32 (paragraphes I et II) de la loi n° 2000-37 du 19 janvier 2000.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 26 novembre 2001 art. 1 : la grille des salaires minimaux est étendue sous réserve de l'application de l'article 32 (paragraphes I et II) de la loi n° 2000-37 du 19 janvier 2000.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2001-05-18 en vigueur le 1er jour du mois suivant l'extension BO conventions collectives 2001-24 étendu par arrêté du 28 novembre 2001 JORF 30 novembre 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1007164800000,
+                  "dateFin": 1019088000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

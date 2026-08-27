@@ -33951,13 +33951,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696898",
+              "cid": "KALISCTA000005696898",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème national des salaires minima mensuels garantis au 1er janvier 1992.",
+              "dateModif": null,
+              "dateDebut": "1992-01-07",
+              "dateFin": "1992-06-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783188",
+                  "cid": "KALIARTI000005783188",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696898/KALIARTI000005783188",
+                  "pathTitle": [
+                    "Barème national des salaires minima mensuels garantis au 1er janvier 1992."
+                  ],
+                  "content": "<p></p>   COEFFICIENT : 150<p></p><p></p>   SALAIRE : 5 630 F (*)<p></p><p></p>   COEFFICIENT : 160<p></p><p></p>   SALAIRE : 5 659 F<p></p><p></p>   COEFFICIENT : 170<p></p><p></p>   SALAIRE : 5 684 F<p></p><p></p>   COEFFICIENT : 180<p></p><p></p>   SALAIRE : 5 746 F<p></p><p></p>   COEFFICIENT : 195<p></p><p></p>   SALAIRE : 5 991 F<p></p><p></p>   COEFFICIENT : 215<p></p><p></p>   SALAIRE : 6 320 F<p></p><p></p>   COEFFICIENT : 225<p></p><p></p>   SALAIRE : 6 485 F<p></p><p></p>   COEFFICIENT : 245<p></p><p></p>   SALAIRE : 6 847 F<p></p><p></p>   COEFFICIENT : 260<p></p><p></p>   SALAIRE : 7 097 F<p></p><p></p>   COEFFICIENT : 275<p></p><p></p>   SALAIRE : 7 345 F<p></p><p></p>   COEFFICIENT : 295<p></p><p></p>   SALAIRE : 7 782 F<p></p><p></p>   COEFFICIENT : 315<p></p><p></p>   SALAIRE : 8 189 F<p></p><p></p>   COEFFICIENT : 340<p></p><p></p>   SALAIRE : 8 768 F<p></p><p></p>   COEFFICIENT : 365<p></p><p></p>   SALAIRE : 9 323 F<p></p><p></p>   COEFFICIENT : 410<p></p><p></p>   SALAIRE : 10 275 F<p></p><p></p>   COEFFICIENT : 450<p></p><p></p>   SALAIRE : 11 182 F<p></p><p></p>   COEFFICIENT : 500<p></p><p></p>   SALAIRE : 12 269 F<p></p><p></p>   COEFFICIENT : 600<p></p><p></p>   SALAIRE : 14 471 F<p></p><p></p>   COEFFICIENT : 700<p></p><p></p>   SALAIRE : 16 782 F<p></p><p></p>   COEFFICIENT : 800<p></p><p></p>   SALAIRE : 18 848 F<p></p><p></p>   (*) Base 39 heures par semaine.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 49 1992-01-07 étendu par arrêté du 8 juillet 1992 JORF 18 juillet 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 694742400000,
+                  "dateFin": 708134400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -33971,13 +34045,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696899",
+              "cid": "KALISCTA000005696899",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème national des salaires minima mensuels garantis au 1er juillet 1992.",
+              "dateModif": null,
+              "dateDebut": "1992-06-10",
+              "dateFin": "1993-06-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783190",
+                  "cid": "KALIARTI000005783190",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696899/KALIARTI000005783190",
+                  "pathTitle": [
+                    "Barème national des salaires minima mensuels garantis au 1er juillet 1992."
+                  ],
+                  "content": "<p></p>   COEFFICIENT : 150<p></p><p></p>   SALAIRE : 5 743 F (*)<p></p><p></p>   COEFFICIENT : 160<p></p><p></p>   SALAIRE : 5 772 F<p></p><p></p>   COEFFICIENT : 170<p></p><p></p>   SALAIRE : 5 786 F<p></p><p></p>   COEFFICIENT : 180<p></p><p></p>   SALAIRE : 5 832 F<p></p><p></p>   COEFFICIENT : 195<p></p><p></p>   SALAIRE : 6 081 F<p></p><p></p>   COEFFICIENT : 215<p></p><p></p>   SALAIRE : 6 415 F<p></p><p></p>   COEFFICIENT : 225<p></p><p></p>   SALAIRE : 6 582 F<p></p><p></p>   COEFFICIENT : 245<p></p><p></p>   SALAIRE : 6 950 F<p></p><p></p>   COEFFICIENT : 260<p></p><p></p>   SALAIRE : 7 203 F<p></p><p></p>   COEFFICIENT : 275<p></p><p></p>   SALAIRE : 7 455 F<p></p><p></p>   COEFFICIENT : 295<p></p><p></p>   SALAIRE : 7 899 F<p></p><p></p>   COEFFICIENT : 315<p></p><p></p>   SALAIRE : 8 312 F<p></p><p></p>   COEFFICIENT : 340<p></p><p></p>   SALAIRE : 8 900 F<p></p><p></p>   COEFFICIENT : 365<p></p><p></p>   SALAIRE : 9 463 F<p></p><p></p>   COEFFICIENT : 410<p></p><p></p>   SALAIRE : 10 429 F<p></p><p></p>   COEFFICIENT : 450<p></p><p></p>   SALAIRE : 11 350 F<p></p><p></p>   COEFFICIENT : 500<p></p><p></p>   SALAIRE : 12 453 F<p></p><p></p>   COEFFICIENT : 600<p></p><p></p>   SALAIRE : 14 688 F<p></p><p></p>   COEFFICIENT : 700<p></p><p></p>   SALAIRE : 17 034 F<p></p><p></p>   COEFFICIENT : 800<p></p><p></p>   SALAIRE : 19 131 F<p></p><p></p>   (*) Base 39 heures par semaine.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 51 1992-06-10 étendu par arrêté du 7 décembre 1992 JORF 17 décembre 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 708134400000,
+                  "dateFin": 740102400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -33991,13 +34139,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696900",
+              "cid": "KALISCTA000005696900",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème national des salaires minima mensuels garantis au 1er juillet 1993.",
+              "dateModif": null,
+              "dateDebut": "1993-06-15",
+              "dateFin": "1993-12-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783191",
+                  "cid": "KALIARTI000005783191",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696900/KALIARTI000005783191",
+                  "pathTitle": [
+                    "Barème national des salaires minima mensuels garantis au 1er juillet 1993."
+                  ],
+                  "content": "<p></p>   COEFFICIENT : 150<p></p><p></p>   SALAIRE : 5 891 F (*)<p></p><p></p>   COEFFICIENT : 160<p></p><p></p>   SALAIRE : 5 898 F<p></p><p></p>   COEFFICIENT : 170<p></p><p></p>   SALAIRE : 5 902 F<p></p><p></p>   COEFFICIENT : 180<p></p><p></p>   SALAIRE : 5 949 F<p></p><p></p>   COEFFICIENT : 195<p></p><p></p>   SALAIRE : 6 203 F<p></p><p></p>   COEFFICIENT : 215<p></p><p></p>   SALAIRE : 6 543 F<p></p><p></p>   COEFFICIENT : 225<p></p><p></p>   SALAIRE : 6 714 F<p></p><p></p>   COEFFICIENT : 245<p></p><p></p>   SALAIRE : 7 089 F<p></p><p></p>   COEFFICIENT : 260<p></p><p></p>   SALAIRE : 7 347 F<p></p><p></p>   COEFFICIENT : 275<p></p><p></p>   SALAIRE : 7 604 F<p></p><p></p>   COEFFICIENT : 295<p></p><p></p>   SALAIRE : 8 057 F<p></p><p></p>   COEFFICIENT : 315<p></p><p></p>   SALAIRE : 8 478 F<p></p><p></p>   COEFFICIENT : 340<p></p><p></p>   SALAIRE : 9 078 F<p></p><p></p>   COEFFICIENT : 365<p></p><p></p>   SALAIRE : 9 652 F<p></p><p></p>   COEFFICIENT : 410<p></p><p></p>   SALAIRE : 10 638 F<p></p><p></p>   COEFFICIENT : 450<p></p><p></p>   SALAIRE : 11 577 F<p></p><p></p>   COEFFICIENT : 500<p></p><p></p>   SALAIRE : 12 702 F<p></p><p></p>   COEFFICIENT : 600<p></p><p></p>   SALAIRE : 14 982 F<p></p><p></p>   COEFFICIENT : 700<p></p><p></p>   SALAIRE : 17 375 F<p></p><p></p>   COEFFICIENT : 800<p></p><p></p>   SALAIRE : 19 514 F<p></p><p></p>   (*) Base 39 heures par semaine.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 54 1993-06-15 étendu par arrêté du 25 octobre 1993 JORF 4 novembre 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 740102400000,
+                  "dateFin": 755827200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

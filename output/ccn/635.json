@@ -6146,13 +6146,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720715",
+              "cid": "KALISCTA000005720715",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 1986.",
+              "dateModif": null,
+              "dateDebut": "1985-11-15",
+              "dateFin": "1987-03-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005842490",
+                  "cid": "KALIARTI000005842490",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720715/KALIARTI000005842490",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 1986."
+                  ],
+                  "content": "<p></p>   Les soussignés se sont mis d'accord sur les augmentations des salaires à partir du 1er janvier 1986 :<p></p><p></p>   - pour les employés (coefficient 120 à 220) ; somme de base fixe :<p></p> 2 720 F et valeur du point 14 F ;<p></p><p></p>   - pour les cadres :<p></p><p></p>      a) Coefficient jusqu'à 450 ; somme de base fixe : 2 100 F et valeur du point 16,80 F ;<p></p><p></p>      b) Au-dessus du coefficient 450 : une augmentation forfaitaire de 500 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 9 1985-11-15 étendu par arrêté du 26 juin 1986 JORF 5 juillet 1986",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 500860800000,
+                  "dateFin": 543024000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
