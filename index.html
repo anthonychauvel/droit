@@ -4202,13 +4202,66 @@ function renderSections(sections){
     return (t?'<div class="sec-title" data-t="'+escAttr(normaliser(t))+'">'+escapeHtml(t)+'</div>':'')+inner;
   }).join('');
 }
+function scrollToEl(found){
+  if(!found) return;
+  try{ found.scrollIntoView({block:'center',behavior:'smooth'}); }catch(e){ found.scrollIntoView(); }
+  found.classList.add('sec-flash'); setTimeout(function(){ found.classList.remove('sec-flash'); }, 2600);
+}
 function scrollToSection(target){
   var tn = normaliser(target); if(!tn) return;
   var nodes = document.getElementById('d-body').querySelectorAll('.sec-title'), found=null, i;
   for(i=0;i<nodes.length;i++){ var dt=nodes[i].getAttribute('data-t')||''; if(dt===tn){ found=nodes[i]; break; } }
   if(!found) for(i=0;i<nodes.length;i++){ var d2=nodes[i].getAttribute('data-t')||''; if(d2.indexOf(tn)!==-1 || tn.indexOf(d2)!==-1){ found=nodes[i]; break; } }
-  if(found){ try{ found.scrollIntoView({block:'center',behavior:'smooth'}); }catch(e){ found.scrollIntoView(); }
-    found.classList.add('sec-flash'); setTimeout(function(){ found.classList.remove('sec-flash'); }, 2600); }
+  scrollToEl(found);
+}
+
+// Regroupe le corps rendu d'une CCN en blocs { el, titre, texte } : un .sec-title
+// ouvre un bloc, les .sec-text qui suivent (jusqu'au prochain .sec-title) sont son
+// contenu. Sert au ciblage par mots-clés des pastilles de thème.
+function sectionsRendues(){
+  var body = document.getElementById('d-body'); if(!body) return [];
+  var nodes = body.querySelectorAll('.sec-title, .sec-text');
+  var blocs=[], cur=null;
+  for(var i=0;i<nodes.length;i++){
+    var n=nodes[i];
+    if(n.classList && n.classList.contains('sec-title')){
+      cur = { el:n, titre: normaliser(n.getAttribute('data-t') || n.textContent || ''), texte:'' };
+      blocs.push(cur);
+    } else if(cur){ cur.texte += ' ' + normaliser(n.textContent || ''); }
+    else { cur = { el:n, titre:'', texte: normaliser(n.textContent || '') }; blocs.push(cur); }
+  }
+  return blocs;
+}
+
+// Ciblage d'une pastille de thème PAR MOTS-CLÉS (même principe que le moteur de
+// recherche), au lieu du titre du premier hit — qui tombait souvent à côté. On
+// score chaque section RENDUE sur les mots-clés de la catégorie : un match dans
+// le TITRE prime largement (la section porte le nom du thème) ; sinon on compte
+// les occurrences dans le texte (rendement décroissant, pour ne pas privilégier
+// une grosse section juste parce qu'elle est longue). Renvoie true si une cible a
+// été trouvée et atteinte.
+function scrollThemeKeyword(cat){
+  var kws = (typeof CAT_KEYWORDS_RAW!=='undefined' && CAT_KEYWORDS_RAW[cat]) ? CAT_KEYWORDS_RAW[cat].map(normaliser) : [];
+  if(!kws.length) return false;
+  var blocs = sectionsRendues();
+  if(!blocs.length) return false;
+  var best=null, bestScore=0;
+  blocs.forEach(function(b){
+    var sc=0;
+    for(var k=0;k<kws.length;k++){
+      var kw=kws[k]; if(!kw) continue;
+      var poids = kw.indexOf(' ')!==-1 ? 3 : 1;   // une expression exacte = signal plus fort qu'un mot seul
+      if(b.titre && b.titre.indexOf(kw)!==-1) sc += 1000*poids;   // match dans le titre : très fort
+      if(b.texte){
+        var idx=0, occ=0;
+        while((idx=b.texte.indexOf(kw, idx))!==-1 && occ<5){ occ++; idx+=kw.length; }
+        sc += occ*10*poids;
+      }
+    }
+    if(sc>bestScore){ bestScore=sc; best=b; }
+  });
+  if(best && bestScore>0){ scrollToEl(best.el); return true; }
+  return false;
 }
 // Mode lecture : taille de police + parchemin. État en MÉMOIRE DE SESSION
 // uniquement (pas de localStorage) — cohérent avec « aucun stockage local ».
@@ -4261,16 +4314,19 @@ document.getElementById('d-close').addEventListener('click', closeDetail);
   btn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
   onScroll();
 })();
-// Clic sur une pastille de thème (inventaire en haut d'une CCN) : scroller vers
-// la première section de ce thème. On retrouve son titre via les hits taggés.
+// Clic sur une pastille de thème (inventaire en haut d'une CCN) : aller à la
+// section qui parle vraiment de ce thème. On cible PAR MOTS-CLÉS (comme le
+// moteur de recherche) sur le texte affiché ; à défaut seulement, on retombe sur
+// l'ancien ciblage par titre du premier hit taggé.
 document.getElementById('d-body').addEventListener('click', function(e){
   var pill = e.target.closest('.theme-pill');
   if(!pill) return;
   var cat = pill.dataset.cat;
+  if(scrollThemeKeyword(cat)) return;   // ciblage par mots-clés : cas nominal
   var num = window.__ccnOuverte;
   var ccn = (typeof CCN_SEARCH_MAP!=='undefined' && num) ? CCN_SEARCH_MAP[String(num)] : null;
   if(!ccn || !ccn.hits) return;
-  // Première section (hit) qui porte cette catégorie → son titre → scroll.
+  // Repli : première section (hit) qui porte cette catégorie → son titre → scroll.
   var cible=null;
   for(var i=0;i<ccn.hits.length;i++){
     var h=ccn.hits[i], hc=h.cats||(h.cat?[h.cat]:[]);
