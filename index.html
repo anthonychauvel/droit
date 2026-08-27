@@ -596,6 +596,27 @@
   .assist-ccn-idcc{ font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:12px;
     background:var(--violet-soft); padding:1px 6px; border-radius:4px; margin-right:4px; }
   .assist-ccn-empty{ font-size:12.5px; color:#5b6b82; padding:4px 0; }
+  /* Sélecteur « Ma convention » sous la barre de recherche principale */
+  .maccn{ margin:10px 0 4px; }
+  .maccn-head{ width:100%; box-sizing:border-box; display:flex; align-items:center; gap:9px;
+    background:linear-gradient(180deg,#ffffff,#f7faff); border:1px solid var(--line); border-radius:12px;
+    padding:11px 13px; cursor:pointer; font:inherit; color:var(--ink); text-align:left; }
+  .maccn-head:hover{ border-color:var(--gold); }
+  .maccn-ic{ font-size:16px; line-height:1; flex:none; }
+  .maccn-label{ font-weight:700; font-size:13.5px; color:var(--violet-strong); flex:none; }
+  .maccn-state{ font-size:12.5px; color:var(--ink-soft); flex:1; min-width:0; overflow:hidden;
+    text-overflow:ellipsis; white-space:nowrap; }
+  .maccn-chevron{ font-size:12px; color:var(--gold-strong); flex:none; }
+  .maccn-head.maccn-on{ background:var(--violet-soft); border-color:var(--gold-strong); cursor:default; flex-wrap:wrap; }
+  .maccn-chip{ font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:12px; color:#3a2e07;
+    background:var(--gold-metal); border:1px solid var(--gold-strong); border-radius:6px; padding:2px 8px;
+    flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .maccn-act{ flex:none; font:inherit; font-size:12px; font-weight:600; cursor:pointer; border-radius:8px;
+    padding:5px 10px; border:1px solid var(--line); background:#fff; color:var(--violet-strong); }
+  .maccn-act:hover{ border-color:var(--gold); background:#fff; }
+  .maccn-clear{ color:#8a5a5a; }
+  .maccn-body{ border:1px solid var(--line); border-top:none; border-radius:0 0 12px 12px;
+    padding:12px 13px 13px; margin-top:-1px; background:#fff; }
   .finder{ background:linear-gradient(180deg,#ffffff,#f7faff); border:1px solid var(--line); border-radius:16px;
     padding:16px 16px 14px; margin-bottom:22px; box-shadow:0 14px 34px -20px rgba(15,45,82,.35); }
   .finder-title{ font-family:'Manrope',sans-serif; font-weight:800; font-size:16.5px; color:var(--violet-strong); }
@@ -854,6 +875,7 @@ body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
       </div>
       <div id="suggest" class="suggest" hidden></div>
     </div>
+    <div class="maccn" id="maccn"></div>
     <div class="niveau-filter" id="niveau-filter" role="group" aria-label="Où s'applique la règle ?">
       <div class="niveau-label">Où s'applique la règle&nbsp;?</div>
       <div class="niveau-pills">
@@ -2964,16 +2986,18 @@ function scrollToConventionPicker(){
   }
 }
 
-function assistChercherCCN(q){
-  // Cherche une convention par métier/secteur/IDCC et propose des choix.
-  // On NE se contente PAS d'un sous-chaîne du titre (« commerces de gros » au
-  // pluriel, « non alimentaire » absent du titre… ne matchent pas). On score par :
-  //   1) IDCC exact  2) carte métier/secteur PRO  3) recouvrement de mots du titre,
-  // avec tolérance singulier/pluriel (égalité ou préfixe >=4 lettres).
-  var box = document.getElementById('assist-ccn-res');
-  if(!box) return;
+// Cœur du matching CCN : cherche une convention par métier/secteur/IDCC et
+// renvoie jusqu'à 8 candidats (items INDEX.ccn), ou null si la requête est trop
+// courte. SOURCE UNIQUE, partagée par le mode découverte (assistChercherCCN) ET
+// le sélecteur « Ma convention » du moteur général (maccnChercher) — pour que le
+// scoring ne diverge jamais entre les deux.
+// On NE se contente PAS d'un sous-chaîne du titre (« commerces de gros » au
+// pluriel, « non alimentaire » absent du titre… ne matchent pas). On score par :
+//   1) IDCC exact  2) carte métier/secteur PRO  3) recouvrement de mots du titre,
+// avec tolérance singulier/pluriel (égalité ou préfixe >=4 lettres).
+function chercherCCNCandidats(q){
   q = (q||'').trim();
-  if(q.length < 2){ box.innerHTML=''; return; }
+  if(q.length < 2){ return null; }
   var qn = normaliser(q);
   var qWords = tokenize(q);   // mots significatifs (sans mots-outils)
   function motMatch(a,b){ if(a===b) return true;
@@ -3015,11 +3039,19 @@ function assistChercherCCN(q){
   });
 
   var byNum={}; (INDEX.ccn||[]).forEach(function(it){ byNum[String(it.num)]=it; });
-  var res = Object.keys(scoreById)
+  return Object.keys(scoreById)
     .filter(function(id){ return byNum[id]; })
     .sort(function(a,b){ return scoreById[b]-scoreById[a]; })
     .slice(0,8)
     .map(function(id){ return byNum[id]; });
+}
+
+// Rendu du picker CCN DANS le mode découverte (cible #assist-ccn-res).
+function assistChercherCCN(q){
+  var box = document.getElementById('assist-ccn-res');
+  if(!box) return;
+  var res = chercherCCNCandidats(q);
+  if(res === null){ box.innerHTML=''; return; }
   if(!res.length){ box.innerHTML='<div class="assist-ccn-empty">Aucune convention trouvée. Essayez un autre mot (métier, secteur) ou votre IDCC (4 chiffres, sur le bulletin de paie).</div>'; return; }
   box.innerHTML = res.map(function(it){
     return '<button class="assist-ccn-choice" data-idcc="'+it.num+'">'
@@ -3031,10 +3063,96 @@ function assistChercherCCN(q){
   });
 }
 
+/* ————— Sélecteur « Ma convention » au niveau du MOTEUR GÉNÉRAL —————
+   Jusqu'ici on ne pouvait choisir sa convention que dans le mode découverte, une
+   fois une situation/un thème sélectionné. Ce bloc hisse le MÊME choix juste sous
+   la barre de recherche principale. Il partage tout avec le mode découverte :
+   même état (ASSIST_CCN), même scoring (chercherCCNCandidats), même effet
+   (assistChoisirCCN filtre déjà le bloc « Conventions » des résultats). Choisir
+   ici ou en bas, c'est le même choix ; les deux affichages restent synchronisés.
+   Aucune persistance (pas de localStorage) — cohérent avec le reste de l'app. */
+var MACCN_OUVERT = false;
+
+function maccnToggle(){
+  MACCN_OUVERT = !MACCN_OUVERT;
+  maccnRender();
+  if(MACCN_OUVERT){ var i=document.getElementById('maccn-input'); if(i) setTimeout(function(){ try{ i.focus(); }catch(e){} }, 60); }
+}
+
+function maccnRender(){
+  var box = document.getElementById('maccn');
+  if(!box) return;
+  var html = '';
+  if(typeof ASSIST_CCN!=='undefined' && ASSIST_CCN){
+    var choisie = (INDEX.ccn||[]).filter(function(it){ return String(it.num)===String(ASSIST_CCN); })[0];
+    var nom = choisie ? String(choisie.title||'').slice(0,44) : ('IDCC '+ASSIST_CCN);
+    html += '<div class="maccn-head maccn-on">'
+      +   '<span class="maccn-ic" aria-hidden="true">⚖️</span>'
+      +   '<span class="maccn-label">Ma convention</span>'
+      +   '<span class="maccn-chip">IDCC '+escapeHtml(String(ASSIST_CCN))+' · '+escapeHtml(nom)+'</span>'
+      +   '<button type="button" class="maccn-act" data-maccn-open="1">Consulter</button>'
+      +   '<button type="button" class="maccn-act maccn-clear" data-maccn-clear="1">Changer ✕</button>'
+      + '</div>';
+  } else {
+    html += '<button type="button" class="maccn-head" id="maccn-head" aria-expanded="'+(MACCN_OUVERT?'true':'false')+'">'
+      +   '<span class="maccn-ic" aria-hidden="true">⚖️</span>'
+      +   '<span class="maccn-label">Ma convention collective</span>'
+      +   '<span class="maccn-state">'+(MACCN_OUVERT?'Métier, secteur ou IDCC…':'Choisir la vôtre pour cibler vos recherches')+'</span>'
+      +   '<span class="maccn-chevron" aria-hidden="true">'+(MACCN_OUVERT?'▴':'▾')+'</span>'
+      + '</button>';
+    if(MACCN_OUVERT){
+      html += '<div class="maccn-body">'
+        +  '<input type="search" id="maccn-input" autocomplete="off" class="assist-ccn-input" placeholder="Votre métier, secteur ou IDCC (ex. coiffure, 1314…)">'
+        +  '<div id="maccn-res" class="assist-ccn-res"></div>'
+        +  '<div class="assist-ccn-aide">Une fois choisie, vos recherches mettent en avant <b>votre</b> convention (le reste — Code du travail, jurisprudence… — reste affiché). Vous ne la connaissez pas ? <a href="https://code.travail.gouv.fr/outils/convention-collective" target="_blank" rel="noopener">Trouvez-la avec le nom de votre entreprise ↗</a></div>'
+        + '</div>';
+    }
+  }
+  box.innerHTML = html;
+
+  var head = document.getElementById('maccn-head');
+  if(head && !(typeof ASSIST_CCN!=='undefined' && ASSIST_CCN)) head.onclick = function(){ maccnToggle(); };
+  var inp = document.getElementById('maccn-input');
+  if(inp){ inp.oninput = function(){ maccnChercher(this.value); }; }
+  var openb = box.querySelector('[data-maccn-open]');
+  if(openb) openb.onclick = function(){ if(ASSIST_CCN) openDetail('ccn', ASSIST_CCN); };
+  var clr = box.querySelector('[data-maccn-clear]');
+  if(clr) clr.onclick = function(){
+    ASSIST_CCN = null; MACCN_OUVERT = true;
+    if(typeof renderAssist==='function') renderAssist();
+    if(typeof relancerAssist==='function') relancerAssist();
+    maccnRender();
+    var i=document.getElementById('maccn-input'); if(i) setTimeout(function(){ try{ i.focus(); }catch(e){} }, 60);
+  };
+}
+
+function maccnChercher(q){
+  var box = document.getElementById('maccn-res');
+  if(!box) return;
+  var res = chercherCCNCandidats(q);
+  if(res === null){ box.innerHTML=''; return; }
+  if(!res.length){ box.innerHTML='<div class="assist-ccn-empty">Aucune convention trouvée. Essayez un métier, un secteur, ou votre IDCC (4 chiffres, sur le bulletin de paie).</div>'; return; }
+  box.innerHTML = res.map(function(it){
+    return '<button class="assist-ccn-choice" data-idcc="'+it.num+'">'
+      + '<span class="assist-ccn-idcc">IDCC '+it.num+'</span> '
+      + escapeHtml(String(it.title||'').slice(0,60)) + '</button>';
+  }).join('');
+  box.querySelectorAll('.assist-ccn-choice').forEach(function(b){
+    b.onclick = function(){ maccnChoisir(this.dataset.idcc); };
+  });
+}
+
+function maccnChoisir(idcc){
+  MACCN_OUVERT = false;
+  assistChoisirCCN(idcc);   // pose ASSIST_CCN + relance la recherche (déjà filtrée sur la CCN)
+  maccnRender();            // refléter le choix dans le bloc du haut
+}
+
 function assistChoisirCCN(idcc){
   ASSIST_CCN = idcc;
   renderAssist();
   relancerAssist();
+  if(typeof maccnRender==='function') maccnRender();   // garder le sélecteur du haut synchronisé
 }
 
 // Recherche DÉBOUNCÉE : dans le mode assisté, chaque clic accumule des mots et
@@ -4994,12 +5112,13 @@ renderChiffres();
       runSearch(); return;
     }
     if(t.dataset.situ){ assistSituation(t.dataset.situ); return; }
-    if(t.dataset.cclear || t.dataset.ccnClear){ ASSIST_CCN=null; renderAssist(); relancerAssist(); return; }
+    if(t.dataset.cclear || t.dataset.ccnClear){ ASSIST_CCN=null; renderAssist(); relancerAssist(); if(typeof maccnRender==='function') maccnRender(); return; }
     if(t.dataset.prof!==undefined && t.dataset.cle!==undefined){
       assistChoisir(parseInt(t.dataset.prof,10), t.dataset.cle); return;
     }
   });
 })();
+if(typeof maccnRender==='function') maccnRender();   // peindre le sélecteur « Ma convention » dès le chargement
 var _tv = document.getElementById('toggle-vigueur');
 if(_tv){
   _tv.onclick = function(){
