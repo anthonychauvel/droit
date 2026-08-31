@@ -66,15 +66,21 @@ jobs:
       - name: "Enregistrer le résultat dans Vérification (onglet Mise à jour de l'appli)"
         run: |
           git add output/intl/textes-hudoc/ 2>/dev/null || true
-          N=$(git diff --cached --name-only | wc -l | tr -d ' ')
+          git diff --cached --name-only > "$RUNNER_TEMP/fichiers-touches-cedh.txt"
+          N=$(wc -l < "$RUNNER_TEMP/fichiers-touches-cedh.txt" | tr -d ' ')
           if [ "$N" -gt 0 ]; then
             RESUME="$N fiche(s) CEDH enrichies avec le texte intégral HUDOC ce run."
           else
             RESUME="Vérification effectuée, rien de nouveau."
           fi
+          # Enrichissement (texte intégral ajouté à des fiches déjà présentes),
+          # pas une modification du droit -> --changements 0 pour ne pas lever
+          # d'alerte « changement réel » dans le tableau de bord. Le nombre de
+          # fiches enrichies reste dans le résumé, et la liste dans le .md.
           python3 scripts/ecrire_audit.py --slug cedh \
             --titre "CEDH — enrichir avec le texte intégral HUDOC" \
-            --resume "$RESUME" --changements "$N"
+            --resume "$RESUME" --changements 0 \
+            --fichiers-depuis "$RUNNER_TEMP/fichiers-touches-cedh.txt"
 
       - name: Committer et pousser (rebase, puis merge -X ours en dernier recours)
         run: |
