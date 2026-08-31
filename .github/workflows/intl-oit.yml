@@ -84,7 +84,8 @@ jobs:
       - name: "Enregistrer le résultat dans Vérification (onglet Mise à jour de l'appli)"
         run: |
           git add output/search-index-oit.json output/intl/textes-oit/ scripts/oit-jorf-mapping.json 2>/dev/null || true
-          N=$(git diff --cached --name-only | wc -l | tr -d ' ')
+          git diff --cached --name-only > "$RUNNER_TEMP/fichiers-touches-oit.txt"
+          N=$(wc -l < "$RUNNER_TEMP/fichiers-touches-oit.txt" | tr -d ' ')
           if [ "$N" -gt 0 ]; then
             RESUME="$N fichier(s) mis à jour (fiches OIT et/ou index de recherche)."
           else
@@ -92,7 +93,8 @@ jobs:
           fi
           python3 scripts/ecrire_audit.py --slug oit \
             --titre "OIT — construire l'index de recherche" \
-            --resume "$RESUME" --changements "$N"
+            --resume "$RESUME" --changements "$N" \
+            --fichiers-depuis "$RUNNER_TEMP/fichiers-touches-oit.txt"
 
       - name: Committer et pousser (rebase, puis merge -X ours en dernier recours)
         run: |
