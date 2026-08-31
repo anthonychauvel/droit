@@ -327,6 +327,30 @@ def main():
                 lines.append(f"- {p}")
             lines.append("")
 
+        # --- Annexe : liste COMPLÈTE des fichiers touchés, SANS plafond ------
+        # Les sections ci-dessus sont un résumé lisible, et certaines catégories
+        # (Code du travail/sécu/jurisprudence, suppressions, rattrapage) y sont
+        # plafonnées pour rester digestes. Cette annexe garantit qu'AUCUN
+        # fichier touché n'est masqué : on peut tout lire, exactement comme la
+        # section « Fichiers touchés » des audits internationaux. Le rattrapage
+        # de notre propre fonds reste, lui, replié dans son résumé plus haut —
+        # on ne le re-déroule pas ici pour ne pas noyer le signal.
+        groupes = [
+            ("Modifiés", changed["modifies"]),
+            ("Ajoutés", changed["ajoutes"]),
+            ("Supprimés", changed["supprimes"]),
+        ]
+        if any(g for _, g in groupes):
+            lines.append(f"## Fichiers touchés — liste complète ({total})")
+            lines.append("")
+            for titre_grp, groupe in groupes:
+                if not groupe:
+                    continue
+                lines.append(f"### {titre_grp} ({len(groupe)})")
+                lines.append("")
+                lines.extend(f"- {p}" for p in sorted(groupe))
+                lines.append("")
+
     # En-tête, construit maintenant que le tri est fait : on annonce d'abord ce
     # qui demande une lecture, et le nombre brut de fichiers touchés ensuite,
     # explicitement rattaché au rattrapage quand c'est le cas.
