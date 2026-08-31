@@ -26898,13 +26898,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731379",
+              "cid": "KALISCTA000005731379",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er juillet 1995",
+              "dateModif": null,
+              "dateDebut": "1995-09-12",
+              "dateFin": "1996-05-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005869346",
+                  "cid": "KALIARTI000005869346",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731379/KALIARTI000005869346",
+                  "pathTitle": [
+                    "Salaires à compter du 1er juillet 1995"
+                  ],
+                  "content": "<p></p>   Les salaires effectifs garantis pour les catégories et coefficients suivants : M, OS 1, OS 2, OP 1, OP 2, OSL 1, OSL 2, OL 1, 100 à 185 sont augmentés de 2,37 p. 100 à compter du 1er juillet 1995.<p></p><p></p>   La nouvelle grille devient la suivante :<p></p><p></p> ANNEXE I<p></p> MENSUELS<p></p> SALAIRES EFFECTIFS GARANTIS AU 1ER JUILLET 1995<p></p><p></p><TABLE><TR><TD>       OUVRIERS          </TD></TR><TR><TD>Qualification </TD><TD> Salaire  </TD></TR><TR><TD>  M           </TD><TD> 6.250 F  </TD></TR><TR><TD>  OS 1        </TD><TD> 6.276 F  </TD></TR><TR><TD>  OS 2        </TD><TD> 6.330 F  </TD></TR><TR><TD>  OP 1        </TD><TD> 6.410 F  </TD></TR><TR><TD>  OP 2        </TD><TD> 6.517 F  </TD></TR></TABLE><p></p><p></p><TABLE><TR><TD>LAPIDAIRES ET DIAMANTAIRES</TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD></TR><TR><TD>   OSL 1       </TD><TD>  6.250   </TD></TR><TR><TD>   OSL 2       </TD><TD>  6.410   </TD></TR><TR><TD>   OL 1        </TD><TD>  6.463   </TD></TR></TABLE><p></p><TABLE><TR><TD>   COLLABORATEURS ET      </TD></TR><TR><TD>  AGENTS DE MAÎTRISE     </TD></TR><TR><TD> Coefficient   </TD><TD> Salaire  </TD></TR><TR><TD>    155        </TD><TD> 6.517 F  </TD></TR><TR><TD>    160        </TD><TD> 6.570 F  </TD></TR><TR><TD>    100        </TD><TD> 6.250 F  </TD></TR><TR><TD>    118        </TD><TD> 6.276 F  </TD></TR><TR><TD>    128        </TD><TD> 6.330 F  </TD></TR><TR><TD>    138        </TD><TD> 6.383 F  </TD></TR><TR><TD>    150        </TD><TD> 6.463 F  </TD></TR><TR><TD>    180        </TD><TD> 6.677 F  </TD></TR><TR><TD>    185        </TD><TD> 6.731 F  </TD></TR></TABLE><p></p><p></p>   Il est rappelé que ce salaire effectif garanti n'a aucune incidence sur la prime d'ancienneté dont le montant reste fonction du salaire minimum garanti conventionnel pour la catégorie correspondante et que la prime d'ancienneté, lorsqu'elle est acquise conformément à la convention collective, s'ajoute à ce salaire effectif garanti.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-09-12 BO conventions collectives 95-44, étendu par arrêté du 27 décembre 1995 JORF 5 janvier 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 810864000000,
+                  "dateFin": 832032000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26918,13 +26992,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731380",
+              "cid": "KALISCTA000005731380",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er mai 1996",
+              "dateModif": null,
+              "dateDebut": "1996-05-14",
+              "dateFin": "1998-10-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005869347",
+                  "cid": "KALIARTI000005869347",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731380/KALIARTI000005869347",
+                  "pathTitle": [
+                    "Salaires à compter du 1er mai 1996"
+                  ],
+                  "content": "<p></p>   Les salaires minimaux conventionnels \" Grille transitoire \" deviennent les suivants à compter du 1er mai 1996. Ce sont ces salaires qui servent au calcul de la prime d'ancienneté.<p></p> Prime panier : 38,63<p></p><p></p> OUVRIERS<p></p><TABLE><TR><TD> Qualification </TD><TD> Salaire </TD></TR><TR><TD>      M        </TD><TD> 5.928 F </TD></TR><TR><TD>     OS1       </TD><TD> 5.982 F </TD></TR><TR><TD>     OS2       </TD><TD> 6.062 F </TD></TR><TR><TD>     OP1       </TD><TD> 6.127 F </TD></TR><TR><TD>     OP2       </TD><TD> 6.350 F </TD></TR><TR><TD>     OP3       </TD><TD> 6.793 F </TD></TR><TR><TD>     OP4       </TD><TD> 7.755 F </TD></TR><TR><TD> Petite        </TD><TD></TD></TR><TR><TD> joaillerie    </TD><TD></TD></TR><TR><TD>     OP3       </TD><TD> 6.867 F </TD></TR><TR><TD>     OP4       </TD><TD> 8.000 F </TD></TR><TR><TD> Joaillerie    </TD><TD></TD></TR><TR><TD>     OJ1       </TD><TD> 6.867 F </TD></TR><TR><TD>     OJ2       </TD><TD> 7.882 F </TD></TR><TR><TD>     OJ3       </TD><TD> 9.100 F </TD></TR><TR><TD>     OJ4       </TD><TD>10.515 F </TD></TR><TR><TD> Polissage     </TD><TD></TD></TR><TR><TD> joaillerie    </TD><TD></TD></TR><TR><TD>     OJ1       </TD><TD> 6.375 F </TD></TR><TR><TD>     OJ2       </TD><TD> 7.290 F </TD></TR><TR><TD>     OJ3       </TD><TD> 8.553 F </TD></TR><TR><TD>     OJ4       </TD><TD> 9.773 F </TD></TR><TR><TD> Lapidaires et </TD><TD></TD></TR><TR><TD> diamantaires  </TD><TD></TD></TR><TR><TD>     OSL1      </TD><TD> 6.030 F </TD></TR><TR><TD>     OSL2      </TD><TD> 6.138 F </TD></TR><TR><TD>     OL1       </TD><TD> 6.236 F </TD></TR><TR><TD>     OL2       </TD><TD> 6.667 F </TD></TR><TR><TD>     OL3       </TD><TD> 7.882 F </TD></TR><TR><TD>     OL4       </TD><TD> 9.061 F </TD></TR></TABLE><p></p>COLLABORATEURS ET AGENTS DE MAITRISE<p></p><TABLE><TR><TD> Coefficient </TD><TD> Salaire </TD></TR><TR><TD>     100     </TD><TD> 5.928 F </TD></TR><TR><TD>     118     </TD><TD> 5.982 F </TD></TR><TR><TD>     128     </TD><TD> 6.030 F </TD></TR><TR><TD>     138     </TD><TD> 6.082 F </TD></TR><TR><TD>     150     </TD><TD> 6.150 F </TD></TR><TR><TD>     155     </TD><TD> 6.187 F </TD></TR><TR><TD>     160     </TD><TD> 6.225 F </TD></TR><TR><TD>     180     </TD><TD> 6.523 F </TD></TR><TR><TD>     185     </TD><TD> 6.639 F </TD></TR><TR><TD>     200     </TD><TD> 7.000 F </TD></TR><TR><TD>     209     </TD><TD> 7.316 F </TD></TR><TR><TD>     212     </TD><TD> 7.417 F </TD></TR><TR><TD>     221     </TD><TD> 7.733 F </TD></TR><TR><TD>     234     </TD><TD> 8.190 F </TD></TR><TR><TD>     246     </TD><TD> 8.606 F </TD></TR><TR><TD>     250     </TD><TD> 8.747 F </TD></TR><TR><TD>     255     </TD><TD> 8.925 F </TD></TR><TR><TD>     271     </TD><TD> 9.483 F </TD></TR><TR><TD>     290     </TD><TD>10.148 F </TD></TR><TR><TD>     300     </TD><TD>10.498 F </TD></TR><TR><TD>     320     </TD><TD>11.196 F </TD></TR></TABLE><p></p>ANNEXE II - CADRES<p></p><TABLE><TR><TD> Indice </TD><TD>  Salaire </TD></TR><TR><TD>   22   </TD><TD>  8.142 F </TD></TR><TR><TD>   24   </TD><TD>  8.882 F </TD></TR><TR><TD>   26   </TD><TD>  9.627 F </TD></TR><TR><TD>   28   </TD><TD> 10.361 F </TD></TR><TR><TD>   30   </TD><TD> 11.120 F </TD></TR><TR><TD>   32   </TD><TD> 11.861 F </TD></TR><TR><TD>   34   </TD><TD> 12.602 F </TD></TR><TR><TD>   35   </TD><TD> 12.962 F </TD></TR><TR><TD>  A133  </TD><TD> 12.269 F </TD></TR><TR><TD>  A235  </TD><TD> 12.962 F </TD></TR><TR><TD>   B40  </TD><TD> 14.823 F </TD></TR><TR><TD>   C48  </TD><TD> 17.784 F </TD></TR><TR><TD>   D55  </TD><TD> 20.351 F </TD></TR><TR><TD>  HC60  </TD><TD> 22.224 F </TD></TR></TABLE><p></p><p></p>   Salaire effectifs garantis au 1er mai 1995 (en francs)<p></p><p></p>   Les salaires effectifs garantis, pour les catégories et coefficients suivants : M, OS1, OS2, OP1, OP2, OSL1, OSL2, OL1, 100 à 185, sont augmentés de 2 p. 100 à compter du 1er mai 1996.<p></p><p></p>   La nouvelle grille devient la suivante :<p></p> ANNEXE I<p></p> Mensuels<p></p> Salaires effectifs garantis au 1er mai 1996<p></p> OUVRIERS<p></p><TABLE><TR><TD> Qualification </TD><TD> Salaire </TD></TR><TR><TD>      M        </TD><TD> 6.375 F </TD></TR><TR><TD>     OS1       </TD><TD> 6.402 F </TD></TR><TR><TD>     OS2       </TD><TD> 6.457 F </TD></TR><TR><TD>     OP1       </TD><TD> 6.538 F </TD></TR><TR><TD>     OP2       </TD><TD> 6.647 F </TD></TR><TR><TD> Lapidaires et </TD><TD></TD></TR><TR><TD> diamantaires  </TD><TD></TD></TR><TR><TD>     OSL1      </TD><TD> 6.375 F </TD></TR><TR><TD>     OSL2      </TD><TD> 6.538 F </TD></TR><TR><TD>     OL1       </TD><TD> 6.593 F </TD></TR></TABLE><p></p>COLLABORATEURS ET AGENTS DE MAITRISE<p></p><TABLE><TR><TD> Coefficient </TD><TD> Salaire </TD></TR><TR><TD>     100     </TD><TD> 6.375 F </TD></TR><TR><TD>     118     </TD><TD> 6.402 F </TD></TR><TR><TD>     128     </TD><TD> 6.457 F </TD></TR><TR><TD>     138     </TD><TD> 6.511 F </TD></TR><TR><TD>     150     </TD><TD> 6.593 F </TD></TR><TR><TD>     155     </TD><TD> 6.647 F </TD></TR><TR><TD>     160     </TD><TD> 6.702 F </TD></TR><TR><TD>     180     </TD><TD> 6.811 F </TD></TR><TR><TD>     185     </TD><TD> 6.865 F </TD></TR></TABLE><p></p><p></p>   Il est rappelé que ce salaire effectif garanti n'a aucune incidence sur la prime d'ancienneté dont le montant reste fonction du salaire minimum garanti conventionnel pour la catégorie correspondante et que la prime d'ancienneté, lorsqu'elle est acquise conformément à la convention collective, s'ajoute à ce salaire effectif garanti.<p></p><p></p>   Les partenaires sociaux conviennent de se réunir en commission paritaire restreinte à partir du troisième trimestre 1996 pour rechercher un meilleur échelonnement des salaires du barème dit \" Grille unique \" applicable le 1er mai 1997.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 7 octobre 1996 art. 1 : les dispositions du présent avenant sont étendues sous réserve des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 7 octobre 1996 art. 1 : les dispositions du présent avenant sont étendues sous réserve des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1996-05-14 BO conventions collectives 96-29, étendu par arrêté du 7 octobre 1996 JORF 17 octobre 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 832032000000,
+                  "dateFin": 908323200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26938,13 +27086,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731381",
+              "cid": "KALISCTA000005731381",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er octobre 1998",
+              "dateModif": null,
+              "dateDebut": "1998-10-14",
+              "dateFin": "2000-11-16",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005869348",
+                  "cid": "KALIARTI000005869348",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731381/KALIARTI000005869348",
+                  "pathTitle": [
+                    "Salaires à compter du 1er octobre 1998"
+                  ],
+                  "content": "<p></p>   Les salaires minimaux conventionnels deviennent les suivants à partir du 1er octobre 1998 :<p></p> OUVRIERS<p></p><TABLE><TR><TD> Qualification </TD><TD> Salaire </TD></TR></TABLE><p></p> Prime panier : 39,40<p></p><TABLE><TR><TD></TD></TR><TR><TD>     M         </TD><TD>  6 800  </TD></TR><TR><TD>    OS1        </TD><TD>  6 816  </TD></TR><TR><TD>    OS2        </TD><TD>  6 832  </TD></TR><TR><TD>    OP1        </TD><TD>  6 854  </TD></TR><TR><TD>    OP2        </TD><TD>  6 885  </TD></TR><TR><TD>    OP3        </TD><TD>  6 963  </TD></TR><TR><TD>    OP4        </TD><TD>  7 949  </TD></TR><TR><TD> Petite        </TD><TD></TD></TR><TR><TD> joaillerie    </TD><TD></TD></TR><TR><TD> Qualification </TD><TD> Salaire </TD></TR><TR><TD>   OP3         </TD><TD>   7 039 </TD></TR><TR><TD>   OP4         </TD><TD>   8 200 </TD></TR><TR><TD> Joaillerie    </TD><TD></TD></TR><TR><TD> Qualification </TD><TD> Salaire </TD></TR><TR><TD>      OJ1      </TD><TD>   7 039 </TD></TR><TR><TD>      OJ2      </TD><TD>   8 080 </TD></TR><TR><TD>      OJ3      </TD><TD>   9 328 </TD></TR><TR><TD>      OJ4      </TD><TD>  10 778 </TD></TR></TABLE><p></p><TABLE><TR><TD> Polissage     </TD><TD></TD></TR><TR><TD> joaillerie    </TD><TD></TD></TR><TR><TD> Qualification </TD><TD> Salaire </TD></TR><TR><TD>      OJ1      </TD><TD>   6 800 </TD></TR><TR><TD>      OJ2      </TD><TD>   7 472 </TD></TR><TR><TD>      OJ3      </TD><TD>   8 767 </TD></TR><TR><TD>      OJ4      </TD><TD>  10 017 </TD></TR><TR><TD> Lapidaires et </TD><TD></TD></TR><TR><TD> diamantaires  </TD><TD></TD></TR><TR><TD> Qualification </TD><TD> Salaire </TD></TR><TR><TD>      OSL1     </TD><TD>   6 800 </TD></TR><TR><TD>      OSL2     </TD><TD>   6 857 </TD></TR><TR><TD>       OL1     </TD><TD>   6 885 </TD></TR><TR><TD>       OL2     </TD><TD>   6 963 </TD></TR><TR><TD>       OL3     </TD><TD>   8 080 </TD></TR><TR><TD>       OL4     </TD><TD>   9 287 </TD></TR></TABLE><p></p>COLLABORATEURS ET AGENTS DE MAITRISE<p></p><TABLE><TR><TD> Coefficient </TD><TD> Salaire </TD></TR><TR><TD>    100      </TD><TD>   6 800 </TD></TR><TR><TD>    118      </TD><TD>   6 816 </TD></TR><TR><TD>    128      </TD><TD>   6 832 </TD></TR><TR><TD>    138      </TD><TD>   6 854 </TD></TR><TR><TD>    150      </TD><TD>   6 885 </TD></TR><TR><TD>    155      </TD><TD>   6 905 </TD></TR><TR><TD>    160      </TD><TD>   6 916 </TD></TR><TR><TD>    180      </TD><TD>   6 947 </TD></TR><TR><TD>    185      </TD><TD>   7 002 </TD></TR><TR><TD>    200      </TD><TD>   7 175 </TD></TR><TR><TD>    209      </TD><TD>   7 499 </TD></TR><TR><TD>    212      </TD><TD>   7 603 </TD></TR><TR><TD>    221      </TD><TD>   7 927 </TD></TR><TR><TD>    234      </TD><TD>   8 395 </TD></TR><TR><TD>    246      </TD><TD>   8 821 </TD></TR><TR><TD>    250      </TD><TD>   8 965 </TD></TR><TR><TD>    255      </TD><TD>   9 148 </TD></TR><TR><TD>    271      </TD><TD>   9 721 </TD></TR><TR><TD>    290      </TD><TD>  10 401 </TD></TR><TR><TD>    300      </TD><TD>  10 760 </TD></TR><TR><TD>    320      </TD><TD>  11 476 </TD></TR></TABLE><p></p>COLLABORATEURS ET AGENTS DE MAITRISE<p></p><TABLE><TR><TD> Coefficient </TD><TD> Salaire </TD></TR><TR><TD>      22     </TD><TD>   8 346 </TD></TR><TR><TD>      24     </TD><TD>   9 104 </TD></TR><TR><TD>      26     </TD><TD>   9 868 </TD></TR><TR><TD>      28     </TD><TD>  10 620 </TD></TR><TR><TD>      30     </TD><TD>  11 398 </TD></TR><TR><TD>      32     </TD><TD>  12 158 </TD></TR><TR><TD>      34     </TD><TD>  12 917 </TD></TR><TR><TD>      35     </TD><TD>  12 286 </TD></TR></TABLE><p></p>ANNEXE II - CADRES<p></p><TABLE><TR><TD> Indice </TD><TD>  Salaire </TD></TR><TR><TD>   A133 </TD><TD>   12 576 </TD></TR><TR><TD>   B40  </TD><TD>   15 193 </TD></TR><TR><TD>   C48  </TD><TD>   18 229 </TD></TR><TR><TD>   D55  </TD><TD>   20 859 </TD></TR><TR><TD>   HC60 </TD><TD>   22 780 </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1998-10-14 BO conventions collectives 98-47 étendu par arrêté du 4 janvier 1999 JORF 13 janvier 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 908323200000,
+                  "dateFin": 974332800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
