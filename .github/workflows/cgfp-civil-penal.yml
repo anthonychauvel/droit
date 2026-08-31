@@ -128,7 +128,8 @@ jobs:
                   all_articles_code_civil_travail.txt all_articles_code_penal_travail.txt \
                   output/search-index-cgfp.json output/search-index-civil.json output/search-index-penal.json \
                   2>/dev/null || true
-          N=$(git diff --cached --name-only | wc -l | tr -d ' ')
+          git diff --cached --name-only > "$RUNNER_TEMP/fichiers-touches-cgfp.txt"
+          N=$(wc -l < "$RUNNER_TEMP/fichiers-touches-cgfp.txt" | tr -d ' ')
           if [ "$N" -gt 0 ]; then
             RESUME="$N fichier(s) mis à jour (CGFP, Code civil et/ou Code pénal)."
           else
@@ -136,7 +137,8 @@ jobs:
           fi
           python3 scripts/ecrire_audit.py --slug cgfp-civil-penal \
             --titre "CGFP + Code civil/pénal — mise à jour" \
-            --resume "$RESUME" --changements "$N"
+            --resume "$RESUME" --changements "$N" \
+            --fichiers-depuis "$RUNNER_TEMP/fichiers-touches-cgfp.txt"
 
       - name: Committer et pousser (rebase, puis merge -X ours en dernier recours)
         run: |
