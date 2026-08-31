@@ -12766,13 +12766,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005691718",
+              "cid": "KALISCTA000005691718",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point au 1er mai 2002",
+              "dateModif": null,
+              "dateDebut": "2002-05-13",
+              "dateFin": "2004-10-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005770675",
+                  "cid": "KALIARTI000005770675",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005691718/KALIARTI000005770675",
+                  "pathTitle": [
+                    "Valeur du point au 1er mai 2002"
+                  ],
+                  "content": "Préambule<p></p><p></p>   Compte tenu de la nouvelle durée légale du temps de travail fixée à 35 heures par semaine pour toutes les entreprises depuis le 1er janvier 2002, les parties signataires reconnaissent nécessaire de fixer les salaires minimaux conventionnels des cadres sur cette nouvelle base.<p></p><p></p>   Toutefois, et afin de prendre en compte le cas des entreprises qui ont maintenu un horaire collectif supérieur à 35 heures par semaine, les parties signataires sont convenues de traiter distinctement ces entreprises de celles dont l'horaire collectif est fixé à 35 heures, tout en assurant une revalorisation des salaires minimaux conventionnels pour l'ensemble des cadres.<p></p><p></p>   A cet effet, les parties signataires conviennent de mettre en place un dispositif transitoire visant :<p></p><p></p>   - à fixer une nouvelle valeur du point mensuel établie sur une base de 35 heures par semaine ;<p></p><p></p>   - à rendre intégralement applicable cette nouvelle valeur de point aux entreprises dont l'horaire de travail est fixé à 35 heures ;<p></p><p></p>   - à la rendre progressivement applicable aux entreprises dont l'horaire est supérieur à 35 heures par semaine, selon des modalités particulières fixées par le présent accord.<p></p> Article 1er<p></p><p></p>   La valeur du point mensuel est portée à 5,59 Euros pour un horaire de 35 heures par semaine.<p></p> Article 2<p></p><p></p>   1. Dans les entreprises dont l'horaire collectif de travail est fixé à 35 heures par semaine ou à 35 heures en moyenne sur l'année, le salaire minimal conventionnel des cadres pour 35 heures par semaine est égal à la valeur du point fixée à l'article 1er multipliée par le coefficient hiérarchique du cadre.<p></p><p></p>   2. Dans les entreprises dont l'horaire collectif de travail est supérieur à la durée légale de 35 heures, le salaire minimal conventionnel des cadres pour 35 heures, est :<p></p><p></p>   - au 1er mai 2002, à 93 % de la valeur du point fixée à l'article 1er multipliée par le coefficient hiérarchique du cadre (soit 5,20 Euros x coefficient) ;<p></p><p></p>   - au 1er janvier 2003, à 96 % de la valeur du point fixée à l'article 1er multipliée par le coefficient hiérarchique du cadre (soit 5,37 Euros x coefficient) ;<p></p><p></p>   - au 1er janvier 2004, à 100 % de la valeur du point fixée à l'article 1er multipliée par le coefficient hiérarchique du cadre soit (5,59 Euros x coefficient).<p></p> Article 3<p></p><p></p>   Le présent accord entre en vigueur le 1er mai 2002.<p></p> Article 4<p></p><p></p>   Le champ d'application du présent avenant est identique à celui de la convention collective du 6 décembre 1956.<p></p> Article 5<p></p><p></p>   Le présent accord sera déposé auprès de la direction départementale du travail et de l'emploi, en un nombre suffisant d'exemplaires, en vue de son extension.<p></p> Article 6<p></p><p></p>   Toute organisation syndicale représentative non signataire du présent accord pourra y adhérer par simple déclaration auprès de l'organisme compétent. Elle devra également aviser, par lettre recommandée, toutes les organisations signataires.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 34 2002-05-13 en vigueur le 1er mai 2002 BO conventions collectives 2002-24 étendu par arrêté du 24 octobre 2002 JORF 5 novembre 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (béton, silice, isolants en laines minérales manufacturées)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1021248000000,
+                  "dateFin": 1098230400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12786,13 +12860,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005691719",
+              "cid": "KALISCTA000005691719",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point à compter du 1er novembre 2004.",
+              "dateModif": null,
+              "dateDebut": "2004-10-20",
+              "dateFin": "2006-03-30",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005770676",
+                  "cid": "KALIARTI000005770676",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005691719/KALIARTI000005770676",
+                  "pathTitle": [
+                    "Valeur du point à compter du 1er novembre 2004."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur du point mensuel est portée à 5,82 Euros pour un horaire de 35 heures par semaine.<p></p> Article 2<p></p><p></p>   Il est rappelé que la valeur du point fixée au présent accord sert exclusivement à déterminer les salaires minimaux conventionnels, la seule obligation des entreprises étant de relever, s'il y a lieu, les salaires qui seraient devenus inférieurs à ceux-ci.<p></p> Article 3<p></p><p></p>   Le présent accord entre en vigueur le 1er novembre 2004.<p></p> Article 4<p></p><p></p>   Le champ d'application du présent avenant est identique à celui de la convention collective du 6 décembre 1956.<p></p> Article 5<p></p><p></p>   Le présent accord sera déposé auprès de la direction départementale du travail et de l'emploi, en un nombre suffisant d'exemplaires, en vue de son extension.<p></p> Article 6<p></p><p></p>   Toute organisation syndicale représentative non signataire du présent accord pourra y adhérer par simple déclaration auprès de l'organisme compétent. Elle devra également aviser, par lettre recommandée, toutes les organisations signataires.<p></p><p></p>   Fait à Paris, le 20 octobre 2004.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 35 2004-10-20 BO conventions collectives 2004-47 étendu par arrêté du 8 mars 2005 JORF 22 mars 2005",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires.",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1098230400000,
+                  "dateFin": 1143676800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12806,13 +12954,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005691720",
+              "cid": "KALISCTA000005691720",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point à compter du 1er avril 2006.",
+              "dateModif": null,
+              "dateDebut": "2006-03-30",
+              "dateFin": "2006-11-28",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005770677",
+                  "cid": "KALIARTI000005770677",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005691720/KALIARTI000005770677",
+                  "pathTitle": [
+                    "Valeur du point à compter du 1er avril 2006."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur du point mensuel est portée à 5,96  pour un horaire de 35 heures par semaine.<p></p> Article 2<p></p><p></p>   Il est rappelé que la valeur du point fixée au présent accord sert exclusivement à déterminer les salaires minimaux conventionnels, la seule obligation des entreprises étant de relever, s'il y a lieu, les salaires qui seraient devenus inférieurs à ceux-ci.<p></p> Article 3<p></p><p></p>   Le présent accord entre en vigueur le 1er avril 2006.<p></p><p></p>   Les parties signataires conviennent de se réunir le 28 novembre 2006 pour réexaminer la valeur du point définie au présent accord.<p></p> Article 4<p></p><p></p>   Le champ d'application du présent avenant est identique à celui de la convention collective du 6 décembre 1956.<p></p> Article 5<p></p><p></p>   Le présent accord sera déposé auprès de la direction départementale du travail et de l'emploi, en un nombre suffisant d'exemplaires, en vue de son extension.<p></p> Article 6<p></p><p></p>   Toute organisation syndicale représentative non signataire du présent accord pourra y adhérer par simple déclaration auprès de l'organisme compétent. Elle devra également aviser, par lettre recommandée, toutes les organisations signataires.<p></p><p></p>   Fait à Paris, le 30 mars 2006.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 36 2006-03-30 BO conventions collectives 2006-19 étendu par arrêté du 18 septembre 2006 JORF 28 septembre 2006",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1143676800000,
+                  "dateFin": 1164672000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

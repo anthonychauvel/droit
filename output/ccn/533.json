@@ -5844,12 +5844,63 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005766247",
+              "cid": "KALIARTI000005766247",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005766247",
+              "pathTitle": [],
+              "content": "Article unique<p></p><p></p>   En modification de l'article 1er de l'avenant n° 36 du 26 octobre 1982 à la convention collective interrégionale du 17 novembre 1969, la valeur du point est fixée à 20,78 au lieu de 19,98, à dater du 1er avril 1983.<p></p>",
+              "nota": null,
+              "comporteLiens": false,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 37 1983-03-09 en vigueur le 1er avril 1983 étendu par arrêté du 2 septembre 1983 JONC 17 septembre 1983",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "SALAIRES ETAM",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 418003200000,
+              "dateFin": 668217600000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -5863,13 +5914,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005689895",
+              "cid": "KALISCTA000005689895",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er avril 1991",
+              "dateModif": null,
+              "dateDebut": "1991-03-06",
+              "dateFin": "1991-06-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766248",
+                  "cid": "KALIARTI000005766248",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005689895/KALIARTI000005766248",
+                  "pathTitle": [
+                    "Salaires à compter du 1er avril 1991"
+                  ],
+                  "content": "Article unique<p></p><p></p>   En application des articles L.132-1 et suivants du code du travail concernant les conventions collectives, la valeur du point applicable aux employés, techniciens et agents de maîtrise (E.T.A.M.) dans les entreprises de négoce des matériaux de construction est fixée à :<p></p><p></p>   - 29,38 F à compter du 1er avril 1991, base mensuelle 169 heures.<p></p><p></p>   La rémunération minimale hiérarchique est obtenue en multipliant la valeur du point par le coefficient attribué au salarié.<p></p><p></p>   Elle sert de base au calcul de la prime d'ancienneté.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 41 1991-03-06",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES ETAM",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 668217600000,
+                  "dateFin": 676080000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -5883,13 +6022,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005689896",
+              "cid": "KALISCTA000005689896",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er octobre 1991",
+              "dateModif": null,
+              "dateDebut": "1991-06-05",
+              "dateFin": "1992-03-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766249",
+                  "cid": "KALIARTI000005766249",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005689896/KALIARTI000005766249",
+                  "pathTitle": [
+                    "Salaires à compter du 1er octobre 1991"
+                  ],
+                  "content": "Article 1er.<p></p><p></p>   Les dispositions de l'avenant n° 6 à la convention collective nationale du 17 novembre 1969 sont abrogées.<p></p>Article 2.<p></p><p></p>   En application de l'article 11 de la convention collective nationale relative au travail des employés, techniciens et agents de maîtrise dans le négoce des matériaux de construction du 17 novembre 1969, il est institué un salaire mensuel minimal garanti pour les coefficients hiérarchiques 125 à 210.<p></p>Article 3.<p></p><p></p>   Les salaires mensuels minimaux garantis afférents aux emplois comportant un coefficient hiérarchique compris entre 125 à 210 ne peuvent être inférieurs à ceux du barème ci-après.<p></p> Barème des salaires minimaux applicables au 1er octobre 1991<p></p><p></p><p></p> Coefficients : 125<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 560<p></p><p></p> Coefficients : 127<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 576<p></p><p></p> Coefficients : 132<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 615<p></p><p></p> Coefficients : 135<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 638<p></p><p></p> Coefficients : 138<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 662<p></p><p></p> Coefficients : 141<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 685<p></p><p></p> Coefficients : 145<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 716<p></p><p></p> Coefficients : 148<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 739<p></p><p></p> Coefficients : 150<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 755<p></p><p></p> Coefficients : 155<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 794<p></p><p></p>Coefficients : 160<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 833<p></p><p></p> Coefficients : 165<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 872<p></p><p></p> Coefficients : 170<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 911<p></p><p></p> Coefficients : 175<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 950<p></p><p></p> Coefficients : 180<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 5 989<p></p><p></p> Coefficients : 185<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 6 028<p></p><p></p> Coefficients : 195<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 6 106<p></p><p></p> Coefficients : 200<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 6 145<p></p><p></p> Coefficients : 205<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 6 180<p></p><p></p> Coefficients : 210<p></p> Salaires mensuels minimaux (39 heures hebdomadaires)<p></p> (en francs) : 6 223<p></p><p></p>Article 4.<p></p><p></p>   Les entreprises qui versent des rémunérations inférieures à celles résultant des dispositions du présent accord doivent obligatoirement les mettre en conformité avec celles-ci.<p></p>Article 5.<p></p><p></p>   Les présentes dispositions salariales ont un caractère temporaire devant prendre fin au 31 décembre 1992. Elles s'inscrivent dans le cadre de la négociation sur la révision de la classification professionnelle et d'une redéfinition du salaire minimal conventionnel.<p></p><p></p>   Elles feront l'objet d'une négociation paritaire aux 1er avril et 1er octobre 1992.<p></p>Article 6.<p></p><p></p>   Les présentes dispositions prennent effet à compter du 1er octobre 1991.<p></p>Article 7.<p></p><p></p>   Les parties signataires conviennent de demander l'extension de cet avenant par arrêté ministériel, afin de le rendre obligatoire dans tout le territoire entrant dans le champ d'application.<p></p><p></p>   Le présent avenant sera établi en nombre suffisant d'exemplaires pour être remis à chacune des parties contractantes et pour être déposé à la direction départementale du travail de Paris.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 42 1991-06-05 étendu par arrêté du 1er octobre 1991 JORF 17 octobre 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES ETAM",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 676080000000,
+                  "dateFin": 699667200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
