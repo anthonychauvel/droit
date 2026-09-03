@@ -8690,13 +8690,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005703926",
+              "cid": "KALISCTA000005703926",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juillet 2000 (Seine et Marne)",
+              "dateModif": null,
+              "dateDebut": "2000-06-13",
+              "dateFin": "2002-12-16",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005801166",
+                  "cid": "KALIARTI000005801166",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005703926/KALIARTI000005801166",
+                  "pathTitle": [
+                    "Salaires au 1er juillet 2000 (Seine et Marne)"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   En application des articles XII-8 et XII-9 des conventions collectives nationales du bâtiment du 8 octobre 1990 concernant les ouvriers employés par les entreprises du bâtiment non visées par le décret du 1er mars 1962, d'une part, et par les entreprises du bâtiment visées par le décret du 1er mars 1962, d'autre part, et dans le respect des dispositions de la convention collective régionale des ouvriers du bâtiment d'Ile-de-France du 28 juin 1993, ainsi que du protocole d'accord seine-et-marnais formant avenant à la convention collective régionale des ouvriers du bâtiment du 28 juin 1993 réactualisant et se substituant à la convention collective seine-et-marnaise des ouvriers du bâtiment de 1956, signé le 31 mai 1995, les organisations représentatives d'employeurs et de salariés, réunies en commission paritaire à Dammarie-les-Lys le 13 juin 2000, ont déterminé les salaires mensuels minimaux des ouvriers du bâtiment de Seine-et-Marne.<p></p>Article 2<p></p><p></p>   Pour le département de Seine-et-Marne, les parties signataires du présent accord ont fixé le barème des salaires minimaux des ouvriers du bâtiment comme indiqué dans le tableau ci-après :<p></p> Au 1er juillet 2000<p></p><p></p> (1) CATÉGORIE professionnelle<p></p> (2) COEFFICIENT<p></p> (3) SALAIRE mensuel minimal pour 39 heures hebdomadaires (en francs)<p></p> (4) TAUX HORAIRE minimal (en francs)<p></p><p></p> ...<p></p><p></p>   Niveau I<p></p><p></p>   Ouvriers d'exécution :<p></p><TABLE><TR><TD>    (1)       </TD><TD>(2)</TD><TD>  (3)    </TD><TD> (4) </TD></TR><TR><TD>  - position 1</TD><TD>150</TD><TD> 7 088,12</TD><TD>41,94</TD></TR><TR><TD>  - position 2</TD><TD>170</TD><TD> 7 273,58</TD><TD>43,04</TD></TR></TABLE><p></p><p></p>   Niveau II<p></p><p></p>   Ouvriers professionnels<p></p><TABLE><TR><TD>    (1)       </TD><TD>(2)</TD><TD>  (3)    </TD><TD> (4) </TD></TR><TR><TD></TD><TD>185</TD><TD> 7 412,68</TD><TD>43,86</TD></TR></TABLE><p></p><p></p>   Niveau III<p></p><p></p>   Compagnons professionnels :<p></p><TABLE><TR><TD>    (1)       </TD><TD>(2)</TD><TD>  (3)    </TD><TD> (4) </TD></TR><TR><TD>  - position 1</TD><TD>210</TD><TD> 8 015,85</TD><TD>47,43</TD></TR><TR><TD>  - position 2</TD><TD>230</TD><TD> 8 746,62</TD><TD>51,76</TD></TR></TABLE><p></p><p></p>   Niveau IV<p></p><p></p>   Maîtres ouvriers ou chefs d'équipe :<p></p><TABLE><TR><TD>    (1)       </TD><TD>(2)</TD><TD>  (3)    </TD><TD> (4) </TD></TR><TR><TD>  - position 1</TD><TD>250</TD><TD> 9 477,39</TD><TD>56,08</TD></TR><TR><TD>  - position 2</TD><TD>270</TD><TD>10 208,16</TD><TD>60,40</TD></TR></TABLE><p></p><p></p>   Les parties signataires du présent accord ont arrêté :<p></p>   Pour les catégories niveau I position 1 à niveau II, soit les coefficients 150, 170 et 185 :<p></p>   - la partie fixe (PF) à : 5 697,1486 ;<p></p>   - la valeur du point (VP) à : 9,2731.<p></p>   Pour les catégories niveau III position 1 à niveau IV position 2, soit les coefficients 210, 230, 250 et 270 :<p></p>   - la partie fixe (PF) à : 342,7650 ;<p></p>   - la valeur du point (VP) à : 36,5385.<font color=\"808080\"><em>---NOTA : Arrêté du 23 novembre 2000 art. 1 : Texte étendu sous réserv de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "---NOTA : Arrêté du 23 novembre 2000 art. 1 : Texte étendu sous réserv de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2000-06-13 BO conventions collectives 2000-40 étendu par arrêté du 23 novembre 2000 JORF 5 décembre 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES Seine et Marne (salaires)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 960854400000,
+                  "dateFin": 1039996800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -8710,13 +8784,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005703927",
+              "cid": "KALISCTA000005703927",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Indemnités de petits déplacements au 1er mai et 1er octobre 2001",
+              "dateModif": null,
+              "dateDebut": "2001-05-14",
+              "dateFin": "2005-04-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005801167",
+                  "cid": "KALIARTI000005801167",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005703927/KALIARTI000005801167",
+                  "pathTitle": [
+                    "Indemnités de petits déplacements au 1er mai et 1er octobre 2001"
+                  ],
+                  "content": "<p></p>   Les soussignés réunis en commission paritaire à Melun, le 14 mai 2001, il a été convenu de revaloriser en 2 étapes les indemnités de petits déplacements applicables aux ouvriers du bâtiment de Seine-et-Marne.<p></p> Article 1er<p></p> Indemnités de frais de transport<p></p><p></p>   Le montant journalier correspondant à chacune des zones est le suivant :<p></p><p></p>   Au 1er mai 2001 :<p></p><p></p>   - 1re zone A : 5 F ;<p></p><p></p>   - 1re zone B : 7 F ;<p></p><p></p>   - 2e zone : 9 F ;<p></p><p></p>   - 3e zone : 17 F ;<p></p><p></p>   - 4e zone : 21 F ;<p></p><p></p>   - 5e zone : 27 F ;<p></p><p></p>   - 6e zone : 33 F.<p></p><p></p>   Au 1er octobre 2001 :<p></p><p></p>   - 1re zone A : 6 F ;<p></p><p></p>   - 1re zone B : 8 F ;<p></p><p></p>   - 2e zone : 11 F ;<p></p><p></p>   - 3e zone : 18 F ;<p></p><p></p>   - 4e zone : 23 F ;<p></p><p></p>   - 5e zone : 30 F ;<p></p><p></p>   - 6e zone : 36 F.<p></p>Article 2<p></p> Indemnités de trajet<p></p><p></p>   Le montant journalier correspondant à chacune des zones est le suivant :<p></p><p></p>   Au 1er mai 2001 :<p></p><p></p>   - 1re zone A : 2 F ;<p></p><p></p>   - 1re zone B : 9 F ;<p></p><p></p>   - 2e zone : 14 F ;<p></p><p></p>   - 3e zone : 22 F ;<p></p><p></p>   - 4e zone : 26 F ;<p></p><p></p>   - 5e zone : 34 F ;<p></p><p></p>   - 6e zone : 39 F.<p></p><p></p>   Au 1er octobre 2001 :<p></p><p></p>   - 1re zone A : 3 F ;<p></p><p></p>   - 1re zone B : 10 F ;<p></p><p></p>   - 2e zone : 15 F ;<p></p><p></p>   - 3e zone : 23 F ;<p></p><p></p>   - 4e zone : 27 F ;<p></p><p></p>   - 5e zone : 35 F ;<p></p><p></p>   - 6e zone : 40 F.<p></p> Article 3<p></p> Indemnité de repas<p></p><p></p>   Le montant journalier est le suivant :<p></p><p></p>   - 44 F au 1er mai 2001 ;<p></p><p></p>   - 45 F au 1er octobre 2001.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2001-05-14 BO conventions collectives 2001-36 étendu par arrêté du 6 novembre 2001 JORF 15 novembre 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES Seine et Marne (petits déplacements)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 989798400000,
+                  "dateFin": 1114128000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -9106,13 +9254,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005703934",
+              "cid": "KALISCTA000005703934",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier et 1er juin 2003",
+              "dateModif": null,
+              "dateDebut": "2002-11-25",
+              "dateFin": "2003-12-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005801175",
+                  "cid": "KALIARTI000005801175",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005703934/KALIARTI000005801175",
+                  "pathTitle": [
+                    "Salaires au 1er janvier et 1er juin 2003"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   En application de l'article IV.8 du titre I de la convention collective régionale des ouvriers du bâtiment concernant les ouvriers employés par les entreprises du bâtiment visées par l'article 1er des clauses générales, les organisations représentatives d'employeurs et de salariés se sont réunies et ont déterminé les revalorisations des salaires mensuels minimaux des ouvriers du bâtiment de la région parisienne (hors Seine-et-Marne).<p></p> Article 2<p></p><p></p>   Les parties signataires du présent accord ont arrêté :<p></p><p></p>   - à compter du 1er janvier 2003 :<p></p><p></p>      - valeur du point (VP) à 5,734 Euros pour les coefficients 150, 170, 230, 250 et 270 ;<p></p><p></p>      - valeur du point (VP) à 5,791 Euros pour les coefficients 185 et 210 ;<p></p><p></p>      - partie fixe (PF) à 213,203 Euros pour le coefficient 150 ;<p></p><p></p>      - partie fixe (PF) à 131,055 Euros pour les coefficients 185 et 210 ;<p></p><p></p>      - partie fixe (PF) à 129,757 Euros pour les coefficients 170, 230, 250 et 270.<p></p><p></p>   - à compter du 1er juin 2003 :<p></p><p></p>      - valeur du point (VP) à 5,791 Euros pour les coefficients 150, 170, 230, 250 et 270 ;<p></p><p></p>      - partie fixe (PF) à 215,335 Euros pour le coefficient 150 ;<p></p><p></p>      - partie fixe (PF) à 131,055 Euros pour les coefficients 170, 230, 250 et 270.<p></p> Article 3<p></p><p></p>   En application et conformément à l'accord national du 12 février 2002 sur les barèmes de salaires minima des ouvriers et des ETAM du bâtiment :<p></p><p></p>   - pour les entreprises dont l'horaire collectif est fixé à 35 heures par semaine ou 35 heures en moyenne sur l'année, le barème appliqué sera celui figurant dans le tableau ci-après.<p></p><p></p>   - pour les entreprises dont l'horaire collectif est supérieur à la durée légale de 35 heures par semaine, le barème visé au paragraphe ci-dessus est applicable dans les conditions particulières visées à l'article 2 de l'accord national du 12 février 2002, soit 96 % des valeurs indiquées dans ce barème. Les parties signataires conviennent dès maintenant que ce dernier taux passera à 100 % à compter du 1er octobre 2003.<p></p> Article 4<p></p><p></p>   Le montant de l'indemnité de repas figurant au paragraphe a) de l'article 8 du chapitre III du titre III de la convention collective régionale des ouvriers du bâtiment est fixé à :<p></p><p></p>   - 7 Euros à compter du 1er janvier 2003.<p></p>Article 5<p></p><p></p>   Cet avenant sera déposé à la direction départementale du travail et de l'emploi.<p></p><p></p>   Les parties signataires en demanderont l'extension au ministre de l'emploi et de la solidarité.<p></p><p></p>   Fait à Paris, le 25 novembre 2002.<p></p>---------------------------------------------------<p></p> CATÉGORIE PROFESSIONNELLE<p></p> COEF/SALAIRE MENSUEL MINIMAL au 1er janvier 2003 (en euros)/ TAUX horaire minimal/SALAIRE MENSUEL MINIMAL au 1er juin 2003 (en euros)/TAUX horaire minimal<p></p><p></p>   NIVEAU I <p></p><p></p>   Ouvriers d'exécution : <p></p><p></p>   - position 1 ... 150 1 073,30  7,077 1 083,98  7,147 <p></p><p></p>   - position 2 ... 170 1 104,54  7,283 1 115,52  7,355 <p></p><p></p>   NIVEAU II<p></p> Ouvriers professionnels ... 185 1 202,39  7,928 1 202,39  7,928 <p></p><p></p>   NIVEAU III <p></p><p></p>   Compagnons professionnels : <p></p><p></p>   - position 1 ... 210 1 347,16  8,882 1 347,16  8,882 <p></p><p></p>   - position 2 ... 230 1 448,58  9,551 1 462,98  9,646 <p></p><p></p>   NIVEAU IV <p></p><p></p>   Maîtres ouvriers ou chefs d'équipe : <p></p><p></p>   - position 1 ... 250 1 563,26 10,307 1 578,80 10,409 <p></p><p></p>   - position 2 ... 270 1 677,94 11,063 1 694,62 11,173 <p></p><font color=\"808080\"><em>   NOTA : Arrêté du 19 mars 2003 art. 1 : l'article 3 est étendu sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie de rémunération mensuelle et des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 19 mars 2003 art. 1 : l'article 3 est étendu sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie de rémunération mensuelle et des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 10 2002-11-25 BO conventions collectives 2002-52 étendu par arrêté du 19 mars 2003 JORF 28 mars 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES Ouvriers",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1038182400000,
+                  "dateFin": 1071619200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -2,17 +2,17 @@
   "executionTime": 0,
   "dereferenced": false,
   "article": {
-    "id": "LEGIARTI000033021861",
+    "id": "LEGIARTI000054702929",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Tout salarié âgé de seize à vingt-cinq ans, qui participe à l'appel de préparation à la défense, bénéficie d'une autorisation d'absence exceptionnelle d'un jour. Cette absence exceptionnelle a pour but exclusif de permettre au salarié de participer à l'appel de préparation à la défense. Elle n'entraîne pas de réduction de rémunération. Elle est assimilée à une période de travail effectif pour la détermination de la durée de congé annuel.",
-    "texteHtml": "<p></p>   Tout salarié âgé de seize à vingt-cinq ans, qui participe à l'appel de préparation à la défense, bénéficie d'une autorisation d'absence exceptionnelle d'un jour.<p></p><p></p>   Cette absence exceptionnelle a pour but exclusif de permettre au salarié de participer à l'appel de préparation à la défense. Elle n'entraîne pas de réduction de rémunération. Elle est assimilée à une période de travail effectif pour la détermination de la durée de congé annuel.<p></p>",
+    "texte": "Tout salarié âgé de seize à vingt-cinq ans, qui participe à la journée de mobilisation, bénéficie d'une autorisation d'absence exceptionnelle d'un jour. Cette absence exceptionnelle a pour but exclusif de permettre au salarié de participer à la journée de mobilisation. Elle n'entraîne pas de réduction de rémunération. Elle est assimilée à une période de travail effectif pour la détermination de la durée de congé annuel.",
+    "texteHtml": "<p>Tout salarié âgé de seize à vingt-cinq ans, qui participe à la journée de mobilisation, bénéficie d'une autorisation d'absence exceptionnelle d'un jour.</p><p>Cette absence exceptionnelle a pour but exclusif de permettre au salarié de participer à la journée de mobilisation. Elle n'entraîne pas de réduction de rémunération. Elle est assimilée à une période de travail effectif pour la détermination de la durée de congé annuel.</p>",
     "num": "L3142-97",
     "origine": "LEGI",
     "nature": "Article",
-    "versionArticle": "3.0",
+    "versionArticle": "4.0",
     "etat": "VIGUEUR",
-    "dateDebut": 1470787200000,
+    "dateDebut": 1787097600000,
     "dateFin": 32472144000000,
     "dateDebutExtension": 32472144000000,
     "dateFinExtension": 32472144000000,
@@ -131,8 +131,8 @@
     "sectionParentId": "LEGISCTA000006198610",
     "sectionParentTitre": "Paragraphe 2 : Service national.",
     "fullSectionsTitre": "Partie législative   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale     &gt; Livre Ier : Durée du travail, repos et congés &gt; Titre IV : Congés payés et autres congés &gt; Chapitre II : Autres congés &gt; Section 2 : Congés pour engagement associatif, politique ou militant &gt; Sous-section 9 : Réserve opérationnelle et service national &gt; Paragraphe 2 : Service national.",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000033021861",
+    "refInjection": "MD-20260818_204405_696_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054702929",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -174,16 +174,16 @@
     "conteneurs": [],
     "lienModifications": [
       {
-        "textCid": "JORFTEXT000032983213",
-        "textTitle": "LOI n°2016-1088 du 8 août 2016 - art. 9",
+        "textCid": "JORFTEXT000054694832",
+        "textTitle": "LOI n°2026-791 du 16 août 2026 - art. 38 (V)",
         "linkType": "MODIFIE",
         "linkOrientation": "cible",
-        "articleNum": "9",
-        "articleId": "LEGIARTI000033001008",
+        "articleNum": "38",
+        "articleId": "LEGIARTI000054696055",
         "natureText": "LOI",
-        "datePubliTexte": "2016-08-09",
-        "dateSignaTexte": "2016-08-08",
-        "dateDebutCible": "2016-08-10"
+        "datePubliTexte": "2026-08-18",
+        "dateSignaTexte": "2026-08-16",
+        "dateDebutCible": "2026-08-19"
       }
     ],
     "lienCitations": [
@@ -198,6 +198,19 @@
         "parentCid": null,
         "numTexte": "",
         "datePubli": 1739491200000,
+        "dateDebut": 32472144000000
+      },
+      {
+        "textCid": "JORFTEXT000054694832",
+        "textTitle": "LOI n°2026-791 du 16 août 2026 - art. 38",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "38",
+        "articleId": "JORFARTI000054695127",
+        "natureText": "LOI",
+        "parentCid": null,
+        "numTexte": "2026-791",
+        "datePubli": 1787011200000,
         "dateDebut": 32472144000000
       },
       {
@@ -326,9 +339,18 @@
       },
       {
         "id": "LEGIARTI000033021861",
-        "etat": "VIGUEUR",
+        "etat": "MODIFIE",
         "version": "3.0",
         "dateDebut": 1470787200000,
+        "dateFin": 1787097600000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000054702929",
+        "etat": "VIGUEUR",
+        "version": "4.0",
+        "dateDebut": 1787097600000,
         "dateFin": 32472144000000,
         "numero": null,
         "ordre": null
@@ -338,7 +360,7 @@
       "L3142-97",
       "3142-97"
     ],
-    "versionPrecedente": "LEGIARTI000018765108",
+    "versionPrecedente": "LEGIARTI000033021861",
     "conditionDiffere": null,
     "historique": null,
     "surtitre": null,

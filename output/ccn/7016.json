@@ -2963,13 +2963,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705405",
+              "cid": "KALISCTA000005705405",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er avril 1992.",
+              "dateModif": null,
+              "dateDebut": "1992-04-01",
+              "dateFin": "1992-09-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005804527",
+                  "cid": "KALIARTI000005804527",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705405/KALIARTI000005804527",
+                  "pathTitle": [
+                    "Salaires à compter du 1er avril 1992."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les dispositions de l'article 14 a de la convention collective nationale du 30 janvier 1986 sont remplacées par les suivantes :<p></p> Article 14<p></p> Rémunération<p></p><p></p>   a) Les salaires sont fixés comme suit à compter du 1er avril 1992 :<p></p><p></p>   (+) Base de 169 heures<p></p> Coefficient  120<p></p> Salaire horaire  33,31 F<p></p> Salaire mensuel (+) : 5.629,39 F<p></p><p></p> Coefficient  130<p></p> Salaire horaire  33,46 F<p></p> Salaire mensuel (+) : 5.654,74 F<p></p><p></p> Coefficient  140<p></p> Salaire horaire  33,58 F<p></p> Salaire mensuel (+) : 5.675,02 F<p></p><p></p> Coefficient  150<p></p> Salaire horaire  33,72 F<p></p> Salaire mensuel (+) : 5.698,68 F<p></p><p></p> Coefficient  160<p></p> Salaire horaire  35,60 F<p></p> Salaire mensuel (+) : 6.016,40 F<p></p><p></p> Coefficient  170<p></p> Salaire horaire  37,62 F<p></p> Salaire mensuel (+) : 6.357,78 F<p></p><p></p> Coefficient  180<p></p> Salaire horaire  39,76 F<p></p> Salaire mensuel (+) : 6.719,44 F<p></p><p></p> Coefficient  200<p></p> Salaire horaire  43,75 F<p></p> Salaire mensuel (+) : 7.393,75 F<p></p><p></p> Coefficient  230<p></p> Salaire horaire  49,93 F<p></p> Salaire mensuel (+) : 8.438,17 F<p></p><p></p> Coefficient  260<p></p> Salaire horaire  56,25 F<p></p> Salaire mensuel (+) : 9.506,25 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 15 1992-03-17 BO Conventions collectives 92-15 en vigueur le 1er avril 1992 étendu par arrêté du 4 juin 1992 JORF 17 juin 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 702086400000,
+                  "dateFin": 717120000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -2983,13 +3057,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705406",
+              "cid": "KALISCTA000005705406",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er octobre 1992",
+              "dateModif": null,
+              "dateDebut": "1992-09-22",
+              "dateFin": "1993-09-23",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005804528",
+                  "cid": "KALIARTI000005804528",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705406/KALIARTI000005804528",
+                  "pathTitle": [
+                    "Salaires à compter du 1er octobre 1992"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les dispositions de l'article 14 a de la convention collective nationale du 30 janvier 1986 sont remplacées par les suivantes :<p></p> Article 14<p></p> Rémunération<p></p><p></p>   a) Les salaires sont fixés comme suit à compter du 1er octobre 1992 :<p></p><p></p>   (+) Base de 169 heures<p></p> Coefficient  120<p></p> Salaire horaire  34,06 F<p></p> Salaire mensuel (+) : 5.756,14 F (SMIC)<p></p><p></p> Coefficient  130<p></p> Salaire horaire  34,21 F<p></p> Salaire mensuel (+) : 5.781,49 F<p></p><p></p> Coefficient  140<p></p> Salaire horaire  34,36 F<p></p> Salaire mensuel (+) : 5.806,84 F<p></p><p></p> Coefficient  150<p></p> Salaire horaire  34,51 F<p></p> Salaire mensuel (+) : 5.832,19 F<p></p><p></p> Coefficient  160<p></p> Salaire horaire  36,02 F<p></p> Salaire mensuel (+) : 6.087,38 F<p></p><p></p> Coefficient  170<p></p> Salaire horaire  38,07 F<p></p> Salaire mensuel (+) : 6.433,83 F<p></p><p></p> Coefficient  180<p></p> Salaire horaire  40,19 F<p></p> Salaire mensuel (+) : 6.792,11 F<p></p><p></p> Coefficient  200<p></p> Salaire horaire  44,23 F<p></p> Salaire mensuel (+) : 7.474,87 F<p></p><p></p> Coefficient  230<p></p> Salaire horaire  50,48 F<p></p> Salaire mensuel (+) : 8.531,12 F<p></p><p></p> Coefficient  260<p></p> Salaire horaire  56,87 F<p></p> Salaire mensuel (+) : 9.611,03 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 16 1992-09-22 BO Conventions collectives 92-43 étendu par arrêté du 11 décembre 1992 JORF 22 décembre 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 717120000000,
+                  "dateFin": 748742400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

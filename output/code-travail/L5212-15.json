@@ -2,17 +2,17 @@
   "executionTime": 0,
   "dereferenced": false,
   "article": {
-    "id": "LEGIARTI000006903696",
+    "id": "LEGIARTI000054703734",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Les titulaires d'un emploi réservé attribué en application des dispositions du chapitre IV du titre III du livre III du code des pensions militaires d'invalidité et des victimes de la guerre sont pris en compte pour le calcul du nombre de bénéficiaires de l'obligation d'emploi.",
-    "texteHtml": "<p></p>Les titulaires d'un emploi réservé attribué en application des dispositions du chapitre IV du titre III du livre III du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006074068&dateTexte=&categorieLien=cid\" title=\"Code des pensions militaires d'invalidité et des victimes de guerre. (V)\">code des pensions militaires d'invalidité et des victimes de la guerre</a> sont pris en compte pour le calcul du nombre de bénéficiaires de l'obligation d'emploi.<p></p><p></p>",
+    "texte": "Les titulaires d'un emploi de reconnaissance nationale attribué en application du titre IV du livre II du code des pensions militaires d'invalidité et des victimes de la guerre sont pris en compte pour le calcul du nombre de bénéficiaires de l'obligation d'emploi.",
+    "texteHtml": "<p>Les titulaires d'un emploi de reconnaissance nationale attribué en application du titre IV du livre II du code des pensions militaires d'invalidité et des victimes de la guerre sont pris en compte pour le calcul du nombre de bénéficiaires de l'obligation d'emploi.</p>",
     "num": "L5212-15",
     "origine": "LEGI",
     "nature": "Article",
-    "versionArticle": "1.0",
+    "versionArticle": "2.0",
     "etat": "VIGUEUR",
-    "dateDebut": 1209600000000,
+    "dateDebut": 1787097600000,
     "dateFin": 32472144000000,
     "dateDebutExtension": 32472144000000,
     "dateFinExtension": 32472144000000,
@@ -104,8 +104,8 @@
     "sectionParentId": "LEGISCTA000006195887",
     "sectionParentTitre": "Sous-section 2 : Calcul du nombre de bénéficiaires.",
     "fullSectionsTitre": "Partie législative   &gt; Cinquième partie : L'emploi &gt; Livre II : Dispositions applicables à certaines catégories de travailleurs  &gt; Titre Ier : Travailleurs handicapés  &gt; Chapitre II : Obligation d'emploi des travailleurs handicapés, mutilés de guerre et assimilés &gt; Section 4 : Bénéficiaires de l'obligation d'emploi &gt; Sous-section 2 : Calcul du nombre de bénéficiaires.",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000006903696",
+    "refInjection": "MD-20260818_204410_082_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054703734",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -148,7 +148,7 @@
     "lienModifications": [
       {
         "textCid": "JORFTEXT000000465978",
-        "textTitle": "Ordonnance 2007-329 2007-03-12 JORF 13 mars 2007",
+        "textTitle": "Ordonnance n°2007-329 du 12 mars 2007",
         "linkType": "CODIFICATION",
         "linkOrientation": "source",
         "articleNum": "",
@@ -157,6 +157,18 @@
         "datePubliTexte": "2007-03-13",
         "dateSignaTexte": "2007-03-12",
         "dateDebutCible": "2999-01-01"
+      },
+      {
+        "textCid": "JORFTEXT000054694832",
+        "textTitle": "LOI n°2026-791 du 16 août 2026 - art. 48",
+        "linkType": "MODIFIE",
+        "linkOrientation": "cible",
+        "articleNum": "48",
+        "articleId": "LEGIARTI000054696075",
+        "natureText": "LOI",
+        "datePubliTexte": "2026-08-18",
+        "dateSignaTexte": "2026-08-16",
+        "dateDebutCible": "2026-08-19"
       }
     ],
     "lienCitations": [
@@ -185,6 +197,19 @@
         "numTexte": "",
         "datePubli": 1697673600000,
         "dateDebut": 1670371200000
+      },
+      {
+        "textCid": "JORFTEXT000054694832",
+        "textTitle": "LOI n°2026-791 du 16 août 2026 - art. 48",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "48",
+        "articleId": "JORFARTI000054695235",
+        "natureText": "LOI",
+        "parentCid": null,
+        "numTexte": "2026-791",
+        "datePubli": 1787011200000,
+        "dateDebut": 32472144000000
       },
       {
         "textCid": "LEGITEXT000006072050",
@@ -224,19 +249,6 @@
         "numTexte": "",
         "datePubli": 32472144000000,
         "dateDebut": 1577836800000
-      },
-      {
-        "textCid": "LEGITEXT000006074068",
-        "textTitle": "Code des pensions militaires d'invalidité et des victimes de guerre. (V)",
-        "linkType": "CITATION",
-        "linkOrientation": "source",
-        "articleNum": "",
-        "articleId": "LEGITEXT000006074068",
-        "natureText": "CODE",
-        "parentCid": null,
-        "numTexte": "",
-        "datePubli": 32472144000000,
-        "dateDebut": -589680000000
       }
     ],
     "lienConcordes": [
@@ -263,9 +275,18 @@
     "articleVersions": [
       {
         "id": "LEGIARTI000006903696",
-        "etat": "VIGUEUR",
+        "etat": "MODIFIE",
         "version": "1.0",
         "dateDebut": 1209600000000,
+        "dateFin": 1787097600000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000054703734",
+        "etat": "VIGUEUR",
+        "version": "2.0",
+        "dateDebut": 1787097600000,
         "dateFin": 32472144000000,
         "numero": null,
         "ordre": null
@@ -275,7 +296,7 @@
       "L5212-15",
       "5212-15"
     ],
-    "versionPrecedente": null,
+    "versionPrecedente": "LEGIARTI000006903696",
     "conditionDiffere": null,
     "historique": null,
     "surtitre": null,
@@ -284,7 +305,7 @@
     "infosComplementairesHtml": null,
     "infosRestructurationBranche": null,
     "infosRestructurationBrancheHtml": null,
-    "isMultipleVersions": false,
+    "isMultipleVersions": true,
     "comporteLiensSP": false
   }
 }

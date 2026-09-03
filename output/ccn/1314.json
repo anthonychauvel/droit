@@ -30062,13 +30062,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690324",
+              "cid": "KALISCTA000005690324",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et indemnités au 1er janvier 1989.",
+              "dateModif": null,
+              "dateDebut": "1989-01-09",
+              "dateFin": "1990-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767168",
+                  "cid": "KALIARTI000005767168",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690324/KALIARTI000005767168",
+                  "pathTitle": [
+                    "Salaires et indemnités au 1er janvier 1989."
+                  ],
+                  "content": "Article 1er<p></p> Objet de l'avenant<p></p><p></p>   Le présent avenant, qui porte le numéro 25, vient modifier les articles 5, 37 et 40 de l'accord collectif national des maisons d'alimentation à succursales, supermarchés, hypermarchés, \"Gérants-Mandataires\", du 18 juillet 1963 modifié.<p></p>Article 2<p></p> Minima garantis<p></p><p></p>   Les minima garantis fixés à l'article 5 de l'accord collectif national sont modifiés ainsi qu'il suit à compter du 1er janvier 1989 :<p></p><p></p>   - gérance 1re catégorie : 5 000 F<p></p><p></p>   - gérance 2e catégorie  : 8 100 F<p></p>Article 3<p></p> Institutions représentatives des gérants<p></p><p></p>   Au a \"Indemnisation des heures passées en réunion\" du C de l'article 37, la somme de \"144 F\" est remplacée par \"148 F\" à compter du 1er janvier 1989.<p></p><p></p>   Au b \"Indemnisation des heures de délégation\" de ce même article, les indemnisations forfaitaires des heures de délégation sont fixées ainsi qu'il suit à compter du 1er janvier 1989 :<p></p><p></p>   - gérant membre du comité d'établissement : 551 F<p></p><p></p>   - délégué gérant : 415 F<p></p><p></p>   - délégué syndical gérant : : 277 F ou  415 F ou 551 F selon qu'il exerce son mandat dans un \"établissement succursales\" regroupant habituellement de 50 à 150 gérants, de 151 à 500 gérants ou plus de 500 gérants.<p></p>Article 4<p></p> Indemnisation des gérants participant aux réunions paritaires<p></p><p></p>   Les chiffres figurant au a \"Frais de séjour\" de l'article 40 sont modifiés ainsi qu'il suit à compter du 1er janvier 1989 :<p></p> 72 F par repas principal ;<p></p> 170 F pour la chambre et le petit déjeuner.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 25 1989-01-09 étendu par arrêté du 22 mars 1989 JORF 31 mars 1989",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 600307200000,
+                  "dateFin": 631152000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

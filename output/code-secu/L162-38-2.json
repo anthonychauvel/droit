@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000006172521",
     "sectionParentTitre": "Section 8 : Dispositions diverses",
     "fullSectionsTitre": "Partie législative &gt; Livre I : Généralités - Dispositions communes à tout ou partie des régimes de base &gt; Titre VI : Dispositions relatives aux prestations et aux soins - Contrôle médical - Tutelle aux prestations sociales &gt; Chapitre 2 : Dispositions générales relatives aux soins et à la prévention &gt; Section 8 : Dispositions diverses",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000048673603",
+    "refInjection": "MD-20260803_193623_145_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000048673603",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -153,16 +153,29 @@
     "lienCitations": [
       {
         "textCid": "JORFTEXT000049607673",
-        "textTitle": "Arrêté du 28 mai 2024",
+        "textTitle": "Arrêté du 28 mai 2024 (VT)",
         "linkType": "CITATION",
         "linkOrientation": "cible",
         "articleNum": "",
-        "articleId": "JORFTEXT000049607673",
+        "articleId": "LEGITEXT000054599226",
         "natureText": "ARRETE",
         "parentCid": null,
         "numTexte": "",
         "datePubli": 1716940800000,
-        "dateDebut": 32472144000000
+        "dateDebut": 1717027200000
+      },
+      {
+        "textCid": "JORFTEXT000054596416",
+        "textTitle": "Arrêté du 28 juillet 2026 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGITEXT000054598959",
+        "natureText": "ARRETE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1785628800000,
+        "dateDebut": 1790812800000
       }
     ],
     "lienConcordes": [],
