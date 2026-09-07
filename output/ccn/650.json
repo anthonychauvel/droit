@@ -6095,13 +6095,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717837",
+              "cid": "KALISCTA000005717837",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires pour 1996.",
+              "dateModif": null,
+              "dateDebut": "1995-12-12",
+              "dateFin": "1996-12-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836269",
+                  "cid": "KALIARTI000005836269",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005717837/KALIARTI000005836269",
+                  "pathTitle": [
+                    "Salaires pour 1996."
+                  ],
+                  "content": "<p></p>   Les représentants de l'union des industries métallurgiques et minières et des organisations syndicales d'ingénieurs et de cadres soussignées ont décidé de fixer dans les conditions ci-après les appointements minima garantis prévus par l'article 23 de la convention collective nationale des ingénieurs et cadres de la métallurgie.<p></p><p></p> Article 1er<p></p> Champ d'application<p></p><p></p>   Le présent accord, établi en vertu de l'article L. 132-2 du code du travail s'applique aux entreprises des industries de la production et de la transformation des métaux définies par l'annexe I de la convention collective nationale des ingénieurs et cadres de la métallurgie du 13 mars 1972 modifié.<p></p><p></p> Article 2<p></p> Barème des appointements annuels minimaux pour 1996<p></p><p></p>   Le barème des appointements minima garantis en 1996 pour une durée annuelle correspondant à un horaire de travail mensuel de 169 heures est le suivant :<p></p><p></p> I. - POSITION I<p></p><p></p>   Années de début :<p></p> 21 ans : 89.640 F<p></p> 22 ans : 101.592 F<p></p> 23 ans au-delà : 113.544 F<p></p><p></p>   Majoration par année d'expérience acquise au-delà de vingt-trois ans, dans les conditions prévues à l'article 21 de la convention collective nationale des ingénieurs et cadres de la métallurgie, dans la limite de trois périodes d'un an : 11 952 F.<p></p><p></p>II. - POSITION II<p></p> Position de début : 149.400 F<p></p> Après trois ans en position II dans l'entreprise : 161.352 F<p></p> Après une nouvelle période de 3 ans : 170.316 F<p></p> Après une nouvelle période de 3 ans : 179.280 F<p></p> Après une nouvelle période de 3 ans : 186.750 F<p></p> Après une nouvelle période de 3 ans : 194.220 F<p></p> Après une nouvelle période de 3 ans : 201.690 F<p></p><p></p> III. - POSITION III<p></p> Position repère III A : 201.690 F<p></p> Position repère III B : 268.920 F<p></p> Position repère III C : 358.560 F<p></p><p></p><p></p>   Le barème ci-dessus fixant des garanties annuelles d'appointements minima pour la durée du travail considérée, ses valeurs seront applicables pro rata temporis en cas de survenance en cours d'année d'une entrée en fonction, d'une année d'expérience en position I, d'une progression de l'ancienneté requise en position II, d'un changement de classement, d'un départ de l'entreprise, ainsi qu'en cas de remplacement provisoire dans les conditions de l'article 25 de la convention collective nationale des ingénieurs et cadres de la métallurgie.<p></p> Article 3<p></p><p></p>   S'agissant d'appointements annuels minimaux, la vérification du compte d'un ingénieur ou cadre interviendra en fin d'année ou, en cas de départ de l'entreprise en cours d'année, à la fin de son contrat de travail.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-12-12 BO conventions collectives 96-2, étendu par arrêté du 23 février 1996 JORF 7 mars 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-2, L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 818726400000,
+                  "dateFin": 849744000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6115,13 +6203,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717838",
+              "cid": "KALISCTA000005717838",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires pour 1997.",
+              "dateModif": null,
+              "dateDebut": "1996-12-05",
+              "dateFin": "1998-09-28",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836270",
+                  "cid": "KALIARTI000005836270",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005717838/KALIARTI000005836270",
+                  "pathTitle": [
+                    "Salaires pour 1997."
+                  ],
+                  "content": "<p></p>   Les représentants :<p></p><p></p>   - de l'union des industries métallurgiques et minières ;<p></p><p></p>   - des organisations syndicales d'ingénieurs et de cadres soussignées,<p></p><p></p>   ont décidé de fixer dans les conditions ci-après les appointements minima garantis prévus par l'article 23 de la convention collective nationale des ingénieurs et cadres de la métallurgie.<p></p>Article 1er<p></p> Champ d'application<p></p><p></p>   Le présent accord, établi en vertu de l'article L. 132-2 du code du travail, s'applique aux entreprises des industries de la production et de la transformation des métaux définies par l'annexe I de la convention collective nationale des ingénieurs et cadres de la métallurgie du 13 mars 1972 modifiée.<p></p>Article 2<p></p> Barème d'appointements annuels minimaux pour 1997<p></p><p></p>   Le barème des appointements minimaux garantis en 1997 pour une durée annuelle correspondant à un horaire de travail mensuel de 169 heures, est le suivant :<p></p> I. - Position I<p></p><p></p>   Années de début :<p></p> 21 ans : 91 440 F<p></p> 22 ans : 103 632 F<p></p> 23 ans et au-delà : 115 824 F<p></p><p></p>   Majoration par année d'expérience acquise au-delà de 23 ans, dans les conditions prévues à l'article 21 de la convention collective nationale des ingénieurs et cadres de la métallurgie, dans la limite de trois périodes d'un an : 12 192 F.<p></p> II. - Position II<p></p> Position de début : 152 400 F<p></p> Après trois ans en position II dans l'entreprise : 164 592 F<p></p> Après une nouvelle période de 3 ans : 173 736 F<p></p> Après une nouvelle période de 3 ans : 182 880 FAprès une nouvelle période de 3 ans : 190 500 F<p></p> Après une nouvelle période de 3 ans : 198 120 F<p></p> Après une nouvelle période de 3 ans : 205 740 F<p></p> III. - Position III<p></p> Position repère III A : 205 740 F<p></p> Position repère III B : 274 320 F<p></p> Position repère III C : 365 760 F<p></p><p></p>   Le barème ci-dessus fixant les garanties annuelles d'appointements minimaux pour la durée du travail considérée, ses valeurs seront applicables pro rata temporis en cas de survenance en cours d'année d'une entrée en fonction, d'une année d'expérience en position I, d'une progression de l'ancienneté requise en position II, d'un changement de classement, d'un départ de l'entreprise, ainsi qu'en cas de remplacement provisoire dans les conditions de l'article 25 de la convention collective nationale des ingénieurs et cadres de la métallurgie.<p></p>Article 3<p></p><p></p>   S'agissant d'appointements annuels minimaux, la vérification du compte d'un ingénieur ou cadre interviendra en fin d'année ou, en cas de départ de l'entreprise en cours d'année, à la fin de son contrat de travail.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1996-12-05 BO conventions collectives 96-52, étendu par arrêté du 14 février 1997 JORF 25 février 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-2, L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 849744000000,
+                  "dateFin": 906940800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6135,13 +6311,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717839",
+              "cid": "KALISCTA000005717839",
+              "intOrdre": 42949,
+              "etat": "PERIME",
+              "title": "Reconduction du barème des appointements minima garantis pour 1998.",
+              "dateModif": null,
+              "dateDebut": "1997-12-23",
+              "dateFin": "1998-09-28",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836271",
+                  "cid": "KALIARTI000005836271",
+                  "intOrdre": 42949,
+                  "etat": "PERIME",
+                  "num": null,
+                  "path": "/KALISCTA000005717839/KALIARTI000005836271",
+                  "pathTitle": [
+                    "Reconduction du barème des appointements minima garantis pour 1998."
+                  ],
+                  "content": "<p></p>   Les représentants :<p></p><p></p>   - de l'union des industries métallurgiques et minières ;<p></p><p></p>   - des organisations syndicales d'ingénieurs et de cadres soussignées,<p></p> ont décidé, à titre conservatoire et pour éviter l'absence de garanties conventionnelles, d'apporter les modifications suivantes à l'accord national du 5 décembre 1996.<p></p>Article 1er<p></p><p></p>   Le barème des appointements minima garantis des ingénieurs et cadres pour l'année 1997, résultant de l'accord national du 5 décembre 1996, est maintenu, à titre conservatoire, pour l'année 1998.<p></p>Article 2<p></p><p></p>   Les parties soussignées conviennent de se revoir, dans les meilleurs délais et au plus tard dans les 3 mois suivant la promulgation de la loi relative à la réduction du temps de travail, dont le projet a été adopté en conseil des ministres le 10 décembre 1997.<p></p><p></p>   Au cours de cette rencontre, les parties examineront les conséquences de la loi sur la situation générale de l'encadrement et reprendront la négociation annuelle sur les minima.<p></p>Article 3<p></p><p></p>   Le présent avenant, établi en fonction des conditions économiques connues à la date de sa conclusion, a été fait en un nombre suffisant d'exemplaires pour remise à chacune des organisations signataires et dépôt dans les conditions prévues par l'article L. 132-10 du code du travail.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1997-12-23 BO conventions collectives 98-4 étendu par arrêté du 28 octobre 1998 JORF 14 novembre 1998 à l'exception de la réparation d'appareils électriques pour le ménage non associée à un magasin de vente",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 882835200000,
+                  "dateFin": 906940800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

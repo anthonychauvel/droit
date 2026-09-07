@@ -49,12 +49,21 @@
         },
         {
           "debut": "2015-10-16",
-          "fin": "2999-01-01",
+          "fin": "2028-01-01",
           "titre": "Titre V : Dispositions particulières à la Guadeloupe, à la Guyane, à la Martinique, à La Réunion, à Saint-Barthélemy et à Saint-Martin",
           "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
           "cid": "LEGISCTA000006141682",
           "id": "LEGISCTA000031323784",
-          "etat": "VIGUEUR"
+          "etat": "ABROGE_DIFF"
+        },
+        {
+          "debut": "2028-01-01",
+          "fin": "2999-01-01",
+          "titre": "Titre V : Dispositions particulières à la Guadeloupe, à la Guyane, à la Martinique, à Mayotte, à La Réunion, à Saint-Barthélemy et à Saint-Martin",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006141682",
+          "id": "LEGISCTA000054466958",
+          "etat": "VIGUEUR_DIFF"
         },
         {
           "debut": "1985-12-21",
@@ -104,8 +113,8 @@
     "sectionParentId": "LEGISCTA000006186030",
     "sectionParentTitre": "Sous-section 2 : Fonctionnaires de l'Etat.",
     "fullSectionsTitre": "Partie législative &gt; Livre VII : Régimes divers - Dispositions diverses &gt; Titre V : Dispositions particulières à la Guadeloupe, à la Guyane, à la Martinique, à La Réunion, à Saint-Barthélemy et à Saint-Martin &gt; Chapitre 3 : Assurances sociales. &gt; Section 3 : Dispositions diverses &gt; Sous-section 2 : Fonctionnaires de l'Etat.",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000031324074",
+    "refInjection": "MD-20260723_205222_643_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000031324074",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],

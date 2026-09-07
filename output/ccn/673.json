@@ -4117,13 +4117,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731167",
+              "cid": "KALISCTA000005731167",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er septembre 1998.",
+              "dateModif": null,
+              "dateDebut": "1998-11-13",
+              "dateFin": "1999-11-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868882",
+                  "cid": "KALIARTI000005868882",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731167/KALIARTI000005868882",
+                  "pathTitle": [
+                    "Salaires à partir du 1er septembre 1998."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les salaires horaires minima de base prévus à l'article 30 des clauses générales de la convention collective nationale sont modifiés de la manière suivante, selon le barème joint, à compter du 1er septembre 1998 :<p></p><p></p>   - du coefficient 150 a au coefficient 159 i, augmentation de 2 % ;<p></p><p></p>   - du coefficient 161 j au coefficient 163 l, augmentation régulièrement dégressive de 1,6 % à 1,2 % ;<p></p><p></p>   - du coefficient 165 au coefficient 520, augmentation de 0,8 %,<p></p><p></p>   portant valeur du point au coefficient 100 : 25,24 F.<p></p> Barème des salaires minima<p></p> applicable à compter du 1er septembre 1998<p></p> Valeur du point au coefficient 100 : 25,24 F<p></p> (Coefficients liés à la classification des emplois [avenants n°s 21 et 22<p></p> au 1er juillet 1986 à la convention collective nationale de la fourrure])<p></p><TABLE><TR><TD></TD><TD>  SALAIRE  </TD><TD>     SALAIRE   </TD></TR><TR><TD></TD><TD>  HORAIRE  </TD><TD>     MENSUEL   </TD></TR><TR><TD>COEF  </TD><TD>  MINIMUM  </TD><TD>     MINIMUM   </TD></TR><TR><TD></TD><TD>(en francs)</TD><TD>pour 169 heures</TD></TR><TR><TD></TD><TD></TD><TD> (en francs)   </TD></TR><TR><TD>150 a </TD><TD>    40,22  </TD><TD>     6 797,18  </TD></TR><TR><TD>151 b </TD><TD>    40,26  </TD><TD>     6 803,94  </TD></TR><TR><TD>152 c </TD><TD>    40,30  </TD><TD>     6 810,70  </TD></TR><TR><TD>153 d </TD><TD>    40,35  </TD><TD>     6 819,15  </TD></TR><TR><TD>155 e </TD><TD>    40,43  </TD><TD>     6 832,67  </TD></TR><TR><TD>156 f </TD><TD>    40,47  </TD><TD>     6 839,43  </TD></TR><TR><TD>157 g </TD><TD>    40,52  </TD><TD>     6 847,88  </TD></TR><TR><TD>158 h </TD><TD>    40,56  </TD><TD>     6 854,64  </TD></TR><TR><TD>159 i </TD><TD>    40,61  </TD><TD>     6 863,09  </TD></TR><TR><TD>161 j </TD><TD>    40,95  </TD><TD>     6 920,55  </TD></TR><TR><TD>162 k </TD><TD>    41,13  </TD><TD>     6 950,97  </TD></TR><TR><TD>163 l </TD><TD>    41,31  </TD><TD>     6 981,39  </TD></TR><TR><TD>165   </TD><TD>    41,65  </TD><TD>     7 038,85  </TD></TR><TR><TD>166   </TD><TD>    41,90  </TD><TD>     7 081,10  </TD></TR><TR><TD>167   </TD><TD>    42,15  </TD><TD>     7 123,35  </TD></TR><TR><TD>168   </TD><TD>    42,40  </TD><TD>     7 165,60  </TD></TR><TR><TD>169   </TD><TD>    42,66  </TD><TD>     7 209,54  </TD></TR><TR><TD>177   </TD><TD>    44,67  </TD><TD>     7 549,23  </TD></TR><TR><TD>182   </TD><TD>    45,93  </TD><TD>     7 762,17  </TD></TR><TR><TD>187   </TD><TD>    47,20  </TD><TD>     7 976,80  </TD></TR><TR><TD>192   </TD><TD>    48,46  </TD><TD>     8 189,74  </TD></TR><TR><TD>202   </TD><TD>    50,98  </TD><TD>     8 615,62  </TD></TR><TR><TD>212   </TD><TD>    53,50  </TD><TD>     9 041,50  </TD></TR><TR><TD>222   </TD><TD>    56,03  </TD><TD>     9 469,08  </TD></TR><TR><TD>225   </TD><TD>    56,79  </TD><TD>     9 597,51  </TD></TR><TR><TD>252   </TD><TD>    63,60  </TD><TD>    10 748,40  </TD></TR><TR><TD>262   </TD><TD>    66,12  </TD><TD>    11 174,28  </TD></TR></TABLE><p></p><TABLE><TR><TD>Cadres et assimilés               </TD></TR><TR><TD>(classification additif n° 1      </TD></TR><TR><TD>du 12 mars 1973)</TD></TR><TR><TD></TD></TR><TR><TD></TD><TD>  SALAIRE  </TD><TD>     SALAIRE   </TD></TR><TR><TD></TD><TD>  HORAIRE  </TD><TD>     MENSUEL   </TD></TR><TR><TD>COEF  </TD><TD>  MINIMUM  </TD><TD>     MINIMUM   </TD></TR><TR><TD></TD><TD>(en francs)</TD><TD>pour 169 heures</TD></TR><TR><TD></TD><TD></TD><TD> (en francs)   </TD></TR><TR><TD> 260  </TD><TD>    65,62  </TD><TD>   11 089,78   </TD></TR><TR><TD> 290  </TD><TD>    73,20  </TD><TD>   12 370,80   </TD></TR><TR><TD> 300  </TD><TD>    75,72  </TD><TD>   12 796,68   </TD></TR><TR><TD> 310  </TD><TD>    78,24  </TD><TD>   13 222,56   </TD></TR><TR><TD> 350  </TD><TD>    88,34  </TD><TD>   14 929,46   </TD></TR><TR><TD> 360  </TD><TD>    90,86  </TD><TD>   15 355,34   </TD></TR><TR><TD> 450  </TD><TD>   113,58  </TD><TD>   19 195,02   </TD></TR><TR><TD> 520  </TD><TD>   131,25  </TD><TD>   22 181,25   </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 43 1998-11-13 BO conventions collectives 99-5 étendu par arrêté du 16 mars 1999 JORF 26 mars 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 910915200000,
+                  "dateFin": 942192000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -4157,13 +4231,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731169",
+              "cid": "KALISCTA000005731169",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er septembre 1999.",
+              "dateModif": null,
+              "dateDebut": "1999-11-10",
+              "dateFin": "2000-12-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868884",
+                  "cid": "KALIARTI000005868884",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731169/KALIARTI000005868884",
+                  "pathTitle": [
+                    "Salaires à partir du 1er septembre 1999."
+                  ],
+                  "content": "Article unique<p></p><p></p>   Les salaires horaires minima de base prévus à l'article 30 des clauses générales de la convention collective nationale sont modifiés de la manière suivante, selon barème joint :<p></p><p></p>   A compter du 1er septembre 1999 :<p></p><p></p>   - du coefficient 150 a au coefficient 159i : augmentation de 1,24 % ;<p></p><p></p>   - du coefficient 159 i au coefficient 163l : augmentation régulièrement dégressive de 1,24 % à 1 % ;<p></p><p></p>   - du coefficient 163 l au coefficient 520 : augmentation de 1 % portant la valeur du point au coefficient 100 : 25,49 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 45 1999-11-10 BO conventions collectives 2000-4 étendu par arrêté du 29 février 2000 JORF 9 mars 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 942192000000,
+                  "dateFin": 977356800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -4177,13 +4325,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731170",
+              "cid": "KALISCTA000005731170",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er septembre 1999.",
+              "dateModif": null,
+              "dateDebut": "1999-11-10",
+              "dateFin": "2000-12-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868886",
+                  "cid": "KALIARTI000005868886",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731170/KALIARTI000005868886",
+                  "pathTitle": [
+                    "Salaires à partir du 1er septembre 1999."
+                  ],
+                  "content": "<p></p>   Augmentation des salaires Paris - Ile-de-France (75, 77, 78, 91, 92, 93, 94, 95) :<p></p><p></p>   A compter du 1er septembre 1999 : + 1 %.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 46 1999-11-10 BO conventions collectives 2000-4 étendu par arrêté du 29 février 2000 JORF 9 mars 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES, REGION PARISIENNE - Ile-de-France",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 942192000000,
+                  "dateFin": 977356800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -49,12 +49,21 @@
         },
         {
           "debut": "2015-10-16",
-          "fin": "2999-01-01",
+          "fin": "2028-01-01",
           "titre": "Titre V : Dispositions particulières à la Guadeloupe, à la Guyane, à la Martinique, à La Réunion, à Saint-Barthélemy et à Saint-Martin",
           "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
           "cid": "LEGISCTA000006141682",
           "id": "LEGISCTA000031323784",
-          "etat": "VIGUEUR"
+          "etat": "ABROGE_DIFF"
+        },
+        {
+          "debut": "2028-01-01",
+          "fin": "2999-01-01",
+          "titre": "Titre V : Dispositions particulières à la Guadeloupe, à la Guyane, à la Martinique, à Mayotte, à La Réunion, à Saint-Barthélemy et à Saint-Martin",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006141682",
+          "id": "LEGISCTA000054466958",
+          "etat": "VIGUEUR_DIFF"
         },
         {
           "debut": "1985-12-21",
@@ -95,8 +104,8 @@
     "sectionParentId": "LEGISCTA000006172804",
     "sectionParentTitre": "Section 9 : Allocation de rentrée scolaire.",
     "fullSectionsTitre": "Partie législative &gt; Livre VII : Régimes divers - Dispositions diverses &gt; Titre V : Dispositions particulières à la Guadeloupe, à la Guyane, à la Martinique, à La Réunion, à Saint-Barthélemy et à Saint-Martin &gt; Chapitre 5 : Prestations familiales et prestations assimilées &gt; Section 9 : Allocation de rentrée scolaire.",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000031324160",
+    "refInjection": "MD-20260723_205226_537_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000031324160",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -201,6 +210,19 @@
         "numTexte": "96-51",
         "datePubli": 822528000000,
         "dateDebut": 822528000000
+      },
+      {
+        "textCid": "JORFTEXT000054456323",
+        "textTitle": "Ordonnance n°2026-647 du 22 juillet 2026 - art. 13",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "13",
+        "articleId": "JORFARTI000054456801",
+        "natureText": "ORDONNANCE",
+        "parentCid": null,
+        "numTexte": "2026-647",
+        "datePubli": 1784764800000,
+        "dateDebut": 32472144000000
       },
       {
         "textCid": "LEGITEXT000006074069",

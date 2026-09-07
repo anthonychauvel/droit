@@ -8874,13 +8874,114 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718273",
+              "cid": "KALISCTA000005718273",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "*Salaires au 1er octobre 1991*",
+              "dateModif": null,
+              "dateDebut": "1991-10-11",
+              "dateFin": "2000-05-16",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005837121",
+                  "cid": "KALIARTI000005837121",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718273/KALIARTI000005837121",
+                  "pathTitle": [
+                    "*Salaires au 1er octobre 1991*"
+                  ],
+                  "content": "Article 1er<p></p> Champ d'application<p></p><p></p>   Les dispositions du présent accord s'appliquent aux ouvriers, employés, techniciens, agents de maîtrise, ingénieurs et cadres des entreprises visées par l'article 1er des clauses communes de la convention collective nationale du caoutchouc.<p></p>Article 2<p></p> Objet<p></p><p></p>   Le présent accord a pour objet de revaloriser les salaires minima hiérarchiques et les taux effectifs garantis tels que définis par l'article 7 de l'accord du 20 avril 1984.<p></p>Article 3<p></p><p></p>   Valeur des salaires minima hiérarchiques et des taux effectifs garantis au 1er octobre 1991.<p></p><p></p>   A compter du 1er octobre 1991, sont appliqués les valeurs suivantes :<p></p><p></p>   - point mensuel : 31,09 F ;<p></p><p></p>   - salaire minimum hiérarchique au coefficient 190 : 5.907,10 F ;<p></p><p></p>   - taux effectifs garantis :<p></p><p></p>     - coefficient 130 : 5.522,00 F ;<p></p><p></p>     - coefficient 140 : 5.586,18 F ;<p></p><p></p>     - coefficient 150 : 5.650,36 F ;<p></p><p></p>     - coefficient 160 : 5.714,54 F ;<p></p><p></p>     - coefficient 170 : 5.778,72 F ;<p></p><p></p>     - coefficient 180 : 5.842,90 F ;<p></p><font color=\"808080\"><em>Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.</em></font>",
+                  "nota": "Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1991-10-11 étendu par arrêté du 20 mai 1992 JORF 2 juin 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1984-04-20 art. 7",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    },
+                    {
+                      "textCid": "",
+                      "textTitle": "Convention collective 1953-03-06 art. 1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 687139200000,
+                  "dateFin": 958435200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -8894,13 +8995,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718274",
+              "cid": "KALISCTA000005718274",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "*Salaires au 1er octobre 1991*",
+              "dateModif": null,
+              "dateDebut": "2000-05-16",
+              "dateFin": "2001-04-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005837123",
+                  "cid": "KALIARTI000005837123",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718274/KALIARTI000005837123",
+                  "pathTitle": [
+                    "*Salaires au 1er octobre 1991*"
+                  ],
+                  "content": "Article 1er<p></p> Champ d'application<p></p><p></p>   Les dispositions du présent accord s'appliquent aux ouvriers, employés, techniciens, agents de maîtrise, ingénieurs et cadres des entreprises visées par l'article 1er des clauses communes de la convention collective nationale du caoutchouc.<p></p> Article 2<p></p> Objet<p></p><p></p>   Le présent accord a pour objet de revaloriser les salaires minima hiérarchiques tels que définis par l'article 7 de l'accord du 20 avril 1984 et les taux effectifs garantis qui concernent désormais les salariés dont les coefficients hiérarchiques sont inférieurs à 215.<p></p><p></p>   Les taux effectifs garantis sont déterminés selon la formule suivante :<p></p> TK = T 130 +<p></p> (S 215 - T 130)/(215 - 130)<p></p><p></p> x (K - 130)    dans laquelle :<p></p><p></p>   TK : taux effectif mensuel garanti du coefficient K.<p></p><p></p>   T 130 : taux effectif mensuel garanti du coefficient 130.<p></p><p></p>   S 125 : salaire minimum hiérarchique mensuel du coefficient 215.<p></p> Article 3<p></p> Valeur des salaires minima hiérarchiques<p></p> et des taux effectifs garantis du 1er juin 2000<p></p> (base 169 heures par mois)<p></p><p></p>   A compter du 1er juin 2000, sont appliquées les valeurs suivantes :<p></p><p></p>   - point mensuel : 35,60 F ;<p></p><p></p>   - salaire minimum hiérarchique au coefficient 215 : 7 654 F (base 169 heures par mois) ;<p></p><p></p>     - taux effectifs garantis :<p></p><p></p>   - coefficient 130 : 6 950,00 F ;<p></p><p></p>   - coefficient 140 : 7 032,82 F ;<p></p><p></p>   - coefficient 150 : 7 115,65 F ;<p></p><p></p>   - coefficient 160 : 7 198,47 F ;<p></p><p></p>   - coefficient 170 : 7 281,29 F ;<p></p><p></p>   - coefficient 180 : 7 364,12 F ;<p></p><p></p>   - coefficient 190 : 7 446,94 F.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 29 septembre 2000 : Dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimun de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 29 septembre 2000 : Dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimun de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2000-05-16 BO conventions collectives 2000-25 étendu par arrêté du 29 septembre 2000 JORF 8 octobre 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 958435200000,
+                  "dateFin": 987465600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -8915,12 +9090,63 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005837124",
+              "cid": "KALIARTI000005837124",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005837124",
+              "pathTitle": [],
+              "content": "<p></p>   Article 1er<p></p> Champ d'application<p></p><p></p>   Les dispositions du présent accord s'appliquent aux salariés concernés par les taux effectifs garantis (TEG) conventionnels.<p></p> Article 2<p></p> Objet<p></p><p></p>   Le présent accord a pour objet de revaloriser les taux effectifs garantis conventionnels conformément aux dispositions de l'article 10 de l'accord de branche sur la réduction négociée du temps de travail.<p></p><p></p>   Ces dispositions ne remettent pas en cause le principe de négociation des salaires minima tel qu'il est appliqué dans la branche.<p></p> Article 3<p></p><p></p>   Valeur des taux effectifs garantis à compter du premier jour du mois suivant la date d'application de l'accord de branche sur la réduction négociée du temps de travail (base 169 heures par mois)<p></p><p></p>   A compter du premier jour du mois suivant la date d'application de l'accord de branche sur la réduction négociée du temps de travail, les taux effectifs garantis conventionnels tels qu'établis par l'accord salarial du 16 mai 2000 sont revalorisés comme suit :<p></p><p></p>   Taux effectifs garantis :<p></p><p></p>   - coefficient 130 : 7 105 F ;<p></p><p></p>   - coefficient 140 : 7 170 F ;<p></p><p></p>   - coefficient 150 : 7 235 F ;<p></p><p></p>   - coefficient 160 : 7 300 F ;<p></p><p></p>   - coefficient 170 : 7 365 F ;<p></p><p></p>   - coefficient 180 : 7 430 F ;<p></p><p></p>   - coefficient 190 : 7 500 F.<p></p><p></p>   Le salaire minimum hiérarchique du coefficient 215, coefficient de raccordement, est de 7 654 F.<p></p>",
+              "nota": null,
+              "comporteLiens": false,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Accord 2001-04-17 BO conventions collectives 2001-21 étendu par arrêté du 23 juillet 2001 JORF 2 août 2001",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "SALAIRES",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 987465600000,
+              "dateFin": 1026950400000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -12678,13 +12678,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705896",
+              "cid": "KALISCTA000005705896",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires bruts mensuels (toutes filières) applicables au 1er juillet 2002",
+              "dateModif": null,
+              "dateDebut": "2002-07-19",
+              "dateFin": "2003-01-30",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005805471",
+                  "cid": "KALIARTI000005805471",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705896/KALIARTI000005805471",
+                  "pathTitle": [
+                    "Salaires bruts mensuels (toutes filières) applicables au 1er juillet 2002"
+                  ],
+                  "content": "<p></p>   il est convenu que la grille des salaires minimaux garantis est modifiée à compter du 1er juillet 2002 selon le tableau figurant ci-dessous.<p></p> Salaires bruts mensuels (toutes filières)<p></p> Applicables à compter du 1er juillet 2002<p></p> (En euros.)   <p></p> -----------------------------------------------------------------<p></p><TABLE><TR><TD> CATEGORIE    </TD><TD>     AUTRES SALAIRES   </TD><TD>  DOCKERS CARTE \"G\"     </TD></TR><TR><TD></TD><TD>   SBMH    </TD><TD>   SBMH    </TD><TD>   RMG     </TD><TD>   RMG      </TD></TR><TR><TD>Non-cadres    </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Niveau A     </TD><TD> 1 122,90  </TD><TD>  1 122,90 </TD><TD></TD><TD></TD></TR><TR><TD> Niveau B     </TD><TD> 1 122,90  </TD><TD>  1 240,43 </TD><TD> 1 221,88  </TD><TD> 1 408,01   </TD></TR><TR><TD> Niveau C     </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 1 </TD><TD> 1 168,24  </TD><TD>  1 374,31 </TD><TD> 1 335,82  </TD><TD> 1 542,03   </TD></TR><TR><TD>  - échelon 2 </TD><TD> 1 253,88  </TD><TD>  1 475,10 </TD><TD> 1 421,30  </TD><TD> 1 642,52   </TD></TR><TR><TD>  - échelon 3 </TD><TD> 1 339,37  </TD><TD>  1 575,74 </TD><TD> 1 506,79  </TD><TD> 1 743,16   </TD></TR><TR><TD> Niveau D     </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 1 </TD><TD> 1 424,55  </TD><TD>  1 676,07 </TD><TD> 1 592,28  </TD><TD> 1 843,64   </TD></TR><TR><TD>  - échelon 2 </TD><TD> 1 510,19  </TD><TD>  1 776,71 </TD><TD> 1 677,61  </TD><TD> 1 944,43   </TD></TR><TR><TD> Niveau AM    </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 1 </TD><TD> 1 738,05  </TD><TD>  2 044,77 </TD><TD> 1 905,64  </TD><TD> 2 212,49   </TD></TR><TR><TD>  - échelon 2 </TD><TD> 1 851,84  </TD><TD>  2 179,11 </TD><TD> 2 019,88  </TD><TD> 2 346,37   </TD></TR><TR><TD>Cadres        </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 1 </TD><TD></TD><TD>  2 179,11 </TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 2 </TD><TD></TD><TD>  2 430,32 </TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 3 </TD><TD></TD><TD>  2 933,19 </TD><TD></TD><TD></TD></TR></TABLE><p></p> -----------------------------------------------------------------    SBMH : salaire de base minimum hiérarchique.    RMG : rémunération minimale garantie.    Fait à Paris, le 19 juillet 2002.<font color=\"808080\"><em>   NOTA : Arrêté du 2 décembre 2002 art. 1 : les dispositions de l'avenant n° 17 du 19 juillet 2002 sur les salaires minimaux garantis à la convention collective susvisée, sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 qui instaure, au profit des salariés rémunérés au SMIC, une garantie mensuelle de rémunération.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 2 décembre 2002 art. 1 : les dispositions de l'avenant n° 17 du 19 juillet 2002 sur les salaires minimaux garantis à la convention collective susvisée, sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 qui instaure, au profit des salariés rémunérés au SMIC, une garantie mensuelle de rémunération.<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 17 2002-07-19 BO conventions collectives 2002-42 étendu par arrêté du 2 décembre 2002 JORF 11 décembre 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-12",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1027036800000,
+                  "dateFin": 1043884800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12698,13 +12786,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705897",
+              "cid": "KALISCTA000005705897",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires bruts mensuels (toutes filières) applicables au 1er juillet 2002",
+              "dateModif": null,
+              "dateDebut": "2003-01-30",
+              "dateFin": "2004-05-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005805472",
+                  "cid": "KALIARTI000005805472",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705897/KALIARTI000005805472",
+                  "pathTitle": [
+                    "Salaires bruts mensuels (toutes filières) applicables au 1er juillet 2002"
+                  ],
+                  "content": "<p></p>   il est convenu que la grille des salaires minimaux garantis est modifiée à compter du 1er janvier puis du 1er juillet 2003 selon les tableaux figurant en annexe.<p></p><p></p>   Conformément à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006646389&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-12 (Ab)\">article L. 132-12 du code du travail</a>, les signataires du présent avenant conviennent de se rencontrer en novembre 2003 en vue de la négociation sur les salaires minimaux.<p></p> Salaires bruts mensuels (toutes filières)<p></p> Applicables à compter du 1er janvier 2003<p></p> (En euros.)   <p></p><TABLE><TR><TD> CATEGORIE    </TD><TD>     AUTRES SALAIRES   </TD><TD>  DOCKERS CARTE \"G\"     </TD></TR><TR><TD></TD><TD>   SBMH    </TD><TD>   SBMH    </TD><TD>   RMG     </TD><TD>   RMG      </TD></TR><TR><TD>Non-cadres    </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Niveau A     </TD><TD> 1 136,37  </TD><TD>  1 136,37 </TD><TD></TD><TD></TD></TR><TR><TD> Niveau B     </TD><TD> 1 136,37  </TD><TD>  1 255,32 </TD><TD> 1 236,54  </TD><TD> 1 424,91   </TD></TR><TR><TD> Niveau C     </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 1 </TD><TD> 1 182,26  </TD><TD>  1 390,80 </TD><TD> 1 351,85  </TD><TD> 1 560,53   </TD></TR><TR><TD>  - échelon 2 </TD><TD> 1 268,93  </TD><TD>  1 492,80 </TD><TD> 1 438,36  </TD><TD> 1 662,23   </TD></TR><TR><TD>  - échelon 3 </TD><TD> 1 355,44  </TD><TD>  1 594,65 </TD><TD> 1 524,87  </TD><TD> 1 764,08   </TD></TR><TR><TD> Niveau D     </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 1 </TD><TD> 1 441,64  </TD><TD>  1 696,18 </TD><TD> 1 611,39  </TD><TD> 1 865,76   </TD></TR><TR><TD>  - échelon 2 </TD><TD> 1 528,31  </TD><TD>  1 798,03 </TD><TD> 1 697,74  </TD><TD> 1 967,76   </TD></TR><TR><TD> Niveau AM    </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 1 </TD><TD> 1 758,91  </TD><TD>  2 069,31 </TD><TD> 1 928,51  </TD><TD> 2 239,04   </TD></TR><TR><TD>  - échelon 2 </TD><TD> 1 874,06  </TD><TD>  2 205,26 </TD><TD> 2 044,12  </TD><TD> 2 374,53   </TD></TR><TR><TD>Cadres        </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 1 </TD><TD></TD><TD>  2 205,26 </TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 2 </TD><TD></TD><TD>  2 459,48 </TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 3 </TD><TD></TD><TD>  2 968,39 </TD><TD></TD><TD></TD></TR></TABLE><p></p> -----------------------------------------------------------------<p></p><p></p>   L'avenant n° 19 porte revalorisation de 1,2 % de l'ensemble de la grille à compter du 1er janvier 2003.<p></p><p></p> Salaires bruts mensuels (toutes filières)<p></p> Applicables à compter du 1er juillet 2003<p></p> (En euros.)   <p></p><TABLE><TR><TD> CATEGORIE    </TD><TD>     AUTRES SALAIRES   </TD><TD>  DOCKERS CARTE \"G\"     </TD></TR><TR><TD></TD><TD>   SBMH    </TD><TD>   SBMH    </TD><TD>   RMG     </TD><TD>   RMG      </TD></TR></TABLE><p></p><TABLE><TR><TD>Non-cadres    </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Niveau A     </TD><TD> 1 144,32  </TD><TD>  1 144,32 </TD><TD></TD><TD></TD></TR><TR><TD> Niveau B     </TD><TD> 1 144,32  </TD><TD>  1 264,11 </TD><TD> 1 245,20  </TD><TD> 1 434,88   </TD></TR><TR><TD> Niveau C     </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 1 </TD><TD> 1 190,54  </TD><TD>  1 400,54 </TD><TD> 1 361,31  </TD><TD> 1 571,45   </TD></TR><TR><TD>  - échelon 2 </TD><TD> 1 277,81  </TD><TD>  1 503,25 </TD><TD> 1 448,43  </TD><TD> 1 673,87   </TD></TR><TR><TD>  - échelon 3 </TD><TD> 1 364,93  </TD><TD>  1 605,81 </TD><TD> 1 535,54  </TD><TD> 1 776,43   </TD></TR><TR><TD> Niveau D     </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 1 </TD><TD> 1 451,73  </TD><TD>  1 708,05 </TD><TD> 1 622,67  </TD><TD> 1 878,82   </TD></TR><TR><TD>  - échelon 2 </TD><TD> 1 539,01  </TD><TD>  1 810,62 </TD><TD> 1 709,62  </TD><TD> 1 981,53   </TD></TR><TR><TD> Niveau AM    </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 1 </TD><TD> 1 771,22  </TD><TD>  2 083,80 </TD><TD> 1 942,01  </TD><TD> 2 254,71   </TD></TR><TR><TD>  - échelon 2 </TD><TD> 1 887,18  </TD><TD>  2 220,70 </TD><TD> 2 058,43  </TD><TD> 2 391,15   </TD></TR><TR><TD>Cadres        </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 1 </TD><TD></TD><TD>  2 220,70 </TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 2 </TD><TD></TD><TD>  2 476,70 </TD><TD></TD><TD></TD></TR><TR><TD>  - échelon 3 </TD><TD></TD><TD>  2 989,17 </TD><TD></TD><TD></TD></TR></TABLE><p></p> -----------------------------------------------------------------<p></p>   L'avenant n° 19 porte revalorisation de 0,7 % de l'ensemble de la grille à compter du 1er juillet 2003.<p></p>   Fait à Paris, le 30 janvier 2003.<font color=\"808080\"><em>   NOTA : Arrêté du 2 mai 2003 art. 1 : les barèmes \" autres salariés \" des salaires bruts mensuels applicables à compter des 1er janvier et 1er juillet 2003 sont étendus sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie de rémunération mensuelle.<p></p></em></font>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 19 2003-01-30 BO conventions collectives 2003-10 étendu par arrêté du 2 mai 2003 JORF 14 mai 2003 rectificatif BO CC 2003-21",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-12 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-12",
+                      "articleId": "LEGIARTI000006646389",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 406080000000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1043884800000,
+                  "dateFin": 1083628800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12790,12 +12966,63 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005805474",
+              "cid": "KALIARTI000005805474",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005805474",
+              "pathTitle": [],
+              "content": "<p></p>   Le présent avenant est codifié sous l'article 7 bis de la convention collective nationale de la manutention portuaire.<p></p> Article 1er<p></p> Champ d'application<p></p><p></p>   Les dispositions du présent avenant concernent les entreprises définies par l'article 1er de la convention collective nationale de la manutention portuaire et par les avenants n° 1 du 28 avril 1994, n° 5 du 18 janvier 1996 et n° 11 du 23 juin 1999.<p></p> Article 2<p></p> Majoration applicable sur le SBMH au titre de l'ancienneté acquise dans l'entreprise ou le groupement<p></p><p></p>   Les salariés bénéficient, au titre de l'ancienneté acquise dans l'entreprise ou le groupement, d'une majoration applicable sur le salaire de base minimum hiérarchique, tel que défini à l'article 7.1 paragraphe a de la convention collective de la manutention portuaire, selon les conditions exposées ci-après :<p></p><p></p>   L'ancienneté du salarié est appréciée conformément à l'article 4 alinéa 1 de la convention collective nationale de la manutention portuaire.<p></p><p></p>   Les effets de l'ancienneté sur le SBMH se traduisent par l'application de nouvelles grilles de SBMH majoré après 3, 6, 9, 12 et 15 ans d'ancienneté continue dans l'entreprise ou le groupement.<p></p><p></p>   Les montants figurant dans ces nouvelles grilles seront revalorisés dans les mêmes conditions et selon les mêmes pourcentages d'augmentation que les salaires minimaux conventionnels négociés annuellement. Ces dispositions n'ont pas pour effet d'interdire aux parties signataires des accords de salaires minima de définir, le cas échéant, des taux d'augmentation différents par nvieau.<p></p><p></p>   Le salaire mensuel brut de base d'un salarié, incluant, le cas échéant :<p></p><p></p>   - la compensation salariale de la réduction du temps de travail par complément différentiel ;<p></p><p></p>   - un avantage de même nature déjà accordé au titre de l'ancienneté ou de l'expérience dans les entreprises ou les places portuaires,<p></p> ne peut être inférieur au salaire mensuel brut de base minimum qui lui est applicable pour l'horaire, le classement et l'ancienneté considérés.<p></p><p></p>   En cas d'absence du salarié pour quelque cause que ce soit, à l'exception des périodes d'absences résultant de l'exercice régulier d'un mandat électif ou syndical dans l'entreprise, les garanties prévues au présent article seront réduites au prorata du temps de travail accompli par le salarié.<p></p>Article 3<p></p> Application de l'avenant<p></p><p></p>   Le présent avenant sera déposé dans les conditions fixées par le code du travail. L'application du présent avenant est subordonnée à son arrêté d'extension. Il entrera en vigueur suivant la publication de son arrêté d'extension au Journal officiel.<p></p><p></p>   Fait à Paris, le 4 mai 2004.<p></p><p></p>   Salaires bruts mensuels (toutes filières) applicables à compter de la publication au J.O. de l'arrêté d'extension de l'avenant n° 24<p></p><p></p><TABLE><TR><TD>                         AUTRES SALARIES                        </TD></TR><TR><TD></TD><TD>     SMBH        </TD><TD>    SMBH      </TD><TD>    SMBH          </TD></TR><TR><TD></TD><TD> sans ancienneté </TD><TD> après 3 ans  </TD><TD> après 6 ans      </TD></TR><TR><TD></TD><TD>     (1)         </TD><TD> d'ancienneté </TD><TD> d'ancienneté     </TD></TR><TR><TD> Non-cadres </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Niveau A   </TD><TD>      1 161,54   </TD><TD>   1 184,77   </TD><TD>     1 208,00     </TD></TR><TR><TD> Niveau B   </TD><TD>      1 161,54   </TD><TD>   1 184,77   </TD><TD>     1 208,00     </TD></TR><TR><TD> Niveau C   </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>      1 208,46   </TD><TD>   1 232,63   </TD><TD>     1 256,80     </TD></TR><TR><TD> Echelon 2  </TD><TD>      1 297,04   </TD><TD>   1 322,98   </TD><TD>     1 348,92     </TD></TR><TR><TD> Echelon 3  </TD><TD>      1 385,47   </TD><TD>   1 413,18   </TD><TD>     1 440,89     </TD></TR><TR><TD> Niveau D   </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>      1 473,58   </TD><TD>   1 503,05   </TD><TD>     1 532,52     </TD></TR><TR><TD> Echelon 2  </TD><TD>      1 562,17   </TD><TD>   1 593,41   </TD><TD>     1 624,66     </TD></TR><TR><TD> Niveau AM  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>      1 797,87   </TD><TD>   1 833,83   </TD><TD>     1 869,78     </TD></TR><TR><TD> Echelon 2  </TD><TD>      1 915,58   </TD><TD>   1 953,89   </TD><TD>     1 992,20     </TD></TR></TABLE><p></p><p></p> :-----------------------------------------------------------------:<p></p><TABLE><TR><TD>                         AUTRES SALARIES                         </TD></TR><TR><TD></TD><TD>     SMBH     </TD><TD>  SMBH       </TD><TD>    SMBH      </TD><TD>RMG (1) </TD></TR><TR><TD></TD><TD> après 9 ans  </TD><TD> après 12 ans</TD><TD> après 15 ans </TD><TD></TD></TR><TR><TD></TD><TD> d'ancienneté </TD><TD> d'ancienneté</TD><TD> d'ancienneté </TD><TD></TD></TR><TR><TD> Non-cadres </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Niveau A   </TD><TD>   1 231,23   </TD><TD>   1 254,46  </TD><TD>  1 277,69    </TD><TD>  (2)   </TD></TR><TR><TD> Niveau B   </TD><TD>   1 231,23   </TD><TD>   1 254,46  </TD><TD>  1 277,69    </TD><TD>1 283,13</TD></TR><TR><TD> Niveau C   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>   1 280,97   </TD><TD>   1 305,14  </TD><TD>  1 329,31    </TD><TD>1 421,62</TD></TR><TR><TD> Echelon 2  </TD><TD>   1 374,86   </TD><TD>   1 400,80  </TD><TD>  1 426,74    </TD><TD>1 525,87</TD></TR><TR><TD> Echelon 3  </TD><TD>   1 468,60   </TD><TD>   1 496,31  </TD><TD>  1 524,02    </TD><TD>1 629,98</TD></TR><TR><TD> Niveau D   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>   1 561,99   </TD><TD>   1 591,47  </TD><TD>  1 620,94    </TD><TD>1 733,36</TD></TR><TR><TD> Echelon 2  </TD><TD>   1 655,90   </TD><TD>   1 687,14  </TD><TD>  1 718,39    </TD><TD>1 837,87</TD></TR><TR><TD> Niveau AM  </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>   1 905,74   </TD><TD>   1 941,70  </TD><TD>  1 977,66    </TD><TD>2 115,16</TD></TR><TR><TD> Echelon 2  </TD><TD>   2 030,51   </TD><TD>   2 068,83  </TD><TD>  2 107,14    </TD><TD>2 254,12</TD></TR></TABLE><p></p><p></p>   SBMH = salaire de base minimum hiérarchique<p></p>   RMG = rémunération minimale garantie<p></p>   (1) SBMH et RMG applicables au 1er mai 2004 (avenant salaires n° 23)<p></p>   (2) RMG égale au SBMH en fonction de l'ancienneté du salarié.<p></p>   Salaires bruts mensuels (filière exploitation portuaire) (applicables à compter de la publication au J.O. de l'arrêté d'extension de l'avenant n° 24<p></p><TABLE><TR><TD>                         AUTRES SALARIES                        </TD></TR><TR><TD></TD><TD>     SMBH        </TD><TD>    SMBH      </TD><TD>    SMBH          </TD></TR><TR><TD></TD><TD> sans ancienneté </TD><TD> après 3 ans  </TD><TD> après 6 ans      </TD></TR><TR><TD></TD><TD>     (1)         </TD><TD> d'ancienneté </TD><TD> d'ancienneté     </TD></TR><TR><TD> Non-cadres </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Niveau A   </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Niveau B   </TD><TD>      1 263,94   </TD><TD>   1 289,22   </TD><TD>     1 314,50     </TD></TR><TR><TD> Niveau C   </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>      1 381,79   </TD><TD>   1 409,43   </TD><TD>     1 437,06     </TD></TR><TR><TD> Echelon 2  </TD><TD>      1 470,22   </TD><TD>   1 499,62   </TD><TD>     1 529,03     </TD></TR><TR><TD> Echelon 3  </TD><TD>      1 558,65   </TD><TD>   1 589,82   </TD><TD>     1 621,00     </TD></TR><TR><TD> Niveau D   </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>      1 647,09   </TD><TD>   1 680,03   </TD><TD>     1 712,97     </TD></TR><TR><TD> Echelon 2  </TD><TD>      1 735,35   </TD><TD>   1 770,06   </TD><TD>     1 804,76     </TD></TR><TR><TD> Niveau AM  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>      1 971,24   </TD><TD>   2 010,66   </TD><TD>     2 050,09     </TD></TR><TR><TD> Echelon 2  </TD><TD>      2 089,41   </TD><TD>   2 131,20   </TD><TD>     2 172,99     </TD></TR></TABLE><p></p><p></p> :-----------------------------------------------------------------:<p></p><TABLE><TR><TD>                         AUTRES SALARIES                         </TD></TR><TR><TD></TD><TD>     SMBH     </TD><TD>  SMBH       </TD><TD>    SMBH      </TD><TD>RMG (1) </TD></TR><TR><TD></TD><TD> après 9 ans  </TD><TD> après 12 ans</TD><TD> après 15 ans </TD><TD></TD></TR><TR><TD></TD><TD> d'ancienneté </TD><TD> d'ancienneté</TD><TD> d'ancienneté </TD><TD></TD></TR><TR><TD> Non-cadres </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Niveau A   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Niveau B   </TD><TD>   1 339,78   </TD><TD>   1 365,06  </TD><TD>  1 390,33    </TD><TD>1 456,48</TD></TR><TR><TD> Niveau C   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>   1 464,70   </TD><TD>   1 492,33  </TD><TD>  1 519,97    </TD><TD>1 595,10</TD></TR><TR><TD> Echelon 2  </TD><TD>   1 558,43   </TD><TD>   1 587,84  </TD><TD>  1 617,24    </TD><TD>1 699,06</TD></TR><TR><TD> Echelon 3  </TD><TD>   1 652,17   </TD><TD>   1 683,34  </TD><TD>  1 714,52    </TD><TD>1 803,16</TD></TR><TR><TD> Niveau D   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>   1 745,92   </TD><TD>   1 778,86  </TD><TD>  1 811,80    </TD><TD>1 907,10</TD></TR><TR><TD> Echelon 2  </TD><TD>   1 839,47   </TD><TD>   1 874,18  </TD><TD>  1 908,89    </TD><TD>2 011,36</TD></TR><TR><TD> Niveau AM  </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>   2 089,51   </TD><TD>   2 128,94  </TD><TD>  2 168,36    </TD><TD>2 288,65</TD></TR><TR><TD> Echelon 2  </TD><TD>   2 214,77   </TD><TD>   2 256,56  </TD><TD>  2 298,35    </TD><TD>2 427,14</TD></TR></TABLE><p></p><p></p><p></p>   SBMH = salaire de base minimum hiérarchique.<p></p><p></p>   RMG = rémunération minimale garantie.<p></p><p></p>   (1) SBMH et RMG applicables au 1er mai 2004 (avenant salaires n° 23).<p></p><p></p>   Avenant n° 24 - Salaires brut mensuels - Cadres<p></p> (applicables à compter de la publication au J.O. de l'arrêté d'extension de l'avenant n° 24<p></p><p></p><TABLE><TR><TD>                         AUTRES SALARIES                        </TD></TR><TR><TD></TD><TD>     SMBH        </TD><TD>    SMBH      </TD><TD>    SMBH          </TD></TR><TR><TD></TD><TD> sans ancienneté </TD><TD> après 3 ans  </TD><TD> après 6 ans      </TD></TR><TR><TD></TD><TD>     (1)         </TD><TD> d'ancienneté </TD><TD> d'ancienneté     </TD></TR><TR><TD> Cadres     </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>     1 915,58    </TD><TD>   1 953,89   </TD><TD>     1 992,20     </TD></TR><TR><TD> Echelon 2  </TD><TD>     2 136,83    </TD><TD>   2 179,57   </TD><TD>     2 222,30     </TD></TR><TR><TD> Echelon 3  </TD><TD>     2 578,97    </TD><TD>   2 630,55   </TD><TD>     2 682,13     </TD></TR></TABLE><p></p><p></p> :-----------------------------------------------------------------:<p></p><TABLE><TR><TD>                         AUTRES SALARIES                         </TD></TR><TR><TD></TD><TD>     SMBH     </TD><TD>  SMBH       </TD><TD>    SMBH      </TD><TD>RMG (1) </TD></TR><TR><TD></TD><TD> après 9 ans  </TD><TD> après 12 ans</TD><TD> après 15 ans </TD><TD></TD></TR><TR><TD></TD><TD> d'ancienneté </TD><TD> d'ancienneté</TD><TD> d'ancienneté </TD><TD></TD></TR><TR><TD> Cadres     </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon 1  </TD><TD>   2 030,51   </TD><TD>   2 068,83  </TD><TD>  2 107,83    </TD><TD>2 254,12</TD></TR><TR><TD> Echelon 2  </TD><TD>   2 265,04   </TD><TD>   2 307,78  </TD><TD>  2 350,51    </TD><TD>2 513,98</TD></TR><TR><TD> Echelon 3  </TD><TD>   2 733,71   </TD><TD>   2 785,29  </TD><TD>  2 836,87    </TD><TD>3 034,16</TD></TR></TABLE><p></p><p></p>   SBMH = salaire de base minimum hiérarchique.<p></p>   (1) SBMH et RMG applicables au 1er mai 2004 (avenant salaires n° 23).<font color=\"808080\"><em>   NOTA : Arrêté du 10 décembre 2004 :<p></p>    Le barème applicable aux \" autres salariés \" à compter du 1er mai 2004 est étendu sous réserve de l'application des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie mensuelle de rémunération.<p></p></em></font>",
+              "nota": null,
+              "comporteLiens": false,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 24 2004-05-04 BO conventions collectives 2004-26 étendu par arrêté du 22 novembre 2004 JORF 10 décembre 2004",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires.",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1083628800000,
+              "dateFin": 1103068800000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

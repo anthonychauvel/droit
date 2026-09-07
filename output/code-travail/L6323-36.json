@@ -2,17 +2,17 @@
   "executionTime": 0,
   "dereferenced": false,
   "article": {
-    "id": "LEGIARTI000048598282",
+    "id": "LEGIARTI000054785526",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "L'établissement ou le service d'accompagnement par le travail verse à l'opérateur de compétences dont il relève une contribution égale au plus à 0,35 % d'une partie forfaitaire de la rémunération garantie versée aux travailleurs handicapés concernés dont le montant ainsi que le taux de la contribution sont définis par décret.",
-    "texteHtml": "<p>L'établissement ou le service d'accompagnement par le travail verse à l'opérateur de compétences dont il relève une contribution égale au plus à 0,35 % d'une partie forfaitaire de la rémunération garantie versée aux travailleurs handicapés concernés dont le montant ainsi que le taux de la contribution sont définis par décret.</p><p></p>",
+    "texte": "L'établissement ou le service d'accompagnement par le travail verse à l'opérateur de compétences dont il relève une contribution égale au plus à 0,35 % d'une partie forfaitaire de la rémunération garantie versée aux travailleurs handicapés concernés dont le montant ainsi que le taux de la contribution sont définis par décret. Cette contribution est versée à l'institution mentionnée à l' article L. 6123-5 .",
+    "texteHtml": "<p>L'établissement ou le service d'accompagnement par le travail verse à l'opérateur de compétences dont il relève une contribution égale au plus à 0,35 % d'une partie forfaitaire de la rémunération garantie versée aux travailleurs handicapés concernés dont le montant ainsi que le taux de la contribution sont définis par décret.</p><p>Cette contribution est versée à l'institution mentionnée à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000021340266&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L6123-5 (VT)\">article L. 6123-5</a>.</p>",
     "num": "L6323-36",
     "origine": "LEGI",
     "nature": "Article",
-    "versionArticle": "3.0",
+    "versionArticle": "4.0",
     "etat": "VIGUEUR",
-    "dateDebut": 1703030400000,
+    "dateDebut": 1771632000000,
     "dateFin": 32472144000000,
     "dateDebutExtension": 32472144000000,
     "dateFinExtension": 32472144000000,
@@ -149,8 +149,8 @@
     "sectionParentId": "LEGISCTA000033010034",
     "sectionParentTitre": "Sous-section 1 : Alimentation et abondement du compte ",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle &gt; Titre II : Dispositifs de formation professionnelle continue   &gt; Chapitre III : Compte personnel de formation &gt; Section 5 : Mise en œuvre du compte personnel de formation pour les personnes handicapées accueillies dans un établissement ou service d'accompagnement par le travail &gt; Sous-section 1 : Alimentation et abondement du compte ",
-    "refInjection": "MD-20260224_212142_843_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000048598282",
+    "refInjection": "MD-20260902_191452_151_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054785526",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -192,16 +192,16 @@
     "conteneurs": [],
     "lienModifications": [
       {
-        "textCid": "JORFTEXT000048581935",
-        "textTitle": "LOI n°2023-1196 du 18 décembre 2023 - art. 15",
+        "textCid": "JORFTEXT000053508155",
+        "textTitle": "LOI n°2026-103 du 19 février 2026 - art. 203",
         "linkType": "MODIFIE",
         "linkOrientation": "cible",
-        "articleNum": "15",
-        "articleId": "LEGIARTI000048583019",
+        "articleNum": "203",
+        "articleId": "LEGIARTI000053511424",
         "natureText": "LOI",
-        "datePubliTexte": "2023-12-19",
-        "dateSignaTexte": "2023-12-18",
-        "dateDebutCible": "2023-12-20"
+        "datePubliTexte": "2026-02-20",
+        "dateSignaTexte": "2026-02-19",
+        "dateDebutCible": "2026-02-21"
       }
     ],
     "lienCitations": [
@@ -220,16 +220,16 @@
       },
       {
         "textCid": "LEGITEXT000006074069",
-        "textTitle": "Code de l'action sociale et des familles - art. L243-6 (V)",
+        "textTitle": "Code de l'action sociale et des familles - art. L243-6 (M)",
         "linkType": "CITATION",
         "linkOrientation": "cible",
         "articleNum": "L243-6",
-        "articleId": "LEGIARTI000048598232",
+        "articleId": "LEGIARTI000033023787",
         "natureText": "CODE",
         "parentCid": null,
         "numTexte": "",
         "datePubli": 32472144000000,
-        "dateDebut": 1703030400000
+        "dateDebut": 1470787200000
       },
       {
         "textCid": "LEGITEXT000006072050",
@@ -320,9 +320,18 @@
       },
       {
         "id": "LEGIARTI000048598282",
-        "etat": "VIGUEUR",
+        "etat": "MODIFIE",
         "version": "3.0",
         "dateDebut": 1703030400000,
+        "dateFin": 1771632000000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000054785526",
+        "etat": "VIGUEUR",
+        "version": "4.0",
+        "dateDebut": 1771632000000,
         "dateFin": 32472144000000,
         "numero": null,
         "ordre": null
@@ -332,7 +341,7 @@
       "L6323-36",
       "6323-36"
     ],
-    "versionPrecedente": "LEGIARTI000037385209",
+    "versionPrecedente": "LEGIARTI000048598282",
     "conditionDiffere": null,
     "historique": null,
     "surtitre": null,

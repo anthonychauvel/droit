@@ -49,12 +49,21 @@
         },
         {
           "debut": "2015-10-16",
-          "fin": "2999-01-01",
+          "fin": "2028-01-01",
           "titre": "Titre V : Dispositions particulières à la Guadeloupe, à la Guyane, à la Martinique, à La Réunion, à Saint-Barthélemy et à Saint-Martin",
           "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
           "cid": "LEGISCTA000006141682",
           "id": "LEGISCTA000031323784",
-          "etat": "VIGUEUR"
+          "etat": "ABROGE_DIFF"
+        },
+        {
+          "debut": "2028-01-01",
+          "fin": "2999-01-01",
+          "titre": "Titre V : Dispositions particulières à la Guadeloupe, à la Guyane, à la Martinique, à Mayotte, à La Réunion, à Saint-Barthélemy et à Saint-Martin",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006141682",
+          "id": "LEGISCTA000054466958",
+          "etat": "VIGUEUR_DIFF"
         },
         {
           "debut": "1985-12-21",
@@ -67,15 +76,24 @@
         },
         {
           "debut": "1985-12-21",
-          "fin": "2999-01-01",
+          "fin": "2028-01-01",
           "titre": "Section 1 : Dispositions communes aux caisses générales de sécurité sociale et aux caisses d'allocations familiales.",
           "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
           "cid": "LEGISCTA000006172791",
           "id": "LEGISCTA000006172791",
-          "etat": "VIGUEUR"
+          "etat": "ABROGE_DIFF"
+        },
+        {
+          "debut": "2028-01-01",
+          "fin": "2999-01-01",
+          "titre": "Section 1 : Dispositions communes aux caisses générales de sécurité sociale, aux caisses d'allocations familiales et à la caisse de sécurité sociale de Mayotte",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006172791",
+          "id": "LEGISCTA000054466944",
+          "etat": "VIGUEUR_DIFF"
         }
       ],
-      "nombreVersionParent": 1,
+      "nombreVersionParent": 2,
       "longeurChemin": 47,
       "titreTxt": [
         {
@@ -92,11 +110,11 @@
     "cid": "LEGIARTI000037853680",
     "cidTexte": null,
     "sectionParentCid": "LEGISCTA000006172791",
-    "sectionParentId": "LEGISCTA000006172791",
-    "sectionParentTitre": "Section 1 : Dispositions communes aux caisses générales de sécurité sociale et aux caisses d'allocations familiales.",
+    "sectionParentId": "LEGISCTA000054466944",
+    "sectionParentTitre": "Section 1 : Dispositions communes aux caisses générales de sécurité sociale, aux caisses d'allocations familiales et à la caisse de sécurité sociale de Mayotte",
     "fullSectionsTitre": "Partie législative &gt; Livre VII : Régimes divers - Dispositions diverses &gt; Titre V : Dispositions particulières à la Guadeloupe, à la Guyane, à la Martinique, à La Réunion, à Saint-Barthélemy et à Saint-Martin &gt; Chapitre 2 : Organisation administrative et financière - Contentieux &gt; Section 1 : Dispositions communes aux caisses générales de sécurité sociale et aux caisses d'allocations familiales.",
-    "refInjection": "IG-20260113",
-    "idTechInjection": "LEGIARTI000053280421",
+    "refInjection": "MD-20260723_205226_537_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000053280421",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],

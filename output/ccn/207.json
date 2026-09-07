@@ -16232,13 +16232,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728632",
+              "cid": "KALISCTA000005728632",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er septembre 2001",
+              "dateModif": null,
+              "dateDebut": "2001-09-13",
+              "dateFin": "2002-07-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005862197",
+                  "cid": "KALIARTI000005862197",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728632/KALIARTI000005862197",
+                  "pathTitle": [
+                    "Salaires au 1er septembre 2001"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Pour les coefficients hiérarchiques de 135 à 170 inclus, les salaires minima professionnels sont fixés ainsi.<p></p> (1)   Taux horaire (En francs)<p></p> (2)   Salaire mensuel (En francs)<p></p> (3)   Taux horaire (En euros)<p></p> (4)   Salaire mensuel (En euros)<p></p> --------------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD></TD><TD>        AU 1er SEPTEMBRE 2001       </TD></TR><TR><TD></TD><TD></TD><TD>  (1)   </TD><TD>   (2)   </TD><TD>  (3)  </TD><TD>   (4)   </TD></TR><TR><TD> 135  </TD><TD>    OS 1        </TD><TD> 43,75  </TD><TD> 7 422,19</TD><TD>  6,67 </TD><TD> 1 131,51</TD></TR><TR><TD> 143  </TD><TD>    OS 2        </TD><TD> 44,28  </TD><TD> 7 512,10</TD><TD>  6,75 </TD><TD> 1 145,21</TD></TR><TR><TD> 155  </TD><TD>    OQ          </TD><TD> 45,92  </TD><TD> 7 790,33</TD><TD>  7,00 </TD><TD> 1 187,63</TD></TR><TR><TD> 170  </TD><TD>    OHQ         </TD><TD> 49,26  </TD><TD> 8 356,96</TD><TD>  7,51 </TD><TD> 1 274,01</TD></TR></TABLE><p></p> --------------------------------------------------------------<p></p>   Les salaires mensuels en francs ont été calculés sur une base de 169,65 heures pour un horaire hebdomadaire de 39 heures travaillées. Les salaires en francs ont été convertis en euros suivant le taux de conversion officiel : 1 euro = 6,55957 francs. Article 2<p></p>   Pour les coefficients hiérarchiques supérieurs à 170, le point mensuel est fixé à 45 F convertis en 6,86 Euro à compter du 1er septembre 2001, pour un horaire hebdomadaire de 39 heures travaillées.<p></p>   Il est rappelé, conformément aux dispositions de l'alinéa F de l'article 13 de la convention collective, que : \" La présente convention ne déterminant que des barèmes de salaires minima, la fixation des salaires réels fait l'objet d'accords par entreprise ou par localité \".",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 49 S 2001-09-13 BO conventions collectives 2001-42",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1000339200000,
+                  "dateFin": 1026259200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -16252,13 +16326,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728633",
+              "cid": "KALISCTA000005728633",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juillet 2002",
+              "dateModif": null,
+              "dateDebut": "2002-07-10",
+              "dateFin": "2003-07-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005862199",
+                  "cid": "KALIARTI000005862199",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728633/KALIARTI000005862199",
+                  "pathTitle": [
+                    "Salaires au 1er juillet 2002"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Pour les coefficients hiérarchiques de 135 à 170 inclus, les salaires minima professionnels sont fixés comme suit.<p></p><p></p><p></p> (1)   Taux horaire (En euros)<p></p> (2)   Salaire mensuel (En euros)<p></p> --------------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD></TD><TD>        AU 1er JUILLET 2002         </TD></TR><TR><TD></TD><TD></TD><TD>       (1)        </TD><TD>      (2)        </TD></TR><TR><TD> 135  </TD><TD>     OS 1       </TD><TD>       6,83       </TD><TD>    1 158,71     </TD></TR><TR><TD> 143  </TD><TD>     OS 2       </TD><TD>       6,91       </TD><TD>    1 172,28     </TD></TR><TR><TD> 155  </TD><TD>     OQ         </TD><TD>       7,16       </TD><TD>    1 214,69     </TD></TR><TR><TD> 170  </TD><TD>     OHQ        </TD><TD>       7,67       </TD><TD>    1 301,22     </TD></TR></TABLE><p></p> --------------------------------------------------------------<p></p>   Les salaires mensuels ont été calculés sur une base de 169,65 heures pour 35 heures hebdomadaires effectivement travaillées payées 39 heures.<p></p>   Les entreprises appliquant une des garanties mensuelles de rémunération (GMR) ne sont pas liées par cet accord. Article 2<p></p>   Pour les coefficients hiérarchiques supérieurs à 170, le point mensuel est fixé à 6,96 Euros, à compter du 1er juillet 2002.<p></p>   Il est rappelé, conformément aux dispositions de l'alinéa F de l'article 13 de la convention collective que : \" la présente convention ne déterminant que des barèmes de salaires minima, la fixation des salaires réels fait l'objet d'accords par entreprise ou par localité \".<p></p>   Fait à Paris, le 10 juillet 2002.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 50 S 2002-07-10 BO conventions collectives 2002-43 étendu par arrêté du 23 décembre 2002 JORF 4 janvier 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1026259200000,
+                  "dateFin": 1057622400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -16272,13 +16420,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728634",
+              "cid": "KALISCTA000005728634",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juillet 2003",
+              "dateModif": null,
+              "dateDebut": "2003-07-08",
+              "dateFin": "2004-07-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005862200",
+                  "cid": "KALIARTI000005862200",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728634/KALIARTI000005862200",
+                  "pathTitle": [
+                    "Salaires au 1er juillet 2003"
+                  ],
+                  "content": "<p></p>   Article 1er<p></p><p></p>   Pour les coefficients hiérarchiques de 135 à 170 inclus, les salaires minima professionnels sont fixés ainsi :<p></p><p></p><p></p>   COEFFICIENT : 135<p></p><p></p>   CATEGORIE : OS 1<p></p><p></p>   AU 1er JUILLET 2003<p></p><p></p>   Taux horaires (en euros) : 7,76<p></p><p></p>   Salaires mensuels (en euros) : 1 176,96<p></p><p></p><p></p>   COEFFICIENT : 143<p></p><p></p>   CATEGORIE : OS 2<p></p><p></p>   AU 1er JUILLET 2003<p></p><p></p>   Taux horaires (en euros) : 7,85<p></p><p></p>   Salaires mensuels (en euros) : 1 190,61<p></p><p></p><p></p>   COEFFICIENT : 155<p></p><p></p>   CATEGORIE : OQ<p></p><p></p>   AU 1er JUILLET 2003<p></p><p></p>   Taux horaires (en euros) : 8,14<p></p><p></p>   Salaires mensuels (en euros) : 1 234,59<p></p><p></p><p></p>   COEFFICIENT : 170<p></p><p></p>   CATEGORIE : OHQ<p></p><p></p>   AU 1er JUILLET 2003<p></p><p></p>   Taux horaires (en euros) : 8,72<p></p><p></p>   Salaires mensuels (en euros) : 1 322,56<p></p><p></p><p></p>   Les salaires mensuels ont été calculés sur une base de 151,67 heures pour 35 heures hebdomadaires effectivement travaillées.<p></p><p></p>   Les entreprises appliquant une des garanties mensuelles de rémunération (GMR) ne sont pas liées par cet accord.<p></p> Article 2<p></p><p></p>   Pour les coefficients hiérarchiques supérieurs à 170, le point mensuel est fixé à 7,07 Euros à compter du 1er juillet 2003.<p></p><p></p>   Il est rappelé, conformément aux dispositions de l'alinéa F de l'article 13 de la convention collective que :<p></p><p></p>   \" La présente convention ne déterminant que des barèmes de salaires minima, la fixation des salaires réels fait l'objet d'accords par entreprise ou par localité. \"<p></p><p></p>   Fait à Paris, le 8 juillet 2003.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 51 S 2003-07-08 BO conventions collectives 2003-40 étendu par arrêté du 24 novembre 2003 JORF 3 décembre 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1057622400000,
+                  "dateFin": 1089072000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
