@@ -2,17 +2,17 @@
   "executionTime": 0,
   "dereferenced": false,
   "article": {
-    "id": "LEGIARTI000031323862",
+    "id": "LEGIARTI000054477886",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Le service de l'allocation de solidarité aux personnes âgées est supprimé aux personnes qui établissent leur résidence en dehors du territoire métropolitain et des collectivités mentionnées à l'article L. 751-1 .",
-    "texteHtml": "<p></p>Le service de l'allocation de solidarité aux personnes âgées est supprimé aux personnes qui établissent leur résidence en dehors du territoire métropolitain et des collectivités mentionnées à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006073189&idArticle=LEGIARTI000006744151&dateTexte=&categorieLien=cid\" title=\"Code de la sécurité sociale. - art. L751-1 (V)\">L. 751-1</a>.<p></p><p></p>",
+    "texte": "Le service de l'allocation de solidarité aux personnes âgées est supprimé aux personnes qui établissent leur résidence en dehors du territoire métropolitain et des collectivités mentionnées à l'article L. 111-2.",
+    "texteHtml": "<p>Le service de l'allocation de solidarité aux personnes âgées est supprimé aux personnes qui établissent leur résidence en dehors du territoire métropolitain et des collectivités mentionnées à l'article L. 111-2.</p>",
     "num": "L815-12",
     "origine": "LEGI",
     "nature": "Article",
-    "versionArticle": "12.0",
+    "versionArticle": "13.0",
     "etat": "VIGUEUR",
-    "dateDebut": 1444953600000,
+    "dateDebut": 1784764800000,
     "dateFin": 32472144000000,
     "dateDebutExtension": 32472144000000,
     "dateFinExtension": 32472144000000,
@@ -103,9 +103,9 @@
     "sectionParentCid": "LEGISCTA000006186256",
     "sectionParentId": "LEGISCTA000006186256",
     "sectionParentTitre": "Sous-section 4 : Service de l'allocation",
-    "fullSectionsTitre": "Partie législative &gt; Livre 8 : Allocations aux personnes âgées - Allocation aux adultes handicapés - Allocation de logement sociale - Aides à l'emploi pour la garde des jeunes enfants - Aides aux collectivités et organismes logeant à titre temporaire des personnes défavorisées ou gérant des aires d'accueil des gens du voyage - Protection complémentaire en matière de santé &gt; Titre I : Allocations aux personnes âgées &gt; Chapitre 5 : Allocation de solidarité aux personnes âgées &gt; Section 1 : Ouverture du droit et liquidation de l'allocation de solidarité aux personnes âgées &gt; Sous-section 4 : Service de l'allocation",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000031323862",
+    "fullSectionsTitre": "Partie législative &gt; Livre VIII : Allocations aux personnes âgées - Allocation aux adultes handicapés - Aides à l'emploi pour la garde des jeunes enfants - Aides aux collectivités et organismes logeant à titre temporaire des personnes défavorisées ou gérant des aires d'accueil des gens du voyage - Protection complémentaire en matière de santé &gt; Titre I : Allocations aux personnes âgées &gt; Chapitre 5 : Allocation de solidarité aux personnes âgées &gt; Section 1 : Ouverture du droit et liquidation de l'allocation de solidarité aux personnes âgées &gt; Sous-section 4 : Service de l'allocation",
+    "refInjection": "MD-20260724_203704_881_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054477886",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -139,8 +139,8 @@
         "appellations": null
       }
     ],
-    "nota": "",
-    "notaHtml": "",
+    "nota": "Conformément à l’article 7 de l’ordonnance n° 2026-648 du 22 juillet 2026, ces dispositions, dans leur rédaction résultant de ladite ordonnance, entrent en vigueur immédiatement, soit le 23 juillet 2026.",
+    "notaHtml": "<p align=\"left\">Conformément à l’article 7 de l’ordonnance n° 2026-648 du 22 juillet 2026, ces dispositions, dans leur rédaction résultant de ladite ordonnance, entrent en vigueur immédiatement, soit le 23 juillet 2026. </p>",
     "activitePro": [],
     "numeroBrochure": [],
     "numeroBo": null,
@@ -159,22 +159,22 @@
         "dateDebutCible": "2999-01-01"
       },
       {
-        "textCid": "JORFTEXT000031311177",
-        "textTitle": "LOI n°2015-1268 du 14 octobre 2015 - art. 7 (V)",
+        "textCid": "JORFTEXT000054456926",
+        "textTitle": "Ordonnance n°2026-648 du 22 juillet 2026 - art. 1",
         "linkType": "MODIFIE",
         "linkOrientation": "cible",
-        "articleNum": "7",
-        "articleId": "LEGIARTI000031314652",
-        "natureText": "LOI",
-        "datePubliTexte": "2015-10-15",
-        "dateSignaTexte": "2015-10-14",
-        "dateDebutCible": "2015-10-16"
+        "articleNum": "1",
+        "articleId": "LEGIARTI000054458912",
+        "natureText": "ORDONNANCE",
+        "datePubliTexte": "2026-07-23",
+        "dateSignaTexte": "2026-07-22",
+        "dateDebutCible": "2026-07-24"
       }
     ],
     "lienCitations": [
       {
         "textCid": "JORFTEXT000000508819",
-        "textTitle": "Loi n° 87-563 du 17 juillet 1987 - art. 7 (VD)",
+        "textTitle": "Loi n° 87-563 du 17 juillet 1987 - art. 7 (T)",
         "linkType": "CITATION",
         "linkOrientation": "cible",
         "articleNum": "7",
@@ -184,19 +184,6 @@
         "numTexte": "87-563",
         "datePubli": 553910400000,
         "dateDebut": 1577836800000
-      },
-      {
-        "textCid": "LEGITEXT000006073189",
-        "textTitle": "Code de la sécurité sociale. - art. L751-1 (V)",
-        "linkType": "CITATION",
-        "linkOrientation": "source",
-        "articleNum": "L751-1",
-        "articleId": "LEGIARTI000006744151",
-        "natureText": "CODE",
-        "parentCid": null,
-        "numTexte": "",
-        "datePubli": 32472144000000,
-        "dateDebut": 503971200000
       },
       {
         "textCid": "LEGITEXT000006073189",
@@ -397,9 +384,18 @@
       },
       {
         "id": "LEGIARTI000031323862",
-        "etat": "VIGUEUR",
+        "etat": "MODIFIE",
         "version": "12.0",
         "dateDebut": 1444953600000,
+        "dateFin": 1784764800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000054477886",
+        "etat": "VIGUEUR",
+        "version": "13.0",
+        "dateDebut": 1784764800000,
         "dateFin": 32472144000000,
         "numero": null,
         "ordre": null
@@ -409,7 +405,7 @@
       "L815-12",
       "815-12"
     ],
-    "versionPrecedente": "LEGIARTI000006744907",
+    "versionPrecedente": "LEGIARTI000031323862",
     "conditionDiffere": null,
     "historique": null,
     "surtitre": null,

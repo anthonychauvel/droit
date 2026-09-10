@@ -15558,13 +15558,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005711357",
+              "cid": "KALISCTA000005711357",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et classifications à partir du 1er avril 1999",
+              "dateModif": null,
+              "dateDebut": "1999-05-25",
+              "dateFin": "2001-09-12",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005820791",
+                  "cid": "KALIARTI000005820791",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005711357/KALIARTI000005820791",
+                  "pathTitle": [
+                    "Salaires et classifications à partir du 1er avril 1999"
+                  ],
+                  "content": "<p></p>   A compter du 1er avril 1999, la valeur du point est augmentée de 1 % et fixée à 28,56 F. Les coefficients des deux premières catégories étant respectivement fixés à 244 et 247 pour que le salaire correspondant soit de 6 969 F et 7 055 F. La grille ci-après entre en vigueur à compter de cette même date.<p></p><p></p> CAT: catégorie COEF: coefficient<p></p><TABLE><TR><TD></TD><TD>     CLASSIFICATION        </TD></TR><TR><TD></TD><TD> C </TD><TD>   Salarié débutant.       </TD></TR><TR><TD>C</TD><TD> O </TD><TD>Qualification attribuée à  </TD></TR><TR><TD>A</TD><TD> E </TD><TD>toute personne pendant les </TD></TR><TR><TD>T</TD><TD> F </TD><TD>trois premiers mois.       </TD></TR><TR><TD></TD><TD></TD><TD>   Personnel d'entretien.  </TD></TR><TR><TD>1</TD><TD> 2 </TD><TD></TD></TR><TR><TD></TD><TD> 4 </TD><TD>      SALAIRE BRUT 1999    </TD></TR><TR><TD></TD><TD> 4 </TD><TD>          6 969            </TD></TR><TR><TD></TD><TD> C </TD><TD>Personne ayant plus de     </TD></TR><TR><TD>C</TD><TD> O </TD><TD>trois mois d'ancienneté    </TD></TR><TR><TD>A</TD><TD> E </TD><TD>avec des connaissances     </TD></TR><TR><TD>T</TD><TD> F </TD><TD>professionnelles           </TD></TR><TR><TD></TD><TD></TD><TD>élémentaires assurant      </TD></TR><TR><TD>2</TD><TD> 2 </TD><TD>notamment, avec accès à    </TD></TR><TR><TD></TD><TD> 4 </TD><TD>l'informatique, des travaux</TD></TR><TR><TD></TD><TD> 7 </TD><TD>de classement, de bureau,  </TD></TR><TR><TD></TD><TD></TD><TD>de dactylographie, de      </TD></TR><TR><TD></TD><TD></TD><TD>recherche, ainsi que ceux  </TD></TR><TR><TD></TD><TD></TD><TD>de la tenue d'audience.    </TD></TR><TR><TD></TD><TD> C </TD><TD>   Personne assurant       </TD></TR><TR><TD>C</TD><TD> O </TD><TD>l'accueil et le standard.  </TD></TR><TR><TD>A</TD><TD> E </TD><TD>   Personne qualifiée      </TD></TR><TR><TD>T</TD><TD> F </TD><TD>connaissant la terminologie</TD></TR><TR><TD></TD><TD></TD><TD>juridique, assurant des    </TD></TR><TR><TD>2</TD><TD> 2 </TD><TD>travaux de                 </TD></TR><TR><TD></TD><TD> 4 </TD><TD>sténodactylographie ou     </TD></TR><TR><TD></TD><TD> 7 </TD><TD>dactylographie avec        </TD></TR><TR><TD></TD><TD></TD><TD>dictaphone et sachant      </TD></TR><TR><TD></TD><TD></TD><TD>utiliser le traitement de  </TD></TR><TR><TD></TD><TD></TD><TD>textes.                    </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>      SALAIRE BRUT 1999    </TD></TR><TR><TD></TD><TD></TD><TD>          7 055            </TD></TR><TR><TD></TD><TD></TD><TD>   Personne assurant la    </TD></TR><TR><TD></TD><TD> C </TD><TD>programmation ou la        </TD></TR><TR><TD>C</TD><TD> O </TD><TD>rédaction des actes        </TD></TR><TR><TD>A</TD><TD> E </TD><TD>courants de procédure, ou  </TD></TR><TR><TD>T</TD><TD> F </TD><TD>formalités, sur les        </TD></TR><TR><TD></TD><TD></TD><TD>instructions qui lui       </TD></TR><TR><TD>3</TD><TD> 2 </TD><TD>sont données.              </TD></TR><TR><TD></TD><TD> 5 </TD><TD>   Clerc significateur     </TD></TR><TR><TD></TD><TD> 6 </TD><TD>assermenté.                </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>      SALAIRE BRUT 1999    </TD></TR><TR><TD></TD><TD></TD><TD>          7 312            </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD>     CLASSIFICATION        </TD></TR><TR><TD></TD><TD> C </TD><TD>   Clerc significateur     </TD></TR><TR><TD>C</TD><TD> O </TD><TD>assermenté chef de groupe. </TD></TR><TR><TD>A</TD><TD> E </TD><TD></TD></TR><TR><TD>T</TD><TD> F </TD><TD>      SALAIRE BRUT 1999    </TD></TR><TR><TD></TD><TD></TD><TD>          7 569            </TD></TR><TR><TD>4</TD><TD> 2 </TD><TD></TD></TR><TR><TD></TD><TD> 6 </TD><TD></TD></TR><TR><TD></TD><TD> 5 </TD><TD></TD></TR><TR><TD></TD><TD> C </TD><TD>   Personne chargée de la  </TD></TR><TR><TD>C</TD><TD> O </TD><TD>comptabilité.              </TD></TR><TR><TD>A</TD><TD> E </TD><TD>   Personne assurant le    </TD></TR><TR><TD>T</TD><TD> F </TD><TD>suivi informatique.        </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD>5</TD><TD> 2 </TD><TD>      SALAIRE BRUT 1999    </TD></TR><TR><TD></TD><TD> 8 </TD><TD>          8 055            </TD></TR><TR><TD></TD><TD> 2 </TD><TD></TD></TR><TR><TD></TD><TD> C </TD><TD>   Secrétaire ayant une    </TD></TR><TR><TD>C</TD><TD> O </TD><TD>expérience professionnelle </TD></TR><TR><TD>A</TD><TD> E </TD><TD>confirmée lui permettant   </TD></TR><TR><TD>T</TD><TD> F </TD><TD>d'assurer la gestion des   </TD></TR><TR><TD></TD><TD></TD><TD>dossiers.                  </TD></TR><TR><TD>6</TD><TD> 3 </TD><TD></TD></TR><TR><TD></TD><TD> 0 </TD><TD>      SALAIRE BRUT 1999    </TD></TR><TR><TD></TD><TD> 5 </TD><TD>          8 712            </TD></TR><TR><TD></TD><TD></TD><TD>   Secrétaire ayant la     </TD></TR><TR><TD></TD><TD></TD><TD>même définition que       </TD></TR><TR><TD></TD><TD> C </TD><TD>ci-dessus et assurant le   </TD></TR><TR><TD>C</TD><TD> O </TD><TD>secrétariat de l'employeur.</TD></TR><TR><TD>A</TD><TD> E </TD><TD>   Salarié secondant le    </TD></TR><TR><TD>T</TD><TD> F </TD><TD>chef de bureau de          </TD></TR><TR><TD></TD><TD></TD><TD>groupement.</TD></TR><TR><TD></TD></TR><TR><TD>7</TD><TD> 3 </TD><TD>   Personne assurant le    </TD></TR><TR><TD></TD><TD> 2 </TD><TD>paramétrage informatique.  </TD></TR><TR><TD></TD><TD> 2 </TD><TD>   Lauréat de l'examen de  </TD></TR><TR><TD></TD><TD></TD><TD>fin d'études de l'ENPEPP.  </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>      SALAIRE BRUT 1999    </TD></TR><TR><TD></TD><TD></TD><TD>          9 197            </TD></TR><TR><TD></TD><TD> C </TD><TD>   Clerc habilité aux      </TD></TR><TR><TD>C</TD><TD> O </TD><TD>constats.                  </TD></TR><TR><TD>A</TD><TD> E </TD><TD></TD></TR><TR><TD>T</TD><TD> F </TD><TD>      SALAIRE BRUT 1999    </TD></TR><TR><TD></TD><TD></TD><TD>         10 625            </TD></TR><TR><TD>8</TD><TD> 3 </TD><TD></TD></TR><TR><TD></TD><TD> 7 </TD><TD></TD></TR><TR><TD></TD><TD> 2 </TD><TD></TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD>     CLASSIFICATION        </TD></TR><TR><TD></TD><TD></TD><TD>   Chef de bureau de       </TD></TR><TR><TD></TD><TD> C </TD><TD>groupement de signification</TD></TR><TR><TD>C</TD><TD> O </TD><TD>   Principal clerc         </TD></TR><TR><TD>A</TD><TD> E </TD><TD>1er échelon.               </TD></TR><TR><TD>T</TD><TD> F </TD><TD>   Principal clerc habilité</TD></TR><TR><TD></TD><TD></TD><TD>à procéder aux constats.   </TD></TR><TR><TD>9</TD><TD> 4 </TD><TD></TD></TR><TR><TD></TD><TD> 2 </TD><TD>      SALAIRE BRUT 1999    </TD></TR><TR><TD></TD><TD> 2 </TD><TD>         12 053            </TD></TR><TR><TD></TD><TD> C </TD><TD>   Principal clerc         </TD></TR><TR><TD>C</TD><TD> O </TD><TD>2e échelon.                </TD></TR><TR><TD>A</TD><TD> E </TD><TD></TD></TR><TR><TD>T</TD><TD> F </TD><TD>      SALAIRE BRUT 1999    </TD></TR><TR><TD></TD><TD></TD><TD>         14 910            </TD></TR><TR><TD>1</TD><TD> 5 </TD><TD></TD></TR><TR><TD>0</TD><TD> 2 </TD><TD></TD></TR><TR><TD></TD><TD> 2 </TD><TD></TD></TR><TR><TD>C</TD><TD> C </TD><TD>   Principal clerc         </TD></TR><TR><TD>A</TD><TD> O </TD><TD>3e échelon exerçant son    </TD></TR><TR><TD>T</TD><TD> E </TD><TD>activité dans une étude    </TD></TR><TR><TD></TD><TD> F </TD><TD>occupant au moins dix      </TD></TR><TR><TD>1</TD><TD></TD><TD>salariés.                  </TD></TR><TR><TD>1</TD><TD> 6 </TD><TD></TD></TR><TR><TD></TD><TD> 2 </TD><TD>      SALAIRE BRUT 1999    </TD></TR><TR><TD></TD><TD> 2 </TD><TD>         17 766            </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 7 1999-05-25 BO conventions collectives 99-28 étendu par arrêté du 20 octobre 1999 JORF 31 octobre 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 927590400000,
+                  "dateFin": 1000252800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -15578,13 +15652,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005711358",
+              "cid": "KALISCTA000005711358",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et classifications à partir du 1er septembre 2001",
+              "dateModif": null,
+              "dateDebut": "2001-09-12",
+              "dateFin": "2002-10-02",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005820792",
+                  "cid": "KALIARTI000005820792",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005711358/KALIARTI000005820792",
+                  "pathTitle": [
+                    "Salaires et classifications à partir du 1er septembre 2001"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   A partir du 1er septembre 2001, les 3 premières catégories de salariés de la profession sont modifiées comme suit :<p></p><p></p>   - le coefficient 244 devient 254 ;<p></p><p></p>   - le coefficient 247 devient 256 ;<p></p><p></p>   - le coefficient 256 devient 260.<p></p> Article 2<p></p><p></p>   A partir du 1er septembre 2001, la valeur du point est fixée à 29,35 F ; la grille suivante entre en vigueur à compter de cette date.<p></p> (1)   CATÉGORIE<p></p> (2)   COEFFICIENT<p></p> (3)   SALAIRE BRUT 1998 (En francs)<p></p> -----------------------------------------------------------------<p></p><TABLE><TR><TD>(1)</TD><TD>(2)</TD><TD> CLASSIFICATION                                 </TD><TD>  (3) </TD></TR><TR><TD> 1 </TD><TD>254</TD><TD>Salarié débutant.                               </TD><TD> 7 455</TD></TR><TR><TD></TD><TD></TD><TD>Qualification attribuée à toute personne pendant</TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>les 3 premiers mois.</TD></TR><TR><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>Personnel d'entretien.                          </TD><TD></TD></TR><TR><TD> 2 </TD><TD>256</TD><TD>Personne ayant plus de 3 mois d'ancienneté avec </TD><TD> 7 514</TD></TR><TR><TD></TD><TD></TD><TD>des connaissances professionnelles élémentaires </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>assurant notamment, avec accès à l'informatique,</TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>des travaux  de classement, de bureau, de       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>dactylographie, de recherche, ainsi que ceux de </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>la tenue d'audience.</TD></TR><TR><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>Personne assurant l'accueil et le standard.     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>Personne qualifiée connaissant la terminologie  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>juridique, assurant des travaux de              </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>sténodactylographie  ou  dactylographie avec    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>dictaphone et sachant utiliser le traotement de </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>textes.                                         </TD><TD></TD></TR><TR><TD> 3 </TD><TD>260</TD><TD>Personne assurant la programmation ou la        </TD><TD> 7 631</TD></TR><TR><TD></TD><TD></TD><TD>rédaction des actes courants de procédure, ou   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>formalités, sur les instructions qui lui sont   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>données.                                        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>Clerc significateur assermenté.                 </TD><TD></TD></TR><TR><TD> 4  265 Clerc significateur assermenté chef de groupe.  </TD><TD> 7 778</TD></TR><TR><TD> 5 </TD><TD>282</TD><TD>Personne chargée de la comptabilité.            </TD><TD> 8 277</TD></TR><TR><TD></TD><TD></TD><TD>Personne assurant le suivi informatique.        </TD><TD></TD></TR><TR><TD> 6 </TD><TD>305</TD><TD>Secrétaire ayant une expérience professionnelle </TD><TD> 8 952</TD></TR><TR><TD></TD><TD></TD><TD>confirmée lui permettant d'assurer la gestion   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>des dossiers.                                   </TD><TD></TD></TR><TR><TD> 7 </TD><TD>322</TD><TD>Secrétaire ayant la même définition que        </TD><TD> 9 451</TD></TR><TR><TD></TD><TD></TD><TD>ci-dessus et assurant le secrétariat de         </TD><TD></TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD></TD><TD>l'employeur.                                    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>Salarié secondant le chef de bureau de          </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>groupement.                                     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>Personne assurant le paramétrage informatique.  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>Lauréat de l'examen de fin d'études de l'ENPEPP.</TD><TD></TD></TR><TR><TD> 8 </TD><TD>372</TD><TD>Clerc habilité aux constats.                    </TD><TD>10 918</TD></TR><TR><TD> 9 </TD><TD>422</TD><TD>Chef de bureau de groupement de signification.  </TD><TD>12 386</TD></TR><TR><TD></TD><TD></TD><TD>Principal clerc 1er échelon.                    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>Principal clerc habilité à procéder aux constats</TD><TD></TD></TR><TR><TD>10 </TD><TD>522</TD><TD>Principal clerc 2e échelon.                     </TD><TD>15 321</TD></TR><TR><TD>11 </TD><TD>622</TD><TD>Principal clerc 3e échelon exerçant son activité</TD><TD>18 256</TD></TR><TR><TD></TD><TD></TD><TD>dans une étude occupant au moins 10 salariés.   </TD><TD></TD></TR></TABLE><p></p> -----------------------------------------------------------------",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 10 2001-09-12 BO conventions collectives 2001-42 étendu par arrêté du 4 décembre 2001 JORF 15 décembre 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1000252800000,
+                  "dateFin": 1033516800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -15598,13 +15746,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005711359",
+              "cid": "KALISCTA000005711359",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et classifications à partir du 1er avril 2002",
+              "dateModif": null,
+              "dateDebut": "2002-03-12",
+              "dateFin": "2004-03-23",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005820793",
+                  "cid": "KALIARTI000005820793",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005711359/KALIARTI000005820793",
+                  "pathTitle": [
+                    "Salaires et classifications à partir du 1er avril 2002"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   A partir du 1er avril 2002 la valeur du point est fixée à 4,57 Euros ; la grille suivante entre en vigueur à compter de cette date (voir tableau ci-après).<p></p> Article 2<p></p><p></p>   Dans la rubrique \" Classification \", article 1.5.1 \" Définition des catégories \", il est ajouté, quand cela était nécessaire, la conjonction \" OU \" afin de marquer une alternative et non un cumul de compétences, ceci afin d'éviter certaines interprétations.<p></p> (Suivent les signatures.)(Voir tableau page suivante.)   <p></p><TABLE><TR><TD>CATEGORIE</TD><TD>COEFFICIENT</TD><TD>      CLASSIFICATION           </TD><TD> SALAIRE </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>  BRUT   </TD></TR><TR><TD>   1     </TD><TD>     254   </TD><TD> Salarié débutant.             </TD><TD> 1 160,78</TD></TR><TR><TD></TD><TD></TD><TD> Qualification attribuée à     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  toute personne pendant les   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  3 premiers mois.             </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> Personnel d'entretien.        </TD><TD></TD></TR><TR><TD>   2     </TD><TD>    256    </TD><TD> Personne ayant plus de 3 mois </TD><TD> 1 169,92</TD></TR><TR><TD></TD><TD></TD><TD>  d'ancienneté avec des        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  connaissances profession-    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  nelles élémentaires assurant </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  notamment, avec accès à      </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  l'informatique, des travaux  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  de classement, de bureau,    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  de dactylographie, de        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  recherche, ainsi que ceux de </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  la tenue d'audience.         </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> OU personne assurant l'accueil</TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  et le standard.              </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> OU personne qualifiée connais-</TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  sant la terminologie         </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  juridique, assurant des      </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  travaux de sténodactylo-     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  graphie ou dactylographie    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  avec dictaphone et sachant   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  utiliser le traitement de    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  textes.                      </TD><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>   3     </TD><TD>    260    </TD><TD> Personne assurant la program- </TD><TD> 1 188,20</TD></TR><TR><TD></TD><TD></TD><TD>  mation ou la rédaction des   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  actes courants de procédure, </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  ou formalités, sur les       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  instructions qui lui sont    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  données.                     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> OU clerc significateur        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  assermenté.                  </TD><TD></TD></TR><TR><TD>   4     </TD><TD>    265    </TD><TD> Clerc significateur assermenté</TD><TD> 1 211,05</TD></TR><TR><TD></TD><TD></TD><TD>  chef de groupe.              </TD><TD></TD></TR><TR><TD>   5     </TD><TD>    282    </TD><TD> Personne chargée de la        </TD><TD> 1 288,74</TD></TR><TR><TD></TD><TD></TD><TD>  comptabilité.                </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> OU personne assurant le suivi </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  informatique.                </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> OU titulaire du diplôme      </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  de 2e cycle de l'ENPEPP.     </TD><TD></TD></TR><TR><TD>   6     </TD><TD>    305    </TD><TD> Secrétaire ayant une expé-    </TD><TD> 1 393,85</TD></TR><TR><TD></TD><TD></TD><TD>  rience professionnelle       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  confirmée lui permettant     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  d'assurer la gestion des     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  dossiers.                    </TD><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>    7    </TD><TD>    322    </TD><TD> Secrétaire ayant la           </TD><TD> 1 471,54</TD></TR><TR><TD></TD><TD></TD><TD>  même définition que         </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  ci-dessus et assurant le     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  secrétariat de l'employeur.  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> OU personne secondant le chef </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  de bureau de groupement.     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> OU personne assurant le       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  paramétrage informatique.    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> OU titulaire de l'examen      </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  de fin d'études de l'ENPEPP. </TD><TD></TD></TR><TR><TD>   8     </TD><TD>    372    </TD><TD> Clerc habilité aux constats.  </TD><TD> 1 700,04</TD></TR><TR><TD>   9     </TD><TD>    422    </TD><TD> Chef de bureau de groupement  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  de signification.            </TD><TD> 1 928,54</TD></TR><TR><TD></TD><TD></TD><TD> OU principal clerc 1er échelon</TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> OU principal clerc habilité   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  à procéder aux constats.     </TD><TD></TD></TR><TR><TD>   10    </TD><TD>    522    </TD><TD> Principal clerc 2e échelon.   </TD><TD> 2 385,54</TD></TR><TR><TD>   11    </TD><TD>    622    </TD><TD> Principal clerc 3e échelon    </TD><TD> 2 842,54</TD></TR><TR><TD></TD><TD></TD><TD>  exerçant son activité dans   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  étude occupant au moins      </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  10 salariés.                 </TD><TD></TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 13 2002-03-12 BO conventions collectives 2002-19 étendu par arrêté du 2 octobre 2002 JORF 12 octobre 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1015891200000,
+                  "dateFin": 1080000000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
