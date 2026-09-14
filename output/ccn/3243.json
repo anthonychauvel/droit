@@ -3115,7 +3115,7 @@
               "infosRestructurationBranche": null,
               "infosRestructurationBrancheHtml": null,
               "dateDebut": 1690848000000,
-              "dateFin": 1770854400000,
+              "dateFin": 1770940800000,
               "notaSectionsAafficher": null,
               "multipleVersions": true
             },
@@ -3142,18 +3142,6 @@
               "type": "AUTONOME",
               "lstLienModification": [
                 {
-                  "textCid": "KALITEXT000052007431",
-                  "textTitle": "Modification de la convention collective (succe... - art. 2 (VNE)",
-                  "linkType": "MODIFIE",
-                  "linkOrientation": "cible",
-                  "articleNum": "2",
-                  "articleId": "KALIARTI000052007436",
-                  "natureText": "Avenant",
-                  "datePubliTexte": "2025-07-30",
-                  "dateSignaTexte": "2025-04-24",
-                  "dateDebutCible": "2026-02-12"
-                },
-                {
                   "textCid": "JORFTEXT000053459407",
                   "textTitle": "Arrêté du 6 février 2026 - art. 1, v. init.",
                   "linkType": "ETEND",
@@ -3164,6 +3152,18 @@
                   "datePubliTexte": "2026-02-12",
                   "dateSignaTexte": "2026-02-06",
                   "dateDebutCible": "2999-01-01"
+                },
+                {
+                  "textCid": "KALITEXT000052007431",
+                  "textTitle": "Modification de la convention collective (succe... - art. 2 (VNE)",
+                  "linkType": "MODIFIE",
+                  "linkOrientation": "cible",
+                  "articleNum": "2",
+                  "articleId": "KALIARTI000052007436",
+                  "natureText": "Avenant",
+                  "datePubliTexte": "2999-01-01",
+                  "dateSignaTexte": "2025-04-24",
+                  "dateDebutCible": "2026-02-13"
                 }
               ],
               "lstLienCitation": [
@@ -3307,7 +3307,7 @@
               "infosComplementairesHtml": "",
               "infosRestructurationBranche": null,
               "infosRestructurationBrancheHtml": null,
-              "dateDebut": 1770854400000,
+              "dateDebut": 1770940800000,
               "dateFin": 32472144000000,
               "notaSectionsAafficher": null,
               "multipleVersions": true

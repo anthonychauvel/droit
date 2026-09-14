@@ -15324,13 +15324,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005722407",
+              "cid": "KALISCTA000005722407",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires pour l'année 1996, valeur du point au 1er janvier, 1er avril, 1er juillet et 1er octobre 1996.",
+              "dateModif": null,
+              "dateDebut": "1995-12-15",
+              "dateFin": "1999-01-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005846774",
+                  "cid": "KALIARTI000005846774",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005722407/KALIARTI000005846774",
+                  "pathTitle": [
+                    "Salaires pour l'année 1996, valeur du point au 1er janvier, 1er avril, 1er juillet et 1er octobre 1996."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur du point, au titre de l'année 1996, est augmentée de :<p></p><p></p>   - 1,1 p. 100 au 1er avril 1996 ;<p></p><p></p>   - 0,7 p. 100 au 1er octobre 1996.<p></p><p></p>   Compte tenu des dispositions figurant à l'article 1er de l'accord du 15 décembre 1995 sur la politique salariale dans les industries chimiques, la valeur du point est portée à :<p></p><p></p>   - 39,1324 F au 1er janvier 1996 ;<p></p><p></p>   - 39,5628 F au 1er avril 1996 ;<p></p><p></p>   - 39,7606 F au 1er juillet 1996 ;<p></p><p></p>   - 40,0389 F au 1er octobre 1996.<p></p><p></p>   Dans les entreprises où il existe des barèmes de minima supérieurs à celui en vigueur dans la profession, l'application des mesures prévues ci-dessus n'entraîne pas de répercussion automatique.<p></p> Article 2<p></p><p></p>   Les montants des rémunérations garanties annuelles instituées par l'accord du 15 décembre 1995 sur la politique salariale dans les industries chimiques sont fixés, pour l'année 1996, aux valeurs suivantes :<p></p><p></p>      R.G.A. 1 :  79 500 F.<p></p><p></p>      R.G.A. 2 :  85 000 F.<p></p><p></p>      R.G.A. 3 :  94 000 F.<p></p><p></p>      R.G.A. 4 : 108 000 F.<p></p><p></p>      R.G.A. 5 : 123 500 F.<p></p> Article 3<p></p><p></p>   Le présent accord est applicable aux entreprises et établissements dont l'activité principale relève du champ d'application tel que celui-ci est défini par l'accord du 23 octobre 1991.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 30 mai 1996 art. 1 : accord étendu sous réserve de l'application, à l'article 1er, des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 30 mai 1996 art. 1 : accord étendu sous réserve de l'application, à l'article 1er, des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-12-15 BO conventions collectives 96-9, étendu par arrêté du 30 mai 1996 JORF 8 juin 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-12-15 art. 1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 818985600000,
+                  "dateFin": 917308800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -15344,13 +15432,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005722408",
+              "cid": "KALISCTA000005722408",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Rémunérations garanties annuelles pour l'année 1999.",
+              "dateModif": null,
+              "dateDebut": "1999-02-05",
+              "dateFin": "2006-04-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005846775",
+                  "cid": "KALIARTI000005846775",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005722408/KALIARTI000005846775",
+                  "pathTitle": [
+                    "Rémunérations garanties annuelles pour l'année 1999."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les montants des rémunérations garanties annuelles instituées par l'accord du 15 décembre 1995 sur la politique salariale dans les industries chimiques sont fixés, pour l'année 1999, aux valeurs suivantes :<p></p><p></p>   RGA 1 ...  83 700 F<p></p><p></p>   RGA 2 ...  89 500 F<p></p><p></p>   RGA 3 ...  98 800 F<p></p><p></p>   RGA 4 ... 113 200 F<p></p><p></p>   RGA 5 ... 129 100 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1999-02-05 BO conventions collectives 99-8 étendu par arrêté du 4 août 1999 JORF 8 août 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 918172800000,
+                  "dateFin": 1145404800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -15364,13 +15526,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005722409",
+              "cid": "KALISCTA000005722409",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point au 1er janvier, 1er décembre et 1er juillet 1999.",
+              "dateModif": null,
+              "dateDebut": "1999-02-05",
+              "dateFin": "2000-02-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005846776",
+                  "cid": "KALIARTI000005846776",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005722409/KALIARTI000005846776",
+                  "pathTitle": [
+                    "Valeur du point au 1er janvier, 1er décembre et 1er juillet 1999."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur du point, au titre de l'année 1999, est augmentée de 0,5 % au 1er juillet 1999.<p></p><p></p>   Compte tenu des dispositions figurant à l'article 1er de l'accord du 15 décembre 1995 sur la politique salariale dans les industries chimiques, la valeur du point de 41,2132 F au 1er janvier 1999 est portée à :<p></p><p></p>   - 41,4192 F au 1er juillet 1999 ;<p></p><p></p>   - 41,5848 F au 1er décembre 1999.<p></p><p></p>   Dans les entreprises où il existe des barèmes de minima supérieurs à celui en vigueur dans la profession, l'application des mesures prévues ci-dessus n'entraîne pas de répercussion automatique.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 4 août 1999 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 4 août 1999 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1999-02-05 BO conventions collectives 99-8 étendu par arrêté du 4 août 1999 JORF 8 août 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-12-15 art. 1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 918172800000,
+                  "dateFin": 950054400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

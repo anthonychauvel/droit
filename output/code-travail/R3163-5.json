@@ -2,17 +2,17 @@
   "executionTime": 0,
   "dereferenced": false,
   "article": {
-    "id": "LEGIARTI000018534029",
+    "id": "LEGIARTI000054686702",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "La dérogation à l'interdiction du travail de nuit des jeunes travailleurs est accordée par l'inspecteur du travail pour une durée maximale d'une année, renouvelable. Il apprécie les caractéristiques particulières de l'activité justifiant cette dérogation. A défaut de réponse dans le délai d'un mois suivant le dépôt de la demande, l'autorisation est réputée accordée.",
-    "texteHtml": "<p><br/>La dérogation à l'interdiction du travail de nuit des jeunes travailleurs est accordée par l'inspecteur du travail pour une durée maximale d'une année, renouvelable. Il apprécie les caractéristiques particulières de l'activité justifiant cette dérogation.<br/> A défaut de réponse dans le délai d'un mois suivant le dépôt de la demande, l'autorisation est réputée accordée.</p>",
+    "texte": "La dérogation à l'interdiction du travail de nuit des jeunes travailleurs est accordée par l'inspecteur du travail pour une durée maximale d'une année, renouvelable. Il apprécie les caractéristiques particulières de l'activité justifiant cette dérogation. A défaut de réponse dans le délai de trente jours suivant le dépôt de la demande, l'autorisation est réputée accordée.",
+    "texteHtml": "<p>La dérogation à l'interdiction du travail de nuit des jeunes travailleurs est accordée par l'inspecteur du travail pour une durée maximale d'une année, renouvelable. Il apprécie les caractéristiques particulières de l'activité justifiant cette dérogation.</p><p>A défaut de réponse dans le délai de trente jours suivant le dépôt de la demande, l'autorisation est réputée accordée.</p>",
     "num": "R3163-5",
     "origine": "LEGI",
     "nature": "Article",
-    "versionArticle": "1.0",
+    "versionArticle": "2.0",
     "etat": "VIGUEUR",
-    "dateDebut": 1209600000000,
+    "dateDebut": 1786838400000,
     "dateFin": 32472144000000,
     "dateDebutExtension": 32472144000000,
     "dateFinExtension": 32472144000000,
@@ -86,8 +86,8 @@
     "sectionParentId": "LEGISCTA000018534039",
     "sectionParentTitre": "Chapitre III : Travail de nuit",
     "fullSectionsTitre": "Partie réglementaire   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale  &gt; Livre Ier : Durée du travail, repos et congés  &gt; Titre VI : Dispositions particulières aux jeunes travailleurs  &gt; Chapitre III : Travail de nuit",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000018534029",
+    "refInjection": "MD-20260817_193535_341_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054686702",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -129,16 +129,16 @@
     "conteneurs": [],
     "lienModifications": [
       {
-        "textCid": "JORFTEXT000018442415",
-        "textTitle": "Décret n°2008-244 du 7 mars 2008 - art. (V)",
-        "linkType": "CREE",
+        "textCid": "JORFTEXT000054683078",
+        "textTitle": "Décret n°2026-775 du 13 août 2026 - art. 1",
+        "linkType": "MODIFIE",
         "linkOrientation": "cible",
-        "articleNum": "Annexe",
-        "articleId": "LEGIARTI000018456736",
+        "articleNum": "1",
+        "articleId": "LEGIARTI000054684238",
         "natureText": "DECRET",
-        "datePubliTexte": "2008-03-12",
-        "dateSignaTexte": "2008-03-07",
-        "dateDebutCible": "2008-03-13"
+        "datePubliTexte": "2026-08-15",
+        "dateSignaTexte": "2026-08-13",
+        "dateDebutCible": "2026-08-16"
       }
     ],
     "lienCitations": [
@@ -197,9 +197,18 @@
     "articleVersions": [
       {
         "id": "LEGIARTI000018534029",
-        "etat": "VIGUEUR",
+        "etat": "MODIFIE",
         "version": "1.0",
         "dateDebut": 1209600000000,
+        "dateFin": 1786838400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000054686702",
+        "etat": "VIGUEUR",
+        "version": "2.0",
+        "dateDebut": 1786838400000,
         "dateFin": 32472144000000,
         "numero": null,
         "ordre": null
@@ -209,7 +218,7 @@
       "R3163-5",
       "3163-5"
     ],
-    "versionPrecedente": null,
+    "versionPrecedente": "LEGIARTI000018534029",
     "conditionDiffere": null,
     "historique": null,
     "surtitre": null,
@@ -218,7 +227,7 @@
     "infosComplementairesHtml": null,
     "infosRestructurationBranche": null,
     "infosRestructurationBrancheHtml": null,
-    "isMultipleVersions": false,
+    "isMultipleVersions": true,
     "comporteLiensSP": false
   }
 }

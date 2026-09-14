@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000018533032",
     "sectionParentTitre": " Section 3 : Information des salariés.",
     "fullSectionsTitre": "Partie réglementaire   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale  &gt; Livre III : Dividende du travail : intéressement, participation et épargne salariale  &gt; Titre IV : Dispositions communes  &gt; Chapitre Ier : Représentation et information des salariés &gt;  Section 3 : Information des salariés.",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000031588662",
+    "refInjection": "MD-20260907_195424_099_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000031588662",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -152,19 +152,6 @@
     ],
     "lienCitations": [
       {
-        "textCid": "KALITEXT000021237493",
-        "textTitle": "Epargne salariale - art. 8 (VE)",
-        "linkType": "CITATION",
-        "linkOrientation": "cible",
-        "articleNum": "8",
-        "articleId": "KALIARTI000051925676",
-        "natureText": "Accord",
-        "parentCid": null,
-        "numTexte": "",
-        "datePubli": 1257379200000,
-        "dateDebut": 1745366400000
-      },
-      {
         "textCid": "KALITEXT000033539313",
         "textTitle": "relatif à la création d'un plan d'épargne retra... - art. 18 (VNE)",
         "linkType": "CITATION",
@@ -217,19 +204,6 @@
         "dateDebut": 1656633600000
       },
       {
-        "textCid": "KALITEXT000051909397",
-        "textTitle": "Épargne salariale - art. 8 (VE)",
-        "linkType": "CITATION",
-        "linkOrientation": "cible",
-        "articleNum": "8",
-        "articleId": "KALIARTI000051909540",
-        "natureText": "Avenant",
-        "parentCid": null,
-        "numTexte": "4",
-        "datePubli": 1752710400000,
-        "dateDebut": 1745366400000
-      },
-      {
         "textCid": "KALITEXT000052132885",
         "textTitle": "relatif à l'épargne salariale - art. 10",
         "linkType": "CITATION",
@@ -254,6 +228,32 @@
         "numTexte": "",
         "datePubli": 1756080000000,
         "dateDebut": 1748822400000
+      },
+      {
+        "textCid": "KALITEXT000054801456",
+        "textTitle": "relatif à l'épargne salariale - art. 10",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "10",
+        "articleId": "KALIARTI000054801489",
+        "natureText": "Accord",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1788739200000,
+        "dateDebut": 1773705600000
+      },
+      {
+        "textCid": "KALITEXT000054801456",
+        "textTitle": "relatif à l'épargne salariale - art. 19",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "19",
+        "articleId": "KALIARTI000054801543",
+        "natureText": "Accord",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1788739200000,
+        "dateDebut": 1773705600000
       },
       {
         "textCid": "LEGITEXT000006072050",
@@ -360,6 +360,19 @@
         "dateDebut": 1733011200000
       },
       {
+        "textCid": "KALITEXT000021237493",
+        "textTitle": "Epargne salariale - art. 8 (VE)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "8",
+        "articleId": "KALIARTI000051925676",
+        "natureText": "Accord",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1745366400000
+      },
+      {
         "textCid": "KALITEXT000048975128",
         "textTitle": "Mise en œuvre dispositif-type d'intéressement - art. 10 (VE)",
         "linkType": "CITATION",
@@ -423,6 +436,19 @@
         "numTexte": "3",
         "datePubli": 32472144000000,
         "dateDebut": 1604275200000
+      },
+      {
+        "textCid": "KALITEXT000051909397",
+        "textTitle": "Épargne salariale - art. 8 (VE)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "8",
+        "articleId": "KALIARTI000051909540",
+        "natureText": "Avenant",
+        "parentCid": null,
+        "numTexte": "4",
+        "datePubli": 32472144000000,
+        "dateDebut": 1745366400000
       }
     ],
     "lienConcordes": [
