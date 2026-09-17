@@ -14070,13 +14070,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702487",
+              "cid": "KALISCTA000005702487",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaire et prime de froid à compter du 1er avril et 1er septembre 1997",
+              "dateModif": null,
+              "dateDebut": "1997-01-30",
+              "dateFin": "1998-10-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005797714",
+                  "cid": "KALIARTI000005797714",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005702487/KALIARTI000005797714",
+                  "pathTitle": [
+                    "Salaire et prime de froid à compter du 1er avril et 1er septembre 1997"
+                  ],
+                  "content": "<p></p>   Le texte de l'article 2 de la convention collective nationale devient :<p></p><p></p>   Le salaire horaire de base (coefficient 100) applicable au-delà du coefficient 225, est fixé à :<p></p><p></p>   - à partir du 1er avril 1997 : 21,23 F ;<p></p><p></p>   - à partir du 1er septembre 1997 : 21,42 F.<p></p><p></p>   Toutefois, les salaires minima garantis, afférents aux emplois comportant un coefficient hiérarchique compris entre 100 et 225, ne peuvent être inférieurs aux chiffres du tableau ci-dessous.<p></p> TABLEAU APPLICABLE A COMPTER DU 1er AVRIL 1997<p></p> (1) Coefficient<p></p> (2) Salaire horaire<p></p> (3) Salaire mensuel (169h65)<p></p><TABLE><TR><TD> (1) </TD><TD>   (2)  </TD><TD>   (3)  </TD></TR><TR><TD> 100 </TD><TD> 33,24  </TD><TD></TD></TR><TR><TD> 120 </TD><TD> 38,33  </TD><TD> 6 503  </TD></TR><TR><TD> 125 </TD><TD> 38,42  </TD><TD> 6 518  </TD></TR><TR><TD> 130 </TD><TD> 38,60  </TD><TD> 6 548  </TD></TR><TR><TD> 135 </TD><TD> 38,80  </TD><TD> 6 582  </TD></TR><TR><TD> 140 </TD><TD> 39,00  </TD><TD> 6 616  </TD></TR><TR><TD> 145 </TD><TD> 39,20  </TD><TD> 6 650  </TD></TR><TR><TD> 150 </TD><TD> 39,41  </TD><TD> 6 686  </TD></TR><TR><TD> 155 </TD><TD> 39,69  </TD><TD> 6 733  </TD></TR><TR><TD> 160 </TD><TD> 39,96  </TD><TD> 6 779  </TD></TR><TR><TD> 165 </TD><TD> 40,27  </TD><TD> 6 832  </TD></TR><TR><TD> 170 </TD><TD> 40,54  </TD><TD> 6 878  </TD></TR><TR><TD> 175 </TD><TD> 41,12  </TD><TD> 6 976  </TD></TR><TR><TD> 180 </TD><TD> 41,70  </TD><TD> 7 074  </TD></TR><TR><TD> 185 </TD><TD> 42,27  </TD><TD> 7 171  </TD></TR><TR><TD> 190 </TD><TD> 42,84  </TD><TD> 7 268  </TD></TR><TR><TD> 195 </TD><TD> 43,34  </TD><TD> 7 353  </TD></TR><TR><TD> 200 </TD><TD> 43,83  </TD><TD> 7 436  </TD></TR><TR><TD> 205 </TD><TD> 44,40  </TD><TD> 7 532  </TD></TR><TR><TD> 210 </TD><TD> 44,97  </TD><TD> 7 629  </TD></TR><TR><TD> 215 </TD><TD> 45,96  </TD><TD> 7 797  </TD></TR><TR><TD> 220 </TD><TD> 46,93  </TD><TD> 7 962  </TD></TR><TR><TD> 225 </TD><TD> 47,79  </TD><TD> 8 108  </TD></TR><TR><TD></TD></TR></TABLE><p></p>TABLEAU APPLICABLE A COMPTER DU 1er SEPTEMBRE 1997<p></p> (1) Coefficient<p></p> (2) Salaire horaire<p></p> (3) Salaire mensuel (169h65)<p></p><TABLE><TR><TD> (1) </TD><TD>   (2)  </TD><TD>   (3)  </TD></TR><TR><TD> 100 </TD><TD> 33,54  </TD><TD></TD></TR><TR><TD> 120 </TD><TD> 38,67  </TD><TD> 6 560  </TD></TR><TR><TD> 125 </TD><TD> 38,76  </TD><TD> 6 576  </TD></TR><TR><TD> 130 </TD><TD> 38,95  </TD><TD> 6 608  </TD></TR><TR><TD> 135 </TD><TD> 39,15  </TD><TD> 6 642  </TD></TR><TR><TD> 140 </TD><TD> 39,35  </TD><TD> 6 676  </TD></TR><TR><TD> 145 </TD><TD> 39,55  </TD><TD> 6 710  </TD></TR><TR><TD> 150 </TD><TD> 39,76  </TD><TD> 6 745  </TD></TR><TR><TD> 155 </TD><TD> 40,05  </TD><TD> 6 794  </TD></TR><TR><TD> 160 </TD><TD> 40,32  </TD><TD> 6 840  </TD></TR><TR><TD> 165 </TD><TD> 40,63  </TD><TD> 6 893  </TD></TR><TR><TD> 170 </TD><TD> 40,90  </TD><TD> 6 939  </TD></TR><TR><TD> 175 </TD><TD> 41,49  </TD><TD> 7 039  </TD></TR><TR><TD> 180 </TD><TD> 42,07  </TD><TD> 7 137  </TD></TR><TR><TD> 185 </TD><TD> 42,65  </TD><TD> 7 235  </TD></TR><TR><TD> 190 </TD><TD> 43,22  </TD><TD> 7 332  </TD></TR><TR><TD> 195 </TD><TD> 43,73  </TD><TD> 7 419  </TD></TR><TR><TD> 200 </TD><TD> 44,22  </TD><TD> 7 502  </TD></TR><TR><TD> 205 </TD><TD> 44,80  </TD><TD> 7 600  </TD></TR><TR><TD> 210 </TD><TD> 45,37  </TD><TD> 7 697  </TD></TR><TR><TD> 215 </TD><TD> 46,37  </TD><TD> 7 867  </TD></TR><TR><TD> 220 </TD><TD> 47,35  </TD><TD> 8 033  </TD></TR><TR><TD> 225 </TD><TD> 48,22  </TD><TD> 8 180  </TD></TR></TABLE><p></p><p></p>   Prime de froid :<p></p><p></p>   Une majoration par heure est attribuée aux ouvriers effectuant leur travail 4 heures au moins par jour dans une atmosphère dont la température artificielle ambiante est comprise entre - 5 °C et + 2 °C.<p></p><p></p>   Cette majoration est doublée pour les ouvriers qui effectuent leur travail pendant 4 heures au moins par jour dans une atmosphère dont la température artificielle ambiante est inférieure à - 5 °C.<p></p><p></p>   A dater du 1er avril 1997, cette majoration est portée à 1,24 F.<p></p><p></p>   A dater du 1er septembre 1997, cette majoration est portée à 1,25 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 59 1997-01-30 BO conventions collectives 97-12",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 854582400000,
+                  "dateFin": 907891200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14090,13 +14164,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702488",
+              "cid": "KALISCTA000005702488",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaire et prime de froid à compter du 1er octobre 1998",
+              "dateModif": null,
+              "dateDebut": "1998-10-09",
+              "dateFin": "1999-08-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005797716",
+                  "cid": "KALIARTI000005797716",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702488/KALIARTI000005797716",
+                  "pathTitle": [
+                    "Salaire et prime de froid à compter du 1er octobre 1998"
+                  ],
+                  "content": "<p></p>   Le texte de l'article 2 de l'annexe I à la convention collective nationale devient :<p></p><p></p>   \" Le salaire horaire de base (coefficient 100) applicable au-delà du coefficient 225 est fixé à 21,63 F, à partir du 1er octobre 1998. \"<p></p><p></p>   Toutefois, les salaires minima garantis, afférents aux emplois comportant un coefficient hiérarchique compris entre 100 et 225, ne peuvent être inférieurs aux chiffres du tableau ci-dessous :<p></p> Tableau applicable à compter du 1er octobre 1998<p></p><p></p> :----:-------------:-------------:<p></p><TABLE><TR><TD>COEF</TD><TD>    SALAIRE  </TD><TD>     SALAIRE </TD></TR><TR><TD></TD><TD>    HORAIRE  </TD><TD>     MENSUEL </TD></TR><TR><TD></TD><TD> (en francs) </TD><TD>  (en francs)</TD></TR><TR><TD>100 </TD><TD>   33,88     </TD><TD></TD></TR><TR><TD>120 </TD><TD>   39,06     </TD><TD>    6 627    </TD></TR><TR><TD>125 </TD><TD>   39,15     </TD><TD>    6 642    </TD></TR><TR><TD>130 </TD><TD>   39,34     </TD><TD>    6 674    </TD></TR><TR><TD>135 </TD><TD>   39,54     </TD><TD>    6 708    </TD></TR><TR><TD>140 </TD><TD>   39,74     </TD><TD>    6 742    </TD></TR><TR><TD>145 </TD><TD>   39,95     </TD><TD>    6 778    </TD></TR><TR><TD>150 </TD><TD>   40,16     </TD><TD>    6 813    </TD></TR><TR><TD>155 </TD><TD>   40,45     </TD><TD>    6 862    </TD></TR><TR><TD>160 </TD><TD>   40,72     </TD><TD>    6 908    </TD></TR><TR><TD>165 </TD><TD>   41,04     </TD><TD>    6 962    </TD></TR><TR><TD>170 </TD><TD>   41,31     </TD><TD>    7 008    </TD></TR><TR><TD>175 </TD><TD>   41,90     </TD><TD>    7 108    </TD></TR><TR><TD>180 </TD><TD>   42,49     </TD><TD>    7 208    </TD></TR><TR><TD>185 </TD><TD>   43,08     </TD><TD>    7 309    </TD></TR><TR><TD>190 </TD><TD>   43,65     </TD><TD>    7 405    </TD></TR><TR><TD>195 </TD><TD>   44,17     </TD><TD>    7 493    </TD></TR><TR><TD>200 </TD><TD>   44,66     </TD><TD>    7 577    </TD></TR><TR><TD>205 </TD><TD>   45,25     </TD><TD>    7 677    </TD></TR><TR><TD>210 </TD><TD>   45,82     </TD><TD>    7 773    </TD></TR><TR><TD>215 </TD><TD>   46,83     </TD><TD>    7 945    </TD></TR><TR><TD>220 </TD><TD>   47,82     </TD><TD>    8 113    </TD></TR><TR><TD>225 </TD><TD>   48,70     </TD><TD>    8 262    </TD></TR></TABLE><p></p>  Prime de froid<p></p>   Une majoration par heure est attribuée aux ouvriers effectuant leur travail 4 heures au moins par jour dans une atmosphère dont la température artificielle ambiante est comprise entre - 5 °C et + 2 °C.<p></p>   Cette majoration est doublée pour les ouvriers qui effectuent leur travail pendant 4 heures au moins par jour dans une atmosphère dont la température artificielle ambiante est inférieure à - 5 °C.<p></p>   A dater du 1er octobre 1998, cette majoration est portée à 1,26 F.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 60 1998-10-09 BO conventions collectives 98-51",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 907891200000,
+                  "dateFin": 934156800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14110,13 +14258,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702489",
+              "cid": "KALISCTA000005702489",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Salaires minima garantis à compter du 25 mars 1999",
+              "dateModif": null,
+              "dateDebut": "1999-08-09",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005797717",
+                  "cid": "KALIARTI000005797717",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005702489/KALIARTI000005797717",
+                  "pathTitle": [
+                    "Salaires minima garantis à compter du 25 mars 1999"
+                  ],
+                  "content": "<p>Salaires minima garantis</p><p>Tableau applicable à compter du 25 mars 1999</p><p></p><p><table><tbody><tr><td>COEF </td><td>MINIMUM HORAIRE GARANTI</td></tr><tr><td></td><td>(en francs) </td></tr><tr><td>120 </td><td>40,23 </td></tr><tr><td>125 </td><td>40,32 </td></tr><tr><td>135 </td><td>40,50 </td></tr><tr><td>145 </td><td>40,73 </td></tr><tr><td>155 </td><td>40,91 </td></tr><tr><td>165 </td><td>41,20 </td></tr><tr><td>170 </td><td>41,73 </td></tr><tr><td>180 </td><td>42,49 </td></tr><tr><td>190 </td><td>43,65 </td></tr><tr><td>200 </td><td>44,66 </td></tr><tr><td>210 </td><td>45,82 </td></tr><tr><td>220 </td><td>47,82 </td></tr><tr><td>225 </td><td>48,70 </td></tr></tbody></table></p><p><font color=\"#808080\" size=\"1\"><em>Arrêté du 4 août 1999 art. 1 : L'accord est étendu sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.</em></font></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1999-03-25 en vigueur le lendemain de l'extension BO conventions collectives 99-13 étendu par arrêté du 4 août 1999 JORF 8 août 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 934156800000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

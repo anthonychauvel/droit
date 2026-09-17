@@ -12080,13 +12080,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728126",
+              "cid": "KALISCTA000005728126",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 1997",
+              "dateModif": null,
+              "dateDebut": "1997-02-14",
+              "dateFin": "1997-02-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861078",
+                  "cid": "KALIARTI000005861078",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728126/KALIARTI000005861078",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 1997"
+                  ],
+                  "content": "<p></p>   Les salaires minima de la grille de la convention collective en vigueur au 31 décembre 1996 sont augmentés de 2 % à compter du 1er janvier 1997.<p></p><p></p>   En cet état, la grille des salaires minima s'établit de la manière suivante :<p></p> (1) = COEFFICIENT<p></p> (2) = SALAIRES MINIMA AU 1ER JANVIER 1997 (EN FRANCS)<p></p><TABLE><TR><TD></TD><TD> (1)</TD><TD>   (2)  </TD></TR><TR><TD> I  Personnel d'entretien  </TD></TR><TR><TD></TD><TD> 100 </TD><TD> 6.613 </TD></TR><TR><TD> II Personnel d'exécution  </TD></TR><TR><TD>1re catégorie</TD><TD> 120 </TD><TD> 6.933 </TD></TR><TR><TD>2e catégorie </TD><TD> 125 </TD><TD> 6.933 </TD></TR><TR><TD>3e catégorie </TD><TD> 130 </TD><TD> 7.131 </TD></TR><TR><TD>4e catégorie </TD><TD> 135 </TD><TD> 7.131 </TD></TR><TR><TD>5e catégorie </TD><TD> 160 </TD><TD> 7.605 </TD></TR><TR><TD> III Personnel technicien  </TD></TR><TR><TD>6e catégorie </TD><TD> 185 </TD><TD> 8.374 </TD></TR><TR><TD>7e catégorie </TD><TD> 200 </TD><TD> 8.875 </TD></TR><TR><TD>8e catégorie </TD><TD> 210 </TD><TD> 9.205 </TD></TR><TR><TD> IV Personnel cadre        </TD></TR><TR><TD>9e catégorie </TD><TD> 300 </TD><TD>12.278 </TD></TR><TR><TD>10e catégorie</TD><TD> 320 </TD><TD>12.918 </TD></TR><TR><TD>11e catégorie</TD><TD> 360 </TD><TD>14.207 </TD></TR></TABLE><p></p><p></p>   Aucun salaire ne peut être inférieur au SMIC.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 49 1997-02-14 BO conventions collectives 97-16, étendu par arrêté du 25 juin 1997 JORF 4 juillet 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 855878400000,
+                  "dateFin": 855878400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12100,13 +12174,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728127",
+              "cid": "KALISCTA000005728127",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires pour 1997",
+              "dateModif": null,
+              "dateDebut": "1997-02-14",
+              "dateFin": "1999-09-24",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861080",
+                  "cid": "KALIARTI000005861080",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728127/KALIARTI000005861080",
+                  "pathTitle": [
+                    "Salaires pour 1997"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La présente grille annule et remplace les salaires minima correspondant à l'ancienne classification définie par l'article 8 de la convention collective du 20 février 1979.<p></p>Article 2<p></p> Entrée en vigueur<p></p><p></p>   La présente grille des salaires minima entre en vigueur en même temps que la nouvelle classification résultant de l'avenant n° 50, c'est-à-dire au plus tard dans les six mois qui suivent la publication de l'arrêté ministériel d'extension au Journal officiel.<p></p>Article 3<p></p> Valeur du point<p></p><p></p>   La valeur du point est fixée pour tous les coefficients à 32 F.<p></p>Article 4<p></p> Grille des salaires minima (sur 13 mois)<p></p><TABLE><TR><TD>Niv.</TD><TD> Coefficient  </TD><TD>Salaire</TD></TR><TR><TD></TD><TD></TD><TD>minima </TD></TR><TR><TD> IV </TD><TD>   205        </TD><TD> 6 560 </TD></TR><TR><TD></TD><TD>   215        </TD><TD> 6 880 </TD></TR><TR><TD></TD><TD>   225        </TD><TD> 7 200 </TD></TR><TR><TD></TD><TD>   240        </TD><TD> 7 680 </TD></TR><TR><TD> III</TD><TD>240 (débutant)</TD><TD> 7 680 </TD></TR><TR><TD></TD><TD>250 (débutant)</TD><TD> 8 000 </TD></TR><TR><TD></TD><TD>   265        </TD><TD> 8 480 </TD></TR><TR><TD></TD><TD>270 (débutant)</TD><TD> 8 640 </TD></TR><TR><TD></TD><TD>   285        </TD><TD> 9 120 </TD></TR><TR><TD></TD><TD>   300        </TD><TD> 9 600 </TD></TR><TR><TD></TD><TD>   350        </TD><TD>11 200 </TD></TR><TR><TD> II </TD><TD>385 (débutant)</TD><TD>12 320 </TD></TR><TR><TD></TD><TD>   410        </TD><TD>13 120 </TD></TR><TR><TD></TD><TD>   450        </TD><TD>14 440 </TD></TR><TR><TD></TD><TD>   480        </TD><TD>15 360 </TD></TR><TR><TD> I  </TD><TD>   510        </TD><TD>16 320 </TD></TR><TR><TD></TD><TD>   560        </TD><TD>17 920 </TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 18 juillet 1997 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 18 juillet 1997 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Annexe 1997-02-14 BO conventions collectives 97-20, étendu par arrêté du 18 juillet 1997 JORF 1er août 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 855878400000,
+                  "dateFin": 938131200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12120,13 +12268,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728128",
+              "cid": "KALISCTA000005728128",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaire brut de base (salaire réel) au 1er octobre 1998",
+              "dateModif": null,
+              "dateDebut": "1998-09-18",
+              "dateFin": "1999-09-24",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861081",
+                  "cid": "KALIARTI000005861081",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728128/KALIARTI000005861081",
+                  "pathTitle": [
+                    "Salaire brut de base (salaire réel) au 1er octobre 1998"
+                  ],
+                  "content": "<p></p>   A la suite de la mise en place de la nouvelle classification, et à titre exceptionnel, le salaire brut de base (salaire réel) au 1er octobre 1998 ne peut être inférieur à celui du mois de janvier 1997 augmenté de 1,50 %.<p></p><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 24 décembre 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 24 décembre 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 54 1998-09-18 en vigueur BO conventions collectives 98-41 étendu par arrêté du 24 décembre 1998 JORF 7 janvier 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 906076800000,
+                  "dateFin": 938131200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

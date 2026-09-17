@@ -13788,13 +13788,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705888",
+              "cid": "KALISCTA000005705888",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires bruts mensuels (toutes filières) applicables au 1er janvier 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-01-18",
+              "dateFin": "1997-10-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005805463",
+                  "cid": "KALIARTI000005805463",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705888/KALIARTI000005805463",
+                  "pathTitle": [
+                    "Salaires bruts mensuels (toutes filières) applicables au 1er janvier 1996."
+                  ],
+                  "content": "<p></p>   Il est convenu que la grille des salaires minimaux garantis est modifiée comme suit, après revalorisation de 2 p. 100, à compter du 1er janvier 1996 :<p></p><p></p>NON CADRES, AUTRES SALARIES<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = ECHELON<p></p><p></p>   (3) = REMUNERATION MINIMALE GARANTIE<p></p><p></p>   (4) = SALAIRE DE BASE MINIMUM HIERARCHIQUE<p></p><TABLE><TR><TD> 1 </TD><TD> 2 </TD><TD>    3     </TD><TD>  4      </TD></TR><TR><TD> A </TD><TD></TD><TD>  6.250 F </TD><TD> 6.250 F </TD></TR><TR><TD> B </TD><TD></TD><TD>  7.695 F </TD><TD> 6.541 F </TD></TR><TR><TD> C </TD><TD> 1 </TD><TD>  8.527 F </TD><TD> 7.248 F </TD></TR><TR><TD> C </TD><TD> 2 </TD><TD>  9.151 F </TD><TD> 7.779 F </TD></TR><TR><TD> C </TD><TD> 3 </TD><TD>  9.775 F </TD><TD> 8.309 F </TD></TR><TR><TD> D </TD><TD> 1 </TD><TD> 10.399 F </TD><TD> 8.839 F </TD></TR><TR><TD> D </TD><TD> 2 </TD><TD> 11.023 F </TD><TD> 9.370 F </TD></TR><TR><TD> AM</TD><TD> 1 </TD><TD> 12.687 F </TD><TD>10.783 F </TD></TR><TR><TD> AM</TD><TD> 2 </TD><TD> 13.519 F </TD><TD>11.490 F </TD></TR></TABLE><p></p>NON CADRES, DOCKERS CARTE \"G\"<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = ECHELON<p></p><p></p>   (3) = SALAIRE DE BASE MINIMUM HIERARCHIQUE<p></p><p></p>   (4) = REMUNERATION MINIMALE GARANTIE<p></p><TABLE><TR><TD> 1 </TD><TD> 2 </TD><TD>    3     </TD><TD>  4      </TD></TR><TR><TD> B </TD><TD></TD><TD>  7.581 F </TD><TD> 8.735 F </TD></TR><TR><TD> C </TD><TD> 1 </TD><TD>  8.288 F </TD><TD> 9.567 F </TD></TR><TR><TD> C </TD><TD> 2 </TD><TD>  8.818 F </TD><TD>10.191 F </TD></TR><TR><TD> C </TD><TD> 3 </TD><TD>  9.348 F </TD><TD>10.815 F </TD></TR><TR><TD> D </TD><TD> 1 </TD><TD>  9.879 F </TD><TD>11.439 F </TD></TR><TR><TD> D </TD><TD> 2 </TD><TD> 10.409 F </TD><TD>12.063 F </TD></TR><TR><TD> AM</TD><TD> 1 </TD><TD> 11.824 F </TD><TD>13.726 F </TD></TR><TR><TD> AM</TD><TD> 2 </TD><TD> 12.531 F </TD><TD>14.558 F </TD></TR></TABLE><p></p>CADRES<p></p><p></p>   Un seul niveau<p></p><p></p>   (1) = ECHELON<p></p><p></p>   (2) = REMUNERATION MINIMALE GARANTIE<p></p><TABLE><TR><TD>     (1)    </TD><TD>   (2)    </TD></TR><TR><TD> echelon 1  </TD><TD> 13.519 F </TD></TR><TR><TD> echelon 2  </TD><TD> 15.079 F </TD></TR><TR><TD> echelon 3  </TD><TD> 18.198 F </TD></TR></TABLE><p></p><p></p>   Conformément à l'article L. 132-12 du code du travail, les signataires du présent avenant se rencontreront en décembre 1996 en vue de la négociation annuelle sur les salaires minimaux.<p></p><p></p><font color=\"808080\"><em>NOTA: L'avenant n° 7 du 18 janvier 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance (arrêté du 13 mai 1996, art. 1er).<p></p></em></font>",
+                  "nota": "NOTA: L'avenant n° 7 du 18 janvier 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance (arrêté du 13 mai 1996, art. 1er).<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 7 1996-01-18 BO conventions collectives 96-13, étendu par arrêté du 13 mai 1996 JORF 23 mai 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-12",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 821923200000,
+                  "dateFin": 876873600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13808,13 +13896,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705890",
+              "cid": "KALISCTA000005705890",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires bruts mensuels (toutes filières) applicables au 1er octobre 1997 et 1er janvier 1998",
+              "dateModif": null,
+              "dateDebut": "1997-10-15",
+              "dateFin": "1998-11-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005805464",
+                  "cid": "KALIARTI000005805464",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705890/KALIARTI000005805464",
+                  "pathTitle": [
+                    "Salaires bruts mensuels (toutes filières) applicables au 1er octobre 1997 et 1er janvier 1998"
+                  ],
+                  "content": "<p></p>   il est convenu que la grille des salaires minimaux garantis est modifiée comme suit, à compter du 1er octobre 1997 :<p></p> Salaires bruts mensuels<p></p> (toutes filières)<p></p> Applicables à partir du 1er octobre 1997 (en francs)<p></p> NON CADRES, AUTRES SALARIES<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = ECHELON<p></p><p></p>   (3) = REMUNERATION MINIMALE GARANTIE (RMG)<p></p><p></p>   (4) = SALAIRE DE BASE MINIMUM HIERARCHIQUE (SBMH)<p></p><TABLE><TR><TD> 1 </TD><TD> 2 </TD><TD>   RMG    </TD><TD>  SBMH   </TD></TR><TR><TD> A </TD><TD></TD><TD>  6 664   </TD><TD> 6 664 Niveau </TD><TD> B </TD><TD></TD><TD>  7 733   </TD><TD> 6 664  7 619  8 779 </TD></TR><TR><TD> C </TD><TD> 1 </TD><TD>  8 570   </TD><TD> 7 284  8 329  9 615 </TD></TR><TR><TD></TD><TD> 2 </TD><TD>  9 197   </TD><TD> 7 818  8 862 10 242 </TD></TR><TR><TD></TD><TD> 3 </TD><TD>  9 824   </TD><TD> 8 351  9 395 10 869 </TD></TR><TR><TD> D </TD><TD> 1 </TD><TD> 10 451   </TD><TD> 8 883  9 928 11 496 </TD></TR><TR><TD></TD><TD> 2 </TD><TD> 11 078   </TD><TD> 9 417 10 461 12 123 </TD></TR><TR><TD>AM </TD><TD> 1 </TD><TD> 12 750   </TD><TD>10 837 11 883 13 795 </TD></TR><TR><TD></TD><TD> 2 </TD><TD> 13 587   </TD><TD>11 547 12 594 14 631 </TD></TR></TABLE><p></p><p></p>   Cadres, autres salariés<p></p><TABLE><TR><TD> 1 </TD><TD> 2 </TD><TD>   RMG    </TD><TD>  SBMH   </TD></TR><TR><TD>  (un seul niveau)</TD><TD></TD></TR><TR><TD></TD><TD> 1 </TD><TD> 13 587   </TD><TD></TD></TR><TR><TD></TD><TD> 2 </TD><TD> 15 154   </TD><TD></TD></TR><TR><TD></TD><TD> 3 </TD><TD> 18 289   </TD><TD></TD></TR></TABLE><p></p> NON CADRES, DOCKERS CARTE \"G\"<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = ECHELON<p></p><p></p>   (3) = SALAIRE DE BASE MINIMUM HIERARCHIQUE (SBMH)<p></p><p></p>   (4) = REMUNERATION MINIMALE GARANTIE (RMG)<p></p><TABLE><TR><TD> 1 </TD><TD> 2 </TD><TD>   SBMH   </TD><TD>  RMG    </TD></TR><TR><TD> A </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> B </TD><TD></TD><TD>  7 619   </TD><TD>   8 779 </TD></TR><TR><TD> C </TD><TD> 1 </TD><TD>  8 329   </TD><TD>   9 615 </TD></TR><TR><TD></TD><TD> 2 </TD><TD>  8 862   </TD><TD>  10 242 </TD></TR><TR><TD></TD><TD> 3 </TD><TD>  9 395   </TD><TD>  10 869 </TD></TR><TR><TD> D </TD><TD> 1 </TD><TD>  9 928   </TD><TD>  11 496 </TD></TR><TR><TD></TD><TD> 2 </TD><TD> 10 461   </TD><TD>  12 123 </TD></TR><TR><TD>AM </TD><TD> 1 </TD><TD> 11 883   </TD><TD>  13 795 </TD></TR><TR><TD></TD><TD> 2 </TD><TD> 12 594   </TD><TD>  14 631 </TD></TR></TABLE><p></p>Salaires bruts mensuels<p></p> (toutes filières)<p></p> Applicables à partir du 1er janvier 1998 (en francs)<p></p> NON CADRES, AUTRES SALARIES<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = ECHELON<p></p><p></p>   (3) = REMUNERATION MINIMALE GARANTIE (RMG)<p></p><p></p>   (4) = SALAIRE DE BASE MINIMUM HIERARCHIQUE (SBMH)<p></p><TABLE><TR><TD> 1 </TD><TD> 2 </TD><TD>   RMG    </TD><TD>  SBMH   </TD></TR><TR><TD> A </TD><TD></TD><TD>  6 664   </TD><TD>  6 664  </TD></TR><TR><TD> B </TD><TD></TD><TD>  7 834   </TD><TD>  6 664  </TD></TR><TR><TD> C </TD><TD> 1 </TD><TD>  8 681   </TD><TD>  7 379  </TD></TR><TR><TD></TD><TD> 2 </TD><TD>  9 317   </TD><TD>  7 920  </TD></TR><TR><TD></TD><TD> 3 </TD><TD>  9 952   </TD><TD>  8 460  </TD></TR><TR><TD> D </TD><TD> 1 </TD><TD> 10 587   </TD><TD>  8 998  </TD></TR><TR><TD></TD><TD> 2 </TD><TD> 11 222   </TD><TD>  9 539  </TD></TR><TR><TD>AM </TD><TD> 1 </TD><TD> 12 916   </TD><TD> 10 978  </TD></TR><TR><TD></TD><TD> 2 </TD><TD> 13 764   </TD><TD> 11 697  </TD></TR></TABLE><p></p><p></p>   cadres<p></p><TABLE><TR><TD> 1 </TD><TD> 2 </TD><TD>   RMG    </TD><TD>  SBMH   </TD></TR><TR><TD>       (un seul niveau)     </TD></TR><TR><TD></TD><TD> 1 </TD><TD> 13 764   </TD><TD></TD></TR><TR><TD></TD><TD> 2 </TD><TD> 15 351   </TD><TD></TD></TR><TR><TD></TD><TD> 3 </TD><TD> 18 527   </TD><TD></TD></TR></TABLE><p></p> NON CADRES, DOCKERS CARTE \"G\"<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = ECHELON<p></p><p></p>   (3) = SALAIRE DE BASE MINIMUM HIERARCHIQUE (SBMH)<p></p><p></p>   (4) = REMUNERATION MINIMALE GARANTIE (RMG)<p></p><TABLE><TR><TD> 1 </TD><TD> 2 </TD><TD>   SBMH   </TD><TD>  RMG    </TD></TR><TR><TD> A </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> B </TD><TD></TD><TD>  7 718   </TD><TD>  8 893  </TD></TR><TR><TD> C </TD><TD> 1 </TD><TD>  8 437   </TD><TD>  9 740  </TD></TR><TR><TD></TD><TD> 2 </TD><TD>  8 977   </TD><TD> 10 375  </TD></TR><TR><TD></TD><TD> 3 </TD><TD>  9 517   </TD><TD> 11 010  </TD></TR><TR><TD> D </TD><TD> 1 </TD><TD> 10 057   </TD><TD> 11 645  </TD></TR><TR><TD></TD><TD> 2 </TD><TD> 10 597   </TD><TD> 12 281  </TD></TR><TR><TD>AM </TD><TD> 1 </TD><TD> 12 037   </TD><TD> 13 974  </TD></TR><TR><TD></TD><TD> 2 </TD><TD> 12 758   </TD><TD> 14 821  </TD></TR></TABLE><p></p><p></p>   Conformément à l'article L. 132-12 du code du travail, les signataires du présent avenant se rencontreront en octobre 1998 en vue de la négociation sur les salaires minimaux.",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 8 1997-10-15 BO conventions collectives 97-48, étendu par arrêté du 19 janvier 1998 JORF 28 janvier 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-12",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 876873600000,
+                  "dateFin": 911260800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13828,13 +14004,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705891",
+              "cid": "KALISCTA000005705891",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires bruts mensuels (toutes filières) applicables au 1er janvier 1999",
+              "dateModif": null,
+              "dateDebut": "1998-11-17",
+              "dateFin": "2001-03-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005805465",
+                  "cid": "KALIARTI000005805465",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705891/KALIARTI000005805465",
+                  "pathTitle": [
+                    "Salaires bruts mensuels (toutes filières) applicables au 1er janvier 1999"
+                  ],
+                  "content": "Salaires bruts mensuels    1 : RMG = rémunération minimale garantie.<p></p><p></p>   2 : SBMH = salaire de base minimum hiérarchique.<p></p><TABLE><TR><TD></TD><TD>   AUTRES SALARIES  </TD></TR><TR><TD></TD><TD>    2    </TD><TD>     1    </TD></TR><TR><TD></TD><TD>  FF  </TD><TD></TD><TD>  FF  </TD><TD></TD></TR><TR><TD>Non cadres   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>   Niveau A  </TD><TD> 7 000</TD><TD></TD><TD> 7 000</TD><TD></TD></TR><TR><TD>   Niveau B  </TD><TD> 7 000</TD><TD></TD><TD> 7 905</TD><TD></TD></TR><TR><TD>   Niveau C  </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> échelon 1   </TD><TD> 7 445</TD><TD></TD><TD> 8 759</TD><TD></TD></TR><TR><TD> échelon 2   </TD><TD> 7 991</TD><TD></TD><TD> 9 401</TD><TD></TD></TR><TR><TD> échelon 3   </TD><TD> 8 536</TD><TD></TD><TD>10 042</TD><TD></TD></TR><TR><TD>   Niveau D  </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> échelon 1   </TD><TD> 9 079</TD><TD></TD><TD>10 682</TD><TD></TD></TR><TR><TD> échelon 2   </TD><TD> 9 625</TD><TD></TD><TD>11 323</TD><TD></TD></TR><TR><TD>   Niveau AM </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> échelon 1   </TD><TD>11 077</TD><TD></TD><TD>13 032</TD><TD></TD></TR><TR><TD> échelon 2   </TD><TD>11 802</TD><TD></TD><TD>13 888</TD><TD></TD></TR><TR><TD>   Cadres    </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>(un seul     </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> niveau)     </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> échelon 1   </TD><TD></TD><TD></TD><TD>13 888</TD><TD></TD></TR><TR><TD> échelon 2   </TD><TD></TD><TD></TD><TD>15 489</TD><TD></TD></TR><TR><TD> échelon 3   </TD><TD></TD><TD></TD><TD>18 694</TD><TD></TD></TR></TABLE><p></p><p></p>    3 : RMG<p></p><p></p>   4 : SBMH<p></p><TABLE><TR><TD></TD><TD>  DOCKERS CARTE  G  </TD></TR><TR><TD></TD><TD>    4    </TD><TD>     3    </TD></TR><TR><TD></TD><TD>  FF  </TD><TD></TD><TD>  FF  </TD><TD></TD></TR><TR><TD>   Non cadres</TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>   Niveau A  </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>   Niveau B  </TD><TD> 7 787</TD><TD></TD><TD> 8 973</TD><TD></TD></TR><TR><TD>   Niveau C  </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> échelon 1   </TD><TD> 8 513</TD><TD></TD><TD> 9 828</TD><TD></TD></TR><TR><TD> échelon 2   </TD><TD> 9 058</TD><TD></TD><TD>10 468</TD><TD></TD></TR><TR><TD> échelon 3   </TD><TD> 9 603</TD><TD></TD><TD>11 109</TD><TD></TD></TR><TR><TD>   Niveau D  </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> échelon 1   </TD><TD>10 148</TD><TD></TD><TD>11 750</TD><TD></TD></TR><TR><TD> échelon 2   </TD><TD>10 692</TD><TD></TD><TD>12 392</TD><TD></TD></TR><TR><TD>   Niveau AM </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> échelon 1   </TD><TD>12 145</TD><TD></TD><TD>14 100</TD><TD></TD></TR><TR><TD> échelon 2   </TD><TD>12 873</TD><TD></TD><TD>14 954</TD><TD></TD></TR><TR><TD>   Cadres    </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>(un seul     </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>niveau)      </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> échelon 1   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> échelon 2   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> échelon 3   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 10 1998-11-17 BO conventions collectives 99-5 étendu par arrêté du 16 mars 1999 JORF 26 mars 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-12",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 911260800000,
+                  "dateFin": 984528000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

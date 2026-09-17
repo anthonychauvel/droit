@@ -26482,13 +26482,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719532",
+              "cid": "KALISCTA000005719532",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril et 1er octobre 1995",
+              "dateModif": null,
+              "dateDebut": "1995-02-15",
+              "dateFin": "1995-11-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839706",
+                  "cid": "KALIARTI000005839706",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719532/KALIARTI000005839706",
+                  "pathTitle": [
+                    "Salaires au 1er avril et 1er octobre 1995"
+                  ],
+                  "content": "Article 1er<p></p> Rémunération minimale des personnels relevant de la grille générale<p></p><p></p>   En application de l'article 5-3 de la convention collective et selon la méthode acceptée par la commission, les rémunérations minimales annuelles des personnes relevant de la grille générale s'établissent à partir des valeurs de points suivantes.<p></p><p></p> Au 1er avril 1995<p></p><p></p>   Valeur de base (jusqu'au coefficient 125) = 530<p></p><p></p>   Valeur hiérarchique = 344,50<p></p><p></p> Au 1er octobre 1995<p></p><p></p>   Valeur de base (jusqu'au coefficient 125) = 535<p></p><p></p>   Valeur hiérarchique = 347,75<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 27 1995-02-15 BO Conventions collectives 95-18, étendu par arrêté du 10 juillet 1995 JORF 20 juillet 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 792806400000,
+                  "dateFin": 815961600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26502,13 +26576,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719533",
+              "cid": "KALISCTA000005719533",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril et 1er octobre 1996",
+              "dateModif": null,
+              "dateDebut": "1995-11-10",
+              "dateFin": "1997-12-02",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839708",
+                  "cid": "KALIARTI000005839708",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719533/KALIARTI000005839708",
+                  "pathTitle": [
+                    "Salaires au 1er avril et 1er octobre 1996"
+                  ],
+                  "content": "Article 1er<p></p> Rémunération minimale des personnels relevant de la grille générale<p></p><p></p>   En application de l'article 5-3 de la convention collective et selon la méthode acceptée par la commission, les rémunérations minimales annuelles des personnes relevant de la grille générale s'établissent à partir des valeurs de points suivantes :<p></p><p></p> Au 1er avril 1996<p></p><p></p>   Valeur de base (jusqu'au coefficient 125) = 541,00F<p></p><p></p>   Valeur hiérarchique = 351,65F<p></p><p></p> Au 1er octobre 1996<p></p><p></p>   Valeur de base (jusqu'au coefficient 125) = 546,00F<p></p><p></p>   Valeur hiérarchique = 354,90F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 28 1995-11-10 BO conventions collectives 96-7, étendu par arrêté du 27 mars 1996 JORF 6 avril 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 815961600000,
+                  "dateFin": 881020800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26522,13 +26670,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719534",
+              "cid": "KALISCTA000005719534",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril 1998 et 1er octobre 1998",
+              "dateModif": null,
+              "dateDebut": "1997-12-02",
+              "dateFin": "2003-04-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839709",
+                  "cid": "KALIARTI000005839709",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719534/KALIARTI000005839709",
+                  "pathTitle": [
+                    "Salaires au 1er avril 1998 et 1er octobre 1998"
+                  ],
+                  "content": "Article 1er<p></p> Rémunération annuelle des personnels relevant de la grille générale<p></p><p></p>   En application de l'article 5-3 de la convention collective, les rémunérations minimales annuelles des personnels relevant de la grille générale s'établissent pour 39 heures par semaine à partir des valeurs de points suivantes :<p></p> Au 1er avril 1998<p></p><p></p>   Valeur de base : 558.<p></p><p></p>   Valeur hiérarchique : 362,70.<p></p> Au 1er octobre 1998<p></p><p></p>   Valeur de base : 562.<p></p><p></p>   Valeur hiérarchique : 365,30.<p></p><p></p>   Aucune rémunération annuelle brute ne pourra être inférieure pour l'année 1998 à 81 000 F pour l'horaire de 39 heures par semaine.<p></p> Article 2<p></p> Rémunération annuelle des experts-comptables<p></p> et commissaires aux comptes<p></p><p></p>   En application de l'article 5-4 de la convention collective, les rémunérations minimales des membres de l'ordre et de la compagnie s'établissent ainsi :<p></p> Au 1er avril 1998<p></p><p></p>   Indice 40 : 240 000 F.<p></p> Au 1er octobre 1998<p></p><p></p>   Indice 40 : 243 000 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 29 1997-12-02 BO conventions collectives 98-5 étendu par arrêté du 12 mars 1998 JORF 21 mars 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 881020800000,
+                  "dateFin": 1050969600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

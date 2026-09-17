@@ -8640,13 +8640,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005692703",
+              "cid": "KALISCTA000005692703",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires applicables au 1er janvier 2000",
+              "dateModif": null,
+              "dateDebut": "2000-02-08",
+              "dateFin": "2001-03-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005773056",
+                  "cid": "KALIARTI000005773056",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005692703/KALIARTI000005773056",
+                  "pathTitle": [
+                    "Salaires applicables au 1er janvier 2000"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   A compter du 1er janvier 2000, la grille des salaires applicable est la suivante.<p></p> PÉRIODE CONCERNÉE : DU 1er JANVIER AU 31 DÉCEMBRE 2000<p></p> DERNIER SMIC MENSUEL CONNU AU 1er JUILLET 1999 : 6 881,68 F<p></p><p></p>   (1) = Classes<p></p><TABLE><TR><TD>(1)  </TD><TD>Catég   </TD><TD> ANCIENNE  </TD><TD>HAUSSE</TD></TR><TR><TD></TD><TD></TD><TD> R.A.B     </TD><TD>(en %)</TD></TR><TR><TD> 1   </TD><TD>  A     </TD><TD> 81.566,16F</TD><TD> 0,00 </TD></TR><TR><TD> 1   </TD><TD>  B     </TD><TD> 81.566,16F</TD><TD> 1,80 </TD></TR><TR><TD> 1   </TD><TD>  C     </TD><TD> 81.566,16F</TD><TD> 2,00 </TD></TR><TR><TD> 2   </TD><TD>  -     </TD><TD> 82.157,19F</TD><TD> 1,80 </TD></TR><TR><TD> 3   </TD><TD>  A     </TD><TD> 84.522,01F</TD><TD> 1,50 </TD></TR><TR><TD> 3   </TD><TD>  B     </TD><TD> 91.026,57F</TD><TD> 1,50 </TD></TR><TR><TD> 4   </TD><TD>  -     </TD><TD> 93.801,45F</TD><TD> 1,50 </TD></TR><TR><TD> AM  </TD><TD>1r éch  </TD><TD>101.985,05F</TD><TD> 1,50 </TD></TR><TR><TD> AM  </TD><TD>2e ech  </TD><TD>114.375,26F</TD><TD> 1,50 </TD></TR><TR><TD>cadre</TD><TD>1 début.</TD><TD>151.775,55F</TD><TD> 1,50 </TD></TR><TR><TD>cadre</TD><TD>2 confir</TD><TD>182.105,89F</TD><TD> 1,50 </TD></TR><TR><TD>cadre</TD><TD>3 expert</TD><TD>212.454,28F</TD><TD> 1,50 </TD></TR></TABLE><p></p><p></p>   (1) = Classe<p></p><TABLE><TR><TD>(1)  </TD><TD>Catég   </TD><TD> R.A.B.    </TD></TR><TR><TD></TD><TD></TD><TD> Théorique </TD></TR><TR><TD> 1   </TD><TD>  A     </TD><TD> 81.566,16F</TD></TR><TR><TD> 1   </TD><TD>  B     </TD><TD> 83.034,35F</TD></TR><TR><TD> 1   </TD><TD>  C     </TD><TD> 83.197,48F</TD></TR><TR><TD> 2   </TD><TD>  -     </TD><TD> 83.636,02F</TD></TR><TR><TD> 3   </TD><TD>  A     </TD><TD> 85.789,84F</TD></TR><TR><TD> 3   </TD><TD>  B     </TD><TD> 92.391,97F</TD></TR><TR><TD> 4   </TD><TD>  -     </TD><TD> 95.208,47F</TD></TR><TR><TD> AM  </TD><TD>1r éch  </TD><TD>103.514,83F</TD></TR><TR><TD> AM  </TD><TD>2e éch  </TD><TD>116.090,89F</TD></TR><TR><TD>cadre</TD><TD>1 début.</TD><TD>154.052,18F</TD></TR><TR><TD>cadre</TD><TD>2 confir</TD><TD>184.837,48F</TD></TR><TR><TD>cadre</TD><TD>3 expert</TD><TD>215.641,09F</TD></TR></TABLE><p></p><p></p>   (1) = Classe<p></p><TABLE><TR><TD> (1) </TD><TD>Catég.</TD><TD> R.A.B.   </TD><TD> Si 12  </TD></TR><TR><TD></TD><TD></TD><TD> Effective</TD><TD> Verse- </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD> ments  </TD></TR><TR><TD></TD><TD></TD><TD> (francs) </TD><TD>(francs)</TD></TR><TR><TD> 1   </TD><TD> A    </TD><TD> 82.580,16</TD><TD> 6.881,68</TD></TR><TR><TD> 1   </TD><TD> B    </TD><TD> 83.034,35</TD><TD> 6.919,53</TD></TR><TR><TD> 1   </TD><TD> C    </TD><TD> 83.197,48</TD><TD> 6.933,12</TD></TR><TR><TD> 2   </TD><TD> -    </TD><TD> 83.636,02</TD><TD> 6.969,67</TD></TR><TR><TD> 3   </TD><TD> A    </TD><TD> 85.789,84</TD><TD> 7.149,15</TD></TR><TR><TD> 3   </TD><TD> B    </TD><TD> 92.391,97</TD><TD> 7.699,33</TD></TR><TR><TD> 4   </TD><TD> -    </TD><TD> 95.208,47</TD><TD> 7.934,04</TD></TR><TR><TD> AM  </TD><TD>1r éch</TD><TD>103.514,83</TD><TD> 8.626,24</TD></TR><TR><TD> AM  </TD><TD>2e éch</TD><TD>116.090,89</TD><TD> 9.674,24</TD></TR><TR><TD>cadre</TD><TD>1 deb </TD><TD>154.052,18</TD><TD>12.837,68</TD></TR><TR><TD>cadre</TD><TD>2 conf</TD><TD>184.837,48</TD><TD>15.403,12</TD></TR><TR><TD>cadre</TD><TD>3 exp </TD><TD>215.641,09</TD><TD>17.970,09</TD></TR></TABLE><p></p><font color=\"808080\"><em>   N.B. : RAB effective : rémunération annuelle brute.<p></p></em></font>",
+                  "nota": "   N.B. : RAB effective : rémunération annuelle brute.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 18 2000-02-08 BO conventions collectives 2000-13 étendu par arrêté du 25 avril 2000 JORF 5 mai 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 949968000000,
+                  "dateFin": 983923200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -8660,13 +8734,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005692704",
+              "cid": "KALISCTA000005692704",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires applicables au 1er juillet 2001",
+              "dateModif": null,
+              "dateDebut": "2001-03-07",
+              "dateFin": "2002-11-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005773058",
+                  "cid": "KALIARTI000005773058",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005692704/KALIARTI000005773058",
+                  "pathTitle": [
+                    "Salaires applicables au 1er juillet 2001"
+                  ],
+                  "content": "<p></p>   Article 1er<p></p><p></p>   A compter du 1er juillet 2001, la grille de salaires applicable pour 39 heures de travail par semaine est la suivante :<p></p><p></p>   Période concernée : du 1er juillet 2001 au 31 décembre 2001.<p></p><p></p>   Dernier SMIC mensuel connu (1er janvier 2001) : 7 101,38 F.<p></p><p></p>   (1) = Classes<p></p><TABLE><TR><TD>(1)  </TD><TD>Catég   </TD><TD> ANCIENNE  </TD><TD>HAUSSE</TD></TR><TR><TD></TD><TD></TD><TD> R.A.B     </TD><TD>(en %)</TD></TR><TR><TD> 1   </TD><TD>  A     </TD><TD> 82 580,16F</TD><TD> 3,00 </TD></TR><TR><TD> 1   </TD><TD>  B     </TD><TD> 83 034,35F</TD><TD> 2,60 </TD></TR><TR><TD> 1   </TD><TD>  C     </TD><TD> 83 197,48F</TD><TD> 3,13 </TD></TR><TR><TD> 2   </TD><TD>  -     </TD><TD> 83 636,02F</TD><TD> 5,46 </TD></TR><TR><TD> 3   </TD><TD>  A     </TD><TD> 85 789,84F</TD><TD> 5,61 </TD></TR><TR><TD> 3   </TD><TD>  B     </TD><TD> 92 391,97F</TD><TD> 1,50 </TD></TR><TR><TD> 4   </TD><TD>  -     </TD><TD> 95 208,47F</TD><TD> 1,50 </TD></TR><TR><TD> AM  </TD><TD>1r éch  </TD><TD>103 514,83F</TD><TD> 1,50 </TD></TR><TR><TD> AM  </TD><TD>2e ech  </TD><TD>116 090,89F</TD><TD> 1,50 </TD></TR><TR><TD>cadre</TD><TD>1 début.</TD><TD>154 052,18F</TD><TD> 1,50 </TD></TR><TR><TD>cadre</TD><TD>2 confir</TD><TD>184 837,48F</TD><TD> 1,50 </TD></TR><TR><TD>cadre</TD><TD>3 expert</TD><TD>215 641,09F</TD><TD> 1,50 </TD></TR></TABLE><p></p><p></p>   (1) = Classe<p></p><TABLE><TR><TD>(1)  </TD><TD>Catég   </TD><TD> R.A.B.    </TD></TR><TR><TD></TD><TD></TD><TD> Théorique </TD></TR><TR><TD> 1   </TD><TD>  A     </TD><TD> 85 057,56F</TD></TR><TR><TD> 1   </TD><TD>  B     </TD><TD> 85 193,24F</TD></TR><TR><TD> 1   </TD><TD>  C     </TD><TD> 85 799,98F</TD></TR><TR><TD> 2   </TD><TD>  -     </TD><TD> 88 200,04F</TD></TR><TR><TD> 3   </TD><TD>  A     </TD><TD> 90 599,99F</TD></TR><TR><TD> 3   </TD><TD>  B     </TD><TD> 93 777,85F</TD></TR><TR><TD> 4   </TD><TD>  -     </TD><TD> 96 636,60F</TD></TR><TR><TD> AM  </TD><TD>1r éch  </TD><TD>105 067,55F</TD></TR><TR><TD> AM  </TD><TD>2e éch  </TD><TD>117 832,25F</TD></TR><TR><TD>cadre</TD><TD>1 début.</TD><TD>156 362,96F</TD></TR><TR><TD>cadre</TD><TD>2 confir</TD><TD>187 610,04F</TD></TR><TR><TD>cadre</TD><TD>3 expert</TD><TD>218 875,71F</TD></TR></TABLE><p></p><p></p>   (1) = Classe<p></p><TABLE><TR><TD> (1) </TD><TD>Catég.</TD><TD> R.A.B.   </TD><TD> Si 12  </TD></TR><TR><TD></TD><TD></TD><TD> Effective</TD><TD> Verse- </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD> ments  </TD></TR><TR><TD></TD><TD></TD><TD> (francs) </TD><TD>(francs)</TD></TR><TR><TD> 1   </TD><TD> A    </TD><TD> 85 216,56</TD><TD> 7 101,38</TD></TR><TR><TD> 1   </TD><TD> B    </TD><TD> 85 216,56</TD><TD> 7 101,38</TD></TR><TR><TD> 1   </TD><TD> C    </TD><TD> 85 799,98</TD><TD> 7 150,00</TD></TR><TR><TD> 2   </TD><TD> -    </TD><TD> 88 200,04</TD><TD> 7 350,00</TD></TR><TR><TD> 3   </TD><TD> A    </TD><TD> 90 599,99</TD><TD> 7 550,00</TD></TR><TR><TD> 3   </TD><TD> B    </TD><TD> 93 777,85</TD><TD> 7 814,82</TD></TR><TR><TD> 4   </TD><TD> -    </TD><TD> 96 636,60</TD><TD> 8 053,05</TD></TR><TR><TD> AM  </TD><TD>1r éch</TD><TD>105 067,55</TD><TD> 8 755,63</TD></TR><TR><TD> AM  </TD><TD>2e éch</TD><TD>117 832,25</TD><TD> 9 819,35</TD></TR><TR><TD>cadre</TD><TD>1 deb </TD><TD>156 362,96</TD><TD>13 030,25</TD></TR><TR><TD>cadre</TD><TD>2 conf</TD><TD>187 610,04</TD><TD>15 634,17</TD></TR><TR><TD>cadre</TD><TD>3 exp </TD><TD>218 875,71</TD><TD>18 239,64</TD></TR></TABLE><p></p> Article 2<p></p>   Les parties contractantes conviennent de se réunir le 19 septembre 2001, à 10 heures, 103, rue La Fayette, à Paris 10e. Article 3<p></p>   Les parties contractantes demandent l'extension du présent avenant, conformément aux dispositions de la loi du 13 novembre 1982.<font color=\"808080\"><em>   NOTA : Arrêté du 27 août 2001 art. 1 : les dispositions de l'avenant n° 25 du 7 février 2001 (salaires) à la convention collective nationale susvisée, sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 27 août 2001 art. 1 : les dispositions de l'avenant n° 25 du 7 février 2001 (salaires) à la convention collective nationale susvisée, sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 19 2001-03-07 BO conventions collectives 2001-25 étendu par arrêté du 27 août 2001 JORF 6 septembre 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 983923200000,
+                  "dateFin": 1037232000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -8680,13 +8828,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005692705",
+              "cid": "KALISCTA000005692705",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires applicables au 1er janvier 2000",
+              "dateModif": null,
+              "dateDebut": "2001-11-14",
+              "dateFin": "2002-11-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005773059",
+                  "cid": "KALIARTI000005773059",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005692705/KALIARTI000005773059",
+                  "pathTitle": [
+                    "Salaires applicables au 1er janvier 2000"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   A compter du 1er janvier 2002, la grille de salaires applicable pour 35 heures de travail par semaine est la suivante :<p></p><p></p>   Période concernée : du 1er janvier 2002 au 31 décembre 2002.<p></p><p></p>   Dernier SMIC mensuel connu (1er juillet 2001) pour 39 heures par semaine : 7 388,68 F ; dernier SMIC mensuel connu (1er juillet 2001) pour 35 heures par semaine : 6 631,01 F.<p></p><p></p><p></p>   (1) = Classe<p></p><TABLE><TR><TD>(1)  </TD><TD>Catég   </TD><TD> ANCIENNE  </TD><TD>      HAUSSE      </TD></TR><TR><TD></TD><TD></TD><TD> R.A.B 39 H</TD><TD>      (en %)      </TD></TR><TR><TD></TD><TD></TD><TD>(en francs)</TD><TD></TD></TR><TR><TD> 1   </TD><TD>  A     </TD><TD> 85 216,56 </TD><TD> SMIC 35 h + 2,55 </TD></TR><TR><TD> 1   </TD><TD>  B     </TD><TD> 85 216,56 </TD><TD> 2,50             </TD></TR><TR><TD> 1   </TD><TD>  C     </TD><TD> 85 799,98 </TD><TD> 2,50             </TD></TR><TR><TD> 2   </TD><TD>  -     </TD><TD> 88 200,04 </TD><TD> 2,50             </TD></TR><TR><TD> 3   </TD><TD>  A     </TD><TD> 90 599,99 </TD><TD> 5,50             </TD></TR><TR><TD> 3   </TD><TD>  B     </TD><TD> 93 777,85 </TD><TD> 2,50             </TD></TR><TR><TD> 4   </TD><TD>  -     </TD><TD> 96 636,60 </TD><TD> 2,50             </TD></TR><TR><TD> AM  </TD><TD>1r éch  </TD><TD>105 067,55 </TD><TD> 2,00             </TD></TR><TR><TD> AM  </TD><TD>2e ech  </TD><TD>117 832,25 </TD><TD> 2,00             </TD></TR><TR><TD>cadre</TD><TD>1 début.</TD><TD>156 362,96 </TD><TD> 2,00             </TD></TR><TR><TD>cadre</TD><TD>2 confir</TD><TD>187 610,04 </TD><TD> 2,00             </TD></TR><TR><TD>cadre</TD><TD>3 expert</TD><TD>218 875,71 </TD><TD> 2,00             </TD></TR></TABLE><p></p><p></p>   (1) = Classe<p></p><TABLE><TR><TD></TD><TD></TD><TD> R.A.B.    </TD></TR><TR><TD> (1) </TD><TD> Catég  </TD><TD> Théorique </TD></TR><TR><TD></TD><TD></TD><TD>(en francs)</TD></TR><TR><TD> 1   </TD><TD>  A     </TD><TD> 85 057,56 </TD></TR><TR><TD> 1   </TD><TD>  B     </TD><TD> 85 193,24 </TD></TR><TR><TD> 1   </TD><TD>  C     </TD><TD> 85 799,98 </TD></TR><TR><TD> 2   </TD><TD>  -     </TD><TD> 88 200,04 </TD></TR><TR><TD> 3   </TD><TD>  A     </TD><TD> 90 599,99 </TD></TR><TR><TD> 3   </TD><TD>  B     </TD><TD> 93 777,85 </TD></TR><TR><TD> 4   </TD><TD>  -     </TD><TD> 96 636,60 </TD></TR><TR><TD> AM  </TD><TD>1r éch  </TD><TD>105 067,55 </TD></TR><TR><TD> AM  </TD><TD>2e éch  </TD><TD>117 832,25 </TD></TR><TR><TD>cadre</TD><TD>1 début.</TD><TD>156 362,96 </TD></TR><TR><TD>cadre</TD><TD>2 confir</TD><TD>187 610,04 </TD></TR><TR><TD>cadre</TD><TD>3 expert</TD><TD>218 875,71 </TD></TR></TABLE><p></p><p></p>   (1) = Classe<p></p><TABLE><TR><TD> (1) </TD><TD>Catég.</TD><TD> R.A.B.   </TD><TD> Si 12     </TD></TR><TR><TD></TD><TD></TD><TD> Effective</TD><TD> Verse-    </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD> ments     </TD></TR><TR><TD></TD><TD></TD><TD> (francs) </TD><TD>(francs)   </TD></TR><TR><TD> 1   </TD><TD> A    </TD><TD> 81 601,21</TD><TD> 6 800,10 *</TD></TR><TR><TD> 1   </TD><TD> B    </TD><TD> 87 346,97</TD><TD> 7 278,91  </TD></TR><TR><TD> 1   </TD><TD> C    </TD><TD> 87 944,98</TD><TD> 7 328,75  </TD></TR><TR><TD> 2   </TD><TD> -    </TD><TD> 90 405,04</TD><TD> 7 533,75  </TD></TR><TR><TD> 3   </TD><TD> A    </TD><TD> 92 864,99</TD><TD> 7 738,75  </TD></TR><TR><TD> 3   </TD><TD> B    </TD><TD> 96 122,30</TD><TD> 8 010,19  </TD></TR><TR><TD> 4   </TD><TD> -    </TD><TD> 99 052,52</TD><TD> 8 254,38  </TD></TR><TR><TD> AM  </TD><TD>1r éch</TD><TD>107 168,90</TD><TD> 8 930,74  </TD></TR><TR><TD> AM  </TD><TD>2e éch</TD><TD>120 188,90</TD><TD>10 015,74  </TD></TR><TR><TD>cadre</TD><TD>1 deb </TD><TD>159 490,22</TD><TD>13 290,85  </TD></TR><TR><TD>cadre</TD><TD>2 conf</TD><TD>191 362,24</TD><TD>15 946,85  </TD></TR><TR><TD>cadre</TD><TD>3 exp </TD><TD>223 253,22</TD><TD>18 604,44  </TD></TR><TR><TD>* </TD><TD> Débutants pendant 6 mois.</TD></TR><TR><TD></TD></TR><TR><TD>NB </TD><TD>   RAB effective </TD><TD> rémunération</TD></TR><TR><TD>annuelle brute.</TD></TR><TR><TD></TD></TR></TABLE><p></p> ------------------------------------- Article 2<p></p>   Les parties contractantes demandent l'extension  du présent avenant, conformément aux dispositions de la loi du 13 novembre 1982.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 20 2001-11-14 BO conventions collectives 2002-8 étendu par arrêté du 21 juin 2002 JORF 4 juillet 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1005696000000,
+                  "dateFin": 1037836800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

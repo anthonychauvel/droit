@@ -11722,13 +11722,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731865",
+              "cid": "KALISCTA000005731865",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Revalorisation de la grille des salaires",
+              "dateModif": null,
+              "dateDebut": "2003-12-19",
+              "dateFin": "2005-02-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005870534",
+                  "cid": "KALIARTI000005870534",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731865/KALIARTI000005870534",
+                  "pathTitle": [
+                    "Revalorisation de la grille des salaires"
+                  ],
+                  "content": "<p></p>   Une revalorisation de la grille des salaires, conformément à l'avenant ci-joint, interviendra à la date de parution de l'arrêté ministériel d'extension au Journal officiel.<p></p><p></p>   Fait à Paris, le 19 décembre 2003.<p></p><p></p>   Grille des salaires applicable dès la publication de l'arrêté ministériel d'extension au Journal officiel<p></p><p></p><TABLE><TR><TD> CATEGORIE                 </TD><TD> ECHELON </TD><TD>   SALAIRE  </TD></TR><TR><TD> Personnels de service     </TD><TD>   1     </TD><TD> 1 172,74   </TD></TR><TR><TD></TD><TD>   2     </TD><TD> 1 189,00   </TD></TR><TR><TD> Secrétariat administratif </TD><TD></TD><TD> 1 189,00   </TD></TR><TR><TD> Secrétariat aide-comptable</TD><TD></TD><TD> 1 189,00   </TD></TR><TR><TD> Comptable                 </TD><TD></TD><TD> 1 281,25   </TD></TR><TR><TD> Employé en prothèse       </TD><TD></TD><TD></TD></TR><TR><TD> dentaire                  </TD><TD>   1     </TD><TD> 1 189,00   </TD></TR><TR><TD> Employé en prothèse       </TD><TD></TD><TD></TD></TR><TR><TD> dentaire                  </TD><TD>   2     </TD><TD> 1 192,08   </TD></TR><TR><TD> Prothésiste dentaire      </TD><TD>  P1     </TD><TD> 1 199,25   </TD></TR><TR><TD></TD><TD>  P2     </TD><TD> 1 209,50   </TD></TR><TR><TD></TD><TD>  P3     </TD><TD> 1 230,00   </TD></TR><TR><TD> Prothésiste dentaire      </TD><TD>  PQ1    </TD><TD> 1 280,34   </TD></TR><TR><TD></TD><TD>  PQ2    </TD><TD> 1 410,75   </TD></TR><TR><TD> Prothésiste dentaire      </TD><TD></TD><TD></TD></TR><TR><TD> qualifié agent de maitrise</TD><TD>  PQ3    </TD><TD> 1 545,70   </TD></TR><TR><TD> Prothésiste dentaire      </TD><TD></TD><TD></TD></TR><TR><TD> hautement qualifié        </TD><TD>  PHQ1   </TD><TD> 1 572,99   </TD></TR><TR><TD></TD><TD>  PHQ2   </TD><TD> 1 662,53   </TD></TR><TR><TD> Chef de laboratoire       </TD><TD></TD><TD> 2 005,07   </TD></TR><TR><TD> Prime CPES                </TD><TD></TD><TD> 123 00     </TD></TR></TABLE><p></p><p></p>   Grille des salaires basée sur la durée légale hebdomadaire de 35 heures, soit une durée légale mensuelle de 151,67 heures.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2003-12-19 en vigueur à l'extension BO conventions collectives 2004-1 étendu par arrêté du 11 mars 2004 JORF 23 mars 2004",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1071792000000,
+                  "dateFin": 1107475200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -11742,13 +11816,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731866",
+              "cid": "KALISCTA000005731866",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires",
+              "dateModif": null,
+              "dateDebut": "2003-12-19",
+              "dateFin": "2005-02-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005870535",
+                  "cid": "KALIARTI000005870535",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731866/KALIARTI000005870535",
+                  "pathTitle": [
+                    "Salaires"
+                  ],
+                  "content": "<p></p>   Une revalorisation de la grille des salaires, conformément à l'avenant<p></p> ci-joint, interviendra au 1er avril 2004, après la parution de l'arrêté ministériel d'extension au Journal officiel.<p></p><p></p>   Fait à Paris, le 19 décembre 2003.<p></p><p></p>   Grille des salaires basée sur la durée légale hebdomadaire de 35 heures soit une durée légale mensuelle de 151,67 heures (Applicable au 1er avril 2004 après publication de l'arrêté ministériel d'extension au Journal officiel)<p></p><TABLE><TR><TD> CATEGORIE                 </TD><TD> ECHELON </TD><TD>   SALAIRE  </TD></TR><TR><TD> Personnels de service     </TD><TD>   1     </TD><TD> 1 190,34   </TD></TR><TR><TD></TD><TD>   2     </TD><TD> 1 206,84   </TD></TR><TR><TD> Secrétariat administratif </TD><TD></TD><TD> 1 206,84   </TD></TR><TR><TD> Secrétariat aide-comptable</TD><TD></TD><TD> 1 206,84   </TD></TR><TR><TD> Comptable                 </TD><TD></TD><TD> 1 300,47   </TD></TR><TR><TD> Employé en prothèse       </TD><TD>   1     </TD><TD> 1 206,84   </TD></TR><TR><TD> dentaire                  </TD><TD>   2     </TD><TD> 1 209,97   </TD></TR><TR><TD> Prothésiste dentaire      </TD><TD>  P1     </TD><TD> 1 217,24   </TD></TR><TR><TD></TD><TD>  P2     </TD><TD> 1 227,65   </TD></TR><TR><TD></TD><TD>  P3     </TD><TD> 1 248,45   </TD></TR><TR><TD> Prothésiste dentaire      </TD><TD>  PQ1    </TD><TD> 1 299,55   </TD></TR><TR><TD>     qualifié              </TD><TD>  PQ2    </TD><TD> 1 431,92   </TD></TR><TR><TD> Prothésiste dentaire      </TD><TD></TD><TD></TD></TR><TR><TD> qualifié agent de maitrise</TD><TD>  PQ3    </TD><TD> 1 568,89   </TD></TR><TR><TD> Prothésiste dentaire      </TD><TD></TD><TD></TD></TR><TR><TD> hautement qualifié        </TD><TD>  PHQ1   </TD><TD> 1 596,59   </TD></TR><TR><TD></TD><TD>  PHQ2   </TD><TD> 1 687,47   </TD></TR><TR><TD> Chef de laboratoire       </TD><TD></TD><TD> 2 035,15   </TD></TR><TR><TD> Prime CPES                </TD><TD></TD><TD> 124,85     </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2003-12-19 en vigueur le 1er avril 2004 BO conventions collectives 2004-3 étendu par arrêté du 11 mars 2004 JORF 23 mars 2004",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1071792000000,
+                  "dateFin": 1107475200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -11762,13 +11910,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731867",
+              "cid": "KALISCTA000005731867",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires applicable au 1er avril 2005.",
+              "dateModif": null,
+              "dateDebut": "2005-02-04",
+              "dateFin": "2006-02-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005870536",
+                  "cid": "KALIARTI000005870536",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731867/KALIARTI000005870536",
+                  "pathTitle": [
+                    "Grille de salaires applicable au 1er avril 2005."
+                  ],
+                  "content": "<p></p>   Une revalorisation de la grille des salaires conformément à l'avenant ci-joint interviendra au 1er avril 2005, après la parution de l'arrêté ministériel d'extension au Journal officiel.<p></p><p></p>   Fait à Paris, le 4 février 2005.<p></p><p></p>   Grille des salaires applicable au 1er avril 2005<p></p><TABLE><TR><TD> Personnels de service     </TD><TD>   1     </TD><TD> 1 227,30   </TD></TR><TR><TD></TD><TD>   2     </TD><TD> 1 237,01   </TD></TR><TR><TD> Secrétariat administratif </TD><TD></TD><TD> 1 237,01   </TD></TR><TR><TD> Secrétariat aide-comptable</TD><TD></TD><TD> 1 237,01   </TD></TR><TR><TD> Comptable                 </TD><TD></TD><TD> 1 332,98   </TD></TR><TR><TD> Employé en prothèse       </TD><TD>   1     </TD><TD> 1 240,00   </TD></TR><TR><TD> dentaire                  </TD><TD>   2     </TD><TD> 1 243,24   </TD></TR><TR><TD> Prothésiste dentaire      </TD><TD>  P1     </TD><TD> 1 250,71   </TD></TR><TR><TD></TD><TD>  P2     </TD><TD> 1 261,41   </TD></TR><TR><TD></TD><TD>  P3     </TD><TD> 1 282,78   </TD></TR><TR><TD> Prothésiste dentaire      </TD><TD>  PQ1    </TD><TD> 1 319,04   </TD></TR><TR><TD>     qualifié              </TD><TD>  PQ2    </TD><TD> 1 460,56   </TD></TR><TR><TD> Prothésiste dentaire      </TD><TD></TD><TD></TD></TR><TR><TD> qualifié agent de maitrise</TD><TD>  PQ3    </TD><TD> 1 584,58   </TD></TR><TR><TD> Prothésiste dentaire      </TD><TD></TD><TD></TD></TR><TR><TD> hautement qualifié        </TD><TD>  PHQ1   </TD><TD> 1 612,55   </TD></TR><TR><TD></TD><TD>  PHQ2   </TD><TD> 1 712,78   </TD></TR><TR><TD> Chef de laboratoire       </TD><TD></TD><TD> 2 055,50   </TD></TR><TR><TD> Prime CPES                </TD><TD></TD><TD> 127,35     </TD></TR></TABLE><p></p><p></p>   Grille des salaires basée sur la durée légale hebdomadaire de 35 heures, soit une durée légale mensuelle de 151,67 heures.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2005-02-04 BO conventions collectives 2005-12 étendu par arrêté du 27 juin 2005 JORF 7 juillet 2005",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1107475200000,
+                  "dateFin": 1139529600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

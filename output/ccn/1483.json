@@ -13655,13 +13655,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719936",
+              "cid": "KALISCTA000005719936",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des salaires minima.",
+              "dateModif": null,
+              "dateDebut": "1998-11-01",
+              "dateFin": "2000-11-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005840552",
+                  "cid": "KALIARTI000005840552",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719936/KALIARTI000005840552",
+                  "pathTitle": [
+                    "Barème des salaires minima."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Le barème des salaires minima garantis des employés, objet de l'annexe II à la convention collective nationale du 25 novembre 1987, se trouve modifié de la façon suivante et sera applicable à compter du 1er du mois suivant la publication de l'extension au Journal officiel.<p></p> Employés :<p></p><TABLE><TR><TD> Catégorie 1 </TD><TD> 6.800 F </TD></TR><TR><TD> Catégorie 2 </TD><TD> 6.825 F </TD></TR><TR><TD> Catégorie 3 </TD><TD> 6.850 F </TD></TR><TR><TD> Catégorie 4 </TD><TD> 6.950 F </TD></TR><TR><TD> Catégorie 5 </TD><TD> 7.200 F </TD></TR><TR><TD> Catégorie 6 </TD><TD> 7.300 F </TD></TR><TR><TD> Catégorie 7 </TD><TD> 7.500 F </TD></TR><TR><TD> Catégorie 8 </TD><TD> 7.750 F </TD></TR></TABLE><p></p>  Primes d'ancienneté inchangées.Article 2<p></p> Cadres :<p></p><TABLE><TR><TD> Catégorie A1</TD><TD>  8.650 F </TD></TR><TR><TD> Catégorie A2</TD><TD>  9.250 F </TD></TR><TR><TD> Catégorie B </TD><TD> 10.200 F </TD></TR><TR><TD> Catégorie C </TD><TD> 11.500 F </TD></TR><TR><TD> Catégorie D </TD><TD> 13.000 F </TD></TR></TABLE><p></p>Article 3<p></p><p></p>   Le présent avenant sera établi en nombre suffisant d'exemplaires pour être remis à chacune des parties contractantes et pour être déposé selon les dispositions de l'article L. 132-10 du code du travail.<p></p>Article 4<p></p><p></p>   Les organisations signataires conviennent de solliciter du ministère du travail un arrêté d'extension du présent avenant, comme prévu à l'article 42 de la convention collective nationale.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant N° 12 1998-06-18 en vigueur le 1er du mois suivant l'extension BO conventions collectives 98-32 étendu par arrêté du 1er octobre 1998 JORF 14 octobre 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires Annexe II, employés, cadres",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 909878400000,
+                  "dateFin": 974160000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13675,13 +13749,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719937",
+              "cid": "KALISCTA000005719937",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Barème des salaires minima",
+              "dateModif": null,
+              "dateDebut": "2001-04-01",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005840553",
+                  "cid": "KALIARTI000005840553",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005719937/KALIARTI000005840553",
+                  "pathTitle": [
+                    "Barème des salaires minima"
+                  ],
+                  "content": "<p></p><p align=\"center\">Article 1er</p><p>   Le barème des rémunérations minima garanties des employés et du personnel d'encadrement, objet de l'annexe II de la convention collective nationale du 25 novembre 1987, se trouve modifié de la façon suivante et sera applicable à compter du 1er du mois suivant la publication de l'extension au Journal officiel :</p><p align=\"center\"> Rémunérations minima des employés</p><p align=\"center\"> sur la base de 169 heures mensuelles</p><p></p><p></p><p><table><tbody><tr><td>CATÉGORIE</td><td>EN FRANCS</td></tr><tr><td>    1       </td><td>  7 110  </td></tr><tr><td>    2       </td><td>  7 135  </td></tr><tr><td>    3       </td><td>  7 160  </td></tr><tr><td>    4       </td><td>  7 260  </td></tr><tr><td>    5       </td><td>  7 610  </td></tr><tr><td>    6       </td><td>  7 710  </td></tr><tr><td>    7       </td><td>  7 950  </td></tr><tr><td>    8       </td><td>  8 200  </td></tr></tbody></table></p><p align=\"center\"> Rémunérations minima du personnel d'encadrement</p><p align=\"center\"> sur la base de 169 heures mensuelles</p><p></p><p></p><p><table><tbody><tr><td>CATÉGORIE</td><td>EN FRANCS</td></tr><tr><td>    A 1     </td><td>    9 100</td></tr><tr><td>    A 2     </td><td>    9 700</td></tr><tr><td>    B       </td><td>   10 610</td></tr><tr><td>    C       </td><td>   11 910</td></tr><tr><td>    D       </td><td>   13 410</td></tr></tbody></table></p><p align=\"center\">Rémunérations minima du personnel d'encadrement</p><p align=\"center\"> en fonction de l'ancienneté sur la base de 169 heures mensuelles</p><p></p><p></p><p><table><tbody><tr><td></td><td>  B   </td><td>  C    </td><td>  D    </td></tr><tr><td>   3 ans </td><td>10 810</td><td> 12 110</td><td> 13 610</td></tr><tr><td>   6 ans </td><td>10 910</td><td> 12 210</td><td> 13 710</td></tr><tr><td>   9 ans </td><td>11 010</td><td> 12 310</td><td> 13 810</td></tr><tr><td>  12 ans </td><td>11 110</td><td> 12 410</td><td> 13 910</td></tr><tr><td>  15 ans </td><td>11 210</td><td> 12 510</td><td> 14 800</td></tr></tbody></table></p><p align=\"center\"> Tableau des primes d'ancienneté</p><p></p><p></p><p><table><tbody><tr><td>CATÉGORIE</td><td>3 ANS</td><td>6 ANS</td><td>9 ANS</td><td>12 ANS</td><td>15 ANS</td></tr><tr><td>  1 et 2    </td><td> 110 </td><td> 185 </td><td> 240 </td><td> 300  </td><td> 360  </td></tr><tr><td>  3 et 4    </td><td> 120 </td><td> 195 </td><td> 250 </td><td> 310  </td><td> 370  </td></tr><tr><td>  5 et 6    </td><td> 130 </td><td> 205 </td><td> 270 </td><td> 340  </td><td> 420  </td></tr><tr><td>  7 et 8    </td><td> 140 </td><td> 210 </td><td> 290 </td><td> 350  </td><td> 430  </td></tr></tbody></table></p><p></p><p></p><p><table><tbody><tr><td>CATÉGORIE</td><td>3 ANS</td><td>6 ANS</td><td>9 ANS</td><td>12 ANS</td><td>15 ANS</td></tr><tr><td> A 1 et A 2 </td><td> 170 </td><td> 265 </td><td> 330 </td><td> 400  </td><td> 480  </td></tr></tbody></table></p><p>   Note : la prime d'ancienneté est établie au prorata du temps de travail, pour les salariés à temps partiel. </p><p align=\"center\">Article 2</p><p>   Il est rappelé que, conformément à l'article 5 de l'accord du 4 mai 1999 relatif à l'aménagement et à la réduction du temps de travail, étendu par arrêté du 4 août 1999 (JO du 8 août), la mise en oeuvre de l'accord dans l'entreprise s'accompagne du maintien des salaires bruts de base appliqués dans l'entreprise.</p><p>   La rémunération à prendre en compte est la rémunération du salarié hors primes exceptionnelles, heures supplémentaires et majorations diverses. </p><p align=\"center\">Article 3</p><p>   L'entrée en vigueur du présent avenant est subordonnée à son extension. Le présent accord est fait en nombre suffisant d'exemplaires pour remise à chacune des organisations signataires et dépôt dans les conditions prévues à l'article L. 132-10 du code du travail.</p><p align=\"center\"> Article 4</p><p align=\"left\">Les parties signataires demandent l'extension du présent accord au ministère de l'emploi et de la solidarité.</p><p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 13 2000-09-22 en vigueur le 1er jour du mois suivant l'extension BO conventions collectives 2000-50 étendu par arrêté du 21 février 2001 JORF 3 mars 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 986083200000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13696,12 +13844,77 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005840554",
+              "cid": "KALIARTI000005840554",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005840554",
+              "pathTitle": [],
+              "content": "<p>Article 1er</p><p>Le barème des rémunérations minimales garanties des employés et du personnel d'encadrement, objet de l'annexe II de la convention collective nationale du 25 novembre 1987, se trouve modifié de la façon suivante et sera applicable à compter du 1er du mois suivant la publication de l'extension au Journal officiel.</p><p>I.-Rémunérations minimales des employés sur la base de 151,67 heures mensuelles</p><p>Catégorie 1 : 1 173 Euros.</p><p>Catégorie 2 : 1 175 Euros.</p><p>Catégorie 3 : 1 180 Euros.</p><p>Catégorie 4 : 1 200 Euros.</p><p>Catégorie 5 : 1 250 Euros.</p><p>Catégorie 6 : 1 280 Euros.</p><p>Catégorie 7 : 1 310 Euros.</p><p>Catégorie 8 : 1 350 Euros.</p><p>II.-Rémunérations minimales du personnel d'encadrement sur la base de 151,67 heures mensuelles Euros</p><p>Catégorie A 1 : 1 460.</p><p>Catégorie A 2 : 1 560.</p><p>Catégorie B : 1 750.</p><p>Catégorie C : 1 950.</p><p>Catégorie D : 2 200.</p><p>Rémunérations minimales du personnel d'encadrement en fonction de l'ancienneté sur la base de 151,67 heures mensuelles</p><p>Euros.</p><table><tbody><tr><td></td><td>B</td><td>C</td><td>D</td></tr><tr><td>3 ans</td><td>1 800</td><td>2 000</td><td>2 250</td></tr><tr><td>6 ans</td><td>1 815</td><td>2 015</td><td>2 265</td></tr><tr><td>9 ans</td><td>1 830</td><td>2 030</td><td>2 280</td></tr><tr><td>12 ans</td><td>1 845</td><td>2 045</td><td>2 295</td></tr><tr><td>15 ans</td><td>1 860</td><td>2 060</td><td>2 310</td></tr></tbody></table><p>Article 2</p><p>L'entrée en vigueur du présent avenant est subordonnée à son extension. Le présent accord est fait en nombre suffisant d'exemplaires pour remise à chacune des organisations signataires et dépôt dans les conditions prévues à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">article L. 132-10 du code du travail</a>.</p><p>Article 3</p><p>Les parties signataires demandent l'extension du présent accord au ministère de l'emploi et de la cohésion sociale.</p><p>Fait à Paris, le 29 avril 2004.</p><p><font color=\"808080\"><em>NOTA : Arrêté du 4 août 2004 : Le barème des rémunérations minimales des employés est étendu sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée, qui instaure une garantie de rémunération mensuelle.</em></font></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 14 2004-04-29 BO conventions collectives 2004-25 étendu par arrêté du 4 août 2004 JORF 19 août 2004",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "LEGITEXT000006072050",
+                  "textTitle": "Code du travail - art. L132-10 (Ab)",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "L132-10",
+                  "articleId": "LEGIARTI000006647014",
+                  "natureText": "CODE",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 122860800000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires.",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1083196800000,
+              "dateFin": 1138665600000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
