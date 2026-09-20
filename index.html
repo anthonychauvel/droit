@@ -1472,6 +1472,16 @@ async function chargerAcco(){
     var q = document.getElementById('q');
     if(q && q.value.trim()) runSearch();
   }
+  // Amener le groupe « Accords » sous les yeux. Sans ça, la page se redessine
+  // là où elle était : on a cliqué sur un bouton, les résultats sont apparus
+  // quelque part plus bas, et rien ne le dit. Le délai laisse le temps au
+  // rendu de se poser avant de mesurer la position.
+  setTimeout(function(){
+    var cible = document.getElementById('grp-acco');
+    if(!cible) return;
+    try{ cible.scrollIntoView({behavior:'smooth', block:'start'}); }
+    catch(e){ cible.scrollIntoView(); }
+  }, 80);
 }
 
 async function loadFromSummaries(){
