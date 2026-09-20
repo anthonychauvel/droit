@@ -7352,13 +7352,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005706938",
+              "cid": "KALISCTA000005706938",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes minima au 1er janvier 2000",
+              "dateModif": null,
+              "dateDebut": "2000-01-14",
+              "dateFin": "2005-06-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005809177",
+                  "cid": "KALIARTI000005809177",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005706938/KALIARTI000005809177",
+                  "pathTitle": [
+                    "Barèmes minima au 1er janvier 2000"
+                  ],
+                  "content": "<p></p>   Barèmes minima au 1er janvier 2000<p></p> avec minima d'ancienneté intégrant une variation de 2,5 % tous les 4 ans<p></p><p></p><TABLE><TR><TD>CAT</TD><TD>  MINIMA  </TD><TD> MINIMA</TD><TD> MINIMA</TD><TD> MINIMA </TD><TD> MINIMA </TD></TR><TR><TD></TD><TD>01/01/2000</TD><TD>+ 4 ans</TD><TD>+ 8 ans</TD><TD>+ 12 ans</TD><TD>+ 16 ans</TD></TR><TR><TD>             Base 35 heures                     </TD></TR><TR><TD>E1 </TD><TD>  6 909   </TD><TD> 7 082 </TD><TD> 7 254 </TD><TD>  7 427 </TD><TD>  7 600 </TD></TR><TR><TD>E2 </TD><TD>  6 942   </TD><TD> 7 116 </TD><TD> 7 289 </TD><TD>  7 463 </TD><TD>  7 636 </TD></TR><TR><TD>E3 </TD><TD>  6 976   </TD><TD> 7 150 </TD><TD> 7 325 </TD><TD>  7 499 </TD><TD>  7 674 </TD></TR><TR><TD>E4 </TD><TD>  7 009   </TD><TD> 7 184 </TD><TD> 7 359 </TD><TD>  7 535 </TD><TD>  7 709 </TD></TR><TR><TD>E5 </TD><TD>  7 053   </TD><TD> 7 229 </TD><TD> 7 406 </TD><TD>  7 582 </TD><TD>  7 758 </TD></TR><TR><TD>E6 </TD><TD>  7 086   </TD><TD> 7 263 </TD><TD> 7 440 </TD><TD>  7 617 </TD><TD>  7 795 </TD></TR><TR><TD>E7 </TD><TD>  7 224   </TD><TD> 7 405 </TD><TD> 7 585 </TD><TD>  7 766 </TD><TD>  7 946 </TD></TR><TR><TD>E8 </TD><TD>  7 341   </TD><TD> 7 525 </TD><TD> 7 708 </TD><TD>  7 892 </TD><TD>  8 075 </TD></TR><TR><TD>E9 </TD><TD>  7 513   </TD><TD> 7 701 </TD><TD> 7 889 </TD><TD>  8 076 </TD><TD>  8 264 </TD></TR><TR><TD>T1 </TD><TD>  8 119   </TD><TD> 8 322 </TD><TD> 8 525 </TD><TD>  8 728 </TD><TD>  8 931 </TD></TR><TR><TD>T2 </TD><TD>  8 814   </TD><TD> 9 034 </TD><TD> 9 255 </TD><TD>  9 475 </TD><TD>  9 695 </TD></TR><TR><TD>T3 </TD><TD>  9 485   </TD><TD> 9 722 </TD><TD> 9 959 </TD><TD> 10 196 </TD><TD> 10 434 </TD></TR><TR><TD>T4 </TD><TD>  9 898   </TD><TD>10 145 </TD><TD>10 393 </TD><TD> 10 640 </TD><TD> 10 888 </TD></TR><TR><TD>AM1</TD><TD>  7 377   </TD><TD> 7 561 </TD><TD> 7 746 </TD><TD>  7 930 </TD><TD>  8 115 </TD></TR><TR><TD>AM2</TD><TD>  8 119   </TD><TD> 8 322 </TD><TD> 8 525 </TD><TD>  8 728 </TD><TD>  8 931 </TD></TR><TR><TD>AM3</TD><TD>  8 873   </TD><TD> 9 095 </TD><TD> 9 317 </TD><TD>  9 538 </TD><TD>  9 760 </TD></TR><TR><TD>AM4</TD><TD>  9 485   </TD><TD> 9 722 </TD><TD> 9 959 </TD><TD> 10 196 </TD><TD> 10 434 </TD></TR><TR><TD>C1a</TD><TD> 10 122   </TD><TD>10 357 </TD><TD>10 628 </TD><TD> 10 881 </TD><TD> 11 134 </TD></TR><TR><TD>C1b</TD><TD> 10 628   </TD><TD>10 894 </TD><TD>11 159 </TD><TD> 11 425 </TD><TD> 11 691 </TD></TR><TR><TD>C2a</TD><TD> 11 441   </TD><TD>11 727 </TD><TD>12 013 </TD><TD> 12 299 </TD><TD> 12 585 </TD></TR><TR><TD>C2b</TD><TD> 12 232   </TD><TD>12 538 </TD><TD>12 844 </TD><TD> 13 149 </TD><TD> 13 455 </TD></TR><TR><TD>C2c</TD><TD> 13 057   </TD><TD>13 383 </TD><TD>13 710 </TD><TD> 14 036 </TD><TD> 14 363 </TD></TR><TR><TD>C3a</TD><TD> 13 857   </TD><TD>14 203 </TD><TD>14 550 </TD><TD> 14 896 </TD><TD> 15 243 </TD></TR><TR><TD>C3b</TD><TD> 14 813   </TD><TD>15 183 </TD><TD>15 554 </TD><TD> 15 924 </TD><TD></TD></TR><TR><TD>C3c</TD><TD> 15 579   </TD><TD>15 968 </TD><TD>16 358 </TD><TD> 16 747 </TD><TD></TD></TR><TR><TD>C4 </TD><TD> 16 343   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>C5 </TD><TD> 17 153   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><p></p>   Barèmes minima au 1er janvier 2001<p></p> avec minima d'ancienneté intégrant une variation de 2,5 % tous les 4 ans<p></p><p></p><TABLE><TR><TD>CAT</TD><TD>  MINIMA  </TD><TD> MINIMA</TD><TD> MINIMA</TD><TD> MINIMA </TD><TD> MINIMA </TD></TR><TR><TD></TD><TD>01/01/2000</TD><TD>+ 4 ans</TD><TD>+ 8 ans</TD><TD>+ 12 ans</TD><TD>+ 16 ans</TD></TR><TR><TD>             Base 35 heures                     </TD></TR><TR><TD>C3b</TD><TD>  15 519  </TD><TD> 15 907</TD><TD> 16 295</TD><TD> 16 683 </TD><TD></TD></TR><TR><TD>C3c</TD><TD>  16 321  </TD><TD> 16 729</TD><TD> 17 137</TD><TD> 17 545 </TD><TD></TD></TR><TR><TD>C4 </TD><TD>  17 122  </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>C5 </TD><TD>  17 970  </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Convention collective nationale 2000-01-14 étendue par arrêté du 24 juillet 2000 JORF 9 août 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 947808000000,
+                  "dateFin": 1118016000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

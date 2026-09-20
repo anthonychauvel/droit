@@ -13483,13 +13483,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693599",
+              "cid": "KALISCTA000005693599",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires à partir du 1er mars 1995",
+              "dateModif": null,
+              "dateDebut": "1995-03-01",
+              "dateFin": "1996-08-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005775236",
+                  "cid": "KALIARTI000005775236",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005693599/KALIARTI000005775236",
+                  "pathTitle": [
+                    "Grille de salaires à partir du 1er mars 1995"
+                  ],
+                  "content": "<p></p>   Application au 1er jour du mois suivant la parution de l'arrêté d'extension (coefficient 100 : 5.294 F).<p></p><p></p> (1) = NIVEAU<p></p> (2) = COEFFICIENT<p></p> (3) = VALEUR DU POINT<p></p> (4) = SALAIRE MINIMUM EN FRANCS<p></p><p></p><TABLE><TR><TD> (1) </TD><TD> (2) </TD><TD>  (3)  </TD><TD>  (4)   </TD></TR><TR><TD>  1  </TD><TD> 140 </TD><TD> 11,85 </TD><TD> 6.020 a</TD></TR><TR><TD>  2  </TD><TD> 150 </TD><TD> 11,85 </TD><TD> 6.072 b</TD></TR><TR><TD>  3  </TD><TD> 170 </TD><TD> 11,85 </TD><TD> 6.124 c</TD></TR><TR><TD>  4  </TD><TD> 190 </TD><TD> 11,85 </TD><TD> 6.361 c</TD></TR><TR><TD>  5  </TD><TD> 220 </TD><TD> 13,90 </TD><TD> 6.962  </TD></TR><TR><TD>  6  </TD><TD> 260 </TD><TD> 16,28 </TD><TD> 7.900 c</TD></TR><TR><TD>  7  </TD><TD> 300 </TD><TD> 16,28 </TD><TD> 8.550  </TD></TR><TR><TD>  8  </TD><TD> 360 </TD><TD> 18,13 </TD><TD>10.010 c</TD></TR><TR><TD>  9  </TD><TD> 450 </TD><TD> 19,50 </TD><TD>12.120 c</TD></TR></TABLE><p></p> (a) Dont P.C.B. 252F. (b) Dont P.C.B. 185,50F. (c) Arrondi.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 7 1994-12-16 BO conventions collectives 94-52, étendu par arrêté du 8 février 1995 JORF 18 février 1995 en vigueur le 1er mars 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 794016000000,
+                  "dateFin": 838857600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13503,13 +13577,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693600",
+              "cid": "KALISCTA000005693600",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires à partir du 1er jour du mois suivant la publication de l'arrêté d'extension au Journal officiel",
+              "dateModif": null,
+              "dateDebut": "1996-08-01",
+              "dateFin": "1997-08-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005775237",
+                  "cid": "KALIARTI000005775237",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005693600/KALIARTI000005775237",
+                  "pathTitle": [
+                    "Grille de salaires à partir du 1er jour du mois suivant la publication de l'arrêté d'extension au Journal officiel"
+                  ],
+                  "content": "<p></p>   Application au 1er jour du mois suivant la publication<p></p> de l'arrêté d'extension au Journal officiel<p></p><p></p>   Coefficient 100 : 5 477 F.<p></p><p></p> (1) = NIVEAU<p></p> (2) = COEFFICIENT<p></p> (3) = VALEUR DU POINT (EN FRANCS)<p></p> (4) = SALAIRE MINIMUM (EN FRANCS)<p></p><p></p><TABLE><TR><TD> (1) </TD><TD> (2) </TD><TD>  (3)  </TD><TD>  (4)   </TD></TR><TR><TD>  1  </TD><TD> 140 </TD><TD> 12,26 </TD><TD> 6.251 a</TD></TR><TR><TD>  2  </TD><TD> 150 </TD><TD> 12,26 </TD><TD> 6.300 b</TD></TR><TR><TD>  3  </TD><TD> 170 </TD><TD> 12,26 </TD><TD> 6.350 c</TD></TR><TR><TD>  4  </TD><TD> 190 </TD><TD> 12,26 </TD><TD> 6.581 d</TD></TR><TR><TD>  5  </TD><TD> 220 </TD><TD> 14,11 </TD><TD> 7.170 d</TD></TR><TR><TD>  6  </TD><TD> 260 </TD><TD> 16,63 </TD><TD> 8.138 d</TD></TR><TR><TD>  7  </TD><TD> 300 </TD><TD> 16,65 </TD><TD> 8.807 d</TD></TR><TR><TD>  8  </TD><TD> 360 </TD><TD> 18,59 </TD><TD>10.311 d</TD></TR><TR><TD>  9  </TD><TD> 450 </TD><TD> 21,67 </TD><TD>13.062 d</TD></TR></TABLE><p></p> (a) Dont prime complémentaire de base de 283F. (b) Dont prime complémentaire de base de 210F. (c) Dont prime complémentaire de base de 15F. (d) Arrondi.<font color=\"808080\"><em>   NOTA : Arrêté du 24 juin 1996 art. 1 : l'accord du 21 février 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 24 juin 1996 art. 1 : l'accord du 21 février 1996 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 8 1996-02-21 en vigueur le 1er août 1996, BO conventions collectives 96-18, étendu par arrêté du 24 juin 1996 JORF 4 juillet 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 838857600000,
+                  "dateFin": 870393600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13523,13 +13671,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693601",
+              "cid": "KALISCTA000005693601",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires 1997",
+              "dateModif": null,
+              "dateDebut": "1997-08-01",
+              "dateFin": "1998-08-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005775238",
+                  "cid": "KALIARTI000005775238",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005693601/KALIARTI000005775238",
+                  "pathTitle": [
+                    "Salaires 1997"
+                  ],
+                  "content": "Application au 1er jour du mois suivant la publication<p></p> de l'arrêté d'extension au Journal officiel<p></p><TABLE><TR><TD>NIVEAU</TD><TD>COEF </TD><TD>VALEUR  </TD><TD>   SALAIRE </TD></TR><TR><TD></TD><TD></TD><TD>du point</TD><TD>   minimum </TD></TR><TR><TD>  1   </TD><TD> 140 </TD><TD>13,03F  </TD><TD> 6 505F (1)</TD></TR><TR><TD>  2   </TD><TD> 150 </TD><TD>13,03F  </TD><TD> 6 555F (2)</TD></TR><TR><TD>  3   </TD><TD> 170 </TD><TD>13,03F  </TD><TD> 6 615F (3)</TD></TR><TR><TD>  4   </TD><TD> 190 </TD><TD>13,03F  </TD><TD> 6 745F    </TD></TR><TR><TD>  5   </TD><TD> 220 </TD><TD>14,78F  </TD><TD> 7 346F    </TD></TR><TR><TD>  6   </TD><TD> 260 </TD><TD>17,25F  </TD><TD> 8 333F    </TD></TR><TR><TD>  7   </TD><TD> 300 </TD><TD>17,25F  </TD><TD> 9 023F    </TD></TR><TR><TD>  8   </TD><TD> 360 </TD><TD>19,20F  </TD><TD>10 565F    </TD></TR><TR><TD>  9   </TD><TD> 450 </TD><TD>23,28F  </TD><TD>13 721F    </TD></TR></TABLE><p></p><p></p>   (1) Dont prime complémentaire de base de 411 F.<p></p>   (2) Dont prime complémentaire de base de 330,75 F.<p></p>   (3) Dont prime complémentaire de base de 130,25 F. <p></p>   La valeur constante correspondant au coefficient 100 est fixée à 5 573 F.<font color=\"808080\"><em>   NOTA : Arrêté du 10 juillet 1997 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 10 juillet 1997 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1997-04-17 en vigueur le 1er jour du mois suivant la publication de l'arrêté d'extension BO conventions collectives 97-20, étendu par arrêté du 10 juillet 1997 JORF 22 juillet 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 870393600000,
+                  "dateFin": 901929600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

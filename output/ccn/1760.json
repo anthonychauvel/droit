@@ -11416,7 +11416,9 @@
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14440,13 +14442,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705125",
+              "cid": "KALISCTA000005705125",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juillet 2006.",
+              "dateModif": null,
+              "dateDebut": "2006-04-28",
+              "dateFin": "2006-09-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005803880",
+                  "cid": "KALIARTI000005803880",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705125/KALIARTI000005803880",
+                  "pathTitle": [
+                    "Salaires au 1er juillet 2006."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Grille des salaires au 1er juillet 2006, base 151,67 heures<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD> COEFFICIENT</TD><TD></TD><TD>  TAUX  </TD><TD> SALAIRE </TD><TD> VALEUR</TD></TR><TR><TD>hiérarchique</TD><TD>       POSTE          </TD><TD>horaire </TD><TD> mensuel </TD><TD>   du  </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>(151h67) </TD><TD> point </TD></TR><TR><TD>    155     </TD><TD> Manutentionnaire en  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>jardinerie/graineterie</TD><TD>  8,19  </TD><TD> 1 242,18</TD><TD>  8,01 </TD></TR><TR><TD></TD><TD> Employé de bureau    </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> Employé de jardinerie</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>    160     </TD><TD> Vendeur 1er échelon  </TD><TD>  8,20  </TD><TD> 1 243,69</TD><TD>  7,77 </TD></TR><TR><TD></TD><TD> Caissier 1er échelon </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>    165     </TD><TD> Agent administratif  </TD><TD>  8,23  </TD><TD> 1 248,24</TD><TD>  7,57 </TD></TR><TR><TD>    170     </TD><TD> Vendeur 2e échelon   </TD><TD>  8,29  </TD><TD> 1 257,34</TD><TD>  7,40 </TD></TR><TR><TD></TD><TD> Caissier 2e échelon  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>    175     </TD><TD> Secrétaire           </TD><TD>  8,32  </TD><TD> 1 261,89</TD><TD>  7,21 </TD></TR><TR><TD>    180     </TD><TD> Vendeur confirmé     </TD><TD>  8,38  </TD><TD> 1 270,99</TD><TD>  7,06 </TD></TR><TR><TD>    190     </TD><TD> Responsable de rayon </TD><TD>  8,84  </TD><TD> 1 340,76</TD><TD>  7,06 </TD></TR><TR><TD>    200     </TD><TD>Responsable de secteur</TD><TD>  9,31  </TD><TD> 1 412,05</TD><TD>  7,06 </TD></TR><TR><TD>    220     </TD><TD> Adjoint de direction </TD><TD> 10,24  </TD><TD> 1 553,10</TD><TD>  7,06 </TD></TR><TR><TD>    260     </TD><TD> Responsable point de </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> vente                </TD><TD> 12,10  </TD><TD> 1 835,21</TD><TD>  7,06 </TD></TR><TR><TD>    350     </TD><TD> Directeur            </TD><TD> 16,38  </TD><TD> 2 484,35</TD><TD>  7,10 </TD></TR><TR><TD>    400     </TD><TD> Directeur général    </TD><TD> 18,72  </TD><TD> 2 839,26</TD><TD>  7,10 </TD></TR></TABLE><p></p> Article 2<p></p>   Compte tenu des incertitudes de l'évolution du SMIC au 1er juillet 2006, les partenaires sociaux conviennent de se revoir au mois de septembre pour d'éventuelles adaptations par rapport au présent accord. Article 3<p></p>   Les parties signataires demanderont l'extension du présent accord.<p></p>   Fait à Paris, le 28 avril 2006.<font color=\"808080\"><em>   Accord étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimal interprofessionnel de croissance (arrêté du 31 octobre 2006, art. 1er).<p></p></em></font>",
+                  "nota": "   Accord étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimal interprofessionnel de croissance (arrêté du 31 octobre 2006, art. 1er).<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2006-04-28 BO conventions collectives 2006-24 étendu par arrêté du 31 octobre 2006 JORF 10 novembre 2006",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1146182400000,
+                  "dateFin": 1158883200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14461,12 +14537,63 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005803881",
+              "cid": "KALIARTI000005803881",
+              "intOrdre": 42949,
+              "etat": "REMPLACE",
+              "num": null,
+              "path": "/KALIARTI000005803881",
+              "pathTitle": [],
+              "content": "Article 1er<p></p> Grille des salaires au 1er janvier 2007 (base 151,67 heures)<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD> COEFFICIENT</TD><TD></TD><TD> VALEUR </TD><TD> SALAIRE </TD><TD> TAUX  </TD></TR><TR><TD>hiérarchique</TD><TD>       POSTE          </TD><TD>   du   </TD><TD> mensuel </TD><TD>  du   </TD></TR><TR><TD></TD><TD></TD><TD> point  </TD><TD>(151h67) </TD><TD> point </TD></TR><TR><TD>    155     </TD><TD> Manutentionnaire en  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>jardinerie/graineterie</TD><TD>  8,19  </TD><TD> 1 254,31</TD><TD>  8,27 </TD></TR><TR><TD></TD><TD> Employé de bureau    </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> Employé de jardinerie</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>    160     </TD><TD> Vendeur 1er échelon  </TD><TD>  7,85  </TD><TD> 1 255,83</TD><TD>  8,28 </TD></TR><TR><TD></TD><TD> Caissier 1er échelon </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>    165     </TD><TD> Agent administratif  </TD><TD>  7,65  </TD><TD> 1 261,89</TD><TD>  8,32 </TD></TR><TR><TD>    170     </TD><TD> Vendeur 2e échelon   </TD><TD>  7,46  </TD><TD> 1 267,96</TD><TD>  8,36 </TD></TR><TR><TD></TD><TD> Caissier 2e échelon  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>    175     </TD><TD> Secrétaire           </TD><TD>  7,26  </TD><TD> 1 270,99</TD><TD>  8,38 </TD></TR><TR><TD>    180     </TD><TD> Vendeur confirmé     </TD><TD>  7,11  </TD><TD> 1 280,09</TD><TD>  8,44 </TD></TR><TR><TD>    190     </TD><TD> Responsable de rayon </TD><TD>  7,10  </TD><TD> 1 349,86</TD><TD>  8,90 </TD></TR><TR><TD>    200     </TD><TD>Responsable de secteur</TD><TD>  7,10  </TD><TD> 1 419,63</TD><TD>  9,36 </TD></TR><TR><TD>    220     </TD><TD> Adjoint de direction </TD><TD>  7,10  </TD><TD> 1 562,20</TD><TD> 10,30 </TD></TR><TR><TD>    260     </TD><TD> Responsable point de </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> vente                </TD><TD>  7,10  </TD><TD> 1 845,82</TD><TD> 12,17 </TD></TR><TR><TD>    350     </TD><TD> Directeur            </TD><TD>  7,12  </TD><TD> 2 491,94</TD><TD> 16,43 </TD></TR><TR><TD>    400     </TD><TD> Directeur général    </TD><TD>  7,12  </TD><TD> 2 848,36</TD><TD> 18,78 </TD></TR></TABLE><p></p> Article 2<p></p>   Les parties signataires demanderont l'extension du présent accord.<p></p>   Fait à Paris, le 22 septembre 2006.",
+              "nota": null,
+              "comporteLiens": false,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Accord 2006-09-22 BO conventions collectives 2006-45 étendu par arrêté du 16 janvier 2007 JORF 25 janvier 2007",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1158883200000,
+              "dateFin": 1191369600000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

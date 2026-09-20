@@ -13020,13 +13020,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005725886",
+              "cid": "KALISCTA000005725886",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes des salaires au 1er juin 2003",
+              "dateModif": null,
+              "dateDebut": "2003-04-23",
+              "dateFin": "2006-05-30",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005855603",
+                  "cid": "KALIARTI000005855603",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005725886/KALIARTI000005855603",
+                  "pathTitle": [
+                    "Barèmes des salaires au 1er juin 2003"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   a) Le barème mensuel des salaires professionnels catégoriels des agents de production pour 151 h 67 s'élève à :<p></p><TABLE><TR><TD>BAREME   </TD><TD> AU 1ER    </TD></TR><TR><TD></TD><TD> JUIN 2003 </TD></TR><TR><TD></TD><TD>(en euros) </TD></TR><TR><TD>  AP 11  </TD><TD>   1 071   </TD></TR><TR><TD>  AP 21  </TD><TD>   1 082   </TD></TR><TR><TD>  AP 22  </TD><TD>   1 092   </TD></TR><TR><TD>  AP 31  </TD><TD>   1 116   </TD></TR><TR><TD>  AP 32  </TD><TD>   1 123   </TD></TR><TR><TD>  AP 41  </TD><TD>   1 137   </TD></TR><TR><TD>  AP 42  </TD><TD>   1 158   </TD></TR><TR><TD>  AP 51  </TD><TD>   1 331   </TD></TR></TABLE><p></p><p></p>   b) Le barème mensuel des salaires professionnels catégoriels des agents fonctionnels et agents d'encadrement, pour 151 h 67, s'élève à :<p></p><TABLE><TR><TD>ECHELON </TD><TD>Coefficient</TD><TD>AU 1ER JUIN    </TD></TR><TR><TD>AF </TD><TD> AE </TD><TD></TD><TD>2003 (en euros)</TD></TR><TR><TD> 1 </TD><TD></TD><TD>   250     </TD><TD>    1 071      </TD></TR><TR><TD> 2 </TD><TD></TD><TD>   255     </TD><TD>    1 071      </TD></TR><TR><TD> 3 </TD><TD></TD><TD>   260     </TD><TD>    1 083      </TD></TR><TR><TD> 4 </TD><TD></TD><TD>   265     </TD><TD>    1 094      </TD></TR><TR><TD> 5 </TD><TD></TD><TD>   275     </TD><TD>    1 105      </TD></TR><TR><TD> 6 </TD><TD></TD><TD>   285     </TD><TD>    1 114      </TD></TR><TR><TD> 7 </TD><TD> 1  </TD><TD>   300     </TD><TD>    1 125      </TD></TR><TR><TD> 8 </TD><TD></TD><TD>   315     </TD><TD>    1 137      </TD></TR><TR><TD> 9 </TD><TD> 2  </TD><TD>   330     </TD><TD>    1 148      </TD></TR><TR><TD>10 </TD><TD></TD><TD>   345     </TD><TD>    1 162      </TD></TR><TR><TD>11 </TD><TD> 3  </TD><TD>   365     </TD><TD>    1 204      </TD></TR><TR><TD>12 </TD><TD> 4  </TD><TD>   385     </TD><TD>    1 246      </TD></TR><TR><TD>13 </TD><TD></TD><TD>   405     </TD><TD>    1 288      </TD></TR><TR><TD>14 </TD><TD> 5  </TD><TD>   425     </TD><TD>    1 333      </TD></TR><TR><TD>15 </TD><TD></TD><TD>   450     </TD><TD>    1 389      </TD></TR><TR><TD>16 </TD><TD></TD><TD>   475     </TD><TD>    1 444      </TD></TR><TR><TD>17 </TD><TD> 6  </TD><TD>   500     </TD><TD>    1 499    </TD></TR><TR><TD></TD><TD> 7  </TD><TD>   500     </TD><TD>    1 8914   </TD></TR></TABLE><p></p><p></p>   c) Le barème mensuel des salaires professionnels catégoriels des cadres, pour 151 h 67, s'élève à :<p></p><p></p><TABLE><TR><TD>ECHELON   </TD><TD>AU 1ER     </TD></TR><TR><TD></TD><TD>JUIN 2003  </TD></TR><TR><TD></TD><TD>(en euros) </TD></TR><TR><TD>   C 11   </TD><TD>    1 453  </TD></TR><TR><TD>   C 12   </TD><TD>    1 646  </TD></TR><TR><TD>   C 13   </TD><TD>    1 829  </TD></TR><TR><TD>   C 21   </TD><TD>    2 142  </TD></TR><TR><TD>   C 22   </TD><TD>    2 307  </TD></TR><TR><TD>   C 23   </TD><TD>    2 494  </TD></TR><TR><TD>   C 31   </TD><TD>    2 842  </TD></TR><TR><TD>   C 32   </TD><TD>    3 029  </TD></TR><TR><TD>   C 33   </TD><TD>    3 251  </TD></TR></TABLE><p></p>Article 2<p></p><p></p>   Le présent accord sera déposé conformément à la loi et son extension sera demandée par la partie patronale au nom des signataires. Copie du récépissé du dépôt leur sera adressée.<p></p><p></p>   Fait à Paris, le 23 avril 2003.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2003-04-23 BO conventions collectives 2003-22",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1051056000000,
+                  "dateFin": 1148947200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13040,13 +13114,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005725887",
+              "cid": "KALISCTA000005725887",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes mensuels des salaires professionnels à compter du 1er juin 2006",
+              "dateModif": null,
+              "dateDebut": "2006-05-30",
+              "dateFin": "2006-11-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005855604",
+                  "cid": "KALIARTI000005855604",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005725887/KALIARTI000005855604",
+                  "pathTitle": [
+                    "Barèmes mensuels des salaires professionnels à compter du 1er juin 2006"
+                  ],
+                  "content": "<p></p>   Le barème mensuel des salaires professionnels catégoriels des AP pour 151,67 heures s'élève, à compter du 1er juin 2006, à :<p></p><TABLE><TR><TD>  CATEGORIE  </TD><TD>  SALAIRE   </TD></TR><TR><TD></TD><TD> (en euros) </TD></TR><TR><TD>   AP 11     </TD><TD>   1 218    </TD></TR><TR><TD>   AP 21     </TD><TD>   1 219    </TD></TR><TR><TD>   AP 22     </TD><TD>   1 222    </TD></TR><TR><TD>   AP 31     </TD><TD>   1 225    </TD></TR><TR><TD>   AP 32     </TD><TD>   1 235    </TD></TR><TR><TD>   AP 41     </TD><TD>   1 250    </TD></TR><TR><TD>   AP 42     </TD><TD>   1 270    </TD></TR><TR><TD>   AP 51     </TD><TD>   1 380    </TD></TR></TABLE><p></p> Article 2<p></p><p></p>   Le barème mensuel des salaires professionnels catégoriels des AF et AE pour 151,67 heures s'élève, à compter du 1er juin 2006, à :<p></p><TABLE><TR><TD>   ECHELON      </TD><TD></TD><TD></TD></TR><TR><TD>  CATEGORIE     </TD><TD> COEFFICIENT </TD><TD>   SALAIRE   </TD></TR><TR><TD></TD><TD></TD><TD> (en euros)  </TD></TR><TR><TD>   AF   </TD><TD>   AE  </TD><TD></TD><TD></TD></TR><TR><TD>    1   </TD><TD></TD><TD>     250     </TD><TD>    1 218    </TD></TR><TR><TD>    2   </TD><TD></TD><TD>     255     </TD><TD>    1 218    </TD></TR><TR><TD>    3   </TD><TD></TD><TD>     260     </TD><TD>    1 219    </TD></TR><TR><TD>    4   </TD><TD></TD><TD>     265     </TD><TD>    1 219    </TD></TR><TR><TD>    5   </TD><TD></TD><TD>     275     </TD><TD>    1 222    </TD></TR><TR><TD>    6   </TD><TD></TD><TD>     285     </TD><TD>    1 225    </TD></TR><TR><TD>    7   </TD><TD>   1   </TD><TD>     300     </TD><TD>    1 230    </TD></TR><TR><TD>    8   </TD><TD></TD><TD>     315     </TD><TD>    1 235    </TD></TR><TR><TD>    9   </TD><TD>   2   </TD><TD>     330     </TD><TD>    1 240    </TD></TR><TR><TD>   10   </TD><TD></TD><TD>     345     </TD><TD>    1 250    </TD></TR><TR><TD>   11   </TD><TD>   3   </TD><TD>     365     </TD><TD>    1 290    </TD></TR><TR><TD>   12   </TD><TD>   4   </TD><TD>     385     </TD><TD>    1 335    </TD></TR><TR><TD>   13   </TD><TD></TD><TD>     405     </TD><TD>    1 375    </TD></TR><TR><TD>   14   </TD><TD>   5   </TD><TD>     425     </TD><TD>    1 415    </TD></TR><TR><TD>   15   </TD><TD></TD><TD>     450     </TD><TD>    1 455    </TD></TR><TR><TD>   16   </TD><TD></TD><TD>     475     </TD><TD>    1 500    </TD></TR><TR><TD>   17   </TD><TD>   6   </TD><TD>     500     </TD><TD>    1 530    </TD></TR><TR><TD></TD><TD>   7   </TD><TD>     640     </TD><TD>    1 850    </TD></TR></TABLE><p></p>Article 3<p></p><p></p>   Le barème mensuel des salaires professionnels des cadres pour 151,67 heures s'élève, à compter du 1er juin 2006, à :<p></p><TABLE><TR><TD>  CATEGORIE   </TD><TD>   SALAIRE    </TD></TR><TR><TD></TD><TD>  (en euros)  </TD></TR><TR><TD>     C 11     </TD><TD>    1 540     </TD></TR><TR><TD>     C 12     </TD><TD>    1 740     </TD></TR><TR><TD>     C 13     </TD><TD>    1 930     </TD></TR><TR><TD>     C 21     </TD><TD>    2 270     </TD></TR><TR><TD>     C 22     </TD><TD>    2 445     </TD></TR><TR><TD>     C 23     </TD><TD>    2 645     </TD></TR><TR><TD>     C 31     </TD><TD>    3 015     </TD></TR><TR><TD>     C 32     </TD><TD>    3 210     </TD></TR><TR><TD>     C 33     </TD><TD>    3 445     </TD></TR></TABLE><p></p> Article 4<p></p>   Le présent accord sera déposé conformément à la loi et son extension sera demandée par la partie patronale au nom des signataires. Copie du récépissé du dépôt leur sera adressée.<p></p>   Fait à Paris, le 30 mai 2006.<font color=\"808080\"><em>   Accord étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance (arrêté du 23 octobre 2006, art. 1er).<p></p></em></font>",
+                  "nota": "   Accord étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance (arrêté du 23 octobre 2006, art. 1er).<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2006-05-30 BO conventions collectives 2006-26 étendu par arrêté du 23 octobre 2006 JORF 3 novembre 2006",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1148947200000,
+                  "dateFin": 1164153600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13060,13 +13208,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005725888",
+              "cid": "KALISCTA000005725888",
+              "intOrdre": 42949,
+              "etat": "PERIME",
+              "title": "Barèmes mensuels des salaires à compter du 1er janvier 2007",
+              "dateModif": null,
+              "dateDebut": "2006-11-22",
+              "dateFin": "2007-09-12",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005855605",
+                  "cid": "KALIARTI000005855605",
+                  "intOrdre": 42949,
+                  "etat": "PERIME",
+                  "num": null,
+                  "path": "/KALISCTA000005725888/KALIARTI000005855605",
+                  "pathTitle": [
+                    "Barèmes mensuels des salaires à compter du 1er janvier 2007"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Le barème mensuel des salaires professionnels catégoriels des AP pour 151,67 heures s'élève, à compter du 1er janvier 2007, à :<p></p><TABLE><TR><TD> CATEGORIE </TD><TD>   SALAIRE   </TD></TR><TR><TD></TD><TD>  (en euros) </TD></TR><TR><TD>   AP 11   </TD><TD>   1 254,28  </TD></TR><TR><TD>   AP 21   </TD><TD>   1 254,28  </TD></TR><TR><TD>   AP 22   </TD><TD>   1 256,00  </TD></TR><TR><TD>   AP 31   </TD><TD>   1 257,00  </TD></TR><TR><TD>   AP 32   </TD><TD>   1 258,00  </TD></TR><TR><TD>   AP 42   </TD><TD>   1 290,00  </TD></TR><TR><TD>   AP 41   </TD><TD>   1 270,00  </TD></TR><TR><TD>   AP 51   </TD><TD>   1 405,00  </TD></TR></TABLE><p></p>Article 2<p></p><p></p>   Le barème mensuel des salaires professionnels catégoriels des AF et AE pour 151,67 heures s'élève, à compter du 1er janvier 2007, à :<p></p><TABLE><TR><TD>   ECHELON      </TD><TD></TD><TD></TD></TR><TR><TD>  CATEGORIE     </TD><TD> COEFFICIENT </TD><TD>   SALAIRE   </TD></TR><TR><TD></TD><TD></TD><TD> (en euros)  </TD></TR><TR><TD>   AF   </TD><TD>   AE  </TD><TD></TD><TD></TD></TR><TR><TD>    1   </TD><TD></TD><TD>     250     </TD><TD>    1 254,28 </TD></TR><TR><TD>    2   </TD><TD></TD><TD>     255     </TD><TD>    1 254,28 </TD></TR><TR><TD>    3   </TD><TD></TD><TD>     260     </TD><TD>    1 255,00 </TD></TR><TR><TD>    4   </TD><TD></TD><TD>     265     </TD><TD>    1 255,00 </TD></TR><TR><TD>    5   </TD><TD></TD><TD>     275     </TD><TD>    1 255,00 </TD></TR><TR><TD>    6   </TD><TD></TD><TD>     285     </TD><TD>    1 256,00 </TD></TR><TR><TD>    7   </TD><TD>   1   </TD><TD>     300     </TD><TD>    1 260,00 </TD></TR><TR><TD>    8   </TD><TD></TD><TD>     315     </TD><TD>    1 265,00 </TD></TR><TR><TD>    9   </TD><TD>   2   </TD><TD>     330     </TD><TD>    1 270,00 </TD></TR><TR><TD>   10   </TD><TD></TD><TD>     345     </TD><TD>    1 275,00 </TD></TR><TR><TD>   11   </TD><TD>   3   </TD><TD>     365     </TD><TD>    1 300,00 </TD></TR><TR><TD>   12   </TD><TD>   4   </TD><TD>     385     </TD><TD>    1 350,00 </TD></TR><TR><TD>   13   </TD><TD></TD><TD>     405     </TD><TD>    1 390,00 </TD></TR><TR><TD>   14   </TD><TD>   5   </TD><TD>     425     </TD><TD>    1 440,00 </TD></TR><TR><TD>   15   </TD><TD></TD><TD>     450     </TD><TD>    1 455,00 </TD></TR><TR><TD>   16   </TD><TD></TD><TD>     475     </TD><TD>    1 500,00 </TD></TR><TR><TD>   17   </TD><TD>   6   </TD><TD>     500     </TD><TD>    1 550,00 </TD></TR><TR><TD></TD><TD>   7   </TD><TD>     640     </TD><TD>    1 900,00 </TD></TR></TABLE><p></p>Article 3<p></p><p></p>   Le barème mensuel des salaires professionnels des cadres pour 151,67 heures s'élève, à compter du 1er janvier 2007, à :<p></p><TABLE><TR><TD> CATEGORIE </TD><TD>   SALAIRE  </TD></TR><TR><TD></TD><TD> (en euros) </TD></TR><TR><TD>   C 11    </TD><TD>    1 600   </TD></TR><TR><TD>   C 12    </TD><TD>    1 800   </TD></TR><TR><TD>   C 13    </TD><TD>    1 950   </TD></TR><TR><TD>   C 21    </TD><TD>    2 270   </TD></TR><TR><TD>   C 22    </TD><TD>    2 445   </TD></TR><TR><TD>   C 23    </TD><TD>    2 645   </TD></TR><TR><TD>   C 31    </TD><TD>    3 015   </TD></TR><TR><TD>   C 32    </TD><TD>    3 210   </TD></TR><TR><TD>   C 33    </TD><TD>    3 445   </TD></TR></TABLE><p></p> Article 4<p></p>   Le présent accord sera déposé conformément à la loi et son extension sera demandée par la partie patronale au nom des signataires. Copie du récépissé du dépôt leur sera adressée.<p></p>   Fait à Paris, le 22 novembre 2006.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2006-11-22 BO conventions collectives 2007-4 étendu par arrêté du 28 mars 2007 JORF 6 avril 2007",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1164153600000,
+                  "dateFin": 1189555200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
