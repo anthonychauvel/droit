@@ -27,9 +27,13 @@ import glob
 import argparse
 import datetime as _dt
 
-SNIPPET_LEN = 220      # extrait pour les articles de code. Réduit (était 600)
-                       # car l'index dépassait 100 Mo (limite GitHub). 220 car
-                       # suffisent pour matcher le contenu d'un article.
+SNIPPET_LEN = 220      # extrait pour la JURISPRUDENCE uniquement. Ne sert plus
+                       # pour le code du travail ni la sécu : ils sont indexés
+                       # en ENTIER depuis le 20/09/2026 (voir build_code_index,
+                       # qui explique pourquoi et ce que ça coûte). L'ancienne
+                       # note disait « 220 car suffisent pour matcher le contenu
+                       # d'un article » — mesure faite : ça ne couvrait que 19 %
+                       # des articles en vigueur.
 SNIPPET_LEN_LONG = 300 # extrait pour JORF/ACCO. Réduit de 600 à 300 : avec
                        # 60 000+ accords, 600 faisait exploser l'index au-delà
                        # de 100 Mo. 300 car matchent encore bien le contenu.
@@ -226,7 +230,48 @@ def _article_payload_and_etat(data):
     return data, (data.get("etat") if isinstance(data, dict) else None)
 
 
-def build_code_index(code_dir, classification=None):
+def build_code_index(code_dir, classification=None, snippet_len=None):
+    """snippet_len=None : on indexe le texte ENTIER de l'article.
+
+    POURQUOI LE CODE ÉCHAPPE AU PLAFOND (20/09/2026)
+    Le moteur de recherche ne cherche que dans `num + snippet + title`. Tout ce
+    qui dépasse le plafond est donc invisible, quoi qu'en dise l'article.
+
+    Mesuré sur les 11 473 articles du code du travail en vigueur : avec 220
+    caractères, **19 % seulement** étaient indexés en entier, et la couverture
+    médiane était de 59 % du texte. Côté sécu, où les articles sont plus longs
+    (médiane 621 caractères), on tombait à 12 %.
+
+    L'exemple qui a déclenché ce correctif, L3121-28 — l'article qui fonde le
+    repos compensateur :
+
+        texte réel  (233 car.) : …ouvre droit à une majoration salariale ou,
+                                  le cas échéant, à un repos compensateur équivalent.
+        indexé      (220 car.) : …ouvre droit à une majoration salariale ou,
+                                  le cas échéant, à un repos compensateu
+
+    Coupé treize caractères trop tôt : chercher « repos compensateur » ne
+    trouvait pas l'article qui le définit. 384 cas du même genre relevés sur des
+    termes que les gens tapent vraiment (ancienneté, préavis, majoration,
+    travail de nuit, délai de prévenance…).
+
+    Le plafond de 220 venait de l'époque où l'index était un SEUL fichier qui
+    frôlait la limite GitHub de 100 Mo. Il est découpé par source depuis, et
+    c'est `acco` (48 Mo) et `ccn` (23 Mo) qui pèsent — le code faisait 4,7 Mo.
+    La contrainte avait disparu, pas le plafond.
+
+    Coût du texte entier : code 4,7 -> 8,8 Mo, sécu 2,8 -> 8,6 Mo. Sur les
+    90,7 Mo déjà chargés au démarrage, c'est +13 Mo pour passer de 19 % à 100 %
+    de couverture sur les deux corpus qui comptent le plus.
+
+    Bénéfice en prime : `excerpt()` côté front sait extraire le passage autour
+    des mots cherchés. Jusqu'ici elle travaillait sur un début d'article tronqué
+    et affichait donc presque toujours les mêmes premières lignes ; avec le
+    texte entier, le résultat montre le passage qui répond à la question.
+
+    `juris`, `jorf` et `acco` gardent leur plafond : ce sont eux qui font la
+    taille de l'index, et leur texte est autrement plus long.
+    """
     classification = classification or {}
     if not os.path.isdir(code_dir):
         return []
@@ -251,7 +296,7 @@ def build_code_index(code_dir, classification=None):
         entry = {
             "num": art,
             "title": f"Article {art}",
-            "snippet": text[:SNIPPET_LEN],
+            "snippet": text if snippet_len is None else text[:snippet_len],
             "etat": etat,
             "source": classification.get(art, "inconnu"),
         }
@@ -409,8 +454,12 @@ def main():
             pass
 
     ccn_index = build_ccn_index(args.ccn_dir, classification.get("ccn"))
-    code_index = build_code_index(args.code_dir, classification.get("code_travail"))
-    code_secu_index = (build_code_index(args.code_secu_dir, classification.get("code_secu"))
+    # snippet_len=None : texte ENTIER. Explicite ici plutôt que laissé au défaut,
+    # pour que ce soit visible à l'endroit où on choisit.
+    code_index = build_code_index(args.code_dir, classification.get("code_travail"),
+                                   snippet_len=None)
+    code_secu_index = (build_code_index(args.code_secu_dir, classification.get("code_secu"),
+                                         snippet_len=None)
                         if os.path.exists(args.code_secu_dir) else [])
     juris_index = build_juris_index(args.juris_dir) if os.path.exists(args.juris_dir) else []
     jorf_index = build_jorf_index(args.jorf_dir) if os.path.exists(args.jorf_dir) else []
