@@ -1794,8 +1794,32 @@ function excerpt(text, terms, len, priorityTerms){
     return -1;
   }
   // Priorité au terme du sujet (focus) : la fenêtre se cale sur « contingent »
-  // plutôt que sur le début ; à défaut, sur le 1er terme trouvé.
-  var wi = findWord(priorityTerms); if(wi===-1) wi = findWord(terms);
+  // plutôt que sur le début.
+  var wi = findWord(priorityTerms);
+
+  // À défaut, sur le terme le plus DISCRIMINANT, pas sur le premier rencontré.
+  //
+  // findWord() boucle sur les MOTS à l'extérieur : elle s'arrête donc au premier
+  // mot correspondant à n'importe quel terme, et l'ordre des termes n'y change
+  // rien. Sur « heure compensateur », L3121-28 se calait sur « heure » (2e mot)
+  // et l'extrait s'arrêtait avant « repos compensateur » — l'article remontait
+  // pour un mot qu'on ne voyait nulle part dans l'aperçu. Constaté le 20/09/2026.
+  //
+  // On essaie donc les termes UN PAR UN, du plus rare au plus courant : c'est le
+  // mot rare qui explique pourquoi ce résultat est là. Repli sur l'ancien
+  // comportement si l'IDF n'est pas disponible (moteur pas encore construit).
+  if(wi===-1 && terms && terms.length>1){
+    var ordonnes = terms.slice();
+    try{
+      ordonnes.sort(function(a,b){ return idf(b)-idf(a); });
+    }catch(e){
+      // Pas d'IDF sous la main : la longueur est un substitut correct de la
+      // rareté (« compensateur » est plus spécifique que « heure »).
+      ordonnes.sort(function(a,b){ return String(b).length-String(a).length; });
+    }
+    for(var oi=0; oi<ordonnes.length && wi===-1; oi++) wi = findWord([ordonnes[oi]]);
+  }
+  if(wi===-1) wi = findWord(terms);
   var start=0;
   if(wi>0){ var s=wi, back=0; while(s>0 && back<50){ s--; back+=words[s].length; } start=s; }
   var out='', acc=0, cut=false;
