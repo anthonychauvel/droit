@@ -456,10 +456,17 @@ def main():
     ccn_index = build_ccn_index(args.ccn_dir, classification.get("ccn"))
     # snippet_len=None : texte ENTIER. Explicite ici plutôt que laissé au défaut,
     # pour que ce soit visible à l'endroit où on choisit.
+    # RETOUR ARRIÈRE DU 20/09/2026, 16h30 — plantage mémoire sur mobile.
+    # snippet_len=None (texte entier) faisait passer l'index du code de 4,9 à
+    # 9,5 Mo et celui de la sécu de 2,9 à 9,0 Mo. Mesuré : SRC_CORE occupait
+    # DÉJÀ 325 Mo en mémoire une fois analysé en JS (acco 181, ccn 82, jorf 35),
+    # et ces deux fichiers ajoutaient ~33 Mo. Chrome sur iPhone tue l'onglet
+    # avant la fin du chargement ; Safari tenait de justesse.
+    # On revient au plafond tant que le poids d'acco n'est pas traité.
     code_index = build_code_index(args.code_dir, classification.get("code_travail"),
-                                   snippet_len=None)
+                                   snippet_len=SNIPPET_LEN)
     code_secu_index = (build_code_index(args.code_secu_dir, classification.get("code_secu"),
-                                         snippet_len=None)
+                                         snippet_len=SNIPPET_LEN)
                         if os.path.exists(args.code_secu_dir) else [])
     juris_index = build_juris_index(args.juris_dir) if os.path.exists(args.juris_dir) else []
     jorf_index = build_jorf_index(args.jorf_dir) if os.path.exists(args.jorf_dir) else []
