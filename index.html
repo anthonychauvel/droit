@@ -1239,7 +1239,18 @@ function shortEtat(raw){
 async function loadSearchIndex(){
   // Cœur français : ce qu'il FAUT absolument pour que la recherche
   // fonctionne. Chargé en un seul groupe, timeout généreux (16s chacune).
-  var SRC_CORE = ['ccn','code','code_secu','juris','jorf','acco'];
+  // acco EN RETRAIT DEPUIS LE 20/09/2026 — il faisait planter l'onglet.
+  // Mesuré : les six sources du cœur occupaient 200 Mo une fois analysées en
+  // JS, et le premier clic dans la recherche en ajoutait 239 (construction des
+  // index inversés), soit 395 Mo. Chrome sur iPhone tue l'onglet bien avant ;
+  // Safari passait de justesse. acco pesait à lui seul 100 Mo de données et
+  // 84 Mo d'index inversé (112 053 accords, 192 200 mots distincts) — 72 % du
+  // coût, pour quinze résultats affichés.
+  // Sans lui : 112 Mo chargés, 135 Mo après le premier clic.
+  // Les accords restent consultables : l'onglet « Accords » les parcourt via
+  // INDEX.acco (le manifeste), et la recherche propose de les charger à la
+  // demande (voir chargerAcco).
+  var SRC_CORE = ['ccn','code','code_secu','juris','jorf'];
   // Sources supplémentaires (UE, International, Code civil/pénal, CGFP) :
   // chargées EN ARRIÈRE-PLAN, jamais dans le même Promise.all que le cœur --
   // repéré le 18/08 (mauvais réseau) : une seule de ces 7 sources qui traîne
@@ -1275,6 +1286,11 @@ async function loadSearchIndex(){
       if(typeof renderDashboard==='function') renderDashboard();
     }).catch(function(){ /* reste à [] -- pas grave, jamais bloquant pour le reste */ });
   });
+
+  // acco n'est dans aucune des deux listes : on pose quand même le tableau vide
+  // pour que SEARCH.acco existe toujours. chargerAcco() le remplira si on le
+  // demande ; sans ça, searchArticlesV2 recevrait undefined.
+  if(got.acco === undefined) got.acco = [];
 
   return got;
 }
@@ -1423,6 +1439,39 @@ async function loadAll(){
 function resetEngineCaches(){
   CCN_SEARCH_MAP = null; CCN_SECTOR_MAP = null;
   ENG = null; SUGGEST = null; _artInvDone = false;
+}
+
+/* ============================================================================
+   ACCORDS D'ENTREPRISE — chargés à la demande
+   ----------------------------------------------------------------------------
+   Ils ne font plus partie du chargement initial (voir SRC_CORE). Quand
+   quelqu'un en a réellement besoin, cette fonction va chercher le fichier et
+   relance la recherche en cours. Le coût est alors payé par celui qui le
+   demande, pas par tous ceux qui cherchent un article du code du travail.
+   ========================================================================== */
+var ACCO_ETAT = 'absent';   // absent | charge | pret | echec
+
+async function chargerAcco(){
+  if(ACCO_ETAT === 'charge' || ACCO_ETAT === 'pret') return;
+  ACCO_ETAT = 'charge';
+  var btn = document.getElementById('btn-acco');
+  if(btn){ btn.textContent = 'Chargement des accords…'; btn.disabled = true; }
+  try{
+    SEARCH.acco = await fetchJSON('output/search-index-acco.json', 30000);
+    ACCO_ETAT = 'pret';
+    // Le moteur doit reprendre en compte la nouvelle source (IDF notamment).
+    // resetEngineCaches() remet _artInvDone à false : sans le rappel ci-dessous,
+    // les index inversés des autres sources ne seraient jamais reconstruits et
+    // TOUTE la recherche retomberait sur le balayage complet.
+    resetEngineCaches();
+    if(typeof buildArtInvChunked === 'function') buildArtInvChunked();
+  }catch(e){
+    ACCO_ETAT = 'echec';
+  }
+  if(typeof runSearch === 'function'){
+    var q = document.getElementById('q');
+    if(q && q.value.trim()) runSearch();
+  }
 }
 
 async function loadFromSummaries(){
@@ -2121,7 +2170,12 @@ var _artInvDone = false;
 // instantanée dès qu'elle est prête ; en attendant, la recherche balaye tout.
 function buildArtInvChunked(){
   if(_artInvDone) return; _artInvDone = true;
-  var sources = [['code',SEARCH.code],['code_secu',SEARCH.code_secu],['juris',SEARCH.juris],['jorf',SEARCH.jorf],['acco',SEARCH.acco],['eurlex',SEARCH.eurlex],['cjue',SEARCH.cjue],['cedh',SEARCH.cedh],['oit',SEARCH.oit],['civil',SEARCH.civil],['penal',SEARCH.penal],['cgfp',SEARCH.cgfp]];
+  // acco n'est PAS dans cette liste : son index inversé pèse 84 Mo à lui seul
+  // (192 200 mots pour 112 053 accords) et prend plus de 4 secondes à
+  // construire. Même chargé à la demande, il passe par le repli « balayage
+  // complet » de searchArticlesV2 : plus lent (~70 ms par frappe une fois les
+  // textes normalisés en cache), mais qui ne fait pas tomber l'onglet.
+  var sources = [['code',SEARCH.code],['code_secu',SEARCH.code_secu],['juris',SEARCH.juris],['jorf',SEARCH.jorf],['eurlex',SEARCH.eurlex],['cjue',SEARCH.cjue],['cedh',SEARCH.cedh],['oit',SEARCH.oit],['civil',SEARCH.civil],['penal',SEARCH.penal],['cgfp',SEARCH.cgfp]];
   var si=0, inv=null, list=null, i=0, CHUNK=1500;
   function step(){
     if(!ENG){ _artInvDone=false; return; }   // moteur réinitialisé -> abandon
@@ -3499,6 +3553,21 @@ function runSearch(){
     html += grpHead('acco',"Accords d'entreprise",acco.length)+'<div class="rows">';
     html += acco.map(function(r){ return rowHtml('acco', r.num, r.title, null, {snippet:artSnip(r), tags:r.themes}); }).join('');
     html += '</div>';
+  } else if(ACCO_ETAT !== 'pret' && (code.length || ccn.length || secu.length)){
+    /* Les accords ne sont pas chargés (voir SRC_CORE). On le dit franchement
+       plutôt que de laisser croire qu'il n'y a rien, et on propose de les
+       charger. Proposé seulement quand la recherche a déjà trouvé autre chose :
+       sur une requête vide de résultats, ce bouton serait une fausse piste. */
+    html += grpHead('acco',"Accords d'entreprise",0)+'<div class="rows">';
+    html += '<div style="padding:12px 14px;font-size:13px;color:var(--txt2);line-height:1.5">'
+         + (ACCO_ETAT==='echec'
+            ? "Le chargement des accords d'entreprise a échoué. Vérifie ta connexion et réessaie."
+            : "Les accords d'entreprise ne sont pas chargés : ils pèsent une centaine de mégaoctets et ralentiraient chaque recherche. ")
+         + '<button id="btn-acco" onclick="chargerAcco()" style="display:block;margin-top:9px;'
+         + 'background:var(--ink3);border:1px solid var(--edge);color:var(--txt);'
+         + 'font-size:13px;padding:8px 14px;border-radius:10px;cursor:pointer">'
+         + (ACCO_ETAT==='charge' ? 'Chargement des accords…' : 'Chercher aussi dans les accords')
+         + '</button></div></div>';
   }
   if(eurlex.length){
     html += grpHead('eurlex','Droit européen (UE)',eurlex.length)+'<div class="rows">';
