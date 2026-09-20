@@ -456,17 +456,37 @@ def main():
     ccn_index = build_ccn_index(args.ccn_dir, classification.get("ccn"))
     # snippet_len=None : texte ENTIER. Explicite ici plutôt que laissé au défaut,
     # pour que ce soit visible à l'endroit où on choisit.
-    # RETOUR ARRIÈRE DU 20/09/2026, 16h30 — plantage mémoire sur mobile.
-    # snippet_len=None (texte entier) faisait passer l'index du code de 4,9 à
-    # 9,5 Mo et celui de la sécu de 2,9 à 9,0 Mo. Mesuré : SRC_CORE occupait
-    # DÉJÀ 325 Mo en mémoire une fois analysé en JS (acco 181, ccn 82, jorf 35),
-    # et ces deux fichiers ajoutaient ~33 Mo. Chrome sur iPhone tue l'onglet
-    # avant la fin du chargement ; Safari tenait de justesse.
-    # On revient au plafond tant que le poids d'acco n'est pas traité.
+    #
+    # HISTOIRE DE CETTE LIGNE, À LIRE AVANT D'Y TOUCHER (20/09/2026)
+    #
+    # 1. Passage au texte entier. Motif : avec un plafond de 220 caractères,
+    #    19 % seulement des articles du code en vigueur étaient indexés en
+    #    entier (12 % côté sécu). L3121-28 était coupé treize caractères avant
+    #    de prononcer « repos compensateur », donc introuvable en le cherchant.
+    #
+    # 2. Retour arrière le même jour, 16h30 : l'onglet mourait sur mobile. Mais
+    #    la cause n'était pas ici. Mesuré côté navigateur : les six sources du
+    #    cœur occupaient 200 Mo une fois analysées en JS, et le premier clic
+    #    dans la recherche en ajoutait 239 (construction des index inversés) —
+    #    395 Mo au total. acco pesait 172 de ces 239. Ces deux fichiers-ci
+    #    ajoutaient ~33 Mo : la goutte d'eau, pas le vase.
+    #
+    # 3. Correction du vase : acco est sorti du chargement initial et de la
+    #    construction des index inversés (voir SRC_CORE et buildArtInvChunked
+    #    dans index.html). Le chemin normal est passé à 118 Mo au premier clic.
+    #
+    # 4. Retour au texte entier, ici. Mesuré avec la correction en place :
+    #    97 Mo au démarrage, 157 Mo au premier clic — contre 395 avant, et
+    #    contre 118 avec le plafond. Le texte entier coûte 39 Mo pour faire
+    #    passer la couverture de 19 % à 100 %.
+    #
+    # Si un jour ça remplante, ce n'est probablement PAS ici qu'il faut
+    # regarder : les postes suivants sont ccn (82 Mo de données) et jorf
+    # (37 Mo d'index inversé), tous deux encore chargés au démarrage.
     code_index = build_code_index(args.code_dir, classification.get("code_travail"),
-                                   snippet_len=SNIPPET_LEN)
+                                   snippet_len=None)
     code_secu_index = (build_code_index(args.code_secu_dir, classification.get("code_secu"),
-                                         snippet_len=SNIPPET_LEN)
+                                         snippet_len=None)
                         if os.path.exists(args.code_secu_dir) else [])
     juris_index = build_juris_index(args.juris_dir) if os.path.exists(args.juris_dir) else []
     jorf_index = build_jorf_index(args.jorf_dir) if os.path.exists(args.jorf_dir) else []
