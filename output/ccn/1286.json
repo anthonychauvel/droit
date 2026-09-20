@@ -8500,13 +8500,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005692695",
+              "cid": "KALISCTA000005692695",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "*Salaires applicables du 1er février 1993 au 1er décembre 1993*",
+              "dateModif": null,
+              "dateDebut": "1992-11-24",
+              "dateFin": "1993-11-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005773046",
+                  "cid": "KALIARTI000005773046",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005692695/KALIARTI000005773046",
+                  "pathTitle": [
+                    "*Salaires applicables du 1er février 1993 au 1er décembre 1993*"
+                  ],
+                  "content": "<p></p>   Pour les mois à venir, la grille des salaires est modifiée comme suit.<p></p> Tableau des hausses du 1er février 1993 au 31 décembre 1993<p></p> (S.M.I.G. mensuel en cours au 1er juillet 1992 : 5 756,14 F)<p></p><p></p><p></p>      - Hausse de 3,50 p. 100<p></p><p></p>   CLASSE 1 CATEGORIE A :<p></p> R.A.B. théorique : 70 622,98 F<p></p> R.A.B. effectif (*) : 70 622,98 F<p></p> Douze versements : 5 885,25 F<p></p><p></p>   CLASSE 1 CATEGORIE B :<p></p> R.A.B. théorique : 70 874,73 F<p></p> R.A.B. effectif (*) : 70 874,73 F<p></p> Douze versements : 5 906,23 F<p></p><p></p>   CLASSE 1 CATEGORIE C :<p></p> R.A.B. théorique : 71 111,28 F<p></p> R.A.B. effectif (*) : 71 111,28 F<p></p> Douze versements : 5 925,94 F<p></p><p></p><p></p>      - Hausse de 3 p. 100<p></p><p></p>   CLASSE 2 :<p></p> R.A.B. théorique : 73 300,92 F<p></p> R.A.B. effectif (*) : 73 300,92 F<p></p> Douze versements : 6 108,41 F<p></p><p></p>   CLASSE 3 CATEGORIE A :<p></p> R.A.B. théorique : 76 667,68 F<p></p> R.A.B. effectif (*) : 76 667,68 F<p></p> Douze versements : 6 388,97 F<p></p><p></p>   CLASSE 3 CATEGORIE B :<p></p> R.A.B. théorique : 82 567,78 F<p></p> R.A.B. effectif (*) : 82 567,78 F<p></p> Douze versements : 6 880,65 F<p></p><p></p>   CLASSE 4 :<p></p> R.A.B. théorique : 85 084,81 F<p></p> R.A.B. effectif (*) : 85 084,81 F<p></p> Douze versements : 7 090,40 F<p></p><p></p>   CLASSE AGENTS DE MAITRISE 1er Echelon :<p></p> R.A.B. théorique : 92 507,92 F<p></p> R.A.B. effectif (*) : 92 507,92 F<p></p> Douze versements : 7 708,99 F<p></p><p></p>   CLASSE AGENTS DE MAITRISE 2e Echelon :<p></p> R.A.B. théorique : 103 746,76 F<p></p> R.A.B. effectif (*) : 103 746,76 F<p></p> Douze versements : 8 645,56 F<p></p><p></p>   CLASSE CADRE 1 (début.) :<p></p> R.A.B. théorique : 137 671,57 F<p></p> R.A.B. effectif (*) : 137 671,57 F<p></p> Douze versements : 11 472,63 F<p></p><p></p>   CLASSE CADRE 2 (confir.) :<p></p> R.A.B. théorique : 165 183,42 F<p></p> R.A.B. effectif (*) : 165 183,42 F<p></p> Douze versements : 13 765,28 F<p></p><p></p>   CLASSE CADRE 3 (expert.) :<p></p> R.A.B. théorique : 192 711,64 F<p></p> R.A.B. effectif (*) : 192 711,64 F<p></p> Douze versements : 16 059,30 F<p></p><p></p><p></p>   (*) R.A.B. effective : rémunération annuelle brute respectant le dernier S.M.I.G. connu. <p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 11 1992-11-24 étendu par arrêté du 11 mars 1993 JORF 23 mars 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 722563200000,
+                  "dateFin": 752371200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -8520,13 +8594,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005692696",
+              "cid": "KALISCTA000005692696",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "*Salaires applicables du 1er janvier 1994 au 1er décembre 1994*",
+              "dateModif": null,
+              "dateDebut": "1993-11-04",
+              "dateFin": "1994-09-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005773047",
+                  "cid": "KALIARTI000005773047",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005692696/KALIARTI000005773047",
+                  "pathTitle": [
+                    "*Salaires applicables du 1er janvier 1994 au 1er décembre 1994*"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Pour les mois à venir, la grille de salaires est modifiée selon le tableau de la page suivante.<p></p><p></p> Période concernée : du 1er janvier 1994 au 31 décembre 1994<p></p> Dernier S.M.I.C. mensuel connu au 1er juillet 1993 : 5 886,27 F<p></p><p></p><p></p> Classe 1<p></p> Catégorie A<p></p> R.A.B. ancienne 70 622,98 F<p></p> HAUSSE 2,75 p. 100<p></p> R.A.B. théorique 72 565,11 F<p></p> R.A.B. (+) effective 72 565,11 F<p></p> Si 12 versements 6 047,09 F<p></p> Si 13 versements 5 581,9 F<p></p><p></p>Classe 1<p></p> Catégorie B<p></p> R.A.B. ancienne 70 874,73 F<p></p> HAUSSE 2,75 p. 100<p></p> R.A.B. théorique 72 823,79 F<p></p> R.A.B. (+) effective 72 823,79 F<p></p> Si 12 versements 6 068,65 F<p></p> Si 13 versements 5 601,83 F<p></p><p></p> Classe 1<p></p> Catégorie C<p></p> R.A.B. ancienne 71 111,28 F<p></p> HAUSSE 2,75 p. 100<p></p> R.A.B. théorique 73 066,84 F<p></p> R.A.B. (+) effective 73 066,84 F<p></p> Si 12 versements 6 088,90 F<p></p> Si 13 versements 5 620,53 F<p></p><p></p>Classe 2<p></p> R.A.B. ancienne 73 300,92 F<p></p> HAUSSE 2,25 p. 100<p></p> R.A.B. théorique 74 950,19 F<p></p> R.A.B. (+) effective 74 950,19 F<p></p> Si 12 versements 6 245,85 F<p></p> Si 13 versements 5 765,40 F<p></p><p></p> Classe 3<p></p> Catégorie A<p></p> R.A.B. ancienne 76 667,68 F<p></p> HAUSSE 2,25 p. 100<p></p> R.A.B. théorique 78 392,70 F<p></p> R.A.B. (+) effective 78 392,70 F<p></p> Si 12 versements 6 532,73 F<p></p> Si 13 versements 6 030,21 F<p></p><p></p>Classe 3<p></p> Catégorie B<p></p> R.A.B. ancienne 82 567,78 F<p></p> HAUSSE 2,25 p. 100<p></p> R.A.B. théorique 84 425,56 F<p></p> R.A.B. (+) effective 84 425,56 F<p></p> Si 12 versements 7 035,46 F<p></p> Si 13 versements 6 494,27 F<p></p><p></p> Classe 4<p></p> R.A.B. ancienne 85 084,81 F<p></p> HAUSSE 2,25 p. 100<p></p> R.A.B. théorique 86 999,22 F<p></p> R.A.B. (+) effective 86 999,22 F<p></p> Si 12 versements 7 249,93 F<p></p> Si 13 versements 6 692,25 p. 100<p></p><p></p><p></p>Classe Agent de maîtrise<p></p> Catégorie 1er échelon<p></p> R.A.B. ancienne 92 507,92 F<p></p> HAUSSE 2,25 p. 100<p></p> R.A.B. théorique 94 589,35 F<p></p> R.A.B. (+) effective 94 589,35 F<p></p> Si 12 versements 7 882,45 F<p></p> Si 13 versements 7 276,10 F<p></p><p></p> Classe Agent de maîtrise<p></p> Catégorie 2e échelon<p></p> R.A.B. ancienne 103 746,76 F<p></p> HAUSSE 2,25 p. 100<p></p> R.A.B. théorique 106 081,06 F<p></p> R.A.B. (+) effective 106 081,06 F<p></p> Si 12 versements 8 840,09 F<p></p> Si 13 versements 8 160,08 F<p></p><p></p> Classe Cadre<p></p> Catégorie 1 (débutant)<p></p> R.A.B. ancienne 137 671,57 F<p></p> HAUSSE 2,25 p. 100<p></p> R.A.B. théorique 140 769,18 F<p></p> R.A.B. (+) effective 140 769,18 F<p></p> Si 12 versements 11 730,77 F<p></p> Si 13 versements 10 828,40 F<p></p><p></p>Classe Cadre<p></p> Catégorie 2 (confirmé)<p></p> R.A.B. ancienne 165 183,42 F<p></p> HAUSSE 2,25 p. 100<p></p> R.A.B. théorique 168 900,05 F<p></p> R.A.B. (+) effective 168 900,05 F<p></p> Si 12 versements 14 075,00 F<p></p> Si 13 versements 12 992,31 F<p></p><p></p> Classe Cadre<p></p> Catégorie 3 (expert)<p></p> R.A.B. ancienne 192 711,64 F<p></p> HAUSSE 2,25 p. 100<p></p> R.A.B. théorique 197 047,65 F<p></p> R.A.B. (+) effective 197 047,65 F<p></p> Si 12 versements 16 420,64 F<p></p> Si 13 versements 15 157,51 F<p></p><p></p><p></p>    (+) R.A.B. effective : rémunération annuelle brute respectant le dernier S.M.I.C. connu.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 12 1993-11-04 étendu par arrêté du 3 février 1994 JORF 15 février 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 752371200000,
+                  "dateFin": 779587200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -8540,13 +8688,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005692697",
+              "cid": "KALISCTA000005692697",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "*Salaires applicables du 1er janvier au 31 décembre 1995*",
+              "dateModif": null,
+              "dateDebut": "1994-09-15",
+              "dateFin": "1995-09-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005773050",
+                  "cid": "KALIARTI000005773050",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005692697/KALIARTI000005773050",
+                  "pathTitle": [
+                    "*Salaires applicables du 1er janvier au 31 décembre 1995*"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Pour les mois à venir, la grille de salaire est modifiée coome suit :<p></p><p></p> Période concernée : du 1er janvier 1995 au 31 décembre 1995<p></p> Dernier S.M.I.C. mensuel connu au 1er juillet 1994 : 6.009,64 F<p></p><p></p><p></p> Classe 1<p></p> Catégorie A<p></p> R.A.B. ancienne 72.565,11 F<p></p> HAUSSE 1,60 p. 100<p></p> R.A.B. théorique 73.726,15 F<p></p> R.A.B. (+) effective 73.726,15 F<p></p> Si 12 versements 6.143,85 F<p></p><p></p>Classe 1<p></p> Catégorie B<p></p> R.A.B. ancienne 72.823,79 F<p></p> HAUSSE 1,60 p. 100<p></p> R.A.B. théorique 73.988,97 F<p></p> R.A.B. (+) effective 73.988,97 F<p></p> Si 12 versements 6.165,75 F<p></p><p></p> Classe 1<p></p> Catégorie C<p></p> R.A.B. ancienne 73.066,84 F<p></p> HAUSSE 1,60 p. 100<p></p> R.A.B. théorique 74.235,91 F<p></p> R.A.B. (+) effective 74.235,91 F<p></p> Si 12 versements 6.186,33 F<p></p><p></p>Classe 2<p></p> R.A.B. ancienne 74.950,19 F<p></p> HAUSSE 1,60 p. 100<p></p> R.A.B. théorique 76.149,39 F<p></p> R.A.B. (+) effective 76.149,39 F<p></p> Si 12 versements 6.345,78 F<p></p><p></p> Classe 3<p></p> Catégorie A<p></p> R.A.B. ancienne 78.392,70 F<p></p> HAUSSE 1,60 p. 100<p></p> R.A.B. théorique 79.646,98 F<p></p> R.A.B. (+) effective 79.646,98 F<p></p> Si 12 versements 6.637,25 F<p></p><p></p>Classe 3<p></p> Catégorie B<p></p> R.A.B. ancienne 84.425,56 F<p></p> HAUSSE 1,60 p. 100<p></p> R.A.B. théorique 85.776,37 F<p></p> R.A.B. (+) effective 85.776,37 F<p></p> Si 12 versements 7.148,03 F<p></p><p></p> Classe 4<p></p> R.A.B. ancienne 86.999,22 F<p></p> HAUSSE 1,60 p. 100<p></p> R.A.B. théorique 88.391,21 F<p></p> R.A.B. (+) effective 88.391,21 F<p></p> Si 12 versements 7.365,93 F<p></p><p></p><p></p>Classe Agent de maîtrise<p></p> Catégorie 1er échelon<p></p> R.A.B. ancienne 94.589,35 F<p></p> HAUSSE 1,60 p. 100<p></p> R.A.B. théorique 96.102,78 F<p></p> R.A.B. (+) effective 96.102,78 F<p></p> Si 12 versements 8.008,56 F<p></p><p></p> Classe Agent de maîtrise<p></p> Catégorie 2e échelon<p></p> R.A.B. ancienne 106.081,06 F<p></p> HAUSSE 1,60 p. 100<p></p> R.A.B. théorique 107.778,36 F<p></p> R.A.B. (+) effective 107.778,36 F<p></p> Si 12 versements 8.981,53 F<p></p><p></p> Classe Cadre<p></p> Catégorie 1 (débutant)<p></p> R.A.B. ancienne 140.769,18 F<p></p> HAUSSE 1,60 p. 100<p></p> R.A.B. théorique 143.021,49 F<p></p> R.A.B. (+) effective 143,021,49 F<p></p> Si 12 versements 11.918,46 F<p></p><p></p>Classe Cadre<p></p> Catégorie 2 (confirmé)<p></p> R.A.B. ancienne 168.900,05 F<p></p> HAUSSE 1,60 p. 100<p></p> R.A.B. théorique 171.602,45 F<p></p> R.A.B. (+) effective 171.602,45 F<p></p> Si 12 versements 14.300,20 F<p></p><p></p> Classe Cadre<p></p> Catégorie 3 (expert)<p></p> R.A.B. ancienne 197.047,65 F<p></p> HAUSSE 1,60 p. 100<p></p> R.A.B. théorique 200.200,41 F<p></p> R.A.B. (+) effective 200.200,41 F<p></p> Si 12 versements 16.683,37 F<p></p><p></p><p></p>    (+) R.A.B. effective : rémunération annuelle brute respectant le dernier S.M.I.C. connu.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 13 1994-09-15 BO conventions collectives 94-49 étendu par arrêté du 31 janvier 1995 JORF 10 février 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 779587200000,
+                  "dateFin": 811036800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

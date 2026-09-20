@@ -14805,13 +14805,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719722",
+              "cid": "KALISCTA000005719722",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima au 1er juillet 1996",
+              "dateModif": null,
+              "dateDebut": "1996-07-01",
+              "dateFin": "2000-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005840125",
+                  "cid": "KALIARTI000005840125",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719722/KALIARTI000005840125",
+                  "pathTitle": [
+                    "Salaires minima au 1er juillet 1996"
+                  ],
+                  "content": "<p></p>   La présente annexe s'applique au personnel des entreprises entrant dans le champ d'application de la convention collective nationale.<p></p> Article 1er<p></p><p></p>   Les salaires minima sont, à titre d'exception, établis forfaitairement.<p></p> Article 2<p></p><p></p>   Barème des salaires minima au 1er juillet 1996.<p></p><p></p> I. - OUVRIERS - EMPLOYES<p></p><p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = ECHELON<p></p><p></p>   (3) = COEFFICIENT<p></p><p></p>   (4) = MONTANT EN FRANCS<p></p><p></p><TABLE><TR><TD> (1)</TD><TD> (2)</TD><TD> (3) </TD><TD>   (4)   </TD></TR><TR><TD>  I </TD><TD> -  </TD><TD> 140 </TD><TD> S.M.I.C.</TD></TR><TR><TD> II </TD><TD> 1  </TD><TD> 155 </TD><TD> 6.415 F </TD></TR><TR><TD></TD><TD> 2  </TD><TD> 170 </TD><TD> 6.430 F </TD></TR><TR><TD>III </TD><TD> 1  </TD><TD> 180 </TD><TD> 6.460 F </TD></TR><TR><TD></TD><TD> 2  </TD><TD> 190 </TD><TD> 6.540 F </TD></TR><TR><TD> IV </TD><TD> 1  </TD><TD> 215 </TD><TD> 6.850 F </TD></TR><TR><TD></TD><TD> 2  </TD><TD> 225 </TD><TD> 7.100 F </TD></TR><TR><TD>  V </TD><TD> 1  </TD><TD> 240 </TD><TD> 7.500 F </TD></TR><TR><TD></TD><TD> 2  </TD><TD> 255 </TD><TD> 7.850 F </TD></TR></TABLE><p></p>II. - AGENTS DE MAÎTRISE<p></p><p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = ECHELON<p></p><p></p>   (3) = COEFFICIENT<p></p><p></p>   (4) = MONTANT EN FRANCS<p></p><p></p><TABLE><TR><TD> (1)</TD><TD> (2)</TD><TD> (3) </TD><TD>  (4)   </TD></TR><TR><TD> VI </TD><TD> 1  </TD><TD> 285 </TD><TD> 8.770 F</TD></TR><TR><TD></TD><TD> 2  </TD><TD> 305 </TD><TD> 9.385 F</TD></TR></TABLE><p></p><p></p> III. - CADRES<p></p><p></p><p></p>   (1) = CATEGORIE<p></p><p></p>   (2) = ECHELON<p></p><p></p>   (3) = COEFFICIENT<p></p><p></p>   (4) = MONTANT EN FRANCS<p></p><p></p><TABLE><TR><TD> (1)    </TD><TD> (2)</TD><TD> (3) </TD><TD>  (4)   </TD></TR><TR><TD>Cadres 1</TD><TD> 1  </TD><TD> 320 </TD><TD> 9.845 F</TD></TR><TR><TD></TD><TD> 2  </TD><TD> 340 </TD><TD>10.450 F</TD></TR><TR><TD></TD><TD> 3  </TD><TD> 360 </TD><TD>11.100 F</TD></TR><TR><TD></TD><TD> 4  </TD><TD> 400 </TD><TD>12.400 F</TD></TR><TR><TD>Cadres 2</TD><TD> 1  </TD><TD> 430 </TD><TD>13.500 F</TD></TR><TR><TD></TD><TD> 2  </TD><TD> 480 </TD><TD>14.900 F</TD></TR></TABLE><p></p>Article 3<p></p><p></p>   Le présent accord de salaires est applicable à compter du 1er juillet 1996.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 8 1996-06-12 en vigueur le 1er juillet 1996 BO conventions collectives 96-32, étendu par arrêté du 4 octobre 1996 JORF 16 octobre 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (Annexe III)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 836179200000,
+                  "dateFin": 946684800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14825,13 +14899,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719723",
+              "cid": "KALISCTA000005719723",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima au 1er janvier 2000",
+              "dateModif": null,
+              "dateDebut": "2000-01-01",
+              "dateFin": "2001-02-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005840126",
+                  "cid": "KALIARTI000005840126",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719723/KALIARTI000005840126",
+                  "pathTitle": [
+                    "Salaires minima au 1er janvier 2000"
+                  ],
+                  "content": "<p></p>   La présente annexe s'applique au personnel des entreprises entrant dans le champ d'application de la convention collective nationale.<p></p> Article 1er<p></p><p></p>   Les salaires minima sont, à titre d'exception, établis forfaitairement.<p></p> Article 2<p></p><p></p>   Barème des salaires minima<p></p><p></p> I. - OUVRIERS - EMPLOYES<p></p><p></p><p></p>   (I) = SALAIRE MINIMUM brut mensuel (base 39 h) (en francs)<p></p><p></p>   (II) = SALAIRE MINIMUM brut horaire (en francs)<p></p><p></p><TABLE><TR><TD>NIVEAU </TD><TD>COEF </TD><TD>   (I)    </TD><TD>   (II)  </TD></TR><TR><TD>  I    </TD><TD> 140 </TD><TD>   SMIC   </TD><TD> SMIC    </TD></TR><TR><TD>  II-1 </TD><TD> 155 </TD><TD>  6.920 F </TD><TD> 40,95 F </TD></TR><TR><TD>  II-2 </TD><TD> 170 </TD><TD>  6.950 F </TD><TD> 41,12 F </TD></TR><TR><TD> III-1 </TD><TD> 180 </TD><TD>  6.980 F </TD><TD> 41,30 F </TD></TR><TR><TD> III-2 </TD><TD> 190 </TD><TD>  7.030 F </TD><TD> 41,60 F </TD></TR><TR><TD>  IV-1 </TD><TD> 215 </TD><TD>  7.100 F </TD><TD> 42,01 F </TD></TR><TR><TD>  IV-2 </TD><TD> 225 </TD><TD>  7.250 F </TD><TD> 42,90 F </TD></TR><TR><TD>  V-1  </TD><TD> 240 </TD><TD>  7.680 F </TD><TD> 45,44 F </TD></TR><TR><TD>  V-2  </TD><TD> 255 </TD><TD>  8.010 F </TD><TD> 47,40 F </TD></TR></TABLE><p></p>II. - AGENTS DE MAÎTRISE<p></p><p></p><TABLE><TR><TD>NIVEAU </TD><TD>COEF </TD><TD>   (I)    </TD><TD>   (II)  </TD></TR><TR><TD>  VI-1 </TD><TD> 285 </TD><TD>  8.950 F </TD><TD> 52,96 F </TD></TR><TR><TD>  VI-2 </TD><TD> 305 </TD><TD>  9.500 F </TD><TD> 56,21 F </TD></TR></TABLE><p></p>III. - CADRES<p></p><p></p><TABLE><TR><TD>  NIVEAU   </TD><TD> COEF </TD><TD>  (I)   </TD><TD> (II) </TD></TR><TR><TD>Cadres 1                          </TD></TR><TR><TD>Echelon I  </TD><TD> 320  </TD><TD> 10.200 </TD><TD>60,36 </TD></TR><TR><TD>Echelon II </TD><TD> 340  </TD><TD> 11.200 </TD><TD>66,27 </TD></TR><TR><TD>Echelon III</TD><TD> 360  </TD><TD> 11.800 </TD><TD>69,82 </TD></TR><TR><TD>Echelon IV </TD><TD> 400  </TD><TD> 13.250 </TD><TD>78,40 </TD></TR><TR><TD>Cadres 2                          </TD></TR><TR><TD>Echelon I  </TD><TD> 430  </TD><TD> 14.700 </TD><TD>86,98 </TD></TR><TR><TD>Echelon II </TD><TD> 480  </TD><TD> 16.200 </TD><TD>95,86 </TD></TR></TABLE><p></p>Article 3<p></p> Date d'application<p></p><p></p>   Le présent accord de salaires est applicable à compter du 1er janvier 2000.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 9 1999-11-23 en vigueur le 1er janvier 2000 BO conventions collectives 2000-5 étendu par arrêté du 16 mars 2000 JORF 25 mars 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (Annexe III)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 946684800000,
+                  "dateFin": 981504000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14845,13 +14993,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719724",
+              "cid": "KALISCTA000005719724",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima au 1er février 2001",
+              "dateModif": null,
+              "dateDebut": "2001-02-01",
+              "dateFin": "2005-06-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005840127",
+                  "cid": "KALIARTI000005840127",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719724/KALIARTI000005840127",
+                  "pathTitle": [
+                    "Salaires minima au 1er février 2001"
+                  ],
+                  "content": "<p></p>   La présente annexe s'applique au personnel des entreprises entrant dans le champ d'application de la convention collective nationale.<p></p> Article 1er<p></p><p></p>   Les salaires minima sont établis forfaitairement.<p></p>Article 2<p></p> Barème des salaires minima<p></p> 1. Ouvriers. - Employés<p></p> --------------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD></TD><TD> SALAIRE MINIMUM  </TD><TD> SALAIRE MINIMUM </TD></TR><TR><TD></TD><TD></TD><TD>  brut mensuel    </TD><TD>  brut horaire   </TD></TR><TR><TD>  NIVEAU     </TD><TD> COEF.   </TD><TD> (base 39 heures) </TD><TD>  (en francs)    </TD></TR><TR><TD></TD><TD></TD><TD>  (en francs)     </TD><TD></TD></TR><TR><TD> Niveau I    </TD><TD>  140    </TD><TD>       SMIC       </TD><TD>       SMIC      </TD></TR><TR><TD> Niveau II-1 </TD><TD>  155    </TD><TD>      7 150       </TD><TD>      42,31      </TD></TR><TR><TD> Niveau II-2 </TD><TD>  170    </TD><TD>      7 200       </TD><TD>      42,60      </TD></TR><TR><TD> Niveau III-1</TD><TD>  180    </TD><TD>      7 300       </TD><TD>      43,19      </TD></TR><TR><TD> Niveau III-2</TD><TD>  190    </TD><TD>      7 400       </TD><TD>      43,79      </TD></TR><TR><TD> Niveau IV-1 </TD><TD>  215    </TD><TD>      7 500       </TD><TD>      44,38      </TD></TR><TR><TD> Niveau IV-2 </TD><TD>  225    </TD><TD>      7 600       </TD><TD>      44,97      </TD></TR><TR><TD> Niveau V-1  </TD><TD>  240    </TD><TD>      7 800       </TD><TD>      46,15      </TD></TR><TR><TD> Niveau V-2  </TD><TD>  255    </TD><TD>      8 250       </TD><TD>      48,82      </TD></TR></TABLE><p></p> --------------------------------------------------------------<p></p> 2. Agents de maîtrise<p></p><p></p> ---------------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD></TD><TD>  SALAIRE MINIMUM </TD><TD>   SALAIRE MINIMUM</TD></TR><TR><TD></TD><TD></TD><TD>    brut mensuel  </TD><TD>    brut horaire  </TD></TR><TR><TD>  Niveau     </TD><TD>  COEF.  </TD><TD> (base 39 heures) </TD><TD>     (en francs)  </TD></TR><TR><TD></TD><TD></TD><TD>   (en francs)    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Niveau VI-1 </TD><TD>  285    </TD><TD>     9 140        </TD><TD>       54,08      </TD></TR><TR><TD> Niveau VI-2 </TD><TD>  305    </TD><TD>     9 700        </TD><TD>       57,40      </TD></TR></TABLE><p></p> --------------------------------------------------------------- 3. Cadres<p></p><p></p> ---------------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD></TD><TD>  SALAIRE MINIMUM </TD><TD>   SALAIRE MINIMUM</TD></TR><TR><TD></TD><TD></TD><TD>    brut mensuel  </TD><TD>    brut horaire  </TD></TR><TR><TD>  Niveau     </TD><TD>  COEF.  </TD><TD> (base 39 heures) </TD><TD>     (en francs)  </TD></TR><TR><TD></TD><TD></TD><TD>   (en francs)    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><TABLE><TR><TD> Cadres 1    </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon I   </TD><TD>   320   </TD><TD>     10 415       </TD><TD>       61,63      </TD></TR><TR><TD> Echelon II  </TD><TD>   340   </TD><TD>     11 435       </TD><TD>       67,66      </TD></TR><TR><TD> Echelon III </TD><TD>   360   </TD><TD>     12 500       </TD><TD>       73,96      </TD></TR><TR><TD> Echelon IV  </TD><TD>   400   </TD><TD>     14 000       </TD><TD>       82,84      </TD></TR><TR><TD> Cadres 2    </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> Echelon I   </TD><TD>   430   </TD><TD>     15 000       </TD><TD>       88,76      </TD></TR><TR><TD> Echelon II  </TD><TD>   480   </TD><TD>     16 530       </TD><TD>       97,81      </TD></TR></TABLE><p></p> --------------------------------------------------------------- Article 3 Date d'application<p></p>   Le présent accord de salaires est applicable à compter du 1er février 2001.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 10 2001-03-01 en vigueur le 1er février 2001 BO conventions collectives 2001-13 étendu par arrêté du 2 juillet 2001 JORF 13 juillet 2001 rectificatif BO CC 2001-28",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (Annexe III)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 980985600000,
+                  "dateFin": 1118361600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

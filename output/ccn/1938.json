@@ -10183,13 +10183,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005710966",
+              "cid": "KALISCTA000005710966",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires 1997",
+              "dateModif": null,
+              "dateDebut": "1997-02-12",
+              "dateFin": "1998-01-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005819595",
+                  "cid": "KALIARTI000005819595",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005710966/KALIARTI000005819595",
+                  "pathTitle": [
+                    "Salaires 1997"
+                  ],
+                  "content": "ACCORD SALAIRES MINIMA PROFESSIONNELS GARANTIS<p></p><p></p>   Le barème national des salaires minima garantis est fixé comme suit :<p></p> Article 1er<p></p><p></p>   Augmentation au 1er mars 1997 des minima :<p></p><p></p>   - de 2 % du coefficient 120 au coefficient 150 ;<p></p><p></p>   - de 1,7 % du coefficient 155 au coefficient 195 ;<p></p><p></p>   - de 1,5 % du coefficient 200 au coefficient 280 ;<p></p><p></p>   - de 1,3 % à partir du coefficient 300.<p></p> Article 2<p></p><p></p>   Augmentation au 1er octobre 1997 des minima :<p></p><p></p>   - de 1,84 % pour le coefficient 120 ;<p></p><p></p>   - de 1,37 % pour le coefficient 125 ;<p></p><p></p>   - de 1,2 % pour les coefficients 130 à 150 ;<p></p><p></p>   - de 1 % à partir du coefficient 155.<p></p><p></p>   Il en découle la grille annexée à la présente.<p></p><p></p> GRILLE DES SALAIRES MINIMA 1997<p></p> pour 169,65 heures mensuelles<p></p><TABLE><TR><TD>COEF 01-03-97</TD><TD> 01-10-97</TD><TD>Hausse</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD> 1997 </TD></TR><TR><TD>120</TD><TD>  6441,47</TD><TD>  6560,00</TD><TD> 3,84</TD></TR><TR><TD>125</TD><TD>  6476,18</TD><TD>  6565,00</TD><TD> 3,37</TD></TR><TR><TD>130</TD><TD>  6511,92</TD><TD>  6590,07</TD><TD> 3,20</TD></TR><TR><TD>135</TD><TD>  6545,62</TD><TD>  6624,16</TD><TD> 3,20</TD></TR><TR><TD>140</TD><TD>  6580,32</TD><TD>  6659,28</TD><TD> 3,20</TD></TR><TR><TD>145</TD><TD>  6645,54</TD><TD>  6725,29</TD><TD> 3,20</TD></TR><TR><TD>150</TD><TD>  6710,75</TD><TD>  6791,28</TD><TD> 3,20</TD></TR><TR><TD>155</TD><TD>  6756,04</TD><TD>  6823,60</TD><TD> 2,70</TD></TR><TR><TD>160</TD><TD>  6821,06</TD><TD>  6889,27</TD><TD> 2,70</TD></TR><TR><TD>165</TD><TD>  6886,09</TD><TD>  6954,95</TD><TD> 2,70</TD></TR><TR><TD>170</TD><TD>  7016,56</TD><TD>  7086,73</TD><TD> 2,70</TD></TR><TR><TD>175</TD><TD>  7148,28</TD><TD>  7219,76</TD><TD> 2,70</TD></TR><TR><TD>180</TD><TD>  7279,38</TD><TD>  7352,17</TD><TD> 2,70</TD></TR><TR><TD>185</TD><TD>  7410,48</TD><TD>  7484,58</TD><TD> 2,70</TD></TR><TR><TD>190</TD><TD>  7541,57</TD><TD>  7616,99</TD><TD> 2,70</TD></TR><TR><TD>195</TD><TD>  7672,68</TD><TD>  7749,41</TD><TD> 2,70</TD></TR><TR><TD>200</TD><TD>  7801,88</TD><TD>  7879,90</TD><TD> 2,50</TD></TR><TR><TD>215</TD><TD>  8205,73</TD><TD>  8287,79</TD><TD> 2,50</TD></TR><TR><TD>230</TD><TD>  8611,68</TD><TD>  8697,80</TD><TD> 2,50</TD></TR><TR><TD>245</TD><TD>  9033,49</TD><TD>  9123,82</TD><TD> 2,50</TD></TR><TR><TD>260</TD><TD>  9444,75</TD><TD>  9539,20</TD><TD> 2,50</TD></TR><TR><TD>280</TD><TD> 10008,22</TD><TD> 10108,30</TD><TD> 2,50</TD></TR></TABLE><p></p><TABLE><TR><TD>300</TD><TD> 10555,11</TD><TD> 10660,66</TD><TD> 2,30</TD></TR><TR><TD>320</TD><TD> 11123,80</TD><TD> 11235,04</TD><TD> 2,30</TD></TR><TR><TD>340</TD><TD> 11692,52</TD><TD> 11809,44</TD><TD> 2,30</TD></TR><TR><TD>350</TD><TD> 11739,97</TD><TD> 11857,37</TD><TD> 2,30</TD></TR><TR><TD>375</TD><TD> 12569,28</TD><TD> 12694,97</TD><TD> 2,30</TD></TR><TR><TD>400</TD><TD> 13398,61</TD><TD> 13532,60</TD><TD> 2,30</TD></TR><TR><TD>450</TD><TD> 14817,72</TD><TD> 14965,90</TD><TD> 2,30</TD></TR><TR><TD>500</TD><TD> 16235,78</TD><TD> 16398,14</TD><TD> 2,30</TD></TR><TR><TD>600</TD><TD> 19083,71</TD><TD> 19274,55</TD><TD> 2,30</TD></TR><TR><TD>700</TD><TD> 21931,87</TD><TD> 22151,19</TD><TD> 2,30</TD></TR></TABLE><p></p><TABLE><TR><TD>COEF</TD><TD>     Hausse au      </TD></TR><TR><TD></TD><TD>01-03-97</TD><TD> 01-10-1997</TD></TR><TR><TD>120 </TD><TD> 2,00   </TD><TD> 1,84      </TD></TR><TR><TD>125 </TD><TD> 2,00   </TD><TD> 1,37      </TD></TR><TR><TD>130 </TD><TD> 2,00   </TD><TD> 1,20      </TD></TR><TR><TD>135 </TD><TD> 2,00   </TD><TD> 1,20      </TD></TR><TR><TD>140 </TD><TD> 2,00   </TD><TD> 1,20      </TD></TR><TR><TD>145 </TD><TD> 2,00   </TD><TD> 1,20      </TD></TR><TR><TD>150 </TD><TD> 2,00   </TD><TD> 1,20      </TD></TR><TR><TD>155 </TD><TD> 1,70   </TD><TD> 1,00      </TD></TR><TR><TD>160 </TD><TD> 1,70   </TD><TD> 1,00      </TD></TR><TR><TD>165 </TD><TD> 1,70   </TD><TD> 1,00      </TD></TR><TR><TD>170 </TD><TD> 1,70   </TD><TD> 1,00      </TD></TR><TR><TD>175 </TD><TD> 1,70   </TD><TD> 1,00      </TD></TR><TR><TD>180 </TD><TD> 1,70   </TD><TD> 1,00      </TD></TR><TR><TD>185 </TD><TD> 1,70   </TD><TD> 1,00      </TD></TR><TR><TD>190 </TD><TD> 1,70   </TD><TD> 1,00      </TD></TR><TR><TD>195 </TD><TD> 1,70   </TD><TD> 1,00      </TD></TR></TABLE><p></p><TABLE><TR><TD>200 </TD><TD> 1,50   </TD><TD> 1,00      </TD></TR><TR><TD>215 </TD><TD> 1,50   </TD><TD> 1,00      </TD></TR><TR><TD>230 </TD><TD> 1,50   </TD><TD> 1,00      </TD></TR><TR><TD>245 </TD><TD> 1,50   </TD><TD> 1,00      </TD></TR><TR><TD>260 </TD><TD> 1,50   </TD><TD> 1,00      </TD></TR><TR><TD>280 </TD><TD> 1,50   </TD><TD> 1,00      </TD></TR><TR><TD>300 </TD><TD> 1,30   </TD><TD> 1,00      </TD></TR><TR><TD>320 </TD><TD> 1,30   </TD><TD> 1,00      </TD></TR><TR><TD>340 </TD><TD> 1,30   </TD><TD> 1,00      </TD></TR><TR><TD>350 </TD><TD> 1,30   </TD><TD> 1,00      </TD></TR><TR><TD>375 </TD><TD> 1,30   </TD><TD> 1,00      </TD></TR><TR><TD>400 </TD><TD> 1,30   </TD><TD> 1,00      </TD></TR><TR><TD>450 </TD><TD> 1,30   </TD><TD> 1,00      </TD></TR><TR><TD>500 </TD><TD> 1,30   </TD><TD> 1,00      </TD></TR><TR><TD>600 </TD><TD> 1,30   </TD><TD> 1,00      </TD></TR><TR><TD>700 </TD><TD> 1,30   </TD><TD> 1,00      </TD></TR></TABLE><p></p>Article 3 <p></p><p></p>   Ces dispositions pourraient faire l'objet d'une nouvelle rencontre en octobre 1997, afin de déterminer les évolutions souhaitables au regard de la situation économique.<p></p> Article 4 <p></p><p></p>   Les parties signataires sont d'accord pour demander en commun l'extension du présent accord.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1997-02-12 BO conventions collectives 97-11, étendu par arrêté du 6 mai 1997 JORF 17 mai 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 855705600000,
+                  "dateFin": 884822400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -10203,13 +10277,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005710967",
+              "cid": "KALISCTA000005710967",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires 1998",
+              "dateModif": null,
+              "dateDebut": "1998-01-15",
+              "dateFin": "2000-02-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005819596",
+                  "cid": "KALIARTI000005819596",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005710967/KALIARTI000005819596",
+                  "pathTitle": [
+                    "Salaires 1998"
+                  ],
+                  "content": "Accord salaires minima professionnels garantis<p></p><p></p>   Le barème national des salaires minima garantis est fixé comme suit :<p></p> Article 1er<p></p><p></p>   Augmentation au 1er mars 1998 des minima :<p></p><p></p>   - de 2 % du coefficient 120 au coefficient 145 ;<p></p><p></p>   - de 1,75 % du coefficient 150 au coefficient 195 ;<p></p><p></p>   - de 1,4 % du coefficient 200 au coefficient 375 ;<p></p><p></p>   - de 1 % à partir du coefficient 400.<p></p> Article 2<p></p><p></p>   Augmentation au 1er septembre 1998 de 0,5 % de tous les minima.<p></p><p></p>   Il en découle la grille annexée à la présente.<p></p><p></p> ANNEXE <p></p> GRILLE DES SALAIRES MINIMA 1998<p></p> pour 169,65 heures mensuelles<p></p><TABLE><TR><TD>COEF</TD><TD> 01-03-98 </TD><TD> 01-10-98 </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD>120 </TD><TD>  6 691,20</TD><TD>  6 724,66</TD></TR><TR><TD>125 </TD><TD>  6 696,30</TD><TD>  6 729,78</TD></TR><TR><TD>130 </TD><TD>  6 721,80</TD><TD>  6 755,41</TD></TR><TR><TD>135 </TD><TD>  6 756,64</TD><TD>  6 790,43</TD></TR><TR><TD>140 </TD><TD>  6 792,47</TD><TD>  6 826,43</TD></TR><TR><TD>145 </TD><TD>  6 859,80</TD><TD>  6 894,09</TD></TR><TR><TD>150 </TD><TD>  6 910,13</TD><TD>  6 944,68</TD></TR><TR><TD>155 </TD><TD>  6 943,01</TD><TD>  6 977,73</TD></TR><TR><TD>160 </TD><TD>  7 009,83</TD><TD>  7 044,88</TD></TR><TR><TD>165 </TD><TD>  7 076,66</TD><TD>  7 112,04</TD></TR><TR><TD>170 </TD><TD>  7 210,75</TD><TD>  7 246,80</TD></TR><TR><TD>175 </TD><TD>  7 346,11</TD><TD>  7 382,84</TD></TR><TR><TD>180 </TD><TD>  7 480,83</TD><TD>  7 518,24</TD></TR><TR><TD>185 </TD><TD>  7 615,56</TD><TD>  7 653,64</TD></TR><TR><TD>190 </TD><TD>  7 750,29</TD><TD>  7 789,04</TD></TR><TR><TD>195 </TD><TD>  7 885,02</TD><TD>  7 924,45</TD></TR><TR><TD>200 </TD><TD>  7 990,22</TD><TD>  8 030,17</TD></TR><TR><TD>215 </TD><TD>  8 403,82</TD><TD>  8 445,84</TD></TR><TR><TD>230 </TD><TD>  8 819,57</TD><TD>  8 863,67</TD></TR><TR><TD>245 </TD><TD>  9 251,55</TD><TD>  9 297,81</TD></TR><TR><TD>260 </TD><TD>  9 672,75</TD><TD>  9 721,11</TD></TR><TR><TD>280 </TD><TD> 10 249,82</TD><TD> 10 301,07</TD></TR></TABLE><p></p><TABLE><TR><TD>300 </TD><TD> 10 809,91</TD><TD> 10 863,96</TD></TR><TR><TD>320 </TD><TD> 11 392,33</TD><TD> 11 449,29</TD></TR><TR><TD>340 </TD><TD> 11 974,77</TD><TD> 12 034,65</TD></TR><TR><TD>350 </TD><TD> 12 023,37</TD><TD> 12 083,49</TD></TR><TR><TD>375 </TD><TD> 12 872,70</TD><TD> 12 937,06</TD></TR><TR><TD>400 </TD><TD> 13 667,93</TD><TD> 13 736,27</TD></TR><TR><TD>450 </TD><TD> 15 115,56</TD><TD> 15 191,14</TD></TR><TR><TD>500 </TD><TD> 16 562,12</TD><TD> 16 644,93</TD></TR><TR><TD>600 </TD><TD> 19 467,30</TD><TD> 19 564,63</TD></TR><TR><TD>700 </TD><TD> 22 372,70</TD><TD> 22 484,57</TD></TR></TABLE><p></p><TABLE><TR><TD>COEF</TD><TD>Hausse au</TD><TD> Hausse au </TD></TR><TR><TD></TD><TD>01-03-98 </TD><TD> 01-10-98  </TD></TR><TR><TD></TD><TD>   (en pourcentage)  </TD></TR><TR><TD>120 </TD><TD> 2,00    </TD><TD> 0,50      </TD></TR><TR><TD>125 </TD><TD> 2,00    </TD><TD> 0,50      </TD></TR><TR><TD>130 </TD><TD> 2,00    </TD><TD> 0,50      </TD></TR><TR><TD>135 </TD><TD> 2,00    </TD><TD> 0,50      </TD></TR><TR><TD>140 </TD><TD> 2,00    </TD><TD> 0,50      </TD></TR><TR><TD>145 </TD><TD> 2,00    </TD><TD> 0,50      </TD></TR><TR><TD>150 </TD><TD> 1,75    </TD><TD> 0,50      </TD></TR><TR><TD>155 </TD><TD> 1,75    </TD><TD> 0,50      </TD></TR><TR><TD>160 </TD><TD> 1,75    </TD><TD> 0,50      </TD></TR><TR><TD>165 </TD><TD> 1,75    </TD><TD> 0,50      </TD></TR><TR><TD>170 </TD><TD> 1,75    </TD><TD> 0,50      </TD></TR><TR><TD>175 </TD><TD> 1,75    </TD><TD> 0,50      </TD></TR><TR><TD>180 </TD><TD> 1,75    </TD><TD> 0,50      </TD></TR><TR><TD>185 </TD><TD> 1,75    </TD><TD> 0,50      </TD></TR><TR><TD>190 </TD><TD> 1,75    </TD><TD> 0,50      </TD></TR><TR><TD>195 </TD><TD> 1,75    </TD><TD> 0,50      </TD></TR></TABLE><p></p><TABLE><TR><TD>200 </TD><TD> 1,40    </TD><TD> 0,50      </TD></TR><TR><TD>215 </TD><TD> 1,40    </TD><TD> 0,50      </TD></TR><TR><TD>230 </TD><TD> 1,40    </TD><TD> 0,50      </TD></TR><TR><TD>245 </TD><TD> 1,40    </TD><TD> 0,50      </TD></TR><TR><TD>260 </TD><TD> 1,40    </TD><TD> 0,50      </TD></TR><TR><TD>280 </TD><TD> 1,40    </TD><TD> 0,50      </TD></TR><TR><TD>300 </TD><TD> 1,40    </TD><TD> 0,50      </TD></TR><TR><TD>320 </TD><TD> 1,40    </TD><TD> 0,50      </TD></TR><TR><TD>340 </TD><TD> 1,40    </TD><TD> 0,50      </TD></TR><TR><TD>350 </TD><TD> 1,40    </TD><TD> 0,50      </TD></TR><TR><TD>375 </TD><TD> 1,40    </TD><TD> 0,50      </TD></TR><TR><TD>400 </TD><TD> 1,00    </TD><TD> 0,50      </TD></TR><TR><TD>450 </TD><TD> 1,00    </TD><TD> 0,50      </TD></TR><TR><TD>500 </TD><TD> 1,00    </TD><TD> 0,50      </TD></TR><TR><TD>600 </TD><TD> 1,00    </TD><TD> 0,50      </TD></TR><TR><TD>700 </TD><TD> 1,00    </TD><TD> 0,50      </TD></TR></TABLE><p></p>Article 3 <p></p><p></p>   Les parties signataires sont d'accord pour demander en commun l'extension du présent accord.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1998-01-15 BO conventions collectives 98-9 étendu par arrêté du 1er avril 1998 JORF 15 avril 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 884822400000,
+                  "dateFin": 949622400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -10223,13 +10371,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005710968",
+              "cid": "KALISCTA000005710968",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er février 2000",
+              "dateModif": null,
+              "dateDebut": "2000-02-04",
+              "dateFin": "2001-04-24",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005819598",
+                  "cid": "KALIARTI000005819598",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005710968/KALIARTI000005819598",
+                  "pathTitle": [
+                    "Salaires au 1er février 2000"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   A compter du 1er février 2000 les salaires minima garantis sont les suivants.<p></p> Grille des salaires minima pour 169,65 heures mensuelles<p></p> (à compter du 1er février 2000)<p></p><p></p><TABLE><TR><TD>COEF</TD><TD> Salaire   </TD><TD> Hausse </TD></TR><TR><TD></TD><TD> (en fr.)  </TD><TD> en %   </TD></TR><TR><TD> 120</TD><TD>  6 908,15 </TD><TD> 2,73   </TD></TR><TR><TD> 125</TD><TD>  6 913,50 </TD><TD> 2,73   </TD></TR><TR><TD> 130</TD><TD>  6 930,00 </TD><TD> 2,58   </TD></TR><TR><TD> 135</TD><TD>  6 962,90 </TD><TD> 2,54   </TD></TR><TR><TD> 140</TD><TD>  7 000,00 </TD><TD> 2,54   </TD></TR><TR><TD> 145</TD><TD>  7 020,00 </TD><TD> 1,83   </TD></TR><TR><TD> 150</TD><TD>  7 034,96 </TD><TD> 1,30   </TD></TR><TR><TD> 155</TD><TD>  7 068,44 </TD><TD> 1,30   </TD></TR><TR><TD> 160</TD><TD>  7 136,46 </TD><TD> 1,30   </TD></TR><TR><TD> 165</TD><TD>  7 204,50 </TD><TD> 1,30   </TD></TR><TR><TD> 170</TD><TD>  7 341,01 </TD><TD> 1,30   </TD></TR><TR><TD> 175</TD><TD>  7 478,81 </TD><TD> 1,30   </TD></TR><TR><TD> 180</TD><TD>  7 615,97 </TD><TD> 1,30   </TD></TR><TR><TD> 185</TD><TD>  7 753,14 </TD><TD> 1,30   </TD></TR><TR><TD> 190</TD><TD>  7 890,30 </TD><TD> 1,30   </TD></TR><TR><TD> 195</TD><TD>  8 027,47 </TD><TD> 1,30   </TD></TR><TR><TD> 200</TD><TD>  8 134,56 </TD><TD> 1,30   </TD></TR><TR><TD> 215</TD><TD>  8 555,63 </TD><TD> 1,30   </TD></TR><TR><TD> 230</TD><TD>  8 978,89 </TD><TD> 1,30   </TD></TR><TR><TD> 245</TD><TD>  9 418,68 </TD><TD> 1,30   </TD></TR><TR><TD> 260</TD><TD>  9 847,49 </TD><TD> 1,30   </TD></TR><TR><TD> 280</TD><TD> 10 434,98 </TD><TD> 1,30   </TD></TR><TR><TD> 300</TD><TD> 10 972,60 </TD><TD> 1,00   </TD></TR><TR><TD> 320</TD><TD> 11 563,79 </TD><TD> 1,00   </TD></TR><TR><TD> 340</TD><TD> 12 154,99 </TD><TD> 1,00   </TD></TR><TR><TD> 350</TD><TD> 12 204,32 </TD><TD> 1,00   </TD></TR><TR><TD> 375</TD><TD> 13 066,43 </TD><TD> 1,00   </TD></TR><TR><TD> 400</TD><TD> 13 873,63 </TD><TD> 1,00   </TD></TR><TR><TD> 450</TD><TD> 15 343,05 </TD><TD> 1,00   </TD></TR><TR><TD> 500</TD><TD> 16 811,38 </TD><TD> 1,00   </TD></TR><TR><TD> 600</TD><TD> 19 760,28 </TD><TD> 1,00   </TD></TR><TR><TD> 700</TD><TD> 22 709,41 </TD><TD> 1,00   </TD></TR></TABLE><p></p> Article 2<p></p>   Les signataires sont convenus de se retrouver en septembre pour examiner la situation après les éventuelles modifications du SMIC au 1er juillet 2000.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2000-02-04 BO conventions collectives 2000-9 étendu par arrêté du 10 mai 2000 JORF 19 mai 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 949622400000,
+                  "dateFin": 988070400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

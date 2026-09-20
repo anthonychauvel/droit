@@ -25960,13 +25960,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005716688",
+              "cid": "KALISCTA000005716688",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima garantis à compter du 1er mars 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-03-09",
+              "dateFin": "1995-10-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005833705",
+                  "cid": "KALIARTI000005833705",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005716688/KALIARTI000005833705",
+                  "pathTitle": [
+                    "Salaires minima garantis à compter du 1er mars 1995."
+                  ],
+                  "content": "Article 1<p></p><p></p>   a) Sont garantis, à compter du 1er mars 1995 les salaires minima tels que définis à l'alinéa 1er de l'article 44. <p></p>(1) = CATEGORIES PROFESSIONNELLE, NIVEAU, ECHELON<p></p> (2) = SALAIRE POUR 169h (EN FRANCS)<p></p> (3) = TAUX HORAIRE (EN FRANCS)<p></p><TABLE><TR><TD> (1)  </TD><TD>   (2)    </TD><TD>   (3) </TD></TR><TR><TD>        Niveau 1         </TD></TR><TR><TD>Ech. 1  Taux horaire du  </TD></TR><TR><TD>        SMIC x 169 heures</TD></TR><TR><TD>Ech. 2  Taux horaire du  </TD></TR><TR><TD>        SMIC x 169 heures</TD></TR><TR><TD> + majorations annuelles </TD></TR><TR><TD> prévues aux art. 44-2 b </TD></TR><TR><TD> et 44-2 c de la CCN     </TD></TR><TR><TD>        Niveau 2         </TD></TR><TR><TD>Ech. 1</TD><TD> 6.479,27 </TD><TD> 38,34 </TD></TR><TR><TD>Ech. 2</TD><TD> 6.645,00 </TD><TD> 39,32 </TD></TR><TR><TD>Ech. 3</TD><TD> 6.864,57 </TD><TD> 40,62 </TD></TR><TR><TD>        Niveau 3         </TD></TR><TR><TD>Ech. 1</TD><TD> 7.139,02 </TD><TD> 42,24 </TD></TR><TR><TD>Ech. 2</TD><TD> 7.357,53 </TD><TD> 43,54 </TD></TR><TR><TD>Ech. 3</TD><TD> 7.687,93 </TD><TD> 45,49 </TD></TR><TR><TD>        Niveau 4         </TD></TR><TR><TD>Ech. 1</TD><TD> 8.566,19 </TD><TD> 50,69 </TD></TR><TR><TD>Ech. 2</TD><TD> 8.785,76 </TD><TD> 51,99 </TD></TR><TR><TD>Ech. 3</TD><TD> 9.115,11 </TD><TD> 53,94 </TD></TR><TR><TD>Ech. 4</TD><TD> 9.664,02 </TD><TD> 57,18 </TD></TR></TABLE><p></p><p></p>   b) Sont garantis à compter du 1er septembre 1995 les salaires minima tels que définis à l'alinéa 1 de l'article 44 :<p></p><p></p> (1) = CATEGORIES PROFESSIONNELLE, NIVEAU, ECHELON<p></p> (2) = SALAIRE POUR 169h (EN FRANCS)<p></p> (3) = TAUX HORAIRE (EN FRANCS)<p></p><TABLE><TR><TD> (1)  </TD><TD>   (2)    </TD><TD>   (3) </TD></TR><TR><TD>        Niveau 1         </TD></TR><TR><TD>Ech. 1  Taux horaire du  </TD></TR><TR><TD>        SMIC x 169 heures</TD></TR><TR><TD>Ech. 2  Taux horaire du  </TD></TR><TR><TD>        SMIC x 169 heures</TD></TR><TR><TD> + majorations annuelles </TD></TR><TR><TD> prévues aux art. 44-2 b </TD></TR><TR><TD> et 44-2 c de la CCN     </TD></TR><TR><TD>        Niveau 2         </TD></TR><TR><TD>Ech. 1</TD><TD> 6.557,02 </TD><TD> 38,80 </TD></TR><TR><TD>Ech. 2</TD><TD> 6.724,74 </TD><TD> 39,79 </TD></TR><TR><TD>Ech. 3</TD><TD> 6.946,94 </TD><TD> 41,11 </TD></TR><TR><TD>        Niveau 3         </TD></TR><TR><TD>Ech. 1</TD><TD> 7.224,69 </TD><TD> 42,75 </TD></TR><TR><TD>Ech. 2</TD><TD> 7.445,82 </TD><TD> 44,06 </TD></TR><TR><TD>Ech. 3</TD><TD> 7.780,19 </TD><TD> 46,04 </TD></TR><TR><TD>        Niveau 4         </TD></TR><TR><TD>Ech. 1</TD><TD> 8.668,98 </TD><TD> 51,30 </TD></TR><TR><TD>Ech. 2</TD><TD> 8.891,19 </TD><TD> 52,61 </TD></TR><TR><TD>Ech. 3</TD><TD> 9.224,49 </TD><TD> 54,58 </TD></TR><TR><TD>Ech. 4</TD><TD> 9.779,99 </TD><TD> 57,87 </TD></TR></TABLE><p></p>Article 2<p></p><p></p>   Les autres paragraphes de l'article 44 ne sont pas modifiés.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 12 1995-03-09 BO conventions collectives 95-14, étendu par arrêté du 19 juin 1995 JORF 29 juin 1995, élargi au secteur de la restauration livrée par arrêté du 7 août 1995 JORF 17 août 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 794707200000,
+                  "dateFin": 814060800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -25980,13 +26054,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005716689",
+              "cid": "KALISCTA000005716689",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Majorations annuelles à compter du 1er novembre 1995",
+              "dateModif": null,
+              "dateDebut": "1995-10-19",
+              "dateFin": "1996-02-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005833706",
+                  "cid": "KALIARTI000005833706",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005716689/KALIARTI000005833706",
+                  "pathTitle": [
+                    "Majorations annuelles à compter du 1er novembre 1995"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les parties signataires conviennent de modifier, à compter du 1er novembre 1995, les dispositions de l'article 44-2 b relatif à la majoration annuelle.<p></p><p></p>   A l'échelon 2 du niveau I, les entreprises s'engagent à majorer la rémunération annuelle du niveau I, échelon 1, d'un montant annuel de 1 160 F pour une durée mensuelle de 169 heures de travail effectif et calculé au prorata du temps de présence dans l'échelon 2. Les entreprises qui versent à leurs salariés un treizième mois, une prime de fin d'année ou toute autre prime de même nature ou un système d'intéressement en tiennent compte dans la limite de 560 F.<p></p>Article 2<p></p><p></p>   Les parties signataires conviennent de modifier, à compter du 1er novembre 1995, les dispositions de l'article 44-2 c relatif à la majoration annuelle.<p></p><p></p>   Au-delà d'une période de travail effectif de six mois dans un poste de niveau I, échelon 2, les entreprises s'engagent à majorer la rémunération annuelle du niveau I, échelon 1, d'un montant annuel de 2 120 F pour une durée mensuelle de 169 heures de travail effectif et calculé au prorata du temps de présence au-delà de six mois dans l'échelon 2 du salarié concerné.<p></p><p></p>   Les entreprises qui versent à leurs salariés un treizième mois, une prime de fin d'année ou toute autre prime de même nature ou un système d'intéressement en tiennent compte dans la limite de 880 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 14 1995-10-19 BO conventions collectives 95-50, étendu par arrêté du 22 janvier 1996, JORF 3 février 1996, élargi par arrêté du 29 avril 1996 JORF 8 mai 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 814060800000,
+                  "dateFin": 824947200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26000,13 +26148,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005716690",
+              "cid": "KALISCTA000005716690",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Majorations annuelles à compter du 1er mars 1996",
+              "dateModif": null,
+              "dateDebut": "1996-02-22",
+              "dateFin": "1997-03-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005833707",
+                  "cid": "KALIARTI000005833707",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005716690/KALIARTI000005833707",
+                  "pathTitle": [
+                    "Majorations annuelles à compter du 1er mars 1996"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les parties signataires conviennent de modifier les dispositions de l'article 44-2 a relatif aux salaires minima garantis par niveau comme suit :<p></p><p></p>   a) Sont garantis, à compter du 1er mars 1996, les salaires minima tels que définis à l'alinéa 1 de l'article 44.<p></p><p></p> (1) Niveau<p></p> (2) Echelon<p></p> (3) Salaire pour 169 heures<p></p> (4) Taux horaire<p></p><TABLE><TR><TD>(1)</TD><TD>(2)</TD><TD>   (3)  </TD><TD>   (4)     </TD></TR><TR><TD> I </TD><TD> 1 </TD><TD> Taux horaire du    </TD></TR><TR><TD></TD><TD> S.M.I.C. x 169 h   </TD></TR><TR><TD> I </TD><TD> 2 </TD><TD> Taux horaire du    </TD></TR><TR><TD></TD><TD> S.M.I.C. x 169 h(+)</TD></TR><TR><TD> II</TD><TD> 1 </TD><TD> 6.655,38F </TD><TD> 39,38F </TD></TR><TR><TD> II</TD><TD> 2 </TD><TD> 6.825,61F </TD><TD> 40,39F </TD></TR><TR><TD> II</TD><TD> 3 </TD><TD> 7.051,14F </TD><TD> 41,72F </TD></TR><TR><TD>III</TD><TD> 1 </TD><TD> 7.333,06F </TD><TD> 43,39F </TD></TR><TR><TD>III</TD><TD> 2 </TD><TD> 7.557,51F </TD><TD> 44,72F </TD></TR><TR><TD>III</TD><TD> 3 </TD><TD> 7.896,89F </TD><TD> 46,73F </TD></TR><TR><TD> IV</TD><TD> 1 </TD><TD> 8.799,01F </TD><TD> 52,07F </TD></TR><TR><TD> IV</TD><TD> 2 </TD><TD> 9.024,56F </TD><TD> 53,40F </TD></TR><TR><TD> IV</TD><TD> 3 </TD><TD> 9.362,86F </TD><TD> 55,40F </TD></TR><TR><TD> IV</TD><TD> 4 </TD><TD> 9.926,69F </TD><TD> 58,74F </TD></TR></TABLE><p></p> (+) Taux horaire du S.M.I.C. + majorations annuelles prévues aux articles 44-2b et 44-2c de la C.C.N..<p></p>   b) Sont garantis, à compter du 1er septembre 1996 les salaires minima tels que définis à l'alinéa 1 de l'article 44.<p></p> (1) Niveau<p></p> (2) Echelon<p></p> (3) Salaire pour 169 heures<p></p> (4) Taux horaire<p></p><TABLE><TR><TD>(1)</TD><TD>(2)</TD><TD>   (3)  </TD><TD>   (4)     </TD></TR><TR><TD> I </TD><TD> 1 </TD><TD> Taux horaire du    </TD></TR><TR><TD></TD><TD> S.M.I.C. x 169 h   </TD></TR><TR><TD> I </TD><TD> 2 </TD><TD> Taux horaire du    </TD></TR><TR><TD></TD><TD> S.M.I.C. x 169 h(+)</TD></TR><TR><TD> II</TD><TD> 1 </TD><TD> 6.721,93F </TD><TD> 39,77F </TD></TR><TR><TD> II</TD><TD> 2 </TD><TD> 6.893,87F </TD><TD> 40,79F </TD></TR><TR><TD> II</TD><TD> 3 </TD><TD> 7.121,65F </TD><TD> 42,14F </TD></TR><TR><TD>III</TD><TD> 1 </TD><TD> 7.406,39F </TD><TD> 43,82F </TD></TR><TR><TD>III</TD><TD> 2 </TD><TD> 7.633,08F </TD><TD> 45,17F </TD></TR><TR><TD>III</TD><TD> 3 </TD><TD> 7.975,86F </TD><TD> 47,19F </TD></TR><TR><TD> IV</TD><TD> 1 </TD><TD> 8.887,00F </TD><TD> 52,59F </TD></TR><TR><TD> IV</TD><TD> 2 </TD><TD> 9.114,81F </TD><TD> 53,93F </TD></TR><TR><TD> IV</TD><TD> 3 </TD><TD> 9.456,49F </TD><TD> 55,96F </TD></TR><TR><TD> IV</TD><TD> 4 </TD><TD>10.025,96F </TD><TD> 59,33F </TD></TR></TABLE><p></p> (+) Taux horaire du S.M.I.C. + majorations annuelles prévues aux articles 44-2b et 44-2c de la C.C.N..Article 2<p></p><p></p>   Les parties signataires conviennent de modifier, à compter du 1er mars 1996, les dispositions de l'article 44-2 b relatif à la majoration annuelle.<p></p><p></p>   A l'échelon 2 du niveau I, les entreprises s'engagent à majorer la rémunération annuelle du niveau I, échelon 1, d'un montant annuel de 1 200 F pour une durée mensuelle de 169 heures de travail effectif et calculé au prorata du temps de présence dans l'échelon 2 du salarié concerné.<p></p><p></p>   Les entreprises qui versent à leurs salariés un treizième mois, une prime de fin d'année ou toute autre prime de même nature ou un système d'intéressement, en tiennent compte dans la limite de 600 F.<p></p><p></p>Article 3<p></p><p></p>   Les parties signataires conviennent de modifier, à compter du 1er mars 1996, les dispositions de l'article 44-2 c relatif à la majoration annuelle.<p></p><p></p>   Au-delà d'une période de travail effectif de six mois dans un poste de niveau I, échelon 2, les entreprises s'engagent à majorer la rémunération annuelle du niveau I, échelon 1, d'un montant annuel de 2 200 F pour une durée mensuelle de 169 heures de travail effectif et calculé au prorata du temps de présence au-delà de six mois dans l'échelon 2 du salarié concerné.<p></p><p></p>   Les entreprises qui versent à leurs salariés un treizième mois, une prime de fin d'année ou toute autre prime de même nature ou un système d'intéressement, en tiennent compte dans la limite de 960 F.<p></p> Article 4<p></p><p></p>   Dans l'hypothèse où l'indice général des prix à la consommation publié par l'I.N.S.E.E. ferait apparaître une hausse supérieure à l'estimation retenue par les négociateurs du présent avenant, soit 2 p. 100, les parties signataires conviennent de se revoir courant septembre 1996.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 16 1996-02-22 BO conventions collectives 96-15, étendu par arrêté du 4 juin 1996 JORF 14 juin 1996 élargi par arrêté du 2 août 1996 JORF 13 août 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 824947200000,
+                  "dateFin": 857520000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
