@@ -2018,6 +2018,57 @@ var SYN_EXTRA = {
  'rupture conv':['rupture conventionnelle'],'stc':['solde de tout compte'],'precarite':['prime de precarite'],'prudhommes':['conseil de prud hommes'],'prud hommes':['conseil de prud hommes'],'abandon':['abandon de poste'],'requalification':['cdd cdi'],'maternite':['conge maternite'],'paternite':['conge paternite'],
  'carence':['delai de carence','jour de carence'],'panier':['prime de panier','panier repas'],'ticket restaurant':['titre restaurant'],'tickets restaurant':['titre restaurant'],'titres restaurant':['titre restaurant'],'mutuelle':['complementaire sante','frais de sante'],'prevoyance':['garantie de prevoyance'],'trajet':['temps de trajet','temps de deplacement'],'deplacement':['frais de deplacement','indemnite kilometrique'],'kilometrique':['indemnite kilometrique'],'coupure':['amplitude','interruption'],'pause':['temps de pause'],'enfant malade':['conge enfant malade'],'depart retraite':['depart a la retraite','indemnite de depart en retraite']
 };
+
+/* SYN_EXTRA8 — passe du 20/09/2026. Ajoutée à part pour qu'on voie ce qui vient
+   de cette revue et qu'on puisse la retirer d'un bloc si elle dessert.
+
+   Les 735 clés existantes couvrent déjà large ; je n'ajoute que ce qui a une
+   raison. Trois origines, distinctes exprès :
+
+   A. UN CAS CONSTATÉ. « compensatoire » a été tapé pour chercher le repos
+      compensateur. Le mot EXISTE au corpus (7 articles, sans rapport), donc
+      le correcteur ne se déclenche pas — et la distance avec « compensateur »
+      est de 3, au-dessus du seuil de 2 de bestFuzzy. Résultat : on tombe sur
+      sept articles au lieu des vingt-huit attendus, sans que rien n'alerte.
+      C'est le pire cas de figure : ça a l'air de marcher.
+
+   B. DES TROUS MÉCANIQUES dans les tables existantes — une forme est là, sa
+      sœur évidente manque. « heure sup », « heures supp », « heure supp » et
+      « hs » sont des clés ; « heures sup », la graphie la plus naturelle au
+      pluriel, ne l'était pas. Idem « recup » sans « recuperation »,
+      « jour ferie » sans le pluriel, « prime »/« indemnite » sans leurs
+      pluriels.
+
+   C. DU JUGEMENT sur la langue courante, et je le dis franchement : il n'y a
+      aucune donnée d'usage pour trancher. MonLegiTexte ne trace personne, et
+      search-trends.json compte les mots du CORPUS, pas des recherches. Ces
+      entrées-là sont des paris raisonnables sur la façon dont un salarié
+      écrit, pas des constats. À corriger dès qu'un usage réel les contredit.
+*/
+var SYN_EXTRA8 = {
+  /* A — constaté */
+  'compensatoire':['repos compensateur','contrepartie obligatoire en repos'],
+  'compensatoires':['repos compensateur','contrepartie obligatoire en repos'],
+
+  /* B — trous mécaniques */
+  'heures sup':['heures supplementaires'],
+  'recuperation':['repos compensateur','rtt'],
+  'jours feries':['jour ferie'],
+  'majorations':['majoration','taux de majoration'],
+  'primes':['prime','indemnite'],
+  'indemnites':['indemnite','prime'],
+
+  /* C — jugement */
+  /* normaliser() remplace le tiret par une espace : inutile de lister
+     « mi-temps » à part, il tombe sur la même clé. */
+  'mi temps':['temps partiel'],
+  'temps plein':['duree legale','temps partiel'],
+  'prudhomal':['conseil de prud hommes'],
+  'prudhomale':['conseil de prud hommes'],
+  'prudhommale':['conseil de prud hommes'],
+  'heures impayees':['rappel de salaire','heures supplementaires'],
+  'heures non payees':['rappel de salaire','heures supplementaires']
+};
 /* Vocabulaire de synonymes ÉLARGI (fusionné dans le moteur au même titre que
    SYN_RAW / SYN_EXTRA). But : mieux rattraper les formulations courantes des
    utilisateurs et les termes juridiques équivalents. Les clés et valeurs sont
@@ -2142,7 +2193,7 @@ function getENG(){
   E.ccnCats={}; (SEARCH.ccn||[]).forEach(function(c){ var s={}; (c.hits||[]).forEach(function(h){ (h.cats||(h.cat?[h.cat]:[])).forEach(function(ct){ s[ct]=1; }); }); E.ccnCats[String(c.num)]=s; });
   // SYN fusionné (SYN_RAW + SYN_EXTRA)
   E.SYN={}; function addSyn(map){ Object.keys(map).forEach(function(k){ var kn=normaliser(k); E.SYN[kn]=(E.SYN[kn]||[]).concat(map[k].map(normaliser)); }); }
-  addSyn(SYN_RAW); addSyn(SYN_EXTRA); addSyn(SYN_EXTRA2); addSyn(SYN_EXTRA3); addSyn(SYN_EXTRA4); addSyn(SYN_EXTRA5); addSyn(SYN_EXTRA6); addSyn(SYN_EXTRA7);
+  addSyn(SYN_RAW); addSyn(SYN_EXTRA); addSyn(SYN_EXTRA2); addSyn(SYN_EXTRA3); addSyn(SYN_EXTRA4); addSyn(SYN_EXTRA5); addSyn(SYN_EXTRA6); addSyn(SYN_EXTRA7); addSyn(SYN_EXTRA8);
   // mot -> catégories
   E.catByKw={}; Object.keys(CAT_KEYWORDS_RAW).forEach(function(cat){ CAT_KEYWORDS_RAW[cat].forEach(function(kw){ kw=normaliser(kw); (E.catByKw[kw]=E.catByKw[kw]||[]).push(cat); }); });
   // métiers : phrases (PRO déjà normalisé) + index par mot
