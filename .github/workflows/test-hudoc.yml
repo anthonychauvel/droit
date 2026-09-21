@@ -1,0 +1,22 @@
+# Test manuel, une minute : HUDOC refuse-t-il GitHub ou seulement notre
+# identité ? Ne touche à aucun fichier, ne committe rien. Bouton « Run
+# workflow » uniquement. À supprimer une fois le verdict connu.
+name: Test accès HUDOC
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  tester:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests
+      - name: Tester trois identités
+        run: python scripts/test_hudoc_acces.py
