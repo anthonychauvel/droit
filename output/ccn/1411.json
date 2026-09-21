@@ -12900,13 +12900,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005725880",
+              "cid": "KALISCTA000005725880",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires professionnels catégoriels au 1er avril 1992",
+              "dateModif": null,
+              "dateDebut": "1992-04-01",
+              "dateFin": "1995-07-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005855597",
+                  "cid": "KALIARTI000005855597",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": "4,  5,  6",
+                  "path": "/KALISCTA000005725880/KALIARTI000005855597",
+                  "pathTitle": [
+                    "Salaires professionnels catégoriels au 1er avril 1992"
+                  ],
+                  "content": "Article 4.<p></p><p></p>   Le barème mensuel des salaires professionnels catégoriels des A.P. s'élève, à compter du 1er avril 1992, à :<p></p> A.P. 11 : 5 760 F<p></p> A.P. 21 : 5 765 F<p></p> A.P. 22 : 5 790 F<p></p> A.P. 31 :  5 850 F<p></p> A.P. 32 : 5 910 F<p></p> A.P. 41 : 6 040 F<p></p> A.P. 42 : 6 390 F<p></p> A.P. 51 : 7 240 F<p></p>Article 5.<p></p><p></p>   Le barème mensuel des salaires professionnels catégoriels des A.F., A.E. est déterminé, à compter du 1er avril 1992, de la façon suivante :<p></p><p></p>   - pour les coefficients 250 à 275 exclu, les salaires s'élèvent à :<p></p> - 5 760 F pour l'A.F. 1 ;<p></p> - 5 760 F pour l'A.F. 2 ;<p></p> - 5 760 F pour l'A.F. 3 ;<p></p> - 5 780 F pour l'A.F. 4 ;<p></p><p></p>   - à partir du coefficient 275 et jusqu'au coefficient 300 exclu :<p></p> - une partie fixe égale à 5 540 F pour les 250 premiers points ;<p></p> - une valeur de point égale à 13 F ;<p></p><p></p>   - à partir du coefficient 300 jusqu'au coefficient 425 exclu :<p></p> - une partie fixe égale à 5 540 F pour les 250 premiers points ;<p></p> - une valeur de point égale à 12 F ;<p></p><p></p>   - pour les coefficients 425 à 640, les salaires s'élèvent à :<p></p> A.F. 14 : 7 700 F ;<p></p> A.F. 15 : 8 028 F ;<p></p> A.F. 16 : 8 358 F ;<p></p> A.F. 17 : 8 687 F ;<p></p> A.E.  5 : 7 700 F ;<p></p> A.E.  6 : 8 687 F ;<p></p> A.E.  7 : 10 533 F.<p></p><p></p>   La grille ci-après récapitule les salaires en vigueur à compter du 1er avril 1992 :<p></p><p></p>   AGENTS FONCTIONNELS :<p></p> Echelon 1 coeff. 250 : 5760 F<p></p> Echelon 2 coeff. 255 : 5760 F<p></p> Echelon 3 coeff. 260 : 5760 F<p></p> Echelon 4 coeff. 265 : 5780 F<p></p> Echelon 5 coeff. 275 : 5865 F<p></p> Echelon 6 coeff. 285 : 5995 F<p></p> Echelon 7 coeff. 300 : 6140 F<p></p> Echelon 8 coeff. 315 : 6320 F<p></p> Echelon 9 coeff. 330 : 6500 F<p></p> Echelon 10 coeff. 345 : 6680 F<p></p> Echelon 11 coeff. 365 : 6920 F<p></p> Echelon 12 coeff. 385 : 7160 F<p></p> Echelon 13 coeff. 405 : 7400 F<p></p> Echelon 14 coeff. 425 : 7700 F<p></p> Echelon 15 coeff. 450 : 8028 F<p></p> Echelon 16 coeff. 475 : 8358 F<p></p> Echelon 17 coeff. 500 : 8687 F<p></p><p></p>   AGENTS D'ENCADREMENT :<p></p> Echelon 1 coeff. 300 : 6140 F<p></p> Echelon 2 coeff. 330 : 6500 F<p></p> Echelon 3 coeff. 365 : 6920 F<p></p> Echelon 4 coeff. 385 : 7160 F<p></p> Echelon 5 coeff. 425 : 7700 F<p></p> Echelon 6 coeff. 500 : 8687 F<p></p> Echelon 7 coeff. 640 : 10533 F<p></p>Article 6.<p></p><p></p>   Le barème mensuel des salaires professionnels des cadres, s'élève, à compter du 1er avril 1992, à :<p></p> C 11 : 8390 F<p></p> C 12 : 9515 F<p></p> C 13 : 10573 F<p></p> C 21 : 12382 F<p></p> C 22 : 13323 F<p></p> C 23 : 14399 F<p></p> C 31 : 16417 F<p></p> C 32 : 17493 F<p></p> C 33 : 18703 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1992-04-01 étendu par arrêté du 23 juillet 1992 JORF 5 août 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 702086400000,
+                  "dateFin": 804988800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12920,13 +12994,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005725881",
+              "cid": "KALISCTA000005725881",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes des primes d'ancienneté au 1er avril, 1er aôut et 1er décembre 1992",
+              "dateModif": null,
+              "dateDebut": "1992-04-01",
+              "dateFin": "1995-07-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005855598",
+                  "cid": "KALIARTI000005855598",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005725881/KALIARTI000005855598",
+                  "pathTitle": [
+                    "Barèmes des primes d'ancienneté au 1er avril, 1er aôut et 1er décembre 1992"
+                  ],
+                  "content": "<p></p>   BARÈME N° 1 :<p></p> Prime d'ancienneté des agents de production au 1er avril 1992<p></p><p></p>   CATÉGORIE A.P. 11 :<p></p> Après 3 ans : 163 F ;<p></p> Après 6 ans : 326 F ;<p></p> Après 9 ans : 489 F ;<p></p> Après 12 ans : 651 F ;<p></p> 15 ans et plus : 813 F.<p></p><p></p>   CATÉGORIE  A.P. 21 :<p></p> Après 3 ans : 164 F<p></p> Après 6 ans : 328 F<p></p> Après 9 ans : 491 F<p></p> Après 12 ans : 654 F<p></p> 15 ans et plus : 817 F<p></p><p></p>   CATÉGORIE A.P. 22 :<p></p> Après 3 ans : 166 F<p></p> Après 6 ans : 332 F<p></p> Après 9 ans : 497 F<p></p> Après 12 ans : 662 F<p></p> 15 ans et plus : 828 F<p></p><p></p>   CATÉGORIE A.P. 31 :<p></p> Après 3 ans : 167 F<p></p> Après 6 ans : 335 F<p></p> Après 9 ans : 501 F<p></p> Après 12 ans : 669 F<p></p> 15 ans et plus : 836 F<p></p><p></p>   CATÉGORIE A.P. 32 :<p></p> Après 3 ans : 170 F<p></p> Après 6 ans : 338 F<p></p> Après 9 ans : 508 F<p></p> Après 12 ans : 676 F<p></p> 15 ans et plus : 844 F<p></p><p></p>   CATÉGORIE A.P. 41 :<p></p> Après 3 ans : 175 F<p></p> Après 6 ans : 348 F<p></p> Après 9 ans : 522 F<p></p> Après 12 ans : 696 F<p></p> 15 ans et plus : 870 F<p></p><p></p>   CATÉGORIE A.P. 42 :<p></p> Après 3 ans : 189 F<p></p> Après 6 ans : 378 F<p></p> Après 9 ans : 566 F<p></p> Après 12 ans : 754 F<p></p> 15 ans et plus : 942 F<p></p><p></p>   CATÉGORIE A.P. 51 :<p></p> Après 3 ans : 213 F<p></p> Après 6 ans : 426 F<p></p> Après 9 ans : 640 F<p></p> Après 12 ans : 853 F<p></p> 15 ans et plus : 1 066 F<p></p><p></p>Primes d'ancienneté des agents fonctionnels et agents d'encadrement au 1er avril 1992<p></p><p></p>   COEFFICIENT 250 :<p></p> Après 3 ans : 161 F<p></p> Après 6 ans : 322 F<p></p> Après 9 ans : 484 F<p></p> Après 12 ans : 645 F<p></p> 15 ans et plus : 806 F<p></p><p></p>   COEFFICIENT 255 :<p></p> Après 3 ans : 162 F<p></p> Après 6 ans : 324 F<p></p> Après 9 ans : 487 F<p></p> Après 12 ans : 649 F<p></p> 15 ans et plus : 811 F<p></p><p></p>   COEFFICIENT 260 :<p></p> Après 3 ans : 163 F<p></p> Après 6 ans : 327 F<p></p> Après 9 ans : 490 F<p></p> Après 12 ans : 652 F<p></p> 15 ans et plus : 815 F<p></p><p></p>   COEFFICIENT 265 :<p></p> Après 3 ans : 164 F<p></p> Après 6 ans : 329 F<p></p> Après 9 ans : 493 F<p></p> Après 12 ans : 657 F<p></p> 15 ans et plus : 827 F<p></p><p></p>   COEFFICIENT 275 :<p></p> Après 3 ans : 168 F<p></p> Après 6 ans : 336 F<p></p> Après 9 ans : 503 F<p></p> Après 12 ans : 671 F<p></p> 15 ans et plus : 838 F<p></p><p></p>   COEFFICIENT 285 :<p></p> Après 3 ans : 172 F<p></p> Après 6 ans : 343 F<p></p> Après 9 ans : 515 F<p></p> Après 12 ans : 686 F<p></p> 15 ans et plus : 858 F<p></p><p></p>   COEFFICIENT 300 :<p></p> Après 3 ans : 177 F<p></p> Après 6 ans : 354 F<p></p> Après 9 ans : 530 F<p></p> Après 12 ans : 707 F<p></p> 15 ans et plus : 884 F<p></p><p></p>   COEFFICIENT 315 :<p></p> Après 3 ans : 183 F<p></p> Après 6 ans : 365 F<p></p> Après 9 ans : 547 F<p></p> Après 12 ans : 730 F<p></p> 15 ans et plus : 912 F<p></p><p></p>   COEFFICIENT 330 :<p></p> Après 3 ans : 188 F<p></p> Après 6 ans : 376 F<p></p> Après 9 ans : 565 F<p></p> Après 12 ans : 752 F<p></p> 15 ans et plus : 940 F<p></p><p></p>   COEFFICIENT 345 :<p></p> Après 3 ans : 195 F<p></p> Après 6 ans : 388 F<p></p> Après 9 ans : 581 F<p></p> Après 12 ans : 775 F<p></p> 15 ans et plus : 969 F<p></p><p></p>   COEFFICIENT 365 :<p></p> Après 3 ans : 202 F<p></p> Après 6 ans : 402 F<p></p> Après 9 ans : 604 F<p></p> Après 12 ans : 805 F<p></p> 15 ans et plus : 1007 F<p></p><p></p>   COEFFICIENT 385 :<p></p> Après 3 ans : 209 F<p></p> Après 6 ans : 418 F<p></p> Après 9 ans : 627 F<p></p> Après 12 ans : 836 F<p></p> 15 ans et plus : 1044 F<p></p><p></p>   COEFFICIENT 405 :<p></p> Après 3 ans : 217 F<p></p> Après 6 ans : 434 F<p></p> Après 9 ans : 650 F<p></p> Après 12 ans : 866 F<p></p> 15 ans et plus : 1083 F<p></p><p></p>   COEFFICIENT 425 :<p></p> Après 3 ans : 225 F<p></p> Après 6 ans : 449 F<p></p> Après 9 ans : 675 F<p></p> Après 12 ans : 918 F<p></p> 15 ans et plus : 1124 F<p></p><p></p>   COEFFICIENT 450 :<p></p> Après 3 ans : 235 F<p></p> Après 6 ans : 469 F<p></p> Après 9 ans : 704 F<p></p> Après 12 ans : 939 F<p></p> 15 ans et plus : 1174 F<p></p><p></p>   COEFFICIENT 475 :<p></p> Après 3 ans : 244 F<p></p> Après 6 ans : 490 F<p></p> Après 9 ans : 734 F<p></p> Après 12 ans : 979 F<p></p> 15 ans et plus : 1224 F<p></p><p></p>   COEFFICIENT 500 :<p></p> Après 3 ans : 255 F<p></p> Après 6 ans : 510 F<p></p> Après 9 ans : 764 F<p></p> Après 12 ans : 1019 F<p></p> 15 ans et plus : 1273 F<p></p><p></p>   COEFFICIENT 640 :<p></p> Après 3 ans : 310 F<p></p> Après 6 ans : 621 F<p></p> Après 9 ans : 931 F<p></p> Après 12 ans : 1247 F<p></p> 15 ans et plus : 1547 F<p></p><p></p><p></p>   BARÈME N° 2<p></p> Prime d'ancienneté des agents de production au 1er août 1992<p></p><p></p>   CATÉGORIE A.P. 11 :<p></p> Après 3 ans : 167 F ;<p></p> Après 6 ans : 335 F ;<p></p> Après 9 ans : 502 F ;<p></p> Après 12 ans : 670 F ;<p></p> 15 ans et plus : 837 F.<p></p><p></p>   CATÉGORIE  A.P. 21 :<p></p> Après 3 ans : 168 F<p></p> Après 6 ans : 336 F<p></p> Après 9 ans : 504 F<p></p> Après 12 ans : 672 F<p></p> 15 ans et plus : 840 F<p></p><p></p>   CATÉGORIE A.P. 22 :<p></p> Après 3 ans : 169 F<p></p> Après 6 ans : 339 F<p></p> Après 9 ans : 508 F<p></p> Après 12 ans : 678 F<p></p> 15 ans et plus : 846 F<p></p><p></p>   CATÉGORIE A.P. 31 :<p></p> Après 3 ans : 172 F<p></p> Après 6 ans : 342 F<p></p> Après 9 ans : 514 F<p></p> Après 12 ans : 684 F<p></p> 15 ans et plus : 856 F<p></p><p></p>   CATÉGORIE A.P. 32 :<p></p> Après 3 ans : 174 F<p></p> Après 6 ans : 346 F<p></p> Après 9 ans : 519 F<p></p> Après 12 ans : 692 F<p></p> 15 ans et plus : 865 F<p></p><p></p>   CATÉGORIE A.P. 41 :<p></p> Après 3 ans : 178 F<p></p> Après 6 ans : 356 F<p></p> Après 9 ans : 532 F<p></p> Après 12 ans : 710 F<p></p> 15 ans et plus : 888 F<p></p><p></p>   CATÉGORIE A.P. 42 :<p></p> Après 3 ans : 190 F<p></p> Après 6 ans : 381 F<p></p> Après 9 ans : 571 F<p></p> Après 12 ans : 761 F<p></p> 15 ans et plus : 952 F<p></p><p></p>   CATÉGORIE A.P. 51 :<p></p> Après 3 ans : 216 F<p></p> Après 6 ans : 432 F<p></p> Après 9 ans : 648 F<p></p> Après 12 ans : 863 F<p></p> 15 ans et plus : 1 079 F<p></p><p></p>Primes d'ancienneté des agents fonctionnels et agents d'encadrement au 1er août 1992<p></p><p></p>   COEFFICIENT 250 :<p></p> Après 3 ans : 167 F<p></p> Après 6 ans : 334 F<p></p> Après 9 ans : 500 F<p></p> Après 12 ans : 667 F<p></p> 15 ans et plus : 834 F<p></p><p></p>   COEFFICIENT 255 :<p></p> Après 3 ans : 167 F<p></p> Après 6 ans : 335 F<p></p> Après 9 ans : 502 F<p></p> Après 12 ans : 669 F<p></p> 15 ans et plus : 836 F<p></p><p></p>   COEFFICIENT 260 :<p></p> Après 3 ans : 168 F<p></p> Après 6 ans : 336 F<p></p> Après 9 ans : 503 F<p></p> Après 12 ans : 671 F<p></p> 15 ans et plus : 838 F<p></p><p></p>   COEFFICIENT 265 :<p></p> Après 3 ans : 169 F<p></p> Après 6 ans : 338 F<p></p> Après 9 ans : 506 F<p></p> Après 12 ans : 675 F<p></p> 15 ans et plus : 843 F<p></p><p></p>   COEFFICIENT 275 :<p></p> Après 3 ans : 172 F<p></p> Après 6 ans : 343 F<p></p> Après 9 ans : 515 F<p></p> Après 12 ans : 686 F<p></p> 15 ans et plus : 858 F<p></p><p></p>   COEFFICIENT 285 :<p></p> Après 3 ans : 176 F<p></p> Après 6 ans : 351 F<p></p> Après 9 ans : 527 F<p></p> Après 12 ans : 703 F<p></p> 15 ans et plus : 878 F<p></p><p></p>   COEFFICIENT 300 :<p></p> Après 3 ans : 181 F<p></p> Après 6 ans : 361 F<p></p> Après 9 ans : 542 F<p></p> Après 12 ans : 722 F<p></p> 15 ans et plus : 902 F<p></p><p></p>   COEFFICIENT 315 :<p></p> Après 3 ans : 186 F<p></p> Après 6 ans : 372 F<p></p> Après 9 ans : 558 F<p></p> Après 12 ans : 745 F<p></p> 15 ans et plus : 931 F<p></p><p></p>   COEFFICIENT 330 :<p></p> Après 3 ans : 192 F<p></p> Après 6 ans : 384 F<p></p> Après 9 ans : 575 F<p></p> Après 12 ans : 767 F<p></p> 15 ans et plus : 959 F<p></p><p></p>   COEFFICIENT 345 :<p></p> Après 3 ans : 198 F<p></p> Après 6 ans : 395 F<p></p> Après 9 ans : 593 F<p></p> Après 12 ans : 789 F<p></p> 15 ans et plus : 987 F<p></p><p></p>   COEFFICIENT 365 :<p></p> Après 3 ans : 205 F<p></p> Après 6 ans : 410 F<p></p> Après 9 ans : 615 F<p></p> Après 12 ans : 819 F<p></p> 15 ans et plus : 1024 F<p></p><p></p>   COEFFICIENT 385 :<p></p> Après 3 ans : 213 F<p></p> Après 6 ans : 425 F<p></p> Après 9 ans : 637 F<p></p> Après 12 ans : 850 F<p></p> 15 ans et plus : 1062 F<p></p><p></p>   COEFFICIENT 405 :<p></p> Après 3 ans : 220 F<p></p> Après 6 ans : 440 F<p></p> Après 9 ans : 660 F<p></p> Après 12 ans : 880 F<p></p> 15 ans et plus : 1100 F<p></p><p></p>   COEFFICIENT 425 :<p></p> Après 3 ans : 229 F<p></p> Après 6 ans : 458 F<p></p> Après 9 ans : 686 F<p></p> Après 12 ans : 924 F<p></p> 15 ans et plus : 1144 F<p></p><p></p>   COEFFICIENT 450 :<p></p> Après 3 ans : 239 F<p></p> Après 6 ans : 477 F<p></p> Après 9 ans : 716 F<p></p> Après 12 ans : 956 F<p></p> 15 ans et plus : 1194 F<p></p><p></p>   COEFFICIENT 475 :<p></p> Après 3 ans : 248 F<p></p> Après 6 ans : 498 F<p></p> Après 9 ans : 747 F<p></p> Après 12 ans : 996 F<p></p> 15 ans et plus : 1245 F<p></p><p></p>   COEFFICIENT 500 :<p></p> Après 3 ans : 259 F<p></p> Après 6 ans : 518 F<p></p> Après 9 ans : 777 F<p></p> Après 12 ans : 1037 F<p></p> 15 ans et plus : 1296 F<p></p><p></p>   COEFFICIENT 640 :<p></p> Après 3 ans : 316 F<p></p> Après 6 ans : 631 F<p></p> Après 9 ans : 947 F<p></p> Après 12 ans : 1266 F<p></p> 15 ans et plus : 1570 F<p></p><p></p><p></p>   BARÈME N° 3<p></p> Prime d'ancienneté des agents de production au 1er décembre 1992<p></p><p></p><p></p>   CATÉGORIE A.P. 11 :<p></p> Après 3 ans : 173 F ;<p></p> Après 6 ans : 345 F ;<p></p> Après 9 ans : 517 F ;<p></p> Après 12 ans : 689 F ;<p></p> 15 ans et plus : 861 F.<p></p><p></p>   CATÉGORIE  A.P. 21 :<p></p> Après 3 ans : 173 F<p></p> Après 6 ans : 345 F<p></p> Après 9 ans : 518 F<p></p> Après 12 ans : 689 F<p></p> 15 ans et plus : 862 F<p></p><p></p>   CATÉGORIE A.P. 22 :<p></p> Après 3 ans : 174 F<p></p> Après 6 ans : 346 F<p></p> Après 9 ans : 520 F<p></p> Après 12 ans : 693 F<p></p> 15 ans et plus : 866 F<p></p><p></p>   CATÉGORIE A.P. 31 :<p></p> Après 3 ans : 176 F<p></p> Après 6 ans : 350 F<p></p> Après 9 ans : 525 F<p></p> Après 12 ans : 701 F<p></p> 15 ans et plus : 876 F<p></p><p></p>   CATÉGORIE A.P. 32 :<p></p> Après 3 ans : 178 F<p></p> Après 6 ans : 355 F<p></p> Après 9 ans : 531 F<p></p> Après 12 ans : 708 F<p></p> 15 ans et plus : 885 F<p></p><p></p>   CATÉGORIE A.P. 41 :<p></p> Après 3 ans : 181 F<p></p> Après 6 ans : 362 F<p></p> Après 9 ans : 543 F<p></p> Après 12 ans : 724 F<p></p> 15 ans et plus : 905 F<p></p><p></p>   CATÉGORIE A.P. 42 :<p></p> Après 3 ans : 192 F<p></p> Après 6 ans : 384 F<p></p> Après 9 ans : 576 F<p></p> Après 12 ans : 768 F<p></p> 15 ans et plus : 960 F<p></p><p></p>   CATÉGORIE A.P. 51 :<p></p> Après 3 ans : 218 F<p></p> Après 6 ans : 437 F<p></p> Après 9 ans : 655 F<p></p> Après 12 ans : 874 F<p></p> 15 ans et plus : 1 092 F<p></p><p></p>Primes d'ancienneté des agents fonctionnels et agents d'encadrement au 1er décembre 1992<p></p><p></p>   COEFFICIENT 250 :<p></p> Après 3 ans : 173 F<p></p> Après 6 ans : 345 F<p></p> Après 9 ans : 517 F<p></p> Après 12 ans : 689 F<p></p> 15 ans et plus : 861 F<p></p><p></p>   COEFFICIENT 255 :<p></p> Après 3 ans : 173 F<p></p> Après 6 ans : 345 F<p></p> Après 9 ans : 517 F<p></p> Après 12 ans : 689 F<p></p> 15 ans et plus : 861 F<p></p><p></p>   COEFFICIENT 260 :<p></p> Après 3 ans : 173 F<p></p> Après 6 ans : 345 F<p></p> Après 9 ans : 517 F<p></p> Après 12 ans : 689 F<p></p> 15 ans et plus : 861 F<p></p><p></p>   COEFFICIENT 265 :<p></p> Après 3 ans : 174 F<p></p> Après 6 ans : 346 F<p></p> Après 9 ans : 519 F<p></p> Après 12 ans : 692 F<p></p> 15 ans et plus : 864 F<p></p><p></p>   COEFFICIENT 275 :<p></p> Après 3 ans : 176 F<p></p> Après 6 ans : 352 F<p></p> Après 9 ans : 527 F<p></p> Après 12 ans : 702 F<p></p> 15 ans et plus : 878 F<p></p><p></p>   COEFFICIENT 285 :<p></p> Après 3 ans : 180 F<p></p> Après 6 ans : 360 F<p></p> Après 9 ans : 539 F<p></p> Après 12 ans : 719 F<p></p> 15 ans et plus : 898 F<p></p><p></p>   COEFFICIENT 300 :<p></p> Après 3 ans : 184 F<p></p> Après 6 ans : 368 F<p></p> Après 9 ans : 552 F<p></p> Après 12 ans : 736 F<p></p> 15 ans et plus : 920 F<p></p><p></p>   COEFFICIENT 315 :<p></p> Après 3 ans : 190 F<p></p> Après 6 ans : 380 F<p></p> Après 9 ans : 570 F<p></p> Après 12 ans : 759 F<p></p> 15 ans et plus : 948 F<p></p><p></p>   COEFFICIENT 330 :<p></p> Après 3 ans : 195 F<p></p> Après 6 ans : 391 F<p></p> Après 9 ans : 586 F<p></p> Après 12 ans : 782 F<p></p> 15 ans et plus : 976 F<p></p><p></p>   COEFFICIENT 345 :<p></p> Après 3 ans : 202 F<p></p> Après 6 ans : 402 F<p></p> Après 9 ans : 603 F<p></p> Après 12 ans : 804 F<p></p> 15 ans et plus : 1005 F<p></p><p></p>   COEFFICIENT 365 :<p></p> Après 3 ans : 209 F<p></p> Après 6 ans : 417 F<p></p> Après 9 ans : 626 F<p></p> Après 12 ans : 834 F<p></p> 15 ans et plus : 1042 F<p></p><p></p>   COEFFICIENT 385 :<p></p> Après 3 ans : 216 F<p></p> Après 6 ans : 433 F<p></p> Après 9 ans : 648 F<p></p> Après 12 ans : 864 F<p></p> 15 ans et plus : 1079 F<p></p><p></p>   COEFFICIENT 405 :<p></p> Après 3 ans : 224 F<p></p> Après 6 ans : 447 F<p></p> Après 9 ans : 671 F<p></p> Après 12 ans : 894 F<p></p> 15 ans et plus : 1117 F<p></p><p></p>   COEFFICIENT 425 :<p></p> Après 3 ans : 233 F<p></p> Après 6 ans : 466 F<p></p> Après 9 ans : 698 F<p></p> Après 12 ans : 931 F<p></p> 15 ans et plus : 1164 F<p></p><p></p>   COEFFICIENT 450 :<p></p> Après 3 ans : 243 F<p></p> Après 6 ans : 486 F<p></p> Après 9 ans : 729 F<p></p> Après 12 ans : 971 F<p></p> 15 ans et plus : 1215 F<p></p><p></p>   COEFFICIENT 475 :<p></p> Après 3 ans : 253 F<p></p> Après 6 ans : 506 F<p></p> Après 9 ans : 760 F<p></p> Après 12 ans : 1013 F<p></p> 15 ans et plus : 1267 F<p></p><p></p>   COEFFICIENT 500 :<p></p> Après 3 ans : 263 F<p></p> Après 6 ans : 527 F<p></p> Après 9 ans : 790 F<p></p> Après 12 ans : 1054 F<p></p> 15 ans et plus : 1318 F<p></p><p></p>   COEFFICIENT 640 :<p></p> Après 3 ans : 321 F<p></p> Après 6 ans : 642 F<p></p> Après 9 ans : 963 F<p></p> Après 12 ans : 1284 F<p></p> 15 ans et plus : 1606 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1992-04-01 étendu par arrêté du 23 juillet 1992 JORF 5 août 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 702086400000,
+                  "dateFin": 804988800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12940,13 +13088,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005725882",
+              "cid": "KALISCTA000005725882",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes des primes d'ancienneté au 1er juillet 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-07-06",
+              "dateFin": "1996-07-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005855599",
+                  "cid": "KALIARTI000005855599",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005725882/KALIARTI000005855599",
+                  "pathTitle": [
+                    "Barèmes des primes d'ancienneté au 1er juillet 1995."
+                  ],
+                  "content": "<p></p>   Dans le cadre de l'article 7 de l'accord du 1er avril 1992, les parties signataires conviennent des dispositions suivantes :<p></p><p></p>Article 1er<p></p> Barème des salaires professionnels catégoriels des A.P à compter du 1er juillet 1995<p></p><TABLE><TR><TD>A.P. 11 </TD><TD> 6 250 F</TD></TR><TR><TD>A.P. 21 </TD><TD> 6 260 F</TD></TR><TR><TD>A.P. 22 </TD><TD> 6 280 F</TD></TR><TR><TD>A.P. 31 </TD><TD> 6 300 F</TD></TR><TR><TD>A.P. 32 </TD><TD> 6 360 F</TD></TR><TR><TD>A.P. 41 </TD><TD> 6 460 F</TD></TR><TR><TD>A.P. 42 </TD><TD> 6 850 F</TD></TR><TR><TD>A.P. 51 </TD><TD> 7 750 F</TD></TR></TABLE><p></p><p></p> Article 2<p></p> Barème mensuel des salaires professionnels catégoriels des A.F. et A.E, à compter du 1er juillet 1995<p></p><p></p>   Pour les coefficients 250 à 275 exclu, les salaires s'élèvent à :<p></p><p></p><p></p><TABLE><TR><TD>A.F. 1 </TD><TD> 6 250 F</TD></TR><TR><TD>A.F. 2 </TD><TD> 6 250 F</TD></TR><TR><TD>A.F. 3 </TD><TD> 6 260 F</TD></TR><TR><TD>A.F. 4 </TD><TD> 6 270 F</TD></TR></TABLE><p></p><p></p><p></p><p></p>   A partir du coefficient 275 et jusqu'au coefficient 300 exclu :<p></p><p></p>   - une partie fixe égale à 5 940 F pour les 250 premiers points ;<p></p><p></p>   - une valeur de point égale à 14 F.<p></p><p></p>   A partir du coefficient 300 jusqu'au coefficient 425 exclu :<p></p><p></p>   - une partie fixe égale à 5 940 F pour les 250 premiers points ;<p></p><p></p>   - une valeur de point égale à 13 F.<p></p><p></p>   Pour les coefficients 425 à 640, les salaires s'élèvent à :<p></p><p></p><p></p><TABLE><TR><TD>A.F. 14 </TD><TD>  8 230 F</TD></TR><TR><TD>A.F. 15 </TD><TD>  8 570 F</TD></TR><TR><TD>A.F. 16 </TD><TD>  8 910 F</TD></TR><TR><TD>A.F. 17 </TD><TD>  9 260 F</TD></TR><TR><TD>A.E. 5  </TD><TD>  8 230 F</TD></TR><TR><TD>A.E. 6  </TD><TD>  9 260 F</TD></TR><TR><TD>A.E. 7  </TD><TD> 11 210 F</TD></TR></TABLE><p></p><p></p><p></p>   La grille ci-après récapitule les salaires en vigueur à compter du 1er juillet 1995 :<p></p><p></p> AGENT FONCTIONNEL<p></p><p></p>   (1) = ECHELON<p></p><p></p>   (2) = COEFFICIENT<p></p><p></p>   (3) = SALAIRE<p></p><TABLE><TR><TD>(1)</TD><TD> (2) </TD><TD>   (3)  </TD></TR><TR><TD> 1 </TD><TD> 250 </TD><TD> 6 250 F</TD></TR><TR><TD> 2 </TD><TD> 255 </TD><TD> 6 250 F</TD></TR><TR><TD> 3 </TD><TD> 260 </TD><TD> 6 260 F</TD></TR><TR><TD> 4 </TD><TD> 265 </TD><TD> 6 270 F</TD></TR><TR><TD> 5 </TD><TD> 275 </TD><TD> 6 290 F</TD></TR><TR><TD> 6 </TD><TD> 285 </TD><TD> 6 430 F</TD></TR><TR><TD> 7 </TD><TD> 300 </TD><TD> 6 590 F</TD></TR><TR><TD> 8 </TD><TD> 315 </TD><TD> 6 785 F</TD></TR><TR><TD> 9 </TD><TD> 330 </TD><TD> 6 980 F</TD></TR></TABLE><p></p> AGENT FONCTIONNEL<p></p><p></p>   (1) = ECHELON<p></p><p></p>   (2) = COEFFICIENT<p></p><p></p>   (3) = SALAIRE<p></p><TABLE><TR><TD>(1)</TD><TD> (2) </TD><TD>   (3)  </TD></TR><TR><TD>10 </TD><TD> 345 </TD><TD> 7 175 F</TD></TR><TR><TD>11 </TD><TD> 365 </TD><TD> 7 435 F</TD></TR><TR><TD>12 </TD><TD> 385 </TD><TD> 7 695 F</TD></TR><TR><TD>13 </TD><TD> 405 </TD><TD> 7 955 F</TD></TR><TR><TD>14 </TD><TD> 425 </TD><TD> 8 230 F</TD></TR><TR><TD>15 </TD><TD> 450 </TD><TD> 8 570 F</TD></TR><TR><TD>16 </TD><TD> 475 </TD><TD> 8 910 F</TD></TR><TR><TD>17 </TD><TD> 500 </TD><TD> 9 260 F</TD></TR></TABLE><p></p><p></p><p></p>   AGENT D'ENCADREMENT<p></p><p></p>   (1) = ECHELON<p></p><p></p>   (2) = COEFFICIENT<p></p><p></p>   (3) = SALAIRE<p></p><TABLE><TR><TD>(1)</TD><TD> (2) </TD><TD>   (3)  </TD></TR><TR><TD> 1 </TD><TD> 300 </TD><TD> 6 590 F</TD></TR><TR><TD> 2 </TD><TD> 330 </TD><TD> 6 980 F</TD></TR><TR><TD> 3 </TD><TD> 365 </TD><TD> 7 435 F</TD></TR><TR><TD> 4 </TD><TD> 385 </TD><TD> 7 685 F</TD></TR><TR><TD> 5 </TD><TD> 425 </TD><TD> 8 230 F</TD></TR><TR><TD> 6 </TD><TD> 500 </TD><TD> 9 260 F</TD></TR><TR><TD> 7 </TD><TD> 640 </TD><TD>11 210 F</TD></TR></TABLE><p></p><p></p> Article 3<p></p> Barème mensuel des salaires professionnels des cadres au 1er juillet 1995<p></p><p></p><p></p><TABLE><TR><TD>C. 11 </TD><TD>  8 980 F</TD></TR><TR><TD>C. 12 </TD><TD> 10 180 F</TD></TR><TR><TD>C. 13 </TD><TD> 11 300 F</TD></TR><TR><TD>C. 21 </TD><TD> 13 240 F</TD></TR><TR><TD>C. 22 </TD><TD> 14 260 F</TD></TR><TR><TD>C. 23 </TD><TD> 15 410 F</TD></TR><TR><TD>C. 31 </TD><TD> 17 570 F</TD></TR><TR><TD>C. 32 </TD><TD> 18 730 F</TD></TR><TR><TD>C. 33 </TD><TD> 20 100 F</TD></TR></TABLE><p></p><p></p> Article 4<p></p><p></p>   Les barèmes des primes d'ancienneté des A.P., A.F. et des A.E. annexés au présent accord, sont applicables à compter du 1er juillet 1995.<p></p>Article 5<p></p><p></p>   Les partenaires sociaux conviennent de se rencontrer en mars 1996 pour examiner ensemble la situation des grilles de salaires professionnels catégoriels.<p></p><p></p><p></p>ANNEXE<p></p> Prime d'ancienneté des agents de production au 1er juillet 1995 (en francs)<p></p><TABLE><TR><TD> Catég  </TD><TD> 3  </TD><TD> 6  </TD><TD> 9  </TD><TD> 12 </TD><TD> 15  </TD></TR><TR><TD></TD><TD>ans </TD><TD>ans </TD><TD>ans </TD><TD>ans </TD><TD> ans </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD>plus </TD></TR><TR><TD>A.P. 11 </TD><TD>176 </TD><TD>352 </TD><TD>528 </TD><TD>703 </TD><TD>  879</TD></TR><TR><TD>A.P. 21 </TD><TD>176 </TD><TD>352 </TD><TD>528 </TD><TD>703 </TD><TD>  879</TD></TR><TR><TD>A.P. 22 </TD><TD>177 </TD><TD>353 </TD><TD>530 </TD><TD>707 </TD><TD>  883</TD></TR><TR><TD>A.P. 31 </TD><TD>180 </TD><TD>357 </TD><TD>536 </TD><TD>715 </TD><TD>  894</TD></TR><TR><TD>A.P. 32 </TD><TD>182 </TD><TD>362 </TD><TD>542 </TD><TD>722 </TD><TD>  903</TD></TR><TR><TD>A.P. 41 </TD><TD>185 </TD><TD>369 </TD><TD>554 </TD><TD>738 </TD><TD>  923</TD></TR><TR><TD>A.P. 42 </TD><TD>196 </TD><TD>392 </TD><TD>588 </TD><TD>783 </TD><TD>  979</TD></TR><TR><TD>A.P. 51 </TD><TD>222 </TD><TD>446 </TD><TD>668 </TD><TD>891 </TD><TD>1 114</TD></TR></TABLE><p></p><p></p> Prime d'ancienneté des agents fonctionnels et agents d'encadrement<p></p> au 1er juillet 1995 (en francs)<p></p><TABLE><TR><TD>Catég</TD><TD> 3  </TD><TD> 6  </TD><TD> 9  </TD><TD> 12  </TD><TD>  15  </TD></TR><TR><TD></TD><TD>ans </TD><TD>ans </TD><TD>ans </TD><TD>ans  </TD><TD>  ans </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD><TD> plus </TD></TR><TR><TD> 250 </TD><TD>176 </TD><TD>352 </TD><TD>527 </TD><TD>  703</TD><TD>   878</TD></TR><TR><TD> 255 </TD><TD>176 </TD><TD>352 </TD><TD>527 </TD><TD>  703</TD><TD>   878</TD></TR><TR><TD> 260 </TD><TD>176 </TD><TD>352 </TD><TD>527 </TD><TD>  703</TD><TD>   878</TD></TR><TR><TD> 265 </TD><TD>177 </TD><TD>353 </TD><TD>529 </TD><TD>  706</TD><TD>   881</TD></TR><TR><TD> 275 </TD><TD>180 </TD><TD>359 </TD><TD>538 </TD><TD>  716</TD><TD>   896</TD></TR><TR><TD> 285 </TD><TD>184 </TD><TD>367 </TD><TD>550 </TD><TD>  733</TD><TD>   916</TD></TR><TR><TD> 300 </TD><TD>188 </TD><TD>375 </TD><TD>563 </TD><TD>  751</TD><TD>   938</TD></TR><TR><TD> 315 </TD><TD>194 </TD><TD>388 </TD><TD>581 </TD><TD>  774</TD><TD>   967</TD></TR><TR><TD> 330 </TD><TD>199 </TD><TD>399 </TD><TD>598 </TD><TD>  798</TD><TD>   996</TD></TR><TR><TD> 345 </TD><TD>206 </TD><TD>410 </TD><TD>615 </TD><TD>  820</TD><TD> 1 025</TD></TR><TR><TD> 365 </TD><TD>213 </TD><TD>425 </TD><TD>639 </TD><TD>  851</TD><TD> 1 063</TD></TR><TR><TD> 385 </TD><TD>220 </TD><TD>442 </TD><TD>661 </TD><TD>  881</TD><TD> 1 101</TD></TR><TR><TD> 405 </TD><TD>228 </TD><TD>456 </TD><TD>684 </TD><TD>  912</TD><TD> 1 139</TD></TR><TR><TD> 425 </TD><TD>238 </TD><TD>475 </TD><TD>712 </TD><TD>  950</TD><TD> 1 187</TD></TR><TR><TD> 450 </TD><TD>248 </TD><TD>496 </TD><TD>744 </TD><TD>  990</TD><TD> 1 239</TD></TR><TR><TD> 475 </TD><TD>258 </TD><TD>516 </TD><TD>775 </TD><TD>1 033</TD><TD> 1 292</TD></TR><TR><TD> 500 </TD><TD>268 </TD><TD>538 </TD><TD>806 </TD><TD>1 075</TD><TD> 1 344</TD></TR><TR><TD> 640 </TD><TD>327 </TD><TD>655 </TD><TD>982 </TD><TD>1 310</TD><TD> 1 638</TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-07-06 BO conventions collectives 95-32, étendu par arrêté du 1er mars 1996 JORF 19 mars 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1992-04-01 art. 7",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 804988800000,
+                  "dateFin": 836438400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

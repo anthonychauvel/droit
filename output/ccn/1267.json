@@ -16969,13 +16969,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720322",
+              "cid": "KALISCTA000005720322",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril 1994.",
+              "dateModif": null,
+              "dateDebut": "1994-03-16",
+              "dateFin": "1995-03-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005841670",
+                  "cid": "KALIARTI000005841670",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720322/KALIARTI000005841670",
+                  "pathTitle": [
+                    "Salaires au 1er avril 1994."
+                  ],
+                  "content": "<p></p>   Il a été convenu entre la confédération nationale de la pâtisserie confiserie glacerie et la confédération nationale des glaciers de France et les centrales syndicales ci-dessous représentées, que la valeur du point au 1er avril 1994 serait de 0,2229 F.<p></p><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p><p></p>   PERSONNEL DE FABRICATION :<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 150 </TD><TD>   SMIC  </TD><TD>    SMIC   </TD></TR><TR><TD> 160 </TD><TD> 35,66   </TD><TD> 6.050,75  </TD></TR><TR><TD> 165 </TD><TD> 36,78   </TD><TD> 6.239,84  </TD></TR><TR><TD> 170 </TD><TD> 37,89   </TD><TD> 6.428,93  </TD></TR><TR><TD> 180 </TD><TD> 40,12   </TD><TD> 6.807,10  </TD></TR><TR><TD> 185 </TD><TD> 41,24   </TD><TD> 6.996,18  </TD></TR><TR><TD> 190 </TD><TD> 42,35   </TD><TD> 7.185,27  </TD></TR><TR><TD> 220 </TD><TD> 49,04   </TD><TD> 8.319,79  </TD></TR><TR><TD> 250 </TD><TD> 55,73   </TD><TD> 9.454,30  </TD></TR><TR><TD> 270 </TD><TD> 60,18   </TD><TD> 10.210,65 </TD></TR><TR><TD> 290 </TD><TD> 64,64   </TD><TD> 10.966,99 </TD></TR><TR><TD> 310 </TD><TD> 69,10   </TD><TD> 11.723,34 </TD></TR><TR><TD> 330 </TD><TD> 73,56   </TD><TD> 12.479,68 </TD></TR><TR><TD> 350 </TD><TD> 78,02   </TD><TD> 13.236,02 </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p><p></p>   CHAUFFEURS-LIVREURS :<p></p><p></p><TABLE><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 165 </TD><TD> 36,78   </TD><TD> 6.239,84  </TD></TR><TR><TD> 170 </TD><TD> 37,89   </TD><TD> 6.428,93  </TD></TR><TR><TD> 180 </TD><TD> 40,12   </TD><TD> 6.807,10  </TD></TR><TR><TD> 190 </TD><TD> 42,35   </TD><TD> 7.185,27  </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p><p></p>   PERSONNEL DE VENTE :<p></p><p></p><TABLE><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD> 150 </TD><TD> SMIC    </TD><TD> SMIC      </TD></TR><TR><TD> 160 </TD><TD> 35,66   </TD><TD> 6.050,75  </TD></TR><TR><TD> 165 </TD><TD> 36,78   </TD><TD> 6.239,84  </TD></TR><TR><TD> 175 </TD><TD> 39,01   </TD><TD> 6.618,01  </TD></TR><TR><TD> 180 </TD><TD> 40,12   </TD><TD> 6.807,10  </TD></TR><TR><TD> 200 </TD><TD> 44,58   </TD><TD> 7.563,44  </TD></TR><TR><TD> 210 </TD><TD> 46,81   </TD><TD> 7.941,61  </TD></TR><TR><TD> 250 </TD><TD> 55,73   </TD><TD> 9.454,30  </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p><p></p>   PERSONNEL D'ENTRETIEN :<p></p><p></p><p></p>   OUVRIERS D'ENTRETIEN :<p></p><p></p><TABLE><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD> 150 </TD><TD> SMIC    </TD><TD> SMIC      </TD></TR><TR><TD> 160 </TD><TD> 35,66   </TD><TD> 6.050,75  </TD></TR><TR><TD> 190 </TD><TD> 42,35   </TD><TD> 7.185,27  </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p> EMPLOYES :<p></p><p></p><TABLE><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD> 150 </TD><TD> SMIC    </TD><TD> SMIC      </TD></TR><TR><TD> 160 </TD><TD> 35,66   </TD><TD> 6.050,75  </TD></TR><TR><TD> 180 </TD><TD> 40,12   </TD><TD> 6.807,10  </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p> PERSONNEL DES SERVICES GENERAUX<p></p><p></p><TABLE><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD> 150 </TD><TD> SMIC    </TD><TD> SMIC      </TD></TR><TR><TD> 165 </TD><TD> 36,78   </TD><TD> 6.239,84  </TD></TR><TR><TD> 180 </TD><TD> 40,12   </TD><TD> 6.807,10  </TD></TR><TR><TD> 190 </TD><TD> 42,35   </TD><TD> 7.185,27  </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p> TECHNICIEN<p></p><p></p><TABLE><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD> 180 </TD><TD> 40,12   </TD><TD> 6.807,10  </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 26 1994-03-16 BO Conventions collectives 94-25 étendu par arrêté du 17 août 1994 JORF 27 août 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 763776000000,
+                  "dateFin": 795744000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -16989,13 +17063,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720323",
+              "cid": "KALISCTA000005720323",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril 1994.",
+              "dateModif": null,
+              "dateDebut": "1995-03-21",
+              "dateFin": "1995-03-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005841672",
+                  "cid": "KALIARTI000005841672",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720323/KALIARTI000005841672",
+                  "pathTitle": [
+                    "Salaires au 1er avril 1994."
+                  ],
+                  "content": "<p></p>   Il a été convenu entre la confédération nationale de la pâtisserie confiserie glacerie et la confédération nationale des glaciers de France et les centrales syndicales ci-dessous représentées, que la valeur du point au 1er avril 1994 serait de 0,2229 F.<p></p><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p><p></p>   PERSONNEL DE FABRICATION :<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 150 </TD><TD>   SMIC  </TD><TD>    SMIC   </TD></TR><TR><TD> 160 </TD><TD> 36,304  </TD><TD> 6.159,34  </TD></TR><TR><TD> 165 </TD><TD> 37,4385 </TD><TD> 6.351,82  </TD></TR><TR><TD> 170 </TD><TD> 38,573  </TD><TD> 6.544,30  </TD></TR><TR><TD> 180 </TD><TD> 40,842  </TD><TD> 6.929,25  </TD></TR><TR><TD> 185 </TD><TD> 41,9765 </TD><TD> 7.121,73  </TD></TR><TR><TD> 190 </TD><TD> 43,111  </TD><TD> 7.314,21  </TD></TR><TR><TD> 220 </TD><TD> 49,918  </TD><TD> 8.469,09  </TD></TR><TR><TD> 250 </TD><TD> 56,725  </TD><TD> 9.623,96  </TD></TR><TR><TD> 270 </TD><TD> 61,263  </TD><TD> 10.393,88 </TD></TR><TR><TD> 290 </TD><TD> 65,801  </TD><TD> 11.163,80 </TD></TR><TR><TD> 310 </TD><TD> 70,339  </TD><TD> 11.933,71 </TD></TR><TR><TD> 330 </TD><TD> 74,877  </TD><TD> 12.703,63 </TD></TR><TR><TD> 350 </TD><TD> 79,415  </TD><TD> 13.473,55 </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p><p></p>   CHAUFFEURS-LIVREURS :<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 165 </TD><TD> 37,4385 </TD><TD> 6.351,82  </TD></TR><TR><TD> 170 </TD><TD> 38,573  </TD><TD> 6.544,30  </TD></TR><TR><TD> 180 </TD><TD> 40,842  </TD><TD> 6.929,25  </TD></TR><TR><TD> 190 </TD><TD> 43,111  </TD><TD> 7.314,21  </TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p><p></p>   PERSONNEL DE VENTE :<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 150 </TD><TD> SMIC    </TD><TD> SMIC      </TD></TR><TR><TD> 160 </TD><TD> 36,304  </TD><TD> 6.159,34  </TD></TR><TR><TD> 165 </TD><TD> 37,4385 </TD><TD> 6.351,82  </TD></TR><TR><TD> 175 </TD><TD> 39,7075 </TD><TD> 6.736,77  </TD></TR><TR><TD> 180 </TD><TD> 40,842  </TD><TD> 6.929,25  </TD></TR><TR><TD> 200 </TD><TD> 45,38   </TD><TD> 7.699,17  </TD></TR><TR><TD> 210 </TD><TD> 47,649  </TD><TD> 8.084,13  </TD></TR><TR><TD> 250 </TD><TD> 56,725  </TD><TD> 9.623,96  </TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p><p></p>   PERSONNEL D'ENTRETIEN :<p></p><p></p><p></p>   OUVRIERS D'ENTRETIEN :<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 150 </TD><TD> SMIC    </TD><TD> SMIC      </TD></TR><TR><TD> 160 </TD><TD> 36,304  </TD><TD> 6.159,34  </TD></TR><TR><TD> 190 </TD><TD> 43,111  </TD><TD> 7.314,21  </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p> EMPLOYES :<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 150 </TD><TD> SMIC    </TD><TD> SMIC      </TD></TR><TR><TD> 160 </TD><TD> 36,304  </TD><TD> 6.159,34  </TD></TR><TR><TD> 180 </TD><TD> 40,842  </TD><TD> 6.929,25  </TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p> PERSONNEL DES SERVICES GENERAUX<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 150 </TD><TD> 34,035  </TD><TD> 5.774,38  </TD></TR><TR><TD> 165 </TD><TD> 37,4385 </TD><TD> 6.351,82  </TD></TR><TR><TD> 180 </TD><TD> 40,842  </TD><TD> 6.929,25  </TD></TR><TR><TD> 190 </TD><TD> 43,111  </TD><TD> 7.314,21  </TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p> TECHNICIEN<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 180 </TD><TD> 40,842  </TD><TD> 6.929,25  </TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA. Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA. Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 29 1995-03-21 BO conventions collectives 95-18, étendu par arrêté du 3 juillet 1995 JORF 13 juillet 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 795744000000,
+                  "dateFin": 795744000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -17009,13 +17157,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720324",
+              "cid": "KALISCTA000005720324",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires, valeur du point au 1er avril 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-03-21",
+              "dateFin": "1995-09-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005841673",
+                  "cid": "KALIARTI000005841673",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720324/KALIARTI000005841673",
+                  "pathTitle": [
+                    "Salaires, valeur du point au 1er avril 1995."
+                  ],
+                  "content": "<p></p>   Il a été convenu entre la confédération nationale de la pâtisserie confiserie glacerie et la confédération nationale des glaciers de France et les centrales syndicales ci-dessous représentées, que la valeur du point au 1er avril 1995 serait de 0,2269 F.<p></p><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p><p></p>   PERSONNEL DE FABRICATION :<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 150 </TD><TD>   SMIC  </TD><TD>    SMIC   </TD></TR><TR><TD> 160 </TD><TD> 36,304  </TD><TD> 6.159,34  </TD></TR><TR><TD> 165 </TD><TD> 37,4385 </TD><TD> 6.351,82  </TD></TR><TR><TD> 170 </TD><TD> 38,573  </TD><TD> 6.544,30  </TD></TR><TR><TD> 180 </TD><TD> 40,842  </TD><TD> 6.929,25  </TD></TR><TR><TD> 185 </TD><TD> 41,9765 </TD><TD> 7.121,73  </TD></TR><TR><TD> 190 </TD><TD> 43,111  </TD><TD> 7.314,21  </TD></TR><TR><TD> 220 </TD><TD> 49,918  </TD><TD> 8.469,09  </TD></TR><TR><TD> 250 </TD><TD> 56,725  </TD><TD> 9.623,96  </TD></TR><TR><TD> 270 </TD><TD> 61,263  </TD><TD> 10.393,88 </TD></TR><TR><TD> 290 </TD><TD> 65,801  </TD><TD> 11.163,80 </TD></TR><TR><TD> 310 </TD><TD> 70,339  </TD><TD> 11.933,71 </TD></TR><TR><TD> 330 </TD><TD> 74,877  </TD><TD> 12.703,63 </TD></TR><TR><TD> 350 </TD><TD> 79,415  </TD><TD> 13.473,55 </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p><p></p>   CHAUFFEURS-LIVREURS :<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 165 </TD><TD> 37,4385 </TD><TD> 6.351,82  </TD></TR><TR><TD> 170 </TD><TD> 38,573  </TD><TD> 6.544,30  </TD></TR><TR><TD> 180 </TD><TD> 40,842  </TD><TD> 6.929,25  </TD></TR><TR><TD> 190 </TD><TD> 43,111  </TD><TD> 7.314,21  </TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p><p></p>   PERSONNEL DE VENTE :<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 150 </TD><TD> SMIC    </TD><TD> SMIC      </TD></TR><TR><TD> 160 </TD><TD> 36,304  </TD><TD> 6.159,34  </TD></TR><TR><TD> 165 </TD><TD> 37,4385 </TD><TD> 6.351,82  </TD></TR><TR><TD> 175 </TD><TD> 39,7075 </TD><TD> 6.736,77  </TD></TR><TR><TD> 180 </TD><TD> 40,842  </TD><TD> 6.929,25  </TD></TR><TR><TD> 200 </TD><TD> 45,38   </TD><TD> 7.699,17  </TD></TR><TR><TD> 210 </TD><TD> 47,649  </TD><TD> 8.084,13  </TD></TR><TR><TD> 250 </TD><TD> 56,725  </TD><TD> 9.623,96  </TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p><p></p>   PERSONNEL D'ENTRETIEN :<p></p><p></p><p></p>   OUVRIERS D'ENTRETIEN :<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 150 </TD><TD> SMIC    </TD><TD> SMIC      </TD></TR><TR><TD> 160 </TD><TD> 36,304  </TD><TD> 6.159,34  </TD></TR><TR><TD> 190 </TD><TD> 43,111  </TD><TD> 7.314,21  </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p> EMPLOYES :<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 150 </TD><TD> SMIC    </TD><TD> SMIC      </TD></TR><TR><TD> 160 </TD><TD> 36,304  </TD><TD> 6.159,34  </TD></TR><TR><TD> 180 </TD><TD> 40,842  </TD><TD> 6.929,25  </TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p> PERSONNEL DES SERVICES GENERAUX<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 150 </TD><TD>   SMIC  </TD><TD>   SMIC    </TD></TR><TR><TD> 165 </TD><TD> 37,4385 </TD><TD> 6.351,82  </TD></TR><TR><TD> 180 </TD><TD> 40,842  </TD><TD> 6.929,25  </TD></TR><TR><TD> 190 </TD><TD> 43,111  </TD><TD> 7.314,21  </TD></TR></TABLE><p></p><p></p> (1) Coefficients.<p></p> (2) Salaire horaire (en francs).<p></p> (3) Salaire mensuel (en francs).<p></p><p></p> TECHNICIEN<p></p><p></p><TABLE><TR><TD> (1) </TD><TD>   (2)   </TD><TD>   (3)     </TD></TR><TR><TD> 180 </TD><TD> 40,842  </TD><TD> 6.929,25  </TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Avenant n° 30 étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Avenant n° 30 étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 30 1995-03-21, BO conventions collectives 95-28 étendu par arrêté du 5 octobre 1995 JORF 14 octobre 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 795744000000,
+                  "dateFin": 811555200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

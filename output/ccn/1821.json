@@ -6268,12 +6268,77 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005829243",
+              "cid": "KALIARTI000005829243",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005829243",
+              "pathTitle": [],
+              "content": "Article 1er<p></p><p></p>   Le SMP au coefficient 100 est porté à 3,75  par heure, soit pour 151 h 67 : 568,75 .<p></p> Article 2<p></p><p></p>   La grille de salaires minima garantis (SMG) est jointe à ce document.<p></p><p></p>   Le point de raccordement qui était précédemment au coefficient 205 est désormais au coefficient 230.<p></p><p></p>   La définition du salaire minimum garanti est celle décrite dans l'accord national de classification des emplois du 3 décembre 1988 étendu.<p></p> Article 3<p></p><p></p>   Le principe d'une rémunération minimale annuelle garantie est maintenu. Les modalités de son calcul feront l'objet de réunions ultérieures.<p></p> Article 4<p></p><p></p>   Les parties s'engagent à tenir une nouvelle négociation au second semestre 2005 afin de définir une nouvelle grille hiérarchisée des salaires minima garantis à la suite de la revalorisation du SMIC au 1er juillet 2005.<p></p> Article 5<p></p><p></p>   Le présent accord sera déposé en 5 exemplaires à la direction départementale du travail et de l'emploi à Paris, conformément aux articles L. 132-10 et R. 1326-1 du code du travail.<p></p><p></p>   Un exemplaire sera remis au secrétariat-greffe du conseil des prud'hommes de Paris.<p></p> Article 6<p></p><p></p>   Date d'application : 1er juillet 2005.<p></p><p></p>   Fait à Paris, le 17 juin 2005.<p></p><p></p>   ANNEXE : Rémunération minimum garantie<p></p><p></p>   Fédération des cristalleries, verreries à la main et mixtes<p></p><TABLE><TR><TD> COEFFICIENT </TD><TD>  SMIC  </TD><TD>     BASE 5        </TD></TR><TR><TD>    100      </TD><TD></TD><TD></TD></TR><TR><TD>    115      </TD><TD>  7,61  </TD><TD>     1 197,37      </TD></TR><TR><TD>    125      </TD><TD></TD><TD>     1 212,45      </TD></TR><TR><TD>    135      </TD><TD></TD><TD>     1 231,37      </TD></TR><TR><TD>    145      </TD><TD></TD><TD>     1 246,39      </TD></TR><TR><TD>    160      </TD><TD></TD><TD>     1 268,08      </TD></TR><TR><TD>    175      </TD><TD></TD><TD>     1 289,76      </TD></TR><TR><TD>    190      </TD><TD></TD><TD>     1 311,43      </TD></TR><TR><TD>    205      </TD><TD></TD><TD>     1 333,07      </TD></TR><TR><TD>    220      </TD><TD></TD><TD>     1 355,73      </TD></TR><TR><TD>    230      </TD><TD></TD><TD>     1 369,70      </TD></TR><TR><TD>    245      </TD><TD></TD><TD>     1 458,59      </TD></TR><TR><TD>    260      </TD><TD></TD><TD>     1 547,85      </TD></TR><TR><TD>    275      </TD><TD></TD><TD>     1 637,01      </TD></TR><TR><TD>    290      </TD><TD></TD><TD>     1 726,23      </TD></TR><TR><TD>    315      </TD><TD></TD><TD>     1 875,03      </TD></TR><TR><TD>    330      </TD><TD></TD><TD>     1 964,28      </TD></TR><TR><TD>    345      </TD><TD></TD><TD>     2 113,23      </TD></TR><TR><TD>    385      </TD><TD></TD><TD>     2 529,91      </TD></TR><TR><TD>    440      </TD><TD></TD><TD>     2 829,56      </TD></TR><TR><TD>    490      </TD><TD></TD><TD>     3 086,15      </TD></TR><TR><TD>    550      </TD><TD></TD><TD>     3 411,95      </TD></TR><TR><TD>    660      </TD><TD></TD><TD>     4 009,25      </TD></TR><TR><TD>    770      </TD><TD></TD><TD>     4 606,55      </TD></TR><TR><TD>    880      </TD><TD></TD><TD>     5 250,87      </TD></TR></TABLE><p></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 4 2005-06-17 BO conventions collectives 2005-30",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "",
+                  "textTitle": "Code du travail L132-10, R1326-1",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": null,
+                  "dateDebut": null
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1118966400000,
+              "dateFin": 1150761600000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6288,12 +6353,77 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005829244",
+              "cid": "KALIARTI000005829244",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005829244",
+              "pathTitle": [],
+              "content": "Article 1er<p></p> Salaires minima garantis (SMG)<p></p><p></p>   Dans le but de poursuivre la reconstruction des garanties conventionnelles en matière de salaires et autres éléments de rémunération, les parties ont décidé les dispositions ci-après :<p></p><p></p>   1.1. La valeur du SMG au coefficient 115 est portée à 1 218,00 Euros.<p></p><p></p>   La valeur du SMG au coefficient 230 est portée à 1 394,34 Euros, ce qui fait une valeur de point de raccordement entre ces 2 coefficients de 1,53 Euros.<p></p><p></p>   La valeur du SMG au coefficient 315 est portée à 2 049,48 Euros, ce qui fait une valeur de point de raccordement entre les coefficients 230 et 315 de 7,71 Euros.<p></p><p></p>   1.2. Il a été décidé que la valeur du SMG au coefficient 385 serait d'un montant proche ou égal au plafond actuel de la sécurité sociale, soit 2 589,00 Euros, et que la valeur du K 345 est fixée à 2 491,00 Euros.<p></p><p></p>   1.3. La conséquence de cette revalorisation pratiquée pour les coefficients 345 et 385 a été qu'il n'a pas été possible de fixer une valeur de point de raccordement entre les coefficients 315 et 880, d'autant que les parties ont convenu qu'elles étaient dans une démarche de revalorisation visant à ce que la valeur du SMG au coefficient 345 s'approche du niveau du plafond de la sécurité sociale lors des prochaines négociations. De ce fait, et cela de manière temporaire et transitoire, il a été convenu de laisser sur l'intervalle entre les coefficients 315 et 880 des valeurs nominales de SMG en face de chacun des coefficients telles que précisées dans le tableau ci-après.<p></p><p></p>   1.4. Les parties conviennent de se retrouver en négociation salariale en septembre 2006 :<p></p><p></p>   - pour revaloriser le pied de la grille compte tenu notamment de la revalorisation du SMIC qui devrait intervenir d'ici là, et cela afin que pas un seul niveau de la grille ne soit inférieur à son montant ;<p></p><p></p>   - pour revaloriser les SMG sur le reste de la grille au regard des qualifications, de sorte de retrouver une grille salariale unique et hiérarchisée, participant à la démarche de reconstruction d'une grille unique et continue de salaires mensuels garantis dont les caractéristiques seront ultérieurement définies.<p></p><p></p>   Cette reconstruction pouvant se réaliser dans le temps, en intervenant sur les revalorisations des valeurs de points, et/ou en déplaçant les points actuels de cassure de la grille de sorte qu'ils disparaissent à terme.<p></p><p></p>   Les montants sont ceux indiqués dans les tableaux ci-après :<p></p><p></p>   1° Pour calculer les montants des salaires mensuels garantis entre les coefficients 115 et 230, la formule est :<p></p> Valeur Kx = valeur K 115 + VP1 (Kx - K 115)<p></p> VP 1 = (valeur K 230 - valeur K 115) / (230 - 115)<p></p><p></p>   2° Pour calculer les montants des salaires mensuels garantis entre les coefficients 230 et 315, la formule est :<p></p> Valeur Kx = valeur K 230 + VP2 (Kx - K 230)<p></p> VP 2 = (valeur K 315 - valeur K 230) / (315 - 230)<p></p><p></p>   Les salaires minima garantis (SMG) mensuels s'entendent pour un horaire de 151,67 heures ou tout horaire mensuel inférieur équivalent affiché, correspondant à un temps plein dans la situation particulière de travail du salarié ou encore d'une mise en oeuvre dans l'entreprise d'une réduction plus importante de la durée du travail.<p></p><p></p>   Le SMG horaire d'une position hiérarchique donnée correspond au SMG mensuel de cette position, que divise 151,67 heures ou l'horaire mensuel inférieur équivalent affiché.<p></p><p></p>   Les SMG s'entendent comme comprenant exclusivement :<p></p><p></p>   - le salaire de base ;<p></p><p></p>   - le paiement des temps de pause, lorsque celles-ci, en fonction de dispositions légales, réglementaires, conventionnelles ou autres sont considérées ou assimilées et payées comme temps de travail effectif ;<p></p><p></p>   - la partie fixe ou plancher, et garantie des primes individuelles et prévisibles de productions ou de rendements. <p></p><TABLE><TR><TD> COEFFICIENT </TD><TD>    SMG    </TD></TR><TR><TD>    100      </TD><TD></TD></TR><TR><TD>    115      </TD><TD>  1 218,00 </TD></TR><TR><TD>    125      </TD><TD>  1 233,33 </TD></TR><TR><TD>    135      </TD><TD>  1 248,67 </TD></TR><TR><TD>    145      </TD><TD>  1 264,00 </TD></TR><TR><TD>    160      </TD><TD>  1 287,00 </TD></TR><TR><TD>    175      </TD><TD>  1 310,00 </TD></TR><TR><TD>    190      </TD><TD>  1 333,00 </TD></TR><TR><TD>    205      </TD><TD>  1 356,01 </TD></TR><TR><TD>    220      </TD><TD>  1 379,01 </TD></TR><TR><TD>    230      </TD><TD>  1 394,34 </TD></TR><TR><TD>    245      </TD><TD>  1 509,95 </TD></TR><TR><TD>    260      </TD><TD>  1 625,57 </TD></TR><TR><TD>    275      </TD><TD>  1 741,18 </TD></TR><TR><TD>    290      </TD><TD>  1 856,79 </TD></TR><TR><TD>    315      </TD><TD>  2 049,48 </TD></TR><TR><TD>    330      </TD><TD>  2 239,00 </TD></TR><TR><TD>    345      </TD><TD>  2 491,00 </TD></TR><TR><TD>    385      </TD><TD>  2 589,00 </TD></TR><TR><TD>    440      </TD><TD>  2 861,03 </TD></TR><TR><TD>    490      </TD><TD>  3 187,46 </TD></TR><TR><TD>    550      </TD><TD>  3 550,00 </TD></TR><TR><TD>    660      </TD><TD>  4 148,48 </TD></TR><TR><TD>    770      </TD><TD>  4 746,93 </TD></TR><TR><TD>    880      </TD><TD>  5 345,39 </TD></TR></TABLE><p></p>Article 2<p></p> Salaire minimum professionnel<p></p><p></p>   Les parties conviennent de réactualiser le SMP en septembre.<p></p> Article 3<p></p> Négociations<p></p><p></p>   3.1. Les parties devront se réunir pour négocier sur les salaires, selon besoin et en tout état de cause au moins une fois l'an, conformément aux dispositions légales.<p></p><p></p>   3.2. Un rapport de branche sera ainsi établi et remis aux organisations syndicales concernées, au moins 15 jours avant le début des négociations. Les entreprises relevant du champ d'application devront faire parvenir toutes informations nécessaires à la fédération qui en fera la synthèse, pour qu'elle puisse conduire ces négociations en connaissance de cause.<p></p><p></p>   Les parties détermineront la nature des informations permettant d'établir et d'étoffer au mieux ce rapport, à l'occasion des réunions de négociations salariales prochaines.<p></p>Article 4<p></p> Caractère normatif du présent accord et extension de celui-ci<p></p><p></p>   Il ne peut être dérogé en aucun cas, dans un sens qui soit défavorable au (à la) salarié(e), à l'une quelconque des dispositions de la convention collective nationale de la fabrication du verre à la main, semi-automatique et mixte, à l'une de ses annexes et avenants, donc également au présent accord se rattachant à ladite convention.<p></p><p></p>   Les présentes dispositions sont applicables à compter du 1er juillet 2006.<p></p><p></p>   Les parties demandent l'extension des présentes dispositions.<p></p> Article 5<p></p> Dépôt et publicité<p></p><p></p>   Le présent accord sera déposé en 5 exemplaires à la direction départementale du travail, de l'emploi et de la formation professionnelle de Paris, conformément aux dispositions des articles L. 132-10 et R. 132-1 du code du travail.<p></p><p></p>   Un exemplaire sera remis au secrétariat-greffe du conseil des prud'hommes de Paris et aux organisations syndicales concernées.<p></p><p></p>   Le présent accord prendra application à partir du 1er juillet 2006.<p></p><p></p>   Fait à Paris, le 20 juin 2006.<p></p><font color=\"808080\"><em>   Accord étendu, sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance (arrêté du 26 décembre 2006, art. 1er).<p></p></em></font>",
+              "nota": "   Accord étendu, sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance (arrêté du 26 décembre 2006, art. 1er).<p></p>",
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Accord 2006-06-20 BO conventions collectives 2006-41 étendu par arrêté du 26 décembre 2006 JORF 4 janvier 2007",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "",
+                  "textTitle": "Code du travail L132-10, R132-1",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": null,
+                  "dateDebut": null
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1150761600000,
+              "dateFin": 1172448000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6307,13 +6437,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005714772",
+              "cid": "KALISCTA000005714772",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Salaires à compter du 1er mars 2007",
+              "dateModif": null,
+              "dateDebut": "2007-02-26",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005829245",
+                  "cid": "KALIARTI000005829245",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005714772/KALIARTI000005829245",
+                  "pathTitle": [
+                    "Salaires à compter du 1er mars 2007"
+                  ],
+                  "content": "Article 1er<p></p> Salaires minima garantis (SMG)<p></p><p></p>   1.1 Les parties rappellent qu'il n'y a pas de salarié classé au coefficient 100. Il est convenu que le coefficient 115 ne concerne que les salariés débutant dans la vie professionnelle et n'ayant aucune qualification ou expérience professionnelle. Ce coefficient ne peut être affecté au salarié plus de 6 mois après la date de son embauche. Passé ce délai, il devra passer au coefficient 125. Il est décidé que le salarié positionné au coefficient 115 devra percevoir un salaire au moins égal au SMIC en vigueur.<p></p><p></p>   1.2 Les parties conviennent que le passage au coefficient 125 traduit une valorisation de la qualification acquise. La valeur du SMG au coefficient 125 est en conséquence portée à 1 261,00 Euros.<RL    1.3 La valeur du SMG au coefficient 230 est portée à 1 425,02 Euros ce qui porte la valeur du point de raccordement entre le coefficient 125 et le coefficient 230 à 1,56 Euros.<p></p><p></p>   1.4 La valeur du SMG au coefficient 315 est portée à 2 066,01 Euros. La valeur du point de raccordement entre les coefficients 230 et 315 est de 7,54 Euros. De manière transitoire, il est convenu entre les coefficients 315 et 880 de valoriser les SMG précédents de 2 % environ. Il a également été décidé, conformément aux engagements pris lors de la précédente négociation, que la valeur du SMG au coefficient 345 serait au moins à un montant qui ne soit pas inférieur au plafond de la sécurité sociale, soit actuellement 2 589 Euros. Les parties conviennent d'examiner, lors des prochaines négociations salariales, les conditions d'une hiérarchisation salariale en lien avec les coefficients pour les positions supérieures au coefficient 315. Elles conviennent d'étudier plus largement les évolutions à apporter à la grille des classifications et salaires en rapport avec les classifications, afin d'aboutir à l'élaboration d'une grille unique et continue de salaires mensuels garantis entre le coefficient de base et le coefficient 880. L'élaboration de cette grille pourra se réaliser dans le temps, en intervenant sur les revalorisations des valeurs de points, et/ou en déplaçant les points actuels de cassure de la grille afin qu'ils disparaissent à terme. Elle nécessitera également une réflexion sur les besoins de révision des classifications actuelles.<p></p><p></p>   Les montants applicables sont indiqués dans le tableau suivant.<p></p><p></p>   1. Pour calculer les montants des salaires mensuels garantis entre les coefficients 125 et 230, la formule est :<p></p><p></p>   Valeur Kx = valeur K 125 + VP 1 (Kx - K 125)<p></p><p></p>   VP 1 = (valeur K 230 - valeur K 125)/(230 - 125).<p></p><p></p>   2. Pour calculer les montants des salaires mensuels garantis entre les coefficients 230 et 315, la formule est :<p></p><p></p>   Valeur Kx = valeur K 230 + VP 2 (Kx - K 230)<p></p><p></p>   VP 2 = (valeur K 315 - valeur K 230)/(315 - 230).<p></p><p></p>   3. Pour les montants des salaires mensuels garantis, au-delà du coefficient 315, il y a lieu de se référer aux valeurs fixées en attente de détermination d'une nouvelle règle.<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD> COEFFICIENT </TD><TD>    SMG/151,67 heures  </TD></TR><TR><TD></TD><TD>  ou horaire inférieur </TD></TR><TR><TD></TD><TD>        équivalent     </TD></TR><TR><TD>     100     </TD><TD>      aucun salarié    </TD></TR><TR><TD>     115     </TD><TD>         1 254,28      </TD></TR><TR><TD>     125     </TD><TD>         1 261,00      </TD></TR><TR><TD>     135     </TD><TD>         1 276,62      </TD></TR><TR><TD>     145     </TD><TD>         1 292,24      </TD></TR><TR><TD>     160     </TD><TD>         1 315,67      </TD></TR><TR><TD>     175     </TD><TD>         1 339,10      </TD></TR><TR><TD>     190     </TD><TD>         1 362,54      </TD></TR><TR><TD>     205     </TD><TD>         1 385,97      </TD></TR><TR><TD>     220     </TD><TD>         1 409,40      </TD></TR><TR><TD>     230     </TD><TD>         1 425,02      </TD></TR><TR><TD>     245     </TD><TD>         1 538,14      </TD></TR><TR><TD>     260     </TD><TD>         1 651,25      </TD></TR><TR><TD>     275     </TD><TD>         1 764,37      </TD></TR><TR><TD>     290     </TD><TD>         1 877,48      </TD></TR><TR><TD>     315     </TD><TD>         2 066,01      </TD></TR><TR><TD>     330     </TD><TD>         2 283,78      </TD></TR><TR><TD>     345     </TD><TD>         2 589,00      </TD></TR><TR><TD>     385     </TD><TD>         2 616,05      </TD></TR><TR><TD>     440     </TD><TD>         2 890,80      </TD></TR><TR><TD>     490     </TD><TD>         3 220,62      </TD></TR><TR><TD>     550     </TD><TD>         3 586,92      </TD></TR><TR><TD>     660     </TD><TD>         4 191,64      </TD></TR><TR><TD>     770     </TD><TD>         4 796,30      </TD></TR><TR><TD>     880     </TD><TD>         5 401,00      </TD></TR></TABLE><p></p>Article 2<p></p> Salaire minimum professionnel (SMP)<p></p><p></p>   2.1 Le coefficient de base de la grille de classification est le coefficient 100 étant entendu qu'il s'agit d'un coefficient de référence à partir duquel se fait le calcul des SMP de chaque catégorie. Aucun salarié n'est classé au coefficient 100.<p></p><p></p>   2.2 Pour trouver le SMP horaire d'une position hiérarchique donnée, il convient de multiplier le SMP horaire du coefficient 100 par le coefficient de la position hiérarchique en question divisé par 100.<p></p><p></p>   2.3 Le SMP mensuel équivaut au SMP horaire multiplié par 151,67 heures.<p></p><p></p>   Sous réserve de dispositions plus favorables, le SMP conventionnel sert au calcul de la prime de panier et des primes d'ancienneté telles que définies dans la convention collective.<p></p><p></p>   2.5 Le SMP horaire est fixé à la date d'application du présent accord à 3,84 Euros. Ce SMP sera revalorisé à l'occasion des négociations salariales annuelles.<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD> COEFFICIENT </TD><TD> SMP/H  </TD><TD>  SMP/MOIS  </TD></TR><TR><TD>    100      </TD><TD>  3,84  </TD><TD></TD></TR><TR><TD>    115      </TD><TD>  4,42  </TD><TD>    669,77  </TD></TR><TR><TD>    125      </TD><TD>  4,80  </TD><TD>    728,02  </TD></TR><TR><TD>    135      </TD><TD>  5,18  </TD><TD>    786,26  </TD></TR><TR><TD>    145      </TD><TD>  5,57  </TD><TD>    844,50  </TD></TR><TR><TD>    160      </TD><TD>  6,14  </TD><TD>    931,86  </TD></TR><TR><TD>    175      </TD><TD>  6,72  </TD><TD>  1 019,22  </TD></TR><TR><TD>    190      </TD><TD>  7,30  </TD><TD>  1 106,58  </TD></TR><TR><TD>    205      </TD><TD>  7,87  </TD><TD>  1 193,95  </TD></TR><TR><TD>    220      </TD><TD>  8,45  </TD><TD>  1 281,31  </TD></TR><TR><TD>    230      </TD><TD>  8,83  </TD><TD>  1 339,55  </TD></TR><TR><TD>    245      </TD><TD>  9,41  </TD><TD>  1 426,91  </TD></TR><TR><TD>    260      </TD><TD>  9,98  </TD><TD>  1 514,27  </TD></TR><TR><TD>    275      </TD><TD> 10,56  </TD><TD>  1 601,64  </TD></TR><TR><TD>    290      </TD><TD> 11,14  </TD><TD>  1 689,00  </TD></TR><TR><TD>    315      </TD><TD> 12,10  </TD><TD>  1 834,60  </TD></TR><TR><TD>    330      </TD><TD> 12,67  </TD><TD>  1 921,96  </TD></TR><TR><TD>    345      </TD><TD> 13,25  </TD><TD>  2 009,32  </TD></TR><TR><TD>    385      </TD><TD> 14,78  </TD><TD>  2 242,29  </TD></TR><TR><TD>    440      </TD><TD> 16,90  </TD><TD>  2 562,62  </TD></TR><TR><TD>    490      </TD><TD> 18,82  </TD><TD>  2 853,82  </TD></TR><TR><TD>    550      </TD><TD> 21,12  </TD><TD>  3 203,27  </TD></TR><TR><TD>    660      </TD><TD> 25,34  </TD><TD>  3 843,92  </TD></TR><TR><TD>    770      </TD><TD> 29,57  </TD><TD>  4 484,58  </TD></TR><TR><TD>    880      </TD><TD> 33,79  </TD><TD>  5 125,23  </TD></TR></TABLE><p></p>Article 3<p></p> Caractère normatif du présent accord et extension de celui-ci<p></p><p></p>   Il ne peut être dérogé, dans un sens défavorable au salarié, à l'une des présentes dispositions.<p></p><p></p>   Les parties demandent l'extension des présentes dispositions.<p></p><p></p>   Le présent accord entrera en vigueur à partir du 1er mars 2007 pour les entreprises adhérentes à la fédération des cristalleries verreries à la main et mixtes et à compter du 1er juin 2007 pour l'entreprise Lalique.<p></p><p></p>   Néanmoins les présentes dispositions seront applicables à compter de la publication au Journal officiel de l'arrêté portant son extension, pour les entreprises non adhérentes à la fédération des cristalleries verreries à la main et mixtes.<p></p> Article 4<p></p> Dépôt et publicité<p></p><p></p>   Le présent accord sera déposé en 2 exemplaires à la direction générale du travail au service des relations et conditions de travail, conformément aux dispositions des articles L. 132-10 et R. 132-1 du code du travail.<p></p><p></p>   Un exemplaire sera remis au secrétariat-greffe du conseil de prud'hommes de Paris.<p></p><p></p>   Fait à Paris, le 26 février 2007.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2007-02-26 BO conventions collectives 2007-13 étendu par arrêté du 20 juin 2007 JORF 5 juillet 2007",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10, R132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1172448000000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -12626,13 +12626,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697156",
+              "cid": "KALISCTA000005697156",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et grilles à compter du 1er novembre 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-11-01",
+              "dateFin": "1997-05-13",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783917",
+                  "cid": "KALIARTI000005783917",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005697156/KALIARTI000005783917",
+                  "pathTitle": [
+                    "Salaires et grilles à compter du 1er novembre 1996."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les parties signataires sont convenues des modifications indiquées ci-dessous, applicables à compter du 1er novembre 1996, à la convention collective nationale des entreprises du négoce et de l'industrie des produits du sol, engrais et produits connexes :<p></p> ANNEXE II : Salaires<p></p><p></p>   Le barème des salaires conventionnels, pour trente-neuf heures hebdomadaires, tel qu'il figure à l'annexe II de la convention collective nationale des entreprises du négoce et de l'industrie des produits du sol, est déterminé, à compter du 1er novembre 1996, par l'application de la formule suivante :<p></p> S = 4 709 F + 16,28 F (C - 100)<p></p><p></p>   dans laquelle \" C \" représente le coefficient hiérarchique affecté à l'emploi considéré et \" S \" le salaire conventionnel.<p></p><p></p>   Toutefois, pour les emplois comportant un coefficient hiérarchique inférieur à 220, le salaire conventionnel est majoré d'un complément de salaire déterminé de la façon suivante :<p></p> Complément = 13,73 F (220 - C)<p></p><p></p><p></p>   Le barème des salaires est donc fixé comme suit :<p></p> Grille des salaires applicables au 1er novembre 1996<p></p><p></p>   Salaire : 4 709 F + 16,28 F (C - 100)<p></p><p></p>   Complément : 13,73 F (220 - C)<p></p><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = SALAIRE de base<p></p><TABLE><TR><TD>(1)</TD><TD> (2) </TD><TD>Variable</TD><TD>Variable</TD></TR><TR><TD></TD><TD></TD><TD> n° 1   </TD><TD>  n° 2  </TD></TR><TR><TD>115</TD><TD>4 709</TD><TD>  244,20</TD><TD>1 441,65</TD></TR><TR><TD>120</TD><TD>4 709</TD><TD>  325,60</TD><TD>1 373,00</TD></TR><TR><TD>140</TD><TD>4 709</TD><TD>  651,20</TD><TD>1 098,40</TD></TR><TR><TD>155</TD><TD>4 709</TD><TD>  895,40</TD><TD>  892,45</TD></TR><TR><TD>165</TD><TD>4 709</TD><TD>1 058,20</TD><TD>  755,15</TD></TR><TR><TD>180</TD><TD>4 709</TD><TD>1 302,40</TD><TD>  549,20</TD></TR><TR><TD>200</TD><TD>4 709</TD><TD>1 628,00</TD><TD>  274,60</TD></TR><TR><TD>220</TD><TD>4 709</TD><TD>1 953,60</TD><TD>    0   </TD></TR><TR><TD>(1)</TD><TD> (2) </TD><TD>   Salaire   </TD></TR><TR><TD></TD><TD></TD><TD>Conventionnel</TD></TR><TR><TD>115</TD><TD>4 709</TD><TD>  6 394,85   </TD></TR><TR><TD>120</TD><TD>4 709</TD><TD>  6 407,60   </TD></TR><TR><TD>140</TD><TD>4 709</TD><TD>  6 458,60   </TD></TR><TR><TD>155</TD><TD>4 709</TD><TD>  6 496,85   </TD></TR><TR><TD>165</TD><TD>4 709</TD><TD>  6 522,35   </TD></TR><TR><TD>180</TD><TD>4 709</TD><TD>  6 560,60   </TD></TR><TR><TD>200</TD><TD>4 709</TD><TD>  6 611,60   </TD></TR><TR><TD>220</TD><TD>4 709</TD><TD>  6 662,60   </TD></TR></TABLE><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = SALAIRE de base<p></p><TABLE><TR><TD>(1)</TD><TD> (2) </TD><TD>Variable</TD><TD>  Salaire    </TD></TR><TR><TD></TD><TD></TD><TD> n° 1   </TD><TD>Conventionnel</TD></TR><TR><TD>235</TD><TD>4 709</TD><TD>2 197,80</TD><TD>   6 906,80  </TD></TR><TR><TD>240</TD><TD>4 709</TD><TD>2 279,20</TD><TD>   6 988,20  </TD></TR><TR><TD>245</TD><TD>4 709</TD><TD>2 360,60</TD><TD>   7 069,60  </TD></TR><TR><TD>250</TD><TD>4 709</TD><TD>2 442,00</TD><TD>   7 151,00  </TD></TR><TR><TD>255</TD><TD>4 709</TD><TD>2 523,40</TD><TD>   7 232,40  </TD></TR><TR><TD>260</TD><TD>4 709</TD><TD>2 604,80</TD><TD>   7 313,80  </TD></TR><TR><TD>270</TD><TD>4 709</TD><TD>2 767,60</TD><TD>   7 476,60  </TD></TR><TR><TD>275</TD><TD>4 709</TD><TD>2 849,00</TD><TD>   7 558,00  </TD></TR><TR><TD>285</TD><TD>4 709</TD><TD>3 011,80</TD><TD>   7 720,80  </TD></TR><TR><TD>290</TD><TD>4 709</TD><TD>3 093,20</TD><TD>   7 802,20  </TD></TR><TR><TD>295</TD><TD>4 709</TD><TD>3 174,60</TD><TD>   7 883,60  </TD></TR><TR><TD>305</TD><TD>4 709</TD><TD>3 337,40</TD><TD>   8 046,40  </TD></TR><TR><TD>310</TD><TD>4 709</TD><TD>3 418,80</TD><TD>   8 127,80  </TD></TR><TR><TD>315</TD><TD>4 709</TD><TD>3 500,20</TD><TD>   8 209,20  </TD></TR><TR><TD>325</TD><TD>4 709</TD><TD>3 663,00</TD><TD>   8 372,00  </TD></TR><TR><TD>335</TD><TD>4 709</TD><TD>3 825,80</TD><TD>   8 534,80  </TD></TR><TR><TD>340</TD><TD>4 709</TD><TD>3 907,20</TD><TD>   8 616,20  </TD></TR><TR><TD>350</TD><TD>4 709</TD><TD>4 070,00</TD><TD>   8 779,00  </TD></TR><TR><TD>400</TD><TD>4 709</TD><TD>4 884,00</TD><TD>   9 593,00  </TD></TR><TR><TD>425</TD><TD>4 709</TD><TD>5 291,00</TD><TD>  10 000,00  </TD></TR><TR><TD>430</TD><TD>4 709</TD><TD>5 372,40</TD><TD>  10 081,40  </TD></TR><TR><TD>450</TD><TD>4 709</TD><TD>5 698,00</TD><TD>  10 407,00  </TD></TR><TR><TD>460</TD><TD>4 709</TD><TD>5 860,80</TD><TD>  10 569,80  </TD></TR><TR><TD>470</TD><TD>4 709</TD><TD>6 023,60</TD><TD>  10 732,60  </TD></TR><TR><TD>495</TD><TD>4 709</TD><TD>6 430,60</TD><TD>  11 139,60  </TD></TR><TR><TD>520</TD><TD>4 709</TD><TD>6 837,60</TD><TD>  11 546,60  </TD></TR><TR><TD>540</TD><TD>4 709</TD><TD>7 163,20</TD><TD>  11 872,20  </TD></TR><TR><TD>560</TD><TD>4 709</TD><TD>7 488,80</TD><TD>  12 197,80  </TD></TR><TR><TD>580</TD><TD>4 709</TD><TD>7 814,40</TD><TD>  12 523,40  </TD></TR><TR><TD>600</TD><TD>4 709</TD><TD>8 140,00</TD><TD>  12 849,00  </TD></TR><TR><TD>620</TD><TD>4 709</TD><TD>8 465,60</TD><TD>  13 174,60  </TD></TR><TR><TD>680</TD><TD>4 709</TD><TD>9 442,40</TD><TD>  14 151,40  </TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 25 juin 1997 art. 1 : les dispositions du présent avenant sont étendues sous réserve des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 25 juin 1997 art. 1 : les dispositions du présent avenant sont étendues sous réserve des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 40 1996-10-23 en vigueur le 1er novembre 1996 BO conventions collectives 97-18, étendu par arrêté du 25 juin 1997 JORF 8 juillet 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 846806400000,
+                  "dateFin": 863481600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12646,13 +12720,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697157",
+              "cid": "KALISCTA000005697157",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et grilles à compter du 1er juillet 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-05-13",
+              "dateFin": "2000-01-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783918",
+                  "cid": "KALIARTI000005783918",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005697157/KALIARTI000005783918",
+                  "pathTitle": [
+                    "Salaires et grilles à compter du 1er juillet 1997."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les parties signataires sont convenues des modifications indiquées ci-dessous, applicables à compter du 1er juillet 1997, à la convention collective nationale des entreprises du négoce et de l'industrie des produits du sol, engrais et produits connexes.<p></p>ANNEXE II<p></p> Salaires<p></p><p></p>   Le barème des salaires conventionnels, pour 39 heures hebdomadaires, tel qu'il figure à l'annexe II de la convention collective nationale des entreprises du négoce et de l'industrie des produits du sol est déterminé, à compter du 1er juillet 1997, par l'application de la formule suivante :<p></p> S = 4 759 F + 16,28 F (C - 100)<p></p><p></p>   dans laquelle \" C \" représente le coefficient hiérarchique affecté à l'emploi considéré et \" S \" le salaire conventionnel.<p></p><p></p>   Toutefois, pour les emplois comportant un coefficient hiérarchique inférieur à 220, le salaire conventionnel est majoré d'un complément de salaire déterminé de la façon suivante :<p></p> Complément = 13,73 F (220 - C)<p></p><p></p>   Le barème est donc fixé comme suit.<p></p> Grille des salaires applicable au 1er juillet 1995<p></p><p></p>   Salaire : 4 759 F + 16,28 F (coef. - 100)<p></p><p></p>   Complément : 13,73 F (220 - coef.)<p></p><TABLE><TR><TD>COEF</TD><TD>BASE </TD><TD>Variable</TD><TD>Variable</TD></TR><TR><TD></TD><TD></TD><TD> n° 1   </TD><TD>  n° 2  </TD></TR><TR><TD> 115</TD><TD>4 759</TD><TD>  244,20</TD><TD>1 441,65</TD></TR><TR><TD> 120</TD><TD>4 759</TD><TD>  325,60</TD><TD>1 373   </TD></TR><TR><TD> 140</TD><TD>4 759</TD><TD>  651,20</TD><TD>1 098,40</TD></TR><TR><TD> 155</TD><TD>4 759</TD><TD>  895,40</TD><TD>  892,45</TD></TR><TR><TD> 165</TD><TD>4 759</TD><TD>1 058,20</TD><TD>  755,15</TD></TR><TR><TD> 180</TD><TD>4 759</TD><TD>1 302,40</TD><TD>  549,20</TD></TR><TR><TD> 200</TD><TD>4 759</TD><TD>1 628   </TD><TD>  274,60</TD></TR><TR><TD> 220</TD><TD>4 759</TD><TD>1 953,60</TD><TD>    0   </TD></TR><TR><TD> 235</TD><TD>4 759</TD><TD>2 197,80</TD><TD></TD></TR><TR><TD> 240</TD><TD>4 759</TD><TD>2 279,20</TD><TD></TD></TR><TR><TD> 245</TD><TD>4 759</TD><TD>2 360,60</TD><TD></TD></TR><TR><TD> 250</TD><TD>4 759</TD><TD>2 442   </TD><TD></TD></TR><TR><TD> 255</TD><TD>4 759</TD><TD>2 523,40</TD><TD></TD></TR><TR><TD> 260</TD><TD>4 759</TD><TD>2 604,80</TD><TD></TD></TR><TR><TD> 270</TD><TD>4 759</TD><TD>2 767,60</TD><TD></TD></TR><TR><TD> 275</TD><TD>4 759</TD><TD>2 849   </TD><TD></TD></TR><TR><TD> 285</TD><TD>4 759</TD><TD>3 011,80</TD><TD></TD></TR><TR><TD> 290</TD><TD>4 759</TD><TD>3 093,20</TD><TD></TD></TR><TR><TD> 295</TD><TD>4 759</TD><TD>3 174,60</TD><TD></TD></TR><TR><TD> 305</TD><TD>4 759</TD><TD>3 337,40</TD><TD></TD></TR><TR><TD> 310</TD><TD>4 759</TD><TD>3 418,80</TD><TD></TD></TR><TR><TD> 315</TD><TD>4 759</TD><TD>3 500,20</TD><TD></TD></TR><TR><TD> 325</TD><TD>4 759</TD><TD>3 663   </TD><TD></TD></TR><TR><TD> 335</TD><TD>4 759</TD><TD>3 825,80</TD><TD></TD></TR><TR><TD> 340</TD><TD>4 759</TD><TD>3 907,20</TD><TD></TD></TR><TR><TD> 350</TD><TD>4 759</TD><TD>4 070   </TD><TD></TD></TR><TR><TD> 400</TD><TD>4 759</TD><TD>4 884   </TD><TD></TD></TR><TR><TD> 425</TD><TD>4 759</TD><TD>5 291   </TD><TD></TD></TR><TR><TD> 430</TD><TD>4 759</TD><TD>5 372,40</TD><TD></TD></TR><TR><TD> 450</TD><TD>4 759</TD><TD>5 698   </TD><TD></TD></TR><TR><TD> 460</TD><TD>4 759</TD><TD>5 860,80</TD><TD></TD></TR><TR><TD> 470</TD><TD>4 759</TD><TD>6 023,60</TD><TD></TD></TR><TR><TD> 495</TD><TD>4 759</TD><TD>6 430,60</TD><TD></TD></TR><TR><TD> 520</TD><TD>4 759</TD><TD>6 837,60</TD><TD></TD></TR><TR><TD> 540</TD><TD>4 759</TD><TD>7 163,20</TD><TD></TD></TR><TR><TD> 560</TD><TD>4 759</TD><TD>7 488,80</TD><TD></TD></TR><TR><TD> 580</TD><TD>4 759</TD><TD>7 814,40</TD><TD></TD></TR><TR><TD> 600</TD><TD>4 759</TD><TD>8 140   </TD><TD></TD></TR><TR><TD> 620</TD><TD>4 759</TD><TD>8 465,60</TD><TD></TD></TR><TR><TD> 680</TD><TD>4 759</TD><TD>9 442,40</TD><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>COEF</TD><TD>BASE </TD><TD> Salaire     </TD></TR><TR><TD></TD><TD></TD><TD>conventionnel</TD></TR><TR><TD> 115</TD><TD>4 759</TD><TD> 6 444,85    </TD></TR><TR><TD> 120</TD><TD>4 759</TD><TD> 6 457,60    </TD></TR><TR><TD> 140</TD><TD>4 759</TD><TD> 6 508,60    </TD></TR><TR><TD> 155</TD><TD>4 759</TD><TD> 6 546,85    </TD></TR><TR><TD> 165</TD><TD>4 759</TD><TD> 6 572,35    </TD></TR><TR><TD> 180</TD><TD>4 759</TD><TD> 6 610,60    </TD></TR><TR><TD> 200</TD><TD>4 759</TD><TD> 6 661,60    </TD></TR><TR><TD> 220</TD><TD>4 759</TD><TD> 6 712,60    </TD></TR><TR><TD> 235</TD><TD>4 759</TD><TD> 6 956,80    </TD></TR><TR><TD> 240</TD><TD>4 759</TD><TD> 7 038,20    </TD></TR><TR><TD> 245</TD><TD>4 759</TD><TD> 7 119,60    </TD></TR><TR><TD> 250</TD><TD>4 759</TD><TD> 7 201       </TD></TR><TR><TD> 255</TD><TD>4 759</TD><TD> 7 282,40    </TD></TR><TR><TD> 260</TD><TD>4 759</TD><TD> 7 363,80    </TD></TR><TR><TD> 270</TD><TD>4 759</TD><TD> 7 526,60    </TD></TR><TR><TD> 275</TD><TD>4 759</TD><TD> 7 608       </TD></TR><TR><TD> 285</TD><TD>4 759</TD><TD> 7 770,80    </TD></TR><TR><TD> 290</TD><TD>4 759</TD><TD> 7 852,20    </TD></TR><TR><TD> 295</TD><TD>4 759</TD><TD> 7 933,60    </TD></TR><TR><TD> 305</TD><TD>4 759</TD><TD> 8 096,40    </TD></TR><TR><TD> 310</TD><TD>4 759</TD><TD> 8 177,80    </TD></TR><TR><TD> 315</TD><TD>4 759</TD><TD> 8 259,20    </TD></TR><TR><TD> 325</TD><TD>4 759</TD><TD> 8 422       </TD></TR><TR><TD> 335</TD><TD>4 759</TD><TD> 8 584,80    </TD></TR><TR><TD> 340</TD><TD>4 759</TD><TD> 8 666,20    </TD></TR><TR><TD> 350</TD><TD>4 759</TD><TD> 8 829       </TD></TR><TR><TD> 400</TD><TD>4 759</TD><TD> 9 643       </TD></TR><TR><TD> 425</TD><TD>4 759</TD><TD>10 050       </TD></TR><TR><TD> 430</TD><TD>4 759</TD><TD>10 131,40    </TD></TR><TR><TD> 450</TD><TD>4 759</TD><TD>10 457       </TD></TR><TR><TD> 460</TD><TD>4 759</TD><TD>10 619,80    </TD></TR><TR><TD> 470</TD><TD>4 759</TD><TD>10 782,60    </TD></TR><TR><TD> 495</TD><TD>4 759</TD><TD>11 189,60    </TD></TR><TR><TD> 520</TD><TD>4 759</TD><TD>11 596,60    </TD></TR><TR><TD> 540</TD><TD>4 759</TD><TD>11 922,20    </TD></TR><TR><TD> 560</TD><TD>4 759</TD><TD>12 247,80    </TD></TR><TR><TD> 580</TD><TD>4 759</TD><TD>12 573,40    </TD></TR><TR><TD> 600</TD><TD>4 759</TD><TD>12 899       </TD></TR><TR><TD> 620</TD><TD>4 759</TD><TD>13 224,60    </TD></TR><TR><TD> 680</TD><TD>4 759</TD><TD>14 201,40    </TD></TR></TABLE><p></p>Article 2<p></p><p></p>   Conformément à l'article 69 de la convention, les parties signataires conviennent de demander l'extension du présent avenant.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 24 septembre 1997 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 24 septembre 1997 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 41 1997-05-13 BO conventions collectives 97-30, étendu par arrêté du 24 septembre 1997 JORF 4 octobre 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 863481600000,
+                  "dateFin": 948844800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12666,13 +12814,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697158",
+              "cid": "KALISCTA000005697158",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et grilles à compter du 1er novembre 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-10-30",
+              "dateFin": "1998-10-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783919",
+                  "cid": "KALIARTI000005783919",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005697158/KALIARTI000005783919",
+                  "pathTitle": [
+                    "Salaires et grilles à compter du 1er novembre 1997."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les parties signataires sont convenues des modifications indiquées ci-dessous, applicables à compter du 1er novembre 1997, à la convention collective nationale des entreprises du négoce et de l'industrie des produits du sol, engrais et produits connexes.<p></p> ANNEXE II<p></p> Salaires<p></p><p></p>   Le barème des salaires conventionnels, pour 39 heures hebdomadaires, tel qu'il figure à l'annexe II de la convention collective nationale des entreprises du négoce et de l'industrie des produits du sol, est déterminé, à compter du 1er novembre 1997, par l'application de la formule suivante :<p></p> S = 4 830 F + 16,40 F (C - 100)<p></p><p></p>   dans laquelle \" C \" représente le coefficient hiérarchique affecté à l'emploi considéré et \" S \" le salaire conventionnel.<p></p><p></p>   Toutefois, pour les emplois comportant un coefficient hiérarchique inférieur à 220, le salaire conventionnel est majoré d'un complément de salaire déterminé de la façon suivante :<p></p> Complément = 15,06 F (220 - C)<p></p><p></p>   Le barème des salaires est donc fixé comme suit :<p></p> Grille des salaires applicables au 1er novembre 1997<p></p><p></p>   Salaire : 4 830 F + 16,40 F (C - 100)<p></p><p></p>   Complément : 15,06 F (220 - C)<p></p><p></p><TABLE><TR><TD>COEF</TD><TD>BASE </TD><TD>Variable</TD><TD>Variable</TD></TR><TR><TD></TD><TD></TD><TD> n° 1   </TD><TD>  n° 2  </TD></TR><TR><TD> 115</TD><TD>4 830</TD><TD>  246,00</TD><TD>1 581,30</TD></TR><TR><TD> 120</TD><TD>4 830</TD><TD>  328,00</TD><TD>1 506,00</TD></TR><TR><TD> 140</TD><TD>4 830</TD><TD>  656,00</TD><TD>1 204,80</TD></TR><TR><TD> 155</TD><TD>4 830</TD><TD>  902,00</TD><TD>  978,90</TD></TR><TR><TD> 165</TD><TD>4 830</TD><TD>1 066,00</TD><TD>  828,30</TD></TR><TR><TD> 180</TD><TD>4 830</TD><TD>1 312,00</TD><TD>  602,40</TD></TR><TR><TD> 200</TD><TD>4 830</TD><TD>1 640,00</TD><TD>  301,20</TD></TR><TR><TD> 220</TD><TD>4 830</TD><TD>1 968,00</TD><TD>    0   </TD></TR><TR><TD> 235</TD><TD>4 830</TD><TD>2 214,00</TD><TD></TD></TR><TR><TD> 240</TD><TD>4 830</TD><TD>2 296,00</TD><TD></TD></TR><TR><TD> 245</TD><TD>4 830</TD><TD>2 378,00</TD><TD></TD></TR><TR><TD> 250</TD><TD>4 830</TD><TD>2 460,00</TD><TD></TD></TR><TR><TD> 255</TD><TD>4 830</TD><TD>2 542,00</TD><TD></TD></TR><TR><TD> 260</TD><TD>4 830</TD><TD>2 624,00</TD><TD></TD></TR><TR><TD> 270</TD><TD>4 830</TD><TD>2 788,00</TD><TD></TD></TR><TR><TD> 275</TD><TD>4 830</TD><TD>2 870,00</TD><TD></TD></TR><TR><TD> 285</TD><TD>4 830</TD><TD>3 034,00</TD><TD></TD></TR><TR><TD> 290</TD><TD>4 830</TD><TD>3 116,00</TD><TD></TD></TR><TR><TD> 295</TD><TD>4 830</TD><TD>3 198,00</TD><TD></TD></TR><TR><TD> 305</TD><TD>4 830</TD><TD>3 362,00</TD><TD></TD></TR><TR><TD> 310</TD><TD>4 830</TD><TD>3 444,00</TD><TD></TD></TR><TR><TD> 315</TD><TD>4 830</TD><TD>3 526,00</TD><TD></TD></TR><TR><TD> 325</TD><TD>4 830</TD><TD>3 690,00</TD><TD></TD></TR><TR><TD> 335</TD><TD>4 830</TD><TD>3 854,00</TD><TD></TD></TR><TR><TD> 340</TD><TD>4 830</TD><TD>3 936,00</TD><TD></TD></TR><TR><TD> 350</TD><TD>4 830</TD><TD>4 100,00</TD><TD></TD></TR><TR><TD> 400</TD><TD>4 830</TD><TD>4 920,00</TD><TD></TD></TR><TR><TD> 425</TD><TD>4 830</TD><TD>5 330,00</TD><TD></TD></TR><TR><TD> 430</TD><TD>4 830</TD><TD>5 412,00</TD><TD></TD></TR><TR><TD> 450</TD><TD>4 830</TD><TD>5 740,00</TD><TD></TD></TR><TR><TD> 460</TD><TD>4 830</TD><TD>5 904,00</TD><TD></TD></TR><TR><TD> 470</TD><TD>4 830</TD><TD>6 068,00</TD><TD></TD></TR><TR><TD> 495</TD><TD>4 830</TD><TD>6 478,00</TD><TD></TD></TR><TR><TD> 520</TD><TD>4 830</TD><TD>6 888,00</TD><TD></TD></TR><TR><TD> 540</TD><TD>4 830</TD><TD>7 216,00</TD><TD></TD></TR><TR><TD> 560</TD><TD>4 830</TD><TD>7 544,00</TD><TD></TD></TR><TR><TD> 580</TD><TD>4 830</TD><TD>7 872,00</TD><TD></TD></TR><TR><TD> 600</TD><TD>4 830</TD><TD>8 200,00</TD><TD></TD></TR><TR><TD> 620</TD><TD>4 830</TD><TD>8 528,00</TD><TD></TD></TR><TR><TD> 680</TD><TD>4 830</TD><TD>9 512,00</TD><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>COEF</TD><TD>BASE </TD><TD> Salaire     </TD></TR><TR><TD></TD><TD></TD><TD>conventionnel</TD></TR><TR><TD> 115</TD><TD>4 830</TD><TD> 6 657,30    </TD></TR><TR><TD> 120</TD><TD>4 830</TD><TD> 6 664,00    </TD></TR><TR><TD> 140</TD><TD>4 830</TD><TD> 6 690,80    </TD></TR><TR><TD> 155</TD><TD>4 830</TD><TD> 6 710,90    </TD></TR><TR><TD> 165</TD><TD>4 830</TD><TD> 6 724,30    </TD></TR><TR><TD> 180</TD><TD>4 830</TD><TD> 6 744,40    </TD></TR><TR><TD> 200</TD><TD>4 830</TD><TD> 6 771,20    </TD></TR><TR><TD> 220</TD><TD>4 830</TD><TD> 6 798,00    </TD></TR><TR><TD> 235</TD><TD>4 830</TD><TD> 7 044,00    </TD></TR><TR><TD> 240</TD><TD>4 830</TD><TD> 7 126,00    </TD></TR><TR><TD> 245</TD><TD>4 830</TD><TD> 7 208,00    </TD></TR><TR><TD> 250</TD><TD>4 830</TD><TD> 7 290,00    </TD></TR><TR><TD> 255</TD><TD>4 830</TD><TD> 7 372,00    </TD></TR><TR><TD> 260</TD><TD>4 830</TD><TD> 7 454,00    </TD></TR><TR><TD> 270</TD><TD>4 830</TD><TD> 7 618,00    </TD></TR><TR><TD> 275</TD><TD>4 830</TD><TD> 7 700,00    </TD></TR><TR><TD> 285</TD><TD>4 830</TD><TD> 7 864,00    </TD></TR><TR><TD> 290</TD><TD>4 830</TD><TD> 7 946,00    </TD></TR><TR><TD> 295</TD><TD>4 830</TD><TD> 8 028,00    </TD></TR><TR><TD> 305</TD><TD>4 830</TD><TD> 8 192,00    </TD></TR><TR><TD> 310</TD><TD>4 830</TD><TD> 8 274,00    </TD></TR><TR><TD> 315</TD><TD>4 830</TD><TD> 8 356,00    </TD></TR><TR><TD> 325</TD><TD>4 830</TD><TD> 8 520,00    </TD></TR><TR><TD> 335</TD><TD>4 830</TD><TD> 8 684,00    </TD></TR><TR><TD> 340</TD><TD>4 830</TD><TD> 8 766,00    </TD></TR><TR><TD> 350</TD><TD>4 830</TD><TD> 8 930,00    </TD></TR><TR><TD> 400</TD><TD>4 830</TD><TD> 9 750,00    </TD></TR><TR><TD> 425</TD><TD>4 830</TD><TD>10 160,00    </TD></TR><TR><TD> 430</TD><TD>4 830</TD><TD>10 242,00    </TD></TR><TR><TD> 450</TD><TD>4 830</TD><TD>10 570,00    </TD></TR><TR><TD> 460</TD><TD>4 830</TD><TD>10 734,00    </TD></TR><TR><TD> 470</TD><TD>4 830</TD><TD>10 898,00    </TD></TR><TR><TD> 495</TD><TD>4 830</TD><TD>11 308,00    </TD></TR><TR><TD> 520</TD><TD>4 830</TD><TD>11 718,00    </TD></TR><TR><TD> 540</TD><TD>4 830</TD><TD>12 046,00    </TD></TR><TR><TD> 560</TD><TD>4 830</TD><TD>12 374,00    </TD></TR><TR><TD> 580</TD><TD>4 830</TD><TD>12 702,00    </TD></TR><TR><TD> 600</TD><TD>4 830</TD><TD>13 030,00    </TD></TR><TR><TD> 620</TD><TD>4 830</TD><TD>13 358,00    </TD></TR><TR><TD> 680</TD><TD>4 830</TD><TD>14 342,00    </TD></TR></TABLE><p></p> Article 2<p></p>   Les parties signataires conviennent que le salaire conventionnel au coefficient 115 est arrondi à 6 660 F. L'obligation de respecter le SMIC demeure pour autant. Article 3<p></p>   Conformément à l'article 69 de la convention, les parties signataires conviennent de demander l'extension du présent avenant.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 43 1997-10-30 BO conventions collectives 98-9",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 878169600000,
+                  "dateFin": 907632000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
