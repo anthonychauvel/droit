@@ -1,13 +1,13 @@
 {
   "source": "CJUE / CELLAR",
   "champ": "Arrets/ordonnances/avis citant les grandes directives sociales UE",
-  "date_recensement": "2026-09-14",
+  "date_recensement": "2026-09-21",
   "methode": "une requete par directive (evite le timeout de la requete combinee)",
-  "total_arrets_uniques": 911,
+  "total_arrets_uniques": 914,
   "par_directive": {
     "32003L0088": 118,
     "31993L0104": 50,
-    "31999L0070": 195,
+    "31999L0070": 197,
     "31997L0081": 39,
     "32008L0104": 14,
     "32019L1152": 2,
@@ -28,7 +28,7 @@
     "31992L0085": 48,
     "32010L0041": 4,
     "31989L0391": 64,
-    "32004R0883": 148,
+    "32004R0883": 149,
     "32009R0987": 61,
     "32023L0970": 0,
     "32024L2831": 0
@@ -3616,6 +3616,10 @@
       "ecli": "ECLI:EU:C:2025:840"
     },
     {
+      "celex": "62024CJ0418",
+      "ecli": "ECLI:EU:C:2026:291"
+    },
+    {
       "celex": "62024CJ0419",
       "ecli": "ECLI:EU:C:2025:464"
     },
@@ -3626,6 +3630,10 @@
     {
       "celex": "62024CJ0633",
       "ecli": "ECLI:EU:C:2026:36"
+    },
+    {
+      "celex": "62024CJ0642",
+      "ecli": "ECLI:EU:C:2026:303"
     },
     {
       "celex": "62024CJ0654",
@@ -3674,6 +3682,10 @@
     {
       "celex": "62025CJ0116",
       "ecli": "ECLI:EU:C:2026:336"
+    },
+    {
+      "celex": "62025CJ0155",
+      "ecli": "ECLI:EU:C:2026:405"
     },
     {
       "celex": "62025CO0037",
