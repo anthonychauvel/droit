@@ -219,8 +219,21 @@ def main():
     # récap instantanément, sans attendre le manifest complet (7+ Mo à cause
     # des listes JORF/ACCO). Supprime le délai de démarrage sur mobile.
     counts_path = os.path.join(os.path.dirname(args.out) or ".", "counts.json")
+    petits = dict(manifest["counts"])
+    # Compteurs des 5 onglets « clauses » (22/09/2026). L'app ne charge plus
+    # clauses-index.json (66 Mo, ~240 Mo en mémoire) à l'ouverture, seulement
+    # quand on ouvre un de ces onglets : les chiffres du menu viennent d'ici.
+    # Le workflow lance build_clauses_index.py juste avant ce script.
+    chemin_clauses = os.path.join(os.path.dirname(args.out) or ".", "clauses-index.json")
+    try:
+        with open(chemin_clauses, encoding="utf-8") as f:
+            cl = json.load(f)
+        for t in ("salaire", "heures_sup", "forfait_jours", "temps_partiel", "classification"):
+            petits["cl_" + t] = len(cl.get(t) or [])
+    except Exception as e:
+        print(f"clauses-index.json illisible, compteurs clauses absents : {e}")
     with open(counts_path, "w", encoding="utf-8") as f:
-        json.dump({"generated": manifest["generated"], "counts": manifest["counts"]},
+        json.dump({"generated": manifest["generated"], "counts": petits},
                   f, ensure_ascii=False)
 
     size_kb = os.path.getsize(args.out) / 1024
