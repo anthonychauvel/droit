@@ -19361,13 +19361,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005730558",
+              "cid": "KALISCTA000005730558",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes au 1er avril et au 1er octobre 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-02-12",
+              "dateFin": "1998-04-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005867879",
+                  "cid": "KALIARTI000005867879",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005730558/KALIARTI000005867879",
+                  "pathTitle": [
+                    "Barèmes au 1er avril et au 1er octobre 1997."
+                  ],
+                  "content": "Article 1er<p></p> Salaires minima professionnels garantis<p></p><p></p>   Le barème national des salaires minima garantis est fixé comme suit :<p></p><p></p>   Augmentation de 1,5 % au 1er avril 1997.<p></p><p></p>   Etant précisé que cette augmentation se traduira par un minimum d'augmentation en valeur absolue de 204 F pour le coefficient 115, de 145 F pour le coefficient 120, de 133 F pour le coefficient 125, de 125 F pour le coefficient 130 et de 112 F pour le coefficient 135.<p></p><p></p>    Le barème au 1er avril 1997, s'établit donc ainsi :<p></p> SALAIRES CONVENTIONNELS (base 39 heures hebdomadaires)<p></p><TABLE><TR><TD>COEF.</TD><TD>SALAIRES</TD></TR><TR><TD> 115 </TD><TD> 6 450F </TD></TR><TR><TD> 120 </TD><TD> 6 500F </TD></TR><TR><TD> 125 </TD><TD> 6 510F </TD></TR><TR><TD> 130 </TD><TD> 6 550F </TD></TR><TR><TD> 135 </TD><TD> 6 572F </TD></TR><TR><TD> 140 </TD><TD> 6 594F </TD></TR><TR><TD> 145 </TD><TD> 6 636F </TD></TR><TR><TD> 150 </TD><TD> 6 727F </TD></TR><TR><TD> 155 </TD><TD> 6 818F </TD></TR><TR><TD> 160 </TD><TD> 6 921F </TD></TR><TR><TD> 165 </TD><TD> 7 025F </TD></TR><TR><TD> 170 </TD><TD> 7 130F </TD></TR><TR><TD> 175 </TD><TD> 7 257F </TD></TR><TR><TD> 180 </TD><TD> 7 385F </TD></TR><TR><TD> 185 </TD><TD> 7 513F </TD></TR><TR><TD> 190 </TD><TD> 7 642F </TD></TR><TR><TD> 195 </TD><TD> 7 779F </TD></TR><TR><TD> 200 </TD><TD> 7 914F </TD></TR><TR><TD> 205 </TD><TD> 8 055F </TD></TR><TR><TD> 210 </TD><TD> 8 194F </TD></TR><TR><TD> 215 </TD><TD> 8 331F </TD></TR><TR><TD> 220 </TD><TD> 8 471F </TD></TR><TR><TD> 225 </TD><TD> 8 611F </TD></TR></TABLE><p></p><TABLE><TR><TD> 230 </TD><TD> 8 748F </TD></TR><TR><TD> 235 </TD><TD> 8 889F </TD></TR><TR><TD> 240 </TD><TD> 9 032F </TD></TR><TR><TD> 245 </TD><TD> 9 173F </TD></TR><TR><TD> 250 </TD><TD> 9 317F </TD></TR><TR><TD> 255 </TD><TD> 9 464F </TD></TR><TR><TD> 260 </TD><TD> 9 610F </TD></TR><TR><TD> 265 </TD><TD> 9 754F </TD></TR><TR><TD> 270 </TD><TD> 9 899F </TD></TR><TR><TD> 275 </TD><TD>10 043F </TD></TR><TR><TD> 280 </TD><TD>10 192F </TD></TR><TR><TD> 285 </TD><TD>10 341F </TD></TR><TR><TD> 290 </TD><TD>10 487F </TD></TR><TR><TD> 295 </TD><TD>10 632F </TD></TR><TR><TD> 300 </TD><TD>10 777F </TD></TR><TR><TD> 305 </TD><TD>10 924F </TD></TR><TR><TD> 310 </TD><TD>11 071F </TD></TR><TR><TD> 315 </TD><TD>11 217F </TD></TR><TR><TD> 320 </TD><TD>11 364F </TD></TR><TR><TD> 325 </TD><TD>11 511F </TD></TR><TR><TD> 330 </TD><TD>11 657F </TD></TR><TR><TD> 335 </TD><TD>11 803F </TD></TR><TR><TD> 340 </TD><TD>11 953F </TD></TR><TR><TD> 345 </TD><TD>12 099F </TD></TR><TR><TD> 350 </TD><TD>12 244F </TD></TR><TR><TD> 400 </TD><TD>13 718F </TD></TR><TR><TD> 600 </TD><TD>19 596F </TD></TR><TR><TD> 700 </TD><TD>22 540F </TD></TR></TABLE><p></p><p></p> Augmentation de 1 % au 1er octobre 1997<p></p><p></p>   Le barème au 1er octobre 1997 s'établit donc ainsi :<p></p><p></p><TABLE><TR><TD>COEF.</TD><TD>SALAIRES</TD></TR><TR><TD> 115 </TD><TD> 6 515F </TD></TR><TR><TD> 120 </TD><TD> 6 565F </TD></TR><TR><TD> 125 </TD><TD> 6 575F </TD></TR><TR><TD> 130 </TD><TD> 6 616F </TD></TR><TR><TD> 135 </TD><TD> 6 638F </TD></TR><TR><TD> 140 </TD><TD> 6 660F </TD></TR><TR><TD> 145 </TD><TD> 6 702F </TD></TR><TR><TD> 150 </TD><TD> 6 794F </TD></TR><TR><TD> 155 </TD><TD> 6 886F </TD></TR><TR><TD> 160 </TD><TD> 6 990F </TD></TR><TR><TD> 165 </TD><TD> 7 095F </TD></TR><TR><TD> 170 </TD><TD> 7 201F </TD></TR><TR><TD> 175 </TD><TD> 7 330F </TD></TR><TR><TD> 180 </TD><TD> 7 459F </TD></TR><TR><TD> 185 </TD><TD> 7 588F </TD></TR><TR><TD> 190 </TD><TD> 7 718F </TD></TR><TR><TD> 195 </TD><TD> 7 857F </TD></TR><TR><TD> 200 </TD><TD> 7 993F </TD></TR><TR><TD> 205 </TD><TD> 8 136F </TD></TR><TR><TD> 210 </TD><TD> 8 276F </TD></TR><TR><TD> 215 </TD><TD> 8 414F </TD></TR><TR><TD> 220 </TD><TD> 8 556F </TD></TR><TR><TD> 225 </TD><TD> 8 697F </TD></TR><TR><TD> 230 </TD><TD> 8 835F </TD></TR><TR><TD> 235 </TD><TD> 8 978F </TD></TR><TR><TD> 240 </TD><TD> 9 122F </TD></TR><TR><TD> 245 </TD><TD> 9 265F </TD></TR></TABLE><p></p><TABLE><TR><TD> 250 </TD><TD> 9 410F </TD></TR><TR><TD> 255 </TD><TD> 9 559F </TD></TR><TR><TD> 260 </TD><TD> 9 706F </TD></TR><TR><TD> 265 </TD><TD> 9 852F </TD></TR><TR><TD> 270 </TD><TD> 9 998F </TD></TR><TR><TD> 275 </TD><TD>10 143F </TD></TR><TR><TD> 280 </TD><TD>10 294F </TD></TR><TR><TD> 285 </TD><TD>10 444F </TD></TR><TR><TD> 290 </TD><TD>10 592F </TD></TR><TR><TD> 295 </TD><TD>10 738F </TD></TR><TR><TD> 300 </TD><TD>10 885F </TD></TR><TR><TD> 305 </TD><TD>11 033F </TD></TR><TR><TD> 310 </TD><TD>11 182F </TD></TR><TR><TD> 315 </TD><TD>11 329F </TD></TR><TR><TD> 320 </TD><TD>11 478F </TD></TR><TR><TD> 325 </TD><TD>11 626F </TD></TR><TR><TD> 330 </TD><TD>11 774F </TD></TR><TR><TD> 335 </TD><TD>11 921F </TD></TR><TR><TD> 340 </TD><TD>12 073F </TD></TR><TR><TD> 345 </TD><TD>12 220F </TD></TR><TR><TD> 350 </TD><TD>12 366F </TD></TR><TR><TD> 400 </TD><TD>13 855F </TD></TR><TR><TD> 600 </TD><TD>19 792F </TD></TR><TR><TD> 700 </TD><TD>22 765F </TD></TR></TABLE><p></p>Article 2<p></p> Salaires réels<p></p><p></p>   Les parties signataires décident, dans le cadre de la négociation générale de l'évolution des salaires réels en 1997, une augmentation des salaires de base de 1 % au 1er avril 1997 et de 0,8 % au 1er octobre 1997. Cet accord reflète la volonté de poursuivre la mise en place des dispositions relatives aux salaires réels dans le même état d'esprit que celui qui a prévalu depuis quelques années.<p></p> Article 3<p></p><p></p>   En cas de situation exceptionnelle résultant des incertitudes de l'évolution économique, les parties signataires conviennent de prendre contact à la diligence de l'une d'entre elles afin d'en examiner les conséquences.<p></p> Article 4<p></p><p></p>   Les parties signataires s'engagent à demander, en commun, l'extension du présent accord.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1997-02-12 BO conventions collectives 97-10 rectificatif BO CC 97-17, étendu par arrêté du 28 avril 1997 JORF 8 mai 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 855705600000,
+                  "dateFin": 892512000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -19381,13 +19455,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005730559",
+              "cid": "KALISCTA000005730559",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes au 1er avril et au 1er octobre 1998.",
+              "dateModif": null,
+              "dateDebut": "1998-04-14",
+              "dateFin": "2000-01-31",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005867880",
+                  "cid": "KALIARTI000005867880",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005730559/KALIARTI000005867880",
+                  "pathTitle": [
+                    "Barèmes au 1er avril et au 1er octobre 1998."
+                  ],
+                  "content": "Article 1er<p></p> Salaires minima professionnels garantis<p></p><p></p>   Le barème national des salaires minima garantis est fixé comme suit :<p></p> Augmentation de 2 % au 1er avril 1998<p></p><p></p>   Etant précisé que cette augmentation se traduira par un minimum d'augmentation en valeur absolue de 175 F pour le coefficient 115.<p></p><p></p>   Le barème au 1er avril 1998 s'établit comme suit :<p></p><p></p><TABLE><TR><TD>COEFFICIENT</TD><TD>SALAIRES   </TD></TR><TR><TD></TD><TD>MINIMA     </TD></TR><TR><TD></TD><TD>MENSUELS   </TD></TR><TR><TD></TD><TD>(169,65 h) </TD></TR><TR><TD></TD><TD>(en francs)</TD></TR><TR><TD>   115     </TD><TD> 6 690     </TD></TR><TR><TD>   120     </TD><TD> 6 696     </TD></TR><TR><TD>   125     </TD><TD> 6 707     </TD></TR><TR><TD>   130     </TD><TD> 6 748     </TD></TR><TR><TD>   135     </TD><TD> 6 771     </TD></TR><TR><TD>   140     </TD><TD> 6 793     </TD></TR><TR><TD>   145     </TD><TD> 6 836     </TD></TR><TR><TD>   150     </TD><TD> 6 930     </TD></TR><TR><TD>   155     </TD><TD> 7 024     </TD></TR><TR><TD>   160     </TD><TD> 7 130     </TD></TR><TR><TD>   165     </TD><TD> 7 237     </TD></TR><TR><TD>   170     </TD><TD> 7 345     </TD></TR><TR><TD>   175     </TD><TD> 7 477     </TD></TR><TR><TD>   180     </TD><TD> 7 608     </TD></TR><TR><TD>   185     </TD><TD> 7 740     </TD></TR><TR><TD>   190     </TD><TD> 7 872     </TD></TR><TR><TD>   195     </TD><TD> 8 014     </TD></TR><TR><TD>   200     </TD><TD> 8 153     </TD></TR><TR><TD>   205     </TD><TD> 8 299     </TD></TR><TR><TD>   210     </TD><TD> 8 442     </TD></TR><TR><TD>   215     </TD><TD> 8 582     </TD></TR><TR><TD>   220     </TD><TD> 8 727     </TD></TR><TR><TD>   225     </TD><TD> 8 871     </TD></TR><TR><TD>   230     </TD><TD> 9 012     </TD></TR><TR><TD>   235     </TD><TD> 9 158     </TD></TR><TR><TD>   240     </TD><TD> 9 304     </TD></TR><TR><TD>   245     </TD><TD> 9 450     </TD></TR><TR><TD>   250     </TD><TD> 9 598     </TD></TR><TR><TD>   255     </TD><TD> 9 750     </TD></TR></TABLE><p></p><TABLE><TR><TD>   260     </TD><TD> 9 900     </TD></TR><TR><TD>   265     </TD><TD>10 049     </TD></TR><TR><TD>   270     </TD><TD>10 198     </TD></TR><TR><TD>   275     </TD><TD>10 346     </TD></TR><TR><TD>   280     </TD><TD>10 500     </TD></TR><TR><TD>   285     </TD><TD>10 653     </TD></TR><TR><TD>   290     </TD><TD>10 804     </TD></TR><TR><TD>   295     </TD><TD>10 953     </TD></TR><TR><TD>   300     </TD><TD>11 103     </TD></TR><TR><TD>   305     </TD><TD>11 254     </TD></TR><TR><TD>   310     </TD><TD>11 406     </TD></TR><TR><TD>   315     </TD><TD>11 556     </TD></TR><TR><TD>   320     </TD><TD>11 708     </TD></TR><TR><TD>   325     </TD><TD>11 859     </TD></TR><TR><TD>   330     </TD><TD>12 009     </TD></TR><TR><TD>   335     </TD><TD>12 159     </TD></TR><TR><TD>   340     </TD><TD>12 314     </TD></TR><TR><TD>   345     </TD><TD>12 464     </TD></TR><TR><TD>   350     </TD><TD>12 613     </TD></TR><TR><TD>   400     </TD><TD>14 132     </TD></TR><TR><TD>   600     </TD><TD>20 188     </TD></TR><TR><TD>   700     </TD><TD>23 220     </TD></TR></TABLE><p></p><p></p> Augmentation de 0,80 % au 1er octobre 1998<p></p><p></p>   Le barème au 1er octobre 1998 s'établit donc ainsi :<p></p><TABLE><TR><TD>COEFFICIENT</TD><TD>SALAIRES   </TD></TR><TR><TD></TD><TD>MINIMA     </TD></TR><TR><TD></TD><TD>MENSUELS   </TD></TR><TR><TD></TD><TD>(169,65 h) </TD></TR><TR><TD></TD><TD>(en francs)</TD></TR><TR><TD>    115    </TD><TD>   6 744   </TD></TR><TR><TD>    120    </TD><TD>   6 750   </TD></TR><TR><TD>    125    </TD><TD>   6 761   </TD></TR><TR><TD>    130    </TD><TD>   6 802   </TD></TR><TR><TD>    135    </TD><TD>   6 825   </TD></TR><TR><TD>    140    </TD><TD>   6 847   </TD></TR><TR><TD>    145    </TD><TD>   6 891   </TD></TR><TR><TD>    150    </TD><TD>   6 985   </TD></TR><TR><TD>    155    </TD><TD>   7 080   </TD></TR><TR><TD>    160    </TD><TD>   7 187   </TD></TR><TR><TD>    165    </TD><TD>   7 295   </TD></TR><TR><TD>    170    </TD><TD>   7 404   </TD></TR><TR><TD>    175    </TD><TD>   7 537   </TD></TR><TR><TD>    180    </TD><TD>   7 669   </TD></TR><TR><TD>    185    </TD><TD>   7 802   </TD></TR><TR><TD>    190    </TD><TD>   7 935   </TD></TR><TR><TD>    195    </TD><TD>   8 078   </TD></TR></TABLE><p></p><TABLE><TR><TD>    200    </TD><TD>   8 218   </TD></TR><TR><TD>    205    </TD><TD>   8 365   </TD></TR><TR><TD>    210    </TD><TD>   8 510   </TD></TR><TR><TD>    215    </TD><TD>   8 651   </TD></TR><TR><TD>    220    </TD><TD>   8 797   </TD></TR><TR><TD>    225    </TD><TD>   8 942   </TD></TR><TR><TD>    230    </TD><TD>   9 084   </TD></TR><TR><TD>    235    </TD><TD>   9 231   </TD></TR><TR><TD>    240    </TD><TD>   9 378   </TD></TR><TR><TD>    245    </TD><TD>   9 526   </TD></TR><TR><TD>    250    </TD><TD>   9 675   </TD></TR><TR><TD>    255    </TD><TD>   9 828   </TD></TR><TR><TD>    260    </TD><TD>   9 979   </TD></TR><TR><TD>    265    </TD><TD>  10 129   </TD></TR><TR><TD>    270    </TD><TD>  10 280   </TD></TR><TR><TD>    275    </TD><TD>  10 429   </TD></TR><TR><TD>    280    </TD><TD>  10 584   </TD></TR><TR><TD>    285    </TD><TD>  10 738   </TD></TR><TR><TD>    290    </TD><TD>  10 890   </TD></TR><TR><TD>    295    </TD><TD>  11 041   </TD></TR><TR><TD>    300    </TD><TD>  11 192   </TD></TR><TR><TD>    305    </TD><TD>  11 344   </TD></TR><TR><TD>    310    </TD><TD>  11 497   </TD></TR><TR><TD>    315    </TD><TD>  11 648   </TD></TR><TR><TD>    320    </TD><TD>  11 802   </TD></TR><TR><TD>    325    </TD><TD>  11 954   </TD></TR><TR><TD>    330    </TD><TD>  12 105   </TD></TR><TR><TD>    335    </TD><TD>  12 256   </TD></TR><TR><TD>    340    </TD><TD>  12 413   </TD></TR><TR><TD>    345    </TD><TD>  12 564   </TD></TR><TR><TD>    350    </TD><TD>  12 714   </TD></TR><TR><TD>    400    </TD><TD>  14 245   </TD></TR><TR><TD>    600    </TD><TD>  20 350   </TD></TR><TR><TD>    700    </TD><TD>  23 406   </TD></TR></TABLE><p></p>  Article 2 Salaires réels<p></p>   Les parties signataires décident, dans le cadre de la négociation générale de l'évolution des salaires réels en 1998, une augmentation de 0,8 % au 1er avril 1998 et de 0,4 % au 1er octobre 1998.<p></p>   Ces dispositions s'appliquent à l'ensemble des entreprises de la profession à l'exception de celles qui ont déjà engagé, ou qui engageront avant le 1er octobre, la négociation d'un accord relatif à la réduction du temps de travail comportant une clause de modération salariale.<font color=\"808080\"><em>   NOTA: Déclaration de la délégation patronale au cours de la réunion de la commission nationale paritaire des industries charcutières du 31 mars 1998<p></p>    La délégation patronale a informé les organisations syndicales de salariés que dorénavant les négociations sur les salaires réels devront s'engager au niveau des entreprises et qu'à compter de 1999 il n'y aura plus de négociation sur les salaires réels au niveau de la branche.<p></p></em></font>",
+                  "nota": "   NOTA: Déclaration de la délégation patronale au cours de la réunion de la commission nationale paritaire des industries charcutières du 31 mars 1998<p></p>    La délégation patronale a informé les organisations syndicales de salariés que dorénavant les négociations sur les salaires réels devront s'engager au niveau des entreprises et qu'à compter de 1999 il n'y aura plus de négociation sur les salaires réels au niveau de la branche.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1998-04-14 BO conventions collectives 98-18 étendu par arrêté du 11 juin 1998 JORF 23 juin 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 892512000000,
+                  "dateFin": 949276800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -19401,13 +19549,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005730560",
+              "cid": "KALISCTA000005730560",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes au 1er avril et au 1er octobre 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-01-31",
+              "dateFin": "2000-03-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005867881",
+                  "cid": "KALIARTI000005867881",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005730560/KALIARTI000005867881",
+                  "pathTitle": [
+                    "Barèmes au 1er avril et au 1er octobre 2000."
+                  ],
+                  "content": "<p></p>   réunies à Paris, le jeudi 20 janvier 2000, l'accord suivant a été conclu :<p></p> Article 1er<p></p> Salaires minima professionnels garantis<p></p><p></p>   Le barème national des salaires minima garantis est fixé comme suit.<p></p> Augmentation de 1,10 % au 1er avril 2000<p></p><p></p>   Etant précisé que cette augmentation se traduira par un minimum d'augmentation en valeur absolue de 90 F pour les coefficients 115, 120, 125, 130 et 135.<p></p><p></p>   Le barème au 1er avril 2000 s'établit donc ainsi :<p></p> Barème des salaires<p></p><p></p><TABLE><TR><TD>COEFFICIENT</TD><TD>SALAIRES   </TD></TR><TR><TD></TD><TD> de base   </TD></TR><TR><TD></TD><TD>au 1/4/2000</TD></TR><TR><TD></TD><TD>(169,65 h) </TD></TR><TR><TD></TD><TD>(en francs)</TD></TR><TR><TD>  115      </TD><TD>  6 834    </TD></TR><TR><TD>  120      </TD><TD>  6 840    </TD></TR><TR><TD>  125      </TD><TD>  6 851    </TD></TR><TR><TD>  130      </TD><TD>  6 892    </TD></TR><TR><TD>  135      </TD><TD>  6 915    </TD></TR><TR><TD>  140      </TD><TD>  6 922    </TD></TR><TR><TD>  145      </TD><TD>  6 967    </TD></TR><TR><TD>  150      </TD><TD>  7 062    </TD></TR><TR><TD>  155      </TD><TD>  7 158    </TD></TR><TR><TD>  160      </TD><TD>  7 266    </TD></TR><TR><TD>  165      </TD><TD>  7 375    </TD></TR><TR><TD>  170      </TD><TD>  7 485    </TD></TR><TR><TD>  175      </TD><TD>  7 620    </TD></TR><TR><TD>  180      </TD><TD>  7 753    </TD></TR><TR><TD>  185      </TD><TD>  7 888    </TD></TR><TR><TD>  190      </TD><TD>  8 022    </TD></TR><TR><TD>  195      </TD><TD>  8 167    </TD></TR><TR><TD>  200      </TD><TD>  8 308    </TD></TR><TR><TD>  205      </TD><TD>  8 457    </TD></TR><TR><TD>  210      </TD><TD>  8 604    </TD></TR><TR><TD>  215      </TD><TD>  8 746    </TD></TR><TR><TD>  220      </TD><TD>  8 894    </TD></TR><TR><TD>  225      </TD><TD>  9 040    </TD></TR><TR><TD>  230      </TD><TD>  9 184    </TD></TR><TR><TD>  235      </TD><TD>  9 333    </TD></TR><TR><TD>  240      </TD><TD>  9 481    </TD></TR><TR><TD>  245      </TD><TD>  9 631    </TD></TR><TR><TD>  250      </TD><TD>  9 781    </TD></TR></TABLE><p></p><TABLE><TR><TD>  255      </TD><TD>  9 936    </TD></TR><TR><TD>  260      </TD><TD> 10 089    </TD></TR><TR><TD>  265      </TD><TD> 10 240    </TD></TR><TR><TD>  270      </TD><TD> 10 393    </TD></TR><TR><TD>  275      </TD><TD> 10 544    </TD></TR><TR><TD>  280      </TD><TD> 10 700    </TD></TR><TR><TD>  285      </TD><TD> 10 856    </TD></TR><TR><TD>  290      </TD><TD> 11 010    </TD></TR><TR><TD>  295      </TD><TD> 11 162    </TD></TR><TR><TD>  300      </TD><TD> 11 315    </TD></TR><TR><TD>  305      </TD><TD> 11 469    </TD></TR><TR><TD>  310      </TD><TD> 11 623    </TD></TR><TR><TD>  315      </TD><TD> 11 776    </TD></TR><TR><TD>  320      </TD><TD> 11 932    </TD></TR><TR><TD>  325      </TD><TD> 12 085    </TD></TR><TR><TD>  330      </TD><TD> 12 238    </TD></TR><TR><TD>  335      </TD><TD> 12 391    </TD></TR><TR><TD>  340      </TD><TD> 12 550    </TD></TR><TR><TD>  345      </TD><TD> 12 702    </TD></TR><TR><TD>  350      </TD><TD> 12 854    </TD></TR><TR><TD>  400      </TD><TD> 14 402    </TD></TR><TR><TD>  600      </TD><TD> 20 574    </TD></TR><TR><TD>  700      </TD><TD> 23 663    </TD></TR></TABLE><p></p>Augmentation de 1,10 % au 1er octobre 2000<p></p> Barème des salaires<p></p><TABLE><TR><TD>COEF</TD><TD>SALAIRES   </TD></TR><TR><TD></TD><TD> de base au</TD></TR><TR><TD></TD><TD> 1/10/2000 </TD></TR><TR><TD></TD><TD>(169,65 h) </TD></TR><TR><TD></TD><TD>(en francs)</TD></TR><TR><TD> 115</TD><TD>  6 909    </TD></TR><TR><TD> 120</TD><TD>  6 915    </TD></TR><TR><TD> 125</TD><TD>  6 926    </TD></TR><TR><TD> 130</TD><TD>  6 968    </TD></TR><TR><TD> 135</TD><TD>  6 991    </TD></TR><TR><TD> 140</TD><TD>  6 998    </TD></TR><TR><TD> 145</TD><TD>  7 044    </TD></TR><TR><TD> 150</TD><TD>  7 140    </TD></TR><TR><TD> 155</TD><TD>  7 237    </TD></TR><TR><TD> 160</TD><TD>  7 346    </TD></TR><TR><TD> 165</TD><TD>  7 456    </TD></TR><TR><TD> 170</TD><TD>  7 567    </TD></TR><TR><TD> 175</TD><TD>  7 704    </TD></TR><TR><TD> 180</TD><TD>  7 838    </TD></TR><TR><TD> 185</TD><TD>  7 975    </TD></TR><TR><TD> 190</TD><TD>  8 110    </TD></TR><TR><TD> 195</TD><TD>  8 257    </TD></TR><TR><TD> 200</TD><TD>  8 399    </TD></TR><TR><TD> 205</TD><TD>  8 550    </TD></TR><TR><TD> 210</TD><TD>  8 699    </TD></TR><TR><TD> 215</TD><TD>  8 842    </TD></TR><TR><TD> 220</TD><TD>  8 992    </TD></TR></TABLE><p></p><TABLE><TR><TD> 225</TD><TD>  9 139    </TD></TR><TR><TD> 230</TD><TD>  9 285    </TD></TR><TR><TD> 235</TD><TD>  9 436    </TD></TR><TR><TD> 240</TD><TD>  9 585    </TD></TR><TR><TD> 245</TD><TD>  9 737    </TD></TR><TR><TD> 250</TD><TD>  9 889    </TD></TR><TR><TD> 255</TD><TD> 10 045    </TD></TR><TR><TD> 260</TD><TD> 10 200    </TD></TR><TR><TD> 265</TD><TD> 10 353    </TD></TR><TR><TD> 270</TD><TD> 10 507    </TD></TR><TR><TD> 275</TD><TD> 10 660    </TD></TR><TR><TD> 280</TD><TD> 10 818    </TD></TR><TR><TD> 285</TD><TD> 10 975    </TD></TR><TR><TD> 290</TD><TD> 11 131    </TD></TR><TR><TD> 295</TD><TD> 11 285    </TD></TR><TR><TD> 300</TD><TD> 11 439    </TD></TR><TR><TD> 305</TD><TD> 11 595    </TD></TR><TR><TD> 310</TD><TD> 11 751    </TD></TR><TR><TD> 315</TD><TD> 11 906    </TD></TR><TR><TD> 320</TD><TD> 12 063    </TD></TR><TR><TD> 325</TD><TD> 12 218    </TD></TR><TR><TD> 330</TD><TD> 12 373    </TD></TR><TR><TD> 335</TD><TD> 12 527    </TD></TR><TR><TD> 340</TD><TD> 12 688    </TD></TR><TR><TD> 345</TD><TD> 12 842    </TD></TR><TR><TD> 350</TD><TD> 12 995    </TD></TR><TR><TD> 400</TD><TD> 14 560    </TD></TR><TR><TD> 600</TD><TD> 20 800    </TD></TR><TR><TD> 700</TD><TD> 23 923    </TD></TR></TABLE><p></p>Article 2<p></p> Salaires rééls<p></p><p></p>   Les parties signataires décident, dans le cadre de la négociation générale de l'évolution des salaires réels en 2000, une augmentation de 1 % au 1er juin 2000.<p></p><p></p>   Cette augmentation des salaires ne s'appliquera pas aux entreprises qui ont déjà défini, ou qui définiront avant le 30 juin 2000, leurs modalités de rémunération pour l'année 2000 dans le cadre d'un accord d'entreprise d'aménagement réduction du temps de travail.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 6 avril 2000 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 6 avril 2000 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2000-01-31 BO conventions collectives 2000-8 étendu par arrêté du 6 avril 2000 JORF 18 avril 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 949276800000,
+                  "dateFin": 952387200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

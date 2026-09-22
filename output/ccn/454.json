@@ -28590,13 +28590,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005732420",
+              "cid": "KALISCTA000005732420",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires horaires minimaux professionnels garantis au du 05 juillet 2006",
+              "dateModif": null,
+              "dateDebut": "2006-06-07",
+              "dateFin": "2006-11-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005871769",
+                  "cid": "KALIARTI000005871769",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005732420/KALIARTI000005871769",
+                  "pathTitle": [
+                    "Salaires horaires minimaux professionnels garantis au du 05 juillet 2006"
+                  ],
+                  "content": "<p></p>   Salaires horaires minimaux professionnels garantis au 5 juillet 2006<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD>        GRILLE         </TD></TR><TR><TD>   NR   </TD><TD> Taux horaire </TD></TR><TR><TD>  409   </TD><TD>   25,1835    </TD></TR><TR><TD>  408   </TD><TD>   25,1020    </TD></TR><TR><TD>  407   </TD><TD>   25,0205    </TD></TR><TR><TD>  406   </TD><TD>   24,9390    </TD></TR><TR><TD>  405   </TD><TD>   24,8575    </TD></TR><TR><TD>  404   </TD><TD>   24,7760    </TD></TR><TR><TD>  403   </TD><TD>   24,6945    </TD></TR><TR><TD>  402   </TD><TD>   24,6130    </TD></TR><TR><TD>  401   </TD><TD>   24,5315    </TD></TR><TR><TD>  400   </TD><TD>   24,4500    </TD></TR><TR><TD>  399   </TD><TD>   24,3685    </TD></TR><TR><TD>  398   </TD><TD>   24,2870    </TD></TR><TR><TD>  397   </TD><TD>   24,2055    </TD></TR><TR><TD>  396   </TD><TD>   24,1240    </TD></TR><TR><TD>  395   </TD><TD>   24,0425    </TD></TR><TR><TD>  394   </TD><TD>   23,9610    </TD></TR><TR><TD>  393   </TD><TD>   23,8795    </TD></TR><TR><TD>  392   </TD><TD>   23,7980    </TD></TR><TR><TD>  391   </TD><TD>   23,7165    </TD></TR><TR><TD>  390   </TD><TD>   23,6350    </TD></TR><TR><TD>  389   </TD><TD>   23,5535    </TD></TR><TR><TD>  388   </TD><TD>   23,4720    </TD></TR><TR><TD>  387   </TD><TD>   23,3905    </TD></TR><TR><TD>  386   </TD><TD>   23,3090    </TD></TR><TR><TD>  385   </TD><TD>   23,2275    </TD></TR><TR><TD>  384   </TD><TD>   23,1460    </TD></TR><TR><TD>  383   </TD><TD>   23,0645    </TD></TR></TABLE><p></p><TABLE><TR><TD>  382   </TD><TD>   22,9830    </TD></TR><TR><TD>  381   </TD><TD>   22,9015    </TD></TR><TR><TD>  380   </TD><TD>   22,8200    </TD></TR><TR><TD>  379   </TD><TD>   22,7385    </TD></TR><TR><TD>  378   </TD><TD>   22,6570    </TD></TR><TR><TD>  377   </TD><TD>   22,5755    </TD></TR><TR><TD>  376   </TD><TD>   22,4940    </TD></TR><TR><TD>  375   </TD><TD>   22,4125    </TD></TR><TR><TD>  374   </TD><TD>   22,3310    </TD></TR><TR><TD>  373   </TD><TD>   22,2495    </TD></TR><TR><TD>  372   </TD><TD>   22,1680    </TD></TR><TR><TD>  371   </TD><TD>   22,0865    </TD></TR><TR><TD>  370   </TD><TD>   22,0050    </TD></TR><TR><TD>  369   </TD><TD>   21,9235    </TD></TR><TR><TD>  368   </TD><TD>   21,8420    </TD></TR><TR><TD>  367   </TD><TD>   21,7605    </TD></TR><TR><TD>  366   </TD><TD>   21,6790    </TD></TR><TR><TD>  365   </TD><TD>   21,5975    </TD></TR><TR><TD>  364   </TD><TD>   21,5160    </TD></TR><TR><TD>  363   </TD><TD>   21,4345    </TD></TR><TR><TD>  362   </TD><TD>   21,3530    </TD></TR><TR><TD>  361   </TD><TD>   21,2715    </TD></TR><TR><TD>  360   </TD><TD>   21,1900    </TD></TR><TR><TD>  359   </TD><TD>   21,1085    </TD></TR><TR><TD>  358   </TD><TD>   21,0270    </TD></TR><TR><TD>  357   </TD><TD>   20,9455    </TD></TR><TR><TD>  356   </TD><TD>   20,8640    </TD></TR><TR><TD>  355   </TD><TD>   20,7825    </TD></TR><TR><TD>  354   </TD><TD>   20,7010    </TD></TR><TR><TD>  353   </TD><TD>   20,6195    </TD></TR><TR><TD>  352   </TD><TD>   20,5380    </TD></TR><TR><TD>  351   </TD><TD>   20,4565    </TD></TR><TR><TD>  350   </TD><TD>   20,3750    </TD></TR><TR><TD>  349   </TD><TD>   20,2935    </TD></TR><TR><TD>  348   </TD><TD>   20,2120    </TD></TR><TR><TD>  347   </TD><TD>   20,1305    </TD></TR></TABLE><p></p><TABLE><TR><TD>  346   </TD><TD>   20,0490    </TD></TR><TR><TD>  345   </TD><TD>   19,9675    </TD></TR><TR><TD>  344   </TD><TD>   19,8860    </TD></TR><TR><TD>  343   </TD><TD>   19,8045    </TD></TR><TR><TD>  342   </TD><TD>   19,7230    </TD></TR><TR><TD>  341   </TD><TD>   19,6415    </TD></TR><TR><TD>  340   </TD><TD>   19,5600    </TD></TR><TR><TD>  339   </TD><TD>   19,4785    </TD></TR><TR><TD>  338   </TD><TD>   19,3970    </TD></TR><TR><TD>  337   </TD><TD>   19,3155    </TD></TR><TR><TD>  336   </TD><TD>   19,2340    </TD></TR><TR><TD>  335   </TD><TD>   19,1525    </TD></TR><TR><TD>  334   </TD><TD>   19,0710    </TD></TR><TR><TD>  333   </TD><TD>   18,9895    </TD></TR><TR><TD>  332   </TD><TD>   18,9080    </TD></TR><TR><TD>  331   </TD><TD>   18,8265    </TD></TR><TR><TD>  330   </TD><TD>   18,7450    </TD></TR><TR><TD>  329   </TD><TD>   18,6635    </TD></TR><TR><TD>  328   </TD><TD>   18,5820    </TD></TR><TR><TD>  327   </TD><TD>   18,5005    </TD></TR><TR><TD>  326   </TD><TD>   18,4190    </TD></TR><TR><TD>  325   </TD><TD>   18,3375    </TD></TR><TR><TD>  324   </TD><TD>   18,2560    </TD></TR><TR><TD>  323   </TD><TD>   18,1745    </TD></TR><TR><TD>  322   </TD><TD>   18,0930    </TD></TR><TR><TD>  321   </TD><TD>   18,0115    </TD></TR><TR><TD>  320   </TD><TD>   17,9300    </TD></TR><TR><TD>  319   </TD><TD>   17,8485    </TD></TR><TR><TD>  318   </TD><TD>   17,7670    </TD></TR><TR><TD>  317   </TD><TD>   17,6855    </TD></TR><TR><TD>  316   </TD><TD>   17,6040    </TD></TR><TR><TD>  315   </TD><TD>   17,5225    </TD></TR><TR><TD>  314   </TD><TD>   17,4410    </TD></TR><TR><TD>  313   </TD><TD>   17,3595    </TD></TR><TR><TD>  312   </TD><TD>   17,2780    </TD></TR><TR><TD>  311   </TD><TD>   17,1965    </TD></TR></TABLE><p></p><TABLE><TR><TD>  310   </TD><TD>   17,1150    </TD></TR><TR><TD>  309   </TD><TD>   17,0335    </TD></TR><TR><TD>  308   </TD><TD>   16,9520    </TD></TR><TR><TD>  307   </TD><TD>   16,8705    </TD></TR><TR><TD>  306   </TD><TD>   16,7890    </TD></TR><TR><TD>  305   </TD><TD>   16,7075    </TD></TR><TR><TD>  304   </TD><TD>   16,6260    </TD></TR><TR><TD>  303   </TD><TD>   16,5445    </TD></TR><TR><TD>  302   </TD><TD>   16,4630    </TD></TR><TR><TD>  301   </TD><TD>   16,3815    </TD></TR><TR><TD>  300   </TD><TD>   16,3000    </TD></TR><TR><TD>  299   </TD><TD>   16,2185    </TD></TR><TR><TD>  298   </TD><TD>   16,1370    </TD></TR><TR><TD>  297   </TD><TD>   16,0555    </TD></TR><TR><TD>  296   </TD><TD>   15,9740    </TD></TR><TR><TD>  295   </TD><TD>   15,8925    </TD></TR><TR><TD>  294   </TD><TD>   15,8110    </TD></TR><TR><TD>  293   </TD><TD>   15,7295    </TD></TR><TR><TD>  292   </TD><TD>   15,6480    </TD></TR><TR><TD>  291   </TD><TD>   15,5665    </TD></TR><TR><TD>  290   </TD><TD>   15,4850    </TD></TR><TR><TD>  289   </TD><TD>   15,4035    </TD></TR><TR><TD>  288   </TD><TD>   15,3220    </TD></TR><TR><TD>  287   </TD><TD>   15,2405    </TD></TR><TR><TD>  286   </TD><TD>   15,1590    </TD></TR><TR><TD>  285   </TD><TD>   15,0775    </TD></TR><TR><TD>  284   </TD><TD>   14,9960    </TD></TR><TR><TD>  283   </TD><TD>   14,9145    </TD></TR><TR><TD>  282   </TD><TD>   14,8330    </TD></TR><TR><TD>  281   </TD><TD>   14,7515    </TD></TR><TR><TD>  280   </TD><TD>   14,6700    </TD></TR><TR><TD>  279   </TD><TD>   14,5885    </TD></TR><TR><TD>  278   </TD><TD>   14,5070    </TD></TR><TR><TD>  277   </TD><TD>   14,4255    </TD></TR><TR><TD>  276   </TD><TD>   14,3440    </TD></TR><TR><TD>  275   </TD><TD>   14,2625    </TD></TR></TABLE><p></p><TABLE><TR><TD>  274   </TD><TD>   14,1810    </TD></TR><TR><TD>  273   </TD><TD>   14,0995    </TD></TR><TR><TD>  272   </TD><TD>   14,0180    </TD></TR><TR><TD>  271   </TD><TD>   13,9365    </TD></TR><TR><TD>  270   </TD><TD>   13,8550    </TD></TR><TR><TD>  269   </TD><TD>   13,7735    </TD></TR><TR><TD>  268   </TD><TD>   13,6920    </TD></TR><TR><TD>  267   </TD><TD>   13,6105    </TD></TR><TR><TD>  266   </TD><TD>   13,5290    </TD></TR><TR><TD>  265   </TD><TD>   13,4475    </TD></TR><TR><TD>  264   </TD><TD>   13,3660    </TD></TR><TR><TD>  263   </TD><TD>   13,2845    </TD></TR><TR><TD>  262   </TD><TD>   13,2030    </TD></TR><TR><TD>  261   </TD><TD>   13,1215    </TD></TR><TR><TD>  260   </TD><TD>   13,0400    </TD></TR><TR><TD>  259   </TD><TD>   12,9585    </TD></TR><TR><TD>  258   </TD><TD>   12,8770    </TD></TR><TR><TD>  257   </TD><TD>   12,7955    </TD></TR><TR><TD>  256   </TD><TD>   12,7140    </TD></TR><TR><TD>  255   </TD><TD>   12,6325    </TD></TR><TR><TD>  254   </TD><TD>   12,5510    </TD></TR><TR><TD>  253   </TD><TD>   12,4695    </TD></TR><TR><TD>  252   </TD><TD>   12,3880    </TD></TR><TR><TD>  251   </TD><TD>   12,3065    </TD></TR><TR><TD>  250   </TD><TD>   12,2250    </TD></TR><TR><TD>  249   </TD><TD>   12,1435    </TD></TR><TR><TD>  248   </TD><TD>   12,0620    </TD></TR><TR><TD>  247   </TD><TD>   11,9805    </TD></TR><TR><TD>  246   </TD><TD>   11,8990    </TD></TR><TR><TD>  245   </TD><TD>   11,8175    </TD></TR><TR><TD>  244   </TD><TD>   11,7360    </TD></TR><TR><TD>  243   </TD><TD>   11,6545    </TD></TR><TR><TD>  242   </TD><TD>   11,5730    </TD></TR><TR><TD>  241   </TD><TD>   11,4915    </TD></TR><TR><TD>  240   </TD><TD>   11,4100    </TD></TR><TR><TD>  239   </TD><TD>   11,3285    </TD></TR></TABLE><p></p><TABLE><TR><TD>  238   </TD><TD>   11,2470    </TD></TR><TR><TD>  237   </TD><TD>   11,1655    </TD></TR><TR><TD>  236   </TD><TD>   11,0840    </TD></TR><TR><TD>  235   </TD><TD>   11,0025    </TD></TR><TR><TD>  234   </TD><TD>   10,9210    </TD></TR><TR><TD>  233   </TD><TD>   10,8395    </TD></TR><TR><TD>  232   </TD><TD>   10,7580    </TD></TR><TR><TD>  231   </TD><TD>   10,6765    </TD></TR><TR><TD>  230   </TD><TD>   10,5950    </TD></TR><TR><TD>  229   </TD><TD>   10,5135    </TD></TR><TR><TD>  228   </TD><TD>   10,4320    </TD></TR><TR><TD>  227   </TD><TD>   10,3505    </TD></TR><TR><TD>  226   </TD><TD>   10,2690    </TD></TR><TR><TD>  225   </TD><TD>   10,1875    </TD></TR><TR><TD>  224   </TD><TD>   10,1060    </TD></TR><TR><TD>  223   </TD><TD>   10,0245    </TD></TR><TR><TD>  222   </TD><TD>    9,9430    </TD></TR><TR><TD>  221   </TD><TD>    9,8615    </TD></TR><TR><TD>  220   </TD><TD>    9,7800    </TD></TR><TR><TD>  219   </TD><TD>    9,6985    </TD></TR><TR><TD>  218   </TD><TD>    9,6170    </TD></TR><TR><TD>  217   </TD><TD>    9,5355    </TD></TR><TR><TD>  216   </TD><TD>    9,4540    </TD></TR><TR><TD>  215   </TD><TD>    9,3725    </TD></TR><TR><TD>  214   </TD><TD>    9,2910    </TD></TR><TR><TD>  213   </TD><TD>    9,2095    </TD></TR><TR><TD>  212   </TD><TD>    9,1280    </TD></TR><TR><TD>  211   </TD><TD>    9,0465    </TD></TR><TR><TD>  210   </TD><TD>    8,9650    </TD></TR><TR><TD>  209   </TD><TD>    8,8835    </TD></TR><TR><TD>  208   </TD><TD>    8,8020    </TD></TR><TR><TD>  207   </TD><TD>    8,7205    </TD></TR><TR><TD>  206   </TD><TD>    8,6390    </TD></TR><TR><TD>  205   </TD><TD>    8,5575    </TD></TR><TR><TD>  204   </TD><TD>    8,4760    </TD></TR><TR><TD>  203   </TD><TD>    8,3945    </TD></TR><TR><TD>  202   </TD><TD>    8,3130    </TD></TR><TR><TD>  201   </TD><TD>    8,2315    </TD></TR><TR><TD>  200   </TD><TD>    8,1500    </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 31 2006-06-07 BO conventions collectives 2006-34 étendu par arrêté du 27 décembre 2006 JORF 9 janvier 2007",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1149638400000,
+                  "dateFin": 1163548800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -28610,13 +28684,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005732421",
+              "cid": "KALISCTA000005732421",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juin 2006 (Annexe IV).",
+              "dateModif": null,
+              "dateDebut": "2006-06-07",
+              "dateFin": "2006-11-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005871770",
+                  "cid": "KALIARTI000005871770",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005732421/KALIARTI000005871770",
+                  "pathTitle": [
+                    "Salaires au 1er juin 2006 (Annexe IV)."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Au 1er juin 2006, les grilles des \" Salaires mensuels minimaux professionnels garantis (en euros) pour 151,67 heures \" sont revalorisées de 1 %, cette revalorisation étant linéaire du coefficient 310 au coefficient 565 inclus.<p></p><p></p>   Ces revalorisations au 1er juin 2006 s'appliquent sur les grilles des \" Salaires mensuels minimaux professionnels garantis \", du 1er décembre 2005.<p></p><p></p>   Ces revalorisations s'appliquent uniquement sur les minima conventionnels nationaux garantis.<p></p> Article 2<p></p><p></p>   Le présent avenant sera déposé à la direction des relations du travail, auprès des services centraux du ministre chargé du travail.<p></p> Article 3<p></p><p></p>   Les dispositions susvisées seront également soumises à la procédure d'extension prévue par le code du travail.<p></p><p></p>   Fait à Lyon, le 7 juin 2006.<p></p><p></p>   ANNEXE IV (art. 8)<p></p><p></p>   Salaires mensuels minimaux professionnels garantis (au 1er juin 2006 pour 151,67 heures)<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD>  ANCIENNETE       </TD><TD>         COEFFICIENT HIERARCHIQUE          </TD></TR><TR><TD></TD><TD>   310    </TD><TD>   340    </TD><TD>   375    </TD><TD>   410    </TD></TR><TR><TD> Moins de 3 ans    </TD><TD> 2 241,79 </TD><TD> 2 421,09 </TD><TD> 2 629,16 </TD><TD> 2 836,23 </TD></TR><TR><TD> De 3 à 6 ans      </TD><TD> 2 300,34 </TD><TD> 2 484,64 </TD><TD> 2 698,18 </TD><TD> 2 910,69 </TD></TR><TR><TD> De 6 à 9 ans      </TD><TD> 2 359,49 </TD><TD> 2 548,19 </TD><TD> 2 767,19 </TD><TD> 2 985,14 </TD></TR><TR><TD> De 9 à 12 ans     </TD><TD> 2 418,33 </TD><TD> 2 611,75 </TD><TD> 2 836,21 </TD><TD> 3 059,59 </TD></TR><TR><TD> De 12 à 15 ans    </TD><TD> 2 477,18 </TD><TD> 2 675,30 </TD><TD> 2 905,22 </TD><TD> 3 134,04 </TD></TR><TR><TD> De 15 à 18 ans    </TD><TD> 2 536,03 </TD><TD> 2 738,85 </TD><TD> 2 974,24 </TD><TD> 3 208,49 </TD></TR><TR><TD> De 18 à 20 ans    </TD><TD> 2 594,88 </TD><TD> 2 802,41 </TD><TD> 3 043,25 </TD><TD> 3 282,94 </TD></TR><TR><TD> Plus de 20 ans    </TD><TD> 2 634,11 </TD><TD> 2 844,78 </TD><TD> 3 089,26 </TD><TD> 3 332,58 </TD></TR><TR><TD>  ANCIENNETE       </TD><TD>    COEFFICIENT HIERARCHIQUE    </TD></TR><TR><TD></TD><TD>    455   </TD><TD>   505    </TD><TD>   565    </TD></TR><TR><TD> Moins de 3 ans    </TD><TD> 3 100,38 </TD><TD> 3 391,55 </TD><TD> 3 737,73 </TD></TR><TR><TD> De 3 à 6 ans      </TD><TD> 3 181,76 </TD><TD> 3 480,58 </TD><TD> 3 835,85 </TD></TR><TR><TD> De 6 à 9 ans      </TD><TD> 3 263,15 </TD><TD> 3 569,61 </TD><TD> 3 933,96 </TD></TR><TR><TD> De 9 à 12 ans     </TD><TD> 3 344,53 </TD><TD> 3 658,63 </TD><TD> 4 032,08 </TD></TR><TR><TD> De 12 à 15 ans    </TD><TD> 3 425,92 </TD><TD> 3 747,66 </TD><TD> 4 130,19 </TD></TR><TR><TD> De 15 à 18 ans    </TD><TD> 3 507,30 </TD><TD> 3,836,69 </TD><TD> 4 228,31 </TD></TR><TR><TD> De 18 à 20 ans    </TD><TD> 3 588,69 </TD><TD> 3 925,72 </TD><TD> 4 326,42 </TD></TR><TR><TD> Plus de 20 ans    </TD><TD> 3 642,94 </TD><TD> 3 985,07 </TD><TD> 4 391,83 </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 63 2006-06-07 BO conventions collectives 2006-35 étendu par arrêté du 31 janvier 2007 JORF 10 février 2007",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1149638400000,
+                  "dateFin": 1163548800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -29373,13 +29521,109 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005732429",
+              "cid": "KALISCTA000005732429",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Rémunérations à compter du 1er décembre 2006 (Annexe III)",
+              "dateModif": null,
+              "dateDebut": "2006-11-15",
+              "dateFin": "2021-11-01",
+              "sectionConsultee": false,
+              "sections": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALISCTA000005756631",
+                  "cid": "KALISCTA000005756631",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "title": "Préambule",
+                  "dateModif": null,
+                  "dateDebut": "2006-11-15",
+                  "dateFin": "2021-11-01",
+                  "sectionConsultee": false,
+                  "sections": [],
+                  "articles": [
+                    {
+                      "executionTime": 0,
+                      "dereferenced": false,
+                      "id": "KALIARTI000005871779",
+                      "cid": "KALIARTI000005871779",
+                      "intOrdre": 42949,
+                      "etat": "ABROGE",
+                      "num": null,
+                      "path": "/KALISCTA000005732429/KALISCTA000005756631/KALIARTI000005871779",
+                      "pathTitle": [
+                        "Rémunérations à compter du 1er décembre 2006 (Annexe III)",
+                        "Préambule"
+                      ],
+                      "content": "<p></p>   Jusqu'au 30 juin 2006, 2 grilles de rémunération peuvent être appliquées :<p></p><p></p>   - la grille des coefficients pour les entreprises n'appliquant pas encore les dispositions de l'avenant n° 32, signé le 5 juillet 2006 ;<p></p><p></p>   - la grille des niveaux de rémunération pour les entreprises appliquant ce même avenant.<p></p> Article 1er<p></p><p></p>   Au 1er décembre 2006, les grilles des \" Salaires mensuels minimaux professionnels garantis (en euros), pour 151,67 heures \" sont revalorisées de :<p></p><p></p>   + 2,10 % au coefficient 179,<p></p><p></p>   + 1,50 % au coefficient 275,<p></p> avec application de la formule y = ax + b entre les coefficients 179 et 275.<p></p><p></p>   Ces revalorisations au 1er décembre 2006 s'appliquent sur les grilles des \" Salaires mensuels minimaux professionnels garantis \" du 1er décembre 2005 et incluent les revalorisations provisionnelles intervenues au 1er juin 2006.<p></p><p></p>   Ces revalorisations s'appliquent uniquement sur les minima conventionnels nationaux garantis.<p></p> Article 2<p></p><p></p>   Au 1er décembre 2006, les grilles des \" Salaires horaires minimaux professionnels garantis (en euros) \" sont revalorisées de :<p></p><p></p>   + 2,10 % au coefficient 179,<p></p><p></p>   + 1,50 % au coefficient 275,<p></p> avec application de la formule y = ax + b entre les coefficients 179 et 275.<p></p><p></p>   Ces revalorisations au 1er décembre 2006 s'appliquent sur les grilles des \" Salaires horaires minimaux professionnels garantis \" du 1er décembre 2005 et incluent les revalorisations provisionnelles intervenues au 1er juin 2006.<p></p><p></p>   Ces revalorisations s'appliquent uniquement sur les minima conventionnels nationaux garantis.<p></p>Article 3<p></p><p></p>   Au 1er décembre 2006, les grilles des \" Salaires horaires minimaux professionnels garantis (en euros) \" sont revalorisées de :<p></p><p></p>   + 1,10 % au niveau de rémunération 221,<p></p><p></p>   + 0,50 % au niveau de rémunération 279,<p></p> avec application de la formule y = ax + b entre les niveaux de rémunération 221 et 279.<p></p><p></p>   Ces revalorisations au 1er décembre 2006 s'appliquent sur les grilles des \" Salaires horaires minimaux professionnels garantis \" du 5 juillet 2006.<p></p><p></p>   Ces revalorisations s'appliquent uniquement sur les minima conventionnels nationaux garantis.<p></p> Article 4<p></p><p></p>   Les montants des indemnités et primes conventionnelles sont revalorisés sur la base d'une augmentation annuelle de + 2 % au 1er décembre 2006 :<p></p><p></p>   - indemnité compensatrice de panier : elle est portée de 5,47 Euros à 5,58 Euros ;<p></p><p></p>   - indemnité compensatrice d'équipement :<p></p><p></p>   - pour les skis et bâtons : elle est portée de 35,57 Euros à 36,28 Euros.<p></p><p></p>   - pour les chaussures : elle est portée de 15,09 Euros à 15,39 Euros ;<p></p><p></p>   - prime de langue étrangère : elle est portée de 44,93 Euros à 45,83 Euros.<p></p> Article 5<p></p><p></p>   Le présent avenant sera déposé à la direction des relations du travail, auprès des services centraux du ministère chargé du travail.<p></p> Article 6<p></p><p></p>   Les dispositions susvisées seront également soumises à la procédure d'extension prévue par le code du travail.<p></p><p></p>   Fait à Lyon, le 15 novembre 2006.<p></p><p></p>   ANNEXE III<p></p><p></p>   (art. 7)<p></p><p></p>   Salaires mensuels minimaux professionnels garantis au 1er décembre 2006 pour 151,67 heures<p></p><p></p>   1. Salariés permanents<p></p><p></p>   (En euros)<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD></TD><TD>            COEFFICIENT HIERARCHIQUE       </TD></TR><TR><TD></TD><TD>   185    </TD><TD>    195   </TD><TD>   210    </TD><TD>   220    </TD></TR><TR><TD> Moins de 3 ans    </TD><TD> 1 538,14 </TD><TD> 1 596,78 </TD><TD> 1 683,34 </TD><TD> 1 741,08 </TD></TR><TR><TD> De 3 à 6 ans      </TD><TD> 1 578,52 </TD><TD> 1 638,69 </TD><TD> 1 727,53 </TD><TD> 1 786,78 </TD></TR><TR><TD> De 6 à 9 ans      </TD><TD> 1 618,90 </TD><TD> 1 680,61 </TD><TD> 1 771,71 </TD><TD> 1 832,49 </TD></TR><TR><TD> De 9 à 12 ans     </TD><TD> 1 659,27 </TD><TD> 1 722,53 </TD><TD> 1 815,90 </TD><TD> 1 878,19 </TD></TR><TR><TD> De 12 à 15 ans    </TD><TD> 1 699,65 </TD><TD> 1 764,44 </TD><TD> 1 860,09 </TD><TD> 1 923,89 </TD></TR><TR><TD> De 15 à 18 ans    </TD><TD> 1 740,02 </TD><TD> 1 806,36 </TD><TD> 1 904,28 </TD><TD> 1 969,60 </TD></TR><TR><TD> De 18 à 20 ans    </TD><TD> 1 780,40 </TD><TD> 1 848,27 </TD><TD> 1 948,46 </TD><TD> 2 015,30 </TD></TR><TR><TD> Plus de 20 ans    </TD><TD> 1 807,32 </TD><TD> 1 876,22 </TD><TD> 1 977,92 </TD><TD> 2 045,77 </TD></TR><TR><TD></TD><TD>   COEFFICIENT HIERARCHIQUE     </TD></TR><TR><TD></TD><TD>   225    </TD><TD>    245   </TD><TD>   275    </TD></TR><TR><TD> Moins de 3 ans    </TD><TD> 1 826,05 </TD><TD> 1 881,88 </TD><TD> 2 047,33 </TD></TR><TR><TD> De 3 à 6 ans      </TD><TD> 1 873,98 </TD><TD> 1 931,28 </TD><TD> 2 101,07 </TD></TR><TR><TD> De 6 à 9 ans      </TD><TD> 1 921,91 </TD><TD> 1 980,68 </TD><TD> 2 154,81 </TD></TR><TR><TD> De 9 à 12 ans     </TD><TD> 1 969,85 </TD><TD> 2 030,08 </TD><TD> 2 208,55 </TD></TR><TR><TD> De 12 à 15 ans    </TD><TD> 2 017,78 </TD><TD> 2 079,48 </TD><TD> 2 262,30 </TD></TR><TR><TD> De 15 à 18 ans    </TD><TD> 2 065,71 </TD><TD> 2 128,88 </TD><TD> 2 316,04 </TD></TR><TR><TD> De 18 à 20 ans    </TD><TD> 2 113,65 </TD><TD> 2 178,28 </TD><TD> 2 369,78 </TD></TR><TR><TD> Plus de 20 ans    </TD><TD> 2 145,60 </TD><TD> 2 211,21 </TD><TD> 2 405,61 </TD></TR></TABLE><p></p><p></p>   2. Salariés saisonniers<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD></TD><TD>            COEFFICIENT HIERARCHIQUE       </TD></TR><TR><TD></TD><TD>   185    </TD><TD>    195   </TD><TD>   210    </TD><TD>   220    </TD></TR><TR><TD> Moins de 12 mois  </TD><TD> 1 538,14 </TD><TD> 1 596,78 </TD><TD> 1 683,34 </TD><TD> 1 741,08 </TD></TR><TR><TD> De 1 à 2 ans      </TD><TD> 1 551,60 </TD><TD> 1 510,75 </TD><TD> 1 698,07 </TD><TD> 1 756,31 </TD></TR><TR><TD> De 2 à 3 ans      </TD><TD> 1 565,06 </TD><TD> 1 624,72 </TD><TD> 1 712,80 </TD><TD> 1 771,55 </TD></TR><TR><TD> De 3 à 4 ans      </TD><TD> 1 578,52 </TD><TD> 1 638,69 </TD><TD> 1 727,53 </TD><TD> 1 786,78 </TD></TR><TR><TD> De 4 à 5 ans      </TD><TD> 1 591,98 </TD><TD> 1 652,67 </TD><TD> 1 742,26 </TD><TD> 1 802,02 </TD></TR><TR><TD> De 5 à 6 ans      </TD><TD> 1 605,44 </TD><TD> 1 666,64 </TD><TD> 1 756,98 </TD><TD> 1 817,25 </TD></TR><TR><TD> De 6 à 7 ans      </TD><TD> 1 618,90 </TD><TD> 1 680,61 </TD><TD> 1 771,41 </TD><TD> 1 832,49 </TD></TR><TR><TD> De 7 à 8 ans      </TD><TD> 1 632,35 </TD><TD> 1 694,58 </TD><TD> 1 786,44 </TD><TD> 1 847,72 </TD></TR><TR><TD> De 8 à 9 ans      </TD><TD> 1 645,81 </TD><TD> 1 708,55 </TD><TD> 1 801,17 </TD><TD> 1 862,96 </TD></TR><TR><TD> De 9 à 10 ans     </TD><TD> 1 659,27 </TD><TD> 1 722,53 </TD><TD> 1 815,90 </TD><TD> 1 878,19 </TD></TR><TR><TD> De 10 à 11 ans    </TD><TD> 1 672,73 </TD><TD> 1 736,50 </TD><TD> 1 830,63 </TD><TD> 1 893,42 </TD></TR><TR><TD> De 11 à 12 ans    </TD><TD> 1 686,19 </TD><TD> 1 750,47 </TD><TD> 1 845,36 </TD><TD> 1 908,66 </TD></TR><TR><TD> De 12 à 13 ans    </TD><TD> 1 699,65 </TD><TD> 1 764,44 </TD><TD> 1 860,09 </TD><TD> 1 923,89 </TD></TR><TR><TD> De 13 à 14 ans    </TD><TD> 1 713,11 </TD><TD> 1 778,41 </TD><TD> 1 874,82 </TD><TD> 1 939,13 </TD></TR><TR><TD> De 14 à 15 ans    </TD><TD> 1 726,57 </TD><TD> 1 792,38 </TD><TD> 1 889,55 </TD><TD> 1 954,36 </TD></TR><TR><TD> De 15 à 16 ans    </TD><TD> 1 740,02 </TD><TD> 1 806,36 </TD><TD> 1 904,28 </TD><TD> 1 969,60 </TD></TR><TR><TD> De 16 à 17 ans    </TD><TD> 1 753,48 </TD><TD> 1 820,33 </TD><TD> 1 919,01 </TD><TD> 1 984,83 </TD></TR><TR><TD> De 17 à 18 ans    </TD><TD> 1 766,94 </TD><TD> 1 834,30 </TD><TD> 1 933,73 </TD><TD> 2 000,07 </TD></TR><TR><TD> De 18 à 19 ans    </TD><TD> 1 780,40 </TD><TD> 1 848,27 </TD><TD> 1 948,46 </TD><TD> 2 015,30 </TD></TR><TR><TD> De 19 à 20 ans    </TD><TD> 1 793,86 </TD><TD> 1 862,24 </TD><TD> 1 963,19 </TD><TD> 2 030,53 </TD></TR><TR><TD> Plus de 20 ans    </TD><TD> 1 807,32 </TD><TD> 1 876,22 </TD><TD> 1 977,92 </TD><TD> 2 045,77 </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD>   COEFFICIENT HIERARCHIQUE     </TD></TR><TR><TD></TD><TD>   235    </TD><TD>    245   </TD><TD>   275    </TD></TR><TR><TD> Moins de 12 mois  </TD><TD> 1 826,05 </TD><TD> 1 881,88 </TD><TD> 2 047,33 </TD></TR><TR><TD> De 1 à 2 ans      </TD><TD> 1 842,02 </TD><TD> 1 898,35 </TD><TD> 2 065,24 </TD></TR><TR><TD> De 2 à 3 ans      </TD><TD> 1 858,00 </TD><TD> 1 914,81 </TD><TD> 2 083,15 </TD></TR><TR><TD> De 3 à 4 ans      </TD><TD> 1 873,98 </TD><TD> 1 931,28 </TD><TD> 2 101,07 </TD></TR><TR><TD> De 4 à 5 ans      </TD><TD> 1 889,96 </TD><TD> 1 947,75 </TD><TD> 2 118,98 </TD></TR><TR><TD> De 5 à 6 ans      </TD><TD> 1 905,94 </TD><TD> 1 964,21 </TD><TD> 2 136,90 </TD></TR><TR><TD> De 6 à 7 ans      </TD><TD> 1 921,91 </TD><TD> 1 980,68 </TD><TD> 2 154,81 </TD></TR><TR><TD> De 7 à 8 ans      </TD><TD> 1 937,89 </TD><TD> 1 997,14 </TD><TD> 2 172,72 </TD></TR><TR><TD> De 8 à 9 ans      </TD><TD> 1 953,87 </TD><TD> 2 013,61 </TD><TD> 2 190,64 </TD></TR><TR><TD> De 9 à 10 ans     </TD><TD> 1 969,85 </TD><TD> 2 030,08 </TD><TD> 2 208,55 </TD></TR><TR><TD> De 10 à 11 ans    </TD><TD> 1 985,83 </TD><TD> 2 046,54 </TD><TD> 2 226,47 </TD></TR><TR><TD> De 11 à 12 ans    </TD><TD> 2 001,80 </TD><TD> 2 063,01 </TD><TD> 2 244,38 </TD></TR><TR><TD> De 12 à 13 ans    </TD><TD> 2 017,78 </TD><TD> 2 079,48 </TD><TD> 2 262,30 </TD></TR><TR><TD> De 13 à 14 ans    </TD><TD> 2 033,76 </TD><TD> 2 095,94 </TD><TD> 2 280,21 </TD></TR><TR><TD> De 14 à 15 ans    </TD><TD> 2 049,74 </TD><TD> 2 112,41 </TD><TD> 2 298,12 </TD></TR><TR><TD> De 15 à 16 ans    </TD><TD> 2 065,71 </TD><TD> 2 128,88 </TD><TD> 2 316,04 </TD></TR><TR><TD> De 16 à 17 ans    </TD><TD> 2 081,69 </TD><TD> 2 145,34 </TD><TD> 2 333,95 </TD></TR><TR><TD> De 17 à 18 ans    </TD><TD> 2 097,67 </TD><TD> 2 161,81 </TD><TD> 2 351,87 </TD></TR><TR><TD> De 18 à 19 ans    </TD><TD> 2 113,65 </TD><TD> 2 178,28 </TD><TD> 2 369,78 </TD></TR><TR><TD> De 19 à 20 ans    </TD><TD> 2 129,63 </TD><TD> 2 194,74 </TD><TD> 2 387,69 </TD></TR><TR><TD> Plus de 20 ans    </TD><TD> 2 145,60 </TD><TD> 2 211,21 </TD><TD> 2 405,61 </TD></TR></TABLE><p></p><p></p>   Salaires horaires minimaux professionnels garantis au 1er décembre 2006<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD>     Niveau      </TD><TD>   Taux    </TD></TR><TR><TD> de rémunération </TD><TD> horaire   </TD></TR><TR><TD>       409       </TD><TD>  25,1835  </TD></TR><TR><TD>       408       </TD><TD>  25,1020  </TD></TR><TR><TD>       407       </TD><TD>  25,0205  </TD></TR><TR><TD>       406       </TD><TD>  24,9390  </TD></TR><TR><TD>       405       </TD><TD>  24,8575  </TD></TR><TR><TD>       404       </TD><TD>  24,7760  </TD></TR><TR><TD>       403       </TD><TD>  24,6945  </TD></TR><TR><TD>       402       </TD><TD>  24,6130  </TD></TR><TR><TD>       401       </TD><TD>  24,5315  </TD></TR><TR><TD>       400       </TD><TD>  24,4500  </TD></TR><TR><TD>       399       </TD><TD>  24,3695  </TD></TR><TR><TD>       398       </TD><TD>  24,2890  </TD></TR><TR><TD>       397       </TD><TD>  24,2085  </TD></TR><TR><TD>       396       </TD><TD>  24,1280  </TD></TR><TR><TD>       395       </TD><TD>  24,0475  </TD></TR><TR><TD>       394       </TD><TD>  23,9669  </TD></TR><TR><TD>       393       </TD><TD>  23,8864  </TD></TR><TR><TD>       392       </TD><TD>  23,8059  </TD></TR><TR><TD>       391       </TD><TD>  23,7253  </TD></TR><TR><TD>       390       </TD><TD>  23,6448  </TD></TR><TR><TD>       389       </TD><TD>  23,5642  </TD></TR><TR><TD>       388       </TD><TD>  23,4836  </TD></TR><TR><TD>       387       </TD><TD>  23,4031  </TD></TR><TR><TD>       386       </TD><TD>  23,3225  </TD></TR><TR><TD>       385       </TD><TD>  23,2419  </TD></TR><TR><TD>       384       </TD><TD>  23,1613  </TD></TR><TR><TD>       383       </TD><TD>  23,0807  </TD></TR><TR><TD>       382       </TD><TD>  23,0001  </TD></TR><TR><TD>       381       </TD><TD>  22,9195  </TD></TR><TR><TD>       380       </TD><TD>  22,8389  </TD></TR><TR><TD>       379       </TD><TD>  22,7582  </TD></TR><TR><TD>       378       </TD><TD>  22,6776  </TD></TR><TR><TD>       377       </TD><TD>  22,5970  </TD></TR><TR><TD>       376       </TD><TD>  22,5163  </TD></TR><TR><TD>       375       </TD><TD>  22,4357  </TD></TR><TR><TD>       374       </TD><TD>  22,3550  </TD></TR><TR><TD>       373       </TD><TD>  22,2743  </TD></TR><TR><TD>       372       </TD><TD>  22,1936  </TD></TR></TABLE><p></p><TABLE><TR><TD>       371       </TD><TD>  22,1130  </TD></TR><TR><TD>       370       </TD><TD>  22,0323  </TD></TR><TR><TD>       369       </TD><TD>  21,9516  </TD></TR><TR><TD>       368       </TD><TD>  21,8709  </TD></TR><TR><TD>       367       </TD><TD>  21,7902  </TD></TR><TR><TD>       366       </TD><TD>  21,7095  </TD></TR><TR><TD>       365       </TD><TD>  21,6287  </TD></TR><TR><TD>       364       </TD><TD>  21,5480  </TD></TR><TR><TD>       363       </TD><TD>  21,4673  </TD></TR><TR><TD>       362       </TD><TD>  21,3865  </TD></TR><TR><TD>       361       </TD><TD>  21,3058  </TD></TR><TR><TD>       360       </TD><TD>  21,2250  </TD></TR><TR><TD>       359       </TD><TD>  21,1443  </TD></TR><TR><TD>       358       </TD><TD>  21,0635  </TD></TR><TR><TD>       357       </TD><TD>  20,9827  </TD></TR><TR><TD>       356       </TD><TD>  20,9019  </TD></TR><TR><TD>       355       </TD><TD>  20,8211  </TD></TR><TR><TD>       354       </TD><TD>  20,7403  </TD></TR><TR><TD>       353       </TD><TD>  20,6595  </TD></TR><TR><TD>       352       </TD><TD>  20,5787  </TD></TR></TABLE><p></p><TABLE><TR><TD>       351       </TD><TD>  20,4979  </TD></TR><TR><TD>       350       </TD><TD>  20,4171  </TD></TR><TR><TD>       349       </TD><TD>  20,3363  </TD></TR><TR><TD>       348       </TD><TD>  20,2554  </TD></TR><TR><TD>       347       </TD><TD>  20,1746  </TD></TR><TR><TD>       346       </TD><TD>  20,0937  </TD></TR><TR><TD>       345       </TD><TD>  20,0129  </TD></TR><TR><TD>       344       </TD><TD>  19,9320  </TD></TR><TR><TD>       343       </TD><TD>  19,8511  </TD></TR><TR><TD>       342       </TD><TD>  19,7703  </TD></TR><TR><TD>       341       </TD><TD>  19,6894  </TD></TR><TR><TD>       340       </TD><TD>  19,6085  </TD></TR><TR><TD>       339       </TD><TD>  19,5276  </TD></TR><TR><TD>       338       </TD><TD>  19,4467  </TD></TR><TR><TD>       337       </TD><TD>  19,3658  </TD></TR><TR><TD>       336       </TD><TD>  19,2849  </TD></TR><TR><TD>       335       </TD><TD>  19,2039  </TD></TR><TR><TD>       334       </TD><TD>  19,1230  </TD></TR><TR><TD>       333       </TD><TD>  19,0421  </TD></TR><TR><TD>       332       </TD><TD>  18,9611  </TD></TR><TR><TD>       331       </TD><TD>  18,8802  </TD></TR><TR><TD>       330       </TD><TD>  18,7992  </TD></TR><TR><TD>       329       </TD><TD>  18,7183  </TD></TR><TR><TD>       328       </TD><TD>  18,6373  </TD></TR><TR><TD>       327       </TD><TD>  18,5563  </TD></TR><TR><TD>       326       </TD><TD>  18,4753  </TD></TR><TR><TD>       325       </TD><TD>  18,3943  </TD></TR><TR><TD>       324       </TD><TD>  18,3133  </TD></TR><TR><TD>       323       </TD><TD>  18,2323  </TD></TR><TR><TD>       322       </TD><TD>  18,1513  </TD></TR><TR><TD>       321       </TD><TD>  18,0703  </TD></TR><TR><TD>       320       </TD><TD>  17,9893  </TD></TR><TR><TD>       319       </TD><TD>  17,9082  </TD></TR><TR><TD>       318       </TD><TD>  17,8272  </TD></TR></TABLE><p></p><TABLE><TR><TD>       317       </TD><TD>  17,7462  </TD></TR><TR><TD>       316       </TD><TD>  17,6651  </TD></TR><TR><TD>       315       </TD><TD>  17,5840  </TD></TR><TR><TD>       314       </TD><TD>  17,5030  </TD></TR><TR><TD>       313       </TD><TD>  17,4219  </TD></TR><TR><TD>       312       </TD><TD>  17,3408  </TD></TR><TR><TD>       311       </TD><TD>  17,2597  </TD></TR><TR><TD>       310       </TD><TD>  17,1787  </TD></TR><TR><TD>       309       </TD><TD>  17,0976  </TD></TR><TR><TD>       308       </TD><TD>  17,0164  </TD></TR><TR><TD>       307       </TD><TD>  16,9353  </TD></TR><TR><TD>       306       </TD><TD>  16,8542  </TD></TR><TR><TD>       305       </TD><TD>  16,7731  </TD></TR><TR><TD>       304       </TD><TD>  16,6920  </TD></TR><TR><TD>       303       </TD><TD>  16,6108  </TD></TR><TR><TD>       302       </TD><TD>  16,5297  </TD></TR><TR><TD>       301       </TD><TD>  16,4485  </TD></TR><TR><TD>       300       </TD><TD>  16,3674  </TD></TR><TR><TD>       299       </TD><TD>  16,2862  </TD></TR><TR><TD>       298       </TD><TD>  16,2050  </TD></TR></TABLE><p></p><TABLE><TR><TD>       297       </TD><TD>  16,1238  </TD></TR><TR><TD>       296       </TD><TD>  16,0426  </TD></TR><TR><TD>       295       </TD><TD>  15,9615  </TD></TR><TR><TD>       294       </TD><TD>  15,8803  </TD></TR><TR><TD>       293       </TD><TD>  15,7990  </TD></TR><TR><TD>       292       </TD><TD>  15,7178  </TD></TR><TR><TD>       291       </TD><TD>  15,6366  </TD></TR><TR><TD>       290       </TD><TD>  15,5554  </TD></TR><TR><TD>       289       </TD><TD>  15,4742  </TD></TR><TR><TD>       288       </TD><TD>  15,3929  </TD></TR><TR><TD>       287       </TD><TD>  15,3117  </TD></TR><TR><TD>       286       </TD><TD>  15,2304  </TD></TR><TR><TD>       285       </TD><TD>  15,1491  </TD></TR><TR><TD>       284       </TD><TD>  15,0679  </TD></TR><TR><TD>       283       </TD><TD>  14,9866  </TD></TR><TR><TD>       282       </TD><TD>  14,9053  </TD></TR><TR><TD>       281       </TD><TD>  14,8240  </TD></TR><TR><TD>       280       </TD><TD>  14,7427  </TD></TR><TR><TD>       279       </TD><TD>  14,6614  </TD></TR><TR><TD>       278       </TD><TD>  14,5810  </TD></TR><TR><TD>       277       </TD><TD>  14,5006  </TD></TR><TR><TD>       276       </TD><TD>  14,4202  </TD></TR><TR><TD>       275       </TD><TD>  14,3397  </TD></TR><TR><TD>       274       </TD><TD>  14,2592  </TD></TR><TR><TD>       273       </TD><TD>  14,1787  </TD></TR><TR><TD>       272       </TD><TD>  14,0982  </TD></TR><TR><TD>       271       </TD><TD>  14,0177  </TD></TR><TR><TD>       270       </TD><TD>  13,9372  </TD></TR><TR><TD>       269       </TD><TD>  13,8566  </TD></TR><TR><TD>       268       </TD><TD>  13,7760  </TD></TR><TR><TD>       267       </TD><TD>  13,6954  </TD></TR><TR><TD>       266       </TD><TD>  13,6148  </TD></TR><TR><TD>       265       </TD><TD>  13,5342  </TD></TR></TABLE><p></p><TABLE><TR><TD>       264       </TD><TD>  13,4536  </TD></TR><TR><TD>       263       </TD><TD>  13,3729  </TD></TR><TR><TD>       262       </TD><TD>  13,2922  </TD></TR><TR><TD>       261       </TD><TD>  13,2115  </TD></TR><TR><TD>       260       </TD><TD>  13,1308  </TD></TR><TR><TD>       259       </TD><TD>  13,0501  </TD></TR><TR><TD>       258       </TD><TD>  12,9694  </TD></TR><TR><TD>       257       </TD><TD>  12,8886  </TD></TR><TR><TD>       256       </TD><TD>  12,8078  </TD></TR><TR><TD>       255       </TD><TD>  12,7270  </TD></TR><TR><TD>       254       </TD><TD>  12,6462  </TD></TR><TR><TD>       253       </TD><TD>  12,5654  </TD></TR><TR><TD>       252       </TD><TD>  12,4845  </TD></TR><TR><TD>       251       </TD><TD>  12,4037  </TD></TR><TR><TD>       250       </TD><TD>  12,3228  </TD></TR><TR><TD>       249       </TD><TD>  12,2419  </TD></TR><TR><TD>       248       </TD><TD>  12,1610  </TD></TR><TR><TD>       247       </TD><TD>  12,0801  </TD></TR><TR><TD>       246       </TD><TD>  11,9991  </TD></TR><TR><TD>       245       </TD><TD>  11,9182  </TD></TR><TR><TD>       244       </TD><TD>  11,8372  </TD></TR></TABLE><p></p><TABLE><TR><TD>       243       </TD><TD>  11,7562  </TD></TR><TR><TD>       242       </TD><TD>  11,6752  </TD></TR><TR><TD>       241       </TD><TD>  11,5941  </TD></TR><TR><TD>       240       </TD><TD>  11,5131  </TD></TR><TR><TD>       239       </TD><TD>  11,4320  </TD></TR><TR><TD>       238       </TD><TD>  11,3509  </TD></TR><TR><TD>       237       </TD><TD>  11,2698  </TD></TR><TR><TD>       236       </TD><TD>  11,1887  </TD></TR><TR><TD>       235       </TD><TD>  11,1076  </TD></TR><TR><TD>       234       </TD><TD>  11,0264  </TD></TR><TR><TD>       233       </TD><TD>  10,9453  </TD></TR><TR><TD>       232       </TD><TD>  10,8641  </TD></TR><TR><TD>       231       </TD><TD>  10,7829  </TD></TR><TR><TD>       230       </TD><TD>  10,7017  </TD></TR><TR><TD>       229       </TD><TD>  10,6204  </TD></TR><TR><TD>       228       </TD><TD>  10,5392  </TD></TR><TR><TD>       227       </TD><TD>  10,4579  </TD></TR><TR><TD>       226       </TD><TD>  10,3766  </TD></TR><TR><TD>       225       </TD><TD>  10,2953  </TD></TR><TR><TD>       224       </TD><TD>  10,2140  </TD></TR><TR><TD>       223       </TD><TD>  10,1327  </TD></TR><TR><TD>       222       </TD><TD>  10,0513  </TD></TR><TR><TD>       221       </TD><TD>   9,9700  </TD></TR><TR><TD>       220       </TD><TD>   9,8894  </TD></TR><TR><TD>       219       </TD><TD>   9,8089  </TD></TR><TR><TD>       218       </TD><TD>   9,7283  </TD></TR><TR><TD>       217       </TD><TD>   9,6477  </TD></TR><TR><TD>       216       </TD><TD>   9,5670  </TD></TR><TR><TD>       215       </TD><TD>   9,4863  </TD></TR><TR><TD>       214       </TD><TD>   9,4056  </TD></TR><TR><TD>       213       </TD><TD>   9,3248  </TD></TR><TR><TD>       212       </TD><TD>   9,2441  </TD></TR><TR><TD>       211       </TD><TD>   9,1632  </TD></TR><TR><TD>       210       </TD><TD>   9,0824  </TD></TR><TR><TD>       209       </TD><TD>   9,0015  </TD></TR></TABLE><p></p><TABLE><TR><TD>       208       </TD><TD>   8,9206  </TD></TR><TR><TD>       207       </TD><TD>   8,8397  </TD></TR><TR><TD>       206       </TD><TD>   8,7587  </TD></TR><TR><TD>       205       </TD><TD>   8,6777  </TD></TR><TR><TD>       204       </TD><TD>   8,5967  </TD></TR><TR><TD>       203       </TD><TD>   8,5156  </TD></TR><TR><TD>       202       </TD><TD>   8,4345  </TD></TR><TR><TD>       201       </TD><TD>   8,3534  </TD></TR><TR><TD>       200       </TD><TD>   8,2722  </TD></TR></TABLE><p></p>",
+                      "nota": null,
+                      "comporteLiens": false,
+                      "comporteLiensSP": false,
+                      "modificatorTitle": null,
+                      "modificatorCid": null,
+                      "modificatorDate": null,
+                      "articleVersion": "1.0",
+                      "type": null,
+                      "lstLienModification": [
+                        {
+                          "textCid": "",
+                          "textTitle": "Avenant n° 68 2006-11-15 BO conventions collectives 2007-13 étendu par arrêté du 6 juillet 2007 JORF 17 juillet 2007",
+                          "linkType": "CREATION",
+                          "linkOrientation": "source",
+                          "articleNum": "",
+                          "articleId": "",
+                          "natureText": "",
+                          "datePubliTexte": null,
+                          "dateSignaTexte": null,
+                          "dateDebutCible": null
+                        }
+                      ],
+                      "lstLienCitation": [],
+                      "conditionDiffere": null,
+                      "historique": null,
+                      "surtitre": "Salaires (Annexe III)",
+                      "renvoi": null,
+                      "versionLabel": null,
+                      "infosComplementaires": null,
+                      "infosComplementairesHtml": null,
+                      "infosRestructurationBranche": null,
+                      "infosRestructurationBrancheHtml": null,
+                      "dateDebut": 1163548800000,
+                      "dateFin": 1635724800000,
+                      "notaSectionsAafficher": null,
+                      "multipleVersions": false
+                    }
+                  ],
+                  "commentaire": null,
+                  "renvoi": "",
+                  "renvoiNum": "",
+                  "notaHtml": null,
+                  "notaSectionsAafficher": []
+                }
+              ],
+              "articles": [],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

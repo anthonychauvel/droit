@@ -11473,13 +11473,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731851",
+              "cid": "KALISCTA000005731851",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er mars 1989",
+              "dateModif": null,
+              "dateDebut": "1989-03-03",
+              "dateFin": "1989-09-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005870516",
+                  "cid": "KALIARTI000005870516",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731851/KALIARTI000005870516",
+                  "pathTitle": [
+                    "Salaires au 1er mars 1989"
+                  ],
+                  "content": "<p></p>   Une revalorisation des salaires de 2 p. 100 interviendra le 1er mars 1989 et une autre de 0,5 p. 100 le 1er septembre 1989.<p></p><p></p>   Les partenaires sociaux se retrouveront en septembre 1989 pour étudier le taux d'inflation et éventuellement réactualiser le pourcentage d'augmentation intervenant le 1er septembre 1989, avec un taux minimal de 0,5 p. 100 au 1er septembre 1989, à l'extension. <p></p><p></p>   Les salaires de chaque catégorie professionnelle sont ainsi fixés pour 169 heures.<p></p><p></p><p></p>   Valeur du point :<p></p><p></p><p></p>   41,12 F pour les cent premiers points ;<p></p><p></p>   27,88 F pour les points suivants.<p></p> Prothésiste dentaire stagiaire, niveau I,<p></p> coefficient 120 : S.M.I.C.<p></p> Prothésiste dentaire stagiaire, niveau II,<p></p> coefficient 130 : S.M.I.C..<p></p> Prothésiste dentaire, coefficient 160 : 5 784,80 F<p></p> Prothésiste dentaire qualifié, coefficient 225 : 7 597,00 F<p></p> Prothésiste dentaire qualifié avec option,<p></p> coefficient 245 : 8 154,60 F<p></p> Chef de laboratoire, coefficient 306 : 9 855,28 F<p></p> Ouvrier premier niveau, coefficient 120 : S.M.I.C.<p></p> Ouvrier spécialisé en prothèse dentaire,<p></p> coefficient 150 : 5 506,00 F<p></p> Apprenti : (Législation en vigueur)<p></p> Coursier, coefficient 106 : S.M.I.C.<p></p> Femme de ménage, coefficient 106 : S.M.I.C.<p></p> Secrétaire (réception, facturation, administratif), coefficient 145 : 5 366,60 F<p></p> Secrétaire aide-comptable, coefficient 160 : 5 784,80 F<p></p> Aide-comptable, coefficient 145 : 5 366,60 F<p></p> Comptable, coefficient 180 : 6 342,40 F<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1989-03-03 étendu par arrêté du 30 mai 1989 JORF 9 juin 1989",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II salaires et grille de rémunérations des prothésistes dentaires et des personnels des laboratoires de prothèse dentaire.",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 604886400000,
+                  "dateFin": 621216000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -11493,13 +11567,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731852",
+              "cid": "KALISCTA000005731852",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er septembre 1989",
+              "dateModif": null,
+              "dateDebut": "1989-09-08",
+              "dateFin": "1990-01-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005870517",
+                  "cid": "KALIARTI000005870517",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731852/KALIARTI000005870517",
+                  "pathTitle": [
+                    "Salaires au 1er septembre 1989"
+                  ],
+                  "content": "<p></p>   Une revalorisation des salaires de 0,5 p. 100 interviendra le 1er septembre 1989.<p></p><p></p><p></p>   Les salaires de chaque catégorie professionnelle sont ainsi fixés pour 169 heures.<p></p><p></p><p></p>   Valeur du point :<p></p><p></p><p></p>   41,53 F pour les cent premiers points ;<p></p><p></p>   28,15 F pour les points suivants.<p></p> Prothésiste dentaire stagiaire, niveau I,<p></p> coefficient 120 : S.M.I.C.<p></p> Prothésiste dentaire stagiaire, niveau II,<p></p> coefficient 130 : S.M.I.C..<p></p> Prothésiste dentaire, coefficient 160 : 5 842,00 F<p></p> Prothésiste dentaire qualifié, coefficient 225 : 7 671,75 F<p></p> Prothésiste dentaire qualifié avec option,<p></p> coefficient 245 : 8 234,75 F<p></p> Chef de laboratoire, coefficient 306 : 9 951,90 F<p></p> Ouvrier premier niveau, coefficient 120 : S.M.I.C.<p></p> Ouvrier spécialisé en prothèse dentaire,<p></p> coefficient 150 : 5 560,50 F<p></p> Apprenti : (Législation en vigueur)<p></p> Coursier, coefficient 106 : S.M.I.C.<p></p> Femme de ménage, coefficient 106 : S.M.I.C.<p></p> Secrétaire (réception, facturation, administratif), coefficient 145 : 5 419,75 F<p></p> Secrétaire aide-comptable, coefficient 160 : 5 842,00 F<p></p> Aide-comptable, coefficient 145 : 5 419,75 F<p></p> Comptable, coefficient 180 : 6 405,00 F<p></p><p></p><p></p>   Valeur du S.M.I.C. au 1er septembre 1989 : 5 054,79 F.<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1989-09-08 étendu par arrêté du 14 septembre 1989 JORF 27 décembre 1989",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II salaires et grille de rémunérations des prothésistes dentaires et des personnels des laboratoires de prothèse dentaire.",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 621216000000,
+                  "dateFin": 631497600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -11513,13 +11661,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731853",
+              "cid": "KALISCTA000005731853",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er février 1990 et au 1er septembre 1990",
+              "dateModif": null,
+              "dateDebut": "1990-01-05",
+              "dateFin": "1991-03-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005870518",
+                  "cid": "KALIARTI000005870518",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731853/KALIARTI000005870518",
+                  "pathTitle": [
+                    "Salaires au 1er février 1990 et au 1er septembre 1990"
+                  ],
+                  "content": "<p></p>   Une revalorisation des salaires de 2,5 p. 100 interviendra le 1er septembre 1990 et 1 p. 100 le 1er septembre 1990 à l'extension.<p></p><p></p><p></p>   Salaires au 1er février 1990<p></p><p></p><p></p>   Salaires minima de base<p></p><p></p><p></p>   Les salaires de chaque catégorie professionnelle sont ainsi fixés pour 169 heures.<p></p><p></p><p></p>   Valeur du point :<p></p><p></p><p></p>   42,57 F pour les cent premiers points ;<p></p><p></p>   28,85 F pour les points suivants.<p></p> Prothésiste dentaire stagiaire, niveau I,<p></p> coefficient 120 : S.M.I.C.<p></p> Prothésiste dentaire stagiaire, niveau II,<p></p> coefficient 130 : S.M.I.C..<p></p> Prothésiste dentaire, coefficient 160 : 5 988,00 F<p></p> Prothésiste dentaire qualifié, coefficient 225 : 7 863,25 F<p></p> Prothésiste dentaire qualifié avec option,<p></p> coefficient 245 : 8 440,25 F<p></p> Chef de laboratoire, coefficient 306 : 10 200,10 F<p></p> Ouvrier premier niveau, coefficient 120 : S.M.I.C.<p></p> Ouvrier spécialisé en prothèse dentaire,<p></p> coefficient 150 : 5 699,50 F<p></p> Apprenti : (Législation en vigueur)<p></p> Coursier, coefficient 106 : S.M.I.C.<p></p> Femme de ménage, coefficient 106 : S.M.I.C.<p></p> Secrétaire (réception, facturation, administratif), coefficient 145 : 5 555,25 F<p></p> Secrétaire aide-comptable, coefficient 160 : 5 988,00 F<p></p> Aide-comptable, coefficient 145 : 5 555,25 F<p></p> Comptable, coefficient 180 : 6 565,00 F<p></p><p></p><p></p>   Salaires au 1er septembre 1990<p></p><p></p><p></p>   Salaires minima de base<p></p><p></p><p></p>   Les salaires de chaque catégorie professionnelle sont ainsi fixés pour 169 heures.<p></p><p></p><p></p>   Valeur du point :<p></p><p></p><p></p>   43,00 F pour les cent premiers points ;<p></p><p></p>   29,14 F pour les points suivants.<p></p> Prothésiste dentaire stagiaire, niveau I,<p></p> coefficient 120 : S.M.I.C.<p></p> Prothésiste dentaire stagiaire, niveau II,<p></p> coefficient 130 : S.M.I.C..<p></p> Prothésiste dentaire, coefficient 160 : 6 048,40 F<p></p> Prothésiste dentaire qualifié, coefficient 225 : 7 942,50 F<p></p> Prothésiste dentaire qualifié avec option,<p></p> coefficient 245 : 8 525,30 F<p></p> Chef de laboratoire, coefficient 306 : 10 302,84 F<p></p> Ouvrier premier niveau, coefficient 120 : S.M.I.C.<p></p> Ouvrier spécialisé en prothèse dentaire,<p></p> coefficient 150 : 5 757,00 F<p></p> Apprenti : (Législation en vigueur)<p></p> Coursier, coefficient 106 : S.M.I.C.<p></p> Femme de ménage, coefficient 106 : S.M.I.C.<p></p> Secrétaire (réception, facturation, administratif), coefficient 145 : 5 611,30 F<p></p> Secrétaire aide-comptable, coefficient 160 : 6 048,40 F<p></p> Aide-comptable, coefficient 145 : 5 611,35 F<p></p> Comptable, coefficient 180 : 6 631,30 F<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1990-01-05 étendu par arrêté du 7 mai 1990 JORF 18 mai 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II salaires et grille de rémunérations des prothésistes dentaires et des personnels des laboratoires de prothèse dentaire.",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 631497600000,
+                  "dateFin": 667785600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

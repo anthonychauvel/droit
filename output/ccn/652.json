@@ -5752,13 +5752,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005689944",
+              "cid": "KALISCTA000005689944",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er avril 1991",
+              "dateModif": null,
+              "dateDebut": "1991-03-06",
+              "dateFin": "1991-11-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766317",
+                  "cid": "KALIARTI000005766317",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005689944/KALIARTI000005766317",
+                  "pathTitle": [
+                    "Salaires à compter du 1er avril 1991"
+                  ],
+                  "content": "Article unique<p></p><p></p>   En application des articles L.132-1 et suivants du code du travail concernant les conventions collectives, la valeur du point applicable aux cadres dans les entreprises de négoce de matériaux de construction est fixée à 30,25 F à compter du 1er avril 1991, base mensuelle 169 heures.<p></p><p></p>   La rémunération minimale hiérarchique est obtenue en multipliant la valeur du point par le coefficient attribué au salarié.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 30 1991-03-06 étendu par arrêté du 25 juin 1991 JORF 29 juin 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES cadres",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 668217600000,
+                  "dateFin": 689385600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -5772,13 +5860,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005689945",
+              "cid": "KALISCTA000005689945",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er novembre 1991",
+              "dateModif": null,
+              "dateDebut": "1991-11-06",
+              "dateFin": "1992-03-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766318",
+                  "cid": "KALIARTI000005766318",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005689945/KALIARTI000005766318",
+                  "pathTitle": [
+                    "Salaires à compter du 1er novembre 1991"
+                  ],
+                  "content": "Article unique<p></p><p></p>   En application des articles L.132-1 et suivants du code du travail concernant les conventions collectives, la valeur du point applicable aux cadres dans les entreprises de négoce de matériaux de construction est fixée à 30,76 F à compter du 1er novembre 1991, base mensuelle 169 heures.<p></p><p></p>   La rémunération minimale hiérarchique est obtenue en multipliant la valeur du point par le coefficient attribué au salarié.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 31 1991-11-06 étendu par arrêté du 29 janvier 1992 JORF 7 février 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail article L132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES cadres",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 689385600000,
+                  "dateFin": 699667200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -5792,13 +5968,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005689946",
+              "cid": "KALISCTA000005689946",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er avril et 1er octobre 1992",
+              "dateModif": null,
+              "dateDebut": "1992-03-04",
+              "dateFin": "1993-10-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766319",
+                  "cid": "KALIARTI000005766319",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005689946/KALIARTI000005766319",
+                  "pathTitle": [
+                    "Salaires à compter du 1er avril et 1er octobre 1992"
+                  ],
+                  "content": "Article 1er.<p></p><p></p>   En application des articles L.132-1 et suivants du code du travail concernant les conventions collectives, la valeur du point applicable aux cadres dans les entreprises de négoce de matériaux de construction est fixée à :<p></p><p></p>   - 31,15.F. à compter du 1er avril 1992, base mensuelle 169 heures.<p></p><p></p>   - 31,68.F. à compter du 1er octobre 1992, base mensuelle 169 heures.<p></p><p></p>   La rémunération minimale hiérarchique est obtenue en multipliant la valeur du point par le coefficient attribué au salarié.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 32 1992-03-04 étendu par arrêté du 14 septembre 1992 JORF 24 septembre 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail article L132-1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES cadres",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 699667200000,
+                  "dateFin": 749865600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

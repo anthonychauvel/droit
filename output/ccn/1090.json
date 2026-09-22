@@ -103872,13 +103872,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005730101",
+              "cid": "KALISCTA000005730101",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er juillet 1994",
+              "dateModif": null,
+              "dateDebut": "1994-04-26",
+              "dateFin": "1996-01-16",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005866910",
+                  "cid": "KALIARTI000005866910",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005730101/KALIARTI000005866910",
+                  "pathTitle": [
+                    "Salaires à compter du 1er juillet 1994"
+                  ],
+                  "content": "<p></p>   - Les organisations patronales et syndicales de salariés soussignées décident, en conclusion de la négociation paritaire du 26 avril 1994, de modifier les barèmes des salaires minimaux professionnels dans les conditions suivantes :<p></p><p></p>Article 1er<p></p><p></p>   Les salaires minimaux garantis des ouvriers et employés sont les suivants à partir du 1er juillet 1994 :<p></p> (1) COEFFICIENT.<p></p> (2) MINIMA MENSUEL garanti pour 169 heures.<p></p><p></p> ----------------------<p></p><TABLE><TR><TD>   (1)  </TD><TD>   (2)     </TD></TR><TR><TD> 140    </TD><TD> 6.000 F   </TD></TR><TR><TD> 145    </TD><TD> 6.010 F   </TD></TR><TR><TD> 155    </TD><TD> 6.025 F   </TD></TR><TR><TD> 170    </TD><TD> 6.126 F   </TD></TR><TR><TD> 180    </TD><TD> 6.238 F   </TD></TR><TR><TD> 190    </TD><TD> 6.360 F   </TD></TR><TR><TD> 215    </TD><TD> 6.523 F   </TD></TR><TR><TD> 225    </TD><TD> 6.650 F   </TD></TR><TR><TD> 240    </TD><TD> 7.000 F   </TD></TR></TABLE><p></p> ----------------------Article 2<p></p><p></p>   Les salaires minimaux garantis du personnel d'encadrement sont les suivants à partir du 1er juillet 1994 :<p></p> (1) INDICE<p></p> (2) MINIMA MENSUEL GARANTI<p></p><p></p> ---------------------<p></p><TABLE><TR><TD>   (1)  </TD><TD>   (2)    </TD></TR><TR><TD> 70     </TD><TD> 6.790 F  </TD></TR><TR><TD> 75     </TD><TD> 7.275 F  </TD></TR><TR><TD> 80     </TD><TD> 7.760 F  </TD></TR><TR><TD> 85     </TD><TD> 8.245 F  </TD></TR><TR><TD> 90     </TD><TD> 8.730 F  </TD></TR><TR><TD> 95     </TD><TD> 9.215 F  </TD></TR><TR><TD> 100    </TD><TD> 9.700 F  </TD></TR><TR><TD> 110    </TD><TD> 10.670 F </TD></TR><TR><TD> 120    </TD><TD> 11.640 F </TD></TR><TR><TD> 130    </TD><TD> 12.610 F </TD></TR><TR><TD> 140    </TD><TD> 13.580 F </TD></TR><TR><TD> 160    </TD><TD> 15.520 F </TD></TR><TR><TD> 180    </TD><TD> 17.460 F </TD></TR><TR><TD> 210    </TD><TD> 20.370 F </TD></TR></TABLE><p></p> ---------------------Article 3<p></p><p></p>   Pour les personnels directement affectés à la vente de véhicules rémunérés par des primes et un fixe en application de l'article 6-06 de la convention collective, la partie fixe de la rémunération doit être au minimum égale au barème suivant à compter du 1er juillet 1994 :<p></p><p></p> (1) COEFFICIENT.<p></p> (2) COLLABORATEURS.<p></p><p></p> ------------------------<p></p><TABLE><TR><TD>   (1)  </TD><TD>   (2)       </TD></TR><TR><TD> 170    </TD><TD> 3.675,00 F  </TD></TR><TR><TD> 180    </TD><TD> 3.742,80 F  </TD></TR><TR><TD> 190    </TD><TD> 3.816,00 F  </TD></TR><TR><TD> 215    </TD><TD> 3.913,80 F  </TD></TR><TR><TD> 225    </TD><TD> 3.990,00 F  </TD></TR><TR><TD> 240    </TD><TD> 4.200,00 F  </TD></TR></TABLE><p></p> ------------------------<p></p><p></p> (1) INDICE.<p></p> (2) PERSONNEL D'ENCADREMENT.<p></p><p></p> ------------------------<p></p><TABLE><TR><TD>   (1)  </TD><TD>   (2)       </TD></TR></TABLE><p></p> ------------------------<p></p><TABLE><TR><TD> 70     </TD><TD> 4.074 F     </TD></TR><TR><TD> 75     </TD><TD> 4.365 F     </TD></TR><TR><TD> 80     </TD><TD> 4.656 F     </TD></TR><TR><TD> 85     </TD><TD> 4.947 F     </TD></TR><TR><TD> 90     </TD><TD> 5.238 F     </TD></TR><TR><TD> 95     </TD><TD> 5.529 F     </TD></TR><TR><TD> 100    </TD><TD> 5.820 F     </TD></TR><TR><TD> 110    </TD><TD> 6.402 F     </TD></TR><TR><TD> 120    </TD><TD> 6.984 F     </TD></TR><TR><TD> 130    </TD><TD> 7.566 F     </TD></TR><TR><TD> 140    </TD><TD> 8.148 F     </TD></TR><TR><TD> 160    </TD><TD> 9.312 F     </TD></TR><TR><TD> 180    </TD><TD> 10.476 F    </TD></TR><TR><TD> 210    </TD><TD> 12.222 F    </TD></TR></TABLE><p></p> ------------------------Article 4<p></p><p></p>   En application de l'article 2-05, paragraphe c de la convention collective, la valeur du point de formation-qualification est fixée à 13 F à partir du 1er juillet 1994.<p></p><p></p><p></p>   Article 5<p></p> L'indemnité de panier prévue à l'article 1-10 de la convention collective, est fixée à 26 F à partir du 1er juillet 1994.<p></p><font color=\"808080\"><em>   Accord étendu sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.</em></font>",
+                  "nota": "   Accord étendu sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1994-04-26 BO conventions collectives 94-23 étendu par arrêté du 27 juillet 1994 JORF 6 août 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 767318400000,
+                  "dateFin": 821750400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -103892,13 +103966,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005730102",
+              "cid": "KALISCTA000005730102",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er avril 1996",
+              "dateModif": null,
+              "dateDebut": "1996-01-16",
+              "dateFin": "1996-07-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005866911",
+                  "cid": "KALIARTI000005866911",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005730102/KALIARTI000005866911",
+                  "pathTitle": [
+                    "Salaires à compter du 1er avril 1996"
+                  ],
+                  "content": "<p></p>Vu les articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006646389&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-12 (Ab)\">L. 132-12 du code du travail</a>, et 1-16 de la convention collective,<p></p><p></p>-Les organisations patronales et syndicales de salariés soussignées décident, en conclusion de la négociation paritaire du 15 novembre, du 21 décembre 1995 et du 16 janvier 1996, de modifier les barèmes des salaires minimaux professionnels dans les conditions suivantes : <p></p>Article 1er <p></p><p></p>Les salaires minimaux garantis des ouvriers et employés sont les suivants à partir du 1er avril 1996 : <p></p>(1) COEFFICIENT. <p></p>(2) MINIMA MENSUEL garanti pour 169 heures. <p></p><p></p><TABLE><TR><TD>(1) </TD><TD>(2) </TD></TR><TR><TD>140 </TD><TD>6.250 F </TD></TR><TR><TD>145 </TD><TD>6.260 F </TD></TR><TR><TD>155 </TD><TD>6.280 F </TD></TR><TR><TD>170 </TD><TD>6.390 F </TD></TR><TR><TD>180 </TD><TD>6.500 F </TD></TR><TR><TD>190 </TD><TD>6.620 F </TD></TR><TR><TD>215 </TD><TD>6.810 F </TD></TR><TR><TD>225 </TD><TD>6.920 F </TD></TR><TR><TD>240 </TD><TD>7.300 F </TD></TR></TABLE><p></p>Article 2 <p></p><p></p>Les salaires minima garantis du personnel d'encadrement sont les suivants à partir du 1er avril 1996 : <p></p>(1) INDICE <p></p>(2) MINIMA MENSUEL GARANTI <p></p><p></p><TABLE><TR><TD>(1) </TD><TD>(2) </TD></TR><TR><TD>70 </TD><TD>7.070 F </TD></TR><TR><TD>75 </TD><TD>7.575 F </TD></TR><TR><TD>80 </TD><TD>8.080 F </TD></TR><TR><TD>85 </TD><TD>8.585 F </TD></TR><TR><TD>90 </TD><TD>9.090 F </TD></TR><TR><TD>95 </TD><TD>9.595 F </TD></TR><TR><TD>100 </TD><TD>10.100 F </TD></TR><TR><TD>110 </TD><TD>11.110 F </TD></TR><TR><TD>120 </TD><TD>12.120 F </TD></TR><TR><TD>130 </TD><TD>13.130 F </TD></TR><TR><TD>140 </TD><TD>14.140 F </TD></TR><TR><TD>160 </TD><TD>16.160 F </TD></TR><TR><TD>180 </TD><TD>18.180 F </TD></TR><TR><TD>210 </TD><TD>21.210 F </TD></TR></TABLE><p></p>Article 3 <p></p><p></p>Pour les personnels directement affectés à la vente de véhicules rémunérés par des primes et un fixe en application de l'article 6-06 de la convention collective, la partie fixe de la rémunération doit être au minimum égale au barème suivant à compter du 1er avril 1996 : <p></p><p></p>(1) COEFFICIENT. <p></p>(2) COLLABORATEURS. <p></p><p></p><TABLE><TR><TD>(1) </TD><TD>(2) </TD></TR><TR><TD>170 </TD><TD>3.834 F </TD></TR><TR><TD>180 </TD><TD>3.900 F </TD></TR><TR><TD>190 </TD><TD>3.972 F </TD></TR><TR><TD>215 </TD><TD>4.086 F </TD></TR><TR><TD>225 </TD><TD>4.152 F </TD></TR><TR><TD>240 </TD><TD>4.380 F </TD></TR></TABLE><p></p><p></p>(1) INDICE. <p></p>(2) PERSONNEL D'ENCADREMENT. <p></p><p></p><TABLE><TR><TD>(1) </TD><TD>(2) </TD></TR><TR><TD>70 </TD><TD>4.242 F </TD></TR><TR><TD>75 </TD><TD>4.545 F </TD></TR><TR><TD>80 </TD><TD>4.848 F </TD></TR><TR><TD>85 </TD><TD>5.151 F </TD></TR><TR><TD>90 </TD><TD>5.454 F </TD></TR><TR><TD>95 </TD><TD>5.757 F </TD></TR><TR><TD>100 </TD><TD>6.060 F </TD></TR><TR><TD>110 </TD><TD>6.666 F </TD></TR><TR><TD>120 </TD><TD>7.272 F </TD></TR><TR><TD>130 </TD><TD>7.878 F </TD></TR><TR><TD>140 </TD><TD>8.484 F </TD></TR><TR><TD>160 </TD><TD>9.696 F </TD></TR><TR><TD>180 </TD><TD>10.908 F </TD></TR><TR><TD>210 </TD><TD>12.726 F </TD></TR></TABLE><p></p>Article 4 <p></p><p></p>En application de l'article 2-05, paragraphe c de la convention collective, la valeur du point de formation-qualification est fixée à 13,50 F à partir du 1er avril 1996. <p></p><p></p>Article 5 <p></p><p></p>Le montant de l'indemnité de panier de nuit est fixé à 26,75 F à compter du 1er avril 1994. <p></p>Article 6 <p></p><p></p>La commission paritaire nationale se réunira au mois de juin 1996 en vue d'examiner la possibilité d'un nouvel accord de salaires qui pourrait prendre effet le 1er octobre 1996. <p></p><font color=\"808080\"><em>NOTA : Arrêté du 28 mai 1996 art. 1 : l'accord du 16 janvier 1996 est étendu sous réserve des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 28 mai 1996 art. 1 : l'accord du 16 janvier 1996 est étendu sous réserve des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1996-01-16 BO conventions collectives 96-13, étendu par arrêté du 28 mai 1996 JORF 8 juin 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-12 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-12",
+                      "articleId": "LEGIARTI000006646389",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 406080000000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 821750400000,
+                  "dateFin": 836438400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -103912,13 +104074,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005730103",
+              "cid": "KALISCTA000005730103",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er octobre 1996",
+              "dateModif": null,
+              "dateDebut": "1996-07-04",
+              "dateFin": "1997-04-24",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005866913",
+                  "cid": "KALIARTI000005866913",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005730103/KALIARTI000005866913",
+                  "pathTitle": [
+                    "Salaires au 1er octobre 1996"
+                  ],
+                  "content": "<p></p>Vu les articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006646389&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-12 (Ab)\">L. 132-12 du code du travail</a>, et 1-16 de la convention collective ; <p></p><p></p>Vu l'article 6 de l'accord \" Salaires \" du 16 janvier 1996, <p></p><p></p>les organisations patronales et syndicales de salariés soussignées décident, en conclusion de la négociation paritaire du 11 juin 1996, de modifier les barèmes des salaires minima professionnels dans les conditions suivantes : <p></p>Article 1er <p></p><p></p>Les salaires minima garantis des ouvriers et employés sont les suivants à partir du 1er octobre 1996 : <p></p><p></p><p></p>(1) = COEFFICIENT <p></p><p></p>(2) = MINIMUM MENSUEL GARANTI pour 169 heures (en francs) <p></p><p></p><TABLE><TR><TD>(1) </TD><TD>(2) </TD></TR><TR><TD>140 </TD><TD>6. 410F </TD></TR><TR><TD>145 </TD><TD>6. 420F </TD></TR><TR><TD>155 </TD><TD>6. 440F </TD></TR><TR><TD>170 </TD><TD>6. 560F </TD></TR><TR><TD>180 </TD><TD>6. 680F </TD></TR><TR><TD>190 </TD><TD>6. 800F </TD></TR><TR><TD>215 </TD><TD>7. 000F </TD></TR><TR><TD>225 </TD><TD>7. 110F </TD></TR><TR><TD>240 </TD><TD>7. 500F </TD></TR></TABLE><p></p>Article 2 <p></p><p></p>Les salaires minima garantis du personnel d'encadrement sont les suivants à partir du 1er octobre 1996 : <p></p><p></p><p></p>(1) = COEFFICIENT <p></p><p></p>(2) = MINIMUM MENSUEL GARANTI pour 169 heures (en francs) <p></p><p></p><TABLE><TR><TD>(1) </TD><TD>(2) </TD></TR><TR><TD>70 </TD><TD>7. 280F </TD></TR><TR><TD>75 </TD><TD>7. 800F </TD></TR><TR><TD>80 </TD><TD>8. 320F </TD></TR><TR><TD>85 </TD><TD>8. 840F </TD></TR><TR><TD>90 </TD><TD>9. 360F </TD></TR><TR><TD>95 </TD><TD>9. 880F </TD></TR><TR><TD>100 </TD><TD>10. 400F </TD></TR><TR><TD>110 </TD><TD>11. 440F </TD></TR><TR><TD>120 </TD><TD>12. 480F </TD></TR><TR><TD>130 </TD><TD>13. 520F </TD></TR><TR><TD>140 </TD><TD>14. 560F </TD></TR><TR><TD>160 </TD><TD>16. 640F </TD></TR><TR><TD>180 </TD><TD>18. 720F </TD></TR><TR><TD>210 </TD><TD>21. 840F </TD></TR></TABLE><p></p>Article 3 <p></p><p></p>Pour les personnels directement affectés à la vente de véhicules rémunérés par des primes et un fixe en application de l'article 6-06 de la convention collective, la partie fixe de la rémunération doit être au minimum égale au barème suivant à compter du 1er octobre 1996 : <p></p><p></p><p></p>(1) = COEFFICIENT <p></p><p></p>(2) = COLLABORATEUR partie fixe (en francs) <p></p><p></p><TABLE><TR><TD>(1) </TD><TD>(2) </TD></TR><TR><TD>170 </TD><TD>3. 936F </TD></TR><TR><TD>180 </TD><TD>4. 008F </TD></TR><TR><TD>190 </TD><TD>4. 080F </TD></TR><TR><TD>215 </TD><TD>4. 200F </TD></TR><TR><TD>225 </TD><TD>4. 266F </TD></TR><TR><TD>240 </TD><TD>4. 500F </TD></TR></TABLE><p></p><p></p><p></p>(1) = COEFFICIENT <p></p><p></p>(2) = MINIMUM MENSUEL GARANTI pour 169 heures (en francs) <p></p><p></p><TABLE><TR><TD>(1) </TD><TD>(2) </TD></TR><TR><TD>70 </TD><TD>4. 368F </TD></TR><TR><TD>75 </TD><TD>4. 680F </TD></TR><TR><TD>80 </TD><TD>4. 992F </TD></TR><TR><TD>85 </TD><TD>5. 304F </TD></TR><TR><TD>90 </TD><TD>5. 616F </TD></TR><TR><TD>95 </TD><TD>5. 928F </TD></TR><TR><TD>100 </TD><TD>6. 240F </TD></TR><TR><TD>110 </TD><TD>6. 864F </TD></TR><TR><TD>120 </TD><TD>7. 488F </TD></TR><TR><TD>130 </TD><TD>8. 112F </TD></TR><TR><TD>140 </TD><TD>8. 736F </TD></TR><TR><TD>160 </TD><TD>9. 984F </TD></TR><TR><TD>180 </TD><TD>11. 232F </TD></TR><TR><TD>210 </TD><TD>13. 104F </TD></TR></TABLE><p></p>Article 4 <p></p><p></p>En application de l'article 2-05, paragraphe c de la convention collective, la valeur du point de formation-qualification est fixée à 14,00 F à partir du 1er octobre 1996.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1996-07-04 BO conventions collectives 96-35, étendu par arrêté du 16 octobre 1996 JORF 25 octobre 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-12 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-12",
+                      "articleId": "LEGIARTI000006646389",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 406080000000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 836438400000,
+                  "dateFin": 861840000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

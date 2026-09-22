@@ -4076,13 +4076,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697777",
+              "cid": "KALISCTA000005697777",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Avenant portant fixation du salaire minimum professionnel pour les ouvriers et les mensuels.",
+              "dateModif": null,
+              "dateDebut": "1987-12-18",
+              "dateFin": "1989-01-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005785119",
+                  "cid": "KALIARTI000005785119",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005697777/KALIARTI000005785119",
+                  "pathTitle": [
+                    "Avenant portant fixation du salaire minimum professionnel pour les ouvriers et les mensuels."
+                  ],
+                  "content": "<p></p>   Entre les signataires de l'annexe n° 3 à la convention collective nationale de la ganterie de peau, réunis à Paris le 18 décembre 1987, il a été convenu ce qui suit :<p></p><p></p>   Pour tenir compte de l'évolution du coût de la vie, sur les bases actuellement connues, la valeur du point sera portée à 18,82 F au 1er janvier 1988, soit une augmentation de 3,50 p. 100 depuis le 1er décembre 1986.<p></p><p></p>   Sur la base mensuelle de 169 heures de travail et suivant notre accord du 23 avril 1976, le salaire horaire minimum du personnel en atelier ressortira, au 1er janvier 1988, à :<p></p><p></p>   - deuxième catégorie,  coefficient 120  27,84 F ;<p></p><p></p>   - troisième catégorie, coefficient 132  28,26 F ;<p></p><p></p>   - quatrième catégorie, coefficient 145  28,67 F ;<p></p><p></p>   - cinquième catégorie, coefficient 166  31,24 F..<p></p><p></p>    Au 1er juillet 1988, le point passera à 19,20 F, soit une augmentation de 2 p. 100.<p></p><p></p>   Pour les E.T.A.M. et cadres, les organisations syndicales décident de porter la valeur du point mensuel à 2 979 F au 1er janvier 1988    Avant de se séparer, les participants rappellent à tous les fabricants qu'une juste et équitable répartition du travail doit être effectuée entre tous les ouvriers à domicile pour une qualité de travail identique.<p></p><font color=\"808080\"><em>   NOTA : (1) Avenant étendu, sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p> puis à 3 068 F au 1er juillet 1988.<p></p></em></font>",
+                  "nota": "   NOTA : (1) Avenant étendu, sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p> puis à 3 068 F au 1er juillet 1988.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 30 1987-12-18 étendu par arrêté du 15 juin 1988 JORF 26 juin 1988",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 566784000000,
+                  "dateFin": 601171200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

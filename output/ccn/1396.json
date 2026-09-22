@@ -22332,13 +22332,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717250",
+              "cid": "KALISCTA000005717250",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Salaires minima au 1er mai 2006 et au 1er juillet 2006",
+              "dateModif": null,
+              "dateDebut": "2006-05-09",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005834902",
+                  "cid": "KALIARTI000005834902",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005717250/KALIARTI000005834902",
+                  "pathTitle": [
+                    "Salaires minima au 1er mai 2006 et au 1er juillet 2006"
+                  ],
+                  "content": "<p>1. Barème des salaires minima applicables à compter du 1er mai 2006 (En euros)</p><table><tbody><tr><td>COEFFICIENT</td><td>TAUX HORAIRE</td><td>SALAIRE MENSUEL</td></tr><tr><td></td><td></td><td>(151,67)</td></tr><tr><td>120</td><td>8,11</td><td>1 230,04</td></tr><tr><td>125</td><td>8,12</td><td>1 231,56</td></tr><tr><td>130</td><td>8,14</td><td>1 234,59</td></tr><tr><td>135</td><td>8,17</td><td>1 239,14</td></tr><tr><td>140</td><td>8,19</td><td>1 242,18</td></tr><tr><td>145</td><td>8,21</td><td>1 245,21</td></tr><tr><td>150</td><td>8,28</td><td>1 255,83</td></tr><tr><td>155</td><td>8,34</td><td>1 264,93</td></tr><tr><td>160</td><td>8,40</td><td>1 274,03</td></tr><tr><td>165</td><td>8,47</td><td>1 284,64</td></tr><tr><td>170</td><td>8,51</td><td>1 290,71</td></tr><tr><td>175</td><td>8,64</td><td>1 310,43</td></tr><tr><td>180</td><td>8,76</td><td>1 328,63</td></tr><tr><td>185</td><td>8,88</td><td>1 346,83</td></tr><tr><td>190</td><td>9,00</td><td>1 365,03</td></tr><tr><td>195</td><td>9,12</td><td>1 383,23</td></tr><tr><td>SMPG</td><td>4,59</td><td></td></tr></tbody></table><p>Décomposition pour les niveaux supérieurs Au-delà du coefficient 195, la rémunération mensuelle est calculée selon la formule suivante : SMPG x (coef./100) x 151,67 (En euros)</p><table><tbody><tr><td>COEFFICIENT</td><td>TAUX HORAIRE</td><td>SALAIRE MENSUEL</td></tr><tr><td></td><td></td><td>(151,67)</td></tr><tr><td>200</td><td>9,18</td><td>1 392,33</td></tr><tr><td>230</td><td>10,56</td><td>1 601,64</td></tr><tr><td>260</td><td>11,93</td><td>1 809,42</td></tr><tr><td>300</td><td>13,77</td><td>2 088,50</td></tr><tr><td>350</td><td>16,07</td><td>2 437,34</td></tr><tr><td>400</td><td>18,36</td><td>2 784,66</td></tr><tr><td>600</td><td>27,54</td><td>4 176,99</td></tr><tr><td>700</td><td>32,13</td><td>4 873,16</td></tr></tbody></table><p>Les majorations pour heures supplémentaires ne sont pas prises en compte pour l'appréciation du respect des minima. 2. Barème des salaires minima applicables à compter du 1er juillet 2006 (En euros)</p><table><tbody><tr><td>COEFFICIENT</td><td>TAUX HORAIRE</td><td>SALAIRE MENSUEL</td></tr><tr><td></td><td></td><td>(151,67)</td></tr><tr><td>120</td><td>8,17</td><td>1 239,14</td></tr><tr><td>125</td><td>8,18</td><td>1 240,66</td></tr><tr><td>130</td><td>8,20</td><td>1 243,69</td></tr><tr><td>135</td><td>8,23</td><td>1 248,24</td></tr><tr><td>140</td><td>8,25</td><td>1 251,28</td></tr><tr><td>145</td><td>8,28</td><td>1 255,83</td></tr><tr><td>150</td><td>8,35</td><td>1 266,44</td></tr><tr><td>155</td><td>8,41</td><td>1 275,54</td></tr><tr><td>160</td><td>8,47</td><td>1 284,64</td></tr><tr><td>165</td><td>8,54</td><td>1 295,26</td></tr><tr><td>170</td><td>8,60</td><td>1 304,36</td></tr><tr><td>175</td><td>8,72</td><td>1 322,56</td></tr><tr><td>180</td><td>8,84</td><td>1 340,76</td></tr><tr><td>185</td><td>8,96</td><td>1 358,96</td></tr><tr><td>190</td><td>9,09</td><td>1 378,68</td></tr><tr><td>195</td><td>9,21</td><td>1 396,88</td></tr><tr><td>SMPG</td><td>4,62</td><td></td></tr></tbody></table><p>Décomposition pour les niveaux supérieurs Au-delà du coefficient 195, la rémunération mensuelle est calculée selon la formule suivante : SMPG x (coef./100) x 151,67 (En euros)</p><table><tbody><tr><td>COEFFICIENT</td><td>TAUX HORAIRE</td><td>SALAIRE MENSUEL</td></tr><tr><td></td><td></td><td>(151,67)</td></tr><tr><td>200</td><td>9,24</td><td>1 401,43</td></tr><tr><td>230</td><td>10,63</td><td>1 612,25</td></tr><tr><td>260</td><td>12,01</td><td>1 821,56</td></tr><tr><td>300</td><td>13,86</td><td>2 102,15</td></tr><tr><td>350</td><td>16,17</td><td>2 452,50</td></tr><tr><td>400</td><td>18,48</td><td>2 802,86</td></tr><tr><td>600</td><td>27,72</td><td>4 204,29</td></tr><tr><td>700</td><td>32,34</td><td>4 905,01</td></tr></tbody></table><p>Les majorations pour heures supplémentaires ne sont pas prises en compte pour l'appréciation du respect des minima.</p><p>Si le montant du SMIC applicable à compter du 1er juillet 2006 venait à dépasser 8,17 Euros, les parties au présent accord sont convenues d'étudier lors d'une réunion programmée le 14 septembre 2006 les conditions dans lesquelles des ajustements seraient apportés.</p><p>Les parties au présent accord ont par ailleurs décidé que la commission paritaire restreinte devra conduire une réflexion sur :<br/>\n- l'abandon du SMPG ;<br/>\n- \" l'aération \" de la grille des minima ;<br/>\n- le nombre des coefficients.</p><p><font color=\"808080\"><em>Avenant étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance (arrêté du 23 octobre 2006, art. 1er). </em></font></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 73 2006-05-09 BO conventions collectives 2006-25 étendu par arrêté du 23 octobre 2006 JORF 3 novembre 2006",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1147132800000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -22352,13 +22426,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717251",
+              "cid": "KALISCTA000005717251",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Barème des minima applicables au 1er novembre 2006",
+              "dateModif": null,
+              "dateDebut": "2006-11-08",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005834904",
+                  "cid": "KALIARTI000005834904",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005717251/KALIARTI000005834904",
+                  "pathTitle": [
+                    "Barème des minima applicables au 1er novembre 2006"
+                  ],
+                  "content": "<p></p>   Suite aux négociations intervenues entre les précités, il a été convenu ce qui suit :<p></p> Article 1er<p></p> Clauses de revoyure<p></p><p></p>   Les parties étaient convenues, lors des négociations du 10 avril 2006, de se réunir ce jour afin d'analyser l'évolution de l'indice des ménages urbains dont le chef est ouvrier ou employé (hors tabac) tel qu'il se présente fin septembre 2006. Cet indice se situe à 1,4 % pour la période concernée. Les augmentations salariales intervenues au cours de la négociation du 10 avril 2006 s'échelonnaient entre 1,73 % et 2,02 %. En conséquence, la clause de revoyure n'a donc pas à s'appliquer au cas présent.<p></p><p></p>   Dans notre accord du 10 avril 2006, nous étions convenus de procéder, dans la mesure du possible, à une \" aération \" de la grille des minima en prenant l'engagement de rétablir dans les 3 ans un écart de 15 % entre le coefficient 120 et le coefficient 195, toutes choses étant égales par ailleurs, et notamment le niveau des minima sociaux tels que définis par le gouvernement au 1er juillet de chaque année.<p></p><p></p>   Or, en raison de la fixation du SMIC à 8,27 Euros de l'heure, cet engagement de 3 ans n'est plus raisonnablement envisageable et fera l'objet d'une nouvelle définition au cours de négociations ultérieures.<p></p><p></p>   Cependant, malgré cette augmentation \" surprise \" du SMIC, le syndicat des fabricants d'aliments conservés de Bretagne ouest-atlantique, désireux de prouver sa volonté de poursuivre cet objectif d'aération de la grille, et le syndicat de l'alimentation CFDT se sont accordés sur le barème des minima suivant.<p></p><p></p>   Barème des minima applicables au 1er novembre 2006<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD> NIVEAU </TD><TD> COEFFICIENT </TD><TD> TAUX HORAIRES </TD><TD>    REMUNERATION TOTALE </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>       (taux horaire    </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>        x 151,67 h)     </TD></TR><TR><TD></TD><TD>    120      </TD><TD>     8,27      </TD><TD>        1 254,31        </TD></TR><TR><TD></TD><TD>    125      </TD><TD>     8,28      </TD><TD>        1 255,83        </TD></TR><TR><TD>   I    </TD><TD>    130      </TD><TD>     8,30      </TD><TD>        1 258,86        </TD></TR><TR><TD></TD><TD>    135      </TD><TD>     8,32      </TD><TD>        1 261,89        </TD></TR><TR><TD></TD><TD>    140      </TD><TD>     8,34      </TD><TD>        1 264,93        </TD></TR><TR><TD></TD><TD>    145      </TD><TD>     8,36      </TD><TD>        1 267,96        </TD></TR><TR><TD></TD><TD>    150      </TD><TD>     8,41      </TD><TD>        1 275,54        </TD></TR><TR><TD>  II    </TD><TD>    155      </TD><TD>     8,48      </TD><TD>        1 286,16        </TD></TR><TR><TD></TD><TD>    160      </TD><TD>     8,56      </TD><TD>        1 298,30        </TD></TR><TR><TD></TD><TD>    165      </TD><TD>     8,65      </TD><TD>        1 311,95        </TD></TR><TR><TD></TD><TD>    170      </TD><TD>     8,77      </TD><TD>        1 330,15        </TD></TR><TR><TD></TD><TD>    175      </TD><TD>     8,89      </TD><TD>        1 348,35        </TD></TR><TR><TD>  III   </TD><TD>    180      </TD><TD>     9,01      </TD><TD>        1 366,55        </TD></TR><TR><TD></TD><TD>    185      </TD><TD>     9,13      </TD><TD>        1 384,75        </TD></TR><TR><TD></TD><TD>    190      </TD><TD>     9,26      </TD><TD>        1 404,46        </TD></TR><TR><TD></TD><TD>    195      </TD><TD>     9,38      </TD><TD>        1 422,66        </TD></TR></TABLE><p></p> Article 2 Formalités de dépôts. - Publicité<p></p>   Le texte du présent accord sera déposé au secrétariat du greffe du conseil de prud'hommes du lieu de conclusion (Quimper) et aux services centraux du ministère chargé du travail (en 2 exemplaires, une version sur support papier et une version sur support électronique), conformément aux dispostions du code du travail.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Clause de revoyure 2006-11-08 BO conventions collectives 2007-3",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1162944000000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -22372,13 +22520,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717252",
+              "cid": "KALISCTA000005717252",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des minima applicables au 1er avril 2006 et 1er juillet 2006",
+              "dateModif": null,
+              "dateDebut": "2006-04-10",
+              "dateFin": "2007-03-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005834905",
+                  "cid": "KALIARTI000005834905",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005717252/KALIARTI000005834905",
+                  "pathTitle": [
+                    "Barème des minima applicables au 1er avril 2006 et 1er juillet 2006"
+                  ],
+                  "content": "<p></p>Suite aux négociations intervenues entre les précités, il a été convenu ce qui suit : <p></p>Article 1er <p></p><p></p>L'évolution des salaires minima pour l'année 2006 se fera en 2 augmentations qui interviendront le 1er avril et le 1er juillet 2006. <p></p><p></p>Barème des minima applicables au 1er avril 2006 <p></p><p></p>(En euros) <p></p><TABLE><TR><TD>NIVEAU </TD><TD>COEFFICIENT </TD><TD>TAUX HORAIRE </TD><TD>REMUNERATION TOTALE </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>(taux horaire </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>x 151,67 h) </TD></TR><TR><TD></TD><TD>120 </TD><TD>8,11 </TD><TD>1 230,04 </TD></TR><TR><TD></TD><TD>125 </TD><TD>8,12 </TD><TD>1 231,56 </TD></TR><TR><TD>I </TD><TD>130 </TD><TD>8,15 </TD><TD>1 236,11 </TD></TR><TR><TD></TD><TD>135 </TD><TD>8,17 </TD><TD>1 239,14 </TD></TR><TR><TD></TD><TD>140 </TD><TD>8,19 </TD><TD>1 242,18 </TD></TR><TR><TD></TD><TD>145 </TD><TD>8,23 </TD><TD>1 248,24 </TD></TR><TR><TD></TD><TD>150 </TD><TD>8,30 </TD><TD>1 258,86 </TD></TR><TR><TD>II </TD><TD>155 </TD><TD>8,38 </TD><TD>1 270,99 </TD></TR><TR><TD></TD><TD>160 </TD><TD>8,45 </TD><TD>1 281,61 </TD></TR><TR><TD></TD><TD>165 </TD><TD>8,54 </TD><TD>1 295,26 </TD></TR><TR><TD></TD><TD>170 </TD><TD>8,67 </TD><TD>1 314,98 </TD></TR><TR><TD></TD><TD>175 </TD><TD>8,78 </TD><TD>1 331,66 </TD></TR><TR><TD>III </TD><TD>180 </TD><TD>8,90 </TD><TD>1 349,86 </TD></TR><TR><TD></TD><TD>185 </TD><TD>9,01 </TD><TD>1 366,55 </TD></TR><TR><TD></TD><TD>190 </TD><TD>9,14 </TD><TD>1 386,26 </TD></TR><TR><TD></TD><TD>195 </TD><TD>9,26 </TD><TD>1 404,46 </TD></TR></TABLE><p></p><p></p>Barème des minima applicables au 1er juillet 2006 <p></p><p></p>(En euros) <p></p><TABLE><TR><TD>NIVEAU </TD><TD>COEFFICIENT </TD><TD>TAUX HORAIRE </TD><TD>REMUNERATION TOTALE </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>(taux horaire </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>x 151,67 h) </TD></TR><TR><TD></TD><TD>120 </TD><TD>8,18 </TD><TD>1 240,66 </TD></TR><TR><TD></TD><TD>125 </TD><TD>8,19 </TD><TD>1 242,18 </TD></TR><TR><TD>I </TD><TD>130 </TD><TD>8,21 </TD><TD>1 245,21 </TD></TR><TR><TD></TD><TD>135 </TD><TD>8,24 </TD><TD>1 249,76 </TD></TR><TR><TD></TD><TD>140 </TD><TD>8,27 </TD><TD>1 254,31 </TD></TR><TR><TD></TD><TD>145 </TD><TD>8,31 </TD><TD>1 260,38 </TD></TR><TR><TD></TD><TD>150 </TD><TD>8,38 </TD><TD>1 270,99 </TD></TR><TR><TD>II </TD><TD>155 </TD><TD>8,45 </TD><TD>1 281,61 </TD></TR><TR><TD></TD><TD>160 </TD><TD>8,53 </TD><TD>1 293,75 </TD></TR><TR><TD></TD><TD>165 </TD><TD>8,62 </TD><TD>1 307,40 </TD></TR><TR><TD></TD><TD>170 </TD><TD>8,74 </TD><TD>1 325,60 </TD></TR><TR><TD></TD><TD>175 </TD><TD>8,86 </TD><TD>1 343,80 </TD></TR><TR><TD>III </TD><TD>180 </TD><TD>8,98 </TD><TD>1 362,00 </TD></TR><TR><TD></TD><TD>185 </TD><TD>9,10 </TD><TD>1 380,20 </TD></TR><TR><TD></TD><TD>190 </TD><TD>9,23 </TD><TD>1 399,91 </TD></TR><TR><TD></TD><TD>195 </TD><TD>9,35 </TD><TD>1 418,11 </TD></TR></TABLE><p></p>Article 2 \" Aération \" de la grille des minima <p></p>Les parties sont convenues de procéder, dans la mesure du possible, à une \" aération \" de la grille des minima, à savoir rétablir dans les 3 ans un écart de 15 % entre le coefficient 120 et le coefficient 195. Une première étape est réalisée dès l'année 2006, et les années 2007 et 2008 permettront d'atteindre cet objectif, toute chose étant égale par ailleurs, et notamment le niveau des minima sociaux tels que définis par le gouvernement au 1er juillet de chaque année. Article 3 Contrepartie aux opérations d'habillage et de déshabillage <p></p>Aux termes des dispositions de l'article L. 214-4 du code du travail, les salariés assujettis au port d'une tenue de travail spécifique doivent pouvoir bénéficier d'une contrepartie soit sous forme de repos, soit financière. <p></p>Après avoir rappelé que ces temps d'habillage et de déshabillage ne constituaient pas du temps de travail effectif, le présent accord revalorise à compter du 1er janvier 2006 la contrepartie financière forfaitaire à 142,72 bruts annuels. <p></p>Cette contrepartie sera calculée au prorata du temps de travail effectif de chaque intéressé dans le cadre de la durée annuelle de travail en vigueur dans l'entreprise. <p></p><p></p>La présente contrepartie ne se cumule pas avec toute autre disposition ayant le même objet, instituée soit dans le cadre d'un accord d'entreprise, d'un accord d'établissement ou par le biais d'un contrat de travail, et ce quelle qu'en soit la forme (repos ou financière) à condition toutefois que les dispositions retenues prévoient une contrepartie au moins égale au montant minimum forfaitaire ci-dessus. <p></p>Article 4 <p></p>Clause de revoyure <p></p><p></p>Les parties signataires se réuniront le 8 novembre, à 14 h 30, à Quimper, pour analyser l'évolution de l'indice des ménages urbains dont le chef est ouvrier ou employé (hors tabac) tel qu'il se présente fin septembre 2006. Si celle-ci est supérieure à l'augmentation de salaire négociée au cours de la rencontre du 10 avril 2006, les partenaires définiront les conditions dans lesquelles il sera procédé aux ajustements salariaux nécessaires. <p></p>Article 5 <p></p>Formalités de dépôt.-Publicité <p></p><p></p>Le texte du présent accord sera déposé au secrétariat du greffe du conseil de prud'hommes du lieu de conclusion (Quimper) et à la DDTEFP (en 5 exemplaires), conformément aux dispositions du code du travail (<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">art. L. 132-10, alinéa 2</a>).<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2006-04-10 BO conventions collectives 2007-3",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-10 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-10",
+                      "articleId": "LEGIARTI000006647014",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1144627200000,
+                  "dateFin": 1172707200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
