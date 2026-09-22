@@ -12867,13 +12867,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005726159",
+              "cid": "KALISCTA000005726159",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er mai 1990.",
+              "dateModif": null,
+              "dateDebut": "1990-05-02",
+              "dateFin": "1990-10-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005856236",
+                  "cid": "KALIARTI000005856236",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005726159/KALIARTI000005856236",
+                  "pathTitle": [
+                    "Salaires au 1er mai 1990."
+                  ],
+                  "content": "<p></p>   NOUVELLE GRILLE DE CLASSIFICATION ET SALAIRES MINIMAUX POUR 169 HEURES MENSUELLES.<p></p><p></p>   Valeur du point: 42,80 F.<p></p><p></p><p></p>   I. - NETTOYAGE ET ENTRETIEN : <p></p><p></p>   1. Nettoyage et entretien<p></p> Coefficient 120 : 5136,00 F.<p></p><p></p><p></p>   1 a. Mêmes fonctions, plus travaux divers (aides techniques, expédition, petit matériel, courses, ramassage)<p></p> Coefficient 122 : 5221,60 F.<p></p><p></p><p></p><p></p>   II. - ACCUEIL ET SECRÉTARIAT : <p></p><p></p>   2. Dactylo ou standardiste ou accueil réception<p></p> Coefficient 123 : 5264,40 F.<p></p><p></p><p></p>   2 a. Standard plus accueil<p></p> Coefficient 125 : 5350,00 F.<p></p><p></p><p></p>   2 b. Standard plus accueil, plus participation à un travail technique<p></p> Coefficient 127 : 5435,60 F.<p></p><p></p><p></p>   3. Secrétaire-réceptionniste et notamment accueil, plus standard, plus dactylographie<p></p> Coefficient 130: 5564,00 F.<p></p><p></p><p></p>   3 a. Si en plus, l'une ou les activités suivantes :<p></p> participation à un travail technique, pratique de la sténographie, tenue de caisse et des livres recettes-dépenses<p></p><p></p> Coefficient 135 : 5778,00 F.<p></p><p></p><p></p>   4. Secrétaire médicale diplômée<p></p> Coefficient 138 : 5906,40 F.<p></p><p></p><p></p>   4 a. Mêmes fonctions plus comptabilité générale<p></p> Coefficient 143 : 6120,40 F.<p></p><p></p><p></p>   5. Secrétaire de direction<p></p> Coefficient 172 : 7361,60 F.<p></p><p></p><p></p><p></p>   III. - PERSONNEL TECHNIQUE : <p></p><p></p>   6 a. Agent des cabinets utilisant l'imagerie médicale (A.C.I.M.)<p></p> Coefficient 130 : 5564,00 F.<p></p><p></p><p></p>   6 b. Manipulateur radio ayant passé le contrôle des connaisances<p></p> Coefficient 145 : 6206,00 F.<p></p><p></p><p></p>   6 c. Manipulateur radio diplômé<p></p> Coefficient 160 : 6848,00 F.<p></p><p></p><p></p>   6 d. Responsable de service<p></p> Coefficient 175 : 7490,00 F.<p></p><p></p><p></p><p></p>   IV. - PERSONNEL SOIGNANT : <p></p><p></p>   7. Infirmière<p></p> Coefficient 165 : 7062,00 F.<p></p><p></p>   8. Kinésithérapeute<p></p> Coefficient 165 : 7062,00 F.<p></p><p></p>   9. Orthophoniste<p></p> Coefficient 165 : 7062,00 F.<p></p><p></p>   10. Orthoptiste<p></p> Coefficient 165 : 7062,00 F.<p></p><p></p>   11. Psychologue<p></p> Coefficient 165 : 7062,00 F.<p></p><p></p><p></p>   V. - PERSONNEL TECHNIQUE DES CABINETS D'ANATOMIE ET CYTOLOGIE PATHOLOGIQUES :<p></p><p></p>   12. Technicien Bac F 7, F 7' ou équivalent (arrêté du 4 novembre 1976 modifié) obligatoire, moins de deux ans d'ancienneté<p></p> Coefficient 140 : 5992,00 F.<p></p><p></p>   12 a. Technicien Bac F 7, F 7' ou équivalent (arrêté du 4  novembre 1976 modifié) obligatoire, moins de deux ans d'ancienneté Coefficient 150 : 6420,00 F.<p></p><p></p>   12 b. Technicien titulaire du B.T.S.<p></p> Coefficient 160 : 6848,00 F.<p></p><p></p>   12 c. Technicien responsable de service<p></p> Coefficient 175 : 7490,00 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 16 1990-05-02 étendu par arrêté du 28 janvier 1991 JORF 6 février 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 641606400000,
+                  "dateFin": 654739200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12887,13 +12961,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005726160",
+              "cid": "KALISCTA000005726160",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Clasification salaires au 1er octobre 1990",
+              "dateModif": null,
+              "dateDebut": "1990-10-01",
+              "dateFin": "1991-01-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005856237",
+                  "cid": "KALIARTI000005856237",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005726160/KALIARTI000005856237",
+                  "pathTitle": [
+                    "Clasification salaires au 1er octobre 1990"
+                  ],
+                  "content": "<p></p>   GRILLE DE CLASSIFICATION ET SALAIRES MINIMAUX POUR 169 HEURES MENSUELLES.<p></p><p></p>   Valeur du point : 43,22 F (soit + 1 p. 100).<p></p><p></p>   S.M.I.C. au 1er juillet 1990 : 5.286,32 F pour 169 heures.<p></p><p></p><p></p>   I. - NETTOYAGE ET ENTRETIEN : <p></p><p></p>   1. Nettoyage et entretien et, éventuellement, travaux divers (aides techniques, expédition, petit matériel, courses, ramassage)<p></p> Coefficient 122 : S.M.I.C. <p></p><p></p><p></p>   II. - ACCUEIL ET SECRETARIAT :<p></p><p></p>   2. Dactylo, standardiste, accueil réception<p></p> Coefficient 123 : 5316,00 F.<p></p><p></p><p></p>   2 a. Standard plus accueil<p></p> Coefficient 125 : 5402,50 F.<p></p><p></p><p></p>   2 b. Standard plus accueil, plus participation à un travail technique<p></p> Coefficient 127 : 5488,94 F.<p></p><p></p><p></p>   3. Secrétaire-réceptionniste et notamment accueil, plus standard, plus dactylographie<p></p> Coefficient 130: 5618,60 F.<p></p><p></p><p></p>   3 a. Si en plus, l'une ou les activités suivantes : participation à un travail technique, pratique de la sténographie, tenue de caisse et des livres recettes-dépenses<p></p> Coefficient 135 : 5834,70 F.<p></p><p></p><p></p>   4. Secrétaire médicale diplômée<p></p> Coefficient 138 : 5964,36 F.<p></p><p></p><p></p>   4 a. Mêmes fonctions plus comptabilité générale<p></p> Coefficient 143 : 6180,46 F.<p></p><p></p><p></p>   5. Secrétaire de direction<p></p> Coefficient 172 : 7433,84 F.<p></p><p></p><p></p><p></p>   III. - PERSONNEL TECHNIQUE : <p></p><p></p>   6 a. Agent des cabinets utilisant l'imagerie médicale (A.C.I.M.)<p></p> Coefficient 130 : 5618,60 F.<p></p><p></p><p></p>   6 b. Manipulateur radio ayant passé le contrôle des connaisances<p></p> Coefficient 145 : 6266,90 F.<p></p><p></p><p></p>   6 c. Manipulateur radio diplômé<p></p> Coefficient 160 : 6915,20 F.<p></p><p></p><p></p>   6 d. Responsable de service<p></p> Coefficient 175 : 7563,50 F.<p></p><p></p><p></p><p></p>   IV. - PERSONNEL SOIGNANT : <p></p><p></p>   7. Infirmière<p></p> Coefficient 165 : 7131,30 F.<p></p><p></p><p></p>   8. Kinésithérapeute<p></p> Coefficient 165 : 7131,30 F.<p></p><p></p><p></p>   9. Orthophoniste<p></p> Coefficient 165 : 7131,30 F.<p></p><p></p><p></p>   10. Orthoptiste<p></p> Coefficient 165 : 7131,30 F.<p></p><p></p><p></p>   11. Psychologue<p></p> Coefficient 165 : 7131,30 F.<p></p><p></p><p></p><p></p>   V. - PERSONNEL TECHNIQUE DES CABINETS D'ANATOMIE ET CYTOLOGIE PATHOLOGIQUES :<p></p><p></p>   12. Technicien Bac F 7, F 7' ou équivalent (arrêté du 4 novembre 1976 modifié) obligatoire, moins de deux ans d'ancienneté<p></p> Coefficient 140 : 6050,80 F.<p></p><p></p><p></p>   12 a. Technicien Bac F 7, F 7' ou équivalent (arrêté du 4 novembre 1976 modifié) obligatoire, plus de deux ans d'ancienneté Coefficient 150 : 6483,00 F.<p></p><p></p><p></p>   12 b. Technicien titulaire du B.T.S.<p></p> Coefficient 160 : 6915,20 F.<p></p><p></p><p></p>   12 c. Technicien responsable de service<p></p> Coefficient 175 : 7563,50 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 17 1990-10-10 en vigueur le 1er octobre 1990 étendu par arrêté du 28 janvier 1991 JORF 6 février 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 654739200000,
+                  "dateFin": 664070400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

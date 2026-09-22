@@ -17847,13 +17847,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005721836",
+              "cid": "KALISCTA000005721836",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Appointements mensuels minima au 1er avril et 1er octobre 1986.",
+              "dateModif": null,
+              "dateDebut": "1986-04-08",
+              "dateFin": "1990-04-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005844971",
+                  "cid": "KALIARTI000005844971",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005721836/KALIARTI000005844971",
+                  "pathTitle": [
+                    "Appointements mensuels minima au 1er avril et 1er octobre 1986."
+                  ],
+                  "content": "                         Article 1         (Appointements mensuels minima au 1er avril 1986)    a) Pour la catégorie \" Employés \", le salaire minimum de l'indice 100 est fixé à 4 200 F et la valeur du point intercalaire à 12,07 F.<p></p><p></p>   b) Pour les catégories \" Agents de maîtrise \" et \" Cadres \", la valeur du point est portée à 25,16 F.<p></p>                         Article 2         (Appointements mensuels minima au 1er octobre 1986)    a) Pour la catégorie \" Employés \", le salaire minimum de l'indice 100 est fixé à 4 260 F et la valeur du point intercalaire à 12,25 F.<p></p><p></p>   b) Pour les catégories \" Agents de maîtrise \" et \" Cadres \", la valeur du point est portée à 25,54 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Annexe n° 25 1986-04-08 étendue par arrêté du 30 juin 1986 JORF 9 juillet 1986",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 513302400000,
+                  "dateFin": 638928000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -17867,13 +17941,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005721837",
+              "cid": "KALISCTA000005721837",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Appointements mensuels minima au 1er avril 1990",
+              "dateModif": null,
+              "dateDebut": "1990-04-01",
+              "dateFin": "1990-10-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005844972",
+                  "cid": "KALIARTI000005844972",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005721837/KALIARTI000005844972",
+                  "pathTitle": [
+                    "Appointements mensuels minima au 1er avril 1990"
+                  ],
+                  "content": "<p></p>   Article 1 :<p></p><p></p>   a) Pour la catégorie Employés, le salaire minimum de l'indice 100 est fixé à 4 880 F et la valeur du point intercalaire à 13,76 F .<p></p><p></p>   b) Pour les catégories Agents de maîtrise et Cadres, la valeur du coefficient 225 est fixée à 6 509 F et la valeur du point au-dessus du coefficient 225 est de 28,55 F .<p></p><font color=\"808080\"><em>Etendu sous éserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.</em></font>",
+                  "nota": "Etendu sous éserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Annexe n° 27 1990-02-19 étendue par arrêté du 29 juin 1990 JORF 14 juillet 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 638928000000,
+                  "dateFin": 655516800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -17887,13 +18035,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005721838",
+              "cid": "KALISCTA000005721838",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Appointements mensuels minima au 1er novembre 1990",
+              "dateModif": null,
+              "dateDebut": "1990-10-10",
+              "dateFin": "1991-10-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005844973",
+                  "cid": "KALIARTI000005844973",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005721838/KALIARTI000005844973",
+                  "pathTitle": [
+                    "Appointements mensuels minima au 1er novembre 1990"
+                  ],
+                  "content": "<p></p>   Aritlce 1 :<p></p><p></p>   a) Pour la catégorie \"Employés\", la valeur des 100 premiers points est fixée à 5.000 F et la valeur du point intercalaire à 15 F .<p></p><p></p>   b) Pour la catégorie \"Agents de maîtrise\" et \"Cadres\", la valeur du point est fixée à 29 F, sauf pour le coefficient 225 dont la valeur est fixée arbitrairement à 6 850 F.<p></p><font color=\"808080\"><em>Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.</em></font>",
+                  "nota": "Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Annexe n° 28 1990-10-10 étendue par arrêté du 7 janvier 1991 JORF 17 janvier 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 655516800000,
+                  "dateFin": 687657600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

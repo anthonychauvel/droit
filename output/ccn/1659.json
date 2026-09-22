@@ -26269,13 +26269,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005699910",
+              "cid": "KALISCTA000005699910",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril, 1er mai et 1er juillet 1998.",
+              "dateModif": null,
+              "dateDebut": "1998-04-22",
+              "dateFin": "1999-04-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005791308",
+                  "cid": "KALIARTI000005791308",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005699910/KALIARTI000005791308",
+                  "pathTitle": [
+                    "Salaires au 1er avril, 1er mai et 1er juillet 1998."
+                  ],
+                  "content": "Article 1er<p></p> Evolution des barèmes de rémunérations minimales garanties<p></p><p></p>   Les barèmes de rémunération minima garanties résultant de l'avenant n° 6 du 3 avril 1997 sont remis en ordre au 1er avril 1998 conformément au tableau ci-dessous :<p></p><p></p><TABLE><TR><TD>COEFF </TD><TD> REMUNERATIONS MINIMALES </TD></TR><TR><TD></TD><TD> GARANTIES               </TD></TR><TR><TD></TD><TD>Horaire    </TD><TD>  Mensuelle  </TD></TR><TR><TD> 120  </TD><TD>  38,85    </TD><TD>    6 591    </TD></TR><TR><TD> 130  </TD><TD>  38,95    </TD><TD>    6 608    </TD></TR><TR><TD> 150  </TD><TD>  39,05    </TD><TD>    6 625    </TD></TR><TR><TD> 170  </TD><TD>  39,81    </TD><TD>    6 754    </TD></TR><TR><TD> 190  </TD><TD>  40,98    </TD><TD>    6 952    </TD></TR><TR><TD> 210  </TD><TD>  44,88    </TD><TD>    7 614    </TD></TR></TABLE><p></p><p></p><TABLE><TR><TD>COEFF </TD><TD>REMUNERATIONS MINIMALES</TD></TR><TR><TD></TD><TD>garantie mensuelle     </TD></TR><TR><TD>  220 </TD><TD>         7 851         </TD></TR><TR><TD>  240 </TD><TD>         8 391         </TD></TR><TR><TD>  250 </TD><TD>         8 649         </TD></TR><TR><TD>  270 </TD><TD>         9 208         </TD></TR><TR><TD>  300 </TD><TD>        10 002         </TD></TR><TR><TD>  330 </TD><TD>        10 879         </TD></TR><TR><TD>  360 </TD><TD>        11 779         </TD></TR><TR><TD>  400 </TD><TD>        12 717         </TD></TR><TR><TD>  500 </TD><TD>        15 640         </TD></TR><TR><TD>  600 </TD><TD>        18 767         </TD></TR><TR><TD>  800 </TD><TD>        25 002         </TD></TR></TABLE><p></p><p></p>   Les barèmes ainsi définis sont revalorisés de :<p></p>   1,5 % au 1er mai 1998. Article 2 Evolution de la rémunération forfaitaire à l'hectare<p></p>   Les barèmes de la rémunération forfaitaire à l'hectare résultant de l'avenant n° 6 du 3 avril 1997 sont revalorisés de 2 % à la date du 1er juillet 1998.A N N E X E<p></p> Rémunérations minimales garanties<p></p> (Base 169,65 heures par mois pour le barème mensuel)<p></p> Barème des rémunérations minimales garanties au 1er mai 1998<p></p><p></p><TABLE><TR><TD>COEFF </TD><TD>REMUNERATIONS MINIMALES</TD></TR><TR><TD></TD><TD>GARANTIES              </TD></TR><TR><TD></TD><TD>Horaire  </TD><TD>  Mensuelle  </TD></TR><TR><TD> 120  </TD><TD>  39,43  </TD><TD>    6 689    </TD></TR><TR><TD> 130  </TD><TD>  39,53  </TD><TD>    6 706    </TD></TR><TR><TD> 150  </TD><TD>  39,64  </TD><TD>    6 725    </TD></TR><TR><TD> 170  </TD><TD>  40,41  </TD><TD>    6 856    </TD></TR><TR><TD> 190  </TD><TD>  41,60  </TD><TD>    7 057    </TD></TR><TR><TD> 210  </TD><TD>  45,55  </TD><TD>    7 728    </TD></TR></TABLE><p></p><p></p><TABLE><TR><TD>COEFF </TD><TD>REMUNERATIONS MINIMALES</TD></TR><TR><TD></TD><TD>garantie mensuelle     </TD></TR><TR><TD>  220 </TD><TD>        7 969          </TD></TR><TR><TD>  240 </TD><TD>        8 517          </TD></TR><TR><TD>  250 </TD><TD>        8 779          </TD></TR><TR><TD>  270 </TD><TD>        9 346          </TD></TR><TR><TD>  300 </TD><TD>       10 152          </TD></TR><TR><TD>  330 </TD><TD>       11 042          </TD></TR><TR><TD>  360 </TD><TD>       11 956          </TD></TR><TR><TD>  400 </TD><TD>       12 908          </TD></TR><TR><TD>  500 </TD><TD>       15 875          </TD></TR><TR><TD>  600 </TD><TD>       19 049          </TD></TR><TR><TD>  800 </TD><TD>       25 377          </TD></TR></TABLE><p></p>Rémunération forfaitaire à l'hectare au 1er juillet 1998<p></p> (en francs)<p></p><p></p>   (1) = Retournage (en francs)<p></p><p></p>   (2) = Enroulage (en francs)<p></p><TABLE><TR><TD> ETAT   </TD><TD> Arrachage   </TD><TD> (1) </TD><TD> (2) </TD></TR><TR><TD>LINIERE </TD><TD>double</TD><TD>simple</TD><TD></TD><TD></TD></TR><TR><TD>Normal  </TD><TD> 55,62</TD><TD> 66,76</TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>Verse   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>< 30 %  </TD><TD> 89,02</TD><TD>100,14</TD><TD>55,62</TD><TD>89,02</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>Verse   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>> 30 %  </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>et      </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD><  70 % </TD><TD>111,26</TD><TD>155,78</TD><TD></TD><TD></TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 23 novembre 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 23 novembre 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 7 1998-04-22 en vigueur BO conventions collectives 98-39 étendu par arrêté du 23 novembre 1998 JORF 2 décembre 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (annexe)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 893203200000,
+                  "dateFin": 924566400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26289,13 +26363,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005699912",
+              "cid": "KALISCTA000005699912",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima garantis au 1er mai 1999.",
+              "dateModif": null,
+              "dateDebut": "1999-02-23",
+              "dateFin": "2000-11-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005791309",
+                  "cid": "KALIARTI000005791309",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005699912/KALIARTI000005791309",
+                  "pathTitle": [
+                    "Salaires minima garantis au 1er mai 1999."
+                  ],
+                  "content": "Article 1er<p></p> Evolution des barèmes de rémunérations minima garanties<p></p><p></p>   Les barèmes de rémunérations minima garanties résultant de l'avenant n° 7 du 22 avril 1998 sont remis en ordre au 1er mai 1999 conformément au tableau ci-dessous :<p></p><p></p><TABLE><TR><TD></TD><TD> REMUNERATIONS MINIMA     </TD></TR><TR><TD></TD><TD> GARANTIES                </TD></TR><TR><TD>COEFF </TD><TD>Horaires</TD><TD>   Mensuelle     </TD></TR><TR><TD></TD><TD></TD><TD>169 h  </TD><TD> 151,67 h</TD></TR><TR><TD>  120 </TD><TD>  39,83 </TD><TD>  6 730</TD><TD>    6 040</TD></TR><TR><TD>  130 </TD><TD>  39,93 </TD><TD>  6 749</TD><TD>    6 057</TD></TR><TR><TD>  150 </TD><TD>  40,10 </TD><TD>  6 767</TD><TD>    6 073</TD></TR><TR><TD>  170 </TD><TD>  40,90 </TD><TD>  6 897</TD><TD>    6 190</TD></TR><TR><TD>  190 </TD><TD>  42,60 </TD><TD>  7 200</TD><TD>    6 462</TD></TR></TABLE><p></p><p></p> :---------------------------------:<p></p><TABLE><TR><TD></TD><TD> REMUNERATIONS MINIMA     </TD></TR><TR><TD></TD><TD> GARANTIES MENSUELLES     </TD></TR><TR><TD>COEFF </TD><TD>      169 h  </TD><TD>  151,67 h  </TD></TR><TR><TD>  220 </TD><TD>     8 000   </TD><TD>   7 180    </TD></TR><TR><TD>  240 </TD><TD>     8 550   </TD><TD>   7 674    </TD></TR><TR><TD>  250 </TD><TD>     8 800   </TD><TD>   7 898    </TD></TR><TR><TD>  270 </TD><TD>     9 400   </TD><TD>   8 437    </TD></TR><TR><TD>  300 </TD><TD>    10 250   </TD><TD>   9 244    </TD></TR><TR><TD>  330 </TD><TD>    11 050   </TD><TD>   9 917    </TD></TR><TR><TD>  360 </TD><TD>    12 000   </TD><TD>  10 770    </TD></TR><TR><TD>  400 </TD><TD>    13 000   </TD><TD>  11 667    </TD></TR><TR><TD>  500 </TD><TD>    15 900   </TD><TD>  14 270    </TD></TR><TR><TD>  600 </TD><TD>    19 050   </TD><TD>  17 097    </TD></TR><TR><TD>  800 </TD><TD>    25 380   </TD><TD>  22 778    </TD></TR></TABLE><p></p><p></p>   Seuls les salariés des entreprises qui anticipent la réduction du temps de travail et à compter du 1er janvier 2000, les salariés des entreprises de plus de 20 salariés sont concernés par les rémunérations minima garanties mensuelles basées sur 151,67 heures. Il convient de se reporter également à l'avenant n° 8 à la convention collective qui prévoit les conditions de maintien du salaire lors du passage aux 35 heures.<p></p>   Les barèmes ainsi définis sont revalorisés de : 1 % au 1er mai 1999. Article 2 Evolution de la rémunération forfaitaire à l'hectare<p></p>   Les barèmes de la rémunération forfaitaire à l'hectare résultant de l'avenant n° 7 du 22 avril 1998 sont revalorisés de 2 % à la date du 1er juillet 1999.ANNEXE<p></p> relative aux rémunérations minima garanties<p></p> Barème des rémunérations minima garanties<p></p> (au 1er mai 1999)<p></p><p></p><TABLE><TR><TD></TD><TD> REMUNERATIONS MINIMA     </TD></TR><TR><TD></TD><TD> GARANTIES                </TD></TR><TR><TD>COEFF </TD><TD>Horaires</TD><TD>   Mensuelle     </TD></TR><TR><TD></TD><TD></TD><TD>169 h  </TD><TD> 151,67 h</TD></TR><TR><TD> 120  </TD><TD>  40,22 </TD><TD>  6 798</TD><TD>    6 101</TD></TR><TR><TD> 130  </TD><TD>  40,33 </TD><TD>  6 816</TD><TD>    6 117</TD></TR><TR><TD> 150  </TD><TD>  40,50 </TD><TD>  6 835</TD><TD>    6 134</TD></TR><TR><TD> 170  </TD><TD>  41,31 </TD><TD>  6 967</TD><TD>    6 252</TD></TR><TR><TD> 190  </TD><TD>  43,03 </TD><TD>  7 273</TD><TD>    6 527</TD></TR></TABLE><p></p><p></p><TABLE><TR><TD></TD><TD> REMUNERATIONS MINIMA     </TD></TR><TR><TD></TD><TD> GARANTIES MENSUELLES     </TD></TR><TR><TD>COEFF </TD><TD>      169 h  </TD><TD>  151,67 h  </TD></TR><TR><TD>  220 </TD><TD>      8 080  </TD><TD>     7 252  </TD></TR><TR><TD>  240 </TD><TD>      8 636  </TD><TD>     7 751  </TD></TR><TR><TD>  250 </TD><TD>      8 888  </TD><TD>     7 977  </TD></TR><TR><TD>  270 </TD><TD>      9 494  </TD><TD>     8 521  </TD></TR><TR><TD>  300 </TD><TD>     10 353  </TD><TD>     9 337  </TD></TR><TR><TD>  330 </TD><TD>     11 161  </TD><TD>    10 017  </TD></TR><TR><TD>  360 </TD><TD>     12 120  </TD><TD>    10 878  </TD></TR><TR><TD>  400 </TD><TD>     13 130  </TD><TD>    11 784  </TD></TR><TR><TD>  500 </TD><TD>     16 059  </TD><TD>    14 413  </TD></TR><TR><TD>  600 </TD><TD>     19 241  </TD><TD>    17 268  </TD></TR><TR><TD>  800 </TD><TD>     25 634  </TD><TD>    23 006  </TD></TR></TABLE><p></p><p></p>    Seuls les salariés des entreprises qui anticipent la réduction du temps de travail et à compter du 1er janvier 2000, les salariés des entreprises de plus de 20 salariés sont concernés par les rémunérations minima garanties mensuelles basées sur 151,67 heures. Il convient de se reporter également à l'avenant n° 8 à la convention collective qui prévoit les conditions de maintien du salaire lors du passage aux 35 heures.<p></p><p></p>   Avenant n° 8 du 20 avril 1999.<p></p><p></p> Rémunération forfaitaire à l'hectare au 1er juillet 1998<p></p> (en francs)<p></p><p></p>   (1) = Retournage (en francs)<p></p><p></p>   (2) = Enroulage (en francs)<p></p><TABLE><TR><TD> ETAT   </TD><TD> Arrachage   </TD><TD> (1) </TD><TD> (2) </TD></TR><TR><TD>LINIERE </TD><TD>double</TD><TD>simple</TD><TD></TD><TD></TD></TR><TR><TD>Normal  </TD><TD>  57  </TD><TD>  69  </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>Verse   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>< 30 %  </TD><TD>  91  </TD><TD> 103  </TD><TD>  57 </TD><TD>  91 </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>Verse   </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>> 30 %  </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>et      </TD><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD><  70 % </TD><TD> 114  </TD><TD> 159  </TD><TD></TD><TD></TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 4 août 1999 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 4 août 1999 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 8 1999-02-23 BO conventions collectives 99-18 étendu par arrêté du 4 août 1999 JORF 8 août 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (annexe)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 919728000000,
+                  "dateFin": 973814400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26309,13 +26457,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005699913",
+              "cid": "KALISCTA000005699913",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima garantis au 1er avril 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-04-25",
+              "dateFin": "2001-04-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005791310",
+                  "cid": "KALIARTI000005791310",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005699913/KALIARTI000005791310",
+                  "pathTitle": [
+                    "Salaires minima garantis au 1er avril 2000."
+                  ],
+                  "content": "Article 1er<p></p> Evolution des barèmes de rémunérations minima garanties<p></p><p></p>   Les barèmes de rémunération minima garanties résultant de l'avenant n° 8 du 22 avril 1999 sont remis en ordre au 1er avril 2000 conformément au tableau ci-dessous :<p></p><p></p><TABLE><TR><TD></TD><TD> REMUNERATIONS MINIMA     </TD></TR><TR><TD></TD><TD> GARANTIES                </TD></TR><TR><TD>COEFF </TD><TD>Horaires</TD><TD>   Mensuelle     </TD></TR><TR><TD></TD><TD></TD><TD>169 h  </TD><TD> 151,67 h</TD></TR><TR><TD>  120 </TD><TD> 40,32  </TD><TD> 6 814 </TD><TD> 6 116   </TD></TR><TR><TD>  130 </TD><TD> 40,43  </TD><TD> 6 833 </TD><TD> 6 132   </TD></TR><TR><TD>  150 </TD><TD> 40,60  </TD><TD> 6 861 </TD><TD> 6 158   </TD></TR><TR><TD>  170 </TD><TD> 41,31  </TD><TD> 6 967 </TD><TD> 6 265   </TD></TR><TR><TD>  190 </TD><TD> 43,03  </TD><TD> 7 273 </TD><TD> 6 527   </TD></TR><TR><TD></TD><TD> REMUNERATIONS MINIMA     </TD></TR><TR><TD></TD><TD> GARANTIES                </TD></TR><TR><TD>COEFF </TD><TD>   Mensuelle     </TD></TR><TR><TD></TD><TD>169 h  </TD><TD> 151,67 h</TD></TR><TR><TD>  220 </TD><TD>  8 080</TD><TD>  7 252  </TD></TR><TR><TD>  240 </TD><TD>  8 636</TD><TD>  7 751  </TD></TR><TR><TD>  250 </TD><TD>  8 888</TD><TD>  7 977  </TD></TR><TR><TD>  270 </TD><TD>  9 494</TD><TD>  8 521  </TD></TR><TR><TD>  300 </TD><TD> 10 353</TD><TD>  9 337  </TD></TR><TR><TD>  330 </TD><TD> 11 161</TD><TD> 10 017  </TD></TR><TR><TD>  360 </TD><TD> 12 120</TD><TD> 10 878  </TD></TR><TR><TD>  400 </TD><TD> 13 130</TD><TD> 11 784  </TD></TR><TR><TD>  500 </TD><TD> 16 059</TD><TD> 14 413  </TD></TR><TR><TD>  600 </TD><TD> 19 241</TD><TD> 17 268  </TD></TR><TR><TD>  800 </TD><TD> 25 634</TD><TD> 23 006  </TD></TR></TABLE><p></p><p></p>   Seuls les salariés des entreprises qui anticipent la réduction du temps de travail et depuis le 1er février 2000, les salariés des entreprises de plus de 20 salariés sont concernés par les rémunérations minima garanties mensuelles basées sur 151,67 heures. Il convient de se reporter également à l'avenant n° 10 à la convention collective qui prévoit les conditions de maintien du salaire lors du passage aux 35 heures.<p></p>   Les barèmes ainsi définis sont revalorisés de :<p></p>   1,25 % au 1er mai 2000 ;<p></p>   0,50 % au 1er décembre 2000. Article 2 Evolution de la rémunération forfaitaire à l'hectare<p></p>   Les barèmes de la rémunération forfaitaire à l'hectare résultant de l'avenant n° 8 du 20 avril 1999 sont revalorisés de 2 % à la date du 1er juillet 2000.<p></p>   ANNEXE<p></p> Barème des rémunérations minima garanties au 1er mai 2000<p></p><p></p><TABLE><TR><TD></TD><TD> REMUNERATIONS MINIMA     </TD></TR><TR><TD></TD><TD> GARANTIES                </TD></TR><TR><TD>COEFF </TD><TD>Horaires</TD><TD>   Mensuelle     </TD></TR><TR><TD></TD><TD></TD><TD>169 h  </TD><TD> 151,67 h</TD></TR><TR><TD>  120 </TD><TD> 40,82  </TD><TD> 6 899 </TD><TD> 6 191   </TD></TR><TR><TD>  130 </TD><TD> 40,94  </TD><TD> 6 919 </TD><TD> 6 209   </TD></TR><TR><TD>  150 </TD><TD> 41,11  </TD><TD> 6 948 </TD><TD> 6 235   </TD></TR><TR><TD>  170 </TD><TD> 41,83  </TD><TD> 7 069 </TD><TD> 6 344   </TD></TR><TR><TD>  190 </TD><TD> 43,57  </TD><TD> 7 363 </TD><TD> 6 608   </TD></TR><TR><TD></TD><TD> REMUNERATIONS MINIMA     </TD></TR><TR><TD></TD><TD> GARANTIES                </TD></TR><TR><TD>COEFF </TD><TD>   Mensuelle     </TD></TR><TR><TD></TD><TD>169 h  </TD><TD> 151,67 h</TD></TR><TR><TD>  220 </TD><TD>  8 181</TD><TD>  7 342  </TD></TR><TR><TD>  240 </TD><TD>  8 744</TD><TD>  7 847  </TD></TR><TR><TD>  250 </TD><TD>  8 999</TD><TD>  8 076  </TD></TR><TR><TD>  270 </TD><TD>  9 613</TD><TD>  8 627  </TD></TR><TR><TD>  300 </TD><TD> 10 482</TD><TD>  9 407  </TD></TR><TR><TD>  330 </TD><TD> 11 301</TD><TD> 10 142  </TD></TR><TR><TD>  360 </TD><TD> 12 272</TD><TD> 11 014  </TD></TR><TR><TD>  400 </TD><TD> 13 294</TD><TD> 11 931  </TD></TR><TR><TD>  500 </TD><TD> 16 260</TD><TD> 14 593  </TD></TR><TR><TD>  600 </TD><TD> 19 482</TD><TD> 17 484  </TD></TR><TR><TD>  800 </TD><TD> 25 954</TD><TD> 23 293  </TD></TR></TABLE><p></p><p></p>   Seuls les salariés des entreprises qui anticipent la réduction du temps de travail et depuis le 1er février 2000, les salariés des entreprises de plus de 20 salariés sont concernés par les rémunérations minima garanties mensuelles basées sur 151,67 heures. Il convient de se reporter également à l'avenant n° 10 à la convention collective qui prévoit les conditions de maintien du salaire lors du passage aux 35 heures.<p></p>   ANNEXE<p></p> Barème des rémunérations minima garanties au 1er décembre 2000<p></p><p></p><TABLE><TR><TD></TD><TD> REMUNERATIONS MINIMA     </TD></TR><TR><TD></TD><TD> GARANTIES                </TD></TR><TR><TD>COEFF </TD><TD>Horaires</TD><TD>   Mensuelle     </TD></TR><TR><TD></TD><TD></TD><TD>169 h  </TD><TD> 151,67 h</TD></TR><TR><TD>  120 </TD><TD> 41,02  </TD><TD> 6 932 </TD><TD> 6 222   </TD></TR><TR><TD>  130 </TD><TD> 41,14  </TD><TD> 6 953 </TD><TD> 6 240   </TD></TR><TR><TD>  150 </TD><TD> 41,32  </TD><TD> 6 983 </TD><TD> 6 267   </TD></TR><TR><TD>  170 </TD><TD> 42,04  </TD><TD> 7 105 </TD><TD> 6 376   </TD></TR><TR><TD>  190 </TD><TD> 43,79  </TD><TD> 7 401 </TD><TD> 6 642   </TD></TR><TR><TD></TD><TD> REMUNERATIONS MINIMA     </TD></TR><TR><TD></TD><TD> GARANTIES                </TD></TR><TR><TD>COEFF </TD><TD>   Mensuelle     </TD></TR><TR><TD></TD><TD>169 h  </TD><TD> 151,67 h</TD></TR><TR><TD>  220 </TD><TD>  8 222</TD><TD>  7 379  </TD></TR><TR><TD>  240 </TD><TD>  8 788</TD><TD>  7 887  </TD></TR><TR><TD>  250 </TD><TD>  9 044</TD><TD>  8 117  </TD></TR><TR><TD>  270 </TD><TD>  9 661</TD><TD>  8 670  </TD></TR><TR><TD>  300 </TD><TD> 10 534</TD><TD>  9 454  </TD></TR><TR><TD>  330 </TD><TD> 11 358</TD><TD> 10 193  </TD></TR><TR><TD>  360 </TD><TD> 12 333</TD><TD> 11 068  </TD></TR><TR><TD>  400 </TD><TD> 13 360</TD><TD> 11 990  </TD></TR><TR><TD>  500 </TD><TD> 16 341</TD><TD> 14 665  </TD></TR><TR><TD>  600 </TD><TD> 19 579</TD><TD> 17 571  </TD></TR><TR><TD>  800 </TD><TD> 26 084</TD><TD> 23 409  </TD></TR></TABLE><p></p><p></p>   Seuls les salariés des entreprises qui anticipent la réduction du temps de travail et depuis le 1er février 2000, les salariés des entreprises de plus de 20 salariés sont concernés par les rémunérations minimales garanties mensuelles basées sur 151,67 heures. Il convient de se reporter également à l'avenant n° 10 à la convention collective qui prévoit les conditions de maintien du salaire lors du passage aux 35 heures.<p></p>   Rémunération forfaitaire à l'hectare<p></p> au 1er juillet 2000<p></p><p></p> (1) Double (en francs)<p></p> (2) Simple (en francs)<p></p> (3) RETOURNAGE (en francs)<p></p> (4) ENROULAGE (en francs<p></p><p></p><TABLE><TR><TD>  Etat de la lignière  </TD><TD> Arrachage   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> (3) </TD><TD> (4) </TD></TR><TR><TD></TD><TD> (1)  </TD><TD> (2)  </TD><TD></TD><TD></TD></TR><TR><TD>Normal                 </TD><TD> 59,00</TD><TD> 71,00</TD><TD></TD></TR><TR><TD>Verse < 30 %           </TD><TD> 93,00</TD><TD>106,00</TD><TD>59,00 93,00</TD></TR><TR><TD>Verse > 30 % et <  70 %</TD><TD>117,00</TD><TD>163,00</TD><TD></TD></TR></TABLE><p></p><font color=\"808080\"><em>NOTA : Arrêté du 6 mars 2001  art. 1 : Texte étendu sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "NOTA : Arrêté du 6 mars 2001  art. 1 : Texte étendu sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 9 2000-04-25 BO conventions collectives 2000-28 étendu par arrêté du 6 mars 2001 JORF 20 mars 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (annexe)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 956620800000,
+                  "dateFin": 987724800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

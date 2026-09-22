@@ -27766,13 +27766,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702148",
+              "cid": "KALISCTA000005702148",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juillet 1994.",
+              "dateModif": null,
+              "dateDebut": "1994-06-15",
+              "dateFin": "1995-09-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005797079",
+                  "cid": "KALIARTI000005797079",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702148/KALIARTI000005797079",
+                  "pathTitle": [
+                    "Salaires au 1er juillet 1994."
+                  ],
+                  "content": "Article 1er    Au 1er juillet 1994, les salaires minimaux conventionnels mensuels fixés par l'accord \"Salaires\" du 26 mai 1993, seront majorés :<p></p><p></p>   - de la somme nécessaire pour atteindre le niveau du S.M.I.C., aux coefficients hiérarchiques 126 et 136 ;<p></p><p></p>   - de 120 F aux coefficients hiérarchiques 141 et 143, et de 110 F aux coefficients 156 à 226.<p></p><p></p>   L'application de cette majoration s'effectuera par augmentation du salaire complémentaire, le salaire de base restant calculé sur la base de la valeur point 38,67 F - d'où le barème de rémunération suivant (salaires bruts mensuels pour un emploi à temps ou service complet, ces montants étant proratisés selon taux d'emploi) :<p></p><p></p><p></p>   Coefficient : 126<p></p> Salaire de base (valeur point 36,87 F : 4.872,42 F<p></p> Salaire complémentaire (1)<p></p> Salaire global : S.M.I.C..<p></p><p></p><p></p>   Coefficient : 136<p></p> Salaire de base (valeur point 36,87 F : 5.259,12 F<p></p> Salaire complémentaire (1)<p></p> Salaire global : S.M.I.C..<p></p><p></p><p></p>   Coefficient : 141<p></p> Salaire de base (valeur point 36,87 F : 5.452,47 F<p></p> Salaire complémentaire : 548,80 F<p></p> Salaire global : 6.001,27 F<p></p><p></p><p></p>   Coefficient : 143<p></p> Salaire de base (valeur point 36,87 F : 5.529,81 F<p></p> Salaire complémentaire : 482,50 F<p></p> Salaire global : 6.012,31 F<p></p><p></p><p></p>   Coefficient : 156<p></p> Salaire de base (valeur point 36,87 F : 6.032,52 F<p></p> Salaire complémentaire : 487,50 F<p></p> Salaire global : 6.520,02 F<p></p><p></p><p></p>   Coefficient : 161<p></p> Salaire de base (valeur point 36,87 F : 6.225,87 F<p></p> Salaire complémentaire : 487,50 F<p></p> Salaire global : 6.713,37 F<p></p><p></p><p></p>   Coefficient : 166<p></p> Salaire de base (valeur point 36,87 F : 6.419,22 F<p></p> Salaire complémentaire : 487,50 F<p></p> Salaire global : 6.906,72 F<p></p><p></p><p></p>   Coefficient : 196<p></p> Salaire de base (valeur point 36,87 F : 7.579,32 F<p></p> Salaire complémentaire : 502,50 F<p></p> Salaire global : 8.091,82 F<p></p><p></p><p></p>   Coefficient : 226<p></p> Salaire de base (valeur point 36,87 F : 8.739,42 F<p></p> Salaire complémentaire : 517,50 F<p></p> Salaire global : 9.256,92 F<p></p><p></p><p></p>   (1) Valeur nécessaire pour atteindre le niveau du S.M.I.C. (tarif horaire x 169).<p></p>Article 2<p></p><p></p>   Les valeurs au mètre carré du salaire en nature logement sont fixées au 1er juillet 1994 à 14,84 F en catégorie 1, 11,05 F en catégorie 2 et 3,64 F en catégorie 3.<p></p><p></p>   Le prix kWh (base contrat petites fournitures) étant fixé à 0,8823 F depuis le 10 mars 1994, les salaires en nature complémentaires éventuels visés à l'article 20 (dernier alinéa) et 23 (avant-dernier alinéa) de la convention s'établissent à 48,53 F pour l'électricité (55 kWh), à 81,17 F pour le gaz (92 kWh), à 105,88 F pour le chauffage (120 kWh), à 86,47 F pour l'eau chaude (98 kWh).<p></p><p></p>   Il est rappelé que la fourniture de l'eau froide ne constitue pas salaire (ou avantage) en nature.<p></p><font color=\"808080\"><em>   L'accord du 15 juin 1994 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.</em></font>",
+                  "nota": "   L'accord du 15 juin 1994 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1994-06-15 BO conventions collectives 94-26 étendu par arrêté du 10 octobre 1994 JORF 25 octobre 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 771638400000,
+                  "dateFin": 810432000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -27786,13 +27860,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702149",
+              "cid": "KALISCTA000005702149",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Gratification du 13 ème mois réglée en décembre 1995",
+              "dateModif": null,
+              "dateDebut": "1995-09-07",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005797080",
+                  "cid": "KALIARTI000005797080",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005702149/KALIARTI000005797080",
+                  "pathTitle": [
+                    "Gratification du 13 ème mois réglée en décembre 1995"
+                  ],
+                  "content": "<p align=\"center\">Article 1er </p><p>La gratification (13e mois) réglée en décembre 1995 aux salariés employés à temps complet (catégorie A) ou à service complet (catégorie B) pendant le second semestre 1995 sera (sous réserve de l'extension du présent avenant le 15 décembre 1995) majorée de :</p><p>- 750 F lorsque le salarié n'aura bénéficié par application avec effet du 1er janvier 1995 de l'avenant du 14 janvier 1994 (étendu le 19 septembre 1994) d'aucune augmentation de sa rémunération mensuelle brute, hors salaire en nature et indemnités de permanence dimanches et jours fériés ;</p><p>- 500 F lorsque cette augmentation aura été au plus égale à 2 % ;</p><p>- 250 F lorsque l'augmentation aura été comprise entre 2 % et 4 % (aucune majoration n'étant due en cas d'augmentation supérieure à 4 %).</p><p>Cette majoration sera, pour les salariés à temps partiel (catégorie A) ou à service permanent et partiel (catégorie B), acquise proportionnellement à leur taux d'emploi (défini à l'article 22.2 de la convention collective nationale).</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 34-1 1995-09-07 BO conventions collectives 95-40, étendu par arrêté du 30 novembre 1995 JORF 12 décembre 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 810432000000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -27826,13 +27974,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702151",
+              "cid": "KALISCTA000005702151",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaire complémentaire au 1er mai et au 1er juillet 1996 et prime exceptionnelle, modification de l'annexe II.",
+              "dateModif": null,
+              "dateDebut": "1996-06-20",
+              "dateFin": "1996-10-02",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005797082",
+                  "cid": "KALIARTI000005797082",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702151/KALIARTI000005797082",
+                  "pathTitle": [
+                    "Salaire complémentaire au 1er mai et au 1er juillet 1996 et prime exceptionnelle, modification de l'annexe II."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur minimale du salaire complémentaire défini au paragraphe 1° b de l'article 22 de la convention collective, au niveau 1 (coefficient hiérarchique 235) pour un emploi à temps complet (catégorie A) ou à service complet (catégorie B), fixée à 1 225,32 F au 1er janvier 1996, est portée à :<p></p><p></p>   1.350,38 F au 1er mai 1996 ;<p></p><p></p>   1.382,49 F au 1er juillet 1996.<p></p><p></p> Article 2<p></p><p></p>   Tout salarié présent à la date de publication au Journal officiel de l'arrêté d'extension du présent accord (en principe courant octobre 1996) percevra avec la paie du mois en cours (ou du mois suivant, si cette date est postérieure à la date habituelle d'arrêté des écritures de paie), une prime exceptionnelle égale à 1 p. 100 par mois de présence pendant la période du 1er janvier au 31 octobre 1996 (soit 10 p. 100 pour une présence complète pendant cette période) du salaire de base défini au paragraphe 1° a de l'article 22 de la convention et fixé par l'avenant n° 34-2 du 7 septembre 1995, proraté selon taux d'emploi comme prévu au paragraphe 2° a du même article 22, acquis au 1er octobre 1996.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 36 1996-06-20 BO conventions collectives 96-30, étendu par arrêté du 4 octobre 1996 JORF 16 octobre 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 835228800000,
+                  "dateFin": 844214400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

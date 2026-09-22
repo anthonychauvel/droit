@@ -10643,13 +10643,109 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005700557",
+              "cid": "KALISCTA000005700557",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "ACCORD SALAIRES DU 26 OCTOBRE 1993",
+              "dateModif": null,
+              "dateDebut": "1993-10-26",
+              "dateFin": "1994-11-08",
+              "sectionConsultee": false,
+              "sections": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALISCTA000005739320",
+                  "cid": "KALISCTA000005739320",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "title": "Augmentation de la valeur du point au 1er novembre 1993.",
+                  "dateModif": null,
+                  "dateDebut": "1993-10-26",
+                  "dateFin": "1994-11-08",
+                  "sectionConsultee": false,
+                  "sections": [],
+                  "articles": [
+                    {
+                      "executionTime": 0,
+                      "dereferenced": false,
+                      "id": "KALIARTI000005792847",
+                      "cid": "KALIARTI000005792847",
+                      "intOrdre": 42949,
+                      "etat": "ABROGE",
+                      "num": null,
+                      "path": "/KALISCTA000005700557/KALISCTA000005739320/KALIARTI000005792847",
+                      "pathTitle": [
+                        "ACCORD SALAIRES DU 26 OCTOBRE 1993",
+                        "Augmentation de la valeur du point au 1er novembre 1993."
+                      ],
+                      "content": "<p></p>   Dans la poursuite de l'accord salarial signé le 13 janvier 1993, au titre de l'année 1993, il est conclu entre le syndicat national des entreprises de logistique de publicité directe et les organisations syndicales signataires de la convention nationale des entreprises de logistique de publicité directe une augmentation de la valeur du point de 1,2 p. 100 au 1er novembre 1993, soit 0,3385.<p></p><p></p>   D'autre part, conformément aux termes de l'accord du treizième mois et pour répondre à l'engagement pris par le S.N.E.L.P.D. de maintenir en tout état de cause le pouvoir d'achat pour 1993,<p></p><p></p>   les parties signataires conviennent qu'une prochaine réunion se tiendra au plus tard le 15 février 1994 pour faire le bilan de l'accord et fixer le réajustement éventuel.<p></p>",
+                      "nota": null,
+                      "comporteLiens": false,
+                      "comporteLiensSP": false,
+                      "modificatorTitle": null,
+                      "modificatorCid": null,
+                      "modificatorDate": null,
+                      "articleVersion": "1.0",
+                      "type": null,
+                      "lstLienModification": [
+                        {
+                          "textCid": "",
+                          "textTitle": "Accord 1993-10-26 étendu par arrêté du 24 février 1994 JORF 8 mars 1994",
+                          "linkType": "CREATION",
+                          "linkOrientation": "source",
+                          "articleNum": "",
+                          "articleId": "",
+                          "natureText": "",
+                          "datePubliTexte": null,
+                          "dateSignaTexte": null,
+                          "dateDebutCible": null
+                        }
+                      ],
+                      "lstLienCitation": [],
+                      "conditionDiffere": null,
+                      "historique": null,
+                      "surtitre": "SALAIRES",
+                      "renvoi": null,
+                      "versionLabel": null,
+                      "infosComplementaires": null,
+                      "infosComplementairesHtml": null,
+                      "infosRestructurationBranche": null,
+                      "infosRestructurationBrancheHtml": null,
+                      "dateDebut": 751593600000,
+                      "dateFin": 784252800000,
+                      "notaSectionsAafficher": null,
+                      "multipleVersions": false
+                    }
+                  ],
+                  "commentaire": null,
+                  "renvoi": "",
+                  "renvoiNum": "",
+                  "notaHtml": null,
+                  "notaSectionsAafficher": []
+                }
+              ],
+              "articles": [],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12297,13 +12393,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005700572",
+              "cid": "KALISCTA000005700572",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Salaires et valeur du point au 1er janvier 2001",
+              "dateModif": null,
+              "dateDebut": "2001-01-15",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005792875",
+                  "cid": "KALIARTI000005792875",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005700572/KALIARTI000005792875",
+                  "pathTitle": [
+                    "Salaires et valeur du point au 1er janvier 2001"
+                  ],
+                  "content": "<p>Une revalorisation des minima mensuels conventionnels :</p><p>+ 1,5 % au 1er janvier 2001 portant la valeur du point à 0,3672.</p><p>Revalorisation du salaire minimum mensuel d'embauche qui ne pourra être inférieur, à compter du 1er janvier 2001, au SMIC mensuel base 35 heures majoré de 1,5 %.</p><p>Octroi d'une prime exceptionnelle de 1 000 francs, payable au plus tard en mai 2001 étant entendu que cette prime exceptionnelle ne peut pas être cumulée avec une prime déjà versée par l'entreprise au titre d'un rattrapage de salaire et/ou une augmentation de salaire globale annuelle pour l'année 2001 supérieure à 1,5 % plus 1 000 francs.</p><p><font color=\"#808080\" size=\"1\"><em>(1) Dispositions étendues sous réserve de l'application de l'article 32 (paragraphes I et II) de la loi n° 2000-37 du 19 janvier 2000 (arrêté du 19 juin 2001, art. 1er).</em></font></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2001-01-15 BO conventions collectives 2001-5 étendu par arrêté du 19 juin 2001 JORF 30 juin 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires (1)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 979516800000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12317,13 +12487,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005700573",
+              "cid": "KALISCTA000005700573",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Grille des salaires minima mensuels relatif à l'intégration du complément RTT",
+              "dateModif": null,
+              "dateDebut": "2001-04-25",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005792876",
+                  "cid": "KALIARTI000005792876",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005700573/KALIARTI000005792876",
+                  "pathTitle": [
+                    "Grille des salaires minima mensuels relatif à l'intégration du complément RTT"
+                  ],
+                  "content": "<p>Le principe suivant concernant le mécanisme de l'intégration du complément RTT dans le salaire de base.</p><p>Pour ajuster les nouvelles évolutions, les parties acceptant une intégration du complément RTT sur la base d'une dégressivité de 20 % par an conformément au tableau ci-dessous.</p><p><table><tbody><tr><td>PÉRIODE </td><td>SALAIRE MENSUEL</td><td>COMPLEMENT</td><td>DÉGRESSIVITÉ</td></tr><tr><td></td><td>de base </td><td>RATIO </td><td>taux intégration </td></tr><tr><td></td><td>(ratio 1) </td><td>(ratio 2) </td><td>RTT </td></tr><tr><td>Janvier 2001</td><td>89,98 % </td><td>10,12 % </td><td>100 % </td></tr><tr><td>Mai 2001</td><td>91,90 % </td><td>8,10 % </td><td>80 % </td></tr><tr><td>Mai 2002</td><td>93,93 % </td><td>6,07 % </td><td>60 % </td></tr><tr><td>Mai 2003</td><td>95,95 % </td><td>4,05 % </td><td>40 % </td></tr><tr><td>Mai 2004</td><td>97,98 % </td><td>2,02 % </td><td>20 % </td></tr><tr><td>Mai 2005</td><td>100 % </td><td>0,00 % </td><td>0 % </td></tr><tr><td>Ratio 1, représente la part du salaire de base par rapport au</td></tr><tr><td>total de la rémunération.</td></tr><tr><td></td></tr><tr><td>Ratio 2, représente la part du complément RTT par rapport au </td></tr><tr><td>total de la rémunération.</td></tr><tr><td></td></tr></tbody></table></p><p>Exemple : mai 2001 agent production 1er échelon :</p><p>Le salaire horaire par rapport au salaire mensuel de base est égal au total de la rémunération divisé par 151,66 heures et multiplié par le ratio 1,</p><p>soit :</p><p>7 311,67 F / 151,66 x 91,90 % = 44,31 F</p><p>Le salaire mensuel de base est égal au salaire horaire multiplié par 151,66 heures,</p><p>soit : 44,31 F x 151,66 = 6 720,05 F</p><p>Le complément RTT est égal au total de la rémunération moins le salaire mensuel de base,</p><p>soit : 7 311,67 - 6 720,05 F = 591,62 F</p><p><table><tbody><tr><td></td><td></td><td>SALAIRE</td><td>SALAIRE</td><td>COMPLÉMENT</td><td></td></tr><tr><td></td><td></td><td>horaire</td><td>MENSUEL</td><td>RTT </td><td></td></tr><tr><td>QUALIFICATION </td><td>COEF.</td><td></td><td>de base </td><td></td><td></td></tr><tr><td></td><td></td><td>(En Francs) </td><td></td></tr><tr><td>Agent de prod.</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Agent de prod.</td><td>118 </td><td>44,31 </td><td>6 720,05</td><td>591,62 </td><td>7 311,67</td></tr><tr><td>1er échelon </td><td></td><td></td><td></td><td>8,09 % </td><td></td></tr></tbody></table></p><p><font color=\"#808080\" size=\"1\"><em>(1) Dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance et de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 (arrêté du 30 juillet 2001, art. 1er).</em></font></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2001-04-25 BO conventions collectives 2001-20 étendu par arrêté du 30 juillet 2001 JORF 9 août 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires - Intégration du complément RTT (1)   ",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 988156800000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

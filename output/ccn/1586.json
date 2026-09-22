@@ -19421,13 +19421,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005730562",
+              "cid": "KALISCTA000005730562",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes au 1er avril et au 1er octobre 2001.",
+              "dateModif": null,
+              "dateDebut": "2001-03-07",
+              "dateFin": "2002-02-28",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005867882",
+                  "cid": "KALIARTI000005867882",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005730562/KALIARTI000005867882",
+                  "pathTitle": [
+                    "Barèmes au 1er avril et au 1er octobre 2001."
+                  ],
+                  "content": "Article 1er<p></p> Salaires minima professionnels garantis<p></p><p></p>   Le barème national des salaires minima garantis est fixé pour un travail à temps complet résultant de l'horaire de référence. Ce barème est applicable :<p></p><p></p>   - dans les entreprises pratiquant un horaire collectif de travail effectif de 39 heures hebdomadaires ;<p></p><p></p>   - dans les entreprises ayant réduit la durée du travail effectif entre 39 heures et 35 heures hebdomadaires en maintenant les salaires, y compris en cas d'accord d'entreprise prévoyant une mesure de modération salariale.<p></p> a) Augmentation de 1,9 % au 1er avril 2001<p></p><p></p>   Etant précisé que cette augmentation se traduira par un minimum d'augmentation en valeur absolue de 135 F du coefficient 115 au coefficient 145 inclus.<p></p><p></p>   Le barème au 1er avril 2001 s'établit donc ainsi :<p></p><TABLE><TR><TD>COEFF</TD><TD>SALAIRE MINIMUM MENSUEL GARANTI</TD></TR><TR><TD></TD><TD>  (horaire à temps complet)    </TD></TR><TR><TD></TD><TD>(En fr)</TD><TD>    (En euros)         </TD></TR><TR><TD>  115</TD><TD>  7 044</TD><TD> 1 073,85              </TD></TR><TR><TD>  120</TD><TD>  7 050</TD><TD> 1 074,77              </TD></TR><TR><TD>  125</TD><TD>  7 061</TD><TD> 1 076,44              </TD></TR><TR><TD>  130</TD><TD>  7 103</TD><TD> 1 082,85              </TD></TR><TR><TD>  135</TD><TD>  7 126</TD><TD> 1 086,35              </TD></TR><TR><TD>  140</TD><TD>  7 133</TD><TD> 1 087,42              </TD></TR><TR><TD>  145</TD><TD>  7 179</TD><TD> 1 094,43              </TD></TR><TR><TD>  150</TD><TD>  7 276</TD><TD> 1 109,22              </TD></TR><TR><TD>  155</TD><TD>  7 375</TD><TD> 1 124,31              </TD></TR><TR><TD>  160</TD><TD>  7 486</TD><TD> 1 141,23              </TD></TR><TR><TD>  165</TD><TD>  7 598</TD><TD> 1 158,31              </TD></TR><TR><TD>  170</TD><TD>  7 711</TD><TD> 1 175,53              </TD></TR><TR><TD>  175</TD><TD>  7 850</TD><TD> 1 196,72              </TD></TR><TR><TD>  180</TD><TD>  7 987</TD><TD> 1 217,61              </TD></TR><TR><TD>  185</TD><TD>  8 127</TD><TD> 1 238,95              </TD></TR><TR><TD>  190</TD><TD>  8 264</TD><TD> 1 259,84              </TD></TR><TR><TD>  195</TD><TD>  8 414</TD><TD> 1 282,71              </TD></TR><TR><TD>  200</TD><TD>  8 559</TD><TD> 1 304,81              </TD></TR><TR><TD>  205</TD><TD>  8 712</TD><TD> 1 328,14              </TD></TR><TR><TD>  210</TD><TD>  8 864</TD><TD> 1 351,31              </TD></TR><TR><TD>  215</TD><TD>  9 010</TD><TD> 1 373,57              </TD></TR><TR><TD>  220</TD><TD>  9 163</TD><TD> 1 396,89              </TD></TR><TR><TD>  225</TD><TD>  9 313</TD><TD> 1 419,76              </TD></TR><TR><TD>  230</TD><TD>  9 461</TD><TD> 1 442,32              </TD></TR><TR><TD>  235</TD><TD>  9 615</TD><TD> 1 465,80              </TD></TR><TR><TD>  240</TD><TD>  9 767</TD><TD> 1 488,97              </TD></TR></TABLE><p></p><TABLE><TR><TD>  245</TD><TD>  9 922</TD><TD> 1 512,60              </TD></TR><TR><TD>  250</TD><TD> 10 077</TD><TD> 1 536,23              </TD></TR><TR><TD>  255</TD><TD> 10 236</TD><TD> 1 560,47              </TD></TR><TR><TD>  260</TD><TD> 10 394</TD><TD> 1 584,56              </TD></TR><TR><TD>  265</TD><TD> 10 550</TD><TD> 1 608,34              </TD></TR><TR><TD>  270</TD><TD> 10 707</TD><TD> 1 632,27              </TD></TR><TR><TD>  275</TD><TD> 10 863</TD><TD> 1 656,05              </TD></TR><TR><TD>  280</TD><TD> 11 024</TD><TD> 1 680,60              </TD></TR><TR><TD>  285</TD><TD> 11 184</TD><TD> 1 704,99              </TD></TR><TR><TD>  290</TD><TD> 11 342</TD><TD> 1 729,08              </TD></TR><TR><TD>  295</TD><TD> 11 499</TD><TD> 1 753,01              </TD></TR><TR><TD>  300</TD><TD> 11 656</TD><TD> 1 776,95              </TD></TR><TR><TD>  305</TD><TD> 11 815</TD><TD> 1 807,19              </TD></TR><TR><TD>  310</TD><TD> 11 974</TD><TD> 1 825,42              </TD></TR><TR><TD>  315</TD><TD> 12 132</TD><TD> 1 849,51              </TD></TR><TR><TD>  320</TD><TD> 12 292</TD><TD> 1 873,90              </TD></TR><TR><TD>  325</TD><TD> 12 450</TD><TD> 1 897,99              </TD></TR><TR><TD>  330</TD><TD> 12 608</TD><TD> 1 922,08              </TD></TR><TR><TD>  335</TD><TD> 12 765</TD><TD> 1 946,01              </TD></TR><TR><TD>  340</TD><TD> 12 929</TD><TD> 1 971,01              </TD></TR><TR><TD>  345</TD><TD> 13 086</TD><TD> 1 994,95              </TD></TR><TR><TD>  350</TD><TD> 13 242</TD><TD> 2 018,73              </TD></TR><TR><TD>  400</TD><TD> 14 837</TD><TD> 2 261,89              </TD></TR><TR><TD>  600</TD><TD> 21 195</TD><TD> 3 231,16              </TD></TR><TR><TD>  700</TD><TD> 24 378</TD><TD> 3 716,40              </TD></TR></TABLE><p></p>b) Augmentation de 0,8 % au 1er octobre 2001<p></p><p></p>   Le barème au 1er octobre 2001 s'établit donc ainsi :<p></p><TABLE><TR><TD>COEFF</TD><TD>SALAIRE MINIMUM MENSUEL GARANTI</TD></TR><TR><TD></TD><TD>  (horaire à temps complet)    </TD></TR><TR><TD></TD><TD>(En fr)</TD><TD>    (En euros)         </TD></TR><TR><TD>  115</TD><TD>  7 100</TD><TD> 1 082,39              </TD></TR><TR><TD>  120</TD><TD>  7 106</TD><TD> 1 083,30              </TD></TR><TR><TD>  125</TD><TD>  7 117</TD><TD> 1 084,98              </TD></TR><TR><TD>  130</TD><TD>  7 160</TD><TD> 1 091,53              </TD></TR><TR><TD>  135</TD><TD>  7 183</TD><TD> 1 095,04              </TD></TR><TR><TD>  140</TD><TD>  7 190</TD><TD> 1 096,11              </TD></TR><TR><TD>  145</TD><TD>  7 236</TD><TD> 1 103,12              </TD></TR><TR><TD>  150</TD><TD>  7 334</TD><TD> 1 118,06              </TD></TR><TR><TD>  155</TD><TD>  7 434</TD><TD> 1 133,31              </TD></TR><TR><TD>  160</TD><TD>  7 546</TD><TD> 1 150,38              </TD></TR><TR><TD>  165</TD><TD>  7 659</TD><TD> 1 167,61              </TD></TR><TR><TD>  170</TD><TD>  7 773</TD><TD> 1 184,99              </TD></TR><TR><TD>  175</TD><TD>  7 913</TD><TD> 1 206,33              </TD></TR><TR><TD>  180</TD><TD>  8 051</TD><TD> 1 227,37              </TD></TR><TR><TD>  185</TD><TD>  8 192</TD><TD> 1 248,86              </TD></TR><TR><TD>  190</TD><TD>  8 330</TD><TD> 1 269,90              </TD></TR><TR><TD>  195</TD><TD>  8 481</TD><TD> 1 292,92              </TD></TR><TR><TD>  200</TD><TD>  8 627</TD><TD> 1 315,18              </TD></TR><TR><TD>  205</TD><TD>  8 782</TD><TD> 1 338,81              </TD></TR><TR><TD>  210</TD><TD>  8 935</TD><TD> 1 362,13              </TD></TR></TABLE><p></p><TABLE><TR><TD>  215</TD><TD>  9 082</TD><TD> 1 384,54              </TD></TR><TR><TD>  220</TD><TD>  9 236</TD><TD> 1 408,02              </TD></TR><TR><TD>  225</TD><TD>  9 388</TD><TD> 1 431,19              </TD></TR><TR><TD>  230</TD><TD>  9 537</TD><TD> 1 453,91              </TD></TR><TR><TD>  235</TD><TD>  9 692</TD><TD> 1 477,54              </TD></TR><TR><TD>  240</TD><TD>  9 845</TD><TD> 1 500,86              </TD></TR><TR><TD>  245</TD><TD> 10 001</TD><TD> 1 524,64              </TD></TR><TR><TD>  250</TD><TD> 10 158</TD><TD> 1 548,58              </TD></TR><TR><TD>  255</TD><TD> 10 318</TD><TD> 1 572,97              </TD></TR><TR><TD>  260</TD><TD> 10 477</TD><TD> 1 597,21              </TD></TR><TR><TD>  265</TD><TD> 10 634</TD><TD> 1 621,14              </TD></TR><TR><TD>  270</TD><TD> 10 793</TD><TD> 1 645,38              </TD></TR><TR><TD>  275</TD><TD> 10 950</TD><TD> 1 669,32              </TD></TR><TR><TD>  280</TD><TD> 11 112</TD><TD> 1 694,01              </TD></TR><TR><TD>  285</TD><TD> 11 273</TD><TD> 1 718,56              </TD></TR><TR><TD>  290</TD><TD> 11 433</TD><TD> 1 742,95              </TD></TR><TR><TD>  295</TD><TD> 11 591</TD><TD> 1 767,04              </TD></TR><TR><TD>  300</TD><TD> 11 749</TD><TD> 1 791,12              </TD></TR><TR><TD>  305</TD><TD> 11 910</TD><TD> 1 815,67              </TD></TR><TR><TD>  310</TD><TD> 12 070</TD><TD> 1 840,06              </TD></TR><TR><TD>  315</TD><TD> 12 229</TD><TD> 1 864,30              </TD></TR><TR><TD>  320</TD><TD> 12 390</TD><TD> 1 888,84              </TD></TR><TR><TD>  325</TD><TD> 12 550</TD><TD> 1 913,24              </TD></TR><TR><TD>  330</TD><TD> 12 709</TD><TD> 1 937,47              </TD></TR><TR><TD>  335</TD><TD> 12 867</TD><TD> 1 961,56              </TD></TR><TR><TD>  340</TD><TD> 13 032</TD><TD> 1 986,72              </TD></TR><TR><TD>  345</TD><TD> 13 191</TD><TD> 2 010,95              </TD></TR><TR><TD>  350</TD><TD> 13 348</TD><TD> 2 034,89              </TD></TR><TR><TD>  400</TD><TD> 14 956</TD><TD> 2 280,03              </TD></TR><TR><TD>  600</TD><TD> 21 365</TD><TD> 3 257,07              </TD></TR><TR><TD>  700</TD><TD> 24 573</TD><TD> 3 746,13              </TD></TR></TABLE><p></p>Article 2<p></p> Salaires réels<p></p><p></p>   Les parties signataires décident, dans le cadre de la négociation générale de l'évolution des salaires réels en 2001, une augmentation de 1,2 % au 1er avril 2001 et 0,8 % au 1er octobre 2001.<p></p><p></p>   Cette augmentation des salaires ne s'appliquera pas aux entreprises qui ont déjà défini, ou qui définiront, avant les dates d'application fixées ci-dessus, leurs modalités de rémunération pour l'année 2001 dans le cadre d'un accord d'entreprise d'aménagement réduction du temps de travail.<p></p><p></p>   D'autre part, il est précisé qu'un régime de prévoyance est mis en place au niveau de la branche professionnelle (accord de branche conclu distinctement), lequel couvre les risques décès-invalidité permanente et totale ainsi qu'une rente éducation. Le taux de cotisation finançant ce régime à caractère obligatoire est réparti de façon égale entre employeur et salarié. Les entreprises qui le souhaitent peuvent améliorer la mise en oeuvre de ce régime.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2001-03-07 BO conventions collectives 2001-13 étendu par arrêté du 2 juillet 2001 JORF 13 juillet 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 983923200000,
+                  "dateFin": 1014854400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -19441,13 +19515,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005730563",
+              "cid": "KALISCTA000005730563",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes au 1er avril et au 1er octobre 2002.",
+              "dateModif": null,
+              "dateDebut": "2002-02-28",
+              "dateFin": "2003-01-31",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005867883",
+                  "cid": "KALIARTI000005867883",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005730563/KALIARTI000005867883",
+                  "pathTitle": [
+                    "Barèmes au 1er avril et au 1er octobre 2002."
+                  ],
+                  "content": "Article 1er<p></p> Salaires minima professionnels garantis<p></p><p></p>   La barème national des salaires minima garantis est fixé pour un travail à temps complet résultant de l'horaire de référence. Ce barème est applicable :<p></p><p></p>   - dans les entreprises pratiquant un horaire collectif de travail effectif de 39 heures hebdomadaires ;<p></p><p></p>   - dans les entreprises ayant réduit la durée du travail effectif entre 39 et 35 heures hebdomadaires en maintenant les salaires, y compris en cas d'accord d'entreprise prévoyant une mesure de modération salariale.<p></p> a) Augmentation de 2 % au 1er avril 2002<p></p><p></p>   Le barème au 1er avril 2002 s'établit ainsi :<p></p><p></p><TABLE><TR><TD>COEFF</TD><TD>SALAIRE MINIMUM MENSUEL GARANTI</TD></TR><TR><TD></TD><TD>  (horaire à temps complet)    </TD></TR><TR><TD></TD><TD>      (en euros)               </TD></TR><TR><TD> 115 </TD><TD>        1 104,04               </TD></TR><TR><TD> 120 </TD><TD>        1 104,97               </TD></TR><TR><TD> 125 </TD><TD>        1 106,68               </TD></TR><TR><TD> 130 </TD><TD>        1 113,36               </TD></TR><TR><TD> 135 </TD><TD>        1 116,64               </TD></TR><TR><TD> 140 </TD><TD>        1 118,03               </TD></TR><TR><TD> 145 </TD><TD>        1 125,18               </TD></TR><TR><TD> 150 </TD><TD>        1 140,42               </TD></TR><TR><TD> 155 </TD><TD>        1 155,98               </TD></TR><TR><TD> 160 </TD><TD>        1 173,39               </TD></TR><TR><TD> 165 </TD><TD>        1 190,96               </TD></TR><TR><TD> 170 </TD><TD>        1 208,69               </TD></TR><TR><TD> 175 </TD><TD>        1 230,46               </TD></TR><TR><TD> 180 </TD><TD>        1 251,92               </TD></TR><TR><TD> 185 </TD><TD>        1 273,84               </TD></TR><TR><TD> 190 </TD><TD>        1 295,30               </TD></TR><TR><TD> 195 </TD><TD>        1 318,78               </TD></TR><TR><TD> 200 </TD><TD>        1 341,48               </TD></TR><TR><TD> 205 </TD><TD>        1 365,59               </TD></TR><TR><TD> 210 </TD><TD>        1 389,37               </TD></TR><TR><TD> 215 </TD><TD>        1 412,23               </TD></TR><TR><TD> 220 </TD><TD>        1 436,18               </TD></TR><TR><TD> 225 </TD><TD>        1 459,81               </TD></TR><TR><TD> 230 </TD><TD>        1 482,99               </TD></TR><TR><TD> 235 </TD><TD>        1 507,09               </TD></TR><TR><TD> 240 </TD><TD>        1 530,88               </TD></TR><TR><TD> 245 </TD><TD>        1 555,13               </TD></TR><TR><TD> 250 </TD><TD>        1 579,55               </TD></TR><TR><TD> 255 </TD><TD>        1 604,43               </TD></TR><TR><TD> 260 </TD><TD>        1 629,15               </TD></TR><TR><TD> 265 </TD><TD>        1 653,56               </TD></TR><TR><TD> 270 </TD><TD>        1 678,29               </TD></TR><TR><TD> 275 </TD><TD>        1 702,71               </TD></TR><TR><TD> 280 </TD><TD>        1 727,89               </TD></TR><TR><TD> 285 </TD><TD>        1 752,93               </TD></TR><TR><TD> 290 </TD><TD>        1 777,81               </TD></TR><TR><TD> 295 </TD><TD>        1 802,38               </TD></TR><TR><TD> 300 </TD><TD>        1 826,94               </TD></TR><TR><TD> 305 </TD><TD>        1 851,98               </TD></TR><TR><TD> 310 </TD><TD>        1 876,86               </TD></TR><TR><TD> 315 </TD><TD>        1 901,59               </TD></TR><TR><TD> 320 </TD><TD>        1 926,62               </TD></TR><TR><TD> 325 </TD><TD>        1 951,50               </TD></TR><TR><TD> 330 </TD><TD>        1 976,22               </TD></TR><TR><TD> 335 </TD><TD>        2 000,79               </TD></TR></TABLE><p></p><TABLE><TR><TD> 340 </TD><TD>        2 026,45               </TD></TR><TR><TD> 345 </TD><TD>        2 051,17               </TD></TR><TR><TD> 350 </TD><TD>        2 075,59               </TD></TR><TR><TD> 400 </TD><TD>        2 325,63               </TD></TR><TR><TD> 600 </TD><TD>        3 322,21               </TD></TR><TR><TD> 700 </TD><TD>        3 821,05               </TD></TR></TABLE><p></p> ---------------------------------------<p></p> b) Augmentation de 1 % au 1er octobre 2002<p></p><p></p>   Le barème au 1er octobre 2002 s'établit donc ainsi :<p></p> -------------------------------------------------<p></p><TABLE><TR><TD>COEFFICIENT  </TD><TD> SALAIRE MINIMUM MENSUEL GARANTI </TD></TR><TR><TD></TD><TD>   (horaire à temps complet)     </TD></TR><TR><TD></TD><TD>        (en euros)               </TD></TR><TR><TD>   115       </TD><TD>         1 115,08                </TD></TR><TR><TD>   120       </TD><TD>         1 116,02                </TD></TR><TR><TD>   125       </TD><TD>         1 117,75                </TD></TR><TR><TD>   130       </TD><TD>         1 124,49                </TD></TR><TR><TD>   135       </TD><TD>         1 128,11                </TD></TR><TR><TD>   140       </TD><TD>         1 129,21                </TD></TR><TR><TD>   145       </TD><TD>         1 136,43                </TD></TR><TR><TD>   150       </TD><TD>         1 151,82                </TD></TR><TR><TD>   155       </TD><TD>         1 167,54                </TD></TR><TR><TD>   160       </TD><TD>         1 185,12                </TD></TR><TR><TD>   165       </TD><TD>         1 202,87                </TD></TR><TR><TD>   170       </TD><TD>         1 220,78                </TD></TR><TR><TD>   175       </TD><TD>         1 242,76                </TD></TR><TR><TD>   180       </TD><TD>         1 264,44                </TD></TR><TR><TD>   185       </TD><TD>         1 286,58                </TD></TR><TR><TD>   190       </TD><TD>         1 308,25                </TD></TR><TR><TD>   195       </TD><TD>         1 331,97                </TD></TR><TR><TD>   200       </TD><TD>         1 354,89                </TD></TR></TABLE><p></p><TABLE><TR><TD>   205       </TD><TD>         1 379,25                </TD></TR><TR><TD>   210       </TD><TD>         1 403,26                </TD></TR><TR><TD>   215       </TD><TD>         1 426,35                </TD></TR><TR><TD>   220       </TD><TD>         1 450,54                </TD></TR><TR><TD>   225       </TD><TD>         1 474,41                </TD></TR><TR><TD>   230       </TD><TD>         1 497,82                </TD></TR><TR><TD>   235       </TD><TD>         1 522,16                </TD></TR><TR><TD>   240       </TD><TD>         1 546,19                </TD></TR><TR><TD>   245       </TD><TD>         1 570,68                </TD></TR><TR><TD>   250       </TD><TD>         1 595,35                </TD></TR><TR><TD>   255       </TD><TD>         1 620,47                </TD></TR><TR><TD>   260       </TD><TD>         1 645,44                </TD></TR><TR><TD>   265       </TD><TD>         1 670,10                </TD></TR><TR><TD>   270       </TD><TD>         1 695,07                </TD></TR><TR><TD>   275       </TD><TD>         1 719,74                </TD></TR><TR><TD>   280       </TD><TD>         1 745,17                </TD></TR><TR><TD>   285       </TD><TD>         1 770,46                </TD></TR><TR><TD>   290       </TD><TD>         1 795,59                </TD></TR><TR><TD>   295       </TD><TD>         1 820,40                </TD></TR><TR><TD>   300       </TD><TD>         1 845,21                </TD></TR><TR><TD>   305       </TD><TD>         1 870,50                </TD></TR><TR><TD>   310       </TD><TD>         1 895,63                </TD></TR><TR><TD>   315       </TD><TD>         1 920,61                </TD></TR><TR><TD>   320       </TD><TD>         1 945,89                </TD></TR><TR><TD>   325       </TD><TD>         1 971,02                </TD></TR><TR><TD>   330       </TD><TD>         1 995,98                </TD></TR><TR><TD>   335       </TD><TD>         2 020,80                </TD></TR><TR><TD>   340       </TD><TD>         2 046,71                </TD></TR><TR><TD>   345       </TD><TD>         2 071,68                </TD></TR><TR><TD>   350       </TD><TD>         2 096,35                </TD></TR><TR><TD>   400       </TD><TD>         2 348,89                </TD></TR><TR><TD>   600       </TD><TD>         3 355,43                </TD></TR><TR><TD>   700       </TD><TD>         3 859,26                </TD></TR></TABLE><p></p> -------------------------------------------------<p></p>   Les parties prennent l'engagement, sur une période de 3 ans, de poursuivre l'effort déjà réalisé de revalorisation des salaires minima professionnels garantis. Cette évolution sera au minimum égale à la revalorisation de la garantie mensuelle minimale de rémunération (système prévu par la loi Aubry du 19 janvier 2000). Dans toute la mesure du possible, l'écart entre les premiers coefficients utilisés et la garantie mensuelle minimale de rémunération sera réduit.<p></p><p></p>   Un point particulier sera fait chaque année dans le cadre de la négociation sur les salaires.<p></p> Article 2<p></p> Salaires réels<p></p><p></p>   Les parties signataires décident, dans le cadre de la négociation générale de l'évolution des salaires réels en 2002, une augmentation de 2 % au 1er avril 2002 et 0,3 % au 1er octobre 2002.<p></p><p></p>   Cette augmentation des salaires ne s'appliquera pas aux entreprises qui ont défini, avant le 1er avril 2002, leurs modalités de rémunération pour l'année 2002 dans le cadre d'un accord d'entreprise d'aménagement-réduction du temps de travail.<p></p> Article 3<p></p> Travail de nuit<p></p><p></p>   Les parties signataires soulignent leur volonté de mettre en harmonie les dispositions conventionnelles actuelles relatives à l'organisation du travail de nuit avec les mesures législatives nouvelles.<p></p><p></p>   Dans cette perspective, elles décident qu'au cours d'une commission paritaire restreinte réunie le 27 mars 2002 le point sera fait sur les modifications à apporter dans l'objectif d'aboutir prochainement à un accord.<p></p><p></p>   De la même manière, d'autres points seront abordés dans le courant de l'année 2002, notamment la mise en oeuvre d'un dispositif de cessation anticipée d'activité de certains travailleurs salariés (CATS), épargne salariale...<p></p> Article 4<p></p> Modification de l'article 15 (2e paragraphe)<p></p> de l'annexe V \" Ingénieurs et cadres \" de la convention collective nationale<p></p><p></p>   Le 2e paragraphe de l'article 15 \" Remplacement en cas de maladie ou accident \" de l'annexe V de la convention collective est modifié comme suit :<p></p><p></p>   \" Dans le cas où ces absences imposeraient le remplacement effectif de l'intéressé, le licenciement ne peut avoir d'effet avant l'expiration de la période de garantie d'emploi prévue à l'article 51 des dispositions générales de la convention ; dans ce cas, la notification doit être faite par lettre recommandée. \"<p></p><p></p>   Le reste de l'article est sans changement.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 10 février 2003 art. 1 : le barème du b (augmentation de 1 % du 1er octobre 2002) de l'article 1er (salaires minima professionnels garantis) est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance et de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instituant une garantie de rémunération mensuelle.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 10 février 2003 art. 1 : le barème du b (augmentation de 1 % du 1er octobre 2002) de l'article 1er (salaires minima professionnels garantis) est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance et de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instituant une garantie de rémunération mensuelle.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2002-02-28 BO conventions collectives 2002-12-13 étendu par arrêté du 10 février 2002 JORF 19 février 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1014854400000,
+                  "dateFin": 1043971200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -19532,13 +19680,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005730565",
+              "cid": "KALISCTA000005730565",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes au 1er avril et au 1er octobre 2003.",
+              "dateModif": null,
+              "dateDebut": "2003-01-31",
+              "dateFin": "2004-01-28",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005867887",
+                  "cid": "KALIARTI000005867887",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005730565/KALIARTI000005867887",
+                  "pathTitle": [
+                    "Barèmes au 1er avril et au 1er octobre 2003."
+                  ],
+                  "content": "<p></p>   réunies à Paris, le mercredi 22 janvier 2003, l'accord suivant a été conclu :<p></p><p></p>   Le barème national des salaires minima garantis est fixé pour un travail à temps complet résultant de l'horaire de référence. Ce barème est applicable :<p></p><p></p>   - dans les entreprises pratiquant un horaire collectif de travail effectif de 39 heures hebdomadaires ;<p></p><p></p>   - dans les entreprises ayant réduit la durée du travail effectif entre 39 et 35 heures hebdomadaires en maintenant les salaires, y compris en cas d'accord d'entreprise prévoyant une mesure de modération salariale.<p></p><p></p>   Le coefficient 115 est dorénavant supprimé au barème national des salaires minima garantis.<p></p> a) Augmentation de 2 % au 1er avril 2003<p></p><p></p>   Le barème au 1er avril 2003 s'établit ainsi :<p></p><p></p><TABLE><TR><TD>COEFF</TD><TD>SALAIRE MINIMUM MENSUEL GARANTI</TD></TR><TR><TD></TD><TD>  (horaire à temps complet)    </TD></TR><TR><TD></TD><TD>        (en euros)             </TD></TR><TR><TD> 120 </TD><TD>         1 138,34              </TD></TR><TR><TD> 125 </TD><TD>         1 140,11              </TD></TR><TR><TD> 130 </TD><TD>         1 146,98              </TD></TR><TR><TD> 135 </TD><TD>         1 150,67              </TD></TR><TR><TD> 140 </TD><TD>         1 151,79              </TD></TR><TR><TD> 145 </TD><TD>         1 159,16              </TD></TR><TR><TD> 150 </TD><TD>         1 174,86              </TD></TR><TR><TD> 155 </TD><TD>         1 190,89              </TD></TR><TR><TD> 160 </TD><TD>         1 208,82              </TD></TR><TR><TD> 165 </TD><TD>         1 226,93              </TD></TR><TR><TD> 170 </TD><TD>         1 245,20              </TD></TR><TR><TD> 175 </TD><TD>         1 267,62              </TD></TR><TR><TD> 180 </TD><TD>         1 289,73              </TD></TR><TR><TD> 185 </TD><TD>         1 312,31              </TD></TR><TR><TD> 190 </TD><TD>         1 334,42              </TD></TR><TR><TD> 195 </TD><TD>         1 358,61              </TD></TR><TR><TD> 200 </TD><TD>         1 381,99              </TD></TR><TR><TD> 205 </TD><TD>         1 406,84              </TD></TR><TR><TD> 210 </TD><TD>         1 431,33              </TD></TR><TR><TD> 215 </TD><TD>         1 454,88              </TD></TR><TR><TD> 220 </TD><TD>         1 479,55              </TD></TR><TR><TD> 225 </TD><TD>         1 503,90              </TD></TR><TR><TD> 230 </TD><TD>         1 527,78              </TD></TR><TR><TD> 235 </TD><TD>         1 552,60              </TD></TR><TR><TD> 240 </TD><TD>         1 577,11              </TD></TR><TR><TD> 245 </TD><TD>         1 602,09              </TD></TR><TR><TD> 250 </TD><TD>         1 627,26              </TD></TR><TR><TD> 255 </TD><TD>         1 652,88              </TD></TR><TR><TD> 260 </TD><TD>         1 678,35              </TD></TR></TABLE><p></p><TABLE><TR><TD> 265 </TD><TD>         1 703,50              </TD></TR><TR><TD> 270 </TD><TD>         1 728,97              </TD></TR><TR><TD> 275 </TD><TD>         1 754,13              </TD></TR><TR><TD> 280 </TD><TD>         1 780,07              </TD></TR><TR><TD> 285 </TD><TD>         1 805,87              </TD></TR><TR><TD> 290 </TD><TD>         1 831,50              </TD></TR><TR><TD> 295 </TD><TD>         1 856,81              </TD></TR><TR><TD> 300 </TD><TD>         1 882,11              </TD></TR><TR><TD> 305 </TD><TD>         1 907,91              </TD></TR><TR><TD> 310 </TD><TD>         1 933,54              </TD></TR><TR><TD> 315 </TD><TD>         1 959,02              </TD></TR><TR><TD> 320 </TD><TD>         1 984,81              </TD></TR><TR><TD> 325 </TD><TD>         2 010,44              </TD></TR><TR><TD> 330 </TD><TD>         2 035,90              </TD></TR><TR><TD> 335 </TD><TD>         2 061,22              </TD></TR><TR><TD> 340 </TD><TD>         2 087,64              </TD></TR><TR><TD> 345 </TD><TD>         2 113,11              </TD></TR><TR><TD> 350 </TD><TD>         2 138,28              </TD></TR><TR><TD> 400 </TD><TD>         2 395,87              </TD></TR><TR><TD> 600 </TD><TD>         3 422,54              </TD></TR><TR><TD> 700 </TD><TD>         3 936,45              </TD></TR></TABLE><p></p>  b) Augmentation de 0,8 % au 1er octobre 2003<p></p><p></p>   Le barème au 1er octobre 2003 s'établit ainsi :<p></p><p></p><TABLE><TR><TD>COEFF</TD><TD>SALAIRE MINIMUM MENSUEL GARANTI</TD></TR><TR><TD></TD><TD>  (horaire à temps complet)    </TD></TR><TR><TD></TD><TD>        (en euros)             </TD></TR><TR><TD> 120 </TD><TD>         1 147,45              </TD></TR><TR><TD> 125 </TD><TD>         1 149,23              </TD></TR><TR><TD> 130 </TD><TD>         1 156,16              </TD></TR></TABLE><p></p><TABLE><TR><TD> 135 </TD><TD>         1 159,88              </TD></TR><TR><TD> 140 </TD><TD>         1 161,01              </TD></TR><TR><TD> 145 </TD><TD>         1 168,43              </TD></TR><TR><TD> 150 </TD><TD>         1 184,26              </TD></TR><TR><TD> 155 </TD><TD>         1 200,42              </TD></TR><TR><TD> 160 </TD><TD>         1 218,49              </TD></TR><TR><TD> 165 </TD><TD>         1 236,74              </TD></TR><TR><TD> 170 </TD><TD>         1 255,16              </TD></TR><TR><TD> 175 </TD><TD>         1 277,76              </TD></TR><TR><TD> 180 </TD><TD>         1 300,05              </TD></TR><TR><TD> 185 </TD><TD>         1 322,81              </TD></TR><TR><TD> 190 </TD><TD>         1 345,09              </TD></TR><TR><TD> 195 </TD><TD>         1 369,48              </TD></TR><TR><TD> 200 </TD><TD>         1 393,04              </TD></TR><TR><TD> 205 </TD><TD>         1 418,09              </TD></TR><TR><TD> 210 </TD><TD>         1 442,78              </TD></TR><TR><TD> 215 </TD><TD>         1 466,52              </TD></TR><TR><TD> 220 </TD><TD>         1 491,39              </TD></TR><TR><TD> 225 </TD><TD>         1 515,93              </TD></TR><TR><TD> 230 </TD><TD>         1 540,00              </TD></TR><TR><TD> 235 </TD><TD>         1 565,02              </TD></TR><TR><TD> 240 </TD><TD>         1 589,73              </TD></TR><TR><TD> 245 </TD><TD>         1 614,91              </TD></TR><TR><TD> 250 </TD><TD>         1 640,28              </TD></TR><TR><TD> 255 </TD><TD>         1 666,10              </TD></TR><TR><TD> 260 </TD><TD>         1 691,78              </TD></TR><TR><TD> 265 </TD><TD>         1 717,13              </TD></TR><TR><TD> 270 </TD><TD>         1 742,80              </TD></TR><TR><TD> 275 </TD><TD>         1 768,17              </TD></TR><TR><TD> 280 </TD><TD>         1 794,31              </TD></TR><TR><TD> 285 </TD><TD>         1 820,32              </TD></TR><TR><TD> 290 </TD><TD>         1 846,15              </TD></TR><TR><TD> 295 </TD><TD>         1 871,66              </TD></TR><TR><TD> 300 </TD><TD>         1 897,17              </TD></TR><TR><TD> 305 </TD><TD>         1 923,17              </TD></TR><TR><TD> 310 </TD><TD>         1 949,01              </TD></TR><TR><TD> 315 </TD><TD>         1 974,69              </TD></TR><TR><TD> 320 </TD><TD>         2 000,69              </TD></TR><TR><TD> 325 </TD><TD>         2 026,52              </TD></TR><TR><TD> 330 </TD><TD>         2 052,19              </TD></TR><TR><TD> 335 </TD><TD>         2 077,71              </TD></TR><TR><TD> 340 </TD><TD>         2 104,35              </TD></TR><TR><TD> 345 </TD><TD>         2 130,02              </TD></TR><TR><TD> 350 </TD><TD>         2 155,38              </TD></TR><TR><TD> 400 </TD><TD>         2 415,03              </TD></TR><TR><TD> 600 </TD><TD>         3 449,92              </TD></TR></TABLE><p></p><TABLE><TR><TD> 700 </TD><TD>         3 967,94              </TD></TR></TABLE><p></p><p></p>   Les parties prennent l'engagement de faire évoluer le coefficient 120 au niveau du SMIC mensuel au 1er juillet 2005. Un point sera fait chaque année dans le cadre de la négociation sur les salaires.<p></p>   Les parties signataires conviennent de demander au ministère de l'emploi et de la solidarité l'extension du présent accord afin de le rendre applicable à l'ensemble des entreprises ou établissements entrant dans le champ d'application de la convention collective nationale des industries charcutières.<p></p>   Fait à Paris, le 31 janvier 2003.<font color=\"808080\"><em>   NOTA : Arrêté du 2 mai 2003 art. 1 : l'accord du 31 janvier 2003 portant sur les salaires minima professionnels garantis conclu dans le cadre de la convention collective nationale susvisée, sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie de rémunération mensuelle et des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance ;<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 2 mai 2003 art. 1 : l'accord du 31 janvier 2003 portant sur les salaires minima professionnels garantis conclu dans le cadre de la convention collective nationale susvisée, sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie de rémunération mensuelle et des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance ;<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2003-01-31 BO conventions collectives 2003-10 étendu par arrêté du 2 mai 2003 JORF 14 mai 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1043971200000,
+                  "dateFin": 1075248000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

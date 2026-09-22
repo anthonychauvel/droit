@@ -26518,13 +26518,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727769",
+              "cid": "KALISCTA000005727769",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima mensuels à compter du 1er mai 1990",
+              "dateModif": null,
+              "dateDebut": "1990-06-25",
+              "dateFin": "1991-01-16",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005860185",
+                  "cid": "KALIARTI000005860185",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727769/KALIARTI000005860185",
+                  "pathTitle": [
+                    "Salaires minima mensuels à compter du 1er mai 1990"
+                  ],
+                  "content": "<p></p>   GRILLE DE SALAIRES<p></p> Niveau : Montant<p></p> I      : 5.160 F.<p></p> II     : 5.300 F.<p></p> III    : 5.420 F.<p></p> IV     : 5.640 F.<p></p> V      : 6.000 F.<p></p> VI     : 6.400 F.<p></p> VII    : 7.700 F.<p></p> VIII   : 8.500 F.<p></p><font color=\"808080\"><em>   Avenant étendu sous réserve de l'application des dispositions réglementaires portant fixation de salaire minimum de croissance (arrêté du 21 septembre 1990, art. 1er).<p></p></em></font>",
+                  "nota": "   Avenant étendu sous réserve de l'application des dispositions réglementaires portant fixation de salaire minimum de croissance (arrêté du 21 septembre 1990, art. 1er).<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 4 1990-06-25 étendu par arrêté du 21 septembre 1990 JORF 5 octobre 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 646272000000,
+                  "dateFin": 663984000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26538,13 +26612,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727770",
+              "cid": "KALISCTA000005727770",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima mensuels à compter du 1er janvier 1991.",
+              "dateModif": null,
+              "dateDebut": "1991-01-16",
+              "dateFin": "1991-06-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005860186",
+                  "cid": "KALIARTI000005860186",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727770/KALIARTI000005860186",
+                  "pathTitle": [
+                    "Salaires minima mensuels à compter du 1er janvier 1991."
+                  ],
+                  "content": "<p></p>   GRILLE DE SALAIRES<p></p> Niveau : Montant<p></p> I      : 5.400 F.<p></p> II     : 5.555 F.<p></p> III    : 5.685 F.<p></p> IV     : 5.910 F.<p></p> V      : 6.290 F.<p></p> VI     : 6.720 F.<p></p> VII    : 8.200 F.<p></p> VIII   : 9.200 F.<p></p><p></p>   Les parties signataires conviennent de se rencontrer à nouveau le mercredi 5 juin 1991.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 5 1991-01-16 étendu par arrêté du 11 avril 1991 JORF 20 avril 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 663984000000,
+                  "dateFin": 676080000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26558,13 +26706,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727771",
+              "cid": "KALISCTA000005727771",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima mensuels à compete du 1er juillet 1991",
+              "dateModif": null,
+              "dateDebut": "1991-06-05",
+              "dateFin": "1991-11-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005860187",
+                  "cid": "KALIARTI000005860187",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727771/KALIARTI000005860187",
+                  "pathTitle": [
+                    "Salaires minima mensuels à compete du 1er juillet 1991"
+                  ],
+                  "content": "<p></p>   GRILLE DE SALAIRES<p></p> Niveau : Montant<p></p> I      : 5.524 F.<p></p> II     : 5.690 F.<p></p> III    : 5.820 F.<p></p> IV     : 6.050 F.<p></p> V      : 6.440 F.<p></p> VI     : 6.880 F.<p></p> VII    : 8.610 F.<p></p> VIII   : 9.660 F.<p></p><p></p>   Les parties conviennent de se rencontrer à nouveau le jeudi 7 novembre 1991.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 6 1991-06-05 étendu par arrêté du 1er octobre 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 676080000000,
+                  "dateFin": 689472000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

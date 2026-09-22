@@ -26958,13 +26958,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731382",
+              "cid": "KALISCTA000005731382",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er octobre 2000",
+              "dateModif": null,
+              "dateDebut": "2000-11-16",
+              "dateFin": "2001-04-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005869349",
+                  "cid": "KALIARTI000005869349",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731382/KALIARTI000005869349",
+                  "pathTitle": [
+                    "Salaires à compter du 1er octobre 2000"
+                  ],
+                  "content": "<p></p>      1° Les salaires minimaux conventionnels sont augmentés de 2 % au 1er octobre 2000 et de 2,4 % au 1er janvier 2001.<p></p><p></p>      2° Au 1er janvier 2002, il sera fait application d'une grille unique 35 heures, par intégration progressive de la base 39 heures sur la base 35 heures.<p></p><p></p>      3° Il est pris l'engagement de négocier à la première augmentation du SMIC pour un réajustement complet de la grille à sa nouvelle valeur. Cet engagement de réajustement s'entendant exclusivement pour la prochaine augmentation du SMIC, et pour la seule année 2001.<p></p><p></p>      Cette obligation ne fait pas obstacle à l'obligation annuelle de négocier prévue par l'article L. 132-12 du code du travail.<p></p><p></p>      4° La prime de panier est portée à 41 F, à compter du 1er octobre 2000.<p></p> (Voir tableaux pages suivantes.)    Salaires minimaux conventionnels au 1er octobre 2000<p></p> ........................................<p></p><TABLE><TR><TD>                OUVRIERS              </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>     M         </TD><TD>  6 936   </TD><TD>   6 225   </TD></TR><TR><TD>    OS1        </TD><TD>  6 952   </TD><TD>   6 239   </TD></TR><TR><TD>    OS2        </TD><TD>  6 969   </TD><TD>   6 254   </TD></TR><TR><TD>    OP1        </TD><TD>  7 991   </TD><TD>   6 274   </TD></TR><TR><TD>    OP2        </TD><TD>  7 023   </TD><TD>   6 302   </TD></TR><TR><TD>    OP3        </TD><TD>  7 102   </TD><TD>   6 374   </TD></TR><TR><TD>    OP4        </TD><TD>  8 108   </TD><TD>   7 276   </TD></TR></TABLE><p></p><TABLE><TR><TD> Petite                               </TD></TR><TR><TD> joaillerie                           </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>   OP3         </TD><TD>   7 180  </TD><TD>   6 443   </TD></TR><TR><TD>   OP4         </TD><TD>   8 364  </TD><TD>   7 506   </TD></TR><TR><TD> Joaillerie    </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>      OJ1      </TD><TD>   7 180  </TD><TD>   6 443   </TD></TR><TR><TD>      OJ2      </TD><TD>   8 242  </TD><TD>   7 396   </TD></TR><TR><TD>      OJ3      </TD><TD>   9 515  </TD><TD>   8 539   </TD></TR><TR><TD>      OJ4      </TD><TD>  10 994  </TD><TD>   9 866   </TD></TR><TR><TD> Polissage                            </TD></TR><TR><TD> joaillerie                           </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>      OJ1      </TD><TD>   6 936  </TD><TD>   6 225   </TD></TR><TR><TD>      OJ2      </TD><TD>   7 621  </TD><TD>   6 839   </TD></TR><TR><TD>      OJ3      </TD><TD>   8 942  </TD><TD>   8 025   </TD></TR><TR><TD>      OJ4      </TD><TD>  10 217  </TD><TD>   9 169   </TD></TR><TR><TD> Lapidaires et                        </TD></TR><TR><TD> diamantaires                         </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>      OSL1     </TD><TD>   6 936  </TD><TD>    6 225  </TD></TR><TR><TD>      OSL2     </TD><TD>   6 994  </TD><TD>    6 277  </TD></TR><TR><TD>       OL1     </TD><TD>   7 023  </TD><TD>    6 302  </TD></TR><TR><TD>       OL2     </TD><TD>   7 102  </TD><TD>    6 374  </TD></TR><TR><TD>       OL3     </TD><TD>   8 242  </TD><TD>    7 396  </TD></TR><TR><TD>       OL4     </TD><TD>   9 473  </TD><TD>    8 501  </TD></TR><TR><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>  COLLABORATEURS ET AGENTS DE MAITRISE</TD></TR><TR><TD> Coefficient   </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>    100        </TD><TD>   6 936  </TD><TD>    6 225  </TD></TR><TR><TD>    118        </TD><TD>   6 952  </TD><TD>    6 239  </TD></TR><TR><TD>    128        </TD><TD>   6 969  </TD><TD>    6 254  </TD></TR><TR><TD>    138        </TD><TD>   6 991  </TD><TD>    6 274  </TD></TR><TR><TD>    150        </TD><TD>   7 023  </TD><TD>    6 302  </TD></TR><TR><TD>    155        </TD><TD>   7 043  </TD><TD>    6 321  </TD></TR><TR><TD>    160        </TD><TD>   7 054  </TD><TD>    6 331  </TD></TR><TR><TD>    180        </TD><TD>   7 086  </TD><TD>    6 359  </TD></TR><TR><TD>    185        </TD><TD>   7 142  </TD><TD>    6 410  </TD></TR><TR><TD>    200        </TD><TD>   7 319  </TD><TD>    6 568  </TD></TR><TR><TD>    209        </TD><TD>   7 649  </TD><TD>    6 864  </TD></TR><TR><TD>    212        </TD><TD>   7 755  </TD><TD>    6 960  </TD></TR><TR><TD>    221        </TD><TD>   8 086  </TD><TD>    7 256  </TD></TR><TR><TD>    234        </TD><TD>   8 563  </TD><TD>    7 685  </TD></TR><TR><TD>    246        </TD><TD>   8 997  </TD><TD>    8 075  </TD></TR><TR><TD>    250        </TD><TD>   9 144  </TD><TD>    8 206  </TD></TR><TR><TD>    255        </TD><TD>   9 331  </TD><TD>    8 374  </TD></TR><TR><TD>    271        </TD><TD>   9 915  </TD><TD>    8 898  </TD></TR><TR><TD>    290        </TD><TD>  10 609  </TD><TD>    9 520  </TD></TR><TR><TD>    300        </TD><TD>  10 975  </TD><TD>    9 850  </TD></TR><TR><TD>    320        </TD><TD>  11 706  </TD><TD>   10 505  </TD></TR><TR><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>          ANNEXE II - CADRES</TD></TR><TR><TD></TD></TR><TR><TD>   Indices     </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>     22        </TD><TD>  8 513   </TD><TD>    7 640  </TD></TR><TR><TD>     24        </TD><TD>  9 286   </TD><TD>    8 334  </TD></TR><TR><TD>     26        </TD><TD> 10 065   </TD><TD>    9 033  </TD></TR><TR><TD>     28        </TD><TD> 10 832   </TD><TD>    9 721  </TD></TR><TR><TD>     30        </TD><TD> 11 626   </TD><TD>   10 434  </TD></TR><TR><TD>     32        </TD><TD> 12 401   </TD><TD>   11 129  </TD></TR><TR><TD>     34        </TD><TD> 13 175   </TD><TD>   11 824  </TD></TR><TR><TD>     35        </TD><TD> 13 552   </TD><TD>   12 162  </TD></TR><TR><TD>   A133        </TD><TD> 12 828   </TD><TD>   11 512  </TD></TR><TR><TD>   A235        </TD><TD> 13 552   </TD><TD>   12 162  </TD></TR><TR><TD>   B40         </TD><TD> 15 495   </TD><TD>   13 906  </TD></TR><TR><TD>   C48         </TD><TD> 18 594   </TD><TD>   16 687  </TD></TR><TR><TD>   C55         </TD><TD> 21 276   </TD><TD>   19 094  </TD></TR><TR><TD>   HC80        </TD><TD> 23 236   </TD><TD>   20 852  </TD></TR><TR><TD>...............</TD><TD>..........</TD><TD>...........</TD></TR></TABLE><p></p> Salaires minimaux conventionnels au 1er janvier 2001<p></p> ........................................<p></p><TABLE><TR><TD>                OUVRIERS              </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>     M         </TD><TD>  7 101   </TD><TD>   6 373   </TD></TR><TR><TD>    OS1        </TD><TD>  7 118   </TD><TD>   6 388   </TD></TR><TR><TD>    OS2        </TD><TD>  7 134   </TD><TD>   6 403   </TD></TR><TR><TD>    OP1        </TD><TD>  7 157   </TD><TD>   6 423   </TD></TR><TR><TD>    OP2        </TD><TD>  7 190   </TD><TD>   6 452   </TD></TR><TR><TD>    OP3        </TD><TD>  7 271   </TD><TD>   6 525   </TD></TR><TR><TD>    OP4        </TD><TD>  8 301   </TD><TD>   7 449   </TD></TR></TABLE><p></p><TABLE><TR><TD> Petite                               </TD></TR><TR><TD> joaillerie                           </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>   OP3         </TD><TD>   7 351  </TD><TD>   6 597   </TD></TR><TR><TD>   OP4         </TD><TD>   8 563  </TD><TD>   7 685   </TD></TR><TR><TD> Joaillerie    </TD></TR><TR><TD></TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>      OJ1      </TD><TD>   7 351  </TD><TD>   6 597   </TD></TR><TR><TD>      OJ2      </TD><TD>   8 438  </TD><TD>   7 572   </TD></TR><TR><TD>      OJ3      </TD><TD>   9 741  </TD><TD>   8 742   </TD></TR><TR><TD>      OJ4      </TD><TD>  11 255  </TD><TD>  10 101   </TD></TR><TR><TD> Polissage</TD></TR><TR><TD></TD></TR><TR><TD> joaillerie</TD></TR><TR><TD></TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>      OJ1      </TD><TD>   7 101  </TD><TD>   6 373   </TD></TR><TR><TD>      OJ2      </TD><TD>   7 803  </TD><TD>   7 002   </TD></TR><TR><TD>      OJ3      </TD><TD>   9 155  </TD><TD>   8 216   </TD></TR><TR><TD>      OJ4      </TD><TD>  10 460  </TD><TD>   9 387   </TD></TR><TR><TD> Lapidaires et                        </TD></TR><TR><TD> diamantaires                         </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>      OSL1     </TD><TD>   7 101  </TD><TD>    6 373  </TD></TR><TR><TD>      OSL2     </TD><TD>   7 160  </TD><TD>    6 426  </TD></TR><TR><TD>       OL1     </TD><TD>   7 190  </TD><TD>    6 452  </TD></TR><TR><TD>       OL2     </TD><TD>   7 271  </TD><TD>    6 525  </TD></TR><TR><TD>       OL3     </TD><TD>   8 438  </TD><TD>    7 572  </TD></TR><TR><TD>       OL4     </TD><TD>   9 698  </TD><TD>    8 703  </TD></TR><TR><TD></TD></TR></TABLE><p></p><TABLE><TR><TD> COLLABORATEURS ET AGENTS DE MAITRISE </TD></TR><TR><TD> Coefficient   </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>    100        </TD><TD>   7 101  </TD><TD>    6 373  </TD></TR><TR><TD>    118        </TD><TD>   7 118  </TD><TD>    6 388  </TD></TR><TR><TD>    128        </TD><TD>   7 134  </TD><TD>    6 403  </TD></TR><TR><TD>    138        </TD><TD>   7 157  </TD><TD>    6 423  </TD></TR><TR><TD>    150        </TD><TD>   7 190  </TD><TD>    6 452  </TD></TR><TR><TD>    155        </TD><TD>   7 211  </TD><TD>    6 471  </TD></TR><TR><TD>    160        </TD><TD>   7 222  </TD><TD>    6 481  </TD></TR><TR><TD>    180        </TD><TD>   7 254  </TD><TD>    6 510  </TD></TR><TR><TD>    185        </TD><TD>   7 312  </TD><TD>    6 562  </TD></TR><TR><TD>    200        </TD><TD>   7 493  </TD><TD>    6 724  </TD></TR><TR><TD>    209        </TD><TD>   7 831  </TD><TD>    7 028  </TD></TR><TR><TD>    212        </TD><TD>   7 939  </TD><TD>    7 125  </TD></TR><TR><TD>    221        </TD><TD>   8 278  </TD><TD>    7 429  </TD></TR><TR><TD>    234        </TD><TD>   8 764  </TD><TD>    7 865  </TD></TR><TR><TD>    246        </TD><TD>   9 211  </TD><TD>    8 267  </TD></TR><TR><TD>    250        </TD><TD>   9 362  </TD><TD>    8 402  </TD></TR><TR><TD>    255        </TD><TD>   9 553  </TD><TD>    8 573  </TD></TR><TR><TD>    271        </TD><TD>  10 151  </TD><TD>    9 110  </TD></TR><TR><TD>    290        </TD><TD>   9 747  </TD><TD>    9 747  </TD></TR><TR><TD>    300        </TD><TD>  11 236  </TD><TD>   10 084  </TD></TR><TR><TD>    320        </TD><TD>  11 984  </TD><TD>   10 755  </TD></TR><TR><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>        ANNEXE II - CADRES</TD></TR><TR><TD></TD></TR><TR><TD>   Indices     </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>     22        </TD><TD>  8 715   </TD><TD>    7 821  </TD></TR><TR><TD>     24        </TD><TD>  9 507   </TD><TD>    8 532  </TD></TR><TR><TD>     26        </TD><TD> 10 305   </TD><TD>    9 248  </TD></TR><TR><TD>     28        </TD><TD> 11 090   </TD><TD>    9 953  </TD></TR><TR><TD>     30        </TD><TD> 11 902   </TD><TD>   10 682  </TD></TR><TR><TD>     32        </TD><TD> 12 696   </TD><TD>   11 394  </TD></TR><TR><TD>     34        </TD><TD> 13 489   </TD><TD>   12 105  </TD></TR><TR><TD>     35        </TD><TD> 13 874   </TD><TD>   12 451  </TD></TR><TR><TD>   A133        </TD><TD> 13 133   </TD><TD>   11 786  </TD></TR><TR><TD>   A235        </TD><TD> 13 874   </TD><TD>   12 451  </TD></TR><TR><TD>   B40         </TD><TD> 15 865   </TD><TD>   14 239  </TD></TR><TR><TD>   C48         </TD><TD> 19 036   </TD><TD>   17 083  </TD></TR><TR><TD>   C55         </TD><TD> 21 782   </TD><TD>   19 548  </TD></TR><TR><TD>   HC80        </TD><TD> 23 788   </TD><TD>   21 348  </TD></TR><TR><TD>...............</TD><TD>..........</TD><TD>...........</TD></TR></TABLE><p></p><p></p> Salaires minimaux conventionnels au 1er juillet 2001<p></p> ........................................<p></p><TABLE><TR><TD>                OUVRIERS              </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>     M         </TD><TD>  7 101   </TD><TD>   6 737   </TD></TR><TR><TD>    OS1        </TD><TD>  7 118   </TD><TD>   6 753   </TD></TR><TR><TD>    OS2        </TD><TD>  7 134   </TD><TD>   6 768   </TD></TR><TR><TD>    OP1        </TD><TD>  7 157   </TD><TD>   6 790   </TD></TR><TR><TD>    OP2        </TD><TD>  7 190   </TD><TD>   6 821   </TD></TR><TR><TD>    OP3        </TD><TD>  7 271   </TD><TD>   6 898   </TD></TR><TR><TD>    OP4        </TD><TD>  8 301   </TD><TD>   7 875   </TD></TR><TR><TD> Petite                               </TD></TR><TR><TD> joaillerie                           </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>   OP3         </TD><TD>   7 351  </TD><TD>   6 974   </TD></TR><TR><TD>   OP4         </TD><TD>   8 563  </TD><TD>   8 124   </TD></TR><TR><TD> Joaillerie                           </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>      OJ1      </TD><TD>   7 351  </TD><TD>   6 974   </TD></TR><TR><TD>      OJ2      </TD><TD>   8 438  </TD><TD>   8 005   </TD></TR><TR><TD>      OJ3      </TD><TD>   9 741  </TD><TD>   9 241   </TD></TR><TR><TD>      OJ4      </TD><TD>  11 255  </TD><TD>   10678   </TD></TR></TABLE><p></p><TABLE><TR><TD> Polissage                            </TD></TR><TR><TD> joaillerie                           </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>      OJ1      </TD><TD>   7 101  </TD><TD>   6 737   </TD></TR><TR><TD>      OJ2      </TD><TD>   7 803  </TD><TD>   7 403   </TD></TR><TR><TD>      OJ3      </TD><TD>   9 155  </TD><TD>   8 686   </TD></TR><TR><TD>      OJ4      </TD><TD>  10 460  </TD><TD>   9 924   </TD></TR><TR><TD> Lapidaires et                        </TD></TR><TR><TD> diamantaires                         </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>      OSL1     </TD><TD>   7 101  </TD><TD>    6 737  </TD></TR><TR><TD>      OSL2     </TD><TD>   7 160  </TD><TD>    6 793  </TD></TR><TR><TD>       OL1     </TD><TD>   7 190  </TD><TD>    6 821  </TD></TR><TR><TD>       OL2     </TD><TD>   7 271  </TD><TD>    6 898  </TD></TR><TR><TD>       OL3     </TD><TD>   8 438  </TD><TD>    8 005  </TD></TR><TR><TD>       OL4     </TD><TD>   9 698  </TD><TD>    9 200  </TD></TR><TR><TD></TD></TR></TABLE><p></p><TABLE><TR><TD> COLLABORATEURS ET AGENTS DE MAITRISE </TD></TR><TR><TD> Coefficient   </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>    100        </TD><TD>   7 101  </TD><TD>    6 737  </TD></TR><TR><TD>    118        </TD><TD>   7 118  </TD><TD>    6 753  </TD></TR><TR><TD>    128        </TD><TD>   7 134  </TD><TD>    6 768  </TD></TR><TR><TD>    138        </TD><TD>   7 157  </TD><TD>    6 790  </TD></TR><TR><TD>    150        </TD><TD>   7 190  </TD><TD>    6 821  </TD></TR><TR><TD>    155        </TD><TD>   7 211  </TD><TD>    6 841  </TD></TR><TR><TD>    160        </TD><TD>   7 222  </TD><TD>    6 852  </TD></TR><TR><TD>    180        </TD><TD>   7 254  </TD><TD>    6 882  </TD></TR><TR><TD>    185        </TD><TD>   7 312  </TD><TD>    6 937  </TD></TR><TR><TD>    200        </TD><TD>   7 493  </TD><TD>    7 109  </TD></TR><TR><TD>    209        </TD><TD>   7 831  </TD><TD>    7 429  </TD></TR><TR><TD>    212        </TD><TD>   7 939  </TD><TD>    7 532  </TD></TR><TR><TD>    221        </TD><TD>   8 278  </TD><TD>    7 853  </TD></TR><TR><TD>    234        </TD><TD>   8 764  </TD><TD>    7 314  </TD></TR><TR><TD>    246        </TD><TD>   9 211  </TD><TD>    8 739  </TD></TR><TR><TD>    250        </TD><TD>   9 362  </TD><TD>    8 882  </TD></TR><TR><TD>    255        </TD><TD>   9 553  </TD><TD>    9 063  </TD></TR><TR><TD>    271        </TD><TD>  10 151  </TD><TD>    9 630  </TD></TR><TR><TD>    290        </TD><TD>  10 304  </TD><TD>   10 304  </TD></TR><TR><TD>    300        </TD><TD>  11 236  </TD><TD>   10 660  </TD></TR><TR><TD>    320        </TD><TD>  11 984  </TD><TD>   11 369  </TD></TR><TR><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>              ANNEXE II CADRES        </TD></TR><TR><TD>   Indices     </TD><TD> Salaire  </TD><TD>  Salaire  </TD></TR><TR><TD></TD><TD> Base 39 h</TD><TD>  Base 35 h</TD></TR><TR><TD>     22        </TD><TD>  8 715   </TD><TD>    8 268  </TD></TR><TR><TD>     24        </TD><TD>  9 507   </TD><TD>    9 019  </TD></TR><TR><TD>     26        </TD><TD> 10 305   </TD><TD>    9 777  </TD></TR><TR><TD>     28        </TD><TD> 11 090   </TD><TD>   10 521  </TD></TR><TR><TD>     30        </TD><TD> 11 902   </TD><TD>   11 292  </TD></TR><TR><TD>     32        </TD><TD> 12 696   </TD><TD>   12 045  </TD></TR><TR><TD>     34        </TD><TD> 13 489   </TD><TD>   12 797  </TD></TR><TR><TD>     35        </TD><TD> 13 874   </TD><TD>   13 163  </TD></TR><TR><TD>   A133        </TD><TD> 13 133   </TD><TD>   12 460  </TD></TR><TR><TD>   A235        </TD><TD> 13 874   </TD><TD>   13 163  </TD></TR><TR><TD>   B40         </TD><TD> 15 051   </TD><TD>   15 051  </TD></TR><TR><TD>   C48         </TD><TD> 19 036   </TD><TD>   18 060  </TD></TR><TR><TD>   C55         </TD><TD> 21 782   </TD><TD>   20 665  </TD></TR><TR><TD>   HC80        </TD><TD> 23 788   </TD><TD>   22 568  </TD></TR><TR><TD>...............</TD><TD>..........</TD><TD>...........</TD></TR></TABLE><p></p>Salaires minimaux conventionnels au 1er janvier 2002<p></p> ............................<p></p><TABLE><TR><TD>         OUVRIERS         </TD></TR><TR><TD> Qualification </TD><TD> Salaires </TD></TR><TR><TD></TD><TD> (en Fcs) </TD></TR><TR><TD>     M         </TD><TD>  7 101   </TD></TR><TR><TD>    OS1        </TD><TD>  7 118   </TD></TR><TR><TD>    OS2        </TD><TD>  7 134   </TD></TR><TR><TD>    OP1        </TD><TD>  7 157   </TD></TR><TR><TD>    OP2        </TD><TD>  7 190   </TD></TR><TR><TD>    OP3        </TD><TD>  7 271   </TD></TR><TR><TD>    OP4        </TD><TD>  8 301   </TD></TR><TR><TD> Petite                   </TD></TR><TR><TD> joaillerie               </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD></TR><TR><TD></TD><TD> (en Fcs) </TD></TR><TR><TD>   OP3         </TD><TD>   7 351  </TD></TR><TR><TD>   OP4         </TD><TD>   8 563  </TD></TR><TR><TD> Joaillerie    </TD><TD></TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD></TR><TR><TD></TD><TD> (en Fcs) </TD></TR><TR><TD>      OJ1      </TD><TD>   7 351  </TD></TR><TR><TD>      OJ2      </TD><TD>   8 438  </TD></TR><TR><TD>      OJ3      </TD><TD>   9 741  </TD></TR><TR><TD>      OJ4      </TD><TD>  11 255  </TD></TR></TABLE><p></p><TABLE><TR><TD> Polissage                </TD></TR><TR><TD> joaillerie               </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD></TR><TR><TD></TD><TD> (en Fcs) </TD></TR><TR><TD>      OJ1      </TD><TD>   7 101  </TD></TR><TR><TD>      OJ2      </TD><TD>   7 803  </TD></TR><TR><TD>      OJ3      </TD><TD>   9 155  </TD></TR><TR><TD>      OJ4      </TD><TD>  10 460  </TD></TR><TR><TD> Lapidaires et            </TD></TR><TR><TD> diamantaires             </TD></TR><TR><TD> Qualification </TD><TD> Salaire  </TD></TR><TR><TD></TD><TD> (en Fcs) </TD></TR><TR><TD>      OSL1     </TD><TD>   7 101  </TD></TR><TR><TD>      OSL2     </TD><TD>   7 160  </TD></TR><TR><TD>       OL1     </TD><TD>   7 190  </TD></TR><TR><TD>       OL2     </TD><TD>   7 271  </TD></TR><TR><TD>       OL3     </TD><TD>   8 438  </TD></TR><TR><TD>       OL4     </TD><TD>   9 698  </TD></TR><TR><TD></TD></TR></TABLE><p></p><TABLE><TR><TD> COLLABORATEURS ET AGENTS </TD></TR><TR><TD>    DE MAITRISE           </TD></TR><TR><TD> Coefficient   </TD><TD> Salaire  </TD></TR><TR><TD></TD><TD> (en Fcs) </TD></TR><TR><TD>    100        </TD><TD>   7 101  </TD></TR><TR><TD>    118        </TD><TD>   7 118  </TD></TR><TR><TD>    128        </TD><TD>   7 134  </TD></TR><TR><TD>    138        </TD><TD>   7 157  </TD></TR><TR><TD>    150        </TD><TD>   7 190  </TD></TR><TR><TD>    155        </TD><TD>   7 211  </TD></TR><TR><TD>    160        </TD><TD>   7 222  </TD></TR><TR><TD>    180        </TD><TD>   7 254  </TD></TR><TR><TD>    185        </TD><TD>   7 312  </TD></TR><TR><TD>    200        </TD><TD>   7 493  </TD></TR><TR><TD>    209        </TD><TD>   7 831  </TD></TR><TR><TD>    212        </TD><TD>   7 939  </TD></TR><TR><TD>    221        </TD><TD>   8 278  </TD></TR><TR><TD>    234        </TD><TD>   8 764  </TD></TR><TR><TD>    246        </TD><TD>   9 211  </TD></TR><TR><TD>    250        </TD><TD>   9 362  </TD></TR><TR><TD>    255        </TD><TD>   9 553  </TD></TR><TR><TD>    271        </TD><TD>  10 151  </TD></TR><TR><TD>    290        </TD><TD>  10 861  </TD></TR><TR><TD>    300        </TD><TD>  11 236  </TD></TR><TR><TD>    320        </TD><TD>  11 984  </TD></TR><TR><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>  ANNEXE II - CADRES</TD></TR><TR><TD></TD></TR><TR><TD>   Indices     </TD><TD> Salaire  </TD></TR><TR><TD></TD><TD> (en Fcs) </TD></TR><TR><TD>     22        </TD><TD>  8 715   </TD></TR><TR><TD>     24        </TD><TD>  9 507   </TD></TR><TR><TD>     26        </TD><TD> 10 305   </TD></TR><TR><TD>     28        </TD><TD> 11 090   </TD></TR><TR><TD>     30        </TD><TD> 11 902   </TD></TR><TR><TD>     32        </TD><TD> 12 696   </TD></TR><TR><TD>     34        </TD><TD> 13 489   </TD></TR><TR><TD>     35        </TD><TD> 13 874   </TD></TR><TR><TD>   A133        </TD><TD> 13 133   </TD></TR><TR><TD>   A235        </TD><TD> 13 874   </TD></TR><TR><TD>   B40         </TD><TD> 15 865   </TD></TR><TR><TD>   C48         </TD><TD> 19 036   </TD></TR><TR><TD>   C55         </TD><TD> 21 782   </TD></TR><TR><TD>   HC80        </TD><TD> 23 788   </TD></TR><TR><TD>...............</TD><TD>..........</TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2000-11-16 BO conventions collectives 2000-51 étendu par arrêté du 21 février 2001 JORF 3 mars 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 974332800000,
+                  "dateFin": 988243200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26978,13 +27052,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731383",
+              "cid": "KALISCTA000005731383",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er janvier 2002",
+              "dateModif": null,
+              "dateDebut": "2001-09-13",
+              "dateFin": "2005-05-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005869350",
+                  "cid": "KALIARTI000005869350",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731383/KALIARTI000005869350",
+                  "pathTitle": [
+                    "Salaires à compter du 1er janvier 2002"
+                  ],
+                  "content": "Préambule<p></p><p></p>   L'accord national paritaire du 16 novembre 2000 étendu par l'arrêté du 21 février 2001, portant révision des salaires minimaux et intégration progressive du complément différentiel entre la base 39 heures et la base 35 heures est modifié selon les modalités exposées ci-après.<p></p><p></p>   1° La grille unique au 1er janvier 2002 est annulée et remplacée par la nouvelle grille annexée aux présentes, révisée pour toutes les classifications et indices d'un pourcentage de 4,05 %.<p></p><p></p>   2° La prime de panier est portée à 42,66 F soit 6,50 Euros.<p></p> Salaires minimaux conventionnels au 1er janvier 2002 (1)<p></p> (1)   Base mensuelle 35 heures (en francs) (2)   Base mensuelle 35 heures (en euros) ........................................<p></p><TABLE><TR><TD>                OUVRIERS              </TD></TR><TR><TD> Qualification </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   (1)    </TD><TD>   (2)     </TD></TR><TR><TD>     M         </TD><TD>  7 389   </TD><TD> 1 126,45  </TD></TR><TR><TD>    OS1        </TD><TD>  7 406   </TD><TD> 1 129,04  </TD></TR><TR><TD>    OS2        </TD><TD>  7 423   </TD><TD> 1 131,63  </TD></TR><TR><TD>    OP1        </TD><TD>  7 447   </TD><TD> 1 135,29  </TD></TR><TR><TD>    OP2        </TD><TD>  7 481   </TD><TD> 1 140,47  </TD></TR><TR><TD>    OP3        </TD><TD>  7 566   </TD><TD> 1 153,43  </TD></TR><TR><TD>    OP4        </TD><TD>  8 637   </TD><TD> 1 316,70  </TD></TR></TABLE><p></p><TABLE><TR><TD> Petite                               </TD></TR><TR><TD> joaillerie                           </TD></TR><TR><TD> Qualification </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   (1)    </TD><TD>   (2)     </TD></TR><TR><TD>   OP3         </TD><TD>   7 648  </TD><TD> 1 165,93  </TD></TR><TR><TD>   OP4         </TD><TD>   8 910  </TD><TD> 1 358,32  </TD></TR><TR><TD> Joaillerie    </TD><TD></TD></TR><TR><TD> Qualification </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   (1)    </TD><TD>   (2)     </TD></TR><TR><TD>      OJ1      </TD><TD>   7 648  </TD><TD> 1 165,93  </TD></TR><TR><TD>      OJ2      </TD><TD>   8 779  </TD><TD> 1 338,35  </TD></TR><TR><TD>      OJ3      </TD><TD>  10 135  </TD><TD> 1 545,07  </TD></TR><TR><TD>      OJ4      </TD><TD>  11 711  </TD><TD> 1 785,33  </TD></TR><TR><TD> Polissage                            </TD></TR><TR><TD> joaillerie                           </TD></TR><TR><TD> Qualification </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   (1)    </TD><TD>   (2)     </TD></TR><TR><TD>      OJ1      </TD><TD>   7 389  </TD><TD> 1 126,45  </TD></TR><TR><TD>      OJ2      </TD><TD>   8 119  </TD><TD> 1 237,73  </TD></TR><TR><TD>      OJ3      </TD><TD>   9 526  </TD><TD> 1 452,23  </TD></TR><TR><TD>      OJ4      </TD><TD>  10 884  </TD><TD> 1 659,26  </TD></TR><TR><TD> Lapidaires et                        </TD></TR><TR><TD> diamantaires                         </TD></TR><TR><TD> Qualification </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   (1)    </TD><TD>    (2)    </TD></TR><TR><TD>      OSL1     </TD><TD>   7 389  </TD><TD> 1 126,45  </TD></TR><TR><TD>      OSL2     </TD><TD>   7 450  </TD><TD> 1 135,75  </TD></TR><TR><TD>       OL1     </TD><TD>   7 481  </TD><TD> 1 140,47  </TD></TR><TR><TD>       OL2     </TD><TD>   7 566  </TD><TD> 1 153,43  </TD></TR><TR><TD>       OL3     </TD><TD>   8 779  </TD><TD> 1 338,35  </TD></TR><TR><TD>       OL4     </TD><TD>  10 091  </TD><TD> 1 538,36  </TD></TR><TR><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>  COLLABORATEURS ET AGENTS DE MAITRISE</TD></TR><TR><TD> Coefficient   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   (1)    </TD><TD>    (2)    </TD></TR><TR><TD>    100        </TD><TD>   7 389  </TD><TD> 1 126,45  </TD></TR><TR><TD>    118        </TD><TD>   7 406  </TD><TD> 1 129,04  </TD></TR><TR><TD>    128        </TD><TD>   7 423  </TD><TD> 1 131,63  </TD></TR><TR><TD>    138        </TD><TD>   7 447  </TD><TD> 1 135,29  </TD></TR><TR><TD>    150        </TD><TD>   7 481  </TD><TD> 1 140,47  </TD></TR><TR><TD>    155        </TD><TD>   7 503  </TD><TD> 1 153,43  </TD></TR><TR><TD>    160        </TD><TD>   7 515  </TD><TD> 1 145,65  </TD></TR><TR><TD>    180        </TD><TD>   7 548  </TD><TD> 1 150,69  </TD></TR><TR><TD>    185        </TD><TD>   7 608  </TD><TD> 1 159,83  </TD></TR><TR><TD>    200        </TD><TD>   7 796  </TD><TD> 1 188,49  </TD></TR><TR><TD>    209        </TD><TD>   8 148  </TD><TD> 1 242,15  </TD></TR><TR><TD>    212        </TD><TD>   8 261  </TD><TD> 1 259,38  </TD></TR><TR><TD>    221        </TD><TD>   8 613  </TD><TD> 1 313,04  </TD></TR><TR><TD>    234        </TD><TD>   9 119  </TD><TD> 1 390,18  </TD></TR><TR><TD>    246        </TD><TD>   9 584  </TD><TD> 1 461,07  </TD></TR><TR><TD>    250        </TD><TD>   9 741  </TD><TD> 1 485,01  </TD></TR><TR><TD>    255        </TD><TD>   9 940  </TD><TD> 1 515,34  </TD></TR><TR><TD>    271        </TD><TD>  10 562  </TD><TD> 1 610,17  </TD></TR><TR><TD>    290        </TD><TD>  11 301  </TD><TD> 1 722,83  </TD></TR><TR><TD>    300        </TD><TD>  11 691  </TD><TD> 1 782,28  </TD></TR><TR><TD>    320        </TD><TD>  12 469  </TD><TD> 1 900,89  </TD></TR><TR><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>          ANNEXE II - CADRES</TD></TR><TR><TD></TD></TR><TR><TD>   Indices     </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>   (1)    </TD><TD>   (2)     </TD></TR><TR><TD>     22        </TD><TD>  9 068   </TD><TD> 1 382,41  </TD></TR><TR><TD>     24        </TD><TD>  9 892   </TD><TD> 1 508,03  </TD></TR><TR><TD>     26        </TD><TD> 10 722   </TD><TD> 1 634,56  </TD></TR><TR><TD>     28        </TD><TD> 11 539   </TD><TD> 1 759,11  </TD></TR><TR><TD>     30        </TD><TD> 12 384   </TD><TD> 1 887,93  </TD></TR><TR><TD>     32        </TD><TD> 13 210   </TD><TD> 2 013,85  </TD></TR><TR><TD>     34        </TD><TD> 14 035   </TD><TD> 2 139,62  </TD></TR><TR><TD>     35        </TD><TD> 14 436   </TD><TD> 2 200,75  </TD></TR><TR><TD>   A133        </TD><TD> 13 664   </TD><TD> 2 083,06  </TD></TR><TR><TD>   A235        </TD><TD> 14 436   </TD><TD> 2 200,75  </TD></TR><TR><TD>   B40         </TD><TD> 16 508   </TD><TD> 2 516,63  </TD></TR><TR><TD>   C48         </TD><TD> 19 807   </TD><TD> 3 019,56  </TD></TR><TR><TD>   C55         </TD><TD> 22 664   </TD><TD> 3 455,10  </TD></TR><TR><TD>   HC60        </TD><TD> 24 752   </TD><TD> 3 773,42  </TD></TR><TR><TD>...............</TD><TD>..........</TD><TD>...........</TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 15 avril 2002 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.</em></font>",
+                  "nota": "   NOTA : Arrêté du 15 avril 2002 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2001-09-13 BO conventions collectives 2001-51",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1000339200000,
+                  "dateFin": 1115164800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26998,13 +27146,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731384",
+              "cid": "KALISCTA000005731384",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minimaux conventionnels au 1er juillet 2005 et au 1er janvier 2006",
+              "dateModif": null,
+              "dateDebut": "2005-05-04",
+              "dateFin": "2006-11-29",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005869351",
+                  "cid": "KALIARTI000005869351",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731384/KALIARTI000005869351",
+                  "pathTitle": [
+                    "Salaires minimaux conventionnels au 1er juillet 2005 et au 1er janvier 2006"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Augmentation des salaires minimaux conventionnels et de la prime panier<p></p><p></p>   Les salaires minimaux conventionnels, exprimés en euros, sont augmentés de 5 % à compter du 1er juillet 2005 et de 5 % au 1er janvier 2006 et la prime panier est portée à 7,20  à compter du 1er juillet 2005. En conséquence la grille des salaires minimaux conventionnels servant de base au calcul de la prime d'ancienneté est la suivante.<p></p><p></p>   Salaires minimaux conventionnels au 1er juillet 2005 et au 1er janvier 2006<p></p><p></p>   Prime panier : 7,20 Euros.<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD>                           OUVRIERS                             </TD></TR><TR><TD> QUALIFICATION     </TD><TD>    SALAIRE          </TD><TD>      SALAIRE         </TD></TR><TR><TD></TD><TD>  au 1er juillet 2005 </TD><TD> au 1er janvier 2006 </TD></TR><TR><TD>      M            </TD><TD>      1 182,77       </TD><TD>      1 241,91        </TD></TR><TR><TD>      OS 1         </TD><TD>      1 185,49       </TD><TD>      1 244,77        </TD></TR><TR><TD>      OS 2         </TD><TD>      1 188,21       </TD><TD>      1 247,62        </TD></TR><TR><TD>      OP 1         </TD><TD>      1 192,05       </TD><TD>      1 251,66        </TD></TR><TR><TD>      OP 2         </TD><TD>      1 197,49       </TD><TD>      1 257,37        </TD></TR><TR><TD>      OP 3         </TD><TD>      1 211,10       </TD><TD>      1 271,66        </TD></TR><TR><TD>      OP 4         </TD><TD>      1 382,54       </TD><TD>      1 451,66        </TD></TR><TR><TD> Petite joaillerie </TD><TD></TD><TD></TD></TR><TR><TD>      OP 3         </TD><TD>      1 224,23       </TD><TD>      1 285,44        </TD></TR><TR><TD>      OP 4         </TD><TD>      1 426,24       </TD><TD>      1 497,55        </TD></TR><TR><TD> Joaillerie        </TD><TD></TD><TD></TD></TR><TR><TD>      OJ 1         </TD><TD>      1 224,23       </TD><TD>      1 285,44        </TD></TR><TR><TD>      OJ 2         </TD><TD>      1 405,27       </TD><TD>      1 475,53        </TD></TR><TR><TD>      OJ 3         </TD><TD>      1 622,32       </TD><TD>      1 703,44        </TD></TR><TR><TD>      OJ 4         </TD><TD>      1 874,60       </TD><TD>      1 968,33        </TD></TR><TR><TD> Polissage         </TD><TD></TD><TD></TD></TR><TR><TD> joaillerie        </TD><TD></TD><TD></TD></TR><TR><TD>      OJ 1         </TD><TD>      1 182,77       </TD><TD>      1 241,91        </TD></TR><TR><TD>      OJ 2         </TD><TD>      1 299,62       </TD><TD>      1 364,60        </TD></TR><TR><TD>      OJ 3         </TD><TD>      1 524,84       </TD><TD>      1 601,08        </TD></TR><TR><TD>      OJ 4         </TD><TD>      1 742,22       </TD><TD>      1 829,33        </TD></TR><TR><TD> Lapidaires        </TD><TD></TD><TD></TD></TR><TR><TD> diamantaires      </TD><TD></TD><TD></TD></TR><TR><TD>      OSL 1        </TD><TD>      1 182,77       </TD><TD>      1 241,91        </TD></TR><TR><TD>      OSL 2        </TD><TD>      1 192,54       </TD><TD>      1 252,16        </TD></TR><TR><TD>      OL 1         </TD><TD>      1 197,49       </TD><TD>      1 257,37        </TD></TR><TR><TD>      OL 2         </TD><TD>      1 211,10       </TD><TD>      1 271,66        </TD></TR><TR><TD>      OL 3         </TD><TD>      1 405,27       </TD><TD>      1 475,53        </TD></TR><TR><TD>      OL 4         </TD><TD>      1 615,28       </TD><TD>      1 696,04        </TD></TR></TABLE><p></p><p></p>   (En euros)<p></p><TABLE><TR><TD>            COLLABORATEURS ET AGENTS DE MAITRISE                </TD></TR><TR><TD>   COEFFICIENT     </TD><TD>      SALAIRE         </TD><TD>     SALAIRE         </TD></TR><TR><TD></TD><TD>  au 1er juillet 2005 </TD><TD> au 1er janvier 2006 </TD></TR><TR><TD>        100        </TD><TD>      1 182,77        </TD><TD>     1 241,91        </TD></TR><TR><TD>        118        </TD><TD>      1 185,49        </TD><TD>     1 244,77        </TD></TR><TR><TD>        128        </TD><TD>      1 188,21        </TD><TD>     1 247,62        </TD></TR><TR><TD>        138        </TD><TD>      1 192,05        </TD><TD>     1 251,66        </TD></TR><TR><TD>        150        </TD><TD>      1 197,49        </TD><TD>     1 257,37        </TD></TR><TR><TD>        155        </TD><TD>      1 201,01        </TD><TD>     1 261,06        </TD></TR><TR><TD>        160        </TD><TD>      1 202,93        </TD><TD>     1 263,08        </TD></TR><TR><TD>        180        </TD><TD>      1 208,22        </TD><TD>     1 268,64        </TD></TR><TR><TD>        185        </TD><TD>      1 217,82        </TD><TD>     1 278,71        </TD></TR><TR><TD>        200        </TD><TD>      1 247,91        </TD><TD>     1 310,31        </TD></TR><TR><TD>        209        </TD><TD>      1 304,26        </TD><TD>     1 369,47        </TD></TR><TR><TD>        212        </TD><TD>      1 322,35        </TD><TD>     1 388,47        </TD></TR><TR><TD>        221        </TD><TD>      1 378,69        </TD><TD>     1 447,63        </TD></TR><TR><TD>        234        </TD><TD>      1 459,69        </TD><TD>     1 532,67        </TD></TR><TR><TD>        246        </TD><TD>      1 534,12        </TD><TD>     1 610,83        </TD></TR><TR><TD>        250        </TD><TD>      1 559,26        </TD><TD>     1 637,22        </TD></TR><TR><TD>        255        </TD><TD>      1 591,11        </TD><TD>     1 670,66        </TD></TR><TR><TD>        271        </TD><TD>      1 690,68        </TD><TD>     1 775,21        </TD></TR><TR><TD>        290        </TD><TD>      1 808,97        </TD><TD>     1 899,42        </TD></TR><TR><TD>        300        </TD><TD>      1 871,39        </TD><TD>     1 964,96        </TD></TR><TR><TD>        320        </TD><TD>      1 995,93        </TD><TD>     2 095,73        </TD></TR></TABLE><p></p><p></p>   (En euros)<p></p><TABLE><TR><TD>                     ANNEXE II - CADRES                         </TD></TR><TR><TD>     INDICE        </TD><TD>      SALAIRE         </TD><TD>     SALAIRE         </TD></TR><TR><TD></TD><TD>  au 1er juillet 2005 </TD><TD> au 1er janvier 2006 </TD></TR><TR><TD>         22        </TD><TD>       1 451,53       </TD><TD>      1 524,11       </TD></TR><TR><TD>         24        </TD><TD>       1 583,43       </TD><TD>      1 662,60       </TD></TR><TR><TD>         26        </TD><TD>       1 716,29       </TD><TD>      1 802,10       </TD></TR><TR><TD>         28        </TD><TD>       1 847,07       </TD><TD>      1 939,42       </TD></TR><TR><TD>         30        </TD><TD>       1 982,33       </TD><TD>      2 081,44       </TD></TR><TR><TD>         32        </TD><TD>       2 114,54       </TD><TD>      2 220,27       </TD></TR><TR><TD>         34        </TD><TD>       2 246,60       </TD><TD>      2 358,93       </TD></TR><TR><TD>         35        </TD><TD>       2 310,79       </TD><TD>      2 426,33       </TD></TR><TR><TD>                     ANNEXE II - CADRES                         </TD></TR><TR><TD>     INDICE        </TD><TD>      SALAIRE         </TD><TD>     SALAIRE         </TD></TR><TR><TD></TD><TD>  au 1er juillet 2005 </TD><TD> au 1er janvier 2006 </TD></TR></TABLE><p></p><p></p>   La signature de cet accord ne fait pas obstacle aux négociations salariales pour l'année 2006. Article 2<p></p>   Il sera procédé dans les meilleurs délais aux formalités légales en vue du dépôt, puis de l'extension du présent accord, conformément aux articles L. 132-10 et L. 133-8 du code du travail.<p></p>   Fait à Paris, le 4 mai 2005.<font color=\"808080\"><em>   Les barèmes des salaires minimaux conventionnels en euros au 1er juillet 2005 des ouvriers ainsi que des collaborateurs et agents de maîtrise sont étendus sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance (arrêté du 2 novembre 2005, art. 1er).<p></p></em></font>",
+                  "nota": "   Les barèmes des salaires minimaux conventionnels en euros au 1er juillet 2005 des ouvriers ainsi que des collaborateurs et agents de maîtrise sont étendus sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance (arrêté du 2 novembre 2005, art. 1er).<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2005-05-04 BO conventions collectives 2005-26 étendu par arrêté du 2 novembre 2005 JORF 13 novembre 2005",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1115164800000,
+                  "dateFin": 1164758400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

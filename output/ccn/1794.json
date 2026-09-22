@@ -21222,12 +21222,77 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000020041673",
+              "cid": "KALIARTI000020041673",
+              "intOrdre": 524287,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000020041673",
+              "pathTitle": [],
+              "content": "<p><br/>A la suite des propositions formulées lors de la commission paritaire plénière du 1er octobre 2008, il a été convenu entre les parties que les rémunérations mensuelles minimales garanties (art. 6. 1 de l'annexe IV à la <a href=\"/affichIDCC.do?cidTexte=KALITEXT000005663177&categorieLien=cid\">convention collective nationale du 9 décembre 1993</a> résultant de l'avenant n° 9 du 18 juillet 2007) sont augmentées de 1, 1 % à cette date. <br/>Les rémunérations mensuelles minimales garanties 2008 sont les suivantes : </p><p><br/>(En euros.) </p><p><div align=\"center\"><center><table border=\"1\"><tr><th>CLASSE </th><th>RMMG </th></tr><tr><td align=\"center\">1A </td><td align=\"center\">1   336 </td></tr><tr><td align=\"center\">1B </td><td align=\"center\">1   371 </td></tr><tr><td align=\"center\">1C </td><td align=\"center\">1   387 </td></tr><tr><td align=\"center\">2A </td><td align=\"center\">1   356 </td></tr><tr><td align=\"center\">2B </td><td align=\"center\">1   399 </td></tr><tr><td align=\"center\">2C </td><td align=\"center\">1   451 </td></tr><tr><td align=\"center\">2D </td><td align=\"center\">1   527 </td></tr><tr><td align=\"center\">3A </td><td align=\"center\">1   463 </td></tr><tr><td align=\"center\">3B </td><td align=\"center\">1   550 </td></tr><tr><td align=\"center\">3C </td><td align=\"center\">1   661 </td></tr><tr><td align=\"center\">3D </td><td align=\"center\">1   760 </td></tr><tr><td align=\"center\">4A </td><td align=\"center\">1   654 </td></tr><tr><td align=\"center\">4B </td><td align=\"center\">1   721 </td></tr><tr><td align=\"center\">4C </td><td align=\"center\">1   892 </td></tr><tr><td align=\"center\">4D </td><td align=\"center\">2   118 </td></tr><tr><td align=\"center\">5A </td><td align=\"center\">1   975 </td></tr><tr><td align=\"center\">5B </td><td align=\"center\">2   071 </td></tr><tr><td align=\"center\">5C </td><td align=\"center\">2   384 </td></tr><tr><td align=\"center\">5D </td><td align=\"center\">2   762 </td></tr><tr><td align=\"center\">6A </td><td align=\"center\">2   430 </td></tr><tr><td align=\"center\">6B </td><td align=\"center\">2   492 </td></tr><tr><td align=\"center\">6C </td><td align=\"center\">2   763 </td></tr><tr><td align=\"center\">6D </td><td align=\"center\">3   080 </td></tr><tr><td align=\"center\">7B </td><td align=\"center\">3   592 </td></tr><tr><td align=\"center\">7C </td><td align=\"center\">3   878 </td></tr><tr><td align=\"center\">7D </td><td align=\"center\">4   192 </td></tr><tr><td align=\"center\">8C </td><td align=\"center\">4   868 </td></tr><tr><td align=\"center\">8D </td><td align=\"center\">4   928</td></tr></table></center></div></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1",
+              "type": "AUTONOME",
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000019961734",
+                  "textTitle": "Arrêté du 15 décembre 2008, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "",
+                  "articleId": "JORFTEXT000019961734",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2008-12-20",
+                  "dateSignaTexte": "2008-12-15",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "KALITEXT000005663177",
+                  "textTitle": "Convention collective nationale du 9 décembre 1993",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "KALITEXT000005663177",
+                  "natureText": "Convention collective nationale ",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": 32472144000000,
+                  "dateDebut": 755395200000
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1222819200000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

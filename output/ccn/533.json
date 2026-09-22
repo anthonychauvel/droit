@@ -5903,13 +5903,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005689897",
+              "cid": "KALISCTA000005689897",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er novembre 1991",
+              "dateModif": null,
+              "dateDebut": "1991-11-06",
+              "dateFin": "1992-03-04",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766250",
+                  "cid": "KALIARTI000005766250",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005689897/KALIARTI000005766250",
+                  "pathTitle": [
+                    "Salaires à compter du 1er novembre 1991"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   En application des articles L. 132-1 et suivants du code du travail concernant les conventions collectives, la valeur du point applicable aux employés, techniciens et agents de maîtrise (E.T.A.M.) dans les entreprises de négoce des matériaux de construction est fixée à :<p></p><p></p>   - 29,87 F à compter du 1er novembre 1991, base mensuelle :<p></p> 169 heures.<p></p><p></p>   La rémunération minimale hiérarchique est obtenue en multipliant la valeur du point par le coefficient attribué au salarié.<p></p><p></p>   Elle sert de base au calcul de la prime d'ancienneté.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 43 1991-11-06 étendu par arrêté du 15 septembre 1992 JORF 24 septembre 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES ETAM",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 689385600000,
+                  "dateFin": 699667200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -5923,13 +5997,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005689898",
+              "cid": "KALISCTA000005689898",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Rémunération minimale hiérarchique au 1er avril et 1er octobre 1992.",
+              "dateModif": null,
+              "dateDebut": "1992-03-04",
+              "dateFin": "1997-02-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766252",
+                  "cid": "KALIARTI000005766252",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005689898/KALIARTI000005766252",
+                  "pathTitle": [
+                    "Rémunération minimale hiérarchique au 1er avril et 1er octobre 1992."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   En application des articles L. 132-1 et suivants du code du travail concernant les conventions collectives, la valeur du point applicable aux employés, techniciens et agents de maîtrise (E.T.A.M.) dans les entreprises de négoce des matériaux de construction est fixée à :<p></p><p></p>   - 30,25 F à compter du 1er avril 1992, base mensuelle 169 heures.<p></p><p></p>   - 30,76 F à compter du 1er octobre 1992, base mensuelle 169 heures.<p></p><p></p>   La rémunération minimale hiérarchique est obtenue en multipliant la valeur du point par le coefficient attribué au salarié.<p></p><p></p>   Elle sert de base au calcul de la prime d'ancienneté.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 44 1992-03-04 étendu par arrêté du 15 septembre 1992 JORF 24 septembre 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES ETAM",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 699667200000,
+                  "dateFin": 856310400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -5943,13 +6091,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005689899",
+              "cid": "KALISCTA000005689899",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires mensuels minimaux garantis au 1er avril 1992",
+              "dateModif": null,
+              "dateDebut": "1992-03-04",
+              "dateFin": "1997-02-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766253",
+                  "cid": "KALIARTI000005766253",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005689899/KALIARTI000005766253",
+                  "pathTitle": [
+                    "Salaires mensuels minimaux garantis au 1er avril 1992"
+                  ],
+                  "content": "Article 1er.<p></p><p></p>   A effet du 1er avril 1992, le barème des salaires minimaux mensuels est donc le suivant.<p></p><p></p><p></p>   (1) Coefficient.<p></p><p></p>   (2) SALAIRES MENSUELS minimaux (39 heures hebdomadaire) (en francs).<p></p><p></p> --------------------<p></p><TABLE><TR><TD>   (1)  </TD><TD>   (2)   </TD></TR><TR><TD> 125    </TD><TD> 5.724   </TD></TR><TR><TD> 127    </TD><TD> 5.738   </TD></TR><TR><TD> 132    </TD><TD> 5.774   </TD></TR><TR><TD> 135    </TD><TD> 5.796   </TD></TR><TR><TD> 138    </TD><TD> 5.818   </TD></TR><TR><TD> 141    </TD><TD> 5.840   </TD></TR><TR><TD> 145    </TD><TD> 5.869   </TD></TR><TR><TD> 148    </TD><TD> 5.890   </TD></TR><TR><TD> 150    </TD><TD> 5.905   </TD></TR><TR><TD> 155    </TD><TD> 5.941   </TD></TR><TR><TD> 160    </TD><TD> 5.978   </TD></TR><TR><TD> 165    </TD><TD> 6.014   </TD></TR><TR><TD> 170    </TD><TD> 6.050   </TD></TR><TR><TD> 175    </TD><TD> 6.087   </TD></TR><TR><TD> 180    </TD><TD> 6.123   </TD></TR><TR><TD> 185    </TD><TD> 6.159   </TD></TR><TR><TD> 195    </TD><TD> 6.232   </TD></TR><TR><TD> 200    </TD><TD> 6.268   </TD></TR><TR><TD> 205    </TD><TD> 6.304   </TD></TR><TR><TD> 210    </TD><TD> 6.341   </TD></TR></TABLE><p></p> --------------------Article 2.<p></p><p></p>   Les salaires minimaux mensuels sont déterminés par la somme des deux éléments suivants :<p></p><p></p>   - une partie fixe identique pour l'ensemble des coefficients 125 à 210 ; elle est de 5 542 F au 1er avril 1992 ;<p></p><p></p>   - une partie variable correspondant à une valeur de point multipliée par le coefficient moins 100 (C - 100) ; elle est de 7,26 F au 1er avril 1992.<p></p>Article 3.<p></p><p></p>   Aucun des nouveaux salaires minimaux mensuels ne peut avoir une valeur inférieure au S.M.I.C.<p></p>Article 4.<p></p><p></p>   Les éléments de rémunération à exclure pour apprécier si le nouveau salaire minimal mensuel est atteint ou non sont :<p></p><p></p>   - les majorations pour travaux pénibles physiquement ou nerveusement, dangereux ou insalubres (art. L. 133-5 du code du travail) ;<p></p><p></p>   - la participation des employeurs au financement des transports publics urbains. La prime de transport ou la prise en charge partielle des frais de transport en région parisienne ;<p></p><p></p>   - les sommes versées à titre de remboursement de frais ;<p></p><p></p>   - la participation des salariés aux résultats de l'entreprise ainsi que toute somme versée au titre d'un accord d'intéressement (ord. du 21 octobre 1986) ;<p></p><p></p>   - les primes fixées par les conventions collectives :<p></p><p></p>       - prime d'ancienneté ;<p></p><p></p>       - prime de congés (20 p. 100 du salaire du mois de mai) ;<p></p><p></p>   - les gratifications à caractère aléatoire ou temporaire, c'est-à-dire tout ce qui ne peut pas être considéré comme élément de salaire sur lequel le salarié peut compter.<p></p>Article 5.<p></p><p></p>   La prime d'ancienneté définie à l'article 12 de la convention collective E.T.A.M. est calculée sur le barème des salaires mensuels minimaux, valeur 1er avril 1992.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 45 1992-03-04 étendu par arrêté du 4 mars 1992 JORF 24 septembre 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du Travail article L.133-5",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES ETAM",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 699667200000,
+                  "dateFin": 856310400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

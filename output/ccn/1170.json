@@ -7224,13 +7224,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702886",
+              "cid": "KALISCTA000005702886",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des salaires mensuels minima des cadres au 1er octobre 1994",
+              "dateModif": null,
+              "dateDebut": "1994-10-18",
+              "dateFin": "1994-10-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798704",
+                  "cid": "KALIARTI000005798704",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702886/KALIARTI000005798704",
+                  "pathTitle": [
+                    "Barème des salaires mensuels minima des cadres au 1er octobre 1994"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   L'annexe A.C.A. n° II : Barème des salaires minima cadres, de la convention collective nationale du 17 février 1982 de l'industrie des tuiles et briques est désormais rédigée comme suit :<p></p><p></p>   En vertu du trente-cinquième avenant du 18 octobre 1994 à la convention collective nationale du 17 février 1982, les salaires mensuels minima des cadres s'établissent comme suit à partir du 1er octobre 1994, pour une durée hebdomadaire de travail de 39 heures.<p></p> Catégorie I : seuils d'accueil des jeunes cadres diplômés<p></p><p></p>   Première année coefficient 300 : 9.765 F<p></p><p></p>   Deuxième année coefficient 322 : 10.481 F<p></p><p></p>   Troisième année coefficient 344 : 11.197 F<p></p><p></p> Catégorie II : position A-B ou C<p></p><p></p>   Coefficient 366 : 11.913 F<p></p><p></p>   Coefficient 388 : 12.629 F<p></p><p></p>   Coefficient 410 : 13.345 F<p></p><p></p>   Coefficient 432 : 14.062 F<p></p><p></p>   Coefficient 454 : 14.778 F<p></p><p></p>   Coefficient 476 : 15.494 F<p></p><p></p>   Coefficient 498 : 16.210 F<p></p><p></p> Catégorie III<p></p><p></p>   Coefficient 520 : 16.926 F<p></p><p></p>   Coefficient 542 : 17.642 F<p></p><p></p>   Coefficient 564 : 18.358 F<p></p><p></p>   Coefficient 586 : 19.074 F<p></p><p></p>   Coefficient 608 : 19.790 F<p></p><p></p>   Coefficient 630 : 20.506 F<p></p><p></p>   Coefficient 652 : 21.223 F<p></p><p></p>   Le salaire mensuel minimum des cadres est calculé en multipliant le point cadre fixé à 32,55 F par le coefficient de la catégorie.<p></p><p></p>   Pour toutes les dispositions contractuelles faisant référence à un minimum horaire, on calcule celui-ci en divisant le minimum mensuel par 169,60.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 36 1994-10-18 art. 1, BO conventions collectives 94-48 étendu par arrêté du 16 février 1995 JORF 25 mars 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 782438400000,
+                  "dateFin": 782438400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7264,13 +7338,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702888",
+              "cid": "KALISCTA000005702888",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des salaires mensuels garantis ouvriers, ETAM, primes  conventionnelles d'ancienneté et de fin d'année au 1er avril 1995",
+              "dateModif": null,
+              "dateDebut": "1995-04-12",
+              "dateFin": "1995-10-03",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798706",
+                  "cid": "KALIARTI000005798706",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702888/KALIARTI000005798706",
+                  "pathTitle": [
+                    "Barème des salaires mensuels garantis ouvriers, ETAM, primes  conventionnelles d'ancienneté et de fin d'année au 1er avril 1995"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   L'annexe A.O. II de la convention collective nationale du 17 février 1982 de l'industrie des tuiles et briques est désormais rédigée comme suit :<p></p> ANNEXE A.O. II<p></p> Barème des salaires mensuels garantis des ouvriers<p></p><p></p>   En vertu du 36e avenant du 12 avril 1995 à la convention collective nationale du 17 février 1982, les salaires mensuels garantis des ouvriers s'établissent comme suit, à partir du 1er avril 1995, pour une durée hebdomadaire de travail de trente-neuf heures.<p></p><p></p> (1) = catégorie<p></p> (2) = fourchette de coefficients<p></p> (3) = montant (en francs)<p></p><p></p><p></p><TABLE><TR><TD>(1)</TD><TD>  (2)    </TD><TD>   (3)       </TD></TR><TR><TD>I  </TD><TD>150 à 159</TD><TD>6.103 à 6.185</TD></TR><TR><TD>II </TD><TD>156 à 168</TD><TD>6.158 à 6.268</TD></TR><TR><TD>III</TD><TD>165 à 180</TD><TD>6.240 à 6.512</TD></TR><TR><TD>IV </TD><TD>175 à 193</TD><TD>6.332 à 6.983</TD></TR><TR><TD>V  </TD><TD>185 à 205</TD><TD>6.693 à 7.417</TD></TR><TR><TD>VI </TD><TD>195 à 220</TD><TD>7.055 à 7.960</TD></TR></TABLE><p></p><p></p>   Pour les coefficients 175 et au-dessus, la valeur du point est fixée à 36,18 F.<p></p>   Le salaire mensuel pour trente-neuf heures est obtenu en multipliant la valeur du point par le coefficient hiérarchique.<p></p>   Pour toutes les dispositions contractuelles faisant référence à un minimum horaire, on calcule celui-ci en divisant le minimum mensuel par 169,60.Article 2<p></p><p></p>   L'annexe A.O. III de la convention collective nationale du 17 février 1982 de l'industrie des tuiles et briques est désormais rédigée comme suit :<p></p> ANNEXE A.O. III<p></p> Grille des montants servant au calcul des primes conventionnelles<p></p> d'ancienneté et de fin d'année des ouvriers<p></p><p></p>   En vertu du 36e avenant du 12 avril 1995 à la convention collective nationale du 17 février 1982, la grille des montants servant au calcul des primes conventionnelles d'ancienneté et de fin d'année des ouvriers s'établit comme suit au 1er avril 1995 :<p></p><p></p> (1) = catégorie<p></p> (2) = fourchette de coefficients<p></p> (3) = montant (en francs)<p></p><p></p><p></p><TABLE><TR><TD>(1)</TD><TD>  (2)    </TD><TD>   (3)       </TD></TR><TR><TD>I  </TD><TD>150 à 159</TD><TD>4.823 à 4.896 </TD></TR><TR><TD>II </TD><TD>156 à 168</TD><TD>4.872 à 4.968 </TD></TR><TR><TD>III</TD><TD>165 à 180</TD><TD>4.944 à 5.170 </TD></TR><TR><TD>IV </TD><TD>175 à 193</TD><TD>5.027 à 5.543 </TD></TR><TR><TD>V  </TD><TD>185 à 205</TD><TD>5.313 à 5.889 </TD></TR><TR><TD>VI </TD><TD>195 à 220</TD><TD>5.600 à 6.318 </TD></TR></TABLE><p></p><p></p>   Pour le coefficient 175, la valeur du point : 28,72 F.Article 3<p></p><p></p>   L'annexe A.E. II de la convention collective nationale du 17 février 1982 de l'industrie des tuiles et briques est désormais rédigée comme suit :<p></p> ANNEXE A.E. II<p></p> Barème des salaires mensuels garantis des E.T.A.M.<p></p><p></p>   En vertu du 36e avenant du 12 avril 1995 à la convention collective nationale du 17 février 1982, les salaires mensuels garantis des E.T.A.M. s'établissent comme suit, à partir du 1er avril 1995, pour une durée hebdomadaire de travail de 39 heures :<p></p><p></p> (1) = catégorie<p></p> (2) = fourchette de coefficients<p></p> (3) = montant (en francs)<p></p><p></p><p></p><TABLE><TR><TD>(1)</TD><TD>  (2)    </TD><TD>   (3)        </TD></TR><TR><TD>I  </TD><TD>250 à 265</TD><TD> 6 103 à 6 147</TD></TR><TR><TD>II </TD><TD>260 à 315</TD><TD> 6 133 à 6 757</TD></TR><TR><TD>III</TD><TD>290 à 375</TD><TD> 6 221 à 8 044</TD></TR><TR><TD>IV </TD><TD>330 à 430</TD><TD> 7 079 à 9 224</TD></TR><TR><TD>V  </TD><TD>390 à 515</TD><TD> 8 366 à 11 047</TD></TR><TR><TD>VI </TD><TD>475 à 615</TD><TD>10 189 à 13 192</TD></TR></TABLE><p></p><p></p>   Pour les coefficients 290 et au-dessus, la valeur du point est fixée à 21,45 F.<p></p>   Le salaire mensuel pour trente-neuf heures est obtenu en multipliant la valeur du point par le coefficient hiérarchique.<p></p>   Pour toutes les dispositions contractuelles faisant référence à un minimum horaire, on calcule celui-ci en divisant le minimum mensuel par 169,60.Article 4<p></p><p></p>   L'annexe A.E. III de la convention collective nationale du 17 février 1982 de l'industrie des tuiles et briques est désormais rédigée comme suit :<p></p> ANNEXE A.E. III<p></p> Grille des montants servant au calcul des primes conventionnelles<p></p> d'ancienneté et de fin d'année des E.T.A.M.<p></p><p></p>   En vertu du 36e avenant du 12 avril 1995 à la convention collective nationale du 17 février 1982, la grille des montants servant au calcul des primes conventionnelles d'ancienneté et de fin d'année des E.T.A.M. s'établit comme suit au 1er avril 1995 :<p></p><p></p> (1) = catégorie<p></p> (2) = fourchette de coefficients<p></p> (3) = montant (en francs)<p></p><p></p><p></p><TABLE><TR><TD>(1)</TD><TD>  (2)    </TD><TD>   (3)        </TD></TR><TR><TD>I  </TD><TD>250 à 265</TD><TD>4.823 à  4.866</TD></TR><TR><TD>II </TD><TD>260 à 315</TD><TD>4.851 à  5.364</TD></TR><TR><TD>III</TD><TD>290 à 375</TD><TD>4.937 à  6.385</TD></TR><TR><TD>IV </TD><TD>330 à 430</TD><TD>5.619 à  7.322</TD></TR><TR><TD>V  </TD><TD>390 à 515</TD><TD>6.641 à  8.769</TD></TR><TR><TD>VI </TD><TD>475 à 615</TD><TD>8.089 à 10.472</TD></TR></TABLE><p></p><p></p>   Pour le coefficient 290, la valeur du point est fixée à 17,02 F.<font color=\"808080\"><em>   NOTA : Arrêté du 30 novembre 1995 art. 1 : l'avenant n° 36 du 12 avril 1995 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 30 novembre 1995 art. 1 : l'avenant n° 36 du 12 avril 1995 est étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 36 1995-04-12 BO conventions collectives 95-20, étendu par arrêté du 30 novembre 1995 JORF 19 décembre 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 797644800000,
+                  "dateFin": 812678400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7284,13 +7432,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702889",
+              "cid": "KALISCTA000005702889",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des salaires mensuels minima des cadres au 1er avril 1995",
+              "dateModif": null,
+              "dateDebut": "1995-04-12",
+              "dateFin": "1995-10-03",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798707",
+                  "cid": "KALIARTI000005798707",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702889/KALIARTI000005798707",
+                  "pathTitle": [
+                    "Barème des salaires mensuels minima des cadres au 1er avril 1995"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   L'annexe ACA n° 2 - Barème des salaires minima cadres - de la convention collective nationale du 17 février 1982 de l'industrie des tuiles et briques est désormais rédigée comme suit :<p></p><p></p>   En vertu du 37e avenant du 12 avril 1995 à la convention collective nationale du 17 février 1982, les salaires mensuels minima des cadres s'établissent comme suit à partir du 1er avril 1995, pour une durée hebdomadaire de travail de 39 heures.<p></p><p></p>CATEGORIE I<p></p> Seuils d'accueil des jeunes cadres diplômés<p></p><p></p> Première année : coefficient 300 :  9.882 <p></p> Deuxième année : coefficient 322 : 10.607 <p></p> Troisième année : coefficient 344: 11.331 <p></p><p></p>CATEGORIE II<p></p> Position A - B ou C<p></p><p></p><TABLE><TR><TD>Coef. </TD><TD> Salaires</TD></TR><TR><TD> 366  </TD><TD>  12.056 </TD></TR><TR><TD> 388  </TD><TD>  12.781 </TD></TR><TR><TD> 410  </TD><TD>  13.505 </TD></TR><TR><TD> 432  </TD><TD>  14.230 </TD></TR><TR><TD> 454  </TD><TD>  14.955 </TD></TR><TR><TD> 476  </TD><TD>  15.679 </TD></TR><TR><TD> 498  </TD><TD>  16.404 </TD></TR></TABLE><p></p>CATEGORIE III<p></p><p></p><TABLE><TR><TD>Coef. </TD><TD> Salaires</TD></TR><TR><TD> 520  </TD><TD> 17.129  </TD></TR><TR><TD> 542  </TD><TD> 17.853  </TD></TR><TR><TD> 564  </TD><TD> 18.578  </TD></TR><TR><TD> 586  </TD><TD> 19.303  </TD></TR><TR><TD> 608  </TD><TD> 20.028  </TD></TR><TR><TD> 630  </TD><TD> 20.752  </TD></TR><TR><TD> 652  </TD><TD> 21.477  </TD></TR></TABLE><p></p><p></p>   Le salaire mensuel minimum des cadres est calculé en multipliant le point cadre fixé à 32,94 F par le coefficient de la catégorie.<p></p>   Pour toutes les dispositions contractuelles faisant référence à un minimum horaire, on calcule celui-ci en divisant le minimum mensuel par 169,60.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 37 1995-04-12 BO conventions collectives 95-20, étendu par arrêté du 18 juillet 1995 JORF 28 juillet 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 797644800000,
+                  "dateFin": 812678400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

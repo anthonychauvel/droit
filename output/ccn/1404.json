@@ -34131,13 +34131,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696908",
+              "cid": "KALISCTA000005696908",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème national des salaires minima mensuels garantis au 1er janvier 1998 (base 39 heures par semaine)",
+              "dateModif": null,
+              "dateDebut": "1998-01-01",
+              "dateFin": "1998-06-23",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783199",
+                  "cid": "KALIARTI000005783199",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696908/KALIARTI000005783199",
+                  "pathTitle": [
+                    "Barème national des salaires minima mensuels garantis au 1er janvier 1998 (base 39 heures par semaine)"
+                  ],
+                  "content": "<p></p> :-------------:<p></p><TABLE><TR><TD>COEF.</TD><TD>SALAIRE</TD></TR><TR><TD></TD><TD>(en    </TD></TR><TR><TD></TD><TD>francs)</TD></TR><TR><TD> 150 </TD><TD> 6 664 </TD></TR><TR><TD> 160 </TD><TD> 6 702 </TD></TR><TR><TD> 170 </TD><TD> 6 729 </TD></TR><TR><TD> 180 </TD><TD> 6 752 </TD></TR><TR><TD> 195 </TD><TD> 6 904 </TD></TR><TR><TD> 215 </TD><TD> 7 218 </TD></TR><TR><TD> 225 </TD><TD> 7 392 </TD></TR><TR><TD> 245 </TD><TD> 7 782 </TD></TR><TR><TD> 260 </TD><TD> 8 048 </TD></TR><TR><TD> 275 </TD><TD> 8 316 </TD></TR><TR><TD> 295 </TD><TD> 8 792 </TD></TR><TR><TD> 315 </TD><TD> 9 244 </TD></TR><TR><TD> 340 </TD><TD> 9 898 </TD></TR><TR><TD> 365 </TD><TD>10 525 </TD></TR><TR><TD> 410 </TD><TD>11 565 </TD></TR><TR><TD> 450 </TD><TD>12 586 </TD></TR><TR><TD> 500 </TD><TD>13 809 </TD></TR><TR><TD> 600 </TD><TD>16 287 </TD></TR><TR><TD> 700 </TD><TD>18 888 </TD></TR><TR><TD> 800 </TD><TD>21 214 </TD></TR></TABLE><p></p><p></p>   Le champ d'application du présent accord, en attente de l'extension de l'avenant n° 55 du 4 mai 1994, est celui correspondant au champ initial défini à l'article 1er, chapitre Ier modifié par avenant n° 33 du 22 avril 1986.<p></p>   Il fera l'objet des formalités de dépôt prévues à l'article L. 132-10 du code du travail, ainsi que d'une demande d'extension.",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 66 1997-12-10, en vigueur le 1er janvier 1998 BO conventions collectives 98-5 étendu par arrêté du 12 mars 1998 JORF 21 mars 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 883612800000,
+                  "dateFin": 898560000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -34151,13 +34239,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696909",
+              "cid": "KALISCTA000005696909",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème national des salaires minima mensuels garantis au 1er juillet 1998 (base 39 heures par semaine)",
+              "dateModif": null,
+              "dateDebut": "1998-06-23",
+              "dateFin": "1998-12-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783200",
+                  "cid": "KALIARTI000005783200",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696909/KALIARTI000005783200",
+                  "pathTitle": [
+                    "Barème national des salaires minima mensuels garantis au 1er juillet 1998 (base 39 heures par semaine)"
+                  ],
+                  "content": "<p></p> :-------------:<p></p><TABLE><TR><TD>COEF.</TD><TD>SALAIRE</TD></TR><TR><TD></TD><TD>en     </TD></TR><TR><TD></TD><TD>francs </TD></TR><TR><TD>  150</TD><TD> 6 697 </TD></TR><TR><TD>  160</TD><TD> 6 736 </TD></TR><TR><TD>  170</TD><TD> 6 763 </TD></TR><TR><TD>  180</TD><TD> 6 786 </TD></TR><TR><TD>  195</TD><TD> 6 939 </TD></TR><TR><TD>  215</TD><TD> 7 254 </TD></TR><TR><TD>  225</TD><TD> 7 429 </TD></TR><TR><TD>  245</TD><TD> 7 821 </TD></TR><TR><TD>  260</TD><TD> 8 088 </TD></TR><TR><TD>  275</TD><TD> 8 358 </TD></TR><TR><TD>  295</TD><TD> 8 836 </TD></TR><TR><TD>  315</TD><TD> 9 290 </TD></TR><TR><TD>  340</TD><TD> 9 947 </TD></TR><TR><TD>  365</TD><TD>10 578 </TD></TR><TR><TD>  410</TD><TD>11 623 </TD></TR><TR><TD>  450</TD><TD>12 649 </TD></TR><TR><TD>  500</TD><TD>13 878 </TD></TR><TR><TD>  600</TD><TD>16 368 </TD></TR><TR><TD>  700</TD><TD>18 982 </TD></TR><TR><TD>  800</TD><TD>21 320 </TD></TR></TABLE><p></p><p></p>   Le champ d'application du présent accord, en attente de l'extension de l'avenant n° 55 du 4 mai 1994, est celui correspondant au champ initial défini à l'article 1er, chapitre Ier modifié par avenant n° 33 du 22 avril 1986.<p></p><p></p>   Il fera l'objet des formalités de dépôt prévues à l'article L  132-10 du code du travail, ainsi que d'une demande d'extension.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 14 octobre 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 14 octobre 1998 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 67 1998-06-23 BO conventions collectives 98-34 étendu par arrêté du 14 octobre 1998 JORF 24 octobre 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 898560000000,
+                  "dateFin": 913852800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -34171,13 +34347,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696910",
+              "cid": "KALISCTA000005696910",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème national des salaires minima mensuels garantis au 1er janvier 1999 (base 39 heures par semaine)",
+              "dateModif": null,
+              "dateDebut": "1998-12-17",
+              "dateFin": "2000-05-02",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005783202",
+                  "cid": "KALIARTI000005783202",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005696910/KALIARTI000005783202",
+                  "pathTitle": [
+                    "Barème national des salaires minima mensuels garantis au 1er janvier 1999 (base 39 heures par semaine)"
+                  ],
+                  "content": "Barème national des salaires minima mensuels garantis<p></p> (base 39 heures par semaine)<p></p> Applicable au 1er janvier 1999<p></p><p></p><TABLE><TR><TD>COEF   </TD><TD>SALAIRE (en francs)</TD></TR><TR><TD>    150</TD><TD>       6 800       </TD></TR><TR><TD>    160</TD><TD>       6 840       </TD></TR><TR><TD>    170</TD><TD>       6 870       </TD></TR><TR><TD>    180</TD><TD>       6 900       </TD></TR><TR><TD>    195</TD><TD>       7 050       </TD></TR><TR><TD>    215</TD><TD>       7 290       </TD></TR><TR><TD>    225</TD><TD>       7 466       </TD></TR><TR><TD>    245</TD><TD>       7 860       </TD></TR><TR><TD>    260</TD><TD>       8 128       </TD></TR><TR><TD>    275</TD><TD>       8 400       </TD></TR><TR><TD>    295</TD><TD>       8 880       </TD></TR><TR><TD>    315</TD><TD>       9 336       </TD></TR><TR><TD>    340</TD><TD>       9 997       </TD></TR><TR><TD>    365</TD><TD>      10 631       </TD></TR><TR><TD>    410</TD><TD>      11 681       </TD></TR><TR><TD>    450</TD><TD>      12 712       </TD></TR><TR><TD>    500</TD><TD>      13 947       </TD></TR><TR><TD>    600</TD><TD>      16 450       </TD></TR><TR><TD>    700</TD><TD>      19 077       </TD></TR><TR><TD>    800</TD><TD>      21 427       </TD></TR></TABLE><p></p><p></p>   Le champ d'application du présent avenant, est celui défini à l'article 1er, chapitre Ier, modifié par avenant n° 33 du 22 avril 1986 de la convention collective.<p></p>   Il fera l'objet des formalités de dépôt prévues à l'article L. 132-10 du code du travail, ainsi que d'une demande d'extension.",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 68 1998-12-17 BO conventions collectives 99-6 étendu par arrêté du 23 mars 1999 JORF 1er avril 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 913852800000,
+                  "dateFin": 957225600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

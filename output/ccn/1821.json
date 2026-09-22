@@ -6247,13 +6247,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005714771",
+              "cid": "KALISCTA000005714771",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er octobre 1998.",
+              "dateModif": null,
+              "dateDebut": "1998-10-15",
+              "dateFin": "2005-06-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005829242",
+                  "cid": "KALIARTI000005829242",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005714771/KALIARTI000005829242",
+                  "pathTitle": [
+                    "Salaires à compter du 1er octobre 1998."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Le SMP au coefficient 100 est fixé à 20,55 F par heure, soit :<p></p><p></p>   - pour 169 heures : 3 472 F par mois ;<p></p><p></p>   - pour 169 heures 65/100 : 3 486,31 F par mois.<p></p> Article 2<p></p><p></p>   Le SMG coefficient 115 est fixé à 40,22 F par heure, soit :<p></p><p></p>   - pour 169 heures : 6 797,18 F par mois ;<p></p><p></p>   - pour 169 heures 65/100 : 6 823,32 F par mois.<p></p><p></p>   Pour chacun des coefficients intermédiaires entre 125 et 205, le SMG est calculé de la façon suivante :<p></p><p></p>   - on détermine la valeur du point complémentaire à l'aide de la formule :<p></p> Ecart en valeur entre le point K 115 et le point K 205<p></p> Ecart en points entre 115 et 205<p></p><p></p>   Point complémentaire : 42,13 - 40,22/90<p></p> = 0,02122<p></p><p></p>   soit :<p></p><p></p>   K 115 :  =  40,22 F par heure ;<p></p><p></p>   K 125 : (0,02122 x 10) + 40,22 =  40,43 F par heure ;<p></p><p></p>   K 135 : (0,02122 x 20) + 40,22 =  40,64 F par heure ;<p></p><p></p>   K 145 : (0,02122 x 30) + 40,22 =  40,86 F par heure ;<p></p><p></p>   K 160 : (0,02122 x 45) + 40,22 =  41,18 F par heure ;<p></p><p></p>   K 175 : (0,02122 x 60) + 40,22 =  41,49 F par heure ;<p></p><p></p>   K 190 : (0,02122 x 75) + 40,22 =  41,81 F par heure ;<p></p><p></p>   K 205 : (0,02122 x 90) + 40,22 =  42,13 F par heure. <p></p> Article 3<p></p><p></p>   Simultanément aux dispositions ci-dessus, une rémunération minimum annuelle garantie (RMAG) est mise en place, sur la base de 81 600 F au coefficient 115, pour la durée du temps de travail pratiquée à ce jour dans les entreprises et qui pourra être reconsidérée à l'issue des réunions paritaires consacrées à l'aménagement et à la réduction du temps de travail.<p></p><p></p>   Les parties signataires des articles 1er et 2 seront applicables à partir du 1er octobre 1998, sous réserve d'une signature intervenant dans les 10 jours (pour des raisons techniques liées à l'établissement de la paie) ou, dans le cas contraire, du 1er novembre 1998.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1998-10-15 BO conventions collectives 98-46, étendu par arrêté du 5 janvier 1999 JORF 14 janvier 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (SMP, SMG et RMAG)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 908409600000,
+                  "dateFin": 1118966400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
