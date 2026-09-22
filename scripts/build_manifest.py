@@ -218,6 +218,21 @@ def main():
     # contient QUE les compteurs. L'app le charge en premier pour afficher le
     # récap instantanément, sans attendre le manifest complet (7+ Mo à cause
     # des listes JORF/ACCO). Supprime le délai de démarrage sur mobile.
+    # MANIFESTE DÉCOUPÉ (22/09/2026). Les listes JORF (4,8 Mo) et accords
+    # (11,5 Mo) font 96 % du manifeste, et ne servent qu'à parcourir ces deux
+    # onglets. L'app charge à l'ouverture le seul « socle » (conventions,
+    # articles, jurisprudence : moins de 1 Mo), et chaque liste lourde au
+    # premier clic sur son onglet. manifest.json reste écrit à l'identique :
+    # lecteur.html le lit, et l'app s'en sert en secours tant que les fichiers
+    # découpés n'existent pas encore.
+    dossier = os.path.dirname(args.out) or "."
+    socle = {k: manifest[k] for k in ("generated", "counts", "ccn", "code", "secu", "juris")}
+    for nom, contenu in (("manifest-socle.json", socle),
+                         ("manifest-jorf.json", {"jorf": jorf}),
+                         ("manifest-acco.json", {"acco": acco})):
+        with open(os.path.join(dossier, nom), "w", encoding="utf-8") as f:
+            json.dump(contenu, f, ensure_ascii=False, separators=(",", ":"))
+
     counts_path = os.path.join(os.path.dirname(args.out) or ".", "counts.json")
     petits = dict(manifest["counts"])
     # Compteurs des 5 onglets « clauses » (22/09/2026). L'app ne charge plus
