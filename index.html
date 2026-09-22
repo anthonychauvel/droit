@@ -13,8 +13,11 @@
 <!-- Démarre le téléchargement du minuscule counts.json dès l'analyse du HTML,
      avant que le gros script inline soit parsé → les totaux s'affichent au plus
      tôt. (On ne précharge PAS manifest/search-index : volumineux, risque de
-     double téléchargement selon l'appariement CORS du préchargement.) -->
-<link rel="preload" href="output/counts.json" as="fetch">
+     double téléchargement selon l'appariement CORS du préchargement.)
+     crossorigin="anonymous" : sans lui, le mode du préchargement ne correspondait
+     pas à celui de fetch() et counts.json était téléchargé deux fois
+     (avertissement console relevé le 22/09/2026). -->
+<link rel="preload" href="output/counts.json" as="fetch" crossorigin="anonymous">
 
 <!-- Icône et comportement à l'ajout sur l'écran d'accueil (iOS). -->
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -1271,6 +1274,7 @@ async function loadSearchIndex(){
   // avance), et une source qui échoue reste simplement vide.
   var got = {};
   await Promise.all(SRC_CORE.map(async function(s){
+    if(s === 'ccn'){ got.ccn = await chargerCatalogueCcn(); return; }
     try{ got[s] = await fetchJSON('output/search-index-'+s+'.json', 60000); }
     catch(e){ got[s] = []; }
   }));
@@ -2230,6 +2234,116 @@ var CAT_KEYWORDS_RAW = {
   conges:['conge','conges','conges payes','conges exceptionnels','conge maternite','conge paternite','conge parental','jours feries','jour ferie'],
   duree_travail:['duree du travail','temps de travail','35 heures','horaire','amplitude','duree']
 };
+/* ============================================================================
+   CONVENTIONS À LA DEMANDE (22/09/2026)
+   ----------------------------------------------------------------------------
+   L'index complet des conventions (25 Mo, ~89 Mo en mémoire) était chargé à
+   chaque ouverture pour chercher dans les 313 conventions à la fois. Un salarié
+   n'en consulte qu'une : la sienne. Désormais :
+     - à l'ouverture, un CATALOGUE (search-index-ccn-lite.json, ~15 Ko
+       compressé) : numéro, titre, thèmes couverts. Il suffit pour reconnaître
+       une convention par son nom, son métier, son surnom ou son IDCC (ces
+       tables-là sont déjà dans la page) ;
+     - quand l'utilisateur CHOISIT sa convention (« Ma convention »), on charge
+       son seul contenu (ccn-index/<IDCC>.json, ~14 Ko compressé) ;
+     - le bouton « Chercher dans toutes les conventions » charge l'index complet,
+       pour qui veut comparer.
+   Rien n'est mémorisé d'une visite à l'autre : choix de Chauvel, l'utilisateur
+   indique sa convention à chaque ouverture.
+   Sans contenu chargé, searchCCNv2 ne trouve une convention que par son
+   identité (le score « sujet » vient des sections) : aucune liste de conventions
+   vides n'apparaît.
+   ========================================================================== */
+var CCN_TOUTES_ETAT = 'absent';   // absent | charge | pret | echec
+var CCN_CHARGEES = {};            // IDCC -> true quand son contenu est en mémoire
+var CCN_PROMESSES = {};
+async function chargerCatalogueCcn(){
+  try{
+    var lite = await fetchJSON('output/search-index-ccn-lite.json', 60000);
+    return (lite||[]).map(function(c){
+      return {num:c.num, title:c.title, source:c.source, cats:c.cats||[], n:c.n||0, hits:[]};
+    });
+  }catch(e){
+    // Catalogue pas encore produit par l'aspirateur : index complet, comme avant.
+    try{
+      var tout = await fetchJSON('output/search-index-ccn.json', 60000);
+      CCN_TOUTES_ETAT = 'pret';
+      return tout;
+    }catch(e2){ return []; }
+  }
+}
+function _entreeCcn(idcc){
+  var id = String(idcc);
+  return (SEARCH.ccn||[]).filter(function(c){ return String(c.num)===id; })[0] || null;
+}
+function _injecterHits(entree, hits){
+  entree.hits = hits || [];
+  CCN_CHARGEES[String(entree.num)] = true;
+  if(ENG){
+    ENG.ccnHits[String(entree.num)] = entree.hits;
+    var s = {}; entree.hits.forEach(function(h){ (h.cats||(h.cat?[h.cat]:[])).forEach(function(ct){ s[ct]=1; }); });
+    ENG.ccnCats[String(entree.num)] = s;
+  }
+  if(typeof CONTENU_CACHE !== 'undefined') delete CONTENU_CACHE.ccn;
+}
+function chargerCcn(idcc){
+  var id = String(idcc || '');
+  if(!id || CCN_TOUTES_ETAT === 'pret' || CCN_CHARGEES[id]) return Promise.resolve();
+  if(CCN_PROMESSES[id]) return CCN_PROMESSES[id];
+  CCN_PROMESSES[id] = (async function(){
+    try{
+      var nom = id.replace(/[^0-9A-Za-z_-]/g, '_');
+      var d = await fetchJSON('output/ccn-index/'+nom+'.json', 30000);
+      var e = _entreeCcn(id);
+      if(e && d) _injecterHits(e, d.hits);
+    }catch(err){ /* reste en catalogue : la convention s'affiche, sans ses sections */ }
+    CCN_PROMESSES[id] = null;
+  })();
+  return CCN_PROMESSES[id];
+}
+async function chargerToutesCcn(){
+  if(CCN_TOUTES_ETAT === 'charge' || CCN_TOUTES_ETAT === 'pret') return;
+  CCN_TOUTES_ETAT = 'charge';
+  var btn = document.getElementById('btn-ccn-toutes');
+  if(btn){ btn.textContent = 'Chargement des conventions…'; btn.disabled = true; }
+  try{
+    SEARCH.ccn = await fetchJSON('output/search-index-ccn.json', 60000);
+    CCN_TOUTES_ETAT = 'pret';
+    resetEngineCaches();
+    CCN_CAT_SET = null;
+    if(typeof CONTENU_CACHE !== 'undefined') delete CONTENU_CACHE.ccn;
+    if(typeof buildArtInvChunked === 'function') buildArtInvChunked();
+  }catch(e){ CCN_TOUTES_ETAT = 'echec'; }
+  var q = document.getElementById('q');
+  if(q && q.value.trim()) runSearch();
+  setTimeout(function(){
+    var cible = document.getElementById('grp-ccn');
+    if(!cible) return;
+    try{ cible.scrollIntoView({behavior:'smooth', block:'start'}); }catch(e){ cible.scrollIntoView(); }
+  }, 80);
+}
+// Nom lisible pour un bouton : le nom court de ccn-liste.json, sinon le titre
+// sans « Convention collective nationale (de la / des / du …) » ni la date.
+function nomCourtCcn(idcc, titre){
+  var id = String(idcc), c = (CCN_LISTE||[]).filter(function(x){ return String(x.i!=null?x.i:(x.idcc!=null?x.idcc:''))===id; })[0];
+  var t = (c && c.n) ? String(c.n) : String(titre||'');
+  t = t.replace(/^convention collective (nationale |régionale |départementale )?(de travail )?(des |de la |de l'|du |de |d')?/i, '')
+       .replace(/\s+du \d{1,2}(er)? [a-zéû]+ \d{4}[\s\S]*$/i, '').replace(/\s*\([\s\S]*$/, '').replace(/\s+/g, ' ').trim();
+  t = t.charAt(0).toUpperCase() + t.slice(1);
+  return t.length > 40 ? t.slice(0, 39) + '…' : t;
+}
+function choisirCcnDepuisResultats(idcc){
+  if(typeof maccnChoisir === 'function') maccnChoisir(String(idcc));
+  else assistChoisirCCN(String(idcc));
+}
+function ouvrirMaConvention(){
+  MACCN_OUVERT = true;
+  if(typeof maccnRender === 'function') maccnRender();
+  var b = document.getElementById('maccn');
+  if(b){ try{ b.scrollIntoView({behavior:'smooth', block:'center'}); }catch(e){ b.scrollIntoView(); } }
+  setTimeout(function(){ var i=document.getElementById('maccn-input'); if(i){ try{ i.focus(); }catch(e){} } }, 300);
+}
+
 var ENG = null;
 function getENG(){
   if(ENG) return ENG; buildCcnMaps();
@@ -3300,6 +3414,11 @@ function assistChoisirCCN(idcc){
   renderAssist();
   relancerAssist();
   if(typeof maccnRender==='function') maccnRender();   // garder le sélecteur du haut synchronisé
+  // Contenu de la convention à la demande (voir chargerCcn) : la recherche est
+  // relancée dès qu'il arrive, pour afficher ses sections.
+  if(typeof chargerCcn==='function' && !CCN_CHARGEES[String(idcc)] && CCN_TOUTES_ETAT!=='pret'){
+    chargerCcn(idcc).then(function(){ if(String(ASSIST_CCN)===String(idcc)) relancerAssist(); });
+  }
 }
 
 // Recherche DÉBOUNCÉE : dans le mode assisté, chaque clic accumule des mots et
@@ -3618,6 +3737,55 @@ function runSearch(){
       + 'jurisprudence) s\'affiche.</div>'
       + '<button class="sci-btn" onclick="scrollToConventionPicker()">Choisir ma convention</button>'
       + '</div>';
+  } else if(!ccnFiltree && CCN_TOUTES_ETAT !== 'pret' && (NIVEAU_ACTIF === 'tous' || (NIVEAU_GROUPES[NIVEAU_ACTIF]||[]).indexOf('ccn') !== -1)){
+    // Conventions en mode catalogue (voir chargerCcn) : on montre celles que la
+    // requête désigne (nom, métier, IDCC) et on propose d'y chercher, ou de
+    // chercher dans toutes. Jamais de faux « rien trouvé ».
+    // Ne proposer QUE les conventions vraiment désignées par la requête. Le
+    // classement par identité de searchCCNv2 compare des sous-chaînes avec
+    // variantes orthographiques : « prime » -> « prise » trouvait « entrePRISEs »
+    // dans des dizaines de titres. Avec le contenu chargé, le score « sujet »
+    // noyait ces faux amis ; en mode catalogue ils seraient seuls à l'écran.
+    // Ici : mot entier du nom ou du secteur, métier, surnom, ou IDCC exact.
+    ccn = (function(liste){
+      var padR = ' '+rawNorm+' ', mots = searchTokens.filter(function(t){ return t.length>=4 && !(typeof STOP!=='undefined' && STOP[t]); });
+      var forts = {};
+      if(typeof PRO!=='undefined') Object.keys(PRO).forEach(function(ph){ if(padR.indexOf(' '+ph+' ')!==-1) PRO[ph].forEach(function(id){ forts[String(id)]=1; }); });
+      if(typeof ALIAS!=='undefined') Object.keys(ALIAS).forEach(function(a){ if(padR.indexOf(' '+a+' ')!==-1) ALIAS[a].forEach(function(id){ forts[String(id)]=1; }); });
+      searchTokens.forEach(function(t){ if(/^\d{3,5}$/.test(t)) forts[stripZeros(t)]=1; });
+      var notes = liste.map(function(r){
+        var id = String(r.num), hay = ' '+normaliser(String(r.title||'')+' '+((CCN_SECTOR_MAP&&CCN_SECTOR_MAP[id])||''))+' ';
+        var n = mots.filter(function(w){ return hay.indexOf(' '+w+' ')!==-1 || hay.indexOf(' '+w+'s ')!==-1; }).length;
+        return {r:r, n:n, fort:!!(forts[id]||forts[stripZeros(id)])};
+      });
+      var max = 0; notes.forEach(function(x){ if(x.n>max) max=x.n; });
+      return notes.filter(function(x){ return x.fort || (max>0 && x.n===max); })
+                  .sort(function(a,b){ return (b.fort-a.fort) || (b.n-a.n); })
+                  .map(function(x){ return x.r; });
+    })(ccnAll);
+    var btnSt = 'display:inline-block;margin:8px 8px 0 0;background:var(--ink3);border:1px solid var(--edge);'
+              + 'color:var(--txt);font-size:13px;padding:8px 12px;border-radius:10px;cursor:pointer;text-align:left';
+    html += '<div class="group-title grp-src grp-ccn" id="grp-ccn">'+srcIcon('ccn')+'Conventions collectives'+(ccn.length?' · '+ccn.length:'')+'</div>';
+    if(ccn.length){
+      html += '<div class="rows">' + ccn.slice(0,5).map(function(r){
+        return rowHtml('ccn', r.num, r.title, r.etat, {source:r.source});
+      }).join('') + '</div>';
+    }
+    html += '<div style="padding:10px 14px 12px;font-size:13px;color:var(--txt2);line-height:1.5">';
+    if(ccn.length){
+      html += 'Pour chercher dans le contenu d\'une convention, choisis-la :<br>'
+           + ccn.slice(0,3).map(function(r){
+               return '<button onclick="choisirCcnDepuisResultats(\''+escAttr(String(r.num))+'\')" style="'+btnSt+'">'
+                    + 'Chercher dans IDCC '+escapeHtml(String(r.num))+' · '+escapeHtml(nomCourtCcn(r.num, r.title))+'</button>';
+             }).join('');
+    } else {
+      html += 'Indique ta convention (métier, secteur ou IDCC) pour chercher dedans.<br>'
+           + '<button onclick="ouvrirMaConvention()" style="'+btnSt+'">Choisir ma convention</button>';
+    }
+    html += '<button id="btn-ccn-toutes" onclick="chargerToutesCcn()" style="'+btnSt+'">'
+         + (CCN_TOUTES_ETAT==='charge' ? 'Chargement des conventions…'
+            : CCN_TOUTES_ETAT==='echec' ? 'Échec du chargement — réessayer'
+            : 'Chercher dans toutes les conventions') + '</button></div>';
   } else if(ccn.length){
     html += '<div class="group-title grp-src grp-ccn" id="grp-ccn">'+srcIcon('ccn')+(ccnFiltree ? 'Votre convention' : 'Conventions collectives · '+ccn.length)+'</div><div class="rows">';
     html += ccn.map(function(r){
@@ -3999,6 +4167,10 @@ function buildCcnCatSet(){
   (SEARCH.ccn||[]).forEach(function(c){
     (c.hits||[]).forEach(function(h){
       (CCN_CAT_SET[h.cat] = CCN_CAT_SET[h.cat] || {})[String(c.num)] = true;
+    });
+    // Catalogue léger : pas de sections en mémoire, mais la liste des thèmes.
+    (c.cats||[]).forEach(function(ct){
+      (CCN_CAT_SET[ct] = CCN_CAT_SET[ct] || {})[String(c.num)] = true;
     });
   });
 }
