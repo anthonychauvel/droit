@@ -1313,7 +1313,7 @@ async function loadAll(){
   // arrivée — sans attendre le manifest complet (7+ Mo).
   var pCounts = (async function(){
     try{ var c0 = await fetchJSON('output/counts.json');
-      if(c0 && c0.counts){ COUNTS = c0.counts; paintCounts(COUNTS); renderDashboard(); renderExplorer(); renderHierarchie(); } }
+      if(c0 && c0.counts){ COUNTS = c0.counts; paintCounts(COUNTS); paintClauseCounts(); renderDashboard(); renderExplorer(); renderHierarchie(); } }
     catch(e){ /* pas grave : le manifest prendra le relais */ }
   })();
 
@@ -1371,19 +1371,10 @@ async function loadAll(){
     catch(e){ CCN_LISTE = []; }
   })();
 
-  var pClauses = (async function(){
-    // Index des clauses thématiques -- absent tant qu'aucun run CCN complet
-    // (fetch_*_details + build_clauses_index) n'a tourné : dans ce cas les 5
-    // onglets restent simplement vides, pas d'erreur.
-    try{
-      var c = await fetchJSON('output/clauses-index.json');
-      CLAUSES = {
-        salaire: c.salaire||[], heures_sup: c.heures_sup||[],
-        forfait_jours: c.forfait_jours||[], temps_partiel: c.temps_partiel||[],
-        classification: c.classification||[]
-      };
-    }catch(e){ /* onglets vides, silencieux */ }
-  })();
+  // Les clauses thématiques (clauses-index.json, 66 Mo) ne sont PLUS chargées
+  // à l'ouverture : voir chargerClauses(), appelée à l'ouverture d'un des
+  // 5 onglets. Leurs compteurs du menu viennent de counts.json (paintClauseCounts).
+  var pClauses = Promise.resolve();
 
   var pTrends = (async function(){
     try{ TRENDS = await fetchJSON('output/search-trends.json'); }
@@ -1579,11 +1570,20 @@ function paintCounts(cc){
 function updateCounts(){
   paintCounts({ccn:INDEX.ccn.length, code:INDEX.code.length, secu:INDEX.secu.length,
                juris:INDEX.juris.length, jorf:INDEX.jorf.length, acco:INDEX.acco.length});
-  document.getElementById('nc-cl_salaire').textContent        = fmt(CLAUSES.salaire.length);
-  document.getElementById('nc-cl_heures_sup').textContent     = fmt(CLAUSES.heures_sup.length);
-  document.getElementById('nc-cl_forfait_jours').textContent  = fmt(CLAUSES.forfait_jours.length);
-  document.getElementById('nc-cl_temps_partiel').textContent  = fmt(CLAUSES.temps_partiel.length);
-  document.getElementById('nc-cl_classification').textContent = fmt(CLAUSES.classification.length);
+  paintClauseCounts();
+}
+/* Compteurs des 5 onglets clauses : les vrais chiffres si les clauses sont
+   chargées, sinon ceux de counts.json (cl_salaire…, ajoutés par
+   build_manifest.py). Sans l'un ni l'autre, on laisse le « … » du HTML plutôt
+   que d'afficher un faux « 0 ». */
+function paintClauseCounts(){
+  ['salaire','heures_sup','forfait_jours','temps_partiel','classification'].forEach(function(t){
+    var el = document.getElementById('nc-cl_'+t); if(!el) return;
+    var v = null;
+    if(CLAUSES_ETAT === 'pret') v = (CLAUSES[t]||[]).length;
+    else if(COUNTS && typeof COUNTS['cl_'+t] === 'number') v = COUNTS['cl_'+t];
+    if(v !== null) el.textContent = fmt(v);
+  });
 }
 /* ============================================================================
    Normalisation + dictionnaires (métier -> IDCC, synonymes) pour la recherche
@@ -4112,6 +4112,36 @@ function renderBrowse(){
    existantes (group-title, rows, empty, more) -- aucun CSS à ajouter. */
 var CL_STATE = { theme:'salaire', filter:'', shown:PAGE };
 
+/* CHARGEMENT À LA DEMANDE (22/09/2026). clauses-index.json pèse 66 Mo et
+   coûte ~240 Mo de mémoire une fois lu -- plus que tout le reste réuni. Il
+   était chargé à CHAQUE ouverture, pour 5 onglets que la plupart des visites
+   n'ouvrent pas. Sur iPhone, dans l'application installée sur l'écran
+   d'accueil (moins de mémoire qu'un onglet Safari), la page était tuée et
+   rechargée en boucle. On ne le charge plus qu'au premier clic sur l'un des
+   5 onglets, une seule fois. */
+var CLAUSES_ETAT = 'absent';          // absent | encours | pret | erreur
+var CLAUSES_PROMESSE = null;
+function chargerClauses(){
+  if(CLAUSES_PROMESSE) return CLAUSES_PROMESSE;
+  CLAUSES_ETAT = 'encours';
+  CLAUSES_PROMESSE = (async function(){
+    try{
+      var c = await fetchJSON('output/clauses-index.json', 60000);
+      CLAUSES = {
+        salaire: c.salaire||[], heures_sup: c.heures_sup||[],
+        forfait_jours: c.forfait_jours||[], temps_partiel: c.temps_partiel||[],
+        classification: c.classification||[]
+      };
+      CLAUSES_ETAT = 'pret';
+      paintClauseCounts();
+    }catch(e){
+      CLAUSES_ETAT = 'erreur';
+      CLAUSES_PROMESSE = null;        // on pourra réessayer au clic suivant
+    }
+  })();
+  return CLAUSES_PROMESSE;
+}
+
 function startBrowseClauses(v){
   CL_STATE.theme = v.replace('cl_','');
   CL_STATE.filter = '';
@@ -4126,6 +4156,23 @@ function startBrowseClauses(v){
 }
 
 function renderBrowseClauses(){
+  if(CLAUSES_ETAT !== 'pret'){
+    var boxc = document.getElementById('browse-results');
+    if(CLAUSES_ETAT === 'erreur'){
+      boxc.innerHTML = '<div class="empty"><div class="big">Chargement impossible.</div>'
+        + 'Vérifie ta connexion puis rouvre cet onglet.</div>';
+      CLAUSES_ETAT = 'absent';
+      return;
+    }
+    boxc.innerHTML = '<div class="empty"><div class="big">Chargement des clauses…</div>'
+      + 'Première ouverture : quelques secondes.</div>';
+    var themeDemande = CL_STATE.theme;
+    chargerClauses().then(function(){
+      // Ne redessine que si l'utilisateur est toujours sur un onglet clauses.
+      if(CL_STATE.theme === themeDemande && document.getElementById('browse-results')) renderBrowseClauses();
+    });
+    return;
+  }
   var liste = CLAUSES[CL_STATE.theme] || [];
   var f = normaliser(CL_STATE.filter || '');
   if(f){
