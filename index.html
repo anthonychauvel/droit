@@ -1260,17 +1260,20 @@ async function loadSearchIndex(){
   var SRC_EXTRA = ['eurlex','cjue','cedh','oit','civil','penal','cgfp'];
   var suffixeCache = '?v=' + new Date().toISOString().slice(0,10);
 
-  var got = {}, missing = false;
+  // PLUS DE REPLI SUR L'ANCIEN INDEX MONOLITHIQUE (22/09/2026).
+  // Avant : si UN index de base dépassait 16 s (fréquent en 4G moyenne pour
+  // l'index CCN, 24 Mo), on abandonnait ce téléchargement et on allait chercher
+  // output/search-index.json -- 81 Mo, figé depuis le 08/08 (plus régénéré) --
+  // EN PLUS de tout le reste. Mesuré : +110 Mo de mémoire d'un coup ; sur
+  // iPhone, dans l'appli installée, c'est la chute assurée, et sur ordinateur
+  // (réseau rapide) on ne le voyait jamais.
+  // Maintenant : 60 s par index (on ne coupe plus un téléchargement qui
+  // avance), et une source qui échoue reste simplement vide.
+  var got = {};
   await Promise.all(SRC_CORE.map(async function(s){
-    try{ got[s] = await fetchJSON('output/search-index-'+s+'.json', 16000); }
-    catch(e){ missing = true; }
+    try{ got[s] = await fetchJSON('output/search-index-'+s+'.json', 60000); }
+    catch(e){ got[s] = []; }
   }));
-  if(missing){
-    // Repli : ancien index monolithique, pour combler les sources manquantes.
-    var mono = {};
-    try{ mono = await fetchJSON('output/search-index.json', 20000); }catch(e){}
-    SRC_CORE.forEach(function(s){ if(got[s]===undefined) got[s] = (mono[s]||[]); });
-  }
 
   SRC_EXTRA.forEach(function(s){ got[s] = []; });  // repli immédiat -- mis à jour dès que chaque fetch arrive
   SRC_EXTRA.forEach(function(s){
@@ -1319,7 +1322,10 @@ async function loadAll(){
 
   var pManifest = (async function(){
     try{
-      var m = await fetchJSON('output/manifest.json');
+      // 60 s (au lieu de 15 par défaut) : couper un manifeste de 17 Mo en cours
+      // de route sur réseau mobile déclenchait le repli loadFromSummaries(),
+      // qui télécharge ~30 Mo de plus. Même raison que les index de recherche.
+      var m = await fetchJSON('output/manifest.json', 60000);
       INDEX.ccn   = (m.ccn  ||[]).map(function(a){ return {num:String(a[0]), title:a[1]||('IDCC '+a[0]), etat:a[2]||'V', source:a[3]||'inconnu'}; });
       INDEX.code  = (m.code ||[]).map(function(a){ return {num:a[0], title:'Article '+a[0], etat:a[1]||'?'}; });
       INDEX.secu  = (m.secu ||[]).map(function(a){ return {num:a[0], title:'Article '+a[0], etat:a[1]||'?'}; });
@@ -3389,8 +3395,16 @@ function runSearch(){
   if(_ct) _ct.hidden = true;
   if(toggles) toggles.hidden = false;
 
-  if(!INDEX.ccn.length && !INDEX.code.length){
-    box.innerHTML = '<div class="loading">Chargement des données…</div>';
+  // ON ATTEND QUE TOUT SOIT CHARGÉ (22/09/2026). Chercher avant la fin du
+  // chargement construisait le moteur sur des données incomplètes et parcourait
+  // en entier chaque texte déjà arrivé -- PENDANT que les gros fichiers étaient
+  // encore en mémoire -- puis tout était jeté et reconstruit à la fin. Mesuré :
+  // c'est ce qui faisait le pic au moment où l'on tape pendant que le compteur
+  // d'accueil tourne encore, et ce qui faisait tomber l'appli installée sur
+  // iPhone. La recherche tapée n'est pas perdue : la fin de loadAll() relance
+  // runSearch() si le champ n'est pas vide.
+  if(!SEARCH_READY){
+    box.innerHTML = '<div class="loading">Chargement du moteur de recherche… ta recherche démarre toute seule dans un instant.</div>';
     return;
   }
 
