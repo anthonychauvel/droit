@@ -118,6 +118,7 @@ jobs:
             'output/search-index-*.json merge=ours' \
             'output/manifest.json merge=ours' \
             'output/manifest-*.json merge=ours' \
+            'output/ccn-index/*.json merge=ours' \
             'output/counts.json merge=ours' \
             'output/clauses-index.json merge=ours' \
             'output/search-trends.json merge=ours' \
