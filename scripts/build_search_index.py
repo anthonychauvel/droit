@@ -515,6 +515,42 @@ def main():
             json.dump(rows, f, ensure_ascii=False, separators=(",", ":"))
         sizes_mo[src] = os.path.getsize(path) / 1024 / 1024
 
+    # CONVENTIONS À LA DEMANDE (22/09/2026). L'index CCN complet (25 Mo, ~89 Mo
+    # en mémoire sur le téléphone) était chargé à chaque ouverture pour
+    # chercher dans les 313 conventions à la fois, alors qu'un salarié n'en
+    # consulte qu'une : la sienne. On écrit en plus :
+    #   - search-index-ccn-lite.json : le catalogue (numéro, titre, source,
+    #     thèmes couverts, nombre de sections) -- ~120 Ko, chargé à l'ouverture,
+    #     suffit pour reconnaître une convention par son nom, son métier ou son
+    #     numéro ;
+    #   - ccn-index/<IDCC>.json : le contenu cherchable d'UNE convention
+    #     (~14 Ko compressé), chargé quand l'utilisateur la choisit.
+    # search-index-ccn.json reste écrit à l'identique : le bouton « Chercher
+    # dans toutes les conventions » le charge à la demande.
+    def _cats(c):
+        vus = set()
+        for h in c.get("hits", []):
+            for ct in (h.get("cats") or ([h["cat"]] if h.get("cat") else [])):
+                vus.add(ct)
+        return sorted(vus)
+    lite = [{"num": c["num"], "title": c.get("title", ""), "source": c.get("source"),
+             "cats": _cats(c), "n": len(c.get("hits", []))} for c in ccn_index]
+    with open(f"{base}-ccn-lite{ext}", "w", encoding="utf-8") as f:
+        json.dump(lite, f, ensure_ascii=False, separators=(",", ":"))
+    dossier_ccn = os.path.join(out_dir, "ccn-index")
+    os.makedirs(dossier_ccn, exist_ok=True)
+    attendus = set()
+    for c in ccn_index:
+        nom = re.sub(r"[^0-9A-Za-z_-]", "_", str(c["num"])) + ".json"
+        attendus.add(nom)
+        with open(os.path.join(dossier_ccn, nom), "w", encoding="utf-8") as f:
+            json.dump(c, f, ensure_ascii=False, separators=(",", ":"))
+    for nom in os.listdir(dossier_ccn):          # convention disparue du fonds
+        if nom.endswith(".json") and nom not in attendus:
+            os.remove(os.path.join(dossier_ccn, nom))
+    print(f"  catalogue CCN : {base}-ccn-lite{ext} ({os.path.getsize(f'{base}-ccn-lite{ext}')//1024} Ko), "
+          f"{len(attendus)} fichiers dans {dossier_ccn}/")
+
     print(f"Index construit (decoupe par source): {len(ccn_index)} CCN "
           f"({n_hits} sections indexees), {len(code_index)} articles travail, "
           f"{len(code_secu_index)} articles secu, {len(juris_index)} decisions, "
