@@ -12720,13 +12720,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005725871",
+              "cid": "KALISCTA000005725871",
+              "intOrdre": 42949,
+              "etat": "PERIME",
+              "title": "Salaires professionnels catégoriels au 1er avril 1987",
+              "dateModif": null,
+              "dateDebut": "1986-11-27",
+              "dateFin": "1988-02-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005855586",
+                  "cid": "KALIARTI000005855586",
+                  "intOrdre": 42949,
+                  "etat": "PERIME",
+                  "num": null,
+                  "path": "/KALISCTA000005725871/KALIARTI000005855586",
+                  "pathTitle": [
+                    "Salaires professionnels catégoriels au 1er avril 1987"
+                  ],
+                  "content": "<p></p>               Agents fonctionnels<p></p><p></p>   Partie fixe : 3.950.<p></p><p></p>   Valeur du point : 11 (au-delà de 200 points).<p></p><p></p><p></p>   A.F. (ECHELON) : 1 <p></p><p></p>   COEFFICIENT : 250 <p></p><p></p>   SALAIRE : 4.500 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 2 <p></p><p></p>   COEFFICIENT : 255 <p></p><p></p>   SALAIRE : 4.555 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 3 <p></p><p></p>   COEFFICIENT : 260 <p></p><p></p>   SALAIRE : 4.610 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 4 <p></p><p></p>   COEFFICIENT : 265 <p></p><p></p>   SALAIRE : 4.665 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 5 <p></p><p></p>   COEFFICIENT : 275 <p></p><p></p>   SALAIRE : 4.775 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 6 <p></p><p></p>   COEFFICIENT : 285 <p></p><p></p>   SALAIRE : 4.885 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 7 <p></p><p></p>   COEFFICIENT : 300 <p></p><p></p>   SALAIRE : 5.050 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 8 <p></p><p></p>   COEFFICIENT : 315 <p></p><p></p>   SALAIRE : 5.215 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 9 <p></p><p></p>   COEFFICIENT : 330 <p></p><p></p>   SALAIRE : 5.380 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 10<p></p><p></p>   COEFFICIENT : 345 <p></p><p></p>   SALAIRE : 5.545 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 11<p></p><p></p>   COEFFICIENT : 365 <p></p><p></p>   SALAIRE : 5.765 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 12<p></p><p></p>   COEFFICIENT : 385 <p></p><p></p>   SALAIRE : 5.985 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 13<p></p><p></p>   COEFFICIENT : 405 <p></p><p></p>   SALAIRE : 6.205 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 14<p></p><p></p>   COEFFICIENT : 425 <p></p><p></p>   SALAIRE : 6.425 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 15<p></p><p></p>   COEFFICIENT : 450 <p></p><p></p>   SALAIRE : 6.700 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 16<p></p><p></p>   COEFFICIENT : 475 <p></p><p></p>   SALAIRE : 6.975 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 17<p></p><p></p>   COEFFICIENT : 500 <p></p><p></p>   SALAIRE : 7.250 F.<p></p><p></p>               Agents d'encadrement<p></p><p></p>   A.E. (ECHELON) : 1 <p></p><p></p>   COEFFICIENT : 300 <p></p><p></p>   SALAIRE : 5.050 F.<p></p><p></p><p></p>   A.E. (ECHELON) : 2 <p></p><p></p>   COEFFICIENT : 330 <p></p><p></p>   SALAIRE : 5.380 F.<p></p><p></p><p></p>   A.E. (ECHELON) : 3 <p></p><p></p>   COEFFICIENT : 365 <p></p><p></p>   SALAIRE : 5.765 F.<p></p><p></p><p></p>   A.E. (ECHELON) : 4 <p></p><p></p>   COEFFICIENT : 385 <p></p><p></p>   SALAIRE : 5.985 F.<p></p><p></p><p></p>   A.E. (ECHELON) : 5 <p></p><p></p>   COEFFICIENT : 425 <p></p><p></p>   SALAIRE : 6.425 F.<p></p><p></p><p></p>   A.E. (ECHELON) : 6 <p></p><p></p>   COEFFICIENT : 500 <p></p><p></p>   SALAIRE : 7.250 F.<p></p><p></p><p></p>   A.F. (ECHELON) : 7 <p></p><p></p>   COEFFICIENT : 640 <p></p><p></p>   SALAIRE : 8.790 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1986-11-27 étendu par arrêté du 10 août 1987 JORF 22 août 1987",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 533433600000,
+                  "dateFin": 571449600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12740,13 +12814,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005725872",
+              "cid": "KALISCTA000005725872",
+              "intOrdre": 42949,
+              "etat": "PERIME",
+              "title": "Salaires professionnels catégoriels au 1er avril 1987",
+              "dateModif": null,
+              "dateDebut": "1986-11-27",
+              "dateFin": "1988-02-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005855587",
+                  "cid": "KALIARTI000005855587",
+                  "intOrdre": 42949,
+                  "etat": "PERIME",
+                  "num": null,
+                  "path": "/KALISCTA000005725872/KALIARTI000005855587",
+                  "pathTitle": [
+                    "Salaires professionnels catégoriels au 1er avril 1987"
+                  ],
+                  "content": "<p></p>   Partie fixe : 3.950.<p></p><p></p>   Valeur du point : 11 (Pour les points au-delà de 200 ).<p></p><p></p><p></p>   CADRES (POSITION) : 11.<p></p><p></p>   COEFFICIENT : 475.<p></p><p></p>   SALAIRE : 6.975 F.<p></p><p></p><p></p>   CADRES (POSITION) : 12.<p></p><p></p>   COEFFICIENT : 560.<p></p><p></p>   SALAIRE : 7.910 F.<p></p><p></p><p></p>   CADRES (POSITION) : 13.<p></p><p></p>   COEFFICIENT : 640.<p></p><p></p>   SALAIRE : 8.790 F.<p></p><p></p><p></p>   CADRES (POSITION) : 21.<p></p><p></p>   COEFFICIENT : 780.<p></p><p></p>   SALAIRE : 10.330 F.<p></p><p></p><p></p>   CADRES (POSITION) : 22.<p></p><p></p>   COEFFICIENT : 850.<p></p><p></p>   SALAIRE : 11.100 F.<p></p><p></p><p></p>   CADRES (POSITION) : 23.<p></p><p></p>   COEFFICIENT : 930.<p></p><p></p>   SALAIRE : 11.980 F.<p></p><p></p><p></p>   CADRES (POSITION) : 31.<p></p><p></p>   COEFFICIENT : 1.080.<p></p><p></p>   SALAIRE : 13.630 F.<p></p><p></p><p></p>   CADRES (POSITION) : 32.<p></p><p></p>   COEFFICIENT : 1.160.<p></p><p></p>   SALAIRE : 14.510 F.<p></p><p></p><p></p>   CADRES (POSITION) : 33.<p></p><p></p>   COEFFICIENT : 1.250.<p></p><p></p>   SALAIRE : 15.500 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1986-11-27 étendu par arrêté du 10 août 1987 JORF 22 août 1987",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 533433600000,
+                  "dateFin": 571449600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12948,13 +13096,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005725875",
+              "cid": "KALISCTA000005725875",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires professionnels catégoriels au 1er février 1988",
+              "dateModif": null,
+              "dateDebut": "1988-02-10",
+              "dateFin": "1989-03-16",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005855591",
+                  "cid": "KALIARTI000005855591",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005725875/KALIARTI000005855591",
+                  "pathTitle": [
+                    "Salaires professionnels catégoriels au 1er février 1988"
+                  ],
+                  "content": "<p></p>   Partie fixe : 4.021.<p></p><p></p>   Valeur du point : 11,20 F. (au-delà de 200 points).<p></p><p></p><p></p>   ECHELON : 11.<p></p><p></p>   COEFFICIENT : 475.<p></p><p></p>   SALAIRE : 7.101 F.<p></p><p></p><p></p>   ECHELON : 12.<p></p><p></p>   COEFFICIENT : 560.<p></p><p></p>   SALAIRE : 8.053 F.<p></p><p></p><p></p>   ECHELON : 13.<p></p><p></p>   COEFFICIENT : 640.<p></p><p></p>   SALAIRE : 8.949 F.<p></p><p></p><p></p>   ECHELON : 21.<p></p><p></p>   COEFFICIENT : 780.<p></p><p></p>   SALAIRE : 10.517 F.<p></p><p></p><p></p>   ECHELON : 22.<p></p><p></p>   COEFFICIENT : 850.<p></p><p></p>   SALAIRE : 11.301 F.<p></p><p></p><p></p>   ECHELON : 23.<p></p><p></p>   COEFFICIENT : 930.<p></p><p></p>   SALAIRE : 12.197 F.<p></p><p></p><p></p>   ECHELON : 31.<p></p><p></p>   COEFFICIENT : 1080.<p></p><p></p>   SALAIRE : 13.877 F.<p></p><p></p><p></p>   ECHELON : 32.<p></p><p></p>   COEFFICIENT : 1160.<p></p><p></p>   SALAIRE : 14.773 F.<p></p><p></p><p></p>   ECHELON : 33.<p></p><p></p>   COEFFICIENT : 1250.<p></p><p></p>   SALAIRE : 15.781 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1988-02-10 étendu par arrêté du 15 juin 1988 JORF 26 juin 1988",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 571449600000,
+                  "dateFin": 606009600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

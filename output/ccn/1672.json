@@ -14744,13 +14744,114 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005700296",
+              "cid": "KALISCTA000005700296",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes des rémunérations minimales annuelles, à effet du 1er janvier 1995",
+              "dateModif": null,
+              "dateDebut": "1995-03-07",
+              "dateFin": "1997-02-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005792335",
+                  "cid": "KALIARTI000005792335",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005700296/KALIARTI000005792335",
+                  "pathTitle": [
+                    "Barèmes des rémunérations minimales annuelles, à effet du 1er janvier 1995"
+                  ],
+                  "content": "<p>1. Dans le cadre de l'article 33 a de la convention collective nationale du 27 mai 1992, le barème des rémunérations minimales annuelles (RMA) prévu à l'annexe II de ladite convention est fixé, à effet du 1er janvier 1995, conformément au tableau joint au présent accord.</p><p>2. Le barème des rémunérations minimales (RMA) fixé ci-dessus est applicable dans les entreprises indépendamment du contenu et des résultats, quels qu'ils soient, des négociations d'entreprise sur les salaires effectifs prévues par l'article L. 132-27 du code du travail.</p><p>Cette mise en application s'effectue dans les conditions précisées par les articles 31 et 32 de la convention collective nationale du 27 mai 1992 et compte tenu des dispositions de l'accord de transition du 27 mai 1992, notamment son article 3.</p><p>3. Le présent accord ne concerne pas le personnel qui n'est plus en fonction dans les entreprises à la date de sa signature.</p><p>4. Considérant les termes de l'article 33 b de la convention collective nationale du 27 mai 1992 :</p><p>\" Tous les trois ans, les organisations signataires de la présente convention procèdent à un constat technique de l'évolution des rémunérations minimales et de celle des rémunérations effectives. Elles examinent les conséquences à en tirer sur le niveau des rémunérations minimales dans le but de leur maintenir de réelles garanties de rémunération pour le personnel.</p><p>\" La définition des données techniques nécessaires à ce constat est mise au point en temps utile au sein d'un groupe de travail constitué de représentants des organisations signataires. \"</p><p>Il est confirmé que le groupe de travail prévu au 2<sup>e</sup> alinéa de l'article 33 b sera réuni prochainement, afin de mettre au point la définition des données techniques nécessaires au constat prévu au 1<sup>er</sup> alinéa dudit article.</p><p></p><p>REMUNERATIONS MINIMALES ANNUELLES à effet du 1<sup>er</sup> janvier 1995</p><p></p><p><table><tbody><tr><td>CLASSES </td><td>REMUNERATIONS</td></tr><tr><td></td><td>minimales </td></tr><tr><td></td><td>annuelles </td></tr><tr><td>1 </td><td>82.600 F </td></tr><tr><td>2 </td><td>91.350 F </td></tr><tr><td>3 </td><td>105.450 F </td></tr><tr><td>4 </td><td>125.200 F </td></tr><tr><td>5 </td><td>148.050 F </td></tr><tr><td>6 </td><td>195.650 F </td></tr><tr><td>7 </td><td>266.250 F </td></tr></tbody></table></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-03-07 BO conventions collectives 95-20",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1992-05-27 art. 3, art. 4",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    },
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-27",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (annexe II)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 794534400000,
+                  "dateFin": 856915200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14764,13 +14865,114 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005700297",
+              "cid": "KALISCTA000005700297",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes des rémunérations minimales annuelles, à effet du 1er janvier 1997",
+              "dateModif": null,
+              "dateDebut": "1997-02-26",
+              "dateFin": "1998-03-27",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005792336",
+                  "cid": "KALIARTI000005792336",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005700297/KALIARTI000005792336",
+                  "pathTitle": [
+                    "Barèmes des rémunérations minimales annuelles, à effet du 1er janvier 1997"
+                  ],
+                  "content": "<p></p>   1. Dans le cadre de l'article 33 a de la convention collective nationale du 27 mai 1992, le barème des rémunérations minimales annuelles (RMA) prévu à l'annexe II de ladite convention est fixé, à effet du 1er janvier 1997, conformément au tableau joint au présent accord.<p></p><p></p>   2. Le barème des rémunérations minimales (RMA) fixé au 1 ci-dessus est applicable dans les entreprises indépendamment du contenu et des résultats, quels qu'ils soient, des négociations d'entreprise sur les salaires effectifs prévues par l'article L. 132-27 du code du travail.<p></p><p></p>   Cette mise en application s'effectue dans les conditions précisées par les articles 31 et 32 de la convention collective nationale du 27 mai 1992 et compte tenu des dispositions de l'accord de transition du 27 mai 1992.<p></p><p></p>   3. Les parties signataires conviennent de se rencontrer dans le courant du second semestre dans l'éventualité où les paramètres économiques, notamment en matière de prix, évolueraient de façon sensiblement différente des hypothèses ayant présidé à la négociation du présent accord.<p></p><p></p>   4. Le présent accord ne concerne pas le personnel qui n'est plus en fonction dans les entreprises à la date de sa signature.<p></p><p></p>REMUNERATIONS MINIMALES ANNUELLES à effet du 1er janvier 1997<p></p><p></p><TABLE><TR><TD> CLASSES </TD><TD> REMUNERATIONS</TD></TR><TR><TD></TD><TD>   minimales  </TD></TR><TR><TD></TD><TD>   annuelles  </TD></TR><TR><TD>    1    </TD><TD>     86.500 F </TD></TR><TR><TD>    2    </TD><TD>     94.400 F </TD></TR><TR><TD>    3    </TD><TD>    108.950 F </TD></TR><TR><TD>    4    </TD><TD>    129.350 F </TD></TR><TR><TD>    5    </TD><TD>    153.000 F </TD></TR><TR><TD>    6    </TD><TD>    202.200 F </TD></TR><TR><TD>    7    </TD><TD>    275.100 F </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1997-02-26 BO conventions collectives 97-49",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1992-05-27 art. 3, art. 4",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    },
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-27",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (annexe II)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 856915200000,
+                  "dateFin": 890956800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

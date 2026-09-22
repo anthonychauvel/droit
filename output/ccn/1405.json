@@ -7549,13 +7549,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719309",
+              "cid": "KALISCTA000005719309",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grilles de salaires conventionnels au 1er mars 1996",
+              "dateModif": null,
+              "dateDebut": "1996-03-01",
+              "dateFin": "1997-03-13",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839246",
+                  "cid": "KALIARTI000005839246",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719309/KALIARTI000005839246",
+                  "pathTitle": [
+                    "Grilles de salaires conventionnels au 1er mars 1996"
+                  ],
+                  "content": "<p></p><p><table><tbody><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td>    I   </td><td>    1    </td><td>  6.265F </td></tr><tr><td>    I   </td><td>    2    </td><td>  6.321F </td></tr><tr><td>    I   </td><td>    3    </td><td>  6.377F </td></tr><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td>   II   </td><td>    1    </td><td>  6.321F </td></tr><tr><td>   II   </td><td>    2    </td><td>  6.428F </td></tr><tr><td>   II   </td><td>    3    </td><td>  6.551F </td></tr><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td>  III   </td><td>    1    </td><td>  6.428F </td></tr><tr><td>  III   </td><td>    2    </td><td>  6.602F </td></tr><tr><td>  III   </td><td>    3    </td><td>  6.733F </td></tr><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td>   IV   </td><td>    1    </td><td>  6.712F </td></tr><tr><td>   IV   </td><td>    2    </td><td>  6.973F </td></tr><tr><td>   IV   </td><td>    3    </td><td>  7.245F </td></tr></tbody></table></p><p><table><tbody><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td>    V   </td><td>    1    </td><td>  7.226F </td></tr><tr><td>    V   </td><td>    2    </td><td>  7.579F </td></tr><tr><td>    V   </td><td>    3    </td><td>  7.950F </td></tr><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td>   VI   </td><td>    1    </td><td>  7.864F </td></tr><tr><td>   VI   </td><td>    2    </td><td>  8.335F </td></tr><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td>  VII   </td><td>    1    </td><td>  8.747F </td></tr><tr><td>  VII   </td><td>    2    </td><td>  9.359F </td></tr><tr><td>  VII   </td><td>    3    </td><td> 10.014F </td></tr><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td> VIII   </td><td>    1    </td><td>  9.513F </td></tr><tr><td> VIII   </td><td>    2    </td><td> 10.274F </td></tr><tr><td> VIII   </td><td>    3    </td><td> 11.096F </td></tr><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td>   IX   </td><td>    1    </td><td> 11.317F </td></tr><tr><td>   IX   </td><td>    2    </td><td> 12.336F </td></tr><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td>    X   </td><td>    1    </td><td> 13.816F </td></tr><tr><td>    X   </td><td>    2    </td><td> 15.198F </td></tr><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td>   XI   </td><td>    1    </td><td> 18.904F </td></tr><tr><td>   XI   </td><td>    2    </td><td> 22.684F </td></tr></tbody></table></p><p><font color=\"#808080\" size=\"1\"><i>   NOTA : Arrêté du 20 juin 1996 art. 1 : les dispositions du présent avenant sont étendues sous réserve des dispositions réglementaires portant fixation du salaire minimum de croissance.</i></font></p><p><font color=\"#808080\"><i></i></font></p>",
+                  "nota": "   NOTA : Arrêté du 20 juin 1996 art. 1 : les dispositions du présent avenant sont étendues sous réserve des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 1 1996-03-01 BO conventions collectives 96-17, étendu par arrêté du 20 juin 1996 JORF 2 juillet 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 825638400000,
+                  "dateFin": 858211200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7569,13 +7643,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719310",
+              "cid": "KALISCTA000005719310",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grilles de salaires conventionnels au 1er mars 1997",
+              "dateModif": null,
+              "dateDebut": "1997-02-04",
+              "dateFin": "1997-03-13",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839247",
+                  "cid": "KALIARTI000005839247",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719310/KALIARTI000005839247",
+                  "pathTitle": [
+                    "Grilles de salaires conventionnels au 1er mars 1997"
+                  ],
+                  "content": "<p></p><p><table><tbody><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td>    I   </td><td>    1    </td><td>  6.420F </td></tr><tr><td>    I   </td><td>    2    </td><td>  6.475F </td></tr><tr><td>    I   </td><td>    3    </td><td>  6.531F </td></tr><tr><td>   II   </td><td>    1    </td><td>  6.475F </td></tr><tr><td>   II   </td><td>    2    </td><td>  6.579F </td></tr><tr><td>   II   </td><td>    3    </td><td>  6.703F </td></tr><tr><td>  III   </td><td>    1    </td><td>  6.579F </td></tr><tr><td>  III   </td><td>    2    </td><td>  6.751F </td></tr><tr><td>  III   </td><td>    3    </td><td>  6.883F </td></tr><tr><td>   IV   </td><td>    1    </td><td>  6.860F </td></tr><tr><td>   IV   </td><td>    2    </td><td>  7.124F </td></tr><tr><td>   IV   </td><td>    3    </td><td>  7.400F </td></tr></tbody></table></p><p><table><tbody><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td>    V   </td><td>    1    </td><td>  7.378F </td></tr><tr><td>    V   </td><td>    2    </td><td>  7.736F </td></tr><tr><td>    V   </td><td>    3    </td><td>  8.112F </td></tr><tr><td>   VI   </td><td>    1    </td><td>  8.021F </td></tr><tr><td>   VI   </td><td>    2    </td><td>  8.498F </td></tr><tr><td>   VI   </td><td>    3    </td><td>  9.003F </td></tr><tr><td>  VII   </td><td>    1    </td><td>  8.909F </td></tr><tr><td>  VII   </td><td>    2    </td><td>  9.257F </td></tr><tr><td>  VII   </td><td>    3    </td><td> 10.189F </td></tr><tr><td> VIII   </td><td>    1    </td><td>  9.675F </td></tr><tr><td> VIII   </td><td>    2    </td><td> 10.449F </td></tr><tr><td> VIII   </td><td>    3    </td><td> 11.285F </td></tr><tr><td> Niveau </td><td> Echelon </td><td> Salaire </td></tr><tr><td>   IX   </td><td>    1    </td><td> 11.509F </td></tr><tr><td>   IX   </td><td>    2    </td><td> 12.546F </td></tr><tr><td>    X   </td><td>    1    </td><td> 14.051F </td></tr><tr><td>    X   </td><td>    2    </td><td> 15.456F </td></tr><tr><td>   XI   </td><td>    1    </td><td> 19.225F </td></tr><tr><td>   XI   </td><td>    2    </td><td> 23.070F </td></tr></tbody></table></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 2 1997-02-04 BO conventions collectives 97-11",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 855014400000,
+                  "dateFin": 858211200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7683,13 +7831,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005719313",
+              "cid": "KALISCTA000005719313",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grilles de salaires au 1er mars 1997",
+              "dateModif": null,
+              "dateDebut": "1997-02-04",
+              "dateFin": "2003-03-25",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005839249",
+                  "cid": "KALIARTI000005839249",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005719313/KALIARTI000005839249",
+                  "pathTitle": [
+                    "Grilles de salaires au 1er mars 1997"
+                  ],
+                  "content": "<p></p>   réunies en commission paritaire le 28 janvier 1997, ont décidé d'adopter la grille des salaires conventionnels suivante remplaçant celle figurant à l'avenant n° 1 signé le 1er mars 1996. Cette grille est applicable à partir du 1er mars 1997.<p></p><p></p>   GRILLE DES SALAIRES AU 1er MARS 1997<p></p><TABLE><TR><TD> Niveau </TD><TD> Echelon </TD><TD> Salaire </TD></TR><TR><TD>    I   </TD><TD>    1    </TD><TD>  6.420F </TD></TR><TR><TD>    I   </TD><TD>    2    </TD><TD>  6.475F </TD></TR><TR><TD>    I   </TD><TD>    3    </TD><TD>  6.531F </TD></TR><TR><TD>   II   </TD><TD>    1    </TD><TD>  6.475F </TD></TR><TR><TD>   II   </TD><TD>    2    </TD><TD>  6.579F </TD></TR><TR><TD>   II   </TD><TD>    3    </TD><TD>  6.703F </TD></TR><TR><TD>  III   </TD><TD>    1    </TD><TD>  6.579F </TD></TR><TR><TD>  III   </TD><TD>    2    </TD><TD>  6.751F </TD></TR><TR><TD>  III   </TD><TD>    3    </TD><TD>  6.883F </TD></TR><TR><TD>   IV   </TD><TD>    1    </TD><TD>  6.860F </TD></TR><TR><TD>   IV   </TD><TD>    2    </TD><TD>  7.124F </TD></TR><TR><TD>   IV   </TD><TD>    3    </TD><TD>  7.400F </TD></TR></TABLE><p></p><TABLE><TR><TD> Niveau </TD><TD> Echelon </TD><TD> Salaire </TD></TR><TR><TD>    V   </TD><TD>    1    </TD><TD>  7.378F </TD></TR><TR><TD>    V   </TD><TD>    2    </TD><TD>  7.736F </TD></TR><TR><TD>    V   </TD><TD>    3    </TD><TD>  8.112F </TD></TR><TR><TD>   VI   </TD><TD>    1    </TD><TD>  8.021F </TD></TR><TR><TD>   VI   </TD><TD>    2    </TD><TD>  8.498F </TD></TR><TR><TD>   VI   </TD><TD>    3    </TD><TD>  9.003F </TD></TR><TR><TD>  VII   </TD><TD>    1    </TD><TD>  8.909F </TD></TR><TR><TD>  VII   </TD><TD>    2    </TD><TD>  9.257F </TD></TR><TR><TD>  VII   </TD><TD>    3    </TD><TD> 10.189F </TD></TR><TR><TD> VIII   </TD><TD>    1    </TD><TD>  9.675F </TD></TR><TR><TD> VIII   </TD><TD>    2    </TD><TD> 10.449F </TD></TR><TR><TD> VIII   </TD><TD>    3    </TD><TD> 11.285F </TD></TR><TR><TD> Niveau </TD><TD> Echelon </TD><TD> Salaire </TD></TR><TR><TD>   IX   </TD><TD>    1    </TD><TD> 11.509F </TD></TR><TR><TD>   IX   </TD><TD>    2    </TD><TD> 12.546F </TD></TR><TR><TD>    X   </TD><TD>    1    </TD><TD> 14.051F </TD></TR><TR><TD>    X   </TD><TD>    2    </TD><TD> 15.456F </TD></TR><TR><TD>   XI   </TD><TD>    1    </TD><TD> 19.225F </TD></TR><TR><TD>   XI   </TD><TD>    2    </TD><TD> 23.070F </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 2 1997-02-04 BO conventions collectives 97-17, étendu par arrêté du 25 juin 1997 JORF 4 juillet 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 855014400000,
+                  "dateFin": 1048550400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -36374,13 +36374,99 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005698120",
+              "cid": "KALISCTA000005698120",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires",
+              "dateModif": null,
+              "dateDebut": "1969-02-20",
+              "dateFin": "2020-12-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005785971",
+                  "cid": "KALIARTI000005785971",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005698120/KALIARTI000005785971",
+                  "pathTitle": [
+                    "Salaires"
+                  ],
+                  "content": "*Voir accords salaires*<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1969-02-20 étendu par arrêté du 31 décembre 1971 JONC 14 janvier 1972",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    },
+                    {
+                      "textCid": "KALITEXT000037940461",
+                      "textTitle": "Révision intégrale de la convention collective ... - art. 2 (VNE)",
+                      "linkType": "ABROGE",
+                      "linkOrientation": "cible",
+                      "articleNum": "2",
+                      "articleId": "KALIARTI000037940465",
+                      "natureText": "Convention collective nationale",
+                      "datePubliTexte": "2999-01-01",
+                      "dateSignaTexte": "2018-06-27",
+                      "dateDebutCible": "2020-12-01"
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": -27216000000,
+                  "dateFin": 1606780800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -47114,13 +47200,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005698323",
+              "cid": "KALISCTA000005698323",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Majoration de la prime de fin d'année : Article unique.",
+              "dateModif": null,
+              "dateDebut": "1988-10-07",
+              "dateFin": "1989-10-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005786504",
+                  "cid": "KALIARTI000005786504",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005698323/KALIARTI000005786504",
+                  "pathTitle": [
+                    "Majoration de la prime de fin d'année : Article unique."
+                  ],
+                  "content": "<p></p>   Le montant minimum de la prime de fin d'année est fixé pour l'année 1988 à 3 000 F.<p></p><p></p>   Les conditions d'attribution de cette prime sont celles définies à l'article 63 \" Dispositions générales \" de la convention collective nationale.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 38 1988-10-07 étendu par arrêté du 30 janvier 1989 JORF 8 février 1989",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 592185600000,
+                  "dateFin": 623548800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -22272,13 +22272,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717247",
+              "cid": "KALISCTA000005717247",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires",
+              "dateModif": null,
+              "dateDebut": "2003-03-19",
+              "dateFin": "2004-04-02",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005834898",
+                  "cid": "KALIARTI000005834898",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005717247/KALIARTI000005834898",
+                  "pathTitle": [
+                    "Salaires"
+                  ],
+                  "content": "<p></p>   1. Barème des salaires minima applicables à compter du 1er mai 2003<p></p><p></p>  Décomposition pour les niveaux supérieurs<p></p><p></p>   Au-delà du coefficient 195, la rémunération mensuelle est calculée selon la formule suivante : (SMPG + CDS garanti) x (coef./100) x 151,67.<p></p><p></p><p></p>   COEFFICIENT : 120.<p></p><p></p>   TAUX HORAIRE (en euros) : 6,97.<p></p><p></p>   REFERENCE 151,67 heures : 1.057,14.<p></p><p></p>   CDS : 73,98.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.131,12.<p></p><p></p><p></p>   COEFFICIENT : 125.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,00.<p></p><p></p>   REFERENCE 151,67 heures : 1.061,69.<p></p><p></p>   CDS : 74,69.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.136,38.<p></p><p></p><p></p>   COEFFICIENT : 130.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,03.<p></p><p></p>   REFERENCE 151,67 heures : 1.066,24.<p></p><p></p>   CDS : 75,41.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.141,65.<p></p><p></p><p></p>   COEFFICIENT : 135.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,06.<p></p><p></p>   REFERENCE 151,67 heures : 1.070,79.<p></p><p></p>   CDS : 76,13.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.146,92.<p></p><p></p><p></p>   COEFFICIENT : 140.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,09.<p></p><p></p>   REFERENCE 151,67 heures : 1.075,34.<p></p><p></p>   CDS : 76,85.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.152,19.<p></p><p></p>    COEFFICIENT : 145.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,12.<p></p><p></p>   REFERENCE 151,67 heures : 1.079,89.<p></p><p></p>   CDS : 77,57.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.157,46.<p></p><p></p><p></p>   COEFFICIENT : 150.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,17.<p></p><p></p>   REFERENCE 151,67 heures : 1.087,47.<p></p><p></p>   CDS : 78,78.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.166,25.<p></p><p></p><p></p>   COEFFICIENT : 155.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,22.<p></p><p></p>   REFERENCE 151,67 heures : 1.095,06.<p></p><p></p>   CDS : 79,96.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.175,02.<p></p><p></p><p></p>   COEFFICIENT : 160.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,27.<p></p><p></p>   REFERENCE 151,67 heures : 1.102,64.<p></p><p></p>   CDS : 81,16.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.183,80.<p></p><p></p><p></p>   COEFFICIENT : 165.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,32.<p></p><p></p>   REFERENCE 151,67 heures : 1.110,22.<p></p><p></p>   CDS : 80,61.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.190,83.<p></p><p></p><p></p>   COEFFICIENT : 170.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,43.<p></p><p></p>   REFERENCE 151,67 heures : 1.126,91.<p></p><p></p>   CDS : 81,48.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.208,39.<p></p><p></p><p></p>   COEFFICIENT : 175.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,53.<p></p><p></p>   REFERENCE 151,67 heures : 1.142,08.<p></p><p></p>   CDS : 82,12.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.224,20.<p></p><p></p>    COEFFICIENT : 180.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,63.<p></p><p></p>   REFERENCE 151,67 heures : 1.157,24.<p></p><p></p>   CDS : 82,77.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.240,01.<p></p><p></p><p></p>   COEFFICIENT : 185.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,73.<p></p><p></p>   REFERENCE 151,67 heures : 1.172,41.<p></p><p></p>   CDS : 85,15.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.257,56.<p></p><p></p><p></p>   COEFFICIENT : 190.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,83.<p></p><p></p>   REFERENCE 151,67 heures : 1.187,58.<p></p><p></p>   CDS : 85,80.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.273,38.<p></p><p></p>    COEFFICIENT : 195.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,94.<p></p><p></p>   REFERENCE 151,67 heures : 1.204,26.<p></p><p></p>   CDS : 84,92.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.289,18.<p></p><p></p><p></p>   COEFFICIENT : SMPG<p></p><p></p>   TAUX HORAIRE (en euros) : 4,03.<p></p><p></p><p></p>   COEFFICIENT : CDSG garanti.<p></p><p></p>   TAUX HORAIRE (en euros) : 0,28.<p></p><p></p>   Décomposition pour les niveaux supérieurs<p></p><p></p>   Au-delà du coefficient 195, la rémunération mensuelle est calculée selon la formule suivante : (SMPG + CDS garanti) x (coef./100) x 151,67.<p></p><p></p><p></p>   COEFFICIENT : 200.<p></p><p></p>   TAUX HORAIRE (en euros) : 8,06.<p></p><p></p>   REFERENCE 151,67 heures : 1.222,46.<p></p><p></p>   CDS : 84,94.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.307,40.<p></p><p></p><p></p>   COEFFICIENT : 230.<p></p><p></p>   TAUX HORAIRE (en euros) : 9,27.<p></p><p></p>   REFERENCE 151,67 heures : 1.405,98.<p></p><p></p>   CDS : 97,52.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.503,50.<p></p><p></p><p></p>   COEFFICIENT : 260.<p></p><p></p>   TAUX HORAIRE (en euros) : 10,48.<p></p><p></p>   REFERENCE 151,67 heures : 1.589,50.<p></p><p></p>   CDS : 110,11.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.699,91.<p></p><p></p><p></p>   COEFFICIENT : 300.<p></p><p></p>   TAUX HORAIRE (en euros) : 12,09.<p></p><p></p>   REFERENCE 151,67 heures : 1.833,69.<p></p><p></p>   CDS : 127,40.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.961,09.<p></p><p></p><p></p>   COEFFICIENT : 350.<p></p><p></p>   TAUX HORAIRE (en euros) : 14,11.<p></p><p></p>   REFERENCE 151,67 heures : 2.140,06.<p></p><p></p>   CDS : 147,88.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 2.287,94.<p></p><p></p><p></p>   COEFFICIENT : 400.<p></p><p></p>   TAUX HORAIRE (en euros) : 16,12.<p></p><p></p>   REFERENCE 151,67 heures : 2.444,92.<p></p><p></p>   CDS : 169,87.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 2.614,79.<p></p><p></p><p></p>   COEFFICIENT : 600.<p></p><p></p>   TAUX HORAIRE (en euros) : 24,18.<p></p><p></p>   REFERENCE 151,67 heures : 3.667,38.<p></p><p></p>   CDS : 254,81.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 3.922,19.<p></p><p></p>    COEFFICIENT : 700.<p></p><p></p>   TAUX HORAIRE (en euros) : 28,21.<p></p><p></p>   REFERENCE 151,67 heures : 4.278,61.<p></p><p></p>   CDS : 297,27.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 4.575,88.<p></p><p></p>   Les majorations pour heures supplémentaires ne sont pas prises en compte pour l'appréciation du respect des minima.<p></p><p></p>   2. Barème des salaires minima applicables à compter du 1er juillet 2003<p></p><p></p><p></p>   COEFFICIENT : 120.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,35.<p></p><p></p>   REFERENCE 151,67 heures : 1.114,77.<p></p><p></p>   CDS : 29,72.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.144,49.<p></p><p></p><p></p>   COEFFICIENT : 125.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,38.<p></p><p></p>   REFERENCE 151,67 heures : 1.119,32.<p></p><p></p>   CDS : 30,50.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.149,82.<p></p><p></p><p></p>   COEFFICIENT : 130.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,42.<p></p><p></p>   REFERENCE 151,67 heures : 1.125,39.<p></p><p></p>   CDS : 29,76.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.155,15.<p></p><p></p><p></p>   COEFFICIENT : 135.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,45.<p></p><p></p>   REFERENCE 151,67 heures : 1.129,94.<p></p><p></p>   CDS : 30,54.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.160,48.<p></p><p></p><p></p>   COEFFICIENT : 140.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,48.<p></p><p></p>   REFERENCE 151,67 heures : 1.134,49.<p></p><p></p>   CDS : 31,32.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.165,81.<p></p><p></p>    COEFFICIENT : 145.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,52.<p></p><p></p>   REFERENCE 151,67 heures : 1.140,56.<p></p><p></p>   CDS : 30,58.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.171,14.<p></p><p></p><p></p>   COEFFICIENT : 150.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,57.<p></p><p></p>   REFERENCE 151,67 heures : 1.148,14.<p></p><p></p>   CDS : 31,89.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.180,03.<p></p><p></p><p></p>   COEFFICIENT : 155.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,63.<p></p><p></p>   REFERENCE 151,67 heures : 1.157,24.<p></p><p></p>   CDS : 31,68.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.188,92.<p></p><p></p><p></p>   COEFFICIENT : 160.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,68.<p></p><p></p>   REFERENCE 151,67 heures : 1.164,83.<p></p><p></p>   CDS : 32,97.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.197,80.<p></p><p></p><p></p>   COEFFICIENT : 165.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,73.<p></p><p></p>   REFERENCE 151,67 heures : 1.172,41.<p></p><p></p>   CDS : 32,50.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.204,91.<p></p><p></p><p></p>   COEFFICIENT : 170.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,84.<p></p><p></p>   REFERENCE 151,67 heures : 1.189,09.<p></p><p></p>   CDS : 33,58.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.222,67.<p></p><p></p><p></p>   COEFFICIENT : 175.<p></p><p></p>   TAUX HORAIRE (en euros) : 7,95.<p></p><p></p>   REFERENCE 151,67 heures : 1.205,78.<p></p><p></p>   CDS : 32,89.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.238,67.<p></p><p></p>    COEFFICIENT : 180.<p></p><p></p>   TAUX HORAIRE (en euros) : 8,05.<p></p><p></p>   REFERENCE 151,67 heures : 1.220,94.<p></p><p></p>   CDS : 33,73.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.254,67.<p></p><p></p><p></p>   COEFFICIENT : 185.<p></p><p></p>   TAUX HORAIRE (en euros) : 8,17.<p></p><p></p>   REFERENCE 151,67 heures : 1.239,14.<p></p><p></p>   CDS : 33,29.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.272,43.<p></p><p></p><p></p>   COEFFICIENT : 190.<p></p><p></p>   TAUX HORAIRE (en euros) : 8,27.<p></p><p></p>   REFERENCE 151,67 heures : 1.254,31.<p></p><p></p>   CDS : 34,12.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.288,43.<p></p><p></p>    COEFFICIENT : 195.<p></p><p></p>   TAUX HORAIRE (en euros) : 8,37.<p></p><p></p>   REFERENCE 151,67 heures : 1.269,48.<p></p><p></p>   CDS : 34,94.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.304,42.<p></p><p></p><p></p>   COEFFICIENT : SMPG<p></p><p></p>   TAUX HORAIRE (en euros) : 4,22.<p></p><p></p><p></p>   COEFFICIENT : CDSG garanti.<p></p><p></p>   TAUX HORAIRE (en euros) : 0,12.<p></p><p></p>   Décomposition pour les niveaux supérieurs<p></p><p></p>   Au-delà du coefficient 195, la rémunération mensuelle est calculée selon la formule suivante : (SMPG + CDS garanti) x (coef./100) x 151,67.<p></p><p></p><p></p>   COEFFICIENT : 200.<p></p><p></p>   TAUX HORAIRE (en euros) : 8,44.<p></p><p></p>   REFERENCE 151,67 heures : 1.280,09.<p></p><p></p>   CDS : 36,41.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.316,50.<p></p><p></p><p></p>   COEFFICIENT : 230.<p></p><p></p>   TAUX HORAIRE (en euros) : 9,71.<p></p><p></p>   REFERENCE 151,67 heures : 1.472,72.<p></p><p></p>   CDS : 41,25.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.513,97.<p></p><p></p><p></p>   COEFFICIENT : 260.<p></p><p></p>   TAUX HORAIRE (en euros) : 10,97.<p></p><p></p>   REFERENCE 151,67 heures : 1.663,82.<p></p><p></p>   CDS : 47,62.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.711,44.<p></p><p></p><p></p>   COEFFICIENT : 300.<p></p><p></p>   TAUX HORAIRE (en euros) : 12,66.<p></p><p></p>   REFERENCE 151,67 heures : 1.920,14.<p></p><p></p>   CDS : 54,60.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 1.974,74.<p></p><p></p><p></p>   COEFFICIENT : 350.<p></p><p></p>   TAUX HORAIRE (en euros) : 14,77.<p></p><p></p>   REFERENCE 151,67 heures : 2.240,17.<p></p><p></p>   CDS : 63,70.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 2.303,87.<p></p><p></p><p></p>   COEFFICIENT : 400.<p></p><p></p>   TAUX HORAIRE (en euros) : 16,88.<p></p><p></p>   REFERENCE 151,67 heures : 2.560,19.<p></p><p></p>   CDS : 72,80.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 2.632,99.<p></p><p></p><p></p>   COEFFICIENT : 600.<p></p><p></p>   TAUX HORAIRE (en euros) : 25,32.<p></p><p></p>   REFERENCE 151,67 heures : 3.840,28.<p></p><p></p>   CDS : 109,21.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 3.949,49.<p></p><p></p>    COEFFICIENT : 700.<p></p><p></p>   TAUX HORAIRE (en euros) : 29,54.<p></p><p></p>   REFERENCE 151,67 heures : 4.480,33.<p></p><p></p>   CDS : 127,40.<p></p><p></p>   REMUNERATION mensuelle (en euros) : 4.607,73.<p></p><p></p>   Les majorations pour heures supplémentaires ne sont pas prises en compte pour l'appréciation du respect des minima.<p></p><p></p>   A compter de la signature de présent accord, la référence mensuelle correspondant à la durée hebdomadaire légale de travail effectif est de 151,67 heures et non 152,25 tel que cela était déduit de la référence mensuelle de 169,65 heures pour un horaire hebdomadaire de 39 heures prévue à l'article 28 de la convention collective.<p></p><p></p>   Les parties au présent accord sont pas ailleurs convenus :<p></p><p></p>   - d'une réintégration rapide du complément différentiel de salaire (CDS) dans les conditions suivantes :<p></p><p></p>   - 1er juillet 2003 : réintégration de 60 % ;<p></p><p></p>      - 1er juillet 2004 : réintégration de 20 % ;<p></p><p></p>      - 1er juillet 2005 : réintégration de 20 % ;<p></p><p></p>   - de tenir compte de la hausse mécanique liée à la convergence des garanties mensuelles de rémunération (GMR) prévue par la loi n° 2003-47 du 17 janvier 2003. A la date de signature du présent accord, l'écart entre la rémunération mensuelle prévue pour le coefficient 120 par l'accord n° 63 du 21 novembre 2002 et la dernière GMR est de 3,58 % et conduit à prévoir une hausse de 1,2 % au 1er juillet de chaque année d'ici à la fin 2005 ;<p></p><p></p>   - de se revoir en novembre 2003 pour étudier les conséquences de l'évolution de l'indice national des prix à la consommation sur les présents barèmes de salaires.<p></p><p></p>   *ANNEXE I :  Champ d'application* (1)<p></p><p></p>   Produits alimentaires élaborés<p></p><p></p>   A l'intérieur du chapitre 15.1 E :<p></p><p></p>   - fabrication de plats préparés à base de viande ;<p></p><p></p>   - préparation de foie gras ;<p></p><p></p>   - fabrication de gibiers, volailles, lapins appertisés.<p></p><p></p>   Tout le chapitre 15.2 Z. - \" Industrie du poisson \" :<p></p><p></p>   -  y compris :<p></p><p></p>   - les entreprises transformant des escargots et achatines ;<p></p><p></p>   - les entreprises de salage et saurissage de poisson et les entreprises de négoce, séchage et exportation de morue du canton de Fécamp (sous réserve de l'étalement prévu à l'article 39 des \" Dispositions générales \", de l'article 12 de l'annexe \" Ingénieurs et cadres \", de l'article 9 de l'annexe \" Agents de maîtrise et techniciens assimilés \") ;<p></p><p></p>   - à l'exclusion :<p></p><p></p>   - des entreprises de fabrication de farines de poisson ;<p></p><p></p>   - des entreprises de salage et saurissage de poisson, et des entreprises de négoce, séchage et exportation de morue, hors du canton de Fécamp.<p></p><p></p>   Tout le chapitre 15.3 A. - \" Transformation et conservation de pommes de terre \".<p></p><p></p>   Tout le chapitre 15.3 E. - \" Transformation et conservation de légumes \", à l'exclusion de la fabrication de légumes au vinaigre.<p></p><p></p>   Tout le chapitre 15.3 F. - \" Transformation et conservation de fruits \", à l'exclusion des entreprises se livrant à la transformation et au conditionnement du pruneau.<p></p><p></p>   A l'intérieur du chapitre 15.8 A. - \" Fabrication industrielle de pizzas, quiches, tartes, tourtes... \".<p></p><p></p>   A l'intérieur du chapitre 15.8 M. - \" Fabrication de pâtes alimentaires fraîches \" :<p></p><p></p>   - fabrication de couscous garni ;<p></p><p></p>   - fabrication de pâtes cuites et/ou farcies.<p></p><font color=\"808080\"><em>   NOTA : (1) Annexe exclue de l'extension par arrêté du 30 juillet 2003.<p></p>    NOTA : Arrêté du 30 juillet 2003 art. 1 : l'avenant n° 66 est étendu sous réserve du respect des dispositions de l'article 32 de la loi n° 2000-37 du 19 janvier 2000 modifiée instaurant une garantie mensuelle de rémunération.<p></p></em></font>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 66 2003-03-19 BO conventions collectives 2003-16 *étendu avec exclusion par arrêté du 30 juillet JORF 8 août 2003*",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1048032000000,
+                  "dateFin": 1080864000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -22292,13 +22366,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717248",
+              "cid": "KALISCTA000005717248",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima au 1er mai 2004 et 1er juillet 2004",
+              "dateModif": null,
+              "dateDebut": "2004-04-01",
+              "dateFin": "2005-05-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005834900",
+                  "cid": "KALIARTI000005834900",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005717248/KALIARTI000005834900",
+                  "pathTitle": [
+                    "Salaires minima au 1er mai 2004 et 1er juillet 2004"
+                  ],
+                  "content": "<p></p>   1. Barème des salaires minima applicables à compter du 1er mai 2004<p></p><p></p><TABLE><TR><TD> COEFFICIENT </TD><TD> TAUX HORAIRE </TD><TD>  151,67  </TD><TD>  CDS  </TD><TD> REMUNERATION </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>  mensuelle   </TD></TR><TR><TD>     120     </TD><TD>     7,45     </TD><TD> 1 129,94 </TD><TD> 29,43 </TD><TD>   1 159,37   </TD></TR><TR><TD>     125     </TD><TD>     7,48     </TD><TD> 1 134,49 </TD><TD> 30,68 </TD><TD>   1 165,17   </TD></TR><TR><TD>     130     </TD><TD>     7,52     </TD><TD> 1 140,56 </TD><TD> 30,41 </TD><TD>   1 170,97   </TD></TR><TR><TD>     135     </TD><TD>     7,55     </TD><TD> 1 145,11 </TD><TD> 31,66 </TD><TD>   1 176,77   </TD></TR><TR><TD>     140     </TD><TD>     7,59     </TD><TD> 1 151,18 </TD><TD> 31,39 </TD><TD>   1 182,57   </TD></TR><TR><TD>     145     </TD><TD>     7,63     </TD><TD> 1 157,24 </TD><TD> 31,13 </TD><TD>   1 188,37   </TD></TR><TR><TD>     150     </TD><TD>     7,68     </TD><TD> 1 164,83 </TD><TD> 32,94 </TD><TD>   1 197,77   </TD></TR><TR><TD>     155     </TD><TD>     7,75     </TD><TD> 1 175,44 </TD><TD> 31,73 </TD><TD>   1 207,17   </TD></TR><TR><TD>     160     </TD><TD>     7,80     </TD><TD> 1 183,03 </TD><TD> 33,54 </TD><TD>   1 216,57   </TD></TR><TR><TD>     165     </TD><TD>     7,87     </TD><TD> 1 193,64 </TD><TD> 32,33 </TD><TD>   1 225,97   </TD></TR><TR><TD>     170     </TD><TD>     7,92     </TD><TD> 1 201,23 </TD><TD> 34,14 </TD><TD>   1 235,37   </TD></TR><TR><TD>     175     </TD><TD>     8,04     </TD><TD> 1 219,43 </TD><TD> 33,54 </TD><TD>   1 252,97   </TD></TR><TR><TD>     180     </TD><TD>     8,15     </TD><TD> 1 236,11 </TD><TD> 34,46 </TD><TD>   1 270,57   </TD></TR><TR><TD>     185     </TD><TD>     8,27     </TD><TD> 1 254,31 </TD><TD> 33,86 </TD><TD>   1 288,17   </TD></TR><TR><TD>     190     </TD><TD>     8,38     </TD><TD> 1 270,99 </TD><TD> 34,78 </TD><TD>   1 305,77   </TD></TR><TR><TD>     195     </TD><TD>     8,49     </TD><TD> 1 287,68 </TD><TD> 35,69 </TD><TD>   1 323,37   </TD></TR><TR><TD>    SMPG     </TD><TD>     4,28     </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> CDS garanti </TD><TD>     0,12     </TD><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><p></p>   Décomposition pour les niveaux supérieurs<p></p><p></p>   Au-delà du coefficient 195, la rémunération mensuelle est calculée selon la formule suivante :<p></p><p></p>   (SMPG + CDS garanti) x (Coef./100) x 151,67<p></p><p></p><TABLE><TR><TD> COEFFICIENT </TD><TD> TAUX HORAIRE </TD><TD>  151,67  </TD><TD>  CDS  </TD><TD> REMUNERATION </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>  mensuelle   </TD></TR><TR><TD>     200     </TD><TD>     8,56     </TD><TD> 1 298,30 </TD><TD> 36,40 </TD><TD>   1 334,70   </TD></TR><TR><TD>     230     </TD><TD>     9,84     </TD><TD> 1 492,43 </TD><TD> 42,47 </TD><TD>   1 534,90   </TD></TR><TR><TD>     260     </TD><TD>    11,13     </TD><TD> 1 688,09 </TD><TD> 47,01 </TD><TD>   1 735,10   </TD></TR><TR><TD>     300     </TD><TD>    12,83     </TD><TD> 1 947,44 </TD><TD> 54,60 </TD><TD>   2 002,04   </TD></TR><TR><TD>     350     </TD><TD>    14,98     </TD><TD> 2 272,02 </TD><TD> 63,70 </TD><TD>   2 335,72   </TD></TR><TR><TD>     400     </TD><TD>    17,12     </TD><TD> 2 596,59 </TD><TD> 72,80 </TD><TD>   2 669,39   </TD></TR><TR><TD>     600     </TD><TD>    25,68     </TD><TD> 3 894,89 </TD><TD>109,20 </TD><TD>   4 004,09   </TD></TR><TR><TD>     700     </TD><TD>    29,96     </TD><TD> 4 544,03 </TD><TD>127,41 </TD><TD>   4 671,44   </TD></TR></TABLE><p></p><p></p>   Les majorations pour heures supplémentaires ne sont pas prises en compte pour l'appréciation du respect des minima.<p></p><p></p>   2. Barème des salaires minima applicables à compter du 1er juillet 2004<p></p><p></p><TABLE><TR><TD> COEFFICIENT </TD><TD> TAUX HORAIRE </TD><TD>  151,67  </TD><TD>  CDS  </TD><TD> REMUNERATION </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>  mensuelle   </TD></TR><TR><TD>     120     </TD><TD>     7,63     </TD><TD> 1 157,24 </TD><TD> 15,86 </TD><TD>   1 173,10   </TD></TR><TR><TD>     125     </TD><TD>     7,67     </TD><TD> 1 163,39 </TD><TD> 15,59 </TD><TD>   1 178,90   </TD></TR><TR><TD>     130     </TD><TD>     7,71     </TD><TD> 1 169,38 </TD><TD> 15,32 </TD><TD>   1 184,70   </TD></TR><TR><TD>     135     </TD><TD>     7,74     </TD><TD> 1 173,93 </TD><TD> 16,57 </TD><TD>   1 190,50   </TD></TR><TR><TD>     140     </TD><TD>     7,78     </TD><TD> 1 179,99 </TD><TD> 16,31 </TD><TD>   1 196,30   </TD></TR><TR><TD>     145     </TD><TD>     7,82     </TD><TD> 1 186,06 </TD><TD> 16,04 </TD><TD>   1 202,10   </TD></TR><TR><TD>     150     </TD><TD>     7,88     </TD><TD> 1 195,16 </TD><TD> 16,34 </TD><TD>   1 211,50   </TD></TR><TR><TD>     155     </TD><TD>     7,94     </TD><TD> 1 204,26 </TD><TD> 16,64 </TD><TD>   1 220,90   </TD></TR><TR><TD>     160     </TD><TD>     8,00     </TD><TD> 1 213,36 </TD><TD> 16,94 </TD><TD>   1 230,30   </TD></TR><TR><TD>     165     </TD><TD>     8,06     </TD><TD> 1 222,46 </TD><TD> 17,24 </TD><TD>   1 239,70   </TD></TR><TR><TD>     170     </TD><TD>     8,12     </TD><TD> 1 231,56 </TD><TD> 17,54 </TD><TD>   1 249,10   </TD></TR><TR><TD>     175     </TD><TD>     8,24     </TD><TD> 1 249,76 </TD><TD> 16,94 </TD><TD>   1 266,70   </TD></TR><TR><TD>     180     </TD><TD>     8,35     </TD><TD> 1 266,44 </TD><TD> 17,86 </TD><TD>   1 284,30   </TD></TR><TR><TD>     185     </TD><TD>     8,47     </TD><TD> 1 284,64 </TD><TD> 17,26 </TD><TD>   1 301,90   </TD></TR><TR><TD>     190     </TD><TD>     8,58     </TD><TD> 1 301,33 </TD><TD> 18,17 </TD><TD>   1 319,50   </TD></TR><TR><TD>     195     </TD><TD>     8,69     </TD><TD> 1 318,01 </TD><TD> 19,09 </TD><TD>   1 337,10   </TD></TR><TR><TD>    SMPG     </TD><TD>     4,39     </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> CDS garanti </TD><TD>     0,06     </TD><TD></TD><TD></TD><TD></TD></TR></TABLE><p></p><p></p>   Décomposition pour les niveaux supérieurs<p></p><p></p>   Au-delà du coefficient 195, la rémunération mensuelle est calculée selon la formule suivante :<p></p><p></p>   (SMPG + CDS garanti) x (Coef./100) x 151,67<p></p><p></p><TABLE><TR><TD> COEFFICIENT </TD><TD> TAUX HORAIRE </TD><TD>  151,67  </TD><TD>  CDS  </TD><TD> REMUNERATION </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD><TD>  mensuelle   </TD></TR><TR><TD>     200     </TD><TD>     8,78     </TD><TD> 1 331,66 </TD><TD> 18,20 </TD><TD>   1 349,86   </TD></TR><TR><TD>     230     </TD><TD>    10,10     </TD><TD> 1 531,87 </TD><TD> 20,47 </TD><TD>   1 552,34   </TD></TR><TR><TD>     260     </TD><TD>    11,41     </TD><TD> 1 730,55 </TD><TD> 24,27 </TD><TD>   1 754,82   </TD></TR><TR><TD>     300     </TD><TD>    13,17     </TD><TD> 1 997,49 </TD><TD> 27,30 </TD><TD>   2 024,79   </TD></TR><TR><TD>     350     </TD><TD>    15,37     </TD><TD> 2 331,17 </TD><TD> 31,09 </TD><TD>   2 362,26   </TD></TR><TR><TD>     400     </TD><TD>    17,56     </TD><TD> 2 663,33 </TD><TD> 36,40 </TD><TD>   2 699,73   </TD></TR><TR><TD>     600     </TD><TD>    26,34     </TD><TD> 3 994,99 </TD><TD> 54,60 </TD><TD>   4 049,59   </TD></TR><TR><TD>     700     </TD><TD>    30,73     </TD><TD> 4 660,82 </TD><TD> 63,70 </TD><TD>   4 724,52   </TD></TR></TABLE><p></p><p></p>   Les majorations pour heures supplémentaires ne sont pas prises en compte pour l'appréciation du respect des minima.<p></p>   Il est rappelé qu'en application de l'accord n° 66 du 19 mars 2003, relatif aux salaires minima, le présent accord prévoit, au 1er juillet 2004, la réintégration dans le taux horaire de 50 % du complément différentiel de salaire (CDS). La réintégration complète interviendra au 1er juillet 2005.<p></p>   Le présent accord poursuit les engagements pris dans le cadre de l'accord cité ci-dessus liés à la convergence des garanties mensuelles de rémunérations au 1er juillet 2005.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 69 2004-04-01 BO conventions collectives 2004-19 étendu par arrêté du 20 août 2004 JORF 1er septembre 2004",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1080777600000,
+                  "dateFin": 1115683200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -22312,13 +22460,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717249",
+              "cid": "KALISCTA000005717249",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes des salaires minima applicables à compter du 1er mai 2005 et 1er juillet 2005.",
+              "dateModif": null,
+              "dateDebut": "2005-05-10",
+              "dateFin": "2006-05-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005834901",
+                  "cid": "KALIARTI000005834901",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005717249/KALIARTI000005834901",
+                  "pathTitle": [
+                    "Barèmes des salaires minima applicables à compter du 1er mai 2005 et 1er juillet 2005."
+                  ],
+                  "content": "<p></p>   Salaires minima<p></p><p></p>   Barème des salaires minima applicables à compter du 1er mai 2005<RL    (En euros)<p></p><TABLE><TR><TD> COEFFICIENT </TD><TD> TAUX HORAIRE </TD><TD> SALAIRE MENSUEL </TD></TR><TR><TD></TD><TD></TD><TD> (151,67 heures) </TD></TR><TR><TD>    120      </TD><TD>     7,94     </TD><TD>    1 204,26     </TD></TR><TR><TD>    125      </TD><TD>     7,95     </TD><TD>    1 205,78     </TD></TR><TR><TD>    130      </TD><TD>     7,97     </TD><TD>    1 208,81     </TD></TR><TR><TD>    135      </TD><TD>     7,99     </TD><TD>    1 211,84     </TD></TR><TR><TD>    140      </TD><TD>     8,01     </TD><TD>    1 214,88     </TD></TR><TR><TD>    145      </TD><TD>     8,04     </TD><TD>    1 219,43     </TD></TR><TR><TD>    150      </TD><TD>     8,10     </TD><TD>    1 228,53     </TD></TR><TR><TD>    155      </TD><TD>     8,16     </TD><TD>    1 237,63     </TD></TR><TR><TD>    160      </TD><TD>     8,23     </TD><TD>    1 248,24     </TD></TR><TR><TD>    165      </TD><TD>     8,29     </TD><TD>    1 257,34     </TD></TR><TR><TD>    170      </TD><TD>     8,33     </TD><TD>    1 263,41     </TD></TR><TR><TD>    175      </TD><TD>     8,45     </TD><TD>    1 281,61     </TD></TR><TR><TD>    180      </TD><TD>     8,57     </TD><TD>    1 299,81     </TD></TR><TR><TD>    185      </TD><TD>     8,69     </TD><TD>    1 318,01     </TD></TR><TR><TD>    190      </TD><TD>     8,80     </TD><TD>    1 334,70     </TD></TR><TR><TD>    195      </TD><TD>     8,92     </TD><TD>    1 352,90     </TD></TR><TR><TD>    SMPG     </TD><TD>     4,49     </TD><TD></TD></TR></TABLE><p></p><p></p>   Décomposition pour les niveaux supérieurs<p></p><p></p>   Au-delà du coefficient 195, la rémunération mensuelle est calculée selon la formule suivante :<p></p> SMPG x (coef./100) x 151,67<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD> COEFFICIENT </TD><TD> TAUX HORAIRE </TD><TD> SALAIRE MENSUEL </TD></TR><TR><TD></TD><TD></TD><TD> (151,67 heures) </TD></TR><TR><TD>    200      </TD><TD>     8,98     </TD><TD>    1 362,00     </TD></TR><TR><TD>    230      </TD><TD>    10,33     </TD><TD>    1 566,75     </TD></TR><TR><TD>    260      </TD><TD>    11,67     </TD><TD>    1 769,99     </TD></TR><TR><TD>    300      </TD><TD>    13,47     </TD><TD>    2 042,99     </TD></TR><TR><TD>    350      </TD><TD>    15,72     </TD><TD>    2 384,25     </TD></TR><TR><TD>    400      </TD><TD>    17,96     </TD><TD>    2 723,99     </TD></TR><TR><TD>    600      </TD><TD>    26,94     </TD><TD>    4 085,99     </TD></TR><TR><TD>    700      </TD><TD>    31,43     </TD><TD>    4 766,99     </TD></TR></TABLE><p></p><p></p>   Les majorations pour heures supplémentaires ne sont pas prises en compte pour l'appréciation du respect des minima.<p></p>   Barème des salaires minima applicables à compter du 1er juillet 2005<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD> COEFFICIENT </TD><TD> TAUX HORAIRE </TD><TD> SALAIRE MENSUEL </TD></TR><TR><TD></TD><TD></TD><TD> (151,67 heures) </TD></TR><TR><TD>    120      </TD><TD>     8,03     </TD><TD>    1 217,91     </TD></TR><TR><TD>    125      </TD><TD>     8,04     </TD><TD>    1 219,43     </TD></TR><TR><TD>    130      </TD><TD>     8,06     </TD><TD>    1 222,46     </TD></TR><TR><TD>    135      </TD><TD>     8,09     </TD><TD>    1 227,01     </TD></TR><TR><TD>    140      </TD><TD>     8,11     </TD><TD>    1 230,04     </TD></TR><TR><TD>    145      </TD><TD>     8,13     </TD><TD>    1 233,08     </TD></TR><TR><TD>    150      </TD><TD>     8,20     </TD><TD>    1 243,69     </TD></TR><TR><TD>    155      </TD><TD>     8,26     </TD><TD>    1 252,79     </TD></TR><TR><TD>    160      </TD><TD>     8,32     </TD><TD>    1 261,89     </TD></TR><TR><TD>    165      </TD><TD>     8,39     </TD><TD>    1 272,51     </TD></TR><TR><TD>    170      </TD><TD>     8,43     </TD><TD>    1 278,58     </TD></TR><TR><TD>    175      </TD><TD>     8,55     </TD><TD>    1 296,78     </TD></TR><TR><TD>    180      </TD><TD>     8,67     </TD><TD>    1 314,98     </TD></TR><TR><TD>    185      </TD><TD>     8,79     </TD><TD>    1 333,18     </TD></TR><TR><TD>    190      </TD><TD>     8,91     </TD><TD>    1 351,38     </TD></TR><TR><TD>    195      </TD><TD>     9,03     </TD><TD>    1 369,58     </TD></TR><TR><TD>    SMPG     </TD><TD>     4,54     </TD><TD></TD></TR></TABLE><p></p><p></p>   Décomposition pour les niveaux supérieurs<p></p><p></p>   Au-delà du coefficient 195, la rémunération mensuelle est calculée selon la formule suivante :<p></p><p></p>   SMPG x (coef./100) x 151,67<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD> COEFFICIENT </TD><TD> TAUX HORAIRE </TD><TD> SALAIRE MENSUEL </TD></TR><TR><TD></TD><TD></TD><TD> (151,67 heures) </TD></TR><TR><TD>    200      </TD><TD>     9,08     </TD><TD>    1 377,16     </TD></TR><TR><TD>    230      </TD><TD>    10,44     </TD><TD>    1 583,43     </TD></TR><TR><TD>    260      </TD><TD>    11,80     </TD><TD>    1 789,71     </TD></TR><TR><TD>    300      </TD><TD>    13,62     </TD><TD>    2 065,75     </TD></TR><TR><TD>    350      </TD><TD>    15,89     </TD><TD>    2 410,04     </TD></TR><TR><TD>    400      </TD><TD>    18,16     </TD><TD>    2 754,33     </TD></TR><TR><TD>    600      </TD><TD>    27,24     </TD><TD>    4 131,49     </TD></TR><TR><TD>    700      </TD><TD>    31,78     </TD><TD>    4 820,07     </TD></TR></TABLE><p></p><p></p>   Les majorations pour heures supplémentaires ne sont pas prises en compte pour l'appréciation du respect des minima.<p></p>   Les parties au présent accord sont convenus d'organiser aux alentours du mois de septembre 2005 la tenue d'une réunion paritaire afin d'étudier l'abandon de la notion du SMPG prévue par l'article 22 des dispositions générales de la convention collective, et de conduire une réflexion sur la hiérarchisation des coefficients des niveaux I et II.<p></p>   Fait à Paris, le 10 mai 2005.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 72 2005-05-10 BO conventions collectives 2005-25 étendu par arrêté du 8 novembre 2005 JORF 18 novembre 2005",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1115683200000,
+                  "dateFin": 1147132800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
