@@ -1321,19 +1321,31 @@ async function loadAll(){
   })();
 
   var pManifest = (async function(){
-    try{
-      // 60 s (au lieu de 15 par défaut) : couper un manifeste de 17 Mo en cours
-      // de route sur réseau mobile déclenchait le repli loadFromSummaries(),
-      // qui télécharge ~30 Mo de plus. Même raison que les index de recherche.
-      var m = await fetchJSON('output/manifest.json', 60000);
+    // SOCLE SEUL À L'OUVERTURE (22/09/2026) : conventions, articles,
+    // jurisprudence -- moins de 1 Mo. Les listes JORF (4,8 Mo) et accords
+    // (11,5 Mo), 96 % de l'ancien manifeste, arrivent au premier clic sur leur
+    // onglet (chargerListe). Tant que l'aspirateur n'a pas encore produit
+    // manifest-socle.json, on retombe sur le manifeste complet, comme avant.
+    function remplir(m){
       INDEX.ccn   = (m.ccn  ||[]).map(function(a){ return {num:String(a[0]), title:a[1]||('IDCC '+a[0]), etat:a[2]||'V', source:a[3]||'inconnu'}; });
       INDEX.code  = (m.code ||[]).map(function(a){ return {num:a[0], title:'Article '+a[0], etat:a[1]||'?'}; });
       INDEX.secu  = (m.secu ||[]).map(function(a){ return {num:a[0], title:'Article '+a[0], etat:a[1]||'?'}; });
       INDEX.juris = (m.juris||[]).map(function(a){ return {num:a[0], title:a[1]||('Décision '+a[0]), etat:null, juridiction:a[2]||''}; });
-      INDEX.jorf = (m.jorf||[]).map(function(a){ return {num:a[0], title:a[1]||('Texte JORF '+a[0]), etat:null}; });
-      INDEX.acco = (m.acco||[]).map(function(a){ return {num:a[0], title:a[1]||('Accord '+a[0]), etat:null, themes:(a[2]||'').split(', ').filter(Boolean)}; });
+      if(m.jorf){ remplirListe('jorf', m.jorf); }
+      if(m.acco){ remplirListe('acco', m.acco); }
+    }
+    try{
+      remplir(await fetchJSON('output/manifest-socle.json', 60000));
       manifestOk = true;
-    }catch(e){ console.warn('manifest.json indisponible, repli sur _summary', e); }
+    }catch(e){
+      try{
+        // 60 s (au lieu de 15 par défaut) : couper un manifeste de 17 Mo en
+        // cours de route sur réseau mobile déclenchait le repli
+        // loadFromSummaries(), qui télécharge ~30 Mo de plus.
+        remplir(await fetchJSON('output/manifest.json', 60000));
+        manifestOk = true;
+      }catch(e2){ console.warn('manifest.json indisponible, repli sur _summary', e2); }
+    }
   })();
 
   // Le cache du filtre par catégorie dépend de SEARCH : on le vide à chaque
@@ -1574,8 +1586,12 @@ function paintCounts(cc){
   }
 }
 function updateCounts(){
-  paintCounts({ccn:INDEX.ccn.length, code:INDEX.code.length, secu:INDEX.secu.length,
-               juris:INDEX.juris.length, jorf:INDEX.jorf.length, acco:INDEX.acco.length});
+  // jorf/acco : la liste n'est chargée qu'au clic -> counts.json en attendant,
+  // plutôt qu'un « 0 » affiché à tort.
+  var nb = function(k){ return (INDEX[k] && INDEX[k].length) ? INDEX[k].length
+                                : (COUNTS && typeof COUNTS[k]==='number' ? COUNTS[k] : 0); };
+  paintCounts({ccn:nb('ccn'), code:nb('code'), secu:nb('secu'),
+               juris:nb('juris'), jorf:nb('jorf'), acco:nb('acco')});
   paintClauseCounts();
 }
 /* Compteurs des 5 onglets clauses : les vrais chiffres si les clauses sont
@@ -4020,7 +4036,9 @@ function subChips(source){
       acco:  'Tous les accords'
     };
     var lib = libelles[source] || 'Tout';
-    chips.push(chip('all', lib, (INDEX[source] || []).length));
+    var nL = (INDEX[source] || []).length;
+    if(!nL && COUNTS && typeof COUNTS[source]==='number') nL = COUNTS[source];
+    chips.push(chip('all', lib, nL));
   }
   return chips;
 }
@@ -4098,6 +4116,20 @@ function renderSubbar(){
 }
 
 function renderBrowse(){
+  var srcB = BROWSE.source;
+  if((srcB === 'jorf' || srcB === 'acco') && LISTES_ETAT[srcB] !== 'pret'){
+    var boxb = document.getElementById('browse-results');
+    if(LISTES_ETAT[srcB] === 'erreur'){
+      boxb.innerHTML = '<div class="empty"><div class="big">Chargement impossible.</div>Vérifie ta connexion puis rouvre cet onglet.</div>';
+      LISTES_ETAT[srcB] = 'absent';
+      return;
+    }
+    boxb.innerHTML = '<div class="empty"><div class="big">Chargement de la liste…</div>Première ouverture : quelques secondes.</div>';
+    chargerListe(srcB).then(function(){
+      if(BROWSE.source === srcB){ renderSubbar(); renderBrowse(); }
+    });
+    return;
+  }
   var list = computeList();
   var box = document.getElementById('browse-results');
   if(!list.length){
@@ -4124,6 +4156,34 @@ function renderBrowse(){
    DÉJÀ dans clauses-index.json, pas besoin d'ouvrir un fichier détail. On
    affiche chaque clause en carte directement. Réutilise les classes CSS
    existantes (group-title, rows, empty, more) -- aucun CSS à ajouter. */
+/* LISTES JORF ET ACCORDS À LA DEMANDE (22/09/2026) -- voir pManifest. */
+var LISTES_ETAT = { jorf:'absent', acco:'absent' };   // absent | encours | pret | erreur
+var LISTES_PROMESSE = {};
+function remplirListe(src, lignes){
+  if(src === 'jorf') INDEX.jorf = (lignes||[]).map(function(a){ return {num:a[0], title:a[1]||('Texte JORF '+a[0]), etat:null}; });
+  if(src === 'acco') INDEX.acco = (lignes||[]).map(function(a){ return {num:a[0], title:a[1]||('Accord '+a[0]), etat:null, themes:(a[2]||'').split(', ').filter(Boolean)}; });
+  LISTES_ETAT[src] = 'pret';
+}
+function chargerListe(src){
+  if(LISTES_ETAT[src] === 'pret') return Promise.resolve();
+  if(LISTES_PROMESSE[src]) return LISTES_PROMESSE[src];
+  LISTES_ETAT[src] = 'encours';
+  LISTES_PROMESSE[src] = (async function(){
+    try{
+      var d = await fetchJSON('output/manifest-'+src+'.json', 60000);
+      remplirListe(src, d[src]);
+    }catch(e){
+      try{
+        // Fichier découpé pas encore produit par l'aspirateur : manifeste complet.
+        var m = await fetchJSON('output/manifest.json', 60000);
+        remplirListe('jorf', m.jorf); remplirListe('acco', m.acco);
+      }catch(e2){ LISTES_ETAT[src] = 'erreur'; }
+    }
+    LISTES_PROMESSE[src] = null;
+  })();
+  return LISTES_PROMESSE[src];
+}
+
 var CL_STATE = { theme:'salaire', filter:'', shown:PAGE };
 
 /* CHARGEMENT À LA DEMANDE (22/09/2026). clauses-index.json pèse 66 Mo et
