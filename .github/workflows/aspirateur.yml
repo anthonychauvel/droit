@@ -31,6 +31,7 @@ on:
           - ccn
           - code-travail
           - code-secu
+          - articles-cites
           - jurisprudence
           - decouvrir-jurisprudence
           - jorf
@@ -217,6 +218,114 @@ jobs:
             git push || (sleep 5 && git pull --rebase --autostash origin main && git push)
             echo "PUSH LIVE effectué : les nouveautés sont en ligne."
           fi
+
+      # Ajouté le 23/09/2026 — les articles que l'appli, les outils ou le guide
+      # CITENT mais que le fonds n'a pas. Le tableau de bord les liste déjà
+      # (« aucun des deux corpus ne le confirme ») : on va les chercher en
+      # priorité, dans les deux codes puisqu'une citation en texte brut ne dit
+      # pas de quel code elle relève. Un article trouvé rejoint la liste suivie
+      # de son code (articles_list.txt ou articles_list_css.txt) et sera
+      # revérifié comme les autres. Un numéro introuvable dans les deux codes
+      # reste signalé au tableau de bord : c'est presque toujours une coquille
+      # dans l'appli, à corriger là-bas.
+      - name: "PRIORITÉ articles cités par l'écosystème mais absents du fonds"
+        if: ${{ always() && (github.event_name == 'schedule' || contains(fromJSON('["articles-cites","code-travail","code-secu","les-deux","tout"]'), github.event.inputs.cible)) }}
+        run: |
+          # donnees.json du tableau de bord est public : pas de jeton nécessaire.
+          if ! curl -fsSL --retry 3 https://raw.githubusercontent.com/anthonychauvel/tableaudebord/main/donnees.json -o /tmp/donnees.json; then
+            echo "donnees.json du tableau de bord illisible : étape ignorée ce run."
+            exit 0
+          fi
+          python3 - <<'PYA'
+          import json, os, re, sys
+          # Articles que le tableau de bord signale comme cités mais non confirmés par le fonds.
+          CATS = ("citation-ecosysteme-non-confirmee", "citation-orpheline", "article-non-confirme")
+          NUM = re.compile(r"^[LRD]\d{3,4}-\d{1,3}(?:-\d{1,2})?$")
+          d = json.load(open("/tmp/donnees.json", encoding="utf-8"))
+          vus = set()
+          for s in d.get("sections", []):
+              for a in s.get("alertes", []):
+                  if a.get("categorie") not in CATS:
+                      continue
+                  t = (a.get("titre") or "").split(" : ", 1)[0].strip()
+                  t = re.sub(r"\s*\(.*?\)\s*$", "", t)           # « L1234-5 (CT) » -> « L1234-5 »
+                  t = re.sub(r"[.\s]", "", t)
+                  if NUM.match(t):
+                      vus.add(t)
+          def ok(chemin):
+              try:
+                  return "_error" not in json.load(open(chemin, encoding="utf-8"))
+              except Exception:
+                  return False
+          DOSSIERS = ("output/code-travail", "output/code-secu")
+          manquants = sorted(a for a in vus
+                             if not any(ok(os.path.join(dd, a + ".json")) for dd in DOSSIERS))
+          avant = sorted(os.path.join(dd, a + ".json") for a in manquants for dd in DOSSIERS
+                         if os.path.exists(os.path.join(dd, a + ".json")))
+          open("/tmp/cites.txt", "w").write("\n".join(manquants))
+          open("/tmp/cites_avant.txt", "w").write("\n".join(avant))
+          print(f"{len(vus)} article(s) cité(s) non confirmé(s) au tableau de bord, "
+                f"{len(manquants)} absent(s) des deux corpus : {', '.join(manquants) or 'aucun'}")
+          PYA
+          if [ ! -s /tmp/cites.txt ]; then
+            echo "Rien à récupérer : tous les articles cités sont au fonds."
+            exit 0
+          fi
+          python3 scripts/pull_code_travail.py --articles-file /tmp/cites.txt --code-id LEGITEXT000006072050 --out output/code-travail --only-missing || true
+          python3 scripts/pull_code_travail.py --articles-file /tmp/cites.txt --code-id LEGITEXT000006073189 --out output/code-secu --only-missing || true
+          python3 - <<'PYB'
+          import json, os
+          manquants = [l.strip() for l in open("/tmp/cites.txt") if l.strip()]
+          avant = {l.strip() for l in open("/tmp/cites_avant.txt") if l.strip()}
+          LISTES = {"output/code-travail": "articles_list.txt", "output/code-secu": "articles_list_css.txt"}
+          trouves = {dd: [] for dd in LISTES}
+          for a in manquants:
+              for dd in LISTES:
+                  p = os.path.join(dd, a + ".json")
+                  if not os.path.exists(p):
+                      continue
+                  try:
+                      contenu = json.load(open(p, encoding="utf-8"))
+                  except Exception:
+                      contenu = {"_error": "illisible"}
+                  if "_error" in contenu:
+                      # Tenté dans le mauvais code (un article de la sécu cherché dans le
+                      # Code du travail, ou l'inverse) : on n'encombre pas le fonds d'une
+                      # fiche d'erreur qui n'existait pas avant ce run.
+                      if p not in avant:
+                          os.remove(p)
+                  else:
+                      trouves[dd].append(a)
+              # même ménage dans le résumé du dossier
+          for dd in LISTES:
+              sp = os.path.join(dd, "_summary.json")
+              if os.path.exists(sp):
+                  try:
+                      resume = json.load(open(sp, encoding="utf-8"))
+                      resume = [e for e in resume if not (e.get("article") in manquants
+                                and e.get("status") == "error"
+                                and not os.path.exists(os.path.join(dd, e["article"] + ".json")))]
+                      json.dump(resume, open(sp, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+                  except Exception:
+                      pass
+          # Les articles trouvés rejoignent la liste suivie de leur code : ils seront
+          # revérifiés à chaque passage, comme les autres.
+          for dd, liste in LISTES.items():
+              if not trouves[dd]:
+                  continue
+              brut = open(liste, encoding="utf-8").read() if os.path.exists(liste) else ""
+              deja = {l.strip() for l in brut.splitlines() if l.strip()}
+              nouveaux = [a for a in trouves[dd] if a not in deja]
+              if nouveaux:
+                  with open(liste, "a", encoding="utf-8") as f:
+                      if brut and not brut.endswith("\n"):
+                          f.write("\n")
+                      f.write("\n".join(nouveaux) + "\n")
+          introuvables = [a for a in manquants if not any(a in v for v in trouves.values())]
+          print(f"Code du travail : {', '.join(trouves['output/code-travail']) or 'aucun'}")
+          print(f"Code de la sécurité sociale : {', '.join(trouves['output/code-secu']) or 'aucun'}")
+          print(f"Introuvables dans les deux codes (numéro à vérifier dans l'appli) : {', '.join(introuvables) or 'aucun'}")
+          PYB
 
       - name: Récupérer les CCN (KALI)
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
@@ -538,7 +647,9 @@ jobs:
           # (étape "Config Git"), donc les conflits sur les fichiers générés se
           # résolvent tout seuls en faveur de notre version.
           git add output/ audits/ .gitattributes 2>/dev/null || true
-          for f in all_articles_code_travail.txt all_articles_code_secu.txt idcc_list_complet.txt jurisprudence_decouverte.txt; do
+          # articles_list.txt et articles_list_css.txt (23/09/2026) : l'étape
+          # « articles cités » y ajoute les articles qu'elle a trouvés.
+          for f in all_articles_code_travail.txt all_articles_code_secu.txt idcc_list_complet.txt jurisprudence_decouverte.txt articles_list.txt articles_list_css.txt; do
             [ -f "$f" ] && git add "$f"
           done
           [ -d debug_list_ccn ] && git add debug_list_ccn/
