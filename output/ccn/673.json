@@ -4197,13 +4197,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731171",
+              "cid": "KALISCTA000005731171",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er septembre 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-12-21",
+              "dateFin": "2001-04-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868887",
+                  "cid": "KALIARTI000005868887",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731171/KALIARTI000005868887",
+                  "pathTitle": [
+                    "Salaires à partir du 1er septembre 2000."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les salaires horaires minima de base prévus à l'article 30 des clauses générales de la convention collective nationale sont modifiés de la manière suivante, selon le barème ci-joint, à compter du 1er septembre 2000 :<p></p><p></p>   - du coefficient 150 a au coefficient 163 l, augmentation de 3,2 % ;<p></p><p></p>   - du coefficient 165 m au coefficient 168 p, augmentation régulièrement dégressive de 2,8 % à 2,2 % ;<p></p><p></p>   - du coefficient 169 au coefficient 520, augmentation de 2,1 %,<p></p><p></p>   portant valeur du point au coefficient 100 : 26,02 F.<p></p><p></p>   Barème des salaires minima<p></p> applicable à compter du 1er septembre 2000<p></p><p></p>   Valeur du point au coefficient 100 : 26,02 F<p></p> Coefficients liés à la classification des emplois (avenants n°s 21 et 22 au 1er juillet 1986) à la convention collective nationale de la fourrure<p></p><TABLE><TR><TD>  COEF </TD><TD>SALAIRE </TD><TD> SALAIRE  </TD></TR><TR><TD></TD><TD>HORAIRE </TD><TD> MENSUEL  </TD></TR><TR><TD></TD><TD>MINIMUM </TD><TD> MINIMUM  </TD></TR><TR><TD></TD><TD></TD><TD>pour 169 h</TD></TR><TR><TD></TD><TD> (en fr)</TD><TD>  (en fr) </TD></TR><TR><TD>  150 a</TD><TD>  42,02 </TD><TD>  7 101,38</TD></TR><TR><TD>  151 b</TD><TD>  42,06 </TD><TD>  7 108,14</TD></TR><TR><TD>  152 c</TD><TD>  42,11 </TD><TD>  7 116,59</TD></TR><TR><TD>  153 d</TD><TD>  42,16 </TD><TD>  7 125,04</TD></TR><TR><TD>  155 e</TD><TD>  42,24 </TD><TD>  7 138,56</TD></TR><TR><TD>  156 f</TD><TD>  42,28 </TD><TD>  7 145,32</TD></TR><TR><TD>  157 g</TD><TD>  42,33 </TD><TD>  7 153,77</TD></TR><TR><TD>  158 h</TD><TD>  42,37 </TD><TD>  7 160,53</TD></TR><TR><TD>  159 i</TD><TD>  42,43 </TD><TD>  7 170,67</TD></TR><TR><TD>  161 j</TD><TD>  42,74 </TD><TD>  7 223,06</TD></TR><TR><TD>  162 k</TD><TD>  42,90 </TD><TD>  7 250,10</TD></TR><TR><TD>  163 l</TD><TD>  43,06 </TD><TD>  7 277,14</TD></TR><TR><TD>  165 m</TD><TD>  43,23 </TD><TD>  7 305,87</TD></TR><TR><TD>  166 n</TD><TD>  43,41 </TD><TD>  7 336,29</TD></TR><TR><TD>  167 o</TD><TD>  43,59 </TD><TD>  7 366,71</TD></TR><TR><TD>  168 p</TD><TD>  43,76 </TD><TD>  7 395,44</TD></TR><TR><TD>  169  </TD><TD>  43,97 </TD><TD>  7 430,93</TD></TR><TR><TD>  177  </TD><TD>  46,06 </TD><TD>  7 784,14</TD></TR><TR><TD>  182  </TD><TD>  47,36 </TD><TD>  8 003,84</TD></TR><TR><TD>  187  </TD><TD>  48,66 </TD><TD>  8 223,54</TD></TR><TR><TD>  192  </TD><TD>  49,96 </TD><TD>  8 443,24</TD></TR><TR><TD>  202  </TD><TD>  52,56 </TD><TD>  8 882,64</TD></TR><TR><TD>  212  </TD><TD>  55,16 </TD><TD>  9 322,04</TD></TR><TR><TD>  222  </TD><TD>  57,76 </TD><TD>  9 761,44</TD></TR><TR><TD>  225  </TD><TD>  58,54 </TD><TD>  9 893,26</TD></TR><TR><TD>  252  </TD><TD>  65,57 </TD><TD> 11 081,33</TD></TR><TR><TD>  262  </TD><TD>  68,17 </TD><TD> 11 520,73</TD></TR><TR><TD>Cadres et assimilés (classification</TD></TR><TR><TD>additif n° 1 du 12 mars 1973)      </TD></TR><TR><TD>  260  </TD><TD>  67,66 </TD><TD> 11 434,54</TD></TR><TR><TD>  290  </TD><TD>  75,46 </TD><TD> 12 752,74</TD></TR><TR><TD>  300  </TD><TD>  78,06 </TD><TD> 13 192,14</TD></TR><TR><TD>  310  </TD><TD>  80,66 </TD><TD> 13 631,54</TD></TR><TR><TD>  350  </TD><TD>  91,07 </TD><TD> 15 390,83</TD></TR><TR><TD>  360  </TD><TD>  93,67 </TD><TD> 15 830,23</TD></TR><TR><TD>  450  </TD><TD> 117,09 </TD><TD> 19 788,21</TD></TR><TR><TD>  520  </TD><TD> 135,30 </TD><TD> 22 865,70</TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 47 2000-12-21 BO conventions collectives 2001-8 étendu par arrêté du 13 juin 2001 JORF 23 juin 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 977356800000,
+                  "dateFin": 988243200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -4217,13 +4291,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731172",
+              "cid": "KALISCTA000005731172",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er septembre 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-12-21",
+              "dateFin": "2001-04-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868888",
+                  "cid": "KALIARTI000005868888",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731172/KALIARTI000005868888",
+                  "pathTitle": [
+                    "Salaires à partir du 1er septembre 2000."
+                  ],
+                  "content": "<p></p>   Augmentation des salaires Paris - Ile-de-France (75, 77, 78, 91, 92, 93, 94, 95) :<p></p><p></p>   A compter du 1er septembre 2000 : + 2,1 %.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 48 2000-12-21 BO conventions collectives 2001-8 étendu par arrêté du 13 juin 2001 JORF 23 juin 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES, REGION PARISIENNE - Ile-de-France",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 977356800000,
+                  "dateFin": 988243200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -4331,13 +4479,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731174",
+              "cid": "KALISCTA000005731174",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er septembre 2001.",
+              "dateModif": null,
+              "dateDebut": "2002-01-29",
+              "dateFin": "2002-12-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868890",
+                  "cid": "KALIARTI000005868890",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731174/KALIARTI000005868890",
+                  "pathTitle": [
+                    "Salaires à partir du 1er septembre 2001."
+                  ],
+                  "content": "<p></p>   Augmentation des salaires Paris - Ile-de-France (75, 77, 78, 91, 92, 93, 94, 95) à compter du 1er septembre 2001 : + 1,6 %.<p></p><p></p>   Ce pourcentage comprend les augmentations qui auraient pu être appliquées dans les entreprises depuis le 1er septembre 2000.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 53 2002-01-29 BO conventions collectives 2002-12-13",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1012262400000,
+                  "dateFin": 1040342400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

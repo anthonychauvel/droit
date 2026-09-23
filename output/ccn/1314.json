@@ -30142,13 +30142,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690328",
+              "cid": "KALISCTA000005690328",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et indemnités au 1er janvier 1993.",
+              "dateModif": null,
+              "dateDebut": "1993-01-01",
+              "dateFin": "1995-01-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767173",
+                  "cid": "KALIARTI000005767173",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690328/KALIARTI000005767173",
+                  "pathTitle": [
+                    "Salaires et indemnités au 1er janvier 1993."
+                  ],
+                  "content": "Article 2<p></p> Minima garantis<p></p><p></p>   Les minima garantis, fixés à l'article 5 \" Minimum garanti \" de l'accord collectif national, sont modifiés ainsi qu'il suit, à compter du 1er janvier 1993 :<p></p><p></p>   \" - gérance 1re catégorie : 6.000 F par mois ;<p></p><p></p>   \" - gérance 2e catégorie : 9.300 F par mois. \"<p></p>Article 4<p></p><p></p>   \" a) Indemnisation des heures passées en réunion.<p></p><p></p>   \" Chaque gérant investi d'un mandat de représentation percevra, par demi-journée d'absence nécessitée par des réunions légales avec l'employeur ou provoquées par celui-ci, une indemnité forfaitaire fixée à 166 F, à compter du 1er janvier 1993.<p></p><p></p>   \" b) Indemnisation des heures de délégation.<p></p><p></p>   \" Les heures de délégation sont accordées dans les conditions fixées par la loi. Elles seront indemnisées forfaitairement sur les bases mensuelles suivantes à compter du 1er janvier 1993 :<p></p><p></p>   \" - gérant membre du comité d'établissement : 616 F ;<p></p><p></p>   \" - délégué gérant : 465 F ;<p></p><p></p>   \" - délégué syndical gérant : 311 F ; 465 F ; 616 F,<p></p> selon qu'il exerce dans un \" établissement succursales \" regroupant habituellement de 50 à 150 gérants, de 151 à 500 gérants ou plus de 500 gérants.<p></p><p></p>   \" Les indemnités visées aux a et b ci-dessus sont révisables chaque année. \"<p></p>Article 5<p></p> Indemnisation des gérants participant aux réunions paritaires<p></p><p></p>   Seul, le chiffre figurant au 1er tiret du a Frais de séjour de l'article 40 \" Indemnisation des gérants participant aux réunions paritaires \" est modifié ainsi qu'il suit :<p></p><p></p>   \" - 82 F par repas principal. \"<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 31 1993-01-18 en vigueur le 1er janvier 1993 étendu par arrêté du 12 mai 1993 JORF 25 mai 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 725846400000,
+                  "dateFin": 789696000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -30162,13 +30236,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690330",
+              "cid": "KALISCTA000005690330",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et indemnités au 1er janvier 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-01-01",
+              "dateFin": "1997-01-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767174",
+                  "cid": "KALIARTI000005767174",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690330/KALIARTI000005767174",
+                  "pathTitle": [
+                    "Salaires et indemnités au 1er janvier 1995."
+                  ],
+                  "content": "Article 1er<p></p> Objet de l'avenant<p></p><p></p>   Le présent avenant, qui porte le n° 33, vient modifier les articles 5 et 26 de l'accord collectif national des maisons d'alimentation à succursales, supermarchés, hypermarchés, gérants-mandataires du 18 juillet 1963 modifié.<p></p><p></p>Article 2<p></p> Minima garantis<p></p><p></p>   Les minima garantis, fixés à l'article 5 Minimum garanti de l'accord collectif national, sont modifiés ainsi qu'il suit, à compter du 1er janvier 1995 :<p></p> gérance 1re catégorie : 6.260 F par mois<p></p> gérance 2e catégorie : 9.670 F par mois<p></p><p></p>Article 3<p></p> Equipements. - Entretien des magasins<p></p><p></p>   Il est inséré, entre les deuxième et troisième alinéas de l'article 26 Equipements. - Entretien des magasins, un alinéa supplémentaire dont la rédaction est la suivante :<p></p><p></p>   Est également visé le matériel permettant d'accepter les nouveaux moyens de paiement du type cartes bancaires. Chaque entreprise déterminera, en fonction des critères économiques et commerciaux qu'elle fixera :<p></p><p></p>   - les magasins à équiper ;<p></p><p></p>   - les conditions de prise en charge des coûts d'installation et de fonctionnement ;<p></p><p></p>   - le calendrier prévisionnel établi au cours de l'année 1995 et communiqué au comité d'entreprise ou, à défaut, aux délégués-gérants.<p></p><p></p> Article 4<p></p> Date d'application<p></p><p></p>   Ce présent avenant s'applique à compter du 1er janvier 1995.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 33 1995-01-10 BO conventions collectives 95-7 en vigueur le 1er janvier 1995 étendu par arrêté du 5 avril 1995 JORF 15 avril 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 788918400000,
+                  "dateFin": 852508800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -30182,13 +30330,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690331",
+              "cid": "KALISCTA000005690331",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et indemnités au 1er janvier et 1er juillet 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-01-06",
+              "dateFin": "2000-01-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767175",
+                  "cid": "KALIARTI000005767175",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690331/KALIARTI000005767175",
+                  "pathTitle": [
+                    "Salaires et indemnités au 1er janvier et 1er juillet 1997."
+                  ],
+                  "content": "Article 1er<p></p> Objet de l'avenant<p></p><p></p>   Le présent avenant, qui porte le n° 35, vient modifier les articles 5, 6, 10, 15 et 40 de l'accord collectif national des maisons d'alimentation à succursales, supermarchés, hypermarchés, Gérants-mandataires, du 18 juillet 1963 modifié.<p></p>Article 2<p></p> Minima garantis<p></p><p></p>   Les minima garantis, fixés à l'article 5 Minimum garanti de l'accord collectif national, sont modifiés ainsi qu'il suit, à compter du 1er janvier 1997 :<p></p><p></p>   - gérance 1re catégorie ...    6 550 F par mois ;<p></p><p></p>   - gérance 2e catégorie ...   10 050 F par mois.<p></p>Article 3<p></p> Taux de commission contractuel<p></p><p></p>   L'alinéa 4 de l'article 6 Taux de commisson contractuel est complété ainsi qu'il suit :<p></p><p></p>   Ce taux ne pourra être inférieur à 5,80 p. 100 à compter du 1er juillet 1997.<p></p>Article 4<p></p> Régime de prévoyance<p></p><p></p>   4.1 A) Incapacité totale temporaire, de l'article 10 Régime de prévoyance :<p></p><p></p>   Le b) Taux de cotisation du 2) du A) est modifié ainsi qu'il suit :<p></p><p></p>   - 0,84 p. 100 sur la tranche A (plafond de sécurité sociale) ;<p></p><p></p>   - 1,11 p. 100 sur la tranche B (plafond de cotisations régime complémentaire C.A.R.G.S.M.A.).<p></p><p></p>   Le 4) Durée de l'accord du A) est rédigé ainsi qu'il suit :<p></p><p></p>   L'accord du 10 janvier 1994 venu à expiration le 31 décembre 1996 est prorogé pour une période de deux ans à compter du 1er janvier 1997, au terme de laquelle son renouvellement sera examiné par les parties signataires en fonction du résultat du régime.<p></p><p></p>   4.2. B) Décès, invalidité permanente totale :<p></p><p></p>   Le 2) du B) est modifié ainsi qu'il suit :<p></p><p></p>   0,25 p. 100 des commissions brutes dans la limite de 4 plafonds de sécurité sociale répartie à raison de 70 p. 100 pour l'entreprise et 30 p. 100 pour le gérant.<p></p>Article 5<p></p> Indemnité de résiliation de contrat<p></p><p></p>   Les 2e, 3e et 4e tirets du b) de l'article 15 Indemnité de résiliation de contrat sont rédigés ainsi qu'il suit :<p></p><p></p>   - 3/30 de mois par année de présence pour la tranche de + 5 ans à 15 ans ;<p></p><p></p>   - 12/30 de mois pour année de présence pour la tranche de + 15 ans à 20 ans ;<p></p><p></p>   - 6/30 de mois par année de présence pour la tranche supérieure à 20 ans.<p></p>Article 6<p></p> Indemnisation des gérants participant aux réunions paritaires<p></p><p></p>   Le a) Frais de séjour de l'article 40 Indemnisation des gérants participants aux réunions paritaires est rédigé ainsi qu'il suit :<p></p><p></p>   - 85 F par repas principal ;<p></p><p></p>   - 220 F pour la chambre et le petit déjeuner.<p></p>Article 7<p></p> Date d'application<p></p><p></p>   Le présent avenant s'applique à compter du 1er janvier 1997, sauf pour l'article 3 Taux de commission contractuel qui s'applique à compter du 1er juillet 1997.<p></p>Article 8<p></p> Publicité<p></p><p></p>   Chaque partie prenante recevra deux exemplaires de l'avenant dûment signé, qui sera déposé en cinq exemplaires à la direction départementale du travail et de l'emploi service conventions collectives, 18, avenue Parmentier, 75011 Paris. Le syndicat national des maisons d'alimentation à succursales, supermarchés, hypermarchés, est chargé des formalités de dépôt.<p></p>Article 9<p></p> Extension<p></p><p></p>   Les parties signataires sont convenues de demander sans délai l'extension du présent avenant.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 35 1997-01-06 BO conventions collectives 97-5, étendu par arrêté du 5 mai 1997 JORF 15 mai 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 852508800000,
+                  "dateFin": 947462400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

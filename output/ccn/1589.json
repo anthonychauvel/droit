@@ -14197,13 +14197,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005694131",
+              "cid": "KALISCTA000005694131",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima à compter de l'extension.",
+              "dateModif": null,
+              "dateDebut": "1999-08-08",
+              "dateFin": "1999-08-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776553",
+                  "cid": "KALIARTI000005776553",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005694131/KALIARTI000005776553",
+                  "pathTitle": [
+                    "Salaires minima à compter de l'extension."
+                  ],
+                  "content": "ANNEXE II : Grille des salaires minima<p></p> (Entreprises appliquant un horaire au plus égal à 35 heures par semaine)<p></p><p></p>   Les salaires minima sont établis par référence au niveau de qualification.<p></p><p></p>   La valeur des salaires minima est déterminée, pour les entreprises appliquant un horaire au plus égal à 35 heures par semaine dans le cadre de l'accord sur la réduction du temps de travail, comme suit à la date d'entrée en vigueur de cet accord.<p></p><p></p><p></p>   (1) NIVEAU<p></p><p></p>   (2) COEFFICIENT<p></p><p></p>   (3) SALAIRE HORAIRE<p></p><p></p>   (4) SALAIRE minima mensuel pour un horaire mensualisé de 151,67 heures (en francs)<p></p><TABLE><TR><TD>  (1)    </TD><TD> (2) </TD><TD>  (3)   </TD><TD>  (4)    </TD></TR><TR><TD>Débutant </TD><TD> 100 </TD><TD> 40,65  </TD><TD> 6 165,39</TD></TR><TR><TD>  I      </TD><TD> 105 </TD><TD> 40,81  </TD><TD> 6 189,65</TD></TR><TR><TD>  II     </TD><TD> 110 </TD><TD> 40,87  </TD><TD> 6 198,75</TD></TR><TR><TD>  III    </TD><TD> 115 </TD><TD> 41,23  </TD><TD> 6 253,35</TD></TR><TR><TD>  IV     </TD><TD> 120 </TD><TD> 42,07  </TD><TD> 6 380,76</TD></TR><TR><TD>  V 1    </TD><TD> 140 </TD><TD> 45,23  </TD><TD> 6 860,03</TD></TR><TR><TD>  VI     </TD><TD> 175 </TD><TD> 50,67  </TD><TD> 7 685,12</TD></TR></TABLE><p></p><p></p>   Le salaire minima mensuel est fixé pour un horaire mensualisé de 151,67 heures par semaine.<p></p>   Le salaire minima mensuel est proratisé pour les salariés à temps partiel en fonction de l'horaire mensualisé qui leur est appliqué.<font color=\"808080\"><em>   NOTA : Arrêté du 4 août 1999 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 4 août 1999 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1999-05-12 en vigueur à l'extension BO conventions collectives 99-21 étendu par arrêté du 4 août 1999 JORF 8 août 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II : SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 934070400000,
+                  "dateFin": 934070400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14217,13 +14291,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005694132",
+              "cid": "KALISCTA000005694132",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires intégration prime ARTT au salaire horaire à compter du 1er juillet 1999, 1er juillet 2000, 1er juillet 2001, 1er juillet 2002",
+              "dateModif": null,
+              "dateDebut": "1999-08-08",
+              "dateFin": "1999-04-30",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776555",
+                  "cid": "KALIARTI000005776555",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005694132/KALIARTI000005776555",
+                  "pathTitle": [
+                    "Salaires intégration prime ARTT au salaire horaire à compter du 1er juillet 1999, 1er juillet 2000, 1er juillet 2001, 1er juillet 2002"
+                  ],
+                  "content": "Exemple d'intégration de la prime ARTT au salaire horaire<p></p><p></p>   Les montants de la prime ARTT figurant dans les grilles ci-dessous sont applicables aux entreprises qui intégreront la prime ARTT au salaire horaire dans un délai de 3 ans tel que prévu au 10e alinéa de l'article 4 du second chapitre. Ces montants seront réduits à due concurrence pour les entreprises qui décideront d'anticiper l'intégration de la prime ARTT au salaire horaire conformément aux dispositions du 11e alinéa de l'article 4 du second chapitre.<p></p><p></p>Grille des salaires au 1er juillet 1999 (base 151,67) (en francs)<p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE HORAIRE<p></p><TABLE><TR><TD>(1)</TD><TD>(2)  </TD><TD> SALAIRE</TD><TD>ARTT  </TD><TD> TOTAL  </TD></TR><TR><TD></TD><TD></TD><TD> MENSUEL</TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> (base  </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 151,67)</TD><TD></TD><TD></TD></TR><TR><TD>100</TD><TD>40,65</TD><TD>6 165,39</TD><TD>704,46</TD><TD>6 869,85</TD></TR><TR><TD>105</TD><TD>40,81</TD><TD>6 189,65</TD><TD>707,24</TD><TD>6 896,89</TD></TR><TR><TD>110</TD><TD>40,87</TD><TD>6 198,75</TD><TD>708,28</TD><TD>6 907,03</TD></TR><TR><TD>115</TD><TD>41,23</TD><TD>6 253,35</TD><TD>714,52</TD><TD>6 967,87</TD></TR><TR><TD>120</TD><TD>42,07</TD><TD>6 380,76</TD><TD>729,07</TD><TD>7 109,83</TD></TR><TR><TD>140</TD><TD>45,23</TD><TD>6 860,03</TD><TD>783,84</TD><TD>7 643,87</TD></TR><TR><TD>175</TD><TD>50,67</TD><TD>7 675,12</TD><TD>878,11</TD><TD>8 563,23</TD></TR></TABLE><p></p>Grille des salaires au 1er juillet 2000 (base 151,67) (en francs)<p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE HORAIRE<p></p><TABLE><TR><TD>(1)</TD><TD>(2)  </TD><TD> SALAIRE</TD><TD>ARTT  </TD><TD> TOTAL  </TD></TR><TR><TD></TD><TD></TD><TD> MENSUEL</TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> (base  </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 151,67)</TD><TD></TD><TD></TD></TR><TR><TD>100</TD><TD>40,65</TD><TD>6 165,39</TD><TD>704,46</TD><TD>6 869,85 </TD></TR><TR><TD>105</TD><TD>40,81</TD><TD>6 189,65</TD><TD>707,24</TD><TD>6 896,89 </TD></TR><TR><TD>110</TD><TD>40,87</TD><TD>6 198,75</TD><TD>708,28</TD><TD>6 907,03 </TD></TR><TR><TD>115</TD><TD>41,23</TD><TD>6 253,35</TD><TD>714,52</TD><TD>6 967,87 </TD></TR><TR><TD>120</TD><TD>42,07</TD><TD>6 380,76</TD><TD>729,07</TD><TD>7 109,83 </TD></TR><TR><TD>140</TD><TD>45,23</TD><TD>6 860,03</TD><TD>783,84</TD><TD>7 643,87 </TD></TR><TR><TD>175</TD><TD>50,67</TD><TD>7 675,12</TD><TD>878,11</TD><TD>8 563,23 </TD></TR></TABLE><p></p>Grille des salaires au 1er juillet 2001 (base 151,67) (en francs)<p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE HORAIRE<p></p><TABLE><TR><TD>(1)</TD><TD>(2)  </TD><TD> SALAIRE</TD><TD>ARTT  </TD><TD> TOTAL  </TD></TR><TR><TD></TD><TD></TD><TD> MENSUEL</TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> (base  </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 151,67)</TD><TD></TD><TD></TD></TR><TR><TD>100</TD><TD>42,97</TD><TD>6 517,26</TD><TD>352,59</TD><TD>6 869,85</TD></TR><TR><TD>105</TD><TD>43,14</TD><TD>6 543,04</TD><TD>353,85</TD><TD>6 896,89</TD></TR><TR><TD>110</TD><TD>43,20</TD><TD>6 552,14</TD><TD>354,89</TD><TD>6 907,03</TD></TR><TR><TD>115</TD><TD>43,58</TD><TD>6 609,78</TD><TD>358,09</TD><TD>6 967,87</TD></TR><TR><TD>120</TD><TD>44,47</TD><TD>6 744,76</TD><TD>365,07</TD><TD>7 109,83</TD></TR><TR><TD>140</TD><TD>47,81</TD><TD>7 251,34</TD><TD>392,53</TD><TD>7 643,87</TD></TR><TR><TD>175</TD><TD>53,56</TD><TD>8 123,45</TD><TD>439,78</TD><TD>8 563,23</TD></TR></TABLE><p></p>Grille des salaires au 1er juillet 2002 (base 151,67) (en francs)<p></p><p></p>   (1) COEFFICIENT<p></p><p></p>   (2) SALAIRE HORAIRE<p></p><TABLE><TR><TD>(1)</TD><TD>(2)  </TD><TD> SALAIRE</TD><TD>ARTT  </TD><TD> TOTAL  </TD></TR><TR><TD></TD><TD></TD><TD> MENSUEL</TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> (base  </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 151,67)</TD><TD></TD><TD></TD></TR><TR><TD>100</TD><TD>45,29</TD><TD>6 869,85</TD><TD>0,00  </TD><TD>6 869,85</TD></TR><TR><TD>105</TD><TD>45,47</TD><TD>6 896,89</TD><TD>0,00  </TD><TD>6 896,89</TD></TR><TR><TD>110</TD><TD>45,54</TD><TD>6 907,03</TD><TD>0,00  </TD><TD>6 907,03</TD></TR><TR><TD>115</TD><TD>45,94</TD><TD>6 967,87</TD><TD>0,00  </TD><TD>6 967,87</TD></TR><TR><TD>120</TD><TD>46,87</TD><TD>7 109,83</TD><TD>0,00  </TD><TD>7 109,83</TD></TR><TR><TD>140</TD><TD>50,40</TD><TD>7 643,87</TD><TD>0,00  </TD><TD>7 643,87</TD></TR><TR><TD>175</TD><TD>56,46</TD><TD>8 563,23</TD><TD>0,00  </TD><TD>8 563,23</TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1999-05-12 en vigueur à l'extension BO conventions collectives 99-21 étendu par arrêté du 4 août 1999 JORF 8 août 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE III : SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 934070400000,
+                  "dateFin": 925430400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14277,13 +14425,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005694135",
+              "cid": "KALISCTA000005694135",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima à compter du 1er juillet 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-07-21",
+              "dateFin": "2000-11-24",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776558",
+                  "cid": "KALIARTI000005776558",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005694135/KALIARTI000005776558",
+                  "pathTitle": [
+                    "Salaires minima à compter du 1er juillet 2000."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur des salaires minima est réévaluée et s'établit comme suit à compter du 1er juillet 2000 :<p></p><p></p>   (Grille base 169 heures par mois)<p></p><p></p><p></p>   (1) SALAIRE HORAIRE (en francs)<p></p><p></p>   (2) SALAIRE MENSUEL 169 heures (en francs)<p></p><p></p>   (3) POURCENTAGE (ancienne grille) du 1er juillet 1999.<p></p><TABLE><TR><TD>COEF </TD><TD> (1) </TD><TD>  (2)   </TD><TD>(3) </TD></TR><TR><TD>  100</TD><TD>42,45</TD><TD>7 174,05</TD><TD>3,16</TD></TR><TR><TD>  105</TD><TD>42,52</TD><TD>7 185,88</TD><TD>3,15</TD></TR><TR><TD>  110</TD><TD>42,59</TD><TD>7 197,71</TD><TD>3,15</TD></TR><TR><TD>  115</TD><TD>42,91</TD><TD>7 251,79</TD><TD>3,12</TD></TR><TR><TD>  120</TD><TD>43,23</TD><TD>7 305,87</TD><TD>2,76</TD></TR><TR><TD>  140</TD><TD>45,23</TD><TD>7 643,87</TD><TD>0   </TD></TR><TR><TD>  175</TD><TD>50,67</TD><TD>8 563,23</TD><TD>0   </TD></TR></TABLE><p></p> Article 2<p></p>   Les parties décident de demander l'extension du présent avenant. Article 3<p></p>   Les fileteurs aux pièces ne sont pas concernés par cet avenant. Article 4<p></p>   Cette grille ne s'applique pas aux saleurs-saurisseurs.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 11 2000-07-21 BO conventions collectives 2000-34 étendu par arrêté du 9 octobre 2000 JORF 15 octobre 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 964137600000,
+                  "dateFin": 975024000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

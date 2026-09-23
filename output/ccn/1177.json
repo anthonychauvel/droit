@@ -4906,13 +4906,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697314",
+              "cid": "KALISCTA000005697314",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et valeur du point au 1er mars et au 1er juillet 1997 et prime de vacances",
+              "dateModif": null,
+              "dateDebut": "1997-03-27",
+              "dateFin": "1998-03-25",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005784295",
+                  "cid": "KALIARTI000005784295",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005697314/KALIARTI000005784295",
+                  "pathTitle": [
+                    "Salaires et valeur du point au 1er mars et au 1er juillet 1997 et prime de vacances"
+                  ],
+                  "content": "Article 1er<p></p> Salaires<p></p><p></p>   L'augmentation des salaires minima conventionnels sera de :<p></p><p></p>   - 2 % au 1er mars 1997 ;<p></p><p></p>   - 0,5 % au 1er juillet 1997.<p></p><p></p>   La valeur du point 100 sera :<p></p><p></p>   - au 1er mars 1997 : 25,175 F ;<p></p><p></p>   - au 1er juillet 1997 : 25,301 F.<p></p><TABLE><TR><TD> C  </TD><TD>Rémunération mensuelle     </TD></TR><TR><TD> o  </TD><TD>garantie y compris la prime</TD></TR><TR><TD> e  </TD><TD>fixe de 100 F au           </TD></TR><TR><TD> f  </TD><TD> 01-03-1997 </TD><TD> 01-07-1997   </TD></TR><TR><TD>120 </TD><TD> 6 507 + 250</TD><TD> 6 507 + 250</TD></TR><TR><TD>125 </TD><TD> 6 602 + 250</TD><TD> 6 605 + 250</TD></TR><TR><TD>130 </TD><TD> 6 697 + 250</TD><TD> 6 703 + 250</TD></TR><TR><TD>140 </TD><TD> 6 887 + 250</TD><TD> 6 898 + 250</TD></TR><TR><TD>145 </TD><TD> 6 981 + 250</TD><TD> 6 995 + 250</TD></TR><TR><TD>150 </TD><TD> 7 076 + 250</TD><TD> 7 093 + 250</TD></TR><TR><TD>155 </TD><TD> 7 170 + 250</TD><TD> 7 190 + 250</TD></TR><TR><TD>160 </TD><TD> 7 264 + 250</TD><TD> 7 288 + 250</TD></TR><TR><TD>170 </TD><TD> 7 453 + 250</TD><TD> 7 482 + 250</TD></TR><TR><TD>175 </TD><TD> 7 546 + 250</TD><TD> 7 583 + 250</TD></TR><TR><TD>185 </TD><TD> 7 970 + 250</TD><TD> 8 011 + 250</TD></TR><TR><TD>205 </TD><TD> 8 822 + 250</TD><TD> 8 866 + 250</TD></TR></TABLE><p></p><p></p>   N.B. : SMIC à 6 406,79 F. Article 2 Prime de vacances<p></p>   La prime de vacances prévue au IV de l'article 15 de la convention collective nationale \" Ouvriers \" du 15 juin 1970 est augmentée de 500 F. Article 5 Dépôt à la direction départementale du travail<p></p>   Le présent accord fera l'objet d'un dépôt à la direction départementale du travail de Paris, dans les conditions fixées à l'article L. 132-10 du code du travail.",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1997-03-27 BO conventions collectives 97-16",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 859420800000,
+                  "dateFin": 890784000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -4926,13 +5014,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697316",
+              "cid": "KALISCTA000005697316",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et valeur du point au 1er mars 1998 et prime de vacances",
+              "dateModif": null,
+              "dateDebut": "1998-03-25",
+              "dateFin": "1999-03-16",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005784296",
+                  "cid": "KALIARTI000005784296",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005697316/KALIARTI000005784296",
+                  "pathTitle": [
+                    "Salaires et valeur du point au 1er mars 1998 et prime de vacances"
+                  ],
+                  "content": "Article 1er<p></p> Salaires<p></p><p></p>   L'augmentation du point 100 conventionnel sera de 1,5 % au 1er mars 1998.<p></p><p></p>   La valeur du point 100 sera, au 1er mars 1998, de 25,680.<p></p><p></p><TABLE><TR><TD> C  </TD><TD>Rémunération mensuelle     </TD></TR><TR><TD> o  </TD><TD>garantie y compris la prime</TD></TR><TR><TD> e  </TD><TD>fixe de 100 F au           </TD></TR><TR><TD> f  </TD><TD>        01-03-1998         </TD></TR><TR><TD>120 </TD><TD>        6 764 + 250        </TD></TR><TR><TD>125 </TD><TD>        6 849 + 250        </TD></TR><TR><TD>130 </TD><TD>        6 934 + 250        </TD></TR><TR><TD>140 </TD><TD>        7 104 + 250        </TD></TR><TR><TD>145 </TD><TD>        7 189 + 250        </TD></TR><TR><TD>150 </TD><TD>        7 274 + 250        </TD></TR><TR><TD>155 </TD><TD>        7 358 + 250        </TD></TR><TR><TD>160 </TD><TD>        7 443 + 250        </TD></TR><TR><TD>170 </TD><TD>        7 613 + 250        </TD></TR><TR><TD>175 </TD><TD>        7 695 + 250        </TD></TR><TR><TD>185 </TD><TD>        7 129 + 250        </TD></TR><TR><TD>205 </TD><TD>        8 997 + 250        </TD></TR></TABLE><p></p><p></p>   NB. - SMIC à 6 664 F. Article 2 Prime de vacances<p></p>   La prime de vacances prévue au IV de l'article 15 de la convention collective nationale \" Ouvriers \" du 15 juin 1980 est augmentée de 500 F, ce qui porte son montant à 5 450 F. Article 3 Projet d'accord national sur l'emploi et l'aménagement du temps de travail<p></p>   Il est en outre convenu qu'un accord de réduction de l'horaire hebdomadaire portant sur le passage à 38 heures, sans perte de salaire, à partir du 1er juillet 1998, sera conclu conformément au projet d'accord national sur l'emploi et l'aménagement du temps de travail négocié précédemment. Ceci après modification des paragraphes sur l'amplitude hebdomadaire, sur les 8 semaines consécutives, sur le contingent annuel d'heures supplémentaires et sur certaines modalités qui pourraient être revues lors d'une réunion de signature prévue pour le 26 mai. Article 4 Dépôt à la direction départementale du travail<p></p>   Le présent accord fera l'objet d'un dépôt à la direction départementale du travail de Paris, dans les conditions fixées à l'article L. 132-10 du code du travail.",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1998-03-25 BO conventions collectives 98-18",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 890784000000,
+                  "dateFin": 921542400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -4946,13 +5122,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005697317",
+              "cid": "KALISCTA000005697317",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et valeur du point au 1er mars et 1er septembre 2000 et prime de vacances",
+              "dateModif": null,
+              "dateDebut": "2000-03-23",
+              "dateFin": "2001-03-28",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005784298",
+                  "cid": "KALIARTI000005784298",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005697317/KALIARTI000005784298",
+                  "pathTitle": [
+                    "Salaires et valeur du point au 1er mars et 1er septembre 2000 et prime de vacances"
+                  ],
+                  "content": "Article 1er<p></p> Salaires<p></p><p></p>   L'augmentation des salaires minima conventionnels sera de :<p></p><p></p>   - 1,3 % au 1er mars 2000 ;<p></p><p></p>   - 0,7 % au 1er septembre 2000.<p></p><p></p>   La valeur du point 100 (base 39 heures hebdomadaires) sera :<p></p><p></p>   - au 1er mars 2000 : 26,274 ;<p></p><p></p>   - au 1er septembre 2000 : 26,458.<p></p><p></p> (1) Rémunération mensuelle garantie y compris la prime fixe de 100 F<p></p><TABLE><TR><TD> C </TD><TD>         (1)               </TD></TR><TR><TD> E </TD><TD> 01-03-2000  </TD><TD> 01-09-2000  </TD></TR><TR><TD> F </TD><TD></TD><TD></TD></TR><TR><TD>120</TD><TD>  6 982 + 250</TD><TD>  6 982 + 250</TD></TR><TR><TD>125</TD><TD>  7 063    \" </TD><TD>  7 068    \" </TD></TR><TR><TD>130</TD><TD>  7 144    \" </TD><TD>  7 154    \" </TD></TR><TR><TD>140</TD><TD>  7 306    \" </TD><TD>  7 326    \" </TD></TR><TR><TD>145</TD><TD>  7 387    \" </TD><TD>  7 412    \" </TD></TR><TR><TD>150</TD><TD>  7 468    \" </TD><TD>  7 498    \" </TD></TR><TR><TD>155</TD><TD>  7 549    \" </TD><TD>  7 584    \" </TD></TR><TR><TD>160</TD><TD>  7 630    \" </TD><TD>  7 670    \" </TD></TR><TR><TD>170</TD><TD>  7 792    \" </TD><TD>  7 842    \" </TD></TR><TR><TD>175</TD><TD>  7 873    \" </TD><TD>  7 928    \" </TD></TR><TR><TD>185</TD><TD>  8 315    \" </TD><TD>  8 372    \" </TD></TR><TR><TD>205</TD><TD>  9 203    \" </TD><TD>  9 266    \" </TD></TR></TABLE><p></p><p></p>   NB : SMIC à 6 882 F (base 39 heures).Article 2<p></p> Prime de vacances<p></p><p></p>   La prime de vacances prévue au IV de l'article 15 de la convention collective nationale \" Ouvriers \" du 15 juin 1990 est augmentée de 500 F, ce qui porte son montant à 6 450 F.<p></p> Article 3<p></p> Valeurs du point 100<p></p><p></p>   Pour les entreprises appliquant un horaire hebdomadaire autre que 39 heures, les valeurs du point 100 seront les suivantes :<p></p><TABLE><TR><TD>HORAIRE     </TD><TD>1-03-00</TD><TD> 1-9-00</TD></TR><TR><TD>HEBDOMADAIRE</TD><TD></TD><TD></TD></TR><TR><TD>38 heures   </TD><TD> 26,965</TD><TD> 27,154</TD></TR><TR><TD>37 heures   </TD><TD> 27,694</TD><TD> 27,888</TD></TR><TR><TD>36 heures   </TD><TD> 28,463</TD><TD> 28,662</TD></TR><TR><TD>35 heures   </TD><TD> 29,276</TD><TD> 29,482</TD></TR></TABLE><p></p> Article 4 Questions diverses<p></p>   Les parties en présence se sont, en outre, mises d'accord sur les points suivants :<p></p>   1. Le salaire minimum des ouvriers classés au coefficient 120 sera identique à celui des ouvriers classés au coefficient 125.<p></p>   2. Une réunion paritaire restreinte est prévue pour le 27 septembre 2000, à 10 heures, au siège de la chambre syndicale en vue de réexaminer les classifications ouvriers et ETDAM.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2000-03-23 BO conventions collectives 2000-20",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 953769600000,
+                  "dateFin": 985737600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

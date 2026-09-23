@@ -7024,13 +7024,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702876",
+              "cid": "KALISCTA000005702876",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des salaires mensuels garantis des ouvriers au 1er octobre 1993",
+              "dateModif": null,
+              "dateDebut": "1993-10-22",
+              "dateFin": "1994-04-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798692",
+                  "cid": "KALIARTI000005798692",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702876/KALIARTI000005798692",
+                  "pathTitle": [
+                    "Barème des salaires mensuels garantis des ouvriers au 1er octobre 1993"
+                  ],
+                  "content": "<p></p>   En vertu du 31e avenant du 21 octobre 1993 à la convention collective nationale du 17 février 1982, les salaires mensuels garantis des ouvriers s'établissent comme suit à partir du 1er octobre 1993, pour une durée hebdomadaire de travail de trente-neuf heures :<p></p><p></p><p></p>   Catégorie : I<p></p><p></p>   Fourchette de coefficients :<p></p> 150 à 159<p></p><p></p>   Salaire minimum :<p></p> 5.908 F à 5.998 F<p></p><p></p><p></p>   Catégorie : II<p></p><p></p>   Fourchette de coefficients :<p></p> 156 à 168<p></p><p></p>   Salaire minimum :<p></p> 5.968 F à 6.088 F<p></p><p></p><p></p>   Catégorie : III<p></p><p></p>   Fourchette de coefficients :<p></p> 165 à 180<p></p><p></p>   Salaire minimum :<p></p> 6.058 F à 6.334 F<p></p><p></p><p></p>   Catégorie : IV<p></p><p></p>   Fourchette de coefficients :<p></p> 175 à 193<p></p><p></p>   Salaire minimum :<p></p> 6.158 F à 6.792 F<p></p><p></p><p></p>   Catégorie : V<p></p><p></p>   Fourchette de coefficients :<p></p> 185 à 205<p></p><p></p>   Salaire minimum :<p></p> 6.510 F à 7.214 F<p></p><p></p><p></p>   Catégorie : VI<p></p><p></p>   Fourchette de coefficients :<p></p> 195 à 220<p></p><p></p>   Salaire minimum :<p></p> 6.862 F à 7.742 F<p></p><p></p><p></p>   Pour les coefficients 175 et au dessus, la valeur du point est fixée à 35,19 F.<p></p><p></p>   Le salaire mensuel pour trente-neuf heures est obtenu en multipliant la valeur du point par le coefficient hiérarchique.<p></p><p></p>   Pour toutes les dispositions contractuelles faisant référence à un minimum horaire, on calcule celui-ci en divisant le minimum mensuel par 169,60.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 31 1993-10-22 étendu par arrêté du 20 mai 1994 JORF 3 juin 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 751248000000,
+                  "dateFin": 765676800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7104,13 +7178,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702880",
+              "cid": "KALISCTA000005702880",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des salaires minima des cadres au 1er octobre 1993",
+              "dateModif": null,
+              "dateDebut": "1993-10-22",
+              "dateFin": "1994-04-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798697",
+                  "cid": "KALIARTI000005798697",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702880/KALIARTI000005798697",
+                  "pathTitle": [
+                    "Barème des salaires minima des cadres au 1er octobre 1993"
+                  ],
+                  "content": "<p></p>   En vertu du 32e avenant du 22 octobre 1993 à la convention collective nationale du 17 février 1982, les salaires mensuels minima des cadres s'établissent comme suit à partir du 1er octobre 1993, pour une durée hebdomadaire de travail de trente-neuf heures :<p></p><p></p><p></p>   Catégorie I : Seuil d'accueil des jeunes cadres diplômés<p></p><p></p>   Première année<p></p><p></p>   Coefficient : 300<p></p><p></p>   Francs : 9.609<p></p><p></p><p></p>   Deuxième année<p></p><p></p>   Coefficient : 322<p></p><p></p>   Francs : 10.314<p></p><p></p><p></p>   Troisième année<p></p><p></p>   Coefficient : 344<p></p><p></p>   Francs : 11.018<p></p><p></p><p></p>   Catégorie II : Position A, B ou C<p></p><p></p>   Coefficient : 366<p></p><p></p>   Francs : 11.723<p></p><p></p><p></p>   Coefficient : 388<p></p><p></p>   Francs : 12.428<p></p><p></p><p></p>   Coefficient : 410<p></p><p></p>   Francs : 13.132<p></p><p></p><p></p>   Coefficient : 432<p></p><p></p>   Francs : 13.837<p></p><p></p><p></p>   Coefficient : 454<p></p><p></p>   Francs : 14.542<p></p><p></p><p></p>   Coefficient : 476<p></p><p></p>   Francs : 15.246<p></p><p></p><p></p>   Coefficient : 498<p></p><p></p>   Francs : 15.951<p></p><p></p><p></p>   Catégorie III<p></p><p></p>   Coefficient : 520<p></p><p></p>   Francs : 16.656<p></p><p></p><p></p>   Coefficient : 542<p></p><p></p>   Francs : 17.360<p></p><p></p><p></p>   Coefficient : 564<p></p><p></p>   Francs : 18.065<p></p><p></p><p></p>   Coefficient : 586<p></p><p></p>   Francs : 18.770<p></p><p></p><p></p>   Coefficient : 608<p></p><p></p>   Francs : 19.474<p></p><p></p><p></p>   Coefficient : 630<p></p><p></p>   Francs : 20.179<p></p><p></p><p></p>   Coefficient : 652<p></p><p></p>   Francs : 20.884<p></p><p></p><p></p>   Le salaire mensuel minimum des cadres est calculé en multipliant le point cadre fixé à 32,03 F par le coefficient de la catégorie.<p></p><p></p>   Pour toutes les dispositions contractuelles faisant référence à un minimum horaire, on calcule celui-ci en divisant le minimum mensuel par 169,60.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 32 1993-10-22 étendu par arrêté du 28 janvier 1994 JORF 9 février 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 751248000000,
+                  "dateFin": 765676800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7312,13 +7460,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702883",
+              "cid": "KALISCTA000005702883",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des salaires mensuels garantis des ETAM au 1er avril 1994",
+              "dateModif": null,
+              "dateDebut": "1994-04-07",
+              "dateFin": "1994-10-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798700",
+                  "cid": "KALIARTI000005798700",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702883/KALIARTI000005798700",
+                  "pathTitle": [
+                    "Barème des salaires mensuels garantis des ETAM au 1er avril 1994"
+                  ],
+                  "content": "<p>   En vertu du 33e avenant du 7 avril 1994 à la convention collective nationale du 17 février 1982, les salaires mensuels garantis des ETAM s'établissent comme suit.</p><p>   A partir du 1er avril 1994, pour une durée hebdomadaire de travail de 39 heures</p><p></p><p> CATEGORIE : I</p><p> fourchette de coefficients : 250 à 265</p><p> montant : 5.955 à 6.009 F</p><p> CATEGORIE : II</p><p> fourchette de coefficients : 260 à 315</p><p> montant : 5.991 à 6.624 F</p><p> CATEGORIE : III</p><p> fourchette de coefficients : 290 à 375</p><p> montant : 6.099 à 7.886 F</p><p> CATEGORIE : IV</p><p> fourchette de coefficients : 330 à 430</p><p> montant : 6.940 à 9.043 F</p><p> CATEGORIE : V</p><p> fourchette de coefficients : 390 à 515</p><p> montant : 8.202 à 10.830 F</p><p> CATEGORIE : VI</p><p> fourchette de coefficients : 475 à 615</p><p> montant : 9.989 à 12.933 F</p><p></p><p>   Pour les coefficients 290 et au-dessus, la valeur du point est fixée à 21,03 F.</p><p>   Le salaire mensuel pour 39 heures est obtenu en multipliant la valeur du point par le coefficient hiérarchique.</p><p>   Pour toutes les dispositions contractuelles faisant référence à un minimum horaire, on calcule celui-ci en divisant le minimum mensuel par 169,60.</p><p><font color=\"808080\" size=\"1\"><i>   Avenant n° 33 étendu sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.</i></font></p>",
+                  "nota": "   Avenant n° 33 étendu sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 33 1994-04-07 article 3, BO conventions collectives 94-20 étendu par arrêté du 19 août 1994 JORF 3 septembre 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 765676800000,
+                  "dateFin": 782438400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

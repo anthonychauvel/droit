@@ -26778,13 +26778,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731372",
+              "cid": "KALISCTA000005731372",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er octobre 1990",
+              "dateModif": null,
+              "dateDebut": "1990-09-14",
+              "dateFin": "1991-05-24",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005869339",
+                  "cid": "KALIARTI000005869339",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731372/KALIARTI000005869339",
+                  "pathTitle": [
+                    "Salaires au 1er octobre 1990"
+                  ],
+                  "content": "<p></p>   Les salaires effectifs garantis pour les catégories et coefficients suivants :<p></p> M., O.S.1, O.S.2, O.P.1, O.P.2, O.S.L.1, O.S.L.2, O.L.1, 100 à 185 sont augmentés à compter du 1er octobre 1990 comme suit.<p></p><p></p><p></p>   ANNEXE I. - MENSUELS <p></p><p></p><p></p>   Qualification : M<p></p><p></p>   Montant en francs : 5.300<p></p><p></p><p></p>   Qualification : O.S. 1<p></p><p></p>   Montant en francs : 5.325<p></p><p></p><p></p>   Qualification : O.S. 2<p></p><p></p>   Montant en francs : 5.375<p></p><p></p><p></p>   Qualification : O.P. 1<p></p><p></p>   Montant en francs : 5.500<p></p><p></p><p></p>   Qualification : O.P. 2<p></p><p></p>   Montant en francs : 5.575<p></p><p></p><p></p>   LAPIDAIRES ET DIAMENTAIRES<p></p><p></p><p></p>   Qualification : O.S.L. 1<p></p><p></p>   Montant en francs : 5.375<p></p><p></p><p></p>   Qualification : O.S.L. 2<p></p><p></p>   Montant en francs : 5.500<p></p><p></p><p></p>   Qualification : O.L. 1<p></p><p></p>   Montant en francs : 5.550<p></p><p></p><p></p>   COLLABORATEURS ET AGENTS DE MAÎTRISE<p></p><p></p><p></p>   Coefficient : 100<p></p><p></p>   Montant en francs : 5.300<p></p><p></p><p></p>   Coefficient : 118<p></p><p></p>   Montant en francs : 5.325<p></p><p></p><p></p>   Coefficient : 128<p></p><p></p>   Montant en francs : 5.375<p></p><p></p><p></p>   Coefficient : 138<p></p><p></p>   Montant en francs : 5.400<p></p><p></p><p></p>   Coefficient : 150<p></p><p></p>   Montant en francs : 5.450<p></p><p></p><p></p>   Coefficient : 155<p></p><p></p>   Montant en francs : 5.475<p></p><p></p><p></p>   Coefficient : 160<p></p><p></p>   Montant en francs : 5.500<p></p><p></p><p></p>   Coefficient : 180<p></p><p></p>   Montant en francs : 5.625<p></p><p></p><p></p>   Coefficient : 185<p></p><p></p>   Montant en francs : 5.725<p></p><p></p><p></p>   Il est précisé que ce salaire effectif garanti n'a aucune incidence sur la prime d'ancienneté dont le montant reste fonction du salaire minimum garanti conventionnel pour la catégorie correspondante et que la prime d'ancienneté, lorsqu'elle est acquise conformément à la convention collective, s'ajoute à ce salaire effectif garanti.<p></p><font color=\"808080\"><em>   Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.</em></font>",
+                  "nota": "   Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1990-09-14 étendu par arrêté du 14 décembre 1990 JORF 5 janvier 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 653270400000,
+                  "dateFin": 675043200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26798,13 +26872,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731373",
+              "cid": "KALISCTA000005731373",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juin 1991 et au 1er octobre 1991.",
+              "dateModif": null,
+              "dateDebut": "1991-05-24",
+              "dateFin": "1992-06-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005869340",
+                  "cid": "KALIARTI000005869340",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731373/KALIARTI000005869340",
+                  "pathTitle": [
+                    "Salaires au 1er juin 1991 et au 1er octobre 1991."
+                  ],
+                  "content": "<p></p>   1° Les salaires minimaux conventionnels sont augmentés de 2 p. 100 à compter du 1er juin 1991 et de 1,5 p. 100 à compter du 1er octobre 1991.<p></p><p></p>   Ils deviennent donc les suivants :<p></p><p></p>   a) A compter du 1er juin 1991 :<p></p><p></p>   ANNEXE I. - MENSUELS <p></p><p></p><p></p>   Qualification : M<p></p><p></p>   Salaire : 4.950 F<p></p><p></p><p></p>   Qualification : O.S. 1<p></p><p></p>   Salaire : 5.022 F<p></p><p></p><p></p>   Qualification : O.S. 2<p></p><p></p>   Salaire : 5.117 F<p></p><p></p><p></p>   Qualification : O.P. 1<p></p><p></p>   Salaire : 5.162 F<p></p><p></p><p></p>   Qualification : O.P. 2<p></p><p></p>   Salaire : 5.465 F<p></p><p></p><p></p>   Qualification : O.P. 3<p></p><p></p>   Salaire : 6.074 F<p></p><p></p><p></p>   Qualification : O.P. 4<p></p><p></p>   Salaire : 6.932 F<p></p><p></p><p></p>   Petite joaillerie <p></p><p></p><p></p>   Qualification : O.P. 3<p></p><p></p>   Salaire : 6.139 F<p></p><p></p><p></p>   Qualification : O.P. 4<p></p><p></p>   Salaire : 7.152 F<p></p><p></p>    Joaillerie<p></p><p></p><p></p>   Qualification : O.J. 1<p></p><p></p>   Salaire : 6.139 F<p></p><p></p><p></p>   Qualification : O.J. 2<p></p><p></p>   Salaire : 7.047 F<p></p><p></p><p></p>   Qualification : O.J. 3<p></p><p></p>   Salaire : 8.136 F<p></p><p></p><p></p>   Qualification : O.J. 4<p></p><p></p>   Salaire : 9.400 F<p></p><p></p>    Polissage - Joaillerie<p></p><p></p><p></p>   Qualification : O.J. 1<p></p><p></p>   Salaire : 5.583 F<p></p><p></p><p></p>   Qualification : O.J. 2<p></p><p></p>   Salaire : 6.517 F<p></p><p></p><p></p>   Qualification : O.J. 3<p></p><p></p>   Salaire : 7.646 F<p></p><p></p><p></p>   Qualification : O.J. 4<p></p><p></p>   Salaire : 8.737 F<p></p><p></p>    Lapidaires et diamantaires<p></p><p></p><p></p>   Qualification : O.S.L. 1<p></p><p></p>   Salaire : 5.135 F<p></p><p></p><p></p>   Qualification : O.S.L. 2<p></p><p></p>   Salaire : 5.182 F<p></p><p></p><p></p>   Qualification : O.L. 1<p></p><p></p>   Salaire : 5.309 F<p></p><p></p><p></p>   Qualification : O.L. 2<p></p><p></p>   Salaire : 5.960 F<p></p><p></p><p></p>   Qualification : O.L. 3<p></p><p></p>   Salaire : 7.047 F<p></p><p></p><p></p>   Qualification : O.L. 4<p></p><p></p>   Salaire : 8.100 F<p></p><p></p><p></p>   Prime de panier : 34,54 F.<p></p><p></p>    COLLABORATEURS ET AGENTS DE MAÎTRISE<p></p><p></p><p></p>   Coefficient : 100<p></p><p></p>   Salaire : 4.950 F<p></p><p></p><p></p>   Coefficient : 118<p></p><p></p>   Salaire : 5.022 F<p></p><p></p><p></p>   Coefficient : 128<p></p><p></p>   Salaire : 5.059 F<p></p><p></p><p></p>   Coefficient : 138<p></p><p></p>   Salaire : 5.104 F<p></p><p></p><p></p>   Coefficient : 150<p></p><p></p>   Salaire : 5.154 F<p></p><p></p><p></p>   Coefficient : 155<p></p><p></p>   Salaire : 5.170 F<p></p><p></p><p></p>   Coefficient : 160<p></p><p></p>   Salaire : 5.191 F<p></p><p></p><p></p>   Coefficient : 180<p></p><p></p>   Salaire : 5.631 F<p></p><p></p><p></p>   Coefficient : 185<p></p><p></p>   Salaire : 5.789 F<p></p><p></p><p></p>   Coefficient : 200<p></p><p></p>   Salaire : 6.258 F<p></p><p></p><p></p>   Coefficient : 209<p></p><p></p>   Salaire : 6.539 F<p></p><p></p><p></p>   Coefficient : 212<p></p><p></p>   Salaire : 6.631 F<p></p><p></p><p></p>   Coefficient : 221<p></p><p></p>   Salaire : 6.914 F<p></p><p></p><p></p>   Coefficient : 234<p></p><p></p>   Salaire : 7.321 F<p></p><p></p><p></p>   Coefficient : 246<p></p><p></p>   Salaire : 7.695 F<p></p><p></p><p></p>   Coefficient : 250<p></p><p></p>   Salaire : 7.820 F<p></p><p></p><p></p>   Coefficient : 255<p></p><p></p>   Salaire : 7.978 F<p></p><p></p><p></p>   Coefficient : 271<p></p><p></p>   Salaire : 8.478 F<p></p><p></p><p></p>   Coefficient : 290<p></p><p></p>   Salaire : 9.072 F<p></p><p></p><p></p>   Coefficient : 300<p></p><p></p>   Salaire : 9.384 F<p></p><p></p><p></p>   Coefficient : 320<p></p><p></p>   Salaire : 10.010 F<p></p><p></p><p></p>   Prime de panier : 34,54 F<p></p><p></p>    ANNEXE II. - CADRES<p></p><p></p><p></p>   Première catégorie : <p></p><p></p><p></p>   Indice : 22 <p></p><p></p>   Salaire : 7.279 F<p></p><p></p><p></p>   Indice : 24 <p></p><p></p>   Salaire : 7.941 F<p></p><p></p><p></p>   Indice : 26 <p></p><p></p>   Salaire : 8.606 F<p></p><p></p><p></p>   Indice : 28 <p></p><p></p>   Salaire : 9.262 F<p></p><p></p><p></p>   Indice : 30 <p></p><p></p>   Salaire : 9.941 F<p></p><p></p><p></p>   Indice : 32 <p></p><p></p>   Salaire : 10.604 F<p></p><p></p><p></p>   Indice : 34 <p></p><p></p>   Salaire : 11.266 F<p></p><p></p><p></p>   Indice : 35 <p></p><p></p>   Salaire : 11.588 F<p></p><p></p>    Deuxième catégorie : <p></p><p></p><p></p>   Positions et Indices : A.1 33 <p></p><p></p>   Salaire : 10.968 F<p></p><p></p><p></p>   Positions et Indices : A.2 35 <p></p><p></p>   Salaire : 11.588 F<p></p><p></p><p></p>   Positions et Indices : B. 40 <p></p><p></p>   Salaire : 13.251 F<p></p><p></p><p></p>   Positions et Indices : C. 48 <p></p><p></p>   Salaire : 15.899 F<p></p><p></p><p></p>   Positions et Indices : D. 55 <p></p><p></p>   Salaire : 18.193 F<p></p><p></p><p></p>   Positions et Indices : H.C. 60 <p></p><p></p>   Salaire : 19.868 F<p></p><p></p><p></p>   b) A compter du 1er octobre 1991 :<p></p><p></p>   ANNEXE I. - MENSUELS <p></p><p></p><p></p>   Qualification : M<p></p><p></p>   Salaire : 5.024 F<p></p><p></p><p></p>   Qualification : O.S. 1<p></p><p></p>   Salaire : 5.097 F<p></p><p></p><p></p>   Qualification : O.S. 2<p></p><p></p>   Salaire : 5.194 F<p></p><p></p><p></p>   Qualification : O.P. 1<p></p><p></p>   Salaire : 5.239 F<p></p><p></p><p></p>   Qualification : O.P. 2<p></p><p></p>   Salaire : 5.547 F<p></p><p></p><p></p>   Qualification : O.P. 3<p></p><p></p>   Salaire : 6.165 F<p></p><p></p><p></p>   Qualification : O.P. 4<p></p><p></p>   Salaire : 7.036 F<p></p><p></p><p></p>   Petite joaillerie <p></p><p></p><p></p>   Qualification : O.P. 3<p></p><p></p>   Salaire : 6.231 F<p></p><p></p><p></p>   Qualification : O.P. 4<p></p><p></p>   Salaire : 7.259 F<p></p><p></p>    Joaillerie<p></p><p></p><p></p>   Qualification : O.J. 1<p></p><p></p>   Salaire : 6.231 F<p></p><p></p><p></p>   Qualification : O.J. 2<p></p><p></p>   Salaire : 7.153 F<p></p><p></p><p></p>   Qualification : O.J. 3<p></p><p></p>   Salaire : 8.258 F<p></p><p></p><p></p>   Qualification : O.J. 4<p></p><p></p>   Salaire : 9.541 F<p></p><p></p>    Polissage - Joaillerie<p></p><p></p><p></p>   Qualification : O.J. 1<p></p><p></p>   Salaire : 5.667 F<p></p><p></p><p></p>   Qualification : O.J. 2<p></p><p></p>   Salaire : 6.615 F<p></p><p></p><p></p>   Qualification : O.J. 3<p></p><p></p>   Salaire : 7.761 F<p></p><p></p><p></p>   Qualification : O.J. 4<p></p><p></p>   Salaire : 8.868 F<p></p><p></p>    Lapidaires et diamantaires<p></p><p></p><p></p>   Qualification : O.S.L. 1<p></p><p></p>   Salaire : 5.212 F<p></p><p></p><p></p>   Qualification : O.S.L. 2<p></p><p></p>   Salaire : 5.260 F<p></p><p></p><p></p>   Qualification : O.L. 1<p></p><p></p>   Salaire : 5.389 F<p></p><p></p><p></p>   Qualification : O.L. 2<p></p><p></p>   Salaire : 6.049 F<p></p><p></p><p></p>   Qualification : O.L. 3<p></p><p></p>   Salaire : 7.153 F<p></p><p></p><p></p>   Qualification : O.L. 4<p></p><p></p>   Salaire : 8.222 F<p></p><p></p><p></p>   Prime de panier : 35,06 F.<p></p><p></p>    COLLABORATEURS ET AGENTS DE MAÎTRISE<p></p><p></p><p></p>   Coefficient : 100<p></p><p></p>   Salaire : 5.024 F<p></p><p></p><p></p>   Coefficient : 118<p></p><p></p>   Salaire : 5.097 F<p></p><p></p><p></p>   Coefficient : 128<p></p><p></p>   Salaire : 5.135 F<p></p><p></p><p></p>   Coefficient : 138<p></p><p></p>   Salaire : 5.181 F<p></p><p></p><p></p>   Coefficient : 150<p></p><p></p>   Salaire : 5.231 F<p></p><p></p><p></p>   Coefficient : 155<p></p><p></p>   Salaire : 5.248 F<p></p><p></p><p></p>   Coefficient : 160<p></p><p></p>   Salaire : 5.269 F<p></p><p></p><p></p>   Coefficient : 180<p></p><p></p>   Salaire : 5.715 F<p></p><p></p><p></p>   Coefficient : 185<p></p><p></p>   Salaire : 5.876 F<p></p><p></p><p></p>   Coefficient : 200<p></p><p></p>   Salaire : 6.352 F<p></p><p></p><p></p>   Coefficient : 209<p></p><p></p>   Salaire : 6.638 F<p></p><p></p><p></p>   Coefficient : 212<p></p><p></p>   Salaire : 6.730 F<p></p><p></p><p></p>   Coefficient : 221<p></p><p></p>   Salaire : 7.018 F<p></p><p></p><p></p>   Coefficient : 234<p></p><p></p>   Salaire : 7.431 F<p></p><p></p><p></p>   Coefficient : 246<p></p><p></p>   Salaire : 7.810 F<p></p><p></p><p></p>   Coefficient : 250<p></p><p></p>   Salaire : 7.937 F<p></p><p></p><p></p>   Coefficient : 255<p></p><p></p>   Salaire : 8.098 F<p></p><p></p><p></p>   Coefficient : 271<p></p><p></p>   Salaire : 8.605 F<p></p><p></p><p></p>   Coefficient : 290<p></p><p></p>   Salaire : 9.208 F<p></p><p></p><p></p>   Coefficient : 300<p></p><p></p>   Salaire : 9.525 F<p></p><p></p><p></p>   Coefficient : 320<p></p><p></p>   Salaire : 10.160 F<p></p><p></p><p></p>   Prime de panier : 35,06 F<p></p><p></p>    ANNEXE II. - CADRES<p></p><p></p><p></p>   Première catégorie : <p></p><p></p><p></p>   Indice : 22 <p></p><p></p>   Salaire : 7.388 F<p></p><p></p><p></p>   Indice : 24 <p></p><p></p>   Salaire : 8.060 F<p></p><p></p><p></p>   Indice : 26 <p></p><p></p>   Salaire : 8.735 F<p></p><p></p><p></p>   Indice : 28 <p></p><p></p>   Salaire : 9.401 F<p></p><p></p><p></p>   Indice : 30 <p></p><p></p>   Salaire : 10.090 F<p></p><p></p><p></p>   Indice : 32 <p></p><p></p>   Salaire : 10.763 F<p></p><p></p><p></p>   Indice : 34 <p></p><p></p>   Salaire : 11.435 F<p></p><p></p><p></p>   Indice : 35 <p></p><p></p>   Salaire : 11.762 F<p></p><p></p>    Deuxième catégorie : <p></p><p></p><p></p>   Positions et Indices : A.1 33 <p></p><p></p>   Salaire : 11.133 F<p></p><p></p><p></p>   Positions et Indices : A.2 35 <p></p><p></p>   Salaire : 11.762 F<p></p><p></p><p></p>   Positions et Indices : B. 40 <p></p><p></p>   Salaire : 13.450 F<p></p><p></p><p></p>   Positions et Indices : C. 48 <p></p><p></p>   Salaire : 16.137 F<p></p><p></p><p></p>   Positions et Indices : D. 55 <p></p><p></p>   Salaire : 18.466 F<p></p><p></p><p></p>   Positions et Indices : H.C. 60 <p></p><p></p>   Salaire : 20.166 F<p></p><p></p>    2° Les salaires effectifs garantis, pour les catégories et coefficients M - O.S. 1 - O.S. 2 - O.P. 1 - O.P. 2 - O.S.L. 1 - O.S.L. 2 - O.L. 1 100 à 185 sont augmentés à commpter du 1er juin 1991.<p></p><p></p>   La nouvelle grille est la suivante :<p></p><p></p><p></p>   ANNEXE I. - MENSUELS <p></p><p></p><p></p>   Qualification : M<p></p><p></p>   Salaire : 5.550 F<p></p><p></p><p></p>   Qualification : O.S. 1<p></p><p></p>   Salaire : 5.575 F<p></p><p></p><p></p>   Qualification : O.S. 2<p></p><p></p>   Salaire : 5.625 F<p></p><p></p><p></p>   Qualification : O.P. 1<p></p><p></p>   Salaire : 5.700 F<p></p><p></p><p></p>   Qualification : O.P. 2<p></p><p></p>   Salaire : 5.800 F<p></p><p></p><p></p>   Lapidaires et diamantaires<p></p><p></p><p></p>   Qualification : O.S.L. 1<p></p><p></p>   Salaire : 5.550 F<p></p><p></p><p></p>   Qualification : O.S.L. 2<p></p><p></p>   Salaire : 5.700 F<p></p><p></p><p></p>   Qualification : O.L. 1<p></p><p></p>   Salaire : 5.750 F.<p></p><p></p>    COLLABORATEURS ET AGENTS DE MAÎTRISE<p></p><p></p><p></p>   Coefficient : 100<p></p><p></p>   Salaire : 5.550 F<p></p><p></p><p></p>   Coefficient : 118<p></p><p></p>   Salaire : 5.575 F<p></p><p></p><p></p>   Coefficient : 128<p></p><p></p>   Salaire : 5.600 F<p></p><p></p><p></p>   Coefficient : 138<p></p><p></p>   Salaire : 5.625 F<p></p><p></p><p></p>   Coefficient : 150<p></p><p></p>   Salaire : 5.650 F<p></p><p></p><p></p>   Coefficient : 155<p></p><p></p>   Salaire : 5.675 F<p></p><p></p><p></p>   Coefficient : 160<p></p><p></p>   Salaire : 5.700 F<p></p><p></p><p></p>   Coefficient : 180<p></p><p></p>   Salaire : 5.850 F<p></p><p></p><p></p>   Coefficient : 185<p></p><p></p>   Salaire : 5.950 F<p></p><p></p>    Il est rappelé que ce salaire effectif garanti n'a aucune incidence sur la prime d'ancienneté, dont le montant reste fonction du salaire minimum garanti conventionnel pour la catégorie correspondante, et que la prime d'ancienneté, lorsqu'elle est acquise conformément à la convention collective, s'ajoute à ce salaire effectif garanti.<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1991-05-24 étendu par arrêté du 31 juillet 1991 JORF 10 août 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 675043200000,
+                  "dateFin": 707702400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26818,13 +26966,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731375",
+              "cid": "KALISCTA000005731375",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juin 1992 et au 1er octobre 1992",
+              "dateModif": null,
+              "dateDebut": "1992-06-05",
+              "dateFin": "1993-07-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005869341",
+                  "cid": "KALIARTI000005869341",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731375/KALIARTI000005869341",
+                  "pathTitle": [
+                    "Salaires au 1er juin 1992 et au 1er octobre 1992"
+                  ],
+                  "content": "<p></p>   1° Les salaires minimaux conventionnels sont augmentés de 2 p. 100 à compter du 1er juin 1992 et de 1,5 p. 100 à compter du 1er octobre 1992.<p></p><p></p>   Ils deviennent donc les suivants :<p></p><p></p>   a) A compter du 1er juin 1992 :<p></p><p></p>   ANNEXE I. - MENSUELS <p></p><p></p><p></p>   Qualification : M<p></p><p></p>   Salaire : 5.124 F<p></p><p></p><p></p>   Qualification : O.S. 1<p></p><p></p>   Salaire : 5.199 F<p></p><p></p><p></p>   Qualification : O.S. 2<p></p><p></p>   Salaire : 5.298 F<p></p><p></p><p></p>   Qualification : O.P. 1<p></p><p></p>   Salaire : 5.344 F<p></p><p></p><p></p>   Qualification : O.P. 2<p></p><p></p>   Salaire : 5.658 F<p></p><p></p><p></p>   Qualification : O.P. 3<p></p><p></p>   Salaire : 6.288 F<p></p><p></p><p></p>   Qualification : O.P. 4<p></p><p></p>   Salaire : 7.177 F<p></p><p></p><p></p>   Petite joaillerie <p></p><p></p><p></p>   Qualification : O.P. 3<p></p><p></p>   Salaire : 6.356 F<p></p><p></p><p></p>   Qualification : O.P. 4<p></p><p></p>   Salaire : 7.404 F<p></p><p></p>    Joaillerie<p></p><p></p><p></p>   Qualification : O.J. 1<p></p><p></p>   Salaire : 6.356 F<p></p><p></p><p></p>   Qualification : O.J. 2<p></p><p></p>   Salaire : 7.296 F<p></p><p></p><p></p>   Qualification : O.J. 3<p></p><p></p>   Salaire : 8.423 F<p></p><p></p><p></p>   Qualification : O.J. 4<p></p><p></p>   Salaire : 9.732 F<p></p><p></p>    Polissage - Joaillerie<p></p><p></p><p></p>   Qualification : O.J. 1<p></p><p></p>   Salaire : 5.780 F<p></p><p></p><p></p>   Qualification : O.J. 2<p></p><p></p>   Salaire : 6.747 F<p></p><p></p><p></p>   Qualification : O.J. 3<p></p><p></p>   Salaire : 7.916 F<p></p><p></p><p></p>   Qualification : O.J. 4<p></p><p></p>   Salaire : 9.045 F<p></p><p></p>    Lapidaires et diamantaires<p></p><p></p><p></p>   Qualification : O.S.L. 1<p></p><p></p>   Salaire : 5.316 F<p></p><p></p><p></p>   Qualification : O.S.L. 2<p></p><p></p>   Salaire : 5.365 F<p></p><p></p><p></p>   Qualification : O.L. 1<p></p><p></p>   Salaire : 5.497 F<p></p><p></p><p></p>   Qualification : O.L. 2<p></p><p></p>   Salaire : 6.170 F<p></p><p></p><p></p>   Qualification : O.L. 3<p></p><p></p>   Salaire : 7.296 F<p></p><p></p><p></p>   Qualification : O.L. 4<p></p><p></p>   Salaire : 8.386 F<p></p><p></p><p></p>   Prime de panier : 35,76 F.<p></p><p></p>    COLLABORATEURS ET AGENTS DE MAÎTRISE<p></p><p></p><p></p>   Coefficient : 100<p></p><p></p>   Salaire : 5.124 F<p></p><p></p><p></p>   Coefficient : 118<p></p><p></p>   Salaire : 5.199 F<p></p><p></p><p></p>   Coefficient : 128<p></p><p></p>   Salaire : 5.238 F<p></p><p></p><p></p>   Coefficient : 138<p></p><p></p>   Salaire : 5.285 F<p></p><p></p><p></p>   Coefficient : 150<p></p><p></p>   Salaire : 5.336 F<p></p><p></p><p></p>   Coefficient : 155<p></p><p></p>   Salaire : 5.353 F<p></p><p></p><p></p>   Coefficient : 160<p></p><p></p>   Salaire : 5.374 F<p></p><p></p><p></p>   Coefficient : 180<p></p><p></p>   Salaire : 5.829 F<p></p><p></p><p></p>   Coefficient : 185<p></p><p></p>   Salaire : 5.994 F<p></p><p></p><p></p>   Coefficient : 200<p></p><p></p>   Salaire : 6.479 F<p></p><p></p><p></p>   Coefficient : 209<p></p><p></p>   Salaire : 6.771 F<p></p><p></p><p></p>   Coefficient : 212<p></p><p></p>   Salaire : 6.865 F<p></p><p></p><p></p>   Coefficient : 221<p></p><p></p>   Salaire : 7.158 F<p></p><p></p><p></p>   Coefficient : 234<p></p><p></p>   Salaire : 7.580 F<p></p><p></p><p></p>   Coefficient : 246<p></p><p></p>   Salaire : 7.966 F<p></p><p></p><p></p>   Coefficient : 250<p></p><p></p>   Salaire : 8.096 F<p></p><p></p><p></p>   Coefficient : 255<p></p><p></p>   Salaire : 8.260 F<p></p><p></p><p></p>   Coefficient : 271<p></p><p></p>   Salaire : 8.777 F<p></p><p></p><p></p>   Coefficient : 290<p></p><p></p>   Salaire : 9.392 F<p></p><p></p><p></p>   Coefficient : 300<p></p><p></p>   Salaire : 9.716 F<p></p><p></p><p></p>   Coefficient : 320<p></p><p></p>   Salaire : 10.363 F<p></p><p></p><p></p>   Prime de panier : 35,76 F<p></p><p></p>    ANNEXE II. - CADRES<p></p><p></p><p></p>   Première catégorie : <p></p><p></p><p></p>   Indice : 22 <p></p><p></p>   Salaire : 7.536 F<p></p><p></p><p></p>   Indice : 24 <p></p><p></p>   Salaire : 8.221 F<p></p><p></p><p></p>   Indice : 26 <p></p><p></p>   Salaire : 8.910 F<p></p><p></p><p></p>   Indice : 28 <p></p><p></p>   Salaire : 9.589 F<p></p><p></p><p></p>   Indice : 30 <p></p><p></p>   Salaire : 10.292 F<p></p><p></p><p></p>   Indice : 32 <p></p><p></p>   Salaire : 10.978 F<p></p><p></p><p></p>   Indice : 34 <p></p><p></p>   Salaire : 11.664 F<p></p><p></p><p></p>   Indice : 35 <p></p><p></p>   Salaire : 11.997 F<p></p><p></p>    Deuxième catégorie : <p></p><p></p><p></p>   Positions et Indices : A.1 33 <p></p><p></p>   Salaire : 11.356 F<p></p><p></p><p></p>   Positions et Indices : A.2 35 <p></p><p></p>   Salaire : 11.997 F<p></p><p></p><p></p>   Positions et Indices : B. 40 <p></p><p></p>   Salaire : 13.719 F<p></p><p></p><p></p>   Positions et Indices : C. 48 <p></p><p></p>   Salaire : 16.460 F<p></p><p></p><p></p>   Positions et Indices : D. 55 <p></p><p></p>   Salaire : 18.835 F<p></p><p></p><p></p>   Positions et Indices : H.C. 60 <p></p><p></p>   Salaire : 20.569 F<p></p><p></p><p></p>   b) A compter du 1er octobre 1992 :<p></p><p></p>   ANNEXE I. - MENSUELS <p></p><p></p><p></p>   Qualification : M<p></p><p></p>   Salaire : 5.201 F<p></p><p></p><p></p>   Qualification : O.S. 1<p></p><p></p>   Salaire : 5.277 F<p></p><p></p><p></p>   Qualification : O.S. 2<p></p><p></p>   Salaire : 5.377 F<p></p><p></p><p></p>   Qualification : O.P. 1<p></p><p></p>   Salaire : 5.424 F<p></p><p></p><p></p>   Qualification : O.P. 2<p></p><p></p>   Salaire : 5.743 F<p></p><p></p><p></p>   Qualification : O.P. 3<p></p><p></p>   Salaire : 6.382 F<p></p><p></p><p></p>   Qualification : O.P. 4<p></p><p></p>   Salaire : 7.285 F<p></p><p></p><p></p>   Petite joaillerie <p></p><p></p><p></p>   Qualification : O.P. 3<p></p><p></p>   Salaire : 6.451 F<p></p><p></p><p></p>   Qualification : O.P. 4<p></p><p></p>   Salaire : 7.515 F<p></p><p></p>    Joaillerie<p></p><p></p><p></p>   Qualification : O.J. 1<p></p><p></p>   Salaire : 6.451 F<p></p><p></p><p></p>   Qualification : O.J. 2<p></p><p></p>   Salaire : 7.405 F<p></p><p></p><p></p>   Qualification : O.J. 3<p></p><p></p>   Salaire : 8.549 F<p></p><p></p><p></p>   Qualification : O.J. 4<p></p><p></p>   Salaire : 9.878 F<p></p><p></p>    Polissage - Joaillerie<p></p><p></p><p></p>   Qualification : O.J. 1<p></p><p></p>   Salaire : 5.867 F<p></p><p></p><p></p>   Qualification : O.J. 2<p></p><p></p>   Salaire : 6.848 F<p></p><p></p><p></p>   Qualification : O.J. 3<p></p><p></p>   Salaire : 8.035 F<p></p><p></p><p></p>   Qualification : O.J. 4<p></p><p></p>   Salaire : 9.181 F<p></p><p></p>    Lapidaires et diamantaires<p></p><p></p><p></p>   Qualification : O.S.L. 1<p></p><p></p>   Salaire : 5.394 F<p></p><p></p><p></p>   Qualification : O.S.L. 2<p></p><p></p>   Salaire : 5.445 F<p></p><p></p><p></p>   Qualification : O.L. 1<p></p><p></p>   Salaire : 5.579 F<p></p><p></p><p></p>   Qualification : O.L. 2<p></p><p></p>   Salaire : 6.263 F<p></p><p></p><p></p>   Qualification : O.L. 3<p></p><p></p>   Salaire : 7.405 F<p></p><p></p><p></p>   Qualification : O.L. 4<p></p><p></p>   Salaire : 8.512 F<p></p><p></p><p></p>   Prime de panier : 36,29 F.<p></p><p></p>    COLLABORATEURS ET AGENTS DE MAÎTRISE<p></p><p></p><p></p>   Coefficient : 100<p></p><p></p>   Salaire : 5.201 F<p></p><p></p><p></p>   Coefficient : 118<p></p><p></p>   Salaire : 5.277 F<p></p><p></p><p></p>   Coefficient : 128<p></p><p></p>   Salaire : 5.317 F<p></p><p></p><p></p>   Coefficient : 138<p></p><p></p>   Salaire : 5.364 F<p></p><p></p><p></p>   Coefficient : 150<p></p><p></p>   Salaire : 5.416 F<p></p><p></p><p></p>   Coefficient : 155<p></p><p></p>   Salaire : 5.433 F<p></p><p></p><p></p>   Coefficient : 160<p></p><p></p>   Salaire : 5.455 F<p></p><p></p><p></p>   Coefficient : 180<p></p><p></p>   Salaire : 5.916 F<p></p><p></p><p></p>   Coefficient : 185<p></p><p></p>   Salaire : 6.084 F<p></p><p></p><p></p>   Coefficient : 200<p></p><p></p>   Salaire : 6.576 F<p></p><p></p><p></p>   Coefficient : 209<p></p><p></p>   Salaire : 6.873 F<p></p><p></p><p></p>   Coefficient : 212<p></p><p></p>   Salaire : 6.968 F<p></p><p></p><p></p>   Coefficient : 221<p></p><p></p>   Salaire : 7.265 F<p></p><p></p><p></p>   Coefficient : 234<p></p><p></p>   Salaire : 7.694 F<p></p><p></p><p></p>   Coefficient : 246<p></p><p></p>   Salaire : 8.085 F<p></p><p></p><p></p>   Coefficient : 250<p></p><p></p>   Salaire : 8.217 F<p></p><p></p><p></p>   Coefficient : 255<p></p><p></p>   Salaire : 8.384 F<p></p><p></p><p></p>   Coefficient : 271<p></p><p></p>   Salaire : 8.909 F<p></p><p></p><p></p>   Coefficient : 290<p></p><p></p>   Salaire : 9.533 F<p></p><p></p><p></p>   Coefficient : 300<p></p><p></p>   Salaire : 9.862 F<p></p><p></p><p></p>   Coefficient : 320<p></p><p></p>   Salaire : 10.518 F<p></p><p></p><p></p>   Prime de panier : 36,29 F<p></p><p></p>    ANNEXE II. - CADRES<p></p><p></p><p></p>   Première catégorie : <p></p><p></p><p></p>   Indice : 22 <p></p><p></p>   Salaire : 7.649 F<p></p><p></p><p></p>   Indice : 24 <p></p><p></p>   Salaire : 8.344 F<p></p><p></p><p></p>   Indice : 26 <p></p><p></p>   Salaire : 9.044 F<p></p><p></p><p></p>   Indice : 28 <p></p><p></p>   Salaire : 9.733 F<p></p><p></p><p></p>   Indice : 30 <p></p><p></p>   Salaire : 10.446 F<p></p><p></p><p></p>   Indice : 32 <p></p><p></p>   Salaire : 11.143 F<p></p><p></p><p></p>   Indice : 34 <p></p><p></p>   Salaire : 11.839 F<p></p><p></p><p></p>   Indice : 35 <p></p><p></p>   Salaire : 12.177 F<p></p><p></p>    Deuxième catégorie : <p></p><p></p><p></p>   Positions et Indices : A.1 33 <p></p><p></p>   Salaire : 11.526 F<p></p><p></p><p></p>   Positions et Indices : A.2 35 <p></p><p></p>   Salaire : 12.177 F<p></p><p></p><p></p>   Positions et Indices : B. 40 <p></p><p></p>   Salaire : 13.925 F<p></p><p></p><p></p>   Positions et Indices : C. 48 <p></p><p></p>   Salaire : 16.707 F<p></p><p></p><p></p>   Positions et Indices : D. 55 <p></p><p></p>   Salaire : 19.118 F<p></p><p></p><p></p>   Positions et Indices : H.C. 60 <p></p><p></p>   Salaire : 20.878 F<p></p><p></p>    2° Les salaires effectifs garantis, pour les catégories et coefficients M - O.S. 1 - O.S. 2 - O.P. 1 - O.P. 2 - O.S.L. 1 - O.S.L. 2 - O.L. 1 100 à 185 sont augmentés à commpter du 1er juin 1992.<p></p><p></p>   La nouvelle grille est la suivante :<p></p><p></p><p></p>   ANNEXE I. - MENSUELS <p></p><p></p><p></p>   Qualification : M<p></p><p></p>   Salaire : 5.850 F<p></p><p></p><p></p>   Qualification : O.S. 1<p></p><p></p>   Salaire : 5.875 F<p></p><p></p><p></p>   Qualification : O.S. 2<p></p><p></p>   Salaire : 5.925 F<p></p><p></p><p></p>   Qualification : O.P. 1<p></p><p></p>   Salaire : 6.000 F<p></p><p></p><p></p>   Qualification : O.P. 2<p></p><p></p>   Salaire : 6.100 F<p></p><p></p><p></p>   Lapidaires et diamantaires<p></p><p></p><p></p>   Qualification : O.S.L. 1<p></p><p></p>   Salaire : 5.850 F<p></p><p></p><p></p>   Qualification : O.S.L. 2<p></p><p></p>   Salaire : 6.000 F<p></p><p></p><p></p>   Qualification : O.L. 1<p></p><p></p>   Salaire : 6.050 F.<p></p><p></p>    COLLABORATEURS ET AGENTS DE MAÎTRISE<p></p><p></p><p></p>   Coefficient : 100<p></p><p></p>   Salaire : 5.850 F<p></p><p></p><p></p>   Coefficient : 118<p></p><p></p>   Salaire : 5.875 F<p></p><p></p><p></p>   Coefficient : 128<p></p><p></p>   Salaire : 5.925 F<p></p><p></p><p></p>   Coefficient : 138<p></p><p></p>   Salaire : 5.975 F<p></p><p></p><p></p>   Coefficient : 150<p></p><p></p>   Salaire : 6.050 F<p></p><p></p><p></p>   Coefficient : 155<p></p><p></p>   Salaire : 6.100 F<p></p><p></p><p></p>   Coefficient : 160<p></p><p></p>   Salaire : 6.150 F<p></p><p></p><p></p>   Coefficient : 180<p></p><p></p>   Salaire : 6.250 F<p></p><p></p><p></p>   Coefficient : 185<p></p><p></p>   Salaire : 6.300 F<p></p><p></p>    Il est rappelé que ce salaire effectif garanti n'a aucune incidence sur la prime d'ancienneté, dont le montant reste fonction du salaire minimum garanti conventionnel pour la catégorie correspondante, et que la prime d'ancienneté, lorsqu'elle est acquise conformément à la convention collective, s'ajoute à ce salaire effectif garanti.<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1992-06-05 étendu par arrêté du 29 octobre 1992 JORF 7 novembre 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 707702400000,
+                  "dateFin": 741916800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

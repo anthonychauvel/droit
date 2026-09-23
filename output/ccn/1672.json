@@ -14704,13 +14704,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005700294",
+              "cid": "KALISCTA000005700294",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "BAREME DES REMUNERATIONS MINIMALES ANNUELLES A effet du 1er janvier 1992",
+              "dateModif": null,
+              "dateDebut": "1992-05-27",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005792332",
+                  "cid": "KALIARTI000005792332",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005700294/KALIARTI000005792332",
+                  "pathTitle": [
+                    "BAREME DES REMUNERATIONS MINIMALES ANNUELLES A effet du 1er janvier 1992"
+                  ],
+                  "content": "<p></p>   Classe : 1 <p></p><p></p>   Montant : 78 000F<p></p><p></p><p></p>   Classe : 2 <p></p><p></p>   Montant : 86 300F<p></p><p></p><p></p>   Classe : 3 <p></p><p></p>   Montant : 99 700F<p></p><p></p><p></p>   Classe : 4 <p></p><p></p>   Montant :118 300F<p></p><p></p><p></p>   Classe : 5 <p></p><p></p>   Montant :139 900F<p></p><p></p><p></p>   Classe : 6 <p></p><p></p>   Montant :184 900F<p></p><p></p><p></p>   Classe : 7 <p></p><p></p>   Montant :251 600F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Convention collective nationale 1992-05-27 étendue par arrêté du 12 juillet 1993 JORF 7 août 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires (annexe II)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 706924800000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14724,13 +14798,114 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005700295",
+              "cid": "KALISCTA000005700295",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barèmes des rémunérations minimales annuelles, à effet du 1er janvier 1994",
+              "dateModif": null,
+              "dateDebut": "1994-03-24",
+              "dateFin": "1995-03-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005792333",
+                  "cid": "KALIARTI000005792333",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005700295/KALIARTI000005792333",
+                  "pathTitle": [
+                    "Barèmes des rémunérations minimales annuelles, à effet du 1er janvier 1994"
+                  ],
+                  "content": "<p></p>   1. Dans le cadre de l'article 33 a de la convention collective nationale du 27 mai 1992, le barème des rémunérations minimales annuelles (R.M.A.) prévu à l'annexe II de ladite convention est fixé, à effet du 1er janvier 1994, conformément au tableau joint au présent accord.<p></p><p></p>   2. La rémunération annuelle garantie (R.A.G.) prévue par l'accord du 29 mars 1994 est portée à 81 200 F pour l'année 1994.<p></p><p></p>   3. Le barème des rémunérations minimales annuelles (R.M.A.) fixé au paragraphe 1 ci-dessus et la rémunération annuelle garantie (R.A.G.) fixée au paragraphe 2 ci-dessus, sont applicables dans les entreprises indépendamment du contenu et des résultats, quels qu'ils soient, des négociations d'entreprise sur les salaires effectifs prévues par l'article L. 132-27 du code du travail.<p></p><p></p>   Cette mise en application s'effectue :<p></p><p></p>   - pour le barème des rémunérations minimales annuelles (R.M.A.) :<p></p> dans les conditions précisées par les articles 31 et 32 de la convention collective nationale du 27 mai 1992, et compte tenu des dispositions de l'accord de transition du 27 mai 1992, notamment ses articles 3 et 4 ;<p></p><p></p>   - pour la rémunération annuelle garantie (R.A.G.) : selon les modalités fixées par l'accord du 6 décembre 1982, compte tenu des modifications apportées par l'accord du 27 mai 1992.<p></p><p></p>   Toutefois, le présent accord ne concerne pas le personnel qui n'est plus en fonction dans les entreprises à la date de sa signature.<p></p><p></p>   4. Considérant les termes de l'article 33 b de la convention collective nationale du 27 mai 1992 :<p></p><p></p>   \" Tous les trois ans, les organisations signataires de la présente convention procèdent à un constat technique de l'évolution des rémunérations minimales et de celle des rémunérations effectives. Elles examinent les conséquences à en tirer sur le niveau des rémunérations minimales dans le but de leur maintenir de réelles garanties de rémunération pour le personnel.<p></p><p></p>   \" La définition des données techniques nécessaires à ce constat est mise au point en temps utile au sein d'un groupe de travail constitué de représentants des organisations signataires. \"<p></p><p></p>   Considérant que la négociation des R.M.A. a normalement lieu - sauf circonstances exceptionnelles - entre le 1er décembre et la fin février de chaque année (art. 33 a de la convention collective nationale).<p></p><p></p>   Il est convenu que le groupe de travail prévu au deuxième alinéa de l'article 33 b sera réuni dès la conclusion de la négociation professionnelle des R.M.A. pour 1995, afin de mettre au point la définition des données techniques nécessaires au constat prévu au premier alinéa.<p></p>Rémunérations minimales annuelles à effet du 1er janvier 1994<p></p><p></p><TABLE><TR><TD> Classe </TD><TD> Montant </TD></TR><TR><TD></TD><TD></TD></TR><TR><TD>   1    </TD><TD> 81 200F </TD></TR><TR><TD>   2    </TD><TD> 89 800F </TD></TR><TR><TD>   3    </TD><TD>103 700F </TD></TR><TR><TD>   4    </TD><TD>123 100F </TD></TR><TR><TD>   5    </TD><TD>145 600F </TD></TR><TR><TD>   6    </TD><TD>192 400F </TD></TR><TR><TD>   7    </TD><TD>261 800F </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Protocole d'accord 1994-03-24 BO conventions collectives 94-37",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1992-05-27 art. 3, art. 4",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    },
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-27",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (annexe II)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 764467200000,
+                  "dateFin": 794534400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

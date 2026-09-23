@@ -6601,13 +6601,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005691378",
+              "cid": "KALISCTA000005691378",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril et au 1er octobre 1995",
+              "dateModif": null,
+              "dateDebut": "1995-03-23",
+              "dateFin": "1996-04-29",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005769578",
+                  "cid": "KALIARTI000005769578",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005691378/KALIARTI000005769578",
+                  "pathTitle": [
+                    "Salaires au 1er avril et au 1er octobre 1995"
+                  ],
+                  "content": "<p></p>   A compter du 1er avril 1995 la valeur du point 100 mensuel concernant l'ensemble des catégories professionnelles visées par la convention collective nationale de la sérigraphie est portée à 57,20 F.<p></p><p></p>   A compter du 1er octobre 1995 la valeur du point 100 sera portée à 57,73 F.<p></p><p></p>   Les parties signataires sont convenues de se revoir courant décembre 1995 afin de réexaminer le problème des salaires à moins que les conditions économiques et sociales qui ont présidé à la conclusion du présent accord ne se trouvent modifiées d'ici là.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-03-23 BO Conventions collectives 95-17",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 795916800000,
+                  "dateFin": 830736000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6621,13 +6695,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005691379",
+              "cid": "KALISCTA000005691379",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril et au 1er octobre 1996",
+              "dateModif": null,
+              "dateDebut": "1996-04-29",
+              "dateFin": "1997-04-29",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005769579",
+                  "cid": "KALIARTI000005769579",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005691379/KALIARTI000005769579",
+                  "pathTitle": [
+                    "Salaires au 1er avril et au 1er octobre 1996"
+                  ],
+                  "content": "<p></p>   A compter du 1er avril 1996, la valeur du point 100 mensuel concernant l'ensemble des catégories professionnelles visées par la convention collective nationale de la sérigraphie est portée à 58,35 F.<p></p><p></p>   A compter du 1er octobre 1996, la valeur du point 100 sera portée à 58,97 F.<p></p><p></p>   Les parties signataires sont convenues de se revoir courant décembre 1996 afin de réexaminer le problème des salaires à moins que les conditions économiques et sociales qui ont présidé à la conclusion du présent accord ne se trouvent modifiées d'ici là.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1996-04-29 BO conventions collectives 96-24",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 830736000000,
+                  "dateFin": 862272000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6641,13 +6789,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005691380",
+              "cid": "KALISCTA000005691380",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juin 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-04-29",
+              "dateFin": "1998-11-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005769580",
+                  "cid": "KALIARTI000005769580",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005691380/KALIARTI000005769580",
+                  "pathTitle": [
+                    "Salaires au 1er juin 1997."
+                  ],
+                  "content": "<p></p>   Les parties signataires sont convenues de ce qui suit :<p></p><p></p>   A compter du 1er juin 1997, la valeur du point 100 mensuel concernant l'ensemble des catégories professionnelles visées par la convention collective nationale de la sérigraphie est portée à 59,60 F.<p></p><p></p>   Les parties signataires sont convenues de se revoir courant décembre 1997 afin de réexaminer le problème des salaires si les conditions économiques et sociales qui ont présidé à la conclusion du présent accord ne se trouvaient modifiées d'ici là.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1997-04-29 BO conventions collectives 97-29",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 862272000000,
+                  "dateFin": 911347200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

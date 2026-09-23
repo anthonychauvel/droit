@@ -47468,13 +47468,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005733611",
+              "cid": "KALISCTA000005733611",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires au 1er janvier 1990",
+              "dateModif": null,
+              "dateDebut": "1989-12-20",
+              "dateFin": "1990-12-13",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005874788",
+                  "cid": "KALIARTI000005874788",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005733611/KALIARTI000005874788",
+                  "pathTitle": [
+                    "Grille de salaires au 1er janvier 1990"
+                  ],
+                  "content": "<p></p>   La grille de salaires ci-dessous est applicable au 1er janvier 1990.<p></p><p></p>   Coefficient : 100<p></p><p></p>   39 heures : 5 055<p></p><p></p>   42 heures : 5 444<p></p><p></p>   45 heures : 5 929<p></p><p></p><p></p>   Coefficient : 107<p></p><p></p>   39 heures : 5 409<p></p><p></p>   42 heures : 5 825<p></p><p></p>   45 heures : 6 345<p></p><p></p><p></p>   Coefficient : 112<p></p><p></p>   39 heures : 5 661<p></p><p></p>   42 heures : 6 096<p></p><p></p>   45 heures : 6 640<p></p><p></p><p></p>   Coefficient : 120<p></p><p></p>   39 heures : 6 066<p></p><p></p>   42 heures : 6 533<p></p><p></p>   45 heures : 7 166<p></p><p></p><p></p>   Coefficient : 155<p></p><p></p>   39 heures : 7 835<p></p><p></p>   42 heures : 8 438<p></p><p></p>   45 heures : 9 191<p></p><p></p><p></p>   Coefficient : 220<p></p><p></p>   39 heures : 11 121<p></p><p></p>   42 heures : 11 976<p></p><p></p>   45 heures : 13 045<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 4 1989-12-20 étendu par arrêté du 16 mars 1990 JORF 29 mars 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 630115200000,
+                  "dateFin": 661046400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -47488,13 +47562,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005733612",
+              "cid": "KALISCTA000005733612",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires au 1er février 1991",
+              "dateModif": null,
+              "dateDebut": "1990-12-13",
+              "dateFin": "1991-04-11",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005874789",
+                  "cid": "KALIARTI000005874789",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005733612/KALIARTI000005874789",
+                  "pathTitle": [
+                    "Grille de salaires au 1er février 1991"
+                  ],
+                  "content": "<p></p>   Comme suite aux décisions prises par les deux collèges lors de la session de commission nationale mixte du 12 décembre 1990, la grille de salaires ci-dessous est applicable au 1er février 1991.<p></p><p></p><p></p>   Coefficient : 100<p></p><p></p>   39 heures : 5.400<p></p><p></p>   42 heures : 5.816<p></p><p></p>   45 heures : 6.335<p></p><p></p><p></p>   Coefficient : 110<p></p><p></p>   39 heures : 5.800<p></p><p></p>   42 heures : 6.247<p></p><p></p>   45 heures : 6.804<p></p><p></p><p></p>   Coefficient : 116<p></p><p></p>   39 heures : 6.075<p></p><p></p>   42 heures : 6.543<p></p><p></p>   45 heures : 7.127<p></p><p></p><p></p>   Coefficient : 125<p></p><p></p>   39 heures : 6.450<p></p><p></p>   42 heures : 6.947<p></p><p></p>   45 heures : 7.567<p></p><p></p><p></p>   Coefficient : 160<p></p><p></p>   39 heures : 8.250<p></p><p></p>   42 heures : 8.885<p></p><p></p>   45 heures : 9.678<p></p><p></p><p></p>   Coefficient : 220<p></p><p></p>   39 heures : 11.350<p></p><p></p>   42 heures : 12.224<p></p><p></p>   45 heures : 13.315<p></p><p></p><p></p>   Date d'application :<p></p><p></p>   Le présent avenant entre en vigueur le 1er février 1991.<p></p><p></p><p></p>   Publicité - Extension :<p></p><p></p>   Le présent avenant sera déposé en cinq exemplaires à la direction départementale du travail et de l'emploi, 18, avenue Parmentier, 75011 Paris.<p></p><p></p>   Les parties signataires sont convenues de demander, sans délai, l'extension du présent avenant, l'Union nationale des syndicats de détaillants en fruits, légumes et primeurs étant chargée des formalités visées ci-dessus.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 6 1990-12-13 étendu par arrêté du 20 février 1991 JORF 2 mars 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 661046400000,
+                  "dateFin": 671328000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -47508,13 +47656,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005733613",
+              "cid": "KALISCTA000005733613",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires au 1er juillet 1991",
+              "dateModif": null,
+              "dateDebut": "1991-04-11",
+              "dateFin": "1992-02-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005874790",
+                  "cid": "KALIARTI000005874790",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005733613/KALIARTI000005874790",
+                  "pathTitle": [
+                    "Grille de salaires au 1er juillet 1991"
+                  ],
+                  "content": "<p></p>   Comme suite aux décisions prises par les deux collèges lors de la session de commission nationale mixte du 10 avril 1991, la grille de salaires ci-dessous est applicable au 1er février 1991.<p></p><p></p><p></p>   Coefficient : 100<p></p><p></p>   39 heures : 5.508<p></p><p></p>   42 heures : 5.932<p></p><p></p>   45 heures : 6.462<p></p><p></p><p></p>   Coefficient : 110<p></p><p></p>   39 heures : 5.800<p></p><p></p>   42 heures : 6.247<p></p><p></p>   45 heures : 6.804<p></p><p></p><p></p>   Coefficient : 120<p></p><p></p>   39 heures : 6.250<p></p><p></p>   42 heures : 6.731<p></p><p></p>   45 heures : 7.332<p></p><p></p><p></p>   Coefficient : 130<p></p><p></p>   39 heures : 6.650<p></p><p></p>   42 heures : 7.162<p></p><p></p>   45 heures : 7.801<p></p><p></p><p></p>   Coefficient : 160<p></p><p></p>   39 heures : 8.250<p></p><p></p>   42 heures : 8.885<p></p><p></p>   45 heures : 9.678<p></p><p></p><p></p>   Coefficient : 220<p></p><p></p>   39 heures : 11.350<p></p><p></p>   42 heures : 12.224<p></p><p></p>   45 heures : 13.315<p></p><p></p><p></p>   Date d'application :<p></p><p></p>   Le présent avenant entre en vigueur le 1er juillet 1991.<p></p><p></p><p></p>   Publicité - Extension :<p></p><p></p>   Le présent avenant sera déposé en cinq exemplaires à la direction départementale du travail et de l'emploi, 18, avenue Parmentier, 75011 Paris.<p></p><p></p>   Les parties signataires sont convenues de demander, sans délai, l'extension du présent avenant, l'Union nationale des syndicats de détaillants en fruits, légumes et primeurs étant chargée des formalités visées ci-dessus.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 7 1991-04-11 étendu par arrêté du 8 juillet 1991 JORF 19 juillet 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 671328000000,
+                  "dateFin": 696902400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
