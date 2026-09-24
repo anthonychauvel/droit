@@ -7118,13 +7118,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702877",
+              "cid": "KALISCTA000005702877",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des montants servant au calcul des primes conventionnelles d'ancienneté et de fin d'année des ouvriers au 1er octobre 1993",
+              "dateModif": null,
+              "dateDebut": "1993-10-21",
+              "dateFin": "1994-04-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798693",
+                  "cid": "KALIARTI000005798693",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702877/KALIARTI000005798693",
+                  "pathTitle": [
+                    "Grille des montants servant au calcul des primes conventionnelles d'ancienneté et de fin d'année des ouvriers au 1er octobre 1993"
+                  ],
+                  "content": "<p></p>   En vertu du 31e avenant du 21 octobre 1993 à la convention collective nationale du 17 février 1982, la grille des montants servant au calcul des primes conventionnelles d'ancienneté de fin d'année des ouvriers s'établit comme suit à partir du 1er octobre 1993 :<p></p><p></p><p></p>   Catégorie : I<p></p><p></p>   Fourchette de coefficients :<p></p> 150 à 159<p></p><p></p>   Salaire minimum :<p></p> 4.727 F à 4.799 F<p></p><p></p><p></p>   Catégorie : II<p></p><p></p>   Fourchette de coefficients :<p></p> 156 à 168<p></p><p></p>   Salaire minimum :<p></p> 4.775 F à 4.871 F<p></p><p></p><p></p>   Catégorie : III<p></p><p></p>   Fourchette de coefficients :<p></p> 165 à 180<p></p><p></p>   Salaire minimum :<p></p> 4.847 F à 5.068 F<p></p><p></p><p></p>   Catégorie : IV<p></p><p></p>   Fourchette de coefficients :<p></p> 175 à 193<p></p><p></p>   Salaire minimum :<p></p> 4.927 F à 5.434 F<p></p><p></p><p></p>   Catégorie : V<p></p><p></p>   Fourchette de coefficients :<p></p> 185 à 205<p></p><p></p>   Salaire minimum :<p></p> 5.209 F à 5.772 F<p></p><p></p><p></p>   Catégorie : VI<p></p><p></p>   Fourchette de coefficients :<p></p> 195 à 220<p></p><p></p>   Salaire minimum :<p></p> 5.490 F à 6.194 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 31 1993-10-21 étendu par arrêté du 20 mai 1994 JORF 3 juin 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 751161600000,
+                  "dateFin": 765676800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7138,13 +7212,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702878",
+              "cid": "KALISCTA000005702878",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des salaires mensuels garantis des ETAM au 1er octobre 1993",
+              "dateModif": null,
+              "dateDebut": "1993-10-21",
+              "dateFin": "1994-04-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798695",
+                  "cid": "KALIARTI000005798695",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702878/KALIARTI000005798695",
+                  "pathTitle": [
+                    "Barème des salaires mensuels garantis des ETAM au 1er octobre 1993"
+                  ],
+                  "content": "<p>   En vertu du 31e avenant du 21 octobre 1993 à la convention collective nationale du 17 février 1982, les salaires mensuels garantis des ETAM s'établissent comme suit à partir du 1er octobre 1993, pour une durée hebdomadaire de travail de trente-neuf heures :</p><p></p><p>   Catégorie : I</p><p>   Fourchette de coefficients :</p><p> 250 à 265</p><p>   Salaire minimum :</p><p> 5.908 F à 5.962 F</p><p></p><p>   Catégorie : II</p><p>   Fourchette de coefficients :</p><p> 260 à 315</p><p>   Salaire minimum :</p><p> 5.944 F à 6.574 F</p><p></p><p>   Catégorie : III</p><p>   Fourchette de coefficients :</p><p> 290 à 375</p><p>   Salaire minimum :</p><p> 6.052 F à 7.826 F</p><p></p><p>   Catégorie : IV</p><p>   Fourchette de coefficients :</p><p> 330 à 430</p><p>   Salaire minimum :</p><p> 6.887 F à 8.974 F</p><p></p><p>   Catégorie : V</p><p>   Fourchette de coefficients :</p><p> 390 à 515</p><p>   Salaire minimum :</p><p> 8.139 F à 10.748 F</p><p></p><p>   Catégorie : VI</p><p>   Fourchette de coefficients :</p><p> 475 à 615</p><p>   Salaire minimum :</p><p> 9.913 F à 12.835 F</p><p></p><p>   Pour les coefficients 290 et au dessus, la valeur du point est fixée à 20,87 F.</p><p>   Le salaire mensuel pour trente-neuf heures est obtenu en multipliant la valeur du point par le coefficient hiérarchique.</p><p>   Pour toutes les dispositions contractuelles faisant référence à un minimum horaire, on calcule celui-ci en divisant le minimum mensuel par 169,60.</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 31 1993-10-21 étendu par arrêté du 20 mai 1994 JORF 3 juin 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 751161600000,
+                  "dateFin": 765676800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7158,13 +7306,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702879",
+              "cid": "KALISCTA000005702879",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des montants servant au calcul des primes conventionnelles d'ancienneté et de fin d'année des ETAM au 1er octobre 1993",
+              "dateModif": null,
+              "dateDebut": "1993-10-21",
+              "dateFin": "1994-04-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798696",
+                  "cid": "KALIARTI000005798696",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702879/KALIARTI000005798696",
+                  "pathTitle": [
+                    "Grille des montants servant au calcul des primes conventionnelles d'ancienneté et de fin d'année des ETAM au 1er octobre 1993"
+                  ],
+                  "content": "<p>   En vertu du 31e avenant du 21 octobre 1993 à la convention collective nationale du 17 février 1982, la grille des montants servant au calcul des primes conventionnelles d'ancienneté de fin d'année des ETAM s'établit comme suit à partir du 1er octobre 1993 :</p><p></p><p>   Catégorie : I</p><p>   Fourchette de coefficients :</p><p> 250 à 265</p><p>   Salaire minimum :</p><p> 4.727 F à 4.770 F</p><p></p><p>   Catégorie : II</p><p>   Fourchette de coefficients :</p><p> 260 à 315</p><p>   Salaire minimum :</p><p> 4.755 F à 5.258 F</p><p></p><p>   Catégorie : III</p><p>   Fourchette de coefficients :</p><p> 290 à 375</p><p>   Salaire minimum :</p><p> 4.840 F à 6.259 F</p><p></p><p>   Catégorie : IV</p><p>   Fourchette de coefficients :</p><p> 330 à 430</p><p>   Salaire minimum :</p><p> 5.508 F à 7.178 F</p><p></p><p>   Catégorie : V</p><p>   Fourchette de coefficients :</p><p> 390 à 515</p><p>   Salaire minimum :</p><p> 6.510 F à 8.596 F</p><p></p><p>   Catégorie : VI</p><p>   Fourchette de coefficients :</p><p> 475 à 615</p><p>   Salaire minimum :</p><p> 7.929 F à 10.266 F</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 31 1993-10-21 étendu par arrêté du 20 mai 1994 JORF 3 juin 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 751161600000,
+                  "dateFin": 765676800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

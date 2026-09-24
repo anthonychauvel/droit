@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "La sous-section 4 de la section 4 du chapitre Ier du titre III du livre III de la présente partie n'est pas applicable à Mayotte.",
-    "texteHtml": "<p>La sous-section 4 de la section 4 du chapitre Ier du titre III du livre III de la présente partie n'est pas applicable à Mayotte.</p><p></p>",
+    "texteHtml": "<p>La <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000026739521&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Sous-section 4 : Artistes auteurs (V)\">sous-section 4 de la section 4 du chapitre Ier du titre III du livre III de la présente partie</a> n'est pas applicable à Mayotte.</p><p></p>",
     "num": "R6523-2-5",
     "origine": "LEGI",
     "nature": "Article",
@@ -131,8 +131,8 @@
     "sectionParentId": "LEGISCTA000037562946",
     "sectionParentTitre": "Sous-section 2 :  Dispositions relatives à Mayotte",
     "fullSectionsTitre": "Partie réglementaire   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre V : Dispositions relatives à l'outre-mer &gt; Titre II : Guadeloupe, Guyane, Martinique, Mayotte, La Réunion, Saint-Barthélemy, Saint-Martin et Saint-Pierre-et-Miquelon &gt; Chapitre III : Formation professionnelle continue &gt; Section 2 : Financement de la formation professionnelle continue &gt; Sous-section 2 :  Dispositions relatives à Mayotte",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000037562948",
+    "refInjection": "MD-20260917_194427_694_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000037562948",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -186,7 +186,21 @@
         "dateDebutCible": "2018-11-07"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Sous-section 4 : Artistes auteurs (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000026739521",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

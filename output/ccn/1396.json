@@ -22152,13 +22152,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717241",
+              "cid": "KALISCTA000005717241",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires minimaux applicable à partir de juillet 1996",
+              "dateModif": null,
+              "dateDebut": "1997-01-22",
+              "dateFin": "1998-01-23",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005834892",
+                  "cid": "KALIARTI000005834892",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005717241/KALIARTI000005834892",
+                  "pathTitle": [
+                    "Grille de salaires minimaux applicable à partir de juillet 1996"
+                  ],
+                  "content": "<p></p>   SALAIRES AU 1ER JUILLET 1996<p></p><TABLE><TR><TD>COEF.</TD><TD>SALAIRE</TD><TD> SALAIRE </TD></TR><TR><TD></TD><TD>HORAIRE</TD><TD> MENSUEL </TD></TR><TR><TD> 120 </TD><TD> 37,72 </TD><TD> 6 399,20</TD></TR><TR><TD> 125 </TD><TD> 37,90 </TD><TD> 6 429,74</TD></TR><TR><TD> 130 </TD><TD> 38,08 </TD><TD> 6 460,27</TD></TR><TR><TD> 135 </TD><TD> 38,26 </TD><TD> 6 490,81</TD></TR><TR><TD> 140 </TD><TD> 38,44 </TD><TD> 6 521,35</TD></TR><TR><TD> 145 </TD><TD> 38,71 </TD><TD> 6 567,15</TD></TR><TR><TD> 150 </TD><TD> 38,97 </TD><TD> 6 611,26</TD></TR><TR><TD> 155 </TD><TD> 39,23 </TD><TD> 6 655,37</TD></TR><TR><TD> 160 </TD><TD> 39,49 </TD><TD> 6 699,48</TD></TR><TR><TD> 165 </TD><TD> 39,75 </TD><TD> 6 743,59</TD></TR><TR><TD> 170 </TD><TD> 40,40 </TD><TD> 6 853,86</TD></TR><TR><TD> 175 </TD><TD> 40,92 </TD><TD> 6 942,08</TD></TR><TR><TD> 180 </TD><TD> 41,44 </TD><TD> 7 030,30</TD></TR><TR><TD> 185 </TD><TD> 41,97 </TD><TD> 7 120,21</TD></TR><TR><TD> 190 </TD><TD> 42,49 </TD><TD> 7 206,73</TD></TR><TR><TD> 195 </TD><TD> 43,00 </TD><TD> 7 294,95</TD></TR><TR><TD> SMPG</TD><TD></TD><TD></TD></TR><TR><TD> 100 </TD><TD> 21,69 </TD><TD></TD></TR><TR><TD> ex  </TD><TD></TD><TD></TD></TR><TR><TD> coef</TD><TD></TD><TD></TD></TR><TR><TD> 200 </TD><TD> 43,38 </TD><TD> 7 359,42</TD></TR></TABLE><p></p><p></p>    SALAIRES AU 1ER FEVRIER 1997<p></p><TABLE><TR><TD>COEF.</TD><TD>SALAIRE</TD><TD> SALAIRE</TD></TR><TR><TD></TD><TD>HORAIRE</TD><TD> MENSUEL</TD></TR><TR><TD> 120 </TD><TD> 38,10</TD><TD> 6 463,67</TD></TR><TR><TD> 125 </TD><TD> 38,29</TD><TD> 6 495,90</TD></TR><TR><TD> 130 </TD><TD> 38,48</TD><TD> 6 528,13</TD></TR><TR><TD> 135 </TD><TD> 38,67</TD><TD> 6 560,37</TD></TR><TR><TD> 140 </TD><TD> 38,86</TD><TD> 6 592,60</TD></TR><TR><TD> 145 </TD><TD> 39,20</TD><TD> 6 650,28</TD></TR><TR><TD> 150 </TD><TD> 39,50</TD><TD> 6 701,18</TD></TR><TR><TD> 155 </TD><TD> 39,81</TD><TD> 6 753,77</TD></TR><TR><TD> 160 </TD><TD> 40,11</TD><TD> 6 804,66</TD></TR><TR><TD> 165 </TD><TD> 40,42</TD><TD> 6 857,25</TD></TR><TR><TD> 170 </TD><TD> 41,07</TD><TD> 6 967,53</TD></TR><TR><TD> 175 </TD><TD> 41,64</TD><TD> 7 064,23</TD></TR><TR><TD> 180 </TD><TD> 42,21</TD><TD> 7 160,93</TD></TR><TR><TD> 185 </TD><TD> 42,79</TD><TD> 7 259,32</TD></TR><TR><TD> 190 </TD><TD> 43,36</TD><TD> 7 354,33</TD></TR><TR><TD> 195 </TD><TD> 43,93</TD><TD> 7 452,72</TD></TR><TR><TD> SMPG</TD><TD></TD><TD></TD></TR><TR><TD> 100 </TD><TD> 22,25</TD><TD></TD></TR><TR><TD> ex  </TD><TD></TD><TD></TD></TR><TR><TD> coef</TD><TD></TD><TD></TD></TR><TR><TD> 200 </TD><TD> 44,50</TD><TD> 7 549,43</TD></TR></TABLE><p></p><p></p>    SALAIRES AU 1ER JUILLET 1997<p></p><TABLE><TR><TD>COEF.</TD><TD>SALAIRE</TD><TD> SALAIRE </TD></TR><TR><TD></TD><TD>HORAIRE</TD><TD> MENSUEL </TD></TR><TR><TD> 120 </TD><TD> 38,50 </TD><TD> 6 531,53</TD></TR><TR><TD> 125 </TD><TD> 38,70 </TD><TD> 6 565,46</TD></TR><TR><TD> 130 </TD><TD> 38,84 </TD><TD> 6 589,21</TD></TR><TR><TD> 135 </TD><TD> 39,02 </TD><TD> 6 619,74</TD></TR><TR><TD> 140 </TD><TD> 39,21 </TD><TD> 6 651,98</TD></TR><TR><TD> 145 </TD><TD> 39,48 </TD><TD> 6 697,78</TD></TR><TR><TD> 150 </TD><TD> 39,78 </TD><TD> 6 748,68</TD></TR><TR><TD> 155 </TD><TD> 40,08 </TD><TD> 6 799,57</TD></TR><TR><TD> 160 </TD><TD> 40,38 </TD><TD> 6 850,47</TD></TR><TR><TD> 165 </TD><TD> 40,70 </TD><TD> 6 904,76</TD></TR><TR><TD> 170 </TD><TD> 41,35 </TD><TD> 7 015,03</TD></TR><TR><TD> 175 </TD><TD> 41,92 </TD><TD> 7 111,73</TD></TR><TR><TD> 180 </TD><TD> 42,50 </TD><TD> 7 210,13</TD></TR><TR><TD> 185 </TD><TD> 43,08 </TD><TD> 7 308,52</TD></TR><TR><TD> 190 </TD><TD> 43,66 </TD><TD> 7 406,92</TD></TR><TR><TD> 195 </TD><TD> 44,23 </TD><TD> 7 503,62</TD></TR><TR><TD> SMPG</TD><TD></TD><TD></TD></TR><TR><TD> 100 </TD><TD> 22,4  </TD><TD></TD></TR><TR><TD> ex  </TD><TD></TD><TD></TD></TR><TR><TD> coef</TD><TD></TD><TD></TD></TR><TR><TD> 200 </TD><TD> 44,80 </TD><TD> 7 600,32</TD></TR></TABLE><p></p><p></p>    Le salaire horaire minimal national professionnel garanti (SMPG) est fixé pour le coefficient 100 à :<p></p><p></p>   - 21,69 F au 1er janvier 1997 ;<p></p><p></p>   - 22,25 F au 1er février 1997 ;<p></p><p></p>   - 22,40 F au 1er juillet 1997.<p></p><p></p>   Le SMPG sert de base au calcul des salaires horaires minimaux à partir du coefficient 200.<p></p><p></p>   Exemples : au 1er février 1997 :<p></p><p></p>   - coef. 200 : 2,0 SMPG, soit 2,0 x 22,25 x 169,65 = 7 549,43 F ;<p></p><p></p>   - coef. 210 : 2,1 SMPG, soit 2,1 x 22,25 x 169,65 = 7 926,89 F.<p></p><p></p>   Pour tout salarié bénéficiaire des dispositions de l'accord de mensualisation pour l'année 1997 et ayant au moins un an de présence, la rémunération annuelle garantie sur la base d'une durée de travail de 39 heures par semaine prendra en compte les différentes augmentations périodiques : à savoir, à titre d'exemple, pour le coefficient 120 et 125 avec une prime annuelle payée en décembre :<p></p><p></p>   1er exemple : coefficient 120 avec prime annuelle payée en décembre :<p></p><TABLE><TR><TD>Du 1er janvier      </TD><TD></TD></TR><TR><TD>au 31 janvier 1997  </TD><TD>  6 431,43 F</TD></TR><TR><TD>Du 1er février      </TD><TD></TD></TR><TR><TD>au 30 juin 1997     </TD><TD> 32 318,32 F</TD></TR><TR><TD>Du 1er juillet      </TD><TD></TD></TR><TR><TD>au 31 décembre 1997 </TD><TD></TD></TR><TR><TD>avec prime annuelle </TD><TD> 45 720,67 F</TD></TR><TR><TD>Soit un total annuel</TD><TD></TD></TR><TR><TD>          de        </TD><TD> 84 470,42 F</TD></TR></TABLE><p></p><p></p>   2e exemple : coefficient 125 avec prime annuelle payée en décembre :<p></p><TABLE><TR><TD>Du 1er janvier      </TD><TD></TD></TR><TR><TD>au 31 janvier 1997  </TD><TD>  6 431,43 F</TD></TR><TR><TD>Du 1er février      </TD><TD></TD></TR><TR><TD>au 30 juin 1997     </TD><TD> 32 479,49 F</TD></TR><TR><TD>Du 1er juillet      </TD><TD></TD></TR><TR><TD>au 31 décembre 1997 </TD><TD></TD></TR><TR><TD>avec prime annuelle </TD><TD> 45 958,22 F</TD></TR><TR><TD>Soit un total annuel</TD><TD></TD></TR><TR><TD>          de        </TD><TD> 84 869,14 F</TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 40 1997-01-22 BO conventions collectives 97-14, étendu par arrêté du 21 mai 1997 JORF 3 juin 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 853891200000,
+                  "dateFin": 885513600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -22172,13 +22246,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717242",
+              "cid": "KALISCTA000005717242",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires minimaux au 1er février et au 1er juillet 1998",
+              "dateModif": null,
+              "dateDebut": "1998-01-23",
+              "dateFin": "1999-04-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005834893",
+                  "cid": "KALIARTI000005834893",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005717242/KALIARTI000005834893",
+                  "pathTitle": [
+                    "Grille de salaires minimaux au 1er février et au 1er juillet 1998"
+                  ],
+                  "content": "<p></p>   AU 1ER JUILLET 1998<p></p><TABLE><TR><TD>COEF.</TD><TD>SALAIRE</TD><TD> SALAIRE </TD></TR><TR><TD></TD><TD>HORAIRE</TD><TD> MENSUEL </TD></TR><TR><TD> 120 </TD><TD> 39,85 </TD><TD> 6.760,55</TD></TR><TR><TD> 125 </TD><TD> 40,04 </TD><TD> 6.792,79</TD></TR><TR><TD> 130 </TD><TD> 40,21 </TD><TD> 6.821,63</TD></TR><TR><TD> 135 </TD><TD> 40,39 </TD><TD> 6.852,16</TD></TR><TR><TD> 140 </TD><TD> 40,58 </TD><TD> 6.884,40</TD></TR><TR><TD> 145 </TD><TD> 40,75 </TD><TD> 6.913,24</TD></TR><TR><TD> 150 </TD><TD> 41,07 </TD><TD> 6.967,53</TD></TR><TR><TD> 155 </TD><TD> 41,38 </TD><TD> 7.020,12</TD></TR><TR><TD> 160 </TD><TD> 41,69 </TD><TD> 7.072,71</TD></TR><TR><TD> 165 </TD><TD> 42,01 </TD><TD> 7.127,00</TD></TR><TR><TD> 170 </TD><TD> 42,59 </TD><TD> 7.225,39</TD></TR><TR><TD> 175 </TD><TD> 43,18 </TD><TD> 7.325,49</TD></TR><TR><TD> 180 </TD><TD> 43,77 </TD><TD> 7.425,58</TD></TR><TR><TD> 185 </TD><TD> 44,37 </TD><TD> 7.527,37</TD></TR><TR><TD> 190 </TD><TD> 44,97 </TD><TD> 7.629,16</TD></TR><TR><TD> 195 </TD><TD> 45,56 </TD><TD> 7.729,25</TD></TR><TR><TD> SMPG</TD><TD></TD><TD></TD></TR><TR><TD> 100 </TD><TD> 23,07 </TD><TD></TD></TR><TR><TD> ex  </TD><TD></TD><TD></TD></TR><TR><TD> coef</TD><TD></TD><TD></TD></TR><TR><TD> 200 </TD><TD> 46,14 </TD><TD> 7.827,65</TD></TR></TABLE><p></p><p></p>   SALAIRES AU 1ER FÉVRIER 1998<p></p><TABLE><TR><TD>COEF.</TD><TD>SALAIRE</TD><TD> SALAIRE </TD></TR><TR><TD></TD><TD>HORAIRE</TD><TD> MENSUEL </TD></TR><TR><TD> 120 </TD><TD> 39,46 </TD><TD> 6.694,39</TD></TR><TR><TD> 125 </TD><TD> 39,64 </TD><TD> 6.724,93</TD></TR><TR><TD> 130 </TD><TD> 39,82 </TD><TD> 6.755,46</TD></TR><TR><TD> 135 </TD><TD> 40,00 </TD><TD> 6.786,00</TD></TR><TR><TD> 140 </TD><TD> 40,19 </TD><TD> 6.818,23</TD></TR><TR><TD> 145 </TD><TD> 40,47 </TD><TD> 6.865,74</TD></TR><TR><TD> 150 </TD><TD> 40,78 </TD><TD> 6.918,33</TD></TR><TR><TD> 155 </TD><TD> 41,09 </TD><TD> 6.970,92</TD></TR><TR><TD> 160 </TD><TD> 41,40 </TD><TD> 7.023,51</TD></TR><TR><TD> 165 </TD><TD> 41,72 </TD><TD> 7.077,80</TD></TR><TR><TD> 170 </TD><TD> 42,38 </TD><TD> 7.189,77</TD></TR><TR><TD> 175 </TD><TD> 42,97 </TD><TD> 7.289,86</TD></TR><TR><TD> 180 </TD><TD> 43,56 </TD><TD> 7.389,95</TD></TR><TR><TD> 185 </TD><TD> 44,16 </TD><TD> 7.491,74</TD></TR><TR><TD> 190 </TD><TD> 44,75 </TD><TD> 7.590,14</TD></TR><TR><TD> 195 </TD><TD> 45,34 </TD><TD> 7.691,93</TD></TR><TR><TD> SMPG</TD><TD></TD><TD></TD></TR><TR><TD> 100 </TD><TD> 22,96 </TD><TD></TD></TR><TR><TD> ex  </TD><TD></TD><TD></TD></TR><TR><TD> coef</TD><TD></TD><TD></TD></TR><TR><TD> 200 </TD><TD> 45,92 </TD><TD> 7.790,32</TD></TR></TABLE><p></p><p></p>   Le salaire horaire minimal national professionnel garanti (SMPG) est fixé pour le coefficient 100 à :<p></p><p></p>   - 22,96 F au 1er février 1998 ;<p></p><p></p>   - 23,07 F au 1er juillet 1998.<p></p><p></p>   Le SMPG sert de base au calcul des salaires horaires minima à partir du coefficient 200.<p></p><p></p>   Exemple : au 1er février 1998 :<p></p><p></p>   - coefficient 200 : 2 SMPG, soit 2 x 22,96 x 169,65 =<p></p> 7 790,32 F ;<p></p><p></p>   - coefficient 210 : 2,1 SMPG, soit 2,1 x 22,96 x 169,65 = 8 179,84 F.<p></p><p></p>   Pour tout salarié bénéficiaire des dispositions de l'accord de mensualisation pour l'année 1998, et ayant au moins un an de présence, la rémunération annuelle garantie sur la base d'une durée de travail de 39 heures par semaine prendra en compte les différentes augmentations périodiques : à savoir, à titre d'exemple, pour les coefficients 120 et 125 avec une prime annuelle payée en décembre :<p></p><p></p>   1er exemple : coefficient 120 avec prime annuelle payée en décembre :<p></p><TABLE><TR><TD>Du 1er janvier      </TD><TD></TD></TR><TR><TD>au 31 janvier 1998  </TD><TD>  6 689,29 F</TD></TR><TR><TD>Du 1er février      </TD><TD></TD></TR><TR><TD>au 30 juin 1998     </TD><TD> 33 471,95 F</TD></TR><TR><TD>Du 1er juillet      </TD><TD></TD></TR><TR><TD>au 31 décembre 1998 </TD><TD></TD></TR><TR><TD>avec prime annuelle </TD><TD> 47 323,85 F</TD></TR><TR><TD>Soit un total annuel</TD><TD></TD></TR><TR><TD>de                  </TD><TD> 87 485,09 F</TD></TR></TABLE><p></p><p></p>   2e exemple : coefficient 125 avec prime annuelle payée en décembre :<p></p><TABLE><TR><TD>Du 1er janvier      </TD><TD></TD></TR><TR><TD>au 31 janvier 1998  </TD><TD>  6 689,29 F</TD></TR><TR><TD>Du 1er février      </TD><TD></TD></TR><TR><TD>au 30 juin 1998     </TD><TD> 33 624,65 F</TD></TR><TR><TD>Du 1er juillet      </TD><TD></TD></TR><TR><TD>au 31 décembre 1998 </TD><TD></TD></TR><TR><TD>avec prime annuelle </TD><TD> 47 549,53 F</TD></TR><TR><TD>Soit un total annuel</TD><TD></TD></TR><TR><TD>de                  </TD><TD> 87 863,47 F</TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 44 1998-01-23 BO conventions collectives 98-8 étendu par arrêté du 1er avril 1998 JORF 15 avril 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 885513600000,
+                  "dateFin": 924739200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -22192,13 +22340,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717243",
+              "cid": "KALISCTA000005717243",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grilles de salaires minimaux au 1er avril 1999",
+              "dateModif": null,
+              "dateDebut": "1999-04-22",
+              "dateFin": "2000-06-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005834894",
+                  "cid": "KALIARTI000005834894",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005717243/KALIARTI000005834894",
+                  "pathTitle": [
+                    "Grilles de salaires minimaux au 1er avril 1999"
+                  ],
+                  "content": "Accord n° 50 du 22 avril 1999 à la convention collective pour les industries de la conserve du 17 janvier 1952<p></p> Barème applicable à partir du 1er avril 1999<p></p><p></p><p></p>   (1) VARIATIONS coefficients<p></p><p></p>   (2) BASE horaire<p></p><p></p>   (3) TOUS SALARIÉS (anciens ou nouveaux) travaillant 39 heures par semaine (7)<p></p><p></p>   ANCIENS SALARIÉS ANNUALISÉS sur la base de 37 heures hebdomadaires ou 35 heures hebdomadaires (accord n° 46, annexe 1 et accord n° 48, annexe 2) (7)<p></p><p></p>   (4) NOUVEAUX SALARIÉS<p></p><p></p>   (5) ACCORD N° 46 annualisés sur la base 37 heures hebdomadaires \" payés 39 heures \" base mensuelle 160 h 97<p></p><p></p>   (6) ACCORD N° 48 annualisés sur la base de 35 heures hebdomadaires \" payés 35 heures \" base mensuelle<p></p> (8)152 h 25<p></p><p></p><TABLE><TR><TD>  (1)  </TD><TD> (2) </TD><TD>   (3)    </TD><TD>   (4)    </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>   (5)    </TD></TR><TR><TD>120-140</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  120  </TD><TD>40,22</TD><TD> 6 823,32 </TD><TD>  6 823,32</TD></TR><TR><TD>  125  </TD><TD>40,41</TD><TD> 6 855,56 </TD><TD>  6 855,56</TD></TR><TR><TD>  130  </TD><TD>40,59</TD><TD> 6 886,09 </TD><TD>  6 886,09</TD></TR><TR><TD>  135  </TD><TD>40,78</TD><TD> 6 918,33 </TD><TD>  6 918,33</TD></TR><TR><TD>  140  </TD><TD>40,96</TD><TD> 6 948,86 </TD><TD>  6 948,86</TD></TR><TR><TD>145-165</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  145  </TD><TD>41,12</TD><TD> 6 976,01 </TD><TD>  6 976,01</TD></TR><TR><TD>  150  </TD><TD>41,44</TD><TD> 7 030,30 </TD><TD>  7 030,30</TD></TR><TR><TD>  155  </TD><TD>41,76</TD><TD> 7 084,58 </TD><TD>  7 084,58</TD></TR><TR><TD>  160  </TD><TD>42,08</TD><TD> 7 138,87 </TD><TD>  7 138,87</TD></TR><TR><TD>  165  </TD><TD>42,40</TD><TD> 7 193,16 </TD><TD>  7 193,16</TD></TR><TR><TD>170-195</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  170  </TD><TD>42,99</TD><TD> 7 293,25 </TD><TD>  7 293,25</TD></TR><TR><TD>  175  </TD><TD>43,59</TD><TD> 7 395,04 </TD><TD>  7 395,04</TD></TR><TR><TD>  180  </TD><TD>44,18</TD><TD> 7 495,14 </TD><TD>  7 495,14</TD></TR><TR><TD>  185  </TD><TD>44,78</TD><TD> 7 596,93 </TD><TD>  7 596,93</TD></TR><TR><TD>  190  </TD><TD>45,38</TD><TD> 7 698,72 </TD><TD>  7 698,72</TD></TR><TR><TD>  195  </TD><TD>45,98</TD><TD> 7 800,51 </TD><TD>  7 800,51</TD></TR></TABLE><p></p><TABLE><TR><TD>SPMG   </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> 100   </TD><TD>23.28</TD><TD></TD><TD></TD></TR><TR><TD>  ex   </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>coef   </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>200    </TD><TD>46,56</TD><TD> 7 898,90 </TD><TD>  7 898,90</TD></TR></TABLE><p></p><p></p><TABLE><TR><TD>  (1)  </TD><TD> (2) </TD><TD>   (4)    </TD></TR><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>   (6)    </TD></TR><TR><TD>120-140</TD><TD></TD><TD></TD></TR><TR><TD>  120  </TD><TD>40,22</TD><TD> 6 123,52 </TD></TR><TR><TD>  125  </TD><TD>40,41</TD><TD> 6 152,42 </TD></TR><TR><TD>  130  </TD><TD>40,59</TD><TD> 6 179,82 </TD></TR><TR><TD>  135  </TD><TD>40,78</TD><TD> 6 208,76 </TD></TR><TR><TD>  140  </TD><TD>40,96</TD><TD> 6 236,16 </TD></TR><TR><TD>145-165</TD><TD></TD><TD></TD></TR><TR><TD>  145  </TD><TD>41,12</TD><TD> 6 260,52 </TD></TR><TR><TD>  150  </TD><TD>41,44</TD><TD> 6 309,24 </TD></TR><TR><TD>  155  </TD><TD>41,76</TD><TD> 6 357,96 </TD></TR><TR><TD>  160  </TD><TD>42,08</TD><TD> 6 406,68 </TD></TR><TR><TD>  165  </TD><TD>42,40</TD><TD> 6 455,40 </TD></TR><TR><TD>170-195</TD><TD></TD><TD></TD></TR><TR><TD>  170  </TD><TD>42,99</TD><TD> 6 545,23 </TD></TR><TR><TD>  175  </TD><TD>43,59</TD><TD> 6 636,58 </TD></TR><TR><TD>  180  </TD><TD>44,18</TD><TD> 6 726,41 </TD></TR><TR><TD>  185  </TD><TD>44,78</TD><TD> 6 817,76 </TD></TR><TR><TD>  190  </TD><TD>45,38</TD><TD> 6 909,11 </TD></TR><TR><TD>  195  </TD><TD>45,98</TD><TD> 7 000,46 </TD></TR><TR><TD> SMPG  </TD><TD></TD><TD></TD></TR><TR><TD> 100   </TD><TD>23.28</TD><TD></TD></TR><TR><TD>  ex   </TD><TD></TD><TD></TD></TR><TR><TD> coef  </TD><TD></TD><TD></TD></TR><TR><TD> 200   </TD><TD>46,56</TD><TD> 7 088,76 </TD></TR></TABLE><p></p><p></p>    (7) Conformément aux accords du 2 décembre 1998, ces salaires sont gelés jusqu'au 1er janvier 2001.<p></p><p></p>   (8) Conformément aux accords du 2 décembre 1998, les écarts entre les salaires mensualisés des anciens et nouveaux salariés seront résorbés le 1er janvier 2001.<p></p><p></p>    La première étape sera le 1er janvier 2000 : les salaires à 35 heures hebdomadaires, seront payés 37 heures, la deuxième étape sera le 1er janvier 2001 : 35 heures payés 39 heures.<p></p><p></p><p></p>   Le salaire horaire minimal national professionnel garanti (SMPG) est fixé pour le coefficient 100 à :<p></p><p></p>   - 23,28 F au 1er avril 1999 ;<p></p><p></p>   Le SMPG sert de base au calcul des salaires horaires minima à partir du coefficient 200.<p></p><p></p>   Exemple : au 1er avril 1999 :<p></p><p></p>   - coefficient 200 : 2 SMPG, soit 2 x 23,28 x 169,65 =<p></p> 7 899,00 F ;<p></p><p></p>   - coefficient 210 : 2,1 SMPG, soit 2,1 x 23,28 x 169,65 = 8 294,00 F.<p></p><p></p>   ou encore :<p></p><p></p>   - coefficient 200 : 2 SMPG, soit 2 x 23,28 x 152,25 = 7 088,76 F ;<p></p><p></p>   - coefficient 210 : 2,1 SMPG, soit 2,1 x 23,28 x 152,25 = 7 443,20 F.<p></p><p></p>   Pour tout salarié bénéficiaire des dispositions de l'accord de mensualisation pour l'année 1999, et ayant au moins un an de présence, la rémunération annuelle garantie sur la base d'une durée de travail de 39 heures par semaine prendra en compte les différentes augmentations périodiques : à savoir, à titre d'exemple, pour le coefficient 120 avec une prime annuelle payée en décembre :<p></p><p></p>   Exemple : coefficient 120 avec prime annuelle payée en décembre :<p></p><p></p>   - du 1er janvier au 31 mars 1999 ...    20 469,96 F<p></p><p></p>   - du 1er avril au 31 décembre 1999 ...   61 409,88 F<p></p><p></p>   - prime annuelle sur salaire de base ...   6 823,32 F<p></p><p></p>   Soit un total annuel de ...   88 703,16 F<p></p><p></p>   Dans le cadre de l'accord n° 46, 37 heures hebdomadaires pour tout salarié bénéficiant de l'annualisation.<p></p><p></p>   Exemple : avec \" 37 heures payées 39 heures \", coefficient 125 avec prime annuelle payée en décembre :<p></p><p></p>   - du 1er janvier au 31 mars 1999 : 19 514,40 + 1 052,28 =<p></p><p></p> 20 566,68 F<p></p><p></p>   - du 1er avril au 31 décembre 1999 : 58 543,20 + 3 156,84 =<p></p><p></p> 61 700,04 F<p></p><p></p>   - prime annuelle sur salaire de base : 6 504,80 + 350,76 =  6 855,56 F<p></p><p></p>   Soit un total annuel de ...   89 122,28 F<p></p> ANNEXE I<p></p> à l'accord n° 50 du 22 avril 1999<p></p><p></p>   Avec annualisation du temps travaillé. Base accord n° 46, 37 heures hebdomadaires, 160 h 97 mensualisées.<p></p> Barème applicable à partir du 1er avril 1999<p></p><p></p><p></p>   (9) VARIATIONS coefficients<p></p><p></p>   (10) ANCIENS ET NOUVEAUX SALARIÉS<p></p><p></p>   (11) BASE HORAIRE anciens + nouveaux salariés<p></p><p></p>   (12) RÉFÉRENCE 169 H 65 (39 heures hebdo)<p></p><p></p>   (13) SALAIRES 160 H 97 (37 heures hebdo)<p></p><p></p>   (14) + MAJORATIONS RTT (+ 2 heures)<p></p><TABLE><TR><TD>(9)    </TD><TD>        (10)              </TD></TR><TR><TD></TD><TD> (11) </TD><TD>  (12)   </TD><TD>  (13)   </TD></TR><TR><TD>120-140</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  120  </TD><TD>40,22 </TD><TD>6 823,32 </TD><TD>6 474,21 </TD></TR><TR><TD>  125  </TD><TD>40,41 </TD><TD>6 855,56 </TD><TD>6 504,80 </TD></TR><TR><TD>  130  </TD><TD>40,59 </TD><TD>6 886,09 </TD><TD>6 533,77 </TD></TR><TR><TD>  135  </TD><TD>40,78 </TD><TD>6 918,33 </TD><TD>6 564,36 </TD></TR><TR><TD>  140  </TD><TD>40,96 </TD><TD>6 948,86 </TD><TD>6 593,33 </TD></TR><TR><TD>145-165</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  145  </TD><TD>41,12 </TD><TD>6 976,01 </TD><TD>6 619,09 </TD></TR><TR><TD>  150  </TD><TD>41,44 </TD><TD>7 030,30 </TD><TD>6 670,60 </TD></TR><TR><TD>  155  </TD><TD>41,76 </TD><TD>7 084,58 </TD><TD>6 722,11 </TD></TR><TR><TD>  160  </TD><TD>42,08 </TD><TD>7 138,87 </TD><TD>6 773,62 </TD></TR><TR><TD>  165  </TD><TD>42,40 </TD><TD>7 193,16 </TD><TD>6 825,13 </TD></TR><TR><TD>170-195</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  170  </TD><TD>42,99 </TD><TD>7 293,25 </TD><TD>6 920,10 </TD></TR><TR><TD>  175  </TD><TD>43,59 </TD><TD>7 395,04 </TD><TD>7 016,68 </TD></TR><TR><TD>  180  </TD><TD>44,18 </TD><TD>7 495,14 </TD><TD>7 111,65 </TD></TR><TR><TD>  185  </TD><TD>44,78 </TD><TD>7 596,93 </TD><TD>7 208,24 </TD></TR><TR><TD>  190  </TD><TD>45,38 </TD><TD>7 698,72 </TD><TD>7 304,82 </TD></TR><TR><TD>  195  </TD><TD>45,98 </TD><TD>7 800,51 </TD><TD>7 401,40 </TD></TR><TR><TD>  SMPG </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>100    </TD><TD>23,28 </TD><TD></TD><TD></TD></TR><TR><TD>ex     </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>coeff  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>200    </TD><TD>46,56 </TD><TD>7 898,90 </TD><TD>7 494,76 </TD></TR></TABLE><p></p><p></p> :-------:------:---------:<p></p><TABLE><TR><TD>(9)    </TD><TD>        (10)    </TD></TR><TR><TD></TD><TD> (11) </TD><TD>  (14)   </TD></TR><TR><TD>120-140</TD><TD></TD><TD></TD></TR><TR><TD>  120  </TD><TD> 40,22</TD><TD> + 349,11</TD></TR><TR><TD>  125  </TD><TD> 40,41</TD><TD> + 350,76</TD></TR><TR><TD>  130  </TD><TD> 40,59</TD><TD> + 352,32</TD></TR><TR><TD>  135  </TD><TD> 40,78</TD><TD> + 353,97</TD></TR><TR><TD>  140  </TD><TD> 40,96</TD><TD> + 355,53</TD></TR><TR><TD>145-165</TD><TD></TD><TD></TD></TR><TR><TD>  145  </TD><TD> 41,12</TD><TD> + 356,92</TD></TR><TR><TD>  150  </TD><TD> 41,44</TD><TD> + 359,70</TD></TR><TR><TD>  155  </TD><TD> 41,76</TD><TD> + 362,47</TD></TR><TR><TD>  160  </TD><TD> 42,08</TD><TD> + 365,25</TD></TR><TR><TD>  165  </TD><TD> 42,40</TD><TD> + 368,03</TD></TR><TR><TD>170-195</TD><TD></TD><TD></TD></TR><TR><TD>  170  </TD><TD> 42,99</TD><TD> + 373,15</TD></TR><TR><TD>  175  </TD><TD> 43,59</TD><TD> + 378,36</TD></TR><TR><TD>  180  </TD><TD> 44,18</TD><TD> + 383,49</TD></TR><TR><TD>  185  </TD><TD> 44,78</TD><TD> + 388,69</TD></TR><TR><TD>  190  </TD><TD> 45,38</TD><TD> + 393,90</TD></TR><TR><TD>  195  </TD><TD> 45,98</TD><TD> + 399,11</TD></TR><TR><TD> SMPG  </TD><TD></TD><TD></TD></TR><TR><TD>100    </TD><TD> 23,28</TD><TD></TD></TR><TR><TD>ex     </TD><TD></TD><TD></TD></TR><TR><TD>coeff  </TD><TD></TD><TD></TD></TR><TR><TD>200    </TD><TD> 46,56</TD><TD> + 404,13</TD></TR></TABLE><p></p><p></p> ANNEXE II À L'ACCORD N° 50 DU 22 AVRIL 1999<p></p><p></p>   Avec annualisation du temps travaillé. Base accord n° 48, 35 heures hebdomadaires, 152 h 25 mensualisées.<p></p> Barème applicable à partir du 1er avril 1999<p></p><p></p>   (15) VARIATIONS coefficients<p></p><p></p>   (16) ANCIENS SALARIÉS    (17) BASE HORAIRE anciens + nouveaux salariés<p></p><p></p>   (18) RÉFÉRENCE 169 H 65 (39 heures hebdomadaires)<p></p><p></p>   (19) SALAIRES 152 H 25 (35 heures hebdomadaires)<p></p><p></p>   (20) + MAJORATIONS RTT (+ 4 heures)<p></p><TABLE><TR><TD>(15)   </TD><TD>        (16)              </TD></TR><TR><TD></TD><TD> (17) </TD><TD>  (18)   </TD><TD>  (19)   </TD></TR></TABLE><p></p><TABLE><TR><TD>120-140</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  120  </TD><TD> 40,22</TD><TD> 6 823,32</TD><TD> 6 123,52</TD></TR><TR><TD>  125  </TD><TD> 40,41</TD><TD> 6 855,56</TD><TD> 6 152,42</TD></TR><TR><TD>  130  </TD><TD> 40,59</TD><TD> 6 886,09</TD><TD> 6 179,82</TD></TR><TR><TD>  135  </TD><TD> 40,78</TD><TD> 6 918,33</TD><TD> 6 208,76</TD></TR><TR><TD>  140  </TD><TD> 40,96</TD><TD> 6 948,86</TD><TD> 6 236,16</TD></TR><TR><TD>145-165</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  145  </TD><TD> 41,12</TD><TD> 6 976,01</TD><TD> 6 260,52</TD></TR><TR><TD>  150  </TD><TD> 41,44</TD><TD> 7 030,30</TD><TD> 6 309,24</TD></TR><TR><TD>  155  </TD><TD> 41,76</TD><TD> 7 084,58</TD><TD> 6 357,96</TD></TR><TR><TD>  160  </TD><TD> 42,08</TD><TD> 7 138,87</TD><TD> 6 406,68</TD></TR><TR><TD>  165  </TD><TD> 42,40</TD><TD> 7 193,16</TD><TD> 6 455,40</TD></TR><TR><TD>170-195</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>  170  </TD><TD> 42,99</TD><TD> 7 293,25</TD><TD> 6 545,23</TD></TR><TR><TD>  175  </TD><TD> 43,59</TD><TD> 7 395,04</TD><TD> 6 636,58</TD></TR><TR><TD>  180  </TD><TD> 44,18</TD><TD> 7 495,14</TD><TD> 6 726,41</TD></TR><TR><TD>  185  </TD><TD> 44,78</TD><TD> 7 596,93</TD><TD> 6 817,76</TD></TR><TR><TD>  190  </TD><TD> 45,38</TD><TD> 7 698,72</TD><TD> 6 909,11</TD></TR><TR><TD>  195  </TD><TD> 45,98</TD><TD> 7 800,51</TD><TD> 7 000,46</TD></TR><TR><TD> SMPG  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD> 100   </TD><TD> 23,28</TD><TD></TD><TD></TD></TR><TR><TD> ex    </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>coeff  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>200    </TD><TD> 46,56</TD><TD> 7 898,90</TD><TD> 7 088,76</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>(15)   </TD><TD>      (16)      </TD></TR><TR><TD></TD><TD> (17) </TD><TD>  (20)   </TD></TR><TR><TD>120-140</TD><TD></TD><TD></TD></TR><TR><TD>  120  </TD><TD> 40,22</TD><TD> + 699,80</TD></TR><TR><TD>  125  </TD><TD> 40,41</TD><TD> + 703,14</TD></TR><TR><TD>  130  </TD><TD> 40,59</TD><TD> + 706,27</TD></TR><TR><TD>  135  </TD><TD> 40,78</TD><TD> + 709,57</TD></TR><TR><TD>  140  </TD><TD> 40,96</TD><TD> + 712,70</TD></TR><TR><TD>145-165</TD><TD></TD><TD></TD></TR><TR><TD>  145  </TD><TD> 41,12</TD><TD> + 715,49</TD></TR><TR><TD>  150  </TD><TD> 41,44</TD><TD> + 721,06</TD></TR><TR><TD>  155  </TD><TD> 41,76</TD><TD> + 726,62</TD></TR><TR><TD>  160  </TD><TD> 42,08</TD><TD> + 732,19</TD></TR><TR><TD>  165  </TD><TD> 42,40</TD><TD> + 737,76</TD></TR><TR><TD>170-195</TD><TD></TD><TD></TD></TR><TR><TD>  170  </TD><TD> 42,99</TD><TD> + 748,02</TD></TR></TABLE><p></p><TABLE><TR><TD>  175  </TD><TD> 43,59</TD><TD> + 758,46</TD></TR><TR><TD>  180  </TD><TD> 44,18</TD><TD> + 768,38</TD></TR><TR><TD>  185  </TD><TD> 44,78</TD><TD> + 779,17</TD></TR><TR><TD>  190  </TD><TD> 45,38</TD><TD> + 789,61</TD></TR><TR><TD>  195  </TD><TD> 45,98</TD><TD> + 800,05</TD></TR><TR><TD> SMPG  </TD><TD></TD><TD></TD></TR><TR><TD>100    </TD><TD> 23,28</TD><TD></TD></TR><TR><TD>ex     </TD><TD></TD><TD></TD></TR><TR><TD>coeff  </TD><TD></TD><TD></TD></TR><TR><TD>200    </TD><TD> 46,56</TD><TD> + 810,14</TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 7 juillet 1999 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 7 juillet 1999 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord n° 50 1999-04-22 BO conventions collectives 99-19 étendu par arrêté du 7 juillet 1999 JORF 21 juillet 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 924739200000,
+                  "dateFin": 961372800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

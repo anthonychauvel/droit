@@ -30082,13 +30082,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690325",
+              "cid": "KALISCTA000005690325",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et indemnités au 1er janvier 1990.",
+              "dateModif": null,
+              "dateDebut": "1990-01-01",
+              "dateFin": "1991-01-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767170",
+                  "cid": "KALIARTI000005767170",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": "1,  2,  5,  6",
+                  "path": "/KALISCTA000005690325/KALIARTI000005767170",
+                  "pathTitle": [
+                    "Salaires et indemnités au 1er janvier 1990."
+                  ],
+                  "content": "Article 1er<p></p> Objet de l'avenant<p></p><p></p>   Le présent avenant, qui porte le numéro 27, vient modifier les articles 5, 6, 11, 37 et 40 de l'accord collectif national des maisons d'alimentation à succursales, supermarchés, hypermarchés, \"gérants-mandataires\", du 18 juillet 1963 modifié.<p></p>Article 2<p></p> Minima garantis<p></p><p></p>   Les minima garantis fixés à l'article 5 \"Minima garantis\" de l'accord collectif national sont modifiés ainsi qu'il suit, à compter du 1er janvier 1990 :<p></p><p></p>   - gérance 1re catégorie : 5 300 F<p></p><p></p>   - gérance 2e catégorie : 8 500 F<p></p>Article 5 (1)<p></p> Institutions représentatives des gérants<p></p><p></p>   Le C de l'article 37 \"Institutions représentatives des gérants\" est modifié ainsi qu'il suit:<p></p><p></p>   a) Indemnisation des heures passées en réunion: Chaque gérant investi d'un mandat de représentation percevra par demi-journée d'absence nécessitée par des réunions légales avec l'employeur ou provoquées par celui-ci, une indemnité forfaitaire fixée à 153 F à compter du 1er février 1990.<p></p><p></p>   b) Indemnisation des heures de délégation : Les heures de délégation sont accordées dans les conditions fixées par la loi. Elles seront indemnisées forfaitairement sur les bases mensuelles suivantes à compter du 1er février 1990 :<p></p><p></p>   - gérant membre du comité d'établissement : 568 F.<p></p><p></p>   - délégué gérant : 428 F.<p></p><p></p>   - délégué syndical gérant : 286 F.<p></p><p></p>   - délégué syndical gérant : 428 F.<p></p><p></p>   - délégué syndical gérant : 568 F.<p></p> selon qu'il exerce dans un \"établissement succursales\" regroupant habituellement de 50 à 150 gérants, de 151 à 500 gérants ou plus de 500 gérants.<p></p> Les indemnités visées aux a et b ci-dessus sont révisables chaque année.<p></p>Article 6<p></p> Indemnisation des gérants participant aux réunions paritaires<p></p><p></p>   Les chiffres figurant au a de l'article 40 \"Indemnisation des gérants participant aux réunions paritaires\" sont modifiés ainsi qu'il suit :<p></p><p></p>   a)Frais de séjour :<p></p><p></p>   - 75F par repas principal ;<p></p><p></p>   - 200F pour la chambre et le petit déjeuner.<p></p><font color=\"808080\"><em>(1) Les dispositions de l'article 5 prennent effet au 1er février 1990.<p></p></em></font>",
+                  "nota": "(1) Les dispositions de l'article 5 prennent effet au 1er février 1990.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 27 1990-01-29 en vigueur le 1er janvier 1990 étendu par arrêté du 23 avril 1990 JORF 4 mai 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 631152000000,
+                  "dateFin": 663811200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -30102,13 +30176,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690326",
+              "cid": "KALISCTA000005690326",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et indemnités au 1er janvier 1991.",
+              "dateModif": null,
+              "dateDebut": "1991-01-14",
+              "dateFin": "1992-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767171",
+                  "cid": "KALIARTI000005767171",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690326/KALIARTI000005767171",
+                  "pathTitle": [
+                    "Salaires et indemnités au 1er janvier 1991."
+                  ],
+                  "content": "Article 1er<p></p> Objet de l'avenant<p></p><p></p>   Le présent avenant, qui porte le numéro 28, vient modifier les articles 5, 8, 11 et 37 de l'accord collectif national des maisons d'alimentation à succursales, supermarchés, hypermarchés, \"Gérants-Mandataires\", du 18 juillet 1963 modifié.<p></p>Article 2<p></p> Minima garantis<p></p><p></p>   Les minima garantis, fixés à l'article 5 \"Minimum garanti\" de l'accord collectif national, sont modifiés ainsi qu'il suit, à compter du 1er janvier 1991 :<p></p><p></p>   - gérance 1re catégorie : 5550F ;<p></p><p></p>   - gérance 2e catégorie : 8800F.<p></p>Article 5<p></p> Institutions représentatives des gérants<p></p><p></p>   Le C de l'article 37 \"Institutions représentatives des gérants\" est modifié ainsi qu'il suit :<p></p><p></p>   a)Indemnisation des heures passées en réunion :<p></p> Chaque gérant investi d'un mandat de représentation percevra, par demi-journée d'absence nécessitée par des réunions légales avec l'employeur ou provoquées par celui-ci, une indemnité forfaitaire fixée à 158F à compter du 1er février 1991.<p></p><p></p>   b)Indemnisation des heures de délégation :<p></p> Les heures de délégation sont accordées dans les conditions fixées par la loi. Elles seront indemnisées forfaitairement sur les bases mensuelles suivantes à compter du 1er février 1991 :<p></p><p></p>   - gérant membre du comité d'établissement : 588F ;<p></p><p></p>   - délégué gérant : 443F ;<p></p><p></p>   - délégué syndical gérant : 296F, 443F, 588F,<p></p> selon qu'il exerce son mandat dans un \"établissement succursales\" regroupant habituellement de 50 à 150 gérants ou plus de 500 gérants.<p></p> Les indemnités visées aux a et b ci-dessus sont révisables chaque année.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 28 1991-01-14 étendu par arrêté du 2 avril 1991 JORF 11 avril 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 663811200000,
+                  "dateFin": 694224000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -30122,13 +30270,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690327",
+              "cid": "KALISCTA000005690327",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et indemnités au 1er janvier 1992.",
+              "dateModif": null,
+              "dateDebut": "1992-01-01",
+              "dateFin": "1993-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005767172",
+                  "cid": "KALIARTI000005767172",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690327/KALIARTI000005767172",
+                  "pathTitle": [
+                    "Salaires et indemnités au 1er janvier 1992."
+                  ],
+                  "content": "Article 2<p></p> Minima garantis.<p></p><p></p>   Les minima garantis, fixés à l'article 5 : \" Minimum garanti ] de l'accord collectif national, sont modifiés ainsi qu'il suit, à compter du 1er janvier 1992 :<p></p><p></p>   - gérance 1re catégorie : 5.800 F par mois,<p></p><p></p>   - gérance 2e catégorie : 9.100 F par mois.<p></p>Article 4<p></p> Institutions représentatives des gérants.<p></p><p></p>   Le C de l'article 37 : \" Institutions représentatives des gérants \" est modifié ainsi qu'il suit :<p></p><p></p>   a) Indemnisation des heures passées en réunion :<p></p><p></p>   Chaque gérant investi d'un mandat de représentation percevra, par demi-journée d'absence nécessitée par des réunions légales avec l'employeur ou provoquées par celui-ci, une indemnité forfaitaire fixée à 162 F, à compter du 1er janvier 1992.<p></p><p></p>   b) Indemnisation des heures de délégation :<p></p><p></p>   Les heures de délégation sont accordées dans les conditions fixées par la loi. Elles seront indemnisées forfaitairement sur les bases mensuelles suivantes à compter du 1er janvier 1992 :<p></p><p></p>   - gérant membre du comité d'établissement : 603 F ;<p></p><p></p>   - délégué gérant : 455 F ;<p></p><p></p>   - délégué syndical gérant : 304 F, 455 F, 603 F,<p></p> selon qu'il exerce dans un \" établissement à succursales \" regroupant habituellement de 50 à 150 gérants, de 151 à 500 gérants ou plus de 500 gérants.<p></p><p></p>   Les indemnités visées aux a et b ci-dessus sont révisables chaque année.<p></p>Article 5<p></p> Indemnisation des gérants participant aux réunions paritaires.<p></p><p></p>   Seul, le chiffre figurant au premier tiret du a : \" Frais de séjour \" de l'article 40 : \" Indemnisation des gérants participant aux réunions paritaires \" est modifié ainsi qu'il suit :<p></p><p></p>   - 80 F par repas principal.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 30 1992-01-20 en vigueur le 1er janvier 1992 étendu par arrêté du 22 avril 1992 JORF 6 mai 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 694224000000,
+                  "dateFin": 725846400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

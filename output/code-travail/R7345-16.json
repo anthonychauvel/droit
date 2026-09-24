@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "L'établissement est soumis aux dispositions des titres Ier et III du décret n° 2012-1246 du 7 novembre 2012 relatif à la gestion budgétaire et comptable publique.",
-    "texteHtml": "<p>L'établissement est soumis aux dispositions des titres Ier et III du <a href=\"/affichTexte.do?cidTexte=JORFTEXT000026597003&categorieLien=cid\" title=\"Décret n°2012-1246  du 7 novembre 2012 (V)\">décret n° 2012-1246 du 7 novembre 2012</a> relatif à la gestion budgétaire et comptable publique.</p>",
+    "texteHtml": "<p>L'établissement est soumis aux dispositions des <a href=\"/affichTexte.do?cidTexte=JORFTEXT000026597003&idSectionTA=JORFSCTA000026597032&categorieLien=cid\" title=\"Décret n° 2012-1246 du 7 novembre 2012 -  TITRE Ier : LES PRINCIPES FONDAMENTAUX (V)\">titres Ier</a> et <a href=\"/affichTexte.do?cidTexte=JORFTEXT000026597003&idSectionTA=JORFSCTA000026597034&categorieLien=cid\" title=\"Décret n° 2012-1246 du 7 novembre 2012 -  TITRE III : LA GESTION BUDGÉTAIRE ET COMPTABLE ... (V)\">III du décret n° 2012-1246 du 7 novembre 2012</a> relatif à la gestion budgétaire et comptable publique.</p>",
     "num": "R7345-16",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,8 +113,8 @@
     "sectionParentId": "LEGISCTA000044312220",
     "sectionParentTitre": "Section 2 : Régime financier et comptable ",
     "fullSectionsTitre": "Partie réglementaire   &gt; Septième partie : Dispositions particulières à certaines professions et activités  &gt; Livre III : Voyageurs, représentants ou placiers, gérants de succursales, entrepreneurs salariés associés d'une coopérative d'activité et d'emploi et travailleurs utilisant une plateforme de mise en relation par voie électronique &gt;  Titre IV : Travailleurs utilisant une plateforme de mise en relation par voie électronique &gt; Chapitre V : Autorité des relations sociales des plateformes d'emploi  &gt; Section 2 : Régime financier et comptable ",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000044312222",
+    "refInjection": "MD-20260915_192613_847_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000044312222",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -171,16 +171,29 @@
     "lienCitations": [
       {
         "textCid": "JORFTEXT000026597003",
-        "textTitle": "Décret n°2012-1246\n du 7 novembre 2012 (V)",
+        "textTitle": "Décret n° 2012-1246 du 7 novembre 2012 -  TITRE III : LA GESTION BUDGÉTAIRE ET COMPTABLE ... (V)",
         "linkType": "CITATION",
         "linkOrientation": "source",
         "articleNum": "",
-        "articleId": "JORFTEXT000026597003",
+        "articleId": "JORFSCTA000026597034",
         "natureText": "DECRET",
         "parentCid": null,
         "numTexte": "2012-1246",
         "datePubli": 1352505600000,
-        "dateDebut": 32472144000000
+        "dateDebut": null
+      },
+      {
+        "textCid": "JORFTEXT000026597003",
+        "textTitle": "Décret n° 2012-1246 du 7 novembre 2012 -  TITRE Ier : LES PRINCIPES FONDAMENTAUX (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "JORFSCTA000026597032",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2012-1246",
+        "datePubli": 1352505600000,
+        "dateDebut": null
       }
     ],
     "lienConcordes": [],

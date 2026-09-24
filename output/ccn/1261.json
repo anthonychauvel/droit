@@ -61670,13 +61670,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005722106",
+              "cid": "KALISCTA000005722106",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point au 1er décembre 1989",
+              "dateModif": null,
+              "dateDebut": "1989-12-08",
+              "dateFin": "1989-12-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005845859",
+                  "cid": "KALIARTI000005845859",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005722106/KALIARTI000005845859",
+                  "pathTitle": [
+                    "Valeur du point au 1er décembre 1989"
+                  ],
+                  "content": "<p></p>   La valeur du point au 1er décembre 1989 est revalorisée de 1 p.100 (soit + 3,5 p.100 sur le 31 décembre 1988). Elle est fixée à 26,66 F.<p></p><p></p>   Une prime de 400 F est attribuée au personnel à temps plein présent dans l'entreprise au 1er décembre. Pour le personnel à temps partiel, elle est attribuée pro rata temporis sans qu'elle puisse être inférieure à 80 F.<p></p><p></p>   Le présent accord fait l'objet d'une demande d'extension dans les conditions fixées par les articles L.133-8 et suivants du code du travail.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1989-12-08 étendu par arrêté du 22 février 1990 JORF 7 mars 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L133-8",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 629078400000,
+                  "dateFin": 629078400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -61711,12 +61799,77 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005845861",
+              "cid": "KALIARTI000005845861",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005845861",
+              "pathTitle": [],
+              "content": "<p></p>   La valeur du point au 1er décembre 1990 est revalorisée de 0,5 p. 100 (soit + 3,5 p. 100 sur le 31 décembre 1989).<p></p><p></p>   Elle est fixée à 27,59 F (vingt sept francs cinquante neuf).<p></p><p></p>   Le présent accord fait l'objet d'une demande d'extension dans les conditions fixées par les articles L.133-8 et suivants du code du travail.<p></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant 1990-10-19 étendu par arrêté du 31 décembre 1990 JORF 10 janvier 1991",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "",
+                  "textTitle": "Code du travail L133-8",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": null,
+                  "dateDebut": null
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 656294400000,
+              "dateFin": 690163200000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -61730,13 +61883,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005722108",
+              "cid": "KALISCTA000005722108",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point pour l'année 1991",
+              "dateModif": null,
+              "dateDebut": "1990-10-19",
+              "dateFin": "1991-11-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005845862",
+                  "cid": "KALIARTI000005845862",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005722108/KALIARTI000005845862",
+                  "pathTitle": [
+                    "Valeur du point pour l'année 1991"
+                  ],
+                  "content": "<p></p>   La valeur du point est ainsi fixée pour l'année 1991 :<p></p><p></p> - au 1er janvier 1991 : 27,73 F (+ 0,5 p. 100 sur le 31 décembre 1990) (vingt sept francs soixante treize) ;<p></p><p></p> - au 1er avril 1991 : 28,00 F (+ 1,5 p. 100 sur le 31 décembre 1990) (vingt huit francs) ;<p></p><p></p> - au 1er juillet 1991 : 28,28 F (+ 2,5 p. 100 sur le 31 décembre 1990) (vingt huit francs vingt huit) ;<p></p><p></p> - au 1er octobre 1991 : 28,42 F (+ 3 p. 100 sur le 31 décembre 1990) (vingt huit francs quarante deux) ;<p></p><p></p>   Les parties conviennent de se réunir en juin 1991 pour étudier la situation en fonction de tous les paramètres qui concernent la valeur du point 1991.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1990-10-19 étendu par arrêté du 31 décembre 1990 JORF 10 janvier 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 656294400000,
+                  "dateFin": 690163200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
