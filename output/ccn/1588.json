@@ -12381,13 +12381,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696231",
+              "cid": "KALISCTA000005696231",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er janvier 1995 et du 1er juillet 1995.",
+              "dateModif": null,
+              "dateDebut": "1994-12-15",
+              "dateFin": "1996-03-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005781314",
+                  "cid": "KALIARTI000005781314",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696231/KALIARTI000005781314",
+                  "pathTitle": [
+                    "Salaires à compter du 1er janvier 1995 et du 1er juillet 1995."
+                  ],
+                  "content": "il a été convenu ce qui suit :<p></p><p></p>   A compter du 1er janvier 1995 :<p></p><p></p>   - la valeur du point passe à 18,20 F ;<p></p><p></p>   - celle de la constante à 1.385 F.<p></p><p></p>   A compter du 1er juillet 1995 :<p></p><p></p>   - la valeur du point passe à 18,35 F ;<p></p><p></p>   - celle de la constante à 1.400 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1994-12-15 BO Conventions collectives 95-5",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 787449600000,
+                  "dateFin": 826761600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12401,13 +12475,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696232",
+              "cid": "KALISCTA000005696232",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er janvier 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-01-12",
+              "dateFin": "1996-01-12",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005781316",
+                  "cid": "KALIARTI000005781316",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696232/KALIARTI000005781316",
+                  "pathTitle": [
+                    "Salaires à compter du 1er janvier 1996."
+                  ],
+                  "content": "<p></p>   A compter du 1er janvier 1996, la valeur du point servant de base au calcul des apppointements passera à 18,53 F.<p></p><p></p>   La valeur de la constante passera à 1 416 F.<p></p><p></p>   Les parties se rencontreront ultérieurement pour négocier une nouvelle augmentation applicable au 1er juillet 1996.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1996-01-12 BO conventions collectives 96-10",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 821404800000,
+                  "dateFin": 821404800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12421,13 +12569,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005696233",
+              "cid": "KALISCTA000005696233",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier et au 1er juillet 1996 et diverses clauses",
+              "dateModif": null,
+              "dateDebut": "1996-01-12",
+              "dateFin": "1996-03-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005781317",
+                  "cid": "KALIARTI000005781317",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005696233/KALIARTI000005781317",
+                  "pathTitle": [
+                    "Salaires au 1er janvier et au 1er juillet 1996 et diverses clauses"
+                  ],
+                  "content": "<p></p>   Compte tenu du report sur l'année 1996 de l'actuelle réunion qui devait avoir lieu fin 1995, M. Alquier propose à M. Ducornet qui l'accepte, d'assurer la présidence de la présente séance.<p></p><p></p>   Avant d'aborder les questions figurant à l'ordre du jour et avec l'accord de la commission paritaire, il est procédé à l'audition de M. Vercollier, conseiller technique de la fédération des sociétés coopératives H.L.M., sur un point relatif à la formation professionnelle des entreprises de la branche.<p></p><p></p>   Il s'agit d'un projet de mutualisation et de création d'un compte-groupe pour la mise en oeuvre d'une stratégie et d'une politique cohérente en matière de formation professionnelle.<p></p><p></p>   L'objectif est d'amener les sociétés à cotiser à hauteur de 2 p. 100 à Habitat Formation. Ce taux serait atteint progressivement : il serait d'abord de 1 p. 100 puis serait relevé de 0,20 p. 100 par an.<p></p><p></p>   Le montant ainsi collecté devrait atteindre 2 millions de francs ce qui permettrait d'envisager des actions de formation qui sont actuellement hors de portée pour les salariés des petites sociétés.<p></p><p></p>   M. Vercollier précise qu'il s'agit d'une simple information préalable mais qu'une proposition officielle va être soumise d'ici peu à la commission qui devrait constituer le cadre adapté pour gérer le compte-groupe. En revanche la gestion politique du dossier serait confiée à la fédération.<p></p><p></p>   Après avoir posé quelques questions à M. Vercollier, la commission paritaire prend acte de ces informations et se déclare favorable au principe de la création d'un compte-groupe en matière de formation professionnelle.<p></p><p></p>   C'est donc avec intérêt qu'elle examinera dans le cadre d'une prochaine réunion, les propositions détaillées qui lui seront soumises.<p></p><p></p>APPROBATION DE COMPTE RENDU<p></p><p></p>   Le procès-verbal de la réunion de la commission paritaire du 29 juin 1995 est adopté à l'unanimité.<p></p><p></p> EVOLUTION DES REMUNERATIONS CONVENTIONNELLES<p></p><p></p>   Le président Ducornet précise que l'érosion monétaire pour 1995 s'établit entre 1,9 p. 100 et 2 p. 100.<p></p><p></p>   Or, les augmentations généralisées n'ont représenté que 1,83 p. 100 en niveau.<p></p><p></p>   Pour tenir compte de ces éléments, et en accord avec F.O., le syndicat national propose les valeurs suivantes pour 1996 :<p></p><p></p> (1)DATE D'APPLICATION<p></p> (2)VALEUR DU POINT<p></p> (3)CONSTANTE<p></p><TABLE><TR><TD>    (1)    </TD><TD>   (2)  </TD><TD>   (3)  </TD></TR><TR><TD>01-01-1996 </TD><TD> 18,55F </TD><TD> 1.425F </TD></TR><TR><TD>01-07-1996 </TD><TD> 18,75F </TD><TD> 1.440F </TD></TR></TABLE><p></p><p></p>   Le collège \" employeurs \" constate que ces propositions se traduisent par une augmentation en niveau de 2,12 p. 100 si on les rapporte à un coefficient 500.<p></p>   Or, les directives du conseil fédéral limitent à 2 p. 100 la hausse des rémunérations généralisées ce qui permet au collège \" employeurs \" d'émettre la proposition suivante :(1)DATE D'APPLICATION<p></p> (2)VALEUR DU POINT<p></p> (3)CONSTANTE<p></p><TABLE><TR><TD>    (1)    </TD><TD>   (2)  </TD><TD>   (3)  </TD></TR><TR><TD>01-01-1996 </TD><TD> 18,53F </TD><TD> 1.416F </TD></TR><TR><TD>01-07-1996 </TD><TD> 18,72F </TD><TD> 1.428F </TD></TR></TABLE><p></p><p></p>   M. Alquier rappelle que le conseil fédéral est tout à fait opposé à d'éventuels rattrapages sur les années antérieures d'autant que pendant plusieurs exercices les augmentations généralisées se sont avérées supérieures à l'évolution de l'indice I.N.S.E.E. des prix à la consommation.<p></p>   M. Bels regrette que le collège \" employeurs \" soit tenu par les directives du conseil fédéral sans marge de manoeuvre permettant une veritable négociation.<p></p>   Le collège \" employeurs \" propose aux organisations syndicales d'accepter sa proposition au 1er janvier 1996 qui se traduit par une augmentation de 1 p. 100 pour un coefficient 500 et de retourner devant le conseil fédéral au mois de mars pour tenter d'obtenir une meilleure marge de négociation pour l'augmentation de juillet.<p></p>   Les organisations syndicales prennent acte de l'engagement du collège \" employeurs \" tendant à un prochaine rencontre et acceptent d'ores et déjà de signer un accord revalorisant le point et la constante au 1er janvier 1996 sur les bases suivantes :(1)DATE D'APPLICATION<p></p> (2)VALEUR DU POINT<p></p> (3)CONSTANTE<p></p><TABLE><TR><TD>    (1)    </TD><TD>   (2)  </TD><TD>   (3)  </TD></TR><TR><TD>01-01-1996 </TD><TD> 18,53F </TD><TD> 1.416F </TD></TR></TABLE><p></p>  CESSATION D'ACTIVITE EN CONTREPARTIE D'EMBAUCHE<p></p>   Le secrétaire de la commission paritaire rappelle que la C.F.D.T. a saisi la commission pour que la branche professionnelle des sociétés coopératives H.L.M puisse s'incrire dans les termes de l'accord interprofessionnel du 6 septembre 1995 qui ne lui est pas applicable en droit car la fédération d'adhère ni à la C.G.P.M.E. ni au C.N.P.F.<p></p>   Cet accord ouvre la possibilité aux salariés de 58 ans et plus totalisant 160 trimestres de cotisation, de cesser leur activité avec l'accord de leur employeur en contrepartie d'embauche et de percevoir une allocation de remplacement pour l'emploi. Le secrétaire précise que cet accord interprofessionnel sera généralisé par un projet de loi adopté par le conseil des ministres du 8 novembre 1995 et portant création d'un fonds paritaire d'intervention en faveur de l'emploi.<p></p>   La commission prend acte de la publication prochaine de ce texte et considère qu'il n'y a pas lieu de ce fait à une négociation de branche portant sur cette question.<p></p>   La commission tient cependant à faire savoir qu'elle est tout à fait favorable au dispositif que s'apprête à mettre en place le législateur.INDEMNITE DE FIN DE CARRIERE ET INDEMNITE DE LICENCIEMENT<p></p><p></p>   Le secrétaire rappelle qu'il convient d'éclairer la situation du personnel ayant travaillé à temps partiel pendant une partie de leur activité professionnelle, pour le calcul de l'indemnité de rupture de contrat.<p></p><p></p>   Après un débat en la matière, il est convenu de maintenir l'avantage particulier existant actuellement en matière d'indemnité de fin de carrière à l'article 22 de la convention collective : pour les agents ayant exercé une activité à temps partiel durant les deux dernières années, le salaire pris en considération pour le calcul de fin de carrière sera le salaire calculé pour un temps complet.<p></p><p></p>   Dans les autres cas le régime légal sera appliqué ; il repose sur le calcul suivant :<p></p><p></p>   a) Prise en compte de la durée globale d'ancienneté ; ainsi 5 ans de travail à temps complet plus 3 ans à temps partiel donnent une ancienneté de 8 ans.<p></p><p></p>   b) Une proratisation au niveau du calcul de l'assiette est ensuite effectuée. Ainsi pour un salaire de 10 000 francs pour 169 heures avec 5 ans à temps complet et 3 ans à mi-temps, la rémunération mensuelle à prendre en compte sera de :<p></p> 10 000 x 5/8 = 6.250F<p></p> 5 000 x 5/8 = 1.875F<p></p> soit : 8.125F<p></p><p></p>   c) Il conviendra enfin d'appliquer à cette rémunération de base les quotités prévues par le barème conventionnel en fonction de l'ancienneté.<p></p><p></p>   Dans l'exemple visé, le barème pour 8 ans d'ancienneté correspond à 2 mois de salaire de référence proratisé.<p></p><p></p>   L'indemnité de fin de carrière correspond ainsi à 8 125 F x 2 = 16 250 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1996-01-12 BO conventions collectives 96-15",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 821404800000,
+                  "dateFin": 826761600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

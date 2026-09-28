@@ -113,8 +113,8 @@
     "sectionParentId": "LEGISCTA000031807622",
     "sectionParentTitre": "Paragraphe 5 : Dispositions générales et attributions de la commission paritaire, de l'employeur et de l'assemblée générale",
     "fullSectionsTitre": "Partie réglementaire - Arrêtés &gt; Livre IX : Dispositions relatives à la protection sociale complémentaire des salariés et institutions à caractère paritaire &gt; Titre III : Institutions de prévoyance et opérations de ces institutions &gt; Chapitre 1 : Institutions de prévoyance &gt; Section 3 : Fonctionnement &gt; Sous-section 2 : Gouvernance &gt; Paragraphe 5 : Dispositions générales et attributions de la commission paritaire, de l'employeur et de l'assemblée générale",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000031807611",
+    "refInjection": "MD-20260925_195512_936_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000031807611",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -245,26 +245,39 @@
         "numTexte": "",
         "datePubli": 32472144000000,
         "dateDebut": 933897600000
+      },
+      {
+        "textCid": "KALITEXT000005662332",
+        "textTitle": "Fonctionnement des institutions de prévoyance, ... - art. 6 (VNE)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "6",
+        "articleId": "KALIARTI000005807605",
+        "natureText": "ACCORD",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1016582400000
       }
     ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [
       {
-        "id": "LEGIARTI000031807611",
-        "etat": "VIGUEUR",
-        "version": "1.0",
-        "dateDebut": 1451606400000,
-        "dateFin": 32472144000000,
-        "numero": null,
-        "ordre": null
-      },
-      {
         "id": "LEGIARTI000006734968",
         "etat": "MODIFIE",
         "version": "1.0",
         "dateDebut": 957398400000,
         "dateFin": 1451606400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000031807611",
+        "etat": "VIGUEUR",
+        "version": "1.0",
+        "dateDebut": 1451606400000,
+        "dateFin": 32472144000000,
         "numero": null,
         "ordre": null
       }

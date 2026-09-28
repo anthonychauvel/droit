@@ -3878,12 +3878,63 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005853811",
+              "cid": "KALIARTI000005853811",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000005853811",
+              "pathTitle": [],
+              "content": "<p>Voir partie « Salaires ».</p><p></p><p></p><p></p>",
+              "nota": null,
+              "comporteLiens": false,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Convention collective nationale 1985-02-15 étendue par arrêté du 25 juillet 1985 JORF 30 juillet 1985",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": "",
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 491702400000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -8886,13 +8937,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005725448",
+              "cid": "KALISCTA000005725448",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 1989.",
+              "dateModif": null,
+              "dateDebut": "1989-01-24",
+              "dateFin": "1989-06-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005854082",
+                  "cid": "KALIARTI000005854082",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005725448/KALIARTI000005854082",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 1989."
+                  ],
+                  "content": "Article 1er.<p></p><p></p>   Il a été convenu de réajuster l'ensemble des salaires minimaux faisant l'objet du tableau de l'article 2 de l'annexe III de la convention, selon les modalités suivantes :<p></p><p></p>   a) Agents d'exploitation, employés administratifs, techniciens :<p></p><p></p>   - valeur du point : 35,45 F ;<p></p><p></p>   - partie fixe : 857 F.<p></p><p></p>   b) Agents de maîtrise :<p></p><p></p>   - valeur du point : 37,60 F ;<p></p><p></p>   - partie fixe : 1 170,54 F.<p></p><p></p>   c) Ingénieurs et cadres :<p></p><p></p>   - valeur du point : 23,85 F ;<p></p><p></p>   - partie fixe : 1 830,41 F.<p></p><p></p>Article 2.<p></p><p></p>   La date d'application du présent avenant est fixée au 1er janvier 1989.<p></p><p></p>Article 3.<p></p><p></p>   Conformément à l'article L. 132-10 du code du travail, le présent avenant sera déposé à la D.D.T.E. ainsi qu'au greffe du conseil de prud'hommes de Paris.    Une demande d'extension sera remise aux services compétents du ministère du travail.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1988-10-14, étendu par arrêté du 16 mars 1989 JORF 29 mars 1989",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": "Crée par Accord rectificatif du 24 janvier 1989, étendu par arrêté du 16 mars 1989 JORF 29 mars 1989.",
+                  "surtitre": "ANNEXE III Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 601603200000,
+                  "dateFin": 614390400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

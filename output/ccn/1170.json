@@ -6924,13 +6924,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702871",
+              "cid": "KALISCTA000005702871",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires mensuels garantis des ouvriers à compter du 1er avril 1993",
+              "dateModif": null,
+              "dateDebut": "1993-04-07",
+              "dateFin": "1993-10-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798686",
+                  "cid": "KALIARTI000005798686",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702871/KALIARTI000005798686",
+                  "pathTitle": [
+                    "Salaires mensuels garantis des ouvriers à compter du 1er avril 1993"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   En vertu du 28e avenant du 7 avril 1993 à la convention collective nationale du 17 février 1982, les salaires mensuels garantis des ouvriers s'établissent comme suit à partir du 1er avril 1993, pour une durée hebdomadaire de travail de trente-neuf heures :<p></p><p></p><p></p>   Catégorie : I<p></p><p></p>   Fourchette de coefficients :<p></p> 150 à 159<p></p><p></p>   Salaire minimum :<p></p> 5.867 F à 5.957 F<p></p><p></p><p></p>   Catégorie : II<p></p><p></p>   Fourchette de coefficients :<p></p> 156 à 168<p></p><p></p>   Salaire minimum :<p></p> 5.957 F à 6.046 F<p></p><p></p><p></p>   Catégorie : III<p></p><p></p>   Fourchette de coefficients :<p></p> 165 à 180<p></p><p></p>   Salaire minimum :<p></p> 6.016 F à 6.291 F<p></p><p></p><p></p>   Catégorie : IV<p></p><p></p>   Fourchette de coefficients :<p></p> 175 à 193<p></p><p></p>   Salaire minimum :<p></p> 6.116 F à 6.745 F<p></p><p></p><p></p>   Catégorie : V<p></p><p></p>   Fourchette de coefficients :<p></p> 185 à 205<p></p><p></p>   Salaire minimum :<p></p> 6.466 F à 7.165 F<p></p><p></p><p></p>   Catégorie : VI<p></p><p></p>   Fourchette de coefficients :<p></p> 195 à 220<p></p><p></p>   Salaire minimum :<p></p> 6.815 F à 7.689 F<p></p><p></p><p></p>   Pour les coefficients 175 et au-dessus, la valeur du point est fixée à 34,95 F.<p></p><p></p>   Le salaire mensuel pour trente-neuf heures est obtenu en multipliant la valeur du point par le coefficient hiérarchique.<p></p><p></p>   Pour toutes les dispositions contractuelles faisant référence à un salaire minimum horaire, on calcule celui-ci en divisant le minimum mensuel par 169 h 60.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 28 1993-04-07 étendu par arrêté du 25 novembre 1993 JORF 7 décembre 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 734140800000,
+                  "dateFin": 751161600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6944,13 +7018,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702872",
+              "cid": "KALISCTA000005702872",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des montants servant au calcul des primes conventionnelles d'ancienneté et de fin d'année des ouvriers au 1er avril 1993",
+              "dateModif": null,
+              "dateDebut": "1993-04-07",
+              "dateFin": "1993-10-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798688",
+                  "cid": "KALIARTI000005798688",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702872/KALIARTI000005798688",
+                  "pathTitle": [
+                    "Grille des montants servant au calcul des primes conventionnelles d'ancienneté et de fin d'année des ouvriers au 1er avril 1993"
+                  ],
+                  "content": "<p></p>   En vertu du 28e avenant du 7 avril 1993 à la convention collective nationale du 17 février 1982, la grille des montants servant au calcul des primes conventionnelles de fin d'année des ouvriers s'établit comme suit à partir du 1er avril 1993 :<p></p><p></p><p></p>   Catégorie : I<p></p><p></p>   Fourchette de coefficients :<p></p> 150 à 159<p></p><p></p>   Salaire minimum :<p></p> 4.694 F à 4.766 F<p></p><p></p><p></p>   Catégorie : II<p></p><p></p>   Fourchette de coefficients :<p></p> 156 à 168<p></p><p></p>   Salaire minimum :<p></p> 4.742 F à 4.837 F<p></p><p></p><p></p>   Catégorie : III<p></p><p></p>   Fourchette de coefficients :<p></p> 165 à 180<p></p><p></p>   Salaire minimum :<p></p> 4.813 F à 5.033 F<p></p><p></p><p></p>   Catégorie : IV<p></p><p></p>   Fourchette de coefficients :<p></p> 175 à 193<p></p><p></p>   Salaire minimum :<p></p> 4.893 F à 5.396 F<p></p><p></p><p></p>   Catégorie : V<p></p><p></p>   Fourchette de coefficients :<p></p> 185 à 205<p></p><p></p>   Salaire minimum :<p></p> 5.173 F à 5.732 F<p></p><p></p><p></p>   Catégorie : VI<p></p><p></p>   Fourchette de coefficients :<p></p> 195 à 220<p></p><p></p>   Salaire minimum :<p></p> 5.452 F à 6.151 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 28 1993-04-07 étendu par arrêté du 25 novembre 1993 JORF 7 décembre 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 734140800000,
+                  "dateFin": 751161600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7004,13 +7152,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702875",
+              "cid": "KALISCTA000005702875",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires mensuels minima des cadres à compter du 1er avril 1993",
+              "dateModif": null,
+              "dateDebut": "1993-05-10",
+              "dateFin": "1993-10-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798691",
+                  "cid": "KALIARTI000005798691",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702875/KALIARTI000005798691",
+                  "pathTitle": [
+                    "Salaires mensuels minima des cadres à compter du 1er avril 1993"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   En vertu du 29e avenant du 10 mai 1993 à la convention collective nationale du 17 février 1982, les salaires mensuels minima des cadres s'établissent comme suit à partir du 1er avril 1993, pour une durée hebdomadaire de travail de trente-neuf heures :<p></p><p></p> Catégorie I (seuils d'accueil des jeunes cadres diplômés)<p></p><p></p>   Première année<p></p><p></p>   Coefficient : 300<p></p><p></p>   Francs : 9.543<p></p><p></p><p></p>   Deuxième année<p></p><p></p>   Coefficient : 322<p></p><p></p>   Francs : 10.243<p></p><p></p><p></p>   Troisième année<p></p><p></p>   Coefficient : 344<p></p><p></p>   Francs : 10.943<p></p><p></p> Catégorie II (position A, B ou C)<p></p><p></p>   Coefficient : 366<p></p><p></p>   Francs : 11.642<p></p><p></p><p></p>   Coefficient : 388<p></p><p></p>   Francs : 12.342<p></p><p></p><p></p>   Coefficient : 410<p></p><p></p>   Francs : 13.042<p></p><p></p><p></p>   Coefficient : 432<p></p><p></p>   Francs : 13.742<p></p><p></p><p></p>   Coefficient : 454<p></p><p></p>   Francs : 14.442<p></p><p></p><p></p>   Coefficient : 476<p></p><p></p>   Francs : 15.142<p></p><p></p><p></p>   Coefficient : 498<p></p><p></p>   Francs : 15.841<p></p><p></p> Catégorie III<p></p><p></p><p></p>   Coefficient : 520<p></p><p></p>   Francs : 16.541<p></p><p></p><p></p>   Coefficient : 542<p></p><p></p>   Francs : 17.241<p></p><p></p><p></p>   Coefficient : 564<p></p><p></p>   Francs : 17.941<p></p><p></p><p></p>   Coefficient : 586<p></p><p></p>   Francs : 18.641<p></p><p></p><p></p>   Coefficient : 608<p></p><p></p>   Francs : 19.340<p></p><p></p><p></p>   Coefficient : 630<p></p><p></p>   Francs : 20.040<p></p><p></p><p></p>   Coefficient : 652<p></p><p></p>   Francs : 20.740<p></p><p></p><p></p>   Le salaire mensuel minimum des cadres est calculé en multipliant le point cadre fixé à 31,81 F par le coefficient de la catégorie.<p></p><p></p>   Pour toutes les dispositions contractuelles faisant référence à un minimum horaire, on calcule celui-ci en divisant le minimum mensuel par 169,60.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 29 1993-05-10 étendu par arrêté du 15 octobre 1993 JORF 28 octobre 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 736992000000,
+                  "dateFin": 751248000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

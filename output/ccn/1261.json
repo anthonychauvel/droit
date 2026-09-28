@@ -61630,13 +61630,123 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005722104",
+              "cid": "KALISCTA000005722104",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point",
+              "dateModif": null,
+              "dateDebut": "1988-11-28",
+              "dateFin": "1988-12-16",
+              "sectionConsultee": false,
+              "sections": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALISCTA000005751395",
+                  "cid": "KALISCTA000005751395",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "title": "Salaires applicables à compter du 1er novembre 1988.",
+                  "dateModif": null,
+                  "dateDebut": "1988-11-28",
+                  "dateFin": "1988-12-16",
+                  "sectionConsultee": false,
+                  "sections": [],
+                  "articles": [
+                    {
+                      "executionTime": 0,
+                      "dereferenced": false,
+                      "id": "KALIARTI000005845856",
+                      "cid": "KALIARTI000005845856",
+                      "intOrdre": 42949,
+                      "etat": "ABROGE",
+                      "num": null,
+                      "path": "/KALISCTA000005722104/KALISCTA000005751395/KALIARTI000005845856",
+                      "pathTitle": [
+                        "Valeur du point",
+                        "Salaires applicables à compter du 1er novembre 1988."
+                      ],
+                      "content": "<p></p>   Conformément aux dispositions du second paragraphe de l'accord de salaires 1988 en date du 20 septembre 1987, les organisations signataires ont décidé de porter la valeur du point, au 1er novembre 1988, à 25,76 F (vingt-cinq francs soixante-seize), soit + 3 p. 100 sur le 1er décembre 1987, au lieu de 2,5 p. 100.<p></p><p></p>   Le présent accord fait l'objet d'une demande d'extension dans les conditions fixées par les articles L. 133-8 et suivants du code du travail.<p></p> Cet avenant annule et remplace l'avenant du 14 octobre 1988.<p></p>",
+                      "nota": null,
+                      "comporteLiens": true,
+                      "comporteLiensSP": false,
+                      "modificatorTitle": null,
+                      "modificatorCid": null,
+                      "modificatorDate": null,
+                      "articleVersion": "1.0",
+                      "type": null,
+                      "lstLienModification": [
+                        {
+                          "textCid": "",
+                          "textTitle": "Accord 1988-11-28 étendu par arrêté du 1er février 1989 JORF 1989-02-11",
+                          "linkType": "CREATION",
+                          "linkOrientation": "source",
+                          "articleNum": "",
+                          "articleId": "",
+                          "natureText": "",
+                          "datePubliTexte": null,
+                          "dateSignaTexte": null,
+                          "dateDebutCible": null
+                        }
+                      ],
+                      "lstLienCitation": [
+                        {
+                          "textCid": "",
+                          "textTitle": "Code du travail L133-8",
+                          "linkType": "CITATION",
+                          "linkOrientation": "source",
+                          "articleNum": "",
+                          "articleId": "",
+                          "natureText": "",
+                          "parentCid": null,
+                          "numTexte": "",
+                          "datePubli": null,
+                          "dateDebut": null
+                        }
+                      ],
+                      "conditionDiffere": null,
+                      "historique": null,
+                      "surtitre": "Salaires",
+                      "renvoi": null,
+                      "versionLabel": null,
+                      "infosComplementaires": null,
+                      "infosComplementairesHtml": null,
+                      "infosRestructurationBranche": null,
+                      "infosRestructurationBrancheHtml": null,
+                      "dateDebut": 596678400000,
+                      "dateFin": 598233600000,
+                      "notaSectionsAafficher": null,
+                      "multipleVersions": false
+                    }
+                  ],
+                  "commentaire": null,
+                  "renvoi": "",
+                  "renvoiNum": "",
+                  "notaHtml": null,
+                  "notaSectionsAafficher": []
+                }
+              ],
+              "articles": [],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -61650,13 +61760,109 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005722105",
+              "cid": "KALISCTA000005722105",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point",
+              "dateModif": null,
+              "dateDebut": "1988-12-16",
+              "dateFin": "1989-12-08",
+              "sectionConsultee": false,
+              "sections": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALISCTA000005751396",
+                  "cid": "KALISCTA000005751396",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "title": "Salaires applicables au 1er janvier, 1er juin et 1er septembre 1989.",
+                  "dateModif": null,
+                  "dateDebut": "1988-12-16",
+                  "dateFin": "1989-12-08",
+                  "sectionConsultee": false,
+                  "sections": [],
+                  "articles": [
+                    {
+                      "executionTime": 0,
+                      "dereferenced": false,
+                      "id": "KALIARTI000005845857",
+                      "cid": "KALIARTI000005845857",
+                      "intOrdre": 42949,
+                      "etat": "ABROGE",
+                      "num": null,
+                      "path": "/KALISCTA000005722105/KALISCTA000005751396/KALIARTI000005845857",
+                      "pathTitle": [
+                        "Valeur du point",
+                        "Salaires applicables au 1er janvier, 1er juin et 1er septembre 1989."
+                      ],
+                      "content": "<p></p>   La valeur du point est ainsi fixée pour l'année 1989 :<p></p><p></p>   - au 1er janvier : 26,02 F (+ 1 p. 100 sur le 1er novembre 1988 (vingt-six francs zéro deux).<p></p><p></p>   - au 1er juin : 26,28 F (+ 2 p. 100 sur le 1er novembre 1988) (vingt-six francs vingt-huit).<p></p><p></p>   - au 1er septembre : 26,28 F (+ 2,5 p. 100 sur le 1er novembre 1988)(vingt-six francs quarante).<p></p>",
+                      "nota": null,
+                      "comporteLiens": false,
+                      "comporteLiensSP": false,
+                      "modificatorTitle": null,
+                      "modificatorCid": null,
+                      "modificatorDate": null,
+                      "articleVersion": "1.0",
+                      "type": null,
+                      "lstLienModification": [
+                        {
+                          "textCid": "",
+                          "textTitle": "Accord 1988-12-16 étendu par arrêté du 1er mars 1989 JORF 9 mars 1989",
+                          "linkType": "CREATION",
+                          "linkOrientation": "source",
+                          "articleNum": "",
+                          "articleId": "",
+                          "natureText": "",
+                          "datePubliTexte": null,
+                          "dateSignaTexte": null,
+                          "dateDebutCible": null
+                        }
+                      ],
+                      "lstLienCitation": [],
+                      "conditionDiffere": null,
+                      "historique": null,
+                      "surtitre": "Salaires",
+                      "renvoi": null,
+                      "versionLabel": null,
+                      "infosComplementaires": null,
+                      "infosComplementairesHtml": null,
+                      "infosRestructurationBranche": null,
+                      "infosRestructurationBrancheHtml": null,
+                      "dateDebut": 598233600000,
+                      "dateFin": 629078400000,
+                      "notaSectionsAafficher": null,
+                      "multipleVersions": false
+                    }
+                  ],
+                  "commentaire": null,
+                  "renvoi": "",
+                  "renvoiNum": "",
+                  "notaHtml": null,
+                  "notaSectionsAafficher": []
+                }
+              ],
+              "articles": [],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -61778,13 +61984,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005722107",
+              "cid": "KALISCTA000005722107",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point pour l'année 1990",
+              "dateModif": null,
+              "dateDebut": "1989-12-08",
+              "dateFin": "1990-10-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005845860",
+                  "cid": "KALIARTI000005845860",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005722107/KALIARTI000005845860",
+                  "pathTitle": [
+                    "Valeur du point pour l'année 1990"
+                  ],
+                  "content": "<p></p>   La valeur du point est ainsi fixée pour l'année 1990 :<p></p><p></p> - au 1er janvier : 26,79 F (+ 0,5 p. 100 sur le 31 décembre 1989).<p></p><p></p> - au 1er avril : 27,06 F (+ 1,5 p. 100 sur le 31 décembre 1989).<p></p><p></p> - au 1er juillet : 27,33 F (+ 2,5 p. 100 sur 31 décembre 1989).<p></p><p></p> - au 1er octobre : 27,46 F (+ 3 p. 100 sur 31 décembre 1989).<p></p><p></p>   Les parties conviennent de se réunir en juin 1990 pour étudier la situation en fonction de tous les paramètres qui concernent la valeur du point 1990.<p></p><p></p>   Le salaire minimum est fixé à 5.700 F au 1er janvier 1990.<p></p><p></p>   Le présent accord fait l'objet d'une demande d'extension dans les conditions fixées par les articles L.138-8 et suivants du code du travail.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1989-12-08 étendu par arrêté du 22 février 1990 JORF 7 mars 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L138-8",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 629078400000,
+                  "dateFin": 656294400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
