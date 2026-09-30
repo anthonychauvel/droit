@@ -160,6 +160,11 @@ def titre_est_rh(titre):
     return bool(MOTIF_RH.search(titre or "") or MOTIF_SUJETS.search(titre or ""))
 
 
+AMORCE_JORF = ("travail salarié salariés salariale salariales employeur employeurs "
+               "emploi salaire salaires rémunération cotisations smic congé congés "
+               "sociale apprentissage convention")
+
+
 def rechercher_jorf_par_dates(client, debut, fin, page=1, page_size=100):
     """Recherche /search sur le fonds JORF, bornée par dates de publication.
 
@@ -181,8 +186,12 @@ def rechercher_jorf_par_dates(client, debut, fin, page=1, page_size=100):
                 "typeChamp": "ALL",
                 "operateur": "ET",
                 "criteres": [{
-                    "valeur": "travail",   # amorce large ; le vrai tri RH se
-                                            # fait ensuite sur le titre via MOTIF_RH
+                    # Amorce large ; le vrai tri RH se fait ensuite sur le
+                    # titre (MOTIF_RH + MOTIF_SUJETS). « travail » seul
+                    # laissait passer un décret Sécu, SMIC ou cotisations qui
+                    # ne contenait pas ce mot (30/09/2026) : UN_DES_MOTS =
+                    # n'importe lequel de ces mots suffit.
+                    "valeur": AMORCE_JORF,
                     "typeRecherche": "UN_DES_MOTS",
                     "operateur": "ET",
                 }],
