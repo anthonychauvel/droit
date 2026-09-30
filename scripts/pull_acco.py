@@ -175,6 +175,10 @@ MOTIF_RH = re.compile(
     r"droit [àa] la d[ée]connexion|d[ée]connexion|"
     r"temps de travail|am[ée]nagement du temps|dur[ée]e du travail|"
     r"astreinte|cong[ée]s|classification|"
+    # Sujets du tableau de bord de veille (30/09/2026) -- absents jusqu'ici.
+    r"heures? suppl[ée]mentaires?|heures? compl[ée]mentaires?|contingent|"
+    r"temps partiel|repos compensateur|travail (de nuit|du dimanche|le dimanche)|"
+    r"jours? f[ée]ri[ée]s?|annualisation|modulation du temps|"
     r"pr[ée]voyance|compl[ée]mentaire sant[ée]|mutuelle|retraite",
     re.IGNORECASE)
 
@@ -215,6 +219,11 @@ THEMES_ACCO = [
     "classification rémunération",
     "astreinte",
     "congés",
+    # Sujets du tableau de bord de veille (30/09/2026).
+    "heures supplémentaires",
+    "temps partiel heures complémentaires",
+    "travail de nuit",
+    "travail du dimanche",
 ]
 
 
@@ -252,6 +261,41 @@ def rechercher_acco_par_theme(client, theme, page=1, page_size=50):
         },
     }
     return client.call("/search", body)
+
+
+# Métadonnées d'un accord (30/09/2026). /consult/acco renvoie, en plus du
+# texte, la date, l'entreprise (SIRET, raison sociale), la ou les conventions
+# (IDCC) et les thèmes — tout était jeté jusqu'ici. Sans elles, le tableau de
+# bord de veille ne peut ni dater un accord ni le rattacher à une convention
+# de l'appli. Les noms exacts des champs variant selon les versions de l'API,
+# on garde tout champ SIMPLE (texte, nombre, liste courte) dont le nom
+# ressemble à une métadonnée, jamais le corps du texte.
+_CLES_META = re.compile(r"date|siret|idcc|raison|entreprise|secteur|theme|th[eè]me|"
+                        r"nature|naf|ape|syndic|signataire|conventions?|code|etat|"
+                        r"depot|diffusion|effet|fin|numero|nor", re.I)
+_CLES_TEXTE_ACCO = {"content", "contenu", "texte", "text", "corps", "html", "articles",
+                    "sections", "attachment", "attachments", "fileContent", "pdf"}
+
+
+def extraire_meta_acco(rep):
+    racine = rep.get("acco") if isinstance(rep.get("acco"), dict) else rep
+    meta = {}
+    for k, v in (racine or {}).items():
+        if k in _CLES_TEXTE_ACCO or not _CLES_META.search(k):
+            continue
+        if isinstance(v, (str, int, float)) and v not in ("", None) and len(str(v)) <= 300:
+            meta[k] = v
+        elif isinstance(v, list) and v and len(v) <= 30:
+            simples = []
+            for x in v:
+                if isinstance(x, (str, int, float)):
+                    simples.append(x)
+                elif isinstance(x, dict):
+                    simples.append({kk: vv for kk, vv in x.items()
+                                    if isinstance(vv, (str, int, float)) and len(str(vv)) <= 200})
+            if simples:
+                meta[k] = simples
+    return meta
 
 
 def extraire_accords_recherche(resultat):
@@ -580,9 +624,11 @@ def main():
                 # ("textCid" plante en 500). Repli sur l'extrait si échec.
                 rien_de_neuf = 0
                 texte_complet = ""
+                meta = {}
                 rep = fetch_texte_complet_acco(client, tid)
                 if "_error" not in rep:
                     texte_complet = extraire_texte_complet(rep)
+                    meta = extraire_meta_acco(rep)
                     # Trace : au tout premier accord récupéré, montrer la
                     # structure pour confirmer qu'on extrait bien le texte.
                     if not _trace_faite[0]:
@@ -606,6 +652,8 @@ def main():
                         "source": "consult ACCO (id)" if texte_complet else "extrait recherche",
                     },
                 }
+                if meta:
+                    contenu["meta"] = meta
                 with open(os.path.join(args.out, f"{tid}.json"), "w", encoding="utf-8") as f:
                     json.dump(contenu, f, ensure_ascii=False, indent=2)
                 summary.append({"id": tid, "titre": titre, "status": "ok"})

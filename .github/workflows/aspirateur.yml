@@ -378,6 +378,16 @@ jobs:
         run: |
           python3 scripts/fetch_classification_details.py --ccn-dir output/ccn --max-stubs-par-ccn 3 --budget-appels 1200
 
+      # 30/09/2026 -- texte intégral de TOUT avenant récent (120 jours), quel que
+      # soit son sujet : les 5 étapes ci-dessus ne complètent que salaires / heures
+      # sup / forfait / temps partiel / classification. Sans ça, le tableau de
+      # bord de veille ne lisait que le TITRE des autres avenants. Plafonné à
+      # 300 appels (~6 min) ; ce qui reste passe au run suivant.
+      - name: Compléter les textes récents (tous sujets)
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
+        run: |
+          python3 scripts/fetch_recents_details.py --ccn-dir output/ccn --jours 120 --budget-appels 300 || echo "fetch_recents_details a échoué, pas bloquant"
+
       - name: Récupérer le Code du travail
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |

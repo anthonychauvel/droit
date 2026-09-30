@@ -128,8 +128,23 @@ MOTIF_RH = re.compile(
     re.IGNORECASE)
 
 
+# Sujets suivis par le tableau de bord de veille (30/09/2026). Jusqu'ici, un
+# décret « relatif à la durée du travail » ou « aux heures supplémentaires »
+# ne passait pas MOTIF_RH (aucun de ces mots n'y figurait) : il n'était jamais
+# aspiré, donc jamais signalé. Même liste que les thèmes de mots-cles.json
+# côté tableaudebord ; ajouter ici un nouveau sujet si on en ajoute un là-bas.
+MOTIF_SUJETS = re.compile(
+    r"dur[ée]e (l[ée]gale |maximale |minimale )?du travail|dur[ée]es? maximales?|"
+    r"heures? suppl[ée]mentaires?|heures? compl[ée]mentaires?|contingent|"
+    r"temps partiel|temps de travail|repos (compensateur|quotidien|hebdomadaire|dominical)|"
+    r"travail (de nuit|du dimanche|le dimanche)|jours? f[ée]ri[ée]s?|journ[ée]e de solidarit[ée]|"
+    r"cong[ée]s? pay[ée]s?|compte [ée]pargne.?temps|astreintes?|r[ée]duction du temps de travail|"
+    r"salaire minimum|r[ée]mun[ée]ration minimale|code du travail|salari[ée]s?\b",
+    re.IGNORECASE)
+
+
 def titre_est_rh(titre):
-    return bool(MOTIF_RH.search(titre or ""))
+    return bool(MOTIF_RH.search(titre or "") or MOTIF_SUJETS.search(titre or ""))
 
 
 def rechercher_jorf_par_dates(client, debut, fin, page=1, page_size=100):
