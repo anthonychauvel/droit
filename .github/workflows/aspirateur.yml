@@ -415,6 +415,19 @@ jobs:
             python3 scripts/pull_code_travail.py --articles-file articles_list_css.txt --code-id LEGITEXT000006073189 --out output/code-secu
           fi
 
+      # 30/09/2026 -- une vingtaine d'articles clés hors Code du travail / Sécu
+      # (impôts, transports, rural), listés dans articles_cles_autres_codes.txt.
+      # Quelques secondes : relus en entier à chaque run, le tableau de bord de
+      # veille alerte si leur texte change ou s'ils disparaissent.
+      - name: Récupérer les articles clés des autres codes
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'tout') }}
+        run: |
+          grep -v '^#' articles_cles_autres_codes.txt | grep ';' | cut -d';' -f1,2 | sort -u | while IFS=';' read -r DOSSIER CODEID; do
+            grep -v '^#' articles_cles_autres_codes.txt | awk -F';' -v d="$DOSSIER" '$1==d {print $3}' > /tmp/cles_$DOSSIER.txt
+            python3 scripts/pull_code_travail.py --articles-file /tmp/cles_$DOSSIER.txt --code-id "$CODEID" --out "output/$DOSSIER" \
+              || { echo "articles clés ($DOSSIER) : échec, pas bloquant"; echo "$(date -u +%Y-%m-%dT%H:%MZ) articles-cles-$DOSSIER" >> audits/etapes-en-echec.log; }
+          done
+
       - name: "Récupérer la jurisprudence (Judilibre — chambre sociale)"
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'jurisprudence' || github.event.inputs.cible == 'tout') }}
         run: |
