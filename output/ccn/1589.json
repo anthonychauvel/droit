@@ -14017,13 +14017,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005694120",
+              "cid": "KALISCTA000005694120",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima à compter du 1er juillet 1992.",
+              "dateModif": null,
+              "dateDebut": "1992-06-26",
+              "dateFin": "1993-07-12",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776543",
+                  "cid": "KALIARTI000005776543",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005694120/KALIARTI000005776543",
+                  "pathTitle": [
+                    "Salaires minima à compter du 1er juillet 1992."
+                  ],
+                  "content": "Article 1er.<p></p><p></p>   La valeur des salaires minima est réévaluée de 1,50 p. 100 à compter du 1er juillet 1992.<p></p><p></p>   Les tarifs des fileteurs payés aux pièces sont revalorisés de 1,50 p . 100 au 1er juillet 1992 :<p></p><p></p><p></p>   NIVEAU : Débutant<p></p><p></p>   COEFFICIENT : 100<p></p><p></p>   SALAIRE horaire (en francs) : 34,24<p></p><p></p>   SALAIRE MENSUEL base 169 heures (en francs) : 5 786,56<p></p><p></p><p></p>   NIVEAU : I<p></p><p></p>   COEFFICIENT : 105<p></p><p></p>   SALAIRE horaire (en francs) : 34,82<p></p><p></p>   SALAIRE MENSUEL base 169 heures (en francs) : 5 884,58<p></p><p></p><p></p>   NIVEAU : II<p></p><p></p>   COEFFICIENT : 110<p></p><p></p>   SALAIRE horaire (en francs) : 35,62<p></p><p></p>   SALAIRE MENSUEL base 169 heures (en francs) : 6 019,70<p></p><p></p><p></p>   NIVEAU : III<p></p><p></p>   COEFFICIENT : 115<p></p><p></p>   SALAIRE horaire (en francs) : 36,31<p></p><p></p>   SALAIRE MENSUEL base 169 heures (en francs) : 6 136,39<p></p><p></p><p></p>   NIVEAU : IV<p></p><p></p>   COEFFICIENT : 120<p></p><p></p>   SALAIRE horaire (en francs) : 37,14<p></p><p></p>   SALAIRE MENSUEL base 169 heures (en francs) : 6 276,66<p></p><p></p><p></p>   NIVEAU : V<p></p><p></p>   COEFFICIENT : 140<p></p><p></p>   SALAIRE horaire (en francs) : 40,27<p></p><p></p>   SALAIRE MENSUEL base 169 heures (en francs) : 6 805,63<p></p><p></p><p></p>   NIVEAU : VI<p></p><p></p>   COEFFICIENT : 175<p></p><p></p>   SALAIRE horaire (en francs) : 45,65<p></p><p></p>   SALAIRE MENSUEL base 169 heures (en francs) : 7 714,85<p></p><p></p>Article 2.<p></p><p></p>   En cas d'augmentation du S.M.I.C., la différence existant au 30 juin 1992, soit 0,43 F, entre le taux horaire du salaire minimum interprofessionnel de croissance et celui du coefficient 100 de la grille (débutant) sera maintenue.<p></p>Article 3.<p></p><p></p>   Les parties conviennent lors de la réunion de la commission mixte du 11 décembre 1992 d'examiner l'évolution de la hausse des prix connue des douzes derniers mois. Si l'indice des 295 articles dépassait la hausse des salaires, une négociation aurait lieu pour tenir compte de cette situation.<p></p>Article 4.<p></p> Prime d'ancienneté.<p></p><p></p>   Il est rappelé que, conformément aux dispositions de l'article 2-1 de l'annexe II de la convention collective nationale des mareyeurs-expéditeurs du 15 mai 1990, le taux de la prime d'ancienneté est revalorisé à compter du 1er octobre 1992.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 4 1992-06-26 étendu par arrêté du 1er octobre 1992 JORF octobre 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 709516800000,
+                  "dateFin": 742435200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14057,13 +14131,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005694122",
+              "cid": "KALISCTA000005694122",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima à compter du 1er juillet 1993.",
+              "dateModif": null,
+              "dateDebut": "1993-07-12",
+              "dateFin": "1994-06-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776545",
+                  "cid": "KALIARTI000005776545",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005694122/KALIARTI000005776545",
+                  "pathTitle": [
+                    "Salaires minima à compter du 1er juillet 1993."
+                  ],
+                  "content": "Article 1er.<p></p> La valeur des salaires minima est réévaluée et s'établit comme suit à compter du 1er juillet 1993 :<p></p><p></p> NIVEAU : Débutant<p></p> COEFFICIENT : 100<p></p> SALAIRE horaire (en francs) : 35,29<p></p> SALAIRE MENSUEL base 169 heures (en francs) : 5 964,01<p></p><p></p> NIVEAU : I<p></p> COEFFICIENT : 105<p></p> SALAIRE horaire (en francs) : 35,62<p></p> SALAIRE MENSUEL base 169 heures (en francs) : 6 019,78<p></p><p></p> NIVEAU : II<p></p> COEFFICIENT : 110<p></p> SALAIRE horaire (en francs) : 36,15<p></p> SALAIRE MENSUEL base 169 heures (en francs) : 6 109,35<p></p><p></p> NIVEAU : III<p></p> COEFFICIENT : 115<p></p> SALAIRE horaire (en francs) : 36,67<p></p> SALAIRE MENSUEL base 169 heures (en francs) : 6 197,23<p></p><p></p> NIVEAU : IV<p></p> COEFFICIENT : 120<p></p> SALAIRE horaire (en francs) : 37,51<p></p> SALAIRE MENSUEL base 169 heures (en francs) : 6 339,19<p></p><p></p> NIVEAU : V<p></p> COEFFICIENT : 140<p></p> SALAIRE horaire (en francs) : 40,67<p></p> SALAIRE MENSUEL base 169 heures (en francs) : 6 873,23<p></p><p></p> NIVEAU : VI<p></p> COEFFICIENT : 175<p></p> SALAIRE horaire (en francs) : 46,11<p></p> SALAIRE MENSUEL base 169 heures (en francs) : 7 792,59<p></p><p></p> Les tarifs des fileteurs aux pièces sont réévalués de 1 p.100 à compter du 1er juillet 1993.<p></p> La prime de salissure est portée de 0,35 F à 0,40 F à compter du 1er juillet 1993.<p></p>Article 2.<p></p> Les parties conviennent de se rencontrer le 3 décembre 1993.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 5 1993-07-12 étendu par arrêté du 6 octobre 1993 JORF 14 octobre 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 742435200000,
+                  "dateFin": 771206400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14077,13 +14225,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005694124",
+              "cid": "KALISCTA000005694124",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima à compter du 1er juillet 1994.",
+              "dateModif": null,
+              "dateDebut": "1994-06-10",
+              "dateFin": "1995-06-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776547",
+                  "cid": "KALIARTI000005776547",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005694124/KALIARTI000005776547",
+                  "pathTitle": [
+                    "Salaires minima à compter du 1er juillet 1994."
+                  ],
+                  "content": "Article 1er    La valeur des salaires minimaux est réévaluée et s'établit comme suit, à compter du 1er juillet 1994 :<p></p><p></p><p></p>   (1) = Niveau<p></p><p></p>   (2) = Coefficient<p></p><p></p>   (3) = Salaire horaire<p></p><p></p>   (4) = Salaire mensuel<p></p><p></p><TABLE><TR><TD> (1)</TD><TD> (2) </TD><TD>  (3) </TD><TD>    (4)    </TD></TR><TR><TD>déb.</TD><TD> 100 </TD><TD> 36,00</TD><TD> 6.084,00 F</TD></TR><TR><TD>  I </TD><TD> 105 </TD><TD> 36,32</TD><TD> 6.138,08 F</TD></TR><TR><TD> II </TD><TD> 110 </TD><TD> 36,85</TD><TD> 6.227,65 F</TD></TR><TR><TD>III </TD><TD> 115 </TD><TD> 37,37</TD><TD> 6.315,53 F</TD></TR><TR><TD> IV </TD><TD> 120 </TD><TD> 38,21</TD><TD> 6.457,49 F</TD></TR><TR><TD> V  </TD><TD> 140 </TD><TD> 41,37</TD><TD> 6.991,53 F</TD></TR><TR><TD> VI </TD><TD> 175 </TD><TD> 46,81</TD><TD> 7.910,89 F</TD></TR><TR><TD> VI </TD><TD> 175 </TD><TD> 46,81</TD><TD> 7.910,89 F</TD></TR></TABLE><p></p><p></p>   Les tarifs de fileteurs aux pièces sont réévalués de 1,87 p. 100 à compter du 1er juillet 1994.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 6 1994-06-10 BO conventions collectives 94-26, étendu par arrêté du 3 octobre 1994 JORF 12 octobre 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II : SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 771206400000,
+                  "dateFin": 804124800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

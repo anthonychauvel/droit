@@ -17163,13 +17163,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693923",
+              "cid": "KALISCTA000005693923",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et prime annuelle à compter du 1er janvier 1999.",
+              "dateModif": null,
+              "dateDebut": "1999-02-25",
+              "dateFin": "2001-01-11",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776020",
+                  "cid": "KALIARTI000005776020",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005693923/KALIARTI000005776020",
+                  "pathTitle": [
+                    "Salaires et prime annuelle à compter du 1er janvier 1999."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   S'accordant à souhaiter privilégier les négociations régionales des évolutions de salaires réels, sans préjudice de l'application des dispositions prévues aux articles L. 132-24, L. 132-28, L. 132-29 du code du travail, à l'issue d'une commission paritaire qui s'est tenue le 25 février 1999, réunissant le groupement de l'industrie de la chaussure des Pays de Loire, la CFE-CGC, la CFTC et la CGT-FO, il est conclu l'accord ci-après, valable pour une période de 12 mois, à compter du 1er janvier 1999 :<p></p> Article 1er<p></p><p></p>   A partir du 1er janvier 1999 et sauf accord particulier pour tout nouvel embauché au cours de l'année précédente, les salaires bruts des personnels d'encadrement dont le coefficient est égal ou supérieur à 200 sont augmentés de 0,8 % (quatre-vingts centièmes).<p></p> Article 2<p></p><p></p>   La prime annuelle pour l'année 1999 reste fixée à 5 000 F (cinq mille francs). Elle devra être versée par moitié au départ en congés (1/2) et en fin d'année (1/2) selon les modalités fixées par l'avenant n° 37 de la convention collective nationale de l'industrie de la chaussure, signé le 19 avril 1978, et par l'accord régional du 27 juin 1980, complété par son avenant du 19 janvier 1989.<p></p> Article 3<p></p><p></p>   Au cas où, au cours de l'année 1999, l'indice des prix INSEE dépasserait 100,80 pour un indice 100 au 31 décembre 1998, les parties signataires se rencontreraient au cours du mois suivant la constatation.<p></p> Article 4<p></p><p></p>   La présente convention salariale ne s'applique pas aux entreprises ayant signé, par anticipation, des accords d'aménagement et de réduction du temps de travail dans le cadre de la loi Aubry incluant des dispositions particulières quant à l'évolution des salaires en 1999.<p></p> Article 5<p></p><p></p>   Une nouvelle rencontre consacrée aux salaires du personnel encadrement, par rapport à l'application des 35 heures, aura lieu entre juillet et octobre 1999.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1999-02-25 BO conventions collectives 99-13 étendu par arrêté du 17 mai 1999 JORF 28 mai 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-24, L132-28, L132-29",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES cadres, pays de la Loire",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 919900800000,
+                  "dateFin": 979171200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -17203,13 +17291,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693926",
+              "cid": "KALISCTA000005693926",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à compter du 1er janvier 1999.",
+              "dateModif": null,
+              "dateDebut": "2001-01-19",
+              "dateFin": "2001-12-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776022",
+                  "cid": "KALIARTI000005776022",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005693926/KALIARTI000005776022",
+                  "pathTitle": [
+                    "Salaires à compter du 1er janvier 1999."
+                  ],
+                  "content": "<p></p>   Entre les soussignés,<p></p><p></p>   S'accordant à souhaiter privilégier les négociations régionales des évolutions de salaires réels, sans préjudice de l'application des dispositions prévues aux articles L. 132-24, L. 132-28, L. 132-29 du code du travail ;<p></p><p></p>   A l'issue d'une commission paritaire qui s'est tenue le 19 janvier 2001, réunissant le groupement de l'industrie de la chaussure des Pays de la Loire, la CFDT, la CFTC, la CGT et FO, il est conclu l'accord ci-après, valable à compter du 1er janvier 2001 :<p></p> Article 1er<p></p><p></p>   A partir du 1er janvier 2001, les salaires réels des ouvriers et employés dont le coefficient est inférieur à 200 seront majorés de 1 %.<p></p><p></p>   Les bases ou autres éléments pour le calcul de la rémunération aux pièces, aux points, à la prime ou au rendement seront majorés du même taux.<p></p><p></p>   La rémunération horaire, figurant en valeur absolue et sur laquelle les éléments variables de rémunération ne s'appliquent pas, sera portée à 6,60 F ou à 7,38 F selon que l'entreprise a procédé ou non à l'article 2 de l'accord régional du 22 janvier 1982.<p></p> Article 2<p></p><p></p>   A partir du 1er juillet 2001, les salaires réels des ouvriers et employés dont le coefficient est inférieur à 200 seront majorés de 0,8 %.<p></p><p></p>   Les bases ou autres éléments pour le calcul de la rémunération aux pièces, aux points, à la prime ou au rendement seront majorés du même taux.<p></p><p></p>   La rémunération horaire, figurant en valeur absolue et sur laquelle les éléments variables de rémunération ne s'appliquent pas, sera portée à 6,65 F ou à 7,44 F selon que l'entreprise a procédé ou non à l'article 2 de l'accord régional du 22 janvier 1982.<p></p> Article 3<p></p><p></p>   La prime annuelle pour l'année 2001 reste fixée à 5 000 F. Elle devra être versée par moitié au départ en congés (1/2) et en fin d'année (1/2) selon les modalités fixées par l'avenant n° 37 de la convention collective nationale de l'industrie de la chaussure, signé le 19 avril 1978 et par l'accord régional du 27 juin 1980, complété par son avenant du 19 janvier 1989.<p></p> Article 4<p></p><p></p>   Au cas où, au cours de l'année 2001, l'indice des prix INSEE dépasserait 101,80 pour un indice 100 au 31 décembre 2000, les parties signataires se rencontreraient au cours du mois suivant la constatation.<p></p> Article 5<p></p><p></p>   La présente convention s'applique à toutes les entreprises quel que soit l'horaire hebdomadaire pratiqué dans l'entreprise, à condition toutefois de ne pas contredire les dispositions salariales particulières contenues dans un accord RTT.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2001-01-19 en vigueur le 1er janvier 2001 BO conventions collectives 2001-10 étendu par arrêté du 19 juin 2001 JORF 30 juin 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES Ouvriers - Employés (Pays de la Loire)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 979862400000,
+                  "dateFin": 1008979200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -17223,13 +17385,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693927",
+              "cid": "KALISCTA000005693927",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et prime annuelle à compter du 1er janvier 1999.",
+              "dateModif": null,
+              "dateDebut": "2001-01-22",
+              "dateFin": "2001-12-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776023",
+                  "cid": "KALIARTI000005776023",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005693927/KALIARTI000005776023",
+                  "pathTitle": [
+                    "Salaires et prime annuelle à compter du 1er janvier 1999."
+                  ],
+                  "content": "Entre les soussignés,<p></p><p></p>   S'accordant à souhaiter privilégier les négociations régionales des évolutions de salaires réels, sans préjudice de l'application des dispositions prévues aux articles L. 132-24, L. 132-28, L. 132-29 du code du travail ;<p></p><p></p>   à l'issue d'une commission paritaire qui s'est tenue le 22 janvier 2001, réunissant le groupement de l'industrie de la chaussure des Pays de la Loire, la CFE-CGC, la CFTC et la CGT-FO,<p></p><p></p>   il est conclu l'accord ci-après, valable pour une période de 12 mois, à compter du 1er janvier 2001 :<p></p> Article 1er<p></p><p></p>   A partir du 1er janvier 2001 et sauf accord particulier pour tout nouvel embauché au cours de l'année précédente, les salaires bruts des personnels d'encadrement dont le coefficient est égal ou supérieur à 200, sont augmentés de 1,80 %.<p></p> Article 2<p></p><p></p>   La prime annuelle pour l'année 2001 reste fixée à 5 000 F.<p></p><p></p>   Elle devra être versée par moitié au départ en congés (1/2) et en fin d'année (1/2) selon les modalités fixées par l'avenant n° 37 de la convention collective nationale de l'industrie de la chaussure, signé le 19 avril 1978 et par l'accord régional du 27 juin 1980, complété par son avenant du 19 janvier 1989.<p></p> Article 3<p></p><p></p>   Au cas où, au cours de l'année 2001, l'indice des prix INSEE dépasserait 101,80 pour un indice 100 au 31 décembre 2000, les parties signataires se rencontreraient au cours du mois suivant la constatation.<p></p> Article 4<p></p><p></p>   La présente convention s'applique à toutes les entreprises quel que soit l'horaire hebdomadaire pratiqué dans l'entreprise, à condition, toutefois, de ne pas contredire les dispositions salariales particulières contenues dans un accord RTT.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2001-01-22 en vigueur le 1er janvier 2001 BO conventions collectives 2001-10 étendu par arrêté du 19 juin 2001 JORF 30 juin 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-24, L132-28, L132-29",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES Cadres (Pays de la Loire)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 980121600000,
+                  "dateFin": 1008979200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

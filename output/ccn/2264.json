@@ -16797,13 +16797,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005704645",
+              "cid": "KALISCTA000005704645",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Grilles de salaires des cadres (position III) - Déroulement de carrière",
+              "dateModif": null,
+              "dateDebut": "2002-04-18",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005802943",
+                  "cid": "KALIARTI000005802943",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005704645/KALIARTI000005802943",
+                  "pathTitle": [
+                    "Grilles de salaires des cadres (position III) - Déroulement de carrière"
+                  ],
+                  "content": "<p></p><p><table><tbody><tr><td></td><td>0 - 1 AN </td><td>1 - 2 ANS </td></tr><tr><td></td><td>Coef. </td><td>SALAIRE </td><td>RAG </td><td>Coef. </td><td>SALAIRE </td><td>RAG </td></tr><tr><td></td><td></td><td>mensuel </td><td></td><td></td><td>mensuel </td><td></td></tr><tr><td>A-300 </td><td>300 </td><td>1 923,00 </td><td>24 229,80 </td><td>303 </td><td>1 942,23 </td><td>24 472,10</td></tr><tr><td>B-380 </td><td>380 </td><td>2 435,80 </td><td>30 691,08 </td><td>384 </td><td>2 461,44 </td><td>31 014,14</td></tr><tr><td>C-425 </td><td>425 </td><td>2 724,25 </td><td>34 325,55 </td><td>429 </td><td>2 749,89 </td><td>34 648,61</td></tr><tr><td>sup-525</td><td>525 </td><td>3 365,25 </td><td>42 402,15 </td><td>530 </td><td>3 397,30 </td><td>42 805,98</td></tr></tbody></table></p><p><table><tbody><tr><td></td><td>2 - 3 ANS </td></tr><tr><td></td><td>Coef. </td><td>SALAIRE </td><td>RAG </td></tr><tr><td></td><td></td><td>mensuel </td><td></td></tr><tr><td>A-300 </td><td>306 </td><td>1 961,46 </td><td>24 714,40 </td></tr><tr><td>B-380 </td><td>388 </td><td>2 487,08 </td><td>31 337,21 </td></tr><tr><td>C-425 </td><td>434 </td><td>2 781,94 </td><td>35 052,44 </td></tr><tr><td>sup-525</td><td>536 </td><td>3 435,76 </td><td>43 290,58 </td></tr></tbody></table></p><p><table><tbody><tr><td></td><td>3 - 4 ANS </td><td>4 - 5 ANS </td></tr><tr><td></td><td>Coef. </td><td>SALAIRE </td><td>RAG </td><td>Coef. </td><td>SALAIRE </td><td>RAG </td></tr><tr><td></td><td></td><td>mensuel </td><td></td><td></td><td>mensuel </td><td></td></tr><tr><td>A-300 </td><td>309 </td><td>1 980,69 </td><td>24 956,69 </td><td>312 </td><td>1 999,92 </td><td>25 198,99</td></tr><tr><td>B-380 </td><td>392 </td><td>2 512,72 </td><td>31 660,27 </td><td>395 </td><td>2 531,95 </td><td>31 902,57</td></tr><tr><td>C-425 </td><td>438 </td><td>2 807,58 </td><td>35 375,51 </td><td>442 </td><td>2 833,22 </td><td>35 698,57</td></tr><tr><td>sup-525</td><td>541 </td><td>3 467,81 </td><td>43 694,41 </td><td>546 </td><td>3 499,86 </td><td>44 098,24</td></tr></tbody></table></p><p><table><tbody><tr><td></td><td>5 - 6 ANS </td></tr><tr><td></td><td>Coef. </td><td>SALAIRE </td><td>RAG </td></tr><tr><td></td><td></td><td>mensuel </td><td></td></tr><tr><td>A-300 </td><td>315 </td><td>2 019,15 </td><td>25 441,29 </td></tr><tr><td>B-380 </td><td>399 </td><td>2 557,59 </td><td>32 225,63 </td></tr><tr><td>C-425 </td><td>447 </td><td>2 865,27 </td><td>36 102,40 </td></tr><tr><td>sup-525</td><td>552 </td><td>3 538,32 </td><td>44 582,83 </td></tr></tbody></table></p><p><table><tbody><tr><td></td><td>6 - 7 ANS </td><td>7 - 8 ANS </td></tr><tr><td></td><td>Coef. </td><td>SALAIRE </td><td>RAG </td><td>Coef. </td><td>SALAIRE </td><td>RAG </td></tr><tr><td></td><td></td><td>mensuel </td><td></td><td></td><td>mensuel </td><td></td></tr><tr><td>A-300 </td><td>318 </td><td>2 038,38 </td><td>25 683,59 </td><td>322 </td><td>2 064,02 </td><td>26 006,65</td></tr><tr><td>B-380 </td><td>403 </td><td>2 583,23 </td><td>32 548,70 </td><td>407 </td><td>2 608,87 </td><td>32 871,76</td></tr><tr><td>C-425 </td><td>451 </td><td>2 890,91 </td><td>36 425,47 </td><td>456 </td><td>2 922,96 </td><td>36 829,30</td></tr><tr><td>sup-525</td><td>557 </td><td>3 570,37 </td><td>44 986,66 </td><td>563 </td><td>3 608,83 </td><td>45 471,26</td></tr></tbody></table></p><p><table><tbody><tr><td></td><td>8 - 9 ANS </td></tr><tr><td></td><td>Coef. </td><td>SALAIRE </td><td>RAG </td></tr><tr><td></td><td></td><td>mensuel </td><td></td></tr><tr><td>A-300 </td><td>325 </td><td>2 083,25 </td><td>26 248,95 </td></tr><tr><td>B-380 </td><td>411 </td><td>2 634,51 </td><td>31 194,83 </td></tr><tr><td>C-425 </td><td>460 </td><td>2 948,60 </td><td>37 152,36 </td></tr><tr><td>sup-525</td><td>567 </td><td>3 634,47 </td><td>45 794,32 </td></tr></tbody></table></p><p><table><tbody><tr><td></td><td>9 - 10 ANS </td><td>10-11 ANS </td></tr><tr><td></td><td>Coef. </td><td>SALAIRE </td><td>RAG </td><td>Coef. </td><td>SALAIRE </td><td>RAG </td></tr><tr><td></td><td></td><td>mensuel </td><td></td><td></td><td>mensuel </td><td></td></tr><tr><td>A-300 </td><td>328 </td><td>2 102,48 </td><td>26 491,25 </td><td>331 </td><td>2 121,71 </td><td>26 733,55</td></tr><tr><td>B-380 </td><td>416 </td><td>2 666,56 </td><td>33 598,66 </td><td>420 </td><td>2 692,20 </td><td>33 921,72</td></tr><tr><td>C-425 </td><td>465 </td><td>2 980,65 </td><td>37 556,19 </td><td>469 </td><td>3 006,29 </td><td>37 879,25</td></tr><tr><td>sup-525</td><td>574 </td><td>3 679,34 </td><td>46 359,68 </td><td>580 </td><td>3 717,80 </td><td>46 844,28</td></tr></tbody></table></p><p><table><tbody><tr><td></td><td>11-12 ANS </td></tr><tr><td></td><td>Coef. </td><td>SALAIRE </td><td>RAG </td></tr><tr><td></td><td></td><td>mensuel </td><td></td></tr><tr><td>A-300 </td><td>335 </td><td>2 147,35 </td><td>27 056,61 </td></tr><tr><td>B-380 </td><td>424 </td><td>2 717,84 </td><td>34 244,78 </td></tr><tr><td>C-425 </td><td>474 </td><td>3 038,34 </td><td>38 283,08 </td></tr><tr><td>sup-525</td><td>586 </td><td>3 756,26 </td><td>47 328,88 </td></tr></tbody></table></p><p><table><tbody><tr><td></td><td>12-14 ANS </td><td>14-16 ANS </td></tr><tr><td></td><td>Coef. </td><td>SALAIRE </td><td>RAG </td><td>Coef. </td><td>SALAIRE </td><td>RAG </td></tr><tr><td></td><td></td><td>mensuel </td><td></td><td></td><td>mensuel </td><td></td></tr><tr><td>A-300 </td><td>338 </td><td>2 166,58 </td><td>27 298,91 </td><td>341 </td><td>2 185,81 </td><td>27 541,21</td></tr><tr><td>B-380 </td><td>428 </td><td>2 743,48 </td><td>34 567,85 </td><td>432 </td><td>2 769,12 </td><td>34 890,91</td></tr><tr><td>C-425 </td><td>479 </td><td>3 070,39 </td><td>36 686,91 </td><td>484 </td><td>3 102,44 </td><td>39 090,74</td></tr><tr><td>sup-525</td><td>592 </td><td>3 794,72 </td><td>47 813,47 </td><td>597 </td><td>3 826,77 </td><td>48 217,30</td></tr></tbody></table></p><p><table><tbody><tr><td></td><td>16-19 ANS </td></tr><tr><td></td><td>Coef. </td><td>SALAIRE </td><td>RAG </td></tr><tr><td></td><td></td><td>mensuel </td><td></td></tr><tr><td>A-300 </td><td>345 </td><td>2 211,45 </td><td>27 864,27 </td></tr><tr><td>B-380 </td><td>437 </td><td>2 801,17 </td><td>35 294,74 </td></tr><tr><td>C-425 </td><td>489 </td><td>3 134,49 </td><td>39 494,57 </td></tr><tr><td>sup-525</td><td>603 </td><td>3 865,23 </td><td>48 701,90 </td></tr></tbody></table></p><p><table><tbody><tr><td></td><td>19-22 ANS </td><td>22-26 ANS </td></tr><tr><td></td><td>Coef. </td><td>SALAIRE </td><td>RAG </td><td>Coef. </td><td>SALAIRE </td><td>RAG </td></tr><tr><td></td><td></td><td>mensuel </td><td></td><td></td><td>mensuel </td><td></td></tr><tr><td>A-300 </td><td>348 </td><td>2 230,68 </td><td>28 106,57 </td><td>352 </td><td>2 256,32 </td><td>28 429,63</td></tr><tr><td>B-380 </td><td>441 </td><td>2 826,81 </td><td>35 617,81 </td><td>446 </td><td>2 858,86 </td><td>36 021,64</td></tr><tr><td>C-425 </td><td>493 </td><td>3 160,13 </td><td>39 817,64 </td><td>498 </td><td>3 192,18 </td><td>40 221,47</td></tr><tr><td>sup-525</td><td>610 </td><td>3 910,10 </td><td>49 267,26 </td><td>616 </td><td>3 948,56 </td><td>49 751,86</td></tr></tbody></table></p><p><table><tbody><tr><td></td><td>26-30 ANS </td><td>supérieur à 30 ANS </td></tr><tr><td></td><td>Coef. </td><td>SALAIRE </td><td>RAG </td><td>Coef. </td><td>SALAIRE </td><td>RAG </td></tr><tr><td></td><td></td><td>mensuel </td><td></td><td></td><td>mensuel </td><td></td></tr><tr><td>A-300 </td><td>355 </td><td>2 275,55 </td><td>28 671,93 </td><td>359 </td><td>2 301,19 </td><td>28 994,99</td></tr><tr><td>B-380 </td><td>450 </td><td>2 884,50 </td><td>36 344,70 </td><td>455 </td><td>2 916,55 </td><td>36 748,53</td></tr><tr><td>C-425 </td><td>503 </td><td>3 224,23 </td><td>40 625,30 </td><td>508 </td><td>3 256,28 </td><td>41 029,13</td></tr><tr><td>sup-525</td><td>622 </td><td>3 987,02 </td><td>50 236,45 </td><td>628 </td><td>4 025,48 </td><td>50 721,05</td></tr></tbody></table></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Convention collective nationale 2002-04-18 étendue par arrêté du 29 octobre 2003 JORF 15 novembre 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1019088000000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
