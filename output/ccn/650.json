@@ -5915,13 +5915,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717828",
+              "cid": "KALISCTA000005717828",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème d'appointements annuels minimaux pour 1987.",
+              "dateModif": null,
+              "dateDebut": "1986-12-16",
+              "dateFin": "1987-12-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836258",
+                  "cid": "KALIARTI000005836258",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005717828/KALIARTI000005836258",
+                  "pathTitle": [
+                    "Barème d'appointements annuels minimaux pour 1987."
+                  ],
+                  "content": "<p></p>   Article 1 - Champ d'application.<p></p><p></p><p></p>   Le présent accord, établi en vertu de l'article L. 132-2 du code du travail, s'applique aux entreprises des industries de la production et de la transformation des métaux définies par l'annexe I de la convention collective nationale des ingénieurs et cadres de la métallurgie du 13 mars 1972 modifiée le 12 septembre 1983.<p></p><p></p><p></p>   Article 2 : Barème d'appointements annuels minimaux pour 1987.<p></p><p></p><p></p>   Le barème des appointements minima garantis en 1987 pour une durée annuelle correspondant à un horaire de travail mensuel de 169 heures, est le suivant :<p></p><p></p><p></p>   I. - Position I<p></p><p></p>   Années de début :<p></p><p></p>   - 21 ans : 69.060 F. <p></p><p></p>   - 22 ans : 78.268 F.  <p></p><p></p>   - 23 ans et au-delà : 87.476 F. <p></p><p></p>   Majoration par année d'expérience acquise au-delà de 23 ans, les conditions prévues à l'article 21 de la convention collective nationale des ingénieurs et cadres de la métallurgie, dans la limite de trois périodes d'un an : 9.208 F.<p></p><p></p>   II.  - Position II<p></p><p></p>   Position de début : 115.100 F.    Après trois ans en position II dans l'entreprise : 124.308 F.<p></p><p></p>   Après une nouvelle période de 3 ans : 131.214 F.<p></p><p></p>   Après une nouvelle période de 3 ans : 138.120 F.<p></p><p></p>   Après une nouvelle période de 3 ans : 143.875 F.<p></p><p></p>   Après une nouvelle période de 3 ans : 149.630 F. <p></p><p></p>   Après une nouvelle période de 3 ans : 155.385 F.<p></p><p></p><p></p>   III. - Position III<p></p><p></p>   Position repère III A : 155.385 F. <p></p><p></p>   Position repère III B : 207.180 F.<p></p><p></p>   Position repère III C : 276.240 F. <p></p><p></p>   Le barème ci-dessus fixant des garanties annuelles d'appointements minimaux pour la durée du travail considérée, ses valeurs seront applicables pro rata temporis en cas de survenance en cours d'année d'une entrée en fonction, d'une année d'expérience en position I, d'une progression de l'ancienneté requise en position II, d'un changement de classement, d'un départ de l'entreprise, ainsi qu'en cas de remplacement provisoire dans les conditions de l'article 25 de la convention collective nationale des ingénieurs et cadres de la métallurgie.<p></p><p></p><p></p>   Article 3 :<p></p><p></p><p></p>   S'agissant d'appointements annuels minimaux, la vérification du compte d'un ingénieur ou cadre interviendra en fin d'année ou, en cas de départ de l'entreprise en cours d'année, à la fin de son contrat de travail.<p></p><p></p><p></p>   Article 4 :<p></p><p></p><p></p>   En ce qui concerne les salaires réels, jusqu'à la fin de 1987, l'U.I.M.M. demande aux entreprises d'appliquer à la moyenne des appointements des ingénieurs et cadres les garanties d'augmentations moyennes prévues par les solutions intervenues collectivement pour les autres catégories.<p></p><p></p><p></p>   Article 5 :<p></p><p></p><p></p>   Le présent accord, établi en fonction des conditions économiques connues à la date de sa conclusion, a été fait en un nombre suffisant d'exemplaires pour remise à chacune des organisations signataires et dépôt dans les conditions prévues par l'article L. 132-10 du code du travail.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1986-12-16 étendu par arrêté du 24 février 1987 JORF 5 mars 1987",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-2, L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 535075200000,
+                  "dateFin": 567043200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -5935,13 +6023,88 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717829",
+              "cid": "KALISCTA000005717829",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème d'appointements annuels minimaux pour 1988.",
+              "dateModif": null,
+              "dateDebut": "1987-12-21",
+              "dateFin": "1988-12-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836259",
+                  "cid": "KALIARTI000005836259",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005717829/KALIARTI000005836259",
+                  "pathTitle": [
+                    "Barème d'appointements annuels minimaux pour 1988."
+                  ],
+                  "content": "   Article 1er.<p></p><p></p>    Champ d'application.<p></p><p></p>    Le présent accord, établi en vertu de l'article L. 132-2 du code du travail, s'applique aux entreprises des industries de la production et de la transformation des métaux définies par l'annexe I de la convention collective nationale des ingénieurs et cadres de la métallurgie du 13 mars 1972 modifiée le 12 septembre 1983.<p></p><p></p>    Article 2<p></p><p></p>    Barème d'appointements annuels minimaux pour 1988<p></p>    Le barème des appointements minima garantis en 1988 pour une durée annuelle correspondant à un horaire de travail mensuel de 169 heures est le suivant :<p></p><p></p>    I. - POSITION I<p></p><p></p>    Années de début :<p></p>    21 ans : 70.800 F.<p></p>    22 ans : 80.240 F.<p></p>    23 ans et au-delà : 89.680 F.<p></p>    Majoration par année d'expérience acquise au-delà de 23 ans, dans les conditions prévues à l'article 21 de la convention collective nationale des ingénieurs et cadres de la métallurgie, dans la limite de trois périodes d'un an : 9.440 F. <p></p>   II. - POSITION II <p></p><p></p>    Position de début : 118.000 F.<p></p>    Après trois ans en position II dans l'entreprise : 127.440 F.<p></p>    Après une nouvelle période de 3 ans : 134.520 F.<p></p>    Après une nouvelle période de 3 ans : 141.600 F.<p></p>    Après une nouvelle période de 3 ans : 147.500 F.<p></p>    Après une nouvelle période de 3 ans : 153.400 F.<p></p>    Après une nouvelle période de 3 ans : 159.300 F.<p></p><p></p>    III. - POSITION III<p></p><p></p>    Position repère III A : 159.300 F.<p></p>    Position repère III B : 212.400 F.<p></p>    Position repère III C : 283.200 F.<p></p><p></p>    Le barème ci-dessus fixant des garanties annuelles d'appointements minima pour la durée du travail considérée, ses valeurs seront applicables prorata temporis en cas de survenance en cours d'année d'une entrée en fonction, d'une année d'expérience en position I, d'une progression de l'ancienneté requise en position II, d'un changement de classement, d'un départ de l'entreprise, ainsi qu'en cas de remplacement provisoire dans les conditions de l'article 25 de la convention collective nationale des ingénieurs et cadres de la métallurgie. <p></p>   Article 3<p></p><p></p>    S'agissant d'appointements annuels minimaux, la vérification du compte d'un ingénieur ou cadre interviendra en fin d'année ou, en cas de départ de l'entreprise en cours d'année, à la fin de son contrat de Travail.<p></p><p></p>    Article 4<p></p><p></p>    En ce qui concerne les salaires réels jusqu'à la fin de 1988, l'U.I.M.M. demande aux entreprises d'appliquer à la moyenne des appointements des ingénieurs et cadres les garanties d'augmentations moyennes prévues par les solutions intervenues collectivement pour les autres catégories.<p></p><p></p>    Article 5<p></p><p></p>    Le présent accord, défini en fonction des conditions économiques connues à la date de sa conclusion, a été fait en nombre suffisant d'exemplaires pour remise à chacune des organisations signataires et dépôt dans les conditions prévues par l'article L. 132-10 du code du travail.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-2, L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 567043200000,
+                  "dateFin": 597628800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -5955,13 +6118,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005717830",
+              "cid": "KALISCTA000005717830",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "*Salaires pour 1989*",
+              "dateModif": null,
+              "dateDebut": "1988-12-09",
+              "dateFin": "1989-12-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005836260",
+                  "cid": "KALIARTI000005836260",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005717830/KALIARTI000005836260",
+                  "pathTitle": [
+                    "*Salaires pour 1989*"
+                  ],
+                  "content": "   Article 1er.<p></p><p></p>    Champ d'application.<p></p><p></p>    Le présent accord, établi en vertu de l'article L. 132-2 du code du travail, s'applique aux entreprises des industries de la production et de la transformation des métaux définies par l'annexe I de la convention collective nationale des ingénieurs et cadres de la métallurgie du 13 mars 1972 modifiée le 12 septembre 1983.<p></p><p></p>    Article 2<p></p><p></p>    Barème d'appointements annuels minimaux pour 1989<p></p>    Le barème des appointements minima garantis en 1989 pour une durée annuelle correspondant à un horaire de travail mensuel de 169 heures est le suivant :<p></p><p></p>    I. - POSITION I<p></p><p></p>    Années de début :<p></p>    21 ans : 73.020 F.<p></p>    22 ans : 82.756 F.<p></p>    23 ans et au-delà : 92.492 F.<p></p>    Majoration par année d'expérience acquise au-delà de 23 ans, dans les conditions prévues à l'article 21 de la convention collective nationale des ingénieurs et cadres de la métallurgie, dans la limite de trois périodes d'un an : 9.736 F. <p></p>   II. - POSITION II <p></p><p></p>    Position de début : 121.700 F.<p></p>    Après trois ans en position II dans l'entreprise : 131.436 F.<p></p>    Après une nouvelle période de 3 ans : 138.738 F.<p></p>    Après une nouvelle période de 3 ans : 146.040 F.<p></p>    Après une nouvelle période de 3 ans : 152.125 F.<p></p>    Après une nouvelle période de 3 ans : 158.210 F.<p></p>    Après une nouvelle période de 3 ans : 164.295 F.<p></p><p></p>    III. - POSITION III<p></p><p></p>    Position repère III A : 164.295 F.<p></p>    Position repère III B : 219.060 F.<p></p>    Position repère III C : 292.080 F.<p></p><p></p>    Le barème ci-dessus fixant des garanties annuelles d'appointements minima pour la durée du travail considérée, ses valeurs seront applicables prorata temporis en cas de survenance en cours d'année d'une entrée en fonction, d'une année d'expérience en position I, d'une progression de l'ancienneté requise en position II, d'un changement de classement, d'un départ de l'entreprise, ainsi qu'en cas de remplacement provisoire dans les conditions de l'article 25 de la convention collective nationale des ingénieurs et cadres de la métallurgie. <p></p>   Article 3<p></p><p></p>    S'agissant d'appointements annuels minimaux, la vérification du compte d'un ingénieur ou cadre interviendra en fin d'année ou, en cas de départ de l'entreprise en cours d'année, à la fin de son contrat de Travail.<p></p><p></p>    Article 4<p></p><p></p>    En ce qui concerne les salaires réels jusqu'à la fin de 1989, l'U.I.M.M. demande aux entreprises d'appliquer à la moyenne des appointements des ingénieurs et cadres les garanties d'augmentations moyennes prévues par les solutions intervenues collectivement pour les autres catégories.<p></p><p></p>    Article 5<p></p><p></p>    Le présent accord, défini en fonction des conditions économiques connues à la date de sa conclusion, a été fait en nombre suffisant d'exemplaires pour remise à chacune des organisations signataires et dépôt dans les conditions prévues par l'article L. 132-10 du code du travail.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1988-12-09 étendu par arrêté du 1er mars 1989 JORF 9 mars 1989",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-2, L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 597628800000,
+                  "dateFin": 628905600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -6824,13 +6824,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702866",
+              "cid": "KALISCTA000005702866",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires mensuels minima des ouvriers à compter du 1er octobre 1990",
+              "dateModif": null,
+              "dateDebut": "1990-10-16",
+              "dateFin": "1993-04-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798681",
+                  "cid": "KALIARTI000005798681",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702866/KALIARTI000005798681",
+                  "pathTitle": [
+                    "Salaires mensuels minima des ouvriers à compter du 1er octobre 1990"
+                  ],
+                  "content": "<p></p>   En vertu du 23e avenant du 16 octobre 1990 à la convention collective nationale du 17 février 1982, les salaires mensuels minima des ouvriers s'établissent comme suit à partir du 1er octobre 1990, pour une durée hebdomadaire de travail de trente-neuf heures :<p></p><p></p><p></p>   Catégorie : I<p></p><p></p>   Fourchette de coefficients :<p></p> 150 à 159<p></p><p></p>   Salaire minimum :<p></p> 4.216 F à 4.327 F<p></p><p></p><p></p>   Catégorie : II<p></p><p></p>   Fourchette de coefficients :<p></p> 156 à 168<p></p><p></p>   Salaire minimum :<p></p> 4.290 F à 4.438 F<p></p><p></p><p></p>   Catégorie : III<p></p><p></p>   Fourchette de coefficients :<p></p> 165 à 180<p></p><p></p>   Salaire minimum :<p></p> 4.401 F à 4.655 F<p></p><p></p><p></p>   Catégorie : IV<p></p><p></p>   Fourchette de coefficients :<p></p> 175 à 193<p></p><p></p>   Salaire minimum :<p></p> 4.525 F à 4.991 F<p></p><p></p><p></p>   Catégorie : V<p></p><p></p>   Fourchette de coefficients :<p></p> 185 à 205<p></p><p></p>   Salaire minimum :<p></p> 4.784 F à 5.301 F<p></p><p></p><p></p>   Catégorie : VI<p></p><p></p>   Fourchette de coefficients :<p></p> 195 à 200<p></p><p></p>   Salaire minimum :<p></p> 5.043 F à 5.689 F<p></p><p></p><p></p>   Pour les coefficients 175 et au-dessus, la valeur du point est fixée à 25,86 F.<p></p><p></p>   Le salaire mensuel pour trente-neuf heures est obtenu en multipliant la valeur du point par le coefficient hiérarchique.<p></p><p></p>   Pour toutes les dispositions contractuelles faisant référence à un salaire minimum horaire, on calcule celui-ci en divisant le minimum mensuel par 169 h 60.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 23 1990-10-16 étendu par arrêté du 12 décembre 1990 JORF 22 décembre 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 656035200000,
+                  "dateFin": 734140800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6864,13 +6938,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702868",
+              "cid": "KALISCTA000005702868",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires mensuels minima des cadres à compter du 1er novembre 1991",
+              "dateModif": null,
+              "dateDebut": "1991-11-13",
+              "dateFin": "1992-04-02",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798683",
+                  "cid": "KALIARTI000005798683",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702868/KALIARTI000005798683",
+                  "pathTitle": [
+                    "Salaires mensuels minima des cadres à compter du 1er novembre 1991"
+                  ],
+                  "content": "Article 1er<p></p> En vertu du 25e avenant du 13 novembre 1991 à la convention collective nationale du 17 février 1982, les salaires mensuels minima des cadres s'établissent comme suit à partir du 1er novembre 1991, pour une durée hebdomadaire de travail de 39 heures.<p></p><p></p><p></p>   Catégorie I : Seuil d'accueil des jeunes cadres diplômés<p></p><p></p>   Première année<p></p><p></p>   Coefficient : 300<p></p><p></p>   Francs : 9.126<p></p><p></p><p></p>   Deuxième année<p></p><p></p>   Coefficient : 322<p></p><p></p>   Francs : 9.795<p></p><p></p><p></p>   Troisième année<p></p><p></p>   Coefficient : 344<p></p><p></p>   Francs : 10.464<p></p><p></p><p></p>   Catégorie II : Position A, B ou C<p></p><p></p>   Coefficient : 366<p></p><p></p>   Francs : 11.134<p></p><p></p><p></p>   Coefficient : 388<p></p><p></p>   Francs : 11.803<p></p><p></p><p></p>   Coefficient : 410<p></p><p></p>   Francs : 12.472<p></p><p></p><p></p>   Coefficient : 432<p></p><p></p>   Francs : 13.141<p></p><p></p><p></p>   Coefficient : 454<p></p><p></p>   Francs : 13.811<p></p><p></p><p></p>   Coefficient : 476<p></p><p></p>   Francs : 14.480<p></p><p></p><p></p>   Coefficient : 498<p></p><p></p>   Francs : 15.149<p></p><p></p><p></p>   Catégorie III<p></p><p></p>   Coefficient : 520<p></p><p></p>   Francs : 15.818<p></p><p></p><p></p>   Coefficient : 542<p></p><p></p>   Francs : 16.488<p></p><p></p><p></p>   Coefficient : 564<p></p><p></p>   Francs : 17.157<p></p><p></p><p></p>   Coefficient : 586<p></p><p></p>   Francs : 17.826<p></p><p></p><p></p>   Coefficient : 608<p></p><p></p>   Francs : 18.495<p></p><p></p><p></p>   Coefficient : 630<p></p><p></p>   Francs : 19.165<p></p><p></p><p></p>   Coefficient : 652<p></p><p></p>   Francs : 19.834<p></p><p></p><p></p>   Le salaire mensuel minimum des cadres est calculé en multipliant le point cadre fixé à 30,42 F par le coefficient de la catégorie.<p></p><p></p>   Pour toutes les dispositions contractuelles faisant référence à un minimum horaire, on calcule celui-ci en divisant le minimum mensuel par 169,60.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 25 1991-11-13 étendu par arrêté du 22 janvier 1992 JORF 31 janvier 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 689990400000,
+                  "dateFin": 702172800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6884,13 +7032,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702869",
+              "cid": "KALISCTA000005702869",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires mensuels minima des cadres à compter du 1er avril 1992",
+              "dateModif": null,
+              "dateDebut": "1992-04-02",
+              "dateFin": "1992-10-23",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798684",
+                  "cid": "KALIARTI000005798684",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702869/KALIARTI000005798684",
+                  "pathTitle": [
+                    "Salaires mensuels minima des cadres à compter du 1er avril 1992"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   En vertu du 26e avenant du 2 avril 1992 à la convention collective nationale du 17 février 1982, les salaires mensuels minima des cadres s'établissent comme suit à partir du 1er avril 1992, pour une durée hebdomadaire de travail de trente-neuf heures :<p></p><p></p> Catégorie I (Seuils d'accueil des jeunes cadres diplômés<p></p><p></p>   Première année<p></p><p></p>   Coefficient : 300<p></p><p></p>   Francs : 9.273<p></p><p></p><p></p>   Deuxième année<p></p><p></p>   Coefficient : 322<p></p><p></p>   Francs : 9.953<p></p><p></p><p></p>   Troisième année<p></p><p></p>   Coefficient : 344<p></p><p></p>   Francs : 10.633<p></p><p></p> Catégorie II (Positions A, B ou C)<p></p><p></p>   Coefficient : 366<p></p><p></p>   Francs : 11.313<p></p><p></p><p></p>   Coefficient : 388<p></p><p></p>   Francs : 11.993<p></p><p></p><p></p>   Coefficient : 410<p></p><p></p>   Francs : 12.673<p></p><p></p><p></p>   Coefficient : 432<p></p><p></p>   Francs : 13.353<p></p><p></p><p></p>   Coefficient : 454<p></p><p></p>   Francs : 14.033<p></p><p></p><p></p>   Coefficient : 476<p></p><p></p>   Francs : 14.713<p></p><p></p><p></p>   Coefficient : 498<p></p><p></p>   Francs : 15.393<p></p><p></p> Catégorie III<p></p><p></p>   Coefficient : 520<p></p><p></p>   Francs : 16.073<p></p><p></p><p></p>   Coefficient : 542<p></p><p></p>   Francs : 16.753<p></p><p></p><p></p>   Coefficient : 564<p></p><p></p>   Francs : 17.433<p></p><p></p><p></p>   Coefficient : 586<p></p><p></p>   Francs : 18.113<p></p><p></p><p></p>   Coefficient : 608<p></p><p></p>   Francs : 18.793<p></p><p></p><p></p>   Coefficient : 630<p></p><p></p>   Francs : 19.473<p></p><p></p><p></p>   Coefficient : 652<p></p><p></p>   Francs : 20.153<p></p><p></p><p></p>   Le salaire mensuel minimum des cadres est calculé en multipliant le point cadre fixé à 30,91 F par le coefficient de la catégorie.<p></p><p></p>   Pour toutes les dispositions contractuelles faisant référence à un minimum horaire, on calcule celui-ci en divisant le minimum mensuel par 169,60.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 26 1992-04-02 étendu par arrêté du 24 juin 1992 JORF 2 juillet 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 702172800000,
+                  "dateFin": 719798400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
