@@ -2,17 +2,17 @@
   "executionTime": 0,
   "dereferenced": false,
   "article": {
-    "id": "LEGIARTI000042586999",
+    "id": "LEGIARTI000054911693",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Le dossier complet de la demande d'indemnisation comprend la déclaration de la maladie professionnelle, le certificat médical initial et, le cas échéant, les examens complémentaires rendus nécessaires par le tableau de maladie professionnelle.",
-    "texteHtml": "<p>Le dossier complet de la demande d'indemnisation comprend la déclaration de la maladie professionnelle, le certificat médical initial et, le cas échéant, les examens complémentaires rendus nécessaires par le tableau de maladie professionnelle.</p>",
+    "texte": "Le dossier complet de la demande d'indemnisation comprend la déclaration de la maladie professionnelle, le certificat médical initial et, lorsqu'ils sont nécessaires pour établir le diagnostic de la maladie, les examens complémentaires conformes aux données acquises de la science au regard des recommandations de bonnes pratiques de la Haute Autorité de santé ou des sociétés savantes.",
+    "texteHtml": "<p>Le dossier complet de la demande d'indemnisation comprend la déclaration de la maladie professionnelle, le certificat médical initial et, lorsqu'ils sont nécessaires pour établir le diagnostic de la maladie, les examens complémentaires conformes aux données acquises de la science au regard des recommandations de bonnes pratiques de la Haute Autorité de santé ou des sociétés savantes.</p>",
     "num": "D491-2",
     "origine": "LEGI",
     "nature": "Article",
-    "versionArticle": "1.0",
+    "versionArticle": "2.0",
     "etat": "VIGUEUR",
-    "dateDebut": 1606694400000,
+    "dateDebut": 1790726400000,
     "dateFin": 32472144000000,
     "dateDebutExtension": 32472144000000,
     "dateFinExtension": 32472144000000,
@@ -68,8 +68,8 @@
     "sectionParentId": "LEGISCTA000042586995",
     "sectionParentTitre": "Titre IX : Indemnisation des victimes de pesticides\n",
     "fullSectionsTitre": "Partie réglementaire - Décrets simples &gt; Livre IV : Accidents du travail et maladies professionnelles (Dispositions propres et dispositions communes avec d'autres branches) &gt; Titre IX : Indemnisation des victimes de pesticides\n",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000042586999",
+    "refInjection": "MD-20260929_194129_125_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054911693",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -103,35 +103,58 @@
         "appellations": null
       }
     ],
-    "nota": "",
-    "notaHtml": "",
+    "nota": "Conformément à l'article 3 du décret n° 2026-901 du 24 septembre 2026, ces dispositions, dans leur rédaction résultant du décret précité, entrent en vigueur à compter du 30 septembre 2026. Elles sont applicables aux procédures de reconnaissance de maladies professionnelles pour lesquelles le certificat médical initial est établi à compter de leur entrée en vigueur.",
+    "notaHtml": "<p>Conformément à l'article 3 du décret n° 2026-901 du 24 septembre 2026, ces dispositions, dans leur rédaction résultant du décret précité, entrent en vigueur à compter du 30 septembre 2026. Elles sont applicables aux procédures de reconnaissance de maladies professionnelles pour lesquelles le certificat médical initial est établi à compter de leur entrée en vigueur.</p>",
     "activitePro": [],
     "numeroBrochure": [],
     "numeroBo": null,
     "conteneurs": [],
     "lienModifications": [
       {
-        "textCid": "JORFTEXT000042576881",
-        "textTitle": "Décret n°2020-1463 du 27 novembre 2020 - art. 1",
-        "linkType": "CREE",
+        "textCid": "JORFTEXT000054909329",
+        "textTitle": "Décret n°2026-901 du 24 septembre 2026 - art. 1",
+        "linkType": "MODIFIE",
         "linkOrientation": "cible",
         "articleNum": "1",
-        "articleId": "LEGIARTI000042581079",
+        "articleId": "LEGIARTI000054910255",
         "natureText": "DECRET",
-        "datePubliTexte": "2020-11-29",
-        "dateSignaTexte": "2020-11-27",
-        "dateDebutCible": "2020-11-30"
+        "datePubliTexte": "2026-09-29",
+        "dateSignaTexte": "2026-09-24",
+        "dateDebutCible": "2026-09-30"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000054909329",
+        "textTitle": "Décret n°2026-901 du 24 septembre 2026 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGITEXT000054910241",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2026-901",
+        "datePubli": 1790640000000,
+        "dateDebut": 1790726400000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [
       {
         "id": "LEGIARTI000042586999",
-        "etat": "VIGUEUR",
+        "etat": "MODIFIE",
         "version": "1.0",
         "dateDebut": 1606694400000,
+        "dateFin": 1790726400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000054911693",
+        "etat": "VIGUEUR",
+        "version": "2.0",
+        "dateDebut": 1790726400000,
         "dateFin": 32472144000000,
         "numero": null,
         "ordre": null
@@ -141,7 +164,7 @@
       "D491-2",
       "491-2"
     ],
-    "versionPrecedente": null,
+    "versionPrecedente": "LEGIARTI000042586999",
     "conditionDiffere": null,
     "historique": null,
     "surtitre": null,
@@ -150,7 +173,7 @@
     "infosComplementairesHtml": null,
     "infosRestructurationBranche": null,
     "infosRestructurationBrancheHtml": null,
-    "isMultipleVersions": false,
+    "isMultipleVersions": true,
     "comporteLiensSP": false
   }
 }

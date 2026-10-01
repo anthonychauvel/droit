@@ -17211,13 +17211,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693917",
+              "cid": "KALISCTA000005693917",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et primes à compter du 1er janvier 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-01-19",
+              "dateFin": "1996-01-24",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776013",
+                  "cid": "KALIARTI000005776013",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005693917/KALIARTI000005776013",
+                  "pathTitle": [
+                    "Salaires et primes à compter du 1er janvier 1995."
+                  ],
+                  "content": "<p></p>   S'accordant à souhaiter privilégier les négociations régionales des évolutions de salaires réels, sans préjudice de l'application des dispositions prévues aux articles L. 132-24, L. 132-28, L. 132-29 du code du travail,<p></p> à l'issue d'une commission paritaire qui s'est tenue le 19 janvier 1995, réunissant le groupement de l'industrie de la chaussure des Pays de la Loire, la C.G.C., la C.F.T.C. et F.O.,<p></p> il est conclu l'accord ci-après, valable pour une période de 12 mois, à compter du 1er janvier 1995 :<p></p>Article 1er<p></p><p></p>   A partir du 1er janvier 1995 et sauf accord particulier pour tout nouvel embauché au cours de l'année précédente, les salaires bruts des personnels d'encadrement dont le coefficient est égal ou supérieur à 200, sont augmentés de 2 p. 100.<p></p>Article 2<p></p><p></p>   La prime annuelle pour l'année 1995 est portée à 4 700 F.<p></p><p></p>   Elle devra être versée par moitié au départ en congés (1/2) et en fin d'année (1/2) selon les modalités fixées par l'avenant n° 37 de la convention collective nationale de l'industrie de la chaussure, signé le 19 avril 1978 et par l'accord régional du 27 juin 1980, complété par son avenant du 19 janvier 1989.<p></p>Article 3<p></p><p></p>   Au cas où, au cours de l'année 1995, l'indice des prix I.N.S.E.E. dépasserait 102,01, pour un indice 100 au 31 décembre 1994, les parties signataires se rencontreraient au cours du mois suivant la constatation. En cas contraire, elles se rencontreront en janvier 1996 pour envisager l'élaboration d'un nouvel accord.<p></p>Article 4<p></p><p></p>   Le présent accord sera déposé aux directions départementales du travail et de l'emploi de Maine-et-Loire, de la Mayenne, de la Vendée, de la Loire-Atlantique, de la Sarthe et des Deux-Sèvres.<p></p>Article 5<p></p><p></p>   Il sera procédé à une demande d'extension de la présente convention pour application à toutes les entreprises et à tous les salariés de l'industrie de la chaussure des Pays de la Loire, de l'arrondissement de Bressuire (79) et de l'arrondissement de Parthenay (79).<p></p><p></p>   La demande sera déposée à la direction départementale du travail et de l'emploi de Maine-et-Loire.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-01-19 BO Conventions collectives 95-8 étendu par arrêté du 11 avril 1995 JORF 23 avril 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-24, L132-28, L132-29",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES Cadres, Région Pays de la Loire",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 790473600000,
+                  "dateFin": 822441600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -17231,13 +17319,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693919",
+              "cid": "KALISCTA000005693919",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et prime annuelle à compter du 1er janvier 1996.",
+              "dateModif": null,
+              "dateDebut": "1996-01-24",
+              "dateFin": "1997-01-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776014",
+                  "cid": "KALIARTI000005776014",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005693919/KALIARTI000005776014",
+                  "pathTitle": [
+                    "Salaires et prime annuelle à compter du 1er janvier 1996."
+                  ],
+                  "content": "<p></p>   Entre les soussignés,<p></p><p></p>   S'accordant à souhaiter privilégier les négociations régionales des évolutions de salaires réels, sans préjudice de l'application des dispositions prévues aux articles L. 132-24, L. 132-28, L. 132-29 du code du travail,<p></p><p></p>   à l'issue d'une commission paritaire qui s'est tenue le 24 janvier 1996, réunissant le groupement de l'industrie de la chaussure des Pays de la Loire, la C.G.C., la C.F.T.C. et F.O.,<p></p><p></p>   il est conclu l'accord ci-après, valable pour une période de douze mois, à compter du 1er janvier 1996.<p></p> Article 1er<p></p><p></p>   A partir du 1er janvier 1996 et sauf accord particulier pour tout nouvel embauché au cours de l'année précédente, les salaires bruts des personnels d'encadrement dont le coefficient est égal ou supérieur à 200 sont augmentés de 2,10 p. 100 (deux pour cent et dix centièmes).<p></p> Article 2<p></p><p></p>   La prime annuelle pour l'année 1996 est portée à 4 800 F (quatre mille huit cents francs).<p></p><p></p>   Elle devra être versée par moitié au départ en congés (1/2) et en fin d'année (1/2) selon les modalités fixées par l'avenant n° 37 de la convention collective nationale de l'industrie de la chaussure, signé le 19 avril 1978, et par l'accord régional du 27 juin 1980, complété par son avenant du 19 janvier 1989.<p></p> Article 3<p></p><p></p>   Au cas où, au cours de l'année 1996, l'indice des prix I.N.S.E.E. dépasserait 102,10, pour un indice 100 au 31 décembre 1995, les parties signataires se rencontreraient au cours du mois suivant la constatation.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1996-01-24 BO conventions collectives 96-10, étendu par arrêté du 2 mai 1996 JORF 14 mai 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES cadres, pays de la Loire",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 822441600000,
+                  "dateFin": 853286400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -17291,13 +17453,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005693922",
+              "cid": "KALISCTA000005693922",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires et prime annuelle à compter du 1er janvier 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-01-15",
+              "dateFin": "1999-02-25",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005776019",
+                  "cid": "KALIARTI000005776019",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005693922/KALIARTI000005776019",
+                  "pathTitle": [
+                    "Salaires et prime annuelle à compter du 1er janvier 1997."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   A partir du 1er janvier 1997 et sauf accord particulier pour tout nouvel embauché au cours de l'année précédente, les salaires bruts des personnels d'encadrement dont le coefficient est égal ou supérieur à 200, sont augmentés de 1,70 p. 100 (un pour cent et soixante-dix centièmes).<p></p>Article 2<p></p><p></p>   La prime annuelle pour l'année 1997 est portée à 5 000 F (cinq mille francs).<p></p><p></p>   Elle devra être versée par moitié au départ en congés (1/2) et en fin d'année (1/2) selon les modalités fixées par l'avenant n° 37 de la convention collective nationale de l'industrie de la chaussure, signé le 19 avril 1978 et par l'accord régional du 27 juin 1980, complété par son avenant du 19 janvier 1989.<p></p>Article 3<p></p><p></p>   Au cas où, au cours de l'année 1997, l'indice des prix I.N.S.E.E. dépasserait 101,70, pour un indice 100 au 31 décembre 1996, les parties signataires se rencontreraient au cours du mois suivant la constatation.<p></p>Article 4<p></p><p></p>   Une nouvelle rencontre consacrée aux modalités et à l'évolution des négociations salariales encadrement aura lieu avant le 31 mai 1997.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1997-01-15 BO conventions collectives 97-9, étendu par arrêté du 5 mai 1997 JORF 15 mai 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES cadres, pays de la Loire",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 853286400000,
+                  "dateFin": 919900800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -3897,13 +3897,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731156",
+              "cid": "KALISCTA000005731156",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er septembre 1989 et 1er janvier 1990.",
+              "dateModif": null,
+              "dateDebut": "1989-10-25",
+              "dateFin": "1990-06-13",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868869",
+                  "cid": "KALIARTI000005868869",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731156/KALIARTI000005868869",
+                  "pathTitle": [
+                    "Salaires au 1er septembre 1989 et 1er janvier 1990."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Le salaire horaire minimum professionnel de base prévu à l'article 30 des clauses générales de la convention collective nationale est porté au coefficient 100 des classifications :<p></p><p></p>   - au 1er septembre 1989 à 20,04 F ;<p></p><p></p>   - au 1er janvier 1990 à 20,24 F.<p></p><font color=\"808080\"><em>Etendu sous réserve del'application des dispositions réglementaires portant fixation du salaire minimum de croissance.</em></font>",
+                  "nota": "Etendu sous réserve del'application des dispositions réglementaires portant fixation du salaire minimum de croissance.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 29 1989-10-25 étendu par arrêté du 12 février 1990 JORF 23 février 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 625276800000,
+                  "dateFin": 645235200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -3917,13 +3991,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731157",
+              "cid": "KALISCTA000005731157",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er septembre 1989.",
+              "dateModif": null,
+              "dateDebut": "1989-09-01",
+              "dateFin": "1990-10-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868871",
+                  "cid": "KALIARTI000005868871",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731157/KALIARTI000005868871",
+                  "pathTitle": [
+                    "Salaires à partir du 1er septembre 1989."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La commission paritaire des salaires de Paris et de la région parisienne a conclu un accord pour appliquer aux salaires réels pratiqués au 31 août 1989 une majoration de 3,3 p. 100 à effet du 1er septembre 1989.<p></p><p></p> Article 2<p></p><p></p>   Ce pourcentage comprend les augmentations qui auraient pu être appliquées par anticipation dans les entreprises depuis le 1er septembre 1988.<p></p><p></p> Article 3<p></p><p></p>   Cet accord concerne toutes les catégories de personnel de la convention collective nationale de la fourrure employées dans les entreprises du secteur géographique de Paris (75), Seine-et-Marne (77), Yvelines (78), Essonne (91), Hauts-de-Seine (92), Seine-Saint-Denis (93), Val-de-Marne (94), Val-d'Oise (95).<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 30 1989-10-25 en vigueur le 1er septembre 1989 étendu par arrêté du 12 février 1990 JORF 23 février 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES, REGION PARISIENNE",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 620611200000,
+                  "dateFin": 656121600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -3937,13 +4085,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731158",
+              "cid": "KALISCTA000005731158",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er juin 1990.",
+              "dateModif": null,
+              "dateDebut": "1990-06-13",
+              "dateFin": "1990-10-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868872",
+                  "cid": "KALIARTI000005868872",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731158/KALIARTI000005868872",
+                  "pathTitle": [
+                    "Salaires à partir du 1er juin 1990."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Le salaire  horaire minimum professionnel de base prévu à l'article 30 des clauses générales de la convention collective nationale est porté, au coefficient 100 des classifications :<p></p><p></p>   - au 1er juin 1990, à 20,64 F.<p></p><p></p>   Les organisations sont convenues de se rencontrer à nouveau au mois d'octobre 1990.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 31 1990-06-13 étendu par arrêté du 18 septembre 1990 JORF 10 octobre 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 645235200000,
+                  "dateFin": 656121600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
