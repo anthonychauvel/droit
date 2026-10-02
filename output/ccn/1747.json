@@ -27822,13 +27822,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702654",
+              "cid": "KALISCTA000005702654",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minimaux au 1er janvier 1999",
+              "dateModif": null,
+              "dateDebut": "1998-12-14",
+              "dateFin": "2001-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798205",
+                  "cid": "KALIARTI000005798205",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702654/KALIARTI000005798205",
+                  "pathTitle": [
+                    "Salaires minimaux au 1er janvier 1999"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Le barème figurant en page 2 de l'accord de salaires du 9 avril 1990 est remplacé par celui figurant à l'annexe I du présent accord.<p></p><p></p>   Il est applicable à compter du 1er janvier 1999.<p></p> Article 2<p></p><p></p>   Les valeurs de ce barème constituent les salaires minimaux mensuels applicables, pour un travail effectif correspondant à la durée légale du travail en vigueur au jour de la signature, à chacun des échelons de la grille hiérarchique résultant de la classification.<p></p>ANNEXE I<p></p> Salaires minimaux<p></p> Effet au 1er janvier 1999<p></p><TABLE><TR><TD>     Niveau I       </TD></TR><TR><TD> Echelon </TD><TD> Salaires </TD></TR><TR><TD>   1     </TD><TD>   6 530  </TD></TR><TR><TD>   2     </TD><TD>   6 588  </TD></TR><TR><TD>   3     </TD><TD>   6 686  </TD></TR><TR><TD>     Niveau II      </TD></TR><TR><TD> Echelon </TD><TD> Salaires </TD></TR><TR><TD>   1     </TD><TD>   6 798  </TD></TR><TR><TD>   2     </TD><TD>   6 929  </TD></TR><TR><TD>   3     </TD><TD>   7 222  </TD></TR><TR><TD>     Niveau III     </TD></TR><TR><TD> Echelon </TD><TD> Salaires </TD></TR><TR><TD>   1     </TD><TD>   7 611  </TD></TR><TR><TD>   2     </TD><TD>   7 757  </TD></TR><TR><TD>   3     </TD><TD>   8 245  </TD></TR><TR><TD>     Niveau IV      </TD></TR><TR><TD> Echelon </TD><TD> Salaires </TD></TR><TR><TD>   1     </TD><TD>   8 966  </TD></TR><TR><TD>   2     </TD><TD>  10 382  </TD></TR><TR><TD>     Niveau V       </TD></TR><TR><TD>Echelon  </TD><TD>  Salaire </TD></TR><TR><TD> unique  </TD><TD>  12 931  </TD></TR><TR><TD>     Niveau VI      </TD></TR><TR><TD>Echelon  </TD><TD>  Salaire </TD></TR><TR><TD> unique  </TD><TD>  15 338  </TD></TR><TR><TD>     Niveau VII     </TD></TR><TR><TD>Echelon  </TD><TD>  Salaire </TD></TR><TR><TD> unique     19 020  </TD></TR><TR><TD>     Niveau VIII    </TD></TR><TR><TD>Echelon  </TD><TD>  Salaire </TD></TR><TR><TD> unique     22 278  </TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 21 mai 1999 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 21 mai 1999 : dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 10 1998-12-14 BO conventions collectives 99-11 étendu par arrêté du 21 mai 1999 JORF 4 juin 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 913593600000,
+                  "dateFin": 978307200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -27842,13 +27916,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702656",
+              "cid": "KALISCTA000005702656",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires",
+              "dateModif": null,
+              "dateDebut": "2000-05-01",
+              "dateFin": "2000-10-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798208",
+                  "cid": "KALIARTI000005798208",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702656/KALIARTI000005798208",
+                  "pathTitle": [
+                    "Grille de salaires"
+                  ],
+                  "content": "<TABLE><TR><TD>CLASSIFICATION</TD><TD>COEF</TD><TD> SALAIRE   </TD></TR><TR><TD></TD><TD></TD><TD> horaire   </TD></TR><TR><TD></TD><TD></TD><TD>au 1/5/2000</TD></TR><TR><TD></TD><TD></TD><TD>en francs) </TD></TR><TR><TD>a) Pour les ouvriers boulangers</TD></TR><TR><TD>1re catégorie </TD><TD></TD><TD></TD></TR><TR><TD>  1er échelon </TD><TD>150 </TD><TD> 41,00     </TD></TR><TR><TD>  2e échelon  </TD><TD>155 </TD><TD> 41,06     </TD></TR><TR><TD>2e catégorie  </TD><TD></TD><TD></TD></TR><TR><TD>  1er échelon </TD><TD>160 </TD><TD> 41,12     </TD></TR><TR><TD>  2e échelon  </TD><TD>175 </TD><TD> 41,75     </TD></TR><TR><TD>  3e échelon  </TD><TD>175 </TD><TD> 41,75     </TD></TR><TR><TD>3e catégorie  </TD><TD></TD><TD></TD></TR><TR><TD>  1er échelon </TD><TD>170 </TD><TD> 41,18     </TD></TR><TR><TD>  2e échelon  </TD><TD>175 </TD><TD> 41,75     </TD></TR><TR><TD>4e catégorie  </TD><TD></TD><TD></TD></TR><TR><TD>  1er échelon </TD><TD>185 </TD><TD> 44,14     </TD></TR><TR><TD>  2e échelon  </TD><TD>190 </TD><TD> 45,33     </TD></TR><TR><TD>5e catégorie  </TD><TD>195 </TD><TD> 46,52     </TD></TR><TR><TD>b) Pour les ouvriers pâtissiers</TD></TR><TR><TD>1re catégorie </TD><TD>150 </TD><TD> 41,00     </TD></TR><TR><TD>2e catégorie  </TD><TD></TD><TD></TD></TR><TR><TD>  1er échelon </TD><TD>155 </TD><TD> 41,06     </TD></TR><TR><TD>  2e échelon  </TD><TD>160 </TD><TD> 41,12     </TD></TR><TR><TD>  3e échelon  </TD><TD>175 </TD><TD> 41,75     </TD></TR><TR><TD>3e catégorie  </TD><TD>170 </TD><TD> 41,18     </TD></TR><TR><TD>4e catégorie  </TD><TD></TD><TD></TD></TR><TR><TD>  1er échelon </TD><TD>185 </TD><TD> 44,14     </TD></TR><TR><TD>  2e échelon  </TD><TD>190 </TD><TD> 45,33     </TD></TR><TR><TD>5e catégorie  </TD><TD>195 </TD><TD> 46,52     </TD></TR><TR><TD>c) Pour le personnel de vente</TD></TR><TR><TD>1re catégorie </TD><TD>130 </TD><TD> 40,72     </TD></TR><TR><TD>2e catégorie  </TD><TD>135 </TD><TD> 40,78     </TD></TR><TR><TD>3e catégorie  </TD><TD>140 </TD><TD> 40,84     </TD></TR><TR><TD>4e catégorie  </TD><TD>145 </TD><TD> 40,90     </TD></TR><TR><TD>5e catégorie  </TD><TD>150 </TD><TD> 41,00     </TD></TR><TR><TD>6e catégorie  </TD><TD>155 </TD><TD> 41,06     </TD></TR><TR><TD>7e catégorie  </TD><TD>160 </TD><TD> 41,12     </TD></TR><TR><TD>8e catégorie  </TD><TD>170 </TD><TD> 41,18     </TD></TR><TR><TD>d) Pour les ouvriers d'entretien</TD></TR><TR><TD>1re catégorie </TD><TD></TD><TD></TD></TR><TR><TD>  1er échelon </TD><TD>130 </TD><TD> 40,72     </TD></TR><TR><TD>  2e échelon  </TD><TD>135 </TD><TD> 40,78     </TD></TR></TABLE><p></p><p></p>   La grille des salaires est applicable à compter du 1er mai 2000. Aucun salarié ne percevra un salaire inférieur au SMIC en vigueur.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2000-04-04 en vigueur le 1er mai 2000 BO conventions collectives 2000-21 étendu par arrêté du 26 juin 2000 JORF 13 juillet 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 957139200000,
+                  "dateFin": 970704000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -27862,13 +28010,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005702657",
+              "cid": "KALISCTA000005702657",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires",
+              "dateModif": null,
+              "dateDebut": "2000-10-05",
+              "dateFin": "2001-04-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005798209",
+                  "cid": "KALIARTI000005798209",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005702657/KALIARTI000005798209",
+                  "pathTitle": [
+                    "Grille de salaires"
+                  ],
+                  "content": "<p>Les parties signataires du présent avenant, réunies le jeudi 5 octobre 2000, en commission mixte paritaire, sous la présidence du contrôleur du travail représentant le directeur du travail, de l'emploi et de la formation professionnelle de Guyane, conviennent de ce qui suit :</p><p>Article 1er</p><p>A l'article 2 de l'accord de branche professionnelle des boulangers, pâtissiers de Guyane du 4 avril 2000 \" Classification :</p><p>Personnel de vente \", lire le mot \" vendeur \" à la place de \" vendeuse \".</p><p>Article 2</p><p>Grille de salaires applicable au 1er novembre 2000</p><p></p><table border=\"1\"><tbody><tr><td><p align=\"center\">COEF</p></td><td><p align=\"center\">SALAIRE HORAIRE</p><p align=\"center\">au 1/11/00 (en fr)</p></td></tr><tr><td><p align=\"center\">130</p></td><td><p align=\"center\">42,02 </p></td></tr><tr><td><p align=\"center\">135</p></td><td><p align=\"center\">42,08 </p></td></tr><tr><td><p align=\"center\">140</p></td><td><p align=\"center\">42,14 </p></td></tr><tr><td><p align=\"center\">145</p></td><td><p align=\"center\">42,35 </p></td></tr><tr><td><p align=\"center\">150</p></td><td><p align=\"center\">42,45 </p></td></tr><tr><td><p align=\"center\">155</p></td><td><p align=\"center\">42,51 </p></td></tr><tr><td><p align=\"center\">160</p></td><td><p align=\"center\">42,57 </p></td></tr><tr><td><p align=\"center\">170</p></td><td><p align=\"center\">42,63 </p></td></tr><tr><td><p align=\"center\">175</p></td><td><p align=\"center\">43,05 </p></td></tr><tr><td><p align=\"center\">185</p></td><td><p align=\"center\">45,44 </p></td></tr><tr><td><p align=\"center\">190</p></td><td><p align=\"center\">46,63 </p></td></tr><tr><td><p align=\"center\">195</p></td><td><p align=\"center\">47,82 </p></td></tr></tbody></table><p>Aucun salarié ne percevra un salaire inférieur au SMIC en vigueur. </p><p>Article 3</p><p>Les parties demandent l'extension du présent avenant afin de le rendre applicable dans tous les établissements visés à l'article 1er de l'accord de branche professionnelle des boulangers, pâtissiers de Guyane du 4 avril 2000.</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 1 2000-10-05 BO conventions collectives 2000-47 étendu par arrêté du 15 janvier 2001 JORF 25 janvier 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 970704000000,
+                  "dateFin": 988243200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

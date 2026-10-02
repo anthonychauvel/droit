@@ -3837,13 +3837,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731152",
+              "cid": "KALISCTA000005731152",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er septembre 1987.",
+              "dateModif": null,
+              "dateDebut": "1987-11-10",
+              "dateFin": "1989-10-25",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868865",
+                  "cid": "KALIARTI000005868865",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005731152/KALIARTI000005868865",
+                  "pathTitle": [
+                    "Salaires à partir du 1er septembre 1987."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La commission paritaire des salaires Paris et région parisienne a conclu un accord pour appliquer aux salaires réels pratiqués au 31 août 1987 une majoration de 3 p. 100 à effet du 1er septembre 1987.<p></p> Article 2<p></p><p></p>   Ce pourcentage comprend les augmentations qui auraient pu être appliquées par anticipation dans les entreprises depuis le 1er septembre 1986.<p></p> Article 3<p></p><p></p>   Cet accord concerne toutes les catégories de personnel de la convention nationale de la fourrure employées dans les entreprises du secteur géographique de Paris (75), Seine-et-Marne (77), Yvelines (78), Essonne (91), Hauts-de-Seine (92), Seine-Saint-Denis (93), Val-de-Marne (94), Val-d'Oise (95).<p></p> Suivent les signatures des organisations ci-après :<p></p><p></p>   Chambre syndicale de la fourrure ;<p></p><p></p>   Syndicat de l'habillement de Paris C.G.T. ;<p></p><p></p>   Fédération Hacuitex C.F.D.T. ;<p></p><p></p>   Fédération générale Force ouvrière des cuirs, textiles, habillement F.O. ;<p></p><p></p>   Syndicat C.F.T.C. du textile, cuir, habillement Ile-de-France ;<p></p><p></p>   Syndicat national du personnel d'encadrement des industries de l'habillement (S.N.P.E.I.H.) C.G.C.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 26 1987-11-10 étendu par arrêté du 5 avril 1988 JORF 16 avril 1988",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES REGION PARISIENNE",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 563500800000,
+                  "dateFin": 625276800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -3857,13 +3931,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731154",
+              "cid": "KALISCTA000005731154",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er septembre 1988.",
+              "dateModif": null,
+              "dateDebut": "1988-10-12",
+              "dateFin": "1989-10-25",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868867",
+                  "cid": "KALIARTI000005868867",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005731154/KALIARTI000005868867",
+                  "pathTitle": [
+                    "Salaires à partir du 1er septembre 1988."
+                  ],
+                  "content": "<p></p>   Le salaire horaire minimum national professionnel de base prévu à l'article 30 des clauses générales de la convention collective nationale est porté à effet du 1er septembre 1988 à 19,49 F au coefficient 100 des classifications.<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 27 1988-10-12",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 592617600000,
+                  "dateFin": 625276800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -3877,13 +4025,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005731155",
+              "cid": "KALISCTA000005731155",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires à partir du 1er septembre 1988.",
+              "dateModif": null,
+              "dateDebut": "1988-10-24",
+              "dateFin": "1989-01-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005868868",
+                  "cid": "KALIARTI000005868868",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005731155/KALIARTI000005868868",
+                  "pathTitle": [
+                    "Salaires à partir du 1er septembre 1988."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La commission paritaire des salaires Paris et région parisienne a conclu un accord pour appliquer aux salaires réels pratiqués au 31 août 1988 une majoration de 3 p. 100 à effet du 1er septembre 1988.<p></p><p></p> Article 2<p></p><p></p>   Ce pourcentage comprend les augmentations qui auraient pu être appliquées par anticipation dans les entreprises depuis le 1er septembre 1987.<p></p><p></p> Article 3<p></p><p></p>   Cet accord concerne toutes les catégories de personnel de la convention nationale de la fourrure employées dans les entreprises du secteur géographique de Paris (75), Seine-et-Marne (77), Yvelines (78), Essonne (91), Hauts-de-Seine (92), Seine-Saint-Denis (93), Val-de-Marne (94), Val-d'Oise (95).<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 28 1988-10-24",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES REGION PARISIENNE",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 593654400000,
+                  "dateFin": 600307200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

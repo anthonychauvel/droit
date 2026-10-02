@@ -18667,13 +18667,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005707912",
+              "cid": "KALISCTA000005707912",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Salaires au 1er mai 2001",
+              "dateModif": null,
+              "dateDebut": "2001-05-17",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005810934",
+                  "cid": "KALIARTI000005810934",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005707912/KALIARTI000005810934",
+                  "pathTitle": [
+                    "Salaires au 1er mai 2001"
+                  ],
+                  "content": "<p></p><p>Article 1er</p><p>   En application des dispositions de l'accord du 17 mai 2001, l'annexe I à la convention collective nationale des coopératives laitières est modifiée au 1er mai 2001 comme indiqué dans l'annexe ci-jointe, exprimée en francs et en euros.</p><p> Article 2</p><p> Demande d'extension</p><p>   Les parties signataires demandent l'extension du présent avenant. Il sera déposé au service pluridépartemental de l'inspection du travail, de l'emploi et de la politique sociale agricoles de Paris, des Hauts-de-Seine, de la Seine-Saint-Denis et du Val-de-Marne.</p><p> ANNEXE I</p><p> à l'avenant n° 36 du 17 mai 2001</p><p> Rémunération annuelle minimale au 1er mai 2001</p><p></p><p></p><p> (1)   (en francs)</p><p> (2)   (en euros)</p><p></p><p><table border=\"1\"><tbody><tr><td rowspan=\"2\" align=\"center\">COEF. </td><td rowspan=\"2\" align=\"center\"> MOINS DE 1 AN  D'ANCIENNETÉ   (en francs)   </td></tr><tr align=\"center\"><td>  (en euros)   </td></tr><tr><td align=\"center\"> 120  </td><td align=\"center\">    83 777,52   </td><td align=\"center\">   12 771,80   </td></tr><tr><td align=\"center\"> 130  </td><td align=\"center\">    84 668,78   </td><td align=\"center\">   12 907,67   </td></tr><tr><td align=\"center\"> 140  </td><td align=\"center\">    85 560,00   </td><td align=\"center\">   13 043,54   </td></tr><tr><td align=\"center\"> 150  </td><td align=\"center\">    86 451,36   </td><td align=\"center\">   13 179,42   </td></tr><tr><td align=\"center\"> 160  </td><td align=\"center\">    87 342,55   </td><td align=\"center\">   13 315,29   </td></tr><tr><td align=\"center\"> 170  </td><td align=\"center\">    88 233,81   </td><td align=\"center\">   13 451,16   </td></tr><tr><td align=\"center\"> 180  </td><td align=\"center\">    89 125,07   </td><td align=\"center\">   13 587,03   </td></tr><tr><td align=\"center\"> 190  </td><td align=\"center\">    90 016,36   </td><td align=\"center\">   13 722,91   </td></tr><tr><td align=\"center\"> 200  </td><td align=\"center\">    91 276,61   </td><td align=\"center\">   13 915,03   </td></tr><tr><td align=\"center\"> 210  </td><td align=\"center\">    92 536,87   </td><td align=\"center\">   14 107,15   </td></tr><tr><td align=\"center\"> 220  </td><td align=\"center\">    93 797,12   </td><td align=\"center\">   14 299,28   </td></tr><tr><td align=\"center\"> 230  </td><td align=\"center\">    95 057,38   </td><td align=\"center\">   14 491,40   </td></tr><tr><td align=\"center\"> 240  </td><td align=\"center\">    96 317,63   </td><td align=\"center\">   14 683,53   </td></tr><tr><td align=\"center\"> 250  </td><td align=\"center\">    97 577,88   </td><td align=\"center\">   14 875,65   </td></tr><tr><td align=\"center\"> 280  </td><td align=\"center\">   105 208,25   </td><td align=\"center\">   16 038,89   </td></tr><tr><td align=\"center\"> 310  </td><td align=\"center\">   112 838,58   </td><td align=\"center\">   17 202,13   </td></tr><tr><td align=\"center\"> 350  </td><td align=\"center\">   121 745,41   </td><td align=\"center\">   18 559,97   </td></tr><tr><td align=\"center\"> 400  </td><td align=\"center\">   139 048,46   </td><td align=\"center\">   21 197,80   </td></tr><tr><td align=\"center\"> 450  </td><td align=\"center\">   156 436,62   </td><td align=\"center\">   23 848,61   </td></tr><tr><td align=\"center\"> 500  </td><td align=\"center\">   173 824,76   </td><td align=\"center\">   26 499,41   </td></tr><tr><td align=\"center\"> 550  </td><td align=\"center\">   191 326,36   </td><td align=\"center\">   29 167,52   </td></tr><tr><td align=\"center\"> 600  </td><td align=\"center\">   208 657,80   </td><td align=\"center\">   31 809,68   </td></tr><tr><td align=\"center\"> 650  </td><td align=\"center\">   226 074,31   </td><td align=\"center\">   34 464,81   </td></tr></tbody></table></p><br/><p> <p><table border=\"1\"><tbody><tr><td rowspan=\"2\" align=\"center\">COEF. </td><td rowspan=\"2\" align=\"center\"> PLUS DE 1 AN  D'ANCIENNETÉ    (en francs)   </td></tr><tr align=\"center\"><td>  (en euros)   </td></tr><tr><td align=\"center\"> 120  </td><td align=\"center\">    90 758,98   </td><td align=\"center\">   13 836,12   </td></tr><tr><td align=\"center\"> 130  </td><td align=\"center\">    91 724,51   </td><td align=\"center\">   13 983,31   </td></tr><tr><td align=\"center\"> 140  </td><td align=\"center\">    92 690,04   </td><td align=\"center\">   14 130,51   </td></tr><tr><td align=\"center\"> 150  </td><td align=\"center\">    93 655,57   </td><td align=\"center\">   14 277,70   </td></tr><tr><td align=\"center\"> 160  </td><td align=\"center\">    94 621,10   </td><td align=\"center\">   14 424,89   </td></tr><tr><td align=\"center\"> 170  </td><td align=\"center\">    95 586,63   </td><td align=\"center\">   14 572,09   </td></tr><tr><td align=\"center\"> 180  </td><td align=\"center\">    96 552,16   </td><td align=\"center\">   14 719,28   </td></tr><tr><td align=\"center\"> 190  </td><td align=\"center\">    97 517,72   </td><td align=\"center\">   14 866,48   </td></tr><tr><td align=\"center\"> 200  </td><td align=\"center\">    98 882,99   </td><td align=\"center\">   15 074,61   </td></tr><tr><td align=\"center\"> 210  </td><td align=\"center\">   100 248,28   </td><td align=\"center\">   15 282,75   </td></tr><tr><td align=\"center\"> 220  </td><td align=\"center\">   101 613,55   </td><td align=\"center\">   15 490,89   </td></tr><tr><td align=\"center\"> 230  </td><td align=\"center\">   102 978,83   </td><td align=\"center\">   15 699,02   </td></tr><tr><td align=\"center\"> 240  </td><td align=\"center\">   104 344,10   </td><td align=\"center\">   15 907,16   </td></tr><tr><td align=\"center\"> 250  </td><td align=\"center\">   105 709,37   </td><td align=\"center\">   15 907,16   </td></tr><tr><td align=\"center\"> 280  </td><td align=\"center\">   113 975,61   </td><td align=\"center\">   17 375,47   </td></tr><tr><td align=\"center\"> 310  </td><td align=\"center\">   122 241,80   </td><td align=\"center\">   18 635,64   </td></tr><tr><td align=\"center\"> 350  </td><td align=\"center\">   131 890,87   </td><td align=\"center\">   20 106,63   </td></tr><tr><td align=\"center\"> 400  </td><td align=\"center\">   150 635,84   </td><td align=\"center\">   22 964,29   </td></tr><tr><td align=\"center\"> 450  </td><td align=\"center\">   169 473,01   </td><td align=\"center\">   25 835,99   </td></tr><tr><td align=\"center\"> 500  </td><td align=\"center\">   188 310,17   </td><td align=\"center\">   28 707,70   </td></tr><tr><td align=\"center\"> 550  </td><td align=\"center\">   207 270,24   </td><td align=\"center\">   31 598,14   </td></tr><tr><td align=\"center\"> 600  </td><td align=\"center\">   226 045,95   </td><td align=\"center\">   34 460,48   </td></tr><tr><td align=\"center\"> 650  </td><td align=\"center\">   244 913,84   </td><td align=\"center\">   37 336,87   </td></tr></tbody></table></p><br/><p> <p><table border=\"1\"><tbody><tr><td rowspan=\"2\" align=\"center\">COEF. </td><td rowspan=\"2\" align=\"center\">      EXPRESSION MENSUELLE        (en francs)   </td></tr><tr align=\"center\"><td>  (en euros)   </td></tr><tr><td align=\"center\"> 120  </td><td align=\"center\">    6 981,46    </td><td align=\"center\">   1 064,32    </td></tr><tr><td align=\"center\"> 130  </td><td align=\"center\">    7 055,73    </td><td align=\"center\">   1 075,64    </td></tr><tr><td align=\"center\"> 140  </td><td align=\"center\">    7 130,00    </td><td align=\"center\">   1 086,96    </td></tr><tr><td align=\"center\"> 150  </td><td align=\"center\">    7 204,28    </td><td align=\"center\">   1 098,29    </td></tr><tr><td align=\"center\"> 160  </td><td align=\"center\">    7 278,55    </td><td align=\"center\">   1 109,61    </td></tr><tr><td align=\"center\"> 170  </td><td align=\"center\">    7 352,82    </td><td align=\"center\">   1 120,93    </td></tr><tr><td align=\"center\"> 180  </td><td align=\"center\">    7 427,09    </td><td align=\"center\">   1 132,25    </td></tr><tr><td align=\"center\"> 190  </td><td align=\"center\">    7 501,36    </td><td align=\"center\">   1 143,57    </td></tr><tr><td align=\"center\"> 200  </td><td align=\"center\">    7 606,38    </td><td align=\"center\">   1 159,59    </td></tr><tr><td align=\"center\"> 210  </td><td align=\"center\">    7 711,41    </td><td align=\"center\">   1 175,60    </td></tr><tr><td align=\"center\"> 220  </td><td align=\"center\">    7 816,43    </td><td align=\"center\">   1 191,61    </td></tr><tr><td align=\"center\"> 230  </td><td align=\"center\">    7 921,45    </td><td align=\"center\">   1 207,62    </td></tr><tr><td align=\"center\"> 240  </td><td align=\"center\">    8 026,47    </td><td align=\"center\">   1 223,63    </td></tr><tr><td align=\"center\"> 250  </td><td align=\"center\">    8 131,49    </td><td align=\"center\">   1 239,64    </td></tr><tr><td align=\"center\"> 280  </td><td align=\"center\">    8 767,35    </td><td align=\"center\">   1 336,57    </td></tr><tr><td align=\"center\"> 310  </td><td align=\"center\">    9 403,22    </td><td align=\"center\">   1 433,51    </td></tr><tr><td align=\"center\"> 350  </td><td align=\"center\">   10 145,45    </td><td align=\"center\">   1 546,66    </td></tr><tr><td align=\"center\"> 400  </td><td align=\"center\">   11 587,37    </td><td align=\"center\">   1 766,48    </td></tr><tr><td align=\"center\"> 450  </td><td align=\"center\">   13 036,39    </td><td align=\"center\">   1 987,38    </td></tr><tr><td align=\"center\"> 500  </td><td align=\"center\">   14 485,40    </td><td align=\"center\">   2 208,28    </td></tr><tr><td align=\"center\"> 550  </td><td align=\"center\">   15 943,86    </td><td align=\"center\">   2 430,63    </td></tr><tr><td align=\"center\"> 600  </td><td align=\"center\">   17 388,15    </td><td align=\"center\">   2 650,81    </td></tr><tr><td align=\"center\"> 650  </td><td align=\"center\">   18 839,53    </td><td align=\"center\">   2 872,07    </td></tr></tbody></table></p><p><font color=\"808080\" size=\"1\"><i>Arrêté du 7 août 2001 art. 2 : Texte étendu sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.</i></font></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 36 2001-05-17 BO conventions collectives 2001-26 étendu par arrêté du 7 août 2001 JORF 21 août 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 990057600000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -18687,13 +18761,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005707914",
+              "cid": "KALISCTA000005707914",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Salaires au 1er mai 2001",
+              "dateModif": null,
+              "dateDebut": "2001-05-17",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005810935",
+                  "cid": "KALIARTI000005810935",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005707914/KALIARTI000005810935",
+                  "pathTitle": [
+                    "Salaires au 1er mai 2001"
+                  ],
+                  "content": "<p></p><p>   Article 1er</p><p>   En application des dispositions de l'accord du 17 mai 2001, les dispositions de l'article 29 de la convention collective nationale des coopératives laitières sont modifiées comme suit (seuls les paragraphes en italique sont ainsi modifiés).</p><p> Article 29</p><p> Bases minima de rémunération</p><p> 1. Rémunération annuelle minimale</p><p>   Le barème de la rémunération annuelle minimale (RAM) fait l'objet de l'annexe I de la présente convention, qui en indique le montant brut.</p><p>   a) Champ d'application.</p><p>   Le barème de la RAM s'applique par coefficient aux salariés des entreprises visées à l'article 1er de l'annexe VII de la présente convention, selon que ceux-ci comptent ou non au moins 1 an d'ancienneté.</p><p>   b) Définition.</p><p>   La RAM s'apprécie dans le cadre de l'année civile, pour un travail à temps complet, résultant de l'horaire collectif de référence, pratiqué dans l'entreprise ou l'établissement.</p><p>   Elle comprend tous les éléments bruts de la rémunération du salarié, y compris les avantages en nature, quelles qu'en soient la forme et la périodicité, passibles des cotisations de la mutualité sociale agricole, à l'exception :</p><p>   - des sommes constituant des remboursements de frais exclues de l'assiette des cotisations de mutualité sociale agricole ;</p><p>   - des sommes versées au titre de la participation et de l'intéressement, telles que prévues par la réglementation, et ne présentant pas le caractère de salaire ;</p><p>   - de la prime d'ancienneté aux taux et conditions prévus par la présente convention collective ;</p><p>   - des rémunérations afférentes aux heures supplémentaires calculées conformément à la réglementation en vigueur ;</p><p>   - des majorations conventionnelles pour contraintes telles que définies à l'article 35, alinéas 2 et 3, et à l'article 35 bis, alinéas 1 et 2, de la présente convention ;</p><p>   - des majorations conventionnelles résultant des réductions d'horaires telles que définies à l'article 33 de la présente convention.</p><p>   c) Mise en oeuvre de la RAM.</p><p>   Au moment d'effectuer la paye du mois de décembre, est comparé à la RAM le total des rémunérations brutes perçues par l'intéressé à l'exception des sommes indiquées ci-dessus.</p><p>   Pour cette comparaison sera prise en compte la moyenne pondérée des valeurs successives de la RAM au cours de l'année.</p><p>   Le salarié quittant son entreprise au cours de l'année bénéficie de la RAM au prorata de son temps de présence. Dans cette hypothèse, le montant de la RAM à prendre en considération résultera de la moyenne pondérée des valeurs successives de la RAM résultant des augmentations intervenues jusqu'à son départ.</p><p>   Lorsque, pour tout autre motif, le salarié n'a pas travaillé toute l'année (suspension du contrat, chômage partiel, etc.), devra être comparée la RAM pro rata temporis avec le salaire pro rata temporis tel que défini au b ci-dessus, auquel s'ajoute tout ce qui est versé pendant le temps d'absence au titre d'avantages supérieurs à la convention collective nationale, aux accords interprofessionnels nationaux et éventuellement à la réglementation en vigueur.</p><p>   Pour les salariés effectuant un horaire hebdomadaire moyen inférieur à l'horaire collectif de référence pratiqué dans l'entreprise ou l'établissement, la RAM sera calculée pro rata temporis.</p><p>   Si cette comparaison fait apparaître qu'un salarié n'a pas entièrement bénéficié de la RAM, le compte sera apuré par le versement par l'employeur d'un complément. Justification détaillée en sera donnée aux intéressés sur leur demande.</p><p>   d) Négociation annuelle.</p><p>   La négociation annuelle des salaires effectifs prévue par l'article L. 132-27 du code du travail sera élargie à la fixation, pour l'année, des éléments propres à l'entreprise ou à l'établissement non pris en compte pour l'application de la rémunération annuelle minimale.</p><p>   L'accord conclu dans ce cadre précisera en outre le taux d'augmentation annuel des grilles nationales de RAM au-delà duquel les éléments exclus redeviendront pris en compte.</p><p>   Si, au terme des négociations, aucun accord n'a été conclu, il sera établi un procès-verbal de désaccord conforme à l'article L. 132-29 du code du travail, dans lequel l'employeur mentionnera les mesures qu'il compte appliquer unilatéralement.</p><p>   e) Expression mensuelle.</p><p>   Lors de chaque modification du montant brut des rémunérations annuelles minimales, sera joint, à titre indicatif, un tableau faisant apparaître une expression mensuelle de ces RAM.</p><p> 2. Salaires minima mensuels</p><p>   Le barème des salaires minima mensuels fait l'objet de l'annexe I bis de la présente convention, qui en indique le montant brut.</p><p>   a) Champ d'application.</p><p>   Le barème des salaires minima mensuels s'applique par coefficient aux salariés des entreprises visées à l'article 1er de l'annexe VII de la présente convention.</p><p>   b) Définition.</p><p>   Les salaires minima mensuels s'apprécient pour un travail à temps complet, résultant de l'horaire collectif de référence, pratiqué dans l'entreprise ou l'établissement.</p><p> Article 2</p><p>   En application des dispositions de l'accord du 17 mai 2001, l'annexe I bis à la convention collective nationale des coopératives laitières est modifiée comme indiqué dans l'annexe ci-jointe, exprimée en francs et en euros.</p><p>   Article 3</p><p> Demande d'extension</p><p>   Les parties signataires demandent l'extension du présent avenant. Il sera déposé au service pluridépartemental de l'inspection du travail, de l'emploi et de la politique sociale agricoles de Paris, des Hauts-de-Seine, de la Seine-Saint-Denis et du Val-de-Marne.</p><p> ANNEXE   I bis</p><p> à l'avenant n° 37 du 17 mai 2001</p><p> Salaires minima mensuels au 1er mai 2001</p><p> Article 29 nouveau de la convention collective</p><p></p><p></p><p></p><p><table border=\"1\"><tbody><tr><td align=\"center\"> COEFFICIENT </td><td align=\"center\">     MONTANT    (en francs) </td><td align=\"center\">     MONTANT         (en euros) </td></tr><tr><td align=\"center\">    120      </td><td align=\"center\">   5 736,87   </td><td align=\"center\">   874,58       </td></tr><tr><td align=\"center\">    130      </td><td align=\"center\">   5 893,03   </td><td align=\"center\">   898,39       </td></tr><tr><td align=\"center\">    140      </td><td align=\"center\">   6 119,83   </td><td align=\"center\">   932,96       </td></tr><tr><td align=\"center\">    150      </td><td align=\"center\">   6 227,58   </td><td align=\"center\">   949,39       </td></tr><tr><td align=\"center\">    160      </td><td align=\"center\">   6 442,96   </td><td align=\"center\">   982,22       </td></tr><tr><td align=\"center\">    170      </td><td align=\"center\">   6 661,98   </td><td align=\"center\"> 1 015,61       </td></tr><tr><td align=\"center\">    180      </td><td align=\"center\">   6 757,16   </td><td align=\"center\"> 1 030,12       </td></tr><tr><td align=\"center\">    190      </td><td align=\"center\">   6 970,34   </td><td align=\"center\"> 1 062,62       </td></tr><tr><td align=\"center\">    200      </td><td align=\"center\">   7 185,31   </td><td align=\"center\"> 1 095,39       </td></tr><tr><td align=\"center\">    210      </td><td align=\"center\">   7 264,16   </td><td align=\"center\"> 1 107,41       </td></tr><tr><td align=\"center\">    220      </td><td align=\"center\">   7 474,19   </td><td align=\"center\"> 1 139,43       </td></tr><tr><td align=\"center\">    230      </td><td align=\"center\">   7 684,23   </td><td align=\"center\"> 1 171,45       </td></tr><tr><td align=\"center\">    240      </td><td align=\"center\">   7 897,78   </td><td align=\"center\"> 1 204,01       </td></tr><tr><td align=\"center\">    250      </td><td align=\"center\">   7 955,34   </td><td align=\"center\"> 1 212,78       </td></tr><tr><td align=\"center\">    280      </td><td align=\"center\">   8 577,63   </td><td align=\"center\"> 1 307,65       </td></tr><tr><td align=\"center\">    310      </td><td align=\"center\">   9 198,20   </td><td align=\"center\"> 1 402,26       </td></tr><tr><td align=\"center\">    350      </td><td align=\"center\">   9 925,64   </td><td align=\"center\"> 1 513,15       </td></tr><tr><td align=\"center\">    400      </td><td align=\"center\">  11 339,16   </td><td align=\"center\"> 1 728,64       </td></tr><tr><td align=\"center\">    450      </td><td align=\"center\">  12 756,12   </td><td align=\"center\"> 1 944,66       </td></tr><tr><td align=\"center\">    500      </td><td align=\"center\">  14 171,36   </td><td align=\"center\"> 2 160,41       </td></tr><tr><td align=\"center\">    550      </td><td align=\"center\">  15 596,94   </td><td align=\"center\"> 2 377,74       </td></tr><tr><td align=\"center\">    600      </td><td align=\"center\">  17 012,18   </td><td align=\"center\"> 2 593,49       </td></tr><tr><td align=\"center\">    650      </td><td align=\"center\">  18 430,87   </td><td align=\"center\"> 2 809,77       </td></tr></tbody></table></p><p><font color=\"808080\" size=\"1\"><i>Arrêté du 7 août 2001 art. 2 : Texte étendu sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.</i></font></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 37 2001-05-17 BO conventions collectives 2001-26 étendu par arrêté du 7 août 2001 JORF 21 août 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 990057600000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -19080,13 +19228,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005707919",
+              "cid": "KALISCTA000005707919",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima mensuels pour un travail à temps complet au 1er juin 2003",
+              "dateModif": null,
+              "dateDebut": "2003-01-15",
+              "dateFin": "2004-10-12",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005810943",
+                  "cid": "KALIARTI000005810943",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005707919/KALIARTI000005810943",
+                  "pathTitle": [
+                    "Salaires minima mensuels pour un travail à temps complet au 1er juin 2003"
+                  ],
+                  "content": "ANNEXE I bis<p></p> Salaires minima mensuels<p></p> pour un travail à temps complet<p></p><TABLE><TR><TD>COEF </TD><TD>  MONTANT  </TD></TR><TR><TD></TD><TD>au 1/6/2003</TD></TR><TR><TD>  120</TD><TD> 1 114,35  </TD></TR><TR><TD>  130</TD><TD> 1 124,35  </TD></TR><TR><TD>  140</TD><TD> 1 134,35  </TD></TR><TR><TD>  150</TD><TD> 1 144,35  </TD></TR><TR><TD>  160</TD><TD> 1 154,35  </TD></TR><TR><TD>  170</TD><TD> 1 164,35  </TD></TR><TR><TD>  180</TD><TD> 1 174,35  </TD></TR><TR><TD>  190</TD><TD> 1 184,35  </TD></TR><TR><TD>  200</TD><TD> 1 194,35  </TD></TR><TR><TD>  210</TD><TD> 1 204,35  </TD></TR><TR><TD>  220</TD><TD> 1 214,35  </TD></TR><TR><TD>  230</TD><TD> 1 224,35  </TD></TR><TR><TD>  240</TD><TD> 1 240,37  </TD></TR><TR><TD>  250</TD><TD> 1 249,41  </TD></TR><TR><TD>  280</TD><TD> 1 347,14  </TD></TR><TR><TD>  310</TD><TD> 1 444,61  </TD></TR><TR><TD>  350</TD><TD> 1 558,85  </TD></TR><TR><TD>  400</TD><TD> 1 780,84  </TD></TR><TR><TD>  450</TD><TD> 2 003,39  </TD></TR><TR><TD>  500</TD><TD> 2 225,65  </TD></TR><TR><TD>  550</TD><TD> 2 449,55  </TD></TR><TR><TD>  600</TD><TD> 2 671,81  </TD></TR><TR><TD>  650</TD><TD> 2 894,63  </TD></TR></TABLE><p></p><p></p>   Fait à Paris, le 15 janvier 2003.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 42 2003-01-15 BO conventions collectives 2003-12",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1042588800000,
+                  "dateFin": 1097539200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

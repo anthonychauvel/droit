@@ -10742,13 +10742,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729185",
+              "cid": "KALISCTA000005729185",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 2003",
+              "dateModif": null,
+              "dateDebut": "2002-11-13",
+              "dateFin": "2006-12-13",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863949",
+                  "cid": "KALIARTI000005863949",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005729185/KALIARTI000005863949",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 2003"
+                  ],
+                  "content": "<p></p>   Les salaires minima hiérarchiques définis dans la grille ci-après sont calculés en fonction d'un indice global composé :<p></p><p></p>   - d'un indice de base, appelé indice A, commun à tous les salaires ;<p></p><p></p>   - d'un indice de fonction, appelé indice B, qui évolue en fonction des postes dans la grille de rémunération.<p></p><p></p>       Le présent avenant modifie la valeur du point A :<p></p><p></p>   - valeur du point A : 8 euros ;<p></p><p></p>   - valeur du point B :  5,03 euros (inchangé).<p></p><p></p>   La grille des salaires modifiée annexée au présent avenant prend effet au 1er janvier 2003.<p></p><p></p>   Fait à Paris, le 13 novembre 2002.<p></p> Grille des salaires<p></p> Minima conventionnels<p></p> Catégorie employés<p></p><p></p> NIVEAU : Agent d'exécution<p></p> INDICE Point A : 100<p></p> INDICE Point B : 60<p></p> INDICE GLOBAL Points A + B : 160<p></p> SALAIRE BRUT (en euros) : 1 101,80<p></p> FILIERE SOIN : Agent thermal ADST<p></p> FILIERE ADMINISTRATION : Agent d'administration et d'accueil<p></p> FILIERE TECHNIQUE :<p></p> Agent de nettoyage<p></p> Agent de blanchisserie<p></p> Agent de surveillance<p></p> Aide-jardinier(ère)<p></p> Manoeuvre<p></p> Chauffeur<p></p> Lingère<p></p> Ouvrier d'entretien et de maintenance <p></p><p></p> NIVEAU : Agent d'exécution<p></p> INDICE Point A : 100<p></p> INDICE Point B : 62<p></p> INDICE GLOBAL Points A + B : 162<p></p> SALAIRE BRUT (en euros) : 1 111,86<p></p> FILIERE : Pour tous ces postes ayant 2 années d'ancienneté, quelle que soit la filière  <p></p><p></p> NIVEAU : Agent qualifié<p></p> INDICE Point A : 100<p></p> INDICE Point B : 65<p></p> INDICE GLOBAL Points A + B : 165<p></p> SALAIRE BRUT (en euros) : 1 126,95<p></p> FILIERE SOIN :<p></p> Agent thermal ADST (ayant 4 ans d'ancienneté)<p></p> Agent thermal AST<p></p> Surveillant(e) de baignade<p></p> Moniteur(trice) de gymnastique<p></p>Esthéticienne<p></p> FILIERE ADMINISTRATION :<p></p> Agent administratif et d'accueil (ayant 4 ans d'ancienneté)<p></p> Aide-comptable<p></p> Secrétaire bureautique<p></p> FILIERE TECHNIQUE :<p></p> Agent de nettoyage (ayant 4 ans d'ancienneté)<p></p> Agent de blanchisserie (ayant 4 ans d'ancienneté)<p></p> Agent de surveillance (ayant 4 ans d'ancienneté)<p></p> Jardinier(ère)<p></p> Magasinier(ère)<p></p> Manutentionnaire<p></p> Lingère (ayant 4 ans d'ancienneté)<p></p> Opérateur(rice) de laboratoire<p></p> ouvrier d'entretien et de maintenance (ayant 4 ans d'ancienneté) <p></p><p></p> NIVEAU : Agent hautement qualifié<p></p> INDICE Point A : 100<p></p> INDICE Point B : 85<p></p> INDICE GLOBAL Points A + B : 185<p></p> SALAIRE BRUT (en euros) : 1 227,55<p></p> FILIERE SOIN :<p></p> Agent thermal AST<p></p> Responsable de service(s)<p></p> FILIERE ADMINISTRATION :<p></p> Secrétaire bureautique<p></p> Informaticien(ne)<p></p> Technicien(ne) d'exploitation<p></p> Comptable<p></p> FILIERE TECHNIQUE :<p></p> Jardinier(ère)<p></p> Opérateur(trice) de laboratoire<p></p> Ouvrier d'entretien et de maintenance <p></p><p></p> Catégorie agents de maîtrise<p></p><p></p> NIVEAU : Technicien<p></p> INDICE Point A : 100<p></p> INDICE Point B : 95<p></p> INDICE GLOBAL Points A + B : 195<p></p> SALAIRE BRUT (en euros) : 1 277,85<p></p> Diététicien(ne)<p></p> Responsable de service(s)<p></p> Pédicure-podologue DE<p></p> FILIERE ADMINISTRATION :<p></p> Comptable<p></p> Assistant(e) de direction<p></p> Agent commercial<p></p>Informaticien(ne) développeur(euse) et administrateur(trice)<p></p> FILIERE TECHNIQUE :<p></p> Chef jardinier(ère)<p></p> Technicien(ne) d'entretien et de maintenance<p></p> Agent de blanchisserie chef d'équipe <p></p><p></p> NIVEAU : Technicien qualifié<p></p> INDICE Point A : 100<p></p> INDICE Point B : 120<p></p> INDICE GLOBAL Points A + B : 220<p></p> SALAIRE BRUT (en euros) : 1 403,60<p></p> FILIERE SOIN :<p></p> Infirmier(ère) DE<p></p> Masseur-kinésithérapeute DE<p></p> FILIERE ADMINISTRATION :<p></p> Comptable<p></p> Assistant(e) de direction<p></p> Agent commercial<p></p> Informaticien(ne) développeur(euse) et administrateur(trice) FILIERE TECHNIQUE :<p></p> Technicien(ne) d'entretien et de maintenance <p></p><p></p> Technicien hautement qualifié<p></p> INDICE Point A : 100<p></p> INDICE Point B : 145<p></p> INDICE GLOBAL Points A + B : 245<p></p> SALAIRE BRUT (en euros) : 1 529,35<p></p>FILIERE SOIN :<p></p> Infirmier(ère) DE<p></p> Masseur-kinésithérapeute DE<p></p> FILIERE ADMINISTRATION :<p></p> Informaticien(ne) développeur(euse) et administrateur(trice)<p></p> Assistant(e) de direction<p></p> FILIERE TECHNIQUE :<p></p> Responsable de laboratoire<p></p> Technicien(ne) d'entretien et de maintenance <p></p><p></p> Catégorie cadres<p></p><p></p> NIVEAU : Cadre niveau 1<p></p> INDICE Point A : 100<p></p> INDICE Point B : 280<p></p> INDICE GLOBAL Points A + B : 380<p></p> SALAIRE BRUT (en euros) : 2 208,40<p></p> FILIERE SOIN :<p></p> Masseur-kinésithérapeute, cadre DE<p></p> Psychologue DE<p></p> FILIERE ADMINISTRATION :<p></p> Chef comptable<p></p> Attaché(e) de direction<p></p> Directeur(trice) commercial(e)<p></p> Directeur(trice) du personnel<p></p> Directeur(trice) informatique<p></p> FILIERE TECHNIQUE :<p></p> Responsable qualité<p></p> Responsable de laboratoire<p></p> Technicien(ne) d'entretien et de maintenance<p></p> Directeur(trice) technique <p></p><p></p> NIVEAU : Cadre niveau 2<p></p> INDICE Point A : 100<p></p> INDICE Point B : 300<p></p> INDICE GLOBAL Points A + B : 400<p></p> SALAIRE BRUT (en euros) : 2 309,00<p></p> FILIERE ADMINISTRATION :<p></p> Directeur(trice) d'exploitation<p></p><p></p> NIVEAU : Cadre supérieur<p></p> FILIERE ADMINISTRATION :<p></p> Directeur(trice) général(e)  <p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 8 2002-11-13 BO conventions collectives 2003-7",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1037145600000,
+                  "dateFin": 1165968000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -10762,13 +10836,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729199",
+              "cid": "KALISCTA000005729199",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Salaires au 1er janvier 2003",
+              "dateModif": null,
+              "dateDebut": "2003-01-08",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863965",
+                  "cid": "KALIARTI000005863965",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005729199/KALIARTI000005863965",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 2003"
+                  ],
+                  "content": "<p></p>   L'accord national professionnel du 27 avril 1993 relatif à l'indemnisation des salariés participant aux négociations ou instances paritaires est modifié comme suit dans son article 3 \" Indemnisation des frais \" :<p></p><p></p>   Les frais d'hébergement et de repas seront pris en charge par l'organisation patronale de la façon suivante :<p></p><p></p>   - frais réels sur justificatifs ou facture des centrales syndicales plafonnés à :<p></p><p></p>      - hôtel et petit déjeuner : 80 Euros ;<p></p><p></p>      - repas (pour 2 repas) : 30 Euros,<p></p><p></p>   soit au total 110 Euros par département.<p></p><p></p>   Ce barème est applicable à compter du 1er janvier 2003.<p></p><p></p>   Fait à Paris, le 8 janvier 2003.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 10 2003-01-08 BO conventions collectives 2003-7",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1041984000000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -10782,13 +10930,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729214",
+              "cid": "KALISCTA000005729214",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Grille des salaires minima conventionnels au 1er janvier 2007",
+              "dateModif": null,
+              "dateDebut": "2006-12-13",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863980",
+                  "cid": "KALIARTI000005863980",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005729214/KALIARTI000005863980",
+                  "pathTitle": [
+                    "Grille des salaires minima conventionnels au 1er janvier 2007"
+                  ],
+                  "content": "<p></p>   1. A compter du 1er janvier 2007, la valeur des points de la convention collective nationale du thermalisme est fixée comme suit :<p></p><p></p>   - point A : 9,53 Euros ;<p></p><p></p>   - point B : 5,03 Euros.<p></p><p></p>   2. Les partenaires sociaux engagent immédiatement une négociation sur la nouvelle structure de la grille des rémunérations.<p></p><p></p>   La grille des salaires modifiée annexée au présent avenant prend effet au 1er janvier 2007.<p></p><p></p>   Fait à Paris, le 13 décembre 2006.<p></p><p></p>   ANNEXE : Grille des salaires minima conventionnels au 1er janvier 2007<p></p><p></p>   Catégorie employés<p></p><p></p> NIVEAU : Agent d'exécution<p></p> INDICE Point A : 100<p></p> INDICE Point B : 60<p></p> INDICE GLOBAL Points A + B : 160<p></p> SALAIRE BRUT (en euros) : 1 254,80<p></p> FILIERE SOIN : Agent thermal ADST<p></p> FILIERE ADMINISTRATION : Agent d'administration et d'accueil<p></p> FILIERE TECHNIQUE :<p></p> Agent de nettoyage<p></p> Agent de blanchisserie<p></p> Agent de surveillance<p></p> Aide-jardinier(ère)<p></p> Manoeuvre<p></p> Chauffeur<p></p> Lingère<p></p> Ouvrier d'entretien et de maintenance <p></p><p></p> NIVEAU : Agent d'exécution<p></p> INDICE Point A : 100<p></p> INDICE Point B : 62<p></p> INDICE GLOBAL Points A + B : 162<p></p> SALAIRE BRUT (en euros) : 1 264,86<p></p> FILIERE : Pour tous ces postes ayant 2 années d'ancienneté, quelle que soit la filière  <p></p><p></p> NIVEAU : Agent qualifié<p></p> INDICE Point A : 100<p></p> INDICE Point B : 65<p></p> INDICE GLOBAL Points A + B : 165<p></p> SALAIRE BRUT (en euros) : 1 279,95<p></p> FILIERE SOIN :<p></p> Agent thermal ADST (ayant 4 ans d'ancienneté)<p></p> Agent thermal AST<p></p> Surveillant(e) de baignade<p></p> Moniteur(trice) de gymnastique<p></p>Esthéticienne<p></p> FILIERE ADMINISTRATION :<p></p> Agent administratif et d'accueil (ayant 4 ans d'ancienneté)<p></p> Aide-comptable<p></p> Secrétaire bureautique<p></p> FILIERE TECHNIQUE :<p></p> Agent de nettoyage (ayant 4 ans d'ancienneté)<p></p> Agent de blanchisserie (ayant 4 ans d'ancienneté)<p></p> Agent de surveillance (ayant 4 ans d'ancienneté)<p></p> Jardinier(ère)<p></p> Magasinier(ère)<p></p> Manutentionnaire<p></p> Lingère (ayant 4 ans d'ancienneté)<p></p> Opérateur(rice) de laboratoire<p></p> ouvrier d'entretien et de maintenance (ayant 4 ans d'ancienneté) <p></p><p></p> NIVEAU : Agent hautement qualifié<p></p> INDICE Point A : 100<p></p> INDICE Point B : 85<p></p> INDICE GLOBAL Points A + B : 185<p></p> SALAIRE BRUT (en euros) : 1 380,55<p></p> FILIERE SOIN :<p></p> Agent thermal AST<p></p> Responsable de service(s)<p></p> FILIERE ADMINISTRATION :<p></p> Secrétaire bureautique<p></p> Informaticien(ne)<p></p> Technicien(ne) d'exploitation<p></p> Comptable<p></p> FILIERE TECHNIQUE :<p></p> Jardinier(ère)<p></p> Opérateur(trice) de laboratoire<p></p> Ouvrier d'entretien et de maintenance <p></p><p></p> Catégorie agents de maîtrise<p></p><p></p> NIVEAU : Technicien<p></p> INDICE Point A : 100<p></p> INDICE Point B : 95<p></p> INDICE GLOBAL Points A + B : 195<p></p> SALAIRE BRUT (en euros) : 1 430,85<p></p> Diététicien(ne)<p></p> Responsable de service(s)<p></p> Pédicure-podologue DE<p></p> FILIERE ADMINISTRATION :<p></p> Comptable<p></p> Assistant(e) de direction<p></p> Agent commercial<p></p>Informaticien(ne) développeur(euse) et administrateur(trice)<p></p> FILIERE TECHNIQUE :<p></p> Chef jardinier(ère)<p></p> Technicien(ne) d'entretien et de maintenance<p></p> Agent de blanchisserie chef d'équipe <p></p><p></p> NIVEAU : Technicien qualifié<p></p> INDICE Point A : 100<p></p> INDICE Point B : 120<p></p> INDICE GLOBAL Points A + B : 220<p></p> SALAIRE BRUT (en euros) : 1 556,60<p></p> FILIERE SOIN :<p></p> Infirmier(ère) DE<p></p> Masseur-kinésithérapeute DE<p></p> FILIERE ADMINISTRATION :<p></p> Comptable<p></p> Assistant(e) de direction<p></p> Agent commercial<p></p> Informaticien(ne) développeur(euse) et administrateur(trice) FILIERE TECHNIQUE :<p></p> Technicien(ne) d'entretien et de maintenance <p></p><p></p> Technicien hautement qualifié<p></p> INDICE Point A : 100<p></p> INDICE Point B : 145<p></p> INDICE GLOBAL Points A + B : 245<p></p> SALAIRE BRUT (en euros) : 1 682,35<p></p>FILIERE SOIN :<p></p> Infirmier(ère) DE<p></p> Masseur-kinésithérapeute DE<p></p> FILIERE ADMINISTRATION :<p></p> Informaticien(ne) développeur(euse) et administrateur(trice)<p></p> Assistant(e) de direction<p></p> FILIERE TECHNIQUE :<p></p> Responsable de laboratoire<p></p> Technicien(ne) d'entretien et de maintenance <p></p><p></p> Catégorie cadres<p></p><p></p> NIVEAU : Cadre niveau 1<p></p> INDICE Point A : 100<p></p> INDICE Point B : 280<p></p> INDICE GLOBAL Points A + B : 380<p></p> SALAIRE BRUT (en euros) : 2 361,40<p></p> FILIERE SOIN :<p></p> Masseur-kinésithérapeute, cadre DE<p></p> Psychologue DE<p></p> FILIERE ADMINISTRATION :<p></p> Chef comptable<p></p> Attaché(e) de direction<p></p> Directeur(trice) commercial(e)<p></p> Directeur(trice) du personnel<p></p> Directeur(trice) informatique<p></p> FILIERE TECHNIQUE :<p></p> Responsable qualité<p></p> Responsable de laboratoire<p></p> Technicien(ne) d'entretien et de maintenance<p></p> Directeur(trice) technique <p></p><p></p> NIVEAU : Cadre niveau 2<p></p> INDICE Point A : 100<p></p> INDICE Point B : 300<p></p> INDICE GLOBAL Points A + B : 400<p></p>SALAIRE BRUT (en euros) : 2 462,00<p></p> FILIERE ADMINISTRATION :<p></p> Directeur(trice) d'exploitation<p></p><p></p> NIVEAU : Cadre supérieur<p></p> FILIERE ADMINISTRATION :<p></p> Directeur(trice) général(e).<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 13 2006-12-13 BO conventions collectives 2007-3 étendu par arrêté du 16 juillet 2007 JORF 24 juillet 2007",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1165968000000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -7207,13 +7207,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724058",
+              "cid": "KALISCTA000005724058",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er mai 1992.",
+              "dateModif": null,
+              "dateDebut": "1992-02-20",
+              "dateFin": "1994-03-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851187",
+                  "cid": "KALIARTI000005851187",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005724058/KALIARTI000005851187",
+                  "pathTitle": [
+                    "Salaires au 1er mai 1992."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Le barème des salaires mensuels minima garantis, applicable en France métropolitaine pour un horaire forfaitaire de 169 heures, des personnels visés par les avenants et annexes de la convention collective nationale des maisons à succursales de vente au détail d'habillement du 30 juin 1972 sont fixés comme suit à compter du 1er mai 1992:<p></p><p></p><p></p>   (1) : Catégorie.<p></p><p></p>   (2) : Salaire mensuel au 1er mai 1992.<p></p> !---------------!<p></p> !    EMPLOYES   !<p></p> !---------------!<p></p> !  1  !    2    !<p></p> !-----!---------!<p></p> !  A  !  5725 F !<p></p> !  B  !  5745 F !<p></p> !  C  !  5775 F !<p></p> !  D  !  5830 F !<p></p> !  E  !  5870 F !<p></p> !  F  !  5960 F !<p></p> !  G  !  6110 F !<p></p> !  H  !  6325 F !<p></p> !-----!---------!<p></p><p></p><p></p>   (1) : Catégorie.<p></p><p></p>   (2) : Salaire mensuel au 1er mai 1992.<p></p> !---------------!<p></p> !  AGENTS DE    !<p></p> !  MAITRISE     !<p></p> !---------------!<p></p> !  1  !    2    !<p></p> !-----!---------!!<p></p> !  A  !  6427 F !<p></p> !  B  !  6792 F !<p></p> !  C  !  7436 F !<p></p> !-----!---------!<p></p><p></p><p></p>   (1) : Catégorie.<p></p><p></p>   (2) : Salaire mensuel au 1er mai 1992.<p></p> !---------------!<p></p> !   CADRES      !<p></p> !---------------!<p></p> !  1  !    2    !<p></p> !-----!---------!<p></p> ! A1  !  8822 F !<p></p> ! A2  !  9266 F !<p></p> ! B1  !  9904 F !<p></p> ! B2  ! 11042 F !<p></p> ! C1  ! 12238 F !<p></p> ! C2  ! 14137 F !<p></p> ! D1  ! 18139 F !<p></p> ! D2  ! 22461 F !<p></p> !-----!---------!<p></p><p></p>Article 2<p></p><p></p>   Conformément à l'article 31 de la convention collective, les valeurs mensuelles absolues des primes d'ancienneté par catégorie d'emploi et tranches d'ancienneté sont fixées à partir du 1er mai 1992 de la manière suivante :<p></p><p></p><p></p>   (1) : Catégorie.<p></p> !--------------------------------!<p></p> !          EMPLOYES              !<p></p> !--------------------------------!<p></p> !     TRANCHES D'ANCIENNETE      !<p></p> !--------------------------------!<p></p> ! 1 !  3 !  6 !  9 ! 12 ! 15 ! 20!<p></p> !   ! ans! ans! ans! ans! ans!ans!<p></p> !---!----!----!----!----!----!---!<p></p> ! A !128 !256 !384 !512 !640 !853!<p></p> ! B !129 !258 !387 !516 !645 !860!<p></p> ! C !130 !260 !390 !520 !650 !867!<p></p> ! D !132 !264 !396 !528 !660 !880!<p></p> ! E !134 !266 !402 !535 !670 !893!<p></p> ! F !137 !274 !411 !548 !685 !913!<p></p> ! G !141 !282 !423 !564 !705 !940!<p></p> ! H !147 !294 !441 !588 !735 !980!<p></p> !---!----!----!----!----!----!---!<p></p><p></p><p></p>   (1) : Catégorie.<p></p> ----------------------------------<p></p>        AGENTS DE MAITRISE         <p></p> ----------------------------------<p></p>      TRANCHES D'ANCIENNETE        <p></p> ----------------------------------<p></p> 1 ! 3 !  6  !  9  ! 12  ! 15 ! 20 <p></p>   !ans! ans ! ans ! ans ! ans! ans<p></p> --!---!-----!-----!-----!----!----<p></p> A !149!  298!  447!  596! 745! 993<p></p> B !159!  318!  477!  636! 795!1060<p></p> C !174!  348!  522!  696! 870!1160<p></p> ----------------------------------<p></p><p></p>   (1) : Catégorie.<p></p> ----------------------------------<p></p>             CADRES (+)            <p></p> ----------------------------------<p></p>      TRANCHES D'ANCIENNETE        <p></p> ----------------------------------<p></p> 1 ! 3 !  6 !  9 ! 12  ! 15  !  20 <p></p>   !ans! ans! ans! ans ! ans !  ans<p></p> --!---!----!----!-----!-----!-----<p></p> A1!206! 412! 618!  824! 1030! 1373<p></p> A2!217! 434! 651!  868! 1085! 1447<p></p> B1!232! 464! 696!  928! 1160! 1547<p></p> B2!260! 520! 780! 1040! 1300! 1733<p></p> C1!287! 574! 861! 1148! 1435! 1913<p></p> C2!335! 670!1005! 1340! 1675! 2233<p></p> D1!428! 856!1284! 1712! 2140! 2853<p></p> D2!526!1052!1578! 2104! 2630! 3507<p></p> ----------------------------------<p></p><p></p>   (+) : Prime incluse forfaitairement dans le salaire réel perçu.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 34 1992-02-20 étendu par arrêté du 29 juin 1992 JORF 9 juillet 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 698544000000,
+                  "dateFin": 762480000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7227,13 +7301,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724060",
+              "cid": "KALISCTA000005724060",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril 1994.",
+              "dateModif": null,
+              "dateDebut": "1994-03-01",
+              "dateFin": "1995-05-24",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851188",
+                  "cid": "KALIARTI000005851188",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005724060/KALIARTI000005851188",
+                  "pathTitle": [
+                    "Salaires au 1er avril 1994."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Le barème des salaires mensuels minima garantis, applicable en France métropolitaine, pour un horaire forfaitaire de 169 heures, des personnels visés par les avenants et annexes de la convention collective nationale des maisons à succursales de vente au détail d'habillement du 30 juin 1972 est fixé comme suit à compter du 1er avril 1994.<p></p><p></p>   (1) : Catégorie.<p></p><p></p>   (2) : Salaire mensuel au 1er avril 1994.<p></p> !---------------!<p></p> !    EMPLOYES   !<p></p> !---------------!<p></p> !  1  !    2    !<p></p> !-----!---------!<p></p> !  A  !  5940 F !<p></p> !  B  !  5960 F !<p></p> !  C  !  6000 F !<p></p> !  D  !  6050 F !<p></p> !  E  !  6090 F !<p></p> !  F  !  6180 F !<p></p> !  G  !  6335 F !<p></p> !  H  !  6560 F !<p></p> !-----!---------!<p></p><p></p><p></p>   (1) : Catégorie.<p></p><p></p>   (2) : Salaire mensuel au 1er mai 1992.<p></p> !---------------!<p></p> !  AGENTS DE    !<p></p> !  MAITRISE     !<p></p> !---------------!<p></p> !  1  !    2    !<p></p> !-----!---------!!<p></p> !  A  !  6665 F !<p></p> !  B  !  7043 F !<p></p> !  C  !  7711 F !<p></p> !-----!---------!<p></p><p></p><p></p>   (1) : Catégorie.<p></p><p></p>   (2) : Salaire mensuel au 1er mai 1992.<p></p> !---------------!<p></p> !   CADRES      !<p></p> !---------------!<p></p> !  1  !    2    !<p></p> !-----!---------!<p></p> ! A1  !  9148 F !<p></p> ! A2  !  9609 F !<p></p> ! B1  ! 10270 F !<p></p> ! B2  ! 11450 F !<p></p> ! C1  ! 12690 F !<p></p> ! C2  ! 14660 F !<p></p> ! D1  ! 18810 F !<p></p> ! D2  ! 23290 F !<p></p> !-----!---------!<p></p><p></p>Article 2<p></p><p></p>   Conformément à l'article 31 de la convention collective, les valeurs mensuelles absolues des primes d'ancienneté par catégorie d'emploi et tranche d'ancienneté, applicables en France métropolitaine, sont fixées, à partir du 1er avril 1994, de la manière suivante :<p></p><p></p>   (1) : Catégorie.<p></p> ---------------------------------<p></p>           EMPLOYES               <p></p> ---------------------------------<p></p>      TRANCHES D'ANCIENNETE       <p></p> ---------------------------------<p></p>  1 !  3 !  6 !  9 ! 12 ! 15 ! 20 <p></p>    ! ans! ans! ans! ans! ans! ans<p></p> ---!----!----!----!----!----!----<p></p>  A !131 !262 !393 !524 !655 ! 873<p></p>  B !132 !264 !396 !528 !660 ! 880<p></p>  C !133 !266 !399 !532 !665 ! 887<p></p>  D !135 !270 !405 !540 !675 ! 900<p></p>  E !137 !274 !411 !548 !685 ! 913<p></p>  F !140 !280 !420 !560 !700 ! 933<p></p>  G !144 !288 !432 !576 !720 ! 960<p></p>  H !150 !300 !450 !600 !750 !1000<p></p> ---!----!----!----!----!----!----<p></p><p></p><p></p>   (1) : Catégorie.<p></p> ----------------------------------<p></p>        AGENTS DE MAITRISE         <p></p> ----------------------------------<p></p>      TRANCHES D'ANCIENNETE        <p></p> ----------------------------------<p></p> 1 ! 3 !  6 !  9 ! 12  ! 15  !  20 <p></p>   !ans! ans! ans! ans ! ans !  ans<p></p> --!---!----!----!-----!-----!-----<p></p> A !152! 304! 456! 608 ! 760 ! 1013<p></p> B !162! 324! 486! 648 ! 810 ! 1080<p></p> C !178! 356! 534! 712 ! 890 ! 1187<p></p> ----------------------------------<p></p><p></p>   (1) : Catégorie.<p></p> ----------------------------------<p></p>             CADRES (+)            <p></p> ----------------------------------<p></p>      TRANCHES D'ANCIENNETE        <p></p> ----------------------------------<p></p> 1 ! 3 !  6 !  9 ! 12  ! 15  !  20 <p></p>   !ans! ans! ans! ans ! ans !  ans<p></p> --!---!----!----!-----!-----!-----<p></p> A1!210! 420! 630!  840! 1050! 1400<p></p> A2!222! 444! 666!  888! 1110! 1480<p></p> B1!237! 474! 711!  948! 1185! 1580<p></p> B2!266! 532! 798! 1064! 1330! 1773<p></p> C1!293! 586! 879! 1172! 1465! 1953<p></p> C2!342! 684!1026! 1368! 1710! 2280<p></p> D1!437! 874!1311! 1748! 2185! 2913<p></p> D2!538!1076!1614! 2152! 2690! 3587<p></p> ----------------------------------<p></p><p></p>   (+) : Prime incluse forfaitairement dans le salaire réel perçu.<p></p><font color=\"808080\"><em>   Avenant n° 35 étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.</em></font>",
+                  "nota": "   Avenant n° 35 étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 35 1994-03-01 BO Conventions collectives 94-16, étendu par arrêté du 11 juillet 1994 JORF 22 juillet 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 762480000000,
+                  "dateFin": 801273600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -7247,13 +7395,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724062",
+              "cid": "KALISCTA000005724062",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juin 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-05-24",
+              "dateFin": "1996-07-08",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851189",
+                  "cid": "KALIARTI000005851189",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005724062/KALIARTI000005851189",
+                  "pathTitle": [
+                    "Salaires au 1er juin 1995."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Le barème des salaires mensuels minima garantis, applicable en France métropolitaine, pour un horaire forfaitaire de 169 heures, des personnels visés par les avenants et annexes de la convention collective nationale des maisons à succursales de vente au détail d'habillement du 30 juin 1972 est fixé comme suit à compter du 1er juin 1995 :<p></p><p></p><p></p>   (1) = CATEGORIE<p></p><p></p>   (2) = SALAIRE MENSUEL au 1er juin 1995 (en francs)<p></p><p></p>  AGENTS DE MAITRISE<p></p><TABLE><TR><TD>(1)</TD><TD>  (2)  </TD></TR><TR><TD> A </TD><TD> 6.810 </TD></TR><TR><TD> B </TD><TD> 7.196 </TD></TR><TR><TD> C </TD><TD> 7.879 </TD></TR></TABLE><p></p><p></p> CADRES :-----------:<p></p><TABLE><TR><TD>(1)</TD><TD>  (2)  </TD></TR><TR><TD>A 1</TD><TD>  9 347</TD></TR><TR><TD>A 2</TD><TD>  9 818</TD></TR><TR><TD>B 1</TD><TD> 10 493</TD></TR><TR><TD>B 2</TD><TD> 11 699</TD></TR><TR><TD>C 1</TD><TD> 12 965</TD></TR><TR><TD>C 2</TD><TD> 14 927</TD></TR><TR><TD>D 1</TD><TD> 19 218</TD></TR><TR><TD>D 2</TD><TD> 23 795</TD></TR></TABLE><p></p>Article 2<p></p><p></p>   Conformément à l'article 31 de la convention collective, les valeurs mensuelles absolues des primes d'ancienneté par catégorie d'emploi et tranche d'ancienneté, applicables en France métropolitaine, sont fixées, à partir du 1er juin 1995, de la manière suivante :<p></p><p></p><p></p>   (1) = Catégorie<p></p><p></p> AGENTS DE MAITRISE <p></p><TABLE><TR><TD>(1)</TD><TD> TRANCHES D'ANCIENNETE </TD></TR><TR><TD></TD><TD> 3 ans </TD><TD> 6 ans </TD><TD> 9 ans </TD></TR><TR><TD> A </TD><TD>  154  </TD><TD>  308  </TD><TD>  462  </TD></TR><TR><TD> B </TD><TD>  164  </TD><TD>  328  </TD><TD>  492  </TD></TR><TR><TD> C </TD><TD>  180  </TD><TD>  360  </TD><TD>  540  </TD></TR></TABLE><p></p><p></p><p></p>   (1) = Catégorie<p></p><p></p> AGENTS DE MAITRISE <p></p><TABLE><TR><TD>(1)</TD><TD> TRANCHES D'ANCIENNETE </TD></TR><TR><TD></TD><TD> 12 ans</TD><TD> 15 ans</TD><TD> 20 ans</TD></TR><TR><TD> A </TD><TD>  616  </TD><TD>  770  </TD><TD>  1.027</TD></TR><TR><TD> B </TD><TD>  656  </TD><TD>  820  </TD><TD>  1.093</TD></TR><TR><TD> C </TD><TD>  720  </TD><TD>  900  </TD><TD>  1.200</TD></TR></TABLE><p></p><p></p><p></p>   (1) = CatégorieCADRES (+) <p></p><TABLE><TR><TD>(1)</TD><TD> TRANCHES D'ANCIENNETE</TD></TR><TR><TD></TD><TD> 3 ans </TD><TD> 6 ans</TD><TD> 9 ans </TD></TR><TR><TD>A 1</TD><TD>  213  </TD><TD>  426 </TD><TD>   639 </TD></TR><TR><TD>A 2</TD><TD>  225  </TD><TD>  450 </TD><TD>   675 </TD></TR><TR><TD>B 1</TD><TD>  240  </TD><TD>  480 </TD><TD>   720 </TD></TR><TR><TD>B 2</TD><TD>  269  </TD><TD>  538 </TD><TD>   807 </TD></TR><TR><TD>C 1</TD><TD>  297  </TD><TD>  594 </TD><TD>   891 </TD></TR><TR><TD>C 2</TD><TD>  346  </TD><TD>  692 </TD><TD> 1.038 </TD></TR><TR><TD>D 1</TD><TD>  443  </TD><TD>  886 </TD><TD> 1.329 </TD></TR><TR><TD>D 2</TD><TD>  545  </TD><TD>1.090 </TD><TD> 1.635 </TD></TR></TABLE><p></p><p></p><p></p>   (1) = Catégorie<p></p> CADRES (+) <p></p><TABLE><TR><TD>(1)</TD><TD> TRANCHES D'ANCIENNETE </TD></TR><TR><TD></TD><TD> 12 ans</TD><TD> 15 ans</TD><TD> 20 ans</TD></TR><TR><TD>A 1</TD><TD>  852  </TD><TD> 1.065 </TD><TD> 1.420 </TD></TR><TR><TD>A 2</TD><TD>   900 </TD><TD> 1.125 </TD><TD> 1.500 </TD></TR><TR><TD>B 1</TD><TD>   960 </TD><TD> 1.200 </TD><TD> 1.600 </TD></TR><TR><TD>B 2</TD><TD> 1.076 </TD><TD> 1.345 </TD><TD> 1.793 </TD></TR><TR><TD>C 1</TD><TD> 1.188 </TD><TD> 1.485 </TD><TD> 1.980 </TD></TR><TR><TD>C 2</TD><TD> 1.384 </TD><TD> 1.730 </TD><TD> 2.307 </TD></TR><TR><TD>D 1</TD><TD> 1.772 </TD><TD> 2.215 </TD><TD> 2.953 </TD></TR><TR><TD>D 2</TD><TD> 2.180 </TD><TD> 2.725 </TD><TD> 3.633 </TD></TR></TABLE><p></p><p></p>   (+) Prime incluse forfaitairement dans le salaire réel perçu.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 39 1995-05-24 BO Conventions collectives 95-25",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 801273600000,
+                  "dateFin": 836784000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -13452,13 +13452,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005691210",
+              "cid": "KALISCTA000005691210",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des appointements minimaux garantis au 1er janvier 1990.",
+              "dateModif": null,
+              "dateDebut": "1989-12-14",
+              "dateFin": "1990-10-02",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005769250",
+                  "cid": "KALIARTI000005769250",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005691210/KALIARTI000005769250",
+                  "pathTitle": [
+                    "Barème des appointements minimaux garantis au 1er janvier 1990."
+                  ],
+                  "content": "<p></p>   A compter du 1er janvier 1990, la valeur du point est fixée à 28,33 F.. Toutefois, pour les coefficients 140, 145, 155, 170, 180 et 190, les minima ainsi obtenus seront majorés de :<p></p><p></p>   - 30 p. 100 pour le coefficient 140, soit 5 156 F ;<p></p><p></p>   - 26 p. 100 pour le coefficient 145, soit 5 176 F ;<p></p><p></p>   - 19 p. 100 pour le coefficient 155, soit 5 225 F ;<p></p><p></p>   - 12 p. 100 pour le coefficient 170, soit 5 394 F ;<p></p><p></p>   -  8 p. 100 pour le coefficient 180, soit 5 507 F ;<p></p><p></p>   -  6 p. 100 pour le coefficient 190, soit 5 705 F ;<p></p><p></p>   Ces salaires minima s'entendent pour une durée légale de cent soixante-neuf heures de travail.<p></p><p></p>   La valeur du point \" Cadre \" est fixée suivant le coefficient de raccordement ci-dessous :<p></p><p></p>   - Valeur du point \" Collaborateur \" 3,6<p></p><p></p>   La valeur du point \" Collaborateur \" étant de 28,33 F, la valeur du point \" Cadre \" est de 101,98 F.<p></p><p></p>   Dans le cas où l'augmentation de l'indice des prix I.N.S.E.E. dépasserait 2 p. 100 depuis le 1er janvier 1990, les parties sont convenues de se rencontrer dans les quinze jours suivant la publication de l'indice pour une nouvelle négociation. La prochaine réunion est fixée au mardi 26 juin 1990, à 10 heures.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 20 1989-12-14 étendu par arrêté du 13 mars 1990 JORF 7 avril 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 629596800000,
+                  "dateFin": 654825600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13472,13 +13546,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005691211",
+              "cid": "KALISCTA000005691211",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des appointements minimaux garantis au 1er octobre 1990.",
+              "dateModif": null,
+              "dateDebut": "1990-10-02",
+              "dateFin": "1990-12-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005769251",
+                  "cid": "KALIARTI000005769251",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005691211/KALIARTI000005769251",
+                  "pathTitle": [
+                    "Barème des appointements minimaux garantis au 1er octobre 1990."
+                  ],
+                  "content": "<p></p>   A compter du 1er octobre 1990, la valeur du point est fixée à 28,90 F.. Toutefois, pour les coefficients 140, 145, 155, 170, 180 et 190, les minima ainsi obtenus seront majorés de :<p></p><p></p>   - 31 p. 100 pour le coefficient 140, soit 5 300 F ;<p></p><p></p>   - 27 p. 100 pour le coefficient 145, soit 5 322 F ;<p></p><p></p>   - 20 p. 100 pour le coefficient 155, soit 5 375 F ;<p></p><p></p>   - 13 p. 100 pour le coefficient 170, soit 5 552 F ;<p></p><p></p>   -  9 p. 100 pour le coefficient 180, soit 5 670 F ;<p></p><p></p>   -  6 p. 100 pour le coefficient 190, soit 5 820 F ;<p></p><p></p>   Ces salaires minima s'entendent pour une durée légale de 169 heures de travail.<p></p><p></p>   La valeur du point \" Cadre \" est fixée suivant le coefficient de raccordement ci-dessous :<p></p><p></p>   - Valeur du point \" Collaborateur \" 3,6<p></p><p></p>   La valeur du point \" Collaborateur \" étant de 28,90 F, la valeur du point \" Cadre \" est de 104,04 F.<p></p><p></p>   La prochaine réunion est fixée au lundi 10 décembre, à 10 heures. Elle aura à son ordre du jour la fixation des minima au 1er janvier 1991 et une discussion sur l'échelle de hiérarchie des salaires.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 21 1990-10-02 étendu par arrêté du 24 décembre 1990 JORF 9 janvier 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 654825600000,
+                  "dateFin": 660787200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13492,13 +13640,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005691212",
+              "cid": "KALISCTA000005691212",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Barème des appointements minimaux garantis au 1er janvier 1991.",
+              "dateModif": null,
+              "dateDebut": "1990-12-10",
+              "dateFin": "1991-06-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005769252",
+                  "cid": "KALIARTI000005769252",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005691212/KALIARTI000005769252",
+                  "pathTitle": [
+                    "Barème des appointements minimaux garantis au 1er janvier 1991."
+                  ],
+                  "content": "<p></p>   A compter du 1er janvier 1991, la valeur du point est fixée à 29,48 F.. Toutefois, pour les coefficients 140, 145, 155, 170, 180 et 190, les minima ainsi obtenus seront majorés de :<p></p><p></p>   - 31 p. 100 pour le coefficient 140, soit 5 407 F ;<p></p><p></p>   - 27 p. 100 pour le coefficient 145, soit 5 429 F ;<p></p><p></p>   - 20 p. 100 pour le coefficient 155, soit 5 483 F ;<p></p><p></p>   - 13 p. 100 pour le coefficient 170, soit 5 663 F ;<p></p><p></p>   -  9 p. 100 pour le coefficient 180, soit 5 784 F ;<p></p><p></p>   -  6 p. 100 pour le coefficient 190, soit 5 937 F ;<p></p><p></p>   Ces salaires minima s'entendent pour une durée légale de 169 heures de travail.<p></p><p></p>   La valeur du point \" Cadre \" est fixée suivant le coefficient de raccordement ci-dessous :<p></p><p></p>   - Valeur du point \" Collaborateur \" 3,6<p></p><p></p>   La valeur du point \" Collaborateur \" étant de 29,48 F, la valeur du point \" Cadre \" est de 106,13 F.<p></p><p></p>   La prochaine réunion est fixée au mercredi 19 juin 1991, à 10 heures. Elle aura notamment à son ordre du jour la fixation des minima au 1er juillet 1991.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 22 1990-12-10 étendu par arrêté du 25 mars 1991 JORF 5 avril 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 660787200000,
+                  "dateFin": 677289600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
