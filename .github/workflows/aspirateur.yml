@@ -155,10 +155,19 @@ jobs:
             # or le garde « if [ -s ... ] » plus bas coupe alors toute récupération.
             # DARES est une source officielle, stable, qui indique en plus quelles
             # conventions sont actives et lesquelles ont fusionné.
+            # 02/10/2026 : openpyxl n'était installé NULLE PART dans ce workflow --
+            # dares_to_univers.py échouait donc à chaque lundi, en silence (« on garde
+            # l'univers précédent »). Et le fichier DARES était figé à juin 2026 :
+            # maj_dares.py va chercher la dernière version (garde l'ancienne si le
+            # site bloque) et donne sur sa dernière ligne le fichier à utiliser.
+            pip install --quiet openpyxl || pip install --quiet --break-system-packages openpyxl
+            XLSX=$(python3 scripts/maj_dares.py --ccn ccn | tail -1)
+            [ -s "$XLSX" ] || XLSX=ccn/Dares_Suivi_Historique_convention_collective_Juin2026.xlsx
+            echo "Fichier DARES utilisé : $XLSX"
             python3 scripts/dares_to_univers.py \
-              --xlsx ccn/Dares_Suivi_Historique_convention_collective_Juin2026.xlsx \
+              --xlsx "$XLSX" \
               --out idcc_list_complet.txt --fusions idcc_fusions.csv \
-              || echo "dares_to_univers a échoué, on garde l'univers précédent"
+              || { echo "dares_to_univers a échoué, on garde l'univers précédent"; echo "$(date -u +%Y-%m-%dT%H:%MZ) dares" >> audits/etapes-en-echec.log; }
             # Conservé en secours : si Légifrance refonctionne un jour, cet appel
             # complète l'univers DARES au lieu de le remplacer.
             python3 scripts/list_all_ccn.py --out /tmp/idcc_legifrance.txt --debug-dir debug_list_ccn || echo "list_all_ccn a échoué (HTTP 500 connu), sans conséquence : l'univers vient de DARES"
@@ -210,6 +219,7 @@ jobs:
           python3 scripts/build_clauses_index.py --ccn-dir output/ccn --out output/clauses-index.json || true
           python3 scripts/build_manifest.py --out output/manifest.json || true
           git add output/ audits/ idcc_list.txt idcc_list_complet.txt idcc_fusions.csv all_articles_code_travail.txt all_articles_code_secu.txt 2>/dev/null || true
+          git add ccn/Dares_Suivi_DERNIER.xlsx ccn/dares-source.json 2>/dev/null || true   # maj_dares.py (02/10/2026)
           if git diff --staged --quiet; then
             echo "Aucun nouveau numéro à remplir ce run."
           else
