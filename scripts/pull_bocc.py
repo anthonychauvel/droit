@@ -25,8 +25,8 @@ CE QUI EST GARDÉ (output/bocc/<année>/<fichier>.json)
       titre      première ligne qui ressemble à un titre (Avenant n°…, Accord…)
       pages      [première, dernière]
       salaires   true si le texte parle de salaires minima / grille / point
-      montants   montants en euros entre 1 000 et 10 000 (candidats salaires
-                 mensuels), dans l'ordre du texte
+      montants   montants en euros entre 1 000 et 90 000 (salaires mensuels ou
+                 annuels), dans l'ordre du texte
       texte      les 20 000 premiers caractères (pour les mots-clés de la veille)
       scanne     true si le PDF n'a pas de texte lisible (image) et que l'OCR
                  n'a pas été lancé ou n'a rien donné
@@ -75,7 +75,14 @@ _SALAIRES = re.compile(r"salaires? minima|salaires? minimum|grille (?:des |de )?
                        r"|r[ée]mun[ée]rations? minimales?|valeur du point|salaires? minimaux"
                        r"|r[ée]mun[ée]ration annuelle garantie|salaire minimum (?:conventionnel|hi[ée]rarchique)"
                        r"|appointements minim|minima (?:conventionnels|hi[ée]rarchiques)|bar[èe]me des (?:salaires|r[ée]mun[ée]rations)"
-                       r"|\bSMH\b|\bRAG\b|\bRMAG\b|\bSMIC\b", re.I)
+                       r"|\bSMH\b|\bRMAG\b", re.I)
+# Test réel du 02/10/2026 : le corps seul donnait trop de « grilles » (un avenant
+# « petits déplacements » cite le SMIC, un accord « valeur de point pour la
+# prime d'ancienneté » parle de point). Quand le titre est explicite
+# (« … relatif à … »), c'est LUI qui décide ; sinon, le corps.
+_SALAIRES_TITRE = re.compile(r"salaires?|r[ée]mun[ée]rations?|minima|appointements|\bSMH\b"
+                             r"|valeur (?:du|de) point(?!.{0,40}anciennet)", re.I)
+_TITRE_EXPLICITE = re.compile(r"\b(relati(f|ve)s? |portant |concernant )", re.I)
 # 1 867,02 € · 1867,02 euros · 1 867 € · 2 100,00
 # Un montant = décimales OU unité : sans l'un ni l'autre, « 2026 » (une année)
 # ou « 1801 » (un IDCC) passeraient pour des salaires.
@@ -195,7 +202,7 @@ def montants_de(t):
             v = float(brut)
         except ValueError:
             continue
-        if 1000 <= v <= 10000:
+        if 1000 <= v <= 90000:                       # mensuels… et annuels (« 21 500 € »)
             out.append(round(v, 2))
     return out[:120]
 
@@ -259,6 +266,12 @@ def decouper(pages, un_seul=False):
     return _finaliser(textes)
 
 
+def _est_salaires(titre, corps):
+    if _TITRE_EXPLICITE.search(titre or ""):
+        return bool(_SALAIRES_TITRE.search(titre))
+    return bool(_SALAIRES.search(corps))
+
+
 def _finaliser(textes):
     out = []
     for t in textes:
@@ -270,7 +283,7 @@ def _finaliser(textes):
             "pages": t["pages"],
             "titre": titre_de(brut),
             "date_signature": m.group(1) if m else None,
-            "salaires": bool(_SALAIRES.search(plat)),
+            "salaires": _est_salaires(titre_de(brut), plat),
             "montants": montants_de(plat),
             "texte": re.sub(r"\s+", " ", plat).strip()[:TEXTE_MAX],
         })
