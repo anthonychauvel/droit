@@ -10,7 +10,8 @@ POURQUOI
     reproduit, consultable au BOCC ». Les grilles sont dans les PDF du BOCC.
 
 SOURCE
-    https://echanges.dila.gouv.fr/OPENDATA/BOCC/<année>/  (licence ouverte 2.0)
+    https://echanges.dila.gouv.fr/OPENDATA/BOCC/FluxAnneeCourante/  (année en cours)
+    https://echanges.dila.gouv.fr/OPENDATA/BOCC/<année>/  (années closes) — licence ouverte 2.0
     Publication hebdomadaire. Le script NE suppose PAS le nom exact des
     fichiers : il lit la page d'index (dossiers et sous-dossiers) et prend
     tout ce qui ressemble à un bulletin : .pdf, .xml, ou une archive
@@ -60,7 +61,7 @@ from datetime import datetime, timezone, timedelta
 
 BASE = "https://echanges.dila.gouv.fr/OPENDATA/BOCC/"
 UA = "Mozilla/5.0 (veille SimulHeures; +https://github.com/anthonychauvel/droit)"
-EXT_ARCHIVE = (".tar.gz", ".tgz", ".taz", ".tar", ".zip")
+EXT_ARCHIVE = (".tar.gz", ".tgz", ".taz", ".tar", ".tar.bz2", ".tar.xz", ".zip")
 EXT_DOC = (".pdf", ".xml")
 TEXTE_MAX = 20000
 
@@ -114,7 +115,10 @@ def lister(url, profondeur=2):
     try:
         page = ouvrir(url).decode("utf-8", "replace")
     except Exception as e:                           # noqa: BLE001
-        print(f"  index illisible : {e}")
+        if "404" in str(e):
+            print(f"  {url} : absent (normal pour l'année en cours, rangée dans FluxAnneeCourante/)")
+        else:
+            print(f"  index illisible : {e}")
         return []
     out = []
     for href, date in _LIEN.findall(page):
@@ -284,6 +288,8 @@ def main():
     ap.add_argument("--max", type=int, default=25, help="fichiers téléchargés au plus par passage")
     ap.add_argument("--recul-jours", type=int, default=60,
                     help="premier passage : plus ancien que ça = noté vu sans téléchargement")
+    ap.add_argument("--premier-max", type=int, default=6,
+                    help="premier passage : nombre de bulletins récents réellement téléchargés")
     ap.add_argument("--ocr", action="store_true", help="OCR (ocrmypdf) des PDF sans texte")
     args = ap.parse_args()
 
@@ -299,11 +305,17 @@ def main():
     premier = "fichiers" not in vus
     deja = vus.setdefault("fichiers", {})
 
+    # Structure réelle (test du 02/10/2026) : l'année en cours est dans
+    # FluxAnneeCourante/ ; un dossier <année>/ n'apparaît qu'une fois l'année
+    # close (2025/ existe, 2026/ renvoie 404). Les deux sont lus : en janvier,
+    # les derniers bulletins de l'année passée peuvent n'être que dans <année>/.
     an = datetime.now(timezone.utc).year
-    annees = [an - 1, an] if datetime.now(timezone.utc).month <= 2 or premier else [an]
+    dossiers = ["FluxAnneeCourante/", f"{an}/"]
+    if datetime.now(timezone.utc).month <= 2:
+        dossiers.append(f"{an - 1}/")
     candidats = []
-    for a in annees:
-        url = urllib.parse.urljoin(args.base, f"{a}/")
+    for d in dossiers:
+        url = urllib.parse.urljoin(args.base, d)
         trouves = lister(url)
         print(f"{url} : {len(trouves)} fichier(s) listé(s).")
         candidats += trouves
@@ -318,14 +330,25 @@ def main():
 
     limite = (datetime.now(timezone.utc) - timedelta(days=args.recul_jours)).strftime("%Y-%m-%d")
     a_faire = []
+    # Clé = NOM du fichier seul : quand l'année se termine, la DILA déplace ses
+    # bulletins de FluxAnneeCourante/ vers <année>/ ; avec le chemin complet,
+    # ils seraient tous retéléchargés comme « nouveaux ».
+    vus_noms = set(deja)
     for url, date in sorted(candidats, key=lambda c: (c[1] or "", c[0])):
-        cle = url[len(args.base):] if url.startswith(args.base) else url
-        if cle in deja:
+        cle = urllib.parse.unquote(url.rstrip("/").rsplit("/", 1)[-1])
+        if cle in vus_noms:
             continue
+        vus_noms.add(cle)
         if premier and date and date < limite:
             deja[cle] = {"date": date, "statut": "ancien-non-telecharge"}
             continue
         a_faire.append((cle, url, date))
+    if premier and len(a_faire) > args.premier_max:
+        # Les dates de l'index peuvent être toutes récentes (dossier régénéré) :
+        # au premier passage on ne garde que les plus récents, le reste est noté vu.
+        for cle, url, date in a_faire[:-args.premier_max]:
+            deja[cle] = {"date": date, "statut": "ancien-non-telecharge"}
+        a_faire = a_faire[-args.premier_max:]
     print(f"{len(a_faire)} nouveau(x) fichier(s) ; {min(len(a_faire), args.max)} traité(s) ce passage.")
 
     faits = 0
@@ -340,7 +363,7 @@ def main():
             sous = os.path.join(args.out, (date or "sans-date")[:4])
             os.makedirs(sous, exist_ok=True)
             base = re.sub(r"[^A-Za-z0-9._-]+", "_", cle.replace("/", "_"))
-            base = re.sub(r"\.(tar\.gz|tgz|taz|tar|zip|pdf|xml)$", "", base, flags=re.I)
+            base = re.sub(r"\.(tar\.gz|tar\.bz2|tar\.xz|tgz|taz|tar|zip|pdf|xml)$", "", base, flags=re.I)
             json.dump(fiche, open(os.path.join(sous, base + ".json"), "w", encoding="utf-8"),
                       ensure_ascii=False, indent=1)
             n = sum(len(d["textes"]) for d in fiche["documents"])
