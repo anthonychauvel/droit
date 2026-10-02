@@ -74,6 +74,7 @@ _TITRE = re.compile(r"^\s*((?:Avenant|Accord|Annexe|Protocole|Adh[ée]sion|D[ée
 _SALAIRES = re.compile(r"salaires? minima|salaires? minimum|grille (?:des |de )?(?:salaires|r[ée]mun[ée]rations)"
                        r"|r[ée]mun[ée]rations? minimales?|valeur du point|salaires? minimaux"
                        r"|r[ée]mun[ée]ration annuelle garantie|salaire minimum (?:conventionnel|hi[ée]rarchique)"
+                       r"|appointements minim|minima (?:conventionnels|hi[ée]rarchiques)|bar[èe]me des (?:salaires|r[ée]mun[ée]rations)"
                        r"|\bSMH\b|\bRAG\b|\bRMAG\b|\bSMIC\b", re.I)
 # 1 867,02 € · 1867,02 euros · 1 867 € · 2 100,00
 # Un montant = décimales OU unité : sans l'un ni l'autre, « 2026 » (une année)
@@ -156,6 +157,21 @@ def pages_pdf(chemin, ocr=False):
     return pages, scanne
 
 
+_PAR_TEXTE = re.compile(r"_0000_\d+\.pdf$", re.I)
+
+
+def titres_xml(octets):
+    """Intitulés officiels lus dans le XML du bulletin (balises TITRE…), pour
+    information : la structure exacte n'est pas documentée, on reste souple."""
+    t = octets.decode("utf-8", "replace")
+    out = []
+    for m in re.finditer(r"<(TITRE(?:_TXT|_TA)?|TITREFULL|TITLE)[^>]*>(.*?)</\1>", t, re.S | re.I):
+        v = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", m.group(2)))).strip()
+        if v and v not in out:
+            out.append(v[:300])
+    return out[:200]
+
+
 def texte_xml(octets):
     t = octets.decode("utf-8", "replace")
     t = re.sub(r"<\?xml.*?\?>|<!DOCTYPE.*?>", " ", t, flags=re.S)
@@ -184,19 +200,47 @@ def montants_de(t):
     return out[:120]
 
 
+_TITRE_PROPRE = re.compile(r"^\s*((?:Avenant|Accord|Protocole|Annexe|Adh[ée]sion|D[ée]nonciation|Avis|Arr[êe]t[ée])\b.{3,200})$",
+                          re.I | re.M)
+_SUITE = re.compile(r"^\s*(relati|portant|concernant|sur |modifiant|\(|à la convention|de la convention|aux? )", re.I)
+
+
 def titre_de(t):
+    """« Accord du 9 avril 2026 » + la ligne suivante si c'est la suite
+    (« relatif à l'emploi… ») ; « Convention collective nationale » seul ne
+    dit rien, on cherche d'abord un vrai intitulé d'avenant/accord."""
+    lignes = t.splitlines()
+    for i, l in enumerate(lignes[:80]):
+        if _TITRE_PROPRE.match(l):
+            titre = l.strip()
+            for suite in lignes[i + 1:i + 4]:
+                if suite.strip() and _SUITE.match(suite):
+                    titre += " " + suite.strip()
+                elif suite.strip():
+                    break
+            return re.sub(r"\s+", " ", titre).strip()[:240]
     m = _TITRE.search(t)
     if m:
         return re.sub(r"\s+", " ", m.group(1)).strip()[:240]
-    for ligne in t.splitlines():
+    for ligne in lignes:
         if len(ligne.strip()) > 12:
             return re.sub(r"\s+", " ", ligne).strip()[:240]
     return ""
 
 
-def decouper(pages):
+def decouper(pages, un_seul=False):
     """Pages -> textes : une nouvelle convention citée en haut de page (ou un
-    nouveau titre « Avenant/Accord… ») ouvre un nouveau texte."""
+    nouveau titre « Avenant/Accord… ») ouvre un nouveau texte.
+    un_seul : le PDF ne contient qu'UN texte (cas du BOCC réel, un PDF par
+    texte) -> pas de découpage, IDCC lus sur les deux premières pages."""
+    if un_seul:
+        pleines = [(i, p) for i, p in enumerate(pages, 1) if p.strip()]
+        if not pleines:
+            return []
+        debut = "\n".join(p for _, p in pleines[:2])
+        brut = "\n".join(p for _, p in pleines)
+        textes = [{"idcc": idcc_de(debut) or idcc_de(brut), "pages": [pleines[0][0], pleines[-1][0]], "_t": [brut]}]
+        return _finaliser(textes)
     textes, cur = [], None
     for i, p in enumerate(pages, 1):
         if not p.strip():
@@ -212,6 +256,10 @@ def decouper(pages):
             cur["_t"].append(p)
             if not cur["idcc"] and ids:
                 cur["idcc"] = ids
+    return _finaliser(textes)
+
+
+def _finaliser(textes):
     out = []
     for t in textes:
         brut = "\n".join(t.pop("_t"))
@@ -260,7 +308,17 @@ def traiter(url, date, ocr, dossier_tmp):
              "url": url, "fichier": nom, "date_fichier": date,
              "recupere_le": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
              "documents": []}
-    for n, contenu in documents(octets, nom):
+    docs = documents(octets, nom)
+    # Archive réelle (CCO2026NNNN.complet.taz, test du 02/10/2026) :
+    #   boc_2026NNNN_0000_0001.pdf … : UN PDF PAR TEXTE  -> ce qu'on garde
+    #   boc_2026NNNN_0001_p000.pdf   : le bulletin complet (doublon de tout)
+    #   CCO2026NNNN.xml              : métadonnées -> titres officiels
+    par_texte = [d for d in docs if _PAR_TEXTE.search(d[0])]
+    xml = [d for d in docs if d[0].lower().endswith(".xml")]
+    if par_texte:
+        fiche["titres_xml"] = titres_xml(xml[0][1]) if xml else []
+        docs = par_texte
+    for n, contenu in docs:
         doc = {"nom": n, "textes": [], "scanne": False}
         if n.lower().endswith(".pdf"):
             p = os.path.join(dossier_tmp, "doc.pdf")
@@ -275,7 +333,7 @@ def traiter(url, date, ocr, dossier_tmp):
             doc["nb_pages"] = len(pages)
         else:
             pages = texte_xml(contenu)
-        doc["textes"] = decouper(pages)
+        doc["textes"] = decouper(pages, un_seul=bool(par_texte))
         fiche["documents"].append(doc)
     return fiche
 
