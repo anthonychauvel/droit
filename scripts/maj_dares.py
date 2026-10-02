@@ -41,7 +41,7 @@ PAGES = [
 ]
 UA = "Mozilla/5.0 (X11; Linux x86_64) veille-SimulHeures (+https://github.com/anthonychauvel/droit)"
 LIEN_XLSX = re.compile(r'(https?://[^"\'\s<>]+?\.xlsx|/[^"\'\s<>]+?\.xlsx)', re.I)
-BON_NOM = re.compile(r"conven|idcc|suivi|dares|branche", re.I)
+BON_NOM = re.compile(r"suivi|dares", re.I)   # « Grille_de_classification_… » n'est pas le bon fichier
 MOIS = {"janvier": 1, "fevrier": 2, "février": 2, "mars": 3, "avril": 4, "mai": 5, "juin": 6, "juillet": 7,
         "aout": 8, "août": 8, "septembre": 9, "octobre": 10, "novembre": 11, "decembre": 12, "décembre": 12}
 
@@ -118,31 +118,44 @@ def main():
     print("Recherche du fichier DARES le plus récent :")
     liens = candidats(pages)
     liens.sort(key=lambda u: date_du_nom(urllib.parse.unquote(u)) or "0000")
+    actuel = os.path.basename(fichier_actuel(args.ccn))
+    nom_actuel = src.get("fichier") or actuel
+    mois_actuel = date_du_nom(nom_actuel)
+    aujourd_hui = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    if not liens:
+        print("  Aucun lien trouvé (site bloqué ou page déplacée) : on garde le fichier actuel.")
     for u in reversed(liens[-3:]):                   # les plus récents d'abord
         nom = urllib.parse.unquote(u.rsplit("/", 1)[-1])
+        mois = date_du_nom(nom)
+        # Test du 02/10/2026 : la page officielle propose encore Juin2026 = le
+        # fichier du dépôt est À JOUR (la DARES n'a rien publié depuis). On le
+        # note, pour que le tableau de bord ne crie pas au fichier périmé.
+        if nom == nom_actuel or (mois and mois_actuel and mois <= mois_actuel):
+            src.update({"fichier": nom_actuel, "verifie_le": aujourd_hui, "a_jour": True,
+                        "date_publication": src.get("date_publication") or (f"{mois_actuel}-01" if mois_actuel else None)})
+            src.pop("nouvelle_version", None)
+            print(f"  {nom} : c'est la version la plus récente publiée, déjà dans le dépôt.")
+            break
         try:
             octets = ouvrir(u, delai=180)
         except Exception as e:                       # noqa: BLE001
+            octets = b""
             print(f"  {nom} : téléchargement impossible ({e})")
-            continue
-        h = hashlib.sha1(octets).hexdigest()
-        if h == src.get("sha1"):
-            print(f"  {nom} : déjà en place, rien à faire.")
+        h = hashlib.sha1(octets).hexdigest() if octets else ""
+        if not octets or not valide(octets):
+            # Version plus récente publiée mais pas récupérable (site anti-robot) :
+            # le tableau de bord le signale avec le lien, pour la poser à la main.
+            src.update({"nouvelle_version": {"fichier": nom, "url": u, "vue_le": aujourd_hui},
+                        "a_jour": False, "verifie_le": aujourd_hui})
+            print(f"  {nom} : version plus récente publiée, mais pas récupérable automatiquement.")
             break
-        if not valide(octets):
-            print(f"  {nom} : pas la feuille « Conventions de branche », ignoré.")
-            continue
         open(os.path.join(args.ccn, "Dares_Suivi_DERNIER.xlsx"), "wb").write(octets)
-        mois = date_du_nom(nom)
-        src = {"url": u, "fichier": nom, "sha1": h,
-               "telecharge_le": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
-               "date_publication": f"{mois}-01" if mois else None}
-        json.dump(src, open(chemin_src, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        src = {"url": u, "fichier": nom, "sha1": h, "telecharge_le": aujourd_hui, "verifie_le": aujourd_hui,
+               "a_jour": True, "date_publication": f"{mois}-01" if mois else None}
         print(f"  NOUVEAU fichier DARES : {nom} -> ccn/Dares_Suivi_DERNIER.xlsx")
         break
-    else:
-        if not liens:
-            print("  Aucun lien trouvé (site bloqué ou page déplacée) : on garde le fichier actuel.")
+    if src:
+        json.dump(src, open(chemin_src, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(fichier_actuel(args.ccn))
     return 0
 
