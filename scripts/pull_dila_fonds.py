@@ -331,6 +331,12 @@ def traiter_fonds_api(fonds, out, jours, maxi, diag, client):
                 print(f"  API {fond} facette={facette} tri={tri} : refus {rep['_erreur']} {rep.get('_detail','')[:160]}")
             continue
         res = _resultats(rep)
+        # 0 résultat peut vouloir dire « mauvaise facette de date » (refus
+        # silencieux) : on essaie la variante suivante avant de conclure.
+        if not res and (facette, tri) != tuple(essais[-1]):
+            if diag:
+                print(f"  API {fond} facette={facette} tri={tri} : 0 résultat, variante suivante")
+            continue
         if diag:
             print(f"  API {fond} facette={facette} tri={tri} : {rep.get('totalResultNumber', '?')} résultat(s), {len(res)} lu(s)")
             for r in res[:3]:
@@ -350,7 +356,7 @@ def traiter_fonds_api(fonds, out, jours, maxi, diag, client):
     else:
         raise RuntimeError(f"API Légifrance : aucune variante de recherche acceptée pour {fond}")
     if facette is None:   # pas de filtre de date accepté : on filtre nous-mêmes
-        candidats = [c for c in candidats if not c["date"] or c["date"] >= debut.isoformat()]
+        candidats = [c for c in candidats if c["date"] and c["date"] >= debut.isoformat()]
     gardes, titres_vus = 0, set()
     for c in [c for c in candidats if c["id"] not in deja][:maxi * 20]:
         deja.add(c["id"])
@@ -371,7 +377,8 @@ def traiter_fonds_api(fonds, out, jours, maxi, diag, client):
         json.dump(f, open(sortie, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         gardes += 1
         if diag:
-            print(f"   GARDÉ {f['date']} | {f['titre'][:100]} | art. {','.join(f['articles'][:5])}")
+            print(f"   GARDÉ {f['date']} | {f['titre'][:90]} | art. {','.join(f['articles'][:5])}")
+            print(f"         sujets : {', '.join(sujets[:6])} | {texte[:160]}")
         time.sleep(0.3)
     vus["api_ids"] = sorted(deja)[-20000:]
     vus["dernier_passage"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
