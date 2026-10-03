@@ -26,6 +26,13 @@ GARDÉ    output/<fonds>/<id>.json, UNIQUEMENT pour les textes qui touchent
 MÉMOIRE  output/<fonds>/_vus.json (archives déjà traitées). Premier passage :
          seules les --premier-max archives les plus récentes.
 
+REPLI API (03/10/2026) : le 03/10, echanges.dila.gouv.fr a coupé toutes les
+         connexions de GitHub (« Connection reset by peer »). Si l'open data
+         ne répond pas, le même contenu est demandé à l'API Légifrance (PISTE,
+         mêmes secrets que l'aspirateur) : fonds CIRC, CONSTIT et CETAT,
+         textes des --jours derniers jours, même tri par sujets, mêmes
+         fichiers de sortie. --source opendata|api|auto (défaut auto).
+
 USAGE    python3 scripts/pull_dila_fonds.py --fonds CIRCULAIRES,CONSTIT,JADE --out output
 """
 import argparse
@@ -37,6 +44,7 @@ import re
 import sys
 import tarfile
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import zipfile
@@ -168,6 +176,182 @@ def documents(octets, nom):
     return out
 
 
+# ───────────────────────── Repli : API Légifrance (PISTE) ─────────────────────────
+FONDS_API = {"CIRCULAIRES": "CIRC", "CONSTIT": "CONSTIT", "JADE": "CETAT"}
+# Amorce large (n'importe lequel de ces mots) ; le vrai tri se fait ensuite
+# avec SUJETS, comme pour l'open data.
+AMORCE_API = ("travail salarié salariés employeur employeurs cotisations sociale "
+              "chômage retraite prestations familiales licenciement convention collective "
+              "durée heures congés smic apprentissage")
+# Le nom exact de la facette de date et du tri n'est pas le même d'un fonds à
+# l'autre : on essaie dans l'ordre, la première combinaison acceptée gagne.
+VARIANTES_API = {
+    "CIRC": [("DATE_SIGNATURE", "SIGNATURE_DATE_DESC"), ("DATE_PUBLICATION", "PUBLICATION_DATE_DESC"),
+             ("DATE_SIGNATURE", "PERTINENCE"), (None, "PERTINENCE")],
+    "CONSTIT": [("DATE_DECISION", "DATE_DESC"), ("DATE_DECISION", "DATE_DECISION_DESC"),
+                ("DATE_DECISION", "PERTINENCE"), (None, "PERTINENCE")],
+    "CETAT": [("DATE_DECISION", "DATE_DESC"), ("DATE_DECISION", "DATE_DECISION_DESC"),
+              ("DATE_DECISION", "PERTINENCE"), (None, "PERTINENCE")],
+}
+
+
+class ClientPiste:
+    def __init__(self):
+        cid, sec = os.environ.get("PISTE_CLIENT_ID"), os.environ.get("PISTE_CLIENT_SECRET")
+        if not cid or not sec:
+            raise RuntimeError("PISTE_CLIENT_ID / PISTE_CLIENT_SECRET absents (secrets du dépôt)")
+        prod = os.environ.get("PISTE_ENV", "production").lower() == "production"
+        self.token_url = ("https://oauth.piste.gouv.fr/api/oauth/token" if prod
+                          else "https://sandbox-oauth.piste.gouv.fr/api/oauth/token")
+        self.base = ("https://api.piste.gouv.fr/dila/legifrance/lf-engine-app" if prod
+                     else "https://sandbox-api.piste.gouv.fr/dila/legifrance/lf-engine-app")
+        data = urllib.parse.urlencode({"grant_type": "client_credentials", "client_id": cid,
+                                       "client_secret": sec, "scope": "openid"}).encode()
+        req = urllib.request.Request(self.token_url, data=data, method="POST",
+                                     headers={"Content-Type": "application/x-www-form-urlencoded"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            self.jeton = json.loads(r.read())["access_token"]
+
+    def appel(self, chemin, corps):
+        req = urllib.request.Request(self.base + chemin, data=json.dumps(corps).encode(), method="POST",
+                                     headers={"Authorization": "Bearer " + self.jeton,
+                                              "Content-Type": "application/json", "Accept": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.loads(r.read())
+        except urllib.error.HTTPError as e:
+            return {"_erreur": e.code, "_detail": e.read().decode("utf-8", "replace")[:300]}
+        except Exception as e:                       # noqa: BLE001
+            return {"_erreur": "exception", "_detail": str(e)[:300]}
+
+
+def _corps_recherche(fond, facette, tri, debut, fin, page):
+    r = {"champs": [{"typeChamp": "ALL", "operateur": "ET",
+                     "criteres": [{"valeur": AMORCE_API, "typeRecherche": "UN_DES_MOTS", "operateur": "ET"}]}],
+         "sort": tri, "fromAdvancedRecherche": False, "pageNumber": page, "pageSize": 50,
+         "typePagination": "DEFAUT", "operateur": "ET"}
+    if facette:
+        r["filtres"] = [{"facette": facette, "dates": {"start": debut, "end": fin}}]
+    return {"fond": fond, "recherche": r}
+
+
+def _resultats(rep):
+    out = []
+    for r in rep.get("results") or rep.get("resultats") or []:
+        titre = r.get("titre") or r.get("title") or ""
+        ident = r.get("id") or ""
+        for t in r.get("titles") or r.get("titres") or []:
+            ident = ident or t.get("id") or ""
+            titre = titre or t.get("titre") or t.get("title") or ""
+            if t.get("id"):
+                ident = t["id"]
+                break
+        date = ""
+        for k in ("dateDecision", "dateSignature", "datePublication", "date", "dateTexte"):
+            v = r.get(k)
+            if v:
+                date = str(v)[:10]
+                break
+        num = r.get("numero") or r.get("num") or r.get("numeroAffaire") or ""
+        if isinstance(num, list):
+            num = ", ".join(map(str, num))
+        out.append({"id": str(ident).split("_")[0], "titre": plat(titre), "date": date,
+                    "numero": str(num)[:80], "brut": r})
+    return [o for o in out if o["id"]]
+
+
+def _texte_api(client, fond, ident):
+    """Texte intégral si l'API le donne ; sinon chaîne vide (on garde le titre)."""
+    essais = [("/consult/circulaire", {"id": ident})] if fond == "CIRC" else [("/consult/juri", {"textId": ident})]
+    for chemin, corps in essais:
+        rep = client.appel(chemin, corps)
+        if "_erreur" in rep:
+            continue
+        t = rep.get("text") or rep
+        brut = json.dumps(t, ensure_ascii=False)
+        morceaux = [t.get(k) for k in ("texte", "texteHtml", "content", "contenu", "texteIntegral") if isinstance(t, dict) and t.get(k)]
+        txt = plat(" ".join(map(str, morceaux))) if morceaux else plat(brut)
+        meta = {k: t.get(k) for k in ("solution", "juridiction", "formation", "nature", "ministere", "autorite")
+                if isinstance(t, dict) and t.get(k)}
+        return txt, meta
+    return "", {}
+
+
+def traiter_fonds_api(fonds, out, jours, maxi, diag, client):
+    from datetime import date, timedelta
+    fond = FONDS_API[fonds]
+    dossier = os.path.join(out, fonds.lower())
+    os.makedirs(dossier, exist_ok=True)
+    chemin_vus = os.path.join(dossier, "_vus.json")
+    try:
+        vus = json.load(open(chemin_vus, encoding="utf-8"))
+    except Exception:
+        vus = {}
+    deja = set(vus.get("api_ids") or [])
+    fin = date.today()
+    debut = fin - timedelta(days=jours)
+    variante = vus.get("api_variante")
+    candidats = []
+    essais = ([tuple(variante)] if variante else []) + [v for v in VARIANTES_API[fond] if list(v) != variante]
+    for facette, tri in essais:
+        rep = client.appel("/search", _corps_recherche(fond, facette, tri, debut.isoformat(), fin.isoformat(), 1))
+        if "_erreur" in rep:
+            if diag:
+                print(f"  API {fond} facette={facette} tri={tri} : refus {rep['_erreur']} {rep.get('_detail','')[:160]}")
+            continue
+        res = _resultats(rep)
+        if diag:
+            print(f"  API {fond} facette={facette} tri={tri} : {rep.get('totalResultNumber', '?')} résultat(s), {len(res)} lu(s)")
+            for r in res[:3]:
+                print(f"     {r['date']} {r['id']} {r['titre'][:90]}")
+                if not r['date']:
+                    print("     (clés du résultat : " + ", ".join(sorted(r['brut'].keys()))[:200] + ")")
+        vus["api_variante"] = [facette, tri]
+        candidats = res
+        page = 2
+        while len(rep.get("results") or []) == 50 and page <= 4:
+            rep = client.appel("/search", _corps_recherche(fond, facette, tri, debut.isoformat(), fin.isoformat(), page))
+            if "_erreur" in rep:
+                break
+            candidats += _resultats(rep)
+            page += 1
+        break
+    else:
+        raise RuntimeError(f"API Légifrance : aucune variante de recherche acceptée pour {fond}")
+    if facette is None:   # pas de filtre de date accepté : on filtre nous-mêmes
+        candidats = [c for c in candidats if not c["date"] or c["date"] >= debut.isoformat()]
+    gardes = 0
+    for c in [c for c in candidats if c["id"] not in deja][:maxi * 20]:
+        deja.add(c["id"])
+        texte, meta = _texte_api(client, fond, c["id"])
+        n = normaliser(c["titre"] + " " + texte[:60000])
+        sujets = sorted({m.group(0) for m in SUJETS.finditer(n)})
+        if not sujets:
+            continue
+        f = {"fonds": fonds, "id": c["id"], "titre": c["titre"][:400], "date": c["date"],
+             "numero": c["numero"], "juridiction": str(meta.get("juridiction") or meta.get("formation")
+                                                        or meta.get("ministere") or meta.get("autorite") or "")[:200],
+             "nature": str(meta.get("nature") or "")[:80], "solution": str(meta.get("solution") or "")[:300],
+             "articles": sorted({m.group(1) + m.group(2) for m in _REF.finditer(texte)})[:60],
+             "sujets": sujets[:15], "extrait": (texte or c["titre"])[:3000], "source": "api-legifrance"}
+        sortie = os.path.join(dossier, re.sub(r"[^A-Za-z0-9._-]+", "_", f["id"])[:120] + ".json")
+        json.dump(f, open(sortie, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        gardes += 1
+        if diag:
+            print(f"   GARDÉ {f['date']} | {f['titre'][:100]} | art. {','.join(f['articles'][:5])}")
+        time.sleep(0.3)
+    vus["api_ids"] = sorted(deja)[-20000:]
+    vus["dernier_passage"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M")
+    vus["dernier_mode"] = "api"
+    json.dump(vus, open(chemin_vus, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(f"{fonds} (API {fond}) : {len(candidats)} texte(s) des {jours} derniers jours, {gardes} gardé(s).")
+    return gardes
+
+
+class OpenDataInjoignable(Exception):
+    pass
+
+
 def traiter_fonds(fonds, out, maxi, premier_max, diag):
     dossier = os.path.join(out, fonds.lower())
     os.makedirs(dossier, exist_ok=True)
@@ -179,6 +363,10 @@ def traiter_fonds(fonds, out, maxi, premier_max, diag):
     premier = "archives" not in vus
     deja = vus.setdefault("archives", {})
     racine = urllib.parse.urljoin(BASE, fonds + "/")
+    try:
+        ouvrir(racine, delai=60, essais=2)
+    except Exception as e:                           # noqa: BLE001
+        raise OpenDataInjoignable(str(e))
     cands = lister(racine)
     print(f"{fonds} : {len(cands)} archive(s) incrémentale(s) listée(s).")
     if diag:
@@ -209,6 +397,8 @@ def traiter_fonds(fonds, out, maxi, premier_max, diag):
             sortie = os.path.join(dossier, re.sub(r"[^A-Za-z0-9._-]+", "_", f["id"])[:120] + ".json")
             json.dump(f, open(sortie, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
             n_g += 1
+            if diag:
+                print(f"   GARDÉ {f['date']} | {f['titre'][:100]} | art. {','.join(f['articles'][:5])}")
         print(f"  {nom} : {n_xml} texte(s) XML, {n_g} gardé(s) (touchent l'écosystème)")
         deja[nom] = {"date": d, "statut": "ok", "xml": n_xml, "gardes": n_g}
         gardes += n_g
@@ -225,15 +415,35 @@ def main():
     ap.add_argument("--max", type=int, default=15, help="archives par fonds et par passage")
     ap.add_argument("--premier-max", type=int, default=4)
     ap.add_argument("--diagnostic", action="store_true")
+    ap.add_argument("--source", choices=["auto", "opendata", "api"], default="auto")
+    ap.add_argument("--jours", type=int, default=21, help="fenêtre de l'API (jours)")
     args = ap.parse_args()
-    total = 0
+    total, echecs, client = 0, 0, None
     for f in [x.strip().upper() for x in args.fonds.split(",") if x.strip()]:
         try:
+            if args.source == "api":
+                raise OpenDataInjoignable("source API demandée")
             total += traiter_fonds(f, args.out, args.max, args.premier_max, args.diagnostic)
+            continue
+        except OpenDataInjoignable as e:
+            if args.source == "opendata":
+                print(f"{f} : open data injoignable ({e})")
+                echecs += 1
+                continue
+            print(f"{f} : open data injoignable ({str(e)[:120]}) → API Légifrance.")
         except Exception as e:                       # noqa: BLE001
             print(f"{f} : erreur {e}")
-    print(f"Terminé : {total} texte(s) gardé(s).")
-    return 0
+            echecs += 1
+            continue
+        try:
+            client = client or ClientPiste()
+            total += traiter_fonds_api(f, args.out, args.jours, args.max, args.diagnostic, client)
+        except Exception as e:                       # noqa: BLE001
+            print(f"{f} : API Légifrance en échec : {e}")
+            echecs += 1
+    print(f"Terminé : {total} texte(s) gardé(s), {echecs} fonds en échec.")
+    # Un fonds en échec = étape en échec (le tableau de bord l'affiche).
+    return 1 if echecs else 0
 
 
 if __name__ == "__main__":
