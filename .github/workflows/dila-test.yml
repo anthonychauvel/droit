@@ -1,0 +1,43 @@
+name: TEST DILA (sans commit)
+
+# Lancement manuel : montre ce que la DILA publie pour les trois fonds et ce
+# que le script en garde, dans un dossier temporaire. Ne committe rien.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 1. Index des trois fonds
+        run: |
+          for f in CIRCULAIRES CONSTIT JADE; do
+            echo "===== $f"
+            curl -sSL --max-time 60 "https://echanges.dila.gouv.fr/OPENDATA/$f/" | sed -e 's/<[^>]*>/ /g' | grep -v '^\s*$' | tail -15 || echo "illisible"
+          done
+
+      - name: 2. Aspiration d'essai (2 archives par fonds)
+        run: |
+          python3 scripts/pull_dila_fonds.py --out /tmp/dila --max 2 --premier-max 2 --diagnostic
+
+      - name: 3. Ce qui a été gardé
+        run: |
+          python3 - <<'PY'
+          import json, glob
+          for f in sorted(glob.glob("/tmp/dila/*/*.json")):
+              if f.endswith("_vus.json"):
+                  continue
+              d = json.load(open(f, encoding="utf-8"))
+              print(f"[{d['fonds']}] {d.get('date')} | {d.get('titre','')[:110]} | {d.get('s
