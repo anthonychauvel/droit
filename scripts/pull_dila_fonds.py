@@ -77,8 +77,12 @@ FORT_DECISION = re.compile(
     r"|assurance chomage|france travail|unedic|prestations? familiales|retraite complementaire", re.I)
 HORS_SUJET_DECISION = re.compile(
     r"entree et (?:du )?sejour des etrangers|titre de sejour|obligation de quitter le territoire|\bceseda\b"
-    r"|permis de construire|code de l.urbanisme", re.I)
+    r"|permis de construire|code de l.urbanisme|tarification sanitaire et sociale"
+    r"|taxe sur la valeur ajoutee", re.I)
 _DATE_TITRE = re.compile(r"(\d{2})/(\d{2})/(\d{4})")
+MOIS = {m: i + 1 for i, m in enumerate(["janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet",
+                                        "aout", "septembre", "octobre", "novembre", "decembre"])}
+_DATE_FR = re.compile(r"\b(\d{1,2})(?:er)? (" + "|".join(MOIS) + r") (\d{4})")
 
 
 def pertinent(fonds, titre, texte):
@@ -90,7 +94,11 @@ def pertinent(fonds, titre, texte):
     if HORS_SUJET_DECISION.search(n) and not re.search(r"code du travail|code de la securite sociale", n):
         return []
     forts = {m.group(0) for m in FORT_DECISION.finditer(n)}
-    return sujets if forts else []
+    # Un seul mot fort en passant (« cotisations sociales » dans un litige de
+    # TVA) ne suffit pas : il en faut deux, ou la citation d'un des deux codes.
+    if re.search(r"code du travail|code de la securite sociale", n) or len(forts) >= 2:
+        return sujets
+    return []
 
 
 _REF = re.compile(r"\b([LRD])\.?\s?(\d{3,4}(?:-\d+){1,3})\b")
@@ -215,8 +223,10 @@ AMORCE_API = ("travail salarié salariés employeur employeurs cotisations socia
 VARIANTES_API = {
     "CIRC": [("DATE_SIGNATURE", "SIGNATURE_DATE_DESC"), ("DATE_PUBLICATION", "PUBLICATION_DATE_DESC"),
              ("DATE_SIGNATURE", "PERTINENCE"), (None, "PERTINENCE")],
-    "CONSTIT": [("DATE_DECISION", "DATE_DESC"), ("DATE_DECISION", "DATE_DECISION_DESC"),
-                ("DATE_DECISION", "PERTINENCE"), (None, "PERTINENCE")],
+    # Test du 03/10 : DATE_DECISION n'est pas accepté en silence (0 résultat).
+    "CONSTIT": [("DATE_SIGNATURE", "SIGNATURE_DATE_DESC"), ("DATE_PUBLICATION", "PUBLICATION_DATE_DESC"),
+                ("DATE_DECISION", "DATE_DESC"), (None, "SIGNATURE_DATE_DESC"), (None, "DATE_DESC"),
+                (None, "PERTINENCE")],
     "CETAT": [("DATE_DECISION", "DATE_DESC"), ("DATE_DECISION", "DATE_DECISION_DESC"),
               ("DATE_DECISION", "PERTINENCE"), (None, "PERTINENCE")],
 }
@@ -301,6 +311,10 @@ def _resultats(rep):
             m = _DATE_TITRE.search(plat(titre))
             if m:
                 date = f"{m.group(3)}-{m.group(2)}-{m.group(1)}"
+        if not date:   # « Décision 2023-1079 QPC - 08 février 2024 - … »
+            m = _DATE_FR.search(normaliser(plat(titre)))
+            if m:
+                date = f"{m.group(3)}-{MOIS[m.group(2)]:02d}-{int(m.group(1)):02d}"
         num = r.get("numero") or r.get("num") or r.get("numeroAffaire") or ""
         if isinstance(num, list):
             num = ", ".join(map(str, num))
