@@ -262,8 +262,9 @@ class ClientPiste:
     def appel(self, chemin, corps):
         for i in range(3):
             rep = self._appel(chemin, corps)
-            if rep.get("_erreur") in (502, 503, 504, "exception") and i < 2:
-                time.sleep(15 * (i + 1))
+            # 429 = quota PISTE dépassé, 500/502/503/504 = panne passagère.
+            if rep.get("_erreur") in (429, 500, 502, 503, 504, "exception") and i < 2:
+                time.sleep(30 * (i + 1))
                 continue
             return rep
 
@@ -417,9 +418,11 @@ def traiter_fonds_api(fonds, out, jours, maxi, diag, client):
             return _garder_api(fonds, fond, dossier, chemin_vus, vus, deja, candidats, debut, jours, maxi, diag, client)
         candidats = []
     essais = ([tuple(variante)] if variante else []) + [v for v in VARIANTES_API[fond] if list(v) != variante]
+    refus = []
     for facette, tri in essais:
         rep = client.appel("/search", _corps_recherche(fond, facette, tri, debut.isoformat(), fin.isoformat(), 1))
         if "_erreur" in rep:
+            refus.append(f"{facette}/{tri} → {rep['_erreur']} {rep.get('_detail', '')[:100]}")
             if diag:
                 print(f"  API {fond} facette={facette} tri={tri} : refus {rep['_erreur']} {rep.get('_detail','')[:160]}")
             continue
@@ -447,7 +450,8 @@ def traiter_fonds_api(fonds, out, jours, maxi, diag, client):
             page += 1
         break
     else:
-        raise RuntimeError(f"API Légifrance : aucune variante de recherche acceptée pour {fond}")
+        raise RuntimeError(f"API Légifrance : aucune variante de recherche acceptée pour {fond} : "
+                           + " | ".join(refus))
     if facette is None:   # pas de filtre de date accepté : on filtre nous-mêmes
         candidats = [c for c in candidats if c["date"] and c["date"] >= debut.isoformat()]
     return _garder_api(fonds, fond, dossier, chemin_vus, vus, deja, candidats, debut, jours, maxi, diag, client)
