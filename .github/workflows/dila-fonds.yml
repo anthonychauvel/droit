@@ -29,6 +29,11 @@ jobs:
   dila:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    # Repli sur l'API Légifrance si l'open data DILA ne répond pas.
+    env:
+      PISTE_CLIENT_ID: ${{ secrets.PISTE_CLIENT_ID }}
+      PISTE_CLIENT_SECRET: ${{ secrets.PISTE_CLIENT_SECRET }}
+      PISTE_ENV: production
     steps:
       - uses: actions/checkout@v4
 
@@ -41,17 +46,23 @@ jobs:
           D=""
           [ "${{ github.event.inputs.diagnostic }}" = "oui" ] && D="--diagnostic"
           python3 scripts/pull_dila_fonds.py --fonds CIRCULAIRES,CONSTIT,JADE --out output $D \
-            || { echo "pull_dila_fonds a échoué"; echo "$(date -u +%Y-%m-%dT%H:%MZ) dila" >> audits/etapes-en-echec.log; }
+            || { echo "pull_dila_fonds a échoué";
+                 J=$(date -u +%Y-%m-%dT%H:%MZ);
+                 echo "$J dila" >> audits/etapes-en-echec.log; }
 
       - name: Committer
         run: |
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
-          git add output/circulaires output/constit output/jade audits/etapes-en-echec.log 2>/dev/null || true
+          for c in output/circulaires output/constit output/jade \
+                   audits/etapes-en-echec.log; do
+            [ -e "$c" ] && git add "$c" || true
+          done
           if git diff --staged --quiet; then
             echo "Rien de nouveau."
           else
-            git commit -m "DILA : circulaires / Conseil constitutionnel / Conseil d'État ($(date -u +%Y-%m-%dT%H:%MZ))"
+            J=$(date -u +%Y-%m-%dT%H:%MZ)
+            git commit -m "DILA : circulaires, Conseil constit., Conseil d'État ($J)"
             git pull --rebase --autostash origin main || true
             git push || (sleep 5 && git pull --rebase --autostash origin main && git push)
           fi
