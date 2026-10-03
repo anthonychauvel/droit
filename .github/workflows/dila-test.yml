@@ -1,7 +1,7 @@
 name: TEST DILA (sans commit)
 
-# Lancement manuel : montre ce que la DILA publie pour les trois fonds et ce
-# que le script en garde, dans un dossier temporaire. Ne committe rien.
+# Lancement manuel : essaie l'open data DILA, puis l'API Légifrance
+# (repli), dans un dossier temporaire. Ne committe rien.
 on:
   workflow_dispatch:
 
@@ -12,6 +12,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 40
+    env:
+      PISTE_CLIENT_ID: ${{ secrets.PISTE_CLIENT_ID }}
+      PISTE_CLIENT_SECRET: ${{ secrets.PISTE_CLIENT_SECRET }}
+      PISTE_ENV: production
     steps:
       - uses: actions/checkout@v4
         with:
@@ -21,23 +25,22 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: 1. Index des trois fonds
+      - name: 1. Open data DILA joignable ?
+        continue-on-error: true
         run: |
           for f in CIRCULAIRES CONSTIT JADE; do
             echo "===== $f"
-            curl -sSL --max-time 60 "https://echanges.dila.gouv.fr/OPENDATA/$f/" | sed -e 's/<[^>]*>/ /g' | grep -v '^\s*$' | tail -15 || echo "illisible"
+            U="https://echanges.dila.gouv.fr/OPENDATA/$f/"
+            curl -sS -o /dev/null -w "HTTP %{http_code}\n" --max-time 60 "$U" || true
           done
 
-      - name: 2. Aspiration d'essai (2 archives par fonds)
+      - name: 2. Essai open data seule
+        continue-on-error: true
         run: |
-          python3 scripts/pull_dila_fonds.py --out /tmp/dila --max 2 --premier-max 2 --diagnostic
+          python3 scripts/pull_dila_fonds.py --source opendata \
+            --out /tmp/od --max 2 --premier-max 2 --diagnostic
 
-      - name: 3. Ce qui a été gardé
+      - name: 3. Essai API Légifrance (repli)
         run: |
-          python3 - <<'PY'
-          import json, glob
-          for f in sorted(glob.glob("/tmp/dila/*/*.json")):
-              if f.endswith("_vus.json"):
-                  continue
-              d = json.load(open(f, encoding="utf-8"))
-              print(f"[{d['fonds']}] {d.get('date')} | {d.get('titre','')[:110]} | {d.get('s
+          python3 scripts/pull_dila_fonds.py --source api \
+            --out /tmp/api --jours 30 --max 5 --diagnostic
