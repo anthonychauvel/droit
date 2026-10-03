@@ -65,6 +65,34 @@ SUJETS = re.compile(
     r"|france travail|unedic|retraite|agirc|arrco|cnav|prestations? familiales?|allocations? familiales"
     r"|caf\b|base mensuelle|bmaf|revalorisation|apprenti|activite partielle|arret de travail|indemnites? journalieres?"
     r"|accident du travail|maladie professionnelle|inaptitude|teletravail|repos (?:quotidien|hebdomadaire)", re.I)
+# Décisions (Conseil d'État, cours administratives, Conseil constitutionnel) :
+# « salarié » apparaît aussi dans un refus de titre de séjour. On exige une
+# vraie attache au droit du travail / de la Sécu, et on écarte le droit des
+# étrangers et l'urbanisme (test du 03/10/2026 : 27 décisions gardées, presque
+# toutes hors sujet).
+FORT_DECISION = re.compile(
+    r"code du travail|code de la securite sociale|convention collective|accord collectif|arrete d.extension"
+    r"|heures? supplementaires|duree du travail|cotisations? (?:sociales|patronales|salariales)|urssaf"
+    r"|licenciement|salarie protege|inspect(?:eur|ion) du travail|reduction generale|smic"
+    r"|assurance chomage|france travail|unedic|prestations? familiales|retraite complementaire", re.I)
+HORS_SUJET_DECISION = re.compile(
+    r"entree et (?:du )?sejour des etrangers|titre de sejour|obligation de quitter le territoire|\bceseda\b"
+    r"|permis de construire|code de l.urbanisme", re.I)
+_DATE_TITRE = re.compile(r"(\d{2})/(\d{2})/(\d{4})")
+
+
+def pertinent(fonds, titre, texte):
+    """Sujets touchés, ou [] si le texte n'est pas pour l'écosystème."""
+    n = normaliser(titre + " " + texte[:60000])
+    sujets = sorted({m.group(0) for m in SUJETS.finditer(n)})
+    if not sujets or fonds == "CIRCULAIRES":
+        return sujets
+    if HORS_SUJET_DECISION.search(n) and not re.search(r"code du travail|code de la securite sociale", n):
+        return []
+    forts = {m.group(0) for m in FORT_DECISION.finditer(n)}
+    return sujets if forts else []
+
+
 _REF = re.compile(r"\b([LRD])\.?\s?(\d{3,4}(?:-\d+){1,3})\b")
 
 
@@ -136,8 +164,7 @@ def fiche_xml(nom, octets, fonds):
     titre = champ(xml, "TITRE_TXT", "TITREFULL", "TITRE", "INTITULE", "TITLE") or texte[:160]
     if not texte or len(texte) < 80:
         return None
-    n = normaliser(titre + " " + texte[:60000])
-    sujets = sorted({m.group(0) for m in SUJETS.finditer(n)})
+    sujets = pertinent(fonds, titre, texte)
     if not sujets:
         return None
     ident = champ(xml, "ID") or os.path.splitext(os.path.basename(nom))[0]
@@ -249,9 +276,13 @@ def _resultats(rep):
         date = ""
         for k in ("dateDecision", "dateSignature", "datePublication", "date", "dateTexte"):
             v = r.get(k)
-            if v:
-                date = str(v)[:10]
+            if isinstance(v, str) and re.match(r"\d{4}-\d{2}-\d{2}", v):
+                date = v[:10]
                 break
+        if not date:
+            m = _DATE_TITRE.search(plat(titre))
+            if m:
+                date = f"{m.group(3)}-{m.group(2)}-{m.group(1)}"
         num = r.get("numero") or r.get("num") or r.get("numeroAffaire") or ""
         if isinstance(num, list):
             num = ", ".join(map(str, num))
@@ -320,12 +351,14 @@ def traiter_fonds_api(fonds, out, jours, maxi, diag, client):
         raise RuntimeError(f"API Légifrance : aucune variante de recherche acceptée pour {fond}")
     if facette is None:   # pas de filtre de date accepté : on filtre nous-mêmes
         candidats = [c for c in candidats if not c["date"] or c["date"] >= debut.isoformat()]
-    gardes = 0
+    gardes, titres_vus = 0, set()
     for c in [c for c in candidats if c["id"] not in deja][:maxi * 20]:
         deja.add(c["id"])
+        if c["titre"] in titres_vus:
+            continue                                  # même décision publiée deux fois
+        titres_vus.add(c["titre"])
         texte, meta = _texte_api(client, fond, c["id"])
-        n = normaliser(c["titre"] + " " + texte[:60000])
-        sujets = sorted({m.group(0) for m in SUJETS.finditer(n)})
+        sujets = pertinent(fonds, c["titre"], texte)
         if not sujets:
             continue
         f = {"fonds": fonds, "id": c["id"], "titre": c["titre"][:400], "date": c["date"],
@@ -364,7 +397,7 @@ def traiter_fonds(fonds, out, maxi, premier_max, diag):
     deja = vus.setdefault("archives", {})
     racine = urllib.parse.urljoin(BASE, fonds + "/")
     try:
-        ouvrir(racine, delai=60, essais=2)
+        ouvrir(racine, delai=30, essais=1)
     except Exception as e:                           # noqa: BLE001
         raise OpenDataInjoignable(str(e))
     cands = lister(racine)
