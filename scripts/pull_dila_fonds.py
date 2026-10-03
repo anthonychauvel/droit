@@ -340,6 +340,40 @@ def _texte_api(client, fond, ident):
     return "", {}
 
 
+def _constit_par_mois(client, debut, fin, diag):
+    """Décisions du Conseil constitutionnel des mois de la fenêtre, par le
+    titre. None si l'API refuse ce type de recherche."""
+    noms = list(MOIS)
+    mois, d = [], debut.replace(day=1)
+    while d <= fin:
+        mois.append(f"{noms[d.month - 1].replace('fevrier', 'février').replace('aout', 'août').replace('decembre', 'décembre')} {d.year}")
+        d = d.replace(year=d.year + (d.month == 12), month=d.month % 12 + 1)
+    out = []
+    for m in mois:
+        for page in (1, 2):
+            corps = {"fond": "CONSTIT", "recherche": {
+                "champs": [{"typeChamp": "TITLE", "operateur": "ET",
+                            "criteres": [{"valeur": m, "typeRecherche": "EXACTE", "operateur": "ET"}]}],
+                "sort": "PERTINENCE", "fromAdvancedRecherche": False, "pageNumber": page,
+                "pageSize": 50, "typePagination": "DEFAUT", "operateur": "ET"}}
+            rep = client.appel("/search", corps)
+            if "_erreur" in rep:
+                if diag:
+                    print(f"  API CONSTIT titre « {m} » : refus {rep['_erreur']} {rep.get('_detail','')[:120]}")
+                return None
+            res = _resultats(rep)
+            if diag and page == 1:
+                print(f"  API CONSTIT titre « {m} » : {rep.get('totalResultNumber', '?')} résultat(s)")
+                for r in res[:3]:
+                    print(f"     {r['date']} {r['titre'][:100]}")
+            out += res
+            if len(res) < 50:
+                break
+    # « septembre 2026 » peut aussi figurer dans le titre d'une décision plus
+    # ancienne (loi du …) : la date lue doit tomber dans la fenêtre.
+    return [c for c in out if c["date"] and c["date"] >= debut.isoformat()]
+
+
 def traiter_fonds_api(fonds, out, jours, maxi, diag, client):
     from datetime import date, timedelta
     fond = FONDS_API[fonds]
@@ -355,6 +389,14 @@ def traiter_fonds_api(fonds, out, jours, maxi, diag, client):
     debut = fin - timedelta(days=jours)
     variante = vus.get("api_variante")
     candidats = []
+    if fond == "CONSTIT":
+        # Test du 03/10 : aucun filtre ni tri par date n'est appliqué sur ce
+        # fonds. Mais chaque titre porte la date en toutes lettres (« … QPC -
+        # 26 septembre 2026 - … ») : on cherche le mois et l'année dans le titre.
+        candidats = _constit_par_mois(client, debut, fin, diag)
+        if candidats is not None:
+            return _garder_api(fonds, fond, dossier, chemin_vus, vus, deja, candidats, debut, jours, maxi, diag, client)
+        candidats = []
     essais = ([tuple(variante)] if variante else []) + [v for v in VARIANTES_API[fond] if list(v) != variante]
     for facette, tri in essais:
         rep = client.appel("/search", _corps_recherche(fond, facette, tri, debut.isoformat(), fin.isoformat(), 1))
@@ -389,6 +431,10 @@ def traiter_fonds_api(fonds, out, jours, maxi, diag, client):
         raise RuntimeError(f"API Légifrance : aucune variante de recherche acceptée pour {fond}")
     if facette is None:   # pas de filtre de date accepté : on filtre nous-mêmes
         candidats = [c for c in candidats if c["date"] and c["date"] >= debut.isoformat()]
+    return _garder_api(fonds, fond, dossier, chemin_vus, vus, deja, candidats, debut, jours, maxi, diag, client)
+
+
+def _garder_api(fonds, fond, dossier, chemin_vus, vus, deja, candidats, debut, jours, maxi, diag, client):
     gardes, titres_vus = 0, set()
     for c in [c for c in candidats if c["id"] not in deja][:maxi * 20]:
         deja.add(c["id"])
