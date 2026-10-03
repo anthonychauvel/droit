@@ -234,12 +234,30 @@ class ClientPiste:
                      else "https://sandbox-api.piste.gouv.fr/dila/legifrance/lf-engine-app")
         data = urllib.parse.urlencode({"grant_type": "client_credentials", "client_id": cid,
                                        "client_secret": sec, "scope": "openid"}).encode()
-        req = urllib.request.Request(self.token_url, data=data, method="POST",
-                                     headers={"Content-Type": "application/x-www-form-urlencoded"})
-        with urllib.request.urlopen(req, timeout=30) as r:
-            self.jeton = json.loads(r.read())["access_token"]
+        # PISTE renvoie parfois 503 quelques minutes (03/10/2026) : 4 essais
+        # espacés (20 s, 40 s, 60 s) avant d'abandonner.
+        for i in range(4):
+            req = urllib.request.Request(self.token_url, data=data, method="POST",
+                                         headers={"Content-Type": "application/x-www-form-urlencoded"})
+            try:
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    self.jeton = json.loads(r.read())["access_token"]
+                return
+            except Exception as e:                   # noqa: BLE001
+                if i == 3:
+                    raise RuntimeError(f"jeton PISTE refusé ({e})")
+                print(f"  jeton PISTE : {e}, nouvel essai dans {20 * (i + 1)} s")
+                time.sleep(20 * (i + 1))
 
     def appel(self, chemin, corps):
+        for i in range(3):
+            rep = self._appel(chemin, corps)
+            if rep.get("_erreur") in (502, 503, 504, "exception") and i < 2:
+                time.sleep(15 * (i + 1))
+                continue
+            return rep
+
+    def _appel(self, chemin, corps):
         req = urllib.request.Request(self.base + chemin, data=json.dumps(corps).encode(), method="POST",
                                      headers={"Authorization": "Bearer " + self.jeton,
                                               "Content-Type": "application/json", "Accept": "application/json"})
