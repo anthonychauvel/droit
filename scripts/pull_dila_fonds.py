@@ -340,37 +340,56 @@ def _texte_api(client, fond, ident):
     return "", {}
 
 
+COMBOS_CONSTIT = [("TITLE", "EXACTE"), ("TITLE", "TOUS_LES_MOTS_DANS_UN_CHAMP"), ("ALL", "EXACTE")]
+
+
+def _constit_cherche(client, valeur, champ, type_r, page=1):
+    corps = {"fond": "CONSTIT", "recherche": {
+        "champs": [{"typeChamp": champ, "operateur": "ET",
+                    "criteres": [{"valeur": valeur, "typeRecherche": type_r, "operateur": "ET"}]}],
+        "sort": "PERTINENCE", "fromAdvancedRecherche": False, "pageNumber": page,
+        "pageSize": 50, "typePagination": "DEFAUT", "operateur": "ET"}}
+    return client.appel("/search", corps)
+
+
 def _constit_par_mois(client, debut, fin, diag):
-    """Décisions du Conseil constitutionnel des mois de la fenêtre, par le
-    titre. None si l'API refuse ce type de recherche."""
-    noms = list(MOIS)
+    """Décisions du Conseil constitutionnel des mois de la fenêtre, par la
+    date écrite en toutes lettres dans le titre. None si rien ne marche."""
+    # Témoin : une décision connue (« 06 février 2026 », Toray) doit sortir.
+    # La première combinaison champ / type de recherche qui la trouve sert.
+    combo = None
+    for champ, type_r in COMBOS_CONSTIT:
+        rep = _constit_cherche(client, "février 2026", champ, type_r)
+        n = 0 if "_erreur" in rep else len(_resultats(rep))
+        if diag:
+            print(f"  API CONSTIT témoin « février 2026 » {champ}/{type_r} : "
+                  + (f"refus {rep['_erreur']}" if "_erreur" in rep else f"{rep.get('totalResultNumber', '?')} résultat(s)"))
+        if n:
+            combo = (champ, type_r)
+            break
+    if not combo:
+        return None
+    noms = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet",
+            "août", "septembre", "octobre", "novembre", "décembre"]
     mois, d = [], debut.replace(day=1)
     while d <= fin:
-        mois.append(f"{noms[d.month - 1].replace('fevrier', 'février').replace('aout', 'août').replace('decembre', 'décembre')} {d.year}")
+        mois.append(f"{noms[d.month - 1]} {d.year}")
         d = d.replace(year=d.year + (d.month == 12), month=d.month % 12 + 1)
     out = []
     for m in mois:
         for page in (1, 2):
-            corps = {"fond": "CONSTIT", "recherche": {
-                "champs": [{"typeChamp": "TITLE", "operateur": "ET",
-                            "criteres": [{"valeur": m, "typeRecherche": "EXACTE", "operateur": "ET"}]}],
-                "sort": "PERTINENCE", "fromAdvancedRecherche": False, "pageNumber": page,
-                "pageSize": 50, "typePagination": "DEFAUT", "operateur": "ET"}}
-            rep = client.appel("/search", corps)
+            rep = _constit_cherche(client, m, combo[0], combo[1], page)
             if "_erreur" in rep:
-                if diag:
-                    print(f"  API CONSTIT titre « {m} » : refus {rep['_erreur']} {rep.get('_detail','')[:120]}")
-                return None
+                break
             res = _resultats(rep)
             if diag and page == 1:
-                print(f"  API CONSTIT titre « {m} » : {rep.get('totalResultNumber', '?')} résultat(s)")
-                for r in res[:3]:
+                print(f"  API CONSTIT « {m} » : {rep.get('totalResultNumber', '?')} résultat(s)")
+                for r in res[:4]:
                     print(f"     {r['date']} {r['titre'][:100]}")
             out += res
             if len(res) < 50:
                 break
-    # « septembre 2026 » peut aussi figurer dans le titre d'une décision plus
-    # ancienne (loi du …) : la date lue doit tomber dans la fenêtre.
+    # La date lue dans le titre doit tomber dans la fenêtre.
     return [c for c in out if c["date"] and c["date"] >= debut.isoformat()]
 
 
