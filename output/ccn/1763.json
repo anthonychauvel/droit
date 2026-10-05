@@ -5228,12 +5228,63 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005805241",
+              "cid": "KALIARTI000005805241",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005805241",
+              "pathTitle": [],
+              "content": "Voir salaires.<p></p><p></p>",
+              "nota": null,
+              "comporteLiens": false,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Convention collective nationale 1993-12-31 en vigueur le 1er janvier 1994 étendue par arrêté du 29 septembre 1994 JORF 1er octobre 1994",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "ANNEXE II SALAIRES",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 757382400000,
+              "dateFin": 1304380800000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13748,13 +13799,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705886",
+              "cid": "KALISCTA000005705886",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires bruts mensuels (toutes filières) applicables au 1er janvier 1994 (1).",
+              "dateModif": null,
+              "dateDebut": "1994-01-01",
+              "dateFin": "1995-03-16",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005805461",
+                  "cid": "KALIARTI000005805461",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705886/KALIARTI000005805461",
+                  "pathTitle": [
+                    "Salaires bruts mensuels (toutes filières) applicables au 1er janvier 1994 (1)."
+                  ],
+                  "content": "Non cadres<p></p> Niveau A <p></p> Autres salariés :<p></p> RMG (2) : 6.000 F<p></p> SBMH (3) : 6.000 F<p></p><p></p> Niveau B<p></p> Autres salariés :<p></p> RMG : 7.400 F<p></p> SBMH : 6.290 F<p></p> Dockers carte \"G\" :<p></p> SBMH : 7.290 F<p></p> RMG : 8.400 F<p></p><p></p> Niveau C<p></p><p></p>   échelon 1<p></p> Autres salariés :<p></p> RMG : 8.200 F<p></p> SBMH : 6.970 F<p></p> Dockers carte \"G\" :<p></p> SBMH : 7.970 F<p></p> RMG : 9.200 F<p></p><p></p><p></p>   échelon 2<p></p> Autres salariés :<p></p> RMG : 8.800 F<p></p> SBMH : 7.480 F<p></p> Dockers carte \"G\" :<p></p> SBMH : 8.480 F<p></p> RMG : 9.800 F<p></p><p></p><p></p>   échelon 3<p></p> Autres salariés :<p></p> RMG : 9.400 F<p></p> SBMH : 7.990 F<p></p> Dockers carte \"G\" :<p></p> SBMH : 8.990 F<p></p> RMG : 10.400 F<p></p><p></p> Niveau D<p></p><p></p>   échelon 1<p></p> Autres salariés :<p></p> RMG : 10.000 F<p></p> SBMH : 8.500 F<p></p> Dockers carte \"G\" :<p></p> SBMH : 9.500 F<p></p> RMG : 11.000 F<p></p><p></p><p></p>   échelon 2<p></p> Autres salariés :<p></p> RMG : 10.600 F<p></p> SBMH : 9.010 F<p></p> Dockers carte \"G\" :<p></p> SBMH : 10.010 F<p></p> RMG : 11.600 F<p></p><p></p> Niveau AM<p></p><p></p>   échelon 1<p></p> Autres salariés :<p></p> RMG : 12.200 F<p></p> SBMH : 10.370 F<p></p> Dockers carte \"G\" :<p></p> SBMH : 11.370 F<p></p> RMG : 13.200 F<p></p><p></p><p></p>   échelon 2<p></p> Autres salariés :<p></p> RMG : 13.000 F<p></p> SBMH : 11.050 F<p></p> Dockers carte \"G\" :<p></p> SBMH : 12.050 F<p></p> RMG : 14.000 F<p></p><p></p> Cadres (un seul niveau) :<p></p><p></p>   échelon 1<p></p> RMG : 13.000 F<p></p><p></p>   échelon 2<p></p> RMG : 14.500 F<p></p><p></p>   échelon 3<p></p> RMG : 17.500 F<p></p><p></p><p></p>   Conformément à l'article L. 132-12 du code du travail, les signataires de la présente convention collective se rencontreront en décembre 1994 en vue de la négociation sur les salaires minimaux. A cette occasion, ils examineront les rapprochements possibles entre les SBMH et les RMG.<p></p><font color=\"808080\"><em>   (1) : L'annexe II (Salaires) est étendue sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>    (2) RMG : Rémunération minimale garantie.<p></p>    (3) SBMH : Salaire de base minimum hiérarchique.<p></p></em></font>",
+                  "nota": "   (1) : L'annexe II (Salaires) est étendue sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>    (2) RMG : Rémunération minimale garantie.<p></p>    (3) SBMH : Salaire de base minimum hiérarchique.<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Convention collective nationale 1993-12-31 en vigueur le 1er janvier 1994 étendue par arrêté du 29 septembre 1994 JORF 1er octobre 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-12",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 757382400000,
+                  "dateFin": 795312000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13768,13 +13907,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705887",
+              "cid": "KALISCTA000005705887",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires bruts mensuels (toutes filières) applicables au 1er janvier 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-03-16",
+              "dateFin": "1996-01-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005805462",
+                  "cid": "KALIARTI000005805462",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705887/KALIARTI000005805462",
+                  "pathTitle": [
+                    "Salaires bruts mensuels (toutes filières) applicables au 1er janvier 1995."
+                  ],
+                  "content": "<p></p>   Il est convenu que la grille des salaires minimaux garantis est modifiée comme suit, après revalorisation de 1,95 p. 100, à compter du 1er janvier 1995 :<p></p><p></p><p></p>NON CADRES, AUTRES SALARIES<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = ECHELON<p></p><p></p>   (3) = REMUNERATION MINIMALE GARANTIE<p></p><p></p>   (4) = SALAIRE DE BASE MINIMUM HIERARCHIQUE<p></p><TABLE><TR><TD> 1 </TD><TD> 2 </TD><TD>    3     </TD><TD>  4      </TD></TR><TR><TD> A </TD><TD> 1 </TD><TD>  6.117 F </TD><TD> 6.117 F </TD></TR><TR><TD> B </TD><TD></TD><TD>  7.544 F </TD><TD> 6.413 F </TD></TR><TR><TD> C </TD><TD> 1 </TD><TD>  8.360 F </TD><TD> 7.106 F </TD></TR><TR><TD> C </TD><TD> 2 </TD><TD>  8.972 F </TD><TD> 7.626 F </TD></TR><TR><TD> C </TD><TD> 3 </TD><TD>  9.583 F </TD><TD> 8.146 F </TD></TR><TR><TD> D </TD><TD> 1 </TD><TD> 10.195 F </TD><TD> 8.666 F </TD></TR><TR><TD> D </TD><TD> 2 </TD><TD> 10.807 F </TD><TD> 9.186 F </TD></TR><TR><TD> AM</TD><TD> 1 </TD><TD> 12.438 F </TD><TD>10.572 F </TD></TR><TR><TD> AM</TD><TD> 2 </TD><TD> 13.254 F </TD><TD>11.265 F </TD></TR></TABLE><p></p>NON CADRES, DOCKERS CARTE \"G\"<p></p><p></p>   (1) = NIVEAU<p></p><p></p>   (2) = ECHELON<p></p><p></p>   (3) = SALAIRE DE BASE MINIMUM HIERARCHIQUE<p></p><p></p>   (4) = REMUNERATION MINIMALE GARANTIE<p></p><TABLE><TR><TD> 1 </TD><TD> 2 </TD><TD>    3     </TD><TD>  4      </TD></TR><TR><TD> B </TD><TD></TD><TD>  7.432 F </TD><TD> 8.564 F </TD></TR><TR><TD> C </TD><TD> 1 </TD><TD>  8.125 F </TD><TD> 9.379 F </TD></TR><TR><TD> C </TD><TD> 2 </TD><TD>  8.645 F </TD><TD> 9.991 F </TD></TR><TR><TD> C </TD><TD> 3 </TD><TD>  9.165 F </TD><TD>10.603 F </TD></TR><TR><TD> D </TD><TD> 1 </TD><TD>  9.685 F </TD><TD>11.215 F </TD></TR><TR><TD> D </TD><TD> 2 </TD><TD> 10.205 F </TD><TD>11.826 F </TD></TR><TR><TD> AM</TD><TD> 1 </TD><TD> 11.592 F </TD><TD>13.457 F </TD></TR><TR><TD> AM</TD><TD> 2 </TD><TD> 12.285 F </TD><TD>14.273 F </TD></TR></TABLE><p></p>CADRES<p></p><p></p>   Un seul niveau<p></p><p></p>   (1) = ECHELON<p></p><p></p>   (2) = REMUNERATION MINIMALE GARANTIE<p></p><TABLE><TR><TD>     (1)    </TD><TD>   (2)    </TD></TR><TR><TD> echelon 1  </TD><TD> 13.254 F </TD></TR><TR><TD> echelon 2  </TD><TD> 14.783 F </TD></TR><TR><TD> echelon 3  </TD><TD> 17.841 F </TD></TR></TABLE><p></p><p></p>   Conformément à l'article L. 132-12 du code du travail, les signataires se rencontreront à la fin de l'année 1995 en vue de la négociation annuelle sur les salaires minimaux garantis. A cette occasion, ils examineront les rapprochements possibles entre les S.B.M.H. et les R.M.G. par une différenciation de leurs taux respectifs de revalorisation.<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1995-03-16 BO conventions collectives 95-15, étendu par arrêté du 19 juin 1995 JORF 30 juin 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-12",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 795312000000,
+                  "dateFin": 821923200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
