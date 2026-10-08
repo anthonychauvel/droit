@@ -11647,13 +11647,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005726594",
+              "cid": "KALISCTA000005726594",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er novembre 1998 et 1er janvier 1999",
+              "dateModif": null,
+              "dateDebut": "1998-11-10",
+              "dateFin": "2004-12-16",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005857177",
+                  "cid": "KALIARTI000005857177",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005726594/KALIARTI000005857177",
+                  "pathTitle": [
+                    "Salaires au 1er novembre 1998 et 1er janvier 1999"
+                  ],
+                  "content": "<p></p>   Les parties signataires du présent accord sont convenues des dispositions suivantes :<p></p> Article 1er<p></p> Grille du salaire minimum national professionnel au 1er novembre 1998<p></p><p></p>   La grille du salaire minimum national professionnel (SMNP), défini à l'article 21 des clauses générales de la convention collective nationale de la transformation des matières plastiques, est revalorisée au 1er novembre 1998.<p></p><p></p>   Elle est établie, après majoration de 0,5 %, comme ci-après.<p></p> Barème des salaires minima bruts mensuels<p></p> (valeur au 1er novembre 1998)<p></p> (1)Niveau<p></p> (2)Echelon<p></p> (3)Coefficient<p></p> (4)Valeur mensuelle (en francs)<p></p> (5)Point complémentaire<p></p><TABLE><TR><TD>(1)</TD><TD>(2)</TD><TD>(3)</TD><TD>   (4)   </TD><TD>   (5)  </TD></TR><TR><TD>  I</TD><TD> a </TD><TD>130</TD><TD> 5 620,00</TD><TD></TD></TR><TR><TD>  I</TD><TD> b </TD><TD>135</TD><TD> 5 755,73</TD><TD></TD></TR><TR><TD>  I</TD><TD> c </TD><TD>145</TD><TD> 6 027,18</TD><TD></TD></TR><TR><TD> II</TD><TD> a </TD><TD>155</TD><TD> 6 298,64</TD><TD></TD></TR><TR><TD> II</TD><TD> b </TD><TD>170</TD><TD> 6 705,82</TD><TD></TD></TR><TR><TD> II</TD><TD> c </TD><TD>185</TD><TD> 7 113,00</TD><TD>27,1455 </TD></TR><TR><TD>III</TD><TD> a </TD><TD>205</TD><TD> 7 772,19</TD><TD>32,9597 </TD></TR><TR><TD>III</TD><TD> b </TD><TD>220</TD><TD> 8 266,59</TD><TD></TD></TR><TR><TD>III</TD><TD> c </TD><TD>235</TD><TD> 8 760,99</TD><TD></TD></TR><TR><TD> IV</TD><TD> a </TD><TD>250</TD><TD> 9 255,38</TD><TD></TD></TR><TR><TD> IV</TD><TD> b </TD><TD>265</TD><TD> 9 749,78</TD><TD></TD></TR><TR><TD> IV</TD><TD> c </TD><TD>280</TD><TD>10 244,17</TD><TD></TD></TR><TR><TD>  V</TD><TD> a </TD><TD>305</TD><TD>11 068,17</TD><TD></TD></TR><TR><TD>  V</TD><TD> b </TD><TD>335</TD><TD>12 056,96</TD><TD></TD></TR><TR><TD>  V</TD><TD> c </TD><TD>365</TD><TD>13 045,75</TD><TD></TD></TR><TR><TD> VI</TD><TD> a </TD><TD>390</TD><TD>13 869,74</TD><TD></TD></TR><TR><TD> VI</TD><TD> b </TD><TD>440</TD><TD>15 517,73</TD><TD></TD></TR><TR><TD> VI</TD><TD> c </TD><TD>550</TD><TD>19 143,29</TD><TD></TD></TR><TR><TD>VII</TD><TD> a </TD><TD>660</TD><TD>22 768,86</TD><TD></TD></TR><TR><TD>VII</TD><TD> b </TD><TD>770</TD><TD>26 394,43</TD><TD></TD></TR><TR><TD>VII</TD><TD> c </TD><TD>880</TD><TD>30 020,00</TD><TD></TD></TR></TABLE><p></p>Article 2<p></p> Grille du salaire minimum national professionnel au 1er janvier 1999<p></p><p></p>   La grille du salaire minimum national professionnel (SMNP), valeur au 1er novembre 1998, visée à l'article 1er du présent accord, est majorée de 1 % à compter du 1er janvier 1999.<p></p> Barème des salaires minima bruts mensuels<p></p> (valeur au 1er janvier 1999)<p></p> (1)Niveau<p></p> (2)Echelon<p></p> (3)Coefficient<p></p> (4)Valeur mensuelle (en francs)<p></p> (5)Point complémentaire<p></p><TABLE><TR><TD>(1)</TD><TD>(2)</TD><TD>(3)</TD><TD>   (4)   </TD><TD>   (5)  </TD></TR><TR><TD>  I</TD><TD> a </TD><TD>130</TD><TD> 5 676,00</TD><TD></TD></TR><TR><TD>  I</TD><TD> b </TD><TD>135</TD><TD> 5 813,09</TD><TD></TD></TR><TR><TD>  I</TD><TD> c </TD><TD>145</TD><TD> 6 087,27</TD><TD></TD></TR><TR><TD> II</TD><TD> a </TD><TD>155</TD><TD> 6 361,45</TD><TD></TD></TR><TR><TD> II</TD><TD> b </TD><TD>170</TD><TD> 6 772,73</TD><TD></TD></TR><TR><TD> II</TD><TD> c </TD><TD>185</TD><TD> 7 184,00</TD><TD> 27,4182</TD></TR><TR><TD>III</TD><TD> a </TD><TD>205</TD><TD> 7 849,78</TD><TD> 33,2892</TD></TR><TR><TD>III</TD><TD> b </TD><TD>220</TD><TD> 8 349,12</TD><TD></TD></TR><TR><TD>III</TD><TD> c </TD><TD>235</TD><TD> 8 848,46</TD><TD></TD></TR><TR><TD> IV</TD><TD> a </TD><TD>250</TD><TD> 9 347,80</TD><TD></TD></TR><TR><TD> IV</TD><TD> b </TD><TD>265</TD><TD> 9 847,14</TD><TD></TD></TR><TR><TD> IV</TD><TD> c </TD><TD>280</TD><TD>10 346,47</TD><TD></TD></TR><TR><TD>  V</TD><TD> a </TD><TD>305</TD><TD>11 178,71</TD><TD></TD></TR><TR><TD>  V</TD><TD> b </TD><TD>335</TD><TD>12 177,38</TD><TD></TD></TR><TR><TD>  V</TD><TD> c </TD><TD>365</TD><TD>13 176,06</TD><TD></TD></TR><TR><TD> VI</TD><TD> a </TD><TD>390</TD><TD>14 008,29</TD><TD></TD></TR><TR><TD> VI</TD><TD> b </TD><TD>440</TD><TD>15 672,75</TD><TD></TD></TR><TR><TD> VI</TD><TD> c </TD><TD>550</TD><TD>19 334,56</TD><TD></TD></TR><TR><TD>VII</TD><TD> a </TD><TD>660</TD><TD>22 996,37</TD><TD></TD></TR><TR><TD>VII</TD><TD> b </TD><TD>770</TD><TD>26 658,19</TD><TD></TD></TR><TR><TD>VII</TD><TD> c </TD><TD>880</TD><TD>30 320,00</TD><TD></TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 5 février 1999 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 5 février 1999 art. 1 : dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1998-11-10 BO conventions collectives 98-52 étendu par arrêté du 5 février 1999 JORF 16 février 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 910656000000,
+                  "dateFin": 1103155200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -11667,13 +11741,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005726595",
+              "cid": "KALISCTA000005726595",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Préambule.",
+              "dateModif": null,
+              "dateDebut": "2004-12-16",
+              "dateFin": "2006-01-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005857178",
+                  "cid": "KALIARTI000005857178",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005726595/KALIARTI000005857178",
+                  "pathTitle": [
+                    "Préambule."
+                  ],
+                  "content": "<p></p>Le présent accord a pour objet de remplacer les dispositions de l'article 21 \" Salaire minimum \" des clauses générales, de l'article 14 \" Prime d'ancienneté \" de l'avenant \" Collaborateurs \" et de l'article 1er \" Prime d'ancienneté \" de l'avenant Seine et Seine-et-Oise. <p></p>Article 1er <p></p>Champ d'application <p></p><p></p>Le champ d'application de l'accord est celui de la convention collective nationale de la plasturgie (anciennement transformation des matières plastiques) du 1er juillet 1960 modifié par les avenants du 6 janvier 1961 et du 15 juin 1977. <p></p>Article 2 <p></p>Conditions d'application de l'accord <p></p><p></p>Les dispositions ci-dessous du présent accord ne s'appliqueront dans les entreprises ou établissements qu'à condition que ceux-ci aient mis en place l'accord de classification de la branche signé le 16 décembre 2004. <p></p>Article 3 <p></p>Salaires minima <p></p><p></p>Il est convenu que les minima conventionnels feront l'objet d'une négociation annuelle obligatoire. <p></p>Article 3.1 <p></p>Montant du 1er coefficient <p></p><p></p>Les parties s'engagent à ce que le salaire mensuel du coefficient 700, au 1er juillet chaque année, ne soit pas inférieur au SMIC de référence tel que défini par la loi du 2 janvier 1970. <p></p><p></p>Afin de garantir la pérennité de la grille des salaires, les parties signataires s'engagent à ce que le salaire minima d'un coefficient donné soit toujours supérieur au salaire du coefficient précédent, quelle que soit l'issue des futures négociations salariales. <p></p>Article 3.2 <p></p>Formule de calcul <p></p><p></p>Les salaires minima à partir du coefficient 710 inclus sont déterminés à partir de 2 paramètres négociés par accord collectif de branche : une valeur de référence et une valeur de point unique. <p></p><p></p>Les salaires minima sont calculés comme suit :<p></p><p></p>-valeur de référence négociée + (indice salarial fixe x valeur du point négociée). <p></p><p></p>La valeur de référence négociée chaque année est distincte de la valeur du SMIC de référence tel que défini par la loi du 2 janvier 1970. <p></p>Article 3.3 <p></p>Barème des salaires minima mensuels <p></p><p></p>Le barème des salaires minima est établi sur une base de 151,67 heures au sens de l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647750&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L212-1 (Ab)\">article L. 212-1 du code du travail</a>, ainsi sont inclus dans le salaire minimum le complément lié à la réduction du temps de travail appliqué, s'il existe, dans l'entreprise ou l'établissement lors de la mise en place des 35 heures, de même que tous les éléments qui entrent dans la composition du SMIC selon la réglementation en vigueur, y compris la jurisprudence. <p></p><p></p>A titre d'indication sont exclus à la date de signature de l'accord :<p></p><p></p>-la majoration relative à la durée du travail : heures supplémentaires, exceptionnelles, etc. ;<p></p><p></p>-la prime d'ancienneté ;<p></p><p></p>-le 13e mois, quand il existe ;<p></p><p></p>-les primes pour travaux pénibles, dangereux ou insalubres ;<p></p><p></p>-les gratifications ayant indiscutablement un caractère exceptionnel ;<p></p><p></p>-les indemnités ayant un caractère de remboursement de frais ;<p></p><p></p>-les primes générales (vacances, Noël...) quelle que soit leur appellation, qu'elles soient fonction ou non de la production ou de la productivité globale de l'entreprise ou de ses bénéfices. <p></p><p></p>En ce qui concerne les heures qui ne seraient pas considérées comme du temps de travail effectif, elles seront régies par la législation en vigueur, la jurisprudence et la convention collective nationale de la plasturgie. <p></p>Article 3.4 <p></p>Barème des salaires minima pour 2004 Valeur du point : 6 Valeur de référence : 1 216 <p></p><p></p>(En euros) <p></p><TABLE><TR><TD>COEFFICIENT </TD><TD>INDICE SALARIAL </TD><TD>VALEUR MENSUELLE </TD></TR><TR><TD>700</TD><TD>-</TD><TD>1 215 </TD></TR><TR><TD>710 </TD><TD>3 </TD><TD>1 234 </TD></TR><TR><TD>720 </TD><TD>8 </TD><TD>1 264 </TD></TR><TR><TD>730 </TD><TD>18 </TD><TD>1 324 </TD></TR><TR><TD>740 </TD><TD>30 </TD><TD>1 396 </TD></TR><TR><TD>750 </TD><TD>46 </TD><TD>1 492 </TD></TR><TR><TD>800 </TD><TD>64 </TD><TD>1 600 </TD></TR><TR><TD>810 </TD><TD>86 </TD><TD>1 732 </TD></TR><TR><TD>820 </TD><TD>115 </TD><TD>1 906 </TD></TR><TR><TD>830 </TD><TD>142 </TD><TD>2 068 </TD></TR><TR><TD>900 </TD><TD>211 </TD><TD>2 482 </TD></TR><TR><TD>910 </TD><TD>232 </TD><TD>2 608 </TD></TR><TR><TD>920 </TD><TD>297 </TD><TD>2 998 </TD></TR><TR><TD>930 </TD><TD>447 </TD><TD>3 898 </TD></TR><TR><TD>940 </TD><TD>607 </TD><TD>4 858 </TD></TR></TABLE><p></p>Article 3.5 Salaires minima mensuels des cadres <p></p>Le premier coefficient des cadres est le coefficient 900. Pour les cadres débutants dont la définition est précisée à l'article 3.6, il pourra être procédé par l'entreprise à un abattement de 11 % sur le salaire minima du coefficient 900 pendant une période qui n'excédera pas 24 mois au maximum. Article 3.6 Définition du cadre débutant <p></p>Par cadre débutant il y a lieu d'entendre la position attribuée aux nouveaux diplômés n'ayant aucun passé professionnel, soit à l'extérieur, soit à l'intérieur de l'entreprise, jusqu'à ce qu'ils aient acquis l'expérience professionnelle nécessaire pour l'exercice correct de la fonction. Article 4 Prime d'ancienneté Article 4. 1Principe de déconnexion de la prime d'ancienneté <p></p><p></p>Le mode de calcul de la prime d'ancienneté est déconnecté des salaires minima de branche. <p></p>Article 4.2 <p></p>Mode de calcul de la prime d'ancienneté et maintien du montant de la prime d'ancienneté acquise <p></p><p></p>Les collaborateurs bénéficient d'une prime d'ancienneté calculée sur un pourcentage à hauteur de 0,80 % du salaire de base par année d'ancienneté incluant le différentiel RTT s'il existe, et ce en fonction des pas de progression pluriannuels visés à l'article 4.3. <p></p><p></p>A la date d'application de l'accord de branche dans l'entreprise ou l'établissement, les collaborateurs bénéficiant d'une prime d'ancienneté, basée sur l'ancien mode de calcul conventionnel, supérieure à la prime d'ancienneté calculée sur le nouveau mode de calcul proposé, en conserveront le bénéfice en valeur absolue jusqu'à raccordement. <p></p>Article 4.3 <p></p>Progression de la prime d'ancienneté <p></p><p></p>La prime d'ancienneté est calculée en prenant en compte les pas de progression pluriannuels suivants :<p></p><p></p>-3 ans ;<p></p><p></p>-6 ans ;<p></p><p></p>-9 ans ;<p></p><p></p>-12 ans ;<p></p><p></p>-15 ans. <p></p>Article 5 <p></p>Durée et entrée en vigueur de l'accord <p></p><p></p>Le présent accord est conclu pour une durée indéterminée. <p></p><p></p>Il entrera en vigueur le lendemain de la publication au Journal officiel de l'arrêté ministériel d'extension de l'accord de classifications signé le 16 décembre 2004. <p></p><p></p>Les signataires conviennent de renégocier les dispositions de l'accord qui pourraient être remises en cause par des dispositions législatives et réglementaires ultérieures. <p></p><p></p>L'accord sera soumis à la procédure d'extension.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2004-12-16 BO conventions collectives 2005-4 étendu par arrêté du 4 avril 2005 JORF 14 avril 2005",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L212-1 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L212-1",
+                      "articleId": "LEGIARTI000006647750",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires.",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1103155200000,
+                  "dateFin": 1137628800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -11687,13 +11849,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005726596",
+              "cid": "KALISCTA000005726596",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Salaires à compter du 1er février 2006",
+              "dateModif": null,
+              "dateDebut": "2006-01-19",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005857180",
+                  "cid": "KALIARTI000005857180",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005726596/KALIARTI000005857180",
+                  "pathTitle": [
+                    "Salaires à compter du 1er février 2006"
+                  ],
+                  "content": "<p>Article 1er</p><p>Revalorisation des salaires minima</p><p>La grille de salaires issue de l'accord signé le 16 décembre 2004 est revalorisée comme suit :</p><p>Article 2</p><p>Valeur à compter du 1er février 2006</p><p>A compter du 1er février 2006, la valeur du coefficient 700 est établie à 1 235 Euros.</p><p>La valeur de référence est fixée à 1 236 Euros et la valeur du point est égale à 6,07 .</p><p>Barème des salaires minima bruts mensuels valeur au 1er février 2006</p><p></p><table border=\"1\"><tbody><tr><td align=\"center\">COEFFICIENT</td><td align=\"center\">INDICE SALARIAL</td><td align=\"center\">VALEUR MENSUELLE</td></tr><tr><td align=\"center\">700</td><td align=\"center\"></td><td align=\"center\">1 235</td></tr><tr><td align=\"center\">710</td><td align=\"center\">3</td><td align=\"center\">1 254</td></tr><tr><td align=\"center\">720</td><td align=\"center\">8</td><td align=\"center\">1 285</td></tr><tr><td align=\"center\">730</td><td align=\"center\">18</td><td align=\"center\">1 345</td></tr><tr><td align=\"center\">740</td><td align=\"center\">30</td><td align=\"center\">1 418</td></tr><tr><td align=\"center\">750</td><td align=\"center\">46</td><td align=\"center\">1 515</td></tr><tr><td align=\"center\">800</td><td align=\"center\">64</td><td align=\"center\">1 624</td></tr><tr><td align=\"center\">810</td><td align=\"center\">86</td><td align=\"center\">1 758</td></tr><tr><td align=\"center\">820</td><td align=\"center\">115</td><td align=\"center\">1 934</td></tr><tr><td align=\"center\">830</td><td align=\"center\">142</td><td align=\"center\">2 098</td></tr><tr><td align=\"center\">900</td><td align=\"center\">211</td><td align=\"center\">2 517</td></tr><tr><td align=\"center\">910</td><td align=\"center\">232</td><td align=\"center\">2 644</td></tr><tr><td align=\"center\">920</td><td align=\"center\">297</td><td align=\"center\">3 039</td></tr><tr><td align=\"center\">930</td><td align=\"center\">447</td><td align=\"center\">3 949</td></tr><tr><td align=\"center\">940</td><td align=\"center\">607</td><td align=\"center\">4 920</td></tr></tbody></table><p>Article 3 Clause de révision</p><p>Afin de tenir compte des dispositions légales et conventionnelles, les parties sont convenues de se revoir en juillet 2006 pour réajuster, le cas échéant, le barème des salaires minima. Article 4 Conditions d'application de l'accord</p><p>Les dispositions ci-dessus du présent accord ne s'appliqueront dans les entreprises ou établissements qu'à condition que ceux-ci aient mis en place l'accord de classifications de la branche signé le 16 décembre 2004. Article 5 Formalités</p><p>Le présent accord est conclu pour une durée indéterminée.</p><p>Il entrera en vigueur à la date de sa signature.</p><p>L'accord sera soumis à la procédure d'extension.</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2006-01-19 BO conventions collectives 2006-10 étendu par arrêté du 28 juin 2006 JORF 26 juillet 2006",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1137628800000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

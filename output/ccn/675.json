@@ -5914,13 +5914,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005724043",
+              "cid": "KALISCTA000005724043",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "title": "Négociation sur les salaires",
+              "dateModif": null,
+              "dateDebut": "1986-04-28",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005851163",
+                  "cid": "KALIARTI000005851163",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005724043/KALIARTI000005851163",
+                  "pathTitle": [
+                    "Négociation sur les salaires"
+                  ],
+                  "content": "<p>Cet accord, conclu conformément aux articles L. 132-11 à L. 132-17 du code du travail, a pour objet de définir les règles concernant la négociation sur les salaires :</p><p>- d'une part, au niveau de l'ensemble des entreprises entrant dans le champ d'application de la convention collective nationale des maisons à succursales de vente au détail d'habillement ;</p><p>- d'autre part, au niveau de chacune de ces entreprises.</p><p>Il concerne l'ensemble des catégories professionnelles contenues dans les annexes « Classifications » de la CCN.</p><p>Le présent accord est conclu pour une durée déterminée de 1 an à compter du 1er mai 1986.</p><p>Les entreprises dont les résultats économiques le permettraient, pourront s'orienter vers des propositions supérieures à celles du présent accord.</p><p>A la demande de la partie la plus diligente, les parties signataires se rencontreront au cours des deux mois qui précèdent l'échéance du présent accord pour :</p><p>a) Négocier le contenu de l'article 2 ;</p><p>b) Négocier les éventuelles demandes de révision des autres articles.</p><p>Si les négociations aboutissaient à un constat de désaccord, le présent accord cesserait à la date d'expiration et seules les dispositions légales contenues dans cet accord continueraient d'être appliquées.</p><p>Les entreprises qui n'auraient pas connu un taux de progression du chiffre d'affaires hors taxes au moins égal au taux prévu à l'article 2 ci-dessous ou qui auraient un résultat d'exercice déficitaire ne seraient concernées que par le premier alinéa de l'article 3 et par l'article 4 du présent accord.</p><p>A l'échéance prévue, les parties signataires du présent accord conviennent de faire un point aussi précis que possible des entreprises déclarant se trouver dans l'une ou l'autre des situations mentionnées ci-dessus.</p><p align=\"center\">Article 1er</p><p>Une négociation annuelle sera menée par les organisations patronales et salariales liées par la CCN des maisons à succursales de vente au détail d'habillement.</p><p>Cette négociation comportera un examen de l'évolution des salaires effectifs moyens par catégorie professionnelle et par sexe, au regard de l'évolution économique et de la situation de l'emploi dans la branche d'activité.</p><p align=\"center\">Article 2</p><p>En moyenne annuelle pour 1986, les salaires effectifs moyens progresseront d'au moins 1,85 % dans chaque entreprise entrant dans le champ d'application de la convention collective nationale des maisons à succursales de vente au détail d'habillement.</p><p>En tenant compte des structures de rémunération qui leur sont propres, il appartiendra à chacune des entreprises liées par la CCN des maisons à succursales de vente au détail d'habillement de s'assurer que le niveau de progression minimal ainsi défini est effectivement atteint.</p><p align=\"center\">Article 3</p><p>Chaque entreprise entrant dans le champ d'application de la CCN s'engage à négocier avec ses organisations syndicales représentatives un accord sur les salaires effectifs qu'elle pratique.</p><p>Cet accord salarial d'entreprise peut prévoir en fonction de la situation économique de l'entreprise et de sa politique salariale :</p><p>a) Des modalités particulières d'application des majorations de salaires négociées au niveau de la CCN à condition que l'augmentation de la masse salariale totale de l'entreprise, à effectifs constants, soit au moins égale à l'augmentation qui résulterait des majorations décidées au niveau de la CCN et que les minima hiérarchiques soient respectés ;</p><p>b) Des majorations des salaires effectifs supérieures à celles prévues au niveau de la CCN.</p><p align=\"center\">Article 4</p><p>A compter du 1er mai 1986, aucun salarié ne pourra percevoir une rémunération mensuelle brute inférieure à 4 500 F pour 169 heures.</p><p align=\"center\">Article 5</p><p>Conformément à l'article L. 132-10 du code du travail, le présent accord sera déposé auprès des services du ministre chargé du travail, un exemplaire étant également remis au secrétariat-greffe du conseil de prud'hommes de Paris.</p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 27 1986-04-28 étendu par arrêté du 6 août 1986 JORF 14 août 1986",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-11 à L132-17, L132-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 515030400000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

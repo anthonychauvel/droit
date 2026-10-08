@@ -25115,13 +25115,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718799",
+              "cid": "KALISCTA000005718799",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er octobre 2001.",
+              "dateModif": null,
+              "dateDebut": "2001-09-13",
+              "dateFin": "2002-09-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005838161",
+                  "cid": "KALIARTI000005838161",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718799/KALIARTI000005838161",
+                  "pathTitle": [
+                    "Salaires au 1er octobre 2001."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les parties signataires conviennent d'augmenter de 3 % à compter du 1er octobre 2001 les salaires de la convention collective applicables depuis le 1er février 2001 suivant l'accord du 11 janvier 2001.<p></p><p></p>   La nouvelle valeur du point s'établit à 40,28 F au 1er octobre 2001. La grille des salaires conventionnels applicable à cette date est annexée au présent avenant.<p></p> Article 2<p></p><p></p>   Les parties signataires décident d'effectuer les formalités légales et réglementaires contenues dans le code du travail en vue de procéder au dépôt du présent avenant puis à sa demande d'extension.<p></p> Salaires conventionnels au 1er octobre 2001<p></p> Valeur du point : 40,28 F. Coefficient 100 : 6 718<p></p><p></p>   Suivant l'accord paritaire intervenu le 13 septembre 2001, le salaire minimum pour chaque emploi est relevé de 3 %<p></p><p></p><p></p>   SALAIRE MINIMUM pour 169 heures mensuelles (en francs)<p></p><p></p>   SALAIRE MINIMUM pour 169 heures mensuelles (en euros)<p></p> ---------------------------------------------------------------:<p></p><TABLE><TR><TD>CODE</TD><TD>COEF.</TD><TD>DÉSIGNATION DU POSTE     </TD><TD>  (1)      </TD><TD>    (2)   </TD></TR><TR><TD></TD><TD> 100 </TD><TD>Ouvrier non qualifié        </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>dans le métier (*)          </TD><TD> 6 718,00  </TD><TD> 1 024,15 </TD></TR><TR><TD></TD><TD></TD><TD>        Bouchers            </TD><TD></TD><TD></TD></TR><TR><TD> OA </TD><TD> 110 </TD><TD>Ouvrier boucher,            </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>1er échelon, sans CAP (*)   </TD><TD> 7 120,80  </TD><TD> 1 085,56 </TD></TR><TR><TD> OA </TD><TD> 118 </TD><TD>Ouvrier boucher,            </TD><TD></TD><TD></TD></TR><TR><TD>cap </TD><TD></TD><TD>1er échelon, avec CAP       </TD><TD> 7 443,04  </TD><TD> 1 134,68 </TD></TR><TR><TD> OAC</TD><TD> 120 </TD><TD>Ouvrier boucher,            </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>tripier, 2e échelon         </TD><TD> 7 523,60  </TD><TD> 1 146,97 </TD></TR><TR><TD> OAD</TD><TD> 120 </TD><TD>Ouvrier boucher/volailler   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>-gibier, 2e échelon         </TD><TD> 7 523,60  </TD><TD> 1 146,97 </TD></TR><TR><TD> Oq </TD><TD> 130 </TD><TD>Ouvrier qualif. en boucherie</TD><TD></TD><TD></TD></TR><TR><TD>ACHT</TD><TD></TD><TD>-charcuterie traiteur       </TD><TD> 7 926,40  </TD><TD> 1 208,37 </TD></TR><TR><TD>OACH</TD><TD> 135 </TD><TD>Ouvrier boucher-charcutier  </TD><TD> 8 127,80  </TD><TD> 1 239,08 </TD></TR><TR><TD>OAq </TD><TD> 135 </TD><TD>Ouvrier boucher qualifié    </TD><TD> 8 127,80  </TD><TD> 1 239,08 </TD></TR><TR><TD>OAhq</TD><TD> 155 </TD><TD>Ouvrier boucher hautement   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>qualifié                    </TD><TD> 8 933,40  </TD><TD> 1 361,89 </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD></TD><TD>    Charcutiers             </TD><TD></TD><TD></TD></TR><TR><TD>OCH </TD><TD> 110 </TD><TD>Ouvrier charcutier          </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>,1er échelon, sans CAP (+)  </TD><TD> 7 120,80  </TD><TD> 1 085,56 </TD></TR><TR><TD>OCH </TD><TD> 118 </TD><TD>Ouvrier charcutier          </TD><TD></TD><TD></TD></TR><TR><TD>cap </TD><TD></TD><TD>,1er échelon, avec CAP      </TD><TD> 7 443,04  </TD><TD> 1 134,68 </TD></TR><TR><TD>Oq  </TD><TD> 130 </TD><TD>Ouvrier qualif. en boucherie</TD><TD></TD><TD></TD></TR><TR><TD>ACHT</TD><TD></TD><TD>-charcuterie traiteur       </TD><TD> 7 926,40  </TD><TD> 1 208,37 </TD></TR><TR><TD>AOCH</TD><TD> 135 </TD><TD>Ouvrier boucher-charcutier  </TD><TD> 8 127,80  </TD><TD> 1 239,08 </TD></TR><TR><TD>OCHq</TD><TD> 135 </TD><TD>Ouvrier charcutier qualifié </TD><TD> 8 127,80  </TD><TD> 1 239,08 </TD></TR><TR><TD>OCHT</TD><TD> 135 </TD><TD>Ouvrier charcutier traiteur </TD><TD> 8 127,80  </TD><TD> 1 239,08 </TD></TR><TR><TD>OCH </TD><TD> 155 </TD><TD>Ouvrier charcutier traiteur </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>hautement qualifié          </TD><TD> 8 933,40  </TD><TD> 1 361,89 </TD></TR><TR><TD></TD><TD></TD><TD>    Hippos                  </TD><TD></TD><TD></TD></TR><TR><TD>OB  </TD><TD> 110 </TD><TD>Ouvrier boucher hippophag.  </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>,1er échelon, sans CAP (+)  </TD><TD> 7 120,80  </TD><TD> 1 085,56 </TD></TR><TR><TD>OB  </TD><TD> 118 </TD><TD>Ouvrier boucher hippophagiq.</TD><TD></TD><TD></TD></TR><TR><TD>cap </TD><TD></TD><TD>,1er échelon, avec CAP      </TD><TD> 7 443,04  </TD><TD> 1 134,68 </TD></TR><TR><TD>OBC </TD><TD> 120 </TD><TD>Ouvrier boucher hippophag.  </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>/tripier, 2e échelon        </TD><TD> 7 523,60  </TD><TD> 1 146,97 </TD></TR><TR><TD>OBD </TD><TD> 120 </TD><TD>Ouvrier boucher/volailler   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>-gibier, 2e échelon         </TD><TD> 7 523,60  </TD><TD> 1 146,97 </TD></TR><TR><TD></TD><TD></TD><TD>    Tripiers                </TD><TD></TD><TD></TD></TR><TR><TD>OC  </TD><TD> 110 </TD><TD>Ouvrier tripier,            </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>1er échelon, sans CAP (+)   </TD><TD> 7 120,80  </TD><TD> 1 085,56 </TD></TR><TR><TD>OC  </TD><TD> 118 </TD><TD>Ouvrier tripier, 1er échelon</TD><TD></TD><TD></TD></TR><TR><TD>cap </TD><TD></TD><TD>,avec CAP                   </TD><TD> 7 443,04  </TD><TD> 1 134,68 </TD></TR><TR><TD>OC 2</TD><TD> 120 </TD><TD>Ouvrier tripier, 2e échelon </TD><TD> 7 523,60  </TD><TD> 1 146,97 </TD></TR><TR><TD>OC q</TD><TD> 123 </TD><TD>Ouvrier tripier qualifié    </TD><TD> 7 644,44  </TD><TD> 1 165,39 </TD></TR><TR><TD>OChq</TD><TD> 130 </TD><TD>Ouvrier tripier hautement   </TD><TD> 7 926,40  </TD><TD> 1 208,37 </TD></TR><TR><TD></TD><TD></TD><TD>    Volaillers              </TD><TD></TD><TD></TD></TR><TR><TD>OD  </TD><TD> 110 </TD><TD>Ouvrier volailler-gibier,   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>1er échelon, sans CAP (+)   </TD><TD> 7 120,80  </TD><TD> 1 085,56 </TD></TR><TR><TD>OD  </TD><TD> 118 </TD><TD>Ouvrier volailler-gibier,   </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>1er échelon, avec CAP       </TD><TD> 7 443,04  </TD><TD> 1 134,68 </TD></TR><TR><TD></TD><TD></TD><TD>    Vendeurs                </TD><TD></TD><TD></TD></TR></TABLE><p></p><TABLE><TR><TD>V 1 </TD><TD> 100 </TD><TD>Vendeur(se), 1er échelon (+)</TD><TD> 6 718,00  </TD><TD> 1 024,15 </TD></TR><TR><TD>V 2 </TD><TD> 123 </TD><TD>Vendeur(se), 2e échelon     </TD><TD> 7 644,44  </TD><TD> 1 165,39 </TD></TR><TR><TD>V q </TD><TD> 130 </TD><TD>Vendeur(se) qualifié(e)     </TD><TD> 7 926,40  </TD><TD> 1 208,37 </TD></TR><TR><TD></TD><TD></TD><TD>    Caissiers</TD></TR><TR><TD></TD><TD></TD><TD></TD></TR><TR><TD>C q </TD><TD> 118 </TD><TD>Caissier(ère), 1er échelon  </TD><TD> 7 443,04  </TD><TD> 1 134,68 </TD></TR><TR><TD>Chq </TD><TD> 130 </TD><TD>Caissier(ère) hautement     </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>qualifé(e)                  </TD><TD> 7 926,40  </TD><TD> 1 208,37 </TD></TR><TR><TD></TD><TD></TD><TD>    Maîtrise               </TD><TD></TD><TD></TD></TR><TR><TD>AM 1</TD><TD> 165 </TD><TD>Agent de maîtrise,         </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>1er échelon                 </TD><TD> 9 336,20  </TD><TD>  1 423,29</TD></TR><TR><TD>AM 2</TD><TD> 180 </TD><TD>Agent de maîtrise,         </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>2e échelon                  </TD><TD> 9 940,40  </TD><TD>  1 515,40</TD></TR><TR><TD></TD><TD></TD><TD>    Cadres                  </TD><TD></TD><TD></TD></TR><TR><TD>CD 1</TD><TD> 230 </TD><TD>Cadre, 1er échelon          </TD><TD>11 954,40  </TD><TD>  1 822,44</TD></TR><TR><TD>CD 2</TD><TD> 260 </TD><TD>Cadre, 2e échelon           </TD><TD>13 162,80  </TD><TD>  2 006,66</TD></TR><TR><TD>   (+) Rappel </TD><TD> aucun salaire ne pouvant être inférieur au   </TD></TR><TR><TD>SMIC, fixé à 7 388,68 F (1 127,12 Euro) au 1er juillet 2001,  </TD></TR><TR><TD>les salariés aux coefficients 100 et 110 perçoivent au minimum</TD></TR><TR><TD>cette somme pour 169 heures mensuelles.                       </TD></TR></TABLE><p></p> ----------------------------------------------------------------",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 78 2001-09-13 BO conventions collectives 2001-42 étendu par arrêté du 24 janvier 2002 JORF 2 février 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1000339200000,
+                  "dateFin": 1032307200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -25135,13 +25209,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718800",
+              "cid": "KALISCTA000005718800",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er octobre 2002.",
+              "dateModif": null,
+              "dateDebut": "2002-09-18",
+              "dateFin": "2002-11-28",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005838162",
+                  "cid": "KALIARTI000005838162",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718800/KALIARTI000005838162",
+                  "pathTitle": [
+                    "Salaires au 1er octobre 2002."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   A dater du 1er octobre 2002, le salaire minimum conventionnel correspondant à la classification des emplois en vigueur à la même date est le salaire mentionné sur la grille de salaires annexée au présent avenant.<p></p> Article 2<p></p><p></p>   Conformément à l'avenant n° 18 (daté du 27 mai 1987) à la présente convention collective, la nouvelle grille fait l'objet d'un réexamen en janvier, mai et septembre, en vue d'éventuelles révisions applicables respectivement le 1er février, le 1er juin et le 1er octobre de chaque année.<p></p> Article 3<p></p><p></p>   Les parties signataires demanderont l'extension du présent avenant dès sa signature, de sorte qu'il soit applicable dans tous les établissements entrant dans le champ d'application de la présente convention.<p></p><p></p>   Fait à Paris, le 18 septembre 2002.<p></p> Salaires conventionnels au 1er octobre 2002<p></p><p></p> -----------------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD></TD><TD></TD><TD>SALAIRE BRUT </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>   mensuel   </TD></TR><TR><TD>NIVEAU</TD><TD>ÉCHELON</TD><TD>        CLASSIFICATION         </TD><TD>pour 151,67 h</TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>     (35)    </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD> (en euros)  </TD></TR><TR><TD></TD><TD></TD><TD>   Ouvriers, employés</TD></TR><TR><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>          Plongeur             </TD><TD>    1 156    </TD></TR><TR><TD></TD><TD></TD><TD>   Employé d'entretien         </TD><TD>    1 156    </TD></TR><TR><TD></TD><TD></TD><TD>   Chauffeur-livreur           </TD><TD>    1 171    </TD></TR></TABLE><p></p>             B     :-------------------------------:-------------:<p></p><TABLE><TR><TD></TD><TD></TD><TD>   Employé administratif       </TD><TD>    1 171    </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>   Chauffeur-livreur encaisseur</TD><TD>    1 186    </TD></TR><TR><TD></TD><TD>    A     </TD><TD>   Caissier                    </TD><TD>    1 186    </TD></TR><TR><TD></TD><TD></TD><TD>   Vendeur                     </TD><TD>    1 186    </TD></TR><TR><TD></TD><TD></TD><TD>   Secrétaire aide-comptable   </TD><TD>    1 201    </TD></TR><TR><TD></TD><TD>    B     </TD><TD>   Boucher préparateur sans CAP</TD><TD>    1 201    </TD></TR><TR><TD></TD><TD></TD><TD>   Vendeur avec CQP            </TD><TD>    1 201    </TD></TR><TR><TD></TD><TD>    C     </TD><TD>   Caissier aide-comptable     </TD><TD>    1 220    </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD></TD><TD>   Boucher préparateur qualifié</TD><TD>    1 296    </TD></TR><TR><TD></TD><TD></TD><TD>   Charcutier-traiteur qualifié</TD><TD>    1 296    </TD></TR><TR><TD></TD><TD></TD><TD>   Boucher préparateur vendeur </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>   qualifié                    </TD><TD>    1 326    </TD></TR><TR><TD></TD><TD></TD><TD>   Boucher-traiteur qualifié   </TD><TD>    1 326    </TD></TR><TR><TD></TD><TD>    C     </TD><TD>   Boucher-charcutier traiteur </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>   qualifié                    </TD><TD>    1 372    </TD></TR><TR><TD></TD><TD>    A     </TD><TD>   Comptable                   </TD><TD>    1 387    </TD></TR><TR><TD></TD><TD></TD><TD>   Boucher hautement qualifié  </TD><TD>    1 448    </TD></TR><TR><TD></TD><TD></TD><TD>   Boucher-traiteur hautement  </TD><TD></TD></TR><TR><TD>  IV  </TD><TD>    B     </TD><TD>   qualifié                    </TD><TD>    1 448    </TD></TR><TR><TD></TD><TD></TD><TD>   Charcutier-traiteur         </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>   hautement qualifié          </TD><TD>    1 448    </TD></TR><TR><TD></TD><TD>    C     </TD><TD>   Boucher-charcutier traiteur </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>   hautement qualifié          </TD><TD>    1 524    </TD></TR><TR><TD></TD><TD>                      Agents de maîtrise               </TD></TR><TR><TD></TD><TD></TD><TD>   Responsable de laboratoire  </TD><TD>    1 829    </TD></TR><TR><TD>V & VI</TD><TD></TD><TD>  Responsable de point de vente</TD><TD>    1 829    </TD></TR><TR><TD></TD><TD></TD><TD>  Assistant chef d'entreprise  </TD><TD>    1 829    </TD></TR><TR><TD></TD><TD>                      Cadres                            </TD></TR><TR><TD></TD><TD></TD><TD>  Responsable de laboratoire   </TD><TD>    2 352    </TD></TR><TR><TD></TD><TD></TD><TD>  Responsable de point de vente</TD><TD>    2 352    </TD></TR><TR><TD></TD><TD>    B     </TD><TD>  Responsable d'entreprise     </TD><TD>    2 400    </TD></TR></TABLE><p></p> -----------------------------------------------------------------",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 87 2002-09-18 BO conventions collectives 2002-42 étendu par arrêté du 18 décembre 2002 JORF 4 janvier 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II, SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1032307200000,
+                  "dateFin": 1038441600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -25155,13 +25303,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718801",
+              "cid": "KALISCTA000005718801",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires",
+              "dateModif": null,
+              "dateDebut": "2003-07-10",
+              "dateFin": "2004-04-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005838163",
+                  "cid": "KALIARTI000005838163",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718801/KALIARTI000005838163",
+                  "pathTitle": [
+                    "Salaires"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   A dater du 1er septembre 2003, le salaire minimum conventionnel correspondant à la classification des emplois est le salaire mentionné sur la grille de salaires annexée au présent avenant.<p></p> Article 2<p></p><p></p>   Les parties signataires demanderont l'extension du présent avenant dès sa signature, de sorte qu'il soit applicable dans tous les établissements entrant dans le champ d'application de la présente convention.<p></p><p></p>   Fait à Paris, le 10 juillet 2003.<p></p><p></p>   Salaires conventionnels au 1er septembre 2003<p></p><p></p>   Ouvriers, employés<p></p><p></p>   (Montants en euros)<p></p><TABLE><TR><TD> NIVEAU </TD><TD> ÉCHELON </TD><TD>   CLASSIFICATION    </TD><TD> SALAIRE BRUT </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>    mensuel   </TD></TR><TR><TD></TD><TD></TD><TD>    Plongeur         </TD><TD>     1 175    </TD></TR><TR><TD></TD><TD></TD><TD>Employé d'entretien  </TD><TD>     1 175    </TD></TR><TR><TD></TD><TD></TD><TD>Chauffeur-livreur    </TD><TD>     1 188    </TD></TR><TR><TD></TD><TD></TD><TD>Employé administratif</TD><TD>     1 188    </TD></TR><TR><TD></TD><TD></TD><TD>Chauffeur-livreur    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>encaisseur           </TD><TD>     1 203    </TD></TR><TR><TD></TD><TD>     A      </TD><TD>Caissier             </TD><TD>     1 203    </TD></TR><TR><TD></TD><TD></TD><TD>Vendeur              </TD><TD>     1 203    </TD></TR><TR><TD></TD><TD></TD><TD>Secrétariat          </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>aide-comptable       </TD><TD>     1 218    </TD></TR><TR><TD></TD><TD>     B      </TD><TD>Boucher préparateur  </TD><TD>     1 218    </TD></TR><TR><TD></TD><TD></TD><TD>Charcutier traiteur  </TD><TD>     1 218    </TD></TR><TR><TD></TD><TD></TD><TD>Vendeur avec CQP     </TD><TD>     1 218    </TD></TR><TR><TD></TD><TD>     C      </TD><TD>Caissier             </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>aide-comptable       </TD><TD>     1 237    </TD></TR><TR><TD></TD><TD></TD><TD>Boucher              </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>préparateur qualifié </TD><TD>     1 305    </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD></TD><TD>Charcutier traiteur  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>qualifié             </TD><TD>     1 305    </TD></TR><TR><TD></TD><TD></TD><TD>Boucher préparateur  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>vendeur qualifié     </TD><TD>     1 335    </TD></TR><TR><TD></TD><TD></TD><TD>Boucher traiteur     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>qualifié             </TD><TD>     1 335    </TD></TR><TR><TD></TD><TD>     C      </TD><TD>Boucher charcutier   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>traiteur qualifié    </TD><TD>     1 385    </TD></TR><TR><TD></TD><TD>     A      </TD><TD>Comptable            </TD><TD>     1 390    </TD></TR><TR><TD></TD><TD></TD><TD>Boucher hautement    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>qualifié             </TD><TD>     1 455    </TD></TR><TR><TD>   IV   </TD><TD>     B      </TD><TD>Boucher traiteur     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>hautement qualifié   </TD><TD>     1 455    </TD></TR><TR><TD></TD><TD></TD><TD>Charcutier traiteur  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>hautement qualifié   </TD><TD>     1 455    </TD></TR><TR><TD></TD><TD>     C      </TD><TD>Boucher charcutier   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>traiteur hautement   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>qualifié             </TD><TD>     1 530    </TD></TR></TABLE><p></p>  Agents de maîtrise et cadres<p></p> (Montants en euros.)   <p></p><TABLE><TR><TD> NIVEAU </TD><TD> ÉCHELON </TD><TD>   CLASSIFICATION    </TD><TD> SALAIRE BRUT </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>    mensuel   </TD></TR><TR><TD></TD><TD></TD><TD>Responsable de       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>laboratoire adjoint  </TD><TD>    1 680     </TD></TR><TR><TD></TD><TD></TD><TD>Responsable de point </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>de vente adjoint     </TD><TD>    1 680     </TD></TR><TR><TD></TD><TD></TD><TD>Responsable de       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>laboratoire          </TD><TD>    1 835     </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD></TD><TD>Responsable de point </TD><TD></TD></TR><TR><TD>   VI   </TD><TD>     A      </TD><TD>de vente             </TD><TD>    1 835     </TD></TR><TR><TD></TD><TD></TD><TD>Responsable hygiène  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>et sécurité          </TD><TD>    1 835     </TD></TR><TR><TD></TD><TD></TD><TD>Assistant chef       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>d'entreprise         </TD><TD>    1 835     </TD></TR><TR><TD></TD><TD></TD><TD>Responsable de       </TD><TD></TD></TR><TR><TD></TD><TD>     B      </TD><TD>plusieurs  points    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>de vente             </TD><TD>    2 060     </TD></TR><TR><TD></TD><TD></TD><TD>Responsable de       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>laboratoire          </TD><TD>    2 360     </TD></TR><TR><TD>   VII  </TD><TD>     A      </TD><TD>Responsable de point </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>de vente             </TD><TD>    2 360     </TD></TR><TR><TD></TD><TD></TD><TD>Responsable          </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>des achats           </TD><TD>    2 360     </TD></TR><TR><TD></TD><TD>     B      </TD><TD>Responsable          </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>d'entreprise         </TD><TD>    2 410     </TD></TR></TABLE><p></p><font color=\"808080\"><em>   NOTA : Arrêté du 6 octobre 2003 art. 1 : les dispositions de l'avenant n° 92 du 10 juillet 2003 portant sur les salaires conventionnels à la convention collective nationale susvisée, sous réserve des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance.<p></p></em></font>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 92 2003-07-10 BO conventions collectives 2003-31 étendu par arrêté du 8 octobre 2003 JORF 17 octobre 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II, SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1057795200000,
+                  "dateFin": 1081123200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

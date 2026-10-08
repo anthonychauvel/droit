@@ -18473,13 +18473,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005707907",
+              "cid": "KALISCTA000005707907",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires (RAM) au 1er juillet 1997",
+              "dateModif": null,
+              "dateDebut": "1997-06-17",
+              "dateFin": "1999-03-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005810926",
+                  "cid": "KALIARTI000005810926",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005707907/KALIARTI000005810926",
+                  "pathTitle": [
+                    "Salaires (RAM) au 1er juillet 1997"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   L'annexe I à la convention collective nationale des coopératives laitières est modifiée à compter du 1er juillet 1997.<p></p> Article 2<p></p><p></p>   Les valeurs des rémunérations annuelles minimales des coefficients 120 à 650 sont revalorisées de 1,5 % par rapport à la grille de juillet 1996.<p></p> Article 3<p></p> Demande d'extension<p></p><p></p>   Les parties signataires demandent l'extension du présent avenant. Il sera déposé au service pluridépartemental de l'inspection du travail, de l'emploi et de la politique sociale agricoles de Paris, des Hauts-de-Seine, de la Seine-Saint-Denis et du Val-de-Marne.<p></p><p></p>ANNEXE I : Rémunérations annuelles minimales au 1er juillet 1997<p></p><p></p><TABLE><TR><TD>COEF</TD><TD>    ANCIENNETE          </TD></TR><TR><TD></TD><TD>< 1 an    </TD><TD>> 1 an     </TD></TR><TR><TD>120 </TD><TD> 78 034,70F</TD><TD>  84 537,59F</TD></TR><TR><TD>130 </TD><TD> 79 245,91F</TD><TD>  85 849,74F</TD></TR><TR><TD>140 </TD><TD> 80 457,12F</TD><TD>  87 161,88F</TD></TR><TR><TD>150 </TD><TD> 81 668,33F</TD><TD>  88 474,02F</TD></TR><TR><TD>160 </TD><TD> 82 879,53F</TD><TD>  89 786,16F</TD></TR><TR><TD>170 </TD><TD> 84 090,74F</TD><TD>  91 098,30F</TD></TR><TR><TD>180 </TD><TD> 85 301,95F</TD><TD>  92 410,44F</TD></TR><TR><TD>190 </TD><TD> 86 513,16F</TD><TD>  93 722,59F</TD></TR><TR><TD>200 </TD><TD> 87 724,37F</TD><TD>  95 034,73F</TD></TR><TR><TD>210 </TD><TD> 88 935,58F</TD><TD>  96 346,88F</TD></TR><TR><TD>220 </TD><TD> 90 146,78F</TD><TD>  97 659,02F</TD></TR><TR><TD>230 </TD><TD> 91 357,99F</TD><TD>  98 971,16F</TD></TR><TR><TD>240 </TD><TD> 92 569,20F</TD><TD> 100 283,30F</TD></TR><TR><TD>250 </TD><TD> 93 780,41F</TD><TD> 101 595,44F</TD></TR><TR><TD>280 </TD><TD>101 113,82F</TD><TD> 109 539,98F</TD></TR><TR><TD>310 </TD><TD>108 447,21F</TD><TD> 117 484,47F</TD></TR><TR><TD>350 </TD><TD>117 007,40F</TD><TD> 126 758,02F</TD></TR><TR><TD>400 </TD><TD>133 637,06F</TD><TD> 144 773,49F</TD></TR><TR><TD>450 </TD><TD>150 348,51F</TD><TD> 162 877,56F</TD></TR><TR><TD>500 </TD><TD>167 059,97F</TD><TD> 180 981,63F</TD></TR><TR><TD>550 </TD><TD>183 880,47F</TD><TD> 199 203,83F</TD></TR><TR><TD>600 </TD><TD>200 537,40F</TD><TD> 217 248,84F</TD></TR><TR><TD>650 </TD><TD>217 276,10F</TD><TD> 235 382,44F</TD></TR></TABLE><p></p><p></p> :-----------------:<p></p><TABLE><TR><TD>COEF</TD><TD> EXPRESSION </TD></TR><TR><TD></TD><TD> MENSUELLE  </TD></TR><TR><TD>120 </TD><TD>  6 502,89F </TD></TR><TR><TD>130 </TD><TD>  6 603,83F </TD></TR><TR><TD>140 </TD><TD>  6 704,76F </TD></TR><TR><TD>150 </TD><TD>  6 805,69F </TD></TR><TR><TD>160 </TD><TD>  6 906,63F </TD></TR><TR><TD>170 </TD><TD>  7 007,56F </TD></TR><TR><TD>180 </TD><TD>  7 108,50F </TD></TR><TR><TD>190 </TD><TD>  7 209,43F </TD></TR><TR><TD>200 </TD><TD>  7 310,36F </TD></TR><TR><TD>210 </TD><TD>  7 411,30F </TD></TR><TR><TD>220 </TD><TD>  7 512,23F </TD></TR><TR><TD>230 </TD><TD>  7 613,17F </TD></TR><TR><TD>240 </TD><TD>  7 714,10F </TD></TR><TR><TD>250 </TD><TD>  7 815,03F </TD></TR><TR><TD>280 </TD><TD>  8 426,15F </TD></TR><TR><TD>310 </TD><TD>  9 037,27F </TD></TR><TR><TD>350 </TD><TD>  9 750,62F </TD></TR><TR><TD>400 </TD><TD> 11 136,42F </TD></TR><TR><TD>450 </TD><TD> 12 529,04F </TD></TR><TR><TD>500 </TD><TD> 13 921,66F </TD></TR><TR><TD>550 </TD><TD> 15 323,37F </TD></TR><TR><TD>600 </TD><TD> 16 711,45F </TD></TR><TR><TD>650 </TD><TD> 18 106,34F </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 31 1997-06-17 en vigueur le 1er juillet 1997 BO conventions collectives 97-33, étendu par arrêté du 15 septembre 1997 JORF 23 septembre 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 866505600000,
+                  "dateFin": 921024000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -18493,13 +18567,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005707908",
+              "cid": "KALISCTA000005707908",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires (taux horaires) au 1er juillet 1997",
+              "dateModif": null,
+              "dateDebut": "1997-07-01",
+              "dateFin": "1999-03-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005810927",
+                  "cid": "KALIARTI000005810927",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005707908/KALIARTI000005810927",
+                  "pathTitle": [
+                    "Salaires (taux horaires) au 1er juillet 1997"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   L'ensemble des taux horaires sont majorés de 1,5 % au 1er juillet 1997, par rapport à la grille de juin 1996 (annexe I bis).<p></p> Article 2<p></p><p></p>   Les parties signataires demandent l'extension du présent avenant. Il sera déposé au service pluridépartemental de l'inspection du travail, de l'emploi et de la politique sociale agricoles de Paris, des Hauts-de-Seine, de la Seine-Saint-Denis et du Val-de-Marne.<p></p>ANNEXE I BIS<p></p> Taux horaires au 1er juillet 1997<p></p><p></p><TABLE><TR><TD>  COEFFICIENT  </TD><TD>  TAUX HORAIRE  </TD></TR><TR><TD>     120       </TD><TD>  30,86 francs  </TD></TR><TR><TD>     130       </TD><TD>  31,70 francs  </TD></TR><TR><TD>     140       </TD><TD>  32,92 francs  </TD></TR><TR><TD>     150       </TD><TD>  34,12 francs  </TD></TR><TR><TD>     160       </TD><TD>  35,30 francs  </TD></TR><TR><TD>     170       </TD><TD>  36,50 francs  </TD></TR><TR><TD>     180       </TD><TD>  37,72 francs  </TD></TR><TR><TD>     190       </TD><TD>  38,91 francs  </TD></TR><TR><TD>     200       </TD><TD>  40,11 francs  </TD></TR><TR><TD>     210       </TD><TD>  41,33 francs  </TD></TR><TR><TD>     220       </TD><TD></TD></TR><TR><TD>     230       </TD><TD>  43,72 francs  </TD></TR><TR><TD>     240       </TD><TD></TD></TR><TR><TD>     250       </TD><TD>  46,15 francs  </TD></TR><TR><TD>     280       </TD><TD>  49,76 francs  </TD></TR><TR><TD>     310       </TD><TD>  53,36 francs  </TD></TR><TR><TD>     350       </TD><TD>  57,58 francs  </TD></TR><TR><TD>     400       </TD><TD>  65,78 francs  </TD></TR><TR><TD>     450       </TD><TD>  74,00 francs  </TD></TR><TR><TD>     500       </TD><TD>  82,21 francs  </TD></TR><TR><TD>     550       </TD><TD>  90,48 francs  </TD></TR><TR><TD>     600       </TD><TD>  98,69 francs  </TD></TR><TR><TD>     650       </TD><TD> 106,92 francs  </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 32 1997-06-17 en vigueur le 1er juillet 1997 BO conventions collectives 97-33",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 867715200000,
+                  "dateFin": 921024000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -18513,13 +18661,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005707909",
+              "cid": "KALISCTA000005707909",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril 1999",
+              "dateModif": null,
+              "dateDebut": "1999-03-10",
+              "dateFin": "2000-05-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005810928",
+                  "cid": "KALIARTI000005810928",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005707909/KALIARTI000005810928",
+                  "pathTitle": [
+                    "Salaires au 1er avril 1999"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   L'annexe I à la convention collective nationale des coopératives laitières est modifiée comme suit :<p></p><p></p>   Au titre de 1998, l'augmentation de 0,5 % des valeurs des RAM des coefficients 120 à 650, intervenue au 1er décembre 1998, est confirmée.<p></p><p></p>   Au titre de 1999 et à compter du 1er avril 1999 :<p></p><p></p>   - les valeurs des RAM des coefficients 170 à 650 sont augmentées de 0,3 % par rapport à la grille de décembre 1998 ;<p></p><p></p>   - les valeurs des RAM des coefficients 120 à 160 sont revalorisées et hiérarchisées comme suit :<p></p><p></p> :-----:--------------------------:<p></p><TABLE><TR><TD> COEF</TD><TD> RAM MOINS DE UN AN       </TD></TR><TR><TD></TD><TD> d'ancienneté (en francs) </TD></TR><TR><TD> 120 </TD><TD>        81 566,16         </TD></TR><TR><TD> 130 </TD><TD>        82 205,87         </TD></TR><TR><TD> 140 </TD><TD>        82 845,58         </TD></TR><TR><TD> 150 </TD><TD>        83 485,29         </TD></TR><TR><TD> 160 </TD><TD>        84 125,00         </TD></TR></TABLE><p></p><p></p><TABLE><TR><TD> COEF</TD><TD> RAM PLUS DE UN AN        </TD></TR><TR><TD></TD><TD> d'ancienneté (en francs) </TD></TR><TR><TD> 120 </TD><TD>         88 363,34        </TD></TR><TR><TD> 130 </TD><TD>         89 056,36        </TD></TR><TR><TD> 140 </TD><TD>         89 749,38        </TD></TR><TR><TD> 150 </TD><TD>         90 442,40        </TD></TR><TR><TD> 160 </TD><TD>         91 135,42        </TD></TR></TABLE><p></p>Article 2<p></p><p></p>   Les parties sont convenues de se réunir dans l'hypothèse ou l'inflation cumulée à compter du 1er janvier 1999 dépasserait le seuil de 3 %.<p></p> Article 3<p></p><p></p>   Les parties sont convenues de se réunir après la promulgation de la seconde loi \" Aubry \", pour examiner les propositions d'évolution de la RAM qui seront présentées par la FNCL.<p></p> ANNEXE I<p></p> Rémunération annuelle minimum au 1er avril 1999<p></p> (en francs)   <p></p><p></p>   (1) MOINS UN AN ancienneté<p></p><p></p>   (2) PLUS UN AN ancienneté<p></p><TABLE><TR><TD>COEF</TD><TD>    (1)       </TD><TD>    (2)       </TD></TR><TR><TD>120 </TD><TD>    81 566,16 </TD><TD>    88 363,34 </TD></TR><TR><TD>130 </TD><TD>    82 205,87 </TD><TD>    89 056,36 </TD></TR><TR><TD>140 </TD><TD>    82 845,58 </TD><TD>    89 749,38 </TD></TR><TR><TD>150 </TD><TD>    83 485,29 </TD><TD>    90 442,40 </TD></TR><TR><TD>160 </TD><TD>    84 125,00 </TD><TD>    91 135,42 </TD></TR><TR><TD>170 </TD><TD>    84 764,72 </TD><TD>    91 828,45 </TD></TR><TR><TD>180 </TD><TD>    85 985,65 </TD><TD>    93 151,11 </TD></TR><TR><TD>190 </TD><TD>    87 206,57 </TD><TD>    94 473,77 </TD></TR><TR><TD>200 </TD><TD>    88 427,48 </TD><TD>    95 796,43 </TD></TR><TR><TD>210 </TD><TD>    89 648,40 </TD><TD>    97 119,10 </TD></TR><TR><TD>220 </TD><TD>    90 869,30 </TD><TD>    98 441,76 </TD></TR><TR><TD>230 </TD><TD>    92 090,22 </TD><TD>    99 764,42 </TD></TR><TR><TD>240 </TD><TD>    93 311,15 </TD><TD>   101 087,07 </TD></TR><TR><TD>250 </TD><TD>    94 532,06 </TD><TD>   102 409,73 </TD></TR><TR><TD>280 </TD><TD>   101 924,25 </TD><TD>   110 417,94 </TD></TR><TR><TD>310 </TD><TD>   109 316,42 </TD><TD>   118 426,11 </TD></TR><TR><TD>350 </TD><TD>   117 945,22 </TD><TD>   127 773,99 </TD></TR><TR><TD>400 </TD><TD>   134 708,17 </TD><TD>   145 933,85 </TD></TR><TR><TD>450 </TD><TD>   151 553,55 </TD><TD>   164 183,03 </TD></TR><TR><TD>500 </TD><TD>   168 398,96 </TD><TD>   182 432,20 </TD></TR><TR><TD>550 </TD><TD>   185 354,27 </TD><TD>   200 800,45 </TD></TR><TR><TD>600 </TD><TD>   202 144,71 </TD><TD>   218 990,09 </TD></TR><TR><TD>650 </TD><TD>   219 017,57 </TD><TD>   237 269,03 </TD></TR></TABLE><p></p>  Rémunération annuelle minimum au 1er avril 1999 (en francs)   <p></p>   (3) EXPRESSION mensuelle<TABLE><TR><TD>COEF</TD><TD>   (3)     </TD></TR><TR><TD>120 </TD><TD>   6 797,18</TD></TR><TR><TD>130 </TD><TD>   6 850,49</TD></TR><TR><TD>140 </TD><TD>   6 903,80</TD></TR><TR><TD>150 </TD><TD>   6 957,11</TD></TR><TR><TD>160 </TD><TD>   7 010,42</TD></TR><TR><TD>170 </TD><TD>   7 063,73</TD></TR><TR><TD>180 </TD><TD>   7 165,47</TD></TR><TR><TD>190 </TD><TD>   7 267,21</TD></TR><TR><TD>200 </TD><TD>   7 368,96</TD></TR><TR><TD>210 </TD><TD>   7 470,70</TD></TR><TR><TD>220 </TD><TD>   7 572,44</TD></TR><TR><TD>230 </TD><TD>   7 674,19</TD></TR><TR><TD>240 </TD><TD>   7 775,93</TD></TR><TR><TD>250 </TD><TD>   7 877,67</TD></TR><TR><TD>280 </TD><TD>   8 493,69</TD></TR><TR><TD>310 </TD><TD>   9 109,70</TD></TR><TR><TD>350 </TD><TD>   9 828,77</TD></TR><TR><TD>400 </TD><TD>  11 225,68</TD></TR><TR><TD>450 </TD><TD>  12 629,46</TD></TR><TR><TD>500 </TD><TD>  14 033,25</TD></TR><TR><TD>550 </TD><TD>  15 446,19</TD></TR><TR><TD>600 </TD><TD>  16 845,39</TD></TR><TR><TD>650 </TD><TD>  18 251,46</TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 34 1999-03-10 BO conventions collectives 99-15 étendu par arrêté du 8 juin 1999 JORF 18 juin 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 921024000000,
+                  "dateFin": 958694400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
