@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000006189496",
     "sectionParentTitre": "Section 2 : Exercice du mandat.",
     "fullSectionsTitre": "Partie législative   &gt; Première partie : Les relations individuelles de travail &gt; Livre IV : La résolution des litiges - Le conseil de prud'hommes &gt; Titre IV : Conseillers prud'hommes &gt; Chapitre II : Statut des conseillers prud'hommes &gt; Section 2 : Exercice du mandat.",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000020626041",
+    "refInjection": "MD-20260921_201022_974_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000020626041",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -152,19 +152,6 @@
     ],
     "lienCitations": [
       {
-        "textCid": "KALITEXT000021237493",
-        "textTitle": "Epargne salariale - art. 3 (VE)",
-        "linkType": "CITATION",
-        "linkOrientation": "cible",
-        "articleNum": "3",
-        "articleId": "KALIARTI000051925623",
-        "natureText": "Accord",
-        "parentCid": null,
-        "numTexte": "",
-        "datePubli": 1257379200000,
-        "dateDebut": 1745366400000
-      },
-      {
         "textCid": "JORFTEXT000031345981",
         "textTitle": "ARRÊTÉ du 13 octobre 2015 - art. 1, v. init.",
         "linkType": "CITATION",
@@ -178,17 +165,17 @@
         "dateDebut": 32472144000000
       },
       {
-        "textCid": "KALITEXT000051909397",
-        "textTitle": "Épargne salariale - art. 3 (VE)",
+        "textCid": "KALITEXT000054871733",
+        "textTitle": "Plan d'épargne retraite (PEI et PERECOI) - art. 5.2.1 (VNE)",
         "linkType": "CITATION",
         "linkOrientation": "cible",
-        "articleNum": "3",
-        "articleId": "KALIARTI000051909440",
+        "articleNum": "5.2.1",
+        "articleId": "KALIARTI000054871760",
         "natureText": "Avenant",
         "parentCid": null,
-        "numTexte": "4",
-        "datePubli": 1752710400000,
-        "dateDebut": 1745366400000
+        "numTexte": "1",
+        "datePubli": 1789948800000,
+        "dateDebut": 1779235200000
       },
       {
         "textCid": "LEGITEXT000006072050",
@@ -319,6 +306,32 @@
         "numTexte": "",
         "datePubli": 32472144000000,
         "dateDebut": 1643673600000
+      },
+      {
+        "textCid": "KALITEXT000021237493",
+        "textTitle": "Epargne salariale - art. 3 (VE)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "3",
+        "articleId": "KALIARTI000051925623",
+        "natureText": "Accord",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1745366400000
+      },
+      {
+        "textCid": "KALITEXT000051909397",
+        "textTitle": "Épargne salariale - art. 3 (VE)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "3",
+        "articleId": "KALIARTI000051909440",
+        "natureText": "Avenant",
+        "parentCid": null,
+        "numTexte": "4",
+        "datePubli": 32472144000000,
+        "dateDebut": 1745366400000
       }
     ],
     "lienConcordes": [

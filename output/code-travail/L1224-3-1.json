@@ -86,8 +86,8 @@
     "sectionParentId": "LEGISCTA000006177853",
     "sectionParentTitre": "Chapitre IV : Transfert du contrat de travail.",
     "fullSectionsTitre": "Partie législative   &gt; Première partie : Les relations individuelles de travail &gt; Livre II : Le contrat de travail &gt; Titre II : Formation et exécution du contrat de travail &gt; Chapitre IV : Transfert du contrat de travail.",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000020959339",
+    "refInjection": "MD-20260911_200418_898_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000020959339",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -245,19 +245,22 @@
         "numTexte": "2019-1338",
         "datePubli": 1576108800000,
         "dateDebut": 1577836800000
-      }
-    ],
-    "lienConcordes": [
+      },
       {
         "textCid": "LEGITEXT000044416551",
-        "textTitle": "Code général de la fonction publique - art. L445-4 (V)",
-        "linkType": "CONCORDANCE",
+        "textTitle": "Code général de la fonction publique - art. L445-4",
+        "linkType": "CITATION",
         "linkOrientation": "cible",
         "articleNum": "L445-4",
         "articleId": "LEGIARTI000044426058",
-        "natureText": "CODE"
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1638748800000,
+        "dateDebut": 1646092800000
       }
     ],
+    "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [
       {
