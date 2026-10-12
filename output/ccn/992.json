@@ -25055,13 +25055,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718796",
+              "cid": "KALISCTA000005718796",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er février 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-02-02",
+              "dateFin": "2000-09-14",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005838158",
+                  "cid": "KALIARTI000005838158",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718796/KALIARTI000005838158",
+                  "pathTitle": [
+                    "Salaires au 1er février 2000."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les parties signataires conviennent d'augmenter de 1,5 % à compter du 1er février 2000 les salaires de la convention collective applicables depuis le 1er février 1999 suivant l'accord du 20 janvier 1999.<p></p><p></p>   La nouvelle valeur du point s'établit à 38,15 F au 1er février 2000. La grille des salaires conventionnels applicable à cette date est annexée au présent avenant.<p></p><p></p><p></p>   Salaires conventionnels au 1er février 2000<p></p> Valeur du point : 38,15 F<p></p> Coefficient 100 : 6 362 F<p></p><p></p>   Suivant l'accord paritaire intervenu le 2 février 2000, le salaire minimum pour chaque emploi est relevé de 1,5 %.<p></p><p></p> Coefficient : 100<p></p> Désignation du poste :<p></p> Ouvrier non qualifié dans le métier<p></p> Salaire minimum pour 169 h mensuelles : 6 362 (1)<p></p><p></p> BOUCHERS<p></p> Code : O.A.<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier boucher, 1er échelon, sans C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.744F. (1)<p></p><p></p> BOUCHERS<p></p> Code : O.A. C.A.P..<p></p> Coefficient : 118.<p></p> Désignation du poste : Ouvrier boucher, 1er échelon, avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 7.049F.<p></p><p></p> BOUCHERS<p></p> Code : O.A.C..<p></p> Coefficient : 120.<p></p> Désignation du poste : Ouvrier boucher tripier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 7.125F.<p></p><p></p>BOUCHERS<p></p> Code : O.A.D..<p></p> Coefficient : 120.<p></p> Désignation du poste : Ouvrier boucher volailler-gibier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 7 125F.<p></p><p></p> BOUCHERS<p></p> Code : OQ. A.C.H.T..<p></p> Coefficient : 130.<p></p> Désignation du poste : Ouvrier qualifié en boucherie charcuterie traiteur.<p></p> Salaire minimum pour 169 h mensuelles : 7.507F.<p></p><p></p> BOUCHERS<p></p> Code : O.A.C.H..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier boucher charcutier.<p></p> Salaire minimum pour 169 h mensuelles : 7.697F.<p></p><p></p>BOUCHERS<p></p> Code : O.A. Q..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier boucher qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.697F.<p></p><p></p> BOUCHERS<p></p> Code : O.A. H.Q..<p></p> Coefficient : 155.<p></p> Désignation du poste : Ouvrier boucher hautement qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 8.460F.<p></p><p></p>CHARCUTIERS<p></p> Code : O.C.H.<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier charcutier, 1er échelon sans C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.744F.(1)<p></p><p></p> CHARCUTIERS<p></p> Code : O.C.H. C.A.P..<p></p> Coefficient : 118.<p></p> Désignation du poste : Ouvrier charcutier, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 7.049F.<p></p><p></p> CHARCUTIERS<p></p> Code : OQ. A.CH.T..<p></p> Coefficient : 130.<p></p> Désignation du poste : Ouvrier qualifié en boucherie charcuterie traiteur.<p></p> Salaire minimum pour 169 h mensuelles : 7.507F.<p></p><p></p> CHARCUTIERS<p></p> Code : O.A.CH..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier boucher charcutier.<p></p> Salaire minimum pour 169 h mensuelles : 7.697F.<p></p><p></p>CHARCUTIERS<p></p> Code : O.CH. Q..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier charcutier qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.697F.<p></p><p></p> CHARCUTIERS<p></p> Code : O.CH.T..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier charcutier traiteur.<p></p> Salaire minimum pour 169 h mensuelles : 7.697F.<p></p><p></p> CHARCUTIERS<p></p> Code : O.CH. H.Q..<p></p> Coefficient : 155.<p></p> Désignation du poste : Ouvrier charcutier traiteur hautement qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 8.460F.<p></p><p></p>HIPPOS<p></p> Code : O.B.<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier boucher hippophagique, 1er échelon sans C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.744F.(1)<p></p><p></p> HIPPOS<p></p> Code : O.B. C.A.P..<p></p> Coefficient : 118.<p></p> Désignation du poste : Ouvrier boucher hippophagique, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 7.049F.<p></p> HIPPOS<p></p> Code : O.B.C..<p></p> Coefficient : 120.<p></p> Désignation du poste : Ouvrier boucher hippophagique/tripier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 7.125F.<p></p><p></p>HIPPOS<p></p> Code : O.B.D..<p></p> Coefficient : 120.<p></p> Désignation du poste : Ouvrier boucher hippophagique/volailler gibier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 7.125F.<p></p><p></p> TRIPIERS<p></p> Code : O.C.<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier tripier, 1er échelon sans C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.744F. (1)<p></p><p></p> TRIPIERS<p></p> Code : O.C. C.A.P..<p></p> Coefficient : 118.<p></p> Désignation du poste : Ouvrier tripier, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 7.049F.<p></p>TRIPIERS<p></p> Code : O.C. 2.<p></p> Coefficient : 120.<p></p> Désignation du poste : Ouvrier tripier, 2ème échelon.<p></p> Salaire minimum pour 169 h mensuelles : 7.125F.<p></p><p></p> TRIPIERS<p></p> Code : O.C. Q..<p></p> Coefficient : 123.<p></p> Désignation du poste : Ouvrier tripier qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.239F.<p></p><p></p> TRIPIERS<p></p> Code : O.C. H.Q..<p></p> Coefficient : 130.<p></p> Désignation du poste : Ouvrier tripier hautement qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.507F.<p></p><p></p>VOLAILLERS<p></p> Code : O.D.<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier volailler-gibier, 1er échelon sans C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.744F. (1)<p></p><p></p> VOLAILLERS<p></p> Code : O.D. C.A.P..<p></p> Coefficient : 118.<p></p> Désignation du poste : Ouvrier volailler-gibier, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 7.049F.<p></p><p></p> VENDEURS<p></p> Code : V.1..<p></p> Coefficient : 100.<p></p> Désignation du poste : Vendeur(se), 1ème échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.362F. (1)<p></p><p></p> VENDEURS<p></p> Code : V.2..<p></p> Coefficient : 123.<p></p> Désignation du poste : Vendeur(se), 2ème échelon.<p></p> Salaire minimum pour 169 h mensuelles : 7.239F.<p></p><p></p> VENDEURS<p></p> Code : V.Q..<p></p> Coefficient : 130.<p></p> Désignation du poste : Vendeur(se) qualifié(e).<p></p> Salaire minimum pour 169 h mensuelles : 7.507F.<p></p><p></p> CAISSIERS<p></p> Code : C.Q..<p></p> Coefficient : 118.<p></p> Désignation du poste : Caissier(e) qualifié(e).<p></p> Salaire minimum pour 169 h mensuelles : 7.049F.<p></p><p></p>CAISSIERS<p></p> Code : C. H.Q..<p></p> Coefficient : 130.<p></p> Désignation du poste : Caissier(e) hautement qualifié(e).<p></p> Salaire minimum pour 169 h mensuelles : 7.507F.<p></p><p></p> MAITRISE<p></p> Code : A.M. 1..<p></p> Coefficient : 165.<p></p> Désignation du poste : Agent de maîtrise, 1er échelon.<p></p> Salaire minimum pour 169 h mensuelles : 8.842F.<p></p><p></p> MAITRISE<p></p> Code : A.M. 2..<p></p> Coefficient : 180.<p></p> Désignation du poste : Agent de maîtrise, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 9.414F.<p></p><p></p>CADRES<p></p> Code : C.D. 1..<p></p> Coefficient : 230.<p></p> Désignation du poste : Cadre, 1er échelon.<p></p> Salaire minimum pour 169 h mensuelles : 11.322F.<p></p><p></p> CADRES<p></p> Code : C.D. 2..<p></p> Coefficient : 260.<p></p> Désignation du poste : Cadre, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 12.466F.<p></p><p></p>   (1) Aucun salaire ne pouvant être inférieur au SMIC, fixé à 6 882 F, les salariés aux coefficients 100 et 110 perçoivent au minimum cette somme sur la base de 169 heures mensuelles.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 72 2000-02-02 BO conventions collectives 2000-14 étendu par arrêté du 9 mai 2000 JORF 18 mai 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II, SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 949449600000,
+                  "dateFin": 968889600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -25075,13 +25149,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718797",
+              "cid": "KALISCTA000005718797",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er octobre 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-09-14",
+              "dateFin": "2001-01-11",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005838159",
+                  "cid": "KALIARTI000005838159",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718797/KALIARTI000005838159",
+                  "pathTitle": [
+                    "Salaires au 1er octobre 2000."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les parties signataires conviennent d'augmenter de 1,5 % à compter du 1er octobre 2000 les salaires de la convention collective applicables depuis le 1er février 2000 suivant l'accord du 2 février 2000.<p></p><p></p>   La nouvelle valeur du point s'établit à 38,72 F au 1er octobre 2000. La grille des salaires conventionnels applicable à cette date est annexée au présent avenant.<p></p> Article 2<p></p><p></p>   Les parties signataires décident d'effectuer les formalités légales et réglementaires contenues dans le code du travail en vue de procéder au dépôt du présent avenant puis à sa demande d'extension.<p></p> Salaires conventionnels au 1er octobre 2000<p></p> Valeur du point : 38,72 F Coefficient 100 : 6 457 F<p></p><p></p>   Suivant l'accord paritaire intervenu le 14 septembre 2000, le salaire minimum pour chaque emploi est relevé de 1,5 %.<p></p><p></p> CODE = (1) COEFFICIENT = (2) DÉSIGNATION DU POSTE = (3) SALAIRE MINIMUM pour 169 heures mensuelles (en francs) = (4) <p></p><TABLE><TR><TD>   (1)  </TD><TD> (2) </TD><TD>               (3)                   </TD><TD>    (4)   </TD></TR><TR><TD></TD><TD> 100 </TD><TD> Ouvrier non qualifié dans le métier </TD><TD>6 457 (1) </TD></TR><TR><TD></TD><TD></TD><TD>            Bouchers                 </TD><TD></TD></TR><TR><TD>   OA   </TD><TD> 110 </TD><TD> Ouvrier boucher, 1er échelon,       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> sans CAP                            </TD><TD>6 845 (1) </TD></TR><TR><TD> OA cap </TD><TD> 118 </TD><TD> Ouvier boucher, 1er échelon,        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> avec CAP                            </TD><TD>   7 154  </TD></TR><TR><TD>  OAC   </TD><TD> 120 </TD><TD> Ouvrier boucher-tripier, 2e échelon </TD><TD>   7 232  </TD></TR><TR><TD>  OAD   </TD><TD> 120 </TD><TD> Ouvrier boucher volailler-gibier,   </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 2e échelon                          </TD><TD>   7 232  </TD></TR><TR><TD> Oq ACHT</TD><TD> 130 </TD><TD> Ouvrier qualifié                    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> en boucherie-charcuterie traiteur   </TD><TD>   7 619  </TD></TR><TR><TD> OACH   </TD><TD> 135 </TD><TD> Ouvrier boucher-charcutier          </TD><TD>   7 813  </TD></TR><TR><TD> OA q   </TD><TD> 135 </TD><TD> Ouvrier boucher qualifié            </TD><TD>   7 813  </TD></TR><TR><TD> OA hq  </TD><TD> 155 </TD><TD> Ouvrier boucher hautement qualifié  </TD><TD>   8 587  </TD></TR><TR><TD></TD><TD></TD><TD>           Charcutiers               </TD><TD></TD></TR><TR><TD> OCH    </TD><TD> 110 </TD><TD> Ouvrier charcutier, 1er échelon,    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> sans CAP                            </TD><TD>6 845 (1) </TD></TR><TR><TD> OCH ca </TD><TD> 118 </TD><TD> Ouvrier charcutier, 1er échelon,    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> avec CAP                            </TD><TD>   7 154  </TD></TR><TR><TD> OqACHT </TD><TD> 130 </TD><TD> Ouvrier qualifié en                 </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> boucherie-charcuterie traiteur      </TD><TD>   7 619  </TD></TR><TR><TD> OACH   </TD><TD> 135 </TD><TD> Ouvrier boucher-charcutier          </TD><TD>   7 813  </TD></TR><TR><TD> OCH q  </TD><TD> 135 </TD><TD> Ouvrier charcutier qualifié         </TD><TD>   7 813  </TD></TR><TR><TD> OCHT   </TD><TD> 135 </TD><TD> Ouvrier charcutier traiteur         </TD><TD>   7 813  </TD></TR><TR><TD> OCH hq </TD><TD> 155 </TD><TD> Ouvrier charcutier traiteur         </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> hautement qualifié                  </TD><TD>    8 587 </TD></TR><TR><TD></TD><TD></TD><TD>             Hippos                  </TD><TD></TD></TR><TR><TD>   OB   </TD><TD> 110 </TD><TD> Ouvrier boucher hippophagique,      </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, sans CAP               </TD><TD>6 845 (1) </TD></TR><TR><TD> OB cap </TD><TD> 118 </TD><TD> Ouvrier boucher hippophagique,      </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, avec CAP               </TD><TD>   7 154  </TD></TR><TR><TD>   OBC  </TD><TD> 120 </TD><TD> Ouvrier boucher hippophagique/      </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> tripier, 2e échelon                 </TD><TD>   7 232  </TD></TR><TR><TD>   OBD  </TD><TD> 120 </TD><TD> Ouvrier boucher hippophagique/      </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> volailler-gibier, 2e échelon        </TD><TD>   7 232  </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD></TD><TD>             Tripiers                </TD><TD></TD></TR><TR><TD>   OC   </TD><TD> 110 </TD><TD> Ouvrier tripier,                    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, sans CAP               </TD><TD>6 845 (1) </TD></TR><TR><TD> OC cap </TD><TD> 118 </TD><TD> Ouvrier tripier,                    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, avec CAP               </TD><TD>   7 154  </TD></TR><TR><TD>  OC 2  </TD><TD> 120 </TD><TD> Ouvrier tripier, 2e échelon         </TD><TD>   7 232  </TD></TR><TR><TD>  OC q  </TD><TD> 123 </TD><TD> Ouvrier tripier qualifié            </TD><TD>   7 348  </TD></TR><TR><TD>  OC hq </TD><TD> 130 </TD><TD> Ouvrier tripier hautement qualifié  </TD><TD>   7 619  </TD></TR><TR><TD></TD><TD></TD><TD>           Volaillers                </TD><TD></TD></TR><TR><TD>   OD   </TD><TD> 110 </TD><TD> Ouvrier volailler-gibier,           </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, sans CAP               </TD><TD>6 845 (1) </TD></TR><TR><TD> OD cap </TD><TD> 118 </TD><TD> Ouvrier volailler-gibier,           </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, avec CAP               </TD><TD>   7 154  </TD></TR><TR><TD></TD><TD></TD><TD>             Vendeurs                </TD><TD></TD></TR><TR><TD>   V1   </TD><TD> 100 </TD><TD> Vendeur(se), 1er échelon            </TD><TD>6 457 (1) </TD></TR><TR><TD>   V 2  </TD><TD> 123 </TD><TD> Vendeur(se), 2e échelon             </TD><TD>   7 348  </TD></TR><TR><TD>   V q  </TD><TD> 130 </TD><TD> Vendeur(se) qualifié(e)             </TD><TD>   7 619  </TD></TR><TR><TD></TD><TD></TD><TD>            Caissiers                </TD><TD></TD></TR><TR><TD>   C q  </TD><TD> 118 </TD><TD> Caissier(ère) qualifié(e)           </TD><TD>   7 154  </TD></TR><TR><TD>  C hq  </TD><TD> 130 </TD><TD> Caissier(ère) hautement qualifié(e) </TD><TD>   7 619  </TD></TR><TR><TD></TD><TD></TD><TD>            Maîtrise                </TD><TD></TD></TR><TR><TD>  AM 1  </TD><TD> 165 </TD><TD> Agent de maîtrise, 1er échelon     </TD><TD>   8 974  </TD></TR><TR><TD>  AM 2  </TD><TD> 180 </TD><TD> Agent de maîtrise, 2e échelon      </TD><TD>   9 555  </TD></TR><TR><TD></TD><TD></TD><TD>              Cadres                 </TD><TD></TD></TR><TR><TD>  CD 1  </TD><TD> 230 </TD><TD> Cadre, 1er échelon                  </TD><TD>  11 491  </TD></TR><TR><TD>  CD 2  </TD><TD> 260 </TD><TD> Cadre, 2e échelon                   </TD><TD> 12 653   </TD></TR><TR><TD> (1) Rappel </TD><TD> aucun salaire ne pouvant être inférieur au SMIC,</TD></TR><TR><TD> fixé à 7 101,38 F, depuis le 1er juillet 2000, les salariés   </TD></TR><TR><TD> aux coefficients 100 et 110 perçoivent au minimum cette somme </TD></TR><TR><TD> sur a base de 169 heures mensuelles.                          </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 73 2000-09-14 BO conventions collectives 2000-46 étendu par arrêté du 20 décembre 2000 JORF 31 décembre 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II, SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 968889600000,
+                  "dateFin": 979171200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -25095,13 +25243,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718798",
+              "cid": "KALISCTA000005718798",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er février 2001.",
+              "dateModif": null,
+              "dateDebut": "2001-01-11",
+              "dateFin": "2001-09-13",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005838160",
+                  "cid": "KALIARTI000005838160",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718798/KALIARTI000005838160",
+                  "pathTitle": [
+                    "Salaires au 1er février 2001."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les parties signataires conviennent d'augmenter de 1 % à compter du 1er février 2001 les salaires de la convention collective applicables depuis le 1er octobre 2000 suivant l'accord du 14 septembre 2000.<p></p><p></p>   La nouvelle valeur du point s'établit à 39,11 F au 1er février 2001. La grille des salaires conventionnels applicable à cette date est annexée au présent avenant.<p></p> Article 2<p></p><p></p>   Les parties signataires décident d'effectuer les formalités légales et réglementaires contenues dans le code du travail en vue de procéder au dépôt du présent avenant puis à sa demande d'extension.<p></p> Salaires conventionnels au 1er février 2001<p></p> Valeur du point : 39,11 F Coefficient 100 : 6 522 F<p></p><p></p>   Suivant l'accord paritaire intervenu le 11 janvier 2001, le salaire minimum pour chaque emploi est relevé de 1 %.<p></p> :---------------------------------------------------------------:<p></p><TABLE><TR><TD></TD><TD></TD><TD></TD><TD> SALAIRE MINIMUM </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD> pour 169 heures </TD></TR><TR><TD> CODE   </TD><TD>COEFFICIENT</TD><TD>  DESIGNATION DU POSTE  </TD><TD>    mensuelles   </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>    (en francs)  </TD></TR><TR><TD></TD><TD>   100     </TD><TD>  Ouvrier non qualifié  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD>  dans le métier        </TD><TD>     6 522 (1)   </TD></TR><TR><TD></TD><TD></TD><TD>    Bouchers            </TD><TD></TD></TR><TR><TD> OA     </TD><TD>   110     </TD><TD> Ouvrier boucher,       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, sans CAP  </TD><TD>     6 909 (1)   </TD></TR><TR><TD> OA cap </TD><TD>   118     </TD><TD> Ouvier boucher,        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, avec CAP  </TD><TD>     7 226       </TD></TR><TR><TD> OAC    </TD><TD>   120     </TD><TD> Ouvrier boucher-tripier</TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 2e échelon             </TD><TD>     7 304       </TD></TR><TR><TD> OAD    </TD><TD>   120     </TD><TD> Ouvrier boucher        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> volailler-gibier,      </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 2e échelon             </TD><TD>     7 304       </TD></TR><TR><TD> Oq ACHT</TD><TD>   130     </TD><TD> Ouvrier qualifié en    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> boucherie-charcuterie  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> traiteur               </TD><TD>     7 695       </TD></TR><TR><TD> OACH   </TD><TD>   135     </TD><TD> Ouvrier                </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> boucher-charcutier     </TD><TD>     7 890       </TD></TR><TR><TD> OA q   </TD><TD>   135     </TD><TD> Ouvrier boucher        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> qualifié               </TD><TD>     7 890       </TD></TR><TR><TD> OA hq  </TD><TD>   155     </TD><TD> Ouvrier boucher        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> hautement qualifié     </TD><TD>     8 673       </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD></TD><TD>     Charcutier         </TD><TD></TD></TR><TR><TD> OCH    </TD><TD>   110     </TD><TD> Ouvrier charcutier,    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, sans CAP  </TD><TD>     6 909 (1)   </TD></TR><TR><TD> OCH cap</TD><TD>   118     </TD><TD> Ouvrier charcutier,    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, avec CAP  </TD><TD>     7 226       </TD></TR><TR><TD> Oq ACHT</TD><TD>   130     </TD><TD> Ouvrier qualifié en    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> boucherie-charcuterie  </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> traiteur               </TD><TD>     7 695       </TD></TR><TR><TD> OACH   </TD><TD>   135     </TD><TD> Ouvrier                </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> boucher-charcutier     </TD><TD>     7 890       </TD></TR><TR><TD> OCH q  </TD><TD>   135     </TD><TD> Ouvrier charcutier     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> qualifié               </TD><TD>     7 890       </TD></TR><TR><TD> OCHT   </TD><TD>   135     </TD><TD> Ouvrier charcutier     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> traiteur               </TD><TD>     7 890       </TD></TR><TR><TD> OCH hq </TD><TD>   155     </TD><TD> Ouvrier charcutier     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> traiteur hautement     </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> qualifié               </TD><TD>     8 673       </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD></TD><TD>      Hippos            </TD><TD></TD></TR><TR><TD> OB     </TD><TD>   110     </TD><TD> Ouvrier boucher        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> hippophagique,         </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, sans CAP  </TD><TD>     6 909 (1)   </TD></TR><TR><TD> OB cap </TD><TD>   118     </TD><TD> Ouvrier boucher hippo- </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> phagique, 1er échelon, </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> avec CAP               </TD><TD>     7 226       </TD></TR><TR><TD> OBC    </TD><TD>   120     </TD><TD> Ouvrier boucher        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> hippophagique/tripier, </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 2e échelon             </TD><TD>     7 304       </TD></TR><TR><TD> OBD    </TD><TD>   120     </TD><TD> Ouvrier boucher        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> hippophagique/         </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> volailler-gibier,      </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 2e échelon             </TD><TD>     7 304       </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD></TD><TD>     Tripiers           </TD><TD></TD></TR><TR><TD> OC     </TD><TD>   110     </TD><TD> Ouvrier tripier,       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, sans CAP  </TD><TD>     6 909 (1)   </TD></TR><TR><TD> OC cap </TD><TD>   118     </TD><TD> Ouvrier tripier,       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, avec CAP  </TD><TD>     7 226       </TD></TR><TR><TD> OC 2   </TD><TD>   120     </TD><TD> Ouvrier tripier,       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 2e échelon             </TD><TD>     7 304       </TD></TR><TR><TD> OC q   </TD><TD>   123     </TD><TD> Ouvrier tripier        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> qualifié               </TD><TD>     7 421       </TD></TR><TR><TD> OC hq  </TD><TD>   130     </TD><TD> Ouvrier tripier        </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> hautement qualifié     </TD><TD>     7 695       </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD></TD><TD>      Volaillers        </TD><TD></TD></TR><TR><TD> OD     </TD><TD>   110     </TD><TD> Ouvrier                </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> volailler-gibier,      </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, sans CAP  </TD><TD>     6 909 (1)   </TD></TR><TR><TD> OD cap </TD><TD>   118     </TD><TD> Ouvrier                </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> volailler-gibier       </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon, avec CAP  </TD><TD>     7 226       </TD></TR><TR><TD></TD><TD></TD><TD>     Vendeurs           </TD><TD></TD></TR><TR><TD> V 1    </TD><TD>   100     </TD><TD> Vendeur(se),           </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon            </TD><TD>     6 522 (1)   </TD></TR><TR><TD> V 2    </TD><TD>   123     </TD><TD> Vendeur(se),           </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 2e échelon             </TD><TD>     7 421       </TD></TR><TR><TD> V q    </TD><TD>   130     </TD><TD> Vendeur(se) qualifié(e)</TD><TD>     7 695       </TD></TR><TR><TD></TD><TD></TD><TD>   Caissiers            </TD><TD></TD></TR><TR><TD> C q    </TD><TD>   118     </TD><TD> Caissier(ère)          </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> qualifié(e)            </TD><TD>     7 226       </TD></TR><TR><TD> C hq   </TD><TD>   130     </TD><TD> Caissier(ère)          </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> hautement qualifié(e)  </TD><TD>     7 695       </TD></TR><TR><TD></TD><TD></TD><TD>   Maîtrise            </TD><TD></TD></TR><TR><TD> AM 1   </TD><TD>   165     </TD><TD> Agent de maîtrise,    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 1er échelon            </TD><TD>     9 064       </TD></TR><TR><TD> AM 2   </TD><TD>   180     </TD><TD> Agent de maîtrise,    </TD><TD></TD></TR><TR><TD></TD><TD></TD><TD> 2e échelon             </TD><TD>     9 650       </TD></TR></TABLE><p></p><TABLE><TR><TD></TD><TD></TD><TD>     Cadres             </TD><TD></TD></TR><TR><TD> CD 1   </TD><TD>   230     </TD><TD> Cadre, 1er échelon     </TD><TD>    11 606       </TD></TR><TR><TD> CD 2   </TD><TD>   260     </TD><TD> Cadre, 2e échelon      </TD><TD>    12 779       </TD></TR><TR><TD> (1) Rappel </TD><TD> aucun salaire ne pouvant être inférieur au SMIC,</TD></TR><TR><TD> fixé à 7 101,38 F, depuis le 1er juillet 2000, les salariés   </TD></TR><TR><TD> aux coefficients 100 et 110 perçoivent au minimum cette somme </TD></TR><TR><TD> sur la base de 169 heures mensuelles.                         </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 75 2001-01-11 BO conventions collectives 2001-7 étendu par arrêté du 14 mai 2001 JORF 24 mai 2001",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II, SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 979171200000,
+                  "dateFin": 1000339200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

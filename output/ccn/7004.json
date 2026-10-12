@@ -18393,13 +18393,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005707902",
+              "cid": "KALISCTA000005707902",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Rémunération annuelle minimale au 1er novembre 1994",
+              "dateModif": null,
+              "dateDebut": "1994-10-12",
+              "dateFin": "1995-03-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005810922",
+                  "cid": "KALIARTI000005810922",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005707902/KALIARTI000005810922",
+                  "pathTitle": [
+                    "Rémunération annuelle minimale au 1er novembre 1994"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   L'annexe I à la convention collective nationale des coopératives laitières est modifiée à compter du 1er novembre 1994.<p></p><p></p> Article 2<p></p><p></p>   La valeur des R.A.M., des coefficients 230 à 650 sont revalorisées de 0,3 p. 100 par rapport à la grille de juillet 1994, à compter du 1er novembre 1994.<p></p><p></p> Article 3<p></p><p></p>   la courbe représentative des R.A.M. aura, à compter de la même date, la forme d'une droite entre le coefficient 120 et le coefficient 240 (coefficient fictif intermédiaire entre les coefficients 230 et 250, point de raccordement de la courbe des R.A.M. de bas de grille).<p></p><p></p>ANNEXE I<p></p> R.A.M. AU 1ER NOVEMBRE 1994<p></p> (1) Salarié ayant moins d'un an d'ancienneté<p></p> (2) Salarié ayant plus d'un an d'ancienneté<p></p> (3) Expression mensuelle<p></p> Coefficient : 120<p></p> R.A.M. (1) : 72.115,68 F<p></p> R.A.M. (2) : 78.125,32 F<p></p> R.A.M. (3) : 6.009,64 F<p></p><p></p> Coefficient : 130<p></p> R.A.M. (1) : 73.418,74 F<p></p> R.A.M. (2) : 79.536,96 F<p></p> R.A.M. (3) : 6.118,23 F<p></p><p></p> Coefficient : 140<p></p> R.A.M. (1) : 74.721,79 F<p></p> R.A.M. (2) : 80.948,61 F<p></p> R.A.M. (3) : 6.226,82 F<p></p><p></p> Coefficient : 150<p></p> R.A.M. (1) : 76.024,85 F<p></p> R.A.M. (2) : 82.360,25 F<p></p> R.A.M. (3) : 6.335,40 F<p></p><p></p> Coefficient : 160<p></p> R.A.M. (1) : 77.327,90 F<p></p> R.A.M. (2) : 83.771,90 F<p></p> R.A.M. (3) : 6.443,99 F<p></p><p></p> Coefficient : 170<p></p> R.A.M. (1) : 78.630,96 F<p></p> R.A.M. (2) : 85.183,54 F<p></p> R.A.M. (3) : 6.552,58 F<p></p><p></p> Coefficient : 180<p></p> R.A.M. (1) : 79.934,01 F<p></p> R.A.M. (2) : 86.595,18 F<p></p> R.A.M. (3) : 6.661,17 F<p></p><p></p>Coefficient : 190<p></p> R.A.M. (1) : 81.237,07 F<p></p> R.A.M. (2) : 88.006,83 F<p></p> R.A.M. (3) : 6.769,76 F<p></p><p></p> Coefficient : 200<p></p> R.A.M. (1) : 82.540,13 F<p></p> R.A.M. (2) : 89.418,47 F<p></p> R.A.M. (3) : 6.878,34 F<p></p><p></p> Coefficient : 210<p></p> R.A.M. (1) : 83.843,18 F<p></p> R.A.M. (2) : 90.830,11 F<p></p> R.A.M. (3) : 6.986,93 F<p></p><p></p> Coefficient : 220<p></p> R.A.M. (1) : 85.146,24 F<p></p> R.A.M. (2) : 92.241,76 F<p></p> R.A.M. (3) : 7.095,52 F<p></p><p></p> Coefficient : 230<p></p> R.A.M. (1) : 86.449,29 F<p></p> R.A.M. (2) : 93.653,40 F<p></p> R.A.M. (3) : 7.204,11 F<p></p><p></p> Coefficient : 240<p></p> R.A.M. (1) : 87.752,35 F<p></p> R.A.M. (2) : 95.065,05 F<p></p> R.A.M. (3) : 7.312,70 F<p></p><p></p> Coefficient : 250<p></p> R.A.M. (1) : 90.123,34 F<p></p> R.A.M. (2) : 97.633,61 F<p></p> R.A.M. (3) : 7.510,28 F<p></p><p></p> Coefficient : 280<p></p> R.A.M. (1) : 97.170,78 F<p></p> R.A.M. (2) : 105.268,34 F<p></p> R.A.M. (3) : 8.097,56 F<p></p><p></p> Coefficient : 310<p></p> R.A.M. (1) : 104.218,19 F<p></p> R.A.M. (2) : 112.903,04 F<p></p> R.A.M. (3) : 8.684,85 F<p></p><p></p> Coefficient : 350<p></p> R.A.M. (1) : 112.444,57 F<p></p> R.A.M. (2) : 121.814,95 F<p></p> R.A.M. (3) : 9.370,38 F<p></p><p></p>Coefficient : 400<p></p> R.A.M. (1) : 128.425,74 F<p></p> R.A.M. (2) : 139.127,89 F<p></p> R.A.M. (3) : 10.702,15 F<p></p><p></p> Coefficient : 450<p></p> R.A.M. (1) : 144.485,50 F<p></p> R.A.M. (2) : 156.525,96 F<p></p> R.A.M. (3) : 12.040,46 F<p></p><p></p> Coefficient : 500<p></p> R.A.M. (1) : 160.545,28 F<p></p> R.A.M. (2) : 173.924,05 F<p></p> R.A.M. (3) : 13.378,77 F<p></p><p></p> Coefficient : 550<p></p> R.A.M. (1) : 176.709,84 F<p></p> R.A.M. (2) : 191.435,66 F<p></p> R.A.M. (3) : 14.725,82 F<p></p><p></p> Coefficient : 600<p></p> R.A.M. (1) : 192.717,22 F<p></p> R.A.M. (2) : 208.776,99 F<p></p> R.A.M. (3) : 16.059,77 F<p></p><p></p> Coefficient : 650<p></p> R.A.M. (1) : 208.803,18 F<p></p> R.A.M. (2) : 226.203,44 F<p></p> R.A.M. (3) : 17.400,26 F<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 24 1994-10-12 BO Conventions collectives 94-50",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 781920000000,
+                  "dateFin": 795225600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -18433,13 +18507,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005707904",
+              "cid": "KALISCTA000005707904",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires (RAM) au 1er avril et au 1er septembre 1995",
+              "dateModif": null,
+              "dateDebut": "1995-03-15",
+              "dateFin": "1996-05-24",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005810924",
+                  "cid": "KALIARTI000005810924",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005707904/KALIARTI000005810924",
+                  "pathTitle": [
+                    "Salaires (RAM) au 1er avril et au 1er septembre 1995"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   L'annexe I à la convention collective nationale des coopératives laitières est modifiée :<p></p><p></p>   - à compter du 1er avril 1995 ;<p></p><p></p>   - à compter du 1er septembre 1995.<p></p> Article 2<p></p><p></p>   Les valeurs des R.A.M. des coefficients 120 à 650 sont revalorisées de 1 p. 100 par rapport à la grille de novembre 1994, à compter du 1er avril 1995.<p></p>Article 3<p></p><p></p>   La courbe représentative des R.A.M. aura, à compter du 1er septembre 1995, la forme d'une droite entre le coefficient 120 et le coefficient 250 (point de raccordement de la courbe des R.A.M. de bas de grille).<p></p> Article 4<p></p><p></p>   A chaque augmentation ultérieure du S.M.I.C. au cours de l'année 1995 :<p></p><p></p>   - la valeur de la R.A.M. du coefficient 120 sera modifiée pour être portée au niveau correspondant ;<p></p><p></p>   - les courbes représentatives de la R.A.M. conserveront la forme de droite :<p></p><p></p>      - entre le coefficient 120 et le coefficient \" 240 fictif \" (point de raccordement de la courbe des R.A.M. de bas de grille) jusqu'au 31 août 1995 ;<p></p><p></p>      - et entre le coefficient 120 et le coefficient 250 (point de raccordement de la courbe des R.A.M. de bas de grille) à compter du 1er septembre 1995.<p></p> Article 5<p></p><p></p>   Les valeurs des R.A.M. des coefficients 250 à 650 sont revalorisées de 1,5 p. 100 par rapport à la grille de novembre 1994 à compter du 1er septembre 1995.<p></p> Article 6<p></p><p></p>   Les parties se réuniront à nouveau en octobre 1995.<p></p><p></p><p></p>   ANNEXE I<p></p><p></p>   R.A.M. au 1er avril 1995<p></p><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = Moins d'un an d'ancienneté (en francs)<p></p><p></p>   (3) = Plus d'un an d'ancienneté (en francs)<p></p><p></p><TABLE><TR><TD></TD><TD>        R.A.M           </TD></TR><TR><TD>(1)</TD><TD>     (2)    </TD><TD>    (3)    </TD></TR><TR><TD>120</TD><TD>  72.845,76 </TD><TD> 78.916,24 </TD></TR><TR><TD>130</TD><TD>  74.161,10 </TD><TD> 80.341,19 </TD></TR><TR><TD>140</TD><TD>  75.476,45 </TD><TD> 81.766,15 </TD></TR><TR><TD>150</TD><TD>  76.791,79 </TD><TD> 83.191,10 </TD></TR><TR><TD>160</TD><TD>  78.107,13 </TD><TD> 84.616,06 </TD></TR><TR><TD>170</TD><TD>  79.422,47 </TD><TD> 86.041,01 </TD></TR><TR><TD>180</TD><TD>  80.737,82 </TD><TD> 87.465,97 </TD></TR><TR><TD>190</TD><TD>  82.053,16 </TD><TD> 88.890,92 </TD></TR><TR><TD>200</TD><TD>  83.368,50 </TD><TD> 90.315,88 </TD></TR><TR><TD>210</TD><TD>  84.683,84 </TD><TD> 91.740,83 </TD></TR><TR><TD>220</TD><TD>  85.999,19 </TD><TD> 93.165,79 </TD></TR><TR><TD>230</TD><TD>  87.314,53 </TD><TD> 94.590,74 </TD></TR><TR><TD>240</TD><TD>  88.629,87 </TD><TD> 96.015,70 </TD></TR><TR><TD>250</TD><TD>  91.024,57 </TD><TD> 98.609,95 </TD></TR><TR><TD>280</TD><TD>  98.142,48 </TD><TD>106.321,02 </TD></TR><TR><TD>310</TD><TD> 105.260,37 </TD><TD>114.032,07 </TD></TR><TR><TD>350</TD><TD> 113.569,02 </TD><TD>123.033,10 </TD></TR><TR><TD>400</TD><TD> 129.710,00 </TD><TD>140.519,16 </TD></TR><TR><TD>450</TD><TD> 145.930,36 </TD><TD>158.091,22 </TD></TR><TR><TD>500</TD><TD> 162.150,73 </TD><TD>175.663,29 </TD></TR><TR><TD>550</TD><TD> 178.476,94 </TD><TD>193.350,02 </TD></TR><TR><TD>600</TD><TD> 194.644,39 </TD><TD>210.864,76 </TD></TR><TR><TD>650</TD><TD> 210.891,21 </TD><TD>228.465,47 </TD></TR></TABLE><p></p><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = Expression mensuelle (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD>   (2)       </TD></TR><TR><TD> 120 </TD><TD>  6.070,48 F </TD></TR><TR><TD> 130 </TD><TD>  6.180,09 F </TD></TR><TR><TD> 140 </TD><TD>  6.289,70 F </TD></TR><TR><TD> 150 </TD><TD>  6.399,32 F </TD></TR><TR><TD> 160 </TD><TD>  6.508,93 F </TD></TR><TR><TD> 170 </TD><TD>  6.618,54 F </TD></TR><TR><TD> 180 </TD><TD>  6.728,15 F </TD></TR><TR><TD> 190 </TD><TD>  6.837,76 F </TD></TR><TR><TD> 200 </TD><TD>  6.947,38 F </TD></TR><TR><TD> 210 </TD><TD>  7.056,99 F </TD></TR><TR><TD> 220 </TD><TD>  7.166,60 F </TD></TR><TR><TD> 230 </TD><TD>  7.276,21 F </TD></TR><TR><TD> 240 </TD><TD>  7.385,82 F </TD></TR><TR><TD> 250 </TD><TD>  7.585,38 F </TD></TR><TR><TD> 280 </TD><TD>  8.178,54 F </TD></TR><TR><TD> 310 </TD><TD>  8.771,70 F </TD></TR><TR><TD> 350 </TD><TD>  9.464,08 F </TD></TR><TR><TD> 400 </TD><TD> 10.809,17 F </TD></TR><TR><TD> 450 </TD><TD> 12.160,86 F </TD></TR><TR><TD> 500 </TD><TD> 13.512,56 F </TD></TR><TR><TD> 550 </TD><TD> 14.873,08 F </TD></TR><TR><TD> 600 </TD><TD> 16.220,37 F </TD></TR><TR><TD> 650 </TD><TD> 17.574,27 F </TD></TR></TABLE><p></p><p></p>   R.A.M. au 1er septembre 1995<p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = Moins d'un an d'ancienneté (en francs)<p></p><p></p>   (3) = Plus d'un an d'ancienneté (en francs)<p></p><p></p><TABLE><TR><TD></TD><TD>              R.A.M     </TD></TR><TR><TD>(1)</TD><TD>     (2)    </TD><TD>    (3)    </TD></TR><TR><TD>120</TD><TD>  72.845,76 </TD><TD> 78.916,24 </TD></TR><TR><TD>130</TD><TD>  74.279,14 </TD><TD> 80.469,07 </TD></TR><TR><TD>140</TD><TD>  75.712,52 </TD><TD> 82.021,90 </TD></TR><TR><TD>150</TD><TD>  77.145,90 </TD><TD> 83.574,72 </TD></TR><TR><TD>160</TD><TD>  78.579,28 </TD><TD> 85.127,55 </TD></TR><TR><TD>170</TD><TD>  80.012,66 </TD><TD> 86.680,38 </TD></TR><TR><TD>180</TD><TD>  81.446,04 </TD><TD> 88.233,21 </TD></TR><TR><TD>190</TD><TD>  82.879,42 </TD><TD> 89.786,03 </TD></TR><TR><TD>200</TD><TD>  84.312,80 </TD><TD> 91.338,86 </TD></TR><TR><TD>210</TD><TD>  85.746,18 </TD><TD> 92.891,69 </TD></TR><TR><TD>220</TD><TD>  87.179,55 </TD><TD> 94.444,52 </TD></TR><TR><TD>230</TD><TD>  88.612,93 </TD><TD> 95.997,35 </TD></TR><TR><TD>240</TD><TD>  90.046,31 </TD><TD> 97.550,17 </TD></TR><TR><TD>250</TD><TD>  91.479,69 </TD><TD> 99.103,00 </TD></TR><TR><TD>280</TD><TD>  98.633,20 </TD><TD>106.852,63 </TD></TR><TR><TD>310</TD><TD> 105.786,67 </TD><TD>114.602,23 </TD></TR><TR><TD>350</TD><TD> 114.136,86 </TD><TD>123.648,27 </TD></TR><TR><TD>400</TD><TD> 130.358,55 </TD><TD>141.221,76 </TD></TR><TR><TD>450</TD><TD> 146.660,01 </TD><TD>158.881,68 </TD></TR><TR><TD>500</TD><TD> 162.961,48 </TD><TD>176.541,61 </TD></TR><TR><TD>550</TD><TD> 179.369,32 </TD><TD>194.316,77 </TD></TR><TR><TD>600</TD><TD> 195.617,61 </TD><TD>211.919,08 </TD></TR><TR><TD>650</TD><TD> 211.945,66 </TD><TD>229.607,80 </TD></TR></TABLE><p></p><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = Expression mensuelle (en francs)<p></p><TABLE><TR><TD>      R.A.M        </TD></TR><TR><TD> (1) </TD><TD>     (2)     </TD></TR><TR><TD> 120 </TD><TD>  6.070,48 F </TD></TR><TR><TD> 130 </TD><TD>  6.189,93 F </TD></TR><TR><TD> 140 </TD><TD>  6.309,38 F </TD></TR><TR><TD> 150 </TD><TD>  6.428,82 F </TD></TR><TR><TD> 160 </TD><TD>  6.548,27 F </TD></TR><TR><TD> 170 </TD><TD>  6.667,72 F </TD></TR><TR><TD> 180 </TD><TD>  6.787,17 F </TD></TR><TR><TD> 190 </TD><TD>  6.906,62 F </TD></TR><TR><TD> 200 </TD><TD>  7.026,07 F </TD></TR><TR><TD> 210 </TD><TD>  7.145,51 F </TD></TR><TR><TD> 220 </TD><TD>  7.264,96 F </TD></TR><TR><TD> 230 </TD><TD>  7.384,41 F </TD></TR><TR><TD> 240 </TD><TD>  7.503,86 F </TD></TR><TR><TD> 250 </TD><TD>  7.623,31 F </TD></TR><TR><TD> 280 </TD><TD>  8.219,43 F </TD></TR><TR><TD> 310 </TD><TD>  8.815,56 F </TD></TR><TR><TD> 350 </TD><TD>  9.511,41 F </TD></TR><TR><TD> 400 </TD><TD> 10.863,21 F </TD></TR><TR><TD> 450 </TD><TD> 12.221,67 F </TD></TR><TR><TD> 500 </TD><TD> 13.580,12 F </TD></TR><TR><TD> 550 </TD><TD> 14.947,44 F </TD></TR><TR><TD> 600 </TD><TD> 16.301,47 F </TD></TR><TR><TD> 650 </TD><TD> 17.662,14 F </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 27 1995-03-15 BO Conventions collectives 95-22 étendu par arrêté du 4 août 1995 JORF 12 août 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 795225600000,
+                  "dateFin": 832896000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -18453,13 +18601,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005707905",
+              "cid": "KALISCTA000005707905",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires (RAM) au 1er juin 1996",
+              "dateModif": null,
+              "dateDebut": "1996-05-24",
+              "dateFin": "1997-06-17",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005810925",
+                  "cid": "KALIARTI000005810925",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005707905/KALIARTI000005810925",
+                  "pathTitle": [
+                    "Salaires (RAM) au 1er juin 1996"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   L'annexe I à la convention collective nationale des coopératives laitières est modifiée à compter du 1er juin 1996.<p></p><p></p> Article 2<p></p><p></p>   Les valeurs des R.A.M. des coefficients 250 à 650 sont revalorisées de 1 p. 100 par rapport à la grille de mai 1996, à compter du 1er juin 1996.<p></p><p></p> Article 3<p></p><p></p>   La courbe représentative des R.A.M. conservera la forme d'une droite entre le coefficient 120 et le coefficient 250.<p></p><p></p> Article 4<p></p><p></p>   Les parties se réuniront à nouveau en septembre 1996.<p></p><p></p><p></p>   ANNEXE I<p></p><p></p>   R.A.M. au 1er juin 1996<p></p><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = Moins d'un an d'ancienneté (en francs)<p></p><p></p>   (3) = Plus d'un an d'ancienneté (en francs)<p></p><p></p><TABLE><TR><TD></TD><TD>        R.A.M           </TD></TR><TR><TD>(1)</TD><TD>     (2)    </TD><TD>    (3)    </TD></TR><TR><TD>120</TD><TD>  76.496,16 </TD><TD> 82.870,84 </TD></TR><TR><TD>130</TD><TD>  77.719,11 </TD><TD> 84.195,70 </TD></TR><TR><TD>140</TD><TD>  78.942,06 </TD><TD> 85.520,56 </TD></TR><TR><TD>150</TD><TD>  80.165,01 </TD><TD> 86.845,42 </TD></TR><TR><TD>160</TD><TD>  81.387,95 </TD><TD> 88.170,28 </TD></TR><TR><TD>170</TD><TD>  82.610,90 </TD><TD> 89.495,14 </TD></TR><TR><TD>180</TD><TD>  83.833,85 </TD><TD> 90.820,00 </TD></TR><TR><TD>190</TD><TD>  85.056,80 </TD><TD> 92.144,87 </TD></TR><TR><TD>200</TD><TD>  86.279,75 </TD><TD> 93.469,73 </TD></TR><TR><TD>210</TD><TD>  87.502,70 </TD><TD> 94.794,59 </TD></TR><TR><TD>220</TD><TD>  88.725,64 </TD><TD> 96.119,45 </TD></TR><TR><TD>230</TD><TD>  89.948,59 </TD><TD> 97.444,31 </TD></TR><TR><TD>240</TD><TD>  91.171,54 </TD><TD> 98.769,17 </TD></TR><TR><TD>250</TD><TD>  92.394,49 </TD><TD>100.094,03 </TD></TR><TR><TD>280</TD><TD>  99.619,53 </TD><TD>107.921,16 </TD></TR><TR><TD>310</TD><TD> 106.844,54 </TD><TD>115.748,25 </TD></TR><TR><TD>350</TD><TD> 115.278,23 </TD><TD>124.884,75 </TD></TR><TR><TD>400</TD><TD> 131.662,13 </TD><TD>142.633,98 </TD></TR><TR><TD>450</TD><TD> 148.126,61 </TD><TD>160.470,50 </TD></TR><TR><TD>500</TD><TD> 164.591,10 </TD><TD>178.307,02 </TD></TR><TR><TD>550</TD><TD> 181.163,02 </TD><TD>196.259,93 </TD></TR><TR><TD>600</TD><TD> 197.573,79 </TD><TD>214.038,27 </TD></TR><TR><TD>650</TD><TD> 214.065,12 </TD><TD>231.903,88 </TD></TR></TABLE><p></p><p></p>   (1) = COEFFICIENT<p></p><p></p>   (2) = Expression mensuelle (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD>   (2)       </TD></TR><TR><TD> 120 </TD><TD>  6.374,68 F </TD></TR><TR><TD> 130 </TD><TD>  6.476,59 F </TD></TR><TR><TD> 140 </TD><TD>  6.578,50 F </TD></TR><TR><TD> 150 </TD><TD>  6.680,42 F </TD></TR><TR><TD> 160 </TD><TD>  6.782,33 F </TD></TR><TR><TD> 170 </TD><TD>  6.884,24 F </TD></TR><TR><TD> 180 </TD><TD>  6.986,15 F </TD></TR><TR><TD> 190 </TD><TD>  7.088,07 F </TD></TR><TR><TD> 200 </TD><TD>  7.189,98 F </TD></TR><TR><TD> 210 </TD><TD>  7.291,89 F </TD></TR><TR><TD> 220 </TD><TD>  7.393,80 F </TD></TR><TR><TD> 230 </TD><TD>  7.495,72 F </TD></TR><TR><TD> 240 </TD><TD>  7.597,63 F </TD></TR><TR><TD> 250 </TD><TD>  7.699,54 F </TD></TR><TR><TD> 280 </TD><TD>  8.301,63 F </TD></TR><TR><TD> 310 </TD><TD>  8.903,71 F </TD></TR><TR><TD> 350 </TD><TD>  9.606,52 F </TD></TR><TR><TD> 400 </TD><TD> 10.971,84 F </TD></TR><TR><TD> 450 </TD><TD> 12.343,88 F </TD></TR><TR><TD> 500 </TD><TD> 13.715,92 F </TD></TR><TR><TD> 550 </TD><TD> 15.096,92 F </TD></TR><TR><TD> 600 </TD><TD> 16.464,48 F </TD></TR><TR><TD> 650 </TD><TD> 17.838,76 F </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 29 1996-05-24 BO conventions collectives 96-30, étendu par arrêté du 16 septembre 1996 JORF 24 septembre 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 832896000000,
+                  "dateFin": 866505600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
