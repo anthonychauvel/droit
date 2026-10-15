@@ -18087,13 +18087,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005721850",
+              "cid": "KALISCTA000005721850",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Appointements mensuels minima à effet au 1er novembre 2000",
+              "dateModif": null,
+              "dateDebut": "2000-11-01",
+              "dateFin": "2002-10-23",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005844985",
+                  "cid": "KALIARTI000005844985",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005721850/KALIARTI000005844985",
+                  "pathTitle": [
+                    "Appointements mensuels minima à effet au 1er novembre 2000"
+                  ],
+                  "content": "Article 1er<p></p> Appointements mensuels minima à effet du 1er novembre 2000<p></p> 1. Catégorie \" employés \"<p></p><p></p>   a) La valeur de l'indice technique est fixée à 6 304 F.<p></p><p></p>   b) La valeur du point intercalaire est fixée à 17,78 F.<p></p><p></p>   c) Ces valeurs s'appliquent aux coefficients de la catégorie \" employés \" à l'exception des 5 premiers coefficients de la grille fixés arbitrairement comme suit :<p></p><p></p>   110 = 7 101 F ;<p></p><p></p>   120 = 7 101 F ;<p></p><p></p>   125 = 7 101 F ;<p></p><p></p>   130 = 7 101 F ;<p></p><p></p>   140 = 7 101 F.<p></p> 2. Catégorie \" Agents de maîtrise et cadres \"<p></p><p></p>   a) La valeur du point intercalaire est fixée à 36 F.<p></p><p></p>   b) La valeur du coefficient 225 est fixée à 8 516 F.<p></p>Article 2<p></p> Tableau des salaires minima conventionnels<p></p><p></p><p></p>   COEFFICIENT hiérarchique = (1)    MINIMUM conventionnel au 1er janvier 1999 (en francs) = (2)    MINIMUM conventionnel au 1er novembre 2000 (en francs) = (3) <p></p><p></p><TABLE><TR><TD> (1)  </TD><TD>  (2)   </TD><TD>   (3)  </TD></TR><TR><TD> 110  </TD><TD> 6 800x </TD><TD> 7 101* </TD></TR><TR><TD> 120  </TD><TD> 6 800x </TD><TD> 7 101* </TD></TR><TR><TD> 125  </TD><TD> 6 800x </TD><TD> 7 101* </TD></TR><TR><TD> 130  </TD><TD> 6 800x </TD><TD> 7 101* </TD></TR><TR><TD> 140  </TD><TD> 6 810  </TD><TD> 7 101* </TD></TR><TR><TD> 145  </TD><TD> 6 897  </TD><TD> 7 104  </TD></TR><TR><TD> 155  </TD><TD> 7 069  </TD><TD> 7 281  </TD></TR><TR><TD> 160  </TD><TD> 7 156  </TD><TD> 7 371  </TD></TR><TR><TD> 165  </TD><TD> 7 242  </TD><TD> 7 459  </TD></TR><TR><TD> 180  </TD><TD> 7 501  </TD><TD> 7 726  </TD></TR><TR><TD> 190  </TD><TD> 7 673  </TD><TD> 7 903  </TD></TR><TR><TD> 200  </TD><TD> 7 846  </TD><TD> 8 081  </TD></TR><TR><TD> 215  </TD><TD> 8 105  </TD><TD> 8 348  </TD></TR></TABLE><p></p><p></p><TABLE><TR><TD>  (1) </TD><TD>   (2)  </TD><TD>  (3)   </TD></TR><TR><TD> 225  </TD><TD>  8 308 </TD><TD>  8 516 </TD></TR><TR><TD> 260  </TD><TD>  9 142 </TD><TD>  9 360 </TD></TR><TR><TD> 290  </TD><TD> 10 196 </TD><TD> 10 440 </TD></TR><TR><TD> 310  </TD><TD> 10 900 </TD><TD> 11 160 </TD></TR></TABLE><p></p><p></p><TABLE><TR><TD> (1)  </TD><TD>   (2)  </TD><TD>  (3)   </TD></TR><TR><TD> 300  </TD><TD> 10 548 </TD><TD> 10 800 </TD></TR><TR><TD> 325  </TD><TD> 11 427 </TD><TD> 11 700 </TD></TR><TR><TD> 350  </TD><TD> 12 306 </TD><TD> 12 600 </TD></TR><TR><TD> 400  </TD><TD> 14 064 </TD><TD> 14 400 </TD></TR><TR><TD> 450  </TD><TD> 15 822 </TD><TD> 16 200 </TD></TR><TR><TD> 550  </TD><TD> 19 338 </TD><TD> 19 800 </TD></TR><TR><TD> 600  </TD><TD> 21 096 </TD><TD> 21 600 </TD></TR><TR><TD> 650  </TD><TD> 22 854 </TD><TD> 23 400 </TD></TR></TABLE><p></p><p></p>   (x) Valeur fixée arbitrairement.<font color=\"808080\"><em>   NOTA : Arrêté du 6 décembre 2000 art. 1 : texte étendu sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 6 décembre 2000 art. 1 : texte étendu sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 2000-09-19 en vigueur au 1er novembre 2000 BO conventions collectives 2000-44 étendu par arrêté du 6 décembre 2000 JORF 15 décembre 2000",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 973036800000,
+                  "dateFin": 1035331200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -18107,13 +18181,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005721851",
+              "cid": "KALISCTA000005721851",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Appointements mensuels minima à effet au 1er novembre 2000",
+              "dateModif": null,
+              "dateDebut": "2001-10-23",
+              "dateFin": "2002-11-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005844986",
+                  "cid": "KALIARTI000005844986",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005721851/KALIARTI000005844986",
+                  "pathTitle": [
+                    "Appointements mensuels minima à effet au 1er novembre 2000"
+                  ],
+                  "content": "Article 1er<p></p> Appointements mensuels minima à effet du 1er novembre 2001<p></p><p></p>      1. Catégorie \" Employés \" :<p></p><p></p>      a) La valeur de l'indice technique 100 est fixé à 6 493 F, soit 989,65 Euros ;<p></p><p></p>      b) La valeur du point intercalaire est fixée à 18,31 F, soit 2,79 Euros ;<p></p><p></p>      c) Ces valeurs s'appliquent aux coefficients de la catégorie \" employés \" à partir du coefficient 155, les 6 premiers coefficients étant fixés arbitrairement.<p></p><p></p>      2. Catégorie \" Agents de maîtrise et cadres \" :<p></p><p></p>      a) La valeur du point intercalaire pour les agents de maîtrise est fixée à 37,15 F, soit 5,66 Euros ;<p></p><p></p>      b) La valeur du point intercalaire pour les cadres est fixée à 37,26 F, soit 5,68 Euros ;<p></p><p></p>      c) La valeur du coefficient 225 est fixée à 8 789 F, soit 1 339,87 Euros.<p></p> Accord \" Salaires \" minima conventionnels<p></p> CCNIE 3 100 applicables pour la durée légale<p></p> (1)   COEFFICIENT<p></p> (2)   MINIMA conventionnels au 1er novembre 2000 (en francs)<p></p> (3)   MINIMA conventionnels au 1er novembre 2001 (en francs)<p></p> (4)   MINIMA conventionnels au 1er novembre 2001 (en euros)<p></p> ----------------------------------<p></p><TABLE><TR><TD> (1) </TD><TD>  (2)  </TD><TD>  (3)  </TD><TD>    (4)   </TD></TR><TR><TD>           Employés             </TD></TR></TABLE><p></p> ----------------------------------<p></p><TABLE><TR><TD> 110 </TD><TD> 7 101 </TD><TD> 7 389 </TD><TD> 1 126,45 </TD></TR><TR><TD> 120 </TD><TD> 7 101 </TD><TD> 7 394 </TD><TD> 1 127,21 </TD></TR><TR><TD> 125 </TD><TD> 7 101 </TD><TD> 7 400 </TD><TD> 1 128,12 </TD></TR><TR><TD> 130 </TD><TD> 7 101 </TD><TD> 7 407 </TD><TD> 1 129,19 </TD></TR><TR><TD> 140 </TD><TD> 7 101 </TD><TD> 7 438 </TD><TD> 1 133,92 </TD></TR><TR><TD> 145 </TD><TD> 7 104 </TD><TD> 7 469 </TD><TD> 1 138,64 </TD></TR><TR><TD> 155 </TD><TD> 7 281 </TD><TD> 7 500 </TD><TD> 1 143,37 </TD></TR><TR><TD> 160 </TD><TD> 7 371 </TD><TD> 7 592 </TD><TD> 1 157,39 </TD></TR><TR><TD> 165 </TD><TD> 7 459 </TD><TD> 7 683 </TD><TD> 1 171,27 </TD></TR><TR><TD> 180 </TD><TD> 7 726 </TD><TD> 7 958 </TD><TD> 1 213,19 </TD></TR><TR><TD> 190 </TD><TD> 7 903 </TD><TD> 8 141 </TD><TD> 1 241,09 </TD></TR><TR><TD> 200 </TD><TD> 8 081 </TD><TD> 8 324 </TD><TD> 1 268,99 </TD></TR><TR><TD> 215 </TD><TD> 8 348 </TD><TD> 8 599 </TD><TD> 1 310,91 </TD></TR><TR><TD>        Agents de maîtrise     </TD></TR><TR><TD> 225 </TD><TD> 8 516 </TD><TD> 8 789 </TD><TD> 1 339,87 </TD></TR><TR><TD> 260 </TD><TD> 9 360 </TD><TD> 9 659 </TD><TD> 1 472,51 </TD></TR><TR><TD> 290 </TD><TD>10 440 </TD><TD>10 773 </TD><TD> 1 642,33 </TD></TR><TR><TD> 310 </TD><TD>11 160 </TD><TD>11 516 </TD><TD> 1 755,60 </TD></TR><TR><TD></TD><TD>       Cadres             </TD></TR><TR><TD> 300 </TD><TD>10 800 </TD><TD>11 178 </TD><TD> 1 704,08 </TD></TR><TR><TD> 325 </TD><TD>11 700 </TD><TD>12 109 </TD><TD> 1 846,01 </TD></TR><TR><TD> 350 </TD><TD>12 600 </TD><TD>13 041 </TD><TD> 1 988,09 </TD></TR><TR><TD> 400 </TD><TD>14 400 </TD><TD>14 904 </TD><TD> 2 272,10 </TD></TR><TR><TD> 450 </TD><TD>16 200 </TD><TD>16 767 </TD><TD> 2 556,11 </TD></TR><TR><TD> 550 </TD><TD>19 800 </TD><TD>20 493 </TD><TD> 3 124,14 </TD></TR><TR><TD> 600 </TD><TD>21 600 </TD><TD>22 356 </TD><TD> 3 408,15 </TD></TR><TR><TD> 650 </TD><TD>23 400 </TD><TD>24 219 </TD><TD> 3 692,16 </TD></TR></TABLE><p></p>----------------------------------<p></p><p></p>      Le respect de ces minima conventionnels s'entend par la prise en compte de l'éventuelle indemnité différentielle accordée lors de la réduction du temps de travail.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 17 janvier 2003 art. 1 : l'accord du 23 octobre 2001 (salaires) conclu dans le cadre de la convention collective nationale susvisée, sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 17 janvier 2003 art. 1 : l'accord du 23 octobre 2001 (salaires) conclu dans le cadre de la convention collective nationale susvisée, sous réserve de l'application de l'article 32 de la loi n° 2000-37 du 19 janvier 2000.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2001-10-23 BO conventions collectives 2001-49 étendu par arrêté du 6 janvier 2003 JORF 17 janvier 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1003795200000,
+                  "dateFin": 1038268800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -18127,13 +18275,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005721852",
+              "cid": "KALISCTA000005721852",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Appointements mensuels minima à effet au 1er novembre 2002",
+              "dateModif": null,
+              "dateDebut": "2003-10-29",
+              "dateFin": "2003-10-29",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005844987",
+                  "cid": "KALIARTI000005844987",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005721852/KALIARTI000005844987",
+                  "pathTitle": [
+                    "Appointements mensuels minima à effet au 1er novembre 2002"
+                  ],
+                  "content": "Article 1er<p></p> Appointements mensuels minima à effet du 1er novembre 2002<p></p> 1. Catégorie \" Employés \"<p></p><p></p>   a) La valeur de l'indice technique 100 est fixée à 1 010,64 Euros.<p></p><p></p>   b) La valeur du point intercalaire est fixée à 2,85 Euros.<p></p><p></p>   c) Ces valeurs s'appliquent aux coefficients de la catégorie \" employés \" à partir du coefficient 155, les 6 premiers coefficients étant fixés arbitrairement.<p></p> 2. Catégorie \" Agents de maîtrise et cadres \"<p></p><p></p>   a) La valeur du point intercalaire pour les agents de maîtrise est fixée à 5,78 Euros.<p></p><p></p>   b) La valeur du point intercalaire pour les cadres est fixée à 5,80 Euros.<p></p><p></p>   c) La valeur du coefficient 225 est fixée à 1 368,01 Euros.<p></p> Accord salaires minima conventionnels<p></p> applicables pour la durée légale<p></p> Employés<p></p><p></p> (en euros)<p></p> COEFFICIENT 110<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 126,45<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 154,27<p></p> COEFFICIENT 120<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 127,21<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 156,46<p></p> COEFFICIENT 125<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 128,12<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 158,65<p></p> COEFFICIENT 130<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 129,19<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 160,84 <p></p> COEFFICIENT 140<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 133,92<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 163,02 <p></p> COEFFICIENT 145<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 138,64<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 165,21 <p></p> COEFFICIENT 155<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 143,37<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 167,39 <p></p> COEFFICIENT 160<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 157,39<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 181,64 <p></p> COEFFICIENT 165<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 171,27<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 195,89 <p></p> COEFFICIENT 180<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 213,19<p></p>MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 238,64<p></p> COEFFICIENT 200<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 268,99<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 295,64<p></p> COEFFICIENT 215<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 310,91<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 338,39 <p></p> Agents de maîtrise<p></p> (en euros)<p></p><p></p> COEFFICIENT 225<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 339,87<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 368,01<p></p> COEFFICIENT 260<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 472,51<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 502,80<p></p> COEFFICIENT 290<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 642,33<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 676,20<p></p> COEFFICIENT 310<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 : 1 755,60<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 : 1 791,80 <p></p><p></p> Cadres<p></p><p></p> COEFFICIENT 300<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 :  1 704,08<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 :  1 740,00<p></p> COEFFICIENT 325<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 :  1 846,01<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 :  1 885,00<p></p> COEFFICIENT 350<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 :  1 988,09<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 :  2 030,00<p></p> COEFFICIENT 400<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 :  2 272,10<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 :  2 320,00 <p></p> COEFFICIENT 450<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 :  2 556,11<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 :  2 610,00 <p></p> COEFFICIENT 550<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 :  3 124,14<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 :  3 190,00<p></p> COEFFICIENT 600<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 :  3 408,15<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 :  3 480,00<p></p> COEFFICIENT 650<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2001 :  3 692,16<p></p> MINIMUM CONVENTIONNEL au 1er novembre 2002 :  3 770,00 <p></p><p></p>   Le respect de ces minima conventionnels s'entend par la prise en compte de l'éventuelle indemnité différentielle accordée lors de la réduction du temps de travail.<p></p><p></p>   Fait à Paris, le 26 novembre 2002.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2002-11-26 BO conventions collectives 2003-4 étendu par arrêté du 14 mars 2003 JORF 26 mars 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1067385600000,
+                  "dateFin": 1067385600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

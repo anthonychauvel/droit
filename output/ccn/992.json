@@ -24995,13 +24995,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718793",
+              "cid": "KALISCTA000005718793",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er février 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-01-15",
+              "dateFin": "1997-05-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005838153",
+                  "cid": "KALIARTI000005838153",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718793/KALIARTI000005838153",
+                  "pathTitle": [
+                    "Salaires au 1er février 1997."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les organisations signataires conviennent d'augmenter de 1 p. 100 à compter du 1er février 1997 les salaires de la convention collective applicables depuis le 1er juin 1996 suivant l'accord du 29 mai 1996.<p></p> Article 2<p></p><p></p>   La nouvelle grille, comprenant les coefficients de 108 à 260, est annexée au présent avenant.<p></p><p></p>   ANNEXE :<p></p><p></p>   SALAIRES CONVENTIONNELS DU METIER EN VIGUEUR AU 1ER FEVRIER 1997.<p></p> Valeur du point au 1er février 1997 : 36,85 F.<p></p><p></p> BOUCHERS<p></p> Code : O.A. C.A.P..<p></p> Coefficient : 108.<p></p> Désignation du poste :<p></p> Ouvrier boucher, 1er échelon, avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.440F.<p></p><p></p> BOUCHERS<p></p> Code : O.A.C..<p></p> Coefficient : 110.<p></p> Désignation du poste :<p></p> Ouvrier boucher tripier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.514F.<p></p><p></p>BOUCHERS<p></p> Code : O.A.D..<p></p> Coefficient : 110.<p></p> Désignation du poste :<p></p> Ouvrier boucher volailler-gibier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.514F.<p></p><p></p> BOUCHERS<p></p> Code : OQ. A.C.H.T..<p></p> Coefficient : 130.<p></p> Désignation du poste :<p></p> Ouvrier qualifié en boucherie charcuterie traiteur.<p></p> Salaire minimum pour 169 h mensuelles : 7.251F.<p></p><p></p> BOUCHERS<p></p> Code : O.A.C.H..<p></p> Coefficient : 135.<p></p> Désignation du poste :<p></p> Ouvrier boucher charcutier.<p></p> Salaire minimum pour 169 h mensuelles : 7.435F.<p></p><p></p>BOUCHERS<p></p> Code : O.A. Q..<p></p> Coefficient : 135.<p></p> Désignation du poste :<p></p> Ouvrier boucher qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.435F.<p></p><p></p> BOUCHERS<p></p> Code : O.A. H.Q..<p></p> Coefficient : 155.<p></p> Désignation du poste :<p></p> Ouvrier boucher hautement qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 8.172F.<p></p><p></p>CHARCUTIERS<p></p> Code : O.C.H. C.A.P..<p></p> Coefficient : 108.<p></p> Désignation du poste :<p></p> Ouvrier charcutier, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.440F.<p></p><p></p> CHARCUTIERS<p></p> Code : OQ. A.CH.T..<p></p> Coefficient : 130.<p></p> Désignation du poste :<p></p> Ouvrier qualifié en boucherie charcuterie traiteur.<p></p> Salaire minimum pour 169 h mensuelles : 7.251F.<p></p><p></p> CHARCUTIERS<p></p> Code : O.A.CH..<p></p> Coefficient : 135.<p></p> Désignation du poste :<p></p> Ouvrier boucher charcutier.<p></p> Salaire minimum pour 169 h mensuelles : 7.435F.<p></p><p></p>CHARCUTIERS<p></p> Code : O.CH. Q..<p></p> Coefficient : 135.<p></p> Désignation du poste :<p></p> Ouvrier charcutier qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.435F.<p></p><p></p> CHARCUTIERS<p></p> Code : O.CH.T..<p></p> Coefficient : 135.<p></p> Désignation du poste :<p></p> Ouvrier charcutier traiteur.<p></p> Salaire minimum pour 169 h mensuelles : 7.435F.<p></p><p></p> CHARCUTIERS<p></p> Code : O.CH. H.Q..<p></p> Coefficient : 155.<p></p> Désignation du poste :<p></p> Ouvrier charcutier traiteur hautement qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 8.172F.<p></p><p></p>HIPPOS<p></p> Code : O.B. C.A.P..<p></p> Coefficient : 108.<p></p> Désignation du poste :<p></p> Ouvrier boucher hippophagique, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.440F.<p></p><p></p> HIPPOS<p></p> Code : O.B.C..<p></p> Coefficient : 110.<p></p> Désignation du poste :<p></p> Ouvrier boucher hippophagique/tripier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.514F.<p></p><p></p>HIPPOS<p></p> Code : O.B.D..<p></p> Coefficient : 110.<p></p> Désignation du poste :<p></p> Ouvrier boucher hippophagique/volailler gibier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.514F.<p></p><p></p> TRIPIERS<p></p> Code : O.C. C.A.P..<p></p> Coefficient : 108.<p></p> Désignation du poste :<p></p> Ouvrier tripier, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.440F.<p></p><p></p>TRIPIERS<p></p> Code : O.C. 2.<p></p> Coefficient : 110.<p></p> Désignation du poste :<p></p> Ouvrier tripier, 2ème échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.514F.<p></p><p></p> TRIPIERS<p></p> Code : O.C. Q..<p></p> Coefficient : 120.<p></p> Désignation du poste :<p></p> Ouvrier tripier qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 6.882F.<p></p><p></p> TRIPIERS<p></p> Code : O.C. H.Q..<p></p> Coefficient : 125.<p></p> Désignation du poste :<p></p> Ouvrier tripier hautement qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.066F.<p></p><p></p>VOLAILLERS<p></p> Code : O.D. C.A.P..<p></p> Coefficient : 108.<p></p> Désignation du poste :<p></p> Ouvrier volailler-gibier, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.440F.<p></p><p></p> VENDEURS<p></p> Code : V.2..<p></p> Coefficient : 120.<p></p> Désignation du poste :<p></p> Vendeur(se), 2ème échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.882F.<p></p><p></p> VENDEURS<p></p> Code : V.Q..<p></p> Coefficient : 125.<p></p> Désignation du poste :<p></p> Vendeur(se) qualifié(e).<p></p> Salaire minimum pour 169 h mensuelles : 7.066F.<p></p><p></p> CAISSIERS<p></p> Code : C.Q..<p></p> Coefficient : 108.<p></p> Désignation du poste :<p></p> Caissier(e) qualifié(e).<p></p> Salaire minimum pour 169 h mensuelles : 6.440F.<p></p><p></p>CAISSIERS<p></p> Code : C. H.Q..<p></p> Coefficient : 130.<p></p> Désignation du poste :<p></p> Caissier(e) hautement qualifié(e).<p></p> Salaire minimum pour 169 h mensuelles : 7.251F.<p></p><p></p> MAITRISE<p></p> Code : A.M. 1..<p></p> Coefficient : 165.<p></p> Désignation du poste :<p></p> Agent de maîtrise, 1er échelon.<p></p> Salaire minimum pour 169 h mensuelles : 8.540F.<p></p><p></p> MAITRISE<p></p> Code : A.M. 2..<p></p> Coefficient : 180.<p></p> Désignation du poste :<p></p> Agent de maîtrise, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 9.093F.<p></p><p></p>CADRES<p></p> Code : C.D. 1..<p></p> Coefficient : 230.<p></p> Désignation du poste :<p></p> Cadre, 1er échelon.<p></p> Salaire minimum pour 169 h mensuelles : 10.936F.<p></p><p></p> CADRES<p></p> Code : C.D. 2..<p></p> Coefficient : 260.<p></p> Désignation du poste :<p></p> Cadre, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 12.041F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 65 1997-01-15 BO conventions collectives 97-6, étendu par arrêté du 18 mars 1997 JORF 27 mars 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II, SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 853286400000,
+                  "dateFin": 862963200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -25015,13 +25089,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718794",
+              "cid": "KALISCTA000005718794",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er février 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-05-07",
+              "dateFin": "1999-01-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005838154",
+                  "cid": "KALIARTI000005838154",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718794/KALIARTI000005838154",
+                  "pathTitle": [
+                    "Salaires au 1er février 1997."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les organisations signataires conviennent d'augmenter de 1 % à compter du 1er juin 1997 les salaires de la convention collective applicables depuis le 1er février 1997 suivant l'accord du 15 janvier 1997.<p></p> Article 2<p></p><p></p>   Les coefficients 100 et 102 ne figurent plus dans la grille, par prorogation de la disposition contenue dans l'avenant n° 59 à la présente convention, et ce jusqu'au 30 septembre 1997.<p></p><p></p> Article 3<p></p><p></p>   La nouvelle grille, comprenant les coefficients de 108 à 260, est annexée au présent avenant.<p></p> Salaires conventionnels en vigueur au 1er juin 1997<p></p> Valeur du point : 37,22 F (+ 1 %)<p></p> Coefficient 100 : 6 206 F<p></p><p></p> BOUCHERS<p></p> Code : O.A. C.A.P..<p></p> Coefficient : 108.<p></p> Désignation du poste : Ouvrier boucher, 1er échelon, avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.504F.<p></p><p></p> BOUCHERS<p></p> Code : O.A.C..<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier boucher tripier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.578F.<p></p><p></p>BOUCHERS<p></p> Code : O.A.D..<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier boucher volailler-gibier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.578F.<p></p><p></p> BOUCHERS<p></p> Code : OQ. A.C.H.T..<p></p> Coefficient : 130.<p></p> Désignation du poste : Ouvrier qualifié en boucherie charcuterie traiteur.<p></p> Salaire minimum pour 169 h mensuelles : 7.323F.<p></p><p></p> BOUCHERS<p></p> Code : O.A.C.H..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier boucher charcutier.<p></p> Salaire minimum pour 169 h mensuelles : 7.509F.<p></p><p></p>BOUCHERS<p></p> Code : O.A. Q..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier boucher qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.509F.<p></p><p></p> BOUCHERS<p></p> Code : O.A. H.Q..<p></p> Coefficient : 155.<p></p> Désignation du poste : Ouvrier boucher hautement qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 8.253F.<p></p><p></p>CHARCUTIERS<p></p> Code : O.C.H. C.A.P..<p></p> Coefficient : 108.<p></p> Désignation du poste : Ouvrier charcutier, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.504F.<p></p><p></p> CHARCUTIERS<p></p> Code : OQ. A.CH.T..<p></p> Coefficient : 130.<p></p> Désignation du poste : Ouvrier qualifié en boucherie charcuterie traiteur.<p></p> Salaire minimum pour 169 h mensuelles : 7.323F.<p></p><p></p> CHARCUTIERS<p></p> Code : O.A.CH..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier boucher charcutier.<p></p> Salaire minimum pour 169 h mensuelles : 7.509F.<p></p><p></p>CHARCUTIERS<p></p> Code : O.CH. Q..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier charcutier qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.509F.<p></p><p></p> CHARCUTIERS<p></p> Code : O.CH.T..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier charcutier traiteur.<p></p> Salaire minimum pour 169 h mensuelles : 7.509F.<p></p><p></p> CHARCUTIERS<p></p> Code : O.CH. H.Q..<p></p> Coefficient : 155.<p></p> Désignation du poste : Ouvrier charcutier traiteur hautement qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 8.253F.<p></p><p></p>HIPPOS<p></p> Code : O.B. C.A.P..<p></p> Coefficient : 108.<p></p> Désignation du poste : Ouvrier boucher hippophagique, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.504F.<p></p><p></p> HIPPOS<p></p> Code : O.B.C..<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier boucher hippophagique/tripier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.578F.<p></p><p></p>HIPPOS<p></p> Code : O.B.D..<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier boucher hippophagique/volailler gibier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.578F.<p></p><p></p> TRIPIERS<p></p> Code : O.C. C.A.P..<p></p> Coefficient : 108.<p></p> Désignation du poste : Ouvrier tripier, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.504F.<p></p><p></p>TRIPIERS<p></p> Code : O.C. 2.<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier tripier, 2ème échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.578F.<p></p><p></p> TRIPIERS<p></p> Code : O.C. Q..<p></p> Coefficient : 120.<p></p> Désignation du poste : Ouvrier tripier qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 6.950F.<p></p><p></p> TRIPIERS<p></p> Code : O.C. H.Q..<p></p> Coefficient : 125.<p></p> Désignation du poste : Ouvrier tripier hautement qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.137F.<p></p><p></p>VOLAILLERS<p></p> Code : O.D. C.A.P..<p></p> Coefficient : 108.<p></p> Désignation du poste : Ouvrier volailler-gibier, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.504F.<p></p><p></p> VENDEURS<p></p> Code : V.2..<p></p> Coefficient : 120.<p></p> Désignation du poste : Vendeur(se), 2ème échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.950F.<p></p><p></p> VENDEURS<p></p> Code : V.Q..<p></p> Coefficient : 125.<p></p> Désignation du poste : Vendeur(se) qualifié(e).<p></p> Salaire minimum pour 169 h mensuelles : 7.137F.<p></p><p></p> CAISSIERS<p></p> Code : C.Q..<p></p> Coefficient : 108.<p></p> Désignation du poste : Caissier(e) qualifié(e).<p></p> Salaire minimum pour 169 h mensuelles : 6.504F.<p></p><p></p>CAISSIERS<p></p> Code : C. H.Q..<p></p> Coefficient : 130.<p></p> Désignation du poste : Caissier(e) hautement qualifié(e).<p></p> Salaire minimum pour 169 h mensuelles : 7.323F.<p></p><p></p> MAITRISE<p></p> Code : A.M. 1..<p></p> Coefficient : 165.<p></p> Désignation du poste : Agent de maîtrise, 1er échelon.<p></p> Salaire minimum pour 169 h mensuelles : 8.625F.<p></p><p></p> MAITRISE<p></p> Code : A.M. 2..<p></p> Coefficient : 180.<p></p> Désignation du poste : Agent de maîtrise, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 9.184F.<p></p><p></p>CADRES<p></p> Code : C.D. 1..<p></p> Coefficient : 230.<p></p> Désignation du poste : Cadre, 1er échelon.<p></p> Salaire minimum pour 169 h mensuelles : 11.045F.<p></p><p></p> CADRES<p></p> Code : C.D. 2..<p></p> Coefficient : 260.<p></p> Désignation du poste : Cadre, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 12.161F.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 6 août 1997 art. 1 : texte étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 6 août 1997 art. 1 : texte étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 66 1997-05-07 BO conventions collectives 97-24, étendu par arrêté du 6 août 1997 JORF 20 août 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II, SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 862963200000,
+                  "dateFin": 916790400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -25035,13 +25183,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718795",
+              "cid": "KALISCTA000005718795",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er février 1999.",
+              "dateModif": null,
+              "dateDebut": "1999-01-20",
+              "dateFin": "2000-02-02",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005838157",
+                  "cid": "KALIARTI000005838157",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718795/KALIARTI000005838157",
+                  "pathTitle": [
+                    "Salaires au 1er février 1999."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les parties signataires décident de modifier dans la grille des emplois les coefficients suivants :<p></p><p></p>   - le coefficient 110 se substitue au coefficient 102 ;<p></p><p></p>   - le coefficient 118 se substitue au coefficient 108 ;<p></p><p></p>   - le coefficient 120 se substitue au coefficient 110 ;<p></p><p></p>   - le coefficient 123 se substitue au coefficient 120 ;<p></p><p></p>   - le coefficient 130 se substitue au coefficient 125.<p></p> Article 2<p></p><p></p>   La nouvelle valeur du point s'établit à 37,59 au 1er février 1999. La grille des salaires conventionnels applicable à cette date est annexée au présent avenant.<p></p> Article 3<p></p><p></p>   Les parties signataires décident d'effectuer les formalités légales et réglementaires contenues dans le code du travail en vue de procéder au dépôt du présent avenant puis à sa demande d'extension.<p></p><p></p>   Salaires conventionnels en vigueur au 1er février 1999<p></p> Valeur du point au 1er février 1999 : 37,59 F<p></p> Coefficient 100 : 6 268 F<p></p><p></p>   Suivant l'accord paritaire intervenu le 20 janvier 1999, le salaire minimum pour chaque emploi est relevé de 1 %.<p></p><p></p>   D'autre part, les coefficients 102, 108, 110, 120 et 125 sont remplacés par les coefficients 110, 118, 120, 123 et 130.<p></p><p></p> Coefficient : 100<p></p> Désignation du poste :<p></p> Ouvrier non qualifié dans le métier<p></p> Salaire minimum pour 169 h mensuelles : 6 268 (1)<p></p><p></p> BOUCHERS<p></p> Code : O.A.<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier boucher, 1er échelon, sans C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.644F. (1)<p></p><p></p> BOUCHERS<p></p> Code : O.A. C.A.P..<p></p> Coefficient : 118.<p></p> Désignation du poste : Ouvrier boucher, 1er échelon, avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.945F.<p></p><p></p> BOUCHERS<p></p> Code : O.A.C..<p></p> Coefficient : 120.<p></p> Désignation du poste : Ouvrier boucher tripier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 7.020F.<p></p><p></p>BOUCHERS<p></p> Code : O.A.D..<p></p> Coefficient : 120.<p></p> Désignation du poste : Ouvrier boucher volailler-gibier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 7 020F.<p></p><p></p> BOUCHERS<p></p> Code : OQ. A.C.H.T..<p></p> Coefficient : 130.<p></p> Désignation du poste : Ouvrier qualifié en boucherie charcuterie traiteur.<p></p> Salaire minimum pour 169 h mensuelles : 7.396F.<p></p><p></p> BOUCHERS<p></p> Code : O.A.C.H..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier boucher charcutier.<p></p> Salaire minimum pour 169 h mensuelles : 7.584F.<p></p><p></p>BOUCHERS<p></p> Code : O.A. Q..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier boucher qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.584F.<p></p><p></p> BOUCHERS<p></p> Code : O.A. H.Q..<p></p> Coefficient : 155.<p></p> Désignation du poste : Ouvrier boucher hautement qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 8.335F.<p></p><p></p>CHARCUTIERS<p></p> Code : O.C.H.<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier charcutier, 1er échelon sans C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.644F.(1)<p></p><p></p> CHARCUTIERS<p></p> Code : O.C.H. C.A.P..<p></p> Coefficient : 118.<p></p> Désignation du poste : Ouvrier charcutier, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.945F.<p></p><p></p> CHARCUTIERS<p></p> Code : OQ. A.CH.T..<p></p> Coefficient : 130.<p></p> Désignation du poste : Ouvrier qualifié en boucherie charcuterie traiteur.<p></p> Salaire minimum pour 169 h mensuelles : 7.396F.<p></p><p></p> CHARCUTIERS<p></p> Code : O.A.CH..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier boucher charcutier.<p></p> Salaire minimum pour 169 h mensuelles : 7.584F.<p></p><p></p>CHARCUTIERS<p></p> Code : O.CH. Q..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier charcutier qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.584F.<p></p><p></p> CHARCUTIERS<p></p> Code : O.CH.T..<p></p> Coefficient : 135.<p></p> Désignation du poste : Ouvrier charcutier traiteur.<p></p> Salaire minimum pour 169 h mensuelles : 7.584F.<p></p><p></p> CHARCUTIERS<p></p> Code : O.CH. H.Q..<p></p> Coefficient : 155.<p></p> Désignation du poste : Ouvrier charcutier traiteur hautement qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 8.335F.<p></p><p></p>HIPPOS<p></p> Code : O.B.<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier boucher hippophagique, 1er échelon sans C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.644F.(1)<p></p><p></p> HIPPOS<p></p> Code : O.B. C.A.P..<p></p> Coefficient : 118.<p></p> Désignation du poste : Ouvrier boucher hippophagique, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.945F.<p></p> HIPPOS<p></p> Code : O.B.C..<p></p> Coefficient : 120.<p></p> Désignation du poste : Ouvrier boucher hippophagique/tripier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 7.020F.<p></p><p></p>HIPPOS<p></p> Code : O.B.D..<p></p> Coefficient : 120.<p></p> Désignation du poste : Ouvrier boucher hippophagique/volailler gibier, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 7.020F.<p></p><p></p> TRIPIERS<p></p> Code : O.C.<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier tripier, 1er échelon sans C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.644F. (1)<p></p><p></p> TRIPIERS<p></p> Code : O.C. C.A.P..<p></p> Coefficient : 118.<p></p> Désignation du poste : Ouvrier tripier, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.945F.<p></p>TRIPIERS<p></p> Code : O.C. 2.<p></p> Coefficient : 120.<p></p> Désignation du poste : Ouvrier tripier, 2ème échelon.<p></p> Salaire minimum pour 169 h mensuelles : 7.020F.<p></p><p></p> TRIPIERS<p></p> Code : O.C. Q..<p></p> Coefficient : 123.<p></p> Désignation du poste : Ouvrier tripier qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.133F.<p></p><p></p> TRIPIERS<p></p> Code : O.C. H.Q..<p></p> Coefficient : 130.<p></p> Désignation du poste : Ouvrier tripier hautement qualifié.<p></p> Salaire minimum pour 169 h mensuelles : 7.396F.<p></p><p></p>VOLAILLERS<p></p> Code : O.D.<p></p> Coefficient : 110.<p></p> Désignation du poste : Ouvrier volailler-gibier, 1er échelon sans C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.644F. (1)<p></p><p></p> VOLAILLERS<p></p> Code : O.D. C.A.P..<p></p> Coefficient : 118.<p></p> Désignation du poste : Ouvrier volailler-gibier, 1er échelon avec C.A.P..<p></p> Salaire minimum pour 169 h mensuelles : 6.945F.<p></p><p></p> VENDEURS<p></p> Code : V.1..<p></p> Coefficient : 100.<p></p> Désignation du poste : Vendeur(se), 1ème échelon.<p></p> Salaire minimum pour 169 h mensuelles : 6.268F. (1)<p></p><p></p> VENDEURS<p></p> Code : V.2..<p></p> Coefficient : 123.<p></p> Désignation du poste : Vendeur(se), 2ème échelon.<p></p> Salaire minimum pour 169 h mensuelles : 7.133F.<p></p><p></p> VENDEURS<p></p> Code : V.Q..<p></p> Coefficient : 130.<p></p> Désignation du poste : Vendeur(se) qualifié(e).<p></p> Salaire minimum pour 169 h mensuelles : 7.396F.<p></p><p></p> CAISSIERS<p></p> Code : C.Q..<p></p> Coefficient : 118.<p></p> Désignation du poste : Caissier(e) qualifié(e).<p></p> Salaire minimum pour 169 h mensuelles : 6.945F.<p></p><p></p>CAISSIERS<p></p> Code : C. H.Q..<p></p> Coefficient : 130.<p></p> Désignation du poste : Caissier(e) hautement qualifié(e).<p></p> Salaire minimum pour 169 h mensuelles : 7.396F.<p></p><p></p> MAITRISE<p></p> Code : A.M. 1..<p></p> Coefficient : 165.<p></p> Désignation du poste : Agent de maîtrise, 1er échelon.<p></p> Salaire minimum pour 169 h mensuelles : 8.711F.<p></p><p></p> MAITRISE<p></p> Code : A.M. 2..<p></p> Coefficient : 180.<p></p> Désignation du poste : Agent de maîtrise, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 9.275F.<p></p><p></p>CADRES<p></p> Code : C.D. 1..<p></p> Coefficient : 230.<p></p> Désignation du poste : Cadre, 1er échelon.<p></p> Salaire minimum pour 169 h mensuelles : 11.155F.<p></p><p></p> CADRES<p></p> Code : C.D. 2..<p></p> Coefficient : 260.<p></p> Désignation du poste : Cadre, 2e échelon.<p></p> Salaire minimum pour 169 h mensuelles : 12.282F.<p></p><p></p>   (1) Aucun salaire ne pouvant être inférieur au SMIC, fixé à 6 797 F, les salariés aux coefficients 100 et 110 perçoivent au minimum cette somme sur la base de 169 heures mensuelles.<p></p><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 68 1999-01-20 BO conventions collectives 99-10 étendu par arrêté du 4 juin 1999 JORF 12 juin 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II, SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 916790400000,
+                  "dateFin": 949449600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

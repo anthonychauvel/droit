@@ -10043,13 +10043,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005698736",
+              "cid": "KALISCTA000005698736",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Rémunération et valeur du point pour 1992 au 1er janvier 1992",
+              "dateModif": null,
+              "dateDebut": "1992-03-12",
+              "dateFin": "1994-05-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005788443",
+                  "cid": "KALIARTI000005788443",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005698736/KALIARTI000005788443",
+                  "pathTitle": [
+                    "Rémunération et valeur du point pour 1992 au 1er janvier 1992"
+                  ],
+                  "content": "<p>Rémunération minimale annuelle professionnelle garantie pour l'année civile 1992 et pour l'horaire légal :</p><p>Coef. 215 : 74 000 F</p><p>Coef. 220 : 74 440 F</p><p>Coef. 230 : 77 160 F</p><p>Coef. 240 : 79 870 F</p><p>Coef. 250 : 82 580 F</p><p>Coef. 260 : 85 300 F</p><p>Coef. 270 : 88 020 F</p><p>Coef. 290 : 93 450 F</p><p>Coef. 300 : 96 170 F</p><p>Coef. 310 : 98 880 F</p><p>Coef. 330 : 104 320 F</p><p>Coef. 350 : 109 750 F</p><p>Coef. 370 : 115 190 F</p><p>Coef. 400 : 123 270 F</p><p>La valeur du point attachée aux nouvelles dispositions de l'article 21-1b de la convention collective ainsi que la base de référence au coefficient 200 sont fixées comme suit aux dates suivantes :</p><p>Valeur du point P au 1<sup>er</sup> janvier 1992 : 21,21</p><p>Valeur du point P au 1<sup>er</sup> juillet 1992 : 21,42</p><p>Valeur du point P au 1<sup>er</sup> octobre 1992 : 21,63</p><p></p><p>Valeur de référence B au 1er janvier 1992 : 5.337 F</p><p>Valeur de référence B au 1er juillet 1992 : 5.390 F</p><p>Valeur de référence B au 1er octobre 1992 : 5.445 F</p><p>Il est entendu entre les parties que les présentes dispositions ne sont applicables que pour la seule année 1992, étant entendu que la négociation de décembre 1992 prévue par la convention collective et relative aux salaires minima de 1993 s'appliquera pour l'année civile.</p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 19 1992-03-12 étendu par arrêté du 15 septembre 1992 JORF 24 septembre 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 700358400000,
+                  "dateFin": 768528000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -10083,13 +10157,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005698738",
+              "cid": "KALISCTA000005698738",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires pour 1994 (valeur du point au 1er mai et 1er octobre 1994)",
+              "dateModif": null,
+              "dateDebut": "1994-05-10",
+              "dateFin": "1996-01-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005788446",
+                  "cid": "KALIARTI000005788446",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005698738/KALIARTI000005788446",
+                  "pathTitle": [
+                    "Salaires pour 1994 (valeur du point au 1er mai et 1er octobre 1994)"
+                  ],
+                  "content": "<p></p>   Montant du salaire minimal<p></p><p></p>   La rémunération minimale annuelle professionnelle garantie pour l'année civile 1994 et pour l'horaire légal est augmentée de 1,5 p. 100 par rapport aux valeurs pour 1993, ce qui donne les montants suivants :<p></p><p></p>   215 ... 76.687 F<p></p><p></p>   220 ... 77.143 F<p></p><p></p>   230 ... 79.962 F<p></p><p></p>   240 ... 82.770 F<p></p><p></p>   250 ... 85.579 F<p></p><p></p>   260 ... 88.397 F<p></p><p></p>   270 ... 91 216 F<p></p><p></p>   290 ... 96.843 F<p></p><p></p>   300 ... 99.663 F<p></p><p></p>   310 ... 102.470 F<p></p><p></p>   330 ... 108.109 F<p></p><p></p>   350 ... 113.736 F<p></p><p></p>   370 ... 119.373 F<p></p><p></p>   400 ... 127.747 F<p></p><p></p>   Au titre de la période novembre 1992 à décembre 1994, la valeur du point attachée aux dispositions de l'article 21-1 de la convention collective ainsi que la base de référence au coefficient 200 sont fixées comme suit aux dates suivantes :<p></p><p></p>   Valeur du point P au 1er mai 1994 : 22,17 F et au 1er octobre 1994 : 22,39 F.<p></p><p></p>   Valeur de référence B au 1er mai 1994 : 5.581 F et au 1er octobre 1994 : 5.637 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 22 1994-05-10 BO Conventions collectives 94-23 étendu par arrêté du 27 juillet 1994 JORF 6 août 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 768528000000,
+                  "dateFin": 821232000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -10103,13 +10251,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005698739",
+              "cid": "KALISCTA000005698739",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires pour 1996 (valeur du point au 1er février et 1er octobre 1996)",
+              "dateModif": null,
+              "dateDebut": "1996-01-10",
+              "dateFin": "2001-05-31",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005788447",
+                  "cid": "KALIARTI000005788447",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005698739/KALIARTI000005788447",
+                  "pathTitle": [
+                    "Salaires pour 1996 (valeur du point au 1er février et 1er octobre 1996)"
+                  ],
+                  "content": "<p></p>   Montant du salaire minimal<p></p><p></p>   La rémunération minimale annuelle professionnelle garantie pour l'année civile 1994 et pour l'horaire légal est augmentée de 2,4 p. 100 par rapport aux valeurs pour 1995, ce qui donne les montants suivants :<p></p><p></p><p></p>   215 : 79.784F<p></p><p></p>   220 : 80.258F<p></p><p></p>   230 : 83.191F<p></p><p></p>   240 : 86.112F<p></p><p></p>   250 : 89.035F<p></p><p></p>   260 : 91.966F<p></p><p></p>   270 : 94.899F<p></p><p></p>   290 : 100.753F<p></p><p></p>   300 : 103.688F<p></p><p></p>   310 : 106.608F<p></p><p></p>   330 : 112.475F<p></p><p></p>   350 : 118.329F<p></p><p></p>   370 : 124.194F<p></p><p></p>   400 : 132.906F<p></p><p></p>   La valeur du point attachée aux dispositions de l'article 21-1 de la convention collective ainsi que la base de référence au coefficient 200 sont fixées comme suit :<p></p><p></p>      Valeur du point P :<p></p><p></p>      - au 1er février 1996 : 22,79 F ;<p></p><p></p>      - au 1er octobre 1996 : 23,25 F.<p></p><p></p>      Valeur de référence B :<p></p><p></p>      - au 1er février 1996 : 5 738 F ;<p></p><p></p>      - au 1er octobre 1996 : 5 853 F.<p></p><p></p>      Le salaire minimum mensuel afférent au coefficient 215 est porté à 6 250 F.<p></p><p></p>      Le salaire minimum mensuel afférent au coefficient 220 est porté à 6 320 F.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 23 1996-01-10 BO conventions collectives 96-10, étendu par arrêté du 2 mai 1996 JORF 18 mai 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 821232000000,
+                  "dateFin": 991267200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

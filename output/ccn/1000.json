@@ -12510,13 +12510,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728116",
+              "cid": "KALISCTA000005728116",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 1990",
+              "dateModif": null,
+              "dateDebut": "1990-01-12",
+              "dateFin": "1990-09-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861066",
+                  "cid": "KALIARTI000005861066",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728116/KALIARTI000005861066",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 1990"
+                  ],
+                  "content": "<p></p>   Les salaires minima de la convention collective sont, au 1er janvier 1990, augmentés de 2,95 p.100 par rapport aux salaires applicables au 31 décembre 1989 ;<p></p><p></p>   En cet état, la grille des salaires minima s'établit de la manière suivante :<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>    I. - Personnel d'entretien.<p></p><p></p>   COEFFICIENT : 100<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er janvier 1990 : S.M.I.C. horaire.<p></p><p></p>    CLASSIFICATION :<p></p><p></p>    II. - Personnel d'exécution.<p></p><p></p>   Première catégorie.<p></p><p></p>   COEFFICIENT : 120<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er janvier 1990 : 5.510,28 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Deuxième catégorie.<p></p><p></p>   COEFFICIENT : 125<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er janvier 1990 : 5.510,28 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Troisième catégorie.<p></p><p></p>   COEFFICIENT : 130<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er janvier 1990 : 5.667,71 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Quatrième catégorie.<p></p><p></p>   COEFFICIENT : 135<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er janvier 1990 : 5.667,71 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Cinquième catégorie.<p></p><p></p>   COEFFICIENT : 160<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er janvier 1990 : 6.049,93 F.<p></p><p></p>    CLASSIFICATION :<p></p><p></p>    III. - Personnel technicien.<p></p><p></p>   Sixième catégorie.<p></p><p></p>   COEFFICIENT : 185<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er janvier 1990 : 6.668,61 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Septième catégorie.<p></p><p></p>   COEFFICIENT : 200<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er janvier 1990 : 7.065,99 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Huitième catégorie.<p></p><p></p>   COEFFICIENT : 210<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er janvier 1990 : 7.330,90 F.<p></p><p></p>    CLASSIFICATION :<p></p><p></p>    IV. - Personnel cadre.<p></p><p></p>   Neuvième catégorie.<p></p><p></p>   COEFFICIENT : 300<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er janvier 1990 : 9.268,29 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Dixième catégorie.<p></p><p></p>   COEFFICIENT : 320<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er janvier 1990 : 9.753,41 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Onzième catégorie.<p></p><p></p>   COEFFICIENT : 360<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er janvier 1990 : 10.723,74 F.<p></p><p></p><p></p>   Aucun salaire ne peut être inférieur au S.M.I.C.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 26 1990-01-12 étendu par arrêté du 13 mars 1990 JORF 7 avril 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 632102400000,
+                  "dateFin": 652665600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12530,13 +12604,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728117",
+              "cid": "KALISCTA000005728117",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er septembre 1990",
+              "dateModif": null,
+              "dateDebut": "1990-09-07",
+              "dateFin": "1991-01-11",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861067",
+                  "cid": "KALIARTI000005861067",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728117/KALIARTI000005861067",
+                  "pathTitle": [
+                    "Salaires au 1er septembre 1990"
+                  ],
+                  "content": "<p></p>   Les salaires minima de la convention collective sont, au 1er septembre 1990, augmentés de 4,90 p.100 par rapport aux salaires applicables au 31 décembre 1989 ;<p></p><p></p>   En cet état, la grille des salaires minima s'établit de la manière suivante :<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>    I. - Personnel d'entretien.<p></p><p></p>   COEFFICIENT : 100<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er septembre 1990 : S.M.I.C. horaire.<p></p><p></p>    CLASSIFICATION :<p></p><p></p>    II. - Personnel d'exécution.<p></p><p></p>   Première catégorie.<p></p><p></p>   COEFFICIENT : 120<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er septembre 1990 : 5.614,65 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Deuxième catégorie.<p></p><p></p>   COEFFICIENT : 125<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er septembre 1990 : 5.614,65 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Troisième catégorie.<p></p><p></p>   COEFFICIENT : 130<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er septembre 1990 : 5.775,06 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Quatrième catégorie.<p></p><p></p>   COEFFICIENT : 135<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er septembre 1990 : 5.775,06 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Cinquième catégorie.<p></p><p></p>   COEFFICIENT : 160<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er septembre 1990 : 6.164,52 F.<p></p><p></p>    CLASSIFICATION :<p></p><p></p>    III. - Personnel technicien.<p></p><p></p>   Sixième catégorie.<p></p><p></p>   COEFFICIENT : 185<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er septembre 1990 : 6.794,92 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Septième catégorie.<p></p><p></p>   COEFFICIENT : 200<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er septembre 1990 : 7.199,83 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Huitième catégorie.<p></p><p></p>   COEFFICIENT : 210<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er septembre 1990 : 7.469,76 F.<p></p><p></p>    CLASSIFICATION :<p></p><p></p>    IV. - Personnel cadre.<p></p><p></p>   Neuvième catégorie.<p></p><p></p>   COEFFICIENT : 300<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er septembre 1990 : 9.443,84 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Dixième catégorie.<p></p><p></p>   COEFFICIENT : 320<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er septembre 1990 : 9.938,15 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Onzième catégorie.<p></p><p></p>   COEFFICIENT : 360<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 1er septembre 1990 : 10.926,86 F.<p></p><p></p><p></p>   Aucun salaire ne peut être inférieur au S.M.I.C.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 27 1990-09-07 étendu par arrêté du 10 décembre 1990 JORF 22 décembre 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 652665600000,
+                  "dateFin": 663552000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12550,13 +12698,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728118",
+              "cid": "KALISCTA000005728118",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 1991",
+              "dateModif": null,
+              "dateDebut": "1991-01-11",
+              "dateFin": "1991-09-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861068",
+                  "cid": "KALIARTI000005861068",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728118/KALIARTI000005861068",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 1991"
+                  ],
+                  "content": "<p></p>   Les salaires minima de la convention collective sont, au 1er janvier 1991, augmentés de 3,50 p.100 par rapport aux salaires applicables au 31 décembre 1990 ;<p></p><p></p>   En cet état, la grille des salaires minima au 1er janvier 1991 s'établit de la manière suivante :<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>    I. - Personnel d'entretien.<p></p><p></p>   COEFFICIENT : 100<p></p><p></p>   SALAIRE MINIMA : S.M.I.C. horaire.<p></p><p></p>    CLASSIFICATION :<p></p><p></p>    II. - Personnel d'exécution.<p></p><p></p>   Première catégorie.<p></p><p></p>   COEFFICIENT : 120<p></p><p></p>   SALAIRE MINIMA : 5.811,16 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Deuxième catégorie.<p></p><p></p>   COEFFICIENT : 125<p></p><p></p>   SALAIRE MINIMA : 5.811,16 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Troisième catégorie.<p></p><p></p>   COEFFICIENT : 130<p></p><p></p>   SALAIRE MINIMA : 5.977,19 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Quatrième catégorie.<p></p><p></p>   COEFFICIENT : 135<p></p><p></p>   SALAIRE MINIMA : 5.977,19 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Cinquième catégorie.<p></p><p></p>   COEFFICIENT : 160<p></p><p></p>   SALAIRE MINIMA : 6.380,28 F.<p></p><p></p>    CLASSIFICATION :<p></p><p></p>    III. - Personnel technicien.<p></p><p></p>   Sixième catégorie.<p></p><p></p>   COEFFICIENT : 185<p></p><p></p>   SALAIRE MINIMA : 7.032,74 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Septième catégorie.<p></p><p></p>   COEFFICIENT : 200<p></p><p></p>   SALAIRE MINIMA : 7.451,92 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Huitième catégorie.<p></p><p></p>   COEFFICIENT : 210<p></p><p></p>   SALAIRE MINIMA : 7.731,20 F.<p></p><p></p>    CLASSIFICATION :<p></p><p></p>    IV. - Personnel cadre.<p></p><p></p>   Neuvième catégorie.<p></p><p></p>   COEFFICIENT : 300<p></p><p></p>   SALAIRE MINIMA : 9.774,37 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Dixième catégorie.<p></p><p></p>   COEFFICIENT : 320<p></p><p></p>   SALAIRE MINIMA : 10.285,99 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Onzième catégorie.<p></p><p></p>   COEFFICIENT : 360<p></p><p></p>   SALAIRE MINIMA : 11.309,30 F.<p></p><p></p><p></p>   Aucun salaire ne peut être inférieur au S.M.I.C.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 28 1991-01-11 étendu par arrêté du 5 mars 1991 JORF 15 mars 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 663552000000,
+                  "dateFin": 685324800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
