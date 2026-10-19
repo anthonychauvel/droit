@@ -32303,13 +32303,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727331",
+              "cid": "KALISCTA000005727331",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril 1997 et 1er juillet 1997",
+              "dateModif": null,
+              "dateDebut": "1997-04-21",
+              "dateFin": "1998-07-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005859212",
+                  "cid": "KALIARTI000005859212",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727331/KALIARTI000005859212",
+                  "pathTitle": [
+                    "Salaires au 1er avril 1997 et 1er juillet 1997"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur constante et la valeur du point, permettant de calculer les salaires minima professionnels, sont revalorisés de 1,2 % à compter du 1er avril 1997.<p></p><p></p>   A compter du 1er avril 1997, le paragraphe 2 \" Salaires minima professionnels \" de l'avenant n° 1 de la convention collective de l'industrie pharmaceutique révisée, est abrogé et remplacé par les dispositions suivantes :<p></p> 2. Salaires minima professionnels<p></p><p></p>   A compter du 1er avril 1997, les salaires minima mensuels pour 169 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 6 535 F au 1er avril 1997 ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 44,53 F au 1er avril 1997.<p></p> Salaires minima au 1er avril 1997<p></p><TABLE><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD>1 A     </TD><TD>  0   </TD><TD>  6 535F </TD></TR><TR><TD>1 B     </TD><TD>  3   </TD><TD>  6 669F </TD></TR><TR><TD>1 C/2 A </TD><TD>  8   </TD><TD>  6 891F </TD></TR><TR><TD>2 B     </TD><TD> 12   </TD><TD>  7 069F </TD></TR><TR><TD>2 C/3 A </TD><TD> 23   </TD><TD>  7 559F </TD></TR><TR><TD>3 B     </TD><TD> 28   </TD><TD>  7 782F </TD></TR><TR><TD>3 C/4 A </TD><TD> 46   </TD><TD>  8 583F </TD></TR><TR><TD>4 B     </TD><TD> 54   </TD><TD>  8 940F </TD></TR><TR><TD>4 C/5 A </TD><TD> 77   </TD><TD>  9 964F </TD></TR><TR><TD>5 B     </TD><TD> 88   </TD><TD> 10 454F </TD></TR><TR><TD>5 C/6 A </TD><TD>118   </TD><TD> 11 790F </TD></TR><TR><TD>6 B     </TD><TD>132   </TD><TD> 12 413F </TD></TR><TR><TD>6 C     </TD><TD>169   </TD><TD> 14 061F </TD></TR><TR><TD>7 A     </TD><TD>183   </TD><TD> 14 684F </TD></TR><TR><TD>7 B     </TD><TD>246   </TD><TD> 17 489F </TD></TR><TR><TD>8 A     </TD><TD>260   </TD><TD> 18 113F </TD></TR><TR><TD>8 B     </TD><TD>335   </TD><TD> 21 453F </TD></TR><TR><TD>9 A     </TD><TD>349   </TD><TD> 22 076F </TD></TR><TR><TD>9 B     </TD><TD>438   </TD><TD> 26 039F </TD></TR><TR><TD>10      </TD><TD>494   </TD><TD> 28 533F </TD></TR><TR><TD>11      </TD><TD>550   </TD><TD> 31 027F </TD></TR></TABLE><p></p>Article 2<p></p><p></p>   La valeur constante et la valeur du point permettant de calculer les salaires minima professionnels sont revalorisés de 0,8 % à compter du 1er juillet 1997.<p></p><p></p>   A compter du 1er juillet 1997, le paragraphe 2 \" Salaires minima professionnels \" de l'avenant n° 1 de la convention collective de l'industrie pharmaceutique révisée, est abrogé et remplacé par les dispositions suivantes :<p></p> 2. Salaires minima professionnels<p></p><p></p>   A compter du 1er juillet 1997, les salaires minima mensuels pour 169 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 6 587 F au 1er juillet 1997 ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 44,89 F au 1er juillet 1997.<p></p> Salaires minima au 1er juillet 1997<p></p><TABLE><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD>1 A     </TD><TD>  0   </TD><TD> 6 587F  </TD></TR><TR><TD>1 B     </TD><TD>  3   </TD><TD> 6 722F  </TD></TR><TR><TD>1 C/2 A </TD><TD>  8   </TD><TD> 6 946F  </TD></TR><TR><TD>2 B     </TD><TD> 12   </TD><TD> 7 126F  </TD></TR><TR><TD>2 C/3 A </TD><TD> 23   </TD><TD> 7 619F  </TD></TR><TR><TD>3 B     </TD><TD> 28   </TD><TD> 7 844F  </TD></TR><TR><TD>3 C/4 A </TD><TD> 46   </TD><TD> 8 652F  </TD></TR><TR><TD>4 B     </TD><TD> 54   </TD><TD> 9 011F  </TD></TR><TR><TD>4 C/5 A </TD><TD> 77   </TD><TD>10 044F  </TD></TR><TR><TD>5 B     </TD><TD> 88   </TD><TD>10 537F  </TD></TR><TR><TD>5 C/6 A </TD><TD>118   </TD><TD>11 884F  </TD></TR><TR><TD>6 B     </TD><TD>132   </TD><TD>12 512F  </TD></TR><TR><TD>6 C     </TD><TD>169   </TD><TD>14 173F  </TD></TR><TR><TD>7 A     </TD><TD>183   </TD><TD>14 802F  </TD></TR><TR><TD>7 B     </TD><TD>246   </TD><TD>17 630F  </TD></TR><TR><TD>8 A     </TD><TD>260   </TD><TD>18 258F  </TD></TR><TR><TD>8 B     </TD><TD>335   </TD><TD>21 625F  </TD></TR><TR><TD>9 A     </TD><TD>349   </TD><TD>22 254F  </TD></TR><TR><TD>9 B     </TD><TD>438   </TD><TD>26 249F  </TD></TR><TR><TD>10      </TD><TD>494   </TD><TD>28 763F  </TD></TR><TR><TD>11      </TD><TD>550   </TD><TD>31 277F  </TD></TR></TABLE><p></p>Article 3<p></p> Dépôt<p></p><p></p>   Conformément aux articles L 132-10 et R 132-1 du code du travail, le présent accord collectif sera déposé en 5 exemplaires à la direction départementale du travail et de l'emploi de Paris et remis au secrétariat-greffe du conseil de prud'hommes de Paris.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1997-04-21 BO conventions collectives 97-24",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 861580800000,
+                  "dateFin": 899683200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -32323,13 +32397,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727332",
+              "cid": "KALISCTA000005727332",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juillet 1998",
+              "dateModif": null,
+              "dateDebut": "1998-07-06",
+              "dateFin": "2000-10-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005859213",
+                  "cid": "KALIARTI000005859213",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727332/KALIARTI000005859213",
+                  "pathTitle": [
+                    "Salaires au 1er juillet 1998"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   La valeur constante et la valeur du point, permettant de calculer les salaires minima professionnels, sont revalorisées respectivement de 1,7 % et de 0,8 % à compter du 1er juillet 1998.<p></p><p></p>   A compter du 1er juillet 1998, le paragraphe II \" Salaires minima professionnels \" de l'avenant n° 1 de la convention collective de l'industrie pharmaceutique révisée est abrogé et remplacé par les dispositions suivantes :<p></p> II. - Salaires minima professionnels<p></p><p></p>   A compter du 1er juillet 1998, les salaires minima mensuels pour 169 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 6 699 F au 1er juillet 1998 ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 45,25 F au 1er juillet 1998.<p></p><p></p> SALAIRES MINIMA AU 1er JUILLET 1998<p></p><TABLE><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD>1 A     </TD><TD>  0   </TD><TD> 6 699F  </TD></TR><TR><TD>1 B     </TD><TD>  3   </TD><TD> 6 835F  </TD></TR><TR><TD>1 C/2 A </TD><TD>  8   </TD><TD> 7 061F  </TD></TR><TR><TD>2 B     </TD><TD> 12   </TD><TD> 7 242F  </TD></TR><TR><TD>2 C/3 A </TD><TD> 23   </TD><TD> 7 740F  </TD></TR><TR><TD>3 B     </TD><TD> 28   </TD><TD> 7 966F  </TD></TR><TR><TD>3 C/4 A </TD><TD> 46   </TD><TD> 8 781F  </TD></TR><TR><TD>4 B     </TD><TD> 54   </TD><TD> 9 143F  </TD></TR><TR><TD>4 C/5 A </TD><TD> 77   </TD><TD>10 183F  </TD></TR><TR><TD>5 B     </TD><TD> 88   </TD><TD>10 681F  </TD></TR><TR><TD>5 C/6 A </TD><TD>118   </TD><TD>12 039F  </TD></TR><TR><TD>6 B     </TD><TD>132   </TD><TD>12 672F  </TD></TR><TR><TD>6 C     </TD><TD>169   </TD><TD>14 346F  </TD></TR><TR><TD>7 A     </TD><TD>183   </TD><TD>14 980F  </TD></TR><TR><TD>7 B     </TD><TD>246   </TD><TD>17 831F  </TD></TR><TR><TD>8 A     </TD><TD>260   </TD><TD>18 454F  </TD></TR><TR><TD>8 B     </TD><TD>335   </TD><TD>21 858F  </TD></TR><TR><TD>9 A     </TD><TD>349   </TD><TD>22 491F  </TD></TR><TR><TD>9 B     </TD><TD>438   </TD><TD>26 519F  </TD></TR><TR><TD>10      </TD><TD>494   </TD><TD>29 053F  </TD></TR><TR><TD>11      </TD><TD>550   </TD><TD>31 587F  </TD></TR></TABLE><p></p>Article 2<p></p><p></p>   Les salariés classés au groupe 1 niveau A dont les salaires réels n'atteindraient pas le salaire du groupe 1 niveau B, soit 6 835 F, doivent voir leurs salaires réels portés à ce montant, jusqu'à la conclusion d'un nouvel accord sur les salaires minima professionnels.<p></p>Article 3<p></p><p></p>   Les parties signataires s'engagent à se rencontrer, au cours du mois de novembre 1998, pour examiner la situation des salaires minima et plus particulièrement celle du groupe 1 niveau A.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1998-07-06 BO conventions collectives 98-33",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 899683200000,
+                  "dateFin": 971827200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -32343,13 +32491,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727333",
+              "cid": "KALISCTA000005727333",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima",
+              "dateModif": null,
+              "dateDebut": "2000-10-18",
+              "dateFin": "2001-04-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005859214",
+                  "cid": "KALIARTI000005859214",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727333/KALIARTI000005859214",
+                  "pathTitle": [
+                    "Salaires minima"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   A compter du 1er novembre 2000, la valeur constante et la valeur du point permettant de calculer les salaires minima conventionnels pour 169 heures et pour 151,67 heures sont revalorisés de 3,3%.<p></p><p></p>   La valeur constante et la valeur du point permettant de calculer les salaires minima conventionnels pour 169 heures sont revalorisés de 1 % au 1er janvier 2001 et de 0,5 % au 1er juillet 2001.<p></p><p></p>   La valeur constante et la valeur du point permettant de calculer les salaires minima conventionnels pour 151,67 heures sont revalorisés de 6 % au 1er janvier 2001 et de 0,5 % au 1er juillet 2001.<p></p>Article 2<p></p><p></p>   Le paragraphe II \" Salaires minima professionnels \" de l'avenant I de la convention collective nationale de l'industrie pharmaceutique modifiée, est abrogé et remplacé par les dispositions suivantes :<p></p> \" II. - Salaires minima professionnels<p></p><p></p>   1. A compter du 1er novembre 2000, les salaires minima mensuels pour 169 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 6 920 F ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 46,74 F.<p></p><TABLE><TR><TD>SALAIRES MINIMA POUR 169 HEURES AU 1er NOVEMBRE 2000</TD></TR><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD></TD><TD></TD><TD> (en fr.)</TD></TR><TR><TD>   1 A  </TD><TD>  0   </TD><TD> 6 920   </TD></TR><TR><TD>1 B     </TD><TD>  3   </TD><TD> 7 060   </TD></TR><TR><TD>1 C/2 A </TD><TD>  8   </TD><TD> 7 294   </TD></TR><TR><TD>  2 B   </TD><TD>  12  </TD><TD> 7 481   </TD></TR><TR><TD>2 C/3 A </TD><TD>  23  </TD><TD> 7 995   </TD></TR><TR><TD>  3 B   </TD><TD>  28  </TD><TD> 8 229   </TD></TR><TR><TD>3 C/4 A </TD><TD>  46  </TD><TD> 9 070   </TD></TR><TR><TD>  4 B   </TD><TD>  54  </TD><TD> 9 444   </TD></TR><TR><TD>4 C/5 A </TD><TD>  77  </TD><TD> 10 519  </TD></TR><TR><TD>  5 B   </TD><TD>  88  </TD><TD> 11 033  </TD></TR><TR><TD>5 C/6 A </TD><TD>  118 </TD><TD> 12 435  </TD></TR><TR><TD>  6 B   </TD><TD>  132 </TD><TD> 13 090  </TD></TR><TR><TD>  6 C   </TD><TD>  169 </TD><TD> 14 819  </TD></TR><TR><TD>  7 A   </TD><TD>  183 </TD><TD> 15 473  </TD></TR><TR><TD>  7 B   </TD><TD>  246 </TD><TD> 18 418  </TD></TR><TR><TD>  8 A   </TD><TD>  260 </TD><TD> 19 072  </TD></TR><TR><TD>  8 B   </TD><TD>  335 </TD><TD> 22 578  </TD></TR><TR><TD>  9 A   </TD><TD>  349 </TD><TD> 23 232  </TD></TR><TR><TD>  9 B   </TD><TD>  438 </TD><TD> 27 392  </TD></TR><TR><TD>  10    </TD><TD>  494 </TD><TD> 30 010  </TD></TR><TR><TD>  11    </TD><TD>  550 </TD><TD> 32 627  </TD></TR></TABLE><p></p><p></p>   2. A compter du 1er novembre 2000, les salaires minima mensuels pour 151,67 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 6 210 F ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 41,95 F.<p></p><p></p><TABLE><TR><TD>SALAIRES MINIMA POUR 151,67 HEURES AU 1er NOVEMBRE 2000</TD></TR><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD></TD><TD></TD><TD> (en fr.)</TD></TR><TR><TD>  1 A   </TD><TD> 0    </TD><TD>  6 210  </TD></TR></TABLE><p></p> 1 B      : 3    :  6 336  :<p></p> 1 C/2 A  : 8    :  6 546  :<p></p><TABLE><TR><TD>  2 B   </TD><TD> 12   </TD><TD>  6 713  </TD></TR><TR><TD>2 C/3 A </TD><TD> 23   </TD><TD>  7 175  </TD></TR><TR><TD>  3 B   </TD><TD> 28   </TD><TD>  7 385  </TD></TR><TR><TD>3 C/4 A </TD><TD> 46   </TD><TD>  8 140  </TD></TR><TR><TD>  4 B   </TD><TD> 54   </TD><TD>  8 475  </TD></TR><TR><TD>4 C/5 A </TD><TD> 77   </TD><TD>  9 440  </TD></TR><TR><TD>  5 B   </TD><TD> 88   </TD><TD>  9 902  </TD></TR><TR><TD>5 C/6 A </TD><TD> 118  </TD><TD>  11 160 </TD></TR><TR><TD>  6 B   </TD><TD> 132  </TD><TD>  11 747 </TD></TR><TR><TD>  6 C   </TD><TD> 169  </TD><TD>  13 300 </TD></TR><TR><TD>  7 A   </TD><TD> 183  </TD><TD>  13 887 </TD></TR><TR><TD>  7 B   </TD><TD> 246  </TD><TD>  16 530 </TD></TR><TR><TD>  8 A   </TD><TD> 260  </TD><TD>  17 117 </TD></TR><TR><TD>  8 B   </TD><TD> 335  </TD><TD>  20 263 </TD></TR><TR><TD>  9 A   </TD><TD> 349  </TD><TD>  20 851 </TD></TR><TR><TD>  9 B   </TD><TD> 438  </TD><TD>  24 584 </TD></TR><TR><TD>  10    </TD><TD> 494  </TD><TD>  26 933 </TD></TR><TR><TD>  11    </TD><TD> 550  </TD><TD>  29 283 </TD></TR></TABLE><p></p><p></p>   3. A compter du 1er janvier 2001, les salaires minima mensuels pour 169 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 6 989 F ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 47,21 F.<p></p><p></p><TABLE><TR><TD>SALAIRES MINIMA POUR 169 HEURES AU 1er JANVIER 2001</TD></TR><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD></TD><TD></TD><TD> (en fr.)</TD></TR><TR><TD>  1 A   </TD><TD>  0   </TD><TD>  6 989  </TD></TR><TR><TD>1 B     </TD><TD>  3   </TD><TD>  7 131  </TD></TR><TR><TD>1 C/2 A </TD><TD>  8   </TD><TD>  7 367  </TD></TR><TR><TD>  2 B   </TD><TD>  12  </TD><TD>  7 556  </TD></TR><TR><TD>2 C/3 A </TD><TD>  23  </TD><TD>  8 075  </TD></TR><TR><TD>  3 B   </TD><TD>  28  </TD><TD>  8 311  </TD></TR><TR><TD>3 C/4 A </TD><TD>  46  </TD><TD>  9 161  </TD></TR><TR><TD>  4 B   </TD><TD>  54  </TD><TD>  9 538  </TD></TR><TR><TD>4 C/5 A </TD><TD>  77  </TD><TD>  10 624 </TD></TR><TR><TD>  5 B   </TD><TD>  88  </TD><TD>  11 143 </TD></TR><TR><TD>5 C/6 A </TD><TD>  118 </TD><TD>  12 560 </TD></TR><TR><TD>  6 B   </TD><TD>  132 </TD><TD>  13 221 </TD></TR><TR><TD>  6 C   </TD><TD>  169 </TD><TD>  14 967 </TD></TR><TR><TD>  7 A   </TD><TD>  183 </TD><TD>  15 628 </TD></TR><TR><TD>  7 B   </TD><TD>  246 </TD><TD>  18 603 </TD></TR><TR><TD>  8 A   </TD><TD>  260 </TD><TD>  19 264 </TD></TR><TR><TD>  8 B   </TD><TD>  335 </TD><TD>  22 804 </TD></TR><TR><TD>  9 A   </TD><TD>  349 </TD><TD>  23 465 </TD></TR><TR><TD>  9 B   </TD><TD>  438 </TD><TD>  27 667 </TD></TR><TR><TD>  10    </TD><TD>  494 </TD><TD>  30 311 </TD></TR><TR><TD>  11    </TD><TD>  550 </TD><TD>  32 955 </TD></TR></TABLE><p></p><p></p>   4. A compter du 1er juillet 2001, les salaires minima mensuels pour 169 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 7 024 F ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 47,45 F.<p></p><p></p><TABLE><TR><TD>SALAIRES MINIMA POUR 169 HEURES AU 1er JUILLET 2001</TD></TR><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD></TD><TD></TD><TD> (en fr.)</TD></TR><TR><TD>  1 A   </TD><TD>  0   </TD><TD>  7 024  </TD></TR><TR><TD>  1 B   </TD><TD>  3   </TD><TD>  7 166  </TD></TR><TR><TD>1 C/2 A </TD><TD>  8   </TD><TD>  7 404  </TD></TR><TR><TD>  2 B   </TD><TD>  12  </TD><TD>  7 593  </TD></TR><TR><TD>2 C/3 A </TD><TD>  23  </TD><TD>  8 115  </TD></TR><TR><TD>  3 B   </TD><TD>  28  </TD><TD>  8 353  </TD></TR><TR><TD>3 C/4 A </TD><TD>  46  </TD><TD>  9 207  </TD></TR><TR><TD>  4 B   </TD><TD>  54  </TD><TD>  9 586  </TD></TR><TR><TD>4 C/5 A </TD><TD>  77  </TD><TD>  10 678 </TD></TR><TR><TD>  5 B   </TD><TD>  88  </TD><TD>  11 200 </TD></TR><TR><TD>5 C/6 A </TD><TD>  118 </TD><TD>  12 623 </TD></TR><TR><TD>  6 B   </TD><TD>  132 </TD><TD>  13 287 </TD></TR><TR><TD>  6 C   </TD><TD>  169 </TD><TD>  15 043 </TD></TR><TR><TD>  7 A   </TD><TD>  183 </TD><TD>  15 707 </TD></TR><TR><TD>  7 B   </TD><TD>  246 </TD><TD>  18 697 </TD></TR><TR><TD>  8 A   </TD><TD>  260 </TD><TD>  19 361 </TD></TR><TR><TD>  8 B   </TD><TD>  335 </TD><TD>  22 920 </TD></TR><TR><TD>  9 A   </TD><TD>  349 </TD><TD>  23 584 </TD></TR><TR><TD>  9 B   </TD><TD>  438 </TD><TD>  27 807 </TD></TR><TR><TD>  10    </TD><TD>  494 </TD><TD>  30 464 </TD></TR><TR><TD>  11    </TD><TD>  550 </TD><TD>  33 122 </TD></TR></TABLE><p></p><p></p>   5. A compter du 1er janvier 2001, les salaires minima mensuels pour 151,67 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 6 583 F ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 44,47 F.<p></p><p></p><TABLE><TR><TD>SALAIRES MINIMA POUR 151,67 HEURES AU 1er JANVIER 2001</TD></TR><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD></TD><TD></TD><TD> (en fr.)</TD></TR><TR><TD>  1 A   </TD><TD> 0    </TD><TD> 6 583   </TD></TR><TR><TD>  1 B   </TD><TD> 3    </TD><TD> 6 716   </TD></TR><TR><TD>1 C/2 A </TD><TD> 8    </TD><TD> 6 939   </TD></TR><TR><TD>  2 B   </TD><TD> 12   </TD><TD> 7 117   </TD></TR><TR><TD>2 C/3 A </TD><TD> 23   </TD><TD> 7 606   </TD></TR><TR><TD>  3 B   </TD><TD> 28   </TD><TD> 7 828   </TD></TR><TR><TD>3 C/4 A </TD><TD> 46   </TD><TD> 8 629   </TD></TR><TR><TD>  4 B   </TD><TD> 54   </TD><TD> 8 984   </TD></TR><TR><TD>4 C/5 A </TD><TD> 77   </TD><TD> 10 007  </TD></TR><TR><TD>  5 B   </TD><TD> 88   </TD><TD> 10 496  </TD></TR><TR><TD>5 C/6 A </TD><TD> 118  </TD><TD> 11 830  </TD></TR><TR><TD>  6 B   </TD><TD> 132  </TD><TD> 12 453  </TD></TR><TR><TD>  6 C   </TD><TD> 169  </TD><TD> 14 098  </TD></TR><TR><TD>  7 A   </TD><TD> 183  </TD><TD> 14 721  </TD></TR><TR><TD>  7 B   </TD><TD> 246  </TD><TD> 17 523  </TD></TR><TR><TD>  8 A   </TD><TD> 260  </TD><TD> 18 145  </TD></TR><TR><TD>  8 B   </TD><TD> 335  </TD><TD> 21 480  </TD></TR><TR><TD>  9 A   </TD><TD> 349  </TD><TD> 22 103  </TD></TR><TR><TD>  9 B   </TD><TD> 438  </TD><TD> 26 061  </TD></TR><TR><TD>  10    </TD><TD> 494  </TD><TD> 28 551  </TD></TR><TR><TD>  11    </TD><TD> 550  </TD><TD> 31 042  </TD></TR></TABLE><p></p><p></p>   6. A compter du 1er juillet 2001, les salaires minima mensuels pour 151,67 heures sont calculés à partir de la formule suivante :<p></p> y = a + bx<p></p><p></p>   y : salaire minimum du salarié en fonction de son groupe et de son niveau de classification ;<p></p><p></p>   a : valeur constante correspondant au premier niveau du premier groupe de classification, soit 6 616 F ;<p></p><p></p>   b : nombre de points définis pour chaque groupe et niveau de classification ;<p></p><p></p>   x : valeur du point, soit 44,69 F.<p></p><p></p><TABLE><TR><TD>SALAIRES MINIMA POUR 151,67 HEURES AU 1er JUILLET 2001</TD></TR><TR><TD> GROUPES</TD><TD>POINTS</TD><TD> SALAIRES</TD></TR><TR><TD></TD><TD></TD><TD> MINIMA  </TD></TR><TR><TD></TD><TD></TD><TD> (en fr.)</TD></TR><TR><TD>  1 A   </TD><TD> 0    </TD><TD> 6 616   </TD></TR><TR><TD>  1 B   </TD><TD> 3    </TD><TD> 6 750   </TD></TR><TR><TD>1 C/2 A </TD><TD> 8    </TD><TD> 6 974   </TD></TR><TR><TD>  2 B   </TD><TD> 12   </TD><TD> 7 152   </TD></TR><TR><TD>2 C/3 A </TD><TD> 23   </TD><TD> 7 644   </TD></TR><TR><TD>  3 B   </TD><TD> 28   </TD><TD> 7 867   </TD></TR><TR><TD>3 C/4 A </TD><TD> 46   </TD><TD> 8 672   </TD></TR><TR><TD>  4 B   </TD><TD> 54   </TD><TD> 9 029   </TD></TR><TR><TD>4 C/5 A </TD><TD> 77   </TD><TD> 10 057  </TD></TR><TR><TD>  5 B   </TD><TD> 88   </TD><TD> 10 549  </TD></TR><TR><TD>5 C/6 A </TD><TD> 118  </TD><TD> 11 889  </TD></TR><TR><TD>  6 B   </TD><TD> 132  </TD><TD> 12 515  </TD></TR><TR><TD>  6 C   </TD><TD> 169  </TD><TD> 14 169  </TD></TR><TR><TD>  7 A   </TD><TD> 183  </TD><TD> 14 794  </TD></TR><TR><TD>  7 B   </TD><TD> 246  </TD><TD> 17 610  </TD></TR><TR><TD>  8 A   </TD><TD> 260  </TD><TD> 18 235  </TD></TR><TR><TD>  8 B   </TD><TD> 335  </TD><TD> 21 587  </TD></TR></TABLE><p></p><p></p>   9 A   : 349  : 22 213  :<p></p><TABLE><TR><TD>  9 B   </TD><TD> 438  </TD><TD> 26 190  </TD></TR><TR><TD>  10    </TD><TD> 494  </TD><TD> 28 693  </TD></TR><TR><TD>  11    </TD><TD> 550  </TD><TD> 31 196  </TD></TR></TABLE><p></p> Article 3<p></p>   Les parties signataires s'engagent à se rencontrer au début du 2e trimestre 2001 ainsi qu'au début du 4e trimestre 2001 pour examiner la situation des salaires minima.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2000-10-18 BO conventions collectives 2000-48",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 971827200000,
+                  "dateFin": 988243200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
