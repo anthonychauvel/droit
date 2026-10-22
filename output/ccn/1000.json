@@ -12430,13 +12430,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005728112",
+              "cid": "KALISCTA000005728112",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 1988.",
+              "dateModif": null,
+              "dateDebut": "1988-01-08",
+              "dateFin": "1988-09-03",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005861062",
+                  "cid": "KALIARTI000005861062",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005728112/KALIARTI000005861062",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 1988."
+                  ],
+                  "content": "<p></p>   Les salaires minima de la grille de la convention collective en vigueur au 31 décembre 1987 sont augmentés à compter du 1er janvier 1988 de 2,50 p. 100.<p></p><p></p>   En cet état, la grille des salaires minima s'établit de la manière suivante :<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>    I. - Personnel d'entretien.<p></p><p></p>   COEFFICIENT : 100<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 31 décembre 1987 : S.M.I.C. horaire.<p></p><p></p>   Au 1er janvier 1988 : S.M.I.C. horaire.<p></p><p></p>    CLASSIFICATION :<p></p><p></p>    II. - Personnel d'exécution.<p></p><p></p>   Première catégorie.<p></p><p></p>   COEFFICIENT : 120<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 31 décembre 1987 : 4.799,22 F.<p></p><p></p>   Au 1er janvier 1988 : 4.919,20 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Deuxième catégorie.<p></p><p></p>   COEFFICIENT : 125<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 31 décembre 1987 : 4.841,18 F.<p></p><p></p>   Au 1er janvier 1988 : 4.962,21 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Troisième catégorie.<p></p><p></p>   COEFFICIENT : 130<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 31 décembre 1987 : 4.905,35 F.<p></p><p></p>   Au 1er janvier 1988 : 5.027,98 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Quatrième catégorie.<p></p><p></p>   COEFFICIENT : 135<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 31 décembre 1987 : 4.956,49 F.<p></p><p></p>   Au 1er janvier 1988 : 5.080,40 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Cinquième catégorie.<p></p><p></p>   COEFFICIENT : 160<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 31 décembre 1987 : 5.391,74 F.<p></p><p></p>   Au 1er janvier 1988 : 5.526,53 F.<p></p><p></p>    CLASSIFICATION :<p></p><p></p>    III. - Personnel technicien.<p></p><p></p>   Sixième catégorie.<p></p><p></p>   COEFFICIENT : 185<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 31 décembre 1987 : 5.943,12 F.<p></p><p></p>   Au 1er janvier 1988 : 6.091,70 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Septième catégorie.<p></p><p></p>   COEFFICIENT : 200<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 31 décembre 1987 : 6.297,27 F.<p></p><p></p>   Au 1er janvier 1988 : 6.454,70 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Huitième catégorie.<p></p><p></p>   COEFFICIENT : 210<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 31 décembre 1987 : 6.533,36 F.<p></p><p></p>   Au 1er janvier 1988 : 6.696,69 F.<p></p><p></p>    CLASSIFICATION :<p></p><p></p>    IV. - Personnel cadre.<p></p><p></p>   Neuvième catégorie.<p></p><p></p>   COEFFICIENT : 300<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 31 décembre 1987 : 8.259,97 F.<p></p><p></p>   Au 1er janvier 1988 : 8.466,47 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Dizième catégorie.<p></p><p></p>   COEFFICIENT : 320<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 31 décembre 1987 : 8.692,32 F.<p></p><p></p>   Au 1er janvier 1988 : 8.909,63 F.<p></p><p></p><p></p>   CLASSIFICATION :<p></p><p></p>   Onzième catégorie.<p></p><p></p>   COEFFICIENT : 360<p></p><p></p>   SALAIRE MINIMA : <p></p><p></p>   Au 31 décembre 1987 : 9.557,08 F.<p></p><p></p>   Au 1er janvier 1988 : 9.796,01 F.<p></p><p></p><p></p>   Aucun salaire ne peut être inférieur au S.M.I.C.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 22 1988-01-08 étendu par arrêté du 17 mars 1988 JORF 29 mars 1988",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 568598400000,
+                  "dateFin": 589248000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

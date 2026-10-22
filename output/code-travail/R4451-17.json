@@ -5,8 +5,8 @@
     "id": "LEGIARTI000050927550",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "I.-L'employeur communique les résultats de l'évaluation des risques et des mesurages aux professionnels de santé mentionnés au premier alinéa de l'article L. 4624-1 et au comité social et économique, en particulier lorsqu'ils sont mis à jour au titre de l'article R. 4121-2 . II.-Lorsqu'en dépit des mesures de prévention mises en œuvre en application de la section 5 du présent chapitre, la concentration d'activité du radon provenant du sol demeure supérieure au niveau de référence fixé à l'article R. 4451-10 , l'employeur communique les résultats de ces mesurages à l'Autorité de sûreté nucléaire et de radioprotection, selon les modalités qu'elle a fixées.",
-    "texteHtml": "<p>I.-L'employeur communique les résultats de l'évaluation des risques et des mesurages aux professionnels de santé mentionnés au premier alinéa de l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006903371&dateTexte=&categorieLien=cid\">L. 4624-1 </a>et au comité social et économique, en particulier lorsqu'ils sont mis à jour au titre de l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018488250&dateTexte=&categorieLien=cid\">R. 4121-2</a>.</p><p>II.-Lorsqu'en dépit des mesures de prévention mises en œuvre en application de la section 5 du présent chapitre, la concentration d'activité du radon provenant du sol demeure supérieure au niveau de référence fixé à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018491149&dateTexte=&categorieLien=cid\">R. 4451-10</a>, l'employeur communique les résultats de ces mesurages à l'Autorité de sûreté nucléaire et de radioprotection, selon les modalités qu'elle a fixées.</p>",
+    "texte": "I.-L'employeur communique les résultats de l'évaluation des risques et des mesurages aux professionnels de santé mentionnés au premier alinéa de l'article L. 4624-1 et au comité social et économique, en particulier lorsqu'ils sont mis à jour au titre de l'article R. 4121-2 . II.-Lorsqu'en dépit des mesures de prévention mises en œuvre en application de la section 5 du présent chapitre , la concentration d'activité du radon provenant du sol demeure supérieure au niveau de référence fixé à l'article R. 4451-10 , l'employeur communique les résultats de ces mesurages à l'Autorité de sûreté nucléaire et de radioprotection, selon les modalités qu'elle a fixées.",
+    "texteHtml": "<p>I.-L'employeur communique les résultats de l'évaluation des risques et des mesurages aux professionnels de santé mentionnés au premier alinéa de l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006903371&dateTexte=&categorieLien=cid\">L. 4624-1 </a>et au comité social et économique, en particulier lorsqu'ils sont mis à jour au titre de l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018488250&dateTexte=&categorieLien=cid\">R. 4121-2</a>.</p><p>II.-Lorsqu'en dépit des mesures de prévention mises en œuvre en application de la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000022437487&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 5 : Mesures et moyens de prévention (V)\">section 5 du présent chapitre</a>, la concentration d'activité du radon provenant du sol demeure supérieure au niveau de référence fixé à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018491149&dateTexte=&categorieLien=cid\">R. 4451-10</a>, l'employeur communique les résultats de ces mesurages à l'Autorité de sûreté nucléaire et de radioprotection, selon les modalités qu'elle a fixées.</p>",
     "num": "R4451-17",
     "origine": "LEGI",
     "nature": "Article",
@@ -131,7 +131,7 @@
     "sectionParentId": "LEGISCTA000037024940",
     "sectionParentTitre": "Section 4 : Evaluation des risques",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre IV : Prévention de certains risques d'exposition  &gt; Titre V : Prévention des risques d'exposition aux rayonnements  &gt; Chapitre Ier : Prévention des risques d'exposition aux rayonnements ionisants &gt; Section 4 : Evaluation des risques",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000050927550",
     "idEli": null,
     "idEliAlias": null,
@@ -202,6 +202,19 @@
       },
       {
         "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 5 : Mesures et moyens de prévention (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000022437487",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. L4624-1",
         "linkType": "CITATION",
         "linkOrientation": "source",
@@ -250,7 +263,20 @@
         "parentCid": null,
         "numTexte": "",
         "datePubli": 32472144000000,
-        "dateDebut": 1798761600000
+        "dateDebut": 1830297600000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R4451-139 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R4451-139",
+        "articleId": "LEGIARTI000050927615",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1735689600000
       }
     ],
     "lienConcordes": [

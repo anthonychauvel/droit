@@ -5,8 +5,8 @@
     "id": "LEGIARTI000018530333",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "L'employeur vérifie l'efficacité des mesures prises en application du présent chapitre.",
-    "texteHtml": "<p><br/>L'employeur vérifie l'efficacité des mesures prises en application du présent chapitre.</p>",
+    "texte": "L'employeur vérifie l'efficacité des mesures prises en application du présent chapitre .",
+    "texteHtml": "<p><br/>L'employeur vérifie l'efficacité des mesures prises en application du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018490944&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre IV : Mesures et moyens de prévention (V)\">présent chapitre</a>.</p>",
     "num": "R4434-9",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,7 +95,7 @@
     "sectionParentId": "LEGISCTA000018530339",
     "sectionParentTitre": " Section 2 : Protection individuelle",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre IV : Prévention de certains risques d'exposition  &gt; Titre III : Prévention des risques d'exposition au bruit  &gt; Chapitre IV : Mesures et moyens de prévention &gt;  Section 2 : Protection individuelle",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000018530333",
     "idEli": null,
     "idEliAlias": null,
@@ -150,7 +150,21 @@
         "dateDebutCible": "2008-03-13"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre IV : Mesures et moyens de prévention (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018490944",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Les cabinets d'aisance sont aérés conformément aux règles d'aération et d'assainissement du chapitre II et convenablement chauffés.",
-    "texteHtml": "<p><br/>Les cabinets d'aisance sont aérés conformément aux règles d'aération et d'assainissement du chapitre II et convenablement chauffés.</p>",
+    "texteHtml": "<p><br/>Les cabinets d'aisance sont aérés conformément aux règles d'aération et d'assainissement du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072665&idSectionTA=LEGISCTA000006178622&dateTexte=&categorieLien=cid\" title=\"Code de la santé publique -  Chapitre II : Inscription au tableau de l'ordre... (V)\">chapitre II</a> et convenablement chauffés.</p>",
     "num": "R4228-12",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,7 +104,7 @@
     "sectionParentId": "LEGISCTA000018531984",
     "sectionParentTitre": " Sous-section 4 : Cabinets d'aisance",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre II : Dispositions applicables aux lieux de travail  &gt; Titre II : Obligations de l'employeur pour l'utilisation des lieux de travail  &gt; Chapitre VIII : Installations sanitaires,  restauration et hébergement &gt;  Section 1 : Installations sanitaires &gt;  Sous-section 4 : Cabinets d'aisance",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000018531978",
     "idEli": null,
     "idEliAlias": null,
@@ -172,6 +172,19 @@
         "numTexte": "",
         "datePubli": 32472144000000,
         "dateDebut": 1223856000000
+      },
+      {
+        "textCid": "LEGITEXT000006072665",
+        "textTitle": "Code de la santé publique -  Chapitre II : Inscription au tableau de l'ordre... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178622",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1091923200000
       }
     ],
     "lienConcordes": [
