@@ -5,8 +5,8 @@
     "id": "LEGIARTI000018532533",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un arrêté conjoint des ministres chargés du travail, de l'agriculture et de la construction détermine les prescriptions techniques nécessaires à l'application de la présente section.",
-    "texteHtml": "<p><br/>Un arrêté conjoint des ministres chargés du travail, de l'agriculture et de la construction détermine les prescriptions techniques nécessaires à l'application de la présente section.</p>",
+    "texte": "Un arrêté conjoint des ministres chargés du travail, de l'agriculture et de la construction détermine les prescriptions techniques nécessaires à l'application de la présente section .",
+    "texteHtml": "<p><br/>Un arrêté conjoint des ministres chargés du travail, de l'agriculture et de la construction détermine les prescriptions techniques nécessaires à l'application de la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018488656&dateTexte=&categorieLien=cid\" title=\"Code du travail -   Section 2 : Insonorisation (V)\">présente section</a>.</p>",
     "num": "R4213-6",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000018532537",
     "sectionParentTitre": " Section 2 : Insonorisation",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre II : Dispositions applicables aux lieux de travail  &gt; Titre Ier : Obligations du maître d'ouvrage pour la conception des lieux de travail  &gt; Chapitre III : Eclairage, insonorisation et ambiance thermique &gt;  Section 2 : Insonorisation",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000018532533",
+    "refInjection": "MD-20261013_193346_087_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000018532533",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -150,7 +150,21 @@
         "dateDebutCible": "2008-03-13"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -   Section 2 : Insonorisation (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018488656",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

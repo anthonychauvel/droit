@@ -1,0 +1,69 @@
+name: Aspirateur BOCC (bulletins des conventions collectives)
+
+# Une fois par semaine, le mercredi à 5h07 UTC : récupère les nouveaux
+# bulletins du BOCC (open data DILA), en extrait les textes par convention
+# (IDCC, titre, salaires, montants) dans output/bocc/, et committe.
+# Le tableau de bord les lit au passage de 9h07 le même jour.
+#
+# Minute :07 et pas :00 -- même raison que aspirateur.yml (GitHub peut
+# abandonner en silence un run programmé pile à l'heure ronde).
+on:
+  schedule:
+    - cron: "7 5 * * 3"
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "Nombre maximum de fichiers à télécharger"
+        required: true
+        default: "25"
+      ocr:
+        description: "Lire aussi les PDF scannés (OCR, plus lent)"
+        required: true
+        default: "oui"
+        type: choice
+        options: [oui, non]
+
+permissions:
+  contents: write
+
+# Même groupe que l'aspirateur Légifrance : les deux committent dans output/,
+# ils ne doivent jamais pousser en même temps (cf. échecs git 128 du 27/07).
+concurrency:
+  group: aspirateur-legifrance
+  cancel-in-progress: false
+
+jobs:
+  bocc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Outils PDF (pdftotext, OCR français)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils ocrmypdf tesseract-ocr-fra > /dev/null
+
+      - name: Aspirer les nouveaux bulletins
+        run: |
+          OCR=""
+          [ "${{ github.event.inputs.ocr || 'oui' }}" = "oui" ] && OCR="--ocr"
+          python3 scripts/pull_bocc.py --out output/bocc --max "${{ github.event.inputs.max || '25' }}" $OCR \
+            || { echo "pull_bocc a échoué"; echo "$(date -u +%Y-%m-%dT%H:%MZ) bocc" >> audits/etapes-en-echec.log; }
+
+      - name: Committer
+        run: |
+          git config user.name "Aspirateur Légifrance (bot)"
+          git config user.email "action@github.com"
+          git add output/bocc/ audits/etapes-en-echec.log 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "Aucun nouveau bulletin."
+          else
+            git commit -m "BOCC : nouveaux bulletins ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git pull --rebase --autostash origin main || true
+            git push || (sleep 5 && git pull --rebase --autostash origin main && git push)
+          fi

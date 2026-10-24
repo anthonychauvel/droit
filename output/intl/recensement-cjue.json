@@ -1,9 +1,9 @@
 {
   "source": "CJUE / CELLAR",
   "champ": "Arrets/ordonnances/avis citant les grandes directives sociales UE",
-  "date_recensement": "2026-09-28",
+  "date_recensement": "2026-10-19",
   "methode": "une requete par directive (evite le timeout de la requete combinee)",
-  "total_arrets_uniques": 914,
+  "total_arrets_uniques": 920,
   "par_directive": {
     "32003L0088": 118,
     "31993L0104": 50,
@@ -15,20 +15,20 @@
     "31996L0071": 40,
     "32018L0957": 3,
     "32014L0067": 10,
-    "31998L0059": 36,
-    "32001L0023": 53,
+    "31998L0059": 37,
+    "32001L0023": 55,
     "32002L0014": 20,
     "32009L0038": 2,
     "31994L0033": 2,
     "32008L0094": 26,
-    "32006L0054": 66,
-    "32000L0078": 169,
+    "32006L0054": 67,
+    "32000L0078": 170,
     "32000L0043": 28,
     "32019L1158": 5,
     "31992L0085": 48,
     "32010L0041": 4,
     "31989L0391": 64,
-    "32004R0883": 149,
+    "32004R0883": 150,
     "32009R0987": 61,
     "32023L0970": 0,
     "32024L2831": 0
@@ -3520,6 +3520,10 @@
       "ecli": "ECLI:EU:T:2024:191"
     },
     {
+      "celex": "62023TJ1137",
+      "ecli": "ECLI:EU:T:2026:367"
+    },
+    {
       "celex": "62024CJ0005",
       "ecli": "ECLI:EU:C:2025:689"
     },
@@ -3600,6 +3604,14 @@
       "ecli": "ECLI:EU:C:2025:999"
     },
     {
+      "celex": "62024CJ0312",
+      "ecli": "ECLI:EU:C:2026:449"
+    },
+    {
+      "celex": "62024CJ0350",
+      "ecli": "ECLI:EU:C:2026:407"
+    },
+    {
       "celex": "62024CJ0356",
       "ecli": "ECLI:EU:C:2025:926"
     },
@@ -3644,8 +3656,16 @@
       "ecli": "ECLI:EU:C:2026:60"
     },
     {
+      "celex": "62024CJ0717",
+      "ecli": "ECLI:EU:C:2026:411"
+    },
+    {
       "celex": "62024CJ0757",
       "ecli": "ECLI:EU:C:2026:159"
+    },
+    {
+      "celex": "62024CJ0907",
+      "ecli": "ECLI:EU:C:2026:460"
     },
     {
       "celex": "62024CO0065",
@@ -3686,6 +3706,10 @@
     {
       "celex": "62025CJ0155",
       "ecli": "ECLI:EU:C:2026:405"
+    },
+    {
+      "celex": "62025CJ0216",
+      "ecli": "ECLI:EU:C:2026:483"
     },
     {
       "celex": "62025CO0037",

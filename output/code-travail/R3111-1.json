@@ -5,8 +5,8 @@
     "id": "LEGIARTI000033441856",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "A l'exception du chapitre II du titre III ainsi que des titres VI et VII, le présent livre définit les règles d'ordre public, le champ de la négociation collective et les règles supplétives applicables en l'absence d'accord.",
-    "texteHtml": "<p>A l'exception du chapitre II du titre III ainsi que des titres VI et VII, le présent livre définit les règles d'ordre public, le champ de la négociation collective et les règles supplétives applicables en l'absence d'accord.</p>",
+    "texte": "A l'exception du chapitre II du titre III ainsi que des titres VI et VII , le présent livre définit les règles d'ordre public, le champ de la négociation collective et les règles supplétives applicables en l'absence d'accord.",
+    "texteHtml": "<p>A l'exception du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018486588&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre II : Repos hebdomadaire (V)\">chapitre II du titre III</a> ainsi que des <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018487010&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Titre VI : Dispositions particulières aux jeune... (V)\">titres VI</a> et <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018487064&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Titre VII : Contrôle de la durée du travail et ... (V)\">VII</a>, le <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018486357&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Livre Ier : Durée du travail, repos et congés  (V)\">présent livre</a> définit les règles d'ordre public, le champ de la négociation collective et les règles supplétives applicables en l'absence d'accord.</p>",
     "num": "R3111-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,8 +86,8 @@
     "sectionParentId": "LEGISCTA000033737936",
     "sectionParentTitre": "Chapitre unique",
     "fullSectionsTitre": "Partie réglementaire   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale  &gt; Livre Ier : Durée du travail, repos et congés  &gt; Titre Ier : Champ d'application  &gt; Chapitre unique",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000033441856",
+    "refInjection": "MD-20261014_194635_273_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000033441856",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -141,7 +141,60 @@
         "dateDebutCible": "2017-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre II : Repos hebdomadaire (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018486588",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Livre Ier : Durée du travail, repos et congés  (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018486357",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Titre VI : Dispositions particulières aux jeune... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018487010",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Titre VII : Contrôle de la durée du travail et ... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018487064",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

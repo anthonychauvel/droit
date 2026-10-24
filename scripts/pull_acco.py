@@ -71,14 +71,27 @@ def get_token(token_url, client_id, client_secret):
         "grant_type": "client_credentials", "client_id": client_id,
         "client_secret": client_secret, "scope": "openid",
     }).encode()
-    req = urllib.request.Request(token_url, data=data, method="POST",
-        headers={"Content-Type": "application/x-www-form-urlencoded"})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.loads(resp.read())["access_token"]
-    except urllib.error.HTTPError as e:
-        print(f"ERREUR jeton ({e.code}): {e.read().decode(errors='replace')[:500]}", file=sys.stderr)
-        sys.exit(1)
+    # 30/09/2026 : au renouvellement en cours de run, PISTE a répondu UNE fois
+    # « invalid_client » (400) avec des identifiants valides -- l'étape
+    # suivante s'est connectée sans problème. Sans nouvelle tentative, tout le
+    # JORF du run était perdu. On réessaie donc 4 fois (5 s, 20 s, 60 s) avant
+    # d'abandonner.
+    derniere = ""
+    for i, attente in enumerate((0, 5, 20, 60)):
+        if attente:
+            print(f"    [token] nouvel essai dans {attente} s...", file=sys.stderr)
+            time.sleep(attente)
+        req = urllib.request.Request(token_url, data=data, method="POST",
+            headers={"Content-Type": "application/x-www-form-urlencoded"})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.loads(resp.read())["access_token"]
+        except urllib.error.HTTPError as e:
+            derniere = f"{e.code}: {e.read().decode(errors='replace')[:500]}"
+        except Exception as e:
+            derniere = f"{type(e).__name__}: {e}"
+        print(f"ERREUR jeton (essai {i + 1}/4) {derniere}", file=sys.stderr)
+    sys.exit(1)
 
 
 # Le token PISTE expire (~1h). Sur un run long (plusieurs heures pour couvrir
