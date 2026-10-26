@@ -13103,13 +13103,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005698404",
+              "cid": "KALISCTA000005698404",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Augmentation de salaires au 1er janvier, 1er mai et 1er octobre 1995 dans la presse quotidienne régionale",
+              "dateModif": null,
+              "dateDebut": "1995-03-08",
+              "dateFin": "1996-02-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005786716",
+                  "cid": "KALIARTI000005786716",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005698404/KALIARTI000005786716",
+                  "pathTitle": [
+                    "Augmentation de salaires au 1er janvier, 1er mai et 1er octobre 1995 dans la presse quotidienne régionale"
+                  ],
+                  "content": "<p></p>   1° Un accord de salaires est conclu au titre de l'année 1995 comportant les paliers d'augmentation suivants :<p></p><p></p>   0,2 p. 100 au 1er janvier 1995, déjà perçu ;<p></p><p></p>   1,0 p. 100 au 1er mai 1995 ;<p></p><p></p>   0,4 p. 100 au 1er octobre 1995.<p></p><p></p>   Ce plan salarial tient compte de l'écart pour 1994 entre le plan de salaires et l'évolution des prix (indice I.N.S.E.E. tous ménages hors tabac). Il intègre donc une revalorisation de 0,2 p. 100.<p></p><p></p>   2° Les parties se rencontreront dans la deuxième quinzaine de janvier 1996 pour faire le bilan final du présent accord.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-03-08 BO conventions collectives 95-13",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 794620800000,
+                  "dateFin": 824860800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13123,13 +13197,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005698405",
+              "cid": "KALISCTA000005698405",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Augmentation de salaires au 1er mars 1995.",
+              "dateModif": null,
+              "dateDebut": "1995-03-21",
+              "dateFin": "1996-02-21",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005786717",
+                  "cid": "KALIARTI000005786717",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005698405/KALIARTI000005786717",
+                  "pathTitle": [
+                    "Augmentation de salaires au 1er mars 1995."
+                  ],
+                  "content": "<p></p>   1. Les parties décident d'un premier palier d'augmentation de 1 p. 100 applicable sur les barèmes de salaires à compter du 1er mars 1995 et d'une réunion en septembre 1995 pour décider d'un second palier.<p></p><p></p>   2. Si l'inflation constatée à fin mai 1995 était égale ou supérieure à 0,8 p. 100, la réunion de septembre serait avancée à juillet 1995.<p></p><p></p>   3. Les parties sont convenues de se réunir dans l'année pour réexaminer les grilles de salaires.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-03-21 BO conventions collectives 95-14",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 795744000000,
+                  "dateFin": 824860800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -13143,13 +13291,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005698406",
+              "cid": "KALISCTA000005698406",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires pour l'année 1995 pour le personnel journaliste de la presse quotidienne départementale.",
+              "dateModif": null,
+              "dateDebut": "1995-05-03",
+              "dateFin": "1995-10-05",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005786719",
+                  "cid": "KALIARTI000005786719",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005698406/KALIARTI000005786719",
+                  "pathTitle": [
+                    "Salaires pour l'année 1995 pour le personnel journaliste de la presse quotidienne départementale."
+                  ],
+                  "content": "<p></p>   1. Un accord de salaires est conclu au titre de l'année 1995 comprenant les augmentations suivantes pour le personnel journaliste :<p></p><p></p>   0,1 p. 100 déjà perçu, non appliqué ;<p></p><p></p>   1,0 p. 100 au 1er avril 1995 ;<p></p><p></p>   0,30 p. 100 au 1er septembre 1995 ;<p></p><p></p><p></p>   2. Une rencontre est prévue dans la seconde quinzaine de septembre pour faire le point et ajuster s'il y a lieu le dernier palier de septembre aux éventuels dérapages de l'indice I.N.S.E.E. à la consommation \"ensemble des ménages France - hors tabac\"<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 2 1995-05-03, BO conventions collectives 95-23",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 799459200000,
+                  "dateFin": 812851200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

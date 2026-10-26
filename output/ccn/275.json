@@ -18114,13 +18114,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005732702",
+              "cid": "KALISCTA000005732702",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er avril 1990, au 1er septembre 1990, au 1er décembre 1990.",
+              "dateModif": null,
+              "dateDebut": "1990-04-20",
+              "dateFin": "1992-09-09",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005872388",
+                  "cid": "KALIARTI000005872388",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005732702/KALIARTI000005872388",
+                  "pathTitle": [
+                    "Salaires au 1er avril 1990, au 1er septembre 1990, au 1er décembre 1990."
+                  ],
+                  "content": "Article 1 :<p></p><p></p>   La valeur horaire de 100 points d'indice, pour l'application des coefficients hiérarchiques visés dans les conventions annexes à la convention collective nationale (avenant n° 40 du 23 septembre 1983) est fixée à 18,75 F à compter du 1er avril 1990, à 18,90 F à compter du 1er septembre 1990 et à 19,17 F à compter du 1er décembre 1990.<p></p>Article 2 :<p></p><p></p>   A compter du 1er avril 1990, le salaire minimum mensuel garanti non hiérarchisé, tel qu'il est défini par l'article 1er de l'avenant n° 12 du 25 juin 1973, est fixé à 5 256 F, après deux mois d'ancienneté.<p></p>Article 3 :<p></p><p></p>   Le présent avenant fera l'objet d'un dépôt dans les conditions prévues par l'article L. 132-10 du code du travail et d'une demande d'extension dans les conditions fixées par l'article L. 133-10 dudit code.<p></p><font color=\"808080\"><em>   NOTA : (1) Accord étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : (1) Accord étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 48 1990-04-20 étendu par arrêté du 30 novembre 1990 JORF 14 décembre 1990",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Code du travail L132-10, L133-10",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 640569600000,
+                  "dateFin": 715996800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -18135,12 +18223,77 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005872389",
+              "cid": "KALIARTI000005872389",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005872389",
+              "pathTitle": [],
+              "content": "Article 1er<p></p><p></p>   La valeur horaire de 100 points d'indice, pour l'application des coefficients hiérarchiques visés dans les conventions annexes à la convention collective nationale (avenant n° 40 du 23 septembre 1983) est fixée à 20,07 F à compter du 1er septembre 1992 et à 20,30 F à compter du 1er novembre 1992.<p></p> Article 2<p></p><p></p>   1 Dans le but de simplifier la présentation du calcul des salaires minimaux, le premier alinéa des paragraphes b des articles 2 de la convention annexe \" Agents de maîtrise et techniciens \" du 26 février 1963 et 4 de la convention annexe \" Ouvriers et employés \" (avenant n° 32 du 24 mars 1982) est ainsi modifié :<p></p> \" Les salaires minimaux mensuels correspondent à la durée légale du travail et sont obtenus en multipliant les coefficients hiérarchiques par la valeur du point. \"<p></p><p></p>   Ces dispositions prennent effet au 1er janvier 1993. En conséquence, à cette date, la valeur horaire de 100 points d'indice de 20,30 F sera complétée pour le calcul des salaires minimaux mensuels par une valeur du point fixée à 35,19 F.<p></p><p></p>   2 Le deuxième alinéa du paragraphe b de l'article 2 de la convention annexe \" Cadres \" du 26 juin 1962 est ainsi modifié :<p></p> \" Ces appointements minimaux correspondent à la durée légale du travail et sont obtenus en multipliant les coefficients hiérarchiques par la valeur du point. \"<p></p><p></p>   A compter du 1er janvier 1993, la valeur du point est fixée à 35,19 F.<p></p> Article 3<p></p><p></p>   Le salaire minimum mensuel garanti non hiérarchisé prévu à l'article 6 de la convention collective annexe \" Ouvriers et employés \" est porté à 5850 F à compter du 1er septembre 1992.<p></p> Article 4<p></p><p></p>   Les parties signataires s'engagent à se réunir chaque fois que l'indice officiels des 296 postes (région parisienne) augmentera de 2,5 p.100, l'indice de base étant celui du mois de décembre 1992.<p></p> Article 5<p></p><p></p>   En tout état de cause, les parties conviennent d'engager les négociations sur les salaires pour 1993 au plus tard le 31 janvier 1993.<p></p> Article 6<p></p><p></p>   Le présent avenant fera l'objet d'un dépôt dans les conditions prévues par l'article L.132-10 du code du travail et d'une demande d'extension dans les conditions fixées par l'article L.133-10 dudit code.<p></p>",
+              "nota": null,
+              "comporteLiens": true,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 49 1992-09-09 étendu par arrêté du 27 mai 1993 JORF 8 juin 1993",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [
+                {
+                  "textCid": "",
+                  "textTitle": "Code du travail L132-10, L133-10",
+                  "linkType": "CITATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "parentCid": null,
+                  "numTexte": "",
+                  "datePubli": null,
+                  "dateDebut": null
+                }
+              ],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "SALAIRES",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 715996800000,
+              "dateFin": 765590400000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -18155,12 +18308,63 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005872390",
+              "cid": "KALIARTI000005872390",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005872390",
+              "pathTitle": [],
+              "content": "Article 1er<p></p><p></p>   La valeur du point prévue à l'article 2 de la convention, annexe \"Agents de maîtrise et techniciens\", à l'article 4 de la convention, annexe \"Ouvriers et employés\" et à l'article 2 de la convention, annexe \"Cadres\", est fixée à 35,72 F au 1er avril 1994 et à 35,90 F au 1er septembre 1994.<p></p><p></p>   A ces dates, l'indice de raccordement permettant d'obtenir la valeur de 100 points d'indice servant au calcul de certains éléments de salaire s'établit à 0,5767.<p></p><p></p>Article 2<p></p><p></p>   Le salaire minimum mensuel garanti non hiérarchisé prévu à l'article 6 de la convention annexe \"Ouvriers et employés\" est porté à 6.000 F à compter du 1er avril 1994. Il sera porté à 6.100 F au 1er août 1994.<p></p><p></p>   Il est convenu cependant que ces niveaux ne comprennent pas les majorations au titre de l'ancienneté.<p></p>",
+              "nota": null,
+              "comporteLiens": false,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 52 1994-04-06 BO conventions collectives 94-19 étendu par arrêté du 26 juillet 1994 JORF 6 août 1994",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "SALAIRES",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 765590400000,
+              "dateFin": 794102400000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

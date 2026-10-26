@@ -14422,13 +14422,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705124",
+              "cid": "KALISCTA000005705124",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 2003.",
+              "dateModif": null,
+              "dateDebut": "2002-11-26",
+              "dateFin": "2006-04-28",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005803879",
+                  "cid": "KALIARTI000005803879",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705124/KALIARTI000005803879",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 2003."
+                  ],
+                  "content": "Article 1er<p></p> Grille des salaires au 1er janvier 2003 (base 169 heures)<p></p><p></p> COEFFICIENT hiérarchique : 155<p></p> POSTE : Manutentionnaire en jardinerie/graineterie,<p></p>         Employé de bureau<p></p> VALEUR du point : 7,45<p></p> SALAIRE (en euros) : 1 154,75<p></p> TAUX horaire : 6,83<p></p><p></p> COEFFICIENT hiérarchique : 160<p></p> POSTE : Employé de jardinerie<p></p> Vendeur 1er échelon, Caissier 1er échelon<p></p> VALEUR du point : 7,27<p></p> SALAIRE (en euros) : 1 163,20<p></p> TAUX horaire : 6,88<p></p><p></p> COEFFICIENT hiérarchique : 165<p></p> POSTE : Agent administratif<p></p> VALEUR du point : 7,08<p></p> SALAIRE (en euros) : 1 168,20<p></p> TAUX horaire : 6,91<p></p><p></p> COEFFICIENT hiérarchique : 170<p></p> POSTE : Vendeur 2e échelon, Caissier 2e échelon<p></p> VALEUR du point : 6,90<p></p> SALAIRE (en euros) : 1 173,00<p></p> TAUX horaire : 6,94<p></p><p></p> COEFFICIENT hiérarchique : 175<p></p> POSTE : Secrétaire<p></p> VALEUR du point : 6,72<p></p> SALAIRE (en euros) : 1 176,00<p></p> TAUX horaire : 6,96<p></p><p></p> COEFFICIENT hiérarchique : 180<p></p> POSTE : Vendeur confirmé<p></p> VALEUR du point : 6,72<p></p> SALAIRE (en euros) : 1 209,60<p></p> TAUX horaire : 7,16<p></p><p></p> COEFFICIENT hiérarchique : 190<p></p> POSTE : Responsable de rayons<p></p> VALEUR du point : 6,72<p></p> SALAIRE (en euros) : 1 276,80<p></p> TAUX horaire : 7,56<p></p><p></p> COEFFICIENT hiérarchique : 200<p></p> POSTE : Responsable de secteur<p></p> VALEUR du point : 6,72<p></p>SALAIRE (en euros) : 1 344,00<p></p> TAUX horaire : 7,95<p></p><p></p> COEFFICIENT hiérarchique : 220<p></p> POSTE : Adjoint de direction<p></p> VALEUR du point : 6,72<p></p> SALAIRE (en euros) : 1 478,40<p></p> TAUX horaire : 8,75<p></p><p></p> COEFFICIENT hiérarchique : 260<p></p> POSTE : Responsable de point de vente<p></p> VALEUR du point : 6,72<p></p> SALAIRE (en euros) : 1 747,20<p></p> TAUX horaire : 10,34<p></p><p></p> COEFFICIENT hiérarchique : 350<p></p> POSTE : Directeur<p></p> VALEUR du point : 6,72<p></p> SALAIRE (en euros) : 2 352,00<p></p> TAUX horaire : 13,92<p></p><p></p> COEFFICIENT hiérarchique : 400<p></p> POSTE : Directeur régional<p></p> VALEUR du point : 6,72<p></p> SALAIRE (en euros) : 2 688,00<p></p> TAUX horaire : 15,91<p></p><p></p> Article 2<p></p><p></p>   L'indemnité résiduelle évoquée à l'article 10 de l'accord de branche sur la réduction du temps de travail devra être intégrée au plus tard au 1er janvier 2004 dans le taux horaire.<p></p><p></p>   Les entreprises qui le souhaitent pourront anticiper cette intégration pour tout ou partie avant cette date.<p></p> Article 3<p></p><p></p>   Les parties signataires demanderont l'extension du présent accord.<p></p><p></p>   Fait à Paris, le 26 novembre 2002.<p></p><font color=\"808080\"><em>   NOTA : Arrêté du 11 mars 2003 art. 1 : les dispositions de l'accord du 26 novembre 2002 relatif aux salaires conclu dans le cadre de la convention collective nationale susvisée, sous réserve de l'application des dispositions de l'article L. 212-5 du code du travail.<p></p></em></font>",
+                  "nota": "   NOTA : Arrêté du 11 mars 2003 art. 1 : les dispositions de l'accord du 26 novembre 2002 relatif aux salaires conclu dans le cadre de la convention collective nationale susvisée, sous réserve de l'application des dispositions de l'article L. 212-5 du code du travail.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2002-11-26 BO conventions collectives 2002-51 étendu par arrêté du 11 mars 2003 JORF 22 mars 2003",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1038268800000,
+                  "dateFin": 1146182400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14442,13 +14516,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705125",
+              "cid": "KALISCTA000005705125",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juillet 2006.",
+              "dateModif": null,
+              "dateDebut": "2006-04-28",
+              "dateFin": "2006-09-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005803880",
+                  "cid": "KALIARTI000005803880",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705125/KALIARTI000005803880",
+                  "pathTitle": [
+                    "Salaires au 1er juillet 2006."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Grille des salaires au 1er juillet 2006, base 151,67 heures<p></p><p></p>   (En euros)<p></p><TABLE><TR><TD> COEFFICIENT</TD><TD></TD><TD>  TAUX  </TD><TD> SALAIRE </TD><TD> VALEUR</TD></TR><TR><TD>hiérarchique</TD><TD>       POSTE          </TD><TD>horaire </TD><TD> mensuel </TD><TD>   du  </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>(151h67) </TD><TD> point </TD></TR><TR><TD>    155     </TD><TD> Manutentionnaire en  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>jardinerie/graineterie</TD><TD>  8,19  </TD><TD> 1 242,18</TD><TD>  8,01 </TD></TR><TR><TD></TD><TD> Employé de bureau    </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> Employé de jardinerie</TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>    160     </TD><TD> Vendeur 1er échelon  </TD><TD>  8,20  </TD><TD> 1 243,69</TD><TD>  7,77 </TD></TR><TR><TD></TD><TD> Caissier 1er échelon </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>    165     </TD><TD> Agent administratif  </TD><TD>  8,23  </TD><TD> 1 248,24</TD><TD>  7,57 </TD></TR><TR><TD>    170     </TD><TD> Vendeur 2e échelon   </TD><TD>  8,29  </TD><TD> 1 257,34</TD><TD>  7,40 </TD></TR><TR><TD></TD><TD> Caissier 2e échelon  </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD>    175     </TD><TD> Secrétaire           </TD><TD>  8,32  </TD><TD> 1 261,89</TD><TD>  7,21 </TD></TR><TR><TD>    180     </TD><TD> Vendeur confirmé     </TD><TD>  8,38  </TD><TD> 1 270,99</TD><TD>  7,06 </TD></TR><TR><TD>    190     </TD><TD> Responsable de rayon </TD><TD>  8,84  </TD><TD> 1 340,76</TD><TD>  7,06 </TD></TR><TR><TD>    200     </TD><TD>Responsable de secteur</TD><TD>  9,31  </TD><TD> 1 412,05</TD><TD>  7,06 </TD></TR><TR><TD>    220     </TD><TD> Adjoint de direction </TD><TD> 10,24  </TD><TD> 1 553,10</TD><TD>  7,06 </TD></TR><TR><TD>    260     </TD><TD> Responsable point de </TD><TD></TD><TD></TD><TD></TD></TR><TR><TD></TD><TD> vente                </TD><TD> 12,10  </TD><TD> 1 835,21</TD><TD>  7,06 </TD></TR><TR><TD>    350     </TD><TD> Directeur            </TD><TD> 16,38  </TD><TD> 2 484,35</TD><TD>  7,10 </TD></TR><TR><TD>    400     </TD><TD> Directeur général    </TD><TD> 18,72  </TD><TD> 2 839,26</TD><TD>  7,10 </TD></TR></TABLE><p></p> Article 2<p></p>   Compte tenu des incertitudes de l'évolution du SMIC au 1er juillet 2006, les partenaires sociaux conviennent de se revoir au mois de septembre pour d'éventuelles adaptations par rapport au présent accord. Article 3<p></p>   Les parties signataires demanderont l'extension du présent accord.<p></p>   Fait à Paris, le 28 avril 2006.<font color=\"808080\"><em>   Accord étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimal interprofessionnel de croissance (arrêté du 31 octobre 2006, art. 1er).<p></p></em></font>",
+                  "nota": "   Accord étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimal interprofessionnel de croissance (arrêté du 31 octobre 2006, art. 1er).<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2006-04-28 BO conventions collectives 2006-24 étendu par arrêté du 31 octobre 2006 JORF 10 novembre 2006",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1146182400000,
+                  "dateFin": 1158883200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
