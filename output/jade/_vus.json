@@ -188,7 +188,7 @@
   "CETATEXT000054944248",
   "CETATEXT000054944249"
  ],
- "dernier_passage": "2026-10-20 09:58",
+ "dernier_passage": "2026-10-27 10:23",
  "dernier_mode": "api",
  "archives": {
   "JADE_20250712-211706.tar.gz": {
@@ -1626,6 +1626,36 @@
    "statut": "ok",
    "xml": 0,
    "gardes": 0
+  },
+  "JADE_20261020-214622.tar.gz": {
+   "date": "2026-10-20",
+   "statut": "ok",
+   "xml": 15,
+   "gardes": 1
+  },
+  "JADE_20261021-213023.tar.gz": {
+   "date": "2026-10-21",
+   "statut": "ok",
+   "xml": 40,
+   "gardes": 2
+  },
+  "JADE_20261022-214745.tar.gz": {
+   "date": "2026-10-22",
+   "statut": "ok",
+   "xml": 20,
+   "gardes": 0
+  },
+  "JADE_20261023-215041.tar.gz": {
+   "date": "2026-10-23",
+   "statut": "ok",
+   "xml": 127,
+   "gardes": 19
+  },
+  "JADE_20261024-214209.tar.gz": {
+   "date": "2026-10-24",
+   "statut": "ok",
+   "xml": 28,
+   "gardes": 5
   }
  }
 }
