@@ -14382,13 +14382,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705121",
+              "cid": "KALISCTA000005705121",
+              "intOrdre": 42949,
+              "etat": "REMPLACE",
+              "title": "Salaires au 1er juillet 1997",
+              "dateModif": null,
+              "dateDebut": "1997-08-20",
+              "dateFin": "2001-11-23",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005803877",
+                  "cid": "KALIARTI000005803877",
+                  "intOrdre": 42949,
+                  "etat": "REMPLACE",
+                  "num": null,
+                  "path": "/KALISCTA000005705121/KALIARTI000005803877",
+                  "pathTitle": [
+                    "Salaires au 1er juillet 1997"
+                  ],
+                  "content": "<p>Article 1er</p><p>La grille des salaires minima hiérarchiques est fixée comme suit à compter du 1er juillet 1997 :</p><p><table><tbody><tr><td>Coef </td><td>Rémunération</td></tr><tr><td></td><td>minimale </td></tr><tr><td>155 </td><td>6 522,00 </td></tr><tr><td>160 </td><td>6 611,00 </td></tr><tr><td>165 </td><td>6 707,00 </td></tr><tr><td>170 </td><td>6 910,50 </td></tr><tr><td>175 </td><td>7 113,50 </td></tr><tr><td>180 </td><td>7 317,00 </td></tr><tr><td>190 </td><td>7 723,75 </td></tr><tr><td>200 </td><td>8 130,00 </td></tr><tr><td>220 </td><td>8 943,00 </td></tr><tr><td>260 </td><td>10 560,00 </td></tr><tr><td>350 </td><td>14 255,50 </td></tr><tr><td>400 </td><td>16 292,00 </td></tr></tbody></table></p><p>Article 2</p><p>Le présent avenant ne pourra prendre effet qu'après extension demandée par la fédération patronale dès sa ratification par au moins deux organisations syndicales de salariés.</p><p><font color=\"#808080\" size=\"1\"><em>Arrêté du 8 août 1997 art. 1 : textes étendus sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance.</em></font></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant 1997-05-26 en vigueur à l'extension BO conventions collectives 97-25, étendu par arrêté du 6 août 1997 JORF 20 août 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": null,
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 872035200000,
+                  "dateFin": 1006473600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -14402,13 +14476,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005705123",
+              "cid": "KALISCTA000005705123",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 2000.",
+              "dateModif": null,
+              "dateDebut": "2001-11-23",
+              "dateFin": "2002-11-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005803878",
+                  "cid": "KALIARTI000005803878",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005705123/KALIARTI000005803878",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 2000."
+                  ],
+                  "content": "<p></p>   Préambule<p></p><p></p>   Le présent accord de salaires est le premier depuis la conclusion de l'accord du 2 juin 1999 relatif à la réduction du temps de travail.<p></p><p></p>   La mise en place progressive de l'accord a fait apparaître quelques ambiguïtés d'interprétation et il est apparu nécessaire aux parties de préciser les modalités de mise en oeuvre de son article 10 sur les hausses des salaires ultérieures.<p></p> Article 1er<p></p><p></p>   1.1. L'indemnité de réduction du temps de travail effectif, variable ou non selon la création d'heures d'équivalence, est un droit individuel dont le montant ne peut être remis en cause sauf imputation de la moitié des hausses collectives des salaires minima ou incorporation à l'occasion des augmentations individuelles consenties aux salariés.<p></p><p></p>   1.2. Les mêmes principes s'appliqueront pour les entreprises ayant calculé l'indemnité sur les salaires réels.<p></p><p></p>   1.3. Les entreprises ayant maintenu les salaires par augmentation du taux horaire sans création d'indemnité de réduction du temps de travail sont réputées avoir satisfait aux obligations conventionnelles.<p></p> Article 2<p></p> Grille des salaires au 1er janvier 2000. - Base 169 heures<p></p> (1)   RÉMUNÉRATION minimale (en francs)<p></p> -----------------------------------------------------------------<p></p><TABLE><TR><TD></TD><TD></TD><TD>  VALEUR   </TD><TD></TD></TR><TR><TD>COEF.</TD><TD>          POSTE               </TD><TD> du point  </TD><TD>      (1)     </TD></TR><TR><TD> 155 </TD><TD>Manutentionnaire              </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>en jardinerie/graineterie     </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>Employé de bureau             </TD><TD> 47,70     </TD><TD>     7 393,50 </TD></TR><TR><TD> 160 </TD><TD>Employé de jardinerie         </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>Vendeur 1er échelon           </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>Caissier 1er échelon          </TD><TD> 46,50     </TD><TD>     7 440,00 </TD></TR><TR><TD> 165 </TD><TD>Agent administratif           </TD><TD> 45,35     </TD><TD>     7 482,75 </TD></TR><TR><TD> 170 </TD><TD>Vendeur 2e échelon            </TD><TD></TD><TD></TD></TR><TR><TD></TD><TD>Caissier 2e échelon           </TD><TD> 44,25     </TD><TD>     7 522,50 </TD></TR><TR><TD> 175 </TD><TD>Secrétaire                    </TD><TD> 43,25     </TD><TD>     7 568,75 </TD></TR><TR><TD> 180 </TD><TD>Vendeur confirmé              </TD><TD> 43,25     </TD><TD>     7 785,00 </TD></TR><TR><TD> 190 </TD><TD>Responsable de rayons         </TD><TD> 43,25     </TD><TD>     8 217,50 </TD></TR><TR><TD> 200 </TD><TD>Responsable de secteur        </TD><TD> 43,25     </TD><TD>     8 650,00 </TD></TR><TR><TD> 220 </TD><TD>Adjoint de direction          </TD><TD> 43,25     </TD><TD>     9 515,00 </TD></TR><TR><TD> 260 </TD><TD>Responsable de point de vente </TD><TD> 43,25     </TD><TD>    11 245,00 </TD></TR><TR><TD> 350 </TD><TD>Directeur                     </TD><TD> 43,50     </TD><TD>    15 225,00 </TD></TR><TR><TD> 400 </TD><TD>Directeur régional            </TD><TD> 43,50     </TD><TD>    17 400,00 </TD></TR></TABLE><p></p> ----------------------------------------------------------------- Article 3<p></p>   Le présent accord ne pourra prendre effet qu'après extension demandée par la fédération patronale dès sa ratification par au moins deux organisations syndicales de salariés.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2001-11-23 BO conventions collectives 2002-1 étendu par arrêté du 27 juin 2002 JORF 9 juillet 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1006473600000,
+                  "dateFin": 1038268800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
