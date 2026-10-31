@@ -5,8 +5,8 @@
     "id": "LEGIARTI000018530261",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Lorsque les résultats de l'évaluation des risques mettent en évidence des risques pour la santé ou la sécurité des travailleurs dus aux vibrations mécaniques, l'employeur met en œuvre les mesures prévues aux chapitres II, III et VII ainsi que, sous réserve des prérogatives du médecin du travail, au chapitre VI.",
-    "texteHtml": "<p><br/>Lorsque les résultats de l'évaluation des risques mettent en évidence des risques pour la santé ou la sécurité des travailleurs dus aux vibrations mécaniques, l'employeur met en œuvre les mesures prévues aux chapitres II, III et VII ainsi que, sous réserve des prérogatives du médecin du travail, au chapitre VI.</p>",
+    "texte": "Lorsque les résultats de l'évaluation des risques mettent en évidence des risques pour la santé ou la sécurité des travailleurs dus aux vibrations mécaniques, l'employeur met en œuvre les mesures prévues aux chapitres II , III et VII ainsi que, sous réserve des prérogatives du médecin du travail, au chapitre VI .",
+    "texteHtml": "<p><br/>Lorsque les résultats de l'évaluation des risques mettent en évidence des risques pour la santé ou la sécurité des travailleurs dus aux vibrations mécaniques, l'employeur met en œuvre les mesures prévues aux chapitres <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018491006&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre II : Principes de prévention (V)\">II</a>, <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018491012&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre III : Valeurs limites d'exposition (V)\">III</a> et <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018491119&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre VII : Information et formation des tra... (V)\">VII</a> ainsi que, sous réserve des prérogatives du médecin du travail, au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018491068&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre VI : Suivi individuel de l'état de santé (V)\">chapitre VI</a>.</p>",
     "num": "R4444-6",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,7 +86,7 @@
     "sectionParentId": "LEGISCTA000018530273",
     "sectionParentTitre": "Chapitre IV : Évaluation des risques",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre IV : Prévention de certains risques d'exposition  &gt; Titre IV : Prévention des risques d'exposition aux vibrations mécaniques &gt; Chapitre IV : Évaluation des risques",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000018530261",
     "idEli": null,
     "idEliAlias": null,
@@ -141,7 +141,60 @@
         "dateDebutCible": "2008-03-13"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre II : Principes de prévention (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018491006",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre III : Valeurs limites d'exposition (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018491012",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre VI : Suivi individuel de l'état de santé (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018491068",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre VII : Information et formation des tra... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018491119",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

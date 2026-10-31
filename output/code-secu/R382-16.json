@@ -2,17 +2,17 @@
   "executionTime": 0,
   "dereferenced": false,
   "article": {
-    "id": "LEGIARTI000037854476",
+    "id": "LEGIARTI000054907041",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "L'affiliation, le refus d'affiliation ou la décision de mettre fin à l'affiliation sont notifiés par l'organisme agréé compétent à l'intéressé, à l'organisme en charge du recouvrement mentionné au premier alinéa de l'article L. 382-5 et à la caisse primaire d'assurance maladie dans la circonscription de laquelle se trouve le domicile de chaque intéressé.",
-    "texteHtml": "<p>L'affiliation, le refus d'affiliation ou la décision de mettre fin à l'affiliation sont notifiés par l'organisme agréé compétent à l'intéressé, à l'organisme en charge du recouvrement mentionné au premier alinéa de l'article L. 382-5 et à la caisse primaire d'assurance maladie dans la circonscription de laquelle se trouve le domicile de chaque intéressé.</p>",
+    "texte": "L'affiliation, le refus d'affiliation ou la décision de mettre fin à l'affiliation sont prononcés par l'organisme en charge du recouvrement mentionné au premier alinéa de l'article L. 382-5 et sont notifiés par l'organisme à l'intéressé ainsi qu'à la caisse primaire d'assurance maladie dans la circonscription de laquelle se trouve le domicile de chaque intéressé.",
+    "texteHtml": "<p>L'affiliation, le refus d'affiliation ou la décision de mettre fin à l'affiliation sont prononcés par l'organisme en charge du recouvrement mentionné au premier alinéa de l'article L. 382-5 et sont notifiés par l'organisme à l'intéressé ainsi qu'à la caisse primaire d'assurance maladie dans la circonscription de laquelle se trouve le domicile de chaque intéressé.</p>",
     "num": "R382-16",
     "origine": "LEGI",
     "nature": "Article",
-    "versionArticle": "4.0",
+    "versionArticle": "5.0",
     "etat": "VIGUEUR",
-    "dateDebut": 1546300800000,
+    "dateDebut": 1790467200000,
     "dateFin": 32472144000000,
     "dateDebutExtension": 32472144000000,
     "dateFinExtension": 32472144000000,
@@ -104,8 +104,8 @@
     "sectionParentId": "LEGISCTA000034623023",
     "sectionParentTitre": "Sous-section 3 : Affiliation",
     "fullSectionsTitre": "Partie réglementaire - Décrets en Conseil d'Etat &gt; Livre III : Dispositions relatives aux assurances sociales et à diverses catégories de personnes rattachées au régime général &gt; Titre VIII : Dispositions relatives à diverses catégories de personnes rattachées au régime général - Dispositions d'application du livre 3 &gt; Chapitre 2 : Personnes rattachées au régime général pour l'ensemble des risques &gt; Section 1 : Artistes auteurs &gt; Sous-section 3 : Affiliation",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000037854476",
+    "refInjection": "IG-20261020",
+    "idTechInjection": "LEGIARTI000054907041",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -139,8 +139,8 @@
         "appellations": null
       }
     ],
-    "nota": "",
-    "notaHtml": "",
+    "nota": "Conformément au II de l'article 2 du décret n° 2026-897 du 24 septembre 2026, ces dispositions, dans leur rédaction résultant dudit décret, s'appliquent conformément au IV de l'article 8 de la loi du 30 décembre 2025 de financement de la sécurité sociale pour 2026 susvisée.",
+    "notaHtml": "<p>Conformément au II de l'article 2 du décret n° 2026-897 du 24 septembre 2026, ces dispositions, dans leur rédaction résultant dudit décret, s'appliquent conformément au IV de l'article 8 de la loi du 30 décembre 2025 de financement de la sécurité sociale pour 2026 susvisée.</p>",
     "activitePro": [],
     "numeroBrochure": [],
     "numeroBo": null,
@@ -159,16 +159,16 @@
         "dateDebutCible": "2999-01-01"
       },
       {
-        "textCid": "JORFTEXT000037839141",
-        "textTitle": "Décret n°2018-1185 du 19 décembre 2018 - art. 3",
+        "textCid": "JORFTEXT000054902736",
+        "textTitle": "Décret n°2026-897 du 24 septembre 2026 - art. 1",
         "linkType": "MODIFIE",
         "linkOrientation": "cible",
-        "articleNum": "3",
-        "articleId": "LEGIARTI000037840855",
+        "articleNum": "1",
+        "articleId": "LEGIARTI000054905151",
         "natureText": "DECRET",
-        "datePubliTexte": "2018-12-21",
-        "dateSignaTexte": "2018-12-19",
-        "dateDebutCible": "2018-12-22"
+        "datePubliTexte": "2026-09-26",
+        "dateSignaTexte": "2026-09-24",
+        "dateDebutCible": "2026-09-27"
       }
     ],
     "lienCitations": [
@@ -184,19 +184,6 @@
         "numTexte": "",
         "datePubli": 32472144000000,
         "dateDebut": 528163200000
-      },
-      {
-        "textCid": "LEGITEXT000006073189",
-        "textTitle": "Code de la sécurité sociale. - art. R382-7 (VT)",
-        "linkType": "CITATION",
-        "linkOrientation": "cible",
-        "articleNum": "R382-7",
-        "articleId": "LEGIARTI000026757077",
-        "natureText": "CODE",
-        "parentCid": null,
-        "numTexte": "",
-        "datePubli": 32472144000000,
-        "dateDebut": 1355097600000
       }
     ],
     "lienConcordes": [
@@ -278,9 +265,18 @@
       },
       {
         "id": "LEGIARTI000037854476",
-        "etat": "VIGUEUR",
+        "etat": "MODIFIE",
         "version": "4.0",
         "dateDebut": 1546300800000,
+        "dateFin": 1790467200000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000054907041",
+        "etat": "VIGUEUR",
+        "version": "5.0",
+        "dateDebut": 1790467200000,
         "dateFin": 32472144000000,
         "numero": null,
         "ordre": null
@@ -290,7 +286,7 @@
       "R382-16",
       "382-16"
     ],
-    "versionPrecedente": "LEGIARTI000006749911",
+    "versionPrecedente": "LEGIARTI000037854476",
     "conditionDiffere": null,
     "historique": null,
     "surtitre": null,

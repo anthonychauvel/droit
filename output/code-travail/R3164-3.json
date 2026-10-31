@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Les décrets en Conseil d'Etat nécessaires à l'application des dispositions du présent chapitre sont pris après avis du Conseil d'orientation des conditions de travail.",
-    "texteHtml": "<p>Les décrets en Conseil d'Etat nécessaires à l'application des dispositions du présent chapitre sont pris après avis du Conseil d'orientation des conditions de travail.</p>",
+    "texteHtml": "<p>Les décrets en Conseil d'Etat nécessaires à l'application des dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018487034&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre IV : Repos et congés (V)\">présent chapitre</a> sont pris après avis du Conseil d'orientation des conditions de travail.</p>",
     "num": "R3164-3",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000018534014",
     "sectionParentTitre": "Section 3 : Dispositions communes",
     "fullSectionsTitre": "Partie réglementaire   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale  &gt; Livre Ier : Durée du travail, repos et congés  &gt; Titre VI : Dispositions particulières aux jeunes travailleurs  &gt; Chapitre IV : Repos et congés &gt; Section 3 : Dispositions communes",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000033699340",
+    "refInjection": "MD-20261014_194635_273_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000033699340",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -150,7 +150,21 @@
         "dateDebutCible": "2016-12-25"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre IV : Repos et congés (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018487034",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

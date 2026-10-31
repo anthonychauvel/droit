@@ -104,8 +104,8 @@
     "sectionParentId": "LEGISCTA000053149323",
     "sectionParentTitre": "Section 4 : Egalité d'accès des salariés titulaires d'un mandat électif local",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre Ier : Principes généraux et organisation institutionnelle de la formation et de l'orientation professionnelles  &gt; Titre Ier : Principes généraux  &gt; Chapitre II : Egalité d'accès à la formation &gt; Section 4 : Egalité d'accès des salariés titulaires d'un mandat électif local",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000053149325",
+    "refInjection": "MD-20261007_192038_630_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000053149325",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -159,7 +159,34 @@
         "dateDebutCible": "2025-12-24"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000054956301",
+        "textTitle": "Décret n°2026-929 du 6 octobre 2026 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGITEXT000054957291",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2026-929",
+        "datePubli": 1791331200000,
+        "dateDebut": 1791417600000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. D6112-3 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "D6112-3",
+        "articleId": "LEGIARTI000054957368",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1791417600000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [
