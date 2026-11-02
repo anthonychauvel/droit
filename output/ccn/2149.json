@@ -30747,13 +30747,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005732738",
+              "cid": "KALISCTA000005732738",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juin 2002.",
+              "dateModif": null,
+              "dateDebut": "2002-05-29",
+              "dateFin": "2004-01-29",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005872540",
+                  "cid": "KALIARTI000005872540",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005732738/KALIARTI000005872540",
+                  "pathTitle": [
+                    "Salaires au 1er juin 2002."
+                  ],
+                  "content": "Article 1er <p></p><p></p>L'article 3.6 de la convention collective nationale des activités du déchet du 11 mai 2000 est abrogé et remplacé par les dispositions suivantes : <p></p>Article 3.6 <p></p>Valeur mensuelle du point <p></p><p></p>La valeur mensuelle du point (pour 169 heures) est fixée à 11,48 Euros à compter du 1er juin 2002. <p></p>Article 2 <p></p><p></p>L'article 3.17, paragraphe 3, de la convention collective nationale des activités du déchet du 11 mai 2000 fixant les dispositions applicables pendant la période transitoire est abrogé et remplacé par les dispositions suivantes : <p></p>ANNEXE I <p></p>Valeur mensuelle du point <p></p><p></p>La valeur mensuelle du point visée aux articles 33,34,35 et 43 de la convention collective antérieure est fixée à 6,04 Euros à compter du 1er juin 2002. <p></p>Article 3 <p></p><p></p>Le présent accord est applicable à compter du 1er juin 2002. <p></p><p></p>Dans le cadre du maintien du dialogue social, les parties conviennent de se revoir le 3 octobre 2002 pour de nouvelles négociations salariales. <p></p>Article 4 <p></p><p></p>Le présent accord fera l'objet des formalités de dépôt prévues à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">article L. 132-10 du code du travail</a>, ainsi que d'une demande d'extension. <p></p><font color=\"808080\"><em>NOTA : Arrêté du 5 novembre 2002 : Avenant conclu sous réserve du respect des dispositions réglementaires portant fixation du salaire minimum de croissance.</em></font>",
+                  "nota": "   NOTA : Arrêté du 5 novembre 2002 : Avenant conclu sous réserve du respect des dispositions réglementaires portant fixation du salaire minimum de croissance.",
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 3 2002-05-29 BO conventions collectives 2002-28 étendu par arrêté du 5 novembre 2002 JORF 16 novembre 2002",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-10 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-10",
+                      "articleId": "LEGIARTI000006647014",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRE",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1022630400000,
+                  "dateFin": 1075334400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -30767,13 +30855,114 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005732742",
+              "cid": "KALISCTA000005732742",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Accord portant revalorisation de la valeur du point Valeur du point",
+              "dateModif": null,
+              "dateDebut": "2004-01-29",
+              "dateFin": "2004-12-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005872555",
+                  "cid": "KALIARTI000005872555",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005732742/KALIARTI000005872555",
+                  "pathTitle": [
+                    "Accord portant revalorisation de la valeur du point Valeur du point"
+                  ],
+                  "content": "<p></p>Article 1er <p></p><p></p>Le présent accord s'incrit dans la continuité des négociations menées en 2003 au cours desquelles la commission paritaire a décidé de conserver le mode de calcul du salaire conventionnel existant en revalorisant la valeur du point. <p></p><p></p>Par conséquent, l'article 3.6 de la convention collective nationale des activités du déchet est abrogé et remplacé par les dispositions suivantes : <p></p>Article 3.6 <p></p>Valeur mensuelle du point <p></p><p></p>La valeur mensuelle du point pour 169 heures est fixée à 11,90 Euros à compter du 1er février 2004, soit une augmentation de 3,65 % par rapport au dernier accord portant revalorisation de la valeur du point signé le 29 mai 2002. <p></p><p></p>La valeur du point est fixée à 12 Euros à compter du 1er mai 2004. <p></p>Article 2 <p></p>Clause de revoyure <p></p><p></p>Dans le cadre du maintien du dialogue social, les parties conviennent de se revoir en septembre 2004. <p></p>Article 3 <p></p>Dépôt et publicité <p></p><p></p>Le présent accord fera l'objet d'un dépôt à la direction départementale du travail, de l'emploi et de la formation professionnelle et du secrétariat-greffe du conseil de prud'hommes de Paris dans les conditions définies par l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">article L. 132-10 du code du travail</a>, et d'une demande d'extension dans les conditions fixées par les <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647043&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L133-8 (Ab)\">articles L. 133-8 et suivants du code du travail</a>. <p></p><p></p>Fait à Paris, le 29 janvier 2004. <p></p><font color=\"808080\"><em>NOTA : Arrêté du 16 novembre 2004 : <p></p>Dispositions étendues sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum interprofessionnel de croissance.<p></p></em></font>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 6 2004-01-29 BO conventions collectives 2004-10 étendu par arrêté du 16 novembre 2004 JORF 27 novembre 2004",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-10 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-10",
+                      "articleId": "LEGIARTI000006647014",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    },
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L133-8 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L133-8",
+                      "articleId": "LEGIARTI000006647043",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires.",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1075334400000,
+                  "dateFin": 1103068800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -30787,13 +30976,114 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005732744",
+              "cid": "KALISCTA000005732744",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point à compter du 1er février 2005.",
+              "dateModif": null,
+              "dateDebut": "2004-12-15",
+              "dateFin": "2005-10-07",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005872571",
+                  "cid": "KALIARTI000005872571",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005732744/KALIARTI000005872571",
+                  "pathTitle": [
+                    "Valeur du point à compter du 1er février 2005."
+                  ],
+                  "content": "Article 1er <p></p>Valeur du point <p></p><p></p>L'article 3.6 de la convention collective nationale des activités du déchet est abrogé et remplacé par les dispositions suivantes : <p></p>Article 3.6 <p></p>Valeur mensuelle du point <p></p><p></p>La valeur mensuelle du point pour 169 heures est fixée à 12,24 Euros à compter du 1er février 2005. <p></p>Article 2 <p></p>Clause de revoyure <p></p><p></p>Dans le cadre du maintien du dialogue social, les parties conviennent de se revoir en juillet 2005. <p></p>Article 3 <p></p>Dépôt et publicité <p></p><p></p>Le présent accord fera l'objet d'un dépôt à la direction départementale du travail, de l'emploi et de la formation professionnelle et du secrétariat-greffe du conseil de prud'hommes de Paris dans les conditions définies par l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647014&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-10 (Ab)\">article L. 132-10 du code du travail </a>et d'une demande d'extension dans les conditions fixées par les <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006647043&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L133-8 (Ab)\">articles L. 133-8 et suivants du code du travail</a>. <p></p><p></p>Fait à Paris, le 15 décembre 2004.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 9 2004-12-15 BO conventions collectives 2005-10 étendu par arrêté du 30 juin 2005 JORF 30 juillet 2005",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-10 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-10",
+                      "articleId": "LEGIARTI000006647014",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    },
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L133-8 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L133-8",
+                      "articleId": "LEGIARTI000006647043",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 122860800000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1103068800000,
+                  "dateFin": 1128643200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

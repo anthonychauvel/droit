@@ -24695,13 +24695,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718777",
+              "cid": "KALISCTA000005718777",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juin 1989.",
+              "dateModif": null,
+              "dateDebut": "1989-05-17",
+              "dateFin": "1989-09-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005838137",
+                  "cid": "KALIARTI000005838137",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718777/KALIARTI000005838137",
+                  "pathTitle": [
+                    "Salaires au 1er juin 1989."
+                  ],
+                  "content": "<p></p>   Les organisations professionnelles signataires conviennent d'augmenter de 1 p. 100 à compter du 1er juin 1989, les salaires de la convention collective applicables depuis le 1er février 1989 suivant l'accord de salaires du 25 janvier 1989.<p></p><p></p>Nouvelle valeur du point : 30,23 F ;<p></p> Date d'application : 1er juin 1989 ;<p></p> Hausse sur la grille au 1er février 1989 : 1 p. 100.<p></p> OUVRIERS, VENDEURS, CAISSIERS <p></p> BOUCHERS :<p></p> Ouvrier boucher premier échelon <p></p> CODE : OA<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5038<p></p><p></p> Ouvrier boucher tripier deuxième échelon <p></p> CODE : OAC<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5340<p></p><p></p> Ouvrier boucher volailler-gibier deuxième échelon <p></p> CODE : OAD<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5340<p></p><p></p> Ouvrier boucher charcutier<p></p> CODE : OACH<p></p> COEFFICIENT : 130<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5945<p></p><p></p> Ouvrier boucher qualifié<p></p> CODE : OQ<p></p> COEFFICIENT : 130<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5945<p></p><p></p> Ouvrier boucher hautement qualifié<p></p> CODE : OHQ<p></p> COEFFICIENT : 150<p></p> SALAIRE mensuel pour 169 heures (en francs) : 6549<p></p><p></p> BOUCHERS HIPPOPHAGIQUES<p></p> Ouvrier boucher hippophagique premier échelon<p></p> CODE : OB<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5038<p></p><p></p> Ouvrier boucher hippophagique tripier deuxième échelon<p></p> CODE : OBC<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5340<p></p><p></p>Ouvrier boucher hippophagique volailler-gibier deuxième échelon<p></p> CODE : OBD<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5340<p></p><p></p> TRIPIERS<p></p> Ouvrier tripier premier échelon<p></p> CODE : OC1<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5038<p></p><p></p> Ouvrier tripier deuxième échelon<p></p> CODE : OC2<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5340<p></p><p></p> Ouvrier tripier qualifié<p></p> CODE : OCQ<p></p> COEFFICIENT : 120<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5643<p></p><p></p> Ouvrier tripier hautement qualifié<p></p> CODE : OCHQ<p></p> COEFFICIENT : 125<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5794<p></p><p></p> VOLAILLERS, GIBIERS<p></p> Ouvrier volailler gibier premier échelon<p></p> CODE : OD<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5038<p></p><p></p> VENDEURS(SES)<p></p> Premier échelon<p></p> CODE : V1<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5038<p></p><p></p> Deuxième échelon<p></p> CODE : V2<p></p> COEFFICIENT : 120<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5643<p></p><p></p>CAISSIERS(ERES)<p></p> Caissier(ère) qualifié(e)<p></p> CODE : CQ<p></p> COEFFICIENT : 105<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5189<p></p><p></p> Caissier(ère) hautement qualifié(e)<p></p> CODE : CHQ<p></p> COEFFICIENT : 130<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5945<p></p><p></p> AGENTS DE MAITRISE, CADRES<p></p> AGENTS DE MAITRISE<p></p> Premier échelon<p></p> CODE : AM1<p></p> COEFFICIENT : 165<p></p> SALAIRE mensuel pour 169 heures (en francs) : 7003<p></p><p></p> Deuxième échelon<p></p> CODE : AM2<p></p> COEFFICIENT : 180<p></p> SALAIRE mensuel pour 169 heures (en francs) : 7456<p></p><p></p> CADRES (1)<p></p> Premier échelon <p></p> CODE : Cd1<p></p> COEFFICIENT : 230<p></p> SALAIRE mensuel pour 169 heures (en francs) : 8968<p></p><p></p> Deuxième échelon <p></p> CODE : Cd2<p></p> COEFFICIENT : 260<p></p> SALAIRE mensuel pour 169 heures (en francs) : 9875<p></p><p></p> (1) Rappel de l'article 18 bis de la convention nationale :<p></p><p></p>   \"Dans le contrat de travail individuel des cadres qui exercent des fonctions de responsabilité et bénéficient d'une large indépendance dans l'organisation de leur travail, la rémunération peut comprendre, forfaitairement ou sous forme d'intéressement à l'activité de l'entreprise, les dépassements d'horaire\".<p></p><font color=\"808080\"><em>Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.</em></font>",
+                  "nota": "Etendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 25 1989-05-17 étendu par arrêté du 18 septembre 1989 JORF 27 septembre 1989",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II, SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 611366400000,
+                  "dateFin": 621043200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -24715,13 +24789,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718778",
+              "cid": "KALISCTA000005718778",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er octobre 1989.",
+              "dateModif": null,
+              "dateDebut": "1989-09-06",
+              "dateFin": "1990-09-12",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005838138",
+                  "cid": "KALIARTI000005838138",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718778/KALIARTI000005838138",
+                  "pathTitle": [
+                    "Salaires au 1er octobre 1989."
+                  ],
+                  "content": "<p></p>   Les organisations professionnelles signataires conviennent d'augmenter de 1,5 p. 100 à compter du 1er octobre 1989, les salaires de la convention collective applicables depuis le 1er juin 1989 suivant l'accord de salaires du 17 mai 1989.<p></p><p></p>Nouvelle valeur du point : 30,68 F ;<p></p> Date d'application : 1er octobre 1989 ;<p></p> Hausse sur la grille fixée au 1er juin 1989 : + 1,5 p. 100.<p></p> OUVRIERS, VENDEURS, CAISSIERS <p></p> BOUCHERS :<p></p> Ouvrier boucher premier échelon <p></p> CODE : OA<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5114<p></p><p></p> Ouvrier boucher tripier deuxième échelon <p></p> CODE : OAC<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5421<p></p><p></p> Ouvrier boucher volailler-gibier deuxième échelon <p></p> CODE : OAD<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5421<p></p><p></p> Ouvrier boucher charcutier<p></p> CODE : OACH<p></p> COEFFICIENT : 130<p></p> SALAIRE mensuel pour 169 heures (en francs) : 6034<p></p><p></p> Ouvrier boucher qualifié<p></p> CODE : OQ<p></p> COEFFICIENT : 130<p></p> SALAIRE mensuel pour 169 heures (en francs) : 6034<p></p><p></p> Ouvrier boucher hautement qualifié<p></p> CODE : OHQ<p></p> COEFFICIENT : 150<p></p> SALAIRE mensuel pour 169 heures (en francs) : 6648<p></p><p></p> BOUCHERS HIPPOPHAGIQUES<p></p> Ouvrier boucher hippophagique premier échelon<p></p> CODE : OB<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5114<p></p><p></p> Ouvrier boucher hippophagique tripier deuxième échelon<p></p> CODE : OBC<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5421<p></p><p></p>Ouvrier boucher hippophagique volailler-gibier deuxième échelon<p></p> CODE : OBD<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5421<p></p><p></p> TRIPIERS<p></p> Ouvrier tripier premier échelon<p></p> CODE : OC1<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5114<p></p><p></p> Ouvrier tripier deuxième échelon<p></p> CODE : OC2<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5421<p></p><p></p> Ouvrier tripier qualifié<p></p> CODE : OCQ<p></p> COEFFICIENT : 120<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5728<p></p><p></p> Ouvrier tripier hautement qualifié<p></p> CODE : OCHQ<p></p> COEFFICIENT : 125<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5881<p></p><p></p> VOLAILLERS, GIBIERS<p></p> Ouvrier volailler gibier premier échelon<p></p> CODE : OD<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5114<p></p><p></p> VENDEURS(SES)<p></p> Premier échelon<p></p> CODE : V1<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5114<p></p><p></p> Deuxième échelon<p></p> CODE : V2<p></p> COEFFICIENT : 120<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5728<p></p><p></p>CAISSIERS(ERES)<p></p> Caissier(ère) qualifié(e)<p></p> CODE : CQ<p></p> COEFFICIENT : 105<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5267<p></p><p></p> Caissier(ère) hautement qualifié(e)<p></p> CODE : CHQ<p></p> COEFFICIENT : 130<p></p> SALAIRE mensuel pour 169 heures (en francs) : 6034<p></p><p></p> AGENTS DE MAITRISE, CADRES<p></p> AGENTS DE MAITRISE<p></p> Premier échelon<p></p> CODE : AM1<p></p> COEFFICIENT : 165<p></p> SALAIRE mensuel pour 169 heures (en francs) : 7108<p></p><p></p> Deuxième échelon<p></p> CODE : AM2<p></p> COEFFICIENT : 180<p></p> SALAIRE mensuel pour 169 heures (en francs) : 7568<p></p><p></p> CADRES (1)<p></p> Premier échelon <p></p> CODE : Cd1<p></p> COEFFICIENT : 230<p></p> SALAIRE mensuel pour 169 heures (en francs) : 9102<p></p><p></p> Deuxième échelon <p></p> CODE : Cd2<p></p> COEFFICIENT : 260<p></p> SALAIRE mensuel pour 169 heures (en francs) : 10023<p></p><p></p><p></p>   (1) Rappel de l'article 18 bis de la convention collective nationale :<p></p><p></p>   \"Dans le contrat de travail individuel des cadres qui exercent des fonctions de responsabilité et bénéficient d'une large indépendance dans l'organisation de leur travail, la rémunération peut comprendre, forfaitairement ou sous forme d'intéressement à l'activité de l'entreprise, les dépassements d'horaire\".<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 26 1989-09-06 étendu par arrêté du 14 décembre 1989 JORF 27 décembre 1989",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II, SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 621043200000,
+                  "dateFin": 653097600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -24806,13 +24954,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005718779",
+              "cid": "KALISCTA000005718779",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er octobre 1990.",
+              "dateModif": null,
+              "dateDebut": "1990-09-12",
+              "dateFin": "1993-10-27",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005838140",
+                  "cid": "KALIARTI000005838140",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005718779/KALIARTI000005838140",
+                  "pathTitle": [
+                    "Salaires au 1er octobre 1990."
+                  ],
+                  "content": "<p></p>   Les organisations signataires conviennent d'augmenter de 3,03 p. 100 à compter du 1er octobre 1990 les salaires de la convention collective applicables depuis le 1er octobre 1990 suivant l'accord de salaires du 6 septembre 1989.<p></p> Nouvelle valeur du point : 31,61 F ;<p></p> Date d'application : 1er octobre 1990 ;<p></p> Hausse sur la grille fixée au 1er juin 1990 : + 1,5 p. 100.<p></p> OUVRIERS<p></p> BOUCHERS :<p></p> Ouvrier boucher premier échelon <p></p> CODE : OA<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5269<p></p><p></p> Ouvrier boucher tripier deuxième échelon <p></p> CODE : OAC<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5585<p></p><p></p> Ouvrier boucher volailler-gibier deuxième échelon <p></p> CODE : OAD<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5585<p></p><p></p> Ouvrier boucher charcutier<p></p> CODE : OACH<p></p> COEFFICIENT : 135<p></p> SALAIRE mensuel pour 169 heures (en francs) : 6375<p></p><p></p> Ouvrier boucher qualifié<p></p> CODE : OQ<p></p>COEFFICIENT : 135<p></p> SALAIRE mensuel pour 169 heures (en francs) : 6375<p></p><p></p> Ouvrier boucher hautement qualifié<p></p> CODE : OHQ<p></p> COEFFICIENT : 155<p></p> SALAIRE mensuel pour 169 heures (en francs) : 7008<p></p><p></p> CHARCUTIERS :<p></p> Ouvrier charcutier premier échelon <p></p> CODE : OCH<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5269(1)<p></p><p></p> Ouvrier boucher charcutier <p></p> CODE : OACH<p></p> COEFFICIENT : 135<p></p> SALAIRE mensuel pour 169 heures (en francs) : 6375<p></p><p></p> Ouvrier charcutier qualifié<p></p> CODE : OCHQ<p></p> COEFFICIENT : 135<p></p> SALAIRE mensuel pour 169 heures (en francs) : 6375<p></p><p></p> Ouvrier charcutier traiteur<p></p> CODE : OCHT<p></p> COEFFICIENT : 135<p></p> SALAIRE mensuel pour 169 heures (en francs) : 6375<p></p><p></p> Ouvrier charcutier traiteur hautement qualifié<p></p> CODE : OCHTHQ<p></p> COEFFICIENT : 155<p></p> SALAIRE mensuel pour 169 heures (en francs) : 7008<p></p><p></p> BOUCHERS HIPPOPHAGIQUES<p></p> Ouvrier boucher hippophagique premier échelon<p></p> CODE : OB<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5269(1)<p></p><p></p> Ouvrier boucher hippophagique tripier deuxième échelon<p></p> CODE : OBC<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5585<p></p><p></p>Ouvrier boucher hippophagique volailler-gibier deuxième échelon<p></p> CODE : OBD<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5585<p></p><p></p> TRIPIERS<p></p> Ouvrier tripier premier échelon<p></p> CODE : OC1<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5269(1)<p></p><p></p> Ouvrier tripier deuxième échelon<p></p> CODE : OC2<p></p> COEFFICIENT : 110<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5585<p></p><p></p> Ouvrier tripier qualifié<p></p> CODE : OCQ<p></p> COEFFICIENT : 120<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5901<p></p><p></p> Ouvrier tripier hautement qualifié<p></p> CODE : OCHQ<p></p> COEFFICIENT : 125<p></p> SALAIRE mensuel pour 169 heures (en francs) : 6059<p></p><p></p> VOLAILLERS, GIBIERS<p></p> Ouvrier volailler gibier premier échelon<p></p> CODE : OD<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5269(1)<p></p><p></p> VENDEURS(SES)<p></p> Premier échelon<p></p> CODE : V1<p></p> COEFFICIENT : 100<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5269(1)<p></p><p></p> Deuxième échelon<p></p> CODE : V2<p></p> COEFFICIENT : 120<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5901<p></p><p></p>CAISSIERS(ERES)<p></p> Caissier(ère) qualifié(e)<p></p> CODE : CQ<p></p> COEFFICIENT : 105<p></p> SALAIRE mensuel pour 169 heures (en francs) : 5427(1)<p></p><p></p> Caissier(ère) hautement qualifié(e)<p></p> CODE : CHQ<p></p> COEFFICIENT : 130<p></p> SALAIRE mensuel pour 169 heures (en francs) : 6217<p></p><p></p> AGENTS DE MAITRISE<p></p> Premier échelon<p></p> CODE : AM1<p></p> COEFFICIENT : 165<p></p> SALAIRE mensuel pour 169 heures (en francs) : 7324(1)<p></p><p></p> Deuxième échelon<p></p> CODE : AM2<p></p> COEFFICIENT : 180<p></p> SALAIRE mensuel pour 169 heures (en francs) : 7798<p></p><p></p> CADRES<p></p> Premier échelon <p></p> CODE : CD1<p></p> COEFFICIENT : 230<p></p> SALAIRE mensuel pour 169 heures (en francs) : 9378(1)<p></p><p></p> Deuxième échelon <p></p> CODE : CD2<p></p> COEFFICIENT : 260<p></p> SALAIRE mensuel pour 169 heures (en francs) : 10327<p></p><p></p><p></p>   (1)Salaire mensuel pour 169 heures de travail.<p></p><p></p>   (2)Dans le contrat de travail individuel des cadres qui exercent des fonctions de responsabilité et bénéficient d'une large indépendance dans l'organisation de leur travail, la rémunération peut comprendre, forfaitairement ou sous forme d'intéressement à l'activité de l'entreprise, les dépassements d'horaire.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 30 1990-09-12 étendu par arrêté du 1er février 1991 JORF 17 février 1991",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Annexe II, SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 653097600000,
+                  "dateFin": 751680000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

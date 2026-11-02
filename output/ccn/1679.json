@@ -15240,13 +15240,114 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005700609",
+              "cid": "KALISCTA000005700609",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Rémunérations pour 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-01-01",
+              "dateFin": "1998-04-27",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005793078",
+                  "cid": "KALIARTI000005793078",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005700609/KALIARTI000005793078",
+                  "pathTitle": [
+                    "Rémunérations pour 1997."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Dans le cadre de l'article 29 a de la convention collective nationale du 27 juillet 1992, le barème des rémunérations minimales annuelles (RMA) prévu à l'annexe II de ladite convention est fixé, à effet du 1er janvier 1997, conformément au tableau joint au présent accord, annexe A.<p></p>Article 2<p></p><p></p>   Pour l'application de l'article 4-1 du protocole d'accord du 27 juillet 1992 sur la transition \" Maintien transitoire du mécanisme de la prime d'ancienneté \", le barème des rémunérations minimales précédemment prévu à l'annexe V de la convention collective du 5 juin 1967 \" Inspecteurs commissionnés \" s'établit conformément à l'annexe B du présent accord.<p></p> Article 3<p></p><p></p>   Le présent accord ne concerne pas les inspecteurs qui ne sont plus en fonctions dans les entreprises à la date de sa signature.<p></p> ANNEXE A<p></p> Rémunérations minimales annuelles<p></p> (A effet du 1er janvier 1997)<p></p><TABLE><TR><TD>  CLASSE  </TD><TD> MONTANT (en francs)</TD></TR><TR><TD>    5     </TD><TD>  153 200           </TD></TR><TR><TD>    6     </TD><TD>  202 000           </TD></TR><TR><TD>    7     </TD><TD>  282 500           </TD></TR></TABLE><p></p><p></p> ANNEXE B<p></p> Inspecteurs commissionnés<p></p> Assiette de calcul de la prime d'ancienneté maintenue (Application de l'article 4-1 du protocole d'accord du 27 juillet 1992 sur la transition)<p></p> Année 1997<p></p><TABLE><TR><TD> ECHELON  </TD><TD> MONTANT (en francs)</TD></TR><TR><TD>   1er    </TD><TD>       89 620       </TD></TR><TR><TD>   2e     </TD><TD>      116 520       </TD></TR><TR><TD>   3e     </TD><TD>      138 920       </TD></TR><TR><TD>   4e     </TD><TD>      152 360       </TD></TR><TR><TD>   5e     </TD><TD>      165 810       </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1997-06-16 en vigueur le 1er janvier 1997 BO conventions collectives 97-33",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Convention collective 1967-06-05 annexe V",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    },
+                    {
+                      "textCid": "",
+                      "textTitle": "Protocole d'accord 1992-07-27 art. 4.1",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": null,
+                      "dateDebut": null
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 852076800000,
+                  "dateFin": 893635200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -15260,13 +15361,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005700610",
+              "cid": "KALISCTA000005700610",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Rémunérations pour 1998",
+              "dateModif": null,
+              "dateDebut": "1998-04-27",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005793079",
+                  "cid": "KALIARTI000005793079",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005700610/KALIARTI000005793079",
+                  "pathTitle": [
+                    "Rémunérations pour 1998"
+                  ],
+                  "content": "<p></p>   1. Dans le cadre de l'article 29 a de la convention collective nationale du 27 juillet 1992, le barème des rémunérations minimales annuelles (RMA) prévu à l'annexe II de ladite convention est fixé à effet du 1er janvier 1998 conformément au tableau joint au présent accord (annexe A) ;<p></p><p></p>   2. Pour l'application de l'article 4-1 du protocole d'accord du 27 juillet 1992 sur la transition (maintien transitoire du mécanisme de la prime d'ancienneté), le barème des rémunérations minimales précédemment prévu par l'annexe V à la convention collective du 5 juin 1967 (inspecteurs commissionnés) s'établit conformément à l'annexe B du présent accord ;<p></p><p></p>   3. Le présent accord ne concerne pas les inspecteurs qui ne sont plus en fonction dans les entreprises à la date de sa signature.<p></p> ANNEXE A<p></p> Rémunérations minimales annuelles<p></p> A effet du 1er janvier 1998<p></p><p></p><TABLE><TR><TD>  CLASSE  </TD><TD> MONTANT (en francs)</TD></TR><TR><TD>    5     </TD><TD>  154 800           </TD></TR><TR><TD>    6     </TD><TD>  204 100           </TD></TR><TR><TD>    7     </TD><TD>  285 400           </TD></TR></TABLE><p></p><p></p> ANNEXE B<p></p> Inspecteurs commissionnés<p></p> Assiette de calcul de la prime d'ancienneté maintenue<p></p> Application de l'article 4.1<p></p> du protocole d'accord du 27 juillet 1992 sur la transition<p></p> ANNÉE 1998<p></p><TABLE><TR><TD> ECHELON  </TD><TD> MONTANT (en francs)</TD></TR><TR><TD>   1er    </TD><TD>       90 520       </TD></TR><TR><TD>   2e     </TD><TD>      117 690       </TD></TR><TR><TD>   3e     </TD><TD>      140 310       </TD></TR><TR><TD>   4e     </TD><TD>      153 880       </TD></TR><TR><TD>   5e     </TD><TD>      167 470       </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1998-04-27 BO conventions collectives 98-33",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 893635200000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -15280,13 +15455,101 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005700611",
+              "cid": "KALISCTA000005700611",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_NON_ETEN",
+              "title": "Rémunérations au 1er janvier 2002",
+              "dateModif": null,
+              "dateDebut": "2002-10-11",
+              "dateFin": "2999-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005793080",
+                  "cid": "KALIARTI000005793080",
+                  "intOrdre": 42949,
+                  "etat": "VIGUEUR_NON_ETEN",
+                  "num": null,
+                  "path": "/KALISCTA000005700611/KALIARTI000005793080",
+                  "pathTitle": [
+                    "Rémunérations au 1er janvier 2002"
+                  ],
+                  "content": "<p></p>1. Dans le cadre de l'article 29 a de la convention collective nationale de l'inspection d'assurance du 27 juillet 1992, le barème des rémunérations minimales annuelles (RMA) prévu à l'annexe II de ladite convention est fixé, à effet du 1er janvier 2002, conformément au tableau joint au présent accord. <p></p><p></p>2. Le barème des rémunérations minimales annuelles (RMA) fixé au 1 ci-dessus est applicable dans les entreprises indépendamment du contenu et des résultats, quels qu'ils soient, des négociations d'entreprise sur les salaires effectifs prévues par l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006646422&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L132-27 (Ab)\">article L. 132-27 du code du travail</a>. <p></p><p></p>Cette mise en application s'effectue dans les conditions prévues par les articles 29 et 30 de la convention collective nationale du 27 juillet 1992.<p></p><p></p>3. Le présent accord ne concerne pas les inspecteurs qui ne sont plus en fonction dans les entreprises à la date de sa signature. <p></p><p></p>ANNEXE au protocole d'accord du 11 octobre 2002 <p></p><p></p>Rémunérations minimales annuelles à effet du 1er janvier 2002. <p></p><p></p><p></p>CLASSE : 5 <p></p><p></p>MONTANT EN EUROS : 24.690. <p></p><p></p><p></p>CLASSE : 6 <p></p><p></p>MONTANT EN EUROS : 32.550. <p></p><p></p><p></p>CLASSE : 7 <p></p><p></p>MONTANT EN EUROS : 45.510.<p></p>",
+                  "nota": null,
+                  "comporteLiens": true,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 2002-10-11 BO conventions collectives 2003-12",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [
+                    {
+                      "textCid": "LEGITEXT000006072050",
+                      "textTitle": "Code du travail - art. L132-27 (Ab)",
+                      "linkType": "CITATION",
+                      "linkOrientation": "source",
+                      "articleNum": "L132-27",
+                      "articleId": "LEGIARTI000006646422",
+                      "natureText": "CODE",
+                      "parentCid": null,
+                      "numTexte": "",
+                      "datePubli": 32472144000000,
+                      "dateDebut": 406080000000
+                    }
+                  ],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": "",
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1034294400000,
+                  "dateFin": 32472144000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

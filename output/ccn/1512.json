@@ -6284,13 +6284,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727863",
+              "cid": "KALISCTA000005727863",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point au 1er janvier 1999.",
+              "dateModif": null,
+              "dateDebut": "1999-01-04",
+              "dateFin": "2000-08-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005860353",
+                  "cid": "KALIARTI000005860353",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727863/KALIARTI000005860353",
+                  "pathTitle": [
+                    "Valeur du point au 1er janvier 1999."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   1.1. A compter du 1er janvier 1999, la valeur de point multipliée par le coefficient 100 est augmentée de 1,5 % par rapport à sa dernière valeur fixée en janvier 1998 : elle est donc portée à 66,00 francs.<p></p><p></p>   1.2. La nouvelle grille de salaires minima résultant de cette augmentation est la suivante :<p></p><p></p>   Première valeur de point : 66,00.<p></p><p></p>   Deuxième valeur de point : 18,04.<p></p><p></p><p></p> (1)   échelon<p></p><p></p> (2)   mensuel minimal coefficient 100 (en francs)<p></p><p></p> (3)   COMPLEMENT de salaire (en francs)<p></p><p></p> (4)   TOTAL (en francs)<p></p><TABLE><TR><TD>NIV</TD><TD>COEF</TD><TD>SALAIRE</TD><TD>   (3)  </TD><TD>  (4)   </TD></TR><TR><TD>(1)</TD><TD></TD><TD>  (2)  </TD><TD></TD><TD></TD></TR><TR><TD>1.1</TD><TD>100 </TD><TD>6 600  </TD><TD>      0 </TD><TD>  6 600 </TD></TR><TR><TD>1.2</TD><TD>110 </TD><TD>6 600  </TD><TD>    180 </TD><TD>  6 780 </TD></TR><TR><TD>2.1</TD><TD>123 </TD><TD>6 600  </TD><TD>    415 </TD><TD>  7 015 </TD></TR><TR><TD>2.2</TD><TD>143 </TD><TD>6 600  </TD><TD>    776 </TD><TD>  7 376 </TD></TR><TR><TD>2.3</TD><TD>163 </TD><TD>6 600  </TD><TD>  1 137 </TD><TD>  7 737 </TD></TR><TR><TD>3.1</TD><TD>176 </TD><TD>6 600  </TD><TD>  1 371 </TD><TD>  7 971 </TD></TR><TR><TD>3.2</TD><TD>203 </TD><TD>6 600  </TD><TD>  1 858 </TD><TD>  8 458 </TD></TR><TR><TD>4.1</TD><TD>300 </TD><TD>6 600  </TD><TD>  3 608 </TD><TD> 10 208 </TD></TR><TR><TD>4.2</TD><TD>390 </TD><TD>6 600  </TD><TD>  5 232 </TD><TD> 11 832 </TD></TR><TR><TD>5.1</TD><TD>457 </TD><TD>6 600  </TD><TD>  6 440 </TD><TD> 13 040 </TD></TR><TR><TD>5.2</TD><TD>590 </TD><TD>6 600  </TD><TD>  8 840 </TD><TD> 15 440 </TD></TR><TR><TD>5.3</TD><TD>723 </TD><TD>6 600  </TD><TD> 11 239 </TD><TD> 17 839 </TD></TR></TABLE><p></p> Article 2<p></p>   A titre complémentaire pour 1999, il est décidé que le salaire mensuel minimum du niveau 1, échelon 1, est porté à 6 800 francs bruts et celui du niveau 1, échelon 2 à 6 900 francs bruts. Article 3<p></p>   Les parties signataires conviennent de se revoir en septembre 1999 pour faire le point sur les salaires.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 10 1999-01-04 BO conventions collectives 99-6 étendu par arrêté du 23 mars 1999 JORF 1er avril 1999",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 915408000000,
+                  "dateFin": 965088000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6304,13 +6378,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727865",
+              "cid": "KALISCTA000005727865",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point au 1er janvier 2000.",
+              "dateModif": null,
+              "dateDebut": "2000-08-01",
+              "dateFin": "2002-01-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005860354",
+                  "cid": "KALIARTI000005860354",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727865/KALIARTI000005860354",
+                  "pathTitle": [
+                    "Valeur du point au 1er janvier 2000."
+                  ],
+                  "content": "<p></p>   6.1. Les salaires minima sont établis comme suit :<p></p><p></p>   - la valeur du point multipliée par le coefficient 100 est fixée à 60,53 F (1re valeur de point), en ce compris une revalorisation de 2,2 % au 1er janvier 2000 ;<p></p><p></p>   - la valeur du point multipliée par la différence entre le coefficient de l'emploi et le coefficient 100 est fixée à 16,55 F (2e valeur de point), en ce compris une revalorisation de 2,2 % au 1er janvier 2000.<p></p><p></p>   Il en résulte la nouvelle grille de salaires minima suivante :<p></p><p></p> (1) NIVEAU/échelon<p></p> (2) COEFFICIENT<p></p> (3) SALAIRE mensuel minimal coefficient 100 (en francs)<p></p> (4) COMPLÉMENT de salaire par application de la 2e valeur de point (en francs)<p></p> (5) TOTAL pour 35 heures (en francs)<p></p><TABLE><TR><TD>(1)</TD><TD>(2)</TD><TD>  (3)  </TD><TD> (4)   </TD><TD>  (5)  </TD></TR><TR><TD>1.1</TD><TD>100</TD><TD>  6 053</TD><TD>  0    </TD><TD>  6 053</TD></TR><TR><TD>1.2</TD><TD>110</TD><TD>  6 053</TD><TD>  165  </TD><TD>  6 219</TD></TR><TR><TD>2.1</TD><TD>123</TD><TD>  6 053</TD><TD>  381  </TD><TD>  6 434</TD></TR><TR><TD>2.2</TD><TD>143</TD><TD>  6 053</TD><TD>  712  </TD><TD>  6 765</TD></TR><TR><TD>2.3</TD><TD>163</TD><TD>  6 053</TD><TD>  1 043</TD><TD>  7 096</TD></TR><TR><TD>3.1</TD><TD>176</TD><TD>  6 053</TD><TD>  1 258</TD><TD>  7 311</TD></TR><TR><TD>3.2</TD><TD>203</TD><TD>  6 053</TD><TD>  1 705</TD><TD>  7 758</TD></TR><TR><TD>4.1</TD><TD>300</TD><TD>  6 053</TD><TD>  3 310</TD><TD>  9 363</TD></TR><TR><TD>4.2</TD><TD>390</TD><TD>  6 053</TD><TD>  4 799</TD><TD> 10 852</TD></TR><TR><TD>5.1</TD><TD>457</TD><TD>  6 053</TD><TD>  5 908</TD><TD> 11 961</TD></TR><TR><TD>5.2</TD><TD>590</TD><TD>  6 053</TD><TD>  8 109</TD><TD> 14 162</TD></TR><TR><TD>5.3</TD><TD>723</TD><TD>  6 053</TD><TD> 10 310</TD><TD> 16 363</TD></TR></TABLE><p></p><p></p>   6.2. Les salaires minima seront revalorisés de 2,2 % au 1er janvier des années 2001 à 2004, toutes revalorisations confondues.<p></p><p></p>   Dans le cas où l'évolution de l'indice INSEE des prix à la consommation viendrait à dépasser les 2,2 % ci-dessus, les partenaires sociaux conviennent de se rencontrer afin de réexaminer le taux d'évolution des salaires minima.<p></p><p></p>   6.3. Dans les entreprises qui réduiront leur durée de travail à 35 heures ou plus, les salariés bénéficieront d'une garantie minimale de salaire déterminée comme suit :<p></p><p></p>   - salariés des niveaux 1, échelon 1, au niveau 2, échelon 2 :<p></p><p></p>      nouveau salaire minimum conventionnel pour l'horaire pratiqué majoré de 100 % de l'écart entre le salaire minimum conventionnel qui leur était applicable pour l'horaire qu'ils pratiquaient avant la réduction d'horaire, dans la limite de 39 heures hebdomadaires, et le minimum conventionnel pour leur nouvel horaire hebdomadaire de travail ;<p></p><p></p>   - salariés des niveaux 2, échelon 3, au niveau 3, échelon 2 :<p></p><p></p>      nouveau salaire minimum conventionnel pour l'horaire pratiqué majoré de 75 % de l'écart entre le salaire minimum conventionnel qui leur était applicable pour l'horaire qu'ils pratiquaient avant la réduction d'horaire, dans la limite de 39 heures hebdomadaires et le minimum conventionnel pour leur nouvel horaire hebdomadaire de travail ;<p></p><p></p>   - salariés des niveaux 4, échelon 1 et au-delà :<p></p><p></p>      nouveau salaire minimum conventionnel pour l'horaire pratiqué majoré de 50 % de l'écart entre le salaire minimum conventionnel qui leur était applicable pour l'horaire qu'ils pratiquaient avant la réduction d'horaire, dans la limite de 39 heures hebdomadaires et le minimum conventionnel pour leur nouvel horaire hebdomadaire de travail.<p></p><p></p>   Cette garantie sera assurée par le versement d'un complément différentiel de salaire. Le tableau ci-après illustre le mécanisme pour les entreprises ayant réduit leur horaire de 39 à 35 heures.<p></p><p></p>   Entreprise réduisant son horaire de 39 heures à 35 heures à une date à laquelle le SMIC horaire est de 40,72 F, soit une garantie de rémunération de 40,72 x 169 heures :<p></p> (1) NIVEAU/échelon<p></p> (2) COEFFICIENT<p></p> (3) GARANTIE minimale de salaire mensuel pour 35 h hebdomadaire (en francs)<p></p> (4) DONT COMPLÉMENT différentiel mensuel<p></p><TABLE><TR><TD>(1)</TD><TD>(2)</TD><TD>  (3)  </TD><TD>     (4)      </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>2000</TD><TD>2001</TD><TD>2002</TD></TR><TR><TD>1.1</TD><TD>100</TD><TD>  6 882</TD><TD> 829</TD><TD> 695</TD><TD> 559</TD></TR><TR><TD>1.2</TD><TD>110</TD><TD>  6 900</TD><TD> 681</TD><TD> 544</TD><TD> 405</TD></TR><TR><TD>2.1</TD><TD>123</TD><TD>  7 015</TD><TD> 581</TD><TD> 440</TD><TD> 295</TD></TR><TR><TD>2.2</TD><TD>143</TD><TD>  7 376</TD><TD> 611</TD><TD> 462</TD><TD> 310</TD></TR><TR><TD>2.3</TD><TD>163</TD><TD>  7 576</TD><TD> 480</TD><TD> 324</TD><TD> 165</TD></TR><TR><TD>3.1</TD><TD>176</TD><TD>  7 806</TD><TD> 495</TD><TD> 334</TD><TD> 170</TD></TR><TR><TD>3.2</TD><TD>203</TD><TD>  8 283</TD><TD> 525</TD><TD> 355</TD><TD> 180</TD></TR><TR><TD>4.1</TD><TD>300</TD><TD>  9 785</TD><TD> 422</TD><TD> 216</TD><TD>   6</TD></TR><TR><TD>4.2</TD><TD>390</TD><TD> 11 342</TD><TD> 490</TD><TD> 252</TD><TD>   8</TD></TR><TR><TD>5.1</TD><TD>457</TD><TD> 12 500</TD><TD> 539</TD><TD> 277</TD><TD>   8</TD></TR><TR><TD>5.2</TD><TD>590</TD><TD> 14 801</TD><TD> 639</TD><TD> 329</TD><TD>  10</TD></TR><TR><TD>5.3</TD><TD>723</TD><TD> 17 101</TD><TD> 738</TD><TD> 380</TD><TD>  12</TD></TR><TR><TD>(1)</TD><TD>(2)</TD><TD>  (3)  </TD><TD>  (4)    </TD></TR><TR><TD></TD><TD></TD><TD></TD><TD>2003</TD><TD>2004</TD></TR><TR><TD>1.1</TD><TD>100</TD><TD>  6 882</TD><TD> 420</TD><TD> 278</TD></TR><TR><TD>1.2</TD><TD>110</TD><TD>  6 900</TD><TD> 262</TD><TD> 116</TD></TR><TR><TD>2.1</TD><TD>123</TD><TD>  7 015</TD><TD> 147</TD><TD> -  </TD></TR><TR><TD>2.2</TD><TD>143</TD><TD>  7 376</TD><TD> 155</TD><TD> -  </TD></TR><TR><TD>2.3</TD><TD>163</TD><TD>  7 576</TD><TD>   2</TD><TD> -  </TD></TR><TR><TD>3.1</TD><TD>176</TD><TD>  7 806</TD><TD>   2</TD><TD> -  </TD></TR><TR><TD>3.2</TD><TD>203</TD><TD>  8 283</TD><TD>   2</TD><TD> -  </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 11 2000-02-18 art. 6 en vigueur le 1er jour du mois suivant l'extension BO conventions collectives 2000-14 étendu par arrêté du 30 juin 2000 JORF 14 juillet 2000 à l'exception du secteur de la construction des maisons individuelles",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 965088000000,
+                  "dateFin": 1011657600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -6344,13 +6492,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727867",
+              "cid": "KALISCTA000005727867",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Valeur du point au 1er janvier 2003.",
+              "dateModif": null,
+              "dateDebut": "2003-02-05",
+              "dateFin": "2004-09-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005860356",
+                  "cid": "KALIARTI000005860356",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005727867/KALIARTI000005860356",
+                  "pathTitle": [
+                    "Valeur du point au 1er janvier 2003."
+                  ],
+                  "content": "<p></p>   Article 1er<p></p><p></p>   1.1. En application de l'article 6 \" Rémunération \" de l'avenant n° 11 à la convention collective de la promotion construction (avenant du 18 février 2000 étendu par arrêté du ministère du travail en date du 30 juin 2000, Journal officiel du 14 juillet 2000) :<p></p><p></p>   A compter du 1er janvier 2003 :<p></p><p></p>   - la première valeur (+) de point revalorisée de 2,2 % au 1er janvier 2003, à multiplier par le coefficient 100, s'établit à 9,85 Euros ;<p></p> (+)Valeur du point pour 2000 : 60,53 F ; valeur du point pour 2001 :<p></p> 61,86 F, en ce compris + 2,2 % au 1er janvier 2001 ;<p></p><p></p>   valeur du point pour 2002 : 9,64 Euros, en ce compris + 2,2 % au 1er janvier 2002.<p></p><p></p>   - la seconde valeur (++) de point revalorisée de 2,2 % au 1er janvier 2003, à multiplier par la différence entre le coefficient de l'emploi et le coefficient 100, s'établit à 2,69 Euros.<p></p> (++) Valeur du point pour 2000 : 16,55 F ; valeur du point pour 2001  16,91 F, en ce compris + 2,2 % au 1er janvier 2001 ; valeur du point pour 2002 : 2,63 Euros, en ce compris + 2,2 % au 1er janvier 2002.<p></p><p></p>   1.2. Il en résulte pour 2003 la nouvelle grille de salaires minima ci-après :<p></p> (Montant en euros.)   <p></p> (1)   SALAIRE MENSUEL minimum coef. 100 par application de la 1re valeur de point<p></p> (2)   COMPLÉMENT DE salaire par application de la 2e valeur de point<p></p> (3)   TOTAL pour 35 heures<p></p><TABLE><TR><TD>NIV.</TD><TD>ÉCH.</TD><TD>COEF.</TD><TD>    (1)     </TD><TD>     (2)       </TD><TD>    (3)     </TD></TR><TR><TD> I  </TD><TD>   1   </TD><TD> 100 </TD><TD></TD><TD></TD><TD>   1 035,91 </TD></TR><TR><TD></TD><TD>   2   </TD><TD> 110 </TD><TD></TD><TD></TD><TD>   1 035,91 </TD></TR><TR><TD></TD><TD>   1   </TD><TD> 123 </TD><TD>    985     </TD><TD>     61,87     </TD><TD>   1 046,87 </TD></TR><TR><TD> II </TD><TD>   2   </TD><TD> 143 </TD><TD>    985     </TD><TD>    115,67     </TD><TD>   1 100,67 </TD></TR><TR><TD></TD><TD>   3   </TD><TD> 163 </TD><TD>    985     </TD><TD>    169,47     </TD><TD>   1 154,47 </TD></TR><TR><TD> III</TD><TD>   1   </TD><TD> 176 </TD><TD>    985     </TD><TD>    204,44     </TD><TD>   1 189,44 </TD></TR><TR><TD></TD><TD>   2   </TD><TD> 203 </TD><TD>    985     </TD><TD>    277,07     </TD><TD>   1 262,07 </TD></TR><TR><TD> IV </TD><TD>   1   </TD><TD> 300 </TD><TD>    985     </TD><TD>    538,00     </TD><TD>   1 523,00 </TD></TR><TR><TD></TD><TD>   2   </TD><TD> 390 </TD><TD>    985     </TD><TD>    780,10     </TD><TD>   1 765,10 </TD></TR><TR><TD></TD><TD>   1   </TD><TD> 457 </TD><TD>    985     </TD><TD>    960,33     </TD><TD>   1 945,33 </TD></TR><TR><TD>  V </TD><TD>   2   </TD><TD> 590 </TD><TD>    985     </TD><TD>  1 318,10     </TD><TD>   2 303,10 </TD></TR><TR><TD></TD><TD>   3   </TD><TD> 723 </TD><TD>    985     </TD><TD>  1 675,87     </TD><TD>   2 660,87 </TD></TR></TABLE><p></p><p></p>   1.3. Il est rappelé que l'article 32 de la loi n° 2000-37 du 19 janvier 2000 prévoit les conditions d'une garantie égale au SMICx 169 heures pour 35 heures de travail.<p></p> Article 2<p></p> Dépôt<p></p><p></p>   Le présent accord sera déposé par la FNPC, en 5 exemplaires, auprès de la direction départementale du travail et de l'emploi de Paris.<p></p><p></p>   Un exemplaire sera adressé au greffe du conseil des prud'hommes de Paris.<p></p><p></p>   La FNPC est mandatée pour présenter la demande d'extension.<p></p><p></p>   Fait à Paris, le 5 février 2003.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 17 2003-02-05 BO conventions collectives 2003-10",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 1044403200000,
+                  "dateFin": 1095638400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

@@ -26578,13 +26578,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727772",
+              "cid": "KALISCTA000005727772",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima mensuels à compter du 1er janvier 1992",
+              "dateModif": null,
+              "dateDebut": "1991-11-07",
+              "dateFin": "1993-04-15",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005860188",
+                  "cid": "KALIARTI000005860188",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727772/KALIARTI000005860188",
+                  "pathTitle": [
+                    "Salaires minima mensuels à compter du 1er janvier 1992"
+                  ],
+                  "content": "<p></p>   GRILLE DE SALAIRES<p></p> Niveau :  Montant<p></p> I      :  5.635 F.<p></p> II     :  5.805 F.<p></p> III    :  5.965 F.<p></p> IV     :  6.200 F.<p></p> V      :  6.635 F.<p></p> VI     :  7.085 F.<p></p> VII    :  8.910 F.<p></p> VIII   : 10.000 F.<p></p><p></p>   Les parties signataires conviennent de se rencontrer à nouveau le jeudi 2 avril 1992.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 7 1991-11-07 étendu par arrêté du 4 mai 1992 JORF 14 mai 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 689472000000,
+                  "dateFin": 734832000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26598,13 +26672,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727775",
+              "cid": "KALISCTA000005727775",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima mensuels à compter du 1er septembre 1993.",
+              "dateModif": null,
+              "dateDebut": "1993-09-08",
+              "dateFin": "1997-09-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005860189",
+                  "cid": "KALIARTI000005860189",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727775/KALIARTI000005860189",
+                  "pathTitle": [
+                    "Salaires minima mensuels à compter du 1er septembre 1993."
+                  ],
+                  "content": "<p></p>   Entre les parties signataires de la convention collective nationale des commerces non alimentaires signée le 14 juin 1988 et modifiée par l'avenant n° 2 du 9 novembre 1988, il a été convenu de fixer la grille des salaires minima mensuels pour 169 heures à compter du premier jour du mois qui suit l'arrêté d'extension, comme suit :<p></p><p></p><TABLE><TR><TD> Niveau </TD><TD> Montant </TD></TR><TR><TD>  I     </TD><TD>  5.900F </TD></TR><TR><TD>  II    </TD><TD>  6.080F </TD></TR><TR><TD>  III   </TD><TD>  6.250F </TD></TR><TR><TD>  IV    </TD><TD>  6.500F </TD></TR><TR><TD>  V     </TD><TD>  6.950F </TD></TR><TR><TD>  VI    </TD><TD>  7.425F </TD></TR><TR><TD>  VII   </TD><TD>  9.340F </TD></TR><TR><TD>  VIII  </TD><TD> 10.500F </TD></TR></TABLE><p></p><p></p>   Les parties signataires conviennent de se rencontrer à nouveau le mercredi 12 janvier 1994.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 9 1993-04-15 étendu par arrêté du 27 août 1993 JORF 8 septembre 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 747446400000,
+                  "dateFin": 873072000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -26618,13 +26766,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005727776",
+              "cid": "KALISCTA000005727776",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires minima mensuels.",
+              "dateModif": null,
+              "dateDebut": "1997-09-01",
+              "dateFin": "1998-01-20",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005860190",
+                  "cid": "KALIARTI000005860190",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005727776/KALIARTI000005860190",
+                  "pathTitle": [
+                    "Salaires minima mensuels."
+                  ],
+                  "content": "<p></p>   Entre les parties signataires de la convention collective nationale des commerces non alimentaires signé le 14 juin 1988 et modifiée par l'avenant n° 2 du 9 novembre 1988, il a été convenu de fixer la grille des salaires minima mensuels pour 169 heures à compter du premier jour du mois qui suit l'arrêté d'extension, comme suit :<p></p><TABLE><TR><TD> Niveau </TD><TD> Montant </TD></TR><TR><TD>  I     </TD><TD>  6 407 F</TD></TR><TR><TD>  II    </TD><TD>  6 600 F</TD></TR><TR><TD>  III   </TD><TD>  6 790 F</TD></TR><TR><TD>  IV    </TD><TD>  7 050 F</TD></TR><TR><TD>  V     </TD><TD>  7 500 F</TD></TR><TR><TD>  VI    </TD><TD>  8 000 F</TD></TR><TR><TD>  VII   </TD><TD> 10 000 F</TD></TR><TR><TD>  VIII  </TD><TD> 11 400 F</TD></TR></TABLE><p></p><p></p>   Les parties signataires conviennent de se rencontrer à nouveau le jeudi 25 septembre 1997.<p></p>   Conformément à l'article L. 132-10 du code du travail, le présent avenant sera déposé auprès des services du ministre chargé du travail et au secrétariat-greffe du conseil des prud'hommes de Paris.<font color=\"808080\"><em>   NOTA : avenant étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p></em></font>",
+                  "nota": "   NOTA : avenant étendu sous réserve de l'application des dispositions réglementaires portant fixation du salaire minimum de croissance.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 10 1997-04-28 en vigueur le premier jour du mois qui suit l'extension BO conventions collectives 97-22 étendu par arrêté du 23 juillet 1997 JORF 2 août 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "ANNEXE II SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 873072000000,
+                  "dateFin": 885254400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

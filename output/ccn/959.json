@@ -12239,13 +12239,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720940",
+              "cid": "KALISCTA000005720940",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des salaires minima applicables aux 1er mars et 1er septembre 1993.",
+              "dateModif": null,
+              "dateDebut": "1993-02-11",
+              "dateFin": "1994-01-27",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005842884",
+                  "cid": "KALIARTI000005842884",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720940/KALIARTI000005842884",
+                  "pathTitle": [
+                    "Grille des salaires minima applicables aux 1er mars et 1er septembre 1993."
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les salaires minimaux du personnel des laboratoires d'analyses médicales extra-hospitaliers sont relevés de 2 p. 100 au 1er mars 1993 et de 1,5 p. 100 au 1er septembre 1993. En conséquence, la nouvelle grille applicable à ces dates est celle figurant en annexe.<p></p>Article 2<p></p><p></p>   Au salaire réel s'ajoute la prime d'ancienneté dont le montant est calculé sur le salaire minimum de l'emploi occupé par le salarié, proportionnellement au nombre d'heures effectives de travail, sans tenir compte des majorations pour heures supplémentaires.<p></p><p></p>   Il est rappelé que cette prime doit figurer à part sur le bulletin de paie, qu'elle vient s'ajouter au salaire de base et n'entre pas en ligne de compte pour le calcul du salaire minimum.<p></p><p></p>GRILLE DES SALAIRES MINIMA APPLICABLES AUX 1er MARS ET 1er SEPTEMBRE 1993<p></p><p></p> (1) Date du salaire (au 1er mars et 1er septembre 1993)<p></p> (2) Coefficient<p></p> (3) Salaire horaire (en francs)<p></p> (4) Salaire mensuel pour 169 heures (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD> (2)</TD><TD>  (3) </TD><TD>    (4)    </TD></TR><TR><TD>01-03</TD><TD> 100</TD><TD> 34,82</TD><TD>  5.884,58 </TD></TR><TR><TD>01-09</TD><TD> 100</TD><TD> 35,34</TD><TD>  5.972,46 </TD></TR><TR><TD>01-03</TD><TD> 135</TD><TD> 35,37</TD><TD>  5.977,53 </TD></TR><TR><TD>01-09</TD><TD> 135</TD><TD> 35,90</TD><TD>  6.067,10 </TD></TR><TR><TD>01-03</TD><TD> 150</TD><TD> 35,63</TD><TD>  6.021,47 </TD></TR><TR><TD>01-09</TD><TD> 150</TD><TD> 36,16</TD><TD>  6.111,04 </TD></TR><TR><TD>01-03</TD><TD> 160</TD><TD> 35,85</TD><TD>  6.058,65 </TD></TR><TR><TD>01-09</TD><TD> 160</TD><TD> 36,38</TD><TD>  6.148,22 </TD></TR><TR><TD>01-03</TD><TD> 170</TD><TD> 36,05</TD><TD>  6.092,45 </TD></TR><TR><TD>01-09</TD><TD> 170</TD><TD> 36,59</TD><TD>  6.183,71 </TD></TR><TR><TD>01-03</TD><TD> 180</TD><TD> 36,28</TD><TD>  6.131,32 </TD></TR><TR><TD>01-09</TD><TD> 180</TD><TD> 36,82</TD><TD>  6.222,58 </TD></TR><TR><TD>01-03</TD><TD> 190</TD><TD> 36,47</TD><TD>  6.163,43 </TD></TR><TR><TD>01-09</TD><TD> 190</TD><TD> 37,01</TD><TD>  6.254,69 </TD></TR><TR><TD>01-03</TD><TD> 200</TD><TD> 36,66</TD><TD>  6.195,54 </TD></TR><TR><TD>01-09</TD><TD> 200</TD><TD> 37,20</TD><TD>  6.286,80 </TD></TR><TR><TD>01-03</TD><TD> 210</TD><TD> 36,87</TD><TD>  6.231,03 </TD></TR><TR><TD>01-09</TD><TD> 210</TD><TD> 37,42</TD><TD>  6.223,98 </TD></TR><TR><TD>01-03</TD><TD> 220</TD><TD> 36,92</TD><TD>  6.239,48 </TD></TR><TR><TD>01-09</TD><TD> 220</TD><TD> 37,47</TD><TD>  6.332,43 </TD></TR><TR><TD>01-03</TD><TD> 225</TD><TD> 37,04</TD><TD>  6.259,76 </TD></TR><TR><TD>01-09</TD><TD> 225</TD><TD> 37,59</TD><TD>  6.352,71 </TD></TR><TR><TD>01-03</TD><TD> 230</TD><TD> 37,30</TD><TD>  6.303,70 </TD></TR><TR><TD>01-09</TD><TD> 230</TD><TD> 37,85</TD><TD>  6.396,65 </TD></TR><TR><TD>01-03</TD><TD> 240</TD><TD> 38,92</TD><TD>  6.577,48 </TD></TR><TR><TD>01-09</TD><TD> 240</TD><TD> 39,50</TD><TD>  6.675,50 </TD></TR></TABLE><p></p><TABLE><TR><TD>01-03</TD><TD> 250</TD><TD> 40,55</TD><TD>  6.852,95 </TD></TR><TR><TD>01-09</TD><TD> 250</TD><TD> 41,15</TD><TD>  6.954,35 </TD></TR><TR><TD>01-03</TD><TD> 260</TD><TD> 42,16</TD><TD>  7.125,04 </TD></TR><TR><TD>01-09</TD><TD> 260</TD><TD> 42,79</TD><TD>  7.231,51 </TD></TR><TR><TD>01-03</TD><TD> 270</TD><TD> 43,78</TD><TD>  7.398,82 </TD></TR><TR><TD>01-09</TD><TD> 270</TD><TD> 44,43</TD><TD>  7.508,67 </TD></TR><TR><TD>01-03</TD><TD> 280</TD><TD> 45,43</TD><TD>  7.677,67 </TD></TR><TR><TD>01-09</TD><TD> 280</TD><TD> 46,11</TD><TD>  7.792,59 </TD></TR><TR><TD>01-03</TD><TD> 290</TD><TD> 47,04</TD><TD>  7.949,76 </TD></TR><TR><TD>01-09</TD><TD> 290</TD><TD> 47,74</TD><TD>  8.068,06 </TD></TR><TR><TD>01-03</TD><TD> 300</TD><TD> 48,66</TD><TD>  8.223,54 </TD></TR><TR><TD>01-09</TD><TD> 300</TD><TD> 49,38</TD><TD>  8.345,22 </TD></TR><TR><TD>01-03</TD><TD> 310</TD><TD> 50,28</TD><TD>  8.497,32 </TD></TR><TR><TD>01-09</TD><TD> 310</TD><TD> 51,03</TD><TD>  8.624,07 </TD></TR><TR><TD>01-03</TD><TD> 350</TD><TD> 56,78</TD><TD>  9.595,82 </TD></TR><TR><TD>01-09</TD><TD> 350</TD><TD> 57,63</TD><TD>  9.739,47 </TD></TR><TR><TD>01-03</TD><TD> 400</TD><TD> 64,86</TD><TD> 10.961,34 </TD></TR><TR><TD>01-09</TD><TD> 400</TD><TD> 65,83</TD><TD> 11.125,27 </TD></TR><TR><TD>01-03</TD><TD> 600</TD><TD> 97,34</TD><TD> 16.450,46 </TD></TR><TR><TD>01-09</TD><TD> 600</TD><TD> 98,80</TD><TD> 16.697,20 </TD></TR><TR><TD>01-03</TD><TD> 800</TD><TD> 129,81</TD><TD> 21.937,89 </TD></TR><TR><TD>01-07</TD><TD> 800</TD><TD> 131,75</TD><TD> 22.265,75 </TD></TR></TABLE><p></p><p></p>   Valeur du point : 16,217 F à compter du coefficient 230 au 1er mars 1993.<p></p>   Valeur du point : 16,456 F à compter du coefficient 230 au 1er septembre 1993.",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1993-02-11 étendu par arrêté du 22 juin 1993 JORF 1er juillet 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 729388800000,
+                  "dateFin": 759628800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12259,13 +12333,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720941",
+              "cid": "KALISCTA000005720941",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des salaires minima applicables au 1er mars et 1er juillet 1994",
+              "dateModif": null,
+              "dateDebut": "1994-01-27",
+              "dateFin": "1995-01-10",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005842887",
+                  "cid": "KALIARTI000005842887",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720941/KALIARTI000005842887",
+                  "pathTitle": [
+                    "Grille des salaires minima applicables au 1er mars et 1er juillet 1994"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les salaires minimaux du personnel des laboratoires d'analyses médicales extra-hospitaliers sont relevés de 1,5 p. 100 au 1er mars et de 1 p. 100 au 1er juillet 1994. En conséquence, la nouvelle grille applicable à ces dates est celle figurant en annexe.<p></p>Article 2<p></p><p></p>   Au salaire réel s'ajoute la prime d'ancienneté dont le montant est calculé sur le salaire minimum de l'emploi occupé par le salarié, proportionnellement au nombre d'heures effectives de travail, sans tenir compte des majorations pour heures supplémentaires.<p></p><p></p>   Il est rappelé que cette prime doit figurer à part sur le bulletin de paie, qu'elle vient s'ajouter au salaire de base et n'entre pas en ligne de compte pour le calcul du salaire minimum.<p></p><p></p><p></p>   Grille des salaires minima (applicable aux 1er mars et 1er juillet 1994).<p></p><p></p> (1) Date du salaire (au 1er mars et 1er juillet 1994)<p></p> (2) Coefficient<p></p> (3) Salaire horaire (en francs)<p></p> (4) Salaire mensuel pour 169 heures (en francs)<p></p><TABLE><TR><TD> (1) </TD><TD> (2)</TD><TD>  (3) </TD><TD>    (4)    </TD></TR><TR><TD>01-03</TD><TD> 100</TD><TD> 35,87</TD><TD>  6.062,03 </TD></TR><TR><TD>01-07</TD><TD> 100</TD><TD> 36,22</TD><TD>  6.121,18 </TD></TR><TR><TD>01-03</TD><TD> 135</TD><TD> 36,43</TD><TD>  6.156,67 </TD></TR><TR><TD>01-07</TD><TD> 135</TD><TD> 36,79</TD><TD>  6.217,51 </TD></TR><TR><TD>01-03</TD><TD> 150</TD><TD> 36,70</TD><TD>  6.202,30 </TD></TR><TR><TD>01-07</TD><TD> 150</TD><TD> 37,06</TD><TD>  6.263,14 </TD></TR><TR><TD>01-03</TD><TD> 160</TD><TD> 36,92</TD><TD>  6.239,48 </TD></TR><TR><TD>01-07</TD><TD> 160</TD><TD> 37,28</TD><TD>  6.300,32 </TD></TR><TR><TD>01-03</TD><TD> 170</TD><TD> 37,13</TD><TD>  6.274,97 </TD></TR><TR><TD>01-07</TD><TD> 170</TD><TD> 37,50</TD><TD>  6.337,50 </TD></TR><TR><TD>01-03</TD><TD> 180</TD><TD> 37,37</TD><TD>  6.315,53 </TD></TR><TR><TD>01-07</TD><TD> 180</TD><TD> 37,74</TD><TD>  6.378,06 </TD></TR><TR><TD>01-03</TD><TD> 190</TD><TD> 37,56</TD><TD>  6.347,64 </TD></TR><TR><TD>01-07</TD><TD> 190</TD><TD> 37,93</TD><TD>  6.410,17 </TD></TR><TR><TD>01-03</TD><TD> 200</TD><TD> 37,75</TD><TD>  6.379,75 </TD></TR><TR><TD>01-07</TD><TD> 200</TD><TD> 38,12</TD><TD>  6.442,28 </TD></TR><TR><TD>01-03</TD><TD> 210</TD><TD> 37,98</TD><TD>  6.418,62 </TD></TR><TR><TD>01-07</TD><TD> 210</TD><TD> 38,35</TD><TD>  6.481,15 </TD></TR><TR><TD>01-03</TD><TD> 220</TD><TD> 38,03</TD><TD>  6.427,07 </TD></TR><TR><TD>01-07</TD><TD> 220</TD><TD> 38,41</TD><TD>  6.491,29 </TD></TR><TR><TD>01-03</TD><TD> 225</TD><TD> 38,15</TD><TD>  6.447,35 </TD></TR><TR><TD>01-07</TD><TD> 225</TD><TD> 38,53</TD><TD>  6.511,57 </TD></TR><TR><TD>01-03</TD><TD> 230</TD><TD> 38,41</TD><TD>  6.491,29 </TD></TR><TR><TD>01-07</TD><TD> 230</TD><TD> 38,79</TD><TD>  6.555,51 </TD></TR><TR><TD>01-03</TD><TD> 240</TD><TD> 40,09</TD><TD>  6.775,21 </TD></TR><TR><TD>01-07</TD><TD> 240</TD><TD> 40,49</TD><TD>  6.842,81 </TD></TR></TABLE><p></p><TABLE><TR><TD>01-03</TD><TD> 250</TD><TD> 41,76</TD><TD>  7.057,44 </TD></TR><TR><TD>01-07</TD><TD> 250</TD><TD> 42,17</TD><TD>  7.126,73 </TD></TR><TR><TD>01-03</TD><TD> 260</TD><TD> 43,43</TD><TD>  7.339,67 </TD></TR><TR><TD>01-07</TD><TD> 260</TD><TD> 43,86</TD><TD>  7.412,34 </TD></TR><TR><TD>01-03</TD><TD> 270</TD><TD> 45,09</TD><TD>  7.620,21 </TD></TR><TR><TD>01-07</TD><TD> 270</TD><TD> 45,54</TD><TD>  7.696,26 </TD></TR><TR><TD>01-03</TD><TD> 280</TD><TD> 46,80</TD><TD>  7.909,20 </TD></TR><TR><TD>01-07</TD><TD> 280</TD><TD> 47,26</TD><TD>  7.986,94 </TD></TR><TR><TD>01-03</TD><TD> 290</TD><TD> 48,45</TD><TD>  8.188,05 </TD></TR><TR><TD>01-07</TD><TD> 290</TD><TD> 48,93</TD><TD>  8.269,17 </TD></TR><TR><TD>01-03</TD><TD> 300</TD><TD> 50,12</TD><TD>  8.470,28 </TD></TR><TR><TD>01-07</TD><TD> 300</TD><TD> 50,62</TD><TD>  8.554,78 </TD></TR><TR><TD>01-03</TD><TD> 310</TD><TD> 51,79</TD><TD>  8.752,51 </TD></TR><TR><TD>01-07</TD><TD> 310</TD><TD> 52,30</TD><TD>  8.838,70 </TD></TR><TR><TD>01-03</TD><TD> 350</TD><TD> 58,49</TD><TD>  9.884,81 </TD></TR><TR><TD>01-07</TD><TD> 350</TD><TD> 59,07</TD><TD>  9.982,83 </TD></TR><TR><TD>01-03</TD><TD> 400</TD><TD> 66,81</TD><TD> 11.290,89 </TD></TR><TR><TD>01-07</TD><TD> 400</TD><TD> 67,47</TD><TD> 11.402,43 </TD></TR><TR><TD>01-03</TD><TD> 600</TD><TD> 100,28</TD><TD> 16.947,32 </TD></TR><TR><TD>01-07</TD><TD> 600</TD><TD> 101,28</TD><TD> 17.116,32 </TD></TR><TR><TD>01-03</TD><TD> 800</TD><TD> 133,72</TD><TD> 22.598,68 </TD></TR><TR><TD>01-07</TD><TD> 800</TD><TD> 135,05</TD><TD> 22.823,45 </TD></TR></TABLE><p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1994-01-27 étendu par arrêté du 14 juin 1994 JORF 24 juin 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 759628800000,
+                  "dateFin": 789696000000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -12279,13 +12427,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005720942",
+              "cid": "KALISCTA000005720942",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille des salaires minima applicables au 1er février 1995",
+              "dateModif": null,
+              "dateDebut": "1995-01-10",
+              "dateFin": "1995-05-18",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005842888",
+                  "cid": "KALIARTI000005842888",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005720942/KALIARTI000005842888",
+                  "pathTitle": [
+                    "Grille des salaires minima applicables au 1er février 1995"
+                  ],
+                  "content": "Article 1er<p></p><p></p>   Les salaires minimaux du personnel des laboratoires d'analyses médicales extra-hospitaliers sont relevés de 1,2 p. 100 au 1er février 1995. En conséquence, la nouvelle grille applicable à cette date est celle figurant en annexe.<p></p><p></p>Article 2<p></p><p></p>   Au salaire réel s'ajoute la prime d'ancienneté dont le montant est calculé sur le salaire minimum de l'emploi occupé par le salarié, proportionnellement au nombre d'heures effectives de travail, sans tenir compte des majorations pour heures supplémentaires.<p></p><p></p>   Il est rappelé que cette prime doit figurer à part sur le bulletin de paie, qu'elle vient s'ajouter au salaire de base et n'entre pas en ligne de compte pour le calcul du salaire minimum.<p></p><p></p> Grille des salaires minimaux (applicable au 1er février 1995)<p></p><p></p> (1) = COEFFICIENT<p></p> (2) = SALAIRE HORAIRE<p></p> (3) = SALAIRE MENSUEL pour 169 heures<p></p><TABLE><TR><TD></TD><TD>  (1)  </TD><TD>   (2)  </TD><TD>    (3)   </TD></TR><TR><TD></TD><TD> 100   </TD><TD> 36,65  </TD><TD> 6.193,85 </TD></TR><TR><TD></TD><TD> 135   </TD><TD> 37,23  </TD><TD> 6.291,87 </TD></TR><TR><TD></TD><TD> 150   </TD><TD> 37,50  </TD><TD> 6.337,50 </TD></TR><TR><TD></TD><TD> 160   </TD><TD> 37,72  </TD><TD> 6.374,68 </TD></TR><TR><TD></TD><TD> 170   </TD><TD> 37,95  </TD><TD> 6.413,55 </TD></TR><TR><TD></TD><TD> 180   </TD><TD> 38,19  </TD><TD> 6.454,11 </TD></TR><TR><TD></TD><TD> 190   </TD><TD> 38,38  </TD><TD> 6.486,22 </TD></TR><TR><TD></TD><TD> 200   </TD><TD> 38,57  </TD><TD> 6.518,33 </TD></TR><TR><TD></TD><TD> 210   </TD><TD> 38,81  </TD><TD> 6.558,89 </TD></TR><TR><TD></TD><TD> 220   </TD><TD> 38,87  </TD><TD> 6.569,03 </TD></TR><TR><TD></TD><TD> 225   </TD><TD> 38,99  </TD><TD> 6.589,31 </TD></TR><TR><TD></TD><TD> 230   </TD><TD> 39,25  </TD><TD> 6.633,25 </TD></TR><TR><TD></TD><TD> 240   </TD><TD> 40,97  </TD><TD> 6.923,93 </TD></TR><TR><TD></TD><TD> 250   </TD><TD> 42,67  </TD><TD> 7.211,23 </TD></TR><TR><TD></TD><TD> 260   </TD><TD> 44,38  </TD><TD> 7.500,22 </TD></TR><TR><TD></TD><TD> 270   </TD><TD> 46,08  </TD><TD> 7.787,52 </TD></TR><TR><TD></TD><TD> 280   </TD><TD> 47,82  </TD><TD> 8.081,58 </TD></TR><TR><TD></TD><TD> 290   </TD><TD> 49,51  </TD><TD> 8.367,19 </TD></TR><TR><TD></TD><TD> 300   </TD><TD> 51,22  </TD><TD> 8.656,18 </TD></TR><TR><TD></TD><TD> 310   </TD><TD> 52,92  </TD><TD> 8.943,48 </TD></TR><TR><TD></TD><TD> 350   </TD><TD> 59,77  </TD><TD>10.101,13 </TD></TR><TR><TD></TD><TD> 400   </TD><TD> 68,27  </TD><TD>11.537,63 </TD></TR><TR><TD></TD><TD> 600   </TD><TD>102,49  </TD><TD>17.320,81 </TD></TR><TR><TD></TD><TD> 800   </TD><TD>136,67  </TD><TD>23.097,23 </TD></TR></TABLE><p></p><p></p>   Valeur du point : 17,071 F (à partir du coefficient 240).",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Accord 1995-01-10 BO conventions collectives 95-7 étendu par arrêté du 5 avril 1995 JORF 15 avril 1995",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 789696000000,
+                  "dateFin": 800755200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
