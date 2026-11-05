@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "L'instance paritaire nationale établit ses comptes annuels selon les principes et méthodes comptables prévus par le code de commerce et selon les modalités définies par un règlement de l'Autorité des normes comptables.",
-    "texteHtml": "<p align=\"left\">L'instance paritaire nationale établit ses comptes annuels selon les principes et méthodes comptables prévus par le code de commerce et selon les modalités définies par un règlement de l'Autorité des normes comptables.</p>",
+    "texteHtml": "<p align=\"left\">L'instance paritaire nationale établit ses comptes annuels selon les principes et méthodes comptables prévus par le <a href=\"/affichCode.do?cidTexte=LEGITEXT000005634379&dateTexte=&categorieLien=cid\" title=\"Code de commerce\">code de commerce</a> et selon les modalités définies par un règlement de l'Autorité des normes comptables.</p>",
     "num": "R6323-18-21",
     "origine": "LEGI",
     "nature": "Article",
@@ -131,8 +131,8 @@
     "sectionParentId": "LEGISCTA000054106075",
     "sectionParentTitre": "Paragraphe 7 : Contrôle et comptabilité",
     "fullSectionsTitre": "Partie réglementaire   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle continue  &gt; Titre II : Dispositifs de formation professionnelle continue  &gt; Chapitre III : Le compte personnel de formation &gt; Section 2 : Projet de transition professionnelle &gt; Sous-section 1 bis : Instance paritaire nationale mentionnée à l'article L. 6323-17-5-1 &gt; Paragraphe 7 : Contrôle et comptabilité",
-    "refInjection": "MD-20260518_192158_478_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054106077",
+    "refInjection": "IG-20261022",
+    "idTechInjection": "LEGIARTI000054106077",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -186,7 +186,21 @@
         "dateDebutCible": "2026-05-18"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000005634379",
+        "textTitle": "Code de commerce",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGITEXT000005634379",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 969494400000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

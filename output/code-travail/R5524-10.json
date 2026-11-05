@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Les dispositions de la section 3 du chapitre IV du titre II du livre IV de la cinquième partie du code du travail (partie réglementaire) ne sont pas applicables à Mayotte.",
-    "texteHtml": "<p>Les dispositions de la section 3 du chapitre IV du titre II du livre IV de la cinquième partie du code du travail (partie réglementaire) ne sont pas applicables à Mayotte. </p>",
+    "texteHtml": "<p>Les dispositions de la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018496520&dateTexte=&categorieLien=cid\" title=\"Code du travail -   Section 3 : Professions de la production ciném... (V)\">section 3 du chapitre IV du titre II du livre IV de la cinquième partie du code du travail (partie réglementaire)</a> ne sont pas applicables à Mayotte. </p>",
     "num": "R5524-10",
     "origine": "LEGI",
     "nature": "Article",
@@ -122,7 +122,7 @@
     "sectionParentId": "LEGISCTA000037561986",
     "sectionParentTitre": "Sous-section 3 : Régimes particuliers",
     "fullSectionsTitre": "Partie réglementaire   &gt; Cinquième partie : L'emploi  &gt; Livre V : Dispositions relatives à l'outre-mer  &gt; Titre II : Guadeloupe, Guyane, Martinique, Mayotte, La Réunion, Saint-Barthélemy, Saint-Martin et Saint-Pierre-et-Miquelon &gt; Chapitre IV : Le demandeur d'emploi &gt; Section unique : Dispositions relatives à Mayotte &gt; Sous-section 3 : Régimes particuliers",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261022",
     "idTechInjection": "LEGIARTI000037583938",
     "idEli": null,
     "idEliAlias": null,
@@ -177,7 +177,21 @@
         "dateDebutCible": "2018-11-07"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -   Section 3 : Professions de la production ciném... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018496520",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

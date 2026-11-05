@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000053271681",
     "sectionParentTitre": "Section 3 bis : Congé supplémentaire de naissance",
     "fullSectionsTitre": "Partie législative   &gt; Première partie : Les relations individuelles de travail &gt; Livre II : Le contrat de travail &gt; Titre II : Formation et exécution du contrat de travail &gt; Chapitre V : Maternité, paternité, adoption et éducation des enfants &gt; Section 3 bis : Congé supplémentaire de naissance",
-    "refInjection": "IG-20260113",
-    "idTechInjection": "LEGIARTI000053271698",
+    "refInjection": "MD-20261104_204552_087_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000053271698",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -150,7 +150,34 @@
         "dateDebutCible": "2025-12-31"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "KALITEXT000055045930",
+        "textTitle": "relatif à la parentalité et à la santé des femm... - art. 12",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "12",
+        "articleId": "KALIARTI000055045975",
+        "natureText": "Accord",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1793577600000,
+        "dateDebut": 1785542400000
+      },
+      {
+        "textCid": "KALITEXT000005675425",
+        "textTitle": "Convention collective du 10 juillet 1961 - art. 33.10 (VNE)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "33.10",
+        "articleId": "KALIARTI000055055055",
+        "natureText": "Convention collective nationale",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1785542400000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

@@ -5,8 +5,8 @@
     "id": "LEGIARTI000018528971",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Il est interdit à l'employeur de laisser les travailleurs loger sur le terrain mis à sa disposition par le maître d'ouvrage, à moins que les logements occupés présentent des garanties d'hygiène correspondant au moins à celles prévues par la présente section.",
-    "texteHtml": "<p><br/>Il est interdit à l'employeur de laisser les travailleurs loger sur le terrain mis à sa disposition par le maître d'ouvrage, à moins que les logements occupés présentent des garanties d'hygiène correspondant au moins à celles prévues par la présente section.</p>",
+    "texte": "Il est interdit à l'employeur de laisser les travailleurs loger sur le terrain mis à sa disposition par le maître d'ouvrage, à moins que les logements occupés présentent des garanties d'hygiène correspondant au moins à celles prévues par la présente section .",
+    "texteHtml": "<p><br/>Il est interdit à l'employeur de laisser les travailleurs loger sur le terrain mis à sa disposition par le maître d'ouvrage, à moins que les logements occupés présentent des garanties d'hygiène correspondant au moins à celles prévues par la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018492381&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 17 : Hébergement. (V)\">présente section</a>.</p>",
     "num": "R4534-150",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,7 +95,7 @@
     "sectionParentId": "LEGISCTA000018528981",
     "sectionParentTitre": "Section 17 : Hébergement.",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre V : Prévention des risques liés à certaines activités ou opérations  &gt; Titre III : Bâtiment et génie civil  &gt; Chapitre IV : Prescriptions techniques de protection  durant l'exécution des travaux &gt; Section 17 : Hébergement.",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000018528971",
     "idEli": null,
     "idEliAlias": null,
@@ -150,7 +150,21 @@
         "dateDebutCible": "2008-03-13"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 17 : Hébergement. (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018492381",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "",

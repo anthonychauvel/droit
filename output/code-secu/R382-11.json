@@ -2,17 +2,17 @@
   "executionTime": 0,
   "dereferenced": false,
   "article": {
-    "id": "LEGIARTI000046800518",
+    "id": "LEGIARTI000054907004",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Le directeur comptable et financier est chargé, des opérations financières et comptables du ou des organismes afférentes aux activités mentionnées à l'article R. 382-2 . Il est tenu d'assurer la gestion des comptes distincts correspondant au fonctionnement des organismes agréés s'il y en a plusieurs. Il peut se faire suppléer pour tout ou partie de ses attributions par un fondé de pouvoir muni d'une procuration, nommé par arrêté conjoint du ministre chargé de la sécurité sociale, du ministre chargé de la culture et du ministre chargé du budget.",
-    "texteHtml": "<p>Le directeur comptable et financier est chargé, des opérations financières et comptables du ou des organismes afférentes aux activités mentionnées à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006073189&idArticle=LEGIARTI000006749677&dateTexte=&categorieLien=cid\"> R. 382-2 </a>.</p><p>Il est tenu d'assurer la gestion des comptes distincts correspondant au fonctionnement des organismes agréés s'il y en a plusieurs.</p><p>Il peut se faire suppléer pour tout ou partie de ses attributions par un fondé de pouvoir muni d'une procuration, nommé par arrêté conjoint du ministre chargé de la sécurité sociale, du ministre chargé de la culture et du ministre chargé du budget.</p><p></p>",
+    "texte": "Le directeur comptable et financier est chargé, des opérations financières et comptables de l'association agréée. Il peut se faire suppléer pour tout ou partie de ses attributions par un fondé de pouvoir muni d'une procuration, nommé par arrêté conjoint du ministre chargé de la sécurité sociale, du ministre chargé de la culture et du ministre chargé du budget.",
+    "texteHtml": "<p>Le directeur comptable et financier est chargé, des opérations financières et comptables de l'association agréée.</p><p>Il peut se faire suppléer pour tout ou partie de ses attributions par un fondé de pouvoir muni d'une procuration, nommé par arrêté conjoint du ministre chargé de la sécurité sociale, du ministre chargé de la culture et du ministre chargé du budget.</p>",
     "num": "R382-11",
     "origine": "LEGI",
     "nature": "Article",
-    "versionArticle": "5.0",
+    "versionArticle": "6.0",
     "etat": "VIGUEUR",
-    "dateDebut": 1672531200000,
+    "dateDebut": 1790467200000,
     "dateFin": 32472144000000,
     "dateDebutExtension": 32472144000000,
     "dateFinExtension": 32472144000000,
@@ -67,15 +67,24 @@
         },
         {
           "debut": "2006-11-01",
-          "fin": "2999-01-01",
+          "fin": "2026-09-27",
           "titre": "Sous-section 2 : Organismes agréés et commissions.",
           "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
           "cid": "LEGISCTA000006186745",
           "id": "LEGISCTA000006186745",
+          "etat": "MODIFIE"
+        },
+        {
+          "debut": "2026-09-27",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 2 : Association agréée",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006186745",
+          "id": "LEGISCTA000054907044",
           "etat": "VIGUEUR"
         }
       ],
-      "nombreVersionParent": 1,
+      "nombreVersionParent": 2,
       "longeurChemin": 50,
       "titreTxt": [
         {
@@ -92,11 +101,11 @@
     "cid": "LEGIARTI000006749901",
     "cidTexte": null,
     "sectionParentCid": "LEGISCTA000006186745",
-    "sectionParentId": "LEGISCTA000006186745",
-    "sectionParentTitre": "Sous-section 2 : Organismes agréés et commissions.",
-    "fullSectionsTitre": "Partie réglementaire - Décrets en Conseil d'Etat &gt; Livre III : Dispositions relatives aux assurances sociales et à diverses catégories de personnes rattachées au régime général &gt; Titre VIII : Dispositions relatives à diverses catégories de personnes rattachées au régime général - Dispositions d'application du livre 3 &gt; Chapitre 2 : Personnes rattachées au régime général pour l'ensemble des risques &gt; Section 1 : Artistes auteurs &gt; Sous-section 2 : Organismes agréés et commissions.",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000046800518",
+    "sectionParentId": "LEGISCTA000054907044",
+    "sectionParentTitre": "Sous-section 2 : Association agréée",
+    "fullSectionsTitre": "Partie réglementaire - Décrets en Conseil d'Etat &gt; Livre III : Dispositions relatives aux assurances sociales et à diverses catégories de personnes rattachées au régime général &gt; Titre VIII : Dispositions relatives à diverses catégories de personnes rattachées au régime général - Dispositions d'application du livre 3 &gt; Chapitre 2 : Personnes rattachées au régime général pour l'ensemble des risques &gt; Section 1 : Artistes auteurs &gt; Sous-section 2 : Association agréée",
+    "refInjection": "IG-20261020",
+    "idTechInjection": "LEGIARTI000054907004",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -130,8 +139,8 @@
         "appellations": null
       }
     ],
-    "nota": "Conformément à l'article 89 du décret n° 2022-1605 du 22 décembre 2022, ces dispositions sont applicables à compter du 1er janvier 2023 dans les conditions fixées aux II à IV dudit article.",
-    "notaHtml": "<p>Conformément à l'article 89 du décret n° 2022-1605 du 22 décembre 2022, ces dispositions sont applicables à compter du 1er janvier 2023 dans les conditions fixées aux II à IV dudit article.</p>",
+    "nota": "Conformément au II de l'article 2 du décret n° 2026-897 du 24 septembre 2026, ces dispositions, dans leur rédaction résultant dudit décret, s'appliquent conformément au IV de l'article 8 de la loi du 30 décembre 2025 de financement de la sécurité sociale pour 2026 susvisée.",
+    "notaHtml": "<p>Conformément au II de l'article 2 du décret n° 2026-897 du 24 septembre 2026, ces dispositions, dans leur rédaction résultant dudit décret, s'appliquent conformément au IV de l'article 8 de la loi du 30 décembre 2025 de financement de la sécurité sociale pour 2026 susvisée.</p>",
     "activitePro": [],
     "numeroBrochure": [],
     "numeroBo": null,
@@ -150,16 +159,16 @@
         "dateDebutCible": "2999-01-01"
       },
       {
-        "textCid": "JORFTEXT000046778725",
-        "textTitle": "Décret n°2022-1605 du 22 décembre 2022 - art. 65",
+        "textCid": "JORFTEXT000054902736",
+        "textTitle": "Décret n°2026-897 du 24 septembre 2026 - art. 1",
         "linkType": "MODIFIE",
         "linkOrientation": "cible",
-        "articleNum": "65",
-        "articleId": "LEGIARTI000046781784",
+        "articleNum": "1",
+        "articleId": "LEGIARTI000054905151",
         "natureText": "DECRET",
-        "datePubliTexte": "2022-12-23",
-        "dateSignaTexte": "2022-12-22",
-        "dateDebutCible": "2022-12-24"
+        "datePubliTexte": "2026-09-26",
+        "dateSignaTexte": "2026-09-24",
+        "dateDebutCible": "2026-09-27"
       }
     ],
     "lienCitations": [
@@ -250,9 +259,18 @@
       },
       {
         "id": "LEGIARTI000046800518",
-        "etat": "VIGUEUR",
+        "etat": "MODIFIE",
         "version": "5.0",
         "dateDebut": 1672531200000,
+        "dateFin": 1790467200000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000054907004",
+        "etat": "VIGUEUR",
+        "version": "6.0",
+        "dateDebut": 1790467200000,
         "dateFin": 32472144000000,
         "numero": null,
         "ordre": null
@@ -262,7 +280,7 @@
       "R382-11",
       "382-11"
     ],
-    "versionPrecedente": "LEGIARTI000037854429",
+    "versionPrecedente": "LEGIARTI000046800518",
     "conditionDiffere": null,
     "historique": null,
     "surtitre": null,

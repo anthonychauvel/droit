@@ -5,8 +5,8 @@
     "id": "LEGIARTI000022265988",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Les dispositions spécifiques relatives à la durée du travail et au repos qui figurent aux chapitres III et IV du titre premier du livre VII du code rural et de la pêche maritime sont applicables aux salariés détachés dans les entreprises qui exercent une activité mentionnée à l'article L. 713-1 de ce code.",
-    "texteHtml": "<p>Les dispositions spécifiques relatives à la durée du travail et au repos qui figurent aux chapitres III et IV du titre premier du livre VII du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006071367&dateTexte=&categorieLien=cid\" title=\"Code rural et de la pêche maritime (V)\">code rural et de la pêche maritime</a> sont applicables aux salariés détachés dans les entreprises qui exercent une activité mentionnée à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006650537&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L713-1 (V)\">L. 713-1 </a>de ce code.</p>",
+    "texte": "Les dispositions spécifiques relatives à la durée du travail et au repos qui figurent aux chapitres III et IV du titre premier du livre VII du code rural et de la pêche maritime sont applicables aux salariés détachés dans les entreprises qui exercent une activité mentionnée à l' article L. 713-1 de ce code .",
+    "texteHtml": "<p>Les dispositions spécifiques relatives à la durée du travail et au repos qui figurent aux <a href=\"/affichCode.do?cidTexte=LEGITEXT000006071367&idSectionTA=LEGISCTA000006152665&dateTexte=&categorieLien=cid\" title=\"Code rural -  Chapitre III : Durée du travail (V)\">chapitres III</a> et <a href=\"/affichCode.do?cidTexte=LEGITEXT000006071367&idSectionTA=LEGISCTA000006152666&dateTexte=&categorieLien=cid\" title=\"Code rural -  Chapitre IV : Repos hebdomadaire et quotidien (V)\">IV du titre premier du livre VII du code rural et de la pêche maritime</a> sont applicables aux salariés détachés dans les entreprises qui exercent une activité mentionnée à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006071367&idArticle=LEGIARTI000006585067&dateTexte=&categorieLien=cid\" title=\"Code rural - art. L713-1 (V)\">article L. 713-1 de ce code</a>.</p>",
     "num": "R1262-6",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000018537138",
     "sectionParentTitre": "Section 3 : Durée du travail, repos et congés",
     "fullSectionsTitre": "Partie réglementaire   &gt; Première partie : Les relations individuelles de travail  &gt; Livre II : Le contrat de travail  &gt; Titre VI : Salariés détachés temporairement par une entreprise non établie en France  &gt; Chapitre II : Conditions de détachement et réglementation applicable &gt; Section 3 : Durée du travail, repos et congés",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000022265988",
+    "refInjection": "MD-20261014_194635_273_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000022265988",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -153,29 +153,42 @@
     "lienCitations": [
       {
         "textCid": "LEGITEXT000006071367",
-        "textTitle": "Code rural et de la pêche maritime (V)",
+        "textTitle": "Code rural -  Chapitre III : Durée du travail (V)",
         "linkType": "CITATION",
         "linkOrientation": "source",
         "articleNum": "",
-        "articleId": "LEGITEXT000006071367",
+        "articleId": "LEGISCTA000006152665",
         "natureText": "CODE",
         "parentCid": null,
         "numTexte": "",
         "datePubli": 32472144000000,
-        "dateDebut": 312854400000
+        "dateDebut": 1114128000000
       },
       {
-        "textCid": "LEGITEXT000006072050",
-        "textTitle": "Code du travail - art. L713-1 (V)",
+        "textCid": "LEGITEXT000006071367",
+        "textTitle": "Code rural -  Chapitre IV : Repos hebdomadaire et quotidien (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006152666",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1114128000000
+      },
+      {
+        "textCid": "LEGITEXT000006071367",
+        "textTitle": "Code rural - art. L713-1 (V)",
         "linkType": "CITATION",
         "linkOrientation": "source",
         "articleNum": "L713-1",
-        "articleId": "LEGIARTI000006650537",
+        "articleId": "LEGIARTI000006585067",
         "natureText": "CODE",
         "parentCid": null,
         "numTexte": "",
         "datePubli": 32472144000000,
-        "dateDebut": 950227200000
+        "dateDebut": 961632000000
       }
     ],
     "lienConcordes": [

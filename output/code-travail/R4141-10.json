@@ -5,8 +5,8 @@
     "id": "LEGIARTI000018532864",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Les dispositions du présent chapitre s'appliquent sans préjudice des formations particulières prévues pour certains risques ou certaines activités ou opérations par les livres III à V.",
-    "texteHtml": "<p><br/>Les dispositions du présent chapitre s'appliquent sans préjudice des formations particulières prévues pour certains risques ou certaines activités ou opérations par les livres III à V.</p>",
+    "texte": "Les dispositions du présent chapitre s'appliquent sans préjudice des formations particulières prévues pour certains risques ou certaines activités ou opérations par les livres III à V .",
+    "texteHtml": "<p><br/>Les dispositions du présent chapitre s'appliquent sans préjudice des formations particulières prévues pour certains risques ou certaines activités ou opérations par les <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018489300&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Livre III : Equipements de travail et moyens de... (V)\">livres III à V</a>.</p>",
     "num": "R4141-10",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,8 +104,8 @@
     "sectionParentId": "LEGISCTA000019960811",
     "sectionParentTitre": "Section 1 : Objet et organisation de l'information     et de la formation à la sécurité",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre Ier : Dispositions générales  &gt; Titre IV : Information et formation des travailleurs  &gt; Chapitre Ier : Obligation générale d'information et de formation &gt;  Section 1  Objet et organisation de la formation à la sécurité",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000018532864",
+    "refInjection": "MD-20261013_193346_087_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000018532864",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -159,7 +159,21 @@
         "dateDebutCible": "2008-03-13"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Livre III : Equipements de travail et moyens de... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018489300",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

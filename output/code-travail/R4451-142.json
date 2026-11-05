@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "L'Autorité de sûreté nucléaire et de radioprotection, après en avoir informé le ministère chargé du travail, peut signaler aux organismes certificateurs ou au Comité français d'accréditation les manquements et les non-conformités aux dispositions du présent chapitre qu'elle constate. Les organismes certificateurs et le Comité français d'accréditation font part à l'Autorité de sûreté nucléaire et de radioprotection et au ministre chargé du travail des mesures qu'ils envisagent de mettre en œuvre et des suites données à ce signalement.",
-    "texteHtml": "<p>L'Autorité de sûreté nucléaire et de radioprotection, après en avoir informé le ministère chargé du travail, peut signaler aux organismes certificateurs ou au Comité français d'accréditation les manquements et les non-conformités aux dispositions du présent chapitre qu'elle constate. Les organismes certificateurs et le Comité français d'accréditation font part à l'Autorité de sûreté nucléaire et de radioprotection et au ministre chargé du travail des mesures qu'ils envisagent de mettre en œuvre et des suites données à ce signalement.</p>",
+    "texteHtml": "<p>L'Autorité de sûreté nucléaire et de radioprotection, après en avoir informé le ministère chargé du travail, peut signaler aux organismes certificateurs ou au Comité français d'accréditation les manquements et les non-conformités aux dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018491125&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre Ier : Prévention des risques d'exposit... (V)\">présent chapitre</a> qu'elle constate. Les organismes certificateurs et le Comité français d'accréditation font part à l'Autorité de sûreté nucléaire et de radioprotection et au ministre chargé du travail des mesures qu'ils envisagent de mettre en œuvre et des suites données à ce signalement.</p>",
     "num": "R4451-142",
     "origine": "LEGI",
     "nature": "Article",
@@ -140,7 +140,7 @@
     "sectionParentId": "LEGISCTA000050927588",
     "sectionParentTitre": "Sous-section 2 : Appui technique",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre IV : Prévention de certains risques d'exposition  &gt; Titre V : Prévention des risques d'exposition aux rayonnements  &gt; Chapitre Ier : Prévention des risques d'exposition aux rayonnements ionisants &gt; Section 14 : Missions de l'Autorité de sûreté nucléaire et de radioprotection &gt; Sous-section 2 : Appui technique",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000050927609",
     "idEli": null,
     "idEliAlias": null,
@@ -195,7 +195,21 @@
         "dateDebutCible": "2025-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre Ier : Prévention des risques d'exposit... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018491125",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

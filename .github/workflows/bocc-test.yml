@@ -1,0 +1,60 @@
+name: TEST BOCC (sans commit)
+
+# Lancement manuel uniquement. Vérifie que l'open data de la DILA est lisible
+# et que pull_bocc.py en tire quelque chose, SANS rien committer.
+on:
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "Nombre de fichiers à télécharger pour le test"
+        required: true
+        default: "2"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Outils PDF
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils > /dev/null
+
+      - name: 1. Ce que la DILA publie (index brut)
+        run: |
+          for u in https://echanges.dila.gouv.fr/OPENDATA/BOCC/ \
+                   https://echanges.dila.gouv.fr/OPENDATA/BOCC/$(date -u +%Y)/; do
+            echo "===== $u"
+            curl -sSL --max-time 60 "$u" | sed -e 's/<[^>]*>/ /g' | grep -v '^\s*$' | tail -40 || echo "illisible"
+          done
+
+      - name: 2. Aspiration d'essai (dossier temporaire)
+        run: |
+          python3 scripts/pull_bocc.py --out /tmp/bocc --max "${{ github.event.inputs.max }}" --recul-jours 30
+
+      - name: 3. Ce qui a été extrait
+        run: |
+          python3 - <<'PY'
+          import json, glob
+          fichiers = sorted(glob.glob("/tmp/bocc/**/*.json", recursive=True))
+          print(f"{len(fichiers)} fichier(s) produit(s)")
+          for f in fichiers:
+              if f.endswith("_vus.json"):
+                  continue
+              d = json.load(open(f, encoding="utf-8"))
+              print(f"\n##### {d['fichier']} ({d.get('date_fichier')})")
+              for doc in d["documents"]:
+                  print(f"  {doc['nom']} : {doc.get('nb_pages', '?')} page(s), scanné={doc.get('scanne')}, {len(doc['textes'])} texte(s)")
+                  for t in doc["textes"][:15]:
+                      print(f"    IDCC {','.join(t['idcc']) or '?'} p.{t['pages']} salaires={t['salaires']} "
+                            f"montants={t['montants'][:6]}\n      {t['titre'][:120]}")
+          PY
