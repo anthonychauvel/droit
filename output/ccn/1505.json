@@ -47708,13 +47708,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005733623",
+              "cid": "KALISCTA000005733623",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires au 1er juillet 1997.",
+              "dateModif": null,
+              "dateDebut": "1997-07-01",
+              "dateFin": "1998-02-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005874804",
+                  "cid": "KALIARTI000005874804",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005733623/KALIARTI000005874804",
+                  "pathTitle": [
+                    "Grille de salaires au 1er juillet 1997."
+                  ],
+                  "content": "ANNEXE  I<p></p> Classification et salaires<p></p><p></p>   Comme suite aux décisions prises par les deux collèges lors de la session de la commission nationale mixte du vendredi 13 décembre 1996, la grille de salaires ci-dessous est applicable dès le 1er juillet 1997. Sont exclus provisoirement de cette grille les départements d'outre-mer.<p></p><p></p>Grille de salaires<p></p><TABLE><TR><TD>    COEFFICIENTS   </TD><TD> Pour 39 </TD></TR><TR><TD>   et catégories   </TD><TD> heures  </TD></TR><TR><TD>100, catégorie I   </TD><TD>  6.535F </TD></TR><TR><TD>110, catégorie II  </TD><TD>  6.697F </TD></TR><TR><TD>120, catégorie III </TD><TD>  6.948F </TD></TR><TR><TD>130, catégorie IV  </TD><TD>  7.351F </TD></TR><TR><TD>160, catégorie V   </TD><TD>  8.989F </TD></TR><TR><TD>220, catégorie VI  </TD><TD> 12.314F </TD></TR><TR><TD>    COEFFICIENTS   </TD><TD> Pour 42 </TD></TR><TR><TD>   et catégories   </TD><TD> heures  </TD></TR><TR><TD>100, catégorie I   </TD><TD>  7.039F </TD></TR><TR><TD>110, catégorie II  </TD><TD>  7.212F </TD></TR><TR><TD>120, catégorie III </TD><TD>  7.483F </TD></TR><TR><TD>130, catégorie IV  </TD><TD>  7.916F </TD></TR><TR><TD>160, catégorie V   </TD><TD>  9.681F </TD></TR><TR><TD>220, catégorie VI  </TD><TD> 13.261F </TD></TR><TR><TD>   COEFFICIENTS    </TD><TD> Pour 45 </TD></TR><TR><TD>   et catégories   </TD><TD> heures  </TD></TR><TR><TD>100, catégorie I   </TD><TD>  7.667F </TD></TR><TR><TD>110, catégorie II  </TD><TD>  7.856F </TD></TR><TR><TD>120, catégorie III </TD><TD>  8.150F </TD></TR><TR><TD>130, catégorie IV  </TD><TD>  8.622F </TD></TR><TR><TD>160, catégorie V   </TD><TD> 10.546F </TD></TR><TR><TD>220, catégorie VI  </TD><TD> 14.445F </TD></TR></TABLE><p></p>Date d'application<p></p><p></p>   Le présent avenant entre en vigueur le 1er juillet 1997 sous réserve que son arrêté d'extension soit publié au Journal officiel, dans des délais permettant effectivement son application, à cette date, à toutes les entreprises comprises dans le champ d'application de la convention collective nationale.<p></p><p></p>   Dans le cas contraire, il sera applicable le premier jour du mois suivant la publication au Journal officiel de son arrêté d'extension.<p></p> Publicité, extension<p></p><p></p>   Le présent avenant sera déposé en cinq exemplaires à la direction départementale du travail et de l'emploi, 18, avenue Parmentier, 75011 Paris.<p></p><p></p>   Les parties signataires ont convenu de demander, sans délai, l'extension du présent avenant, l'Union nationale des syndicats de détaillants en fruits, légumes et primeurs étant chargée des formalités visées ci-dessus.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 29 1997-01-06 en vigueur au 1er juillet 1997 BO conventions collectives 97-5, étendu par arrêté du 24 mars 1997 JORF 4 avril 1997",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 867715200000,
+                  "dateFin": 886291200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -47728,13 +47802,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005733624",
+              "cid": "KALISCTA000005733624",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires au 1er juillet 1997.",
+              "dateModif": null,
+              "dateDebut": "1998-02-01",
+              "dateFin": "1998-11-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005874805",
+                  "cid": "KALIARTI000005874805",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005733624/KALIARTI000005874805",
+                  "pathTitle": [
+                    "Grille de salaires au 1er juillet 1997."
+                  ],
+                  "content": "ANNEXE  I<p></p> Classifications et salaires<p></p><p></p>   Comme suite aux décisions prises par les deux collèges lors de la session de la commission nationale mixte du mardi 8 juillet 1997, la grille de salaires ci-dessous est applicable dès le 1er juillet 1997.<p></p><p></p>   Aucun salaire ne peut être inférieur à 39,43 F/heure à cette date. Sont exclus provisoirement de cette grille les départements d'outre-mer.<p></p>Grille de salaires en francs<p></p><TABLE><TR><TD> COEFFICIENTS   </TD><TD> Pour 39 </TD></TR><TR><TD>   et niveaux   </TD><TD> heures  </TD></TR><TR><TD>100, niveau I   </TD><TD>  6.670F </TD></TR><TR><TD>110, niveau II  </TD><TD>  6.790F </TD></TR><TR><TD>120, niveau III </TD><TD>  6.948F </TD></TR><TR><TD>130, niveau IV  </TD><TD>  7.351F </TD></TR><TR><TD>160, niveau V   </TD><TD>  8.989F </TD></TR><TR><TD>220, niveau VI  </TD><TD> 12.314F </TD></TR></TABLE><p></p><p></p>   (1) 42 heures dont 3 heures d'équivalence, personnel affecté à la vente.<p></p><TABLE><TR><TD> COEFFICIENTS   </TD><TD> Pour 42 </TD></TR><TR><TD>   et niveaux   </TD><TD> heures  </TD></TR><TR><TD></TD><TD>   (1)   </TD></TR><TR><TD>100, niveau I   </TD><TD>  7.183F </TD></TR><TR><TD>110, niveau II  </TD><TD>  7.312F </TD></TR><TR><TD>120, niveau III </TD><TD>  7.483F </TD></TR><TR><TD>130, niveau IV  </TD><TD>  7.916F </TD></TR><TR><TD>160, niveau V   </TD><TD>  9.681F </TD></TR><TR><TD>220, niveau VI  </TD><TD> 13.261F </TD></TR></TABLE><p></p><p></p>    (2) 42 heures (personnel non affecté à la vente.<p></p><TABLE><TR><TD> COEFFICIENTS   </TD><TD> Pour 42 </TD></TR><TR><TD>   et niveaux   </TD><TD> heures  </TD></TR><TR><TD></TD><TD>   (2)   </TD></TR><TR><TD>100, niveau I   </TD><TD>  7.311F </TD></TR><TR><TD>110, niveau II  </TD><TD>  7.443F </TD></TR><TR><TD>120, niveau III </TD><TD>  7.617F </TD></TR><TR><TD>130, niveau IV  </TD><TD>  8.057F </TD></TR><TR><TD>160, niveau V   </TD><TD>  9.853F </TD></TR><TR><TD>220, niveau VI  </TD><TD> 13.498F </TD></TR></TABLE><p></p><p></p><p></p>   (3) 45 heures dont 3 heures d'équivalence (personnel affecté à la vente.<p></p><TABLE><TR><TD> COEFFICIENTS   </TD><TD> Pour 45 </TD></TR><TR><TD>   et niveaux   </TD><TD> heures  </TD></TR><TR><TD></TD><TD>   (3)   </TD></TR><TR><TD>100, niveau I   </TD><TD>  7.824F </TD></TR><TR><TD>110, niveau II  </TD><TD>  7.965F </TD></TR><TR><TD>120, niveau III </TD><TD>  8.151F </TD></TR><TR><TD>130, niveau IV  </TD><TD>  8.622F </TD></TR><TR><TD>160, niveau V   </TD><TD> 10.545F </TD></TR><TR><TD>220, niveau VI  </TD><TD> 14.445F </TD></TR></TABLE><p></p><p></p><p></p>   (4) 45 heures (personnel non affecté à la vente).<p></p><TABLE><TR><TD> COEFFICIENTS   </TD><TD> Pour 45 </TD></TR><TR><TD>   et niveaux   </TD><TD> heures  </TD></TR><TR><TD></TD><TD>   (4)   </TD></TR><TR><TD>100, niveau I   </TD><TD>  7.953F </TD></TR><TR><TD>110, niveau II  </TD><TD>  8.096F </TD></TR><TR><TD>120, niveau III </TD><TD>  8.285F </TD></TR><TR><TD>130, niveau IV  </TD><TD>  8.764F </TD></TR><TR><TD>160, niveau V   </TD><TD> 10.717F </TD></TR><TR><TD>220, niveau VI  </TD><TD> 14.682F </TD></TR></TABLE><p></p>Date d'application<p></p><p></p>   Le présent avenant est applicable à compter du 1er juillet 1997, sous réserve que son arrêté d'extension soit publié au Journal officiel dans des délais permettant effectivement son application, à cette date, à toutes les entreprises comprises dans le champ d'application de la convention collective nationale.<p></p><p></p>   Dans le cas contraire, il sera applicable le premier jour du mois suivant la publication au Journal officiel de son arrêté d'extension.<p></p>Publicité, extension<p></p><p></p>   Le présent avenant sera déposé en cinq exemplaires à la direction départementale du travail et de l'emploi, 18, avenue Parmentier, 75011 Paris.<p></p><p></p>   Les parties signataires ont convenu de demander, sans délai, l'extension du présent avenant, l'union nationale des syndicats de détaillants en fruits, légumes et primeurs étant chargée des formalités visées ci-dessus.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 30 1997-07-11 en vigueur selon la date de son arrêté d'extension BO conventions collectives 97-32, étendu par arrêté du 13 janvier 1998 JORF 22 janvier 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 886291200000,
+                  "dateFin": 909878400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -47748,13 +47896,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005733625",
+              "cid": "KALISCTA000005733625",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Grille de salaires au 1er juillet 1998",
+              "dateModif": null,
+              "dateDebut": "1998-09-01",
+              "dateFin": "2022-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005874806",
+                  "cid": "KALIARTI000005874806",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005733625/KALIARTI000005874806",
+                  "pathTitle": [
+                    "Grille de salaires au 1er juillet 1998"
+                  ],
+                  "content": "<p>ANNEXE I</p><p>Classifications et salaires</p><p>Comme suite aux décisions prises par les deux collèges lors de la session de Commission nationale mixte du mercredi 15 avril 1998, la grille de salaires ci-dessous est applicable dès le 1er juillet 1998.</p><p>Grille des salaires (horaire hebdomadaire) (en francs)</p><p></p><p><table><tbody><tr><td>COEFFICIENTS </td><td>Pour 39 </td></tr><tr><td>et niveaux </td><td>heures </td></tr><tr><td>100, niveau I </td><td>6.737F </td></tr><tr><td>110, niveau II </td><td>6.858F </td></tr><tr><td>120, niveau III </td><td>7.017F </td></tr><tr><td>130, niveau IV </td><td>7.425F </td></tr><tr><td>160, niveau V </td><td>9.079F </td></tr><tr><td>220, niveau VI </td><td>12.437F </td></tr></tbody></table></p><p>(1) 42 heures dont 3 heures d'équivalence, personnel affecté à la vente.</p><p><table><tbody><tr><td>COEFFICIENTS </td><td>Pour 42 </td></tr><tr><td>et niveaux </td><td>heures </td></tr><tr><td></td><td>(1) </td></tr><tr><td>100, niveau I </td><td>7.255F </td></tr><tr><td>110, niveau II </td><td>7.385F </td></tr><tr><td>120, niveau III </td><td>7.558F </td></tr><tr><td>130, niveau IV </td><td>7.995F </td></tr><tr><td>160, niveau V </td><td>9.777F </td></tr><tr><td>220, niveau VI </td><td>13.394F </td></tr></tbody></table></p><p>(2) 42 heures (personnel non affecté à la vente.</p><p><table><tbody><tr><td>COEFFICIENTS </td><td>Pour 42 </td></tr><tr><td>et niveaux </td><td>heures </td></tr><tr><td></td><td>(2) </td></tr><tr><td>100, niveau I </td><td>7.384F </td></tr><tr><td>110, niveau II </td><td>7.517F </td></tr><tr><td>120, niveau III </td><td>7.692F </td></tr><tr><td>130, niveau IV </td><td>8.138F </td></tr><tr><td>160, niveau V </td><td>9.952F </td></tr><tr><td>220, niveau VI </td><td>13.633F </td></tr></tbody></table></p><p></p><p>(3) 45 heures dont 3 heures d'équivalence (personnel affecté à la vente.</p><p><table><tbody><tr><td>COEFFICIENTS </td><td>Pour 45 </td></tr><tr><td>et niveaux </td><td>heures </td></tr><tr><td></td><td>(3) </td></tr><tr><td>100, niveau I </td><td>7.902F </td></tr><tr><td>110, niveau II </td><td>8.045F </td></tr><tr><td>120, niveau III </td><td>8.233F </td></tr><tr><td>130, niveau IV </td><td>8.708F </td></tr><tr><td>160, niveau V </td><td>10.650F </td></tr><tr><td>220, niveau VI </td><td>14.589F </td></tr></tbody></table></p><p></p><p>(4) 45 heures (personnel non affecté à la vente).</p><p><table><tbody><tr><td>COEFFICIENTS </td><td>Pour 45 </td></tr><tr><td>et niveaux </td><td>heures </td></tr><tr><td></td><td>(4) </td></tr><tr><td>100, niveau I </td><td>8.033F </td></tr><tr><td>110, niveau II </td><td>8.177F </td></tr><tr><td>120, niveau III </td><td>8.366F </td></tr><tr><td>130, niveau IV </td><td>8.852F </td></tr><tr><td>160, niveau V </td><td>10.824F </td></tr><tr><td>220, niveau VI </td><td>14.829F </td></tr></tbody></table></p><p>Date d'application</p><p>Le présent avenant est applicable à compter du 1er juillet 1998 sous réserve que son arrêté d'extension soit publié au Journal officiel dans des délais permettant effectivement son application, à cette date, à toutes les entreprises comprises dans le champ d'application de la convention collective nationale.</p><p>Dans le cas contraire, il sera applicable le premier jour du mois suivant la publication au Journal officiel de son arrêté d'extension.</p><p>Publicité d'extension</p><p>Le présent avenant sera déposé en 5 exemplaires à la direction départementale du travail et de l'emploi, 18 avenue Parmentier, 75011 Paris.</p><p>Les parties signataires ont convenu de demander, sans délai, l'extension du présent avenant, l'Union nationale des syndicats de détaillants en fruits, légumes et primeurs étant chargée des formalités visées ci-dessus.</p><p><font color=\"#808080\" size=\"1\"><em>(1) Dispositions étendues sous réserve de l'application des dispositions réglementaires relatives au salaire minimum de croissance (arrêté du 29 juillet 1998, art. 1er).</em></font></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 31 1998-05-10 en vigueur selon la date de son arrêté d'extension BO conventions collectives 98-24 étendu par arrêté du 29 juillet 1998 JORF 7 août 1998",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES (1)",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 904608000000,
+                  "dateFin": 1640995200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

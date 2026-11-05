@@ -17812,7 +17812,9 @@
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -24863,12 +24865,63 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005805832",
+              "cid": "KALIARTI000005805832",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "num": null,
+              "path": "/KALIARTI000005805832",
+              "pathTitle": [],
+              "content": "Article 1er<p></p><p></p>   En application de l'article 73, la valeur du point conventionnelle (6,66 ) est augmentée de 1 % pour être portée à 6,72  à compter du 1er juillet 2006.<p></p> Article 2<p></p><p></p>   En application de l'article 74, la rémunération annuelle garantie est portée pour l'année 2006 à 5,4 % du montant des salaires mensuels conventionnels, calculés sur une valeur du point de 6,66  du 1er janvier 2006 à la date d'effet du présent avenant et de 6,72  de la date d'effet du présent avenant au 31 décembre 2006.<p></p> Article 3<p></p><p></p>   Par exception au principe posé par l'article 4 du protocole de transposition (annexe I) à la convention collective) pour 2006, l'indemnité différentielle d'emploi conventionnelle prévue audit protocole ne sera pas réduite en raison de l'augmentation de la valeur du point telle que définie par l'article 1er du présent avenant.<p></p> Article 4<p></p> Date d'effet<p></p><p></p>   Le présent avenant s'appliquera au 1er jour du mois qui suit l'arrêté d'extension et au plus tôt au 1er juillet 2006 en cas de publication de l'arrêté d'extension avant cette date. En tout état de cause, il s'appliquera dès le 1er juillet 2006 aux établissements adhérents de la FHP.<p></p><p></p>   Son extension sera demandée par la partie la plus diligente.<p></p><p></p>   Fait à Paris, le 29 mars 2006.<p></p>",
+              "nota": null,
+              "comporteLiens": false,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant n° 17-2006 2006-03-29 BO conventions collectives 2006-23 étendu par arrêté du 5 décembre 2006 JORF 19 décembre 2006",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": "Salaires",
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1143590400000,
+              "dateFin": 1166659200000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -24883,12 +24936,63 @@
           "dateFin": null,
           "sectionConsultee": false,
           "sections": [],
-          "articles": [],
+          "articles": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALIARTI000005805843",
+              "cid": "KALIARTI000005805843",
+              "intOrdre": 42949,
+              "etat": "VIGUEUR_ETEN",
+              "num": null,
+              "path": "/KALIARTI000005805843",
+              "pathTitle": [],
+              "content": "<p>Article 1er</p><p>En application de l'article 73-2 bis de l'annexe EHPA du 10 décembre 2002 :</p><p>- au 1er janvier 2007, le salaire mensuel conventionnel correspondant au coefficient d'emploi 194 ne pourra être inférieur à 1 260 Euros brut pour un temps plein ;</p><p>- au 1er avril 2007, la valeur du point est portée à 6,54 Euros.</p><p>Article 2</p><p>Le présent avenant s'appliquera le 1er jour du mois qui suit la publication de l'arrêté d'extension, et au plus tôt le 1er janvier 2007.</p><p>En tout état de cause, le présent avenant s'appliquera dès le 1er janvier 2007 aux établissements adhérents du SYNERPA.</p><p>Son extension sera demandée par la partie la plus diligente.</p><p>Fait à Paris, le 21 décembre 2006.</p>",
+              "nota": null,
+              "comporteLiens": false,
+              "comporteLiensSP": false,
+              "modificatorTitle": null,
+              "modificatorCid": null,
+              "modificatorDate": null,
+              "articleVersion": "1.0",
+              "type": null,
+              "lstLienModification": [
+                {
+                  "textCid": "",
+                  "textTitle": "Avenant 2006-12-21 BO conventions collectives 2007-9 étendu par arrêté du 3 mai 2007 JORF 17 mai 2007",
+                  "linkType": "CREATION",
+                  "linkOrientation": "source",
+                  "articleNum": "",
+                  "articleId": "",
+                  "natureText": "",
+                  "datePubliTexte": null,
+                  "dateSignaTexte": null,
+                  "dateDebutCible": null
+                }
+              ],
+              "lstLienCitation": [],
+              "conditionDiffere": null,
+              "historique": null,
+              "surtitre": null,
+              "renvoi": null,
+              "versionLabel": null,
+              "infosComplementaires": null,
+              "infosComplementairesHtml": null,
+              "infosRestructurationBranche": null,
+              "infosRestructurationBrancheHtml": null,
+              "dateDebut": 1166659200000,
+              "dateFin": 32472144000000,
+              "notaSectionsAafficher": null,
+              "multipleVersions": false
+            }
+          ],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
