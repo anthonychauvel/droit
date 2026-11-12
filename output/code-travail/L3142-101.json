@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Toute stipulation contraire aux dispositions du présent paragraphe est nulle de plein droit.",
-    "texteHtml": "<p></p>   Toute stipulation contraire aux dispositions du présent paragraphe est nulle de plein droit.<p></p><p></p>",
+    "texteHtml": "<p></p>   Toute stipulation contraire aux dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006198610&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Paragraphe 2 : Service national. (V)\">présent paragraphe</a> est nulle de plein droit.<p></p><p></p>",
     "num": "L3142-101",
     "origine": "LEGI",
     "nature": "Article",
@@ -131,8 +131,8 @@
     "sectionParentId": "LEGISCTA000006198610",
     "sectionParentTitre": "Paragraphe 2 : Service national.",
     "fullSectionsTitre": "Partie législative   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale     &gt; Livre Ier : Durée du travail, repos et congés &gt; Titre IV : Congés payés et autres congés &gt; Chapitre II : Autres congés &gt; Section 2 : Congés pour engagement associatif, politique ou militant &gt; Sous-section 9 : Réserve opérationnelle et service national &gt; Paragraphe 2 : Service national.",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000033021832",
+    "refInjection": "MD-20261111_011812_773_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000033021832",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -186,7 +186,21 @@
         "dateDebutCible": "2016-08-10"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Paragraphe 2 : Service national. (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006198610",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

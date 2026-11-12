@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Les décisions du  juge judiciaire statuant en référé prévues au présent chapitre ne peuvent entraîner ni rupture, ni suspension du contrat de travail, ni aucun préjudice pécuniaire à l'encontre des salariés concernés.",
-    "texteHtml": "<p></p>Les décisions du  juge judiciaire statuant en référé prévues au présent chapitre ne peuvent entraîner ni rupture, ni suspension du contrat de travail, ni aucun préjudice pécuniaire à l'encontre des salariés concernés.<p></p><p></p>",
+    "texteHtml": "<p></p>Les décisions du  juge judiciaire statuant en référé prévues au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178115&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre II : Référé judiciaire. (V)\">présent chapitre</a> ne peuvent entraîner ni rupture, ni suspension du contrat de travail, ni aucun préjudice pécuniaire à l'encontre des salariés concernés.<p></p><p></p>",
     "num": "L4732-3",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000032376267",
     "sectionParentTitre": "Chapitre II : Référé judiciaire.",
     "fullSectionsTitre": "Partie législative   &gt; Quatrième partie : Santé et sécurité au travail &gt; Livre VII : Contrôle &gt; Titre III : Mesures et procédures d'urgence   &gt; Chapitre II : Référé judiciaire.",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000032376251",
+    "refInjection": "MD-20261106_205732_875_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000032376251",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -162,7 +162,21 @@
         "dateDebutCible": "2016-07-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre II : Référé judiciaire. (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178115",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006903124",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Les dispositions générales prévues par l'article L. 1511-1 sont également applicables aux dispositions du présent livre.",
-    "texteHtml": "<p></p>Les dispositions générales prévues par l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006901558&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L1511-1 (V)\">L. 1511-1</a> sont également applicables aux dispositions du présent livre.<p></p><p></p>",
+    "texte": "Les dispositions générales prévues par l'article L. 1511-1 sont également applicables aux dispositions du présent livre .",
+    "texteHtml": "<p></p>Les dispositions générales prévues par l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006901558&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L1511-1 (V)\">L. 1511-1</a> sont également applicables aux dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006145406&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Livre IV : Dispositions relatives à l'outre-mer   (V)\">présent livre</a>.<p></p><p></p>",
     "num": "L3411-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,8 +86,8 @@
     "sectionParentId": "LEGISCTA000006178060",
     "sectionParentTitre": "Chapitre unique",
     "fullSectionsTitre": "Partie législative   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale     &gt; Livre IV : Dispositions relatives à l'outre-mer \n &gt; Titre Ier : Dispositions générales  &gt; Chapitre unique",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000006903124",
+    "refInjection": "MD-20261111_011812_773_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000006903124",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -142,6 +142,19 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Livre IV : Dispositions relatives à l'outre-mer \n (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006145406",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. L1511-1 (V)",

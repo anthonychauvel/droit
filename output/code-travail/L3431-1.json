@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Les salariés des entreprises soumises aux dispositions du livre III exerçant leur activité à Wallis et Futuna ou dans les Terres australes et antarctiques françaises bénéficient de l'intéressement, de la participation et du plan d'épargne salariale dans les mêmes conditions que les salariés de ces entreprises travaillant dans les départements de métropole, en Guadeloupe, en Guyane, en Martinique, à La Réunion, à Saint-Barthélemy, à Saint-Martin ou à Saint-Pierre-et-Miquelon.",
-    "texteHtml": "<p>Les salariés des entreprises soumises aux dispositions du livre III exerçant leur activité à Wallis et Futuna ou dans les Terres australes et antarctiques françaises bénéficient de l'intéressement, de la participation et du plan d'épargne salariale dans les mêmes conditions que les salariés de ces entreprises travaillant dans les départements de métropole, en Guadeloupe, en Guyane, en Martinique, à La Réunion, à Saint-Barthélemy, à Saint-Martin ou à Saint-Pierre-et-Miquelon.</p>",
+    "texteHtml": "<p>Les salariés des entreprises soumises aux dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006145405&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Livre III : Dividende du travail : intéressemen... (V)\">livre III</a> exerçant leur activité à Wallis et Futuna ou dans les Terres australes et antarctiques françaises bénéficient de l'intéressement, de la participation et du plan d'épargne salariale dans les mêmes conditions que les salariés de ces entreprises travaillant dans les départements de métropole, en Guadeloupe, en Guyane, en Martinique, à La Réunion, à Saint-Barthélemy, à Saint-Martin ou à Saint-Pierre-et-Miquelon.</p>",
     "num": "L3431-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000006178064",
     "sectionParentTitre": "Chapitre unique : Intéressement, participation et épargne salariale.",
     "fullSectionsTitre": "Partie législative   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale     &gt; Livre IV : Dispositions relatives à l'outre-mer \n &gt; Titre III : Mesures de coordination avec les autres collectivités ultramarines &gt; Chapitre unique : Intéressement, participation et épargne salariale.",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000035902475",
+    "refInjection": "MD-20261111_011809_497_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000035902475",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -150,7 +150,21 @@
         "dateDebutCible": "2018-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Livre III : Dividende du travail : intéressemen... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006145405",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

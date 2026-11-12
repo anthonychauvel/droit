@@ -5,8 +5,8 @@
     "id": "LEGIARTI000020627476",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Des décrets en Conseil d'Etat déterminent les conditions d'application du présent chapitre.",
-    "texteHtml": "<p>Des décrets en Conseil d'Etat déterminent les conditions d'application du présent chapitre.</p><p></p><p></p>",
+    "texte": "Des décrets en Conseil d'Etat déterminent les conditions d'application du présent chapitre .",
+    "texteHtml": "<p>Des décrets en Conseil d'Etat déterminent les conditions d'application du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178096&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre II : Coordination lors des opérations ... (V)\">présent chapitre</a>.</p><p></p><p></p>",
     "num": "L4532-18",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000006189741",
     "sectionParentTitre": "Section 8 : Dispositions d'application.",
     "fullSectionsTitre": "Partie législative   &gt; Quatrième partie : Santé et sécurité au travail &gt; Livre V : Prévention des risques liés à certaines activités ou opérations &gt; Titre III : Bâtiment et génie civil   &gt; Chapitre II : Coordination lors des opérations de bâtiment et de génie civil &gt; Section 8 : Dispositions d'application.",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000020627476",
+    "refInjection": "MD-20261111_011812_773_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000020627476",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -153,6 +153,19 @@
     "lienCitations": [
       {
         "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre II : Coordination lors des opérations ... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178096",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. L4744-3 (VD)",
         "linkType": "CITATION",
         "linkOrientation": "cible",
@@ -179,16 +192,16 @@
       },
       {
         "textCid": "LEGITEXT000006072050",
-        "textTitle": "Code du travail - art. L4744-6 (VD)",
+        "textTitle": "Code du travail - art. L4744-6 (V)",
         "linkType": "CITATION",
         "linkOrientation": "cible",
         "articleNum": "L4744-6",
-        "articleId": "LEGIARTI000032376312",
+        "articleId": "LEGIARTI000018764857",
         "natureText": "CODE",
         "parentCid": null,
         "numTexte": "",
         "datePubli": 32472144000000,
-        "dateDebut": 1467331200000
+        "dateDebut": 1209600000000
       }
     ],
     "lienConcordes": [

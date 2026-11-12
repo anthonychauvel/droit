@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006903483",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret détermine les conditions dans lesquelles les maisons de l'emploi participent à la mise en oeuvre des actions de reclassement prévues au présent chapitre. Les autres dispositions du présent chapitre sont déterminées par décret en Conseil d'Etat.",
-    "texteHtml": "<p></p>   Un décret détermine les conditions dans lesquelles les maisons de l'emploi participent à la mise en oeuvre des actions de reclassement prévues au présent chapitre.<p></p><p></p>   Les autres dispositions du présent chapitre sont déterminées par décret en Conseil d'Etat.<p></p>",
+    "texte": "Un décret détermine les conditions dans lesquelles les maisons de l'emploi participent à la mise en oeuvre des actions de reclassement prévues au présent chapitre . Les autres dispositions du présent chapitre sont déterminées par décret en Conseil d'Etat.",
+    "texteHtml": "<p></p>   Un décret détermine les conditions dans lesquelles les maisons de l'emploi participent à la mise en oeuvre des actions de reclassement prévues au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178129&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre III : Aides aux actions de reclassemen... (V)\">présent chapitre</a>.<p></p><p></p>   Les autres dispositions du présent chapitre sont déterminées par décret en Conseil d'Etat.<p></p>",
     "num": "L5123-9",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000006178129",
     "sectionParentTitre": "Chapitre III : Aides aux actions de reclassement et de reconversion professionnelle.",
     "fullSectionsTitre": "Partie législative   &gt; Cinquième partie : L'emploi &gt; Livre Ier : Les dispositifs en faveur de l'emploi &gt; TITRE II : AIDES AU MAINTIEN ET À LA SAUVEGARDE DE L'EMPLOI &gt; Chapitre III : Aides aux actions de reclassement et de reconversion professionnelle.",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000006903483",
+    "refInjection": "MD-20261106_205732_875_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000006903483",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -150,7 +150,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre III : Aides aux actions de reclassemen... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178129",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

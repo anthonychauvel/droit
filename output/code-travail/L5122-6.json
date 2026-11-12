@@ -5,8 +5,8 @@
     "id": "LEGIARTI000044941956",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret en Conseil d'Etat détermine les conditions d'application du présent chapitre.",
-    "texteHtml": "<p>Un décret en Conseil d'Etat détermine les conditions d'application du présent chapitre.</p>",
+    "texte": "Un décret en Conseil d'Etat détermine les conditions d'application du présent chapitre .",
+    "texteHtml": "<p>Un décret en Conseil d'Etat détermine les conditions d'application du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178128&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre II : Aide aux salariés placés en activ... (V)\">présent chapitre</a>.</p>",
     "num": "L5122-6",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,8 +104,8 @@
     "sectionParentId": "LEGISCTA000027565896",
     "sectionParentTitre": "Chapitre II : Aide aux salariés placés en activité partielle",
     "fullSectionsTitre": "Partie législative   &gt; Cinquième partie : L'emploi &gt; Livre Ier : Les dispositifs en faveur de l'emploi &gt; Titre II : Maintien et sauvegarde de l'emploi &gt; Chapitre II : Aide aux salariés placés en activité partielle",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000044941956",
+    "refInjection": "MD-20261106_205732_875_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000044941956",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -159,7 +159,21 @@
         "dateDebutCible": "2022-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre II : Aide aux salariés placés en activ... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178128",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

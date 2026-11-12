@@ -5,8 +5,8 @@
     "id": "LEGIARTI000043890015",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "L'article L. 4751-2 ne s'applique pas au présent chapitre.",
-    "texteHtml": "<p>L'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000032374796&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L4751-2 (V)\">L. 4751-2</a> ne s'applique pas au présent chapitre.</p><p></p>",
+    "texte": "L'article L. 4751-2 ne s'applique pas au présent chapitre .",
+    "texteHtml": "<p>L'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000032374796&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L4751-2 (V)\">L. 4751-2</a> ne s'applique pas au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000043889993&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre V : Manquements aux règles concernant ... (V)\">présent chapitre</a>.</p><p></p>",
     "num": "L4755-2",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,8 +86,8 @@
     "sectionParentId": "LEGISCTA000043890004",
     "sectionParentTitre": "Chapitre V : Manquements aux règles concernant la conception, la fabrication et la mise sur le marché des équipements de travail et des équipements de protection individuelle ",
     "fullSectionsTitre": "Partie législative   &gt; Quatrième partie : Santé et sécurité au travail &gt; Livre VII : Contrôle &gt; Titre V : Amendes administratives\r\n &gt; Chapitre V : Manquements aux règles concernant la conception, la fabrication et la mise sur le marché des équipements de travail et des équipements de protection individuelle ",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000043890015",
+    "refInjection": "MD-20261106_205729_195_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000043890015",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -142,6 +142,19 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre V : Manquements aux règles concernant ... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000043889993",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. L4751-2 (V)",

@@ -5,8 +5,8 @@
     "id": "LEGIARTI000043891733",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Dans les conditions de déontologie professionnelle définies et garanties par la loi, l'infirmier de santé au travail assure les missions qui lui sont dévolues par le présent code ou déléguées par le médecin du travail, dans la limite des compétences prévues pour les infirmiers par le code de la santé publique.",
-    "texteHtml": "<p>Dans les conditions de déontologie professionnelle définies et garanties par la loi, l'infirmier de santé au travail assure les missions qui lui sont dévolues par le présent code ou déléguées par le médecin du travail, dans la limite des compétences prévues pour les infirmiers par le code de la santé publique.</p>",
+    "texte": "Dans les conditions de déontologie professionnelle définies et garanties par la loi, l'infirmier de santé au travail assure les missions qui lui sont dévolues par le présent code ou déléguées par le médecin du travail, dans la limite des compétences prévues pour les infirmiers par le code de la santé publique .",
+    "texteHtml": "<p>Dans les conditions de déontologie professionnelle définies et garanties par la loi, l'infirmier de santé au travail assure les missions qui lui sont dévolues par le présent code ou déléguées par le médecin du travail, dans la limite des compétences prévues pour les infirmiers par le <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072665&dateTexte=&categorieLien=cid\" title=\"Code de la santé publique\">code de la santé publique</a>.</p>",
     "num": "L4623-9",
     "origine": "LEGI",
     "nature": "Article",
@@ -122,8 +122,8 @@
     "sectionParentId": "LEGISCTA000043891724",
     "sectionParentTitre": "Section 2 : Infirmier de santé au travail ",
     "fullSectionsTitre": "Partie législative   &gt; Quatrième partie : Santé et sécurité au travail &gt; Livre VI : Institutions et organismes de prévention &gt; Titre II : Services de prévention et de santé au travail &gt; Chapitre III : Personnels concourant aux services de prévention et de santé au travail &gt; Section 2 : Infirmier de santé au travail ",
-    "refInjection": "IG-20260113",
-    "idTechInjection": "LEGIARTI000043891733",
+    "refInjection": "MD-20261111_011809_497_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000043891733",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -177,7 +177,21 @@
         "dateDebutCible": "2022-03-31"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072665",
+        "textTitle": "Code de la santé publique",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGITEXT000006072665",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": -512352000000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

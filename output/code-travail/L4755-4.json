@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Les modalités d'application du présent chapitre sont fixées par décret en Conseil d'Etat.",
-    "texteHtml": "<p>Les modalités d'application du présent chapitre sont fixées par décret en Conseil d'Etat.</p>",
+    "texteHtml": "<p>Les modalités d'application du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000043889993&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre V : Manquements aux règles concernant ... (V)\">présent chapitre</a> sont fixées par décret en Conseil d'Etat.</p>",
     "num": "L4755-4",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,8 +86,8 @@
     "sectionParentId": "LEGISCTA000043890004",
     "sectionParentTitre": "Chapitre V : Manquements aux règles concernant la conception, la fabrication et la mise sur le marché des équipements de travail et des équipements de protection individuelle ",
     "fullSectionsTitre": "Partie législative   &gt; Quatrième partie : Santé et sécurité au travail &gt; Livre VII : Contrôle &gt; Titre V : Amendes administratives\r\n &gt; Chapitre V : Manquements aux règles concernant la conception, la fabrication et la mise sur le marché des équipements de travail et des équipements de protection individuelle ",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000043890030",
+    "refInjection": "MD-20261106_205732_875_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000043890030",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -141,7 +141,21 @@
         "dateDebutCible": "2022-03-31"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre V : Manquements aux règles concernant ... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000043889993",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

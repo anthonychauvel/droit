@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Les associations ayant pour objet principal la défense des intérêts des bénéficiaires du présent chapitre peuvent exercer une action civile fondée sur l'inobservation des dispositions de ce même chapitre, lorsque cette inobservation porte un préjudice certain à l'intérêt collectif qu'elles représentent.",
-    "texteHtml": "<p></p>   Les associations ayant pour objet principal la défense des intérêts des bénéficiaires du présent chapitre peuvent exercer une action civile fondée sur l'inobservation des dispositions de ce même chapitre, lorsque cette inobservation porte un préjudice certain à l'intérêt collectif qu'elles représentent.<p></p><p></p>",
+    "texteHtml": "<p></p>   Les associations ayant pour objet principal la défense des intérêts des bénéficiaires du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178139&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre II : Obligation d'emploi des travaille... (V)\">présent chapitre</a> peuvent exercer une action civile fondée sur l'inobservation des dispositions de ce même chapitre, lorsque cette inobservation porte un préjudice certain à l'intérêt collectif qu'elles représentent.<p></p><p></p>",
     "num": "L5212-16",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000006189800",
     "sectionParentTitre": "Section 5 : Actions en justice.",
     "fullSectionsTitre": "Partie législative   &gt; Cinquième partie : L'emploi &gt; Livre II : Dispositions applicables à certaines catégories de travailleurs  &gt; Titre Ier : Travailleurs handicapés  &gt; Chapitre II : Obligation d'emploi des travailleurs handicapés, mutilés de guerre et assimilés &gt; Section 5 : Actions en justice.",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000006903697",
+    "refInjection": "MD-20261027_201828_739_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000006903697",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -150,7 +150,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre II : Obligation d'emploi des travaille... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178139",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

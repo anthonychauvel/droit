@@ -5,8 +5,8 @@
     "id": "LEGIARTI000028699058",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret en Conseil d'Etat précise les conditions d'application du présent chapitre.",
-    "texteHtml": "<p>Un décret en Conseil d'Etat précise les conditions d'application du présent chapitre. </p>",
+    "texte": "Un décret en Conseil d'Etat précise les conditions d'application du présent chapitre .",
+    "texteHtml": "<p>Un décret en Conseil d'Etat précise les conditions d'application du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178126&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre II : Instances concourant à la politiq... (V)\">présent chapitre</a>. </p>",
     "num": "L5112-2",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,8 +86,8 @@
     "sectionParentId": "LEGISCTA000006178126",
     "sectionParentTitre": "Chapitre II : Instances concourant à la politique de l'emploi",
     "fullSectionsTitre": "Partie législative   &gt; Cinquième partie : L'emploi &gt; Livre Ier : Les dispositifs en faveur de l'emploi &gt; Titre Ier : Politique de l'emploi  &gt; Chapitre II : Instances concourant à la politique de l'emploi",
-    "refInjection": "IG-20260113",
-    "idTechInjection": "LEGIARTI000028699058",
+    "refInjection": "MD-20261106_205732_875_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000028699058",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -141,7 +141,21 @@
         "dateDebutCible": "2014-03-07"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre II : Instances concourant à la politiq... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178126",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

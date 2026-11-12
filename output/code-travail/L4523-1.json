@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Les dispositions du présent chapitre s'appliquent sans préjudice de celles prévues au titre II du livre III de la deuxième partie relatives au comité social et économique.",
-    "texteHtml": "<p>Les dispositions du présent chapitre s'appliquent sans préjudice de celles prévues au titre II du livre III de la deuxième partie relatives au comité social et économique.</p>",
+    "texteHtml": "<p>Les dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178091&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre III : Comité social et économique (V)\">présent chapitre</a> s'appliquent sans préjudice de celles prévues au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006160740&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Titre II : Conseil d'entreprise (V)\">titre II du livre III de la deuxième partie</a> relatives au comité social et économique.</p>",
     "num": "L4523-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,8 +104,8 @@
     "sectionParentId": "LEGISCTA000006189729",
     "sectionParentTitre": "Section 1 : Attributions particulières.",
     "fullSectionsTitre": "Partie législative   &gt; Quatrième partie : Santé et sécurité au travail &gt; Livre V : Prévention des risques liés à certaines activités ou opérations &gt; Titre II : Installations nucléaires de base et installations susceptibles de donner lieu à des servitudes d'utilité publique    &gt; Chapitre III : Comité social et économique &gt; Section 1 : Attributions particulières.",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000035652604",
+    "refInjection": "MD-20261111_011809_497_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000035652604",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -172,6 +172,32 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre III : Comité social et économique (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178091",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Titre II : Conseil d'entreprise (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006160740",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
       {
         "textCid": "KALITEXT000026803629",
         "textTitle": "Nouvelle convention collective du 9 mai 2012 (a... - art. 6 (VE)",

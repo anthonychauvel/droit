@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006903655",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret détermine les conditions d'application de la présente section.",
-    "texteHtml": "<p></p>   Un décret détermine les conditions d'application de la présente section.<p></p><p></p>",
+    "texte": "Un décret détermine les conditions d'application de la présente section .",
+    "texteHtml": "<p></p>   Un décret détermine les conditions d'application de la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006189790&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 7 : Contrat relatif aux activités d'adu... (V)\">présente section</a>.<p></p><p></p>",
     "num": "L5134-109",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,8 +104,8 @@
     "sectionParentId": "LEGISCTA000006195881",
     "sectionParentTitre": "Sous-section 5 : Dispositions d'application.",
     "fullSectionsTitre": "Partie législative   &gt; Cinquième partie : L'emploi &gt; Livre Ier : Les dispositifs en faveur de l'emploi &gt; Titre III : Aides à l'insertion, à l'accès et au retour à l'emploi  &gt; Chapitre IV : Contrats de travail aidés &gt; Section 7 : Contrat relatif aux activités d'adultes-relais &gt; Sous-section 5 : Dispositions d'application.",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000006903655",
+    "refInjection": "MD-20261106_205732_875_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000006903655",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -160,6 +160,19 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 7 : Contrat relatif aux activités d'adu... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006189790",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. R5112-24 (V)",

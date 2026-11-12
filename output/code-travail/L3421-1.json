@@ -5,8 +5,8 @@
     "id": "LEGIARTI000018201602",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Les dispositions générales prévues par les articles L. 1521-1 à L. 1521-4 sont également applicables aux dispositions du présent titre.",
-    "texteHtml": "<p>Les dispositions générales prévues par les articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006901559&dateTexte=&categorieLien=cid\">L. 1521-1 à L. 1521-4</a> sont également applicables aux dispositions du présent titre.</p>",
+    "texte": "Les dispositions générales prévues par les articles L. 1521-1 à L. 1521-4 sont également applicables aux dispositions du présent titre .",
+    "texteHtml": "<p>Les dispositions générales prévues par les articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006901559&dateTexte=&categorieLien=cid\">L. 1521-1 à L. 1521-4</a> sont également applicables aux dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006160771&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Titre II : Guadeloupe, Guyane, Martinique, Mayo... (V)\">présent titre</a>.</p>",
     "num": "L3421-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,8 +104,8 @@
     "sectionParentId": "LEGISCTA000006178061",
     "sectionParentTitre": "Chapitre Ier : Dispositions générales.",
     "fullSectionsTitre": "Partie législative   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale     &gt; Livre IV : Dispositions relatives à l'outre-mer \n &gt; Titre II : Départements d'outre-mer, Saint-Barthélemy, Saint-Martin et Saint-Pierre-et-Miquelon  &gt; Chapitre Ier : Dispositions générales.",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000018201602",
+    "refInjection": "MD-20261111_011809_497_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000018201602",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -160,6 +160,19 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Titre II : Guadeloupe, Guyane, Martinique, Mayo... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006160771",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. L1521-1",
