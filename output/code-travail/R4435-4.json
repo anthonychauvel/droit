@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Lorsqu'une altération de l'ouïe est susceptible de résulter d'une exposition au bruit sur le lieu de travail, l'employeur : 1° Revoit en conséquence l'évaluation des risques, réalisée conformément au chapitre III ; 2° Complète ou modifie les mesures prévues pour supprimer ou réduire les risques conformément aux chapitres IV et V ; 3° Tient compte de l'avis du médecin du travail pour la mise en œuvre de toute mesure jugée nécessaire pour supprimer ou réduire les risques conformément aux chapitres IV et V, y compris l'éventuelle affectation du travailleur à un autre poste ne comportant plus de risque d'exposition. Dans ce cas, le médecin du travail détermine la pertinence et la nature des examens éventuellement nécessaires pour les autres travailleurs ayant subi une exposition semblable.",
-    "texteHtml": "<p><br/>Lorsqu'une altération de l'ouïe est susceptible de résulter d'une exposition au bruit sur le lieu de travail, l'employeur :<br/> 1° Revoit en conséquence l'évaluation des risques, réalisée conformément au chapitre III ;<br/> 2° Complète ou modifie les mesures prévues pour supprimer ou réduire les risques conformément aux chapitres IV et V ;<br/> 3° Tient compte de l'avis du médecin du travail pour la mise en œuvre de toute mesure jugée nécessaire pour supprimer ou réduire les risques conformément aux chapitres IV et V, y compris l'éventuelle affectation du travailleur à un autre poste ne comportant plus de risque d'exposition.<br/> Dans ce cas, le médecin du travail détermine la pertinence et la nature des examens éventuellement nécessaires pour les autres travailleurs ayant subi une exposition semblable.</p>",
+    "texteHtml": "<p><br/>Lorsqu'une altération de l'ouïe est susceptible de résulter d'une exposition au bruit sur le lieu de travail, l'employeur :<br/> 1° Revoit en conséquence l'évaluation des risques, réalisée conformément au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018490928&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre III : Évaluation des risques (V)\">chapitre III</a> ;<br/> 2° Complète ou modifie les mesures prévues pour supprimer ou réduire les risques conformément aux chapitres <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018490944&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre IV : Mesures et moyens de prévention (V)\">IV</a> et <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018490970&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre V : Surveillance médicale (V)\">V</a> ;<br/> 3° Tient compte de l'avis du médecin du travail pour la mise en œuvre de toute mesure jugée nécessaire pour supprimer ou réduire les risques conformément aux chapitres IV et V, y compris l'éventuelle affectation du travailleur à un autre poste ne comportant plus de risque d'exposition.<br/> Dans ce cas, le médecin du travail détermine la pertinence et la nature des examens éventuellement nécessaires pour les autres travailleurs ayant subi une exposition semblable.</p>",
     "num": "R4435-4",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,7 +86,7 @@
     "sectionParentId": "LEGISCTA000018530319",
     "sectionParentTitre": "Chapitre V : Surveillance médicale",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre IV : Prévention de certains risques d'exposition  &gt; Titre III : Prévention des risques d'exposition au bruit  &gt; Chapitre V : Surveillance médicale",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000018530311",
     "idEli": null,
     "idEliAlias": null,
@@ -141,7 +141,47 @@
         "dateDebutCible": "2008-03-13"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre III : Évaluation des risques (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018490928",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre IV : Mesures et moyens de prévention (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018490944",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre V : Surveillance médicale (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018490970",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

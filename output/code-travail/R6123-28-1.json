@@ -5,8 +5,8 @@
     "id": "LEGIARTI000053788667",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Les contributions supplémentaires mentionnées aux dispositions du 15° de l'article L. 6123-5, recouvrées dans les conditions prévues aux dispositions du II de l'article L. 6131-3, sont versées par France compétences aux opérateurs de compétences chaque trimestre. Un autre calendrier de versement peut toutefois être défini par délibération du conseil d'administration de France compétences.",
-    "texteHtml": "<p align=\"left\">Les contributions supplémentaires mentionnées aux dispositions du 15° de l'article L. 6123-5, recouvrées dans les conditions prévues aux dispositions du II de l'article L. 6131-3, sont versées par France compétences aux opérateurs de compétences chaque trimestre. Un autre calendrier de versement peut toutefois être défini par délibération du conseil d'administration de France compétences.</p>",
+    "texte": "Les contributions supplémentaires mentionnées aux dispositions du 15° de l'article L. 6123-5 , recouvrées dans les conditions prévues aux dispositions du II de l'article L. 6131-3 , sont versées par France compétences aux opérateurs de compétences chaque trimestre. Un autre calendrier de versement peut toutefois être défini par délibération du conseil d'administration de France compétences.",
+    "texteHtml": "<p align=\"left\">Les contributions supplémentaires mentionnées aux dispositions du <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000021340266&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L6123-5 (VT)\">15° de l'article L. 6123-5</a>, recouvrées dans les conditions prévues aux dispositions du <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000037375112&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L6131-3 (V)\">II de l'article L. 6131-3</a>, sont versées par France compétences aux opérateurs de compétences chaque trimestre. Un autre calendrier de versement peut toutefois être défini par délibération du conseil d'administration de France compétences.</p>",
     "num": "R6123-28-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -131,8 +131,8 @@
     "sectionParentId": "LEGISCTA000038036482",
     "sectionParentTitre": "Paragraphe 2 : Dotations financières versées par France compétences\r\n",
     "fullSectionsTitre": "Partie réglementaire   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre Ier : Principes généraux et organisation institutionnelle de la formation professionnelle  &gt; Titre II : Rôle des régions, de l'Etat et des institutions de la formation professionnelle  &gt; Chapitre III : Coordination des politiques de l'emploi, de l'orientation et de la formation professionnelles &gt; Section 3 : France compétences &gt; Sous-section 4 : Fonctionnement\r\n &gt; Paragraphe 2 : Dotations financières versées par France compétences\r\n",
-    "refInjection": "MD-20260410_195310_893_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000053788667",
+    "refInjection": "IG-20261019",
+    "idTechInjection": "LEGIARTI000053788667",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -186,7 +186,34 @@
         "dateDebutCible": "2026-04-11"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L6123-5 (VT)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L6123-5",
+        "articleId": "LEGIARTI000021340266",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1259193600000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L6131-3 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L6131-3",
+        "articleId": "LEGIARTI000037375112",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1546300800000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

@@ -5,8 +5,8 @@
     "id": "LEGIARTI000039347817",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Lorsqu'un   tribunal judiciaire est appelé à statuer en matière prud'homale, les demandes sont formées, instruites et jugées conformément aux dispositions du présent titre. En cas de recours, il est procédé comme en matière prud'homale.",
-    "texteHtml": "<p><br/>Lorsqu'un   tribunal judiciaire est appelé à statuer en matière prud'homale, les demandes sont formées, instruites et jugées conformément aux dispositions du présent titre. <br/>En cas de recours, il est procédé comme en matière prud'homale.</p>",
+    "texte": "Lorsqu'un   tribunal judiciaire est appelé à statuer en matière prud'homale, les demandes sont formées, instruites et jugées conformément aux dispositions du présent titre . En cas de recours, il est procédé comme en matière prud'homale.",
+    "texteHtml": "<p><br/>Lorsqu'un   tribunal judiciaire est appelé à statuer en matière prud'homale, les demandes sont formées, instruites et jugées conformément aux dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018484833&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Titre V : Procédure devant le conseil de prud'h... (V)\">présent titre</a>. <br/>En cas de recours, il est procédé comme en matière prud'homale.</p>",
     "num": "R1451-3",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,8 +86,8 @@
     "sectionParentId": "LEGISCTA000018536106",
     "sectionParentTitre": "Chapitre Ier : Dispositions générales",
     "fullSectionsTitre": "Partie réglementaire   &gt; Première partie : Les relations individuelles de travail  &gt; Livre IV : La résolution des litiges - Le conseil de prud'hommes  &gt; Titre V : Procédure devant le conseil de prud'hommes  &gt; Chapitre Ier : Dispositions générales",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000039347817",
+    "refInjection": "MD-20261014_194635_273_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000039347817",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -141,7 +141,21 @@
         "dateDebutCible": "2020-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Titre V : Procédure devant le conseil de prud'h... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018484833",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

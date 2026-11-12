@@ -5,8 +5,8 @@
     "id": "LEGIARTI000036483706",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Lorsque les résultats de l'évaluation des risques mettent en évidence des risques pour la santé ou la sécurité des travailleurs, l'employeur détermine les mesures à prendre conformément aux articles R. 4432-3 et R. 4434-6 , ainsi qu'aux dispositions des chapitres IV et V. L'employeur consulte à cet effet le                    comité social et économique.",
-    "texteHtml": "<p><br/>Lorsque les résultats de l'évaluation des risques mettent en évidence des risques pour la santé ou la sécurité des travailleurs, l'employeur détermine les mesures à prendre conformément aux articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018490926&dateTexte=&categorieLien=cid\">R. 4432-3 </a>et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018490958&dateTexte=&categorieLien=cid\">R. 4434-6</a>, ainsi qu'aux dispositions des chapitres IV et V. <br/>L'employeur consulte à cet effet le                    comité social et économique.</p>",
+    "texte": "Lorsque les résultats de l'évaluation des risques mettent en évidence des risques pour la santé ou la sécurité des travailleurs, l'employeur détermine les mesures à prendre conformément aux articles R. 4432-3 et R. 4434-6 , ainsi qu'aux dispositions des chapitres IV et V . L'employeur consulte à cet effet le                    comité social et économique.",
+    "texteHtml": "<p><br/>Lorsque les résultats de l'évaluation des risques mettent en évidence des risques pour la santé ou la sécurité des travailleurs, l'employeur détermine les mesures à prendre conformément aux articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018490926&dateTexte=&categorieLien=cid\">R. 4432-3 </a>et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018490958&dateTexte=&categorieLien=cid\">R. 4434-6</a>, ainsi qu'aux dispositions des chapitres <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018490944&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre IV : Mesures et moyens de prévention (V)\">IV</a> et <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018490970&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre V : Surveillance médicale (V)\">V</a>. <br/>L'employeur consulte à cet effet le                    comité social et économique.</p>",
     "num": "R4433-6",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,7 +86,7 @@
     "sectionParentId": "LEGISCTA000018530372",
     "sectionParentTitre": "Chapitre III : Évaluation des risques",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre IV : Prévention de certains risques d'exposition  &gt; Titre III : Prévention des risques d'exposition au bruit  &gt; Chapitre III : Évaluation des risques",
-    "refInjection": "IG-20260113",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000036483706",
     "idEli": null,
     "idEliAlias": null,
@@ -142,6 +142,32 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre IV : Mesures et moyens de prévention (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018490944",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre V : Surveillance médicale (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018490970",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. R4432-3",

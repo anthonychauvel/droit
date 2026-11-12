@@ -113,7 +113,7 @@
     "sectionParentId": "LEGISCTA000023018840",
     "sectionParentTitre": "Annexes",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre IV : Prévention de certains risques d'exposition  &gt; Titre V : Prévention des risques d'exposition aux rayonnements  &gt; Chapitre II : Prévention des risques d'exposition   aux rayonnements optiques artificiels &gt; Annexes",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261021",
     "idTechInjection": "LEGIARTI000040477365",
     "idEli": null,
     "idEliAlias": null,
@@ -168,7 +168,21 @@
         "dateDebutCible": "2020-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R4452-5 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R4452-5",
+        "articleId": "LEGIARTI000022442856",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1278288000000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

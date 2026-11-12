@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Les dispositions du chapitre premier du titre III relatif au salaire minimum de croissance et celles des articles R. 3232-8 à R. 3232-10 ne sont pas applicables aux jeunes travailleurs titulaires d'un contrat d'apprentissage.",
-    "texteHtml": "<p><br/>Les dispositions du chapitre premier du titre III relatif au salaire minimum de croissance et celles des articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018487259&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. R3232-8 (VD)\">R. 3232-8 à R. 3232-10</a> ne sont pas applicables aux jeunes travailleurs titulaires d'un contrat d'apprentissage.</p>",
+    "texteHtml": "<p><br/>Les dispositions du chapitre premier du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018487173&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Titre III : Détermination du salaire  (V)\">titre III</a> relatif au salaire minimum de croissance et celles des articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018487259&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. R3232-8 (VD)\">R. 3232-8 à R. 3232-10</a> ne sont pas applicables aux jeunes travailleurs titulaires d'un contrat d'apprentissage.</p>",
     "num": "D3211-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,7 +86,7 @@
     "sectionParentId": "LEGISCTA000018533912",
     "sectionParentTitre": " Chapitre unique",
     "fullSectionsTitre": "Partie réglementaire   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale  &gt; Livre II : Salaire et avantages divers  &gt; Titre Ier : Champ d'application  &gt;  Chapitre unique",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261022",
     "idTechInjection": "LEGIARTI000018533910",
     "idEli": null,
     "idEliAlias": null,
@@ -142,6 +142,19 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Titre III : Détermination du salaire  (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018487173",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. R3232-8 (VD)",

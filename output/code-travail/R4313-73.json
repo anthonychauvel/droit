@@ -5,8 +5,8 @@
     "id": "LEGIARTI000019761037",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "En cas de retrait de l'approbation du système d'assurance qualité, la fabrication ne peut se poursuivre qu'après que le fabricant a mis en œuvre un système de garantie de qualité CE conforme aux dispositions du paragraphe 1 de la présente sous-section. La procédure de sauvegarde prévue au chapitre IV peut également être mise en œuvre.",
-    "texteHtml": "<p>En cas de retrait de l'approbation du système d'assurance qualité, la fabrication ne peut se poursuivre qu'après que le fabricant a mis en œuvre un système de garantie de qualité CE conforme aux dispositions du paragraphe 1 de la présente sous-section. La procédure de sauvegarde prévue au chapitre IV peut également être mise en œuvre. </p>",
+    "texte": "En cas de retrait de l'approbation du système d'assurance qualité, la fabrication ne peut se poursuivre qu'après que le fabricant a mis en œuvre un système de garantie de qualité CE conforme aux dispositions du paragraphe 1 de la présente sous-section . La procédure de sauvegarde prévue au chapitre IV peut également être mise en œuvre.",
+    "texteHtml": "<p>En cas de retrait de l'approbation du système d'assurance qualité, la fabrication ne peut se poursuivre qu'après que le fabricant a mis en œuvre un système de garantie de qualité CE conforme aux dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000019751629&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Paragraphe 1 : Le système de garantie de qualit... (V)\">paragraphe 1 de la présente sous-section</a>. La procédure de sauvegarde prévue au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018489656&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre IV : Surveillance du marché (V)\">chapitre IV</a> peut également être mise en œuvre. </p>",
     "num": "R4313-73",
     "origine": "LEGI",
     "nature": "Article",
@@ -131,7 +131,7 @@
     "sectionParentId": "LEGISCTA000019761075",
     "sectionParentTitre": "Paragraphe 2 : Le système d'assurance qualité CE de la production avec surveillance",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre III : Equipements de travail et moyens de protection  &gt; Titre Ier : Conception et mise sur le marché des équipements de travail et des moyens de protection  &gt; Chapitre III : Procédures de certification  de conformité &gt; Section 2 :  Les procédures d'évaluation de la conformité &gt; Sous-section 4 : Procédures d'évaluation de la conformité applicables aux équipements de protection individuelle &gt; Paragraphe 2 : Le système d'assurance qualité CE de la production avec surveillance",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000019761037",
     "idEli": null,
     "idEliAlias": null,
@@ -186,7 +186,34 @@
         "dateDebutCible": "2008-11-10"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre IV : Surveillance du marché (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018489656",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Paragraphe 1 : Le système de garantie de qualit... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000019751629",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

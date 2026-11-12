@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "En cas de décès de l'enfant ou de diminution importante des ressources du foyer, le salarié souhaitant reprendre son activité en application de l'article L. 1225-46-5 avertit son employeur, par lettre recommandée avec avis de réception ou remise contre récépissé au moins huit jours avant la date de reprise souhaitée. Il joint à sa demande les justificatifs la motivant.",
-    "texteHtml": "<p>En cas de décès de l'enfant ou de diminution importante des ressources du foyer, le salarié souhaitant reprendre son activité en application de l'article L. 1225-46-5 avertit son employeur, par lettre recommandée avec avis de réception ou remise contre récépissé au moins huit jours avant la date de reprise souhaitée.<br/><br/>\n Il joint à sa demande les justificatifs la motivant.</p>",
+    "texteHtml": "<p>En cas de décès de l'enfant ou de diminution importante des ressources du foyer, le salarié souhaitant reprendre son activité en application de l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000053271689&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L1225-46-5 (V)\">L. 1225-46-5</a> avertit son employeur, par lettre recommandée avec avis de réception ou remise contre récépissé au moins huit jours avant la date de reprise souhaitée.<br/><br/> Il joint à sa demande les justificatifs la motivant.</p>",
     "num": "R1225-11-6",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,7 +95,7 @@
     "sectionParentId": "LEGISCTA000054159544",
     "sectionParentTitre": "Section 3 bis : Congé supplémentaire de naissance",
     "fullSectionsTitre": "Partie réglementaire   &gt; Première partie : Les relations individuelles de travail  &gt; Livre II : Le contrat de travail  &gt; Titre II : Formation et exécution du contrat de travail  &gt; Chapitre V : Maternité, paternité, adoption et éducation des enfants &gt; Section 3 bis : Congé supplémentaire de naissance",
-    "refInjection": "MD-20260630_201721_505_BDJQUOT",
+    "refInjection": "MD-20261014_194635_273_BDJQUOT",
     "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054167745",
     "idEli": null,
     "idEliAlias": null,
@@ -150,7 +150,21 @@
         "dateDebutCible": "2026-06-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L1225-46-5 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L1225-46-5",
+        "articleId": "LEGIARTI000053271689",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1767139200000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [
