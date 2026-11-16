@@ -17,7 +17,7 @@
     "dateDebutExtension": 32472144000000,
     "dateFinExtension": 32472144000000,
     "inap": null,
-    "ordre": 1952257860,
+    "ordre": 2113929215,
     "context": {
       "titresTM": [
         {
@@ -68,15 +68,24 @@
         {
           "debut": "2015-02-01",
           "fin": "2999-01-01",
-          "titre": "Section 1 : Certification et publicité des comptes des organisations syndicales de salariés et professionnelles d'employeurs",
+          "titre": "Section 2 : Financement des organisations syndicales de salariés et des organisations professionnelles d'employeurs \r\n",
           "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
-          "cid": "LEGISCTA000030172430",
-          "id": "LEGISCTA000030172433",
+          "cid": "LEGISCTA000030172691",
+          "id": "LEGISCTA000030172691",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2015-02-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 2 : Répartition des crédits du fonds paritaire",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000030172743",
+          "id": "LEGISCTA000030172743",
           "etat": "VIGUEUR"
         }
       ],
       "nombreVersionParent": 1,
-      "longeurChemin": 50,
+      "longeurChemin": 53,
       "titreTxt": [
         {
           "debut": "1973-01-03",
@@ -91,11 +100,11 @@
     },
     "cid": "LEGIARTI000030045816",
     "cidTexte": null,
-    "sectionParentCid": "LEGISCTA000030172430",
-    "sectionParentId": "LEGISCTA000030172433",
-    "sectionParentTitre": "Section 1 : Certification et publicité des comptes des organisations syndicales de salariés et professionnelles d'employeurs",
-    "fullSectionsTitre": "Partie réglementaire   &gt; Deuxième partie : Les relations collectives de travail \n\n &gt; Livre Ier : Les syndicats professionnels  &gt; Titre III : Statut juridique &gt; Chapitre V : Ressources et moyens &gt; Section 1 : Certification et publicité des comptes des organisations syndicales de salariés et professionnelles d'employeurs",
-    "refInjection": "IG-20260122",
+    "sectionParentCid": "LEGISCTA000030172743",
+    "sectionParentId": "LEGISCTA000030172743",
+    "sectionParentTitre": "Sous-section 2 : Répartition des crédits du fonds paritaire",
+    "fullSectionsTitre": "Partie réglementaire   &gt; Deuxième partie : Les relations collectives de travail \n\n &gt; Livre Ier : Les syndicats professionnels  &gt; Titre III : Statut juridique &gt; Chapitre V : Ressources et moyens &gt; Section 2 : Financement des organisations syndicales de salariés et des organisations professionnelles d'employeurs \r\n &gt; Sous-section 2 : Répartition des crédits du fonds paritaire",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000030190792",
     "idEli": null,
     "idEliAlias": null,

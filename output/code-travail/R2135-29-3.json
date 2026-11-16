@@ -5,8 +5,8 @@
     "id": "LEGIARTI000053788669",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "La convention signée entre l'association gestionnaire du fonds paritaire et les associations de gestion d'une branche professionnelle ou de plusieurs branches professionnelles désignées par accord étendu, attributaires des ressources mentionnées aux dispositions du 4° du I de l'article L. 2135-10 lorsqu'elles sont recouvrées dans les conditions prévues au III du même article, prévoit la transmission des informations relatives aux entreprises redevables mentionnées aux articles D. 2135-29-1 et D. 2135-29-2.",
-    "texteHtml": "<p align=\"left\">La convention signée entre l'association gestionnaire du fonds paritaire et les associations de gestion d'une branche professionnelle ou de plusieurs branches professionnelles désignées par accord étendu, attributaires des ressources mentionnées aux dispositions du 4° du I de l'article L. 2135-10 lorsqu'elles sont recouvrées dans les conditions prévues au III du même article, prévoit la transmission des informations relatives aux entreprises redevables mentionnées aux articles D. 2135-29-1 et D. 2135-29-2.</p>",
+    "texte": "La convention signée entre l'association gestionnaire du fonds paritaire et les associations de gestion d'une branche professionnelle ou de plusieurs branches professionnelles désignées par accord étendu, attributaires des ressources mentionnées aux dispositions du 4° du I de l'article L. 2135-10 lorsqu'elles sont recouvrées dans les conditions prévues au III du même article, prévoit la transmission des informations relatives aux entreprises redevables mentionnées aux articles D. 2135-29-1 et D. 2135-29-2 .",
+    "texteHtml": "<p align=\"left\">La convention signée entre l'association gestionnaire du fonds paritaire et les associations de gestion d'une branche professionnelle ou de plusieurs branches professionnelles désignées par accord étendu, attributaires des ressources mentionnées aux dispositions du <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000028689581&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L2135-10 (V)\">4° du I de l'article L. 2135-10</a> lorsqu'elles sont recouvrées dans les conditions prévues au III du même article, prévoit la transmission des informations relatives aux entreprises redevables mentionnées aux articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000053145653&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. D2135-29-1 (V)\">D. 2135-29-1</a> et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000053145655&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. D2135-29-2 (V)\">D. 2135-29-2</a>.</p>",
     "num": "R2135-29-3",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,7 +104,7 @@
     "sectionParentId": "LEGISCTA000030172743",
     "sectionParentTitre": "Sous-section 2 : Répartition des crédits du fonds paritaire",
     "fullSectionsTitre": "Partie réglementaire   &gt; Deuxième partie : Les relations collectives de travail \n\n &gt; Livre Ier : Les syndicats professionnels  &gt; Titre III : Statut juridique &gt; Chapitre V : Ressources et moyens &gt; Section 2 : Financement des organisations syndicales de salariés et des organisations professionnelles d'employeurs \r\n &gt; Sous-section 2 : Répartition des crédits du fonds paritaire",
-    "refInjection": "MD-20260410_195310_893_BDJQUOT",
+    "refInjection": "MD-20261014_194635_273_BDJQUOT",
     "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000053788669",
     "idEli": null,
     "idEliAlias": null,
@@ -159,7 +159,47 @@
         "dateDebutCible": "2026-04-11"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. D2135-29-1 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "D2135-29-1",
+        "articleId": "LEGIARTI000053145653",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1766534400000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. D2135-29-2 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "D2135-29-2",
+        "articleId": "LEGIARTI000053145655",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1766534400000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L2135-10 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L2135-10",
+        "articleId": "LEGIARTI000028689581",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1420070400000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

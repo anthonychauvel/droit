@@ -86,7 +86,7 @@
     "sectionParentId": "LEGISCTA000024800129",
     "sectionParentTitre": "Annexes",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre III : Equipements de travail et moyens de protection  &gt; Titre Ier : Conception et mise sur le marché des équipements de travail et des moyens de protection  &gt; Annexes",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261022",
     "idTechInjection": "LEGIARTI000024777415",
     "idEli": null,
     "idEliAlias": null,
@@ -144,6 +144,19 @@
     "lienCitations": [
       {
         "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R4311-12 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R4311-12",
+        "articleId": "LEGIARTI000019760863",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1262044800000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. R4311-8",
         "linkType": "CITATION",
         "linkOrientation": "source",
@@ -157,16 +170,29 @@
       },
       {
         "textCid": "LEGITEXT000006072050",
-        "textTitle": "Code du travail - art. R4312-6",
+        "textTitle": "Code du travail - art. R4312-6 (V)",
         "linkType": "CITATION",
-        "linkOrientation": "source",
+        "linkOrientation": "cible",
         "articleNum": "R4312-6",
-        "articleId": "LEGIARTI000018489378",
+        "articleId": "LEGIARTI000019760919",
         "natureText": "CODE",
         "parentCid": null,
         "numTexte": "",
         "datePubli": 32472144000000,
-        "dateDebut": 1209600000000
+        "dateDebut": 1262044800000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R4312-7 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R4312-7",
+        "articleId": "LEGIARTI000019760915",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1262044800000
       }
     ],
     "lienConcordes": [],

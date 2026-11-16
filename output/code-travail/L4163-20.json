@@ -5,8 +5,8 @@
     "id": "LEGIARTI000035631546",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "L'action du salarié en vue de l'attribution de points ne peut intervenir qu'au cours des deux années civiles suivant la fin de l'année au titre de laquelle des points ont été ou auraient dû être portés au compte. La prescription est interrompue par une des causes prévues par le code civil.",
-    "texteHtml": "<p>L'action du salarié en vue de l'attribution de points ne peut intervenir qu'au cours des deux années civiles suivant la fin de l'année au titre de laquelle des points ont été ou auraient dû être portés au compte. La prescription est interrompue par une des causes prévues par le code civil.</p>",
+    "texte": "L'action du salarié en vue de l'attribution de points ne peut intervenir qu'au cours des deux années civiles suivant la fin de l'année au titre de laquelle des points ont été ou auraient dû être portés au compte. La prescription est interrompue par une des causes prévues par le code civil .",
+    "texteHtml": "<p>L'action du salarié en vue de l'attribution de points ne peut intervenir qu'au cours des deux années civiles suivant la fin de l'année au titre de laquelle des points ont été ou auraient dû être portés au compte. La prescription est interrompue par une des causes prévues par le <a href=\"/affichCode.do?cidTexte=LEGITEXT000006070721&dateTexte=&categorieLien=cid\" title=\"Code civil\">code civil</a>.</p>",
     "num": "L4163-20",
     "origine": "LEGI",
     "nature": "Article",
@@ -122,8 +122,8 @@
     "sectionParentId": "LEGISCTA000035631494",
     "sectionParentTitre": "Sous-section 3 : Réclamations",
     "fullSectionsTitre": "Partie législative   &gt; Quatrième partie : Santé et sécurité au travail &gt; Livre Ier : Dispositions générales  &gt; Titre VI : Dispositions relatives à la prévention des effets de l'exposition à certains facteurs de risques professionnels et au compte professionnel de prévention &gt; Chapitre III : Accords en faveur de la prévention de la pénibilité &gt; Section 4 : Gestion du compte, contrôle et réclamations &gt; Sous-section 3 : Réclamations",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000035631546",
+    "refInjection": "MD-20261111_011809_497_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000035631546",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -177,7 +177,21 @@
         "dateDebutCible": "2017-09-24"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006070721",
+        "textTitle": "Code civil",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGITEXT000006070721",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": -5231606400000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

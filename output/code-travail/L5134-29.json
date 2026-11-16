@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Le contrat d'accompagnement dans l'emploi peut être suspendu, à la demande du salarié, afin de lui permettre : 1° En accord avec son employeur, d'effectuer une période de mise en situation en milieu professionnel dans les conditions prévues au chapitre V du présent titre ou une action concourant à son insertion professionnelle ; 2° D'accomplir une période d'essai afférente à une offre d'emploi visant une embauche en contrat de travail à durée indéterminée ou à durée déterminée au moins égale à six mois. En cas d'embauche à l'issue de cette période de mise en situation en milieu professionnel, d'une action concourant à son insertion professionnelle,  ou de cette période d'essai, le contrat est rompu sans préavis.",
-    "texteHtml": "<p>Le contrat d'accompagnement dans l'emploi peut être suspendu, à la demande du salarié, afin de lui permettre : </p><p>1° En accord avec son employeur, d'effectuer une période de mise en situation en milieu professionnel dans les conditions prévues au chapitre V du présent titre ou une action concourant à son insertion professionnelle ; </p><p>2° D'accomplir une période d'essai afférente à une offre d'emploi visant une embauche en contrat de travail à durée indéterminée ou à durée déterminée au moins égale à six mois. </p><p>En cas d'embauche à l'issue de cette période de mise en situation en milieu professionnel, d'une action concourant à son insertion professionnelle,  ou de cette période d'essai, le contrat est rompu sans préavis. </p>",
+    "texteHtml": "<p>Le contrat d'accompagnement dans l'emploi peut être suspendu, à la demande du salarié, afin de lui permettre : </p><p>1° En accord avec son employeur, d'effectuer une période de mise en situation en milieu professionnel dans les conditions prévues au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178135&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre V : Périodes de mise en situation en m... (V)\">chapitre V du présent titre</a> ou une action concourant à son insertion professionnelle ; </p><p>2° D'accomplir une période d'essai afférente à une offre d'emploi visant une embauche en contrat de travail à durée indéterminée ou à durée déterminée au moins égale à six mois. </p><p>En cas d'embauche à l'issue de cette période de mise en situation en milieu professionnel, d'une action concourant à son insertion professionnelle,  ou de cette période d'essai, le contrat est rompu sans préavis. </p>",
     "num": "L5134-29",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,8 +104,8 @@
     "sectionParentId": "LEGISCTA000006195854",
     "sectionParentTitre": "Sous-section 3 : Contrat de travail.",
     "fullSectionsTitre": "Partie législative   &gt; Cinquième partie : L'emploi &gt; Livre Ier : Les dispositifs en faveur de l'emploi &gt; Titre III : Aides à l'insertion, à l'accès et au retour à l'emploi  &gt; Chapitre IV : Contrats de travail aidés &gt; Section 2 : Contrat d'accompagnement dans l'emploi &gt; Sous-section 3 : Contrat de travail.",
-    "refInjection": "IG-20260113",
-    "idTechInjection": "LEGIARTI000028698705",
+    "refInjection": "MD-20261106_205729_195_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000028698705",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -160,6 +160,19 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre V : Périodes de mise en situation en m... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178135",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. R5134-33 (VD)",

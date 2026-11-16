@@ -5,8 +5,8 @@
     "id": "LEGIARTI000030493278",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "I.-Il est interdit   d'affecter les jeunes au montage et démontage d'échafaudages. II.-Il peut être dérogé à l'interdiction mentionnée au I dans les conditions et formes prévues à la section 3 du présent chapitre.",
-    "texteHtml": "<p>I.-Il est interdit   d'affecter les jeunes au montage et démontage d'échafaudages. </p><p>II.-Il peut être dérogé à l'interdiction mentionnée au I dans les conditions et formes prévues à la section 3 du présent chapitre.</p><p></p>",
+    "texte": "I.-Il est interdit   d'affecter les jeunes au montage et démontage d'échafaudages. II.-Il peut être dérogé à l'interdiction mentionnée au I dans les conditions et formes prévues à la section 3 du présent chapitre .",
+    "texteHtml": "<p>I.-Il est interdit   d'affecter les jeunes au montage et démontage d'échafaudages. </p><p>II.-Il peut être dérogé à l'interdiction mentionnée au I dans les conditions et formes prévues à la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018488561&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 3 : Dérogations pour les jeunes de quin... (V)\">section 3 du présent chapitre</a>.</p><p></p>",
     "num": "D4153-31",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,7 +113,7 @@
     "sectionParentId": "LEGISCTA000028058347",
     "sectionParentTitre": "Sous-section 11 :  Travaux temporaires en hauteur",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre Ier : Dispositions générales  &gt; Titre V : Dispositions particulières à certaines catégories de travailleurs  &gt; Chapitre III : Jeunes travailleurs &gt; Section 2 : Travaux interdits et réglementés pour les jeunes âgés de quinze ans au moins et de moins de dix-huit ans &gt; Sous-section 11 :  Travaux temporaires en hauteur",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000030493278",
     "idEli": null,
     "idEliAlias": null,
@@ -168,7 +168,21 @@
         "dateDebutCible": "2015-05-02"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 3 : Dérogations pour les jeunes de quin... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018488561",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Lorsque les résultats de l'évaluation des risques prévue à la sous-section 2 révèlent un risque pour la santé ou la sécurité des travailleurs, l'exposition des travailleurs est évitée.",
-    "texteHtml": "<p><br/>Lorsque les résultats de l'évaluation des risques prévue à la sous-section 2 révèlent un risque pour la santé ou la sécurité des travailleurs, l'exposition des travailleurs est évitée.</p>",
+    "texteHtml": "<p><br/>Lorsque les résultats de l'évaluation des risques prévue à la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018490485&dateTexte=&categorieLien=cid\" title=\"Code du travail -   Sous-section 2 : Évaluation des risques (V)\">sous-section 2</a> révèlent un risque pour la santé ou la sécurité des travailleurs, l'exposition des travailleurs est évitée.</p>",
     "num": "R4412-67",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,7 +104,7 @@
     "sectionParentId": "LEGISCTA000018530789",
     "sectionParentTitre": " Sous-section 3 : Mesures et moyens de prévention",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre IV : Prévention de certains risques d'exposition  &gt; Titre Ier : Risques chimiques  &gt; Chapitre II : Mesures de prévention des risques chimiques &gt;  Section 2 : Dispositions particulières aux agents chimiques dangereux  cancérogènes, mutagènes et toxiques pour la reproduction &gt;  Sous-section 3 : Mesures et moyens de prévention",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000018530785",
     "idEli": null,
     "idEliAlias": null,
@@ -160,6 +160,19 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -   Sous-section 2 : Évaluation des risques (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018490485",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. R4412-82 (V)",

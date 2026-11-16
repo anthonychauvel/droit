@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Les visites réalisées en application des sous-sections 1 et 2 de la section 2 du chapitre IV du titre II du livre VI de la quatrième partie du présent code peuvent être effectuées pour plusieurs emplois, dans la limite de trois.",
-    "texteHtml": "<p>Les visites réalisées en application des sous-sections 1 et 2 de la section 2 du chapitre IV du titre II du livre VI de la quatrième partie du présent code peuvent être effectuées pour plusieurs emplois, dans la limite de trois. </p>",
+    "texteHtml": "<p>Les visites réalisées en application des <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018493142&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Sous-section 1 : Dispositions relatives au suiv... (V)\">sous-sections 1</a> et <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018493156&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Sous-section 2 : Suivi individuel renforcé de l... (V)\">2 de la section 2 du chapitre IV du titre II du livre VI de la quatrième partie du présent code</a> peuvent être effectuées pour plusieurs emplois, dans la limite de trois. </p>",
     "num": "R5132-26-8",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,7 +104,7 @@
     "sectionParentId": "LEGISCTA000025275603",
     "sectionParentTitre": "Sous-section 5 : Suivi médical des salariés de l'association intermédiaire.",
     "fullSectionsTitre": "Partie réglementaire   &gt; Cinquième partie : L'emploi  &gt; Livre Ier : Les dispositifs en faveur de l'emploi  &gt; Titre III : Aides à l'insertion, à l'accès et au retour à l'emploi  &gt; Chapitre II : Insertion par l'activité économique &gt; Section 2 : Associations intermédiaires &gt; Sous-section 5 : Suivi médical des salariés de l'association intermédiaire.",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261022",
     "idTechInjection": "LEGIARTI000033769680",
     "idEli": null,
     "idEliAlias": null,
@@ -159,7 +159,34 @@
         "dateDebutCible": "2017-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Sous-section 1 : Dispositions relatives au suiv... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018493142",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Sous-section 2 : Suivi individuel renforcé de l... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018493156",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

@@ -5,8 +5,8 @@
     "id": "LEGIARTI000045677020",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un    service de prévention et de santé au travail inter-établissements peut être créé entre plusieurs établissements d'une entreprise lorsque l'effectif de salariés suivis atteint ou dépasse 500 salariés. La création de ce service est soumise aux dispositions de la section 1 ainsi qu'aux conditions d'agrément prévues à la sous-section 1 de la section 4.",
-    "texteHtml": "<p>Un    service de prévention et de santé au travail inter-établissements peut être créé entre plusieurs établissements d'une entreprise lorsque l'effectif de salariés suivis atteint ou dépasse 500 salariés. <br/><br/>La création de ce service est soumise aux dispositions de la section 1 ainsi qu'aux conditions d'agrément prévues à la sous-section 1 de la section 4.</p>",
+    "texte": "Un    service de prévention et de santé au travail inter-établissements peut être créé entre plusieurs établissements d'une entreprise lorsque l'effectif de salariés suivis atteint ou dépasse 500 salariés. La création de ce service est soumise aux dispositions de la section 1 ainsi qu'aux conditions d'agrément prévues à la sous-section 1 de la section 4 .",
+    "texteHtml": "<p>Un    service de prévention et de santé au travail inter-établissements peut être créé entre plusieurs établissements d'une entreprise lorsque l'effectif de salariés suivis atteint ou dépasse 500 salariés. <br/><br/>La création de ce service est soumise aux dispositions de la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018492759&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 1 : Organisation des services de préven... (V)\">section 1</a> ainsi qu'aux conditions d'agrément prévues à la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000025272362&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Sous-section 1 : Agréments (V)\">sous-section 1 de la section 4</a>.</p>",
     "num": "D4622-9",
     "origine": "LEGI",
     "nature": "Article",
@@ -167,7 +167,7 @@
     "sectionParentId": "LEGISCTA000046340741",
     "sectionParentTitre": "Sous-section 2 : Services de prévention et de santé au travail interétablissements.",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre VI : Institutions et organismes de prévention  &gt; Titre II : Services de prévention et de santé au travail  &gt; Chapitre II : Missions et organisation &gt; Section 2 : Services autonomes de prévention et de santé au travail. &gt; Sous-section 2 : Services de prévention et de santé au travail interétablissements.",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000045677020",
     "idEli": null,
     "idEliAlias": null,
@@ -223,6 +223,32 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 1 : Organisation des services de préven... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018492759",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Sous-section 1 : Agréments (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000025272362",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. D4622-16 (V)",

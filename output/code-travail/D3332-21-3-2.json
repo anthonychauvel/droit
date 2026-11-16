@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Chaque pièce transmise au moyen du téléservice mentionné à l'article D. 3332-21-3-1 porte un intitulé décrivant son contenu de manière suffisamment explicite. Sauf mention contraire portée dans ce téléservice, chaque pièce se présente avec un objet unique. A défaut du respect des obligations fixées à l'alinéa précédent, la pièce est écartée du dossier.",
-    "texteHtml": "<p align=\"left\">Chaque pièce transmise au moyen du téléservice mentionné à l'article D. 3332-21-3-1 porte un intitulé décrivant son contenu de manière suffisamment explicite. Sauf mention contraire portée dans ce téléservice, chaque pièce se présente avec un objet unique.</p><p align=\"left\">A défaut du respect des obligations fixées à l'alinéa précédent, la pièce est écartée du dossier.</p>",
+    "texteHtml": "<p align=\"left\">Chaque pièce transmise au moyen du téléservice mentionné à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000053272869&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. D3332-21-3-1 (V)\">D. 3332-21-3-1</a> porte un intitulé décrivant son contenu de manière suffisamment explicite. Sauf mention contraire portée dans ce téléservice, chaque pièce se présente avec un objet unique.</p><p align=\"left\">A défaut du respect des obligations fixées à l'alinéa précédent, la pièce est écartée du dossier.</p>",
     "num": "D3332-21-3-2",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000018533128",
     "sectionParentTitre": " Section 3 : Composition et gestion du plan.",
     "fullSectionsTitre": "Partie réglementaire   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale  &gt; Livre III : Dividende du travail : intéressement, participation et épargne salariale  &gt; Titre III : Plans d'épargne salariale &gt; Chapitre II : Plan d'épargne d'entreprise &gt;  Section 3 : Composition et gestion du plan.",
-    "refInjection": "MD-20260530_193639_910_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000053296496",
+    "refInjection": "IG-20261019",
+    "idTechInjection": "LEGIARTI000053296496",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -150,7 +150,21 @@
         "dateDebutCible": "2026-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. D3332-21-3-1 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "D3332-21-3-1",
+        "articleId": "LEGIARTI000053272869",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1780185600000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

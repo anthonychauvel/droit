@@ -1,5 +1,338 @@
 {
   "executionTime": 0,
   "dereferenced": false,
-  "article": null
+  "article": {
+    "id": "LEGIARTI000053908752",
+    "idTexte": null,
+    "type": "AUTONOME",
+    "texte": "Les titulaires d'une pension d'invalidité et les bénéficiaires des articles L. 341-15 et L. 341-16 sont exonérés de la participation prévue au I de l'article L. 160-13 en ce qui concerne les frais engagés pour eux-mêmes. Les rentiers mentionnés à l'article L. 371-1 sont exonérés de la participation prévue au I de l'article L. 160-13 en ce qui concerne les frais engagés pour eux-mêmes. Les titulaires d'une pension de réversion qui se trouvent atteints entre cinquante-cinq ans et l'âge prévu par l'article L. 351-1-5 et par le IV des articles L. 643-3 et L. 653-2 d'une invalidité permanente satisfaisant aux conditions exigées pour ouvrir droit à une pension d'invalidité sont également exonérés de la participation prévue au I de l'article L. 160-13, en ce qui concerne les frais engagés pour eux-mêmes.",
+    "texteHtml": "<p>Les titulaires d'une pension d'invalidité et les bénéficiaires des articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006073189&idArticle=LEGIARTI000006742610&dateTexte=&categorieLien=cid\">L. 341-15 </a>et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006073189&idArticle=LEGIARTI000006742612&dateTexte=&categorieLien=cid\">L. 341-16 </a>sont exonérés de la participation prévue au I de l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006073189&idArticle=LEGIARTI000031670012&dateTexte=&categorieLien=cid\">L. 160-13 </a>en ce qui concerne les frais engagés pour eux-mêmes.</p><p>Les rentiers mentionnés à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006073189&idArticle=LEGIARTI000006742715&dateTexte=&categorieLien=cid\">L. 371-1 </a>sont exonérés de la participation prévue au I de l'article L. 160-13 en ce qui concerne les frais engagés pour eux-mêmes.</p><p>Les titulaires d'une pension de réversion qui se trouvent atteints entre cinquante-cinq ans et l'âge prévu par l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006073189&idArticle=LEGIARTI000047448160&dateTexte=&categorieLien=cid\">L. 351-1-5</a> et par le IV des articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006073189&idArticle=LEGIARTI000006743788&dateTexte=&categorieLien=cid\">L. 643-3</a> et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006073189&idArticle=LEGIARTI000037055738&dateTexte=&categorieLien=cid\">L. 653-2</a> d'une invalidité permanente satisfaisant aux conditions exigées pour ouvrir droit à une pension d'invalidité sont également exonérés de la participation prévue au I de l'article L. 160-13, en ce qui concerne les frais engagés pour eux-mêmes.</p>",
+    "num": "R160-10",
+    "origine": "LEGI",
+    "nature": "Article",
+    "versionArticle": "4.0",
+    "etat": "VIGUEUR",
+    "dateDebut": 1790812800000,
+    "dateFin": 32472144000000,
+    "dateDebutExtension": 32472144000000,
+    "dateFinExtension": 32472144000000,
+    "inap": null,
+    "ordre": 1946157055,
+    "context": {
+      "titresTM": [
+        {
+          "debut": "1961-01-12",
+          "fin": "2999-01-01",
+          "titre": "Partie réglementaire - Décrets en Conseil d'Etat",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TITRE_TM",
+          "cid": "LEGISCTA000006106085",
+          "id": "LEGISCTA000006106085",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "1985-12-21",
+          "fin": "2999-01-01",
+          "titre": "Livre I : Généralités - Dispositions communes à tout ou partie des régimes de base",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006126950",
+          "id": "LEGISCTA000006126950",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "1985-12-21",
+          "fin": "2999-01-01",
+          "titre": "Titre VI : Dispositions relatives aux prestations et aux soins - Contrôle médical - Tutelle aux prestations sociales",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000006141849",
+          "id": "LEGISCTA000006141849",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2016-01-01",
+          "fin": "2999-01-01",
+          "titre": "Chapitre préliminaire : Dispositions relatives à la prise en charge des frais de santé",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000031795436",
+          "id": "LEGISCTA000031795455",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2016-01-01",
+          "fin": "2999-01-01",
+          "titre": "Section 3 :  Participation de l'assuré social",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000031795484",
+          "id": "LEGISCTA000031795488",
+          "etat": "VIGUEUR"
+        },
+        {
+          "debut": "2016-01-01",
+          "fin": "2999-01-01",
+          "titre": "Sous-section 1 : Montant de la participation de l'assuré",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TM/TM/TM/TM/TM/TM/TITRE_TM",
+          "cid": "LEGISCTA000031795491",
+          "id": "LEGISCTA000031795495",
+          "etat": "VIGUEUR"
+        }
+      ],
+      "nombreVersionParent": 1,
+      "longeurChemin": 50,
+      "titreTxt": [
+        {
+          "debut": "1958-10-16",
+          "fin": "2999-01-01",
+          "titre": "Code de la sécurité sociale",
+          "xPath": "/ARTICLE/CONTEXTE/TEXTE/TITRE_TXT",
+          "cid": "LEGITEXT000006073189",
+          "id": "LEGITEXT000006073189",
+          "etat": "VIGUEUR"
+        }
+      ]
+    },
+    "cid": "LEGIARTI000031796607",
+    "cidTexte": null,
+    "sectionParentCid": "LEGISCTA000031795491",
+    "sectionParentId": "LEGISCTA000031795495",
+    "sectionParentTitre": "Sous-section 1 : Montant de la participation de l'assuré",
+    "fullSectionsTitre": "Partie réglementaire - Décrets en Conseil d'Etat &gt; Livre I : Généralités - Dispositions communes à tout ou partie des régimes de base &gt; Titre VI : Dispositions relatives aux prestations et aux soins - Contrôle médical - Tutelle aux prestations sociales &gt; Chapitre préliminaire : Dispositions relatives à la prise en charge des frais de santé &gt; Section 3 :  Participation de l'assuré social &gt; Sous-section 1 : Montant de la participation de l'assuré",
+    "refInjection": "MD-20260930_200134_164_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000053908752",
+    "idEli": null,
+    "idEliAlias": null,
+    "calipsos": [],
+    "textTitles": [
+      {
+        "id": "LEGITEXT000006073189",
+        "titre": "Code de la sécurité sociale.",
+        "titreLong": "Code de la sécurité sociale",
+        "etat": "VIGUEUR",
+        "dateDebut": -353808000000,
+        "dateFin": 32472144000000,
+        "cid": "LEGITEXT000006073189",
+        "datePubli": 32472144000000,
+        "datePubliComputed": null,
+        "dateTexte": 32472144000000,
+        "dateTexteComputed": null,
+        "nature": "CODE",
+        "nor": "",
+        "num": "",
+        "numParution": "",
+        "originePubli": "",
+        "appliGeo": null,
+        "codesNomenclatures": [],
+        "visas": null,
+        "nota": null,
+        "notice": null,
+        "travauxPreparatoires": null,
+        "signataires": null,
+        "dossiersLegislatifs": [],
+        "ancienId": null,
+        "appellations": null
+      }
+    ],
+    "nota": "Conformément à l'article 2 du décret n° 2026-285 du 16 avril 2026, ces dispositions, dans leur rédaction issue de l'article 1 dudit décret, entrent en vigueur le 1 er octobre 2026.",
+    "notaHtml": "<p>Conformément à l'article 2 du décret n° 2026-285 du 16 avril 2026, ces dispositions, dans leur rédaction issue de l'article 1 dudit décret, entrent en vigueur le 1<sup>er</sup> octobre 2026.</p>",
+    "activitePro": [],
+    "numeroBrochure": [],
+    "numeroBo": null,
+    "conteneurs": [],
+    "lienModifications": [
+      {
+        "textCid": "JORFTEXT000053907237",
+        "textTitle": "Décret n°2026-285 du 16 avril 2026 - art. 1",
+        "linkType": "MODIFIE",
+        "linkOrientation": "cible",
+        "articleNum": "1",
+        "articleId": "LEGIARTI000053908182",
+        "natureText": "DECRET",
+        "datePubliTexte": "2026-04-17",
+        "dateSignaTexte": "2026-04-16",
+        "dateDebutCible": "2026-04-18"
+      }
+    ],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. L160-13",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L160-13",
+        "articleId": "LEGIARTI000031670012",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1451606400000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. L341-15",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L341-15",
+        "articleId": "LEGIARTI000006742610",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 503971200000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. L341-16",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L341-16",
+        "articleId": "LEGIARTI000006742612",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 503971200000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. L351-1-5",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L351-1-5",
+        "articleId": "LEGIARTI000047448160",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1693526400000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. L371-1",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L371-1",
+        "articleId": "LEGIARTI000006742715",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 503971200000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. L643-3",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L643-3",
+        "articleId": "LEGIARTI000006743788",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 503971200000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. L653-2",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L653-2",
+        "articleId": "LEGIARTI000037055738",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1528934400000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R160-18 (VD)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R160-18",
+        "articleId": "LEGIARTI000053908761",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1790812800000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R761-17 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R761-17",
+        "articleId": "LEGIARTI000031828782",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1451606400000
+      }
+    ],
+    "lienConcordes": [
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. R322-4 (T)",
+        "linkType": "CONCORDE",
+        "linkOrientation": "cible",
+        "articleNum": "R322-4",
+        "articleId": "LEGIARTI000024112984",
+        "natureText": "CODE"
+      }
+    ],
+    "lienAutres": [],
+    "articleVersions": [
+      {
+        "id": "LEGIARTI000031796751",
+        "etat": "MODIFIE",
+        "version": "1.0",
+        "dateDebut": 1451606400000,
+        "dateFin": 1693526400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000047633316",
+        "etat": "MODIFIE",
+        "version": "2.0",
+        "dateDebut": 1693526400000,
+        "dateFin": 1767225600000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000053335382",
+        "etat": "MODIFIE",
+        "version": "3.0",
+        "dateDebut": 1767225600000,
+        "dateFin": 1790812800000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000053908752",
+        "etat": "VIGUEUR",
+        "version": "4.0",
+        "dateDebut": 1790812800000,
+        "dateFin": 32472144000000,
+        "numero": null,
+        "ordre": null
+      }
+    ],
+    "computedNums": [
+      "R160-10",
+      "160-10"
+    ],
+    "versionPrecedente": "LEGIARTI000053335382",
+    "conditionDiffere": null,
+    "historique": null,
+    "surtitre": null,
+    "renvoi": null,
+    "infosComplementaires": null,
+    "infosComplementairesHtml": null,
+    "infosRestructurationBranche": null,
+    "infosRestructurationBrancheHtml": null,
+    "isMultipleVersions": true,
+    "comporteLiensSP": false
+  }
 }

@@ -5,8 +5,8 @@
     "id": "LEGIARTI000054106061",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "En vue de l'établissement de la convention d'objectifs et de moyens mentionnée à l'article L. 6323-17-5-1, l'instance paritaire nationale transmet au ministre chargé de la formation professionnelle un document comprenant : 1° L'évolution prévisionnelle de ses charges, y compris de l'effectif salarié et de sa masse salariale ; 2° Les moyens permettant d'assurer l'animation et la coordination des commissions paritaires interprofessionnelles régionales.",
-    "texteHtml": "<p align=\"left\">En vue de l'établissement de la convention d'objectifs et de moyens mentionnée à l'article L. 6323-17-5-1, l'instance paritaire nationale transmet au ministre chargé de la formation professionnelle un document comprenant :</p><p align=\"left\">1° L'évolution prévisionnelle de ses charges, y compris de l'effectif salarié et de sa masse salariale ;</p><p align=\"left\">2° Les moyens permettant d'assurer l'animation et la coordination des commissions paritaires interprofessionnelles régionales.</p>",
+    "texte": "En vue de l'établissement de la convention d'objectifs et de moyens mentionnée à l'article L. 6323-17-5-1 , l'instance paritaire nationale transmet au ministre chargé de la formation professionnelle un document comprenant : 1° L'évolution prévisionnelle de ses charges, y compris de l'effectif salarié et de sa masse salariale ; 2° Les moyens permettant d'assurer l'animation et la coordination des commissions paritaires interprofessionnelles régionales.",
+    "texteHtml": "<p align=\"left\">En vue de l'établissement de la convention d'objectifs et de moyens mentionnée à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000052436257&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L6323-17-5-1 (VT)\">L. 6323-17-5-1</a>, l'instance paritaire nationale transmet au ministre chargé de la formation professionnelle un document comprenant :</p><p align=\"left\">1° L'évolution prévisionnelle de ses charges, y compris de l'effectif salarié et de sa masse salariale ;</p><p align=\"left\">2° Les moyens permettant d'assurer l'animation et la coordination des commissions paritaires interprofessionnelles régionales.</p>",
     "num": "R6323-18-15",
     "origine": "LEGI",
     "nature": "Article",
@@ -131,8 +131,8 @@
     "sectionParentId": "LEGISCTA000054106055",
     "sectionParentTitre": "Paragraphe 5 : Gestion des fonds et frais de gestion de l'instance paritaire nationale",
     "fullSectionsTitre": "Partie réglementaire   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle continue  &gt; Titre II : Dispositifs de formation professionnelle continue  &gt; Chapitre III : Le compte personnel de formation &gt; Section 2 : Projet de transition professionnelle &gt; Sous-section 1 bis : Instance paritaire nationale mentionnée à l'article L. 6323-17-5-1 &gt; Paragraphe 5 : Gestion des fonds et frais de gestion de l'instance paritaire nationale",
-    "refInjection": "MD-20260518_192200_750_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054106061",
+    "refInjection": "IG-20261022",
+    "idTechInjection": "LEGIARTI000054106061",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -186,7 +186,34 @@
         "dateDebutCible": "2026-05-18"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L6323-17-5-1 (VT)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L6323-17-5-1",
+        "articleId": "LEGIARTI000052436257",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1767225600000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R6323-18-17 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R6323-18-17",
+        "articleId": "LEGIARTI000054106065",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1779062400000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

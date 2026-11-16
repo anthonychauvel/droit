@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "L'employeur est informé par le médecin du travail de toute conclusion significative provenant notamment du suivi de l'état de santé du salarié exercé par le professionnel de santé mentionné au premier alinéa de l'article L. 4624-1 , dans le respect du secret médical. L'employeur en tire toutes les conséquences utiles, et notamment : 1° Revoit l'évaluation des risques conformément au chapitre IV ; 2° Revoit les mesures prévues pour supprimer ou réduire les risques conformément au chapitre V ; 3° Tient compte de l'avis du médecin du travail pour la mise en œuvre de toute mesure jugée nécessaire pour supprimer ou réduire les risques conformément au chapitre V, y compris l'éventuelle affectation du travailleur à un autre poste ne comportant plus de risque d'exposition.",
-    "texteHtml": "<p>L'employeur est informé par le médecin du travail de toute conclusion significative provenant notamment du suivi de l'état de santé du salarié exercé par le professionnel de santé mentionné au premier alinéa de l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006903371&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L4624-1 (V)\">L. 4624-1</a>, dans le respect du secret médical. </p><p>L'employeur en tire toutes les conséquences utiles, et notamment : </p><p>1° Revoit l'évaluation des risques conformément au chapitre IV ; </p><p>2° Revoit les mesures prévues pour supprimer ou réduire les risques conformément au chapitre V ; </p><p>3° Tient compte de l'avis du médecin du travail pour la mise en œuvre de toute mesure jugée nécessaire pour supprimer ou réduire les risques conformément au chapitre V, y compris l'éventuelle affectation du travailleur à un autre poste ne comportant plus de risque d'exposition.</p>",
+    "texteHtml": "<p>L'employeur est informé par le médecin du travail de toute conclusion significative provenant notamment du suivi de l'état de santé du salarié exercé par le professionnel de santé mentionné au premier alinéa de l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006903371&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L4624-1 (V)\">L. 4624-1</a>, dans le respect du secret médical. </p><p>L'employeur en tire toutes les conséquences utiles, et notamment : </p><p>1° Revoit l'évaluation des risques conformément au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018491018&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre IV : Évaluation des risques (V)\">chapitre IV</a> ; </p><p>2° Revoit les mesures prévues pour supprimer ou réduire les risques conformément au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018491054&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre V : Mesures et moyens de prévention (V)\">chapitre V</a> ; </p><p>3° Tient compte de l'avis du médecin du travail pour la mise en œuvre de toute mesure jugée nécessaire pour supprimer ou réduire les risques conformément au chapitre V, y compris l'éventuelle affectation du travailleur à un autre poste ne comportant plus de risque d'exposition.</p>",
     "num": "R4446-3",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,7 +95,7 @@
     "sectionParentId": "LEGISCTA000033769454",
     "sectionParentTitre": "Chapitre VI : Suivi individuel de l'état de santé",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre IV : Prévention de certains risques d'exposition  &gt; Titre IV : Prévention des risques d'exposition aux vibrations mécaniques &gt; Chapitre VI : Suivi individuel de l'état de santé",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000033769451",
     "idEli": null,
     "idEliAlias": null,
@@ -151,6 +151,32 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre IV : Évaluation des risques (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018491018",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre V : Mesures et moyens de prévention (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018491054",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. L4624-1 (V)",

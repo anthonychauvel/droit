@@ -5,8 +5,8 @@
     "id": "LEGIARTI000054106083",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "L'instance paritaire nationale signale, de manière circonstanciée, aux services de l'Etat chargés du contrôle de la formation professionnelle les manquements d'un prestataire de formation ou d'un employeur dans l'exécution des actions mentionnées à l'article L. 6313-1.",
-    "texteHtml": "<p align=\"left\">L'instance paritaire nationale signale, de manière circonstanciée, aux services de l'Etat chargés du contrôle de la formation professionnelle les manquements d'un prestataire de formation ou d'un employeur dans l'exécution des actions mentionnées à l'article L. 6313-1.</p>",
+    "texte": "L'instance paritaire nationale signale, de manière circonstanciée, aux services de l'Etat chargés du contrôle de la formation professionnelle les manquements d'un prestataire de formation ou d'un employeur dans l'exécution des actions mentionnées à l'article L. 6313-1 .",
+    "texteHtml": "<p align=\"left\">L'instance paritaire nationale signale, de manière circonstanciée, aux services de l'Etat chargés du contrôle de la formation professionnelle les manquements d'un prestataire de formation ou d'un employeur dans l'exécution des actions mentionnées à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006904130&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L6313-1 (V)\">L. 6313-1</a>.</p>",
     "num": "R6323-18-24",
     "origine": "LEGI",
     "nature": "Article",
@@ -131,8 +131,8 @@
     "sectionParentId": "LEGISCTA000054106075",
     "sectionParentTitre": "Paragraphe 7 : Contrôle et comptabilité",
     "fullSectionsTitre": "Partie réglementaire   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle continue  &gt; Titre II : Dispositifs de formation professionnelle continue  &gt; Chapitre III : Le compte personnel de formation &gt; Section 2 : Projet de transition professionnelle &gt; Sous-section 1 bis : Instance paritaire nationale mentionnée à l'article L. 6323-17-5-1 &gt; Paragraphe 7 : Contrôle et comptabilité",
-    "refInjection": "MD-20260518_192158_478_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054106083",
+    "refInjection": "IG-20261022",
+    "idTechInjection": "LEGIARTI000054106083",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -186,7 +186,21 @@
         "dateDebutCible": "2026-05-18"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L6313-1 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L6313-1",
+        "articleId": "LEGIARTI000006904130",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

@@ -5,8 +5,8 @@
     "id": "LEGIARTI000018528947",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Sous réserve des adaptations prévues par la présente section, les travailleurs indépendants ainsi que les employeurs qui exercent directement une activité sur un chantier de bâtiment et de génie civil sont soumis aux dispositions du chapitre IV à l'exception de celles relatives aux mesures générales d'hygiène, prévues par la section 16, et au logement provisoire des travailleurs, prévues par la section 17.",
-    "texteHtml": "<p><br/>Sous réserve des adaptations prévues par la présente section, les travailleurs indépendants ainsi que les employeurs qui exercent directement une activité sur un chantier de bâtiment et de génie civil sont soumis aux dispositions du chapitre IV à l'exception de celles relatives aux mesures générales d'hygiène, prévues par la section 16, et au logement provisoire des travailleurs, prévues par la section 17.</p>",
+    "texte": "Sous réserve des adaptations prévues par la présente section, les travailleurs indépendants ainsi que les employeurs qui exercent directement une activité sur un chantier de bâtiment et de génie civil sont soumis aux dispositions du chapitre IV à l'exception de celles relatives aux mesures générales d'hygiène, prévues par la section 16 , et au logement provisoire des travailleurs, prévues par la section 17 .",
+    "texteHtml": "<p><br/>Sous réserve des adaptations prévues par la présente section, les travailleurs indépendants ainsi que les employeurs qui exercent directement une activité sur un chantier de bâtiment et de génie civil sont soumis aux dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018492018&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre IV : Prescriptions techniques de prote... (V)\">chapitre IV</a> à l'exception de celles relatives aux mesures générales d'hygiène, prévues par la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018492361&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 16 : Mesures d'hygiène. (V)\">section 16</a>, et au logement provisoire des travailleurs, prévues par la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018492381&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 17 : Hébergement. (V)\">section 17</a>.</p>",
     "num": "R4535-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,7 +95,7 @@
     "sectionParentId": "LEGISCTA000018528949",
     "sectionParentTitre": "Section 1 : Prescriptions techniques durant l'exécution  de travaux de bâtiment et de génie civil.",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre V : Prévention des risques liés à certaines activités ou opérations  &gt; Titre III : Bâtiment et génie civil  &gt; Chapitre V : Dispositions applicables aux travailleurs indépendants &gt; Section 1 : Prescriptions techniques durant l'exécution  de travaux de bâtiment et de génie civil.",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000018528947",
     "idEli": null,
     "idEliAlias": null,
@@ -150,7 +150,47 @@
         "dateDebutCible": "2008-03-13"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre IV : Prescriptions techniques de prote... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018492018",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 16 : Mesures d'hygiène. (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018492361",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 17 : Hébergement. (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018492381",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "",

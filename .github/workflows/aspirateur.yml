@@ -155,10 +155,19 @@ jobs:
             # or le garde « if [ -s ... ] » plus bas coupe alors toute récupération.
             # DARES est une source officielle, stable, qui indique en plus quelles
             # conventions sont actives et lesquelles ont fusionné.
+            # 02/10/2026 : openpyxl n'était installé NULLE PART dans ce workflow --
+            # dares_to_univers.py échouait donc à chaque lundi, en silence (« on garde
+            # l'univers précédent »). Et le fichier DARES était figé à juin 2026 :
+            # maj_dares.py va chercher la dernière version (garde l'ancienne si le
+            # site bloque) et donne sur sa dernière ligne le fichier à utiliser.
+            pip install --quiet openpyxl || pip install --quiet --break-system-packages openpyxl
+            XLSX=$(python3 scripts/maj_dares.py --ccn ccn | tail -1)
+            [ -s "$XLSX" ] || XLSX=ccn/Dares_Suivi_Historique_convention_collective_Juin2026.xlsx
+            echo "Fichier DARES utilisé : $XLSX"
             python3 scripts/dares_to_univers.py \
-              --xlsx ccn/Dares_Suivi_Historique_convention_collective_Juin2026.xlsx \
+              --xlsx "$XLSX" \
               --out idcc_list_complet.txt --fusions idcc_fusions.csv \
-              || echo "dares_to_univers a échoué, on garde l'univers précédent"
+              || { echo "dares_to_univers a échoué, on garde l'univers précédent"; echo "$(date -u +%Y-%m-%dT%H:%MZ) dares" >> audits/etapes-en-echec.log; }
             # Conservé en secours : si Légifrance refonctionne un jour, cet appel
             # complète l'univers DARES au lieu de le remplacer.
             python3 scripts/list_all_ccn.py --out /tmp/idcc_legifrance.txt --debug-dir debug_list_ccn || echo "list_all_ccn a échoué (HTTP 500 connu), sans conséquence : l'univers vient de DARES"
@@ -210,6 +219,7 @@ jobs:
           python3 scripts/build_clauses_index.py --ccn-dir output/ccn --out output/clauses-index.json || true
           python3 scripts/build_manifest.py --out output/manifest.json || true
           git add output/ audits/ idcc_list.txt idcc_list_complet.txt idcc_fusions.csv all_articles_code_travail.txt all_articles_code_secu.txt 2>/dev/null || true
+          git add ccn/Dares_Suivi_DERNIER.xlsx ccn/dares-source.json 2>/dev/null || true   # maj_dares.py (02/10/2026)
           if git diff --staged --quiet; then
             echo "Aucun nouveau numéro à remplir ce run."
           else
@@ -386,7 +396,7 @@ jobs:
       - name: Compléter les textes récents (tous sujets)
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'ccn' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
         run: |
-          python3 scripts/fetch_recents_details.py --ccn-dir output/ccn --jours 120 --budget-appels 300 || echo "fetch_recents_details a échoué, pas bloquant"
+          python3 scripts/fetch_recents_details.py --ccn-dir output/ccn --jours 120 --budget-appels 300 || { echo "fetch_recents_details a échoué, pas bloquant"; echo "$(date -u +%Y-%m-%dT%H:%MZ) ccn-textes-recents" >> audits/etapes-en-echec.log; }
 
       - name: Récupérer le Code du travail
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'les-deux' || github.event.inputs.cible == 'tout') }}
@@ -415,6 +425,19 @@ jobs:
             python3 scripts/pull_code_travail.py --articles-file articles_list_css.txt --code-id LEGITEXT000006073189 --out output/code-secu
           fi
 
+      # 30/09/2026 -- une vingtaine d'articles clés hors Code du travail / Sécu
+      # (impôts, transports, rural), listés dans articles_cles_autres_codes.txt.
+      # Quelques secondes : relus en entier à chaque run, le tableau de bord de
+      # veille alerte si leur texte change ou s'ils disparaissent.
+      - name: Récupérer les articles clés des autres codes
+        if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'code-travail' || github.event.inputs.cible == 'tout') }}
+        run: |
+          grep -v '^#' articles_cles_autres_codes.txt | grep ';' | cut -d';' -f1,2 | sort -u | while IFS=';' read -r DOSSIER CODEID; do
+            grep -v '^#' articles_cles_autres_codes.txt | awk -F';' -v d="$DOSSIER" '$1==d {print $3}' > /tmp/cles_$DOSSIER.txt
+            python3 scripts/pull_code_travail.py --articles-file /tmp/cles_$DOSSIER.txt --code-id "$CODEID" --out "output/$DOSSIER" \
+              || { echo "articles clés ($DOSSIER) : échec, pas bloquant"; echo "$(date -u +%Y-%m-%dT%H:%MZ) articles-cles-$DOSSIER" >> audits/etapes-en-echec.log; }
+          done
+
       - name: "Récupérer la jurisprudence (Judilibre — chambre sociale)"
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'jurisprudence' || github.event.inputs.cible == 'tout') }}
         run: |
@@ -423,9 +446,9 @@ jobs:
           # validées une fois). Découverte thématique en droit du travail, on ne
           # récupère que les décisions NOUVELLES -> le corpus s'enrichit à chaque run.
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction cc --per-theme 20 --max-decisions 150 --only-missing || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction cc --per-theme 20 --max-decisions 150 --only-missing || { echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"; echo "$(date -u +%Y-%m-%dT%H:%MZ) jurisprudence-cc" >> audits/etapes-en-echec.log; }
           else
-            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction cc --per-theme 40 --max-decisions 500 || echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --chamber soc --jurisdiction cc --per-theme 40 --max-decisions 500 || { echo "Judilibre a échoué (abonnement PISTE/CGU ?), pas bloquant"; echo "$(date -u +%Y-%m-%dT%H:%MZ) jurisprudence-cc" >> audits/etapes-en-echec.log; }
           fi
 
       - name: "Récupérer la jurisprudence (Judilibre — cours d'appel, pôle social)"
@@ -444,9 +467,9 @@ jobs:
           # "zéro cours d'appel" constaté. Sans filtre de chambre, la recherche
           # thématique (droit du travail) fait déjà le tri sur le fond.
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            python3 scripts/pull_judilibre.py --out output/jurisprudence --jurisdiction ca --per-theme 20 --max-decisions 150 --only-missing || echo "Judilibre (CA) a échoué, pas bloquant"
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --jurisdiction ca --per-theme 20 --max-decisions 150 --only-missing || { echo "Judilibre (CA) a échoué, pas bloquant"; echo "$(date -u +%Y-%m-%dT%H:%MZ) jurisprudence-ca" >> audits/etapes-en-echec.log; }
           else
-            python3 scripts/pull_judilibre.py --out output/jurisprudence --jurisdiction ca --per-theme 40 --max-decisions 500 || echo "Judilibre (CA) a échoué, pas bloquant"
+            python3 scripts/pull_judilibre.py --out output/jurisprudence --jurisdiction ca --per-theme 40 --max-decisions 500 || { echo "Judilibre (CA) a échoué, pas bloquant"; echo "$(date -u +%Y-%m-%dT%H:%MZ) jurisprudence-ca" >> audits/etapes-en-echec.log; }
           fi
 
       - name: "Découvrir largement de la jurisprudence (Judilibre, toutes chambres)"
@@ -502,7 +525,11 @@ jobs:
           # est avalée, et RIEN n'est poussé (bug des 20635 "ok" mais output vide).
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
-          python3 scripts/pull_jorf.py --out output/jorf --only-missing --lot 700 --minutes-max 150 || echo "JORF a échoué, pas bloquant"
+          # 30/09/2026 : un échec (ex. jeton PISTE refusé) était avalé par « || echo » :
+          # le run restait vert et rien ne le signalait. Chaque échec d'étape est
+          # maintenant noté dans audits/etapes-en-echec.log (committé), que le
+          # tableau de bord de veille lit pour t'alerter.
+          python3 scripts/pull_jorf.py --out output/jorf --only-missing --lot 700 --minutes-max 150 || { echo "JORF a échoué, pas bloquant"; echo "$(date -u +%Y-%m-%dT%H:%MZ) jorf" >> audits/etapes-en-echec.log; }
 
       - name: "Récupérer les accords d'entreprise (benchmarking RH)"
         if: ${{ always() && (github.event_name == 'schedule' || github.event.inputs.cible == 'acco' || github.event.inputs.cible == 'tout') }}
@@ -517,7 +544,7 @@ jobs:
           # L'identité git est configurée ICI (sinon commit_partiel échoue).
           git config user.name "Aspirateur Légifrance (bot)"
           git config user.email "action@github.com"
-          python3 scripts/pull_acco.py --out output/acco --only-missing --lot 700 --minutes-max 330 --deadline-epoch "$ASPIR_DEADLINE" || echo "ACCO a échoué, pas bloquant"
+          python3 scripts/pull_acco.py --out output/acco --only-missing --lot 700 --minutes-max 330 --deadline-epoch "$ASPIR_DEADLINE" || { echo "ACCO a échoué, pas bloquant"; echo "$(date -u +%Y-%m-%dT%H:%MZ) acco" >> audits/etapes-en-echec.log; }
 
       - name: Lister tous les articles du Code du travail (préparation seulement)
         if: ${{ always() && github.event.inputs.cible == 'lister-tous-articles-travail' }}

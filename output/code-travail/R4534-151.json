@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "L'inspecteur du travail peut accorder des dérogations lorsque l'application des mesures prévues par la présente section est rendue difficile par les conditions d'exploitation du chantier.",
-    "texteHtml": "<p><br/>L'inspecteur du travail peut accorder des dérogations lorsque l'application des mesures prévues par la présente section est rendue difficile par les conditions d'exploitation du chantier.</p>",
+    "texteHtml": "<p><br/>L'inspecteur du travail peut accorder des dérogations lorsque l'application des mesures prévues par la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018492381&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 17 : Hébergement. (V)\">présente section</a> est rendue difficile par les conditions d'exploitation du chantier.</p>",
     "num": "R4534-151",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,7 +95,7 @@
     "sectionParentId": "LEGISCTA000018528981",
     "sectionParentTitre": "Section 17 : Hébergement.",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre V : Prévention des risques liés à certaines activités ou opérations  &gt; Titre III : Bâtiment et génie civil  &gt; Chapitre IV : Prescriptions techniques de protection  durant l'exécution des travaux &gt; Section 17 : Hébergement.",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000018528969",
     "idEli": null,
     "idEliAlias": null,
@@ -150,7 +150,21 @@
         "dateDebutCible": "2008-03-13"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 17 : Hébergement. (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018492381",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "",

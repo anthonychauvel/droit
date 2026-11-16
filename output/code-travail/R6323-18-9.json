@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "L'administrateur provisoire peut avoir pour mission : 1° D'accomplir une opération déterminée par l'arrêté mentionné à l'article R. 6323-18-8 ; 2° De gérer et de représenter l'instance paritaire nationale par substitution au conseil d'administration et à la direction générale pour la durée fixée par l'arrêté mentionné à l'article R. 6323-18-8.",
-    "texteHtml": "<p align=\"left\">L'administrateur provisoire peut avoir pour mission :</p><p align=\"left\">1° D'accomplir une opération déterminée par l'arrêté mentionné à l'article R. 6323-18-8 ;</p><p align=\"left\">2° De gérer et de représenter l'instance paritaire nationale par substitution au conseil d'administration et à la direction générale pour la durée fixée par l'arrêté mentionné à l'article R. 6323-18-8.</p>",
+    "texteHtml": "<p align=\"left\">L'administrateur provisoire peut avoir pour mission :</p><p align=\"left\">1° D'accomplir une opération déterminée par l'arrêté mentionné à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000054106041&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. R6323-18-8 (V)\">R. 6323-18-8</a> ;</p><p align=\"left\">2° De gérer et de représenter l'instance paritaire nationale par substitution au conseil d'administration et à la direction générale pour la durée fixée par l'arrêté mentionné à l'article R. 6323-18-8.</p>",
     "num": "R6323-18-9",
     "origine": "LEGI",
     "nature": "Article",
@@ -131,8 +131,8 @@
     "sectionParentId": "LEGISCTA000054106039",
     "sectionParentTitre": "Paragraphe 2 : Nomination de l'administrateur provisoire",
     "fullSectionsTitre": "Partie réglementaire   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle continue  &gt; Titre II : Dispositifs de formation professionnelle continue  &gt; Chapitre III : Le compte personnel de formation &gt; Section 2 : Projet de transition professionnelle &gt; Sous-section 1 bis : Instance paritaire nationale mentionnée à l'article L. 6323-17-5-1 &gt; Paragraphe 2 : Nomination de l'administrateur provisoire",
-    "refInjection": "MD-20260518_192200_750_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054106043",
+    "refInjection": "IG-20261022",
+    "idTechInjection": "LEGIARTI000054106043",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -186,7 +186,21 @@
         "dateDebutCible": "2026-05-18"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R6323-18-8 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "R6323-18-8",
+        "articleId": "LEGIARTI000054106041",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1779062400000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

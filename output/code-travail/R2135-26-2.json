@@ -5,8 +5,8 @@
     "id": "LEGIARTI000053788659",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Le rapport prévu à l'article R. 2135-26-1 fait l'objet d'une attestation du commissaire aux comptes, lorsque l'organisation bénéficiaire est tenue d'en nommer un en application des dispositions de l'article L. 2135-6, ou, à défaut, d'un expert-comptable. L'attestation porte sur la concordance des informations contenues dans le rapport avec la comptabilité de l'organisation bénéficiaire. Elle établit la conformité de ces informations avec les décisions de l'organisme bénéficiaire concernant la mise en œuvre du processus d'affectation des charges mentionné au deuxième alinéa de l'article R. 2135-26-1. L'attestation porte également sur l'existence de ce processus et sur la conformité de sa mise en œuvre.",
-    "texteHtml": "<p align=\"left\">Le rapport prévu à l'article R. 2135-26-1 fait l'objet d'une attestation du commissaire aux comptes, lorsque l'organisation bénéficiaire est tenue d'en nommer un en application des dispositions de l'article L. 2135-6, ou, à défaut, d'un expert-comptable.</p><p align=\"left\">L'attestation porte sur la concordance des informations contenues dans le rapport avec la comptabilité de l'organisation bénéficiaire. Elle établit la conformité de ces informations avec les décisions de l'organisme bénéficiaire concernant la mise en œuvre du processus d'affectation des charges mentionné au deuxième alinéa de l'article R. 2135-26-1. L'attestation porte également sur l'existence de ce processus et sur la conformité de sa mise en œuvre.</p>",
+    "texte": "Le rapport prévu à l'article R. 2135-26-1 fait l'objet d'une attestation du commissaire aux comptes, lorsque l'organisation bénéficiaire est tenue d'en nommer un en application des dispositions de l'article L. 2135-6 , ou, à défaut, d'un expert-comptable. L'attestation porte sur la concordance des informations contenues dans le rapport avec la comptabilité de l'organisation bénéficiaire. Elle établit la conformité de ces informations avec les décisions de l'organisme bénéficiaire concernant la mise en œuvre du processus d'affectation des charges mentionné au deuxième alinéa de l'article R. 2135-26-1. L'attestation porte également sur l'existence de ce processus et sur la conformité de sa mise en œuvre.",
+    "texteHtml": "<p align=\"left\">Le rapport prévu à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000053788657&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. R2135-26-1 (V)\">R. 2135-26-1</a> fait l'objet d'une attestation du commissaire aux comptes, lorsque l'organisation bénéficiaire est tenue d'en nommer un en application des dispositions de l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000019351125&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L2135-6 (V)\">L. 2135-6</a>, ou, à défaut, d'un expert-comptable.</p><p align=\"left\">L'attestation porte sur la concordance des informations contenues dans le rapport avec la comptabilité de l'organisation bénéficiaire. Elle établit la conformité de ces informations avec les décisions de l'organisme bénéficiaire concernant la mise en œuvre du processus d'affectation des charges mentionné au deuxième alinéa de l'article R. 2135-26-1. L'attestation porte également sur l'existence de ce processus et sur la conformité de sa mise en œuvre.</p>",
     "num": "R2135-26-2",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,7 +113,7 @@
     "sectionParentId": "LEGISCTA000030172739",
     "sectionParentTitre": "Paragraphe 7 : Utilisation des crédits par les organisations",
     "fullSectionsTitre": "Partie réglementaire   &gt; Deuxième partie : Les relations collectives de travail \n\n &gt; Livre Ier : Les syndicats professionnels  &gt; Titre III : Statut juridique &gt; Chapitre V : Ressources et moyens &gt; Section 2 : Financement des organisations syndicales de salariés et des organisations professionnelles d'employeurs \r\n &gt; Sous-section 1 : Organisation et fonctionnement du fonds paritaire &gt; Paragraphe 7 : Utilisation des crédits par les organisations",
-    "refInjection": "MD-20260410_195310_893_BDJQUOT",
+    "refInjection": "MD-20261014_194635_273_BDJQUOT",
     "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000053788659",
     "idEli": null,
     "idEliAlias": null,
@@ -168,7 +168,34 @@
         "dateDebutCible": "2026-04-11"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L2135-6 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L2135-6",
+        "articleId": "LEGIARTI000019351125",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1219363200000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R2135-26-1 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "R2135-26-1",
+        "articleId": "LEGIARTI000053788657",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1775865600000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

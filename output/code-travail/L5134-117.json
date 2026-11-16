@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Les compétences acquises dans le cadre de l'emploi d'avenir sont reconnues par une attestation de formation, une attestation d'expérience professionnelle ou une validation des acquis de l'expérience prévue à l'article L. 6411-1 . Elles peuvent également faire l'objet d'une certification inscrite au répertoire national des certifications professionnelles. La présentation à un examen pour acquérir un diplôme ou à un concours doit être favorisée pendant ou à l'issue de l'emploi d'avenir. A l'issue de son emploi d'avenir, le bénéficiaire qui souhaite aboutir dans son parcours d'accès à la qualification peut prétendre aux contrats de travail mentionnés au livre II et au chapitre V du titre II du livre III de la sixième partie ainsi qu'aux actions de formation professionnelle mentionnées à l'article L. 6313-1 , selon des modalités définies dans le cadre d'une concertation annuelle du comité de coordination régional de l'emploi et de la formation professionnelle.",
-    "texteHtml": "Les compétences acquises dans le cadre de l'emploi d'avenir sont reconnues par une attestation de formation, une attestation d'expérience professionnelle ou une validation des acquis de l'expérience prévue à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006904468&dateTexte=&categorieLien=cid\">L. 6411-1</a>. Elles peuvent également faire l'objet d'une certification inscrite au répertoire national des certifications professionnelles. <br/><br/>La présentation à un examen pour acquérir un diplôme ou à un concours doit être favorisée pendant ou à l'issue de l'emploi d'avenir. <br/><br/>A l'issue de son emploi d'avenir, le bénéficiaire qui souhaite aboutir dans son parcours d'accès à la qualification peut prétendre aux contrats de travail mentionnés au livre II et au chapitre V du titre II du livre III de la sixième partie ainsi qu'aux actions de formation professionnelle mentionnées à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006904130&dateTexte=&categorieLien=cid\">L. 6313-1</a>, selon des modalités définies dans le cadre d'une concertation annuelle du comité de coordination régional de l'emploi et de la formation professionnelle.",
+    "texteHtml": "Les compétences acquises dans le cadre de l'emploi d'avenir sont reconnues par une attestation de formation, une attestation d'expérience professionnelle ou une validation des acquis de l'expérience prévue à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006904468&dateTexte=&categorieLien=cid\">L. 6411-1</a>. Elles peuvent également faire l'objet d'une certification inscrite au répertoire national des certifications professionnelles. <br/><br/>La présentation à un examen pour acquérir un diplôme ou à un concours doit être favorisée pendant ou à l'issue de l'emploi d'avenir. <br/><br/>A l'issue de son emploi d'avenir, le bénéficiaire qui souhaite aboutir dans son parcours d'accès à la qualification peut prétendre aux contrats de travail mentionnés au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006145421&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Livre II : L'apprentissage (V)\">livre II</a> et au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178207&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre V : Contrats de professionnalisation (V)\">chapitre V du titre II du livre III de la sixième partie</a> ainsi qu'aux actions de formation professionnelle mentionnées à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006904130&dateTexte=&categorieLien=cid\">L. 6313-1</a>, selon des modalités définies dans le cadre d'une concertation annuelle du comité de coordination régional de l'emploi et de la formation professionnelle.",
     "num": "L5134-117",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,8 +104,8 @@
     "sectionParentId": "LEGISCTA000026549642",
     "sectionParentTitre": "Sous-section 4 : Reconnaissance des compétences acquises \r\n\r\n",
     "fullSectionsTitre": "Partie législative   &gt; Cinquième partie : L'emploi &gt; Livre Ier : Les dispositifs en faveur de l'emploi &gt; Titre III : Aides à l'insertion, à l'accès et au retour à l'emploi  &gt; Chapitre IV : Contrats de travail aidés &gt; Section 8 : Emploi d'avenir \r\n\r\n &gt; Sous-section 4 : Reconnaissance des compétences acquises \r\n\r\n",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000026538138",
+    "refInjection": "MD-20261106_205729_195_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000026538138",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -160,6 +160,32 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre V : Contrats de professionnalisation (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178207",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Livre II : L'apprentissage (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006145421",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. L6313-1",
