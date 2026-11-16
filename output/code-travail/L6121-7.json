@@ -5,8 +5,8 @@
     "id": "LEGIARTI000028688277",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret en Conseil d'Etat détermine les modalités de mise en œuvre du présent chapitre.",
-    "texteHtml": "Un décret en Conseil d'Etat détermine les modalités de mise en œuvre du présent chapitre.",
+    "texte": "Un décret en Conseil d'Etat détermine les modalités de mise en œuvre du présent chapitre .",
+    "texteHtml": "Un décret en Conseil d'Etat détermine les modalités de mise en œuvre du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178180&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre Ier : Rôle des régions. (V)\">présent chapitre</a>.",
     "num": "L6121-7",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,8 +104,8 @@
     "sectionParentId": "LEGISCTA000028688218",
     "sectionParentTitre": "Section 2 : Coordination avec les branches professionnelles, le service public de l'emploi et le service public de l'orientation",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre Ier : Principes généraux et organisation institutionnelle de la formation et de l'orientation professionnelles  &gt; Titre II : Rôle des régions, de l'Etat et des institutions de la formation professionnelle   &gt; Chapitre Ier : Rôle des régions. &gt; Section 2 : Coordination avec les branches professionnelles, le service public de l'emploi et le service public de l'orientation",
-    "refInjection": "IG-20260113",
-    "idTechInjection": "LEGIARTI000028688277",
+    "refInjection": "MD-20261020_195214_894_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000028688277",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -159,7 +159,21 @@
         "dateDebutCible": "2026-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre Ier : Rôle des régions. (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178180",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "En cas de constatation de manœuvres frauduleuses ou de manquements graves et répétés à la réglementation, les sanctions prononcées par les agents mentionnés à l'article L. 6361-5 ou par les organismes financeurs mentionnés à l'article L. 6316-1 peuvent faire l'objet d'une mesure de publicité, dans des conditions déterminées par décret en Conseil d'Etat.",
-    "texteHtml": "<p align=\"left\">En cas de constatation de manœuvres frauduleuses ou de manquements graves et répétés à la réglementation, les sanctions prononcées par les agents mentionnés à l'article L. 6361-5 ou par les organismes financeurs mentionnés à l'article L. 6316-1 peuvent faire l'objet d'une mesure de publicité, dans des conditions déterminées par décret en Conseil d'Etat.</p>",
+    "texteHtml": "<p align=\"left\">En cas de constatation de manœuvres frauduleuses ou de manquements graves et répétés à la réglementation, les sanctions prononcées par les agents mentionnés à l'article L. 6361-5 ou par les organismes financeurs mentionnés à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000028689390&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L6316-1 (V)\">L. 6316-1</a> peuvent faire l'objet d'une mesure de publicité, dans des conditions déterminées par décret en Conseil d'Etat.</p>",
     "num": "L6362-12-2",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,8 +113,8 @@
     "sectionParentId": "LEGISCTA000006189934",
     "sectionParentTitre": "Section 3 : Sanctions.",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle &gt; Titre VI : Contrôle de la formation professionnelle &gt; Chapitre II : Déroulement des opérations de contrôle &gt; Section 3 : Sanctions.",
-    "refInjection": "MD-20260626_203100_111_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054319653",
+    "refInjection": "IG-20261020",
+    "idTechInjection": "LEGIARTI000054319653",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -168,7 +168,21 @@
         "dateDebutCible": "2026-06-27"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L6316-1 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L6316-1",
+        "articleId": "LEGIARTI000028689390",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1394150400000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

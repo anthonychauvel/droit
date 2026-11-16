@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006904452",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret en Conseil d'Etat détermine les conditions d'application du présent chapitre.",
-    "texteHtml": "<p></p>   Un décret en Conseil d'Etat détermine les conditions d'application du présent chapitre.<p></p><p></p>",
+    "texte": "Un décret en Conseil d'Etat détermine les conditions d'application du présent chapitre .",
+    "texteHtml": "<p></p>   Un décret en Conseil d'Etat détermine les conditions d'application du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178218&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre Ier : Objet du contrôle et agents de c... (V)\">présent chapitre</a>.<p></p><p></p>",
     "num": "L6361-6",
     "origine": "LEGI",
     "nature": "Article",
@@ -122,8 +122,8 @@
     "sectionParentId": "LEGISCTA000006189931",
     "sectionParentTitre": "Section 3 : Dispositions d'application.",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle continue  &gt; Titre VI : Contrôle de la formation professionnelle continue   &gt; Chapitre Ier : Objet du contrôle et fonctionnaires de contrôle &gt; Section 3 : Dispositions d'application.",
-    "refInjection": "MD-20260629_204147_693_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000006904452",
+    "refInjection": "IG-20261020",
+    "idTechInjection": "LEGIARTI000006904452",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -177,7 +177,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre Ier : Objet du contrôle et agents de c... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178218",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

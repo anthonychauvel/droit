@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006904756",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Des décrets en Conseil d'Etat déterminent les modalités d'application du présent livre.",
-    "texteHtml": "<p></p>   Des décrets en Conseil d'Etat déterminent les modalités d'application du présent livre.<p></p><p></p>",
+    "texte": "Des décrets en Conseil d'Etat déterminent les modalités d'application du présent livre .",
+    "texteHtml": "<p></p>   Des décrets en Conseil d'Etat déterminent les modalités d'application du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006145428&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Livre IV : Travailleurs à domicile (V)\">présent livre</a>.<p></p><p></p>",
     "num": "L7411-2",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,7 +86,7 @@
     "sectionParentId": "LEGISCTA000006178253",
     "sectionParentTitre": "Chapitre Ier : Champ d'application et dispositions d'application.",
     "fullSectionsTitre": "Partie législative   &gt; Septième partie : Dispositions particulières à certaines professions et activités  &gt; Livre IV : Travailleurs à domicile &gt; Titre Ier : Dispositions générales  &gt; Chapitre Ier : Champ d'application et dispositions d'application.",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000006904756",
     "idEli": null,
     "idEliAlias": null,
@@ -141,7 +141,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Livre IV : Travailleurs à domicile (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006145428",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

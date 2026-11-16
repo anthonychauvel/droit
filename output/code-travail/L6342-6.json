@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Tous les litiges auxquels peuvent donner lieu le versement et la prise en charge des cotisations de sécurité sociale en application du présent chapitre relèvent de la compétence du juge judiciaire.",
-    "texteHtml": "<p></p>   Tous les litiges auxquels peuvent donner lieu le versement et la prise en charge des cotisations de sécurité sociale en application du présent chapitre relèvent de la compétence du juge judiciaire.<p></p><p></p>",
+    "texteHtml": "<p></p>   Tous les litiges auxquels peuvent donner lieu le versement et la prise en charge des cotisations de sécurité sociale en application du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178211&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre II : Protection sociale du stagiaire (V)\">présent chapitre</a> relèvent de la compétence du juge judiciaire.<p></p><p></p>",
     "num": "L6342-6",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,7 +104,7 @@
     "sectionParentId": "LEGISCTA000006189919",
     "sectionParentTitre": "Section 4 : Règlement des litiges.",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle continue  &gt; Titre IV : Stagiaire de la formation professionnelle &gt; Chapitre II : Protection sociale du stagiaire &gt; Section 4 : Règlement des litiges.",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261022",
     "idTechInjection": "LEGIARTI000006904384",
     "idEli": null,
     "idEliAlias": null,
@@ -159,7 +159,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre II : Protection sociale du stagiaire (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178211",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

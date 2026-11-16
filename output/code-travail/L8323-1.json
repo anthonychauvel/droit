@@ -5,8 +5,8 @@
     "id": "LEGIARTI000035902693",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret en Conseil d'Etat apporte aux dispositions du titre II du livre II, relatives au travail dissimulé, les adaptations nécessaires à leur application en Guadeloupe, en Guyane, en Martinique, à Mayotte, à La Réunion, à Saint-Barthélemy et à Saint-Martin.",
-    "texteHtml": "<p>Un décret en Conseil d'Etat apporte aux dispositions du titre II du livre II, relatives au travail dissimulé, les adaptations nécessaires à leur application en Guadeloupe, en Guyane, en Martinique, à Mayotte, à La Réunion, à Saint-Barthélemy et à Saint-Martin.</p>",
+    "texte": "Un décret en Conseil d'Etat apporte aux dispositions du titre II du livre II , relatives au travail dissimulé, les adaptations nécessaires à leur application en Guadeloupe, en Guyane, en Martinique, à Mayotte, à La Réunion, à Saint-Barthélemy et à Saint-Martin.",
+    "texteHtml": "<p>Un décret en Conseil d'Etat apporte aux dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006160848&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Titre II : Travail dissimulé  (V)\">titre II du livre II</a>, relatives au travail dissimulé, les adaptations nécessaires à leur application en Guadeloupe, en Guyane, en Martinique, à Mayotte, à La Réunion, à Saint-Barthélemy et à Saint-Martin.</p>",
     "num": "L8323-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,7 +113,7 @@
     "sectionParentId": "LEGISCTA000006190010",
     "sectionParentTitre": "Section 1 : Travail dissimulé.",
     "fullSectionsTitre": "Partie législative   &gt; Huitième partie : Contrôle de l'application de la législation du travail  &gt; Livre III : Dispositions relatives à l'outre-mer  &gt; Titre II : Guadeloupe, Guyane, Martinique, Mayotte, La Réunion, Saint-Barthélemy, Saint-Martin et Saint-Pierre-et-Miquelon &gt; Chapitre III : Lutte contre le travail illégal &gt; Section 1 : Travail dissimulé.",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000035902693",
     "idEli": null,
     "idEliAlias": null,
@@ -168,7 +168,21 @@
         "dateDebutCible": "2018-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Titre II : Travail dissimulé  (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006160848",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

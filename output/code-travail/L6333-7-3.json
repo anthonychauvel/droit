@@ -5,8 +5,8 @@
     "id": "LEGIARTI000054317732",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Dans le cadre des contrôles opérés par la Caisse des dépôts et consignations pour la gestion du compte personnel de formation ainsi que du service dématérialisé et du traitement automatisé mentionnés aux I et II de l'article L. 6323-8, il peut être fait usage d'une identité d'emprunt.",
-    "texteHtml": "<p align=\"left\">Dans le cadre des contrôles opérés par la Caisse des dépôts et consignations pour la gestion du compte personnel de formation ainsi que du service dématérialisé et du traitement automatisé mentionnés aux I et II de l'article L. 6323-8, il peut être fait usage d'une identité d'emprunt.</p>",
+    "texte": "Dans le cadre des contrôles opérés par la Caisse des dépôts et consignations pour la gestion du compte personnel de formation ainsi que du service dématérialisé et du traitement automatisé mentionnés aux I et II de l'article L. 6323-8 , il peut être fait usage d'une identité d'emprunt.",
+    "texteHtml": "<p align=\"left\">Dans le cadre des contrôles opérés par la Caisse des dépôts et consignations pour la gestion du compte personnel de formation ainsi que du service dématérialisé et du traitement automatisé mentionnés aux <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006904230&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L6323-8 (V)\">I et II de l'article L. 6323-8</a>, il peut être fait usage d'une identité d'emprunt.</p>",
     "num": "L6333-7-3",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,8 +113,8 @@
     "sectionParentId": "LEGISCTA000037369592",
     "sectionParentTitre": "Section 2 : Gestion\r\n",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle &gt; Titre III : Financement de la formation professionnelle continue    &gt; Chapitre III : Gestion du compte personnel de formation par la Caisse des dépôts et consignations &gt; Section 2 : Gestion\r\n",
-    "refInjection": "MD-20260629_204147_693_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054317732",
+    "refInjection": "IG-20261020",
+    "idTechInjection": "LEGIARTI000054317732",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -168,7 +168,21 @@
         "dateDebutCible": "2026-06-27"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L6323-8 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L6323-8",
+        "articleId": "LEGIARTI000006904230",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

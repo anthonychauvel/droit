@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Les modalités d'application des articles L. 5312-15 et L. 5312-16 sont définies par un décret en Conseil d'Etat pris après avis de la Commission nationale de l'informatique et des libertés.",
-    "texteHtml": "<p align=\"left\">Les modalités d'application des articles L. 5312-15 et L. 5312-16 sont définies par un décret en Conseil d'Etat pris après avis de la Commission nationale de l'informatique et des libertés.</p>",
+    "texteHtml": "<p align=\"left\">Les modalités d'application des articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000054315135&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L5312-15 (V)\">L. 5312-15</a> et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000054315137&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L5312-16 (V)\">L. 5312-16</a> sont définies par un décret en Conseil d'Etat pris après avis de la Commission nationale de l'informatique et des libertés.</p>",
     "num": "L5312-17",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,7 +86,7 @@
     "sectionParentId": "LEGISCTA000054315133",
     "sectionParentTitre": "Chapitre II bis : Lutte contre la fraude",
     "fullSectionsTitre": "Partie législative   &gt; Cinquième partie : L'emploi &gt; Livre III : Service public de l'emploi et placement &gt; Titre Ier : Le service public de l'emploi  &gt; Chapitre II bis : Lutte contre la fraude",
-    "refInjection": "MD-20260629_204147_693_BDJQUOT",
+    "refInjection": "MD-20261023_195545_806_BDJQUOT",
     "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054315139",
     "idEli": null,
     "idEliAlias": null,
@@ -141,7 +141,34 @@
         "dateDebutCible": "2026-06-27"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L5312-15 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L5312-15",
+        "articleId": "LEGIARTI000054315135",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1782518400000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L5312-16 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L5312-16",
+        "articleId": "LEGIARTI000054315137",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1782518400000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

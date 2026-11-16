@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006904677",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret en Conseil d'Etat détermine les conditions d'application du présent titre.",
-    "texteHtml": "<p></p>   Un décret en Conseil d'Etat détermine les conditions d'application du présent titre.<p></p><p></p>",
+    "texte": "Un décret en Conseil d'Etat détermine les conditions d'application du présent titre .",
+    "texteHtml": "<p></p>   Un décret en Conseil d'Etat détermine les conditions d'application du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006160836&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Titre Ier : Concierges et employés d'immeubles ... (V)\">présent titre</a>.<p></p><p></p>",
     "num": "L7211-4",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,7 +95,7 @@
     "sectionParentId": "LEGISCTA000006189972",
     "sectionParentTitre": "Section 2 : Dispositions d'application.",
     "fullSectionsTitre": "Partie législative   &gt; Septième partie : Dispositions particulières à certaines professions et activités  &gt; Livre II : Concierges et employés d'immeubles à usage d'habitation, employés de maison et services à la personne   &gt; Titre Ier : Concierges et employés d'immeubles à usage d'habitation &gt; Chapitre Ier : Dispositions générales &gt; Section 2 : Dispositions d'application.",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000006904677",
     "idEli": null,
     "idEliAlias": null,
@@ -150,7 +150,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Titre Ier : Concierges et employés d'immeubles ... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006160836",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006904324",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret en Conseil d'Etat détermine les conditions d'application de la présente sous-section.",
-    "texteHtml": "<p></p>   Un décret en Conseil d'Etat détermine les conditions d'application de la présente sous-section.<p></p><p></p>",
+    "texte": "Un décret en Conseil d'Etat détermine les conditions d'application de la présente sous-section .",
+    "texteHtml": "<p></p>   Un décret en Conseil d'Etat détermine les conditions d'application de la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006195945&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Sous-section 1 : Employeurs du bâtiment et des ... (V)\">présente sous-section</a>.<p></p><p></p>",
     "num": "L6331-47",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,7 +113,7 @@
     "sectionParentId": "LEGISCTA000006195945",
     "sectionParentTitre": "Sous-section 1 : Employeurs du bâtiment et des travaux publics.",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle continue  &gt; Titre III : Financement de la formation professionnelle continue    &gt; Chapitre Ier : Participation des employeurs au développement de la formation professionnelle continue &gt; Section 4 : Dispositions applicables à certaines catégories d'employeurs &gt; Sous-section 1 : Employeurs du bâtiment et des travaux publics.",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261022",
     "idTechInjection": "LEGIARTI000006904324",
     "idEli": null,
     "idEliAlias": null,
@@ -168,7 +168,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Sous-section 1 : Employeurs du bâtiment et des ... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006195945",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

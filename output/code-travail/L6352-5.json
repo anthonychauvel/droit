@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006904402",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret en Conseil d'Etat détermine les mesures d'application de la présente section.",
-    "texteHtml": "<p></p>   Un décret en Conseil d'Etat détermine les mesures d'application de la présente section.<p></p><p></p>",
+    "texte": "Un décret en Conseil d'Etat détermine les mesures d'application de la présente section .",
+    "texteHtml": "<p></p>   Un décret en Conseil d'Etat détermine les mesures d'application de la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006189922&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 2 : Règlement intérieur et obligations ... (V)\">présente section</a>.<p></p><p></p>",
     "num": "L6352-5",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,8 +113,8 @@
     "sectionParentId": "LEGISCTA000054336977",
     "sectionParentTitre": "Section 2 : Règlement intérieur et obligations des organismes de formation sollicitant des fonds publics",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle continue  &gt; Titre V : Organismes de formation &gt; Chapitre II : Fonctionnement &gt; Section 2 : Règlement intérieur.",
-    "refInjection": "MD-20260629_204147_693_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000006904402",
+    "refInjection": "IG-20261020",
+    "idTechInjection": "LEGIARTI000006904402",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -181,6 +181,19 @@
         "numTexte": "",
         "datePubli": 32472144000000,
         "dateDebut": 1538352000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 2 : Règlement intérieur et obligations ... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006189922",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
       }
     ],
     "lienConcordes": [

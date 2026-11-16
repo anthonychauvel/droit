@@ -5,8 +5,8 @@
     "id": "LEGIARTI000037369052",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret en Conseil d'Etat fixe les conditions d'application de la présente section.",
-    "texteHtml": "<p>Un décret en Conseil d'Etat fixe les conditions d'application de la présente section.</p>",
+    "texte": "Un décret en Conseil d'Etat fixe les conditions d'application de la présente section .",
+    "texteHtml": "<p>Un décret en Conseil d'Etat fixe les conditions d'application de la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006189890&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 3 : Mise en œuvre du compte personnel d... (V)\">présente section</a>.</p>",
     "num": "L6323-24-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -131,7 +131,7 @@
     "sectionParentId": "LEGISCTA000037369050",
     "sectionParentTitre": "Sous-section 3 : Dispositions d'application\r\n",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle &gt; Titre II : Dispositifs de formation professionnelle continue   &gt; Chapitre III : Compte personnel de formation &gt; Section 3 : Mise en œuvre du compte personnel de formation pour les demandeurs d'emploi &gt; Sous-section 3 : Dispositions d'application\r\n",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000037369052",
     "idEli": null,
     "idEliAlias": null,
@@ -186,7 +186,21 @@
         "dateDebutCible": "2021-06-02"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 3 : Mise en œuvre du compte personnel d... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006189890",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

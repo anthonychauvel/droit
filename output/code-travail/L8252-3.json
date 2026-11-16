@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Le salarié étranger mentionné à l'article L. 8252-1 bénéficie des dispositions du chapitre III du titre V du livre II de la troisième partie relatives aux assurances et privilèges de salaire pour les sommes qui lui sont dues en application de cet article.",
-    "texteHtml": "<p></p>Le salarié étranger mentionné à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006904852&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L8252-1 (V)\">L. 8252-1</a> bénéficie des dispositions du chapitre III du titre V du livre II de la troisième partie relatives aux assurances et privilèges de salaire pour les sommes qui lui sont dues en application de cet article.<p></p><p></p>",
+    "texteHtml": "<p></p>Le salarié étranger mentionné à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006904852&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L8252-1 (V)\">L. 8252-1</a> bénéficie des dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178033&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre III : Privilèges et assurance (V)\">chapitre III du titre V du livre II de la troisième partie</a> relatives aux assurances et privilèges de salaire pour les sommes qui lui sont dues en application de cet article.<p></p><p></p>",
     "num": "L8252-3",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,7 +95,7 @@
     "sectionParentId": "LEGISCTA000006178279",
     "sectionParentTitre": "Chapitre II : Droits du salarié étranger.",
     "fullSectionsTitre": "Partie législative   &gt; Huitième partie : Contrôle de l'application de la législation du travail  &gt; Livre II : Lutte contre le travail illégal &gt; Titre V : Emploi d'étrangers sans titre de travail &gt; Chapitre II : Droits du salarié étranger.",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000006904854",
     "idEli": null,
     "idEliAlias": null,
@@ -163,6 +163,19 @@
         "numTexte": "",
         "datePubli": 32472144000000,
         "dateDebut": 1234656000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre III : Privilèges et assurance (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178033",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
       },
       {
         "textCid": "LEGITEXT000006072050",
