@@ -9586,13 +9586,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690225",
+              "cid": "KALISCTA000005690225",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er juillet 1993.",
+              "dateModif": null,
+              "dateDebut": "1993-06-23",
+              "dateFin": "1994-07-06",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766983",
+                  "cid": "KALIARTI000005766983",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690225/KALIARTI000005766983",
+                  "pathTitle": [
+                    "Salaires au 1er juillet 1993."
+                  ],
+                  "content": "Barème des salaires minima mensuels (1) applicables, à compter du 1er juillet 1993, sur l'ensemble du territoire national, pour une durée hebdomadaire de travail de trente-neuf heures :<p></p> !--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU I        !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  5887 F  !<p></p> !---------!----------!<p></p> !    2    !  5910 F  !<p></p> !---------!----------!<p></p> !    3    !  5930 F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU II       !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  5930 F  !<p></p> !---------!----------!<p></p> !    2    !  5950 F  !<p></p> !---------!----------!<p></p> !    3    !  5970 F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU III      !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  5970 F  !<p></p> !---------!----------!<p></p> !    2    !  6010 F  !<p></p> !---------!----------!<p></p> !    3    !  6060 F  !<p></p> !---------!----------!<p></p><p></p>!--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU IV       !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  6260 F  !<p></p> !---------!----------!<p></p> !    2    !  6360 F  !<p></p> !---------!----------!<p></p> !    3    !  6460 F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU V        !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  6660 F  !<p></p> !---------!----------!<p></p> !    2    !  6760 F  !<p></p> !---------!----------!<p></p> !    3    !  6860 F  !<p></p> !---------!----------!<p></p><p></p>!--------------------!<p></p> !    AGENTS DE       !<p></p> !    MAITRISE        !<p></p> !--------------------!<p></p> !    NIVEAU VI       !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  8280 F  !<p></p> !---------!----------!<p></p> !    2    !  8780 F  !<p></p> !---------!----------!<p></p> !    3    !  9290 F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !    AGENTS DE       !<p></p> !    MAITRISE        !<p></p> !--------------------!<p></p> !    NIVEAU VII      !<p></p> !--------------------!<p></p> ! Echelon ! Salaire  !<p></p> ! unique  !  minima  !<p></p> !---------!----------!<p></p> !         ! 10300 F  !<p></p> !---------!----------!<p></p><p></p>!--------------------!<p></p> !      CADRES        !<p></p> !--------------------!<p></p> !    NIVEAU I        !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    ! 11270 F  !<p></p> !---------!----------!<p></p> !    2    ! 12120 F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !      CADRES        !<p></p> !--------------------!<p></p> !    NIVEAU II       !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    ! 13630 F  !<p></p> !---------!----------!<p></p> !    2    ! 16160 F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !      CADRES        !<p></p> !--------------------!<p></p> !    NIVEAU III      !<p></p> !--------------------!<p></p> ! Echelon ! Salaire  !<p></p> ! unique  !  minima  !<p></p> !---------!----------!<p></p> !         ! 18180 F  !<p></p> !---------!----------!<p></p><font color=\"808080\"><em>   (1) Salaires minima mensuels, y compris les primes, à l'exception des primes d'ancienneté, de fin d'année et de transport.<p></p></em></font>",
+                  "nota": "   (1) Salaires minima mensuels, y compris les primes, à l'exception des primes d'ancienneté, de fin d'année et de transport.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Annexe n° 36 A 1993-06-23 étendue par arrêté du 15 octobre 1993 JORF 28 octobre 1993",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 740793600000,
+                  "dateFin": 773452800000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -9606,13 +9680,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690226",
+              "cid": "KALISCTA000005690226",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er septembre 1994.",
+              "dateModif": null,
+              "dateDebut": "1994-07-06",
+              "dateFin": "1995-10-26",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766984",
+                  "cid": "KALIARTI000005766984",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690226/KALIARTI000005766984",
+                  "pathTitle": [
+                    "Salaires au 1er septembre 1994."
+                  ],
+                  "content": "<p></p>   Barème des salaires minimaux mensuels (1) applicables à compter du 1er septembre 1994 sur l'ensemble du territoire national pour une durée hebdomadaire de travail de trente-neuf heures.<p></p> !--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU I        !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  6010 F  !<p></p> !---------!----------!<p></p> !    2    !  6030 F  !<p></p> !---------!----------!<p></p> !    3    !  6050 F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU II       !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  6050 F  !<p></p> !---------!----------!<p></p> !    2    !  6070 F  !<p></p> !---------!----------!<p></p> !    3    !  6090 F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU III      !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  6090 F  !<p></p> !---------!----------!<p></p> !    2    !  6110 F  !<p></p> !---------!----------!<p></p> !    3    !  6150 F  !<p></p> !---------!----------!<p></p><p></p>!--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU IV       !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  6354 F  !<p></p> !---------!----------!<p></p> !    2    !  6455 F  !<p></p> !---------!----------!<p></p> !    3    !  6557 F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU V        !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  6760 F  !<p></p> !---------!----------!<p></p> !    2    !  6861 F  !<p></p> !---------!----------!<p></p> !    3    !  6963 F  !<p></p> !---------!----------!<p></p><p></p>!--------------------!<p></p> !    AGENTS DE       !<p></p> !    MAITRISE        !<p></p> !--------------------!<p></p> !    NIVEAU VI       !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  8404 F  !<p></p> !---------!----------!<p></p> !    2    !  8912 F  !<p></p> !---------!----------!<p></p> !    3    !  9429 F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !    AGENTS DE       !<p></p> !    MAITRISE        !<p></p> !--------------------!<p></p> !    NIVEAU VII      !<p></p> !--------------------!<p></p> ! Echelon ! Salaire  !<p></p> ! unique  !  minima  !<p></p> !---------!----------!<p></p> !         ! 10454 F  !<p></p> !---------!----------!<p></p><p></p>!--------------------!<p></p> !      CADRES        !<p></p> !--------------------!<p></p> !    NIVEAU I        !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    ! 11439 F  !<p></p> !---------!----------!<p></p> !    2    ! 12302 F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !      CADRES        !<p></p> !--------------------!<p></p> !    NIVEAU II       !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    ! 13834 F  !<p></p> !---------!----------!<p></p> !    2    ! 16402 F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !      CADRES        !<p></p> !--------------------!<p></p> !    NIVEAU III      !<p></p> !--------------------!<p></p> ! Echelon ! Salaire  !<p></p> ! unique  !  minima  !<p></p> !---------!----------!<p></p> !         ! 18453 F  !<p></p> !---------!----------!<p></p><font color=\"808080\"><em>   (1) : Salaires minimaux mensuels, y compris les primes, à l'exception des primes d'ancienneté, de fin d'année et de transport.<p></p></em></font>",
+                  "nota": "   (1) : Salaires minimaux mensuels, y compris les primes, à l'exception des primes d'ancienneté, de fin d'année et de transport.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Annexe n° 37 A 1994-07-06, BO conventions collectives 94-32, étendue par arrêté du 4 octobre 1994 JORF 15 octobre 1994",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "Salaires",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 773452800000,
+                  "dateFin": 814665600000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -9626,13 +9774,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005690227",
+              "cid": "KALISCTA000005690227",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaires au 1er janvier 1996.",
+              "dateModif": null,
+              "dateDebut": "1995-10-26",
+              "dateFin": "1996-09-19",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005766985",
+                  "cid": "KALIARTI000005766985",
+                  "intOrdre": 42949,
+                  "etat": "ABROGE",
+                  "num": null,
+                  "path": "/KALISCTA000005690227/KALIARTI000005766985",
+                  "pathTitle": [
+                    "Salaires au 1er janvier 1996."
+                  ],
+                  "content": "<p></p>   Barème des salaires minimaux mensuels (1) applicables à compter du 1er janvier 1996 sur l'ensemble du territoire national pour une durée hebdomadaire de travail de trente-neuf heures.<p></p> !--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU I        !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  6.250F  !<p></p> !---------!----------!<p></p> !    2    !  6.270F  !<p></p> !---------!----------!<p></p> !    3    !  6.290F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU II       !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  6.290F  !<p></p> !---------!----------!<p></p> !    2    !  6.310F  !<p></p> !---------!----------!<p></p> !    3    !  6.330F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU III      !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  6.330F  !<p></p> !---------!----------!<p></p> !    2    !  6.350F  !<p></p> !---------!----------!<p></p> !    3    !  6.370F  !<p></p> !---------!----------!<p></p><p></p>!--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU IV       !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  6.490F  !<p></p> !---------!----------!<p></p> !    2    !  6.584F  !<p></p> !---------!----------!<p></p> !    3    !  6.688F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !    EMPLOYES        !<p></p> !--------------------!<p></p> !    NIVEAU V        !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  6.895F  !<p></p> !---------!----------!<p></p> !    2    !  6.998F  !<p></p> !---------!----------!<p></p> !    3    !  7.102F  !<p></p> !---------!----------!<p></p><p></p>!--------------------!<p></p> !    AGENTS DE       !<p></p> !    MAITRISE        !<p></p> !--------------------!<p></p> !    NIVEAU VI       !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    !  8.572F  !<p></p> !---------!----------!<p></p> !    2    !  9.090F  !<p></p> !---------!----------!<p></p> !    3    !  9.618F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !    AGENTS DE       !<p></p> !    MAITRISE        !<p></p> !--------------------!<p></p> !    NIVEAU VII      !<p></p> !--------------------!<p></p> ! Echelon ! Salaire  !<p></p> ! unique  !  minima  !<p></p> !---------!----------!<p></p> !         ! 10.663F  !<p></p> !---------!----------!<p></p><p></p>!--------------------!<p></p> !      CADRES        !<p></p> !--------------------!<p></p> !    NIVEAU I        !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    ! 11.668F  !<p></p> !---------!----------!<p></p> !    2    ! 12.548F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !      CADRES        !<p></p> !--------------------!<p></p> !    NIVEAU II       !<p></p> !--------------------!<p></p> ! Echelon ! Salaires !<p></p> !         !  minima  !<p></p> !---------!----------!<p></p> !    1    ! 14.111F  !<p></p> !---------!----------!<p></p> !    2    ! 16.730F  !<p></p> !---------!----------!<p></p><p></p> !--------------------!<p></p> !      CADRES        !<p></p> !--------------------!<p></p> !    NIVEAU III      !<p></p> !--------------------!<p></p> ! Echelon ! Salaire  !<p></p> ! unique  !  minima  !<p></p> !---------!----------!<p></p> !         ! 18.822F  !<p></p> !---------!----------!<p></p><font color=\"808080\"><em>   (1) : Salaires minima mensuels, y compris les primes, à l'exception des primes d'ancienneté, de fin d'année et de transport.<p></p></em></font>",
+                  "nota": "   (1) : Salaires minima mensuels, y compris les primes, à l'exception des primes d'ancienneté, de fin d'année et de transport.<p></p>",
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Annexe n° 38 A 1995-10-26 BO conventions collectives 96-2, étendu par arrêté du 23 février 1996 JORF 7 mars 1996",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 814665600000,
+                  "dateFin": 843091200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

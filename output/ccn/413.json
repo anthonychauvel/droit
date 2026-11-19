@@ -20932,13 +20932,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729111",
+              "cid": "KALISCTA000005729111",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Salaire minimum conventionnel garanti au 1er février 1992, 1er octobre 1992, 1er février 1993.",
+              "dateModif": null,
+              "dateDebut": "1991-12-05",
+              "dateFin": "1993-06-22",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863779",
+                  "cid": "KALIARTI000005863779",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005729111/KALIARTI000005863779",
+                  "pathTitle": [
+                    "Salaire minimum conventionnel garanti au 1er février 1992, 1er octobre 1992, 1er février 1993."
+                  ],
+                  "content": "Article 1.<p></p><p></p>   La valeur du point C.C.N.T. est portée :<p></p><p></p>   - à compter du 1er février 1992, à : 20,13 F.<p></p><p></p>   - à compter du 1er octobre 1992, à : 20,40 F.<p></p><p></p>   - à compter du 1er février 1993, à : 20,75 F.<p></p><p></p> Article 2.<p></p><p></p>   Tous les indices composant les grilles et échelles indiciaires de la C.C.N.T. du 15 mars 1966 sont uniformément majorés de trois points à compter du 1er février 1992 et modifiés en conséquence. <p></p> Article 3.<p></p><p></p>   Les parties signataires conviennent de se réunir au cours du mois de janvier 1993 afin d'établir le constat d'application du présent avenant et de déterminer, au vu de la situation économique au titre de la période 1991-1992 couverte par les avenants n° 227 et 230, les modalités d'un éventuel ajustement de la valeur du point, cette mesure s'il y a lieu, s'appliquant à l'augmentation prévue au 1er février 1993.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 230 1991-12-05 agréé par arrêté du 17 février 1992 JORF 4 mars 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 691891200000,
+                  "dateFin": 740707200000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -20952,13 +21026,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729112",
+              "cid": "KALISCTA000005729112",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Indemnités compensatrices d'assurance *au 1er janvier 1992*.",
+              "dateModif": null,
+              "dateDebut": "1991-12-05",
+              "dateFin": "1993-01-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863780",
+                  "cid": "KALIARTI000005863780",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005729112/KALIARTI000005863780",
+                  "pathTitle": [
+                    "Indemnités compensatrices d'assurance *au 1er janvier 1992*."
+                  ],
+                  "content": "<p></p>   Le taux de l'indemnité compensatrice d'assurances, prévue à l'article 8 de l'annexe I à la convention collective du 15 mars 1966, est fixé comme suit à compter du 1er janvier 1992 :<p></p><p></p>   - voiture jusqu'à 5 CV : 1 590 F par an ou 397,50 F par trimestre ;<p></p><p></p>   - voiture de 6 CV et plus : 2 440 F par an ou 610 F par trimestre.<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 231 1991-12-05 agréé par arrêté du 7 février 1992 JORF 27 février 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 691891200000,
+                  "dateFin": 725846400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,
@@ -21066,13 +21214,87 @@
           "dateDebut": null,
           "dateFin": null,
           "sectionConsultee": false,
-          "sections": [],
+          "sections": [
+            {
+              "executionTime": 0,
+              "dereferenced": false,
+              "id": "KALISCTA000005729114",
+              "cid": "KALISCTA000005729114",
+              "intOrdre": 42949,
+              "etat": "ABROGE",
+              "title": "Indemnités kilométriques *au 1er avril 1992*.",
+              "dateModif": null,
+              "dateDebut": "1992-04-01",
+              "dateFin": "1993-04-01",
+              "sectionConsultee": false,
+              "sections": [],
+              "articles": [
+                {
+                  "executionTime": 0,
+                  "dereferenced": false,
+                  "id": "KALIARTI000005863783",
+                  "cid": "KALIARTI000005863783",
+                  "intOrdre": 42949,
+                  "etat": "MODIFIE",
+                  "num": null,
+                  "path": "/KALISCTA000005729114/KALIARTI000005863783",
+                  "pathTitle": [
+                    "Indemnités kilométriques *au 1er avril 1992*."
+                  ],
+                  "content": "<p></p>   A compter du 1er avril 1992, les dispositions de l'article 8 de l'annexe I (indemnités kilométriques) sont modifiées comme suit :<p></p><p></p>   - 5 CV et moins : 1,98 F ;<p></p><p></p>   - 6 CV et plus : 2,36 F ;<p></p><p></p>   - bicycle à moteur : 0,62 F<p></p><p></p>   Les salariés bénéficiaires de l'indemnité d'assurance perçoivent par kilomètre parcouru une indemnité kilométrique fixée ainsi qu'il suit :<p></p><p></p>   - 5 CV et moins : 1,78 F (3.000 kilomètres) ; 2,36 F (au delà de 3.000 kilomètres) ;<p></p><p></p>   - 6 CV et plus : 2,12 F (3.000 kilomètres) ; 2,36 F (au delà de 3.000 kilomètres).<p></p>",
+                  "nota": null,
+                  "comporteLiens": false,
+                  "comporteLiensSP": false,
+                  "modificatorTitle": null,
+                  "modificatorCid": null,
+                  "modificatorDate": null,
+                  "articleVersion": "1.0",
+                  "type": null,
+                  "lstLienModification": [
+                    {
+                      "textCid": "",
+                      "textTitle": "Avenant n° 234 1992-03-12 en vigueur le 1er avril 1992 agréé par arrêté du 27 avril 1992 JORF 10 juin 1992",
+                      "linkType": "CREATION",
+                      "linkOrientation": "source",
+                      "articleNum": "",
+                      "articleId": "",
+                      "natureText": "",
+                      "datePubliTexte": null,
+                      "dateSignaTexte": null,
+                      "dateDebutCible": null
+                    }
+                  ],
+                  "lstLienCitation": [],
+                  "conditionDiffere": null,
+                  "historique": null,
+                  "surtitre": "SALAIRES",
+                  "renvoi": null,
+                  "versionLabel": null,
+                  "infosComplementaires": null,
+                  "infosComplementairesHtml": null,
+                  "infosRestructurationBranche": null,
+                  "infosRestructurationBrancheHtml": null,
+                  "dateDebut": 702086400000,
+                  "dateFin": 733622400000,
+                  "notaSectionsAafficher": null,
+                  "multipleVersions": false
+                }
+              ],
+              "commentaire": null,
+              "renvoi": "",
+              "renvoiNum": "",
+              "notaHtml": null,
+              "notaSectionsAafficher": []
+            }
+          ],
           "articles": [],
           "commentaire": null,
           "renvoi": null,
           "renvoiNum": null,
           "notaHtml": null,
-          "notaSectionsAafficher": null
+          "notaSectionsAafficher": null,
+          "_texte_complet_recupere": true,
+          "_type_complement": "salaire"
         },
         {
           "executionTime": 0,

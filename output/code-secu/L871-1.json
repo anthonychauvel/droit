@@ -77,7 +77,7 @@
     "sectionParentId": "LEGISCTA000006141729",
     "sectionParentTitre": "Titre VII : Contenu des dispositifs d'assurance maladie complémentaire bénéficiant d'une aide.",
     "fullSectionsTitre": "Partie législative &gt; Livre VIII : Allocations aux personnes âgées - Allocation aux adultes handicapés - Aides à l'emploi pour la garde des jeunes enfants - Aides aux collectivités et organismes logeant à titre temporaire des personnes défavorisées ou gérant des aires d'accueil des gens du voyage - Protection complémentaire en matière de santé &gt; Titre VII : Contenu des dispositifs d'assurance maladie complémentaire bénéficiant d'une aide.",
-    "refInjection": "MD-20261007_192036_942_BDJQUOT",
+    "refInjection": "MD-20261118_205053_773_BDJQUOT",
     "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000051382496",
     "idEli": null,
     "idEliAlias": null,
@@ -850,16 +850,16 @@
       },
       {
         "textCid": "JORFTEXT000024772150",
-        "textTitle": "Décret n°2011-1474\n du 8 novembre 2011 - art. 28 (V)",
+        "textTitle": "Décret n°2011-1474 du 8 novembre 2011 - art. 28 (V)",
         "linkType": "CITATION",
         "linkOrientation": "cible",
         "articleNum": "28",
-        "articleId": "LEGIARTI000024774177",
+        "articleId": "LEGIARTI000055017097",
         "natureText": "DECRET",
         "parentCid": null,
         "numTexte": "2011-1474",
         "datePubli": 1320883200000,
-        "dateDebut": 1320969600000
+        "dateDebut": 1792886400000
       },
       {
         "textCid": "JORFTEXT000025794894",
@@ -2370,6 +2370,19 @@
         "dateDebut": 32472144000000
       },
       {
+        "textCid": "KALITEXT000036543410",
+        "textTitle": "Complémentaire santé - art. 5.1 (Ab)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "5.1",
+        "articleId": "KALIARTI000036543429",
+        "natureText": "Accord",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 1516838400000,
+        "dateDebut": 1451606400000
+      },
+      {
         "textCid": "KALITEXT000036542896",
         "textTitle": "Frais de santé - art. (VE)",
         "linkType": "CITATION",
@@ -2407,19 +2420,6 @@
         "numTexte": "1",
         "datePubli": 1516838400000,
         "dateDebut": 1498867200000
-      },
-      {
-        "textCid": "KALITEXT000036543410",
-        "textTitle": "relatif à la complémentaire santé - art. 5.1 (VNE)",
-        "linkType": "CITATION",
-        "linkOrientation": "cible",
-        "articleNum": "5.1",
-        "articleId": "KALIARTI000036543429",
-        "natureText": "Accord",
-        "parentCid": null,
-        "numTexte": "",
-        "datePubli": 1516838400000,
-        "dateDebut": 1451606400000
       },
       {
         "textCid": "KALITEXT000036543564",
@@ -5061,21 +5061,21 @@
         "dateDebut": 1772323200000
       },
       {
-        "textCid": "KALITEXT000054880573",
-        "textTitle": "à l'accord du 1er octobre 2012 relatif à la cré... - art. 2",
+        "textCid": "KALITEXT000054880597",
+        "textTitle": "Conditions spécifiques d'emploi du personnel (t... - art. 2 (VE)",
         "linkType": "CITATION",
         "linkOrientation": "cible",
         "articleNum": "2",
-        "articleId": "KALIARTI000054880578",
+        "articleId": "KALIARTI000054880602",
         "natureText": "Avenant",
         "parentCid": null,
-        "numTexte": "4",
+        "numTexte": "25",
         "datePubli": 1790035200000,
         "dateDebut": 1776038400000
       },
       {
         "textCid": "KALITEXT000054880522",
-        "textTitle": "à l'accord du 25 septembre 2015 relatif à l'obl... - art. 2",
+        "textTitle": "Protection santé (transport de déménagement) - art. 2 (VE)",
         "linkType": "CITATION",
         "linkOrientation": "cible",
         "articleNum": "2",
@@ -5087,8 +5087,21 @@
         "dateDebut": 1776038400000
       },
       {
+        "textCid": "KALITEXT000054880573",
+        "textTitle": "Protection santé (transport de marchandises) - art. 2 (VE)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "2",
+        "articleId": "KALIARTI000054880578",
+        "natureText": "Avenant",
+        "parentCid": null,
+        "numTexte": "4",
+        "datePubli": 1790035200000,
+        "dateDebut": 1776038400000
+      },
+      {
         "textCid": "KALITEXT000054880548",
-        "textTitle": "à l'accord du 6 octobre 2015 relatif à l'obliga... - art. 2",
+        "textTitle": "Protection santé (transport sanitaire) - art. 2 (VE)",
         "linkType": "CITATION",
         "linkOrientation": "cible",
         "articleNum": "2",
@@ -5096,19 +5109,6 @@
         "natureText": "Avenant",
         "parentCid": null,
         "numTexte": "2",
-        "datePubli": 1790035200000,
-        "dateDebut": 1776038400000
-      },
-      {
-        "textCid": "KALITEXT000054880597",
-        "textTitle": "à l'accord national professionnel du 5 mars 199... - art. 2",
-        "linkType": "CITATION",
-        "linkOrientation": "cible",
-        "articleNum": "2",
-        "articleId": "KALIARTI000054880602",
-        "natureText": "Avenant",
-        "parentCid": null,
-        "numTexte": "25",
         "datePubli": 1790035200000,
         "dateDebut": 1776038400000
       },
@@ -5124,6 +5124,19 @@
         "numTexte": "",
         "datePubli": 1790121600000,
         "dateDebut": 1779840000000
+      },
+      {
+        "textCid": "KALITEXT000055101241",
+        "textTitle": "à l'accord du 14 décembre 2015 relatif au régim... - art.",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "KALIARTI000055101258",
+        "natureText": "Avenant",
+        "parentCid": null,
+        "numTexte": "11",
+        "datePubli": 1794960000000,
+        "dateDebut": 1783641600000
       },
       {
         "textCid": "LEGITEXT000006071367",
@@ -5566,6 +5579,19 @@
         "numTexte": "4",
         "datePubli": 32472144000000,
         "dateDebut": 1561939200000
+      },
+      {
+        "textCid": "KALITEXT000043104428",
+        "textTitle": "Avenant n° 4 à l'accord du 15 septembre 2015 (c... - art. (Ab)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "KALIARTI000043104452",
+        "natureText": "Avenant",
+        "parentCid": null,
+        "numTexte": "4",
+        "datePubli": 32472144000000,
+        "dateDebut": 1609459200000
       },
       {
         "textCid": "KALITEXT000021237774",
@@ -6713,16 +6739,16 @@
       },
       {
         "textCid": "KALITEXT000023406107",
-        "textTitle": "Frais de santé - art. 10 (VE)",
+        "textTitle": "Frais de santé - art. 10 (VNE)",
         "linkType": "CITATION",
         "linkOrientation": "cible",
         "articleNum": "10",
-        "articleId": "KALIARTI000042386518",
+        "articleId": "KALIARTI000055077500",
         "natureText": "Accord",
         "parentCid": null,
         "numTexte": "",
         "datePubli": 32472144000000,
-        "dateDebut": 1577836800000
+        "dateDebut": 1767225600000
       },
       {
         "textCid": "KALITEXT000023406107",
@@ -9596,19 +9622,6 @@
         "numTexte": "26",
         "datePubli": 32472144000000,
         "dateDebut": 1293840000000
-      },
-      {
-        "textCid": "KALITEXT000043104428",
-        "textTitle": "à l'accord du 15 septembre 2015 relatif à la co... - art. (VNE)",
-        "linkType": "CITATION",
-        "linkOrientation": "cible",
-        "articleNum": "",
-        "articleId": "KALIARTI000043104452",
-        "natureText": "Avenant",
-        "parentCid": null,
-        "numTexte": "4",
-        "datePubli": 32472144000000,
-        "dateDebut": 1609459200000
       },
       {
         "textCid": "KALITEXT000030777991",

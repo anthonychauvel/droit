@@ -3911,7 +3911,7 @@
           "id": "KALITEXT000054872417",
           "cid": "KALITEXT000054872417",
           "intOrdre": 1879048191,
-          "etat": "VIGUEUR_NON_ETEN",
+          "etat": "VIGUEUR_ETEN",
           "title": "Protocole d'accord du 31 mars 2026 relatif aux négociations annuelles obligatoires pour l'année 2026",
           "dateModif": "2026-09-21",
           "dateDebut": null,
@@ -3924,7 +3924,7 @@
               "id": "KALISCTA000054872434",
               "cid": "KALISCTA000054872434",
               "intOrdre": 4194296,
-              "etat": "VIGUEUR_NON_ETEN",
+              "etat": "VIGUEUR_ETEN",
               "title": "Annexe",
               "dateModif": null,
               "dateDebut": "2026-01-01",
@@ -3938,7 +3938,7 @@
                   "id": "KALIARTI000054872435",
                   "cid": "KALIARTI000054872435",
                   "intOrdre": 524287,
-                  "etat": "VIGUEUR_NON_ETEN",
+                  "etat": "VIGUEUR_ETEN",
                   "num": null,
                   "path": "/KALISCTA000054872434/KALIARTI000054872435",
                   "pathTitle": [
@@ -3953,7 +3953,20 @@
                   "modificatorDate": null,
                   "articleVersion": "1",
                   "type": "AUTONOME",
-                  "lstLienModification": [],
+                  "lstLienModification": [
+                    {
+                      "textCid": "JORFTEXT000054977790",
+                      "textTitle": "Arrêté du 29 septembre 2026 - art. 1, v. init.",
+                      "linkType": "ETEND",
+                      "linkOrientation": "cible",
+                      "articleNum": "1",
+                      "articleId": "JORFARTI000054977797",
+                      "natureText": "ARRETE",
+                      "datePubliTexte": "2026-10-13",
+                      "dateSignaTexte": "2026-09-29",
+                      "dateDebutCible": "2999-01-01"
+                    }
+                  ],
                   "lstLienCitation": [],
                   "conditionDiffere": null,
                   "historique": null,
@@ -3984,11 +3997,11 @@
               "id": "KALIARTI000054872420",
               "cid": "KALIARTI000054872420",
               "intOrdre": 524287,
-              "etat": "VIGUEUR_NON_ETEN",
+              "etat": "VIGUEUR_ETEN",
               "num": null,
               "path": "/KALIARTI000054872420",
               "pathTitle": [],
-              "content": "<p align=\"left\">La commission paritaire de branche s'est réunie le 17 février 2026 et le 12 mars 2026 en combinant présentiel et visioconférence afin de discuter des salaires minimaux de branche conformément aux dispositions de l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006901746&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L2241-8\">article L. 2241-8 du code du travail</a>.</p><p align=\"left\">La commission rappelle que la classification des emplois prévue par la convention collective ainsi que la grille de salaires de l'annexe 1 visent notamment à assurer l'égalité professionnelle entre les hommes et les femmes.</p><p align=\"left\">La commission paritaire de branche, réunissant les représentants des organisations syndicales et ceux du GASPE, appelle l'ensemble des armements au dialogue social en entreprise, quelle que soit leur taille. Elle exprime le souhait que les négociations s'y tiennent dans un esprit de dialogue constructif et de bonne foi.</p><p align=\"left\">Il a donc été négocié et convenu ce qui suit :</p>",
+              "content": "<p align=\"left\">La commission paritaire de branche s'est réunie le 17 février 2026 et le 12 mars 2026 en combinant présentiel et visioconférence afin de discuter des salaires minimaux de branche conformément aux dispositions de l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006901746&dateTexte=&categorieLien=cid\">article L. 2241-8 du code du travail</a>.</p><p align=\"left\">La commission rappelle que la classification des emplois prévue par la convention collective ainsi que la grille de salaires de l'annexe 1 visent notamment à assurer l'égalité professionnelle entre les hommes et les femmes.</p><p align=\"left\">La commission paritaire de branche, réunissant les représentants des organisations syndicales et ceux du GASPE, appelle l'ensemble des armements au dialogue social en entreprise, quelle que soit leur taille. Elle exprime le souhait que les négociations s'y tiennent dans un esprit de dialogue constructif et de bonne foi.</p><p align=\"left\">Il a donc été négocié et convenu ce qui suit :</p>",
               "nota": null,
               "comporteLiens": true,
               "comporteLiensSP": false,
@@ -3997,7 +4010,20 @@
               "modificatorDate": null,
               "articleVersion": "1",
               "type": "AUTONOME",
-              "lstLienModification": [],
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000054977790",
+                  "textTitle": "Arrêté du 29 septembre 2026 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000054977797",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2026-10-13",
+                  "dateSignaTexte": "2026-09-29",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
               "lstLienCitation": [
                 {
                   "textCid": "LEGITEXT000006072050",
@@ -4033,7 +4059,7 @@
               "id": "KALIARTI000054872422",
               "cid": "KALIARTI000054872422",
               "intOrdre": 1048574,
-              "etat": "VIGUEUR_NON_ETEN",
+              "etat": "VIGUEUR_ETEN",
               "num": "1er",
               "path": "/KALIARTI000054872422",
               "pathTitle": [],
@@ -4046,7 +4072,20 @@
               "modificatorDate": null,
               "articleVersion": "1",
               "type": "AUTONOME",
-              "lstLienModification": [],
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000054977790",
+                  "textTitle": "Arrêté du 29 septembre 2026 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000054977797",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2026-10-13",
+                  "dateSignaTexte": "2026-09-29",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
               "lstLienCitation": [],
               "conditionDiffere": null,
               "historique": null,
@@ -4068,7 +4107,7 @@
               "id": "KALIARTI000054872423",
               "cid": "KALIARTI000054872423",
               "intOrdre": 1572861,
-              "etat": "VIGUEUR_NON_ETEN",
+              "etat": "VIGUEUR_ETEN",
               "num": "2",
               "path": "/KALIARTI000054872423",
               "pathTitle": [],
@@ -4081,7 +4120,20 @@
               "modificatorDate": null,
               "articleVersion": "1",
               "type": "AUTONOME",
-              "lstLienModification": [],
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000054977790",
+                  "textTitle": "Arrêté du 29 septembre 2026 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000054977797",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2026-10-13",
+                  "dateSignaTexte": "2026-09-29",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
               "lstLienCitation": [],
               "conditionDiffere": null,
               "historique": null,
@@ -4103,7 +4155,7 @@
               "id": "KALIARTI000054872424",
               "cid": "KALIARTI000054872424",
               "intOrdre": 2097148,
-              "etat": "VIGUEUR_NON_ETEN",
+              "etat": "VIGUEUR_ETEN",
               "num": "3",
               "path": "/KALIARTI000054872424",
               "pathTitle": [],
@@ -4116,7 +4168,20 @@
               "modificatorDate": null,
               "articleVersion": "1",
               "type": "AUTONOME",
-              "lstLienModification": [],
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000054977790",
+                  "textTitle": "Arrêté du 29 septembre 2026 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000054977797",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2026-10-13",
+                  "dateSignaTexte": "2026-09-29",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
               "lstLienCitation": [],
               "conditionDiffere": null,
               "historique": null,
@@ -4138,11 +4203,11 @@
               "id": "KALIARTI000054872425",
               "cid": "KALIARTI000054872425",
               "intOrdre": 2621435,
-              "etat": "VIGUEUR_NON_ETEN",
+              "etat": "VIGUEUR_ETEN",
               "num": "4",
               "path": "/KALIARTI000054872425",
               "pathTitle": [],
-              "content": "<p align=\"left\">La <a href=\"/affichTexte.do?cidTexte=JORFTEXT000048480565&categorieLien=cid\" title=\"LOI n°2023-1107 du 29 novembre 2023\">loi n° 2023-1107 du 29 novembre 2023</a> portant transposition de l'accord national interprofessionnel relatif au partage de la valeur au sein de l'entreprise introduit, à titre expérimental pour la période 2025-2029, une obligation nouvelle pour certaines entreprises.</p><p align=\"left\">Sont concernées les entreprises remplissant simultanément les trois conditions suivantes :<br/>\n– un effectif compris entre 11 et 49 salariés ;<br/>\n– la réalisation d'un bénéfice net fiscal au moins trois années consécutives ;<br/>\n– un bénéfice net fiscal au moins égal à 1 % du chiffre d'affaires.</p><p align=\"left\">Lorsque ces conditions sont réunies, l'employeur a l'obligation de mettre en place au moins un dispositif de partage de la valeur parmi les suivants : accord d'intéressement, accord de participation, plan d'épargne salariale avec abondement de l'employeur, ou prime de partage de la valeur (PPV). Cette obligation porte sur la mise en place du mécanisme et non sur le versement d'une prime.</p><p align=\"left\">Les entreprises de 50 salariés et plus demeurent soumises à l'obligation de participation aux résultats en cas de bénéfices, conformément aux dispositions légales en vigueur.</p><p align=\"left\">Les parties signataires rappellent que ces dispositions s'appliquent de plein droit aux entreprises entrant dans le champ de la convention collective nationale des services de passages d'eau (CCN 3228).</p><p align=\"left\">Le GASPE s'engage à diffuser auprès de ses adhérents une information claire sur ces obligations et sur les dispositifs disponibles, afin de les accompagner dans leur mise en conformité.</p>",
+              "content": "<p align=\"left\">La <a href=\"/affichTexte.do?cidTexte=JORFTEXT000048480565&categorieLien=cid\">loi n° 2023-1107 du 29 novembre 2023</a> portant transposition de l'accord national interprofessionnel relatif au partage de la valeur au sein de l'entreprise introduit, à titre expérimental pour la période 2025-2029, une obligation nouvelle pour certaines entreprises.</p><p align=\"left\">Sont concernées les entreprises remplissant simultanément les trois conditions suivantes :<br/>\n– un effectif compris entre 11 et 49 salariés ;<br/>\n– la réalisation d'un bénéfice net fiscal au moins trois années consécutives ;<br/>\n– un bénéfice net fiscal au moins égal à 1 % du chiffre d'affaires.</p><p align=\"left\">Lorsque ces conditions sont réunies, l'employeur a l'obligation de mettre en place au moins un dispositif de partage de la valeur parmi les suivants : accord d'intéressement, accord de participation, plan d'épargne salariale avec abondement de l'employeur, ou prime de partage de la valeur (PPV). Cette obligation porte sur la mise en place du mécanisme et non sur le versement d'une prime.</p><p align=\"left\">Les entreprises de 50 salariés et plus demeurent soumises à l'obligation de participation aux résultats en cas de bénéfices, conformément aux dispositions légales en vigueur.</p><p align=\"left\">Les parties signataires rappellent que ces dispositions s'appliquent de plein droit aux entreprises entrant dans le champ de la convention collective nationale des services de passages d'eau (CCN 3228).</p><p align=\"left\">Le GASPE s'engage à diffuser auprès de ses adhérents une information claire sur ces obligations et sur les dispositifs disponibles, afin de les accompagner dans leur mise en conformité.</p>",
               "nota": null,
               "comporteLiens": true,
               "comporteLiensSP": false,
@@ -4151,7 +4216,20 @@
               "modificatorDate": null,
               "articleVersion": "1",
               "type": "AUTONOME",
-              "lstLienModification": [],
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000054977790",
+                  "textTitle": "Arrêté du 29 septembre 2026 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000054977797",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2026-10-13",
+                  "dateSignaTexte": "2026-09-29",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
               "lstLienCitation": [
                 {
                   "textCid": "JORFTEXT000048480565",
@@ -4187,11 +4265,11 @@
               "id": "KALIARTI000054872427",
               "cid": "KALIARTI000054872427",
               "intOrdre": 3145722,
-              "etat": "VIGUEUR_NON_ETEN",
+              "etat": "VIGUEUR_ETEN",
               "num": "5",
               "path": "/KALIARTI000054872427",
               "pathTitle": [],
-              "content": "<p align=\"left\">En application des <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000033012309&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L2232-10-1\">articles L. 2232-10-1</a> et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000035608942&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L2261-23-1\">L. 2261-23-1 du code du travail</a>, les parties signataires ont examiné l'opportunité de prévoir des stipulations spécifiques aux entreprises de moins de cinquante salariés. Elles concluent qu'il n'y a pas lieu d'en prévoir, pour les raisons suivantes.</p><p align=\"left\">Il est constaté que les entreprises de la branche sont, dans leur grande majorité, des entreprises de taille réduite. Les mesures négociées dans le cadre du présent accord ont été conçues en tenant compte de cette réalité structurelle.</p><p align=\"left\">Les stipulations du présent accord s'appliquent de manière identique à l'ensemble des entreprises entrant dans le champ de la convention collective nationale des services de passages d'eau (CCN 3228), quelle que soit leur taille. Les parties signataires estiment qu'aucune stipulation spécifique aux entreprises de moins de cinquante salariés n'est nécessaire, dans la mesure où :<br/>\n– les dispositions négociées sont proportionnées aux capacités des petites entreprises et ne créent pas de charge disproportionnée pour elles ;<br/>\n– la spécificité sectorielle des armements de passages d'eau est prise en compte de manière uniforme par les dispositions du présent accord ;<br/>\n– l'application différenciée selon la taille des entreprises serait de nature à créer des distorsions de concurrence au sein de la branche, incompatibles avec ses équilibres économiques.</p><p align=\"left\">En conséquence, les parties conviennent qu'il n'y a pas lieu de prévoir de stipulations distinctes pour les entreprises de moins de cinquante salariés.</p><p align=\"left\">L'accord sera déposé auprès de la DGT pour extension. Le présent accord est conclu pour une durée indéterminée. Il pourra être révisé ou dénoncé selon les conditions prévues par l'article 4 de la convention collective nationale de branche.</p>",
+              "content": "<p align=\"left\">En application des <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000033012309&dateTexte=&categorieLien=cid\">articles L. 2232-10-1</a> et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000035608942&dateTexte=&categorieLien=cid\">L. 2261-23-1 du code du travail</a>, les parties signataires ont examiné l'opportunité de prévoir des stipulations spécifiques aux entreprises de moins de cinquante salariés. Elles concluent qu'il n'y a pas lieu d'en prévoir, pour les raisons suivantes.</p><p align=\"left\">Il est constaté que les entreprises de la branche sont, dans leur grande majorité, des entreprises de taille réduite. Les mesures négociées dans le cadre du présent accord ont été conçues en tenant compte de cette réalité structurelle.</p><p align=\"left\">Les stipulations du présent accord s'appliquent de manière identique à l'ensemble des entreprises entrant dans le champ de la convention collective nationale des services de passages d'eau (CCN 3228), quelle que soit leur taille. Les parties signataires estiment qu'aucune stipulation spécifique aux entreprises de moins de cinquante salariés n'est nécessaire, dans la mesure où :<br/>\n– les dispositions négociées sont proportionnées aux capacités des petites entreprises et ne créent pas de charge disproportionnée pour elles ;<br/>\n– la spécificité sectorielle des armements de passages d'eau est prise en compte de manière uniforme par les dispositions du présent accord ;<br/>\n– l'application différenciée selon la taille des entreprises serait de nature à créer des distorsions de concurrence au sein de la branche, incompatibles avec ses équilibres économiques.</p><p align=\"left\">En conséquence, les parties conviennent qu'il n'y a pas lieu de prévoir de stipulations distinctes pour les entreprises de moins de cinquante salariés.</p><p align=\"left\">L'accord sera déposé auprès de la DGT pour extension. Le présent accord est conclu pour une durée indéterminée. Il pourra être révisé ou dénoncé selon les conditions prévues par l'article 4 de la convention collective nationale de branche.</p>",
               "nota": null,
               "comporteLiens": true,
               "comporteLiensSP": false,
@@ -4200,7 +4278,20 @@
               "modificatorDate": null,
               "articleVersion": "1",
               "type": "AUTONOME",
-              "lstLienModification": [],
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000054977790",
+                  "textTitle": "Arrêté du 29 septembre 2026 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000054977797",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2026-10-13",
+                  "dateSignaTexte": "2026-09-29",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
               "lstLienCitation": [
                 {
                   "textCid": "LEGITEXT000006072050",
@@ -4249,11 +4340,11 @@
               "id": "KALIARTI000054872430",
               "cid": "KALIARTI000054872430",
               "intOrdre": 3670009,
-              "etat": "VIGUEUR_NON_ETEN",
+              "etat": "VIGUEUR_ETEN",
               "num": "6",
               "path": "/KALIARTI000054872430",
               "pathTitle": [],
-              "content": "<p align=\"left\">Conformément aux <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006901675&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L2231-6\">articles L. 2231-6</a> et <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018485203&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section unique : Notification, publicité et dépôt\">D. 2231-2 et suivants du code du travail</a>, ainsi qu'au <a href=\"/affichTexte.do?cidTexte=JORFTEXT000030943464&categorieLien=cid\" title=\"DÉCRET n°2015-918 du 27 juillet 2015\">décret n° 2015-918 du 27 juillet 2015</a> relatif aux conventions et accords collectifs des gens de mer, le présent accord sera déposé :<br/>\n– en un exemplaire par email (depot.accord@travail.gouv.fr) et par courrier auprès de la direction générale du travail (DGT) ;<br/>\n– en un exemplaire par email auprès de la direction générale des affaires maritimes, de la pêche et de l'aquaculture (DGAMPA).</p><p align=\"left\">Une copie de cet accord sera notifiée à l'ensemble des organisations syndicales représentatives ainsi qu'à l'ensemble des membres du GASPE.</p>",
+              "content": "<p align=\"left\">Conformément aux <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006901675&dateTexte=&categorieLien=cid\">articles L. 2231-6</a> et <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018485203&dateTexte=&categorieLien=cid\">D. 2231-2 et suivants du code du travail</a>, ainsi qu'au <a href=\"/affichTexte.do?cidTexte=JORFTEXT000030943464&categorieLien=cid\">décret n° 2015-918 du 27 juillet 2015</a> relatif aux conventions et accords collectifs des gens de mer, le présent accord sera déposé :<br/>\n– en un exemplaire par email (depot.accord@travail.gouv.fr) et par courrier auprès de la direction générale du travail (DGT) ;<br/>\n– en un exemplaire par email auprès de la direction générale des affaires maritimes, de la pêche et de l'aquaculture (DGAMPA).</p><p align=\"left\">Une copie de cet accord sera notifiée à l'ensemble des organisations syndicales représentatives ainsi qu'à l'ensemble des membres du GASPE.</p>",
               "nota": null,
               "comporteLiens": true,
               "comporteLiensSP": false,
@@ -4262,7 +4353,20 @@
               "modificatorDate": null,
               "articleVersion": "1",
               "type": "AUTONOME",
-              "lstLienModification": [],
+              "lstLienModification": [
+                {
+                  "textCid": "JORFTEXT000054977790",
+                  "textTitle": "Arrêté du 29 septembre 2026 - art. 1, v. init.",
+                  "linkType": "ETEND",
+                  "linkOrientation": "cible",
+                  "articleNum": "1",
+                  "articleId": "JORFARTI000054977797",
+                  "natureText": "ARRETE",
+                  "datePubliTexte": "2026-10-13",
+                  "dateSignaTexte": "2026-09-29",
+                  "dateDebutCible": "2999-01-01"
+                }
+              ],
               "lstLienCitation": [
                 {
                   "textCid": "JORFTEXT000030943464",
@@ -4279,7 +4383,7 @@
                 },
                 {
                   "textCid": "LEGITEXT000006072050",
-                  "textTitle": "Code du travail -  Section unique : Notification, publicité et dépôt",
+                  "textTitle": "Code du travail",
                   "linkType": "CITATION",
                   "linkOrientation": "source",
                   "articleNum": "",
