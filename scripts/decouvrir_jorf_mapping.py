@@ -131,13 +131,21 @@ def meilleur_candidat(candidats, num_sans_c):
     de convention ET un mot de ratification/publication -- puis le plus
     récent parmi ceux-là (un décret de publication vient souvent après la
     loi d'autorisation et contient le texte, contrairement à elle seule)."""
+    # 24/11/2026 : (1) l'API surligne les mots trouvés avec <mark>…</mark>
+    # (« convention n° <mark>181</mark> de <mark>l'Organisation… ») : sans
+    # retirer ces balises, ni le numéro ni « internationale du travail » ne
+    # matchaient, d'où « rien de fiable » pour C181 et C190 alors que le décret
+    # était dans les candidats. (2) Seul un décret « portant publication »
+    # reproduit le texte de la convention : la loi « autorisant la
+    # ratification » ne le contient pas (échec d'extraction C155 du 24/11).
+    # (3) Un décret de publication d'un protocole n'est pas la convention.
     valides = []
     for c in candidats:
-        t = c['titre'].lower()
+        t = re.sub(r'<[^>]+>', '', c['titre']).lower()
         a_le_numero = re.search(r'\bn[o°]?\.?\s*' + re.escape(num_sans_c) + r'\b', t) is not None
-        a_mot_cle = 'ratification' in t or 'publication' in t
-        a_oit = 'internationale du travail' in t or 'oit' in t
-        if a_le_numero and a_mot_cle and a_oit:
+        a_mot_cle = 'publication' in t
+        a_oit = 'internationale du travail' in t or re.search(r'\boit\b', t) is not None
+        if a_le_numero and a_mot_cle and a_oit and 'protocole' not in t:
             valides.append(c)
     if not valides:
         return None
@@ -193,12 +201,12 @@ def main():
 
         if meilleur:
             mapping[num] = meilleur['cid']
-            print('  {} : trouvé -> {} ({})'.format(num, meilleur['cid'], meilleur['titre'][:80]))
+            print('  {} : trouvé -> {} ({})'.format(num, meilleur['cid'], re.sub(r'<[^>]+>', '', meilleur['titre'])[:80]))
             trouves.append(num)
         else:
             print('  {} : rien de fiable trouvé ({} candidat(s) bruts) :'.format(num, len(candidats)))
             for c in candidats[:10]:
-                print('      -', c['cid'], '|', c['titre'][:100])
+                print('      -', c['cid'], '|', re.sub(r'<[^>]+>', '', c['titre'])[:100])
             non_trouves.append(num)
 
         time.sleep(0.5)
