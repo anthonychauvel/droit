@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006904877",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Nul ne peut recourir aux services d'une personne qui méconnaît les dispositions de la présente section.",
-    "texteHtml": "<p></p>   Nul ne peut recourir aux services d'une personne qui méconnaît les dispositions de la présente section.<p></p><p></p>",
+    "texte": "Nul ne peut recourir aux services d'une personne qui méconnaît les dispositions de la présente section .",
+    "texteHtml": "<p></p>   Nul ne peut recourir aux services d'une personne qui méconnaît les dispositions de la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006190002&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 1 : Interdictions. (V)\">présente section</a>.<p></p><p></p>",
     "num": "L8261-2",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,7 +95,7 @@
     "sectionParentId": "LEGISCTA000006190002",
     "sectionParentTitre": "Section 1 : Interdictions.",
     "fullSectionsTitre": "Partie législative   &gt; Huitième partie : Contrôle de l'application de la législation du travail  &gt; Livre II : Lutte contre le travail illégal &gt; Titre VI : Cumuls irréguliers d'emplois &gt; Chapitre Ier : Interdictions et dérogations &gt; Section 1 : Interdictions.",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000006904877",
     "idEli": null,
     "idEliAlias": null,
@@ -151,6 +151,19 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 1 : Interdictions. (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006190002",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
       {
         "textCid": "KALITEXT000005686073",
         "textTitle": "Convention collective nationale du 21 juin 1999 - art. 10 (Rempl)",

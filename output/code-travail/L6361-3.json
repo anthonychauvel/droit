@@ -5,8 +5,8 @@
     "id": "LEGIARTI000054336463",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Le contrôle administratif et financier des dépenses et activités porte sur l'ensemble des moyens financiers, techniques et pédagogiques, à l'exclusion des qualités pédagogiques, mis en oeuvre pour la formation professionnelle. Ce contrôle peut porter sur tout ou partie de l'activité, des actions de formation ou des dépenses de l'organisme. Les agents chargés du contrôle peuvent utiliser une méthode de vérification par échantillonnage et extrapolation afin d'établir les montants devant faire l'objet de versements au titre des opérations de contrôle mentionnées au chapitre II du présent titre. Les agents de contrôle peuvent solliciter, en tant que de besoin, l'avis ou l'expertise d'autorités publiques ou professionnelles pour les aider à apprécier les moyens financiers, techniques et pédagogiques mis en œuvre pour la formation professionnelle.",
-    "texteHtml": "<p>Le contrôle administratif et financier des dépenses et activités porte sur l'ensemble des moyens financiers, techniques et pédagogiques, à l'exclusion des qualités pédagogiques, mis en oeuvre pour la formation professionnelle.</p><p>Ce contrôle peut porter sur tout ou partie de l'activité, des actions de formation ou des dépenses de l'organisme. Les agents chargés du contrôle peuvent utiliser une méthode de vérification par échantillonnage et extrapolation afin d'établir les montants devant faire l'objet de versements au titre des opérations de contrôle mentionnées au chapitre II du présent titre.</p><p>Les agents de contrôle peuvent solliciter, en tant que de besoin, l'avis ou l'expertise d'autorités publiques ou professionnelles pour les aider à apprécier les moyens financiers, techniques et pédagogiques mis en œuvre pour la formation professionnelle.</p>",
+    "texte": "Le contrôle administratif et financier des dépenses et activités porte sur l'ensemble des moyens financiers, techniques et pédagogiques, à l'exclusion des qualités pédagogiques, mis en oeuvre pour la formation professionnelle. Ce contrôle peut porter sur tout ou partie de l'activité, des actions de formation ou des dépenses de l'organisme. Les agents chargés du contrôle peuvent utiliser une méthode de vérification par échantillonnage et extrapolation afin d'établir les montants devant faire l'objet de versements au titre des opérations de contrôle mentionnées au chapitre II du présent titre . Les agents de contrôle peuvent solliciter, en tant que de besoin, l'avis ou l'expertise d'autorités publiques ou professionnelles pour les aider à apprécier les moyens financiers, techniques et pédagogiques mis en œuvre pour la formation professionnelle.",
+    "texteHtml": "<p>Le contrôle administratif et financier des dépenses et activités porte sur l'ensemble des moyens financiers, techniques et pédagogiques, à l'exclusion des qualités pédagogiques, mis en oeuvre pour la formation professionnelle.</p><p>Ce contrôle peut porter sur tout ou partie de l'activité, des actions de formation ou des dépenses de l'organisme. Les agents chargés du contrôle peuvent utiliser une méthode de vérification par échantillonnage et extrapolation afin d'établir les montants devant faire l'objet de versements au titre des opérations de contrôle mentionnées au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178219&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre II : Déroulement des opérations de con... (V)\">chapitre II du présent titre</a>.</p><p>Les agents de contrôle peuvent solliciter, en tant que de besoin, l'avis ou l'expertise d'autorités publiques ou professionnelles pour les aider à apprécier les moyens financiers, techniques et pédagogiques mis en œuvre pour la formation professionnelle.</p>",
     "num": "L6361-3",
     "origine": "LEGI",
     "nature": "Article",
@@ -131,7 +131,7 @@
     "sectionParentId": "LEGISCTA000006195958",
     "sectionParentTitre": "Sous-section 1 : Contrôle des dépenses et activités de formation.",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle &gt; Titre VI : Contrôle de la formation professionnelle &gt; Chapitre Ier : Objet du contrôle et agents de contrôle &gt; Section 1 : Objet du contrôle &gt; Sous-section 1 : Contrôle des dépenses et activités de formation.",
-    "refInjection": "MD-20260629_204142_921_BDJQUOT",
+    "refInjection": "MD-20261105_205514_834_BDJQUOT",
     "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054336463",
     "idEli": null,
     "idEliAlias": null,
@@ -198,7 +198,34 @@
         "dateDebutCible": "2026-06-27"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "JORFTEXT000055057785",
+        "textTitle": "Décret n°2026-1029 du 4 novembre 2026 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "",
+        "articleId": "LEGITEXT000055059005",
+        "natureText": "DECRET",
+        "parentCid": null,
+        "numTexte": "2026-1029",
+        "datePubli": 1793836800000,
+        "dateDebut": 1793923200000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre II : Déroulement des opérations de con... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178219",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

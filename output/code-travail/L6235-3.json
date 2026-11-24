@@ -5,8 +5,8 @@
     "id": "LEGIARTI000046782111",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "I.-Le livre Ier de la présente partie, dans ses dispositions applicables à l'apprentissage, est applicable à l'apprentissage transfrontalier. II.-Par dérogation au I, les dispositions suivantes ne sont pas applicables : 1° Lorsque la partie pratique de la formation par apprentissage est réalisée dans le pays frontalier, le titre III ; 2° Lorsque la partie théorique de la formation par apprentissage est réalisée dans le pays frontalier, la section 4 du chapitre Ier du titre Ier et le chapitre III du même titre.",
-    "texteHtml": "<p>I.-Le livre Ier de la présente partie, dans ses dispositions applicables à l'apprentissage, est applicable à l'apprentissage transfrontalier.<br/><br/>\n II.-Par dérogation au I, les dispositions suivantes ne sont pas applicables :<br/><br/>\n 1° Lorsque la partie pratique de la formation par apprentissage est réalisée dans le pays frontalier, le titre III ;<br/><br/>\n 2° Lorsque la partie théorique de la formation par apprentissage est réalisée dans le pays frontalier, la section 4 du chapitre Ier du titre Ier et le chapitre III du même titre.</p>",
+    "texte": "I.-Le livre Ier de la présente partie , dans ses dispositions applicables à l'apprentissage, est applicable à l'apprentissage transfrontalier. II.-Par dérogation au I, les dispositions suivantes ne sont pas applicables : 1° Lorsque la partie pratique de la formation par apprentissage est réalisée dans le pays frontalier, le titre III ; 2° Lorsque la partie théorique de la formation par apprentissage est réalisée dans le pays frontalier, la section 4 du chapitre Ier du titre Ier et le chapitre III du même titre .",
+    "texteHtml": "<p>I.-Le <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006145420&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Livre Ier : Principes généraux et organisation ... (V)\">livre Ier de la présente partie</a>, dans ses dispositions applicables à l'apprentissage, est applicable à l'apprentissage transfrontalier.<br/><br/> II.-Par dérogation au I, les dispositions suivantes ne sont pas applicables :<br/><br/> 1° Lorsque la partie pratique de la formation par apprentissage est réalisée dans le pays frontalier, le <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000037375104&dateTexte=&categorieLien=cid\" title=\"Code du travail -   Titre III : Financement de la formation profes... (V)\">titre III</a> ;<br/><br/> 2° Lorsque la partie théorique de la formation par apprentissage est réalisée dans le pays frontalier, la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000028688791&dateTexte=&categorieLien=cid\" title=\"Code du travail -   Section 4 : Supports d'information\r \r \r  (V)\">section 4 du chapitre Ier du titre Ier</a> et le <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000037374018&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre III : La certification professionnelle\r  (V)\">chapitre III du même titre</a>.</p>",
     "num": "L6235-3",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,7 +95,7 @@
     "sectionParentId": "LEGISCTA000045205479",
     "sectionParentTitre": "Chapitre V : Développement de l'apprentissage transfrontalier ",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre II : L'apprentissage &gt; Titre III : Dispositions spécifiques applicables aux centres de formation d'apprentis &gt; Chapitre V : Développement de l'apprentissage transfrontalier ",
-    "refInjection": "IG-20260113",
+    "refInjection": "IG-20261019",
     "idTechInjection": "LEGIARTI000046782111",
     "idEli": null,
     "idEliAlias": null,
@@ -150,7 +150,60 @@
         "dateDebutCible": "2022-12-24"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -   Section 4 : Supports d'information\r\n\r\n\r\n (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000028688791",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1420070400000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -   Titre III : Financement de la formation profes... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000037375104",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre III : La certification professionnelle\r\n (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000037374018",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Livre Ier : Principes généraux et organisation ... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006145420",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

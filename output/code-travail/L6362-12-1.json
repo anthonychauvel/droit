@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Les décisions prises en application des 3° ou 4° de l'article L. 6351-4 peuvent faire l'objet d'une mesure de publicité. L'organisme est informé, au cours de la procédure contradictoire préalable à la décision, de la durée et des modalités de la mesure de publicité encourue. La publicité de la décision est mise en œuvre pour une durée qui ne peut être supérieure à un an par les services du ministre chargé de la formation professionnelle, sur un site internet spécifique, dans des conditions prévues par un décret en Conseil d'Etat pris après avis de la Commission nationale de l'informatique et des libertés.",
-    "texteHtml": "<p align=\"left\">Les décisions prises en application des 3° ou 4° de l'article L. 6351-4 peuvent faire l'objet d'une mesure de publicité.</p><p align=\"left\">L'organisme est informé, au cours de la procédure contradictoire préalable à la décision, de la durée et des modalités de la mesure de publicité encourue.</p><p align=\"left\">La publicité de la décision est mise en œuvre pour une durée qui ne peut être supérieure à un an par les services du ministre chargé de la formation professionnelle, sur un site internet spécifique, dans des conditions prévues par un décret en Conseil d'Etat pris après avis de la Commission nationale de l'informatique et des libertés.</p>",
+    "texteHtml": "<p align=\"left\">Les décisions prises en application des <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006904393&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L6351-4 (V)\">3° ou 4° de l'article L. 6351-4</a> peuvent faire l'objet d'une mesure de publicité.</p><p align=\"left\">L'organisme est informé, au cours de la procédure contradictoire préalable à la décision, de la durée et des modalités de la mesure de publicité encourue.</p><p align=\"left\">La publicité de la décision est mise en œuvre pour une durée qui ne peut être supérieure à un an par les services du ministre chargé de la formation professionnelle, sur un site internet spécifique, dans des conditions prévues par un décret en Conseil d'Etat pris après avis de la Commission nationale de l'informatique et des libertés.</p>",
     "num": "L6362-12-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,8 +113,8 @@
     "sectionParentId": "LEGISCTA000006189934",
     "sectionParentTitre": "Section 3 : Sanctions.",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle &gt; Titre VI : Contrôle de la formation professionnelle &gt; Chapitre II : Déroulement des opérations de contrôle &gt; Section 3 : Sanctions.",
-    "refInjection": "MD-20260629_204147_693_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054317768",
+    "refInjection": "IG-20261022",
+    "idTechInjection": "LEGIARTI000054317768",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -168,7 +168,21 @@
         "dateDebutCible": "2026-06-27"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L6351-4 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L6351-4",
+        "articleId": "LEGIARTI000006904393",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006904538",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "L'activité d'agent artistique présente un caractère commercial au sens des dispositions du code de commerce.",
-    "texteHtml": "<p></p>   L'activité d'agent artistique présente un caractère commercial au sens des dispositions du code de commerce.<p></p><p></p>",
+    "texte": "L'activité d'agent artistique présente un caractère commercial au sens des dispositions du code de commerce .",
+    "texteHtml": "<p></p>   L'activité d'agent artistique présente un caractère commercial au sens des dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000005634379&dateTexte=&categorieLien=cid\" title=\"Code de commerce\">code de commerce</a>.<p></p><p></p>",
     "num": "L7121-11",
     "origine": "LEGI",
     "nature": "Article",
@@ -140,7 +140,7 @@
     "sectionParentId": "LEGISCTA000031643462",
     "sectionParentTitre": "Sous-section 1 : Activité d'agent artistique",
     "fullSectionsTitre": "Partie législative   &gt; Septième partie : Dispositions particulières à certaines professions et activités  &gt; Livre Ier : Journalistes professionnels professions du spectacle, de la publicité et de la mode    &gt; Titre II : Professions du spectacle, de la publicité et de la mode  &gt; Chapitre Ier : Artistes du spectacle &gt; Section 5 : Placement &gt; Sous-section 1 : Licence d'agent artistique.",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000006904538",
     "idEli": null,
     "idEliAlias": null,
@@ -195,7 +195,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000005634379",
+        "textTitle": "Code de commerce",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGITEXT000005634379",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 969494400000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

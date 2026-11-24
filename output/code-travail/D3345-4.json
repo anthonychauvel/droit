@@ -5,8 +5,8 @@
     "id": "LEGIARTI000044026702",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Le dépôt d'un des accords ou règlements mentionnés à l'article D. 3345-1 , de leurs avenants et de leurs annexes, est opéré dans les conditions prévues au II de l'article D. 2231-2 et à l'article D. 2231-4.",
-    "texteHtml": "<p>Le dépôt d'un des accords ou règlements mentionnés à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018488140&dateTexte=&categorieLien=cid\">D. 3345-1</a>, de leurs avenants et de leurs annexes, est opéré dans les conditions prévues       <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018485207&dateTexte=&categorieLien=cid\">        au II de l'article D. 2231-2 et à l'article D. 2231-4.</a></p>",
+    "texte": "Le dépôt d'un des accords ou règlements mentionnés à l'article D. 3345-1 , de leurs avenants et de leurs annexes, est opéré dans les conditions prévues               au II de l'article D. 2231-2 et à l' article D. 2231-4 .",
+    "texteHtml": "<p>Le dépôt d'un des accords ou règlements mentionnés à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018488140&dateTexte=&categorieLien=cid\">D. 3345-1</a>, de leurs avenants et de leurs annexes, est opéré dans les conditions prévues               au <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018485207&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. D2231-2 (V)\">II de l'article D. 2231-2</a> et à l'<a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018485211&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. D2231-4 (V)\">article D. 2231-4</a>.</p>",
     "num": "D3345-4",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,7 +95,7 @@
     "sectionParentId": "LEGISCTA000043986786",
     "sectionParentTitre": "Section 1 : Dépôt",
     "fullSectionsTitre": "Partie réglementaire   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale  &gt; Livre III : Dividende du travail : intéressement, participation et épargne salariale  &gt; Titre IV : Dispositions communes  &gt; Chapitre V : Dépôt et contrôle de l'autorité administrative &gt; Section 1 : Dépôt",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000044026702",
     "idEli": null,
     "idEliAlias": null,
@@ -165,19 +165,6 @@
         "dateDebut": 1426118400000
       },
       {
-        "textCid": "KALITEXT000031195504",
-        "textTitle": "Annule et remplace l'avenant n° 49 du 29 avril ... - art. 5 (VE)",
-        "linkType": "CITATION",
-        "linkOrientation": "cible",
-        "articleNum": "5",
-        "articleId": "KALIARTI000031195516",
-        "natureText": "Avenant",
-        "parentCid": null,
-        "numTexte": "50",
-        "datePubli": 1442880000000,
-        "dateDebut": 1437091200000
-      },
-      {
         "textCid": "KALITEXT000021682458",
         "textTitle": "Emploi des seniors - art. 8 (VE)",
         "linkType": "CITATION",
@@ -243,6 +230,19 @@
         "dateDebut": 1430870400000
       },
       {
+        "textCid": "KALITEXT000031195504",
+        "textTitle": "Annule et remplace l'avenant n° 49 du 29 avril ... - art. 5 (VE)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "5",
+        "articleId": "KALIARTI000031195516",
+        "natureText": "Avenant",
+        "parentCid": null,
+        "numTexte": "50",
+        "datePubli": 1442880000000,
+        "dateDebut": 1437091200000
+      },
+      {
         "textCid": "KALITEXT000032073801",
         "textTitle": "Régime de frais de soins de santé - art. III.4. Entrée en vigueur (VE)",
         "linkType": "CITATION",
@@ -257,11 +257,24 @@
       },
       {
         "textCid": "LEGITEXT000006072050",
-        "textTitle": "Code du travail - art. D2231-2",
+        "textTitle": "Code du travail - art. D2231-2 (V)",
         "linkType": "CITATION",
         "linkOrientation": "source",
         "articleNum": "D2231-2",
         "articleId": "LEGIARTI000018485207",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. D2231-4 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "D2231-4",
+        "articleId": "LEGIARTI000018485211",
         "natureText": "CODE",
         "parentCid": null,
         "numTexte": "",
@@ -405,20 +418,20 @@
         "ordre": null
       },
       {
-        "id": "LEGIARTI000044026702",
-        "etat": "VIGUEUR",
-        "version": "3.0",
-        "dateDebut": 1630454400000,
-        "dateFin": 32472144000000,
-        "numero": null,
-        "ordre": null
-      },
-      {
         "id": "LEGIARTI000042053908",
         "etat": "MODIFIE",
         "version": "3.0",
         "dateDebut": 1593388800000,
         "dateFin": 1630454400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000044026702",
+        "etat": "VIGUEUR",
+        "version": "3.0",
+        "dateDebut": 1630454400000,
+        "dateFin": 32472144000000,
         "numero": null,
         "ordre": null
       }

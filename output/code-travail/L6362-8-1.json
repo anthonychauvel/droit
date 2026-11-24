@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Pour le contrôle des organismes de formation proposant des actions de formation qui sont réalisées en tout ou en partie à distance ou auxquelles l'inscription peut se faire en ligne, les agents mentionnés à l'article L. 6361-5 peuvent faire usage d'une identité d'emprunt.",
-    "texteHtml": "<p align=\"left\">Pour le contrôle des organismes de formation proposant des actions de formation qui sont réalisées en tout ou en partie à distance ou auxquelles l'inscription peut se faire en ligne, les agents mentionnés à l'article L. 6361-5 peuvent faire usage d'une identité d'emprunt.</p>",
+    "texteHtml": "<p align=\"left\">Pour le contrôle des organismes de formation proposant des actions de formation qui sont réalisées en tout ou en partie à distance ou auxquelles l'inscription peut se faire en ligne, les agents mentionnés à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006904451&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L6361-5 (V)\">L. 6361-5</a> peuvent faire usage d'une identité d'emprunt.</p>",
     "num": "L6362-8-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,8 +113,8 @@
     "sectionParentId": "LEGISCTA000006189933",
     "sectionParentTitre": "Section 2 : Procédure.",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle &gt; Titre VI : Contrôle de la formation professionnelle &gt; Chapitre II : Déroulement des opérations de contrôle &gt; Section 2 : Procédure.",
-    "refInjection": "MD-20260629_204147_693_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054317737",
+    "refInjection": "IG-20261020",
+    "idTechInjection": "LEGIARTI000054317737",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -168,7 +168,34 @@
         "dateDebutCible": "2026-06-27"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L6361-5 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L6361-5",
+        "articleId": "LEGIARTI000006904451",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L6362-13 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "L6362-13",
+        "articleId": "LEGIARTI000054336450",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1782518400000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

@@ -1,0 +1,46 @@
+name: TEST DILA (sans commit)
+
+# Lancement manuel : essaie l'open data DILA, puis l'API Légifrance
+# (repli), dans un dossier temporaire. Ne committe rien.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      PISTE_CLIENT_ID: ${{ secrets.PISTE_CLIENT_ID }}
+      PISTE_CLIENT_SECRET: ${{ secrets.PISTE_CLIENT_SECRET }}
+      PISTE_ENV: production
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 1. Open data DILA joignable ?
+        continue-on-error: true
+        run: |
+          for f in CIRCULAIRES CONSTIT JADE; do
+            echo "===== $f"
+            U="https://echanges.dila.gouv.fr/OPENDATA/$f/"
+            curl -sS -o /dev/null -w "HTTP %{http_code}\n" --max-time 60 "$U" || true
+          done
+
+      - name: 2. Essai open data seule
+        continue-on-error: true
+        run: |
+          python3 scripts/pull_dila_fonds.py --source opendata \
+            --out /tmp/od --max 2 --premier-max 2 --diagnostic
+
+      - name: 3. Essai API Légifrance (repli)
+        run: |
+          python3 scripts/pull_dila_fonds.py --source api \
+            --out /tmp/api --jours 30 --max 5 --diagnostic

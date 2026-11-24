@@ -5,8 +5,8 @@
     "id": "LEGIARTI000020675814",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Les jeunes bénéficiant ou ayant bénéficié de l'aide au projet initiative-jeune au titre de la présente sous-section peuvent également bénéficier des aides à la création ou à la reprise d'entreprise prévues au titre IV du livre Ier de la présente partie.",
-    "texteHtml": "<p>Les jeunes bénéficiant ou ayant bénéficié de l'aide au projet initiative-jeune au titre de la présente sous-section peuvent également bénéficier des aides à la création ou à la reprise d'entreprise prévues au titre IV du livre Ier de la présente partie. </p>",
+    "texte": "Les jeunes bénéficiant ou ayant bénéficié de l'aide au projet initiative-jeune au titre de la présente sous-section peuvent également bénéficier des aides à la création ou à la reprise d'entreprise prévues au titre IV du livre Ier de la présente partie .",
+    "texteHtml": "<p>Les jeunes bénéficiant ou ayant bénéficié de l'aide au projet initiative-jeune au titre de la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006195905&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Sous-section 2 : Aide au projet initiative-jeune. (V)\">présente sous-section</a> peuvent également bénéficier des aides à la création ou à la reprise d'entreprise prévues au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006160805&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Titre IV : Aides à la création d'entreprise et ... (V)\">titre IV du livre Ier de la présente partie</a>. </p>",
     "num": "L5522-26",
     "origine": "LEGI",
     "nature": "Article",
@@ -122,7 +122,7 @@
     "sectionParentId": "LEGISCTA000006195905",
     "sectionParentTitre": "Sous-section 2 : Aide au projet initiative-jeune.",
     "fullSectionsTitre": "Partie législative   &gt; Cinquième partie : L'emploi &gt; Livre V : Dispositions relatives à l'outre-mer  &gt; Titre II : Départements d'outre-mer, Saint-Barthélemy, Saint-Martin et Saint-Pierre-et-Miquelon  &gt; Chapitre II : Dispositifs en faveur de l'emploi &gt; Section 2 : Aides à la création d'entreprise &gt; Sous-section 2 : Aide au projet initiative-jeune.",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261022",
     "idTechInjection": "LEGIARTI000020675814",
     "idEli": null,
     "idEliAlias": null,
@@ -177,7 +177,34 @@
         "dateDebutCible": "2009-05-29"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Sous-section 2 : Aide au projet initiative-jeune. (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006195905",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Titre IV : Aides à la création d'entreprise et ... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006160805",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

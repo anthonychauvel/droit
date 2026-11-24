@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Lorsqu'il est informé par le médecin du travail du dépassement d'une valeur limite biologique, dans les conditions prévues à l'article R. 4412-51-1 , l'employeur : 1° Procède à l'évaluation des risques conformément à la sous-section 2 ; 2° Met en œuvre les mesures et moyens de prévention prévus aux articles R. 4412-67 à R. 4412-73 ; 3° Procède aux contrôles des valeurs limites d'exposition professionnelle prévus à la sous-section 4 ; 4° Arrête le travail aux postes concernés jusqu'à la mise en œuvre des mesures propres à assurer la protection des travailleurs.",
-    "texteHtml": "<p>Lorsqu'il est informé par le médecin du travail du dépassement d'une valeur limite biologique, dans les conditions prévues à <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000021488594&dateTexte=&categorieLien=cid\">l'article R. 4412-51-1</a>, l'employeur : <br/><br/>1° Procède à l'évaluation des risques conformément à la sous-section 2 ; <br/><br/>2° Met en œuvre les mesures et moyens de prévention prévus aux articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018490502&dateTexte=&categorieLien=cid\">R. 4412-67 à R. 4412-73 </a>; <br/><br/>3° Procède aux contrôles des valeurs limites d'exposition professionnelle prévus à la sous-section 4 ; <br/><br/>4° Arrête le travail aux postes concernés jusqu'à la mise en œuvre des mesures propres à assurer la protection des travailleurs.</p>",
+    "texteHtml": "<p>Lorsqu'il est informé par le médecin du travail du dépassement d'une valeur limite biologique, dans les conditions prévues à <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000021488594&dateTexte=&categorieLien=cid\">l'article R. 4412-51-1</a>, l'employeur : <br/><br/>1° Procède à l'évaluation des risques conformément à la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018490485&dateTexte=&categorieLien=cid\" title=\"Code du travail -   Sous-section 2 : Évaluation des risques (V)\">sous-section 2</a> ; <br/><br/>2° Met en œuvre les mesures et moyens de prévention prévus aux articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018490502&dateTexte=&categorieLien=cid\">R. 4412-67 à R. 4412-73 </a>; <br/><br/>3° Procède aux contrôles des valeurs limites d'exposition professionnelle prévus à la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018490520&dateTexte=&categorieLien=cid\" title=\"Code du travail -   Sous-section 4 : Contrôle de l'exposition (V)\">sous-section 4</a> ; <br/><br/>4° Arrête le travail aux postes concernés jusqu'à la mise en œuvre des mesures propres à assurer la protection des travailleurs.</p>",
     "num": "R4412-82",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,7 +113,7 @@
     "sectionParentId": "LEGISCTA000018530751",
     "sectionParentTitre": " Paragraphe 2 : Contrôle des valeurs limites biologiques",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre IV : Prévention de certains risques d'exposition  &gt; Titre Ier : Risques chimiques  &gt; Chapitre II : Mesures de prévention des risques chimiques &gt;  Section 2 : Dispositions particulières aux agents chimiques dangereux  cancérogènes, mutagènes et toxiques pour la reproduction &gt;  Sous-section 4 : Contrôle de l'exposition &gt;  Paragraphe 2 : Contrôle des valeurs limites biologiques",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000021490921",
     "idEli": null,
     "idEliAlias": null,
@@ -169,6 +169,32 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -   Sous-section 2 : Évaluation des risques (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018490485",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -   Sous-section 4 : Contrôle de l'exposition (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018490520",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. R4412-51-1",

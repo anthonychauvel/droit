@@ -5,8 +5,8 @@
     "id": "LEGIARTI000053427120",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Lorsque la période de reconversion est interrompue avant son terme, l'employeur signale, par voie dématérialisée, cette rupture dans un délai maximum de trente jours à compter de celle-ci, à l'opérateur de compétences qui en informe le ministre chargé de la formation professionnelle au moyen du traitement automatisé mentionné à l'article R. 6323-32.",
-    "texteHtml": "<p>Lorsque la période de reconversion est interrompue avant son terme, l'employeur signale, par voie dématérialisée, cette rupture dans un délai maximum de trente jours à compter de celle-ci, à l'opérateur de compétences qui en informe le ministre chargé de la formation professionnelle au moyen du traitement automatisé mentionné à l'article R. 6323-32.</p>",
+    "texte": "Lorsque la période de reconversion est interrompue avant son terme, l'employeur signale, par voie dématérialisée, cette rupture dans un délai maximum de trente jours à compter de celle-ci, à l'opérateur de compétences qui en informe le ministre chargé de la formation professionnelle au moyen du traitement automatisé mentionné à l'article R. 6323-32 .",
+    "texteHtml": "<p>Lorsque la période de reconversion est interrompue avant son terme, l'employeur signale, par voie dématérialisée, cette rupture dans un délai maximum de trente jours à compter de celle-ci, à l'opérateur de compétences qui en informe le ministre chargé de la formation professionnelle au moyen du traitement automatisé mentionné à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000038007347&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. R6323-32 (V)\">R. 6323-32</a>.</p>",
     "num": "R6324-5",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,8 +104,8 @@
     "sectionParentId": "LEGISCTA000053428050",
     "sectionParentTitre": "Chapitre IV : Période de reconversion",
     "fullSectionsTitre": "Partie réglementaire   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle continue  &gt; Titre II : Dispositifs de formation professionnelle continue  &gt; Chapitre IV : Période de reconversion",
-    "refInjection": "MD-20260202_204619_526_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000053427120",
+    "refInjection": "IG-20261019",
+    "idTechInjection": "LEGIARTI000053427120",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -159,7 +159,21 @@
         "dateDebutCible": "2026-02-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. R6323-32 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "R6323-32",
+        "articleId": "LEGIARTI000038007347",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1546300800000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

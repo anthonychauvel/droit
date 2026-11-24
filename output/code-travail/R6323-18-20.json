@@ -5,8 +5,8 @@
     "id": "LEGIARTI000054106073",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "L'instance paritaire nationale communique tous documents et pièces relatifs à sa gestion à France compétences ou aux personnes qu'elle désigne pour l'accomplissement des missions mentionnées à l'article L. 6123-5.",
-    "texteHtml": "<p align=\"left\">L'instance paritaire nationale communique tous documents et pièces relatifs à sa gestion à France compétences ou aux personnes qu'elle désigne pour l'accomplissement des missions mentionnées à l'article L. 6123-5.</p>",
+    "texte": "L'instance paritaire nationale communique tous documents et pièces relatifs à sa gestion à France compétences ou aux personnes qu'elle désigne pour l'accomplissement des missions mentionnées à l'article L. 6123-5 .",
+    "texteHtml": "<p align=\"left\">L'instance paritaire nationale communique tous documents et pièces relatifs à sa gestion à France compétences ou aux personnes qu'elle désigne pour l'accomplissement des missions mentionnées à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000021340266&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L6123-5 (VT)\">L. 6123-5</a>.</p>",
     "num": "R6323-18-20",
     "origine": "LEGI",
     "nature": "Article",
@@ -131,8 +131,8 @@
     "sectionParentId": "LEGISCTA000054106069",
     "sectionParentTitre": "Paragraphe 6 : Transmission des documents",
     "fullSectionsTitre": "Partie réglementaire   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle continue  &gt; Titre II : Dispositifs de formation professionnelle continue  &gt; Chapitre III : Le compte personnel de formation &gt; Section 2 : Projet de transition professionnelle &gt; Sous-section 1 bis : Instance paritaire nationale mentionnée à l'article L. 6323-17-5-1 &gt; Paragraphe 6 : Transmission des documents",
-    "refInjection": "MD-20260518_192158_478_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054106073",
+    "refInjection": "IG-20261022",
+    "idTechInjection": "LEGIARTI000054106073",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -186,7 +186,21 @@
         "dateDebutCible": "2026-05-18"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L6123-5 (VT)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L6123-5",
+        "articleId": "LEGIARTI000021340266",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1259193600000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

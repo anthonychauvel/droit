@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Le coût des prestations liées aux contrôles et mesurages réalisés au titre du présent chapitre sont à la charge de l'employeur.",
-    "texteHtml": "<p>Le coût des prestations liées aux contrôles et mesurages réalisés au titre du présent chapitre sont à la charge de l'employeur.</p>",
+    "texteHtml": "<p>Le coût des prestations liées aux contrôles et mesurages réalisés au titre du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018493786&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre II : Demandes de vérifications, d'anal... (V)\">présent chapitre</a> sont à la charge de l'employeur.</p>",
     "num": "R4722-33",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,7 +95,7 @@
     "sectionParentId": "LEGISCTA000041537989",
     "sectionParentTitre": "Section 11 : Dispositions communes",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre VII : Contrôle  &gt; Titre II : Mises en demeure et demandes de vérification &gt; Chapitre II : Demandes de vérifications, d'analyses et de mesures &gt; Section 11 : Dispositions communes",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261022",
     "idTechInjection": "LEGIARTI000041537995",
     "idEli": null,
     "idEliAlias": null,
@@ -150,7 +150,21 @@
         "dateDebutCible": "2020-02-07"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre II : Demandes de vérifications, d'anal... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018493786",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

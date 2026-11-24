@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "L'employeur évalue et, si nécessaire, mesure les niveaux de vibrations mécaniques auxquels les travailleurs sont exposés. Cette évaluation et ce mesurage ont pour but de déterminer les paramètres physiques définis à l'article R. 4441-2 et d'apprécier si, dans une situation donnée, les valeurs d'exposition fixées au chapitre III sont dépassées.",
-    "texteHtml": "<p><br/>L'employeur évalue et, si nécessaire, mesure les niveaux de vibrations mécaniques auxquels les travailleurs sont exposés. <br/>Cette évaluation et ce mesurage ont pour but de déterminer les paramètres physiques définis à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018491004&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. R4441-2 (VD)\">R. 4441-2</a> et d'apprécier si, dans une situation donnée, les valeurs d'exposition fixées au chapitre III sont dépassées.</p>",
+    "texteHtml": "<p><br/>L'employeur évalue et, si nécessaire, mesure les niveaux de vibrations mécaniques auxquels les travailleurs sont exposés. <br/>Cette évaluation et ce mesurage ont pour but de déterminer les paramètres physiques définis à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000018491004&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. R4441-2 (VD)\">R. 4441-2</a> et d'apprécier si, dans une situation donnée, les valeurs d'exposition fixées au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018491012&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre III : Valeurs limites d'exposition (V)\">chapitre III</a> sont dépassées.</p>",
     "num": "R4444-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,7 +86,7 @@
     "sectionParentId": "LEGISCTA000018530273",
     "sectionParentTitre": "Chapitre IV : Évaluation des risques",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre IV : Prévention de certains risques d'exposition  &gt; Titre IV : Prévention des risques d'exposition aux vibrations mécaniques &gt; Chapitre IV : Évaluation des risques",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000018530271",
     "idEli": null,
     "idEliAlias": null,
@@ -142,6 +142,19 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre III : Valeurs limites d'exposition (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018491012",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. R4441-2 (VD)",

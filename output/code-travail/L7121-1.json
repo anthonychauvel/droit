@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006904526",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Les dispositions du présent code sont applicables aux artistes du spectacle, sous réserve des dispositions particulières du présent chapitre.",
-    "texteHtml": "<p></p>   Les dispositions du présent code sont applicables aux artistes du spectacle, sous réserve des dispositions particulières du présent chapitre.<p></p><p></p>",
+    "texte": "Les dispositions du présent code sont applicables aux artistes du spectacle, sous réserve des dispositions particulières du présent chapitre .",
+    "texteHtml": "<p></p>   Les dispositions du présent code sont applicables aux artistes du spectacle, sous réserve des dispositions particulières du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178234&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre Ier : Artistes du spectacle (V)\">présent chapitre</a>.<p></p><p></p>",
     "num": "L7121-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,7 +113,7 @@
     "sectionParentId": "LEGISCTA000006189951",
     "sectionParentTitre": "Section 1 : Champ d'application.",
     "fullSectionsTitre": "Partie législative   &gt; Septième partie : Dispositions particulières à certaines professions et activités  &gt; Livre Ier : Journalistes professionnels professions du spectacle, de la publicité et de la mode    &gt; Titre II : Professions du spectacle, de la publicité et de la mode  &gt; Chapitre Ier : Artistes du spectacle &gt; Section 1 : Champ d'application.",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000006904526",
     "idEli": null,
     "idEliAlias": null,
@@ -196,6 +196,19 @@
         "dateDebut": 1466985600000
       },
       {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre Ier : Artistes du spectacle (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178234",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
+      {
         "textCid": "LEGITEXT000006070633",
         "textTitle": "Code général des collectivités territoriales - art. L2333-55-3 (VD)",
         "linkType": "CITATION",
@@ -206,7 +219,7 @@
         "parentCid": null,
         "numTexte": "",
         "datePubli": 32472144000000,
-        "dateDebut": 1788220800000
+        "dateDebut": 1798761600000
       }
     ],
     "lienConcordes": [],

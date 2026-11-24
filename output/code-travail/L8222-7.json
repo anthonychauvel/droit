@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006904829",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret en Conseil d'Etat détermine les conditions d'application des dispositions du présent chapitre.",
-    "texteHtml": "<p></p>   Un décret en Conseil d'Etat détermine les conditions d'application des dispositions du présent chapitre.<p></p><p></p>",
+    "texte": "Un décret en Conseil d'Etat détermine les conditions d'application des dispositions du présent chapitre .",
+    "texteHtml": "<p></p>   Un décret en Conseil d'Etat détermine les conditions d'application des dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178268&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre II : Obligations et solidarité financi... (V)\">présent chapitre</a>.<p></p><p></p>",
     "num": "L8222-7",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,7 +86,7 @@
     "sectionParentId": "LEGISCTA000006178268",
     "sectionParentTitre": "Chapitre II : Obligations et solidarité financière des donneurs d'ordre et des maîtres d'ouvrage.",
     "fullSectionsTitre": "Partie législative   &gt; Huitième partie : Contrôle de l'application de la législation du travail  &gt; Livre II : Lutte contre le travail illégal &gt; Titre II : Travail dissimulé  &gt; Chapitre II : Obligations et solidarité financière des donneurs d'ordre et des maîtres d'ouvrage.",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261022",
     "idTechInjection": "LEGIARTI000006904829",
     "idEli": null,
     "idEliAlias": null,
@@ -141,7 +141,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre II : Obligations et solidarité financi... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178268",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

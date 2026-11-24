@@ -5,8 +5,8 @@
     "id": "LEGIARTI000037024340",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "L'employeur s'assure qu'il dispose de l'organisation et des moyens permettant la mise œuvre dans les meilleurs délais des dispositions de la présente section. L'employeur en informe le comité social et économique.",
-    "texteHtml": "<p>L'employeur s'assure qu'il dispose de l'organisation et des moyens permettant la mise œuvre dans les meilleurs délais des dispositions de la présente section.<br/><br/>\n L'employeur en informe le comité social et économique.</p>",
+    "texte": "L'employeur s'assure qu'il dispose de l'organisation et des moyens permettant la mise œuvre dans les meilleurs délais des dispositions de la présente section . L'employeur en informe le comité social et économique.",
+    "texteHtml": "<p>L'employeur s'assure qu'il dispose de l'organisation et des moyens permettant la mise œuvre dans les meilleurs délais des dispositions de la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000037007424&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 12 : Situation d'urgence radiologique (V)\">présente section</a>.<br/><br/> L'employeur en informe le comité social et économique.</p>",
     "num": "R4451-98",
     "origine": "LEGI",
     "nature": "Article",
@@ -122,7 +122,7 @@
     "sectionParentId": "LEGISCTA000037008060",
     "sectionParentTitre": "Sous-section 2 : Organisation préalable à la situation d'urgence radiologique",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre IV : Prévention de certains risques d'exposition  &gt; Titre V : Prévention des risques d'exposition aux rayonnements  &gt; Chapitre Ier : Prévention des risques d'exposition aux rayonnements ionisants &gt; Section 12 : Situation d'urgence radiologique &gt; Sous-section 2 : Organisation préalable à la situation d'urgence radiologique",
-    "refInjection": "IG-20260122",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000037024340",
     "idEli": null,
     "idEliAlias": null,
@@ -177,7 +177,21 @@
         "dateDebutCible": "2018-06-06"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 12 : Situation d'urgence radiologique (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000037007424",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

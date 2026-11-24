@@ -5,8 +5,8 @@
     "id": "LEGIARTI000035902479",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Les dispositions relatives à la rémunération mensuelle minimale prévues aux articles L. 3232-1 et suivants sont applicables en Guadeloupe, en Guyane, en Martinique, à Mayotte, à La Réunion, à Saint-Barthélemy et à Saint-Martin, sous réserve des adaptations prévues par la présente section.",
-    "texteHtml": "<p>Les dispositions relatives à la rémunération mensuelle minimale prévues aux articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006902844&dateTexte=&categorieLien=cid\">L. 3232-1</a> et suivants sont applicables en Guadeloupe, en Guyane, en Martinique, à Mayotte, à La Réunion, à Saint-Barthélemy et à Saint-Martin, sous réserve des adaptations prévues par la présente section.</p>",
+    "texte": "Les dispositions relatives à la rémunération mensuelle minimale prévues aux articles L. 3232-1 et suivants sont applicables en Guadeloupe, en Guyane, en Martinique, à Mayotte, à La Réunion, à Saint-Barthélemy et à Saint-Martin, sous réserve des adaptations prévues par la présente section .",
+    "texteHtml": "<p>Les dispositions relatives à la rémunération mensuelle minimale prévues aux articles <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006902844&dateTexte=&categorieLien=cid\">L. 3232-1</a> et suivants sont applicables en Guadeloupe, en Guyane, en Martinique, à Mayotte, à La Réunion, à Saint-Barthélemy et à Saint-Martin, sous réserve des adaptations prévues par la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006189715&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 2 : Rémunération mensuelle minimale (V)\">présente section</a>.</p>",
     "num": "L3423-5",
     "origine": "LEGI",
     "nature": "Article",
@@ -122,8 +122,8 @@
     "sectionParentId": "LEGISCTA000006195832",
     "sectionParentTitre": "Sous-section 1 : Dispositions générales.",
     "fullSectionsTitre": "Partie législative   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale     &gt; Livre IV : Dispositions relatives à l'outre-mer \n &gt; Titre II : Guadeloupe, Guyane, Martinique, Mayotte, La Réunion, Saint-Barthélemy, Saint-Martin et Saint-Pierre-et-Miquelon &gt; Chapitre III : Salaire et avantages divers &gt; Section 2 : Rémunération mensuelle minimale &gt; Sous-section 1 : Dispositions générales.",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000035902479",
+    "refInjection": "MD-20261111_011809_497_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000035902479",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -178,6 +178,19 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 2 : Rémunération mensuelle minimale (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006189715",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. L3232-1",

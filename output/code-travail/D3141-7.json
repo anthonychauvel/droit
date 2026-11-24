@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Le paiement des indemnités dues pour les congés payés est soumis aux règles déterminées par le livre II pour le paiement des salaires.",
-    "texteHtml": "<p><br/>Le paiement des indemnités dues pour les congés payés est soumis aux règles déterminées par le livre II pour le paiement des salaires.</p>",
+    "texteHtml": "<p><br/>Le paiement des indemnités dues pour les congés payés est soumis aux règles déterminées par le <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000018487148&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Livre II : Salaire et avantages divers  (V)\">livre II</a> pour le paiement des salaires.</p>",
     "num": "D3141-7",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,7 +104,7 @@
     "sectionParentId": "LEGISCTA000033510160",
     "sectionParentTitre": "Sous-section 1 : Ordre public",
     "fullSectionsTitre": "Partie réglementaire   &gt; Troisième partie : Durée du travail, salaire, intéressement, participation et épargne salariale  &gt; Livre Ier : Durée du travail, repos et congés  &gt; Titre IV : Congés payés et autres congés  &gt; Chapitre Ier : Congés payés &gt; Section 4 : Indemnités de congés &gt; Sous-section 1 : Ordre public",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261022",
     "idTechInjection": "LEGIARTI000033515938",
     "idEli": null,
     "idEliAlias": null,
@@ -159,7 +159,21 @@
         "dateDebutCible": "2016-11-20"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Livre II : Salaire et avantages divers  (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000018487148",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": null
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

@@ -5,8 +5,8 @@
     "id": "LEGIARTI000035631285",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "En cas de différend avec son employeur dû à un refus de celui-ci de faire droit à la demande du salarié d'utiliser son compte pour un passage à temps partiel tel que précisé à l'article L. 4163-10 , le salarié peut saisir le conseil de prud'hommes dans les conditions mentionnées au titre Ier du livre IV de la première partie.",
-    "texteHtml": "<p>En cas de différend avec son employeur dû à un refus de celui-ci de faire droit à la demande du salarié d'utiliser son compte pour un passage à temps partiel tel que précisé à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000035611677&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L4163-10 (VD)\">L. 4163-10</a>, le salarié peut saisir le conseil de prud'hommes dans les conditions mentionnées au titre Ier du livre IV de la première partie.</p>",
+    "texte": "En cas de différend avec son employeur dû à un refus de celui-ci de faire droit à la demande du salarié d'utiliser son compte pour un passage à temps partiel tel que précisé à l'article L. 4163-10 , le salarié peut saisir le conseil de prud'hommes dans les conditions mentionnées au titre Ier du livre IV de la première partie .",
+    "texteHtml": "<p>En cas de différend avec son employeur dû à un refus de celui-ci de faire droit à la demande du salarié d'utiliser son compte pour un passage à temps partiel tel que précisé à l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000035611677&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L4163-10 (VD)\">L. 4163-10</a>, le salarié peut saisir le conseil de prud'hommes dans les conditions mentionnées au <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006160718&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Titre Ier : Attributions du conseil de prud'hom... (V)\">titre Ier du livre IV de la première partie</a>.</p>",
     "num": "L4163-11",
     "origine": "LEGI",
     "nature": "Article",
@@ -122,8 +122,8 @@
     "sectionParentId": "LEGISCTA000035631191",
     "sectionParentTitre": "Sous-section 2 : Utilisation du compte pour le passage à temps partiel",
     "fullSectionsTitre": "Partie législative   &gt; Quatrième partie : Santé et sécurité au travail &gt; Livre Ier : Dispositions générales  &gt; Titre VI : Dispositions relatives à la prévention des effets de l'exposition à certains facteurs de risques professionnels et au compte professionnel de prévention &gt; Chapitre III : Compte professionnel de prévention &gt; Section 3 : Utilisations du compte professionnel de prévention  &gt; Sous-section 2 : Utilisation du compte pour le passage à temps partiel",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000035631285",
+    "refInjection": "MD-20261111_011812_773_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000035631285",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -178,6 +178,19 @@
       }
     ],
     "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Titre Ier : Attributions du conseil de prud'hom... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006160718",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      },
       {
         "textCid": "LEGITEXT000006072050",
         "textTitle": "Code du travail - art. L4163-10 (VD)",

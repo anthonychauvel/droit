@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006903461",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret détermine les modalités d'application de la présente section.",
-    "texteHtml": "<p></p>   Un décret détermine les modalités d'application de la présente section.<p></p><p></p>",
+    "texte": "Un décret détermine les modalités d'application de la présente section .",
+    "texteHtml": "<p></p>   Un décret détermine les modalités d'application de la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006189767&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 1 : Aide au développement de l'emploi e... (V)\">présente section</a>.<p></p><p></p>",
     "num": "L5121-2",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,8 +113,8 @@
     "sectionParentId": "LEGISCTA000006189767",
     "sectionParentTitre": "Section 1 : Aide au développement de l'emploi et des compétences.",
     "fullSectionsTitre": "Partie législative   &gt; Cinquième partie : L'emploi &gt; Livre Ier : Les dispositifs en faveur de l'emploi &gt; TITRE II : AIDES AU MAINTIEN ET À LA SAUVEGARDE DE L'EMPLOI &gt; Chapitre Ier : Aides à l'adaptation des salariés aux évolutions de l'emploi et des compétences &gt; Section 1 : Aide au développement de l'emploi et des compétences.",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000006903461",
+    "refInjection": "MD-20261106_205732_875_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000006903461",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -168,7 +168,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 1 : Aide au développement de l'emploi e... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006189767",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

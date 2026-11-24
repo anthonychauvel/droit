@@ -5,8 +5,8 @@
     "id": "LEGIARTI000051679399",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Les travailleurs indépendants ainsi que les employeurs qui exercent directement une activité sur un chantier de bâtiment et de génie civil sont soumis aux dispositions du chapitre Ier du titre VI du livre IV.",
-    "texteHtml": "<p>Les travailleurs indépendants ainsi que les employeurs qui exercent directement une activité sur un chantier de bâtiment et de génie civil sont soumis aux dispositions du chapitre Ier du titre VI du livre IV.</p>",
+    "texte": "Les travailleurs indépendants ainsi que les employeurs qui exercent directement une activité sur un chantier de bâtiment et de génie civil sont soumis aux dispositions du chapitre Ier du titre VI du livre IV .",
+    "texteHtml": "<p>Les travailleurs indépendants ainsi que les employeurs qui exercent directement une activité sur un chantier de bâtiment et de génie civil sont soumis aux dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000023414496&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre Ier : Prévention des risques en milieu... (V)\">chapitre Ier du titre VI du livre IV</a>.</p>",
     "num": "R4535-13",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,7 +95,7 @@
     "sectionParentId": "LEGISCTA000027691163",
     "sectionParentTitre": "Section 5 : Risque hyperbare",
     "fullSectionsTitre": "Partie réglementaire   &gt; Quatrième partie : Santé et sécurité au travail  &gt; Livre V : Prévention des risques liés à certaines activités ou opérations  &gt; Titre III : Bâtiment et génie civil  &gt; Chapitre V : Dispositions applicables aux travailleurs indépendants &gt; Section 5 : Risque hyperbare",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261019",
     "idTechInjection": "LEGIARTI000051679399",
     "idEli": null,
     "idEliAlias": null,
@@ -150,7 +150,21 @@
         "dateDebutCible": "2025-06-02"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre Ier : Prévention des risques en milieu... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000023414496",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1294963200000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

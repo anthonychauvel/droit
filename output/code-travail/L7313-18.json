@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006904740",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Le conseil de prud'hommes est seul compétent pour connaître des litiges relatifs à l'application du contrat de représentation régi par les dispositions du présent titre.",
-    "texteHtml": "<p></p>   Le conseil de prud'hommes est seul compétent pour connaître des litiges relatifs à l'application du contrat de représentation régi par les dispositions du présent titre.<p></p><p></p>",
+    "texte": "Le conseil de prud'hommes est seul compétent pour connaître des litiges relatifs à l'application du contrat de représentation régi par les dispositions du présent titre .",
+    "texteHtml": "<p></p>   Le conseil de prud'hommes est seul compétent pour connaître des litiges relatifs à l'application du contrat de représentation régi par les dispositions du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006160839&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Titre Ier : Voyageurs, représentants et placiers (V)\">présent titre</a>.<p></p><p></p>",
     "num": "L7313-18",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,7 +113,7 @@
     "sectionParentId": "LEGISCTA000006189984",
     "sectionParentTitre": "Section 5 : Litiges.",
     "fullSectionsTitre": "Partie législative   &gt; Septième partie : Dispositions particulières à certaines professions et activités  &gt; LIVRE III : VOYAGEURS, REPRÉSENTANTS OU PLACIERS, GÉRANTS DE SUCCURSALES ET CONJOINTS SALARIÉS DU CHEF D'ENTREPRISE &gt; Titre Ier : Voyageurs, représentants et placiers &gt; Chapitre III : Contrat de travail &gt; Section 5 : Litiges.",
-    "refInjection": "IG-20260114",
+    "refInjection": "IG-20261020",
     "idTechInjection": "LEGIARTI000006904740",
     "idEli": null,
     "idEliAlias": null,
@@ -168,7 +168,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Titre Ier : Voyageurs, représentants et placiers (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006160839",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

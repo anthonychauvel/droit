@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006903805",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Des décrets en Conseil d'Etat déterminent les conditions d'application du présent chapitre.",
-    "texteHtml": "<p></p>   Des décrets en Conseil d'Etat déterminent les conditions d'application du présent chapitre.<p></p><p></p>",
+    "texte": "Des décrets en Conseil d'Etat déterminent les conditions d'application du présent chapitre .",
+    "texteHtml": "<p></p>   Des décrets en Conseil d'Etat déterminent les conditions d'application du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178158&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre III : Contrôle. (V)\">présent chapitre</a>.<p></p><p></p>",
     "num": "L5333-2",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,8 +86,8 @@
     "sectionParentId": "LEGISCTA000006178158",
     "sectionParentTitre": "Chapitre III : Contrôle.",
     "fullSectionsTitre": "Partie législative   &gt; Cinquième partie : L'emploi &gt; Livre III : Service public de l'emploi et placement &gt; Titre III : Diffusion et publicité des offres et demandes d'emploi   &gt; Chapitre III : Contrôle.",
-    "refInjection": "IG-20260122",
-    "idTechInjection": "LEGIARTI000006903805",
+    "refInjection": "MD-20261023_195545_806_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000006903805",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -141,7 +141,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre III : Contrôle. (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178158",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

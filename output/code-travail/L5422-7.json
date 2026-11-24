@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006903829",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Les travailleurs privés d'emploi bénéficient de l'allocation d'assurance, indépendamment du respect par l'employeur des obligations qui pèsent sur lui en application de la section 3, des dispositions réglementaires et des stipulations conventionnelles prises pour son exécution.",
-    "texteHtml": "<p></p>   Les travailleurs privés d'emploi bénéficient de l'allocation d'assurance, indépendamment du respect par l'employeur des obligations qui pèsent sur lui en application de la section 3, des dispositions réglementaires et des stipulations conventionnelles prises pour son exécution.<p></p><p></p>",
+    "texte": "Les travailleurs privés d'emploi bénéficient de l'allocation d'assurance, indépendamment du respect par l'employeur des obligations qui pèsent sur lui en application de la section 3 , des dispositions réglementaires et des stipulations conventionnelles prises pour son exécution.",
+    "texteHtml": "<p></p>   Les travailleurs privés d'emploi bénéficient de l'allocation d'assurance, indépendamment du respect par l'employeur des obligations qui pèsent sur lui en application de la <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006189823&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Section 3 : Obligations d'assurance et de décla... (V)\">section 3</a>, des dispositions réglementaires et des stipulations conventionnelles prises pour son exécution.<p></p><p></p>",
     "num": "L5422-7",
     "origine": "LEGI",
     "nature": "Article",
@@ -113,8 +113,8 @@
     "sectionParentId": "LEGISCTA000006195892",
     "sectionParentTitre": "Sous-section 2 : Modalités de calcul et de paiement.",
     "fullSectionsTitre": "Partie législative   &gt; Cinquième partie : L'emploi &gt; Livre IV : Le demandeur d'emploi  &gt; Titre II : Indemnisation des travailleurs involontairement privés d'emploi   &gt; Chapitre II : Régime d'assurance &gt; Section 1 : Conditions et modalités d'attribution de l'allocation d'assurance &gt; Sous-section 2 : Modalités de calcul et de paiement.",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000006903829",
+    "refInjection": "MD-20261023_195542_645_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000006903829",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -168,7 +168,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Section 3 : Obligations d'assurance et de décla... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006189823",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",

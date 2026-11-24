@@ -6,7 +6,7 @@
     "idTexte": null,
     "type": "AUTONOME",
     "texte": "Le fait de se prévaloir de la qualité d'opérateur de conseil en évolution professionnelle en méconnaissance du 4° de l'article L. 6123-5 ou de créer la confusion avec cette qualité est puni d'une amende de 4 500 euros.",
-    "texteHtml": "<p align=\"left\">Le fait de se prévaloir de la qualité d'opérateur de conseil en évolution professionnelle en méconnaissance du 4° de l'article L. 6123-5 ou de créer la confusion avec cette qualité est puni d'une amende de 4 500 euros.</p>",
+    "texteHtml": "<p align=\"left\">Le fait de se prévaloir de la qualité d'opérateur de conseil en évolution professionnelle en méconnaissance du <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000021340266&dateTexte=&categorieLien=cid\" title=\"Code du travail - art. L6123-5 (VT)\">4° de l'article L. 6123-5</a> ou de créer la confusion avec cette qualité est puni d'une amende de 4 500 euros.</p>",
     "num": "L6355-17-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -95,8 +95,8 @@
     "sectionParentId": "LEGISCTA000006178217",
     "sectionParentTitre": "Chapitre V : Dispositions pénales.",
     "fullSectionsTitre": "Partie législative   &gt; Sixième partie : La formation professionnelle tout au long de la vie  &gt; Livre III : La formation professionnelle &gt; Titre V : Organismes de formation &gt; Chapitre V : Dispositions pénales.",
-    "refInjection": "MD-20260629_204147_693_BDJQUOT",
-    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000054319640",
+    "refInjection": "IG-20261020",
+    "idTechInjection": "LEGIARTI000054319640",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -150,7 +150,21 @@
         "dateDebutCible": "2026-06-27"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail - art. L6123-5 (VT)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L6123-5",
+        "articleId": "LEGIARTI000021340266",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1259193600000
+      }
+    ],
     "lienConcordes": [],
     "lienAutres": [],
     "articleVersions": [

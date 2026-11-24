@@ -5,8 +5,8 @@
     "id": "LEGIARTI000032171344",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Sont constitutives de travail illégal, dans les conditions prévues par le présent livre, les infractions suivantes : 1° Travail dissimulé ; 2° Marchandage ; 3° Prêt illicite de main-d'oeuvre ; 4° Emploi d'étranger non autorisé à travailler ; 5° Cumuls irréguliers d'emplois ; 6° Fraude ou fausse déclaration prévue aux articles L. 5124-1 et L. 5429-1 .",
-    "texteHtml": "<p>Sont constitutives de travail illégal, dans les conditions prévues par le présent livre, les infractions suivantes : </p><p>1° Travail dissimulé ; </p><p>2° Marchandage ; </p><p>3° Prêt illicite de main-d'oeuvre ; </p><p>4° Emploi d'étranger non autorisé à travailler ; </p><p>5° Cumuls irréguliers d'emplois ; </p><p>6° Fraude ou fausse déclaration prévue aux <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006903484&dateTexte=&categorieLien=cid\">articles L. 5124-1 </a>et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006903930&dateTexte=&categorieLien=cid\">L. 5429-1</a>.</p>",
+    "texte": "Sont constitutives de travail illégal, dans les conditions prévues par le présent livre , les infractions suivantes : 1° Travail dissimulé ; 2° Marchandage ; 3° Prêt illicite de main-d'oeuvre ; 4° Emploi d'étranger non autorisé à travailler ; 5° Cumuls irréguliers d'emplois ; 6° Fraude ou fausse déclaration prévue aux articles L. 5124-1 et L. 5429-1 .",
+    "texteHtml": "<p>Sont constitutives de travail illégal, dans les conditions prévues par le <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006145431&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Livre II : Lutte contre le travail illégal (V)\">présent livre</a>, les infractions suivantes : </p><p>1° Travail dissimulé ; </p><p>2° Marchandage ; </p><p>3° Prêt illicite de main-d'oeuvre ; </p><p>4° Emploi d'étranger non autorisé à travailler ; </p><p>5° Cumuls irréguliers d'emplois ; </p><p>6° Fraude ou fausse déclaration prévue aux <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006903484&dateTexte=&categorieLien=cid\">articles L. 5124-1 </a>et <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&idArticle=LEGIARTI000006903930&dateTexte=&categorieLien=cid\">L. 5429-1</a>.</p>",
     "num": "L8211-1",
     "origine": "LEGI",
     "nature": "Article",
@@ -86,7 +86,7 @@
     "sectionParentId": "LEGISCTA000006178266",
     "sectionParentTitre": "Chapitre unique.",
     "fullSectionsTitre": "Partie législative   &gt; Huitième partie : Contrôle de l'application de la législation du travail  &gt; Livre II : Lutte contre le travail illégal &gt; Titre Ier : Définition &gt; Chapitre unique.",
-    "refInjection": "MD-20260901_193655_807_BDJQUOT",
+    "refInjection": "MD-20261029_205451_417_BDJQUOT",
     "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000032171344",
     "idEli": null,
     "idEliAlias": null,
@@ -584,6 +584,45 @@
         "dateDebut": 1551398400000
       },
       {
+        "textCid": "LEGITEXT000006070158",
+        "textTitle": "Code de l'entrée et du séjour des étrangers et ... - art. R444-3 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R444-3",
+        "articleId": "LEGIARTI000055027516",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1793318400000
+      },
+      {
+        "textCid": "LEGITEXT000006070158",
+        "textTitle": "Code de l'entrée et du séjour des étrangers et ... - art. R445-3 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R445-3",
+        "articleId": "LEGIARTI000055027494",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1793318400000
+      },
+      {
+        "textCid": "LEGITEXT000006070158",
+        "textTitle": "Code de l'entrée et du séjour des étrangers et ... - art. R446-3 (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "cible",
+        "articleNum": "R446-3",
+        "articleId": "LEGIARTI000055027471",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1793318400000
+      },
+      {
         "textCid": "LEGITEXT000006073189",
         "textTitle": "Code de la sécurité sociale. - art. L133-4-2 (V)",
         "linkType": "CITATION",
@@ -712,6 +751,19 @@
         "numTexte": "",
         "datePubli": 32472144000000,
         "dateDebut": 1468022400000
+      },
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Livre II : Lutte contre le travail illégal (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006145431",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
       },
       {
         "textCid": "LEGITEXT000006072050",
@@ -875,12 +927,12 @@
         "linkType": "CITATION",
         "linkOrientation": "cible",
         "articleNum": "R5221-20",
-        "articleId": "LEGIARTI000043325758",
+        "articleId": "LEGIARTI000049999760",
         "natureText": "CODE",
         "parentCid": null,
         "numTexte": "",
         "datePubli": 32472144000000,
-        "dateDebut": 1619827200000
+        "dateDebut": 1725148800000
       },
       {
         "textCid": "LEGITEXT000006072050",

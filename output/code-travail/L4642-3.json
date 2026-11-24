@@ -5,8 +5,8 @@
     "id": "LEGIARTI000006903378",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "Un décret en Conseil d'Etat détermine les modalités d'application du présent chapitre.",
-    "texteHtml": "<p></p>   Un décret en Conseil d'Etat détermine les modalités d'application du présent chapitre.<p></p><p></p>",
+    "texte": "Un décret en Conseil d'Etat détermine les modalités d'application du présent chapitre .",
+    "texteHtml": "<p></p>   Un décret en Conseil d'Etat détermine les modalités d'application du <a href=\"/affichCode.do?cidTexte=LEGITEXT000006072050&idSectionTA=LEGISCTA000006178108&dateTexte=&categorieLien=cid\" title=\"Code du travail -  Chapitre II : Agence nationale pour l'améliorat... (V)\">présent chapitre</a>.<p></p><p></p>",
     "num": "L4642-3",
     "origine": "LEGI",
     "nature": "Article",
@@ -104,8 +104,8 @@
     "sectionParentId": "LEGISCTA000006189758",
     "sectionParentTitre": "Section 3 : Dispositions d'application.",
     "fullSectionsTitre": "Partie législative   &gt; Quatrième partie : Santé et sécurité au travail &gt; Livre VI : Institutions et organismes de prévention &gt; TITRE IV : INSTITUTIONS CONCOURANT À L'ORGANISATION DE LA PRÉVENTION &gt; Chapitre II : Agence nationale pour l'amélioration des conditions de travail &gt; Section 3 : Dispositions d'application.",
-    "refInjection": "IG-20260114",
-    "idTechInjection": "LEGIARTI000006903378",
+    "refInjection": "MD-20261111_011812_773_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000006903378",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -159,7 +159,21 @@
         "dateDebutCible": "2999-01-01"
       }
     ],
-    "lienCitations": [],
+    "lienCitations": [
+      {
+        "textCid": "LEGITEXT000006072050",
+        "textTitle": "Code du travail -  Chapitre II : Agence nationale pour l'améliorat... (V)",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "",
+        "articleId": "LEGISCTA000006178108",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 1209600000000
+      }
+    ],
     "lienConcordes": [
       {
         "textCid": "LEGITEXT000006072050",
