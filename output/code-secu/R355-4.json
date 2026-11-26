@@ -2,17 +2,17 @@
   "executionTime": 0,
   "dereferenced": false,
   "article": {
-    "id": "LEGIARTI000053335738",
+    "id": "LEGIARTI000055052426",
     "idTexte": null,
     "type": "AUTONOME",
-    "texte": "La caisse primaire d'assurance maladie ou la caisse d'assurance retraite et de la santé au travail notifie à l'intéressé sa décision portant attribution d'une pension ou rente.",
-    "texteHtml": "<p></p><p>La caisse primaire d'assurance maladie ou la caisse d'assurance retraite et de la santé au travail notifie à l'intéressé sa décision portant attribution d'une pension ou rente.</p><p></p>",
+    "texte": "La caisse primaire d'assurance maladie ou la caisse d'assurance retraite et de la santé au travail notifie à l'intéressé sa décision portant attribution d'une pension ou rente. Les caisses débitrices peuvent opérer d'office et sans formalité les retenues sur les arrérages des pensions, rentes et avantages accessoires pour le recouvrement des sommes payées indûment aux titulaires. Les sommes retenues ne peuvent excéder la fraction saisissable, telle qu'elle résulte de l'application de l'article L. 355-2 .",
+    "texteHtml": "<p>La caisse primaire d'assurance maladie ou la caisse d'assurance retraite et de la santé au travail notifie à l'intéressé sa décision portant attribution d'une pension ou rente.</p><p>Les caisses débitrices peuvent opérer d'office et sans formalité les retenues sur les arrérages des pensions, rentes et avantages accessoires pour le recouvrement des sommes payées indûment aux titulaires. Les sommes retenues ne peuvent excéder la fraction saisissable, telle qu'elle résulte de l'application de l'article <a href=\"/affichCodeArticle.do?cidTexte=LEGITEXT000006073189&idArticle=LEGIARTI000006742655&dateTexte=&categorieLien=cid\">L. 355-2</a>.</p>",
     "num": "R355-4",
     "origine": "LEGI",
     "nature": "Article",
-    "versionArticle": "4.0",
+    "versionArticle": "5.0",
     "etat": "VIGUEUR",
-    "dateDebut": 1767225600000,
+    "dateDebut": 1793750400000,
     "dateFin": 32472144000000,
     "dateDebutExtension": 32472144000000,
     "dateFinExtension": 32472144000000,
@@ -77,8 +77,8 @@
     "sectionParentId": "LEGISCTA000006156619",
     "sectionParentTitre": "Chapitre 5 : Dispositions communes avec l'invalidité.",
     "fullSectionsTitre": "Partie réglementaire - Décrets en Conseil d'Etat &gt; Livre III : Dispositions relatives aux assurances sociales et à diverses catégories de personnes rattachées au régime général &gt; Titre V : Assurance vieillesse - Assurance veuvage &gt; Chapitre 5 : Dispositions communes avec l'invalidité.",
-    "refInjection": "IG-20261019",
-    "idTechInjection": "LEGIARTI000053335738",
+    "refInjection": "MD-20261103_204807_684_BDJQUOT",
+    "idTechInjection": "index_DATA_NEXT_ARTICLE_LEGIARTI000055052426",
     "idEli": null,
     "idEliAlias": null,
     "calipsos": [],
@@ -112,24 +112,24 @@
         "appellations": null
       }
     ],
-    "nota": "Se reporter aux modalités d’application prévues au II de l’article 2 du décret n° 2025-1409 du 31 décembre 2025.",
-    "notaHtml": "<p align=\"justify\">                          Se reporter aux modalités d’application prévues au II de l’article 2 du décret n° 2025-1409 du 31 décembre 2025.</p>",
+    "nota": "",
+    "notaHtml": "",
     "activitePro": [],
     "numeroBrochure": [],
     "numeroBo": null,
     "conteneurs": [],
     "lienModifications": [
       {
-        "textCid": "JORFTEXT000053227462",
-        "textTitle": "Décret n°2025-1409 du 30 décembre 2025 - art. 2 (V)",
+        "textCid": "JORFTEXT000055047286",
+        "textTitle": "Décret n°2026-1016 du 2 novembre 2026 - art. 2",
         "linkType": "MODIFIE",
         "linkOrientation": "cible",
         "articleNum": "2",
-        "articleId": "LEGIARTI000053270539",
+        "articleId": "LEGIARTI000055048217",
         "natureText": "DECRET",
-        "datePubliTexte": "2025-12-31",
-        "dateSignaTexte": "2025-12-30",
-        "dateDebutCible": "2026-01-01"
+        "datePubliTexte": "2026-11-03",
+        "dateSignaTexte": "2026-11-02",
+        "dateDebutCible": "2026-11-04"
       }
     ],
     "lienCitations": [
@@ -171,6 +171,19 @@
         "numTexte": "",
         "datePubli": 32472144000000,
         "dateDebut": 1572566400000
+      },
+      {
+        "textCid": "LEGITEXT000006073189",
+        "textTitle": "Code de la sécurité sociale. - art. L355-2",
+        "linkType": "CITATION",
+        "linkOrientation": "source",
+        "articleNum": "L355-2",
+        "articleId": "LEGIARTI000006742655",
+        "natureText": "CODE",
+        "parentCid": null,
+        "numTexte": "",
+        "datePubli": 32472144000000,
+        "dateDebut": 503971200000
       }
     ],
     "lienConcordes": [
@@ -224,9 +237,18 @@
       },
       {
         "id": "LEGIARTI000053335738",
-        "etat": "VIGUEUR",
+        "etat": "MODIFIE",
         "version": "4.0",
         "dateDebut": 1767225600000,
+        "dateFin": 1793750400000,
+        "numero": null,
+        "ordre": null
+      },
+      {
+        "id": "LEGIARTI000055052426",
+        "etat": "VIGUEUR",
+        "version": "5.0",
+        "dateDebut": 1793750400000,
         "dateFin": 32472144000000,
         "numero": null,
         "ordre": null
@@ -236,7 +258,7 @@
       "R355-4",
       "355-4"
     ],
-    "versionPrecedente": "LEGIARTI000038790860",
+    "versionPrecedente": "LEGIARTI000053335738",
     "conditionDiffere": null,
     "historique": null,
     "surtitre": null,
